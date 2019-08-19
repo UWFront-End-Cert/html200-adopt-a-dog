@@ -89,7 +89,6 @@ header {
 
 .logo {
   font-weight: bold;
-	text-align: undefined;
 	float: left;
 	margin-top: 15px;
 	margin-left: 25px;
@@ -216,7 +215,6 @@ ul li a {
 
 form {
   color: blue;
-  font: "georgia", serif;
   font-weight: bold;
 }
 
