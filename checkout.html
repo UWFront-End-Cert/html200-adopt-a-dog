@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Adoptadog</title>
-  </head>
-  <body>
-    <div class="header">
-      <img src="image.jpg" alt="adoptadog logo to be added later, white logo would not be visible currently">
-      <h1>Seattle's premiere dog adoption agency</h1>
-      <img src="image.jpg" alt="cart icon to be added later, white icon would not be visible currently">
-      <p>$1234.56</p>
-      <nav>
-        <a href="checkout.html">Checkout</a>
-      </nav><br>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="dogs.html">Dogs</a>
-        <a href="blog.html">Blog</a>
-      </nav>
-    </div>
+<head>
+<meta charset="utf-8">
+<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+<title>Adoptadog</title>
+</head>
+
+<body>
+  <div class="header-container">
+  <!--Header -->
+    <header>
+      <div class="logo">
+        <img src="images/adoptadog-logo.svg" alt="adoptadog logo" height="75">Seattle's Premiere Dog Adoption Agency
+      </div>
+      <div class="checkout">
+        <img src="images/cart-icon.svg" alt="cart icon" height="25" class="checkout">$1234.56<button type="button" name="button">Checkout</button>
+      </div>
+    </header>
+  </div>
+
+  <!--Navigation -->
+  <div class="navbar-container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li> <a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
 
     <h2>Checkout</h2>
       <form id = "main-content">
@@ -109,6 +119,8 @@
             <img src="images/lucas-card.jpg" alt="Image of Lucas, an adoptable black Collie mix.">
             <h4>Lucas</h4>
             <p>Cost to Adopt: $123.45</p>
+          </div>
+          <div class="dogs-adopted">
             <img src="images/duffy-card.jpg" alt="Image of Duffy, an adoptable brown and white Pit Bull mix.">
             <h4>Duffy</h4>
             <p>Cost to Adopt: $123.45</p>
@@ -120,7 +132,7 @@
       <br>
       <br>
       <div class="footer">
-        <img src="image.jpg" alt="adoptadog logo to be added later, white logo would not be visible currently">
+        <img src="images/adoptadog-logo.svg" alt="adoptadog logo to be added later, white logo would not be visible currently">
         <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
         <nav>
           <a href="index.html">Home</a>
