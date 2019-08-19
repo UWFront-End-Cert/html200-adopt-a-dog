@@ -63,6 +63,14 @@ header {
   margin: 0;
 }
 
+.header-container-checkout {
+  width: 100%;
+  height: 100px;
+  padding-bottom: 50px;
+  background-color: black;
+  margin: 0;
+}
+
 /* Navbar */
 .navbar-container {
   background-color: grey;
@@ -207,9 +215,7 @@ ul li a {
   width: 10%;
   padding: 0px;
   border: 1px solid gray;
-  display: inline-flex;
   box-sizing: border-box;
-  flex-direction: row;
   margin: auto;
 }
 
