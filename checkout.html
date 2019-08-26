@@ -36,76 +36,78 @@
     <h2>Checkout</h2>
       <form id = "main-content">
         <label for="name">Name</label><br>
-          <input type="text" name="name" id="name"><br>
+          <input class="text-input" type="text" name="name" id="name"><br><br>
         <label for="email">Email Address</label><br>
-          <input type="email" name="email" id="email"><br>
+          <input class="text-input" type="email" name="email" id="email"><br><br>
         <label for="street">Street Address</label><br>
-          <input type="text" name="street" id="street"><br>
-        <label for="city">City</label><br>
-          <input type="text" name="city" id="city"><br>
-        <label for="state">State</label><br>
-          <select name="state" id="state">
-            <option value="alabama">Alabama - AL</option>
-            <option value="alaska">Alaska - AK</option>
-            <option value="american-samoa">American Samoa - AS</option>
-            <option value="arizona">Arizona - AZ</option>
-            <option value="arkansas">Arkansas - AR</option>
-            <option value="california">California - CA</option>
-            <option value="colorado">Colorado - CO</option>
-            <option value="connecticut">Connecticut - CT</option>
-            <option value="delaware">Delaware - DE</option>
-            <option value="district-of-columbia">U.S. District of Columbia - DC</option>
-            <option value="florida">Florida - FL</option>
-            <option value="georgia">Georgia - GA</option>
-            <option value="guam">Guam - GU</option>
-            <option value="hawaii">Hawaii - HI</option>
-            <option value="idaho">Idaho - ID</option>
-            <option value="illinois">Illinois - IL</option>
-            <option value="indiana">Indiana - IN</option>
-            <option value="iowa">Iowa - IA</option>
-            <option value="kansas">Kansas - KS</option>
-            <option value="kentucky">Kentucky - KY</option>
-            <option value="louisiana">Louisiana - LA</option>
-            <option value="maine">Maine - ME</option>
-            <option value="maryland">Maryland - MD</option>
-            <option value="marshall-islands">U.S. Marshall Islands - MH</option>
-            <option value="massachusetts">Massachusetts - MA</option>
-            <option value="michigan">Michigan - MI</option>
-            <option value="micronesia">Micronesia - FM</option>
-            <option value="minnesota">Minnesota - MN</option>
-            <option value="mississippi">Mississippi - MS</option>
-            <option value="missouri">Missouri - MO</option>
-            <option value="montana">Montana - MT</option>
-            <option value="nebraska">Nebraska - NE</option>
-            <option value="nevada">Nevada - NV</option>
-            <option value="new-hampshire">New Hampshire - NH</option>
-            <option value="new-jersey">New Jersey - NJ</option>
-            <option value="new-mexico">New Mexico - NM</option>
-            <option value="new-york">New York - NY</option>
-            <option value="north-carolina">North Carolina - NC</option>
-            <option value="north-dakota">North Dakota - ND</option>
-            <option value="north-marianas">North Marianas - MP</option>
-            <option value="ohio">Ohio - OH</option>
-            <option value="oklahoma">Oklahoma - OK</option>
-            <option value="oregon">Oregon - OR</option>
-            <option value="palau">Palau - PW</option>
-            <option value="puerto-rico">Puerto Rico - PR</option>
-            <option value="rhode-island">Rhode Island - RI</option>
-            <option value="south-carolina">South Carolina - SC</option>
-            <option value="south-dakota">South Dakota - SD</option>
-            <option value="tennessee">Tennessee - TN</option>
-            <option value="texas">Texas - TX</option>
-            <option value="utah">Utah - UT</option>
-            <option value="vermont">Vermont - VT</option>
-            <option value="virginia">Virginia - VA</option>
-            <option value="virgin-islands">U.S. Virgin Islands - VI</option>
-            <option value="washington">Washington - WA</option>
-            <option value="west-virginia">West Virginia - WV</option>
-            <option value="wisconsin">Wisconsin - WI</option>
-            <option value="wyoming">Wyoming - WY</option>
-          </select><br>
-          <label for="zip">Zip Code</label><br>
-            <input type="number" name="zip" id="zip"><br>
+          <input class="text-input" type="text" name="street" id="street"><br><br>
+        <div class="demographic-section">
+          <label for="city">City</label><br>
+            <input class="text-input" type="text" name="city" id="city"><br><br>
+            <label for="state">State</label><br>
+            <select name="state" id="state">
+              <option value="alabama">Alabama - AL</option>
+              <option value="alaska">Alaska - AK</option>
+              <option value="american-samoa">American Samoa - AS</option>
+              <option value="arizona">Arizona - AZ</option>
+              <option value="arkansas">Arkansas - AR</option>
+              <option value="california">California - CA</option>
+              <option value="colorado">Colorado - CO</option>
+              <option value="connecticut">Connecticut - CT</option>
+              <option value="delaware">Delaware - DE</option>
+              <option value="district-of-columbia">U.S. District of Columbia - DC</option>
+              <option value="florida">Florida - FL</option>
+              <option value="georgia">Georgia - GA</option>
+              <option value="guam">Guam - GU</option>
+              <option value="hawaii">Hawaii - HI</option>
+              <option value="idaho">Idaho - ID</option>
+              <option value="illinois">Illinois - IL</option>
+              <option value="indiana">Indiana - IN</option>
+              <option value="iowa">Iowa - IA</option>
+              <option value="kansas">Kansas - KS</option>
+              <option value="kentucky">Kentucky - KY</option>
+              <option value="louisiana">Louisiana - LA</option>
+              <option value="maine">Maine - ME</option>
+              <option value="maryland">Maryland - MD</option>
+              <option value="marshall-islands">U.S. Marshall Islands - MH</option>
+              <option value="massachusetts">Massachusetts - MA</option>
+              <option value="michigan">Michigan - MI</option>
+              <option value="micronesia">Micronesia - FM</option>
+              <option value="minnesota">Minnesota - MN</option>
+              <option value="mississippi">Mississippi - MS</option>
+              <option value="missouri">Missouri - MO</option>
+              <option value="montana">Montana - MT</option>
+              <option value="nebraska">Nebraska - NE</option>
+              <option value="nevada">Nevada - NV</option>
+              <option value="new-hampshire">New Hampshire - NH</option>
+              <option value="new-jersey">New Jersey - NJ</option>
+              <option value="new-mexico">New Mexico - NM</option>
+              <option value="new-york">New York - NY</option>
+              <option value="north-carolina">North Carolina - NC</option>
+              <option value="north-dakota">North Dakota - ND</option>
+              <option value="north-marianas">North Marianas - MP</option>
+              <option value="ohio">Ohio - OH</option>
+              <option value="oklahoma">Oklahoma - OK</option>
+              <option value="oregon">Oregon - OR</option>
+              <option value="palau">Palau - PW</option>
+              <option value="puerto-rico">Puerto Rico - PR</option>
+              <option value="rhode-island">Rhode Island - RI</option>
+              <option value="south-carolina">South Carolina - SC</option>
+              <option value="south-dakota">South Dakota - SD</option>
+              <option value="tennessee">Tennessee - TN</option>
+              <option value="texas">Texas - TX</option>
+              <option value="utah">Utah - UT</option>
+              <option value="vermont">Vermont - VT</option>
+              <option value="virginia">Virginia - VA</option>
+              <option value="virgin-islands">U.S. Virgin Islands - VI</option>
+              <option value="washington">Washington - WA</option>
+              <option value="west-virginia">West Virginia - WV</option>
+              <option value="wisconsin">Wisconsin - WI</option>
+              <option value="wyoming">Wyoming - WY</option>
+            </select><br><br>
+            <label for="zip">Zip Code</label><br>
+              <input class="text-input" type="number" name="zip" id="zip"><br>
+        </div>
         <p>First Time Adopter?</p>
           <input type="radio" name="adopter" value="yes"> Yes
           <input type="radio" name="adopter" value="no"> No<br><br>
@@ -118,6 +120,7 @@
             <option value="bellevue">Bellevue</option>
           </select><br>
         <h4>Dogs Adopted</h4>
+        <div class="checkout-dogs">
           <div class="dogs-adopted">
             <img src="images/lucas-card.jpg" alt="Image of Lucas, an adoptable black Collie mix.">
             <h4>Lucas</h4>
@@ -128,6 +131,7 @@
             <h4>Duffy</h4>
             <p>Cost to Adopt: $123.45</p>
           </div>
+        </div>
         <h4>Total Adoption Cost</h4>
         <p>$1234.56</p>
         <input type="submit" value="Submit">

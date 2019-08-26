@@ -240,6 +240,10 @@ ul li a {
   margin: 10px;
 }
 
+.aside h2 {
+  color: #2952a3;
+}
+
 .image-section {
   float: left;
   width: 30%;
@@ -262,11 +266,20 @@ ul li a {
 }
 
 form {
-  color: blue;
+  color: #2952a3;
   font-weight: bold;
 }
 
+.text-input {
+  width: 50%;
+  height: 25px;
+}
 
+.checkout-dogs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .footer {
   background-color: #383838;
