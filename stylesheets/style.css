@@ -82,6 +82,13 @@ header {
   clear: none;
 }
 
+.navbar-container a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
 .hero-container {
   width: 100%;
   height: auto;
@@ -89,6 +96,11 @@ header {
   padding-top: 50px;
   float: left;
   clear: none;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .hero p {
@@ -108,6 +120,14 @@ header {
   flex-flow: column wrap;
   float: right;
   padding: 10px;
+}
+
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  border: 1px solid #CCCCCC;
 }
 
 .navbar-container a {
@@ -131,7 +151,10 @@ ul li a {
 
 .dog-box button {
   background-color: green;
-  border-color: white;
+  border-color: black;
+  color: white;
+  font-style: oblique;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -144,7 +167,7 @@ ul li a {
   box-sizing: border-box;
   display: inline-flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-content: space-around;
 
 }
@@ -201,14 +224,26 @@ ul li a {
   width: 100%;
   overflow:hidden;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.blog-post img {
-  float: left;
-  margin-left: 10.5%;
-  width: 25%;
-  padding: 10px;
+.image-section,
+.aside {
+  margin: 10px;
+}
 
+.image-section {
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+  padding: 10px;
+}
+
+.aside {
+  float: right;
+  width: 60%;
+  min-width: 30%;
 }
 
 .dogs-adopted {
@@ -227,7 +262,7 @@ form {
 
 
 .footer {
-  background-color: darkblue;
+  background-color: #000080;
   align-items: center;
   color: white
 }
@@ -236,6 +271,14 @@ form {
   align-items: center;
   width: 30%;
   padding-top: 3%;
+}
+
+.footer a {
+  font-size: 25px;
+  color: white;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .footer p {
