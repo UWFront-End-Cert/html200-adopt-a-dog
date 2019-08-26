@@ -33,7 +33,11 @@ img {
 
 /* Header */
 header {
-  background-color: black;
+  background-color: #2952a3;
+  color: #99CC33;
+}
+
+.total {
   color: white;
 }
 
@@ -41,7 +45,7 @@ header {
   width: 100%;
   height: 100px;
   padding-bottom: 50px;
-  background-color: black;
+  background-color: #193366;
   float: left;
   clear: none;
   margin: 0;
@@ -51,7 +55,7 @@ header {
   width: 100%;
   height: 100px;
   padding-bottom: 50px;
-  background-color: black;
+  background-color: #193366;
   margin: 0;
 }
 
@@ -59,7 +63,7 @@ header {
   width: 100%;
   height: 100px;
   padding-bottom: 50px;
-  background-color: black;
+  background-color: #193366;
   margin: 0;
 }
 
@@ -67,13 +71,13 @@ header {
   width: 100%;
   height: 100px;
   padding-bottom: 50px;
-  background-color: black;
+  background-color: #193366;
   margin: 0;
 }
 
 /* Navbar */
 .navbar-container {
-  background-color: grey;
+  background-color: #C0C0C0;
   width: 100%;
   height: auto;
   padding-bottom: 15px;
@@ -83,10 +87,8 @@ header {
 }
 
 .navbar-container a {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  font-variant: small-caps;
+  color: #193366;
+  font-weight: normal;
 }
 
 .hero-container {
@@ -125,9 +127,20 @@ header {
 .button {
   font: bold 11px Arial;
   text-decoration: none;
-  background-color: #EEEEEE;
+  background-color: #99CC33;
   color: #333333;
   border: 1px solid #CCCCCC;
+}
+
+.see-dogs {
+  font: bold 20px Times;
+  text-decoration: none;
+  background-color: #D0D0D0;
+  color: #2952a3;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .navbar-container a {
@@ -150,8 +163,7 @@ ul li a {
 }
 
 .dog-box button {
-  background-color: green;
-  border-color: black;
+  background-color: #99CC33;
   color: white;
   font-style: oblique;
   font-weight: bold;
@@ -168,8 +180,7 @@ ul li a {
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: space-around;
-
+  align-content: space-around;\
 }
 
 .dog-box p {
@@ -180,6 +191,8 @@ ul li a {
 .dog-box h3 {
   padding-left: 10px;
   text-align: left;
+  margin-left: 2px;
+  color: #2952a3;
 }
 
 .dog-box h4 {
@@ -212,12 +225,6 @@ ul li a {
 .hero-text {
   float: left;
   margin-left: 10px;
-}
-
-.dog-box h3 {
-  color: black;
-  text-align: left;
-  margin-left: 2px;
 }
 
 .blog-post {
@@ -262,7 +269,7 @@ form {
 
 
 .footer {
-  background-color: #000080;
+  background-color: #383838;
   align-items: center;
   color: white
 }
