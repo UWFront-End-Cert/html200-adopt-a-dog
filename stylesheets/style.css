@@ -143,6 +143,17 @@ header {
   padding-right: 30px;
 }
 
+.submit-button {
+  font: bold 20px Times;
+  text-decoration: none;
+  background-color: #99CC33;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .navbar-container a {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 30px;
@@ -303,4 +314,8 @@ form {
 
 .footer p {
   padding-bottom: 3%;
+}
+
+h1 {
+  color: #2952a3;
 }
