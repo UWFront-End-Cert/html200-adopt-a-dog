@@ -168,7 +168,6 @@ img {
 }
 
 main {
-  display: flex;
   margin: 0 3rem;
 }
 
@@ -180,13 +179,15 @@ main {
 .dog-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
+  float: left;
+  grid-gap: 30px;
 }
 
-.dog-container,
 .dog-box {
-  grid-auto-flow: row;
-  grid-gap: 3rem;
+  padding: 10px;
+  border: 1px solid gray;
+  margin: 2%;
+  float: left;
 }
 
 .dog-box button {
@@ -195,12 +196,6 @@ main {
   font-style: oblique;
   font-weight: bold;
   text-align: center;
-}
-
-.dog-box {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, auto);
 }
 
 .dog-box p {
