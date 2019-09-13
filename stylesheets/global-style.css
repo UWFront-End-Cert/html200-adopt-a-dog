@@ -320,10 +320,6 @@ main {
   float: left;
 }
 
-aside {
-}
-
-
 /* for-tablet-landscape { */
 @media (min-width: 900px) {
   .dog-container {
@@ -333,6 +329,15 @@ aside {
   .dog-box {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, auto);
+  }
+
+  .aside {
+    float: left;
+    width: 55%;
+  }
+
+  .aside img {
+    width: 25%;
   }
 }
 
