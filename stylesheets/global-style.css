@@ -320,6 +320,20 @@ main {
   float: left;
 }
 
+/* for-phone-only */
+@media (max-width: 599px) {
+
+  .dog-container,
+  .dog-box {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(1, auto);
+  }
+
+  aside {
+    display: none;
+  }
+}
+
 /* for-tablet-landscape { */
 @media (min-width: 900px) {
   .dog-container {
