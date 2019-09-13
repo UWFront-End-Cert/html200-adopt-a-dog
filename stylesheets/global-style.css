@@ -222,12 +222,9 @@ ul li a {
   text-align: left;
 }
 
-
-.hero img {
+.aside {
   float: left;
-  margin-left: 10.5%;
-  width: 25%;
-  padding-right: 10px;
+  width: 55%;
 }
 
 .hero-text {
@@ -239,8 +236,6 @@ ul li a {
   width: 100%;
   overflow:hidden;
   text-align: left;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .image-section,
@@ -295,7 +290,7 @@ form {
   align-items: center;
   color: white;
   width: 100%;
-  position: absolute;
+  clear: both;
 }
 
 .footer img {
@@ -322,6 +317,7 @@ h1 {
 
 main {
   max-width: 70%;
+  float: left;
 }
 
 aside {
