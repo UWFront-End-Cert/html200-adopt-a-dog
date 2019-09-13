@@ -248,7 +248,7 @@ ul li a {
   margin: 10px;
 }
 
-.aside h2 {
+aside h2 {
   color: #2952a3;
 }
 
@@ -259,10 +259,11 @@ ul li a {
   padding: 10px;
 }
 
-.aside {
+aside {
   float: right;
-  width: 60%;
-  min-width: 30%;
+  width: 25%;
+  min-width: 10%;
+  padding: 20px;
 }
 
 .dogs-adopted {
@@ -318,11 +319,10 @@ h1 {
 }
 
 main {
-  margin: 0 auto;
+  max-width: 70%;
 }
 
 aside {
-  display: none;
 }
 
 
