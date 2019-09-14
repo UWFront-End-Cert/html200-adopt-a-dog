@@ -32,24 +32,24 @@ h1 {
 h2 {
   font-family: Georgia, sans-serif;
   color: #213d69;
-  font-size: 230%;
+  font-size: 2.5rem;
   margin: 0rem 0 1rem 0;
 }
 h3 {
   font-family: Georgia, sans-serif;
   color: #213d69;
-  font-size: 130%;
+  font-size: 1.3rem;
 }
 h4 {
   font-family: Georgia, sans-serif;
   color: #213d69;
-  font-size: 190%;
+  font-size: 1.9rem;
   margin: 0 0 0.83rem 0;
 }
 h5 {
   font-family: Georgia, sans-serif;
   color: #213d69;
-  font-size: 140%;
+  font-size: 1.5rem;
   margin: 2rem 0 0.4rem 0;
 }
 h6 {
@@ -95,7 +95,7 @@ input[type="submit"] {
   color: white;
   background-color: #4eba62;
   font-family: Helvetica, sans-serif;
-  font-size: 130%;
+  font-size: 1.3rem;
   border: none;
 }
 .basic-input {
@@ -123,7 +123,7 @@ input[type="submit"] {
   padding: 1.5rem 0 1.5rem 8rem;
   font-weight: bold;
   color: #213d69;
-  font-size: 120%;
+  font-size: 1.2rem;
 }
 #sum {
   color: white;
@@ -166,7 +166,7 @@ input[type="submit"] {
   color: #213d69;
   background-color: #d7dbd8;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  font-size: 130%;
+  font-size: 1.3rem;
 }
 .dog-container {
   display: flex;
@@ -188,14 +188,14 @@ input[type="submit"] {
   width: 23%;
   border-color: #cbd5d6;
   border-style: solid;
-  font-size: 120%;
+  font-size: 1.2rem;
   margin-top: 1.5rem;
 }
 .box-blog {
   width: 60%;
 }
 #intro-text {
-  font-size: 140%;
+  font-size: 1.4rem;
   color: #5d6f73;
   font-weight: lighter;
 }
@@ -231,7 +231,6 @@ input[type="submit"] {
 }
 .adopt-checkout-container {
   display: flex;
-  /*justify-content: space-between;*/
   flex-flow: row wrap;
 }
 .adopt-checkout-box {
