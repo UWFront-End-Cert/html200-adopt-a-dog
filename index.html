@@ -3,115 +3,124 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"  type="text/css" href="styles/desktop.css">
+    <link rel="stylesheet"  type="text/css" href="styles/stylesheet.css">
     <title>Adopt A Dog</title>
   </head>
   <body>
     <a href="#main-content" class="hidden">Skip to main content</a>
-    <header id="head-container">
-      <section id="box-title">
-        <img src="images/adoptadog-logo.svg" alt="Company dog logo">
-        <h1>Seattle's premiere dog adoption agency</h1>
-      </section>
-      <section id="box-cart">
-        <h6>Shopping Cart</h6>
-        <img id="cart-image" src="images/cart-icon.svg" alt="shopping cart">
-        <p id="sum">$1234.56</p> <!--This is a placeholder-->
-        <a class="checkout-button" href="checkout.html">Checkout</a>
-      </section>
+    <header>
+      <div class="head-container">
+        <section>
+          <img src="images/adoptadog-logo.svg" alt="Company dog logo">
+          <h1>Seattle's premiere dog adoption agency</h1>
+        </section>
+        <section class="cart-holder">
+          <h6>Shopping Cart</h6>
+          <img id="cart-image" src="images/cart-icon.svg" alt="shopping cart">
+          <p id="sum">$1234.56</p> <!--This is a placeholder-->
+          <a class="checkout-button" href="checkout.html">Checkout</a>
+        </section>
+      </div>
     </header>
-    <nav id="top-nav">
-      <a href="index.html">Home</a> &nbsp;&nbsp;/&nbsp;&nbsp; <a href="dogs.html">Dogs</a> &nbsp;&nbsp;/&nbsp;&nbsp; <a href="blog.html">Blog</a>
+    <nav class="top-nav">
+      <div class="standard-width">
+        <a href="index.html">Home</a> &nbsp;&nbsp;/&nbsp;&nbsp; <a href="dogs.html">Dogs</a> &nbsp;&nbsp;/&nbsp;&nbsp; <a href="blog.html">Blog</a>
+      </div>
     </nav>
-    <section id="main-content" class="article-container">
-      <h6>Intro</h6>
-      <img src="images/home-intro.jpg" alt="Man hugging a golden retriever">
-      <article class="box-intro">
-        <h2>Adopt A Dog</h2>
-        <p id="intro-text">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
-am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-      </article>
-    </section>
-    <section class="dog-container">
-      <h6>Brief Introduction to Our Dogs</h6>
-      <article class="box-dog">
-        <img onclick="inspect('Murphy', 'breed unknown', 123.45)" class="occupy-solo" src="images/murphy-card.jpg" alt="Picture of Murphy">
-        <h3>Murphy</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <div class="adopt-holder">
-          <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+    <div class="standard-width divide">
+      <section id="main-content" class="main">
+        <h6>The following is the information on the left side of the page</h6>
+        <article class="">
+          <img src="images/home-intro.jpg" class="occupy-solo" alt="Man hugging a golden retriever">
+          <h2>Adopt A Dog</h2>
+          <p class="intro-text">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am
+</p>
+        </article>
+        <section class="dog-grid" id="grid-1">
+          <h6>Brief Introduction to Our Dogs</h6>
+          <article class="dog-holder">
+            <img onclick="inspect('Murphy', 'breed unknown', 123.45)" class="occupy-solo" src="images/murphy-card.jpg" alt="Picture of Murphy">
+            <h3>Murphy</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <div class="adopt-holder">
+              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+            </div>
+          </article>
+          <article class="dog-holder">
+            <img onclick="inspect('Poppy', 'breed unknown', 123.45)" class="occupy-solo" src="images/poppy-card.jpg" alt="Picture of Poppy">
+            <h3>Poppy</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <div class="adopt-holder">
+              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+            </div>
+          </article>
+          <article class="dog-holder">
+            <img onclick="inspect('Jack', 'breed unknown', 123.45)" class="occupy-solo" src="images/jack-card.jpg" alt="Picture of Jack">
+            <h3>Jack</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <div class="adopt-holder">
+              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+            </div>
+          </article>
+          <article class="dog-holder">
+            <img onclick="inspect('Duffy', 'breed unknown', 123.45)" class="occupy-solo" src="images/duffy-card.jpg" alt="Picture of Duffy">
+            <h3>Duffy</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <div class="adopt-holder">
+              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+            </div>
+          </article>
+          <article class="dog-holder">
+            <img onclick="inspect('Lucas', 'breed unknown', 123.45)" class="occupy-solo" src="images/lucas-card.jpg" alt="Picture of Lucas">
+            <h3>Lucas</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <div class="adopt-holder">
+              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+            </div>
+          </article>
+          <article class="dog-holder">
+            <img onclick="inspect('Jake', 'breed unknown', 123.45)" class="occupy-solo" src="images/jake-card.jpg" alt="Picture of Jake">
+            <h3>Jake</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <div class="adopt-holder">
+              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+            </div>
+          </article>
+        </section>
+        <div class="more-holder">
+          <a class="more-button" href="dogs.html">See More Dogs</a>
         </div>
-      </article>
-      <article class="box-dog">
-        <img onclick="inspect('Poppy', 'breed unknown', 123.45)" class="occupy-solo" src="images/poppy-card.jpg" alt="Picture of Poppy">
-        <h3>Poppy</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <div class="adopt-holder">
-          <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
-        </div>
-      </article>
-      <article class="box-dog">
-        <img onclick="inspect('Jack', 'breed unknown', 123.45)" class="occupy-solo" src="images/jack-card.jpg" alt="Picture of Jack">
-        <h3>Jack</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <div class="adopt-holder">
-          <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
-        </div>
-      </article>
-      <article class="box-dog">
-        <img onclick="inspect('Duffy', 'breed unknown', 123.45)" class="occupy-solo" src="images/duffy-card.jpg" alt="Picture of Duffy">
-        <h3>Duffy</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <div class="adopt-holder">
-          <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
-        </div>
-      </article>
-      <article class="box-dog">
-        <img onclick="inspect('Lucas', 'breed unknown', 123.45)" class="occupy-solo" src="images/lucas-card.jpg" alt="Picture of Lucas">
-        <h3>Lucas</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <div class="adopt-holder">
-          <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
-        </div>
-      </article>
-      <article class="box-dog">
-        <img onclick="inspect('Jake', 'breed unknown', 123.45)" class="occupy-solo" src="images/jake-card.jpg" alt="Picture of Jake">
-        <h3>Jake</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <div class="adopt-holder">
-          <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
-        </div>
-      </article>
-      <article class="box-dog">
-        <img onclick="inspect('Angus', 'breed unknown', 123.45)" class="occupy-solo" src="images/angus-card.jpg" alt="Picture of Angus">
-        <h3>Angus</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <div class="adopt-holder">
-          <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
-        </div>
-      </article>
-      <article class="box-dog">
-        <img onclick="inspect('Violet', 'breed unknown', 123.45)" class="occupy-solo" src="images/violet-card.jpg" alt="Picture of Violet">
-        <h3>Violet</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <div class="adopt-holder">
-          <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
-        </div>
-      </article>
-    </section>
-    <div class="more-holder">
-      <a class="more-button" href="dogs.html">See More Dogs</a>
+      </section>
+      <aside>
+        <h2>From Our Blog</h2>
+        <article class="bottom-spacer">
+          <img src="images/blog-1.jpg" class="occupy-solo" alt="Woman hugging her dog at a canyon">
+          <h3>Traveling With Your Dog</h3>
+          <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+          <a class="link-to-blog" href="blog.html#blog-1">Read more >></a>
+        </article>
+        <article class="bottom-spacer">
+          <img src="images/blog-2.jpg" alt="Many dogs on seperate leashes all held by the same person">
+          <h3>How To Walk Multiple Dogs</h3>
+          <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+          <a class="link-to-blog" href="blog.html#blog-2">Read more >></a>
+        </article>
+        <article class="bottom-spacer">
+          <img src="images/blog-3.jpg" alt="A woman playing fetch with her dog with a beautiful sunset in the background">
+          <h3>Teach Your Dog To Fetch!</h3>
+          <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+          <a class="link-to-blog" href="blog.html#blog-3">Read more >></a>
+        </article>
+      </aside>
     </div>
     <footer>
-      <section id="footer-text">
+      <section class="footer-text">
         <h6>Page footer</h6>
         <img src="images/adoptadog-logo.svg" alt="Company dog logo">
         <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>

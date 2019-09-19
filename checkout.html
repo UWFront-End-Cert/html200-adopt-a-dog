@@ -3,27 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"  type="text/css" href="styles/desktop.css">
-    <title>Checkout</title>
+    <link rel="stylesheet"  type="text/css" href="styles/stylesheet.css">
+    <title>Adopt A Dog</title>
   </head>
   <body>
     <a href="#main-content" class="hidden">Skip to main content</a>
-    <header id="head-container">
-      <section id="box-title">
-        <img src="images/adoptadog-logo.svg" alt="Company dog logo">
-        <h1>Seattle's premiere dog adoption agency</h1>
-      </section>
-      <section id="box-cart">
-        <h6>Shopping Cart</h6>
-        <img id="cart-image" src="images/cart-icon.svg" alt="shopping cart">
-        <p id="sum">$1234.56</p> <!--This is a placeholder-->
-        <a class="checkout-button" href="checkout.html">Checkout</a>
-      </section>
+    <header>
+      <div class="head-container">
+        <section>
+          <img src="images/adoptadog-logo.svg" alt="Company dog logo">
+          <h1>Seattle's premiere dog adoption agency</h1>
+        </section>
+        <section class="cart-holder">
+          <h6>Shopping Cart</h6>
+          <img id="cart-image" src="images/cart-icon.svg" alt="shopping cart">
+          <p id="sum">$1234.56</p> <!--This is a placeholder-->
+          <a class="checkout-button" href="checkout.html">Checkout</a>
+        </section>
+      </div>
     </header>
-    <nav id="top-nav">
-      <a href="index.html">Home</a> &nbsp;&nbsp;/&nbsp;&nbsp; <a href="dogs.html">Dogs</a> &nbsp;&nbsp;/&nbsp;&nbsp; <a href="blog.html">Blog</a>
+    <nav class="top-nav">
+      <div class="standard-width">
+        <a href="index.html">Home</a> &nbsp;&nbsp;/&nbsp;&nbsp; <a href="dogs.html">Dogs</a> &nbsp;&nbsp;/&nbsp;&nbsp; <a href="blog.html">Blog</a>
+      </div>
     </nav>
-    <section id="main-content" class="article-container">
+    <section id="main-content" class="standard-width top-spacer">
       <h2 class="occupy-solo">Checkout</h2>
       <form method="GET" class="occupy-solo">
         <h5>Name</h5>
@@ -38,14 +42,14 @@
         <label>
           <input class="basic-input" type="text" name="applicantAddress">
         </label>
-        <div class="occupy-partial">
-          <div class="column-40">
+        <div class="city-state-zip-holder">
+          <div class="city">
             <h5>City</h5>
             <label>
-              <input class="partial-input" type="text" name="applicantCity">
+              <input class="occupy-solo" type="text" name="applicantCity">
             </label>
           </div>
-          <div class="column-25">
+          <div class="state-zip">
             <h5>State</h5>
             <label>
               <select name="state">
@@ -104,10 +108,10 @@
               </select>
             </label>
           </div>
-          <div class="column-25">
+          <div class="state-zip">
             <h5>Zip Code</h5>
             <label>
-              <input class="partial-input" type="number" name="applicantZip">
+              <input class="occupy-solo" type="number" name="applicantZip">
             </label>
           </div>
         </div>
@@ -152,7 +156,7 @@
       </form>
     </section>
     <footer>
-      <section id="footer-text">
+      <section class="footer-text">
         <h6>Page footer</h6>
         <img src="images/adoptadog-logo.svg" alt="Company dog logo">
         <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
