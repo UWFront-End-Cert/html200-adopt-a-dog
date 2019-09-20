@@ -1,0 +1,31 @@
+/*Style for index page starts here*/
+header {
+  background-color: #0f3357;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 10% 10% 10% 10%;
+}
+
+.buy {
+  position: relative;
+  width: 5%;
+  margin-top: 5%;
+  margin-left: 80%;
+}
+
+.cart {
+  position: relative;
+  width: 60%;
+  height: 20%;
+  text-align: right;
+}
+
+.checkout {
+  position: absolute;
+  width: 100%;
+  background-color: #39c639;
+  text-align: center;
+  padding: 0% 20% 0% 20%;
+  color: white;
+}
