@@ -84,6 +84,7 @@ h2 {
 .box {
   height: 50%;
   width: 20%;
+  padding: 2%;
 }
 
 .dog_photo {
