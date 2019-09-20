@@ -25,6 +25,9 @@ header {
   text-align: center;
   padding: 5% 20% 5% 20%;
   color: white;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -36,18 +39,13 @@ header {
   font-size: 110%;
 }
 
-nav {
+.header_nav {
   background-color: #f2f2f2;
   color: #0f3357;
   padding-left: 15%;
   padding-top: 1%;
   padding-bottom: 1%;
-  text-decoration: none;
   font-size: 120%;
-}
-
-.navlink {
-  text-decoration: none;
 }
 
 /*End header style and begin index page style*/
@@ -75,7 +73,7 @@ h2 {
   margin-left: 15%;
   margin-right: 15%;
   margin-top:2%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: space-between;
@@ -84,9 +82,53 @@ h2 {
 .box {
   height: 50%;
   width: 20%;
-  padding: 2%;
+  margin: 1%;
+  border: 2px solid #e6e6e6;
+  padding: 1%;
 }
 
 .dog_photo {
   width: 100%;
+}
+
+h3 {
+  color: #0f3357;
+  font-size: 110%;
+}
+
+.adopt_button {
+  background-color: #39c639;
+  text-align: center;
+  color: white;
+  width: 60%;
+  padding:2%;
+  margin: 0% 15% 3% 15%;
+}
+
+/*End dog card styles on index page*/
+.see_more {
+  background-color: #e6e6e6;
+  color: #0f3357;
+  font-size: 110%;
+  width: 6%;
+  padding: 0% 2% 0% 2%;
+  margin: 1% 45%;
+}
+
+/*Start footer styles*/
+
+footer {
+  clear: right;
+  background-color: #404040;
+  font-size: 100%;
+  padding: 75px 200px;
+  margin: 0px;
+  text-align: center;
+  color: white;
+}
+
+.footer_nav {
+  background-color: #404040;
+  color: white;
+  padding: 1%;
 }
