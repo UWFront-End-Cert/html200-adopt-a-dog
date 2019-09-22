@@ -13,18 +13,27 @@
 }
 
 .main-body {
+  border: solid 5px #ce6a6b;
+  padding: 1%;
+  margin: 1%;
   text-align: center;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
 .second-body {
+  border: solid 5px #ce6a6b;
+  padding: 1%;
+  margin: 1%;
   text-align: center;
   display: flex;
   flex-flow: column wrap;
 }
 
 .third-body {
+  border: solid 5px #ce6a6b;
+  padding: 1%;
+  margin: 1%;
   text-align: center;
   display: flex;
   flex-flow: column wrap;
