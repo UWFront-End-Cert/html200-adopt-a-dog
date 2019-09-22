@@ -176,6 +176,13 @@ ul li a {
   grid-gap: 30px;
 }
 
+.dog-container-dogs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  float: left;
+  grid-gap: 30px;
+}
+
 .dog-box button {
   background-color: #99CC33;
   color: white;
@@ -324,7 +331,7 @@ main {
 @media (max-width: 599px) {
 
   .dog-container,
-  .dog-box {
+  .dog-container-dogs {
     grid-template-columns: 100%;
     grid-template-rows: repeat(1, auto);
   }
@@ -332,11 +339,15 @@ main {
   aside {
     display: none;
   }
+  main {
+    min-width: 90%;
+  }
 }
 
-/* for-tablet-landscape { */
+/* for-tablet-landscape */
 @media (min-width: 900px) {
-  .dog-container {
+  .dog-container,
+  .dog-container-dogs {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -355,9 +366,20 @@ main {
   }
 }
 
+/* for-tablet-portrait */
+@media (min-width: 600px) and (max-width: 899px) {
+
+  .dog-container,
+  .dog-container-dogs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+  }
+}
+
 /* for-desktop { */
 @media (min-width: 1200px) {
-  .dog-container {
+  .dog-container,
+  .dog-container-dogs {
     grid-template-columns: repeat(3, 1fr);
   }
 
