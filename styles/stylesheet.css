@@ -21,13 +21,29 @@
 .second-body {
   text-align: center;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
 .third-body {
   text-align: center;
   display: flex;
   flex-flow: column wrap;
+}
+
+.image-rotate {
+  transition: all 3s ease;
+}
+
+.image-rotate:hover {
+  transform: rotate(-360deg);
+}
+
+.image-blur {
+  transition: all 1s ease;
+}
+
+.image-blur:hover {
+  -webkit-filter: blur(5px);
 }
 
 .footer{
@@ -44,6 +60,10 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #4a919e;
+}
+
+li:nth-child(odd) {
+  background-color: #397079;
 }
 
 li {
