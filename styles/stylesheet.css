@@ -132,3 +132,10 @@ footer {
   color: white;
   padding: 1%;
 }
+
+/*Start style for dogs page*/
+
+.dogs_intro {
+  margin-left: 15%;
+  margin-top: 2%;
+}
