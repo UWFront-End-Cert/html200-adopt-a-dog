@@ -135,14 +135,53 @@ footer {
 
 /*Start style for dogs page*/
 
-.dogs_intro {
+.intro_blurb {
   margin-left: 15%;
   margin-top: 2%;
 }
 
-/*Start style for blog page*/
+/*Start styles for checkout page*/
 
-.blog_intro {
+form {
   margin-left: 15%;
   margin-top: 2%;
+  margin-right: 25%;
+  margin-bottom: 5%;
+}
+
+fieldset {
+  border: none;
+}
+
+.adopted {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+
+.address {
+  height: 50%;
+  width: 20%;
+  margin: 1%;
+  padding: 1%;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.adopted_dog {
+  height: 50%;
+  width: 20%;
+  margin: 1%;
+  border: 2px solid #e6e6e6;
+  padding: 1%;
+}
+
+.submit_button {
+  background-color: #39c639;
+  text-align: center;
+  color: white;
+  width: 20%;
+  margin-top: 0%;
 }
