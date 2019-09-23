@@ -61,6 +61,7 @@ a {
 
 .golden {
   padding-right: 5%;
+  float: left;
 }
 
 h2 {
@@ -166,16 +167,23 @@ fieldset {
   margin: 1%;
   padding: 1%;
   flex-direction: row;
+  flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-between;
 }
 
 .adopted_dog {
   height: 50%;
-  width: 20%;
+  width: 40%;
   margin: 1%;
-  border: 2px solid #e6e6e6;
   padding: 1%;
+}
+
+.dog_checkout {
+  padding: 1%;
+  position: relative;
+  align-items: flex-start;
+  float: left;
 }
 
 .submit_button {
@@ -184,4 +192,5 @@ fieldset {
   color: white;
   width: 20%;
   margin-top: 0%;
+  margin-bottom: 5%;
 }
