@@ -6,10 +6,14 @@ body {
   font-family: Helvetica, sans-serif;
 }
 header {
-  background-color: #213d69;
+  background: linear-gradient(to left, #213d69, white);
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
+  background-image: url('../images/header-image.jpg');
+  background-size: cover;
+  background-position: top left;
 }
 nav {
   width: 100%;
@@ -56,6 +60,9 @@ input {
   padding-top: 1rem;
   padding-bottom: 1rem;
   box-sizing : border-box;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
 }
 input[type="submit"] {
   width: 25%;
@@ -130,8 +137,6 @@ h6 {
 /*Stuff that will likely go into an @media device*/
 .head-container {
   width: 85%;
-  padding-bottom: 4rem;
-  padding-top: 3rem;
 }
 .cart-holder {
   width: 10%;
@@ -179,8 +184,20 @@ h6 {
   align-items: flex-start;
   width: 25%;
 }
+.blog-img {
+    object-fit: cover;
+    object-position: center;
+    width: 25%;
+    height: 15rem;
+    margin-right: 1rem;
+}
 #pickup-location {
   width: 40%;
+}
+#intro-image {
+    object-fit: cover;
+    height: 500px;
+    margin-bottom: 2rem;
 }
 /*End*/
 @media screen and (min-width: 992px) {
@@ -198,8 +215,17 @@ h6 {
     display: flex;
     justify-content: space-between;
   }
+  .head-container {
+      padding-bottom: 9rem;
+      padding-top: 3rem;
+  }
+  .small-blog-image {
+      object-fit: cover;
+      height: 15rem;
+      object-position: center;
+  }
 }
-@media screen and (min-width: 768px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
   #grid-1 {
     grid-template-columns: 1fr 1fr;
   }
@@ -213,6 +239,15 @@ h6 {
   .divide {
     display: flex;
     justify-content: space-between;
+  }
+  .head-container {
+      padding-bottom: 9rem;
+      padding-top: 3rem;
+  }
+  .small-blog-image {
+      object-fit: cover;
+      height: 10rem;
+      object-position: center;
   }
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
@@ -229,8 +264,12 @@ h6 {
     display: flex;
     justify-content: center;
   }
+  .head-container {
+      padding-bottom: 4rem;
+      padding-top: 2rem;
+  }
 }
-@media screen and (max-width: 798px) {
+@media screen and (max-width: 600px) {
   #grid-1 {
     grid-template-columns: 1fr;
   }
@@ -243,6 +282,16 @@ h6 {
   .divide {
     display: flex;
     justify-content: center;
+  }
+  .head-container {
+      padding-bottom: 1.5rem;
+      padding-top: 0.5rem;
+  }
+  #intro-image {
+      height: 200px;
+  }
+  #name-img {
+      width: 50%;
   }
 }
 /*These ones might not be the most responsive*/
