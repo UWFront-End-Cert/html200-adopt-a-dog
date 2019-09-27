@@ -39,12 +39,18 @@ header {
 
 .header-container {
   width: 100%;
-  height: 100px;
+  height: 18em;
   padding-bottom: 50px;
   background-color: #193366;
   float: left;
   clear: none;
   margin: 0;
+  background: linear-gradient(to top, #073B60, #000000);
+  background-image: url("../images/header-image.jpg");
+  background-size: cover;
+  margin: 0;
+  flex-shrink: 0;
+  flex-wrap: wrap;
 }
 
 .header-container-dogs {
@@ -94,6 +100,11 @@ header {
   padding-top: 50px;
   float: left;
   clear: none;
+}
+
+.hero-container figure img {
+  width: 100%;
+  height: auto;
 }
 
 .hero {
@@ -227,11 +238,6 @@ ul li a {
   box-sizing: border-box;
   overflow:hidden;
   text-align: left;
-}
-
-.aside {
-  float: left;
-  width: 55%;
 }
 
 .hero-text {
@@ -378,9 +384,11 @@ main {
 
 /* for-desktop { */
 @media (min-width: 1200px) {
-  .dog-container,
-  .dog-container-dogs {
+  .dog-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .dog-container-dogs {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .dog-box {
