@@ -10,7 +10,7 @@
     <a href="#main-content" class="hidden">Skip to main content</a>
     <header>
       <div class="head-container">
-        <section id="name-img">
+        <section id="id-img">
           <img src="images/adoptadog-logo.svg" alt="Company dog logo">
           <h1>Seattle's premiere dog adoption agency</h1>
         </section>
@@ -32,27 +32,27 @@
       <form method="GET" class="occupy-solo">
         <h5>Name</h5>
         <label>
-          <input class="basic-input" type="text" name="applicantName">
+          <input class="basic-input" type="text" id="applicantName">
         </label>
         <h5>Email Address</h5>
         <label>
-          <input class="basic-input" type="email" name="applicantEmail">
+          <input class="basic-input" type="email" id="applicantEmail">
         </label>
         <h5>Street Address</h5>
         <label>
-          <input class="basic-input" type="text" name="applicantAddress">
+          <input class="basic-input" type="text" id="applicantAddress">
         </label>
         <div class="city-state-zip-holder">
           <div class="city">
             <h5>City</h5>
             <label>
-              <input class="occupy-solo" type="text" name="applicantCity">
+              <input class="occupy-solo" type="text" id="applicantCity">
             </label>
           </div>
           <div class="state-zip">
             <h5>State</h5>
             <label>
-              <select name="state">
+              <select id="applicantState">
                 <option value="">Select</option>
               	<option value="AL">Alabama</option>
               	<option value="AK">Alaska</option>
@@ -111,22 +111,22 @@
           <div class="state-zip">
             <h5>Zip Code</h5>
             <label>
-              <input class="occupy-solo" type="number" name="applicantZip">
+              <input class="occupy-solo" type="number" id="applicantZip">
             </label>
           </div>
         </div>
         <h5>First Time Adopter?</h5>
         <fieldset>
           <label>
-            <input type="radio" name="first?" value="yes">Yes
+            <input type="radio" id="applicantFirst" value="yes">Yes
           </label>
           <label>
-            <input type="radio" name="first?" value="no">No
+            <input type="radio" id="first?" value="no">No
           </label>
         </fieldset>
         <h5>Pickup Location</h5>
         <label>
-          <select id="pickup-location" name="pickup">
+          <select class="pickup-location" id="applicantPickup">
             <option value="">Select</option>
           	<option value="P">Place</option>
           </select>
@@ -167,5 +167,6 @@
       </section>
     </footer>
     <script src="./JavaScript/main.js" charset="utf-8"></script>
+    <script src="./JavaScript/form.js" charset="utf-8"></script>
   </body>
 </html>

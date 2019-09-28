@@ -6,7 +6,5 @@ function adopt(fee) {
 }
 
 function inspect(name, breed, fee) {
-  alert(name);
-  alert(breed);
-  alert(fee);
+  alert('Name: ' + name + '\nBreed: ' + breed + '\nFee: ' + fee);
 }
