@@ -183,9 +183,8 @@ fieldset {
 
 .adopted {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  align-content: space-between;
 }
 
 .address {
