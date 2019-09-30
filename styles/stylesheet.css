@@ -181,23 +181,6 @@ fieldset {
   border: none;
 }
 
-.adopted {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.address {
-  height: 50%;
-  width: 20%;
-  margin: 1%;
-  padding: 1%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-between;
-}
-
 .adopted_dog {
   height: 50%;
   width: 40%;
