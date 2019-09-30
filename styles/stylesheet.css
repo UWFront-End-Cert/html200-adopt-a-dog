@@ -147,6 +147,10 @@ footer {
   color: white;
 }
 
+.footer_logo {
+  width: 45%;
+}
+
 .footer_nav {
   background-color: #404040;
   color: white;
