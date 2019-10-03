@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dog Adoption for Seattle">
+    <meta name="keywords" content="Dogs, Adoption, Seattle">
+    <meta name="author" content="Keith McDade">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt A Dog</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="images/adoptadog-logo.svg" alt="German Shepard shilouette facing right">
+        <h1>Seattle's premiere dog adoption agency</h1>
+      </div>
+      <div>
+        <img src="images/cart-icon.svg" alt="Cart Icon" >
+        <p>$1234.56</p>
+        <a href="checkout.html"> Checkout</a>
+      </div>
+    </header>
+
+    <nav>
+      <p>
+        <a href="index.html">Home</a>  /
+        <a href="dogs.html">Dogs</a>  /
+        <a href="blog.html">Blog</a>
+      </p>
+    </nav>
+
+
+    <section>
+      <div>
+        <h1>Checkout</h1>
+        <label> Name
+        <input type="text" name="userName">
+        </label>
+
+        <label> Email Address
+        <input type="email" name="emailAddress">
+        </label>
+
+        <label> Street Address
+        <input type="text" name="streetAddress">
+        </label>
+
+        <div>
+          <label> City
+          <input type="text" name="city">
+          </label>
+
+          <label> State
+            <select name="state">
+              <option value="">Please Select</option>
+            </select>
+          </label>
+
+          <label> Zip Code
+          <input type="text" name="zipCode">
+          </label>
+        </div>
+
+        <fieldset>
+          <legend>First Time Adopter?</legend>
+
+          <label>
+            Yes <input type="radio" name="firstTimeAdopter" value="yes">
+          </label>
+
+          <label>
+            <p>No</p> <input type="radio" name="firstTimeAdopter" value="no">
+          </label>
+        </fieldset>
+
+        <label> Pickup Location
+          <select name="pickupLocation">
+            <option value="">Please Select</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>Dogs Adopted</h2>
+        <div>
+          <img src="images/lucas-checkout.jpg" alt="">
+          <div>
+            <h4>Lucas</h4>
+            <p><strong>Cost to Adopt:</strong> 123.45</p>
+          </div>
+          <img src="images/duffy-checkout.jpg" alt="">
+          <div>
+            <h4>Duffy</h4>
+            <p><b>Cost to Adopt:</b> 123.45</p>
+          </div>
+        </div>
+        <article>
+          <h2>Total Adoption Cost</h2>
+          <p>Total Adoption Cost$1234.56</p>
+        </article>
+        <button type="button" name="submit">Submit</button>
+      </div>
+    </section>
+
+    <footer>
+      <img src="images/adoptadog-logo.svg" alt="German Shepard shilouette facing right">
+      <p>Pellentesque a sem porttitor, vestibulum ligula hendrerit, rutrum lorem. Vivamus feugiat ut ex ac porttitor. Curabitur bibendum risus nisi. Sed sagittis purus nec cursus iaculis. Vestibulum ornare metus at velit lobortis, vitae gravida ex dignissim. Fusce vestibulum auctor rhoncus.</p>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="dogs.html">Dogs</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <p>© 2018 Adoptagog, LLC | Seattle, WA</p>
+    </footer>
+
+  </body>
+</html>
