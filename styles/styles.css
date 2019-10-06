@@ -1,5 +1,6 @@
 * {
   font-family: Arial, sans-serif;
+  font-size: 1.5rem;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
@@ -29,7 +30,7 @@ header {
   font-family: 'Noto Serif', serif;
   font-style: italic;
   color: #81b741;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .button {
   background-color: #81b741;
@@ -57,7 +58,7 @@ nav {
   padding: .5rem 3rem .5rem;
   background-color: #ececec;
   color: #093c60;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   word-spacing: 1rem;
 }
@@ -72,10 +73,10 @@ article {
   padding: 3rem;
 }
 .intro-text {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: lighter;
-  line-height: 2.5rem;
-  color: #999;
+  line-height: 3rem;
+  color: #777;
 }
 article img {
   width: 100%;
@@ -84,12 +85,12 @@ h1 {
   font-family: 'Noto Serif', serif;
   font-weight: bolder;
   color: #093c60;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 h2 {
   font-family: 'Noto Serif', serif;
   color: #093c60;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .dog-container {
   display: flex;
@@ -159,17 +160,17 @@ footer img {
 }
 label {
   font-family: 'Noto Serif', serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #093c60;
 }
 legend {
   font-family: 'Noto Serif', serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #093c60;
 }
 button, input, select, textarea {
   font-family: Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   color: #444;
   box-sizing: border-box;
   display: block;
@@ -294,14 +295,14 @@ fieldset input {
   box-sizing: border-box;
 }
 .blog-intro {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: lighter;
-  line-height: 1.5rem;
+  line-height: 3em;
   color: #999;
 }
 .blog {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: lighter;
-  line-height: 1.5rem;
+  line-height: 3rem;
   color: #444;
 }
