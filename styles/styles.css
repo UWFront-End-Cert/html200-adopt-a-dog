@@ -43,7 +43,7 @@ header {
 }
 .button a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 .head-container {
   display: flex;
@@ -297,8 +297,8 @@ fieldset input {
 .blog-intro {
   font-size: 2rem;
   font-weight: lighter;
-  line-height: 3em;
-  color: #999;
+  line-height: 3rem;
+  color: #888;
 }
 .blog {
   font-size: 2rem;
