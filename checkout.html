@@ -2,21 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Adoptadog Blog</title>
+    <title>Adoptadog | Seattle's Premier Dog Adoption Agency</title>
+    <script src="https://kit.fontawesome.com/4b01e0c907.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <a href="#main-content" class="skip-link">Skip to main content</a>
-      <a href="index.html"><img src="images/adoptadog-logo.svg" alt="Adoptadog logo"></a>
-      <p class="large-header-text">Seattle's premiere dog adoption agency</p>
-    <div>
-      <p><img src="images/cart-icon.svg" alt="shopping cart icon"> $1234.56</p>
-      <p class="button"><a href="checkout.html">Checkout</a></p>
-    </div>
+      <p><a href="#main-content" class="skip-link">Skip to main content</a></p>
+      <div class="head-container">
+        <div class="head-box">
+          <p><a href="index.html"><img class="logo-img" src="images/adoptadog-logo.svg" alt="Adoptadog logo"></a></p>
+          <p class="tagline-text">Seattle&rsquo;s premier dog adoption agency</p>
+        </div>
+        <div class="head-box">
+          <p><i class="fas fa-shopping-cart"></i> $1234.56 &nbsp;&nbsp; <span class="button"><a href="checkout.html">Checkout</a></span></p>
+        </div>
+      </div>
+    </header>
     <nav>
       <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
     </nav>
-    </header>
     <article id="main-content">
       <h1>Checkout</h1>
       <form method="get">
@@ -88,8 +94,8 @@
             </select>
           <fieldset class="radio">
           <legend>First Time Adopter?</legend>
-          <label><input type="radio" name="adoptFirsttime" value="yes">Yes</label>
-          <label><input type="radio" name="adoptFirsttime" value="no">No</label>
+          <label><input type="radio" name="adoptFirsttime" value="yes">Yes<span class=rodeo></span></label>
+          <label><input type="radio" name="adoptFirsttime" value="no">No<span class=rodeo></span></label>
         </fieldset>
         <label>Pickup Location</label>
         <select name="adoptPickup">
@@ -98,16 +104,20 @@
           <option value="Mountlake Terrace">Mountlake Terrace</option>
         </select>
         <h2>Dogs adopted</h2>
-          <div>
-            <h2>Lucas</h2>
+        <div class="adopted-container">
+          <div class="adopted-box">
             <img src="images/lucas-card.jpg" alt="lucas is an exuberant black dog">
-            <p><strong>Cost to Adopt:</strong> $123.45
+            <p class="adoptee">Lucas</p>
+            <p><strong>Cost to Adopt:</strong> $123.45</p>
+          </div>
+          <div class="adopted-box">
+            <img src="images/duffy-card.jpg" alt="duffy is a brown and white pitbull with blue eyes">
+            <p class="adoptee">Duffy</p>
+            <p><strong>Cost to Adopt:</strong> $123.45</p>
+          </div>
         </div>
-        <div>
-          <h2>Duffy</h2>
-          <img src="images/duffy-card.jpg" alt="duffy is a brown and white pitbull with blue eyes">
-          <p><strong>Cost to Adopt:</strong> $123.45
-        </div>
+        <h2>Total Adoption Cost</h2>
+        <p>$1,235.56</p>
         <input type="submit" value="Submit">
       </form>
   </article>
