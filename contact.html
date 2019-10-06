@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Cody's Portfolio Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="header-container">
+        <div class="header">
+          <div class="logo">
+            <a href="index.html"><img src="images/codyli.jpg" height="300" alt="self branded logo for myself"></a>
+          </div>
+          <p id="header-line"> a peek into the looking glass of myself & my works. </p>
+          <nav>
+            <ul>
+              <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="about.html"><i class="fas fa-id-card"></i> About Me</a></li>
+              <li><a href="projects.html"><i class="fas fa-folder"></i> Projects</a></li>
+              <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-container">
+        <div class="main-body">
+          <article>
+            <h2>Contact Me:</h2>
+            <form method="get">
+              <label>Your name:
+                <input type="text" name="contacteeName">
+              </label>
+              <label>Your email:
+                <input type="email" name="contacteeEmail">
+              </label>
+              <fieldset>
+                <legend>What are you contacting me about today? Check all that apply. </legend>
+                <label>
+                  <input type="checkbox" name="what" value="personal">
+                  Personal
+                </label>
+                <label>
+                  <input type="checkbox" name="what" value="business">
+                  Business
+                </label>
+                <label>
+                  <input type="checkbox" name="what" value="other">
+                  Other
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>How important is your reason for contacting?</legend>
+                <label>
+                  <input type="radio" name="importance" value="little">
+                  Little
+                </label>
+                <label>
+                  <input type="radio" name="importance" value="semi">
+                  Semi
+                </label>
+                <label>
+                  <input type="radio" name="importance" value="very">
+                  Very
+                </label>
+              </fieldset>
+              <label>Message:
+                <textarea name="contacteeMessage" rows="8" cols="80"></textarea>
+              </label>
+              <input type="submit" value="Send">
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="footer">
+        <p>Made by Cody Li in Atom.</p>
+      </div>
+    </footer>
+  </body>
+</html>
