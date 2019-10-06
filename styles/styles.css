@@ -13,7 +13,7 @@ top: auto;
 }
 .skip-link:focus,.skip-link:active,.skip-link:hover {
   left: 0;
-  color: #444444;
+  color: #444;
   font-weight: bold;
   text-decoration: none;
 }
@@ -21,7 +21,7 @@ header {
   background-color: #093c60;
   padding: 0rem 3rem 2rem;
   text-align: left;
-  color: #ffffff;
+  color: #fff;
 }
 .logo-img {
   width: 100%;
@@ -34,7 +34,7 @@ header {
 }
 .button {
   background-color: #81b741;
-  color: #ffffff;
+  color: #fff;
   padding: .5rem;
   border-radius: .5rem;
   font-weight: bold;
@@ -76,7 +76,7 @@ article {
   font-size: 2rem;
   font-weight: lighter;
   line-height: 3rem;
-  color: #777;
+  color: #888;
 }
 article img {
   width: 100%;
@@ -235,10 +235,10 @@ fieldset input {
 }
 .rodeo {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   background-color: #ececec;
   border-radius: 50%;
 }
@@ -257,10 +257,10 @@ fieldset input {
   display: block;
 }
 .radio .rodeo:after {
-  top: 6px;
-  left: 7px;
-  width: 7px;
-  height: 7px;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: white;
 }
