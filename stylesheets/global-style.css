@@ -33,7 +33,7 @@ header {
   color: #99CC33;
 }
 
-main, section {
+aside {
   margin-left: auto;
   margin-right: auto;
 }
@@ -117,7 +117,6 @@ main, section {
 }
 
 .hero-container {
-  width: 100%;
   height: auto;
   padding-bottom: 50px;
   padding-top: 50px;
@@ -125,7 +124,6 @@ main, section {
 }
 
 .hero-container figure img {
-  width: 100%;
   height: auto;
 }
 
@@ -254,7 +252,6 @@ ul li a {
 }
 
 .hero {
-  width: 100%;
   padding: 10px;
   box-sizing: border-box;
   overflow:hidden;
@@ -267,9 +264,9 @@ ul li a {
 }
 
 .blog-post {
-  width: 100%;
   overflow:hidden;
   text-align: left;
+  float: left;
 }
 
 aside h2 {
@@ -283,14 +280,19 @@ aside h2 {
   padding: 10px;
 }
 
+.layout {
+  width: 70%;
+  float: left;
+}
+
 aside {
   float: right;
-  width: 25%;
+  width: 20%;
   min-width: 10%;
   padding: 20px;
 }
 
-.hero-container, .dog-container, .see-dogs {
+.hero-container, .dog-container {
   float: left;
 }
 
@@ -348,10 +350,6 @@ h1 {
   color: #2952a3;
 }
 
-main {
-  max-width: 70%;
-}
-
 /* for-phone-only */
 @media (max-width: 599px) {
 
@@ -383,10 +381,19 @@ main {
 
   .aside {
     margin: auto;
+    float: right;
   }
 
-  .aside img {
-    width: 25%;
+  .aside-text {
+    margin: auto;
+    float: right;
+    padding-left: 15%;
+  }
+
+  .blog-post img {
+    max-width: 25%;
+    float: left;
+    padding-left: 15%;
   }
 }
 

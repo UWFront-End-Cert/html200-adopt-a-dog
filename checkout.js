@@ -8,3 +8,8 @@ function addToTotal(price) {
   cartTotal += price;
   alert(`Your new total is: $${cartTotal}`);
 }
+
+$('form: input').submit(function (event) {
+  event.preventDefault();
+});
+console.log(values);
