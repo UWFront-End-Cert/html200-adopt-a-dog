@@ -33,6 +33,11 @@ header {
   color: #99CC33;
 }
 
+main {
+  width: 80%;
+  margin: auto;
+}
+
 aside {
   margin-left: auto;
   margin-right: auto;
@@ -188,6 +193,8 @@ aside {
 
 nav ul {
   list-style-type: none;
+  width: 80%;
+  margin-left: 10%;
 }
 
 nav ul li {
