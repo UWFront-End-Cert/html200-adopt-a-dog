@@ -22,14 +22,12 @@ const data = [{
 
 //template
 function renderTemplate(blog) {
-  const { imgSrc, imgAlt, title, body } = blog;
+  const {imgSrc, imgAlt, title, body} = blog;
   return `
-    <img src=${imgSrc} alt="${imgAlt}">
-    <div class="aside-text"><h2>${title}</h2>
+    <img src=${imgSrc} alt="${imgAlt}"><div class="aside-text"><h2>${title}</h2>
     ${body}</div>`;
 }
 
-//adds h1 element
 const heading = document.createElement('h1')
 heading.innerHTML = 'Adoptadog Blog';
 document.getElementById('main-content').appendChild(heading);
