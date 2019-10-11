@@ -145,15 +145,15 @@ aside {
   font-weight: bold;
 	float: left;
 	margin-top: 15px;
-	margin-left: 25px;
+	margin-left: 10%;
 }
 
 .checkout {
   display: inline-flex;
-  flex-direction: column-reverse;
   flex-flow: column wrap;
   float: right;
   padding: 10px;
+  margin-right: 10%;
 }
 
 .button {
