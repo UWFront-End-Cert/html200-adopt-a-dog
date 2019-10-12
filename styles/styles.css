@@ -13,7 +13,7 @@ top: auto;
 }
 .skip-link:focus,.skip-link:active,.skip-link:hover {
   left: 0;
-  color: #444;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
 }
@@ -80,6 +80,7 @@ article {
 }
 article img {
   width: 100%;
+  display: block;
 }
 h1 {
   font-family: 'Noto Serif', serif;
@@ -131,7 +132,7 @@ h2 {
   margin: 2% 15% 0;
   background-color: #ececec;
   color: #093c60;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   border-radius: .5rem;
   padding: .5rem;
@@ -285,14 +286,7 @@ fieldset input {
   font-size: 1.5rem;
 }
 .blog-container {
-  display: flex;
-  flex-flow: row wrap;
-  position: relative;
-}
-.blog-box {
-  width: 100%;
-  margin: 1rem 0rem 1rem;
-  box-sizing: border-box;
+  display: block;
 }
 .blog-intro {
   font-size: 2rem;
@@ -305,4 +299,96 @@ fieldset input {
   font-weight: lighter;
   line-height: 3rem;
   color: #444;
+}
+
+@media screen and (min-width: 992px) {
+* {
+    font-size: 1rem;
+  }
+header {
+    padding: 0rem 6rem 4rem;
+  }
+.logo-img {
+    width: 100%;
+  }
+.tagline-text {
+    font-size: 1.5rem;
+  }
+.button {
+    width: 200px;
+  }
+.head-box {
+    min-width: 200px;
+  }
+nav {
+    padding: 1rem 12rem 1rem;
+  }
+nav p {
+    font-size: 1.5rem;
+}
+nav p a {
+    font-size: 1.5rem;
+}
+article {
+    padding: 3rem 12rem 3rem;
+  }
+.intro-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+article img {
+    width: 400px;
+    display: inline;
+    float: left;
+    margin: 0rem 3rem 0rem 0rem;
+  }
+h1 {
+    font-size: 2.5rem;
+  }
+h2 {
+    font-size: 2rem;
+  }
+.dog-container {
+  clear: both;
+  justify-content: space-between;
+}
+.dog-box {
+    width: 20%;
+    margin: 4rem 4rem 0rem 0rem;
+}
+footer {
+  padding: 3rem 35% 3rem;
+  line-height: 2rem;
+}
+footer img {
+  width: 50%;
+  margin: 0 25% 0;
+}
+.large-button {
+  width: 20%;
+  margin: 4rem 40% 2rem;
+}
+.large-button a {
+  font-size: 1.5rem;
+}
+.blog-container {
+  display: grid;
+  grid-template-columns: 400px auto;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+.blog-box1 {
+  grid-column: 1 / 2;
+}
+.blog-box2 {
+  grid-column: 2 / 2;
+}
+.blog-intro {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+.blog {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
 }
