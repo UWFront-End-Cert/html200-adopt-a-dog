@@ -106,6 +106,7 @@ h2 {
 }
 .dog-box img {
   width: 100%;
+  margin-bottom: .5rem;
 }
 .dog-box h2 {
   padding: 0rem 2rem 0rem;
@@ -333,6 +334,111 @@ article {
     padding: 3rem 12rem 3rem;
   }
 .intro-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+article img {
+    width: 300px;
+    display: inline;
+    float: left;
+    margin: 3rem 1.5rem 1rem 0rem;
+  }
+h1 {
+    font-size: 2.5rem;
+  }
+h2 {
+    font-size: 1.5rem;
+  }
+.dog-container {
+  clear: both;
+  justify-content: space-between;
+}
+.dog-box {
+    width: 45%;
+    margin: 2rem 2rem 0rem 0rem;
+}
+.dog-box img {
+  margin-top: 0;
+}
+.dog-box h2 {
+  padding: 0rem 1rem 0rem;
+}
+.dog-box p {
+  padding: 0rem 1rem 0rem;
+}
+footer {
+  padding: 3rem 20% 3rem;
+  line-height: 2rem;
+}
+footer img {
+  width: 60%;
+  margin: 0 20% 0;
+}
+.large-button {
+  width: 30%;
+  margin: 4rem 35% 2rem;
+}
+.large-button a {
+  font-size: 1.25rem;
+}
+.blog-container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+.blog-box1 {
+  grid-column: 1 / 2;
+}
+.blog-box1 img {
+  width: 200px;
+  margin-top: 1.5rem;
+}
+.blog-box2 {
+  grid-column: 2 / 2;
+}
+.blog-intro {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.blog {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+}
+
+@media screen and (min-width: 1200px) {
+* {
+    font-size: 1rem;
+  }
+header {
+    padding: 0rem 6rem 4rem;
+  }
+.logo-img {
+    width: 100%;
+  }
+.tagline-text {
+    font-size: 1.5rem;
+  }
+.button {
+    width: 200px;
+  }
+.head-box {
+    min-width: 200px;
+  }
+nav {
+    padding: 1rem 12rem 1rem;
+  }
+nav p {
+    font-size: 1.5rem;
+}
+nav p a {
+    font-size: 1.5rem;
+}
+article {
+    padding: 3rem 12rem 3rem;
+  }
+.intro-text {
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -346,7 +452,7 @@ h1 {
     font-size: 2.5rem;
   }
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 .dog-container {
   clear: both;
@@ -354,7 +460,13 @@ h2 {
 }
 .dog-box {
     width: 20%;
-    margin: 4rem 4rem 0rem 0rem;
+    margin: 2rem 2rem 0rem 0rem;
+}
+.dog-box h2 {
+  padding: 0rem 1rem 0rem;
+}
+.dog-box p {
+  padding: 0rem 1rem 0rem;
 }
 footer {
   padding: 3rem 35% 3rem;
@@ -365,11 +477,11 @@ footer img {
   margin: 0 25% 0;
 }
 .large-button {
-  width: 20%;
-  margin: 4rem 40% 2rem;
+  width: 25%;
+  margin: 4rem 37.5% 2rem;
 }
 .large-button a {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .blog-container {
   display: grid;
