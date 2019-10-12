@@ -32,18 +32,49 @@ header {
   color: #81b741;
   font-size: 1.5rem;
 }
-.button {
-  background-color: #81b741;
-  color: #fff;
-  padding: .5rem;
+button {
+  padding: 0;
+  line-height: inherit;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.checkout {
+  padding: .5rem 1rem;
   border-radius: .5rem;
   font-weight: bold;
-  text-align: center;
-  width: 100px;
+  color: #fff;
+  background-color: #81b741;
+  width: 200px;
+}
+.checkout a {
+  color: #fff;
+  text-decoration: none;
+}
+.checkout:hover {
+  background-color: #fff;
+  color: #81b741;
+}
+.checkout:hover a {
+  color: #81b741;
+}
+.button {
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #81b741;
+  width: 80%;
+  margin: 1rem 10% 1.5rem;
 }
 .button a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #093c60;
 }
 .head-container {
   display: flex;
@@ -170,7 +201,7 @@ legend {
   font-size: 2rem;
   color: #093c60;
 }
-button, input, select, textarea {
+input, select, textarea {
   font-family: Arial, sans-serif;
   font-size: 2rem;
   color: #444;
@@ -315,9 +346,6 @@ header {
 .tagline-text {
     font-size: 1.5rem;
   }
-.button {
-    width: 200px;
-  }
 .head-box {
     min-width: 200px;
   }
@@ -420,9 +448,6 @@ header {
 .tagline-text {
     font-size: 1.5rem;
   }
-.button {
-    width: 200px;
-  }
 .head-box {
     min-width: 200px;
   }
@@ -494,6 +519,9 @@ footer img {
 }
 .blog-box2 {
   grid-column: 2 / 2;
+}
+.blog-box1 img {
+  width: 400px;
 }
 .blog-intro {
   font-size: 1.25rem;
