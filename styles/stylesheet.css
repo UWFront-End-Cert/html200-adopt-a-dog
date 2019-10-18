@@ -1,6 +1,7 @@
 
 /*Style for header starts here*/
 header {
+  background-image: url("../images/header-image.jpg");
   background-color: #0f3357;
   color: white;
   font-weight: bold;
@@ -56,11 +57,10 @@ a {
 /*End header style and begin index page style*/
 
 .intro {
-  width: 65%;
+  float: left;
+  width: 40%;
   margin-left: 15%;
-  margin-right: 15%;
   margin-top:2%;
-  margin-bottom: 5%;
   font-size: 140%;
 }
 
@@ -69,13 +69,16 @@ p {
 }
 
 .golden {
+  display: block;
+  float: none;
+  width: 100%;
   padding-right: 5%;
   float: left;
 }
 
 h2 {
   color: #0f3357;
-  font-size: 250%;
+  font-size: 200%;
   font-family: 'PT Serif', serif;
 }
 
@@ -85,10 +88,10 @@ a {
 
 .flex-container {
   display: flex;
+  float: left;
+  width: 40%;
   margin-left: 15%;
-  margin-right: 15%;
   margin-top:2%;
-  margin-bottom: 2%;
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: space-between;
@@ -126,13 +129,25 @@ h4 {
 }
 
 /*End dog card styles on index page*/
+aside {
+  display: block;
+  float: right;
+  width: 20%;
+  margin-right: 15%;
+}
+
+.aside_image {
+  width: 80%;
+}
+
 .see_more {
   background-color: #e6e6e6;
   color: #0f3357;
   font-size: 110%;
   width: 10%;
-  padding: 0% 2% 0% 2%;
-  margin: 1% 45%;
+  padding-left: 1%;
+  margin-top: 1%;
+  margin-left: 30%;
 }
 
 /*Start footer styles*/
