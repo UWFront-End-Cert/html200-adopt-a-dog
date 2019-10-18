@@ -8,6 +8,13 @@ header {
   text-align: left;
 }
 
+@media screen and (max-width: 600px) {
+  header {
+    background-image: none;
+    background-color: #0f3357;
+  }
+}
+
 .buy {
   width: 5%;
   margin-top: 1%;
@@ -61,7 +68,14 @@ a {
   width: 40%;
   margin-left: 15%;
   margin-top:2%;
-  font-size: 140%;
+  font-size: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    width: 80%;
+    margin-left 15%;
+  }
 }
 
 p {
@@ -74,6 +88,7 @@ p {
   width: 100%;
   padding-right: 5%;
   float: left;
+  margin-bottom: 5%;
 }
 
 h2 {
@@ -84,6 +99,24 @@ h2 {
 
 a {
   color: inherit;
+}
+
+aside {
+  display: block;
+  float: right;
+  width: 20%;
+  margin-right: 15%;
+  font-size: 80%;
+}
+
+.aside_image {
+  width: 80%;
+}
+
+@media screen and (max-width: 760px) {
+  aside {
+    display: none;
+  }
 }
 
 .flex-container-home {
@@ -98,6 +131,13 @@ a {
   font-size: smaller;
 }
 
+@media screen and (max-width: 768px) {
+  .flex-container-home {
+    width: 80%;
+  }
+}
+
+
 .box-home {
   width: 30%;
   margin-top: 1%;
@@ -106,24 +146,16 @@ a {
   padding: 1%;
 }
 
-.flex-container {
-  display: flex;
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top:2%;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-content: space-between;
+@media screen and (max-width: 768px), (min-width: 576px) {
+  .box-home {
+    width: 45%;
+  }
 }
 
-.box {
-  height: 50%;
-  width: 20%;
-  margin: 1%;
-  border: 2px solid #e6e6e6;
-  padding: 1%;
-  font-size: smaller;
+@media screen and (max-width: 576) {
+  .box-home {
+    width: 80%;
+  }
 }
 
 .dog_photo {
@@ -150,16 +182,6 @@ h4 {
 }
 
 /*End dog card styles on index page*/
-aside {
-  display: block;
-  float: right;
-  width: 20%;
-  margin-right: 15%;
-}
-
-.aside_image {
-  width: 80%;
-}
 
 .see_more {
   background-color: #e6e6e6;
@@ -198,6 +220,50 @@ footer {
 .intro_blurb {
   margin-left: 15%;
   margin-top: 2%;
+}
+
+.flex-container {
+  display: flex;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top:2%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.box {
+  height: 50%;
+  width: 20%;
+  margin: 1%;
+  border: 2px solid #e6e6e6;
+  padding: 1%;
+  font-size: smaller;
+}
+
+/*Start styles for blog page*/
+
+.blog_article {
+  width: 75%;
+  margin-left: 15%;
+  margin-top:5%;
+  margin-bottom: 5%
+  font-size: 85%;
+}
+
+.blog_photo {
+  padding-right: 5%;
+  float: left;
+  width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  .blog_photo {
+    display: block;
+    float: none;
+    width: 100%;
+  }
 }
 
 /*Start styles for checkout page*/
