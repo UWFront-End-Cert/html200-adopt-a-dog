@@ -95,12 +95,13 @@ a {
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: space-between;
+  font-size: smaller;
 }
 
 .box {
-  height: 50%;
-  width: 20%;
-  margin: 1%;
+  width: 30%;
+  margin-top: 1%;
+  margin-bottom: 1%;
   border: 2px solid #e6e6e6;
   padding: 1%;
 }
