@@ -86,7 +86,7 @@ a {
   color: inherit;
 }
 
-.flex-container {
+.flex-container-home {
   display: flex;
   float: left;
   width: 40%;
@@ -98,12 +98,32 @@ a {
   font-size: smaller;
 }
 
-.box {
+.box-home {
   width: 30%;
   margin-top: 1%;
   margin-bottom: 1%;
   border: 2px solid #e6e6e6;
   padding: 1%;
+}
+
+.flex-container {
+  display: flex;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top:2%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.box {
+  height: 50%;
+  width: 20%;
+  margin: 1%;
+  border: 2px solid #e6e6e6;
+  padding: 1%;
+  font-size: smaller;
 }
 
 .dog_photo {
