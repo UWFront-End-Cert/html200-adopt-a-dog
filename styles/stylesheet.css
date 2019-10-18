@@ -71,7 +71,7 @@ a {
   font-size: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .intro {
     width: 80%;
     margin-left 15%;
@@ -113,7 +113,7 @@ aside {
   width: 80%;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   aside {
     display: none;
   }
@@ -146,13 +146,13 @@ aside {
   padding: 1%;
 }
 
-@media screen and (max-width: 768px), (min-width: 576px) {
+@media screen and (max-width: 768px) {
   .box-home {
     width: 45%;
   }
 }
 
-@media screen and (max-width: 576) {
+@media screen and (max-width: 576px) {
   .box-home {
     width: 80%;
   }
