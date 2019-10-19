@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>ADOPT A DOG</title>
+    <title>BLOG</title>
      <link rel="stylesheet" type="text/css" href="styles/styles-mock.css">
 
      </head>
@@ -17,25 +17,25 @@
           </nav>
      <section>
 
-          <h3> LOREM IPSUM</h3>
+          <h3> BLOG</h3>
           <article>
-          <h3> LOREM IPSUM </h3>
-                   <img src="images/home-intro.jpg" alt="guy hugging a dog" />
-                   <p>
-                 Lorem Ipsum is simply dummy text of the printing
+          <h3> Second Life, second home </h3>
+                    <img src="images/blog-1.jpg" alt="lady & dog" />
+                 <p> Lorem Ipsum is simply dummy text of the printing
                     and typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown printer
                      took a galley of type and scrambled it to make a type specimen book.
                    </p>
           </article>
 
-           <article>
+<!---     <article>
            <h5>
 
 
            &mdash; erlbuenbrazo
             </h5>
            </article>
+
 
           <article>
                       <h3>Here are all of our Dogs</h3>
@@ -85,7 +85,7 @@
               </article>
 
        </sidebar>
-
+-->
 
 
       <footer class="flip">
