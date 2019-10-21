@@ -8,13 +8,6 @@ header {
   text-align: left;
 }
 
-@media screen and (max-width: 600px) {
-  header {
-    background-image: none;
-    background-color: #0f3357;
-  }
-}
-
 .buy {
   width: 5%;
   margin-top: 1%;
@@ -113,7 +106,22 @@ aside {
   width: 80%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
+  .aside_image {
+    width: 65%;
+    float: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  aside {
+    width: 15%;
+    float: right;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
   aside {
     display: none;
   }
@@ -131,9 +139,17 @@ aside {
   font-size: smaller;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .flex-container-home {
-    width: 80%;
+    width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flex-container-home {
+    float: center;
+    width: 50%;
   }
 }
 
@@ -146,15 +162,16 @@ aside {
   padding: 1%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .box-home {
-    width: 45%;
+    width: 39%;
   }
 }
 
 @media screen and (max-width: 576px) {
   .box-home {
-    width: 80%;
+    width: 100%;
+    float: center;
   }
 }
 
@@ -240,6 +257,18 @@ footer {
   border: 2px solid #e6e6e6;
   padding: 1%;
   font-size: smaller;
+}
+
+@media screen and (max-width: 991px) {
+  .box {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .box {
+    width: 80%;
+  }
 }
 
 /*Start styles for blog page*/
