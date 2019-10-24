@@ -214,7 +214,7 @@ h4 {
 /*Start footer styles*/
 
 footer {
-  background-color: #404040;
+  background-color: #0f3357;
   font-size: 100%;
   padding: 75px 200px;
   margin: 0px;
@@ -223,7 +223,7 @@ footer {
 }
 
 .footer_logo {
-  width: 45%;
+  width: 35%;
 }
 
 .footer_nav {
