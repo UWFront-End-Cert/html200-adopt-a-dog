@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 /*Style for header starts here*/
@@ -214,7 +214,6 @@ h4 {
 /*Start footer styles*/
 
 footer {
-  clear: right;
   background-color: #404040;
   font-size: 100%;
   padding: 75px 200px;
@@ -291,7 +290,7 @@ footer {
 .blog_photo {
   padding-right: 5%;
   float: left;
-  width: 30%;
+  width: 25%;
 }
 
 @media screen and (max-width: 600px) {
