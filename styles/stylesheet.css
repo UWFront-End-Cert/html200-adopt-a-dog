@@ -67,7 +67,7 @@ a {
 @media screen and (max-width: 768px) {
   .intro {
     width: 80%;
-    margin-left 15%;
+    margin-left: 15%;
   }
 }
 
@@ -109,7 +109,6 @@ aside {
 @media screen and (max-width: 991px) {
   .aside_image {
     width: 65%;
-    float: center;
   }
 }
 
@@ -148,8 +147,7 @@ aside {
 
 @media screen and (max-width: 767px) {
   .flex-container-home {
-    float: center;
-    width: 50%;
+    width: 75%;
   }
 }
 
@@ -171,7 +169,6 @@ aside {
 @media screen and (max-width: 576px) {
   .box-home {
     width: 100%;
-    float: center;
   }
 }
 
@@ -250,6 +247,12 @@ footer {
   align-content: space-between;
 }
 
+@media screen and (max-width: 567px) {
+  .flex-container {
+    width: 80%;
+  }
+}
+
 .box {
   height: 50%;
   width: 20%;
@@ -277,7 +280,7 @@ footer {
   width: 75%;
   margin-left: 15%;
   margin-top:5%;
-  margin-bottom: 5%
+  margin-bottom: 5%;
   font-size: 85%;
 }
 
