@@ -359,18 +359,19 @@ footer {
   align-content: space-between;
 }
 
+@media screen and (max-width: 576px) {
+  .flex-container {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .flex-container {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-  }
-}
-
-@media screen and (max-width: 567px) {
-  .flex-container {
-    width: 100%;
-    margin-left: 5%;
   }
 }
 
@@ -389,7 +390,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 576px) {
   .box {
     width: 90%;
   }
@@ -487,7 +488,7 @@ fieldset {
   }
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 576px) {
   .dog_checkout {
     width: 75%;
   }
