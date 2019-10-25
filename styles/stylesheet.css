@@ -5,7 +5,7 @@ body {
 
 /*Style for header starts here*/
 header {
-  background: linear-gradient(to right, #0f3357, #39c639);
+  background: linear-gradient(to right, #0f3357, #39c639, white);
   background-image: url("../images/header-image.jpg");
   background-size: cover;
   color: white;
