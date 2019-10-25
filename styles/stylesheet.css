@@ -20,6 +20,12 @@ header {
   margin-right: 20%;
 }
 
+@media screen and (max-width: 768px) {
+  .buy {
+    width: 10%;
+  }
+}
+
 .cart {
   width: 40%;
   height: 20%;
@@ -28,7 +34,15 @@ header {
 
 @media screen and (max-width: 576px) {
   .cart {
-    width: 70%;
+    width: 60%;
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 577px), (max-width: 768px) {
+  .cart {
+    width: 40%;
+    font-size: 80%;
   }
 }
 
