@@ -334,6 +334,20 @@ footer {
   margin-top: 2%;
 }
 
+@media screen and (max-width: 768px) {
+  .intro_blurb {
+    width: 60%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .intro_blurb {
+    width: 90%;
+    margin-left: 20px;
+  }
+}
+
 .flex-container {
   display: flex;
   width: 70%;
@@ -345,9 +359,18 @@ footer {
   align-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .flex-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
 @media screen and (max-width: 567px) {
   .flex-container {
-    width: 80%;
+    width: 100%;
+    margin-left: 5%;
   }
 }
 
@@ -368,7 +391,7 @@ footer {
 
 @media screen and (max-width: 567px) {
   .box {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -409,6 +432,12 @@ form {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  form {
+    margin-left: 5%;
+  }
+}
+
 fieldset {
   border: none;
 }
@@ -442,6 +471,19 @@ fieldset {
   position: relative;
   align-items: flex-start;
   float: left;
+  width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .dog_checkout {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .dog_checkout {
+    width: 75%;
+  }
 }
 
 .submit_button {
