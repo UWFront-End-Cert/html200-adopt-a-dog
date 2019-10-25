@@ -98,8 +98,15 @@ a {
 
 @media screen and (max-width: 768px) {
   .intro {
-    width: 80%;
-    margin-left: 15%;
+    width: 60%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .intro {
+    width: 90%;
+    margin-left: 20px;
   }
 }
 
@@ -152,6 +159,13 @@ aside {
   }
 }
 
+@media screen and (max-width: 768px) {
+  aside {
+    width: 25%;
+    margin-right: 5%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   aside {
     display: none;
@@ -177,9 +191,17 @@ aside {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .flex-container-home {
-    width: 75%;
+    width: 60%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .flex-container-home {
+    width: 90%;
+    margin-left: 20px;
   }
 }
 
@@ -195,6 +217,12 @@ aside {
 @media screen and (max-width: 991px) {
   .box-home {
     width: 39%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-home {
+    width: 45%;
   }
 }
 
