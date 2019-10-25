@@ -5,9 +5,9 @@ body {
 
 /*Style for header starts here*/
 header {
+  background: linear-gradient(to right, #0f3357, #39c639);
   background-image: url("../images/header-image.jpg");
   background-size: cover;
-  background-color: #0f3357;
   color: white;
   font-weight: bold;
   text-align: left;
