@@ -405,6 +405,13 @@ footer {
   font-size: 85%;
 }
 
+@media screen and (max-width: 768px) {
+  .blog_article {
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+
 .blog_photo {
   padding-right: 5%;
   float: left;
