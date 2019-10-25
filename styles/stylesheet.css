@@ -151,6 +151,12 @@ aside {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .aside_image {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 991px) {
   aside {
     width: 15%;
