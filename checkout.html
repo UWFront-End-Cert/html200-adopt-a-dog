@@ -28,30 +28,45 @@
   <input type="text" name="name">
   <br>
   Email Address:<br>
-  <input type="text" name="email">
+  <input type="email" name="email">
+  <br>
   Street Address:<br>
   <input type="text" name="street-add">
+  <br>
   City:<br>
   <input type="text" name="city">
+  <br>
   State:<br>
-  <input type="text" name="state">
+  <select name="region">
+  <option value="WA">WA</option>
+  <option value="OR">OR</option>
+  </select>
+<br>
   zip Code:<br>
-  <input type="text" name="zip">
-  First time adopter?
-  <input type="radio" name="yes" value="yes">
-  <input type="radio" name="no" value="no">
-  Pickup location
-
+  <input type="text" name="zip"><br>
+  First time adopter?<br>
+  <input type="radio" name="first-time-adopter" value="yes"> Yes<br>
+  <input type="radio" name="first-time-adopter" value="no"> No <br>
+  Pickup location:
+  <select name="city">
+  <option value="Seattle">Seattle</option>
+  <option value="Portland">Portland</option>
+</select><br>
   Dogs adopted
+  <!--correct shopping choice will populate here after javascript is added-->
+  <p>Lucas</p>
+  <p>Duffy</p>
+
   <br><br>
-  <input type="submit" value="Submit">
-</form>
-
-
-  <section/>
+  <h3>Total Adoption cost</h3>
+  <!--total cost will populate here-->
+  <p>$1234.56</p>
+  <input type="submit" value="Send" name="submit">
+  </form>
+</section>
 
 <footer>
-    <h1>adoptadog-logo placeholder</h1>
+    <h2>adoptadog-logo placeholder</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     <a href="index.html">Home</a>
     <a href="dogs.html">Dogs </a>
