@@ -5,7 +5,7 @@ body {
 
 /*Style for header starts here*/
 header {
-  background: linear-gradient(to right, #0f3357, #39c639, white);
+  background: linear-gradient(to right, #0f3357, white);
   background-image: url("../images/header-image.jpg");
   background-size: cover;
   color: white;
@@ -299,10 +299,16 @@ h4 {
 footer {
   background-color: #0f3357;
   font-size: 100%;
-  padding: 75px 200px;
+  padding: 75px 300px;
   margin: 0px;
   text-align: center;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 50px 150px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -311,17 +317,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 576px) {
-  .footer_text {
-    display: none;
-  }
-}
-
 .footer_logo {
-  width: 35%;
+  width: 45%;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 576px) {
   .footer_logo {
     width: 80%;
   }
