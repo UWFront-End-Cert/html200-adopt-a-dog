@@ -1,0 +1,60 @@
+* {box-sizing: border-box; }
+* {font-family: "arial", san-seif; }
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+.checkout {
+  float: right;
+}
+.header {
+  background-color: rgb(9,60,96);
+  padding:30px;
+}
+.footer {
+  background-color: rgb(9,60,96);
+  padding:30px;
+  color: white;
+  text-align: center;
+}
+h1 {
+  font-family: "Comic Sans MS", sans-serif;
+  color: rgb(129,183,65)
+}
+nav ul {
+  display: block;
+  text-align: left;
+  background-color: rgb(236,236,236)
+}
+nav ul li {
+  display: inline;
+  font-size: 20px;
+}
+li:before {
+  content: "/";
+}
+li:first-child:before {
+  content: "";
+  padding-right: 0;
+}
+.nav li a {
+  display: inline;
+  color: rgb(9.60.96);
+  font-weight: bold;
+  text-align: left;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+.footer li a {
+  display: inline;
+  color: rgb(9.60.96);
+  font-weight: bold;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+}
