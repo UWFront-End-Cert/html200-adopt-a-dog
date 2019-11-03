@@ -124,6 +124,9 @@ h2 {
   color: #093c60;
   font-size: 3rem;
 }
+aside {
+  display: none;
+}
 .dog-container {
   display: flex;
   flex-flow: row wrap;
@@ -174,6 +177,24 @@ h2 {
   color: #093c60;
 }
 .large-button a:hover {
+  color: #81b741;
+}
+.blog-button {
+  text-align: center;
+  width: 70%;
+  margin: 2% 15% 0;
+  background-color: #ececec;
+  color: #093c60;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: .5rem;
+  padding: .5rem;
+}
+.blog-button a {
+  text-decoration: none;
+  color: #093c60;
+}
+.blog-button a:hover {
   color: #81b741;
 }
 footer {
@@ -349,18 +370,12 @@ header {
 .head-box {
     min-width: 200px;
   }
-nav {
-    padding: 1rem 12rem 1rem;
-  }
 nav p {
     font-size: 1.5rem;
 }
 nav p a {
     font-size: 1.5rem;
 }
-article {
-    padding: 3rem 12rem 3rem;
-  }
 .intro-text {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -377,13 +392,24 @@ h1 {
 h2 {
     font-size: 1.5rem;
   }
+  aside {
+    display: block;
+    float: right;
+    width: 32%;
+    margin-left: 3%;
+    padding: 2rem 6rem 0rem 0rem;
+  }
+  .aside_image {
+    width: 100px;
+  }
 .dog-container {
-  clear: both;
+  clear: none;
   justify-content: space-between;
+  width: 65%;
 }
 .dog-box {
     width: 45%;
-    margin: 2rem 2rem 0rem 0rem;
+    margin: 2rem 5% 0rem 0rem;
 }
 .dog-box img {
   margin-top: 0;
@@ -408,6 +434,9 @@ footer img {
 }
 .large-button a {
   font-size: 1.25rem;
+}
+.blog-button {
+  display: none;
 }
 .blog-container {
   display: grid;
@@ -452,7 +481,7 @@ header {
     min-width: 200px;
   }
 nav {
-    padding: 1rem 12rem 1rem;
+    padding: 1rem 6rem 1rem;
   }
 nav p {
     font-size: 1.5rem;
@@ -461,7 +490,7 @@ nav p a {
     font-size: 1.5rem;
 }
 article {
-    padding: 3rem 12rem 3rem;
+    padding: 3rem 6rem 3rem;
   }
 .intro-text {
     font-size: 1.5rem;
@@ -479,19 +508,33 @@ h1 {
 h2 {
     font-size: 1.5rem;
   }
+aside {
+    display: block;
+    float: right;
+    width: 22%;
+    padding: 2rem 6rem 0rem 3rem;
+    margin-left: 3%;
+  }
+.aside_image {
+    width: 150px;
+  }
 .dog-container {
-  clear: both;
-  justify-content: space-between;
+  width: 75%;
+  flex-flow: row wrap;
+  clear: none;
 }
 .dog-box {
-    width: 20%;
-    margin: 2rem 2rem 0rem 0rem;
+    width: 30%;
+    margin: 2rem 1% 0rem 1%;
 }
 .dog-box h2 {
   padding: 0rem 1rem 0rem;
 }
 .dog-box p {
   padding: 0rem 1rem 0rem;
+}
+.blog-button {
+  display: none;
 }
 footer {
   padding: 3rem 35% 3rem;
