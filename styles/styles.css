@@ -354,7 +354,7 @@ fieldset input {
   color: #444;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 * {
     font-size: 1rem;
   }
