@@ -354,7 +354,7 @@ fieldset input {
   color: #444;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
 * {
     font-size: 1rem;
   }
@@ -377,8 +377,8 @@ nav p a {
     font-size: 1.5rem;
 }
 .intro-text {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 article img {
     width: 300px;
