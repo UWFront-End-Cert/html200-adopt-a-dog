@@ -104,7 +104,6 @@ button {
 
 .main-content {
   margin-top: 2em;
-  margin-bottom: 2em;
   display: grid;
   grid-gap: 1em;
   grid-template-columns: auto auto auto;
@@ -126,6 +125,37 @@ button {
 }
 
 /*--------------------------------------------------------------
+# blog
+--------------------------------------------------------------*/
+
+.blog-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  margin-bottom: 2em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: auto auto auto;
+}
+
+.blog-pic {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.blog-txt {
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.blog-txt h2 {
+  margin: 0;
+}
+
+
+/*--------------------------------------------------------------
 # dog card
 --------------------------------------------------------------*/
 
@@ -133,6 +163,7 @@ button {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 2em;
 }
 
 .dog-section::after {
