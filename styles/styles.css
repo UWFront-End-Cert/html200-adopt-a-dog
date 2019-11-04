@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# Color variables
+--------------------------------------------------------------*/
+:root {
+  --color_grey: #d2d2e0;
+  --color_blue: #004080;
+  --color_green: #4CAF50;
+}
+
+.blue {
+  color: #005C7A;
+}
+
+/*--------------------------------------------------------------
+# accessibility features
+--------------------------------------------------------------*/
+
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hidden:focus {
+  left: 0;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+html {
+  font-family: sans-serif;
+}
+
+header {
+  background-image: url(../images/header-image.jpg);
+  background-size: cover;
+  color: white;
+  padding: 30px 0 30px;
+}
+
+nav{
+  background-color: var(--color_grey);
+  padding: 1em 0 1em 0;
+}
+
+h1, h2, h3, h4 {
+  /* text-transform: uppercase; */
+}
+
+a {
+  text-decoration: none;
+  color: Black;
+  font-weight: bold;
+  padding: 0 2em 0 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width:100%;
+  /* transition: all 1s ease-out; */
+}
+
+button {
+  background-color: var(--color_green);
+  color: white;
+  width: 100%;
+  border: 0;
+  border-radius: 0.15em;
+  padding: 0.5em  0 0.5em;
+  margin: 0.5em 0 1em;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+/*--------------------------------------------------------------
+# header
+--------------------------------------------------------------*/
+
+.header-logo {
+  width: 40%;
+}
+
+/*--------------------------------------------------------------
+# content
+--------------------------------------------------------------*/
+
+.main-content {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: auto auto auto;
+}
+
+.intro-pic {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.main-content > div {
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.intro-p {
+  line-height: 1.5em;
+  font-size: 1.3em
+}
+
+/*--------------------------------------------------------------
+# dog card
+--------------------------------------------------------------*/
+
+.dog-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dog-section::after {
+  content: '';
+  flex: auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.dog-box {
+  border: 1px solid grey;
+  width: 15rem;
+  margin-bottom: 2em;
+}
+
+.dog-box0 {
+  width: 90%;
+}
+
+button.more-dog{
+  display: block;
+  width: 20rem;
+  color: blue;
+  background-color: var(--color_grey);
+  margin: auto;
+  margin-top: -3em;
+  margin-bottom: 2em;
+}
+
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+
+footer {
+  background-color: var(--color_blue);
+  color: white;
+  padding: 20px 0 20px 0;
+}
+
+footer nav {
+  background-color: var(--color_blue);
+}
+
+nav p {
+  display: inline;
+}
+
+footer a {
+  color: white;
+  padding: 0 1em 0 1em;
+}
+
+footer img {
+  width: 20em;
+  margin: 1em;
+}
+
+/*--------------------------------------------------------------
+# alignments
+--------------------------------------------------------------*/
+
+.mainwidth {
+  width: 75%;
+}
+
+.aligncenter {
+  margin: auto;
+}
+
+.alignleft {
+  margin-right: auto;
+}
+
+.alignright {
+  margin-left: auto;
+}
+
+.centertext {
+  text-align: center;
+}
