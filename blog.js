@@ -24,7 +24,7 @@ const data = [{
 function renderTemplate(blog) {
   const {imgSrc, imgAlt, title, body} = blog;
   return `
-    <img src=${imgSrc} alt="${imgAlt}"><div class="aside-text"><h2>${title}</h2>
+    <img class='image-section' src=${imgSrc} alt="${imgAlt}"><h2>${title}</h2>
     ${body}</div>`;
 }
 
@@ -35,7 +35,7 @@ document.getElementById('main-content').appendChild(heading);
 //creates div, inputs template, adds class for styling
 data.forEach((item) => {
   const blogDivs = document.createElement('div');
-  blogDivs.setAttribute('class', 'blog-post');
+  blogDivs.setAttribute('class', 'blog-post', 'image-section');
   blogDivs.innerHTML = renderTemplate(item);
   document.getElementById('main-content').appendChild(blogDivs);
 })
