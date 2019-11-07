@@ -282,9 +282,13 @@ aside h2 {
 
 .image-section {
   float: left;
-  width: 30%;
-  margin-left: 5%;
-  padding: 10px;
+  width: 50%;
+  padding-right: 3%;
+  padding-bottom: 8%;
+}
+
+#main-content {
+  float: left;
 }
 
 .layout {

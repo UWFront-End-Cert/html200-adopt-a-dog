@@ -18,10 +18,10 @@ var zipInput = document.getElementById('zip');
 
 function onSubmit() {
   alert(`Thank you for adopting!`)
-  console.log(nameInput);
-  console.log(emailInput);
-  console.log(streetInput);
-  console.log(cityInput);
-  console.log(stateInput);
-  console.log(zipInput);
+  console.log(nameInput.value);
+  console.log(emailInput.value);
+  console.log(streetInput.value);
+  console.log(cityInput.value);
+  console.log(stateInput.value);
+  console.log(zipInput.value);
 }
