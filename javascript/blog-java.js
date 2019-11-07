@@ -53,23 +53,25 @@ const blogObjects = [
     }
 ];
 
-const dogBlog = document.createElement("article");
-container.appendChild(dogBlog);
-
 for (let i = 0; i < blogObjects.length; i += 1) {
     const object = blogObjects[i];
 
+    const dogBlog = document.createElement("article");
+    dogBlog.className = "blog_article";
+    container.appendChild(dogBlog);
+
     const image = document.createElement("IMG");
-    image.setAttribute("for", object.image);
+    image.setAttribute("src", object.image);
+    image.className = "blog_photo";
 
     const header = document.createElement("h3");
-    header.setAttribute("for", object.header);
+    header.textContent = object.header;
 
     const para1 = document.createElement("p");
-    para1.setAttribute("for", object.para1);
+    para1.textContent = object.para1;
 
     const para2 = document.createElement("p");
-    para2.setAttribute("for", object.para2);
+    para2.textContent = object.para2;
 
     dogBlog.appendChild(image);
     dogBlog.appendChild(header);
