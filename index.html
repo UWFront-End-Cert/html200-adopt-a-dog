@@ -5,17 +5,33 @@
   <meta charset="utf-8">
   <title>AdoptADog</title>
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
   <a href="#main-content" class="hidden">Skip to main content</a>
 
   <header>
-    <div class="mainwidth aligncenter">
-      <figure class="header-logo">
-        <img src="images/adoptadog-logo.svg" alt="logo">
-      </figure>
-      <h2>Seattle's premiere dog adoption agency</h2>
+    <div class="header-container aligncenter">
+
+      <div class="logo">
+        <figure>
+          <img src="images/adoptadog-logo.svg" alt="logo">
+        </figure>
+        <h2 style="font-style: italic;" class="green">Seattle's premiere dog adoption agency</h2>
+      </div>
+
+      <div class="cart">
+        <figure>
+          <img class="cart-logo" src="images/cart-icon.svg" alt="cart">
+          <span id="total"></span>
+        </figure>
+
+        <a href="checkout.html">Checkout</a>
+      </div>
+
     </div>
   </header>
 
@@ -47,7 +63,7 @@
 
     <section class="dog-section">
       <div class="dog-box">
-        <img class="dog-image" src="images/murphy-card.jpg" alt="Murphy picture">
+        <img onclick="dog_pic('Murphy', 'dog', 123)" class="dog-image" src="images/murphy-card.jpg" alt="Murphy picture">
         <div class="dog-box0 aligncenter">
           <h3>Murphy</h3>
           <p><b>Cost to Adopt:</b> $123.45</p>
@@ -56,12 +72,12 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button>Adopt</button>
+          <button onclick="add_dog(123.45)">Adopt</button>
         </div>
       </div>
 
       <div class="dog-box">
-        <img class="dog-image" src="images/poppy-card.jpg" alt="Poppy picture">
+        <img onclick="dog_pic('Poppy', 'dog', 123)" class="dog-image" src="images/poppy-card.jpg" alt="Poppy picture">
         <div class="dog-box0 aligncenter">
           <h3>Poppy</h3>
           <p><b>Cost to Adopt:</b> $123.45</p>
@@ -70,12 +86,12 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button>Adopt</button>
+          <button onclick="add_dog(123.45)">Adopt</button>
         </div>
       </div>
 
       <div class="dog-box">
-        <img class="dog-image" src="images/jack-card.jpg" alt="Jack picture">
+        <img onclick="dog_pic('Jack', 'dog', 123)" class="dog-image" src="images/jack-card.jpg" alt="Jack picture">
         <div class="dog-box0 aligncenter">
           <h3>Jack</h3>
           <p><b>Cost to Adopt:</b> $123.45</p>
@@ -84,12 +100,12 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button>Adopt</button>
+          <button onclick="add_dog(123.45)">Adopt</button>
         </div>
       </div>
 
       <div class="dog-box">
-        <img class="dog-image" src="images/duffy-card.jpg" alt="Duffy picture">
+        <img onclick="dog_pic('Duffy', 'dog', 123)" class="dog-image" src="images/duffy-card.jpg" alt="Duffy picture">
         <div class="dog-box0 aligncenter">
           <h3>Duffy</h3>
           <p><b>Cost to Adopt:</b> $123.45</p>
@@ -98,12 +114,12 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button>Adopt</button>
+          <button onclick="add_dog(123.45)">Adopt</button>
         </div>
       </div>
 
       <div class="dog-box">
-        <img class="dog-image" src="images/lucas-card.jpg" alt="Lucas picture">
+        <img onclick="dog_pic('Lucas', 'dog', 123)" class="dog-image" src="images/lucas-card.jpg" alt="Lucas picture">
         <div class="dog-box0 aligncenter">
           <h3>Lucas</h3>
           <p><b>Cost to Adopt:</b> $123.45</p>
@@ -112,12 +128,12 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button>Adopt</button>
+          <button onclick="add_dog(123.45)">Adopt</button>
         </div>
       </div>
 
       <div class="dog-box">
-        <img class="dog-image" src="images/jake-card.jpg" alt="Jake picture">
+        <img onclick="dog_pic('Jake', 'dog', 123)" class="dog-image" src="images/jake-card.jpg" alt="Jake picture">
         <div class="dog-box0 aligncenter">
           <h3>Jake</h3>
           <p><b>Cost to Adopt:</b> $123.45</p>
@@ -126,12 +142,12 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button>Adopt</button>
+          <button onclick="add_dog(123.45)">Adopt</button>
         </div>
       </div>
 
       <div class="dog-box">
-        <img class="dog-image" src="images/angus-card.jpg" alt="Angus picture">
+        <img onclick="dog_pic('Angus', 'dog', 123)" class="dog-image" src="images/angus-card.jpg" alt="Angus picture">
         <div class="dog-box0 aligncenter">
           <h3>Angus</h3>
           <p><b>Cost to Adopt:</b> $123.45</p>
@@ -140,12 +156,12 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button>Adopt</button>
+          <button onclick="add_dog(123.45)">Adopt</button>
         </div>
       </div>
 
       <div class="dog-box">
-        <img class="dog-image" src="images/violet-card.jpg" alt="Violet picture">
+        <img onclick="dog_pic('Violet', 'dog', 123)" class="dog-image" src="images/violet-card.jpg" alt="Violet picture">
         <div class="dog-box0 aligncenter">
           <h3>Violet</h3>
           <p><b>Cost to Adopt:</b> $123.45</p>
@@ -154,7 +170,7 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button>Adopt</button>
+          <button onclick="add_dog(123.45)">Adopt</button>
         </div>
       </div>
 
@@ -173,7 +189,6 @@
 
   </div>
 
-
   <footer class="centertext">
     <img src="images/adoptadog-logo.svg" alt="dog-logo">
     <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex</p>
@@ -188,5 +203,5 @@
     </nav>
     <p>&copy; 2018 Adoptadog, LLC | Seattle, WA<p>
   </footer>
-
+  <script src="./adoptadog.js" charset="utf-8"></script>
 </body>
