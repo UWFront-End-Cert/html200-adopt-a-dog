@@ -7,23 +7,25 @@
     <meta name="author" content="Keith McDade">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopt A Dog</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
 
   <body>
-    <header>
-      <div>
-        <img src="images/adoptadog-logo.svg" alt="German Shepard shilouette facing right">
+    <header class="header">
+      <div class="title">
+        <img id="logo" src="images/adoptadog-logo.svg" alt="German Shepard shilouette facing right">
         <h1>Seattle's premiere dog adoption agency</h1>
       </div>
-      <div>
-        <img src="images/cart-icon.svg" alt="Cart Icon" >
+      <div class="checkout">
+        <img class="cart" src="images/cart-icon.svg" alt="Cart Icon" >
         <p>$1234.56</p>
         <a href="checkout.html"> Checkout</a>
       </div>
     </header>
 
-    <nav>
-      <p>
+    <nav class="top-navigation">
+      <p class="nav-links">
         <a href="index.html">Home</a>  /
         <a href="dogs.html">Dogs</a>  /
         <a href="blog.html">Blog</a>
@@ -32,7 +34,7 @@
 
 
     <section>
-      <div>
+      <div class="form">
         <h1>Checkout</h1>
         <label> Name
         <input type="text" name="userName">
@@ -46,7 +48,7 @@
         <input type="text" name="streetAddress">
         </label>
 
-        <div>
+        <div class="postal">
           <label> City
           <input type="text" name="city">
           </label>
@@ -54,6 +56,56 @@
           <label> State
             <select name="state">
               <option value="">Please Select</option>
+              <option value="AK">AK</option>
+              <option value="AL">AL</option>
+              <option value="AZ">AZ</option>
+              <option value="AR">AR</option>
+              <option value="CA">CA</option>
+              <option value="CO">CO</option>
+              <option value="CT">CT</option>
+              <option value="DE">DE</option>
+              <option value="FL">FL</option>
+              <option value="GA">GA</option>
+              <option value="HI">HI</option>
+              <option value="ID">ID</option>
+              <option value="IL">IL</option>
+              <option value="IN">IN</option>
+              <option value="IA">IA</option>
+              <option value="KS">KS</option>
+              <option value="KY">KY</option>
+              <option value="LA">LA</option>
+              <option value="ME">ME</option>
+              <option value="MD">MD</option>
+              <option value="MA">MA</option>
+              <option value="MI">MI</option>
+              <option value="MN">MN</option>
+              <option value="MS">MS</option>
+              <option value="MO">MO</option>
+              <option value="MT">MT</option>
+              <option value="NE">NE</option>
+              <option value="NV">NV</option>
+              <option value="NH">NH</option>
+              <option value="NJ">NJ</option>
+              <option value="NM">NM</option>
+              <option value="NY">NY</option>
+              <option value="NC">NC</option>
+              <option value="ND">ND</option>
+              <option value="OH">OH</option>
+              <option value="OK">OK</option>
+              <option value="OR">OR</option>
+              <option value="PA">PA</option>
+              <option value="RI">RI</option>
+              <option value="SC">SC</option>
+              <option value="SD">SD</option>
+              <option value="TN">TN</option>
+              <option value="TX">TX</option>
+              <option value="UT">UT</option>
+              <option value="VT">VT</option>
+              <option value="VA">VA</option>
+              <option value="WA">WA</option>
+              <option value="WV">WV</option>
+              <option value="WI">WI</option>
+              <option value="WY">WY</option>
             </select>
           </label>
 
@@ -62,7 +114,7 @@
           </label>
         </div>
 
-        <fieldset>
+        <fieldset class="radio">
           <legend>First Time Adopter?</legend>
 
           <label>
@@ -70,29 +122,32 @@
           </label>
 
           <label>
-            <p>No</p> <input type="radio" name="firstTimeAdopter" value="no">
+            No <input type="radio" name="firstTimeAdopter" value="no">
           </label>
         </fieldset>
 
         <label> Pickup Location
           <select name="pickupLocation">
             <option value="">Please Select</option>
+            <option value="Bothell">Bothell Office</option>
+            <option value="Bellevue">Bellveue Office</option>
+            <option value="Everett">Everett Office</option>
           </select>
         </label>
       </div>
     </section>
 
     <section>
-      <div>
+      <div class="adopted">
         <h2>Dogs Adopted</h2>
-        <div>
+        <div class="adopted-dog">
           <img src="images/lucas-checkout.jpg" alt="">
-          <div>
+          <div class="dog-info">
             <h4>Lucas</h4>
             <p><strong>Cost to Adopt:</strong> 123.45</p>
           </div>
           <img src="images/duffy-checkout.jpg" alt="">
-          <div>
+          <div class="dog-info">
             <h4>Duffy</h4>
             <p><b>Cost to Adopt:</b> 123.45</p>
           </div>
@@ -105,10 +160,10 @@
       </div>
     </section>
 
-    <footer>
-      <img src="images/adoptadog-logo.svg" alt="German Shepard shilouette facing right">
+    <footer class= "footer">
+      <img id="logo-footer" src="images/adoptadog-logo.svg" alt="German Shepard shilouette facing right">
       <p>Pellentesque a sem porttitor, vestibulum ligula hendrerit, rutrum lorem. Vivamus feugiat ut ex ac porttitor. Curabitur bibendum risus nisi. Sed sagittis purus nec cursus iaculis. Vestibulum ornare metus at velit lobortis, vitae gravida ex dignissim. Fusce vestibulum auctor rhoncus.</p>
-      <div>
+      <div class="footer-navigation">
         <a href="index.html">Home</a>
         <a href="dogs.html">Dogs</a>
         <a href="blog.html">Blog</a>
