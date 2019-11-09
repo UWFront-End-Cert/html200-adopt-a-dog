@@ -18,7 +18,11 @@ top: auto;
   text-decoration: none;
 }
 header {
-  background-color: #093c60;
+  background: linear-gradient(to bottom, #093c60, #000);
+  background-image: url("../images/header-image.jpg");
+  background-position: top left;
+  background-size: cover;
+  min-height: 400px;
   padding: 0rem 3rem 2rem;
   text-align: left;
   color: #fff;
@@ -91,7 +95,7 @@ nav {
   color: #093c60;
   font-size: 2rem;
   font-weight: bold;
-  word-spacing: 1rem;
+  word-spacing: .5rem;
 }
 nav a {
   color: #093c60;
@@ -381,10 +385,10 @@ nav p a {
     line-height: 2rem;
   }
 article img {
-    width: 300px;
+    width: 30%;
     display: inline;
     float: left;
-    margin: 3rem 1.5rem 1rem 0rem;
+    margin: 2% 2% 1% 0;
   }
 h1 {
     font-size: 2.5rem;
@@ -400,7 +404,7 @@ h2 {
     padding: 2rem 6rem 0rem 0rem;
   }
   .aside_image {
-    width: 100px;
+    width: 50%;
   }
 .dog-container {
   clear: none;
@@ -412,7 +416,7 @@ h2 {
     margin: 2rem 5% 0rem 0rem;
 }
 .dog-box img {
-  margin-top: 0;
+  margin: 0;
 }
 .dog-box h2 {
   padding: 0rem 1rem 0rem;
@@ -497,10 +501,10 @@ article {
     line-height: 2rem;
   }
 article img {
-    width: 400px;
+    width: 30%;
     display: inline;
     float: left;
-    margin: 0rem 3rem 0rem 0rem;
+    margin: 0 2% 0 0;
   }
 h1 {
     font-size: 2.5rem;
@@ -516,7 +520,7 @@ aside {
     margin-left: 3%;
   }
 .aside_image {
-    width: 150px;
+    width: 75%;
   }
 .dog-container {
   width: 75%;
