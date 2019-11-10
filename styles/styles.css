@@ -90,6 +90,7 @@ button {
 --------------------------------------------------------------*/
 
 header {
+  background: linear-gradient(to right,white,red);
   background-image: url(../images/header-image.jpg);
   background-size: cover;
   padding: 50px 0 200px;
@@ -357,7 +358,7 @@ footer img {
 /* mobile 3-1*/
 @media (max-width: 1024px) {
   aside {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -392,12 +393,8 @@ aside article {
   margin: auto;
 }
 
-.alignleft {
-  margin-right: auto;
-}
-
-.alignright {
-  margin-left: auto;
+.margin-top {
+  margin-top: 2em;
 }
 
 .centertext {
