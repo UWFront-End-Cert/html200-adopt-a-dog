@@ -15,6 +15,7 @@ form.addEventListener("submit", function() {
   }
   else {
   event.preventDefault();
+  alert("Thank you. The form information has been received.")
   console.log("Name: " + name.value);
   console.log("Email: " + email.value);
   console.log("Street: " + street.value);
