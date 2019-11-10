@@ -73,13 +73,12 @@ figure {
 }
 
 img {
-  max-width:100%;
+  width:100%;
 }
 
 button {
   background-color: var(--color_green);
   color: white;
-  width: 100%;
   border: 0;
   border-radius: 0.15em;
   padding: 0.5em  0 0.5em;
@@ -162,6 +161,21 @@ header h2 {
   font-size: 1.3em
 }
 
+/* mobile 3-1*/
+/* @media (max-width: 768px) {
+  .main-content {
+    display: inline-block;
+  }
+} */
+
+/* tablet 3-2 */
+@media (max-width: 1300px) {
+  .main-content {
+    display: inline-block;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # blog
 --------------------------------------------------------------*/
@@ -219,18 +233,39 @@ header h2 {
   margin-bottom: 2em;
 }
 
+/* mobile 3-1*/
+@media (max-width: 768px) {
+  .dog-box {
+    width: 100%;
+  }
+  .dog-section {
+    justify-content: space-around;
+  }
+}
+
+/* tablet 3-2 */
+@media (max-width: 1024px) {
+  .dog-box {
+    width: 15rem;
+  }
+}
+
 .dog-box0 {
   width: 90%;
 }
 
-button.more-dog{
+.more-dog {
   display: block;
-  width: 20rem;
+  padding: .5em 2em;
   color: blue;
   background-color: var(--color_grey);
   margin: auto;
   margin-top: -3em;
   margin-bottom: 2em;
+}
+
+.dog-box0 button {
+    width: 100%;
 }
 
 /*--------------------------------------------------------------
