@@ -249,8 +249,13 @@ input[type="submit"] {
   background-color: #81b741;
   color: #fff;
 }
-input:focus {
+input:focus[type="submit"] {
+  width: 20rem;
   background-color: #093c60;
+  color: #fff;
+}
+input:focus {
+  background-color: #ececec;
   outline: none;
 }
 textarea {

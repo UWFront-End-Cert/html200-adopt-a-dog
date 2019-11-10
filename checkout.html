@@ -26,21 +26,21 @@
     </nav>
     <article id="main-content">
       <h1>Checkout</h1>
-      <form method="get">
+      <form method="get" id="checkout-form">
         <label>Name
-          <input type="text" name="adoptName">
+          <input type="text" name="adoptName" id="adopt-name">
         </label>
         <label>Email Address
-          <input type="text" name="adoptEmail">
+          <input type="text" name="adoptEmail" id="adopt-email">
         </label>
         <label>Street Address
-          <input type="text" name="adoptStreet">
+          <input type="text" name="adoptStreet" id="adopt-street">
           </label>
           <label>City
-            <input type="text" name="adoptCity">
+            <input type="text" name="adoptCity" id="adopt-city">
             </label>
             <label>State</label>
-            <select name="adoptState">
+            <select name="adoptState" id="adopt-state">
               <option value="WA">Washington</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
@@ -95,11 +95,11 @@
             </select>
           <fieldset class="radio">
           <legend>First Time Adopter?</legend>
-          <label><input type="radio" name="adoptFirsttime" value="yes">Yes<span class=rodeo></span></label>
-          <label><input type="radio" name="adoptFirsttime" value="no">No<span class=rodeo></span></label>
+          <label><input type="radio" name="adoptFirstTime" id="adopt-first-time" value="yes">Yes<span class=rodeo></span></label>
+          <label><input type="radio" name="adoptFirstTime" id="adopt-first-time-no" value="no">No<span class=rodeo></span></label>
         </fieldset>
         <label>Pickup Location</label>
-        <select name="adoptPickup">
+        <select name="adoptPickup" id="adopt-pickup">
           <option value="Downtown">Downtown</option>
           <option value="Capitol Hill">Capitol Hill</option>
           <option value="Mountlake Terrace">Mountlake Terrace</option>
@@ -119,7 +119,7 @@
         </div>
         <h2>Total Adoption Cost</h2>
         <p>$1,235.56</p>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="submit-checkout">
       </form>
   </article>
 <footer>
@@ -127,6 +127,6 @@
   <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt
   <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
   <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p></footer>
-  <script type="text/javascript" src="scripts/script.js"></script>
+  <script type="text/javascript" src="scripts/checkout.js"></script>
 </body>
 </html>
