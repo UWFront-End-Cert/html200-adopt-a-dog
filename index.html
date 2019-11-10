@@ -15,21 +15,18 @@
   <a href="#main-content" class="hidden">Skip to main content</a>
 
   <header>
-    <div class="header-container aligncenter">
 
+    <div class="header-container aligncenter">
       <div class="logo">
-        <figure>
-          <img src="images/adoptadog-logo.svg" alt="logo">
-        </figure>
+        <img src="images/adoptadog-logo.svg" alt="logo">
         <h2 style="font-style: italic;" class="green">Seattle's premiere dog adoption agency</h2>
       </div>
 
       <div class="cart">
-        <figure>
+        <div>
           <img class="cart-logo" src="images/cart-icon.svg" alt="cart">
           <span id="total"></span>
-        </figure>
-
+        </div>
         <a href="checkout.html">Checkout</a>
       </div>
 
@@ -44,26 +41,17 @@
     </div>
   </nav>
 
-  <div class="aligncenter mainwidth">
-    <div class="main-content">
-      <figure class="intro-pic">
-        <img src="images/home-intro.jpg" alt="Intro Pic">
-      </figure>
-      <div>
-        <h2 class="blue">Adopt a Dog</h2>
-        <p class="intro-p">Iduciendisite quo magnatem iuntum quid quaest ea am,
-          tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-          derum recuptatur, cum volore, undipsa doloreium hillupta aut
-          es ut alitatuscit ommossum haritatur arum qui officae videbiti
-          corporeium faccull oribus es quidignis ipietus explam sus
-          am aut amet ant fugiatum, utem non reptat ad magnienecto
-          volorent fugia nonsedi gendand itatquos as magnimpor aut
-          molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-      </div>
-    </div>
+  <main class="mainwidth">
+
+    <section class="intro">
+      <img src="images/home-intro.jpg" alt="Intro Pic">
+      <h2>Adopt a Dog</h2>
+      <p class="intro-p">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui
+        officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am</p>
+    </section>
 
     <section class="dog-section">
-      <div class="dog-box">
+      <article class="dog-box">
         <img onclick="dog_pic('Murphy', 'dog', 123)" class="dog-image" src="images/murphy-card.jpg" alt="Murphy picture">
         <div class="dog-box0 aligncenter">
           <h3>Murphy</h3>
@@ -75,9 +63,9 @@
             qui doluptae</p>
           <button onclick="add_dog(123.45)">Adopt</button>
         </div>
-      </div>
+      </article>
 
-      <div class="dog-box">
+      <article class="dog-box">
         <img onclick="dog_pic('Poppy', 'dog', 123)" class="dog-image" src="images/poppy-card.jpg" alt="Poppy picture">
         <div class="dog-box0 aligncenter">
           <h3>Poppy</h3>
@@ -89,9 +77,9 @@
             qui doluptae</p>
           <button onclick="add_dog(123.45)">Adopt</button>
         </div>
-      </div>
+      </article>
 
-      <div class="dog-box">
+      <article class="dog-box">
         <img onclick="dog_pic('Jack', 'dog', 123)" class="dog-image" src="images/jack-card.jpg" alt="Jack picture">
         <div class="dog-box0 aligncenter">
           <h3>Jack</h3>
@@ -103,9 +91,9 @@
             qui doluptae</p>
           <button onclick="add_dog(123.45)">Adopt</button>
         </div>
-      </div>
+      </article>
 
-      <div class="dog-box">
+      <article class="dog-box">
         <img onclick="dog_pic('Duffy', 'dog', 123)" class="dog-image" src="images/duffy-card.jpg" alt="Duffy picture">
         <div class="dog-box0 aligncenter">
           <h3>Duffy</h3>
@@ -117,9 +105,9 @@
             qui doluptae</p>
           <button onclick="add_dog(123.45)">Adopt</button>
         </div>
-      </div>
+      </article>
 
-      <div class="dog-box">
+      <article class="dog-box">
         <img onclick="dog_pic('Lucas', 'dog', 123)" class="dog-image" src="images/lucas-card.jpg" alt="Lucas picture">
         <div class="dog-box0 aligncenter">
           <h3>Lucas</h3>
@@ -131,9 +119,9 @@
             qui doluptae</p>
           <button onclick="add_dog(123.45)">Adopt</button>
         </div>
-      </div>
+      </article>
 
-      <div class="dog-box">
+      <article class="dog-box">
         <img onclick="dog_pic('Jake', 'dog', 123)" class="dog-image" src="images/jake-card.jpg" alt="Jake picture">
         <div class="dog-box0 aligncenter">
           <h3>Jake</h3>
@@ -145,35 +133,7 @@
             qui doluptae</p>
           <button onclick="add_dog(123.45)">Adopt</button>
         </div>
-      </div>
-
-      <div class="dog-box">
-        <img onclick="dog_pic('Angus', 'dog', 123)" class="dog-image" src="images/angus-card.jpg" alt="Angus picture">
-        <div class="dog-box0 aligncenter">
-          <h3>Angus</h3>
-          <p><b>Cost to Adopt:</b> $123.45</p>
-          <p>Corrum volorit iandae
-            nimaxim cum restia volor
-            reicid ut et etur sunt arum
-            rendae pla endis re ea erum,
-            qui doluptae</p>
-          <button onclick="add_dog(123.45)">Adopt</button>
-        </div>
-      </div>
-
-      <div class="dog-box">
-        <img onclick="dog_pic('Violet', 'dog', 123)" class="dog-image" src="images/violet-card.jpg" alt="Violet picture">
-        <div class="dog-box0 aligncenter">
-          <h3>Violet</h3>
-          <p><b>Cost to Adopt:</b> $123.45</p>
-          <p>Corrum volorit iandae
-            nimaxim cum restia volor
-            reicid ut et etur sunt arum
-            rendae pla endis re ea erum,
-            qui doluptae</p>
-          <button onclick="add_dog(123.45)">Adopt</button>
-        </div>
-      </div>
+      </article>
 
       <div class="dog-box hidden"></div>
       <div class="dog-box hidden"></div>
@@ -188,7 +148,34 @@
 
     <button class="more-dog">See More Dogs</button>
 
-  </div>
+    <aside>
+      <h2>From Our Blog</h2>
+      <article>
+        <img src="images/intro-blog-1.jpg" alt="intro-blog-1.pic">
+        <h3>Traveling With Your Dog</h3>
+        <p class="intro-p">Iciustiam, et ad quiaes cum que
+          excea sinciendi qui offic temquas
+          doluptios dolupta tiandebis nem ut.</p>
+        <a href="blog.html">Read more >></a>
+      </article>
+      <article>
+        <img src="images/intro-blog-2.jpg" alt="intro-blog-2.pic">
+        <h3>How To Walk Multiple Dogs</h3>
+        <p class="intro-p">Iciustiam, et ad quiaes cum que
+          excea sinciendi qui offic temquas
+          doluptios dolupta tiandebis nem ut.</p>
+        <a href="blog.html">Read more >></a>
+      </article>
+      <article>
+        <img src="images/intro-blog-3.jpg" alt="intro-blog-3.pic">
+        <h3>Teach Your Dog to Fetch!</h3>
+        <p class="intro-p">Iciustiam, et ad quiaes cum que
+          excea sinciendi qui offic temquas
+          doluptios dolupta tiandebis nem ut.</p>
+        <a href="blog.html">Read more >></a>
+      </article>
+    </aside>
+  </main>
 
   <footer class="centertext">
     <img src="images/adoptadog-logo.svg" alt="dog-logo">
