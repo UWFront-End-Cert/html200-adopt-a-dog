@@ -344,6 +344,7 @@ fieldset input {
 }
 .blog-container {
   display: block;
+  padding: 0rem 6rem 3rem 3rem;
 }
 .blog-intro {
   font-size: 2rem;
@@ -356,6 +357,9 @@ fieldset input {
   font-weight: lighter;
   line-height: 3rem;
   color: #444;
+}
+.blog-title {
+  padding: 3rem 0rem 0rem 3rem;
 }
 
 @media screen and (min-width: 992px) {
