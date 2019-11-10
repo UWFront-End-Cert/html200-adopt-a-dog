@@ -344,7 +344,10 @@ fieldset input {
 }
 .blog-container {
   display: block;
-  padding: 0rem 6rem 3rem 3rem;
+  padding: 0rem 3rem 3rem 3rem;
+}
+.blog-box1 {
+    width: 100%;
 }
 .blog-intro {
   font-size: 2rem;
