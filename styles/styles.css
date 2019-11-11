@@ -66,6 +66,10 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
 img {
   width:100%;
 }
@@ -81,8 +85,10 @@ button {
   font-size: 1.2em;
 }
 
-.hidden {
-  visibility: hidden;
+p{
+  line-height: 1.5em;
+  font-size: 1.3em;
+  margin: 0;
 }
 
 /*--------------------------------------------------------------
@@ -112,10 +118,6 @@ header {
   width: 30%;
 }
 
-header h2 {
-  margin: 0;
-}
-
 .cart a {
   margin:0;
   padding:5px 25px 5px;
@@ -143,7 +145,8 @@ nav a {
 /*--------------------------------------------------------------
 # content
 --------------------------------------------------------------*/
-main{
+
+main {
   display: grid;
   column-gap: 2em;
   grid-template-columns: auto auto;
@@ -162,16 +165,6 @@ main{
   grid-column: 1;
 }
 
-.intro img {
-  width: 100%;
-  height: auto;
-}
-
-.intro-p {
-  line-height: 1.5em;
-  font-size: 1.3em
-}
-
 
 /*--------------------------------------------------------------
 # blog
@@ -186,21 +179,24 @@ main{
   margin-bottom: 2em;
   display: grid;
   grid-gap: 1em;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: 3em auto;
 }
 
-.blog-pic {
-  grid-row: 1;
+.post img {
+  grid-row: 1 / span 2;
   grid-column: 1;
 }
 
-.blog-txt {
+.post h2 {
+  font-size: 2em;
   grid-row: 1;
-  grid-column: 2/3;
+  grid-column: 2;
 }
 
-.blog-txt h2 {
-  margin: 0;
+.post p {
+  grid-row: 2;
+  grid-column: 2;
 }
 
 
@@ -397,6 +393,14 @@ aside article {
   margin-top: 2em;
 }
 
+.margin-bottom {
+  margin-bottom: 1em;
+}
+
 .centertext {
   text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
 }
