@@ -75,6 +75,7 @@ img {
 }
 
 button {
+  display: block;
   background-color: var(--color_green);
   color: white;
   border: 0;
@@ -245,24 +246,31 @@ main {
   }
 }
 
-.dog-box0 {
-  width: 90%;
-}
-
 .more-dog {
   grid-row: 3;
   grid-column: 1;
-  display: block;
   padding: .5em 2em;
   color: blue;
   background-color: var(--color_grey);
   margin: auto;
-  margin-top: -3em;
   margin-bottom: 2em;
 }
 
-.dog-box0 button {
-  width: 100%;
+.dog-box button {
+  width: 90%;
+  margin: 1em auto;
+}
+
+.dog-box h3 {
+  width: 90%;
+  font-size: 1.5em;
+  margin: 0.5em auto;
+}
+
+.dog-box p {
+  width: 90%;
+  margin: 0.5em auto;
+  font-size: 0.8em;
 }
 
 /*--------------------------------------------------------------
