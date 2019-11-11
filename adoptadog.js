@@ -45,12 +45,22 @@ function generate_post() {
   }
 }
 
-document.querySelector('form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Thank you. The form information has been received');
-  console.log('Name: '+e.target[0].value);
-  console.log('Email: '+e.target[1].value);
-  console.log('Address: '+e.target[2].value);
-  console.log('City: '+e.target[3].value);
-  console.log('State: '+e.target[4].value);
+function addListener() {
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you. The form information has been received');
+    console.log('Name: '+ e.target[0].value);
+    console.log('Email: '+ e.target[1].value);
+    console.log('Address: '+ e.target[2].value);
+    console.log('City: '+ e.target[3].value);
+    console.log('State: '+ e.target[4].value);
+  });
+}
+
+$(document).ready(function(){
+
+  $('.dog-box').hover(function(e){
+    $(this).toggleClass('dog-box-hover');
+  });
+  
 });
