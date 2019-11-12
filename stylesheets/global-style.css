@@ -287,10 +287,6 @@ aside h2 {
   padding-bottom: 8%;
 }
 
-#main-content {
-  float: left;
-}
-
 .layout {
   width: 70%;
   float: left;
@@ -404,7 +400,6 @@ h1 {
   .blog-post img {
     max-width: 25%;
     float: left;
-    padding-left: 15%;
   }
 }
 

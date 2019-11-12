@@ -11,24 +11,28 @@ function addTotal(price) {
 }
 
 $('.dog-tile').hover(function(e){
-  $('img').css("background-color", "yellow");
+  $(this).css({"border": "5px solid red"});
   }, function(){
-  $('img').css("background-color", "pink");
+  $(this).css({"border": "5px solid black"});
 });
 
-var nameInput = document.getElementById('name');
-var emailInput = document.getElementById('email');
-var streetInput = document.getElementById('street');
-var cityInput = document.getElementById('city');
-var stateInput = document.getElementById('state');
-var zipInput = document.getElementById('zip');
+function formSubmit() {
+  event.preventDefault();
 
-function onSubmit() {
-  alert(`Thank you for adopting!`)
+  var nameInput = document.getElementById('name');
+  var emailInput = document.getElementById('email');
+  var streetInput = document.getElementById('street');
+  var cityInput = document.getElementById('city');
+  var stateInput = document.getElementById('state');
+  var zipInput = document.getElementById('zip');
+  var locationInput = document.getElementById('location');
+
+  alert("Thank you for adopting!");
   console.log(nameInput.value);
   console.log(emailInput.value);
   console.log(streetInput.value);
   console.log(cityInput.value);
   console.log(stateInput.value);
   console.log(zipInput.value);
+  console.log(locationInput.value);
 }
