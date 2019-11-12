@@ -26,6 +26,7 @@ function formSubmit() {
   var stateInput = document.getElementById('state');
   var zipInput = document.getElementById('zip');
   var locationInput = document.getElementById('location');
+  var adopterInput = document.getElementById('adopter-yes').checked;
 
   alert("Thank you for adopting!");
   console.log(nameInput.value);
@@ -35,4 +36,5 @@ function formSubmit() {
   console.log(stateInput.value);
   console.log(zipInput.value);
   console.log(locationInput.value);
+  console.log(adopterInput);
 }
