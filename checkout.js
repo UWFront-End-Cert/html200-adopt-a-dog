@@ -11,9 +11,9 @@ function addTotal(price) {
 }
 
 $('.dog-tile').hover(function(e){
-  $(this).css({"border": "5px solid red"});
+  $(this).css({"filter": "grayscale(100%)"});
   }, function(){
-  $(this).css({"border": "5px solid black"});
+  $(this).css({"filter": "sepia(100%)"});
 });
 
 function formSubmit() {
