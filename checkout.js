@@ -4,10 +4,17 @@ function dogDescription(name, breed, price) {
   alert(`Dog information: ${name}, ${breed}, $${price}`)
 }
 
-function addToTotal(price) {
+function addTotal(price) {
   cartTotal += price;
   alert(`Your total is now: $${cartTotal}`);
+  $('.total').text(`$${cartTotal}`);
 }
+
+$('.dog-tile').hover(function(e){
+  $('img').css("background-color", "yellow");
+  }, function(){
+  $('img').css("background-color", "pink");
+});
 
 var nameInput = document.getElementById('name');
 var emailInput = document.getElementById('email');
