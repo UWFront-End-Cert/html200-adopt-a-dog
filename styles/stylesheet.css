@@ -408,7 +408,6 @@ footer {
   padding-bottom: 1%;
 }
 
-
 .blog_article {
   width: 75%;
   padding-left: 15%;
@@ -440,14 +439,14 @@ footer {
 
 @media screen and (min-width: 1990px) {
   .blog_article {
-    margin-top: 7%;
+    margin-top: 5%;
     margin-bottom: 7%;
   }
 }
 
-@media screen and (min-width: 2235px) {
+@media screen and (min-width: 3331px) {
   .blog_article {
-    margin-top: 8%;
+    margin-top: 6%;
     margin-bottom: 8%;
   }
 }
@@ -463,6 +462,46 @@ footer {
     display: block;
     float: none;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1720px) {
+  .blog_header {
+    font-size: 140%;
+  }
+
+  .blog_text {
+    font-size: 140%;
+  }
+}
+
+@media screen and (min-width: 1990px) {
+  .blog_header {
+    font-size: 150%;
+  }
+
+  .blog_text {
+    font-size: 150%;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .blog_header {
+    font-size: 160%;
+  }
+
+  .blog_text {
+    font-size: 160%;
+  }
+}
+
+@media screen and (min-width: 2900px) {
+  .blog_header {
+    font-size: 200%;
+  }
+
+  .blog_text {
+    font-size: 200%;
   }
 }
 
