@@ -145,7 +145,7 @@ function addListener() {
 }
 
 $(document).ready(function(){
-document.getElementById("total").innerHTML = '$ 0'
+  document.getElementById("total").innerHTML = '$ 0'
 
   $('.dog-box').hover(function(e){
     $(this).toggleClass('dog-box-hover');
