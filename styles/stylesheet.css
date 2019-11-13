@@ -445,6 +445,13 @@ footer {
   }
 }
 
+@media screen and (min-width: 2235px) {
+  .blog_article {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+}
+
 .blog_photo {
   padding-right: 5%;
   float: left;
