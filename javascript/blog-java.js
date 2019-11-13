@@ -8,6 +8,7 @@ document.body.insertBefore(blurb, footer);
 
 /*container*/
 const container = document.createElement("div");
+container.className = "blog_container";
 document.body.insertBefore(container, footer);
 
 /*article*/

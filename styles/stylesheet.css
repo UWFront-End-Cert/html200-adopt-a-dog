@@ -404,18 +404,44 @@ footer {
 
 /*Start styles for blog page*/
 
+.blog_container {
+  padding-bottom: 5%;
+}
+
+
 .blog_article {
   width: 75%;
-  margin-left: 15%;
-  margin-top:5%;
-  margin-bottom: 5%;
+  padding-left: 15%;
+  padding-top:1%;
+  padding-bottom: 5%;
   font-size: 85%;
 }
 
 @media screen and (max-width: 768px) {
   .blog_article {
-    margin-left: 5%;
+    padding-left: 5%;
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 1483px) {
+  .blog_article {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (min-width: 1720px) {
+  .blog_article {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (min-width 1990px) {
+  .blog_article {
+    margin-top: 7%;
+    margin-bottom: 7%;
   }
 }
 
