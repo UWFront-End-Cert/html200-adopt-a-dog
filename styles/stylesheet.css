@@ -405,7 +405,7 @@ footer {
 /*Start styles for blog page*/
 
 .blog_container {
-  padding-bottom: 5%;
+  padding-bottom: 1%;
 }
 
 
@@ -438,7 +438,7 @@ footer {
   }
 }
 
-@media screen and (min-width 1990px) {
+@media screen and (min-width: 1990px) {
   .blog_article {
     margin-top: 7%;
     margin-bottom: 7%;
