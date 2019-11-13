@@ -20,9 +20,15 @@ a:visited {
   color: white;
   text-align: center;
 }
-h1 {
+.header h1 {
   font-family: "Comic Sans MS", sans-serif;
   color: rgb(129,183,65)
+}
+h3 {
+  color: rgb(9,60,96);
+}
+h2 {
+  color: rgb(9,60,96);
 }
 nav ul {
   display: block;
@@ -57,4 +63,47 @@ li:first-child:before {
   margin-left: 2rem;
   margin-right: 2rem;
   text-decoration: none;
+}
+.container {
+  display: flex;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.dog-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 300px;
+  overflow: inherit;
+  margin: 25px;
+  border-color: rgb(9,60,96);
+  border-width: .25rem;
+  border-style: solid;
+}
+.footer-text {
+  color: white;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.main-content-image {
+  float: left;
+}
+.main-content-text {
+  float: right;
+}
+.container input[type=button] {
+  background-color: rgb(129,183,65);
+  color: white;
+  width: 100px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.header input[type=button] {
+  background-color: rgb(129,183,65);
+  color: white;
+  width: 100px;
 }
