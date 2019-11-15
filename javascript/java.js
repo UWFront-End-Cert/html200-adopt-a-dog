@@ -8,3 +8,15 @@ function totalCost(x) {
   let newTotal = total += x;
   alert('$' + newTotal);
 }
+
+$('.box-home').hover(
+  function() {
+    $( this ).toggleClass('box-border');
+}
+);
+
+$('.box').hover(
+  function() {
+    $( this ).toggleClass('box-border');
+}
+);

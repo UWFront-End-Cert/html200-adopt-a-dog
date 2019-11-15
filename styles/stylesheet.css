@@ -211,7 +211,6 @@ aside {
   }
 }
 
-
 .box-home {
   width: 30%;
   margin-top: 1%;
@@ -236,6 +235,11 @@ aside {
   .box-home {
     width: 100%;
   }
+}
+
+/*Border to be added on hover*/
+.box-border {
+  outline: 4px dotted #39c639;
 }
 
 .dog_photo {
