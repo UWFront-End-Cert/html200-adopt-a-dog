@@ -10,7 +10,8 @@
   <body>
     <header>
       <div class="buy">
-        <p class="cart"><img src="images/cart-icon.svg" alt="white cart icon">&nbsp;$1234.56</p>
+        <img class="cart" src="images/cart-icon.svg" alt="white cart icon">
+        <div class="cart" id="cart-total">$1234.56</div>
         <a href="checkout.html" class="checkout">Checkout</a>
       </div>
       <div class="logo">
@@ -95,10 +96,10 @@
 
       <div class="box-home">
         <img onclick="dogInfo('Jake', 'Yellow lab', '$123.45')" class="dog_photo" src="images/jake-card.jpg" alt="Happy golden lab with a brown collar">
-          <h3>Jake</h3>
-          <p><strong>Cost to adopt: $123.45</strong></p>
-          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <p onclick="totalCost(123.45)" class="adopt_button">Adopt</p>
+        <h3>Jake</h3>
+        <p><strong>Cost to adopt: $123.45</strong></p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p onclick="totalCost(123.45)" class="adopt_button">Adopt</p>
       </div>
     </div>
 
