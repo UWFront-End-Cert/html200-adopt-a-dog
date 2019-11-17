@@ -6,10 +6,10 @@ function dogInfo(name, breed, cost) {
 /*Adopt button cost alert*/
 let total = 0;
 
-$('.adopt_button').click(function(x) {
+function totalCost(x) {
   let newTotal = total += x;
   alert('$' + newTotal);
-});
+}
 
 /*Dog tile hover border on index and dogs pages*/
 $('.box-home').hover(
