@@ -6,11 +6,13 @@ The following sections cover User Persona and Testing of the website.
 
 ## User Persona
 
-To run the website, download all files in the root folder and render website by using web browser.
+The user base is mainly consisted of two user groups. The first group include people who are interested in adopting a dog. The second group is mainly interested in the website blog section.
+
+Sam is a typical user from the first user group. Sam is a single woman in her late 20s. She does not have a dog but she is a dog lover. She regularly visits the website to search for a potential adoption. For her browsing habits, Sam usually first browses through the dog tiles to see if there is new dogs open for adoption. Then, she goes through the blog section to learn tips and tricks of training and owning a dog in order to prepare herself for a new member in her home. Her goal is to see cute dog pictures and discover her favorite dog breed. Sam uses Iphone to access the website on the bus. She also uses Chrome on her Windows laptop at home.  
 
 ## Testing
 
-To ensure site quality, the website was tested on 3 different browsers and 3 different devices. The browsers are Chrome, Firefox and Edge. All browser tests were conducted on windows PC. Apart from windows PC, other devices tested were iphone XR and Macbook. For each browser and device, the following items were tested.
+To ensure site quality, the website was tested on 3 different browsers and 3 different devices. The browsers tested are Chrome, Firefox and Edge. All browser tests were conducted on windows PC. Apart from windows PC, other devices tested were iphone XR and Macbook. For each browser and device, the following items were tested.
 
 100% Zoom
 * Header image and button size and position
@@ -27,7 +29,7 @@ Varying Zoom
 
 ### javascript
 
-Eliminated errors and redundant variables. Implemented function to generate dog tiles on both Index and dogs pages. See example below.
+Eliminated errors and redundant variables. Implemented function to generate dog tiles with specified tile number on both Index and dogs page. See example below.
 
 ```
 for (let i = 0; i < Math.min(dogs.length, num); i++) {
@@ -44,7 +46,7 @@ Where variable "num" is the input parameter to the function that the user sets a
 Validated code by using https://validator.w3.org/.
 
 
-Eliminated errors and redundant variables. Eliminated errors and redundant variables. Eliminated most <div> tag for semantic markup
+Eliminated errors and redundant variables. Eliminated errors and redundant variables. Eliminated all unnecessary div tag for semantic markup
 
 
 ## Authors
