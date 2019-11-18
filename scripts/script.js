@@ -10,5 +10,5 @@ function adoptFees(x) {
 }
 
 $('.dog-box').hover(function(e) {
-  $('img', this).toggleClass('dog-box-border');
+  $('img', this).toggleClass('dog-box-effect');
 })
