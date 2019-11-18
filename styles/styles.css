@@ -142,9 +142,12 @@ aside {
   box-sizing: border-box;
   border: 1px solid #81b741;
 }
+.dog-box-border {
+  border: 5px solid #81b741;
+}
 .dog-box img {
   width: 100%;
-  margin-bottom: .5rem;
+  margin: 0 0 1rem 0;
 }
 .dog-box h2 {
   padding: 0rem 2rem 0rem;
@@ -428,7 +431,7 @@ h2 {
     margin: 2rem 5% 0rem 0rem;
 }
 .dog-box img {
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 .dog-box h2 {
   padding: 0rem 1rem 0rem;
@@ -542,6 +545,9 @@ aside {
 .dog-box {
     width: 30%;
     margin: 2rem 1% 0rem 1%;
+}
+.dog-box img {
+  margin: 0 0 1rem 0;
 }
 .dog-box h2 {
   padding: 0rem 1rem 0rem;

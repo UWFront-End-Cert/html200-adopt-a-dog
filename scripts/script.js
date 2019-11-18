@@ -8,3 +8,7 @@ function adoptFees(x) {
   total += x;
   alert('Your total: $' + total);
 }
+
+$('.dog-box').hover(function(e) {
+  $('img', this).toggleClass('dog-box-border');
+})
