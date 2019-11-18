@@ -22,7 +22,7 @@ a:visited {
 }
 .header h1 {
   font-family: "Comic Sans MS", sans-serif;
-  color: rgb(129,183,65)
+  color: rgb(129,183,65);
 }
 h3 {
   color: rgb(9,60,96);
@@ -33,7 +33,7 @@ h2 {
 nav ul {
   display: block;
   text-align: left;
-  background-color: rgb(236,236,236)
+  background-color: rgb(236,236,236);
 }
 nav ul li {
   display: inline;
@@ -84,16 +84,17 @@ li:first-child:before {
   color: white;
 }
 .main-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   padding: 30px;
+  display: grid;
+  grid-gap: 20px;
 }
 .main-content-image {
-  float: left;
+  grid-column-start:1;
+  grid-column-end: 2;
 }
 .main-content-text {
-  float: right;
+  grid-column-start:2;
+  grid-column-end: 4;
 }
 .container input[type=button] {
   background-color: rgb(129,183,65);
@@ -102,8 +103,24 @@ li:first-child:before {
   font-weight: bold;
   padding: 10px 20px;
 }
+.container img {
+  min-width: 100%;
+  max-width:100%;
+}
 .header input[type=button] {
   background-color: rgb(129,183,65);
   color: white;
   width: 100px;
+}
+.grey-button input[type=button] {
+  background-color: rgb(236,236,236);
+  color: rgb(9,60,96);
+  width: 200px;
+  font-weight: bold;
+  padding: 1%;
+}
+.grey-button {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
 }
