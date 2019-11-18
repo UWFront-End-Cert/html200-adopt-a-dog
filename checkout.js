@@ -16,25 +16,15 @@ $('.dog-tile').hover(function(e){
   $(this).css({"filter": "sepia(100%)"});
 });
 
-function formSubmit() {
+$('form').submit(function (e) {
   event.preventDefault();
+  // get all the inputs into an array.
+  var $inputs = $('form :input');
 
-  var nameInput = document.getElementById('name');
-  var emailInput = document.getElementById('email');
-  var streetInput = document.getElementById('street');
-  var cityInput = document.getElementById('city');
-  var stateInput = document.getElementById('state');
-  var zipInput = document.getElementById('zip');
-  var locationInput = document.getElementById('location');
-  var adopterInput = document.getElementById('adopter-yes').checked;
-
-  alert("Thank you for adopting!");
-  console.log(nameInput.value);
-  console.log(emailInput.value);
-  console.log(streetInput.value);
-  console.log(cityInput.value);
-  console.log(stateInput.value);
-  console.log(zipInput.value);
-  console.log(locationInput.value);
-  console.log(adopterInput);
-}
+  // get an associative array of just the values.
+  var values = {};
+  $inputs.each(function() {
+      values[this.name] = $(this).val();
+  });
+  console.log(values);
+});
