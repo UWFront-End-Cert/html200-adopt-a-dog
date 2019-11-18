@@ -7,9 +7,9 @@ function dogInfo(name, breed, cost) {
 let total = 0;
 
 function totalCost(x) {
-  let newTotal = total += x;
-  alert('$' + newTotal);
-  $("#cart_total").text('$' + Number(newTotal));
+  total += x;
+  alert('$' + total);
+  $("#cart_total").text('$' + Number(total));
 }
 
 /*Dog tile hover border on index and dogs pages*/
