@@ -4,6 +4,7 @@ function dogInfo(name, breed, cost) {
 
 $('.dog-box').hover(function(e) {
   $('img', this).toggleClass('dog-box-effect');
+  $( this ).toggleClass('dog-box-border');
 });
 
 let total = 0;

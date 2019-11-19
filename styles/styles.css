@@ -144,6 +144,9 @@ aside {
 }
 .dog-box-effect {
   opacity: 0.7;
+}
+.dog-box-border {
+  border: 3px solid #81b741;
   box-shadow: 3px 3px 6px #999;
 }
 .dog-box img {
