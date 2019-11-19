@@ -64,7 +64,7 @@ button {
 .checkout:hover a {
   color: #81b741;
 }
-.button {
+.adopt-button {
   padding: .5rem 1rem;
   border-radius: .5rem;
   font-weight: bold;
@@ -73,11 +73,11 @@ button {
   width: 80%;
   margin: 1rem 10% 1.5rem;
 }
-.button a {
+.adopt-button a {
   color: #fff;
   text-decoration: none;
 }
-.button:hover {
+.adopt-button:hover {
   background-color: #093c60;
 }
 .head-container {
@@ -178,7 +178,7 @@ aside {
   font-size: 2rem;
   font-weight: bold;
   border-radius: .5rem;
-  padding: .5rem;
+  padding: .5rem .5rem .75rem .5rem;
 }
 .large-button a {
   text-decoration: none;
@@ -196,7 +196,7 @@ aside {
   font-size: 2rem;
   font-weight: bold;
   border-radius: .5rem;
-  padding: .5rem;
+  padding: .5rem .5rem .75rem .5rem;
 }
 .blog-button a {
   text-decoration: none;
