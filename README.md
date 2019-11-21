@@ -32,6 +32,8 @@ valuable in their search.
 Testing methods and results are detailed in the testing.txt file in this
 directory.
 
+[https://raw.githubusercontent.com/mikewatters/html200-adopt-a-dog/master/testing.txt]
+
 ## Copyright
 
 This website is copyright Adoptadog Seattle.
