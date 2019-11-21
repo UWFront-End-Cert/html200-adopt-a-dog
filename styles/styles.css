@@ -500,6 +500,28 @@ footer img {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+label {
+  font-size: 1rem;
+}
+legend {
+  font-size: 1rem;
+}
+input, textarea {
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  padding: .5rem;
+  width: 75%;
+}
+select {
+    font-size: 1rem;
+}
+.rodeo {
+  top: 0;
+}
+.radio input {
+  top: 2rem;
+  margin-left: 15px;
+}
 }
 
 @media screen and (min-width: 1200px) {
