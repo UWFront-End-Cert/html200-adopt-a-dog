@@ -52,6 +52,7 @@ button {
   color: #fff;
   background-color: #81b741;
   width: 200px;
+  text-align: center;
 }
 .checkout a {
   color: #fff;
@@ -135,6 +136,12 @@ aside {
   display: flex;
   flex-flow: row wrap;
   position: relative;
+}
+.all-dog-container {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  width: 100%;
 }
 .dog-box {
   width: 100%;
@@ -233,7 +240,7 @@ legend {
   font-size: 2rem;
   color: #093c60;
 }
-input, select, textarea {
+input, textarea {
   font-family: Arial, sans-serif;
   font-size: 2rem;
   color: #444;
@@ -241,6 +248,14 @@ input, select, textarea {
   display: block;
   margin: 1rem 0rem 1rem;
   padding: 1rem;
+}
+select {
+    min-width: 30rem;
+    display: block;
+    margin: 1rem 0rem 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    color: #444;
 }
 input {
   width: 100%;
