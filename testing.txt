@@ -16,10 +16,11 @@ Mobile:
 On all desktop browsers, there were two issues with the design of the site.
 First, on the "Dogs" page, there was a lot of extra white space on the righthand
 side of the page. It was using the same container class as the homepage;
-however, that page doesn't have a blog preview. I created a new class called
-".all-dog-container" to extend the container width on that page to 100% and make
-the dog tiles fill out the space. Second, based on feedback from the instructor,
-I reduced spacing on the "Checkout" page form for tablet and desktop viewing.
+however, the "Dogs" page doesn't have a blog preview. I created a new class
+called ".all-dog-container" to extend the container width on that page to 100%
+and make the dog tiles fill out the space. Second, based on feedback from the
+instructor, I reduced spacing on the "Checkout" page form for tablet and desktop
+viewing.
 
 In Firefox on the PC, links inside the elements for "Checkout", "See more dogs",
 and "Visit the blog" did not work. I changed the tag on those elements from
