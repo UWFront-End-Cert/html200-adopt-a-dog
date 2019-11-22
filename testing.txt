@@ -18,6 +18,6 @@ In testing on my PC, I found that the total cost in my header was appearing belo
 
 I also fixed the links to internal pages in the footer of all my pages.
 
-I validated my all my HTML, CSS, and JavaScript through verified online validators.
+I validated all my HTML, CSS, and JavaScript through verified online validators.
 
 As far as formatting for various resolution sizes, I created many media queries to ensure that text and spacing looked appropriate. I tested on Chrome dev tools on very small and very large screens to make up for the fact that I didn't have access to real devices of these sizes.
