@@ -1,0 +1,15 @@
+User personas
+
+Frequent users of my site have two main things in common: they love dogs, and they are located in the Seattle area. Based on other research, I have concluded that they are most likely between the age of 22-39. They are most likely to access the site using smart phones and their local browsers, like Safari and Chrome, but laptops are also commonly-used devices. Given the geographical location of the Adopt a Dog business, users who are interested in this website likely have access to high-speed Internet and wifi and are likely to have experience with interactive websites.
+
+I created the following persona who I believe represents the user base for this site:
+
+Persona description: Paige Turner, 27, is a resident of Seattle. Her, her husband, and their dog Scout recently moved to the city.
+
+Lifestyle/job: Paige has a degree in social analysis and research and moved to Seattle for a job in the tech industry. She is very technically-savvy and has used Apple smart devices her entire adult life. She has a newer iPhone model, and while she uses that as her main means of communication and to access social media, she frequently uses her iPad for work, email, and to browse the internet at home. She is most likely to access our site using Safari, on a smaller screen.
+
+Additional user information: Paige and her husband are both animal lovers and volunteered at the local shelter in their hometown. Now that they’ve settled into their new home in Seattle, they are looking to adopt another dog to complete their family.
+
+Testing
+
+For my testing, I decided to test my site on the following devices: PC laptop, iPhone 6 model, iPhone X, Pixel phone, iPad, and Macbook laptop.
