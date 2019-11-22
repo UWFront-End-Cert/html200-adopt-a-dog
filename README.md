@@ -1,4 +1,5 @@
 Adoptadog
+
 Seattle's premiere dog adoption agency
 
 Description
