@@ -9,7 +9,7 @@ Please click on each dog's photo to find out more about them.
 
 Other features include:
 
-Blog posts and photos that offer new and relevant training and lifestyle tips.
-A page that contains every dog and their information for easy scrolling.
-A cart feature on every page that indicates how much the dog selections will cost in total.
-The option to pickup adopted dogs at one of two convenient locations.
+* Blog posts and photos that offer new and relevant training and lifestyle tips.
+* A page that contains every dog and their information for easy scrolling.
+* A cart feature on every page that indicates how much the dog selections will cost in total.
+* The option to pickup adopted dogs at one of two convenient locations.
