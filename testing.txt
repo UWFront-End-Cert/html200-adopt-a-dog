@@ -12,4 +12,12 @@ Additional user information: Paige and her husband are both animal lovers and vo
 
 Testing
 
-For my testing, I decided to test my site on the following devices: PC laptop, iPhone 6 model, iPhone X, Pixel phone, iPad, and Macbook laptop.
+I decided to test my site on the following devices: PC laptop, iPhone 6 model, iPhone X, Pixel phone, iPad, and MacBook laptop. I also tested in Chrome, Internet Explorer, and Mozilla FireFox.
+
+In testing on my PC, I found that the total cost in my header was appearing below the cart icon, instead of to the right of it. I fixed the styling on that.
+
+I also fixed the links to internal pages in the footer of all my pages.
+
+I validated my all my HTML, CSS, and JavaScript through verified online validators.
+
+As far as formatting for various resolution sizes, I created many media queries to ensure that text and spacing looked appropriate. I tested on Chrome dev tools on very small and very large screens to make up for the fact that I didn't have access to real devices of these sizes.
