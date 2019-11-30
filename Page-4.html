@@ -10,7 +10,7 @@
     <header>
     <!-- Left Side-->
     <div class="banner-left-side">
-      <img src="images/adoptadog-logo.svg" alt="logo" height="75px;"/>
+      <img src="images/adoptadog-logo.svg" alt="logo" class="banner-left-side-img"/>
       <h3 style="color:#8bc34a;font-size:20px;">
         <i>Seattle's premiere dog adoption agency</i>
       </h3>
@@ -24,8 +24,8 @@
         </p>
       </div>
       <div>
-        <button type="button" class="button" onclick="Page-4.html">
-          <a href="Page-4.html">Checkout</a>
+        <button type="button" class="button" value="Page-4.html">
+          Checkout
         </button>
       </div>
     </div>
@@ -51,61 +51,61 @@
 
         <article>
         <div>
-          <label for="fname">Name</label>
+          <label>Name</label>
           <input style="display:block;" type="text" name="fname">
         </div>
 
         <div>
-          <label for="fname">Email Address</label>
-          <input style="display:block;" type="text" name="fname">
+          <label>Email Address</label>
+          <input style="display:block;" type="text" name="email">
         </div>
 
         <div>
-          <label for="fname">Street Address</label>
-          <input  style="display:block;" type="text" name="fname">
+          <label>Street Address</label>
+          <input  style="display:block;" type="text" name="street">
         </div>
 
-        <div style="display:grid;grid-template-columns: 25% 25% 25%;grid-gap: 15px;">
-            <div style="display:flex;flex-direction:column;flex-wrap:wrap;font-size: large;">
-                <label for="fname">City</label>
+        <div class="address-row">
+            <div class="address-row-1">
+                <label>City</label>
                 <input type="text" name="fname">
             </div>
 
-            <div style="display:flex;flex-direction:column;flex-wrap:wrap;font-size: large;">
-                <label for="fname">State</label>
+            <div class="address-row-1">
+                <label>State</label>
                 <input type="text" name="fname">
             </div>
 
-            <div style="display:flex;flex-direction:column;flex-wrap:wrap;font-size: large;">
-                <label for="fname">Zip Code</label>
+            <div class="address-row-1">
+                <label>Zip Code</label>
                 <input type="text" name="fname">
             </div>
-        </div>
-
-        <div>
-          <label for="fname" style="display:block;">First Time Adopter?</label>
-          <input type="radio" name="fname">Yes
-          <input type="radio" name="fname">No
         </div>
 
         <div>
-          <label for="fname" style="display:block;">Pickup Location</label>
+          <label style="display:block;">First Time Adopter?</label>
+          <input type="radio" name="adopter">Yes
+          <input type="radio" name="adopter">No
+        </div>
+
+        <div>
+          <label style="display:block;">Pickup Location</label>
           <select style="width:150px;"></select>
         </div>
 
         <h4>Dogs Adopted</h4>
         <div>
-            <div style="display:grid;grid-template-columns:auto auto;">
-              <div style="display:grid;grid-template-columns:15% 40%;">
-                <img src="images/lucas-checkout.jpg" alt="lucas" height="60px">
-                <div style="display:grid;grid-template-rows:50% 50%;">
+            <div class="checkout-row">
+              <div class="checkout-row-1">
+                <img src="images/lucas-checkout.jpg" alt="lucas" class="checkout-animals">
+                <div class="checkout-row-1-1">
                   <h6>Lucas</h6>
                   <p><strong>Cost to Adopt:</strong>$1234.56</p>
                 </div>
               </div>
-              <div style="display:grid;grid-template-columns:15% 40%;">
-                <img src="images/duffy-checkout.jpg" alt="duffy" height="60px">
-                <div style="display:grid;grid-template-rows:50% 50%;">
+              <div class="checkout-row-1">
+                <img src="images/duffy-checkout.jpg" alt="duffy" class="checkout-animals">
+                <div class="checkout-row-1-1">
                   <h6>Duffy</h6>
                   <p><strong>Cost to Adopt:</strong>$1234.56</p>
                 </div>
@@ -133,7 +133,7 @@
     <footer>
     <div class="footer-logo">
 
-         <img src="images/adoptadog-logo.svg" alt="logo" height="60px;"/>
+         <img src="images/adoptadog-logo.svg" alt="logo" class="checkout-animals"/>
          <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
          esseque invenienihil imaximu scideru ptistiusam consequunt</p>
          <p>Home / Dogs / Contact</p>
