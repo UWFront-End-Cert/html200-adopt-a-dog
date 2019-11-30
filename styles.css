@@ -1,0 +1,145 @@
+body{
+  margin:0;
+}
+.main-container{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 30px;
+  margin : 20px 150px;
+}
+h4,h5{
+  margin:0px;
+}
+h3{
+  margin:3px;
+}
+p{
+  margin:0;
+  font-weight: 100;
+  font-size: small;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+header{
+  display: flex;
+  background-image: url('images/header-image.jpg');
+  height: 250px;
+  padding:40px;
+}
+.banner-left-side{
+  flex:80%;
+}
+.banner-right-side{
+  flex:2%;
+}
+.banner-right-side-cart{
+  display:flex;
+  justify-content: space-between;
+  align-items :baseline;
+  width: 80px;
+  height:25px;
+}
+.cart{
+  height:20px;
+}
+.cart-price{
+  font-size: smaller;
+  color:white;
+  margin: 0;
+}
+nav{
+  background-color: #e2e5e6;
+  height : 50px;
+}
+.nav-caption{
+  color:darkblue;
+  font-size:13px;
+  padding : 20px 150px;
+  font-family: serif;
+}
+section{
+  display:flex;
+}
+.section-left-side{
+  flex:30%;
+}
+.section-left-side img{
+  height:230px;
+}
+.section-right-side{
+  flex: 70%;
+  padding:0px 150px 0px 30px;
+}
+.section-right-side-header{
+  color:darkblue;
+  font-family: serif;
+  font-size:x-large;
+}
+.section-right-side-para{
+  font-family: monospace;
+  padding: 0px 19px 0px 0px;
+  font-size:larger;
+}
+article{
+  display:grid;
+  grid-template-rows: auto auto;
+  grid-gap: 30px;
+}
+.row-1{
+display:grid;
+grid-template-columns: auto auto auto auto;
+grid-gap:100px;
+}
+.row{
+  display:grid;
+  grid-template-columns:auto auto auto;
+  grid-gap:20px;
+  font-size: large;
+}
+.col-1{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  font-size: large;
+}
+.col{
+padding:0.5px;
+}
+.card{
+display:grid;
+grid-template-rows: auto auto auto;
+border: 0.5px solid;
+}
+.card-image{
+ height: 100px;
+}
+.card-desc{
+ display:grid;
+ grid-template-rows: auto auto auto;
+ padding:10px;
+}
+.button{
+  background-color: yellowgreen;
+  color: white;
+  padding: 3px 30px;
+}
+aside{
+display:grid;
+grid-template-columns: auto auto;
+}
+footer{
+display: flex;
+justify-content: center;
+background-color: #4e4f50;
+}
+.footer-logo{
+text-align: center;
+margin:10px;
+padding:20px;
+width:260px;
+}
+.footer-logo p{
+  color:white;
+}
