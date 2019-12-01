@@ -1,0 +1,19 @@
+USERS
+  Persons seeking a new companion to add to their family in the greater Seattle area. Because human beings are bioloigcally inclined to seek companionship, specific persons could range in age, ethnicity, employment, personality etc. Could be a young person fresh out of college and living alone for the first time, to a newly married couple seeking to get a dog before having kids, to a retiree looking for an animal to get them out of the house. Many people know that you can get a dog by going to the local pound, so most users of this site will be more tech oriented. They likely have had laptops and smartphones and stick to modern internet browsers such as Chrome, Safari, Edge and Firefox.
+
+TESTING
+  My testing procedure involved navigation to the main page on multiple browsers and clicking on each link on each page to ensure no errors in the navigation. From there I checked the javascript and jquery responsiveness by hoovering over the dog images, filling out the form, and adding dogs to the checkout cart. When filling out the form I tested to confirm that the alert following submission appeared and I tested for input validation. Lastly, I verified responsiveness by adjusting the page size, tilting the devices, and utilizing the inspect window.
+
+RESULTS
+
+  Mobile
+    iOS Mobile and Tablet: Site is responsive on both and blog previews are absent in the mobile site as expected. Hover functionality doesn’t not work because you cannot hover with a tablet or mobile device. If you touch the picture, the query works and the picture changes to grayscale then sepia.
+
+  Browser
+    Firefox v67.0 - Javascript is functional. However, the zip code box on the form requires a number, which chrome does not. Prompts also autofill immediately upon filling out the form, unlike google, which could potentially benefit other sites with forms. After multiple popups, Firefox asks you if you want to prevent these dialogs in the future.
+    Safari v12.1.1 - Everything is working well in Safari. The page is responsive and alerts only appear when they are prompted. The javascript and jquery are loading as expected.
+    Chrome v74.0.3729.169 - While this site was designed it was test almost entirely on the Google Chrome browser. As such, everything works as expected.
+
+  Computer
+    PC - Works well!
+    Mac - Works great!
