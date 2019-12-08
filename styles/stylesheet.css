@@ -18,11 +18,27 @@ body {
   background-color: rgb(9,60,96);
   padding:30px;
 }
+.header img {
+  max-width: 20%;
+  max-height: 10%;
+}
+.checkout img {
+  width: 20%;
+}
 .footer {
   background-color: rgb(9,60,96);
   padding:30px;
   color: white;
   text-align: center;
+}
+.footer-items {
+  max-width: 100%;
+  text-align: center;
+}
+.footer img {
+  max-width: 40%;
+  max-height: 20%;
+  padding-top: 2rem;
 }
 .header h1 {
   font-family: "Comic Sans MS", sans-serif;
@@ -73,6 +89,13 @@ li:first-child:before {
   margin-right: 2rem;
   text-decoration: none;
 }
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  overflow: hidden;
+}
 .container {
   display: flex;
   padding: 40px;
@@ -89,17 +112,16 @@ li:first-child:before {
   border-width: .25rem;
   border-style: solid;
 }
-.footer-text {
-  color: white;
-}
 .main-content {
   padding: 30px;
   display: grid;
   grid-gap: 20px;
 }
-.main-content-image {
+.main-content img {
   grid-column-start:1;
   grid-column-end: 2;
+  width: 100%;
+  height: auto;
 }
 .main-content-text {
   grid-column-start:2;
