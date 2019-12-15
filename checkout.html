@@ -2,31 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700|Public+Sans:300,700&display=swap" rel="stylesheet">
     <title>Adopt-A-Dog: Checkout</title>
   </head>
 
   <body>
     <header>
-      <div>
-        <img src="images/header-image.jpg" alt="Close-up of dog's head">
-        <a href="index.html"><img src="images/adoptadog-logo.svg" width="300" alt="Adopt-a-dog logo"></a>
-        <h1>Seattle's premiere dog adoption agency</h1>
-        <img src="images/cart-icon.svg" width="30" alt="shopping cart">
-        <p>$1234.56</p>
-        <a href="checkout.html">Checkout</a>
+      <div class="header">
+          <img class="header-img" src="images/header-image.jpg" alt="Close-up of dog's head">
+          <div class="header-logo">
+            <a href="index.html"><img src="images/adoptadog-logo.svg" width="300" alt="Adopt-a-dog logo"></a>
+            <h1>Seattle's premiere dog adoption agency</h1>
+          </div>
+          <div class="header-checkout">
+            <p><img src="images/cart-icon.svg" width="30" alt="shopping cart">
+            $1234.56</p>
+            <a href="checkout.html">Checkout</a>
+          </div>
       </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li>/</li>
           <li><a href="dogs.html">Dogs</a></li>
+          <li>/</li>
           <li><a href="blog.html">Blog</a></li>
         </ul>
       </nav>
     </header>
 
-    <h2>Checkout</h2>
+    <h2 class="form-title">Checkout</h2>
 
-    <form method="POST">
+    <form class="container" method="POST">
 
       <div>
         <label>Name
@@ -70,48 +78,52 @@
             </label>
         </fieldset>
 
-        <label>Pickup Location
-          <select name="pickupLocation">
+        <fieldset>
+          <legend>Pickup Location</legend>
+            <select name="pickupLocation">
             <option value="option-1">Location 1</option>
             <option value="option-2">Location 2</option>
             <option value="option-3">Location 3</option>
           </select>
-        </label>
+        </fieldset>
       </div>
 
-        <section>
-          <h3>Dogs Adopted</h3>
-          <img src="images/lucas-checkout.jpg" width="30" alt="photo of Lucas">
-          <h4>Lucas</h4>
-          <p>Cost to Adopt: $123.45</p>
-        </section>
+      <fieldset class="dogs-adopted">
+        <legend>Dogs Adopted</legend>
+        <div>
+            <img src="images/lucas-checkout.jpg" width="45" alt="photo of Lucas">
+            <h5>Lucas</h5>
+            <p>Cost to Adopt: $123.45</p>
+        </div>
 
-        <section>
-          <h3>Dogs Adopted</h3>
-          <img src="images/duffy-checkout.jpg" width="30" alt="photo of Duffy">
-          <h4>Duffy</h4>
-          <p>Cost to Adopt: $123.45</p>
-        </section>
+        <div>
+            <img src="images/duffy-checkout.jpg" width="45" alt="photo of Duffy">
+            <h5>Duffy</h5>
+            <p>Cost to Adopt: $123.45</p>
+        </div>
+      </fieldset>
 
-        <section>
-          <h3>Total Adoption Cost</h3>
-          <p>$1234.56</p>
-        </section>
-      </form>
+      <div>
+        <h4>Total Adoption Cost</h4>
+        <p>$1234.56</p>
+      </div>
+    </form>
 
-       <input type="submit" value="SUBMIT">
+     <input type="submit" value="SUBMIT">
 
-       <footer>
-         <a href="index.html"><img src="images/adoptadog-logo.svg" width="200" alt="Adopt-a-dog logo"></a>
-         <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
-           esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-         <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="dogs.html">Dogs</a></li>
-           <li><a href="#">Contact</a></li>
-         </ul>
-         <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
-       </footer>
+     <footer class="footer-block">
+       <a href="index.html"><img src="images/adoptadog-logo.svg" width="200" alt="Adopt-a-dog logo"></a>
+       <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+         esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+       <ul>
+         <li><a href="index.html">Home</a></li>
+         <li>/</li>
+         <li><a href="dogs.html">Dogs</a></li>
+         <li>/</li>
+         <li><a href="#">Contact</a></li>
+       </ul>
+       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+     </footer>
 
   </body>
 </html>
