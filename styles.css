@@ -6,14 +6,13 @@
 @media only screen and (max-width: 500px){
   header{
     width:100% !important;
-    padding:5px !important;
   }
   h4{
     padding: 2px !important;
   }
   nav{
-    width: 100% !important;
-    padding: 5px;
+    width:100% !important;
+    height:25px !important;
   }
   body{
       background: lightblue;
@@ -29,21 +28,22 @@
   }
   .section-left-side{
     flex: 0% !important;
+    margin:2px;
   }
   .section-left-side img{
-    height: 100px !important;
+
   }
   .section-right-side{
     flex: 50% !important;
     flex-wrap: wrap !important;
-    padding: 0px !important;
+    padding: 1px !important;
   }
   .section-right-side h3{
     font-size: medium;
   }
   p{
     padding: 0px !important;
-    font-size: small !important;
+    font-size: 0.7em !important;
     word-wrap: break-word !important;
   }
   article{
@@ -66,7 +66,7 @@
   }
   .card-desc p{
     padding: 0px !important;
-    font-size: small !important;
+    font-size: 0.8 !important;
   }
   footer{
     width:100% !important;
@@ -82,7 +82,7 @@
   }
   nav{
     width: 100% !important;
-    padding: 5px;
+    height: 25px !important;
   }
   body{
     width: 100%;
@@ -100,19 +100,19 @@
     flex: 0% !important;
   }
   .section-left-side img{
-    height: 145px !important;
+
   }
   .section-right-side{
     flex: 50% !important;
     flex-wrap: wrap !important;
-    padding: 0px !important;
+    padding: 1px !important;
   }
   .section-right-side h3{
     font-size: medium;
   }
   p{
     padding: 0px !important;
-    font-size: small !important;
+    font-size: 1em !important;
     word-wrap: break-word !important;
   }
   article{
@@ -130,7 +130,7 @@
   }
   .card-desc p{
     padding: 0px !important;
-    font-size: small !important;
+    font-size: 0.8em !important;
   }
   .footer{
     width:100%;
@@ -157,6 +157,7 @@
     width:50%;
   }
 }
+/* Common Code For All Three*/
 .main-container{
   display: grid;
   grid-template-rows: auto auto auto;
@@ -172,7 +173,7 @@ h3{
 p{
   margin:0;
   font-weight: 100;
-  font-size: small;
+  font-size: 0.8em;
 }
 a{
   color:white;
@@ -182,7 +183,6 @@ header{
   display: flex;
   background-image: url('images/header-image.jpg');
   height: 250px;
-  padding:40px;
 }
 .banner-left-side{
   flex:80%;
@@ -228,7 +228,8 @@ section{
   flex:30%;
 }
 .section-left-side img{
-  height:230px;
+  height: auto;
+  width: 100%;
 }
 .section-right-side{
   flex: 70%;
@@ -237,12 +238,12 @@ section{
 .section-right-side-header{
   color:darkblue;
   font-family: serif;
-  font-size:x-large;
+  font-size:2em;
 }
 .section-right-side-para{
   font-family: monospace;
   padding: 0px 19px 0px 0px;
-  font-size:larger;
+  font-size: 1.32em;
 }
 article{
   display:grid;
@@ -306,7 +307,8 @@ grid-template-rows: auto auto auto;
 border: 0.5px solid;
 }
 .card-image{
- height: 100px;
+ height: auto;
+ width:100%;
 }
 .card-desc{
  display:grid;
