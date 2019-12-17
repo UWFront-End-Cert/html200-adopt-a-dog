@@ -199,6 +199,9 @@ h6 {
     height: 500px;
     margin-bottom: 2rem;
 }
+.dog-border {
+    outline: 4px solid orange;
+}
 /*End*/
 @media screen and (min-width: 992px) {
   #grid-1 {

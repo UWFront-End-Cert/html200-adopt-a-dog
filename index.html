@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"  type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <title>Adopt A Dog</title>
   </head>
   <body>
@@ -17,7 +17,7 @@
         <section class="cart-holder">
           <h6>Shopping Cart</h6>
           <img id="cart-image" src="images/cart-icon.svg" alt="shopping cart">
-          <p id="sum">$1234.56</p> <!--This is a placeholder-->
+          <p id="sum">$0.00</p>
           <a class="checkout-button" href="checkout.html">Checkout</a>
         </section>
       </div>
@@ -39,57 +39,57 @@
         <section class="dog-grid" id="grid-1">
           <h6>Brief Introduction to Our Dogs</h6>
           <article class="dog-holder">
-            <img onclick="inspect('Murphy', 'breed unknown', 123.45)" class="occupy-solo" src="images/murphy-card.jpg" alt="Picture of Murphy">
+            <img class="occupy-solo" src="images/murphy-card.jpg" alt="Picture of Murphy">
             <h3>Murphy</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
             <div class="adopt-holder">
-              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+              <a data-fee="123.45" data-availability="t" class="adopt-button" href="#">Adopt</a>
             </div>
           </article>
           <article class="dog-holder">
-            <img onclick="inspect('Poppy', 'breed unknown', 123.45)" class="occupy-solo" src="images/poppy-card.jpg" alt="Picture of Poppy">
+            <img class="occupy-solo" src="images/poppy-card.jpg" alt="Picture of Poppy">
             <h3>Poppy</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
             <div class="adopt-holder">
-              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+              <a data-fee="123.45" data-availability="t" class="adopt-button" href="#">Adopt</a>
             </div>
           </article>
           <article class="dog-holder">
-            <img onclick="inspect('Jack', 'breed unknown', 123.45)" class="occupy-solo" src="images/jack-card.jpg" alt="Picture of Jack">
+            <img class="occupy-solo" src="images/jack-card.jpg" alt="Picture of Jack">
             <h3>Jack</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
             <div class="adopt-holder">
-              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+              <a data-fee="123.45" data-availability="t" class="adopt-button" href="#">Adopt</a>
             </div>
           </article>
           <article class="dog-holder">
-            <img onclick="inspect('Duffy', 'breed unknown', 123.45)" class="occupy-solo" src="images/duffy-card.jpg" alt="Picture of Duffy">
+            <img class="occupy-solo" src="images/duffy-card.jpg" alt="Picture of Duffy">
             <h3>Duffy</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
             <div class="adopt-holder">
-              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+              <a data-fee="123.45" data-availability="t" class="adopt-button" href="#">Adopt</a>
             </div>
           </article>
           <article class="dog-holder">
-            <img onclick="inspect('Lucas', 'breed unknown', 123.45)" class="occupy-solo" src="images/lucas-card.jpg" alt="Picture of Lucas">
+            <img class="occupy-solo" src="images/lucas-card.jpg" alt="Picture of Lucas">
             <h3>Lucas</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
             <div class="adopt-holder">
-              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+              <a data-fee="123.45" data-availability="t" class="adopt-button" href="#">Adopt</a>
             </div>
           </article>
           <article class="dog-holder">
-            <img onclick="inspect('Jake', 'breed unknown', 123.45)" class="occupy-solo" src="images/jake-card.jpg" alt="Picture of Jake">
+            <img class="occupy-solo" src="images/jake-card.jpg" alt="Picture of Jake">
             <h3>Jake</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
             <div class="adopt-holder">
-              <a onclick="adopt(123.45)" class="adopt-button" href="#">Adopt</a>
+              <a data-fee="123.45" data-availability="t" class="adopt-button" href="#">Adopt</a>
             </div>
           </article>
         </section>
@@ -112,6 +112,7 @@
         <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
       </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/JavaScript"></script>
     <script src="./JavaScript/main.js" charset="utf-8"></script>
     <script src="./JavaScript/index.js" charset="utf-8"></script>
   </body>

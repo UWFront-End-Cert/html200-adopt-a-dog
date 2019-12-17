@@ -17,7 +17,7 @@
         <section class="cart-holder">
           <h6>Shopping Cart</h6>
           <img id="cart-image" src="images/cart-icon.svg" alt="shopping cart">
-          <p id="sum">$1234.56</p> <!--This is a placeholder-->
+          <p id="sum">$0.00</p>
           <a class="checkout-button" href="checkout.html">Checkout</a>
         </section>
       </div>
@@ -116,12 +116,12 @@
           </div>
         </div>
         <h5>First Time Adopter?</h5>
-        <fieldset>
+        <fieldset id="applicantFirst">
           <label>
-            <input type="radio" id="applicantFirst" value="yes">Yes
+            <input type="radio" name="first" value="yes">Yes
           </label>
           <label>
-            <input type="radio" id="first?" value="no">No
+            <input type="radio" name="first" value="no">No
           </label>
         </fieldset>
         <h5>Pickup Location</h5>
@@ -151,7 +151,7 @@
         <section>
           <h5>Total Adoption Cost</h5>
           <p>$1234.56</p>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" id="finished">
         </section>
       </form>
     </section>
@@ -166,6 +166,7 @@
         <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
       </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/JavaScript"></script>
     <script src="./JavaScript/main.js" charset="utf-8"></script>
     <script src="./JavaScript/form.js" charset="utf-8"></script>
   </body>
