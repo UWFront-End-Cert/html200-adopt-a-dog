@@ -13,12 +13,12 @@ $(document).ready(function(){
         ];
 
         let pass = true;
+        if (!responses[1].includes('@')) {
+            pass = false;
+        }
         for (let i = 0; i < responses.length; i++) {
             res = responses[i];
             if (res == '') {
-                pass = false;
-            }
-            if (i === 1 && !res.includes('@')) {
                 pass = false;
             }
         }
