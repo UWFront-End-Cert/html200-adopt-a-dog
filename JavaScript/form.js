@@ -16,6 +16,9 @@ $(document).ready(function(){
         if (!responses[1].includes('@')) {
             pass = false;
         }
+        if(typeof responses[6] === 'undefined') {
+            pass = false;
+        }
         for (let i = 0; i < responses.length; i++) {
             res = responses[i];
             if (res == '') {

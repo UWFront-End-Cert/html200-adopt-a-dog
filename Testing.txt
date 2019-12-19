@@ -1,0 +1,13 @@
+Tested on Mozilla Firefox on MacOS
+	- Navigated to all pages.
+	- Resized pages.
+	- Tested form functionality.
+	- Tested cart functionality.
+
+Tested on Apple Safari on MacOS
+	- Navigated to all pages.
+	- Resized pages.
+	- Tested form functionality.
+	- Tested cart functionality.
+
+Tested on Google Chrome on MacOS
