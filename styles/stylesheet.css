@@ -138,9 +138,6 @@ h6 {
 .head-container {
   width: 85%;
 }
-.cart-holder {
-  width: 10%;
-}
 .standard-width {
   width: 85%;
 }
@@ -227,6 +224,9 @@ h6 {
       height: 15rem;
       object-position: center;
   }
+  .cart-holder {
+    width: 10%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
   #grid-1 {
@@ -252,6 +252,9 @@ h6 {
       height: 10rem;
       object-position: center;
   }
+  .cart-holder {
+    width: 10%;
+  }
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
   #grid-1 {
@@ -270,6 +273,9 @@ h6 {
   .head-container {
       padding-bottom: 4rem;
       padding-top: 2rem;
+  }
+  .cart-holder {
+    width: 15%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -295,6 +301,9 @@ h6 {
   }
   #name-img {
       width: 50%;
+  }
+  .cart-holder {
+    width: 30%;
   }
 }
 /*These ones might not be the most responsive*/
