@@ -4,6 +4,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>adopt a dog</title>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -20,7 +21,7 @@
       <div class="banner-right-side-cart">
         <img src="images/cart-icon.svg" class="cart" alt="cart"/>
         <p class="cart-price">
-          <strong>$1234.56</strong>
+          $<span id="demo"></span>
         </p>
       </div>
       <div>
@@ -51,17 +52,17 @@
           <div class="col">
             <div class="card">
                 <div>
-                  <img src="images/murphy-card.jpg" class="card-image" alt="murphy"/>
+                  <img src="images/murphy-card.jpg" class="card-image" alt="murphy" onclick="myFunction('Mruphy','abc','$123.45')"/>
                 </div>
                 <div class="card-desc">
                   <h4>Murphy</h4>
-                  <h5>Cost to Adopt: $123.45</h5>
+                  <p>Cost to Adopt: $<span id="price">123.45</span></p>
                   <p>Corrum volorit iandae
                   nimaxim cum restia volor
                   reicid ut et etur sunt arum
                   rendae pla endis re ea erum,
                   qui doluptae</p>
-                 <button type="button" class="button" onclick="#">
+                 <button type="button" class="button" onclick="adoptFunction()">
                    Adopt
                  </button>
                 </div>
@@ -70,17 +71,17 @@
           <div class="col">
             <div class="card">
               <div>
-                <img src="images/poppy-card.jpg" class="card-image" alt="poppy"/>
+                <img src="images/poppy-card.jpg" class="card-image" alt="poppy" onclick="myFunction('Poppy','abc','$123.45')"/>
               </div>
               <div class="card-desc">
                   <h4>Poppy</h4>
-                  <h5>Cost to Adopt: $123.45</h5>
+                  <p>Cost to Adopt: $<span id="price">123.45</span></p>
                   <p>Corrum volorit iandae
                   nimaxim cum restia volor
                   reicid ut et etur sunt arum
                   rendae pla endis re ea erum,
                   qui doluptae</p>
-                  <button type="button" class="button" onclick="#">
+                  <button type="button" class="button" onclick="adoptFunction()">
                     Adopt
                   </button>
               </div>
@@ -89,17 +90,17 @@
           <div class="col">
             <div class="card">
               <div>
-                <img src="images/jack-card.jpg" class="card-image" alt="jack"/>
+                <img src="images/jack-card.jpg" class="card-image" alt="jack" onclick="myFunction('Jack','abc','$123.45')"/>
               </div>
               <div class="card-desc">
                 <h4>Jack</h4>
-                <h5>Cost to Adopt: $123.45</h5>
+                <p>Cost to Adopt: $<span id="price">123.45</span></p>
                 <p>Corrum volorit iandae
                 nimaxim cum restia volor
                 reicid ut et etur sunt arum
                 rendae pla endis re ea erum,
                 qui doluptae</p>
-                <button type="button" class="button" onclick="#">
+                <button type="button" class="button" onclick="adoptFunction()">
                   Adopt
                 </button>
               </div>
@@ -108,17 +109,17 @@
           <div class="col">
             <div class="card">
               <div>
-                <img src="images/duffy-card.jpg" alt="duffy" class="card-image"/>
+                <img src="images/duffy-card.jpg" alt="duffy" class="card-image" onclick="myFunction('Duffy','abc','$123.45')"/>
               </div>
               <div class="card-desc">
                 <h4>Duffy</h4>
-                <h5>Cost to Adopt: $123.45</h5>
+                <p>Cost to Adopt: $<span id="price">123.45</span></p>
                 <p>Corrum volorit iandae
                 nimaxim cum restia volor
                 reicid ut et etur sunt arum
                 rendae pla endis re ea erum,
                 qui doluptae</p>
-                <button type="button" class="button" onclick="#">
+                <button type="button" class="button" onclick="adoptFunction()">
                   Adopt
                 </button>
               </div>
@@ -129,16 +130,18 @@
         <div class="row-1">
           <div class="col">
           <div class="card">
-            <div><img src="images/lucas-card.jpg" class="card-image" alt="lucas"/></div>
+            <div>
+              <img src="images/lucas-card.jpg" class="card-image" alt="lucas" onclick="myFunction('lucas','abc','$123.45')"/>
+            </div>
             <div class="card-desc">
               <h4>Lucas</h4>
-              <h5>Cost to Adopt: $123.45</h5>
+              <p>Cost to Adopt: $<span id="price">123.45</span></p>
               <p>Corrum volorit iandae
                     nimaxim cum restia volor
                     reicid ut et etur sunt arum
                     rendae pla endis re ea erum,
                     qui doluptae</p>
-              <button type="button" class="button" onclick="#">
+              <button type="button" class="button" onclick="adoptFunction()">
                 Adopt
               </button>
             </div>
@@ -146,16 +149,18 @@
           </div>
           <div class="col">
             <div class="card">
-              <div><img src="images/jake-card.jpg" class="card-image" alt="jake"/></div>
+              <div>
+                <img src="images/jake-card.jpg" class="card-image" alt="jake" onclick="myFunction('Mruphy','abc','$123.45')"/>
+              </div>
               <div class="card-desc">
                 <h4>Jake</h4>
-                <h5>Cost to Adopt: $123.45</h5>
+                <p>Cost to Adopt: $<span id="price">123.45</span></p>
                 <p>Corrum volorit iandae
                   nimaxim cum restia volor
                   reicid ut et etur sunt arum
                   rendae pla endis re ea erum,
                   qui doluptae</p>
-                <button type="button" class="button" onclick="#">
+                <button type="button" class="button" onclick="adoptFunction()">
                   Adopt
                 </button>
               </div>
@@ -163,16 +168,18 @@
           </div>
           <div class="col">
           <div class="card">
-              <div><img src="images/angus-card.jpg" alt="angus" class="card-image"/></div>
+              <div>
+                <img src="images/angus-card.jpg" alt="angus" class="card-image" onclick="myFunction('Angus','abc','$123.45')"/>
+              </div>
               <div class="card-desc">
                 <h4>Angus</h4>
-                <h5>Cost to Adopt: $123.45</h5>
+                <p>Cost to Adopt: $<span id="price">123.45</span></p>
                 <p>Corrum volorit iandae
                   nimaxim cum restia volor
                   reicid ut et etur sunt arum
                   rendae pla endis re ea erum,
                   qui doluptae</p>
-                <button type="button" class="button" onclick="#">
+                <button type="button" class="button" onclick="adoptFunction()">
                   Adopt
                 </button>
                 </div>
@@ -180,16 +187,18 @@
           </div>
           <div class="col">
             <div class="card">
-                <div><img src="images/violet-card.jpg" class="card-image" alt="violet"/></div>
+                <div>
+                  <img src="images/violet-card.jpg" class="card-image" alt="violet" onclick="myFunction('Violet','abc','$123.45')"/>
+                </div>
                 <div class="card-desc">
                   <h4>Violet</h4>
-                  <h5>Cost to Adopt: $123.45</h5>
+                  <p>Cost to Adopt: $<span id="price">123.45</span></p>
                   <p>Corrum volorit iandae
                     nimaxim cum restia volor
                     reicid ut et etur sunt arum
                     rendae pla endis re ea erum,
                     qui doluptae</p>
-                  <button type="button" class="button" onclick="#">
+                  <button type="button" class="button" onclick="adoptFunction()">
                     Adopt
                   </button>
                 </div>
@@ -202,17 +211,17 @@
           <div class="col">
             <div class="card">
                 <div>
-                  <img src="images/piper-card.jpg" class="card-image" alt="piper"/>
+                  <img src="images/piper-card.jpg" class="card-image" alt="piper" onclick="myFunction('Piper','abc','$123.45')"/>
                 </div>
                 <div class="card-desc">
                   <h4>Piper</h4>
-                  <h5>Cost to Adopt: $123.45</h5>
+                  <p>Cost to Adopt: $<span id="price">123.45</span></p>
                   <p>Corrum volorit iandae
                   nimaxim cum restia volor
                   reicid ut et etur sunt arum
                   rendae pla endis re ea erum,
                   qui doluptae</p>
-                 <button type="button" class="button" onclick="#">
+                 <button type="button" class="button" onclick="adoptFunction()">
                    Adopt
                  </button>
                 </div>
@@ -221,17 +230,17 @@
           <div class="col">
             <div class="card">
               <div>
-                <img src="images/maximus-card.jpg" alt="maximus" class="card-image"/>
+                <img src="images/maximus-card.jpg" alt="maximus" class="card-image" onclick="myFunction('Maximus','abc','$123.45')"/>
               </div>
               <div class="card-desc">
                   <h4>Maximus</h4>
-                  <h5>Cost to Adopt: $123.45</h5>
+                  <p>Cost to Adopt: $<span id="price">123.45</span></p>
                   <p>Corrum volorit iandae
                   nimaxim cum restia volor
                   reicid ut et etur sunt arum
                   rendae pla endis re ea erum,
                   qui doluptae</p>
-                  <button type="button" class="button" onclick="#">
+                  <button type="button" class="button" onclick="adoptFunction()">
                     Adopt
                   </button>
               </div>
@@ -240,17 +249,17 @@
           <div class="col">
             <div class="card">
               <div>
-                <img src="images/luna-card.jpg" alt="luna" class="card-image"/>
+                <img src="images/luna-card.jpg" alt="luna" class="card-image" onclick="myFunction('Luna','abc','$123.45')"/>
               </div>
               <div class="card-desc">
                 <h4>Luna</h4>
-                <h5>Cost to Adopt: $123.45</h5>
+                <p>Cost to Adopt: $<span id="price">123.45</span></p>
                 <p>Corrum volorit iandae
                 nimaxim cum restia volor
                 reicid ut et etur sunt arum
                 rendae pla endis re ea erum,
                 qui doluptae</p>
-                <button type="button" class="button" onclick="#">
+                <button type="button" class="button" onclick="adoptFunction()">
                   Adopt
                 </button>
               </div>
@@ -259,17 +268,17 @@
           <div class="col">
             <div class="card">
               <div>
-                <img src="images/stella-card.jpg" alt="stella" class="card-image"/>
+                <img src="images/stella-card.jpg" alt="stella" class="card-image" onclick="myFunction('Stella','abc','$123.45')"/>
               </div>
               <div class="card-desc">
                 <h4>Stella</h4>
-                <h5>Cost to Adopt: $123.45</h5>
+                <p>Cost to Adopt: $<span id="price">123.45</span></p>
                 <p>Corrum volorit iandae
                 nimaxim cum restia volor
                 reicid ut et etur sunt arum
                 rendae pla endis re ea erum,
                 qui doluptae</p>
-                <button type="button" class="button" onclick="#">
+                <button type="button" class="button" onclick="adoptFunction()">
                   Adopt
                 </button>
               </div>
