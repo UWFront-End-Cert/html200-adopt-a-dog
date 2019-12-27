@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 .header {
-  height: 300px;
+  max-height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,15 +19,19 @@
 .header-logo {
   text-align: left;
   position: absolute;
-  top: 20px;
-  left: 60px;
+  top: 10%;
+  left: 5%;
+  float: left;
+  clear: both;
 }
 
 .header-checkout {
   text-align: left;
   position: absolute;
-  top: 20px;
-  right: 100px;
+  top: 10%;
+  right: 10%;
+  float: right;
+  clear: both;
   font-family: 'Public Sans', sans-serif;
   font-weight: 700;
   font-size: .7em;
@@ -41,7 +49,7 @@
   background-color: #9bc344;
   border-radius: 1px;
   border: none;
-  width: 240px;
+  width: 10%;
   color: #fff;
 }
 
@@ -62,13 +70,13 @@
 
 nav {
   background-color: #ccc;
-  margin-top: -16px;
+  margin-top: -1rem;
 }
 
 ul {
   list-style-type: none;
   padding: 8px 0px 8px 0px;
-  margin-left: 60px;
+  margin-left: 3rem;
 }
 
 li {
@@ -97,7 +105,7 @@ li a:active {
 }
 
 .container {
-  margin-left: 60px;
+  margin-left: 3rem;
 }
 
 h1 {
@@ -112,7 +120,7 @@ h2 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 1.6em;
-  margin-top: 40px;
+  margin-top: 3rem;
   color: #103861;
 }
 
@@ -145,13 +153,13 @@ p {
 }
 
 .intro-container {
-  margin: 20px 10px 40px 0px;
+  margin: 1.2rem 0.8rem 4rem 0rem;
   max-width: 90%;
 }
 
 .intro-container img {
   float: left;
-  padding-right: 40px;
+  padding: 0px 40px 40px 0px;
 }
 
 .intro-container h2 p {
@@ -171,15 +179,14 @@ p {
 .dog-profiles section {
   border: 1px solid #ccc;
   width: 180px;
-  margin: 10px 30px 20px 0px;
+  margin: 0.8rem 3rem 1.5rem 0rem;
 }
 
 .dog-profiles a:link {
   font-family: 'Public Sans', sans-serif;
   font-weight: 700;
   font-size: .7em;
-  margin-top: 20px;
-  margin-bottom: 0px;
+  margin-top: 1.5rem;
   padding: 4px 70px 4px 62px;
   background-color: #9bc344;
   border-radius: 1px;
@@ -207,8 +214,10 @@ p {
 }
 
 .see-more {
+  display: flex;
+  justify-content: center;
   max-width: 90%;
-  height: 80px;
+  height: 10%;
   padding: 40px;
 }
 
@@ -217,8 +226,6 @@ p {
   font-weight: 700;
   font-size: .7em;
   padding: 8px 40px 8px 40px;
-  margin-right:45%;
-  margin-left: 35%;
   background-color: #ccc;
   border-radius: 1px;
   text-decoration: none;
@@ -243,7 +250,7 @@ p {
 .blog-article {
   display: flex;
   flex-flow: row wrap;
-  margin: 0px 10px 40px 0px;
+  margin: 0rem 0.8rem 3rem 0rem;
   max-width: 80%;
 }
 
@@ -262,21 +269,21 @@ form {
 }
 
 input {
-  margin: 6px 0px 20px 0px;
+  margin: 0.5rem 0rem 1.5rem 0rem;
   padding: 4px;
   width: 65%;
   display: block;
 }
 
 select {
-  margin: 6px 0px 20px 0px;
+  margin: 0.5rem 0rem 1.5rem 0rem;
   padding: 4px;
   width: 30%;
   display: block;
 }
 
 fieldset {
-  margin: 6px 0px 20px -12px;
+  margin: 0.5rem 0rem 1.5rem -0.9rem;
   border: none;
   display: block;
 }
@@ -291,10 +298,9 @@ label, legend {
 input[type=radio] {
   position: relative;
   cursor: pointer;
-  height: 14px;
-  width: 14px;
-  margin-left: 6px;
-  margin-bottom: -6px;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0rem 1rem -0.5rem 0.5rem;
   display: inline;
 }
 
@@ -302,12 +308,12 @@ input[type=submit] {
   font-family: 'Public Sans', sans-serif;
   font-weight: 700;
   font-size: .7em;
-  margin: 60px;
+  margin: 3rem;
   padding: 4px 8px 4px 8px;
   background-color: #9bc344;
   border-radius: 1px;
   border: none;
-  width: 100px;
+  width: 10%;
   color: #fff;
 }
 
@@ -320,12 +326,12 @@ input[type=submit]:active {
 }
 
 .form-title {
-  margin-left: 60px;
+  margin-left: 3rem;
 }
 
 .dogs-adopted div {
-  height: 30px;
-  width: 100px;
+  height: 5%;
+  width: 20%;
   font-size: 0.6em;
   display: inline-block;
 }
@@ -333,7 +339,7 @@ input[type=submit]:active {
 .dogs-adopted img {
   float: left;
   padding-right: 10px;
-  margin-top: 15px;
+  margin-top: 0.8rem;
 }
 
 .dogs-adopted h5 p {
@@ -346,6 +352,10 @@ input[type=submit]:active {
   text-align: center;
   padding: 40px;
   color: #fff;
+}
+
+.footer-block ul {
+  margin: 0rem;
 }
 
 .footer-block li {
