@@ -182,6 +182,12 @@ p {
   margin: 0.8rem 3rem 1.5rem 0rem;
 }
 
+button {
+  padding: 0px;
+  background-color: none;
+  border: none;
+}
+
 .dog-profiles a:link {
   font-family: 'Public Sans', sans-serif;
   font-weight: 700;
