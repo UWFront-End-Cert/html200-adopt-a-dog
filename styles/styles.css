@@ -428,41 +428,34 @@
 }
 
 /*Media Styling*/
-  /*Mobile Devices*/
-@media screen and (max-width: 414px) {
-  .dog-list, .grid, .header {
+  /*Tablet Devices: Horizontal*/
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) {
+  .dog-list, .grid, .header, .main-right {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1%;
   }
 
-  .header{
-    display: block;
-    float: none;
-  }
-
   .main-right {
-    display: none;
+    display: block;
+    text-align: center;
+    margin: 10%;
   }
 
-  .footer > p {
-    display: none;
+  .more-dog {
+    margin-top: 30%;
   }
 
-  .main-left {
-    grid-column: 1 / 4;
+  .blog-post > img {
+    margin-bottom: 5%;
   }
-
-  .doggo-grid > img {
-    width: 100%;
-    height: 100%;
 }
 
   /*Tablet Devices: Vertical*/
-@media (min-width: 768px) and (orientation: portrait) {
+@media screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) {
   .dog-list, .grid, .main-right {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     grid-gap: 1%;
   }
 
@@ -478,26 +471,75 @@
     margin-bottom: 5%;
   }
 }
-/*Tablet Devices: Horizontal*/
-@media (min-width: 768px) and (orientation: landscape) {
-.dog-list, .grid, .main-right {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1%;
+
+  /*Mobile Devices: Vertical*/
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .dog-list, .grid, .header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1%;
+  }
+
+  .header{
+    display: block;
+    align-content: center;
+    float: none;
+  }
+
+  .main-right {
+    display: none;
+  }
+
+  .footer > p {
+    display: none;
+  }
+
+  .main-left {
+    grid-column: 1 / 4;
+  }
+
+  .more-dog{
+    padding-top: 50%;
+  }
+
+  .doggo-grid > img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
+/*Mobile Devices: Horizontal*/
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+  .dog-list, .grid, .header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1%;
+  }
 
-.main-right {
-  display: block;
-  text-align: center;
-  margin: 10%;
-}
+  .header{
+    display: block;
+    align-content: center;
+    float: none;
+  }
 
-.more-dog {
-  margin-top: 30%;
-}
+  .main-right {
+    display: none;
+  }
 
-.blog-post > img {
-  margin-bottom: 5%;
-}
+  .footer > p {
+    display: none;
+  }
+
+  .main-left {
+    grid-column: 1 / 4;
+  }
+
+  .more-dog{
+    padding-top: 50%;
+  }
+
+  .doggo-grid > img {
+    width: 100%;
+    height: 100%;
+  }
 }
