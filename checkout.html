@@ -3,75 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles.css">
-    <script src="https://kit.fontawesome.com/61876e87f1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
 
     <title>Adoptadog Checkout</title>
 </head>
 <body>
   <header>
-    <h1>adoptadog-logo placeholder</h1>
-    <h1>Seattle's premiere dog adoption agency</h1>
-    <img src="./images/header-image.jpg" alt="dog face profile">
-    <p>$1234.56</p>
-    <i class="fas fa-shopping-cart"></i>
-    <a href="checkout.html">Checkout</a>
+    <div class="title-words">
+      <img class= "logo" src="./images/adoptadog-logo.svg" alt="logo">
+      <h1>Seattle's premiere dog adoption agency</h1>
+    </div>
+    <img src="./images/header-image-narrow.jpg" alt="dog face profile">
+    <div class="checkout">
+      <img class= "cart" src="./images/cart-icon.svg" alt="shopping cart icon"><a> $1234.56</a>
+      <a href="checkout.html" class="button">Checkout</a>
+    </div>
   </header>
   <nav>
       <a href="index.html">Home</a>
       <a href="dogs.html">Dogs </a>
       <a href="blog.html">Blog </a>
     </nav>
-  <section>
+  <section class="form">
     <h2>Checkout</h2>
     <form action="/action.php" method="POST">
-  Name:<br>
-  <input type="text" name="name">
-  <br>
-  Email Address:<br>
-  <input type="email" name="email">
-  <br>
-  Street Address:<br>
-  <input type="text" name="street-add">
-  <br>
-  City:<br>
-  <input type="text" name="city">
-  <br>
-  State:<br>
-  <select name="region">
-  <option value="WA">WA</option>
-  <option value="OR">OR</option>
-  </select>
-<br>
-  zip Code:<br>
-  <input type="text" name="zip"><br>
-  First time adopter?<br>
-  <input type="radio" name="first-time-adopter" value="yes"> Yes<br>
-  <input type="radio" name="first-time-adopter" value="no"> No <br>
-  Pickup location:
-  <select name="city">
-  <option value="Seattle">Seattle</option>
-  <option value="Portland">Portland</option>
-</select><br>
-  Dogs adopted
-  <!--correct shopping choice will populate here after javascript is added-->
-  <p>Lucas</p>
-  <p>Duffy</p>
+    Name:<br>
+    <input type="text" name="name">
+    <br>
+    Email Address:<br>
+    <input type="email" name="email">
+    <br>
+    Street Address:<br>
+    <input type="text" name="street-add">
+    <br>
+    City:<br>
+    <input type="text" name="city">
+    <br>
+    State:<br>
+    <select name="region">
+    <option value="WA">WA</option>
+    <option value="OR">OR</option>
+    </select>
+    <br>
+      zip Code:<br>
+      <input type="text" name="zip"><br>
+      First time adopter?<br>
+      <input type="radio" name="first-time-adopter" value="yes"> Yes<br>
+      <input type="radio" name="first-time-adopter" value="no"> No <br>
+      Pickup location:
+      <select name="city">
+      <option value="Seattle">Seattle</option>
+      <option value="Portland">Portland</option>
+    </select><br>
+      Dogs adopted
+      <!--correct shopping choice will populate here after javascript is added-->
+      <p>Lucas</p>
+      <p>Duffy</p>
 
-  <br><br>
-  <h3>Total Adoption cost</h3>
-  <!--total cost will populate here-->
-  <p>$1234.56</p>
-  <input type="submit" value="Send" name="submit">
-  </form>
-</section>
+      <br><br>
+      <h3>Total Adoption cost</h3>
+      <!--total cost will populate here-->
+      <p>$1234.56</p>
+      <input type="submit" class ="submitbutton" value="Submit" name="submit">
+      </form>
+    </section>
 
-<footer>
-    <h2>adoptadog-logo placeholder</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-    <a href="index.html">Home</a>
-    <a href="dogs.html">Dogs </a>
-    <a href="blog.html">Blog </a>
-    <p>&#169; 2018 Adoptadog, LLC | Seattle, WA </p>
+    <footer>
+  <img class= "footlogo" src="./images/adoptadog-logo.svg" alt="logo">
+  <p class="foot">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+  <nav class="footnav">
+  <a href="index.html" style="background-color: rgb(17, 64, 105); color: white;"> Home /</a>
+  <a href="dogs.html" style="background-color: rgb(17, 64, 105); color: white;"> Dogs /</a>
+  <a href="blog.html" style="background-color: rgb(17, 64, 105); color: white;"> Blog </a>
+  </nav>
+  <p> 2018 Adoptadog, LLC | Seattle, WA </p>
     </footer>
 
 </body>

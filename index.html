@@ -2,97 +2,160 @@
 <html lang="zxx">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="https://kit.fontawesome.com/61876e87f1.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
+    <script src="./dog-button.js"></script>
 
     <title>Adoptadog</title>
 </head>
 <body>
   <header>
-    <h1>adoptadog-logo placeholder</h1>
-    <h1>Seattle's premiere dog adoption agency</h1>
-    <img src="./images/header-image.jpg" alt="dog face profile">
-    <p>$1234.56</p>
-    <i class="fas fa-shopping-cart"></i>
-    <a href="checkout.html">Checkout</a>
+    <div class="title-words">
+      <img class= "logo" src="./images/adoptadog-logo.svg" alt="logo">
+      <h1>Seattle's premiere dog adoption agency</h1>
+    </div>
+    <img src="./images/header-image-narrow.jpg" alt="dog face profile">
+    <div class="checkout">
+      <img class= "cart" src="./images/cart-icon.svg" alt="shopping cart icon"><a> $1234.56</a>
+      <a href="checkout.html" class="button">Checkout</a>
+    </div>
   </header>
-  <nav>
-      <a href="index.html">Home</a>
-      <a href="dogs.html">Dogs </a>
+    <nav>
+      <a href="index.html">Home /</a>
+      <a href="dogs.html">Dogs /</a>
       <a href="blog.html">Blog </a>
     </nav>
-  <section>
-    <img src="./images/home-intro.jpg" alt="young man hugging dog">
-    <h2>Adopt A Dog</h2>
-    <p>Get a dog ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates eos doloribus, nulla nostrum in aspernatur debitis sit earum accusamus iure sapiente quis nobis, quam beatae provident voluptatum saepe dolorem!</p>
+    <!--Aside-->
+    <aside>
+    <!--blog preview 1-->
+      <div class="blog-row">
+      <h2>From our Blog</h2>
+      <div class="">
+      <img src="./images/blog-1-crop.jpg" alt="young woman hugging dog at grand canyon">
+        <h3>Traveling With Your Dog</h3>
+          <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+          quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
+          hillupta aut es ut</p>
+          <h4>Read more >>></h4>
+        </div>
+    <!-- Blog preview 2 -->
+        <div class="">
+        <div class="">
+      <img src="./images/blog-2-crop.jpg" alt="multiple leashed dogs sitting">
+        <h3>How to Walk Multiple Dogs</h3>
+        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+          quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
+          hillupta aut es ut</p>
+          <h4>Read more >>></h4>
+          </div>
+          </div>
+         <!-- Blog preview 3 -->
+      <div class="">
+        <div class="">
+        <img src="./images/blog-3-crop.jpg" alt="dog and person at sunset" >
+        <h3>Teach your dog to Fetch</h3>
+        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+          quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
+          hillupta aut es ut </p>
+          <h4>Read more >>></h4>
+        </div>
+      </div>
+    </div>
+  </aside>
 
-    <!-- dog 1 -->
-    <img src="./images/murphy-card.jpg" alt=" large dog's face">
-    <h3>Murphy</h3>
-    <b>cost to adopt</b>
-    <p>$123.45</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet aliquam id diam maecenas.</p>
-    <a href="./#.html" target="_blank">Adopt</a>
-    <!-- dog 2 -->
-    <img src="./images/poppy-card.jpg" alt="small dog running">
-    <h3>Poppy</h3>
-    <b>cost to adopt:</b>
-    <p>$123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
-    <a href="./#.html" target="_blank">Adopt</a>
-    <!-- dog 3 -->
-    <img src="./images/jack-card.jpg" alt="beagle">
-    <h3>Jack</h3>
-    <b>cost to adopt:</b>
-    <p>$123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
-    <a href="./#.html" target="_blank">Adopt</a>
-    <!-- dog 4 -->
-    <img src="./images/duffy-card.jpg" alt="dog with white face">
-    <h3>Duffy</h3>
-    <b>cost to adopt:</b>
-    <p>$123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
-    <a href="./#.html" target="_blank">Adopt</a>
-    <!-- dog 5 -->
-    <img src="./images/lucas-card.jpg" alt="black dog with upright ears">
-    <h3>Lucas</h3>
-    <b>cost to adopt:</b>
-    <p>$123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
-    <a href="./#.html" target="_blank">Adopt</a>
-    <!-- dog 6 -->
-    <img src="./images/jake-card.jpg" alt="adult lab">
-    <h3>Jake</h3>
-    <b>cost to adopt:</b>
-    <p>$123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
-    <a href="./#.html" target="_blank">Adopt</a>
-    <!-- dog 7 -->
-    <img src="./images/angus-card.jpg" alt="brown dog withlarge head">
-    <h3>Angus</h3>
-    <b>cost to adopt:</b>
-    <p>$123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
-    <a href="./#.html" target="_blank">Adopt</a>
-    <!-- dog 8 -->
-    <img src="./images/violet-card.jpg" alt="brown lab puppy">
-    <h3>Violet</h3>
-    <b>cost to adopt:</b>
-    <p>$123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
-    <a href="./#.html" target="_blank">Adopt</a>
+<div class="main">
+    <div class="man-dog">
+      <img src="./images/home-intro-crop.jpg" class ="header-image" alt="young man hugging dog">
+    </div>
+    <div class= "text">
+      <h3>Adopt A Dog</h3>
+      <h6>Get a dog ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates eos doloribus, nulla nostrum in aspernatur debitis sit earum accusamus iure sapiente quis nobis, quam beatae provident voluptatum saepe dolorem!</h6>
+    </div>
+    <section>
+        <div class="grid-container">
+          <!-- dog 1 -->
+        <div class="col-1">
+          <img src="./images/murphy-card.jpg" onclick="clickPhoto('Murphy','Mixed-breed','$123.45')" alt=" large dog's face">
+          <h3>Murphy</h3>
+          <p><b>cost to adopt</b> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
+          <a class="button" onclick="dogFees(123.45)" >Adopt</a>
+        </div>
+        <!-- dog 2 -->
+        <div class="col-1">
+          <img src="./images/poppy-card.jpg" onclick="clickPhoto('Poppy','poodle', '$123.45')" alt="small dog running">
+          <h3>Poppy</h3>
+          <p><b>cost to adopt</b> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
+          <a class="button" onclick="dogFees(123.45)" >Adopt</a>
+        </div>
+        <!-- dog 3 -->
+        <div class="col-1">
+          <img src="./images/jack-card.jpg" onclick="clickPhoto('Jack','beagle','$123.45')" alt="beagle">
+          <h3>Jack</h3>
+          <p><b>cost to adopt</b> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
+          <a class="button" onclick="dogFees(123.45)" >Adopt</a>
+        </div>
+        <!-- dog 4 -->
+        <div class="col-1">
+          <img src="./images/duffy-card.jpg" onclick="clickPhoto('Duffy','pitbull', '$123.45')" alt="dog with white face">
+          <h3>Duffy</h3>
+          <p><b>cost to adopt:</b> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
+          <a class="button" onclick="dogFees(123.45)" >Adopt</a>
+        </div>
+        <!-- dog 5 -->
+        <div class="col-1">
+          <img src="./images/lucas-card.jpg" onclick="clickPhoto('Lucas','shepherd', '$123.45')" alt="black dog with upright ears">
+          <h3>Lucas</h3>
+          <p><b>cost to adopt:</b> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
+          <a class="button" onclick="dogFees(123.45)" >Adopt</a>
+        </div>
+        <!-- dog 6 -->
+        <div class="col-1">
+          <img src="./images/jake-card.jpg" onclick="clickPhoto('Jake','Lab','$123.45')" alt="adult lab">
+          <h3>Jake</h3>
+          <p><b>cost to adopt:</b> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
+          <a class="button" onclick="dogFees(123.45)" >Adopt</a>
+        </div>
+        <!-- dog 7
+        <div class="col-1">
+          <img src="./images/angus-card.jpg" onclick="clickPhoto('Angus','Boxer', '$123.45')" alt="brown dog withlarge head">
+          <h3>Angus</h3>
+          <p><b>cost to adopt:</b> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
+          <a class="button" onclick="dogFees(123.45)" >Adopt</a>
+        </div>-->
+        <!-- dog 8
+        <div class="col-1">
+          <img src="./images/violet-card.jpg" onclick="clickPhoto('Violet','Lab', '$123.45')" alt="brown lab puppy">
+          <h3>Violet</h3>
+          <p><b>cost to adopt:</b> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,qui doluptae</p>
+          <a class="button" onclick="dogFees(123.45)" >Adopt</a>
+          </div> -->
+      </div>
+        <div class="graybutton">
+          <a href="./dogs.html" style = "background-color: lightGray; color: darkblue; margin-top: 1rem; margin-left: 30rem;" target= "_blank"> See More Dogs</a><br>
+        </div>
+    </section>
+</div>
 
-</section>
-    <a href="./dogs.html" target="_blank">See More Dogs</a>
 <footer>
-    <h1>adoptadog-logo placeholder</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-    <a href="index.html">Home</a>
-    <a href="dogs.html">Dogs </a>
-    <a href="blog.html">Blog </a>
-    <p>&#169; 2018 Adoptadog, LLC | Seattle, WA </p>
+    <img class= "footlogo" src="./images/adoptadog-logo.svg" alt="logo">
+    <p class="foot">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <nav class="footnav">
+    <a href="index.html" style="background-color: rgb(17, 64, 105); color: white;"> Home /</a>
+    <a href="dogs.html" style="background-color: rgb(17, 64, 105); color: white;"> Dogs /</a>
+    <a href="blog.html" style="background-color: rgb(17, 64, 105); color: white;"> Blog </a>
+    </nav>
+    <p> 2018 Adoptadog, LLC | Seattle, WA </p>
 </footer>
+
 
 </body>
 </html>
