@@ -8,7 +8,7 @@
   </head>
   <body>
   <!-- Header -->
-  <header>
+<header>
   <!-- Left Side-->
   <div class="banner-left-side">
     <img src="images/adoptadog-logo.svg" alt="logo" class="banner-left-side-img"/>
@@ -20,7 +20,9 @@
   <div class="banner-right-side">
     <div class="banner-right-side-cart">
       <img src="images/cart-icon.svg" class="cart" alt="cart"/>
-      <p class="cart-price">$<span id="demo"></span></p>
+      <strong>
+        <p class="cart-price">$<span id="demo"></span></p>
+      </strong>
     </div>
     <div>
       <a href="Page-4.html" class="button">
@@ -28,8 +30,7 @@
         </a>
     </div>
   </div>
-  </header>
-
+</header>
   <!-- Nav bar -->
   <nav>
     <h4 class="nav-caption">
@@ -37,199 +38,152 @@
       <a href="Page-2.html"> Dogs </a>/
       <a href="Page-3.html"> Blog </a></h4>
   </nav>
-
+<div class="container">
   <!-- Main Container -->
   <div class="main-container">
-  <section>
-        <!-- Left Div-->
-        <div class="section-left-side">
-          <img src="images/home-intro.jpg" alt="home"/>
-        </div>
-        <!-- Right Div-->
-        <div class="section-right-side">
-          <h3 class="section-right-side-header">Adopt A Dog</h3>
-          <p class="section-right-side-para">
-          Iduciendisite quo magnatem iuntum quid quaest ea am,
-          tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-          derum recuptatur, cum volore, undipsa doloreium hillupta aut
-          es ut alitatuscit ommossum haritatur arum qui officae videbiti
-          corporeium faccull oribus es quidignis ipietus explam sus
-          am aut amet ant fugiatum, utem non reptat ad magnienecto
-          volorent fugia nonsedi gendand itatquos as magnimpor aut
-          molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-        </div>
-      </section>
-
-  <article>
+    <section>
+      <div><img src="images/home-intro.jpg" alt="home"/></div>
+      <div><h3>Adopt A Dog</h3></div>
+      <div><p>Iduciendisite quo magnatem iuntum quid quaest ea am,
+      tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+      derum recuptatur, cum volore, undipsa doloreium hillupta aut
+      es ut alitatuscit ommossum haritatur arum qui officae videbiti
+      corporeium faccull oribus es quidignis ipietus explam sus
+      am aut amet ant fugiatum, utem non reptat ad magnienecto
+      volorent fugia nonsedi gendand itatquos as magnimpor aut
+      molor autatia ad est officimus accae et omnia cus, od qui ate</p></div>
+    </section>
+    <div class="section-2">
       <div class="row-1">
         <div class="col">
           <div class="card">
-          <div>
             <img src="images/murphy-card.jpg" class="card-image" alt="murphy" onclick="myFunction('Mruphy','abc','$123.45')"/>
-          </div>
-              <div class="card-desc">
-                <h4>Murphy</h4>
-                <p>Cost to Adopt: $<span id="price">123.45</span></p>
-                <p>Corrum volorit iandae
-                nimaxim cum restia volor
-                reicid ut et etur sunt arum
-                rendae pla endis re ea erum,
-                qui doluptae</p>
-               <button type="button" class="button" onclick="adoptFunction()">
-                 Adopt
-               </button>
-              </div>
+            <h4>Murphy</h4>
+            <p>Cost to Adopt: $<span id="price">123.45</span></p>
+            <p>Corrum volorit iandae
+            nimaxim cum restia volor
+            reicid ut et etur sunt arum
+            rendae pla endis re ea erum,
+            qui doluptae</p>
+           <button type="button" class="button" onclick="adoptFunction()">
+             Adopt
+           </button>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <div>
-              <img src="images/poppy-card.jpg" class="card-image" alt="poppy" onclick="myFunction('Poppy','abc','$123.45')"/>
-            </div>
-            <div class="card-desc">
-                <h4>Poppy</h4>
-                <p>Cost to Adopt: $<span id="price">123.45</span></p>
-                <p>Corrum volorit iandae
-                nimaxim cum restia volor
-                reicid ut et etur sunt arum
-                rendae pla endis re ea erum,
-                qui doluptae</p>
-                <button type="button" class="button"  onclick="adoptFunction()">
-                  Adopt
-                </button>
-            </div>
-            </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div>
-              <img src="images/jack-card.jpg" class="card-image" alt="jack" onclick="myFunction('Jack','abc','$123.45')"/>
-            </div>
-            <div class="card-desc">
-              <h4>Jack</h4>
-              <p>Cost to Adopt: $<span id="price">123.45</span></p>
-              <p>Corrum volorit iandae
-              nimaxim cum restia volor
-              reicid ut et etur sunt arum
-              rendae pla endis re ea erum,
-              qui doluptae</p>
-              <button type="button" class="button"  onclick="adoptFunction()">
-                Adopt
-              </button>
-            </div>
+            <img src="images/poppy-card.jpg" class="card-image" alt="poppy" onclick="myFunction('Poppy','abc','$123.45')"/>
+            <h4>Poppy</h4>
+            <p>Cost to Adopt: $<span id="price">123.45</span></p>
+            <p>Corrum volorit iandae
+            nimaxim cum restia volor
+            reicid ut et etur sunt arum
+            rendae pla endis re ea erum,
+            qui doluptae</p>
+           <button type="button" class="button" onclick="adoptFunction()">
+             Adopt
+           </button>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <div>
-              <img src="images/duffy-card.jpg" class="card-image" alt="duffy" onclick="myFunction('Duffy','abc','$123.45')"/>
-            </div>
-            <div class="card-desc">
-              <h4>Duffy</h4>
-              <p>Cost to Adopt: $<span id="price">123.45</span></p>
-              <p>Corrum volorit iandae
-              nimaxim cum restia volor
-              reicid ut et etur sunt arum
-              rendae pla endis re ea erum,
-              qui doluptae</p>
-              <button type="button" class="button"  onclick="adoptFunction()">
-                Adopt
-              </button>
-            </div>
+            <img src="images/jack-card.jpg" class="card-image" alt="jack" onclick="myFunction('Jack','abc','$123.45')"/>
+            <h4>Jack</h4>
+            <p>Cost to Adopt: $<span id="price">123.45</span></p>
+            <p>Corrum volorit iandae
+            nimaxim cum restia volor
+            reicid ut et etur sunt arum
+            rendae pla endis re ea erum,
+            qui doluptae</p>
+           <button type="button" class="button" onclick="adoptFunction()">
+             Adopt
+           </button>
           </div>
         </div>
       </div>
-
+      <!-- Row-2 --------->
       <div class="row-1">
-      <div class="col">
-        <div class="card">
-          <div>
-            <img src="images/lucas-card.jpg" class="card-image" alt="lucas" onclick="myFunction('lucas','abc','$123.45')"/>
+        <div class="col">
+          <div class="card">
+            <img src="images/duffy-card.jpg" class="card-image" alt="duffy" onclick="myFunction('Duffy','abc','$123.45')"/>
+            <h4>Duffy</h4>
+            <p>Cost to Adopt: $<span id="price">123.45</span></p>
+            <p>Corrum volorit iandae
+            nimaxim cum restia volor
+            reicid ut et etur sunt arum
+            rendae pla endis re ea erum,
+            qui doluptae</p>
+           <button type="button" class="button" onclick="adoptFunction()">
+             Adopt
+           </button>
           </div>
-          <div class="card-desc">
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/lucas-card.jpg" class="card-image" alt="lucas" onclick="myFunction('Lucas','abc','$123.45')"/>
             <h4>Lucas</h4>
             <p>Cost to Adopt: $<span id="price">123.45</span></p>
             <p>Corrum volorit iandae
-                  nimaxim cum restia volor
-                  reicid ut et etur sunt arum
-                  rendae pla endis re ea erum,
-                  qui doluptae</p>
-            <button type="button" class="button"  onclick="adoptFunction()">
-              Adopt
-            </button>
+            nimaxim cum restia volor
+            reicid ut et etur sunt arum
+            rendae pla endis re ea erum,
+            qui doluptae</p>
+           <button type="button" class="button" onclick="adoptFunction()">
+             Adopt
+           </button>
           </div>
-          </div>
-      </div>
-      <div class="col">
+        </div>
+        <div class="col">
           <div class="card">
-            <div>
-              <img src="images/jake-card.jpg" class="card-image" alt="jake" onclick="myFunction('Jake','abc','$123.45')"/>
-            </div>
-            <div class="card-desc">
-              <h4>Jake</h4>
-              <p>Cost to Adopt: $<span id="price">123.45</span></p>
-              <p>Corrum volorit iandae
-                nimaxim cum restia volor
-                reicid ut et etur sunt arum
-                rendae pla endis re ea erum,
-                qui doluptae</p>
-              <button type="button" class="button"  onclick="adoptFunction()">
-                Adopt
-              </button>
-            </div>
-          </div>
-        </div>
-      <div class="col">
-        <div class="card">
-            <div>
-              <img src="images/angus-card.jpg" class="card-image" alt="angus" onclick="myFunction('Agnus','abc','$123.45')"/>
-            </div>
-            <div class="card-desc">
-              <h4>Angus</h4>
-              <p>Cost to Adopt: $<span id="price">123.45</span></p>
-              <p>Corrum volorit iandae
-                nimaxim cum restia volor
-                reicid ut et etur sunt arum
-                rendae pla endis re ea erum,
-                qui doluptae</p>
-              <button type="submit" class="button"  onclick="adoptFunction()">
-                Adopt
-              </button>
-              </div>
-          </div>
-      </div>
-      <div class="col">
-          <div class="card">
-              <div><img src="images/violet-card.jpg" class="card-image" alt="violet" onclick="myFunction('Violet','abc','$123.45')"/></div>
-              <div class="card-desc">
-                <h4>Violet</h4>
-                <p>Cost to Adopt: $<span id="price">123.45</span></p>
-                <p>Corrum volorit iandae
-                  nimaxim cum restia volor
-                  reicid ut et etur sunt arum
-                  rendae pla endis re ea erum,
-                  qui doluptae</p>
-                <button type="button" class="button"  onclick="adoptFunction()">
-                  Adopt
-                </button>
-              </div>
+            <img src="images/jake-card.jpg" class="card-image" alt="jake" onclick="myFunction('Jake','abc','$123.45')"/>
+            <h4>Jake</h4>
+            <p>Cost to Adopt: $<span id="price">123.45</span></p>
+            <p>Corrum volorit iandae
+            nimaxim cum restia volor
+            reicid ut et etur sunt arum
+            rendae pla endis re ea erum,
+            qui doluptae</p>
+           <button type="button" class="button" onclick="adoptFunction()">
+             Adopt
+           </button>
           </div>
         </div>
       </div>
-      </article>
-
-      <aside>
-        <div></div>
-        <div class="aside-col">
-          <button type="button" value="Page-2.html">
-            See More Dogs
-          </button>
-        </div>
-      </aside>
+    </div>
+    <div class="section-3">
+    <center>
+      <button type="button" value="Page-2.html">
+      See More Dogs
+      </button>
+    </center>
   </div>
-
+  </div>
+  <div class="sidebar">
+    <div><h3>From Our Blog</h3></div>
+    <div class="blog"><img class="Blog-image" src="images/blog-1.jpg" alt="blog"/>
+    <div class="blog"><h3>Travelling With Your Dog</h3>
+      <p>Iciustiam, et ad quiaes cum que
+      excea sinciendi qui offic temquas
+      doluptios dolupta tiandebis nem ut.</p>
+      <a href="Page-2.html">Read more >></a></div>
+   </div>
+    <div class="blog"><img class="Blog-image" src="images/blog-2.jpg" alt="blog"/></div>
+    <div class="blog"><h3>How To Walk Multiple Dogs</h3>
+    <p>Iciustiam, et ad quiaes cum que
+      excea sinciendi qui offic temquas
+      doluptios dolupta tiandebis nem ut.</p>
+    <a href="Page-2.html">Read more >></a></div>
+    <div class="blog"><img class="Blog-image" src="images/blog-3.jpg" alt="blog"/></div>
+    <div class="blog">
+      <h3>Teach Your Dog To Fetch!</h3>
+    <p>Iciustiam, et ad quiaes cum que
+      excea sinciendi qui offic temquas
+      doluptios dolupta tiandebis nem ut.</p>
+    <a href="Page-2.html">Read more >></a></div>
+  </div>
+</div>
   <!-- Footer -->
-  <footer>
+<footer>
   <div class="footer-logo">
 
         <img src="images/adoptadog-logo.svg" alt="logo" class="checkout-animals"/>

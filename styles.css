@@ -2,8 +2,21 @@
   margin: 0;
   padding:0;
 }
+@media print{
+  body img{
+    display:none;
+  }
+}
+a{
+  text-decoration: none;
+}
 /* Mobile Styles */
 @media only screen and (max-width: 500px){
+  .container{
+    margin: 30px 50px;
+    display: grid;
+    grid-gap: 15px;
+  }
   header{
     width:100% !important;
   }
@@ -14,24 +27,24 @@
     width:100% !important;
     height:25px !important;
   }
-  body{
-      background: lightblue;
-  }
   .main-container{
    margin: 3px !important;
    grid-gap:5px !important;
+  }
+  .sidebar img,p{
+    display: none;
   }
   section{
     display:flex;
     flex-wrap: wrap !important;
     width:100% !important;
   }
+  .section-3{
+    margin: 20px;
+  }
   .section-left-side{
     flex: 0% !important;
     margin:2px;
-  }
-  .section-left-side img{
-
   }
   .section-right-side{
     flex: 50% !important;
@@ -47,17 +60,15 @@
     word-wrap: break-word !important;
   }
   article{
-    grid-template-columns: auto auto !important;
+    grid-template-columns: auto !important;
     grid-gap:2px !important;
     width: 100% !important;
   }
-  .row-1{
-    grid-template-columns: auto auto !important;
-    grid-gap:2px !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    width: 140% !important;
-  }
+  .row-1 {
+    display: grid;
+    grid-template-columns: auto !important;
+    grid-gap: 10px;
+    }
   .col{
     width: 50%;
   }
@@ -73,7 +84,13 @@
   }
 }
 /* Tablet Styles */
-@media only screen and (min-width:501px) and (max-width:959px){
+@media only screen and (min-width:501px) and (max-width:900px){
+  .container{
+    margin: 30px 50px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: auto auto;
+  }
   header{
     width:100%;
   }
@@ -86,7 +103,6 @@
   }
   body{
     width: 100%;
-    background: lightpink;
   }
   .main-container{
     margin: 3px !important;
@@ -98,9 +114,6 @@
   }
   .section-left-side{
     flex: 0% !important;
-  }
-  .section-left-side img{
-
   }
   .section-right-side{
     flex: 50% !important;
@@ -119,9 +132,11 @@
     grid-gap:5px !important;
     width: 100% !important;
   }
-  .row-1{
-    grid-gap:5px !important;
-  }
+  .row-1 {
+    display: grid;
+    grid-template-columns: auto auto !important;
+    grid-gap: 30px;
+    }
   .col{
     width: 100%;
   }
@@ -137,21 +152,58 @@
   }
 }
 /* Desktop Styles */
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 901px) and (max-width: 1300px){
   body{
     width:100%;
+  }
+  p {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
   }
   header{
     width:100%;
   }
+  .container{
+    display:flex !important;
+    margin: 30px 50px;
+    padding:0px 150px;
+  }
   .main-container{
-    width:70%;
+    flex:35% !important;
+  }
+  .sidebar{
+   flex:0%;
+  }
+  .sidebar img{
+    height: 10em;
+    width: 90%;
+  }
+  .blog{
+    padding: 10px 5px;
+  }
+  section{
+      display: grid;
+      grid-template-rows: auto auto auto!important;
+  }
+
+  .row-1 {
+    display: grid;
+    grid-template-columns: auto auto auto!important;
+    grid-gap: 30px;
+    }
+  section img{
+    height: 20em;
+    width: 100%;
   }
   .section-right-side-header{
     font-size: 1em;
   }
   .section-right-side-para{
     font-size: 1.12em;
+  }
+  article{
+    display:grid;
+    grid-template-rows: auto auto;
+    grid-gap: 30px;
   }
   footer{
     width:100%;
@@ -164,12 +216,7 @@
   }
 }
 /* Common Code For All Three*/
-.main-container{
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-gap: 30px;
-  margin : 20px 150px;
-}
+
 h4,h5{
   margin:0px;
 }
@@ -182,7 +229,6 @@ p{
   font-size: 0.8em;
 }
 a{
-  color:white;
   text-decoration: none;
 }
 header{
@@ -227,37 +273,11 @@ nav{
 nav a{
   color:darkblue;
 }
-section{
-  display:flex;
-}
-.section-left-side{
-  flex:30%;
-}
-.section-left-side img{
-  height: auto;
-  width: 100%;
-}
-.section-right-side{
-  flex: 70%;
-  padding:0px 150px 0px 30px;
-}
 .section-right-side-header{
   color:darkblue;
-  font-family: serif;
 }
 .section-right-side-para{
   font-family: monospace;
-  padding: 0px 19px 0px 0px;
-}
-article{
-  display:grid;
-  grid-template-rows: auto auto;
-  grid-gap: 30px;
-}
-.row-1{
-display:grid;
-grid-template-columns: auto auto auto auto;
-grid-gap:100px;
 }
 .row{
   display:grid;
@@ -304,7 +324,6 @@ grid-gap:100px;
   width: 50%;
   height:60px;
 }
-
 .card{
 display:grid;
 grid-template-rows: auto auto auto;
@@ -332,6 +351,9 @@ footer{
   display: flex;
   justify-content: center;
   background-color: #06587f;
+}
+footer a{
+  color: white;
 }
 .footer-logo{
   display:grid;
