@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  font-family: "Georgia", serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #093C60;
+  padding: 3% 0% 3% 0%;
+}
+
+.header-intro {
+  flex-direction: column;
+  margin-right: 45%;
+}
+
+.header-checkout-all {
+  display: flex;
+}
+
+.header-logo {
+  width: 70%;
+}
+
+.header-title {
+  color: #81B741;
+  font-size: 1.5em;
+}
+
+.cart-logo {
+  width: 10%;
+  margin-top: -50%;
+}
+
+.header-price {
+  color: white;
+  margin-left: 1%;
+  font-weight: bold;
+}
+
+.button-class {
+  flex-direction: column;
+}
+
+.button {
+  background-color: #81B741;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.global-navigation {
+  display: flex;
+  font-size: 1em;
+  font-weight: bold;
+  background: #ECECEC;
+  padding: 2% 0% 2% 0%;
+}
+
+.nav-link {
+  color: #093C60;
+  text-decoration: none;
+  padding: 0% 1% 0 15%;
+}
+
+.nav-link-2 {
+  color: #093C60;
+  text-decoration: none;
+  padding: 0% 1% 0 1%;
+}
+
+#checkout-header {
+  color: #093C60;
+  font-size: 2em;
+  margin: 2% 0% 2% 15%;
+}
+
+.checkout-form-1 {
+  display: flex;
+  flex-flow: column;
+}
+
+.checkout-form-2 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.form-box-1 {
+  padding: 1%;
+  width: 60%;
+}
+
+.checkout-title {
+  color: #093C60;
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin: 2% 0% 2% 15%;
+}
+
+.checkout-title-2 {
+  color: #093C60;
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin: 2% 0% 2% 2%;
+}
+
+#first-time-adopter {
+  border: none;
+}
+
+.first-time-selection {
+  margin-left: 15%;
+}
+
+.first-time-selection-2 {
+  margin-left: 5%;
+}
+
+.dogs-adopted {
+  display: flex;
+}
+
+.dogs-adopted-tile {
+  flex-flow: column;
+}
+
+.adoption-image-1 {
+  width: 8%;
+  margin-left: 15%;
+}
+
+.adoption-image-2 {
+  width: 8%;
+  margin-left: 5%;
+}
+
+.checkout-title-dogs {
+  color: #093C60;
+  font-size: 1em;
+  font-weight: bolder;
+  padding-top: 5%;
+}
+
+.cost-to-adopt {
+  font-size: .8rem;
+}
+
+.final-cost {
+  color: #3D3D3D;
+  margin: 1% 0% 0% 15%;
+  font-size: 1.5em;
+}
+
+#checkout-button {
+  margin: 5% 15%;
+  background-color: #81B741;
+  border: none;
+  color: white;
+  padding: 1% 7%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.universal-footer {
+  padding: 5% 0% 0% 0%;
+  text-align: center;
+  background-color: #3D3D3D;
+  color: white;
+  line-height: 32px;
+}
+
+.footer-logo {
+  width: 20%;
+}
+
+.footer-body {
+  padding: 0% 30% 0% 30%;
+  color: white;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 3%;
+}

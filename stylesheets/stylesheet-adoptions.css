@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  font-family: "Georgia", serif;
+}
+
+header {
+  display: grid;
+  background-color: #093C60;
+  padding: 3% 0% 3% 0%;
+}
+
+.header-intro {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0% 0% 5% 30%;
+}
+
+.header-checkout-all {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0% 5% 0% 60%;
+}
+
+.header-logo {
+  width: 70%;
+}
+
+.header-title {
+  color: #81B741;
+  font-size: 1.5em;
+}
+
+.cart-logo {
+  width: 10%;
+}
+
+.header-price {
+  float: right;
+  color: white;
+}
+
+.button {
+  background-color: #81B741;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.global-navigation {
+  display: flex;
+  font-size: 1em;
+  font-weight: bold;
+  background: #ECECEC;
+  padding: 2% 0% 2% 0%;
+}
+
+.nav-link {
+  color: #093C60;
+  text-decoration: none;
+  padding: 0% 1% 0 15%;
+}
+
+.nav-link-2 {
+  color: #093C60;
+  text-decoration: none;
+  padding: 0% 1% 0 1%;
+}
+
+.grid-index-adoptions {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 3%;
+  margin: 3% 0% 5% 15%;
+  line-height: 25px;
+}
+
+.adoption-image {
+  max-width: 100%;
+}
+
+.adoption-header {
+  color: #093C60;
+  padding: 1% 0% 3% 3%;
+}
+
+.adoption-cost {
+  color: #3D3D3D;
+  padding: 0% 0% 3% 3%;
+}
+
+.adoption-body {
+  color: #3D3D3D;
+  font-size: 1em;
+  padding: 0% 5% 3% 3%;
+}
+
+.index-adopt-button {
+  margin: 2% 4%;
+  background-color: #81B741;
+  border: none;
+  color: white;
+  padding: 3% 30%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+#dogs-header {
+  color: #093C60;
+  margin: 2% 0% 0% 15%;
+}
+
+#murphy {
+  grid-column: 1;
+  grid-row: 1;
+  border: 1px solid #ECECEC;
+}
+
+#poppy {
+  grid-column: 2;
+  grid-row: 1;
+  border: 1px solid #ECECEC;
+}
+
+#jack {
+  grid-column: 3;
+  grid-row: 1;
+  border: 1px solid #ECECEC;
+}
+
+#duffy {
+  grid-column: 4;
+  grid-row: 1;
+  border: 1px solid #ECECEC;
+}
+
+#lucas {
+  grid-column: 1;
+  grid-row: 2;
+  border: 1px solid #ECECEC;
+}
+
+#jake {
+  grid-column: 2;
+  grid-row: 2;
+  border: 1px solid #ECECEC;
+}
+
+#angus {
+  grid-column: 3;
+  grid-row: 2;
+  border: 1px solid #ECECEC;
+}
+
+#violet {
+  grid-column: 4;
+  grid-row: 2;
+  border: 1px solid #ECECEC;
+}
+
+#piper {
+  grid-column: 1;
+  grid-row: 3;
+  border: 1px solid #ECECEC;
+}
+
+#maximus {
+  grid-column: 2;
+  grid-row: 3;
+  border: 1px solid #ECECEC;
+}
+
+#luna {
+  grid-column: 3;
+  grid-row: 3;
+  border: 1px solid #ECECEC;
+}
+
+#stella {
+  grid-column: 4;
+  grid-row: 3;
+  border: 1px solid #ECECEC;
+}
+
+.universal-footer {
+  padding: 5% 0% 0% 0%;
+  text-align: center;
+  background-color: #3D3D3D;
+  color: white;
+  line-height: 32px;
+}
+
+.footer-logo {
+  width: 20%;
+}
+
+.footer-body {
+  padding: 0% 30% 0% 30%;
+  color: white;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 3%;
+}
