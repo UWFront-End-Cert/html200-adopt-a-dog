@@ -39,17 +39,21 @@
           <label>Name
             <input id="name" type="text" name="name" value="" required>
           </label>
+
           <label>Email Address
             <input id="email" type="email" name="email" value="" required>
           </label>
         </fieldset>
+
         <fieldset>
           <label>Street Address
             <input id="address" type="text" name="streetAddress" value="" required>
           </label>
+
           <label>City
             <input id="city" type="text" name="city" value="" required>
           </label>
+
           <label>State
             <select id="state" name="state" required>
               <option value="">Please Select</option>
@@ -106,30 +110,30 @@
             	<option value="WY">Wyoming</option>
             </select>
           </label>
+
           <label>Zip Code
             <input id="zipcode" type="text" name="zip" value="" required>
           </label>
         </fieldset>
+
         <fieldset class="radio">
           <legend>First Time Adopter?</legend>
           <label>
-            <input type="radio" name="firstTimeAdopter" value="">
-            Yes
-          </label>
-          <label>
-            <input type="radio" name="firstTimeAdopter" value="">
-            No
+            <input id="first-adopter" type="radio" name="first-adopter" value=""> Yes </input>
+            <input id="first-adopter" type="radio" name="first-adopter" value=""> No </input>
           </label>
         </fieldset>
+
         <label>Pickup Location:
-          <select id="pickup-location" class="" name="pickupLocation" required>
+          <select id="pickup-location" name="pickup-location" required>
             <option value="">Please Select</option>
-            <option value="">Seattle</option>
-            <option value="">Redmond</option>
-            <option value="">Renton</option>
-            <option value="">Bothell</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Redmond">Redmond</option>
+            <option value="Renton">Renton</option>
+            <option value="Bothell">Bothell</option>
           </select>
         </label>
+
         <section class="adopted-dogs">
           <h3>Dogs Adopted</h3>
           <div class="adopted">
