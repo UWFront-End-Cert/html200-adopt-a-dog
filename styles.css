@@ -47,8 +47,16 @@ p  {
 .logo {
   width: 100%;
 }
+.background {
+  width: 100%;
+  height: 500px;
+  background-image: url("./images/header-image-narrow.jpg");
+  /*background: radial-gradient(green, white);*/
+  }
+
 header {
   position: relative;
+  background: linear-gradient(45deg, yellow, black 30%);
 }
 nav {
   position: relative;
@@ -101,7 +109,6 @@ aside {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     }
-    
 .grid-container > div {
   width: 100%;
   padding: 10px;
@@ -227,6 +234,10 @@ footer {
   .main, .footer, .header, .img, .nav {
    width: 100%;
   }
+  /*header {
+    background-image: url("./images/header-image-narrow.jpg");
+    width: 100%;
+  }*/
   .checkout {
     top: .5rem;
     right: 1rem;
@@ -254,8 +265,8 @@ footer {
 @media screen and (max-width: 800px) and (min-width: 600px) {
   body{background: white;}
   .main, .main-dogs .footer, .header {
-    width: 100%;
     margin-left: 10%;
+    margin-right: 10%;
   }
   .checkout {
     top: 1rem;
@@ -274,9 +285,11 @@ footer {
     grid-gap: 10px;
     width: 80%;
   }
-
   aside {
     width: 90%;
+    }
+  blog-row: {
+      margin-left: 5%;
     }
 }
 @media screen and (min-width: 800px) {
