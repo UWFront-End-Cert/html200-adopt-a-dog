@@ -508,7 +508,7 @@
   }
 }
 
-/*Mobile Devices: Horizontal*/
+  /*Mobile Devices: Horizontal*/
 @media only screen and (max-width: 736px) and (orientation: landscape) {
   .dog-list, .grid, .header {
     display: grid;
