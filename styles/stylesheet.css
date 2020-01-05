@@ -188,7 +188,7 @@ button {
   border: none;
 }
 
-.dog-profiles a:link {
+.dog-profiles a {
   font-family: 'Public Sans', sans-serif;
   font-weight: 700;
   font-size: .7em;

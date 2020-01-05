@@ -1,11 +1,17 @@
 
-function showInfo() {
-  let a = ['Murphy', 'Poppy', 'Jack', 'Duffy', 'Lucas', 'Jake',
-  'Angus', 'Violet', 'Piper', 'Maximus', 'Luna', 'Stella'];
-  let b = ['Labrador', 'Beagle', 'Unknown'];
-  let c = ['$200', '$150'];
+function showInfo(name,breed,fee) {
+  result = (name + ' is a ' + breed + ' and can be adopted for ' + fee + '.');
+  alert(result);
+}
 
-  result = (a + b + c);
 
+/*  function addTotal(fee) {
+  result = ('Your current total is $' + fee);
+  alert(result);
+}  */
+
+
+function addTotal(fee) {
+  result = ('Your current total is $' + fee);
   alert(result);
 }
