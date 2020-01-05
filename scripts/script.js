@@ -5,13 +5,7 @@ function showInfo(name,breed,fee) {
 }
 
 
-/*  function addTotal(fee) {
-  result = ('Your current total is $' + fee);
-  alert(result);
-}  */
-
-
 function addTotal(fee) {
   result = ('Your current total is $' + fee);
   alert(result);
-}
+} 
