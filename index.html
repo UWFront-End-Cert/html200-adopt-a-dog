@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
     <script src="./dog-button.js"></script>
@@ -11,16 +11,15 @@
 </head>
 <body>
   <header>
-    <div class="title-words">
+    <!--<div class="title-words">-->
       <img class= "logo" src="./images/adoptadog-logo.svg" alt="logo">
-    </div>
-      <div class="background">
       <h1>Seattle's premiere dog adoption agency</h1>
-    <img src="./images/images/header-image-narrow.jpg" alt="dog face profile">
+    </div>
+    <img src="./images/header-image-narrow.jpg" alt="dog face profile">
     <div class="checkout">
       <img class= "cart" src="./images/cart-icon.svg" alt="shopping cart icon"><a> $1234.56</a>
-      <a href="checkout.html" class="button">Checkout</a>
-      </div>
+      <a href="checkout.html" class="checkoutButton">Checkout</a>
+    </div>
 </div>
   </header>
     <nav>
@@ -68,7 +67,9 @@
 
 <div class="main">
     <div class="man-dog">
-      <img src="./images/home-intro-crop.jpg" class ="header-image" alt="young man hugging dog">
+      <img src="./images/home-intro-resize-310.jpg"
+      srcset="./images/home-intro-crop.jpg" 2x,
+      alt="young man hugging dog">
     </div>
     <div class= "text">
       <h3>Adopt A Dog</h3>
@@ -141,13 +142,15 @@
           <a class="button" onclick="dogFees(123.45)" >Adopt</a>
           </div> -->
       </div>
-        <div class="graybutton">
-          <a href="./dogs.html" style = "background-color: lightGray; color: darkblue; margin-top: 1rem; margin-left: 30rem;" target= "_blank"> See More Dogs</a><br>
-        </div>
     </section>
+    <div class="graybutton">
+      <a href="./dogs.html" style = "background-color: lightGray; color: darkblue; margin-top: 1rem; margin-left: 30rem;" target= "_blank"> See More Dogs</a><br>
+    </div>
+
 </div>
 
 <footer>
+
     <img class= "footlogo" src="./images/adoptadog-logo.svg" alt="logo">
     <p class="foot">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     <nav class="footnav">
@@ -157,7 +160,6 @@
     </nav>
     <p> 2018 Adoptadog, LLC | Seattle, WA </p>
 </footer>
-
 
 </body>
 </html>
