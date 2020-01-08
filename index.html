@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <div class="checkout">
-        <img src="images/cart-icon.svg" alt="cart icon">
+        <a href="checkout.html"><img src="images/cart-icon.svg" alt="cart icon"></a>
         <p>$1234.56</p>
         <input type="button" value="Checkout">
       </div>
@@ -47,7 +47,7 @@
           <p>Cost to Adopt: $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et
             etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <input type="button" name="add-to-cart" value="Adopt">
+          <input type="button" name="add-to-cart" value="Adopt" onclick="addToCart()">
           </div>
         <div class="dog-item">
           <img src="images/poppy-card.jpg" alt="image of dog named murphy">
@@ -126,6 +126,6 @@
         <p>&copy; 2019 Adoptadog, LLC  | Seattle, WA</p>
       </div>
       </footer>
-
+      <script src="./homepage.js" charset="utf-8"></script>
   </body>
 </html>

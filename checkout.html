@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <div class="checkout">
-        <img src="images/cart-icon.svg" alt="cart icon">
+        <a href="checkout.html"><img src="images/cart-icon.svg" alt="cart icon"></a>
         <p>$1234.56</p>
         <input type="button" value="Checkout">
       </div>
@@ -24,6 +24,63 @@
           <li><a href="blog.html">Blog</a></li>
           </ul>
         </nav>
+
+<form method="GET">
+  <h2>Checkout</h2>
+  <label><h3>Name</h3>
+    <input type="text" name="fullName">
+  </label>
+  <lable><h3>Email Address</h2>
+    <input type="email" name="email">
+  </label>
+    <label><h3>Street Address</h3>
+    <input type="text" name="streetAddress">
+  </label>
+    <label><h3>City<h3>
+      <input type="text" name="city">
+    </label>
+    <label><h3>State</h3>
+    <select>
+      <option value="WA">WA</option>
+      <option value="OR">OR</option>
+      <option value="CA">CA</option>
+    </select>
+    </label>
+    <label><h3>Zip Code</h3>
+    <input type="text" name="zipCode">
+  </label>
+    <label><h3>First Time Adopter?</h3>
+    <input type="radio" name="yes" value="Yes">Yes
+    <input type="radio" name="no" value="No">No
+  </label>
+    <label><h3>Pickup Location</h3>
+    <select>
+      <option value="center">Adoption Center</option>
+      <option value="office">Office</option>
+    </select>
+  </label>
+    <br>
+    <h3>Dogs Adopted</h3>
+    <div class="checkout-items">
+      <div class="dog-checkout">
+        <img src="images/lucas-checkout.jpg" alt="image of a dog named Lucas">
+      </div>
+      <div class="dog-item2">
+        <p>Lucas</p>
+        <p>Cost to Adopt: $123.45</p>
+      </div>
+    <div class="dog-checkout">
+      <img src="images/duffy-checkout.jpg" alt="image of a dog named Duffy">
+    </div>
+    <div class="dog-item2">
+      <p>Duffy</p>
+      <p>Cost to Adopt: $123.45</p>
+    </div>
+    </div>
+    <h3>Total Adoption Cost</h3>
+    <p>$1234.56</p>
+    <input type="submit" name="submit" value="Submit">
+  </form>
 
 
 
@@ -42,6 +99,6 @@
             <p>&copy; 2019 Adoptadog, LLC  | Seattle, WA</p>
           </div>
           </footer>
-
+          <script src="./homepage.js" charset="utf-8"></script>
       </body>
       </html>
