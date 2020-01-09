@@ -214,9 +214,32 @@ a{
   .banner-right-side{
     width:50%;
   }
+  .interface{
+    display:grid;
+    grid-template-rows:auto auto auto;
+    grid-gap:10px;
+    margin: 20px 200px;
+  }
+  .interface img{
+    float:left;
+    width:160px !important;
+  }
+  .sub-Interface{
+    display: grid;
+    grid-template-columns: 0.25fr 0.25fr;
+  }
+  .content{
+    display:grid;
+    grid-auto-rows: 0.25fr 0.25fr;
+    float:right;
+  }
 }
 /* Common Code For All Three*/
-
+form{
+  display: inline-grid;
+  margin:10px;
+  grid-gap:5px;
+}
 h4,h5{
   margin:0px;
 }
