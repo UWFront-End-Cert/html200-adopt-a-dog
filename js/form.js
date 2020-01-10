@@ -1,20 +1,16 @@
 //  Form Values  //
-const form = document.getElementById("checkout-form");
-const submitButton = document.getElementById("submit");
-
-let formInfo = [];
 
 function submitForm() {
-  let formInfo = []; //testing purposes//
   event.preventDefault();
-  alert("Thank you!  Your information has been received.");
-  formInfo.push(document.getElementById("name").value);
-  formInfo.push(document.getElementById("address").value);
-  formInfo.push(document.getElementById("city").value);
-  formInfo.push(document.getElementById("state").value);
-  formInfo.push(document.getElementById("zipcode").value);
-  formInfo.push(document.querySelector('input[name="first-adopter"]:checked').value);
-  formInfo.push(document.getElementById("pickup-location").value);
+  alert('Thank you! Your form has been submitted.');
+  const formInfo = [];
+  formInfo.push($('#name').val());
+  formInfo.push($('#address').val());
+  formInfo.push($('#city').val());
+  formInfo.push($('#state').val());
+  formInfo.push($('#zipcode').val());
+  formInfo.push($('#pickup-location').val());
+  formInfo.push($("#first-adopter:checked").val());
 
   console.log(formInfo);
 }
