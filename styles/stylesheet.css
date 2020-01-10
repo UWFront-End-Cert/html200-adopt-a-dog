@@ -1,9 +1,6 @@
 * {box-sizing: border-box; }
 * {font-family: "arial", sans-serif; }
 
-html {
-  font-size: 16px;
-}
 a:link {
   text-decoration: none;
 }
@@ -16,6 +13,9 @@ body {
 }
 .checkout {
   float: right;
+}
+.checkout p {
+  color: white;
 }
 .header {
   background-color: rgb(9,60,96);
@@ -103,18 +103,18 @@ li:first-child:before {
 }
 .container {
   display: flex;
-  padding: 40px;
+  padding: 4em%;
   flex-wrap: wrap;
 }
 .dog-item {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 300px;
+  width: 20rem;
   overflow: inherit;
-  margin: 25px;
+  margin: 2rem;
   border-color: rgb(9,60,96);
-  border-width: .15em;
+  border-width: .15rem;
   border-style: solid;
 }
 .dog-item p {
