@@ -233,11 +233,14 @@ a{
     grid-auto-rows: 0.25fr 0.25fr;
     float:right;
   }
+  .checkout-row-1 img{
+    width:70px !important;
+    margin:0;
+  }
 }
 /* Common Code For All Three*/
 form{
   display: inline-grid;
-  margin:10px;
   grid-gap:5px;
 }
 h4,h5{
@@ -334,7 +337,7 @@ nav a{
 }
 .checkout-row-1{
   display:grid;
-  grid-template-columns:15% 40%;
+  grid-template-columns:18% 70%;
 }
 .checkout-row-1-1{
   display:grid;

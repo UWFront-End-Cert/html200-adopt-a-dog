@@ -50,14 +50,16 @@ input.setAttribute('value','');
 form.appendChild(label);
 form.appendChild(input);
 }
+let formId = document.getElementById('theForm').value;
+console.log('form:'+formId);
 container.appendChild(form);
 container.insertBefore(heading,form);
+
 const submitButton = document.createElement('button');
 submitButton.setAttribute('type', 'submit');
 submitButton.textContent = 'Submit';
-
 form.appendChild(submitButton);
 form.addEventListener('submit', function(e) {
   alert('Thank you. The form information has been received');
-  e.preventdefault();
+  document.body.appendChild(input);
 });
