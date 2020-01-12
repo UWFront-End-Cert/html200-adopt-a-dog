@@ -307,7 +307,7 @@ footer {
 @media screen and (max-width: 800px) and (min-width: 600px) {
   body{background: white;}
   .main, .main-dogs, .header, {
-    width: 30rem;
+    width: 80%;
     margin-left: 10%;
     margin-right: 10%;
   }
