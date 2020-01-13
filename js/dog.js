@@ -1,7 +1,7 @@
 //Dog Info//
 
 function doggoInfo(name, detail, price) {
-  alert(`This is ${name}, they are the ${detail}. They cost $${price}.`);
+  alert(`This is ${name}, they are the ${detail}. They cost ${price}.`);
 }
 
 //Shopping Cart//
