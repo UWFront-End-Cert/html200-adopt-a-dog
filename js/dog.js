@@ -10,6 +10,6 @@ let runningTotal = 0;
 
 function cost(price) {
     runningTotal += price;
-    $('.cart-amount').text(runningTotal);
+    $('.cart-amount').text("$" + runningTotal);
     alert("Your new total is " + runningTotal);
 }
