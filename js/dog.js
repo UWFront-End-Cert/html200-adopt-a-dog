@@ -11,5 +11,12 @@ let runningTotal = 0;
 function cost(price) {
     runningTotal += price;
     $('.cart-amount').text("$" + runningTotal);
-    alert("Your new total is " + runningTotal);
+    alert('Your new total is ' + runningTotal);
 }
+
+//Hover Effect//
+
+$("div.doggo-grid ,div.dog-item").hover(
+       function(){ $(this).addClass('hover-picture') },
+       function(){ $(this).removeClass('hover-picture') }
+)

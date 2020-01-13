@@ -10,7 +10,7 @@ function submitForm() {
   formInfo.push($('#state').val());
   formInfo.push($('#zipcode').val());
   formInfo.push($('#pickup-location').val());
-  formInfo.push($("#first-adopter:checked").val());
+  formInfo.push($('#first-adopter:checked').val());
 
   console.log(formInfo);
 }
