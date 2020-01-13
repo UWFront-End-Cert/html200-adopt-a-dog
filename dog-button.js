@@ -10,5 +10,11 @@ function dogFees(fee) {
    total = total + fee
 alert('Total cost $' + total);
 }
+/*insert title*/
+document.getElementById("totale").innerHTML = "Traveling with Your Dog";
 
-document.getElementById("totale").innerHTML = "Traveling with Puppers";
+
+const postTitle = document.createElement('h3');
+postTitle.textContent = 'Traveling with your Pupper';
+const container = document.getElementsByClassName('blog')
+document.body.insertBefore(postTitle, container);
