@@ -86,8 +86,7 @@
 
 .main {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10%;
+grid-template-columns: repeat( 4, minmax(25%, 1fr) );  grid-gap: 10%;
   padding: 3% 12%;
   color: #1c356d;
 }
