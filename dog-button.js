@@ -17,36 +17,43 @@ document.getElementById("totale").innerHTML = "Traveling with Your Dog";
 const blogText = document.querySelector('.blog-text p');
 blogText.textContent = ('Here is a paragraph of blog text. Traveling with your dog paragraph will go here. typing some more stuff to test out whether it will work');
 
+const container = document.getElementById('container');
+const image = document.createElement('img');
+image.src = './images/blog-3.jpg';
+container.appendChild(image);
+
+
 const posts = [
   {
-    name: Blog1
-    title:
-    text:
-    img:
-
+    name: 'Blog1',
+    title: 'title-1'
   },
 
   {
-    name: Blog2
+    name: 'Blog2',
+    title: 'title 2'
   },
 
   {
-    name: Blog3
-  },
+    name: 'Blog3',
+    title: 'Title 3'
+  }
 
-]
+];
 
-const blog = document.createElement('div');
-document.body.appendChild(blog);
+document.getElementById("tryit").innerHTML = posts[0];
+
+const post = posts[0];
+
+const title = document.createElement('h1');
+title.textContent = post.title;
 
 
-
-
-/*example from course video- doesn't seem to work*/
+/*example from course video- doesn't seem to work
 const postTitle = document.createElement('h3');
 postTitle.textContent = 'Traveling with your Doggo';
 const container = document.getElementsByClassName('blog')
-document.body.insertBefore(postTitle, container);
+document.body.insertBefore(postTitle, container);*/
 
 /*how to build a form- could/should this be modified to make a blog-posting tool*/
 const fields = [
