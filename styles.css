@@ -2,6 +2,12 @@
 * {
   box-sizing: border-box;
 }
+header {
+  height: 100%;
+  background-image: url("./images/header-image-narrow.jpg");
+  position: relative;
+  background: linear-gradient(45deg, yellow, black 30%);
+}
 h1 {
   font-family: 'martel', serif;
   color: rgb(102, 153, 0);
@@ -42,20 +48,17 @@ p  {
   font-family: 'martel' , sans-serif;
   margin-left: 25%;
 }
+
 .logo {
   height: 150px;
   top: 25%;
   position: absolute;
   margin-left: -25%;
 }
-.background {
-  height: 100%;
-  background-image: url("./images/header-image-narrow.jpg");
+header {  /*height: 100%;*/
+
 }
-header {
-  position: relative;
-  background: linear-gradient(45deg, yellow, black 30%);
-}
+
 nav {
   position: relative;
   padding: 1rem;
@@ -244,7 +247,7 @@ footer {
    margin-left: 16%;
    margin-right: 16%;
    }
-  .background {
+  .header {
      width: 100%;
      background-image: url("./images/header-image-narrow.jpg");
    }

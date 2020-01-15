@@ -22,6 +22,7 @@ const image = document.createElement('img');
 image.src = './images/blog-3.jpg';
 container.appendChild(image);
 
+document.getElementById('container').style.width = "500px";
 
 const posts = [
   {
