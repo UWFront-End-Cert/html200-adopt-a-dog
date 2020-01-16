@@ -10,18 +10,18 @@ function dogFees(fee) {
    total = total + fee
 alert('Total cost $' + total);
 }
-/*inserts title*/
-document.getElementById("totale").innerHTML = "Traveling with Your Dog";
-/*select an element on the page and store it in a variable*/
+const blogTitle = document.querySelector('#totale, h3');
+blogTitle.textContent = ("Traveling with Doggo");
+
 const blogText = document.querySelector('.blog-text p');
 blogText.textContent = ('Here is a paragraph of blog text. Traveling with your dog paragraph will go here. typing some more stuff to test out whether it will work');
 
-const container = document.getElementById('container');
+const photo = document.getElementById('photo');
 const image = document.createElement('img');
 image.src = './images/blog-1.jpg';
-container.prepend(image);
+blogText.insertAdjacentElement("afterend", image);
 
-document.getElementById('container').style.width = "300px";
+document.getElementById('photo').style.width = "300px";
 
 const posts = [
   {
