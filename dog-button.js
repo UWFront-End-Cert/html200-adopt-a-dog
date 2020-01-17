@@ -10,28 +10,41 @@ function dogFees(fee) {
    total = total + fee
 alert('Total cost $' + total);
 }
-const blogTitle = document.querySelector('#totale, h3');
-blogTitle.textContent = ("Traveling with Doggo");
 
-const blogText = document.querySelector('.blog-text p');
-blogText.textContent = ('Here is a paragraph of blog text. Traveling with your dog paragraph will go here. typing some more stuff to test out whether it will work');
-
-const photo = document.getElementById('photo');
-const image = document.createElement('img');
+let divImage = document.createElement('div');
+let image = document.createElement('img');
 image.src = './images/blog-1.jpg';
-blogText.insertAdjacentElement("afterend", image);
+image.alt = "a dog at the grand canyon";
+image.style.width = "300px";
+divImage.appendChild(image);
+document.getElementById("full-blog").appendChild(divImage);
 
-document.getElementById('photo').style.width = "300px";
+let blogTitle = document.createElement('h3');
+let blogNode = document.createTextNode("Traveling with Dogs");
+blogTitle.appendChild(blogNode);
+document.getElementById("full-blog").appendChild(blogTitle);
+
+let blogText = document.createElement('p')
+let textNode = document.createTextNode("This is a paragraph of blog text. Traveling with your dog paragraph will go here. Typing one more sentence to test it out.")
+blogText.appendChild(textNode);
+document.getElementById("full-blog").appendChild(blogText);
+
+
+
 
 const posts = [
   {
     name: 'Blog1',
-    title: 'title-1'
+    blogTitle: 'title-1',
+    blogText: 'some blog text',
+    image: './image/blog-1.jpg'
   },
 
   {
     name: 'Blog2',
-    title: 'title 2'
+    blogTitle: 'title 2',
+    blogText:'some blog text',
+    image: './image/blog-2.jpg'
   },
 
   {
@@ -41,13 +54,15 @@ const posts = [
 
 ];
 
-document.getElementById("tryit").innerHTML = posts[0];
+const postDiv = document.createElement('div');
+document.body.appendChild(postDiv);
 
-const post = posts[0];
+for (let i = 0; i < posts.length; i+= 1) {
+  let post = posts[i];
 
-const title = document.createElement('h1');
-title.textContent = post.title;
-
+const blogTitle = document.querySelector('#totale, h3');
+blogTitle.textContent = ("Traveling with Doggo");
+}
 
 /*example from course video- doesn't seem to work
 const postTitle = document.createElement('h3');
