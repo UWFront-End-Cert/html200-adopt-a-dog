@@ -13,9 +13,9 @@
       </a>
     </div>
     <div class="cart">
-      <a href="checkout.html">
-        <img src="./images/cart-icon.svg" alt="" width="32">
-      </a>
+      <img src="./images/cart-icon.svg" alt="" width="32">
+      <p>$0</p>
+      <p><a href="checkout.html">Checkout</a></p>
     </div>
   </header>
   <nav class="main-nav">
@@ -23,31 +23,27 @@
       <li><a class="navigation-link" href="index.html">Home</a></li>
       <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
       <li><a class="navigation-link" href="blog.html">Blog</a></li>
-      <li><a class="navigation-link" href="checkout.html">Checkout</a></li>
     </ul>
   </nav>
-  <section>
-    <h1>Checkout</h1>
-  </section>
   <section class="checkout-form">
+    <h1>Checkout</h1>
     <form>
       <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+      <input type="text" id="fname" name="firstname" placeholder="John M. Doe"><br>
       <label for="email"><i class="fa fa-envelope"></i> Email</label>
-      <input type="text" id="email" name="email" placeholder="john@example.com">
+      <input type="text" id="email" name="email" placeholder="john@example.com"><br>
       <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-      <input type="text" id="adr" name="address" placeholder="1 World Way">
+      <input type="text" id="adr" name="address" placeholder="1 World Way"><br>
       <label for="city"><i class="fa fa-institution"></i> City</label>
       <input type="text" id="city" name="city" placeholder="Los Angeles">
       <label for="state">State</label>
       <input type="text" id="state" name="state" placeholder="CA">
       <label for="zip">Zip</label>
-      <input type="text" id="zip" name="zip" placeholder="10001">
+      <input type="text" id="zip" name="zip" placeholder="10001"><br>
       <fieldset>
-        <label for="first-time-adopter">First time adopter?</label>
-        <input type="radio" name="first-time-adopter" value="yes" checked> Yes<br>
+        <label>First time adopter?</label>
+        <input type="radio" name="first-time-adopter" value="yes"> Yes<br>
         <input type="radio" name="first-time-adopter" value="no"> No<br>
-
       </fieldset>
       <label for="pickup-location">Pickup location</label>
       <select id="pickup-location" name="pickup">
@@ -55,15 +51,13 @@
         <option value="west-side">West side</option>
         <option value="east-side">East side</option>
         <option value="downtown">Downtown</option>
-      </select>
-      <label for="dogs-adopted">Dogs adopted</label>
-      <label for="total-cost">Total adoption cost</label>
+      </select><br>
+      <label>Dogs adopted</label>
+      <p>[Placholder]</p><br>
+      <label>Total adoption cost</label>
+      <p>[Placeholder]</p><br>
       <input type="submit" value="Submit" class="btn">
     </form>
-  </section>
-
-  <section>
-    <h1>Checkout</h1>
   </section>
   <footer>
     <img src="./images/adoptadog-logo.svg" alt="" width="256">
@@ -75,6 +69,7 @@
         <li><a class="navigation-link" href="blog.html">Blog</a></li>
         <li><a class="navigation-link" href="checkout.html">Checkout</a></li>
       </ul>
+    </nav>
       <p>Adoptadog LLC | Los Angeles, CA</p>
     </footer>
   </body>

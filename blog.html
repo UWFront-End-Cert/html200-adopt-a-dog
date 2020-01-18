@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <title>Blog</title>
-  </head>
-  <body>
-    <header>
-      <div class="branding">
-        <a href="index.html">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <title>Blog</title>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <a href="index.html">
         <img src="./images/adoptadog-logo.svg" alt="" width="256">
-        </a>
-      </div>
-      <div class="cart">
-        <a href="checkout.html">
-        <img src="./images/cart-icon.svg" alt="" width="32">
-        </a>
-      </div>
-    </header>
-    <nav class="main-nav">
+      </a>
+    </div>
+    <div class="cart">
+      <img src="./images/cart-icon.svg" alt="" width="32">
+      <p>$0</p>
+      <p><a href="checkout.html">Checkout</a></p>
+    </div>
+  </header>
+  <nav class="main-nav">
+    <ul>
+      <li><a class="navigation-link" href="index.html">Home</a></li>
+      <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
+      <li><a class="navigation-link" href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+  <section class="main-blog">
+    <h1>Adoptadog Blog</h1>
+    <article class="blog-1">
+      <h2>Blog Entry 1</h2>
+      <img src="./images/blog-1.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </article>
+    <article class="blog-2">
+      <h2>Blog Entry 2</h2>
+      <img src="./images/blog-2.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </article>
+    <article class="blog-3">
+      <h2>Blog Entry 3</h2>
+      <img src="./images/blog-3.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </article>
+  </section>
+  <footer>
+    <img src="./images/adoptadog-logo.svg" alt="" width="256">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <nav class="footer-nav">
       <ul>
         <li><a class="navigation-link" href="index.html">Home</a></li>
         <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
@@ -26,40 +57,7 @@
         <li><a class="navigation-link" href="checkout.html">Checkout</a></li>
       </ul>
     </nav>
-    <section>
-        <h1>Adoptadog Blog</h1>
-    </section>
-    <section class="main-blog">
-      <article class="blog-1">
-        <h2>Blog Entry 1</h2>
-        <img src="./images/blog-1.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-      </article>
-      <article class="blog-2">
-        <h2>Blog Entry 2</h2>
-        <img src="./images/blog-2.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-      </article>
-      <article class="blog-3">
-        <h2>Blog Entry 3</h2>
-        <img src="./images/blog-3.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-      </article>
-    </section>
-    <footer>
-      <img src="./images/adoptadog-logo.svg" alt="" width="256">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <nav class="footer-nav">
-        <ul>
-          <li><a class="navigation-link" href="index.html">Home</a></li>
-          <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
-          <li><a class="navigation-link" href="blog.html">Blog</a></li>
-          <li><a class="navigation-link" href="checkout.html">Checkout</a></li>
-        </ul>
-        <p>Adoptadog LLC | Los Angeles, CA</p>
+      <p>Adoptadog LLC | Los Angeles, CA</p>
     </footer>
   </body>
-</html>
+  </html>

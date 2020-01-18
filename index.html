@@ -1,24 +1,86 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <title>Home</title>
-  </head>
-  <body>
-    <header>
-      <div class="branding">
-        <a href="index.html">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <title>Home</title>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <a href="index.html">
         <img src="./images/adoptadog-logo.svg" alt="" width="256">
-        </a>
-      </div>
-      <div class="cart">
-        <a href="checkout.html">
-        <img src="./images/cart-icon.svg" alt="" width="32">
-        </a>
-      </div>
-    </header>
-    <nav class="main-nav">
+      </a>
+    </div>
+    <div class="cart">
+      <img src="./images/cart-icon.svg" alt="" width="32">
+      <p>$0</p>
+      <p><a href="checkout.html">Checkout</a></p>
+    </div>
+  </header>
+  <nav class="main-nav">
+    <ul>
+      <li><a class="navigation-link" href="index.html">Home</a></li>
+      <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
+      <li><a class="navigation-link" href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+  <section class="intro">
+    <h1>Adopt a Dog </h1>
+    <img src="./images/home-intro.jpg" alt="">
+    <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
+      am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate
+    </p>
+  </section>
+  <section class="featured-dogs">
+  <h2>Featured dogs</h2>
+    <article class="adopt-duffy">
+      <img src="./images/duffy-card.jpg" alt="">
+      <h3>Duffy</h3>
+      <h4>Cost to adopt: [price]</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p><a class="navigation-link" href="checkout.html">Adopt</a></p>
+    </article>
+    <article class="adopt-jack">
+      <img src="./images/jack-card.jpg" alt="">
+      <h3>Jack</h3>
+      <h4>Cost to adopt: [price]</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p><a class="navigation-link" href="checkout.html">Adopt</a></p>
+    </article>
+    <article class="adopt-lucas">
+      <img src="./images/lucas-card.jpg" alt="">
+      <h3>Lucas</h3>
+      <h4>Cost to adopt: [price]</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p><a class="navigation-link" href="checkout.html">Adopt</a></p>
+    </article>
+      <p><a class="navigation-link" href="dogs.html">See more dogs</a></p>
+  </section>
+  <aside class="home-blog">
+    <article class="blog-1">
+      <h2>Blog 1 Title</h2>
+      <img src="./images/blog-1.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </article>
+    <article class="blog-2">
+      <h2>Blog 2 Title</h2>
+      <img src="./images/blog-2.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </article>
+    <article class="blog-3">
+      <h2>Blog 3 Title</h2>
+      <img src="./images/blog-3.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </article>
+  </aside>
+  <footer>
+    <img src="./images/adoptadog-logo.svg" alt="" width="256">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <nav class="footer-nav">
       <ul>
         <li><a class="navigation-link" href="index.html">Home</a></li>
         <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
@@ -26,67 +88,7 @@
         <li><a class="navigation-link" href="checkout.html">Checkout</a></li>
       </ul>
     </nav>
-    <section class="intro">
-      <h1>Adopt a Dog </h1>
-      <img src="./images/home-intro.jpg" alt="">
-      <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
-        am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate
-      </p>
-    </section>
-    <section class="featured-dogs">
-      <article class="adopt-duffy">
-        <img src="./images/duffy-card.jpg" alt="">
-        <h3>Duffy</h3>
-        <h4>Cost to adopt: [price]</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p><a class="navigation-link" href="checkout.html">Adopt</a></p>
-      </article>
-      <article class="adopt-jack">
-        <img src="./images/jack-card.jpg" alt="">
-        <h3>Jack</h3>
-        <h4>Cost to adopt: [price]</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p><a class="navigation-link" href="checkout.html">Adopt</a></p>
-      </article>
-      <article class="adopt-lucas">
-        <img src="./images/lucas-card.jpg" alt="">
-        <h3>Lucas</h3>
-        <h4>Cost to adopt: [price]</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p><a class="navigation-link" href="checkout.html">Adopt</a></p>
-      </article>
-    </section>
-    <aside class="home-blog">
-      <article class="blog-1">
-        <h2>Blog 1 Title</h2>
-        <img src="./images/blog-1.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-      </article>
-      <article class="blog-2">
-        <h2>Blog 2 Title</h2>
-        <img src="./images/blog-2.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-      </article>
-      <article class="blog-3">
-        <h2>Blog 3 Title</h2>
-        <img src="./images/blog-3.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-      </article>
-    </aside>
-    <footer>
-      <img src="./images/adoptadog-logo.svg" alt="" width="256">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <nav class="footer-nav">
-        <ul>
-          <li><a class="navigation-link" href="index.html">Home</a></li>
-          <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
-          <li><a class="navigation-link" href="blog.html">Blog</a></li>
-          <li><a class="navigation-link" href="checkout.html">Checkout</a></li>
-        </ul>
-        <p>Adoptadog LLC | Los Angeles, CA</p>
+      <p>Adoptadog LLC | Los Angeles, CA</p>
     </footer>
   </body>
-</html>
+  </html>
