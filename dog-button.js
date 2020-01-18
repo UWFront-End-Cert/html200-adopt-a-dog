@@ -11,7 +11,7 @@ function dogFees(fee) {
 alert('Total cost $' + total);
 }
 
-let divImage = document.createElement('div');
+/*let divImage = document.createElement('div');
 let image = document.createElement('img');
 image.src = './images/blog-1.jpg';
 image.alt = "a dog at the grand canyon";
@@ -27,7 +27,7 @@ document.getElementById("full-blog").appendChild(blogTitle);
 let blogText = document.createElement('p')
 let textNode = document.createTextNode("This is a paragraph of blog text. Traveling with your dog paragraph will go here. Typing one more sentence to test it out.")
 blogText.appendChild(textNode);
-document.getElementById("full-blog").appendChild(blogText);
+document.getElementById("full-blog").appendChild(blogText);*/
 
 
 
@@ -35,21 +35,26 @@ document.getElementById("full-blog").appendChild(blogText);
 const posts = [
   {
     name: 'Blog1',
-    blogTitle: 'title-1',
+    title: 'title-1',
     blogText: 'some blog text',
-    image: './image/blog-1.jpg'
+    imageSrc: './images/blog-1.jpg',
+    imageAlt: 'a dog at the grand canyon'
   },
 
   {
     name: 'Blog2',
-    blogTitle: 'title 2',
+    title: 'title 2',
     blogText:'some blog text',
-    image: './image/blog-2.jpg'
+    imageSrc: './images/blog-2.jpg',
+    imageAlt:'multiple leashed dogs sitting'
   },
 
   {
     name: 'Blog3',
-    title: 'Title 3'
+    title: 'Title 3',
+    blogText: 'some blog text',
+    imageSrc: './images/blog-3.jpg',
+    imageAlt:'dog and person at sunset'
   }
 
 ];
@@ -60,15 +65,26 @@ document.body.appendChild(postDiv);
 for (let i = 0; i < posts.length; i+= 1) {
   let post = posts[i];
 
-const blogTitle = document.querySelector('#totale, h3');
-blogTitle.textContent = ("Traveling with Doggo");
+  let divImage = document.createElement('div');
+  let image = document.createElement('img');
+  image.src = post.imageSrc;
+  image.alt = post.imageAlt;
+  image.style.width = "300px";
+  divImage.appendChild(image);
+  document.getElementById("full-blog").appendChild(divImage);
+
+  let blogTitle = document.createElement('h3');
+  let blogNode = document.createTextNode(post.title);
+  blogTitle.appendChild(blogNode);
+  document.getElementById("full-blog").appendChild(blogTitle);
+
+  let blogText = document.createElement('p')
+  let textNode = document.createTextNode(post.blogText)
+  blogText.appendChild(textNode);
+  document.getElementById("full-blog").appendChild(blogText);
 }
 
-/*example from course video- doesn't seem to work
-const postTitle = document.createElement('h3');
-postTitle.textContent = 'Traveling with your Doggo';
-const container = document.getElementsByClassName('blog')
-document.body.insertBefore(postTitle, container);*/
+
 
 /*how to build a form- could/should this be modified to make a blog-posting tool*/
 const fields = [
