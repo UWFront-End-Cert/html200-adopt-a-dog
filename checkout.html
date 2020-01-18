@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <title>Checkout</title>
-  </head>
-  <body>
-    <header>
-      <div id="branding">
-        <a href="index.html">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <title>Checkout</title>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <a href="index.html">
         <img src="./images/adoptadog-logo.svg" alt="" width="256">
-        </a>
-      </div>
-    </header>
-    <nav id="main-nav">
+      </a>
+    </div>
+    <div class="cart">
+      <a href="checkout.html">
+        <img src="./images/cart-icon.svg" alt="" width="32">
+      </a>
+    </div>
+  </header>
+  <nav class="main-nav">
+    <ul>
+      <li><a class="navigation-link" href="index.html">Home</a></li>
+      <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
+      <li><a class="navigation-link" href="blog.html">Blog</a></li>
+      <li><a class="navigation-link" href="checkout.html">Checkout</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h1>Checkout</h1>
+  </section>
+  <section class="checkout-form">
+    <form>
+      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+      <input type="text" id="email" name="email" placeholder="john@example.com">
+      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+      <input type="text" id="adr" name="address" placeholder="1 World Way">
+      <label for="city"><i class="fa fa-institution"></i> City</label>
+      <input type="text" id="city" name="city" placeholder="Los Angeles">
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" placeholder="CA">
+      <label for="zip">Zip</label>
+      <input type="text" id="zip" name="zip" placeholder="10001">
+      <fieldset>
+        <label for="first-time-adopter">First time adopter?</label>
+        <input type="radio" name="first-time-adopter" value="yes" checked> Yes<br>
+        <input type="radio" name="first-time-adopter" value="no"> No<br>
+
+      </fieldset>
+      <label for="pickup-location">Pickup location</label>
+      <select id="pickup-location" name="pickup">
+        <option value="">Select one</option>
+        <option value="west-side">West side</option>
+        <option value="east-side">East side</option>
+        <option value="downtown">Downtown</option>
+      </select>
+      <label for="dogs-adopted">Dogs adopted</label>
+      <label for="total-cost">Total adoption cost</label>
+      <input type="submit" value="Submit" class="btn">
+    </form>
+  </section>
+
+  <section>
+    <h1>Checkout</h1>
+  </section>
+  <footer>
+    <img src="./images/adoptadog-logo.svg" alt="" width="256">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <nav class="footer-nav">
       <ul>
         <li><a class="navigation-link" href="index.html">Home</a></li>
         <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
         <li><a class="navigation-link" href="blog.html">Blog</a></li>
         <li><a class="navigation-link" href="checkout.html">Checkout</a></li>
       </ul>
-    </nav>
-    <section>
-        <h1>Checkout</h1>
-    </section>
-    <footer>
-      <img src="./images/adoptadog-logo.svg" alt="" width="256">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <nav id="main-nav">
-        <ul>
-          <li><a class="navigation-link" href="index.html">Home</a></li>
-          <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
-          <li><a class="navigation-link" href="blog.html">Blog</a></li>
-          <li><a class="navigation-link" href="checkout.html">Checkout</a></li>
-        </ul>
-        <p>Adoptadog LLC | Los Angeles, CA</p>
+      <p>Adoptadog LLC | Los Angeles, CA</p>
     </footer>
   </body>
-</html>
+  </html>
