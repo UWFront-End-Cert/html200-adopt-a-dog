@@ -11,26 +11,6 @@ function dogFees(fee) {
 alert('Total cost $' + total);
 }
 
-/*let divImage = document.createElement('div');
-let image = document.createElement('img');
-image.src = './images/blog-1.jpg';
-image.alt = "a dog at the grand canyon";
-image.style.width = "300px";
-divImage.appendChild(image);
-document.getElementById("full-blog").appendChild(divImage);
-
-let blogTitle = document.createElement('h3');
-let blogNode = document.createTextNode("Traveling with Dogs");
-blogTitle.appendChild(blogNode);
-document.getElementById("full-blog").appendChild(blogTitle);
-
-let blogText = document.createElement('p')
-let textNode = document.createTextNode("This is a paragraph of blog text. Traveling with your dog paragraph will go here. Typing one more sentence to test it out.")
-blogText.appendChild(textNode);
-document.getElementById("full-blog").appendChild(blogText);*/
-
-
-
 
 const posts = [
   {
@@ -89,13 +69,14 @@ for (let i = 0; i < posts.length; i+= 1) {
 /*how to build a form- could/should this be modified to make a blog-posting tool*/
 const fields = [
   {
-      name: 'full-name',
-      label: 'Full Name'
+      name: 'new-blog-post',
+      label: 'Post your blog'
   },
   {
-      name: 'email',
-      label: 'Email Address'
+      name: 'your Name',
+      label: 'Your Name'
   }
+
 
 ];
 /*create a form*/
@@ -126,5 +107,12 @@ form.appendChild(submitButton);
 /*to override the default behavior of the button, create an event handler*/
 form.addEventListener('submit', function(event)  {
   event.preventDefault();
-  alert('Form submitted!');
+  let content = document.getElementsByTagName('form');
+  let text = document.getElementById('new-blog-post').value;
+  let text2 = document.getElementById('your Name').value;
+  let i;
+
+  console.log(text2 +' by ' + text);
+  alert('Thank you. The form information has been received.');
+
 });
