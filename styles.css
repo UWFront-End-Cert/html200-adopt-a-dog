@@ -3,11 +3,13 @@
   box-sizing: border-box;
 }
 header {
-  height: 300px;
-  background-image: url("./images/header-image-narrow.jpg");
+  height: 30rem;
+  background: url("./images/header-image-narrow.jpg");
   position: relative;
-  background: linear-gradient(45deg, yellow, black 30%);
+  /*background: linear-gradient(45deg, yellow, black 30%);*/
+
 }
+
 h1 {
   font-family: 'martel', serif;
   color: rgb(102, 153, 0);
@@ -161,6 +163,11 @@ col-1 > div {
   clear: left;
   padding: 1rem;
 }
+#full-blog {
+  width: 60%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .blog {
   margin-left: 20%;
   margin-right: 18%;
@@ -274,6 +281,7 @@ footer {
   .checkoutButton {
     width: auto;
     }
+
   .blog {
     width: 100%;
     margin: 10%;

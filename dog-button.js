@@ -14,25 +14,25 @@ alert('Total cost $' + total);
 
 const posts = [
   {
-    name: 'Blog1',
-    title: 'title-1',
-    blogText: 'some blog text',
+    className: 'blog',
+    title: 'Traveling with your Dog',
+    blogText: 'Here is some blog text. duciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium',
     imageSrc: './images/blog-1.jpg',
     imageAlt: 'a dog at the grand canyon'
   },
 
   {
-    name: 'Blog2',
-    title: 'title 2',
-    blogText:'some blog text',
+    className: 'blog',
+    title: 'How to Walk Multiple Dogs',
+    blogText:'Here is some blog text. duciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium',
     imageSrc: './images/blog-2.jpg',
     imageAlt:'multiple leashed dogs sitting'
   },
 
   {
-    name: 'Blog3',
-    title: 'Title 3',
-    blogText: 'some blog text',
+    className: 'blog',
+    title: 'Teach your dog to Fetch',
+    blogText: 'Here is some blog text. duciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium.',
     imageSrc: './images/blog-3.jpg',
     imageAlt:'dog and person at sunset'
   }
@@ -45,20 +45,23 @@ document.body.appendChild(postDiv);
 for (let i = 0; i < posts.length; i+= 1) {
   let post = posts[i];
 
-  let divImage = document.createElement('div');
-  let image = document.createElement('img');
-  image.src = post.imageSrc;
-  image.alt = post.imageAlt;
-  image.style.width = "300px";
-  divImage.appendChild(image);
-  document.getElementById("full-blog").appendChild(divImage);
-
   let blogTitle = document.createElement('h3');
   let blogNode = document.createTextNode(post.title);
   blogTitle.appendChild(blogNode);
   document.getElementById("full-blog").appendChild(blogTitle);
 
-  let blogText = document.createElement('p')
+  let divImage = document.createElement('div');
+  let image = document.createElement('img');
+  image.src = post.imageSrc;
+  image.alt = post.imageAlt;
+  image.style.width = "30rem";
+  divImage.appendChild(image);
+  divImage.setAttribute("class", post.className);
+  document.getElementById("full-blog").appendChild(divImage);
+
+
+
+  let blogText = document.createElement('p');
   let textNode = document.createTextNode(post.blogText)
   blogText.appendChild(textNode);
   document.getElementById("full-blog").appendChild(blogText);
@@ -70,7 +73,7 @@ for (let i = 0; i < posts.length; i+= 1) {
 const fields = [
   {
       name: 'new-blog-post',
-      label: 'Post your blog'
+      label: 'Generate a new blog post by typing your content here.'
   },
   {
       name: 'your Name',
@@ -79,32 +82,31 @@ const fields = [
 
 
 ];
-/*create a form*/
-/*creates a document called "form" and assign the result to ducument.createElement. pass in form as the tag we wnat to create*/
+/*the blog entry form*/
 const form = document.createElement('form');
 document.body.appendChild(form);
-/* create a for loop that will iterate across the array. As long as i is less than fields.length, add 1 to i. Inside the for loop, create a label and assign the text content to the label value*/
+
 for (let i = 0; i < fields.length; i+= 1) {
   const field = fields[i];
-/*create a label and call it document.createElement*/
+
   const label = document.createElement('label');
   label.textContent = field.label;
-  label.setAttribute('for', field.name); /*Set 'for' to the fieldname.This helps browser know which element this label is for*/
-/*creates input field*/
+  label.setAttribute('for', field.name);
+
   const input = document.createElement('input');
-  input.setAttribute('id', field.name);/*give the input label an id for the label 'for'. Important this the id field.name matches*/
-  /*append the label and the input to the form*/
+  input.setAttribute('id', field.name);
+
   form.appendChild(label);
   form.appendChild(input);
 }
-/*need a way to submit the form. Create a submit button*/
-const submitButton = document.createElement('button'); /*this creates the button*/
+
+const submitButton = document.createElement('button');
 submitButton.setAttribute('type', 'submit');
 submitButton.textContent = 'Submit';
 
 form.appendChild(submitButton);
 
-/*to override the default behavior of the button, create an event handler*/
+
 form.addEventListener('submit', function(event)  {
   event.preventDefault();
   let content = document.getElementsByTagName('form');
@@ -116,3 +118,6 @@ form.addEventListener('submit', function(event)  {
   alert('Thank you. The form information has been received.');
 
 });
+
+let footer = document.querySelector('footer');
+document.body.appendChild(footer);
