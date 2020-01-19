@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>adopt a dog</title>
   <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <header>
@@ -39,19 +40,30 @@
   </nav>
 <div>
   <div class="interface" id="container">
-    <script src="main.js"></script>
-    <h4>Dogs Adopted</h4>
-    <div>
+  <script src="main.js"></script>
+  <form action="" id="myForm">
+  Name (max 10 characters):
+  <input type="text" name="FirstName" value="" id="input1"><br>
+  Email: <input type="text" name="email" value="" id="input2"><br>
+  City: <input type="text" name="city" value="" id="input3"><br>
+  State: <input type="text" name="state" value="" id="input4"><br>
+  Zip-Code: <input type="text" name="zip-code" value="" id="input5"><br>
+  First Time Adopter: <input type="text" name="first time adopter" value="" id="input6"><br>
+  Location: <input type="text" name="location" value="" id="input7"><br>
+  <input type="submit" value="Submit" onclick="myFunction()" id="mySubmit">
+  </form>
+  <em>Dogs Adopted</em>
+  <div>
         <div class="checkout-row">
           <div class="checkout-row-1">
-            <img src="images/lucas-checkout.jpg" alt="lucas" class="checkout-animals">
+            <img src="images/lucas-checkout.jpg" alt="lucas" class="checkout-animals zoom">
             <div class="checkout-row-1-1">
               <h6>Lucas</h6>
               <p><strong>Cost to Adopt:</strong>$1234.56</p>
             </div>
           </div>
           <div class="checkout-row-1">
-            <img src="images/duffy-checkout.jpg" alt="duffy" class="checkout-animals">
+            <img src="images/duffy-checkout.jpg" alt="duffy" class="checkout-animals zoom">
             <div class="checkout-row-1-1">
               <h6>Duffy</h6>
               <p><strong>Cost to Adopt:</strong>$1234.56</p>
@@ -59,7 +71,7 @@
           </div>
         </div>
     </div>
-    <div>
+  <div>
     <h3>Total Adoption Cost</h3>
     <p>$1234.56</p>
 

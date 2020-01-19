@@ -1,65 +1,46 @@
-const container = document.getElementById('container');
-const heading = document.createElement('h2');
-heading.textContent = "Checkout";
-container.appendChild(heading);
-const fields = [
-  {
-    name: 'name',
-    label: 'Name'
-  },
-  {
-    name:'email',
-    label:'Email Address'
-  },
-  {
-    name:'city',
-    label:'City'
-  },
-  {
-    name:'state',
-    label:'State'
-  },
-  {
-    name:'zip-code',
-    label:'Zip Code'
-  },
-  {
-    name:'first-time-adopter',
-    label:'First Time Adopter'
-  },
-  {
-    name:'location',
-    label:'Pickup location'
+function myFunction(){
+  var mail = document.getElementById("input2").value.indexOf("@");
+  var fname = document.getElementById("input1").value;
+  submitOK = "true";
+  if (fname.length > 10) {
+    alert("The name may have no more than 10 characters");
+    submitOK = "false";
   }
-];
-const form = document.createElement('form');
-form.setAttribute('id','theForm')
-form.setAttribute('method','GET');
-document.body.appendChild(form);
-for (let i = 0; i < fields.length; i += 1) {
-const field = fields[i];
+  if (mail == -1) {
+    alert("Not a valid e-mail!");
+    submitOK = "false";
+  }
 
-const label = document.createElement('label');
-label.textContent = field.label;
-label.setAttribute('for', field.name);
+  if (submitOK == "false") {
+    return false;
+  }
 
-const input = document.createElement('input');
-input.setAttribute('id',field.name);
-input.setAttribute('type','text');
-input.setAttribute('value','');
-form.appendChild(label);
-form.appendChild(input);
+  else{
+    var arr = new Array();
+    $("form").on("submit",function(e){
+        e.preventDefault();
+        for(let i=0;i<7;i++)
+        {
+          var inputVal = document.getElementById('input'+(i+1)).value;
+          arr[i].push(inputVal);
+          console.log(arr[i]);
+        }
+        alert(arr);
+      });
+
+      var data = $("form:input").serializeArray();
+      console.log(data);
+  }
 }
-let formId = document.getElementById('theForm').value;
-console.log('form:'+formId);
-container.appendChild(form);
-container.insertBefore(heading,form);
 
-const submitButton = document.createElement('button');
-submitButton.setAttribute('type', 'submit');
-submitButton.textContent = 'Submit';
-form.appendChild(submitButton);
-form.addEventListener('submit', function(e) {
-  alert('Thank you. The form information has been received');
-  document.body.appendChild(input);
-});
+var arr = new Array();
+$("form").on("submit",function(e){
+    e.preventDefault();
+    for(let i=0;i<7;i++)
+    {
+      var inputVal = document.getElementById('input'+(i+1)).value;
+      arr[i].push(inputVal);
+      console.log(arr[i]);
+    }
+    alert(arr);
+  });
