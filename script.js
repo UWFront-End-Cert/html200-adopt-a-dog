@@ -26,17 +26,17 @@ for(let i=0;i<images.length;i++){
   const image = document.createElement('img');
   image.src = 'images/'+images[i];
   console.log('images/'+images[i]);
-//  subContainer.appendChild(image);
+  subContainer.appendChild(image);
   const content = document.getElementById('content'+(i+1));
   const title = document.createElement('h3');
   const para = document.createElement('p');
   title.textContent = titles[i];
   para.textContent = 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga.';
-/*  content.appendChild(title);
+  content.appendChild(title);
   content.appendChild(para);
   content.insertBefore(title,para);
   subContainer.appendChild(content);
-  subContainer.insertBefore(image,content);*/
+  subContainer.insertBefore(image,content);
   }
 /*Assignment Jquery*/
 $(document).ready(function(){
