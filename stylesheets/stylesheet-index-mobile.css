@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  font-family: "Georgia", serif;
+}
+
+header {
+  background-color: #093C60;
+  padding: 5% 0% 5% 0%;
+}
+
+
+#header-checkout-all {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+
+.header-logo {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.header-title {
+  color: #81B741;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#header-price {
+  font-size: 1.5em;
+}
+
+
+.cart-logo {
+  width: 40%;
+  margin-top: 10%;
+  margin-left: 35%;
+}
+
+#header-price {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+
+}
+
+.button {
+  background-color: #81B741;
+  border: none;
+  color: white;
+  padding: 2% 5%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.global-navigation {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  background: #ECECEC;
+  padding: 2% 0% 2% 0%;
+}
+
+.nav-link {
+  color: #093C60;
+  text-decoration: none;
+}
+
+.nav-link-2 {
+  color: #093C60;
+  text-decoration: none;
+}
+
+.index-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+}
+
+#index-image {
+width: 100%;
+margin-bottom: 5%;
+}
+
+#index-header {
+  color: #093C60;
+  font-size: 3em;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+#index-content {
+  color: #3D3D3D;
+  line-height: 3em;
+  font-size: 1em;
+  text-align: center;
+  margin: 0% 5% 5% 5%;
+}
+
+.grid-index-adoptions {
+  display: grid;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.adoption-image {
+  width: 100%;
+}
+
+.adoption-header {
+  color: #093C60;
+  padding: 1% 0% 3% 3%;
+}
+
+.adoption-cost {
+  color: #3D3D3D;
+  font-size: .75em;
+  padding: 0% 0% 3% 3%;
+}
+
+.adoption-body {
+  color: #3D3D3D;
+  font-size: 1em;
+  padding: 0% 5% 3% 3%;
+}
+
+.index-adopt-button {
+  margin: 2% 3%;
+  background-color: #81B741;
+  border: none;
+  color: white;
+  padding: 5% 28%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+#murphy {
+  grid-column: 1;
+  grid-row: 1;
+  border: 1px solid #ECECEC;
+  margin: 0% 7% 12% 7%;
+}
+
+#poppy {
+  grid-column: 2;
+  grid-row: 1;
+  border: 1px solid #ECECEC;
+  margin: 0% 7% 12% 7%;
+}
+
+#jack {
+  grid-column: 1;
+  grid-row: 2;
+  border: 1px solid #ECECEC;
+  margin: 0% 7% 12% 7%;
+}
+
+#duffy {
+  grid-column: 2;
+  grid-row: 2;
+  border: 1px solid #ECECEC;
+  margin: 0% 7% 12% 7%;
+}
+
+#lucas {
+  grid-column: 1;
+  grid-row: 3;
+  border: 1px solid #ECECEC;
+  margin: 0% 7% 12% 7%;
+}
+
+#jake {
+  grid-column: 2;
+  grid-row: 3;
+  border: 1px solid #ECECEC;
+  margin: 0% 7% 12% 7%;
+}
+
+#angus {
+  grid-column: 1;
+  grid-row: 4;
+  border: 1px solid #ECECEC;
+  margin: 0% 7% 12% 7%;
+}
+#violet {
+  grid-column: 2;
+  grid-row: 4;
+  border: 1px solid #ECECEC;
+  margin: 0% 7% 12% 7%;
+}
+
+.see-more {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.see-more-button {
+  background-color: #ECECEC;
+  border: none;
+  color: #093C60;
+  padding: 2% 20%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.universal-footer {
+  padding: 5% 0% 5% 0%;
+  text-align: center;
+  background-color: #3D3D3D;
+  color: white;
+  line-height: 3em;
+}
+
+.footer-logo {
+  width: 40%;
+}
+
+.footer-body {
+  font-size: .75em;
+  margin: 0% 10% 0% 10%;
+  color: white;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 3%;
+  font-size: 2.5em;
+}
