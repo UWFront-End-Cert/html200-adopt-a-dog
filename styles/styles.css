@@ -1,5 +1,10 @@
-header {
-  background-color: lightblue;
+/* shared styles */
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 li {
@@ -10,6 +15,78 @@ li a {
   text-decoration: none;
 }
 
+h1 {
+  color: #263E60;
+}
+
+h2 {
+  color: #263E60;
+}
+
+h3 {
+  color: #263E60;
+}
+
+/* header styling */
+header {
+  background-color: #263E60;
+}
+
+.cart {
+  float: right;
+}
+
+.logo {
+  display: block;
+  padding-top: 2rem;
+  margin-right: auto;
+  margin-left: 2rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.slogan {
+  font-style: italic;
+  font-weight: bold;
+  color: #93B255;
+  margin-left: 2rem;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cart-icon {
+  padding-top: 1rem;
+  display: inline;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.checkout-total {
+  display: inline;
+  font-size: .75rem;
+  color: white;
+  font-weight: bold;
+  margin-right: 2rem;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.checkout-button {
+  background-color: #93B255;
+  font-size: .6rem;
+  border: none;
+  color: white;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  margin-top: .25rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
 /* footer styling */
 footer {
   background-color: #3F3F3F;
