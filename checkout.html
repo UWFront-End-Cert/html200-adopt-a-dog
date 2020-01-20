@@ -24,37 +24,43 @@
       <a href="dogs.html">Dogs </a>
       <a href="blog.html">Blog </a>
     </nav>
-  <section class="form">
+
+
+  <section id="form" class="form">
     <h2>Checkout</h2>
-    <form action="/action.php" method="POST">
+    <form action="/action.php" id="values" method="POST">
     Name:<br>
-    <input type="text" name="name">
-    <br>
+      <input type="text" id="name" name="name">
+      <br>
     Email Address:<br>
-    <input type="email" name="email">
-    <br>
-    Street Address:<br>
-    <input type="text" name="street-add">
-    <br>
-    City:<br>
-    <input type="text" name="city">
-    <br>
-    State:<br>
-    <select name="region">
-    <option value="WA">WA</option>
-    <option value="OR">OR</option>
+      <input type="email" id="email" name="email">
+      <br>
+      Street Address:<br>
+      <input type="text" id="street-add" name="street-add">
+      <br>
+      City:<br>
+      <input type="text" id="city"name="city">
+      <br>
+
+      State:<br>
+    <select id="region" name="region">
+      <option value="WA" id="regionWA"> WA</option>
+      <option value="OR" id="regionOR">OR</option>
     </select>
     <br>
       zip Code:<br>
-      <input type="text" name="zip"><br>
-      First time adopter?<br>
-      <input type="radio" name="first-time-adopter" value="yes"> Yes<br>
-      <input type="radio" name="first-time-adopter" value="no"> No <br>
-      Pickup location:
-      <select name="city">
-      <option value="Seattle">Seattle</option>
-      <option value="Portland">Portland</option>
+      <input type="text" id="zip" name="zip"><br>
+
+    First time adopter?<br>
+      <input type="radio" id="first-time-y" name="first-time-adopter" value="yes"> Yes<br>
+      <input type="radio" id="first-time-n"name="first-time-adopter" value="no"> No <br>
+    </select>
+    Pickup location:
+    <select id="location" name="location">
+      <option value="Seattle" id="seattle">Seattle</option>
+      <option value="Portland" id="portland">Portland</option>
     </select><br>
+
       Dogs adopted
       <!--correct shopping choice will populate here after javascript is added-->
       <p>Lucas</p>
@@ -74,10 +80,10 @@
   <nav class="footnav">
   <a href="index.html" style="background-color: rgb(17, 64, 105); color: white;"> Home /</a>
   <a href="dogs.html" style="background-color: rgb(17, 64, 105); color: white;"> Dogs /</a>
-  <a href="blog.html" style="background-color: rgb(17, 64, 105); color: white;"> Blog </a>
+  <a href="blog-2.html" style="background-color: rgb(17, 64, 105); color: white;"> Blog </a>
   </nav>
   <p> 2018 Adoptadog, LLC | Seattle, WA </p>
     </footer>
-
+<script src="./checkout.js"></script>
 </body>
 </html>

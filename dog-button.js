@@ -67,9 +67,6 @@ for (let i = 0; i < posts.length; i+= 1) {
   document.getElementById("full-blog").appendChild(blogText);
 }
 
-
-
-/*how to build a form- could/should this be modified to make a blog-posting tool*/
 const fields = [
   {
       name: 'new-blog-post',
