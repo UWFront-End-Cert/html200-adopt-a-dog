@@ -8,13 +8,11 @@ header {
   padding: 5% 0% 5% 0%;
 }
 
-
 #header-checkout-all {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
-
 
 .header-logo {
   width: 80%;
@@ -23,7 +21,7 @@ header {
 
 .header-title {
   color: #81B741;
-  font-size: 3em;
+  font-size: 1.5em;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -33,7 +31,7 @@ header {
 }
 
 .cart-logo {
-  width: 40%;
+  width: 20%;
   margin-top: 10%;
   margin-left: 35%;
 }
@@ -41,8 +39,7 @@ header {
 #header-price {
   color: white;
   text-align: center;
-  font-size: 2em;
-
+  font-size: 1em;
 }
 
 .button {
@@ -52,13 +49,13 @@ header {
   padding: 2% 5%;
   text-align: center;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .global-navigation {
   display: flex;
   justify-content: center;
-  font-size: 2.5em;
+  font-size: 1.25em;
   font-weight: bold;
   background: #ECECEC;
   padding: 2% 0% 2% 0%;
@@ -76,22 +73,26 @@ header {
 
 .grid-index-adoptions {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 49% 49%;
   grid-column-gap: 1%;
   grid-row-gap: 1%;
-  line-height: 3em;
+  line-height: 1.25em;
 }
 
 .index-adopt-button {
   background-color: #81B741;
   border: none;
   color: white;
-  padding: 3% 33%;
+  padding: 3% 30%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bolder;
+}
+
+.adoption-image {
+  width: 100%;
 }
 
 #dogs-header {
@@ -173,12 +174,12 @@ header {
 }
 
 .universal-footer {
-  margin-top: 30%;
+  margin-top: 25%;
   padding: 5% 0% 5% 0%;
   text-align: center;
   background-color: #3D3D3D;
   color: white;
-  line-height: 3em;
+  line-height: 2em;
 }
 
 .footer-logo {
@@ -186,7 +187,7 @@ header {
 }
 
 .footer-body {
-  font-size: .75em;
+  font-size: 1em;
   margin: 0% 10% 0% 10%;
   color: white;
 }
@@ -195,5 +196,5 @@ header {
   color: white;
   text-decoration: none;
   margin-bottom: 3%;
-  font-size: 2.5em;
+  font-size: 1.5em;
 }

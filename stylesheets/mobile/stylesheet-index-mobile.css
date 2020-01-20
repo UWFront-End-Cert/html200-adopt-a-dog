@@ -8,13 +8,11 @@ header {
   padding: 5% 0% 5% 0%;
 }
 
-
 #header-checkout-all {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
-
 
 .header-logo {
   width: 80%;
@@ -23,7 +21,7 @@ header {
 
 .header-title {
   color: #81B741;
-  font-size: 3em;
+  font-size: 1.5em;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -32,9 +30,8 @@ header {
   font-size: 1.5em;
 }
 
-
 .cart-logo {
-  width: 40%;
+  width: 20%;
   margin-top: 10%;
   margin-left: 35%;
 }
@@ -42,8 +39,7 @@ header {
 #header-price {
   color: white;
   text-align: center;
-  font-size: 2em;
-
+  font-size: 1em;
 }
 
 .button {
@@ -53,13 +49,13 @@ header {
   padding: 2% 5%;
   text-align: center;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .global-navigation {
   display: flex;
   justify-content: center;
-  font-size: 2.5em;
+  font-size: 1.25em;
   font-weight: bold;
   background: #ECECEC;
   padding: 2% 0% 2% 0%;
@@ -88,14 +84,14 @@ margin-bottom: 5%;
 
 #index-header {
   color: #093C60;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 3%;
   text-align: center;
 }
 
 #index-content {
   color: #3D3D3D;
-  line-height: 3em;
+  line-height: 2em;
   font-size: 1em;
   text-align: center;
   margin: 0% 5% 5% 5%;
@@ -133,11 +129,11 @@ margin-bottom: 5%;
   background-color: #81B741;
   border: none;
   color: white;
-  padding: 5% 28%;
+  padding: 5% 20%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bolder;
 }
 
@@ -206,11 +202,11 @@ margin-bottom: 5%;
   background-color: #ECECEC;
   border: none;
   color: #093C60;
-  padding: 2% 20%;
+  padding: 2% 15%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 3em;
+  font-size: 1em;
   font-weight: bolder;
 }
 
@@ -219,7 +215,7 @@ margin-bottom: 5%;
   text-align: center;
   background-color: #3D3D3D;
   color: white;
-  line-height: 3em;
+  line-height: 2em;
 }
 
 .footer-logo {
@@ -227,7 +223,7 @@ margin-bottom: 5%;
 }
 
 .footer-body {
-  font-size: .75em;
+  font-size: 1em;
   margin: 0% 10% 0% 10%;
   color: white;
 }
@@ -236,5 +232,5 @@ margin-bottom: 5%;
   color: white;
   text-decoration: none;
   margin-bottom: 3%;
-  font-size: 2.5em;
+  font-size: 1.5em;
 }

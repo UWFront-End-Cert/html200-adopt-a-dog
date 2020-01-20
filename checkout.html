@@ -3,8 +3,9 @@
    <head>
       <meta charset="utf-8">
       <title>Adopt-a-Dog Checkout: Adopt a dog using the below form!</title>
-      <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="stylesheets/desktop/stylesheet-checkout.css">
-      <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="stylesheets/mobile/stylesheet-checkout-mobile.css">
+      <link rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" href="stylesheets/desktop/stylesheet-checkout.css">
+      <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" href="stylesheets/mobile/stylesheet-checkout-mobile.css">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
    </head>
    <body>
       <main>
@@ -44,13 +45,13 @@
             </div>
             <div class="checkout-form-2">
                <label class="checkout-title">City
-               <input type="text" name="contactCity">
+               <input class="form-box-1" type="text" name="contactCity">
                </label>
                <label class="checkout-title-2">State
-               <input type="text" name="contactState">
+               <input class="form-box-1" type="text" name="contactState">
                </label>
                <label class="checkout-title-2">Zip Code
-               <input type="text" name="contactZip">
+               <input class="form-box-1" type="text" name="contactZip">
                </label>
             </div>
             <fieldset id="first-time-adopter">
@@ -83,7 +84,7 @@
                   <p class="cost-to-adopt"><strong>Cost to Adopt:</strong> $123.45</p>
                </div>
             </div>
-            <h3 class="checkout-title">Total Adoption Cost</h3>
+            <h3 class="checkout-title-final">Total Adoption Cost</h3>
             <p class="final-cost">$1234.56</p>
             <a id="checkout-button" href="checkout.html">Submit</a>
          </form>
