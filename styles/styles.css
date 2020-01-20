@@ -2,6 +2,58 @@ header {
   background-color: lightblue;
 }
 
-footer {
-  background-color: darkgrey;
+li {
+  display: inline;
 }
+
+li a {
+  text-decoration: none;
+}
+
+/* footer styling */
+footer {
+  background-color: #3F3F3F;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+}
+
+footer ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align:center;
+}
+
+footer nav li + li:before {
+    content: ' / ';
+    padding: .5rem;
+    color: white;
+    font-weight: bolder;
+}
+
+footer img {
+  display: block;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p.copyright {
+  padding-bottom: 2rem;
+}
+
+
+/* Comp color hex codes:
+Gray footer: #3F3F3F
+Green button: 93B255
+Blue header: 263E60
+*/
