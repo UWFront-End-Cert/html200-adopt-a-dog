@@ -30,6 +30,7 @@ h3 {
 /* header styling */
 header {
   background-color: #263E60;
+  margin-bottom: 0px;
 }
 
 .cart {
@@ -53,6 +54,7 @@ header {
   margin-top: 0px;
   padding-top: 0px;
   padding-bottom: 2rem;
+  margin-bottom: 0px;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -87,6 +89,33 @@ header {
   margin-right: 2rem;
   cursor: pointer;
 }
+
+/* main nav styling */
+.main-nav {
+  background-color: lightgray;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main-nav ul {
+  margin-left: 2rem;
+}
+
+.main-nav li + li:before {
+    content: ' / ';
+    padding: .5rem;
+    color: #263E60;
+    font-weight: bolder;
+}
+
+.main-nav a {
+  color: #263E60;
+  font-weight: bold;
+}
+
+
 /* footer styling */
 footer {
   background-color: #3F3F3F;
