@@ -100,6 +100,13 @@ header {
   margin: 2% 0% 2% 15%;
 }
 
+.checkout-title-final {
+  color: #093C60;
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin: 2% 0% 2% 15%;
+}
+
 .checkout-title-2 {
   color: #093C60;
   font-size: 1.5em;
