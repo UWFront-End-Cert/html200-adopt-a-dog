@@ -3,12 +3,14 @@
    <head>
       <meta charset="utf-8">
       <title>Adopt-a-Dog Checkout: Adopt a dog using the below form!</title>
-      <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-checkout.css">
+      <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="stylesheets/stylesheet-checkout.css">
+      <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="stylesheets/stylesheet-checkout-mobile.css">
    </head>
    <body>
       <main>
         <header>
-           <div class="header-checkout-all">
+          <div id="header-checkout-all">
+           <div class="header-checkout">
               <img class="cart-logo" src="images/cart-icon.svg" alt="Shopping cart icon">
               <p id="header-price">$1234.56</p>
             </div>
@@ -17,15 +19,17 @@
               <img class="header-logo" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
               <h2 class="header-title"><em>Seattle's premiere dog adoption agency</em></h2>
            </div>
+         </div>
         </header>
-         <nav class="global-navigation">
-            <a href="index.html" class="nav-link">Home</a>
-            <p> / </p>
-            <a href="dogs.html" class="nav-link-2">Dogs</a>
-            <p> / </p>
-            <a href="blog.html" class="nav-link-2">Blog</a>
-         </nav>
+        <nav class="global-navigation">
+           <a href="index.html" class="nav-link">Home</a>
+           <p> / </p>
+           <a href="dogs.html" class="nav-link-2">Dogs</a>
+           <p> / </p>
+           <a href="blog.html" class="nav-link-2">Blog</a>
+        </nav>
          <h2 id="checkout-header">Checkout</h2>
+         <div id="container">
          <form method="GET">
             <div class="checkout-form-1">
                <label class="checkout-title stack">Name<br>
@@ -83,6 +87,7 @@
             <p class="final-cost">$1234.56</p>
             <a id="checkout-button" href="checkout.html">Submit</a>
          </form>
+       </div>
       </main>
       <footer class="universal-footer">
          <img class="footer-logo" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
