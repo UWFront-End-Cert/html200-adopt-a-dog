@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Adopt A Dog Home Page</title>
+    <!--<script src="https://kit.fontawesome.com/015d63ce65.js" crossorigin="anonymous"></script>-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans:800&display=swap" rel="stylesheet">-->
+    <!--Removing in-line styles/styles in HTML header
+    <style>
+      header {
+        background-image: url('images/header-image.jpg');
+        padding: 3em;
+      }
+      h1 {
+        color: green;
+        font-family: 'Courgette', cursive;
+      }
+      .bold {
+        font-family: 'Open Sans', sans-serif;
+      }
+      .nav-header {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 1rem;
+        background-color: whitesmoke;
+        padding: 1em 4em;
+      }
+      .grid-container {
+        display:grid;
+        grid-gap: 20px 20px;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly; /*align grid items, not text*/
+        align-items: center; /*use to align items along horizontal axis*/
+    </style>
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <!-- Create header w/ background -->
+    <header>
+      <div class="grid-container">
+        <div class="grid-item-1">
+          <img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo" style="max-width:60%;">
+          <h1>Seattle's premiere dog adoption agency</h1>
+        </div>
+        <div class="grid-item-2">
+          <img src="images/cart-icon.svg" alt="Click to go to checkout" style="width:5%;">$1234.56
+          <p><a href="adoptadog-checkout.html"><img src="images/checkout-button.jpg" alt="Click to go to checkout" style="width:100%;"></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Create navigation pane -->
+      <nav class="nav-header">
+        <a href="adoptadog-index.html">Home / </a>
+        <a href="adoptadog-dogs.html">Dogs / </a>
+        <a href="adoptadog-blog.html">Blog</a>
+      </nav>
+
+      <!--Home intro-->
+      <div class="grid-container">
+        <div class= "grid-item-3">
+          <img src="images/home-intro.jpg" alt="Introduction photo of dog and his owner" style="width:100%;">
+        </div>
+        <div class = "grid-item-4">
+          <h1>Adopt A Dog</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+             ut labore et dolore magna aliqua. Posuere morbi leo urna molestie. Fusce id velit ut tortor
+             pretium viverra suspendisse potenti. Suscipit tellus mauris a diam maecenas. Odio tempor orci
+             dapibus ultrices in. Tellus pellentesque eu tincidunt tortor. Turpis cursus in hac habitasse
+             platea. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. In tellus integer
+             feugiat scelerisque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Amet mauris
+             commodo quis imperdiet massa tincidunt nunc. Auctor urna nunc id cursus metus aliquam. Commodo
+             odio aenean sed adipiscing diam.</p>
+        </div>
+      </div>
+
+      <!--Create flexbox grid containing dog profiles-->
+      <div class="grid-container">
+          <div class= "grid-item">
+            <h3>Murphy</h3>
+            <img src="images/murphy-card.jpg" alt="Picture of Murphy" style="width:100%;">
+            Cost to Adopt: $123.45
+            <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
+              Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
+              non blandit massa enim nec. </p>
+            <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+          </div>
+
+          <div class= "grid-item">
+            <h3>Poppy</h3>
+            <img src="images/poppy-card.jpg" alt="Picture of Poppy" style="width:100%;">
+            <h4>Cost to Adopt</h4>: $123.45
+            <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
+              Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
+              non blandit massa enim nec. </p>
+            <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+          </div>
+
+          <div class= "grid-item">
+            <h3>Jack</h3>
+            <img src="images/jack-card.jpg" alt="Picture of Jack" style="width:100%;">
+            <h4>Cost to Adopt</h4>: $123.45
+            <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
+              Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
+              non blandit massa enim nec. </p>
+              <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+            </div>
+
+          <div class= "grid-item">
+            <h3>Duffy</h3>
+            <img src="images/duffy-card.jpg" alt="Picture of Duffy" style="width:100%;">
+            <h4>Cost to Adopt</h4>: $123.45
+            <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
+           Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
+           non blandit massa enim nec. </p>
+           <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+         </div>
+
+         <div class= "grid-item">
+           <h3>Lucas</h3>
+           <img src="images/lucas-card.jpg" alt="Picture of Lucas" style="width:100%;">
+           <h4>Cost to Adopt</h4>: $123.45
+           <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
+           Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
+           non blandit massa enim nec. </p>
+           <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt" style="width:100%;"></a>
+         </div>
+
+         <div class= "grid-item">
+           <h3>Jake</h3>
+           <img src="images/jake-card.jpg" alt="Picture of jake" style="width:100%;">
+           <h4>Cost to Adopt</h4>: $123.45
+           <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
+           Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
+           non blandit massa enim nec. </p>
+           <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+         </div>
+
+         <div class= "grid-item">
+           <h3>Angus</h3>
+           <img src="images/angus-card.jpg" alt="Picture of Angus" style="width:100%;">
+           <h4>Cost to Adopt</h4>: $123.45
+           <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
+           Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
+           non blandit massa enim nec. </p>
+           <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt" style="width:100%;"></a>
+         </div>
+
+         <div class= "grid-item">
+           <h3>Violet</h3>
+           <img src="images/violet-card.jpg" alt="Picture of Violet" style="width:100%;">
+           <h4>Cost to Adopt</h4>: $123.45
+           <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
+           Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
+            non blandit massa enim nec. </p>
+            <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+          </div>
+      </div>
+
+      <p><a href="adoptadog-dogs.html"><img src="images/see-more-dogs-button.jpg" alt="Click to see more dogs"  style="width:100%;"></a>
+
+      <footer>
+        <p><img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo"></p>
+        <p>Aborpos nisto inci tet aut queu volupti beruptiberro to ex esseque invenien imaxmu scidru ptusulam consequunt</p>
+        <nav class="nav-footer">
+          <a href="adoptadog-index.html">Home / </a>
+          <a href="adoptadog-dogs.html">Dogs / </a>
+          <a href="adoptadog-blog.html">Blog</a>
+        </nav>
+        <p>© 2020 Adoptadog, LLC | Seattle, WA
+      </footer>
+
+  </body>
+</html>
