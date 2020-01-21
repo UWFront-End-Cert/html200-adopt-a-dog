@@ -209,8 +209,6 @@ p.copyright {
   cursor: pointer;
 }
 
-
-
 .dog-card-image {
   max-width: 100%;
 }
@@ -226,6 +224,91 @@ p.copyright {
 .dog-description {
   margin: 1rem;
 }
+
+/* home page styling */
+.intro {
+    margin: 2rem 5rem 4rem 2rem;
+    width: 100%;
+    overflow: auto;
+}
+.intro-image {
+    float: left;
+}
+.intro-image img {
+    display: block;
+    margin-right: 1rem;
+}
+.intro-content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0px;
+}
+.intro-title {
+    font-weight: bold;
+    font-size: 125%;
+    margin-top: 0px;
+}
+
+.featured-dogs-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* checkout style */
+form {
+  margin-left: 2rem;
+}
+
+label {
+  display: block;
+  color: #263E60;
+  font-weight: bold;
+}
+input[type=text], select, textarea {
+  width: 20rem;
+  padding: .25rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  margin-top: .25rem;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+.no-button {
+  margin-left: 1rem;
+}
+
+fieldset {
+  width: 20rem;
+  padding: 0px;
+  border: 0;
+  box-sizing: border-box;
+  margin-top: .25rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #93B255;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  margin-top: .25rem;
+  margin-right: 2rem;
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+
 /* Comp color hex codes:
 Gray footer: #3F3F3F
 Green button: 93B255
