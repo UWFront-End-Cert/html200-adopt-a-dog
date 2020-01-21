@@ -156,7 +156,6 @@ p.copyright {
 
 /* blog styling */
 
-
 .blog-entry {
     margin: 0 5rem 4rem 2rem;
     overflow: auto;
@@ -178,8 +177,55 @@ p.copyright {
     margin-top: 0px;
 }
 
+/* dog styling */
+.all-dogs-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.dog-adoption-card {
+  width: 15rem;
+  border: 1px solid gray;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.adopt-button {
+  background-color: #93B255;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  margin-top: .25rem;
+  margin-right: 2rem;
+  margin-bottom: .5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
 
 
+
+.dog-card-image {
+  max-width: 100%;
+}
+
+.dog-name {
+  margin: 1rem;
+}
+
+.dog-adoption-cost {
+  margin: 1rem;
+}
+
+.dog-description {
+  margin: 1rem;
+}
 /* Comp color hex codes:
 Gray footer: #3F3F3F
 Green button: 93B255
