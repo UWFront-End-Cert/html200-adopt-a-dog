@@ -1,6 +1,8 @@
 
 USER PERSONAS
-
+  Dog Owners: Currently own a dog and are interested in keeping up with dog related news in the Puget Sound Area.
+  Potential Dog Owners: Are interested in owning a dog and want to be informed of dog currently up for adoption.
+  Dog Enthusiast: May or may not own a dog but is interested in all things dog regardless. 
 
 
 
