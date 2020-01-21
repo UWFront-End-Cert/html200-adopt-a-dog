@@ -4,10 +4,12 @@ About
 
   The purpose of this site is to allow users to adopt local dogs as well as read up on local dog news.
   This site was built using HTML, CSS, JS and Jquery.
+  
 
 Purpose
 
   This site is intended for
+  
 
 Testing
 
