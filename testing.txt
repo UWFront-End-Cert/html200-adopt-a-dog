@@ -1,0 +1,36 @@
+
+USER PERSONAS
+
+
+
+
+TESTING
+  Internet Explorer
+    Images: Images and fields are much larger than expected.
+    Form Submission: Performs as expected
+    Cart Updates: Cart does not update.
+
+  Chrome
+    Images: Performs as expected
+    Form Submission: Performs as expected
+    Cart Updates: Performs as expected
+
+  Safari
+    Images: Images do not scale as expected
+    Form Submission: Performs as expected
+    Cart Updates: Performs as expected
+
+  Windows
+    Images: Performs as expected
+    Form Submission: Performs as expected
+    Cart Updates: Performs as expected
+
+  MAC
+    Images: Performs as expected
+    Form Submission: Performs as expected
+    Cart Updates: Performs as expected
+
+  Mobile
+    Images: Header does not adjust as expected but remains legible.
+    Form Submission: Performs as expected
+    Cart Updates: Performs as expected
