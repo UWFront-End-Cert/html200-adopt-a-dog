@@ -17,6 +17,7 @@ li a {
 
 h1 {
   color: #263E60;
+  margin-left: 2rem;
 }
 
 h2 {
@@ -99,10 +100,6 @@ header {
   margin-bottom: 0px;
 }
 
-.main-nav ul {
-  margin-left: 2rem;
-}
-
 .main-nav li + li:before {
     content: ' / ';
     padding: .5rem;
@@ -156,6 +153,31 @@ footer img {
 p.copyright {
   padding-bottom: 2rem;
 }
+
+/* blog styling */
+
+
+.blog-entry {
+    margin: 0 5rem 4rem 2rem;
+    overflow: auto;
+}
+.blog-image {
+    float: left;
+}
+.blog-image img {
+    display: block;
+    margin-right: 1rem;
+}
+.blog-content {
+    margin-left: 1rem;
+    margin-top: 0px;
+}
+.blog-title {
+    font-weight: bold;
+    font-size: 125%;
+    margin-top: 0px;
+}
+
 
 
 /* Comp color hex codes:
