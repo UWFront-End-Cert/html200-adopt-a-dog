@@ -230,17 +230,17 @@ p.copyright {
 
 /* home page styling */
 .intro {
-    margin: 2rem 5rem 4rem 2rem;
+    margin: 0rem 5rem 4rem 1rem;
     width: 100%;
     overflow: auto;
 }
 .intro-image {
+    display: inline-block;
+    width: 50%;
     float: left;
+    margin: 1rem 1rem .5rem 1rem;
 }
-.intro-image img {
-    display: block;
-    margin-right: 1rem;
-}
+
 .intro-content {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -249,7 +249,7 @@ p.copyright {
 .intro-title {
     font-weight: bold;
     font-size: 125%;
-    margin-top: 0px;
+    margin-top: 1rem;;
 }
 
 .featured-dogs-container {
@@ -258,6 +258,24 @@ p.copyright {
   flex-wrap: wrap;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.show-more-button {
+  background-color: darkgray;
+  font-size: 1rem;
+  border: none;
+  color: #263E60;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  margin-top: .25rem;
+  margin-right: auto;
+  margin-bottom: .25rem;
+  margin-left: auto;
+  cursor: pointer;
+  width: 25%;
 }
 
 /* checkout style */
