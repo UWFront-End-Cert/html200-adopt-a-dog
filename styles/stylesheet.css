@@ -11,6 +11,11 @@ p dark gray
   box-sizing: border-box;
 }
 
+#core {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .hidden {
   position: relative;
   left: -10000px;
@@ -28,13 +33,14 @@ body {
 }
 
 header {
+  border: 2px red solid;
   width: auto;
   height: 25%;
   margin: .25em .25em 0 .25em;
 }
 
-/*#header {
-  position: absolute;
+#header {
+  /*position: absolute;*/
   width: 100%;
   height: 25%;
 }
@@ -63,10 +69,10 @@ header {
 }
 
 .logo {
+  width: 18%;
+  height: auto;
   z-index: 2;
-}*/
-
-
+}
 
 h1 {
   font-family: 'Gelasio', serif;
@@ -104,15 +110,14 @@ h4 {
   border: none;
   margin: .5em;
 }
-
+/*make a few tweaks to nav layout*/
 nav ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
   align-items: left;
   list-style: none;
-  color: #;
-  background-color: #;
+  color: #083c60;
+  background-color: #d3d3d3;
   width: 100%;
   padding: 2em;
   border: none;
@@ -122,7 +127,6 @@ nav ul {
 
 li a.menu-links {
   color: #;
-  background-color: #;
   border: none;
   text-decoration: none;
   text-align: center;
@@ -134,14 +138,27 @@ ul.my-list {
   font-size: 1em;
 }
 
-.intro {
+a:link {
+  color: #083c60;
+}
 
+a:visited {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #81b741;
+}
+
+/*need to fix intro box*/
+.intro {
   border: 2px red solid;
   margin: .5em;
 }
 
 .hug ;
 }
+
 .intro-header {
 
 }
@@ -149,7 +166,7 @@ ul.my-list {
 .intro-text {
 
 }
-
+/*need to align h3, p, style button*/
 .grid-container {
   display: grid;
   grid-gap: 2em 2em;
@@ -157,6 +174,7 @@ ul.my-list {
 }
 .card {
   width: 100%;
+
 }
 .dog-1 {
     border: 2px solid #d3d3d3;
@@ -240,4 +258,29 @@ ul.my-list {
   text-align: left;
   grid-column: 4;
   grid-row: 5 / 6;
+}
+
+footer {
+  background-color: #083c60;
+  color: #ffffff;
+  font-size: .5em;
+  padding: 2em;
+  border: none;
+  margin: 1em 1em 1em 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-logo {
+  display: block;
+  margin: auto;
+  width: 25%;
+  }
+
+.footer-nav {
+  color: #ffffff;
+  padding: .5em;
+  margin: .5em;
+  text-decoration: none;
+  text-align: center;
 }
