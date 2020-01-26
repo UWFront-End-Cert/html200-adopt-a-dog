@@ -4,11 +4,14 @@ green #81b741
 headers navy
 see more dogs light gray #d3d3d3
 borders light gray
-p dark gray
+p dark gray #a9a9a9
 */
 
-* {
+/** {
   box-sizing: border-box;
+}*/
+*, :after, :before {
+    box-sizing: inherit;
 }
 
 #core {
@@ -26,10 +29,16 @@ p dark gray
   left: 0;
 }
 
-body {
+p {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  background-color: #;
+  color: #494949;
+  padding: .25em;
+  border: none;
+  margin: .25em;
+}
+.cost {
+  font-weight: 900;
 }
 
 header {
@@ -97,9 +106,9 @@ h3 {
   font-family: 'Gelasio', serif;
   font-size: 1.5em;
   color: #083c60;
-  padding: .5em;
+  padding: .25em;
   border: none;
-  margin: .5em;
+  margin: .25em;
 }
 
 h4 {
@@ -110,12 +119,19 @@ h4 {
   border: none;
   margin: .5em;
 }
+
+a {
+  text-decoration: none;
+}
+
 /*make a few tweaks to nav layout*/
 nav ul {
   display: flex;
   flex-flow: row wrap;
   align-items: left;
   list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   color: #083c60;
   background-color: #d3d3d3;
   width: 100%;
@@ -126,7 +142,7 @@ nav ul {
 }
 
 li a.menu-links {
-  color: #;
+  color: #083c60;
   border: none;
   text-decoration: none;
   text-align: center;
@@ -134,7 +150,7 @@ li a.menu-links {
 
 ul.my-list {
   list-style: none;
-  color: #;
+  color: #083c60;
   font-size: 1em;
 }
 
@@ -150,26 +166,36 @@ a:hover {
   color: #81b741;
 }
 
-/*need to fix intro box*/
 .intro {
-  border: 2px red solid;
+  display: flex;
+  max-height: auto;
+  align-items: center;
   margin: .5em;
+  justify-content: space-between;
+  position: relative;
 }
 
-.hug ;
+.hug {
+  padding: .25em;
+  margin: .5em;
+  max-height: 50%;
+  float: left;
 }
+
 
 .intro-header {
 
 }
 
 .intro-text {
-
+  color: #494949;
 }
+
 /*need to align h3, p, style button*/
 .grid-container {
   display: grid;
   grid-gap: 2em 2em;
+  margin: 1em;
 
 }
 .card {
@@ -239,7 +265,7 @@ a:hover {
   grid-row: 5 / 6;
 }
 
-.dog10 {
+.dog-10 {
   border: 2px solid #d3d3d3;
   text-align: left;
   grid-column: 2;
@@ -259,6 +285,36 @@ a:hover {
   grid-column: 4;
   grid-row: 5 / 6;
 }
+.blog {
+  text-align: center;
+}
+.blog-post {
+  border: 2px solid red;
+  padding: .5em;
+  margin: .5em;
+  display: flex;
+  max-height: auto;
+  align-items: center;
+  margin: .5em;
+  justify-content: space-between;
+  position: relative;
+}
+
+.blog-img {
+  padding: .25em;
+  margin: .25em;
+  /*float: left;*/
+}
+
+.more {
+  font-size: 2em;
+  color: #083c60;
+  background-color: #d9d9d9;
+  padding: .25em;
+  margin: .75em;
+  text-align: center;
+  width: 33%;
+}
 
 footer {
   background-color: #083c60;
@@ -266,9 +322,14 @@ footer {
   font-size: .5em;
   padding: 2em;
   border: none;
-  margin: 1em 1em 1em 1em;
+  margin: 1em;
   text-align: center;
   width: 100%;
+}
+
+.footer {
+  color: #ffffff;
+  font-size: .75em;
 }
 
 .footer-logo {
