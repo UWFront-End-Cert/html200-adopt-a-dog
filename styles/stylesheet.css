@@ -3,7 +3,7 @@
 }
 
 .header {
-  max-height: 300px;
+  max-height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +13,7 @@
 }
 
 .header-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .header-logo {
@@ -104,8 +104,14 @@ li a:active {
   color: #000;
 }
 
+.container-home {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  margin: 3rem 0 0 3rem;
+}
+
 .container {
-  margin-left: 3rem;
+  margin: 3rem 0 0 3rem;
 }
 
 h1 {
@@ -120,7 +126,6 @@ h2 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 1.6em;
-  margin-top: 3rem;
   color: #103861;
 }
 
@@ -153,13 +158,12 @@ p {
 }
 
 .intro-container {
+  display: block;
   margin: 1.2rem 0.8rem 4rem 0rem;
-  max-width: 90%;
 }
 
 .intro-container img {
-  float: left;
-  padding: 0px 40px 40px 0px;
+  max-width: 100%;
 }
 
 .intro-container h2 p {
@@ -170,16 +174,19 @@ p {
 .dog-profiles {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: start;
   clear: both;
-  max-width: 90%;
   padding-top: 20px;
 }
 
 .dog-profiles section {
   border: 1px solid #ccc;
-  width: 180px;
-  margin: 0.8rem 3rem 1.5rem 0rem;
+  width: 10rem;
+  margin: 0.8rem 3rem 3rem 0rem;
+}
+
+.dog-profiles img {
+  width: 10rem;
 }
 
 button {
@@ -192,8 +199,7 @@ button {
   font-family: 'Public Sans', sans-serif;
   font-weight: 700;
   font-size: .7em;
-  margin-top: 1.5rem;
-  padding: 4px 70px 4px 62px;
+  padding: 4px 60px 4px 50px;
   background-color: #9bc344;
   border-radius: 1px;
   text-decoration: none;
@@ -220,10 +226,9 @@ button {
 }
 
 .see-more {
-  display: flex;
-  justify-content: center;
-  max-width: 90%;
   height: 10%;
+  width: 100%;
+  text-align: center;
   padding: 40px;
 }
 
@@ -253,6 +258,42 @@ button {
   background-color: #103861;
 }
 
+.blog-preview {
+  border-left: 1px dotted #ccc;
+  padding-left: 2rem;
+  margin: 0 1rem 0 4rem;
+}
+
+.blog-preview img {
+  width: 90%;
+}
+
+.blog-preview section {
+  padding-bottom: 4rem;
+}
+
+.blog-preview a:link {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #00b8e6;
+}
+
+.blog-preview a:visited {
+  font-weight: 300;
+  color:#103861;
+}
+
+.blog-preview a:hover {
+  font-weight: 700;
+  color: #00b8e6;
+}
+
+.blog-preview a:active {
+  color:#103861;
+}
+
 .blog-article {
   display: flex;
   flex-flow: row wrap;
@@ -262,7 +303,7 @@ button {
 
 .blog-article img {
   float: left;
-  padding: 16px 40px 0px 0px;
+  padding: 1.2rem 3rem 2rem 0;
 }
 
 .blog-article h3 p{
@@ -387,4 +428,51 @@ input[type=submit]:active {
 
 .footer-block a:active {
   color: #fff;
+}
+
+@media screen and (minmax: 500px, 1200px) {
+  .container-home {
+    grid-template-columns: 60% 30% 10%;
+    max-width: 80%;
+  }
+
+@media screen and (max-width: 500px) {
+  .container-home {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 1rem;
+  }
+  .header-logo {
+    width: 60%;
+    top: 35%;
+    left: 4%;
+  }
+  .header h1 {
+    font-size: 0rem;
+  }
+  .header-checkout {
+    top: 65%;
+    left: 4%;
+  }
+  ul {
+    margin: 1rem;
+  }
+  .dog-profiles section {
+    width: 100%;
+  }
+  .dog-profiles img {
+    width: 100%;
+  }
+  .dog-profiles a {
+    width: 100%;
+    padding: 2% 45% 2% 45%;
+  }
+  .see-more {
+    min-width: 100%;
+    align: center;
+  }
+  .blog-preview {
+    border-top: 1px dotted #ccc;
+    margin: 0;
+    padding-top: 3rem;
+  }
 }
