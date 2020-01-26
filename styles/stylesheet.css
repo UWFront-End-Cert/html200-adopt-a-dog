@@ -7,11 +7,8 @@ borders light gray
 p dark gray #a9a9a9
 */
 
-/** {
+* {
   box-sizing: border-box;
-}*/
-*, :after, :before {
-    box-sizing: inherit;
 }
 
 #core {
@@ -37,6 +34,7 @@ p {
   border: none;
   margin: .25em;
 }
+
 .cost {
   font-weight: 900;
 }
@@ -128,7 +126,6 @@ a {
 nav ul {
   display: flex;
   flex-flow: row wrap;
-  align-items: left;
   list-style: none;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -137,12 +134,13 @@ nav ul {
   width: 100%;
   padding: 2em;
   border: none;
-  margin: 0 .25em .5em .25em;
+  margin: 0 .5em .5em .5em;
   text-align: center;
 }
 
 li a.menu-links {
   color: #083c60;
+  margin: 0 .5em .5em .5em;
   border: none;
   text-decoration: none;
   text-align: center;
@@ -168,7 +166,6 @@ a:hover {
 
 .intro {
   display: flex;
-  max-height: auto;
   align-items: center;
   margin: .5em;
   justify-content: space-between;
@@ -182,22 +179,18 @@ a:hover {
   float: left;
 }
 
-
-.intro-header {
-
-}
-
 .intro-text {
   color: #494949;
 }
 
-/*need to align h3, p, style button*/
+/*need to style button*/
 .grid-container {
   display: grid;
   grid-gap: 2em 2em;
   margin: 1em;
 
 }
+
 .card {
   width: 100%;
 
@@ -288,12 +281,10 @@ a:hover {
 .blog {
   text-align: center;
 }
+
 .blog-post {
   border: 2px solid red;
-  padding: .5em;
-  margin: .5em;
   display: flex;
-  max-height: auto;
   align-items: center;
   margin: .5em;
   justify-content: space-between;
@@ -301,12 +292,23 @@ a:hover {
 }
 
 .blog-img {
+  border: 2px solid red;
   padding: .25em;
-  margin: .25em;
-  /*float: left;*/
+  margin: .5em;
+  float: left;
+}
+
+.blog-header {
+  width: 100%;
+  border: 2px solid red;
+}
+
+.blog-content {
+  border: 2px solid red;
 }
 
 .more {
+  font-family: 'Roboto', sans-serif;
   font-size: 2em;
   color: #083c60;
   background-color: #d9d9d9;
@@ -342,6 +344,7 @@ footer {
   color: #ffffff;
   padding: .5em;
   margin: .5em;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   text-align: center;
 }
