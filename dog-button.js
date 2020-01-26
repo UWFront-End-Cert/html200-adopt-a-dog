@@ -8,16 +8,31 @@ function clickPhoto(name, breed, cost) {
 function dogFees(fee) {
    total = total + fee
 }
+/*track cart total*/
 $('.button').click(function(){
   $('#total').text(total);
 });
-/*hover blue outline*/
+
+/*hover effect on dog tiles*/
 $('.col-1').hover(function(e){
   $(this).addClass('tile-border');
 })
 $('.col-1').mouseleave(function(e){
   $(this).toggleClass('tile-border');
 })
+/*Handle form data on Checkout page*/
+$("form").submit(function(){
+  let text = $("#name").val()
+  let text2 = $("#email").val();
+  let text3 = $("#street-add").val();
+  let text4 = $("#city").val();
+  let text5 = $("#zip").val();
+  let select = $("input:radio[name=first-time]:checked").val();
+  let state = $("#region").children("option:selected").val();
+  let location = $("#location").children("option:selected").val();
+  console.log('name:' + text + ' email: ' + text2 + ' Street address: ' + text3  + ' City: ' + text4  + ' Zip Code: ' +  text5 + 'first time: ' + select + ' state: ' + state + ' Pickup location: ' + location);
+  alert("Your form has been submitted");
+});
 
 const posts = [
   {
@@ -27,7 +42,6 @@ const posts = [
     imageSrc: './images/blog-1.jpg',
     imageAlt: 'a dog at the grand canyon'
   },
-
   {
     className: 'blog',
     title: 'How to Walk Multiple Dogs',
@@ -66,62 +80,13 @@ for (let i = 0; i < posts.length; i+= 1) {
   divImage.setAttribute("class", post.className);
   document.getElementById("full-blog").appendChild(divImage);
 
-
-
   let blogText = document.createElement('p');
   let textNode = document.createTextNode(post.blogText)
   blogText.appendChild(textNode);
   document.getElementById("full-blog").appendChild(blogText);
 }
 
-const fields = [
-  {
-      name: 'new-blog-post',
-      label: 'Generate a new blog post by typing your content here.'
-  },
-  {
-      name: 'your Name',
-      label: 'Your Name'
-  }
 
-
-];
-/*the blog entry form*/
-const form = document.createElement('form');
-document.body.appendChild(form);
-
-for (let i = 0; i < fields.length; i+= 1) {
-  const field = fields[i];
-
-  const label = document.createElement('label');
-  label.textContent = field.label;
-  label.setAttribute('for', field.name);
-
-  const input = document.createElement('input');
-  input.setAttribute('id', field.name);
-
-  form.appendChild(label);
-  form.appendChild(input);
-}
-
-const submitButton = document.createElement('button');
-submitButton.setAttribute('type', 'submit');
-submitButton.textContent = 'Submit';
-
-form.appendChild(submitButton);
-
-
-form.addEventListener('submit', function(event)  {
-  event.preventDefault();
-  let content = document.getElementsByTagName('form');
-  let text = document.getElementById('new-blog-post').value;
-  let text2 = document.getElementById('your Name').value;
-  let i;
-
-  console.log(text2 +' by ' + text);
-  alert('Thank you. The form information has been received.');
-
-});
 
 let footer = document.querySelector('footer');
 document.body.appendChild(footer);
