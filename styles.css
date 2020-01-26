@@ -58,7 +58,6 @@ p  {
   margin-left: -25%;
 }
 header {  /*height: 100%;*/
-
 }
 
 nav {
@@ -124,6 +123,9 @@ aside {
 }
 col-1 > div {
   padding: 10px;
+}
+.tile-border {
+  outline: 4px solid blue;
 }
 .col-1 {
     display: inline-grid;

@@ -10,6 +10,12 @@ function dogFees(fee) {
    total = total + fee
 alert('Total cost $' + total);
 }
+$('.col-1').hover(function(e){
+  $(this).addClass('tile-border');
+})
+$('.col-1').mouseleave(function(e){
+  $(this).toggleClass('tile-border');
+})
 
 
 const posts = [
