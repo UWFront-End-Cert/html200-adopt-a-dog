@@ -5,11 +5,12 @@ function clickPhoto(name, breed, cost) {
   let result = "Dog name: " + name + " Breed: " + breed + " Fees: " + cost
   alert(result);
 }
-
 function dogFees(fee) {
    total = total + fee
-alert('Total cost $' + total);
 }
+$('.button').click(function(){
+  $('#total').text(total);
+});
 /*hover blue outline*/
 $('.col-1').hover(function(e){
   $(this).addClass('tile-border');
@@ -17,11 +18,6 @@ $('.col-1').hover(function(e){
 $('.col-1').mouseleave(function(e){
   $(this).toggleClass('tile-border');
 })
-
-$('.button').click(function(){
-  $('#total').text("total cost");
-});
-
 
 const posts = [
   {
