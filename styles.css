@@ -358,6 +358,9 @@ display:grid;
 grid-template-rows: auto auto auto;
 border: 0.5px solid;
 }
+.card.highlight{
+  outline:yellow solid 5px;
+}
 .card-image{
  height: auto;
  width:100%;
@@ -367,10 +370,17 @@ border: 0.5px solid;
  grid-template-rows: auto auto auto;
  padding:10px;
 }
-.button{
-  background-color: yellowgreen;
-  color: white;
-  padding: 3px 30px;
+.btn{
+ background-color: yellowgreen;
+ border:none;
+ color:white;
+ padding:3px 30px;
+ text-align:center;
+ font-size: 16px;
+ transition:0.3s;
+}
+.btn:hover{
+ outline: #yellowgreen solid 2px;
 }
 aside{
   display:grid;
@@ -395,12 +405,35 @@ footer a{
   color:white;
 }
 /*Jquery CSS*/
-/*
-.selected{color:red;}
-.highlight{background:lightgreen;}
 .zoom{
   transition: transform .2s;
 }
 .zoom:hover{
   transform: scale(1.5);
-}*/
+}
+button {
+width: 220px;
+background: #222;
+color:white;
+height:30px;
+}
+/*  Ripple */
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+.rippleEffect {
+    animation: rippleDrop .6s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

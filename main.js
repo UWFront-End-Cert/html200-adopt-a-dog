@@ -32,15 +32,3 @@ function myFunction(){
       console.log(data);
   }
 }
-
-var arr = new Array();
-$("form").on("submit",function(e){
-    e.preventDefault();
-    for(let i=0;i<7;i++)
-    {
-      var inputVal = document.getElementById('input'+(i+1)).value;
-      arr[i].push(inputVal);
-      console.log(arr[i]);
-    }
-    alert(arr);
-  });
