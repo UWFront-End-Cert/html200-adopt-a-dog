@@ -26,23 +26,23 @@
     </nav>
 
     <form id="main-content" method="GET">
-      <label>Name
+      <label class="name">Name
         <input type="text" name="requestName" placeholder="Your Name">
       </label>
 
-      <label>Email Address
+      <label class="email">Email Address
         <input type="email" name="requestEmail" placeholder="email@email.com">
       </label>
 
-      <label>Street Address
+      <label class="address">Street Address
         <input type="text" name="requestAddress" placeholder="123 Main Street">
       </label>
 
-      <label>City
+      <label class="city">City
         <input type="text" name="requestCity" placeholder="Seattle">
       </label>
 
-      <label>State
+      <label class="state">State
         <select name="state">
           <option value="">Please select</option>
           <option value="WA">Washington</option>
@@ -51,13 +51,13 @@
         </select>
       </label>
 
-      <label>Zip Code
+      <label class="zip">Zip Code
         <input type="text" name="requestZip" placeholder="12345">
       </label>
 
       <fieldset class="radio">
-        <legend>First Time Adopter?</legend>
-          <label>
+        <legend class="first">First Time Adopter?</legend>
+          <label class="first radio">
             <input type="radio" name="first" value="yes">Yes
           </label>
 
@@ -66,7 +66,7 @@
           </label>
         </fieldset>
 
-        <label>Pickup Location
+        <label class="pick-up">Pickup Location
           <select name="location">
             <option value="">Please select</option>
             <option value="downtown">Downtown Seattle</option>
@@ -75,14 +75,18 @@
           </select>
         </label>
 
-        <label>Dogs Adopted
-        </label>
-        <img src="images/lucas-checkout.jpg" alt="Thumbnail photo of Lucas">
-        <p>Cost to Adopt: $123.45</p>
-        <img src="images/duffy-checkout.jpg" alt="Thumbnail photo of Duffy">
-        <p>Cost to Adopt: $123.45</p>
+        <label class="adopted">Dogs Adopted</label>
+        <div class="cart">
+          <img class="item-1" src="images/lucas-checkout.jpg" alt="Thumbnail photo of Lucas">
+          <h3>Lucas</h3>
+          <p>Cost to Adopt: $123.45</p>
+          <img class="item-2" src="images/duffy-checkout.jpg" alt="Thumbnail photo of Duffy">
+          <h3>Duffy</h3>
+          <p>Cost to Adopt: $123.45</p>
+        </div>
 
-        <label>Total Adoption Cost
+
+        <label class="total">Total Adoption Cost
         </label>
 
       <input type="submit" value="#">
@@ -99,7 +103,6 @@
           <p class="footer">© 2018 Adoptadog, LLC | Seattle, WA</p>
         </div>
         </footer>
-    </div>
 
     </form>
   </div>

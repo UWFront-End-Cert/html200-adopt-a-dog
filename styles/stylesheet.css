@@ -310,6 +310,7 @@ a:hover {
 .more {
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
+  border: 2px solid red;
   color: #083c60;
   background-color: #d9d9d9;
   padding: .25em;
@@ -347,4 +348,56 @@ footer {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   text-align: center;
+}
+
+.email, .address, .city, .state, .zip, .pick-up, .first, .adopted, .cost, .total {
+  font-family: inherit;
+  font-weight: 900;
+  color: #083c60;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem;
+}
+
+form {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  display: inline;
+}
+
+/* THIS SECTION CAME UP AS AN ERROR IN THE VALIDATOR, BUT WAS USED IN THE LESSON 09 CONTENT AND ON W3SCHOOL'S SITE
+  -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;*/
+}
+
+input[type=submit] {
+  width: auto;
+  color: #2a293e;
+  background-color: #9f9c99;
+}
+
+.name {
+  font-family: inherit;
+  font-weight: 900;
+  color: #083c60;
+}
+
+.cart {
+  display: flex;
+  flex-flow: wrap row;
+  margin: 1em;
 }
