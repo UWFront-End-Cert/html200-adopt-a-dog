@@ -110,7 +110,6 @@ li a:active {
   clear: both;
   position: relative;
   margin: 3rem 0 0 3rem;
-  border: 1px solid blue;
 }
 
 .container {
@@ -179,7 +178,6 @@ p {
   flex-flow: row wrap;
   justify-content: start;
   padding-top: 20px;
-  border: 1px solid red;
 }
 
 .dog-profiles section {
@@ -270,7 +268,6 @@ button {
   width: 25%;
   float: right;
   margin: 3rem 0 0 4rem;
-  border: 1px solid green;
 }
 
 .blog-preview img {
