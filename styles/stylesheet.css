@@ -50,8 +50,10 @@ header {
   /*position: absolute;*/
   width: 100%;
   height: 25%;
+
 }
 .hero {
+  background-image: url("images/header-image.jpg");
   z-index: 0;
 }
 
@@ -81,7 +83,7 @@ header {
 }
 
 h1 {
-  font-family: 'Gelasio', serif;
+  font-family: 'Domine', serif;
   font-size: 3em;
   color: #81b741;
   padding: 2em;
@@ -91,7 +93,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Gelasio', serif;
+  font-family: 'Domine', serif;
   font-size: 2em;
   color: #083c60;
   padding: .5em .5em .25em .5em;
@@ -100,7 +102,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Gelasio', serif;
+  font-family: 'Domine', serif;
   font-size: 1.5em;
   color: #083c60;
   padding: .25em;
@@ -109,7 +111,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Gelasio', serif;
+  font-family: 'Domine', serif;
   font-size: 1.25em;
   color: #083c60;
   padding: .5em;
@@ -346,11 +348,16 @@ footer {
   text-align: center;
 }
 
-.name, .email, .address, .city, .state, .zip, .pick-up, .first, .adopted, .cost, .total {
-  font-family: inherit;
+.name, .email, .address, .city, .state, .zip, .pick-up, .first, .adopted, .total {
+  font-family: 'Domine', serif;
   font-weight: 900;
   font-size: 1.5em;
   color: #083c60;
+}
+
+.cost-2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
 }
 
 button, input, select, textarea {
