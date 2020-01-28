@@ -64,7 +64,7 @@ h1 {
   border: none;
   text-align: left;
   width: auto;
-  margin-left: .5em;
+  margin: .5em;
 }
 
 h2 {
@@ -94,7 +94,7 @@ h4 {
   margin: .5em;
 }
 
-a {
+a, div {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
 }
