@@ -27,7 +27,7 @@
 
     <form id="main-content" method="GET">
       <label class="name">Name
-        <input type="text" name="requestName" placeholder="Your Name">
+        <input type="text" name="requestName" placeholder="Your Name" rows="10" cols="60">
       </label>
 
       <label class="email">Email Address
@@ -37,7 +37,7 @@
       <label class="address">Street Address
         <input type="text" name="requestAddress" placeholder="123 Main Street">
       </label>
-
+      <div class="inline">
       <label class="city">City
         <input type="text" name="requestCity" placeholder="Seattle">
       </label>
@@ -54,7 +54,7 @@
       <label class="zip">Zip Code
         <input type="text" name="requestZip" placeholder="12345">
       </label>
-
+    </div>
       <fieldset class="radio">
         <legend class="first">First Time Adopter?</legend>
           <label class="first radio">
@@ -79,17 +79,20 @@
         <div class="cart">
           <img class="item-1" src="images/lucas-checkout.jpg" alt="Thumbnail photo of Lucas">
           <h3>Lucas</h3>
-          <p>Cost to Adopt: $123.45</p>
+          <p class="cost">Cost to Adopt:</p>
+          <p>$123.45</p>
           <img class="item-2" src="images/duffy-checkout.jpg" alt="Thumbnail photo of Duffy">
           <h3>Duffy</h3>
-          <p>Cost to Adopt: $123.45</p>
+          <p class="cost">Cost to Adopt:</p>
+           <p>$123.45</p>
         </div>
 
 
         <label class="total">Total Adoption Cost
+          <p>$246.90</p>
         </label>
 
-      <input type="submit" value="#">
+      <input class="button" type="submit" value="#">
 
       <footer>
         <div>

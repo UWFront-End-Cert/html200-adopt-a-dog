@@ -43,7 +43,7 @@ header {
   border: 2px red solid;
   width: auto;
   height: 25%;
-  margin: .25em .25em 0 .25em;
+  margin: 0 auto;
 }
 
 #header {
@@ -57,6 +57,7 @@ header {
 
 .checkout {
   background-color: #81b741;
+  float: right;
 }
 
 .image {
@@ -67,10 +68,8 @@ header {
 }
 
 .text {
-  text-align: left;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   color: #81b741;
   z-index: 3;
 }
@@ -183,12 +182,10 @@ a:hover {
   color: #494949;
 }
 
-/*need to style button*/
 .grid-container {
   display: grid;
   grid-gap: 2em 2em;
   margin: 1em;
-
 }
 
 .card {
@@ -310,13 +307,12 @@ a:hover {
 .more {
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
-  border: 2px solid red;
   color: #083c60;
   background-color: #d9d9d9;
   padding: .25em;
-  margin: .75em;
+  margin: 0 auto;
   text-align: center;
-  width: 33%;
+  max-width: 33%;
 }
 
 footer {
@@ -350,9 +346,10 @@ footer {
   text-align: center;
 }
 
-.email, .address, .city, .state, .zip, .pick-up, .first, .adopted, .cost, .total {
+.name, .email, .address, .city, .state, .zip, .pick-up, .first, .adopted, .cost, .total {
   font-family: inherit;
   font-weight: 900;
+  font-size: 1.5em;
   color: #083c60;
 }
 
@@ -390,14 +387,31 @@ input[type=submit] {
   background-color: #9f9c99;
 }
 
-.name {
-  font-family: inherit;
-  font-weight: 900;
-  color: #083c60;
-}
-
 .cart {
   display: flex;
   flex-flow: wrap row;
   margin: 1em;
+}
+
+button {
+  margin: .5em;
+  width: 90%;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  background-color: #81b741;
+}
+
+.button {
+  margin: auto;
+  width: 33%;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  background-color: #81b741;
+}
+
+.inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
 }
