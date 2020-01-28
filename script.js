@@ -23,16 +23,16 @@ function getSum(x) {
     }
   );
 
-
+/*
 const container = document.getElementById('container');
 const heading = document.createElement('h1');
 heading.textContent = 'Adoptadog Blog!';
 var images = ['blog-1.jpg','blog-2.jpg','blog-3.jpg'];
 var titles = ['Travelling With Your Dog','How To Walk Multiple Dogs','Teach Your Dog To Fetch!'];
 for(let i=0;i<images.length;i++){
-  const subContainer = document.getElementById('subContainer'+(i+1));
+  var subContainer = document.getElementById('subContainer'+(i+1));
   console.log('subContainer:'+subContainer);
-  const image = document.createElement('img');
+  var image = document.createElement('img');
   image.src = 'images/'+images[i];
   console.log('images/'+images[i]);
   subContainer.appendChild(image);
@@ -46,7 +46,7 @@ for(let i=0;i<images.length;i++){
   content.insertBefore(title,para);
   subContainer.appendChild(content);
   subContainer.insertBefore(image,content);
-}
+}*/
 
 /*Assignment Jquery*/
 $("button").click(function (e) {
@@ -54,7 +54,6 @@ $("button").click(function (e) {
   // Remove any old one
   $(".ripple").remove();
 
-   Setup
   var posX = $(this).offset().left,
       posY = $(this).offset().top,
       buttonWidth = $(this).width(),
@@ -69,12 +68,9 @@ $("button").click(function (e) {
     buttonWidth = buttonHeight;
   }
 
-   Get the center of the element
   var x = e.pageX - posX - buttonWidth / 2;
   var y = e.pageY - posY - buttonHeight / 2;
 
-
-   Add the ripples CSS and start the animation
   $(".ripple").css({
     width: buttonWidth,
     height: buttonHeight,
