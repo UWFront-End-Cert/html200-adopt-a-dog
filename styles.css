@@ -284,7 +284,7 @@ header{
 .cart{
   height:20px;
 }
-.cart-price{
+.cart_total{
   font-size: smaller;
   color:white;
   margin: 0;
@@ -358,7 +358,7 @@ display:grid;
 grid-template-rows: auto auto auto;
 border: 0.5px solid;
 }
-.card.highlight{
+.highlight{
   outline:yellow solid 5px;
 }
 .card-image{
@@ -409,7 +409,7 @@ footer a{
   transition: transform .2s;
 }
 .zoom:hover{
-  transform: scale(1.5);
+  transform: scale(1.05);
 }
 button {
 width: 220px;

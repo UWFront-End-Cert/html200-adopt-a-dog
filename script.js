@@ -9,7 +9,21 @@ var arr = new Array();
 function myFunction(name,breed,fee){
   alert("Name:"+name+"\nBreed:"+breed+"\nAdoption Fee:"+fee);
 }
-/*
+/*Add cart total*/
+let total=0;
+function getSum(x) {
+  total += x;
+  alert('$'+total);
+  $("#cart_total").text('$'+Number(total));
+  }
+
+  $('.card').hover(
+    function(){
+      $(this).toggleClass('highlight');
+    }
+  );
+
+
 const container = document.getElementById('container');
 const heading = document.createElement('h1');
 heading.textContent = 'Adoptadog Blog!';
@@ -32,31 +46,10 @@ for(let i=0;i<images.length;i++){
   content.insertBefore(title,para);
   subContainer.appendChild(content);
   subContainer.insertBefore(image,content);
-}*/
-
-/*Add cart total*/
-function getSum() {
-  var total = 0.0;
-  $('#price').each(function(){
-    var price = $(this).find('#price').val();
-    total += price;
-    console.log('price:'+price);
-    console.log('total:'+total);
-  });
-  $('#price').text(total);
 }
-/*function adoptFunction(item){
-var x = document.getElementById("price").childNodes[0].nodeValue;
-arr.push(x);
-
-for (var i = 0; i <= arr.length; i++) {
-total = +arr[i];
-}
-document.getElementById('demo').innerHTML = arr.reduce(getSum,0);
-}*/
 
 /*Assignment Jquery*/
-/*$("button").click(function (e) {
+$("button").click(function (e) {
 
   // Remove any old one
   $(".ripple").remove();
@@ -70,8 +63,6 @@ document.getElementById('demo').innerHTML = arr.reduce(getSum,0);
   // Add the element
   $(this).prepend("<span class='ripple'></span>");
 
-
-  Make it round!
   if(buttonWidth >= buttonHeight) {
     buttonHeight = buttonWidth;
   } else {
@@ -90,4 +81,4 @@ document.getElementById('demo').innerHTML = arr.reduce(getSum,0);
     top: y + 'px',
     left: x + 'px'
   }).addClass("rippleEffect");
-});*/
+});
