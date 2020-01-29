@@ -2,34 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Adopt A Dog Home Page</title>
-
+    <title>Adopt A Dog Checkout</title>
+    <link rel="stylesheet" type="text/css" href="styles/adoptadog-stylesheet.css">
+    <script src="https://kit.fontawesome.com/015d63ce65.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Courgette%7CPT+Sans:700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
-    <!-- Create header w/ background -->
     <header>
       <div class="grid-container">
         <div class="grid-item-1">
-          <img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo" style="max-width:60%;">
-          <h1>Seattle's premiere dog adoption agency</h1>
+          <img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo" style="min-width:330px; max-width:60%;">
+          <h1 class="header-h1">Seattle's premiere dog adoption agency</h1>
         </div>
         <div class="grid-item-2">
-          <img src="images/cart-icon.svg" alt="Click to go to checkout" style="width:5%;">$1234.56
-          <p><a href="adoptadog-checkout.html"><img src="images/checkout-button.jpg" alt="Click to go to checkout" style="width:100%;"></a>
+          <img src="images/cart-icon.svg" alt="Click to go to checkout" style="min-width: 30px; max-width:5%;">$1234.56
+          <p><a href="adoptadog-checkout.html"><img src="images/checkout-button.jpg" alt="Click to go to checkout" style="min-width: 120px; max-width:30%;"></a>
         </div>
       </div>
     </header>
 
-    <!-- Create navigation pane -->
       <nav class="nav-header">
-        <a href="adoptadog-index.html">Home / </a>
-        <a href="adoptadog-dogs.html">Dogs / </a>
-        <a href="adoptadog-blog.html">Blog</a>
+        <a class="nav-link" href="adoptadog-index.html">Home / </a>
+        <a class="nav-link" href="adoptadog-dogs.html">Dogs / </a>
+        <a class="nav-link" href="adoptadog-blog.html">Blog</a>
       </nav>
 
-      <h1>Checkout</h1>
+    <h1 style="padding:0em 4em;">Checkout</h1>
 
         <form method="POST">
           <label>Name
