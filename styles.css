@@ -207,6 +207,17 @@ a{
     grid-template-rows: auto auto;
     grid-gap: 30px;
   }
+  .blog_header {
+    font-size: 140%;
+  }
+
+  .blog_text {
+    font-size: 140%;
+  }
+  .blog_article {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   footer{
     width:100%;
   }
@@ -223,12 +234,15 @@ a{
     margin: 20px 200px;
   }
   .interface img{
-    float:left;
-    width:160px !important;
+  float:left;
+  width:160px !important;
   }
   .sub-Interface{
-    display: grid;
-    grid-template-columns: 0.25fr 0.25fr;
+  width: 75%;
+  padding-left: 15%;
+  padding-top:1%;
+  padding-bottom: 5%;
+  font-size: 85%;
   }
   .content{
     display:grid;
