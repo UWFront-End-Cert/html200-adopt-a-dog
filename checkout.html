@@ -28,28 +28,30 @@
 <form method="GET">
   <h2>Checkout</h2>
   <h3>Name</h3>
-    <input type="text" name="fullName">
+    <input type="text" name="fullName" id="name">
     <h3>Email Address</h3>
-    <input type="email" name="email">
+    <input type="email" name="email" id="email">
     <h3>Street Address</h3>
-    <input type="text" name="streetAddress">
+    <input type="text" name="streetAddress" id="street">
     <h3>City</h3>
-      <input type="text" name="city">
+      <input type="text" name="city" id="city">
     <h3>State</h3>
-    <select>
-      <option value="WA">WA</option>
-      <option value="OR">OR</option>
-      <option value="CA">CA</option>
+    <select id="ddlState">
+      <option value="1">WA</option>
+      <option value="2">OR</option>
+      <option value="3">CA</option>
     </select>
     <h3>Zip Code</h3>
     <input type="text" name="zipCode">
     <h3>First Time Adopter?</h3>
-    <input type="radio" name="yes" value="Yes">Yes
-    <input type="radio" name="no" value="No">No
+    <div id="radio">
+      <input type="radio" id="r1" name="yes" value="Yes">Yes
+      <input type="radio" id="r2" name="no" value="No">No
+    </div>
     <h3>Pickup Location</h3>
-    <select>
-      <option value="center">Adoption Center</option>
-      <option value="office">Office</option>
+    <select id="ddlLocation">
+      <option value="1">Adoption Center</option>
+      <option value="2">Office</option>
     </select>
     <br>
     <h3>Dogs Adopted</h3>
@@ -71,7 +73,7 @@
     </div>
     <h3>Total Adoption Cost</h3>
     <p>$1234.56</p>
-    <input type="submit" name="submit" value="Submit">
+    <input type="button" name="add-to-cart" value="Submit" onclick="checkOut()">
   </form>
 
 
@@ -91,6 +93,6 @@
             <p>&copy; 2019 Adoptadog, LLC  | Seattle, WA</p>
           </div>
           </footer>
-          <script src="./homepage.js" charset="utf-8"></script>
+          <script src="./checkout.js" charset="utf-8"></script>
       </body>
       </html>
