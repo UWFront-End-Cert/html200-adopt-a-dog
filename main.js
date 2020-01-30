@@ -1,34 +1,30 @@
-function myFunction(){
-  var mail = document.getElementById("input2").value.indexOf("@");
-  var fname = document.getElementById("input1").value;
+$('#checkout-form').submit(function(event){
+  var email = document.getElementById("email").value.indexOf("@");
+  var name = document.getElementById("name").value;
   submitOK = "true";
-  if (fname.length > 10) {
+  if (name.length > 10) {
     alert("The name may have no more than 10 characters");
-    submitOK = "false";
+    submit = "false";
   }
-  if (mail == -1) {
+  if (email == -1) {
     alert("Not a valid e-mail!");
-    submitOK = "false";
+    submit = "false";
   }
 
-  if (submitOK == "false") {
+  if (submit == "false") {
     return false;
   }
 
   else{
-    var arr = new Array();
-    $("form").on("submit",function(e){
-        e.preventDefault();
-        for(let i=0;i<7;i++)
-        {
-          var inputVal = document.getElementById('input'+(i+1)).value;
-          arr[i].push(inputVal);
-          console.log(arr[i]);
-        }
-        alert(arr);
-      });
-
-      var data = $("form:input").serializeArray();
-      console.log(data);
+    event.preventDefault();
+    alert("Thank you. The form information has been received.")
+    console.log("Name: " + $('#name').val());
+    console.log("Email: " + $('#email').val());
+    console.log("Street: " + $('#street').val());
+    console.log("City: " + $('#city').val());
+    console.log("State: " + $('#state').val());
+    console.log("Zip-code: " + $('#code').val());
+    console.log("First time? " + $('#adopter').val());
+    console.log("Pickup location: " + $('#location').val());
   }
-}
+});

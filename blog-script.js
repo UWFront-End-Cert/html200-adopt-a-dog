@@ -18,7 +18,7 @@ container.appendChild(subContainer);
 
 /*first blog image*/
 const image = document.createElement("IMG");
-image.className = "img";
+image.className = "blog_photo";
 image.setAttribute("src", "images/blog-1.jpg");
 image.setAttribute("alt", "Girl hugging her dog as they sit on a cliff overlooking the Grand Canyon.")
 subContainer.appendChild(image);

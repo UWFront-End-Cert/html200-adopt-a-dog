@@ -233,9 +233,10 @@ a{
     grid-gap:10px;
     margin: 20px 200px;
   }
-  .interface img{
-  float:left;
-  width:160px !important;
+  .blog_photo {
+  padding-right: 5%;
+  float: left;
+  width: 25%;
   }
   .sub-Interface{
   width: 75%;
