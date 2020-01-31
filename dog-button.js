@@ -1,17 +1,12 @@
 
-let total = 0
 
-function clickPhoto(name, breed, cost) {
-  let result = "Dog name: " + name + " Breed: " + breed + " Fees: " + cost
-  alert(result);
-}
-function dogFees(fee) {
+let total = 0
+function dogFees(name, breed, fee) {
    total = total + fee
+   $('#total').text(total);
+   let result = "Dog name: " + name + " Breed: " + breed + " Fees: " + fee
+   alert(result);
 }
-/*track cart total*/
-$('.button').click(function(){
-  $('#total').text(total);
-});
 
 /*hover effect on dog tiles*/
 $('.col-1').hover(function(e){
