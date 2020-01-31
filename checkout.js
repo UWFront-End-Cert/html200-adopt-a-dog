@@ -1,7 +1,8 @@
 
 
 /*jquery form handler*/
-$("form").submit(function(){
+$("form").submit(function(evt){
+  evt.preventDefault();
   let text = $("#name").val()
   let text2 = $("#email").val();
   let text3 = $("#street-add").val();
@@ -13,6 +14,8 @@ $("form").submit(function(){
   console.log('name:' + text + ' email: ' + text2 + ' Street address: ' + text3  + ' City: ' + text4  + ' Zip Code: ' +  text5 + 'first time: ' + select + ' state: ' + state + ' Pickup location: ' + location);
   alert("Your form has been submitted");
 });
+
+
 
 /*-Javascript form handler for Assignment 8*/
 
