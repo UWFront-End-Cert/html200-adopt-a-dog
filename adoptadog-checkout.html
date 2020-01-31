@@ -29,7 +29,7 @@
         <a class="nav-link" href="adoptadog-blog.html">Blog</a>
       </nav>
 
-    <h1 style="padding:0em 4em;">Checkout</h1>
+    <h1 style="padding:0em 5em;">Checkout</h1>
 
         <form method="POST">
           <label>Name
@@ -50,13 +50,17 @@
           </label>
           <br>
 
+        <div class="form-container">
+          <div class="form-city">
           <label>City
             <br>
             <input type="text" name="subject">
           </label>
           <br>
+          </div>
 
-          State
+          <div>
+          <label>State</label>
           <br>
           <select name="state">
             <option value="none">Select One</option>
@@ -112,15 +116,16 @@
           	<option value="WI">Wisconsin</option>
           	<option value="WY">Wyoming</option>
           </select>
-          <br>
+        </div>
 
-           <label>Zip Code
-             <br>
+        <div>
+           <label>Zip Code<br>
              <input type="number" name="zip">
              <br>
            </label>
-
-            <p>First Time Adopter?</p>
+        </div>
+      </div>
+            <h3>First Time Adopter?</h3>
             <label>
               <input type="radio" name="firstTimeAdopter" value="yes">
               Yes
@@ -129,7 +134,7 @@
               <input type="radio" name="firstTimeAdopter" value="no">
               No
             </label>
-            <br>
+            <br><br>
 
             Pickup Location
             <br>
