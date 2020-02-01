@@ -49,6 +49,8 @@ a{
   }
   .section-3{
     margin: 20px;
+    display: flex;
+    justify-content: center;
   }
   .section-left-side{
     flex: 0% !important;
@@ -85,7 +87,7 @@ a{
   }
   .card-desc p{
     padding: 0px !important;
-    font-size: 0.8 !important;
+    font-size: 0.8em !important;
   }
   footer{
     width:100% !important;
@@ -116,6 +118,11 @@ a{
   section{
     flex-wrap: wrap !important;
     width:100% !important;
+  }
+  .section-3{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
   }
   .section-left-side{
     flex: 0% !important;
@@ -172,6 +179,12 @@ a{
   .main-container{
     flex:35% !important;
   }
+  .all-dog-container {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: 100%;
+  }
   .sidebar{
    flex:0%;
   }
@@ -186,7 +199,11 @@ a{
       display: grid;
       grid-template-rows: auto auto auto!important;
   }
-
+  .section-3{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
   .row-1 {
     display: grid;
     grid-template-columns: auto auto auto!important;
@@ -217,6 +234,9 @@ a{
   .blog_article {
     margin-top: 5%;
     margin-bottom: 5%;
+  }
+  .submit{
+
   }
   footer{
     width:100%;
@@ -255,6 +275,7 @@ a{
     margin:0;
   }
 }
+
 /* Common Code For All Three*/
 form{
   display: inline-grid;
@@ -395,7 +416,7 @@ border: 0.5px solid;
  transition:0.3s;
 }
 .btn:hover{
- outline: #yellowgreen solid 2px;
+ outline: #9acd32 solid 2px;
 }
 aside{
   display:grid;

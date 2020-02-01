@@ -4,14 +4,14 @@ $('#checkout-form').submit(function(event){
   submitOK = "true";
   if (name.length > 10) {
     alert("The name may have no more than 10 characters");
-    submit = "false";
+    submitOK = "false";
   }
   if (email == -1) {
     alert("Not a valid e-mail!");
-    submit = "false";
+    submitOK = "false";
   }
 
-  if (submit == "false") {
+  if (submitOK == "false") {
     return false;
   }
 

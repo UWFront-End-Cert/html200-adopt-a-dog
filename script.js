@@ -1,7 +1,7 @@
-$(document).ready(function(){
-  $(".card").hover(function(){
+$(document).ready( function() {
+  $(".card").hover( function() {
     $(this).addClass("highlight");
-  },function(){
+  }, function() {
     $(this).removeClass("highlight");
   });
 });
