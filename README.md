@@ -14,6 +14,7 @@ They will use the skip link to dive into the content. They find the detailed alt
 
 Testing
 Testing methods and results are detailed in the testing.txt file.
+https://github.com/sonalaggarwal555/html200-adopt-a-dog/blob/master/testing.txt
 
 Copyright
 This website is copyright Adoptadog Seattle.
