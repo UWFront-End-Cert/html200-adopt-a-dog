@@ -16,15 +16,6 @@
   width: 100%;
 }
 
-.header-logo {
-  text-align: left;
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  float: left;
-  clear: both;
-}
-
 .header-checkout {
   text-align: left;
   position: absolute;
@@ -105,10 +96,6 @@ li a:active {
 }
 
 .container-home {
-  width: 60%;
-  float: left;
-  clear: both;
-  position: relative;
   margin: 3rem 0 0 3rem;
 }
 
@@ -192,7 +179,6 @@ p {
 
 button {
   padding: 0px;
-  background-color: none;
   border: none;
 }
 
@@ -260,22 +246,12 @@ button {
   background-color: #103861;
 }
 
-.blog-preview {
-  display: flex;
-  flex-flow: column wrap;
-  border-left: 1px dotted #ccc;
-  padding-left: 1rem;
-  width: 25%;
-  float: right;
-  margin: 3rem 0 0 4rem;
-}
-
 .blog-preview img {
   width: 90%;
 }
 
 .blog-preview section {
-  padding-bottom: 4rem;
+  padding: 0 1rem 4rem 0;
 }
 
 .blog-preview a:link {
@@ -439,13 +415,16 @@ input[type=submit]:active {
   color: #fff;
 }
 
-@media screen and (max-width: 576px) {
+/* ----- Media Queries ----- */
+/* For mobile */
+@media screen and (max-width: 576px) and (orientation: portrait){
   .container-home {
-    width: 100%;
+    width: 95%;
     margin: 1rem;
   }
   .header-logo {
     width: 60%;
+    position: absolute;
     top: 35%;
     left: 4%;
   }
@@ -460,15 +439,123 @@ input[type=submit]:active {
     margin: 1rem;
   }
   .dog-profiles section {
-    flex-basis: 100%;
+    width: 70%;
   }
   .see-more {
     min-width: 100%;
-    align: center;
+    text-align: left;
+    padding: 1.5rem 0 1.5rem 0;
   }
   .blog-preview {
     border-top: 1px dotted #ccc;
-    width: 100%;
+    border-left: none;
+    width: 95%;
     padding-top: 3rem;
+    margin: 1rem;
+  }
+  .blog-preview p {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape){
+  .container-home {
+    width: 95%;
+    margin: 1rem;
+  }
+  .header-logo {
+    width: 60%;
+    position: absolute;
+    top: 35%;
+    left: 4%;
+  }
+  .header h1 {
+    font-size: 0rem;
+  }
+  .header-checkout {
+    top: 65%;
+    left: 4%;
+  }
+  ul {
+    margin: 1rem;
+  }
+  .dog-profiles section {
+    width: 70%;
+  }
+  .see-more {
+    min-width: 100%;
+    text-align: left;
+    padding: 1.5rem 0 1.5rem 0;
+  }
+  .blog-preview {
+    border-top: 1px dotted #ccc;
+    border-left: none;
+    width: 95%;
+    padding-top: 3rem;
+    margin: 1rem;
+  }
+  .blog-preview p {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+
+/* For tablet */
+@media screen and (min-width: 701px) and (max-width: 900px)
+and (orientation: portrait){
+  .container-home {
+    width: 60%;
+    float: left;
+  }
+  .dog-profiles section {
+    width: 35%;
+  }
+  .header-logo {
+  text-align: left;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  float: left;
+  clear: both;
+  }
+  .blog-preview {
+    display: flex;
+    flex-flow: column wrap;
+    border-left: 1px dotted #ccc;
+    padding-left: 1rem;
+    width: 25%;
+    float: right;
+    margin: 3rem 0 0 4rem;
+  }
+}
+
+
+/* For desk/laptop */
+@media screen and (min-width: 901px) and (orientation: landscape){
+  .container-home {
+    width: 60%;
+    float: left;
+  }
+  .dog-profiles section {
+    width: 25%;
+  }
+  .header-logo {
+  text-align: left;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  float: left;
+  clear: both;
+  }
+  .blog-preview {
+    display: flex;
+    flex-flow: column wrap;
+    border-left: 1px dotted #ccc;
+    padding-left: 1rem;
+    width: 25%;
+    float: right;
+    margin: 3rem 0 0 4rem;
   }
 }
