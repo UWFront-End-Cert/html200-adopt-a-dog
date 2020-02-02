@@ -1,0 +1,47 @@
+testing questions
+Text, controls and images are aligned properly
+Hover and selection states highlight and color changes
+Suitable clickable area
+Color, shading, and gradient are consistent
+Check for correct padding around the edges
+Text, images, controls, and frames do not run into the edges of the screen
+Font size, style and color are consistent for each type of text
+Typed text (data entry) scrolls and displays properly
+Pages should be readable on all resolutions.
+Never visualize the horizontal bar in the page.
+Content deﬁned ‘important’ need to be visible in all breakpoints.
+********* ********** ************ ***********
+Testing notes:
+**Viewed each page on Windows/Chrome,
+**for text, controls and image align:
+index full size-ok
+dogs - full size - looks good small screen:
+blog - full size - issue: text needs to go beside each image. small screen: images cut off.
+Checkout - Full-size issue: most looks ok. there is a lot of white space at right. small screen: submit button is cut off.
+All pages: small screens: issue: top dog image not showing. Bottom footer is being covered up by cards.
+**Hover for each page.
+index - full size- blue hover effect works. Adopt button is adequate size and action works. small screen: ok
+dogs - full size - looks good. On medium screen, cards and text are too small.
+blog full size - Only clickable area is checkout.
+checkout - full size - submit button works. issue: get rid of checkout button on this page as it links to current page.
+**Suitable clickable area.
+ All buttons and links large enough on large. Small screen ok. Medium screen dog cards get very small with small text.
+**Color, Shading Gradient:
+all pages: background gradient seems to work when disabling the img link style.
+Colors- button, footer, backgrounds, nav colors ok.
+**correct padding-
+index and dogs page sometimes display off center at small sizes.
+there is a white margin around header left and top at small and medium sizes.
+**text images controls and frames do not run into the edges of the screen.
+- on small screens, adoptadog header logo runs over edge for all pages.
+** font size style and color are consistent for each page.
+Yes, displays consistently across pages.
+** typed text displays properly.
+yes. displays ok across all pages.
+**Pages readable at all resolutions.
+Dog cards at medium sizes are quite small.
+**horizontal bar
+I don't know what this question means.
+Content defined important:
+Header text, content, dog images and information display at all breakpoints.
+Blog page has some photos cut off as describes above.

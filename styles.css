@@ -7,7 +7,6 @@ header {
   background: url("./images/header-image-narrow.jpg");
   position: relative;
   /*background: linear-gradient(45deg, yellow, black 30%);*/
-
 }
 
 h1 {
@@ -22,6 +21,7 @@ h1 {
 h2, h3 {
   font-family: 'martel', serif;
   color: MidnightBlue;
+  margin: 5%;
 }
 h4 {
   font-family: 'martel';
@@ -44,6 +44,7 @@ h5 {
 p  {
   font-family: 'martel', serif;
   font-size: .8rem;
+  margin-top: 1rem;
 }
 .form {
   position: relative;
