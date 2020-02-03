@@ -5,7 +5,6 @@ function addToCart () {
   alert(total)
 }
 
-
 function dogImage (dogName, dogBreed, dogCost) {
   alert (dogName + ", " + dogBreed + ", " + dogCost)
 }

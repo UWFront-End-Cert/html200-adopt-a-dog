@@ -17,6 +17,8 @@ function checkOut() {
   var e = document.getElementById("ddlLocation");
   var strLocation = e.options[e.selectedIndex].text;
 
+
+
   alert('Thank you. The form information has been received');
-  console.log(nameBox + emailBox + cityBox + strState + rate_value + strLocation);
+  console.log(nameBox + ", " + emailBox + ", " + cityBox + ", " + strState + ", " + rate_value + ", " + strLocation);
 }
