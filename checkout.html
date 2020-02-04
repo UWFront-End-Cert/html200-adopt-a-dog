@@ -1,102 +1,104 @@
 <!DOCTYPE html>
 <html lang="zxx" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Adopt-a-Dog Checkout: Adopt a dog using the below form!</title>
-      <link rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" href="stylesheets/desktop/stylesheet-checkout.css">
-      <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" href="stylesheets/mobile/stylesheet-checkout-mobile.css">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-   </head>
-   <body>
-      <main>
-        <header>
-          <div id="header-checkout-all">
-           <div class="header-checkout">
-              <img class="cart-logo" src="images/cart-icon.svg" alt="Shopping cart icon">
-              <p id="header-price">$1234.56</p>
-            </div>
-              <a class="button" href="checkout.html">Checkout</a>
-              <div class="header-intro">
-              <img class="header-logo" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
-              <h2 class="header-title"><em>Seattle's premiere dog adoption agency</em></h2>
-           </div>
-         </div>
-        </header>
-        <nav class="global-navigation">
-           <a href="index.html" class="nav-link">Home</a>
-           <p> / </p>
-           <a href="dogs.html" class="nav-link-2">Dogs</a>
-           <p> / </p>
-           <a href="blog.html" class="nav-link-2">Blog</a>
-        </nav>
-         <h2 id="checkout-header">Checkout</h2>
-         <div id="container">
-         <form method="GET">
-            <div class="checkout-form-1">
-               <label class="checkout-title stack">Name<br>
-               <input class="form-box-1" type="text" name="contactName">
-               </label>
-               <label class="checkout-title">Email Address<br>
-               <input class="form-box-1" type="text" name="contactEmail">
-               </label>
-               <label class="checkout-title">Street Address <br>
-               <input class="form-box-1" type="text" name="contactAddress">
-               </label>
-            </div>
-            <div class="checkout-form-2">
-               <label class="checkout-title">City
-               <input class="form-box-1" type="text" name="contactCity">
-               </label>
-               <label class="checkout-title-2">State
-               <input class="form-box-1" type="text" name="contactState">
-               </label>
-               <label class="checkout-title-2">Zip Code
-               <input class="form-box-1" type="text" name="contactZip">
-               </label>
-            </div>
-            <fieldset id="first-time-adopter">
-               <legend class="checkout-title">First Time Adopter?</legend>
-               <label>
-               <input class="first-time-selection" type="radio" name="yes-no" value="yes">Yes
-               </label>
-               <label>
-               <input class="first-time-selection-2" type="radio" name="yes-no" value="no">No
-               </label>
-            </fieldset>
-            <label id="pickup-location" class="checkout-title">
-               Pickup Location
-               <select name="locations">
-                  <option value="shopping">Seattle Office</option>
-                  <option value="food">Redmond Office</option>
-                  <option value="outdoors">Bellevue Office</option>
-               </select>
+  <head>
+    <meta charset="utf-8">
+    <title>Adopt-a-Dog Checkout: Adopt a dog using the below form!</title>
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" href="stylesheets/desktop/stylesheet-checkout.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" href="stylesheets/desktop/stylesheet-desktop-all.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" href="stylesheets/mobile/stylesheet-checkout-mobile.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" href="stylesheets/mobile/stylesheet-mobile-all.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div id="header-checkout-all">
+          <div class="header-checkout">
+            <img class="cart-logo" src="images/cart-icon.svg" alt="Shopping cart icon">
+            <p id="header-price" class="cart-total">$0.00</p>
+          </div>
+          <a class="button" href="checkout.html">Checkout</a>
+          <div class="header-intro">
+            <img class="header-logo" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
+            <h2 class="header-title"><em>Seattle's premiere dog adoption agency</em></h2>
+          </div>
+        </div>
+      </header>
+      <nav class="global-navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <p> / </p>
+        <a href="dogs.html" class="nav-link-2">Dogs</a>
+        <p> / </p>
+        <a href="blog.html" class="nav-link-2">Blog</a>
+      </nav>
+      <h2 id="checkout-header">Checkout</h2>
+      <div id="container">
+        <form method="GET">
+          <div class="checkout-form-1">
+            <label class="checkout-title stack">Name<br>
+            <input class="form-box-1" type="text" name="contactName">
             </label>
-            <h3 class="checkout-title">Dogs Adopted</h3>
-            <div class="dogs-adopted">
-               <img class="adoption-image-1" src="images/lucas-card.jpg" alt="A picture of Lucas looking up into the camera; he has black fur and bright, brown eyes">
-               <div class="dogs-adopted-tile">
-                  <h4 class="checkout-title-dogs">Lucas</h4>
-                  <p class="cost-to-adopt"><strong>Cost to Adopt:</strong> $123.45</p>
-               </div>
-               <img class="adoption-image-2" src="images/duffy-card.jpg" alt="A picture of Duffy looking into the camera; she is brown and white with bright blue eyes">
-               <div class="dogs-adoption-tile">
-                  <h4 class="checkout-title-dogs">Duffy</h4>
-                  <p class="cost-to-adopt"><strong>Cost to Adopt:</strong> $123.45</p>
-               </div>
+            <label class="checkout-title">Email Address<br>
+            <input class="form-box-1" type="text" name="contactEmail">
+            </label>
+            <label class="checkout-title">Street Address <br>
+            <input class="form-box-1" type="text" name="contactAddress">
+            </label>
+          </div>
+          <div class="checkout-form-2">
+            <label class="checkout-title">City
+            <input class="form-box-1" type="text" name="contactCity">
+            </label>
+            <label class="checkout-title-2">State
+            <input class="form-box-1" type="text" name="contactState">
+            </label>
+            <label class="checkout-title-2">Zip Code
+            <input class="form-box-1" type="text" name="contactZip">
+            </label>
+          </div>
+          <fieldset id="first-time-adopter">
+            <legend class="checkout-title">First Time Adopter?</legend>
+            <label>
+            <input class="first-time-selection" type="radio" name="yes-no" value="yes">Yes
+            </label>
+            <label>
+            <input class="first-time-selection-2" type="radio" name="yes-no" value="no">No
+            </label>
+          </fieldset>
+          <label id="pickup-location" class="checkout-title">
+            Pickup Location
+            <select name="locations">
+              <option value="shopping">Seattle Office</option>
+              <option value="food">Redmond Office</option>
+              <option value="outdoors">Bellevue Office</option>
+            </select>
+          </label>
+          <h3 class="checkout-title">Dogs Adopted</h3>
+          <div class="dogs-adopted">
+            <img class="adoption-image-1" src="images/lucas-card.jpg" alt="A picture of Lucas looking up into the camera; he has black fur and bright, brown eyes">
+            <div class="dogs-adopted-tile">
+              <h4 class="checkout-title-dogs">Lucas</h4>
+              <p class="cost-to-adopt"><strong>Cost to Adopt:</strong> $123.45</p>
             </div>
-            <h3 class="checkout-title-final">Total Adoption Cost</h3>
-            <p class="final-cost">$1234.56</p>
-            <a id="checkout-button" href="checkout.html">Submit</a>
-         </form>
-       </div>
-      </main>
-      <footer class="universal-footer">
-         <img class="footer-logo" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
-         <p class="footer-body">Aborpos nisto inci tet aut que volupti beruptiberro to ex  esseque invenienihil imaximu scideru ptistiusam consequun</p>
-         <a class="footer-link" href="index.html">Home / </a>
-         <a class="footer-link" href="dogs.html">Dogs / </a>
-         <a class="footer-link" href="blog.html">Contact</a>
-         <p class="footer-body">© 2018 Adoptadog, LLC   |   Seattle, W</p>
-      </footer>
-   </body>
+            <img class="adoption-image-2" src="images/duffy-card.jpg" alt="A picture of Duffy looking into the camera; she is brown and white with bright blue eyes">
+            <div class="dogs-adoption-tile">
+              <h4 class="checkout-title-dogs">Duffy</h4>
+              <p class="cost-to-adopt"><strong>Cost to Adopt:</strong> $123.45</p>
+            </div>
+          </div>
+          <h3 class="checkout-title-final">Total Adoption Cost</h3>
+          <p class="final-cost">$1234.56</p>
+          <a id="checkout-button" href="checkout.html">Submit</a>
+        </form>
+      </div>
+    </main>
+    <footer class="universal-footer">
+      <img class="footer-logo" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
+      <p class="footer-body">Aborpos nisto inci tet aut que volupti beruptiberro to ex  esseque invenienihil imaximu scideru ptistiusam consequun</p>
+      <a class="footer-link" href="index.html">Home / </a>
+      <a class="footer-link" href="dogs.html">Dogs / </a>
+      <a class="footer-link" href="blog.html">Contact</a>
+      <p class="footer-body">© 2018 Adoptadog, LLC   |   Seattle, W</p>
+    </footer>
+  </body>
 </html>
