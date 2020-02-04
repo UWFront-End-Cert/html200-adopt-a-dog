@@ -1,4 +1,4 @@
-testing questions
+testing parameters:
 Text, controls and images are aligned properly
 Hover and selection states highlight and color changes
 Suitable clickable area
@@ -12,34 +12,35 @@ Never visualize the horizontal bar in the page.
 Content deﬁned ‘important’ need to be visible in all breakpoints.
 ********* ********** ************ ***********
 Testing notes:
-**Viewed each page on Windows/Chrome,
+**Viewed each page on Windows/Chrome/iPhone/android phone,
 **for text, controls and image align:
 index full size-ok
-dogs - full size - looks good small screen:
-blog - full size - issue: text needs to go beside each image. small screen: images cut off.
-Checkout - Full-size issue: most looks ok. there is a lot of white space at right. small screen: submit button is cut off.
-All pages: small screens: issue: top dog image not showing. Bottom footer is being covered up by cards.
+dogs - ok all sizes:
+blog - full size - issue Adopt a dog logo not showing on this page. issue: text needs to go beside each image. small screen: images cut off./fix: reverted to previous version of page w/o javascript.
+Checkout - Full-size issue: most looks ok. there is a lot of white space at right. small screen: submit button is cut off./doesn't affect function. Fix later.
+All pages: small screens: issue: top dog image not showing./fix: for medium screen, making the logo smaller fixed this. For small screen, cropped a smaller photo for this space.
+Bottom footer is being covered up by cards./fix: do not display footer and gray button at small sizes.
 **Hover for each page.
 index - full size- blue hover effect works. Adopt button is adequate size and action works. small screen: ok
-dogs - full size - looks good. On medium screen, cards and text are too small.
-blog full size - Only clickable area is checkout.
-checkout - full size - submit button works. issue: get rid of checkout button on this page as it links to current page.
+dogs - full size - looks good. On medium screen, cards and text are too small./Fix: ok for now.
+checkout - full size - submit button works. issue: get rid of checkout button on this page as it links to current page./ Fix: n/aokay for now.
 **Suitable clickable area.
- All buttons and links large enough on large. Small screen ok. Medium screen dog cards get very small with small text.
+ All buttons and links large enough on large. Small screen ok. Medium screen dog cards get very small with small text./fix n/a okay for now.
 **Color, Shading Gradient:
 all pages: background gradient seems to work when disabling the img link style.
 Colors- button, footer, backgrounds, nav colors ok.
 **correct padding-
-index and dogs page sometimes display off center at small sizes.
-there is a white margin around header left and top at small and medium sizes.
+Nav words (sometimes) run off the right side at medium screen./fis:  retested. Seems to look ok.
+index and dogs page sometimes display off center at small sizes./FIX: added class and margin-right to this section.
+there is a white margin around header left and top at small and medium sizes./Fix: set body margin to 0 and this seemed to fix it.
 **text images controls and frames do not run into the edges of the screen.
-- on small screens, adoptadog header logo runs over edge for all pages.
+- on small screens, adoptadog header logo runs over edge for all pages./ fix: made smaller, moved it to the left.
 ** font size style and color are consistent for each page.
 Yes, displays consistently across pages.
 ** typed text displays properly.
 yes. displays ok across all pages.
 **Pages readable at all resolutions.
-Dog cards at medium sizes are quite small.
+Dog cards at medium sizes are quite small./fix: none. this is probably acceptable.
 **horizontal bar
 I don't know what this question means.
 Content defined important:

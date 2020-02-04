@@ -2,6 +2,12 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   height: 30rem;
   background: url("./images/header-image-narrow.jpg");
@@ -53,12 +59,13 @@ p  {
 }
 
 .logo {
-  height: 150px;
+  height: 10em;
   top: 25%;
   position: absolute;
   margin-left: -25%;
 }
 header {  /*height: 100%;*/
+
 }
 
 nav {
@@ -77,6 +84,7 @@ aside {
     width: 50%;
     margin-left: 20%;
   }
+
 .main-dogs {
   width: 60%;
   margin-left: 20%;
@@ -257,16 +265,18 @@ footer {
    margin-left: 16%;
    margin-right: 16%;
    }
-  .header {
-     width: 100%;
-     background-image: url("./images/header-image-narrow.jpg");
-   }
+
    .footnav {
      width: 90%;
    }
-  header {
-    width: 30rem;
-  }
+
+
+
+header {
+     width: 30rem;
+     background: url("./images/header-image-small.jpg");
+}
+
   nav {
     width: 30rem;
   }
@@ -276,10 +286,13 @@ footer {
     font-size: 4vw;
     padding-bottom: 5%;
   }
+  .dog-card {
+  margin-right: 10%;
+  }
   .logo {
-    height: 40%;
+    height: 20%;
     position: absolute;
-    margin-left: -25%;
+    margin-left: -10% ;
   }
   .checkoutButton {
     width: auto;
@@ -314,9 +327,10 @@ footer {
   aside {
     display: none;
     }
-  body {
-    background: ;
+  footer, .graybutton {
+      display: none;
     }
+
 }
 @media screen and (max-width: 800px) and (min-width: 600px) {
   body{background: white;}
@@ -326,7 +340,7 @@ footer {
     margin-right: 10%;
   }
   .logo {
-    height: 40%;
+    height: 20%;
     position: absolute;
     margin-top: none;
     margin-left: -25%;
