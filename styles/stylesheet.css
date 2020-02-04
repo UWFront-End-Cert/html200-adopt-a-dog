@@ -11,7 +11,7 @@ dark gray #3d3d3d
 
 #core {
   max-width: 90%;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .hidden {
@@ -26,7 +26,7 @@ dark gray #3d3d3d
 
 header {
   background-color: #083c60;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .fas, .fa-shopping-cart {
@@ -38,7 +38,7 @@ header {
   display: flex;
   flex-flow: column;
   float: right;
-  margin: .5em;
+  margin: 0;
 }
 .checkout {
   background-color: #81b741;
@@ -53,7 +53,8 @@ header {
 
 .logo-image {
   width: 45%;
-  margin: .5em 0 0 .5em;
+  margin: 0;
+  /*.5em 0 0 .5em*/
 }
 
 h1 {
@@ -64,7 +65,8 @@ h1 {
   border: none;
   text-align: left;
   width: auto;
-  margin: .5em;
+  margin: 0;
+  /*margin: .5em;*/
 }
 
 h2 {
@@ -73,7 +75,8 @@ h2 {
   color: #083c60;
   padding: .5em .5em .25em .5em;
   border: none;
-  margin: .25em .5em .5em .5em;
+  margin: 0;
+  /*margin: .25em .5em .5em .5em;*/
 }
 
 h3 {
@@ -82,7 +85,8 @@ h3 {
   color: #083c60;
   padding: .25em;
   border: none;
-  margin: .25em;
+  margin: 0;
+  /*margin: .25em;*/
 }
 
 h4 {
@@ -91,7 +95,8 @@ h4 {
   color: #083c60;
   padding: .5em;
   border: none;
-  margin: .5em;
+  margin:0;
+  /*margin: .5em;*/
 }
 
 a, div {
@@ -101,11 +106,12 @@ a, div {
 
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   color: #3d3d3d;
   padding: .25em;
   border: none;
-  margin: .25em;
+  margin: 0;
+  /*margin: .25em;*/
 }
 
 .cost {
@@ -123,13 +129,15 @@ nav ul {
   width: 100%;
   padding: 2em;
   border: none;
-  margin: 0 .5em .5em .5em;
+  margin: 0;
+  /*margin: 0 .5em .5em .5em;*/
   text-align: center;
 }
 
 li a.menu-links {
   color: #083c60;
-  margin: 0 .5em .5em .5em;
+  margin: 0;
+  /*margin: 0 .5em .5em .5em;*/
   border: none;
   text-decoration: none;
   text-align: center;
@@ -156,14 +164,16 @@ a:hover {
 .intro {
   display: flex;
   align-items: center;
-  margin: .5em;
+  margin: 0;
+  /*margin: .5em;*/
   justify-content: space-between;
   position: relative;
 }
 
 .hug {
   padding: .25em;
-  margin: .5em;
+  margin: 0;
+  /*margin: .5em;*/
   max-height: 50%;
   float: left;
 }
@@ -273,14 +283,16 @@ a:hover {
 .blog-content {
   display: flex;
   align-items: center;
-  margin: .5em;
+  margin: 0;
+  /*margin: .5em;*/
   justify-content: space-between;
   position: relative;
 }
 
 .blog-img {
   padding: .25em;
-  margin: .5em;
+  margin: 0;
+  /*margin: .5em;*/
   float: left;
 }
 
@@ -299,7 +311,7 @@ a:hover {
   color: #083c60;
   background-color: #d9d9d9;
   padding: .25em;
-  margin: 0 auto;
+  margin: 0 /*auto*/;
   text-align: center;
   max-width: 33%;
 }
@@ -310,7 +322,8 @@ footer {
   font-size: .5em;
   padding: 2em;
   border: none;
-  margin: 1em;
+  margin: 0;
+  /*margin: 1em;*/
   text-align: center;
   width: 100%;
 }
@@ -322,14 +335,16 @@ footer {
 
 .footer-logo {
   display: block;
-  margin: auto;
+  margin: 0;
+  /*margin: auto;*/
   width: 25%;
   }
 
 .footer-nav {
   color: #ffffff;
   padding: .5em;
-  margin: .5em;
+  margin: 0;
+  /*margin: .5em;*/
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   text-align: center;
@@ -352,12 +367,14 @@ button, input, select, textarea {
   font-size: 100%;
   box-sizing: border-box;
   display: block;
-  margin: 1em;
+  margin: 0;
+  /*margin: 1em;*/
 }
 
 form {
   padding: 1rem;
-  margin: 1rem;
+  margin: 0;
+  /*margin: 1rem;*/
 }
 
 fieldset {
@@ -377,11 +394,13 @@ input[type=submit] {
 .cart {
   display: flex;
   flex-flow: wrap row;
-  margin: 1em;
+  margin: 0;
+  /*margin: 1em;*/
 }
 
 button {
-  margin: .5em;
+  margin: 0;
+  /*margin: .5em;*/
   width: 90%;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
@@ -389,7 +408,8 @@ button {
 }
 
 .button {
-  margin: auto;
+  margin: 0;
+  /*margin: auto;*/
   width: 33%;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
