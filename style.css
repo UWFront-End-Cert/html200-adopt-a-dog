@@ -1,0 +1,10 @@
+* {
+  background-color: grey;
+}
+.header-logo-image {
+  width: 20%;
+}
+.checkout-location-select {
+  border: 1px solid black;
+  width: 20%;
+}
