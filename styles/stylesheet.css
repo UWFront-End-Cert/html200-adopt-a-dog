@@ -9,10 +9,11 @@ dark gray #3d3d3d
   box-sizing: border-box;
 }
 
-#core {
+/*#core {
   max-width: 90%;
   margin: 0;
-}
+}*/
+
 
 .hidden {
   position: relative;
@@ -26,6 +27,7 @@ dark gray #3d3d3d
 
 header {
   background-color: #083c60;
+  width: 100%;
   margin: 0;
 }
 
@@ -159,6 +161,15 @@ a:visited {
 
 a:hover {
   color: #81b741;
+}
+
+.centered-content-container {
+  text-align: center;
+}
+
+.centered-content {
+  display: inline-block;
+  width: 85%;
 }
 
 .intro {
