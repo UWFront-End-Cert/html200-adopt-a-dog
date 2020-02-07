@@ -59,7 +59,7 @@ h2 {
 }
 .nav {
   background-color: rgb(236,236,236);
-  padding: 1rem;
+  padding: 2rem;
 }
 nav ul {
   display: block;
@@ -204,7 +204,9 @@ li:first-child:before {
   color: black;
   font-weight: 300;
 }
-
+.img-border {
+  border: .5rem solid red;
+}
 
 @media screen and (max-width:576px) {
   .container {
@@ -253,3 +255,8 @@ li:first-child:before {
     display: none;
   }
 }
+@media screen and (max-width:400px) {
+  .nav {
+    float: none;
+    width: 100%;
+  }
