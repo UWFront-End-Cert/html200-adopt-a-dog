@@ -3,7 +3,6 @@ function dogInfo(dogBio) {
   alert(dogBio);
 }
 
-
 let total = 0;
 
 function myFee(fee) {
@@ -12,4 +11,4 @@ function myFee(fee) {
 }
 
 
-//myFee only alerts for Murphy and Poppy, will not allow you to click the button again and add to the total
+//How should you space your script out when it's all in an external file?
