@@ -58,7 +58,7 @@ aside {
   float: left;
   width: 50%;
   margin: 2% 5% 0% 12%;
-  grid-template-columns: 20 20 20;
+  grid-template-columns: auto auto auto;
   grid-gap: 1%;
   line-height: 1.5em;
 }

@@ -30,8 +30,7 @@ aside {
 .grid-index-adoptions {
   display: grid;
   width: 100%;
-  grid-template-columns: 45 45;
-  grid-gap: 0%;
+  grid-template-columns: auto auto;
   line-height: 1.5em;
 
 }
