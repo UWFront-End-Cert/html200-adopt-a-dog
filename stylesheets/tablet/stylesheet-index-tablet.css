@@ -29,8 +29,11 @@ aside {
 
 .grid-index-adoptions {
   display: grid;
-  margin-left: 3%;
-  margin-right: 3%;
+  width: 100%;
+  grid-template-columns: 45 45;
+  grid-gap: 0%;
+  line-height: 1.5em;
+
 }
 
 .adoption-image {

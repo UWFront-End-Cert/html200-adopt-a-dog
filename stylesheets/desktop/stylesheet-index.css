@@ -38,7 +38,8 @@ aside {
 
 .aside-blog-image {
   margin-top: 3%;
-  width: 80%;
+  width: 70%;
+  height: 12rem;
 }
 
 .aside-cta {
@@ -46,6 +47,10 @@ aside {
   font-weight: bolder;
   color: #00cbff;
   margin-left: 2%;
+}
+
+.aside-body {
+  margin-right: 20%;
 }
 
 .grid-index-adoptions {
