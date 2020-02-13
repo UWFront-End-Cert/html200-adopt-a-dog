@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Adopt-a-Dog homepage: Look here to learn more about Seattle's premiere dog adoption agency</title>
-    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" href="stylesheets/desktop/stylesheet-index.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" href="stylesheets/desktop/stylesheet-desktop-all.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 769px)" href="stylesheets/desktop/stylesheet-index.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 769px)" href="stylesheets/desktop/stylesheet-desktop-all.css">
+    <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" href="stylesheets/tablet/stylesheet-index-tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" href="stylesheets/tablet/stylesheet-tablet-all.css">
     <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" href="stylesheets/mobile/stylesheet-index-mobile.css">
     <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" href="stylesheets/mobile/stylesheet-mobile-all.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -34,12 +36,33 @@
       <div id="index-container">
         <img id="index-image" src="images/home-intro.jpg" alt="A picture of a man hugging a dog; the dog is smiling and looking into the camera">
         <div id="index-container-2">
-          <h2 id="index-header">Adopt A Dog</h2>
+          <h2 class="index-header">Adopt A Dog</h2>
           <p id="index-content">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate
           <p>
         </div>
       </div>
     </section>
+    <aside>
+     <h2 class="index-header">From our blog</h2>
+     <div class="aside-blog">
+       <img class="aside-blog-image" src="images/blog-1.jpg" alt="A woman and dog sitting together, looking out over the Grand Canyon">
+       <h3 class="adoption-header">Traveling with your dog</h3>
+       <p class="adoption-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       <a class="aside-cta" href="blog.html">Read more >></a>
+     </div>
+     <div class="aside-article">
+       <img class="aside-blog-image" src="images/blog-2.jpg" alt="Four dogs on leashes, sitting and looking attentively at their walker">
+       <h3 class="adoption-header">How to walk multiple dogs</h3>
+       <p class="adoption-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       <a class="aside-cta" href="blog.html">Read more >></a>
+     </div>
+     <div class="aside-article">
+       <img class="aside-blog-image" src="images/blog-3.jpg" alt="The silhouette of a girl and a dog at sunset, playing fetch">
+       <h3 class="adoption-header">Teach your dog to fetch!</h3>
+       <p class="adoption-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       <a class="aside-cta" href="blog.html">Read more >></a>
+     </div>
+   </aside>
     <div class="grid-index-adoptions">
       <section id="murphy">
         <img class="adoption-image" src="images/murphy-card.jpg" onclick="dogInfo('Murphy', 'mix','$123.45')" alt="A close-up on Murphy's face; he has brown fur, brown eyes and a white snout">
@@ -79,20 +102,6 @@
       <section id="jake">
         <img class="adoption-image" src="images/jake-card.jpg" onclick="dogInfo('Jake', 'Yellow Lab','$123.45')" alt="A picture of Jake sitting calmly; he is a yellow lab with warm, brown eyes">
         <h3 class="adoption-header">Jake</h3>
-        <p class="adoption-cost"><strong>Cost to Adopt:</strong> $123.45</p>
-        <p class="adoption-body">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a class="index-adopt-button" onclick="totalCost(123.45)">Checkout</a>
-      </section>
-      <section id="angus">
-        <img class="adoption-image" src="images/angus-card.jpg" onclick="dogInfo('Angus', 'Boxer','$123.45')" alt="A picture of Angus smiling at the camera; he is a Boxer with brown eyes">
-        <h3 class="adoption-header">Angus</h3>
-        <p class="adoption-cost"><strong>Cost to Adopt:</strong> $123.45</p>
-        <p class="adoption-body">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a class="index-adopt-button" onclick="totalCost(123.45)">Checkout</a>
-      </section>
-      <section id="violet">
-        <img class="adoption-image" src="images/violet-card.jpg" onclick="dogInfo('Violet', 'Chocolate Lab','$123.45')" alt="A picture of Violet from above; she is a chocolate lab and is a puppy">
-        <h3 class="adoption-header">Violet</h3>
         <p class="adoption-cost"><strong>Cost to Adopt:</strong> $123.45</p>
         <p class="adoption-body">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
         <a class="index-adopt-button" onclick="totalCost(123.45)">Checkout</a>

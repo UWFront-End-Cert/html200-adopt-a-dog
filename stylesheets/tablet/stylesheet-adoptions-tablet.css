@@ -1,38 +1,18 @@
 .grid-index-adoptions {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  grid-gap: 3%;
-  margin: 3% 0% 10% 15%;
-  line-height: 1.5em;
-}
-
-.adoption-image {
-  max-width: 100%;
-}
-
-.adoption-header {
-  color: #093C60;
-  padding: 1% 0% 3% 3%;
-}
-
-.adoption-cost {
-  color: #3D3D3D;
-  padding: 0% 0% 3% 3%;
-}
-
-.adoption-body {
-  color: #3D3D3D;
-  font-size: 1em;
-  padding: 0% 5% 3% 3%;
+  margin: 0% 3%;
+  grid-template-columns: 49% 49%;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  line-height: 1.25em;
 }
 
 .index-adopt-button {
-  margin: 2% 3%;
   background-color: #81B741;
   border: none;
   color: white;
   padding: 2%;
-  width: 90%;
+  width: 96%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -40,9 +20,14 @@
   font-weight: bolder;
 }
 
+.adoption-image {
+  width: 100%;
+}
+
 #dogs-header {
   color: #093C60;
-  margin: 2% 0% 0% 15%;
+  text-align: center;
+  margin: 3% 0%;
 }
 
 #murphy {
@@ -58,61 +43,65 @@
 }
 
 #jack {
-  grid-column: 3;
-  grid-row: 1;
+  grid-column: 1;
+  grid-row: 2;
   border: 1px solid #ECECEC;
 }
 
 #duffy {
-  grid-column: 4;
-  grid-row: 1;
+  grid-column: 2;
+  grid-row: 2;
   border: 1px solid #ECECEC;
 }
 
 #lucas {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 3;
   border: 1px solid #ECECEC;
 }
 
 #jake {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 3;
   border: 1px solid #ECECEC;
 }
 
 #angus {
-  grid-column: 3;
-  grid-row: 2;
+  grid-column: 1;
+  grid-row: 4;
   border: 1px solid #ECECEC;
 }
 
 #violet {
-  grid-column: 4;
-  grid-row: 2;
+  grid-column: 2;
+  grid-row: 4;
   border: 1px solid #ECECEC;
 }
 
 #piper {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 5;
   border: 1px solid #ECECEC;
 }
 
 #maximus {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 5;
   border: 1px solid #ECECEC;
 }
 
 #luna {
-  grid-column: 3;
-  grid-row: 3;
+  grid-column: 1;
+  grid-row: 6;
   border: 1px solid #ECECEC;
 }
 
 #stella {
-  grid-column: 4;
-  grid-row: 3;
+  grid-column: 2;
+  grid-row: 6;
   border: 1px solid #ECECEC;
+}
+
+.universal-footer {
+  margin-top: 35%;
 }

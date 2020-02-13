@@ -1,26 +1,27 @@
 
 #index-container {
-  display: flex;
-  flex-direction: row;
-  padding-top: 2%;
-}
-
-#index-container-2 {
-  flex-flow: column;
-  width: 50%;
-  margin-top: 5%;
+  float: left;
+  width: 40%;
+  margin-left: 15%;
+  margin-top:2%;
+  font-size: 100%;
 }
 
 #index-image {
-  margin: 2% 1% 3% 10%;
-  height: 50%;
+display: block;
+float: none;
+width: 100%;
+padding-right: 5%;
+float: left;
+margin-bottom: 5%;
 }
 
-#index-header {
+.index-header {
   color: #093C60;
   text-overflow: inherit;
   font-size: 2em;
   margin-bottom: 3%;
+  margin-top: 5%;
 }
 
 #index-content {
@@ -29,10 +30,32 @@
   font-size: 1em;
 }
 
+aside {
+  width: 30%;
+  float: right;
+  margin-right: 3%;
+}
+
+.aside-blog-image {
+  margin-top: 3%;
+  width: 80%;
+}
+
+.aside-cta {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #00cbff;
+  margin-left: 2%;
+}
+
 .grid-index-adoptions {
   display: grid;
-  margin-left: 12%;
-  margin-right: 12%;
+  float: left;
+  width: 50%;
+  margin: 2% 5% 0% 12%;
+  grid-template-columns: 20 20 20;
+  grid-gap: 1%;
+  line-height: 1.5em;
 }
 
 .adoption-image {
@@ -61,7 +84,8 @@
   background-color: #81B741;
   border: none;
   color: white;
-  padding: 3% 30%;
+  padding: 2%;
+  width: 90%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -91,43 +115,29 @@
 }
 
 #duffy {
-  grid-column: 4;
-  grid-row: 1;
-  border: 1px solid #ECECEC;
-  margin: 0% 7% 12% 7%;
-}
-
-#lucas {
   grid-column: 1;
   grid-row: 2;
   border: 1px solid #ECECEC;
   margin: 0% 7% 12% 7%;
 }
 
-#jake {
+#lucas {
   grid-column: 2;
   grid-row: 2;
   border: 1px solid #ECECEC;
   margin: 0% 7% 12% 7%;
 }
 
-#angus {
+#jake {
   grid-column: 3;
-  grid-row: 2;
-  border: 1px solid #ECECEC;
-  margin: 0% 7% 12% 7%;
-}
-#violet {
-  grid-column: 4;
   grid-row: 2;
   border: 1px solid #ECECEC;
   margin: 0% 7% 12% 7%;
 }
 
 .see-more {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
+  clear: both;
+  margin: 0% 0% 5% 30%;
 }
 
 .see-more-button {

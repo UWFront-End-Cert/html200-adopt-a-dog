@@ -26,7 +26,7 @@ header {
 .header-title {
   color: #81B741;
   font-size: 1.5em;
-  width: 40%;
+  width: 45%;
 }
 
 .cart-logo {
@@ -40,8 +40,8 @@ header {
 
 .button {
   position:absolute;
-  right: 8%;
-  top: 20%;
+  right: 17%;
+  top: 25%;
   background-color: #81B741;
   border: none;
   color: white;
@@ -71,8 +71,8 @@ header {
   padding: 0% 1% 0 1%;
 }
 
+
 .universal-footer {
-  clear: both;
   padding: 5% 0% 5% 0%;
   text-align: center;
   background-color: #3D3D3D;
