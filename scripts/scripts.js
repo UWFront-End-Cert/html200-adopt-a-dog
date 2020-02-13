@@ -10,5 +10,4 @@ function myFee(fee) {
   alert(fee);
 }
 
-
 //How should you space your script out when it's all in an external file?
