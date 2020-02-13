@@ -6,13 +6,12 @@
 
 #index-image {
 width: 100%;
-margin-bottom: 5%;
 }
 
-#index-header {
+.index-header {
   color: #093C60;
   font-size: 2em;
-  margin-bottom: 3%;
+  margin: 3% 0%;
   text-align: center;
 }
 
