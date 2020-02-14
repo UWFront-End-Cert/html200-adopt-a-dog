@@ -33,13 +33,12 @@ margin-bottom: 5%;
 aside {
   width: 30%;
   float: right;
-  margin-right: 3%;
+  margin-right: 2%;
 }
 
 .aside-blog-image {
   margin-top: 3%;
   width: 70%;
-  height: 12rem;
 }
 
 .aside-cta {

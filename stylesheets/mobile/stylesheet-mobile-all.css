@@ -4,7 +4,14 @@
 }
 
 header {
-  background-color: #093C60;
+  background: linear-gradient(to right, #093C60, #0F578A); /*in case image doesn't load*/
+}
+
+.header-image {
+  background-image: url('https://ejdon.github.io/adopt-a-dog/images/header-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 5% 0% 5% 0%;
 }
 

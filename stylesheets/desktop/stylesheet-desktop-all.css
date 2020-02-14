@@ -4,9 +4,15 @@
 }
 
 header {
-  background-color: #093C60;
-  padding: 5% 0% 5% 0%;
-  position: relative;
+background: linear-gradient(to right, #093C60, #0F578A); /*in case image doesn't load*/
+}
+
+.header-image {
+background-image: url('https://ejdon.github.io/adopt-a-dog/images/header-image.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+padding: 10% 0% 10% 0%;
+position: relative;
 }
 
 .header-intro {
@@ -62,13 +68,13 @@ header {
 .nav-link {
   color: #093C60;
   text-decoration: none;
-  padding: 0% 1% 0 15%;
+  margin: 0% 1% 0 15%;
 }
 
 .nav-link-2 {
   color: #093C60;
   text-decoration: none;
-  padding: 0% 1% 0 1%;
+  margin: 0% 1% 0 1%;
 }
 
 .universal-footer {
