@@ -17,9 +17,11 @@
         <div class="header-two">
           <img src="images/cart-icon.svg" alt="A graphic sileoutte of a shopping cart in a white color.">
           <p>$123.45</p>
-          <a href="checkout.html">Checkout</a>
+          <a href="checkout.html" class="checkout-button">Checkout</a>
         </div>
-        <nav>
+      </div>
+      <div class="nav-container">
+        <nav id="nav">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="dogs.html">Dogs</a></li>
@@ -30,89 +32,93 @@
     </header>
 
     <section>
-      <article>
-        <h2>Checkout</h2>
-        <form method="get">
-          <label>Name:
-            <input type="text" name="customerName">
-          </label>
-          <label>Email Address:
-            <input type="email" name="customerEmail">
-          </label>
-          <label>Street Address:
-            <input type="text" name="customerAddress">
-          </label>
-          <label>City:
-            <input type="text" name="customerCity">
-          </label>
-          <label>State:
-            <select name="customerState">
-              <option value="alabama">Alabama</option>
-              <option value="alaska">Alaska</option>
-              <option value="arizona">Arizona</option>
-              <option value="arkansas">Arkansas</option>
-              <option value="california">California</option>
-              <option value="colorado">Colorado</option>
-              <option value="connecticut">Connecticut</option>
-              <option value="delaware">Delaware</option>
-              <option value="florida">Florida</option>
-              <option value="georgia">Georgia</option>
-              <option value="hawaii">Hawaii</option>
-              <option value="idaho">Idaho</option>
-              <option value="illinois">Illinois</option>
-              <option value="indiana">Indiana</option>
-              <option value="iowa">Iowa</option>
-              <option value="kansas">Kansas</option>
-              <option value="kentucky">Kentucky</option>
-              <option value="louisiana">Louisiana</option>
-              <option value="maine">Maine</option>
-              <option value="maryland">Maryland</option>
-              <option value="massachusetts">Massachusetts</option>
-              <option value="michigan">Michigan</option>
-              <option value="minnesota">Minnesota</option>
-              <option value="mississippi">Mississippi</option>
-              <option value="missouri">Missouri</option>
-              <option value="montana">Montana</option>
-              <option value="nebraska">Nebraska</option>
-              <option value="nevada">Nevada</option>
-              <option value="new-hampshire">New Hampshire</option>
-              <option value="new-jersey">New Jersey</option>
-              <option value="new-mexico">New Mexico</option>
-              <option value="new-york">New York</option>
-              <option value="north-carolina">North Carolina</option>
-              <option value="north-dakota">North Dakota</option>
-              <option value="ohio">Ohio</option>
-              <option value="oklahoma">Oklahoma</option>
-              <option value="oregon">Oregon</option>
-              <option value="pennsylvania">Pennsylavnia</option>
-              <option value="rhode-island">Rhode Island</option>
-              <option value="south-carolina">South Carolina</option>
-              <option value="south-dakota">South Dakota</option>
-              <option value="tennessee">Tennessee</option>
-              <option value="texas">Texas</option>
-              <option value="utah">Utah</option>
-              <option value="vermont">Vermont</option>
-              <option value="virginia">Virginia</option>
-              <option value="washington">Washington</option>
-              <option value="west-virginia">West Virginia</option>
-              <option value="wisconsin">Wisconsin</option>
-              <option value="wyoming">Wyoming</option>
-            </select>
-          </label>
-          <label>Zip Code:
-            <input type="text" name="customerZipCode">
-          </label>
-          <label>First time adopter?
-            <input type="radio" name="customerFirstTime">
-          </label>
-          <label>Pickup location:
-            <select name="customerPickUp">
-              <option value="mainOffice">Main office</option>
-            </select>
-          </label>
-          <input type="submit" value="Submit">
-        </form>
-      </article>
+      <div class="checkout-container">
+        <article>
+          <h2>Checkout</h2>
+            <form method="get">
+              <label for="name">Name:
+                <input type="text" name="customerName">
+              </label>
+              <label>Email Address:
+                <input type="email" name="customerEmail">
+              </label>
+              <label>Street Address:
+                <input type="text" name="customerAddress">
+              </label>
+              <label>City:
+                <input type="text" name="customerCity">
+              </label>
+              <label>State:
+                <select name="customerState">
+                  <option value="alabama">Alabama</option>
+                  <option value="alaska">Alaska</option>
+                  <option value="arizona">Arizona</option>
+                  <option value="arkansas">Arkansas</option>
+                  <option value="california">California</option>
+                  <option value="colorado">Colorado</option>
+                  <option value="connecticut">Connecticut</option>
+                  <option value="delaware">Delaware</option>
+                  <option value="florida">Florida</option>
+                  <option value="georgia">Georgia</option>
+                  <option value="hawaii">Hawaii</option>
+                  <option value="idaho">Idaho</option>
+                  <option value="illinois">Illinois</option>
+                  <option value="indiana">Indiana</option>
+                  <option value="iowa">Iowa</option>
+                  <option value="kansas">Kansas</option>
+                  <option value="kentucky">Kentucky</option>
+                  <option value="louisiana">Louisiana</option>
+                  <option value="maine">Maine</option>
+                  <option value="maryland">Maryland</option>
+                  <option value="massachusetts">Massachusetts</option>
+                  <option value="michigan">Michigan</option>
+                  <option value="minnesota">Minnesota</option>
+                  <option value="mississippi">Mississippi</option>
+                  <option value="missouri">Missouri</option>
+                  <option value="montana">Montana</option>
+                  <option value="nebraska">Nebraska</option>
+                  <option value="nevada">Nevada</option>
+                  <option value="new-hampshire">New Hampshire</option>
+                  <option value="new-jersey">New Jersey</option>
+                  <option value="new-mexico">New Mexico</option>
+                  <option value="new-york">New York</option>
+                  <option value="north-carolina">North Carolina</option>
+                  <option value="north-dakota">North Dakota</option>
+                  <option value="ohio">Ohio</option>
+                  <option value="oklahoma">Oklahoma</option>
+                  <option value="oregon">Oregon</option>
+                  <option value="pennsylvania">Pennsylavnia</option>
+                  <option value="rhode-island">Rhode Island</option>
+                  <option value="south-carolina">South Carolina</option>
+                  <option value="south-dakota">South Dakota</option>
+                  <option value="tennessee">Tennessee</option>
+                  <option value="texas">Texas</option>
+                  <option value="utah">Utah</option>
+                  <option value="vermont">Vermont</option>
+                  <option value="virginia">Virginia</option>
+                  <option value="washington">Washington</option>
+                  <option value="west-virginia">West Virginia</option>
+                  <option value="wisconsin">Wisconsin</option>
+                  <option value="wyoming">Wyoming</option>
+                </select>
+              </label>
+              <label>Zip Code:
+                <input type="text" name="customerZipCode">
+              </label>
+              <label>First time adopter?
+                <input type="radio" name="customerFirstTimeYes">Yes</input>
+                <input type="radio" name="customerFirstTimeNo">No</input>
+              </label>
+              <label>Pickup location:
+                <select name="customerPickUp">
+                  <option value="mainOffice">Main office</option>
+                </select>
+              </label>
+              <input type="submit" value="Submit">
+          </div>
+          </form>
+        </article>
+      </div>
 
 
     </section>
@@ -122,7 +128,7 @@
         <div class="footer-one">
           <article>
             <img src="images/adoptadog-logo.svg" alt="Logo for Adopt-A-Dog, a silouette of a dog sitting down with the text reading 'ADOPTADOG' in all white.">
-            <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque <br>
+            <p>Aborpos nxqisto inci tet aut que volupti beruptiberro to ex esseque <br>
               invenienihil imaximu scideru ptistiusam consequunt</p>
             </article>
           </div>
@@ -142,6 +148,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
