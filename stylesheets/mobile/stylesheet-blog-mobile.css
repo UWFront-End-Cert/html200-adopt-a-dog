@@ -1,4 +1,4 @@
-#blog-header {
+.blog-header {
   color: #093C60;
   font-size: 2em;
   text-align: center;
@@ -14,7 +14,6 @@
 .image {
   width: 100%;
   margin: 3% 0%;
-
 }
 
 .blog-body {

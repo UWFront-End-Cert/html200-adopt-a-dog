@@ -78,7 +78,7 @@ header {
   text-decoration: none;
 }
 
-.universal-footer {
+#universal-footer {
   padding: 5% 0% 5% 0%;
   text-align: center;
   background-color: #3D3D3D;

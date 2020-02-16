@@ -1,4 +1,4 @@
-#blog-header {
+.blog-header {
   color: #093C60;
   font-size: 2em;
   margin: 2% 0% 2% 15%;
@@ -21,6 +21,11 @@ margin-bottom: 5%;
 }
 
 .blog-body {
+  margin: 0% 12% 0% 0%;
+  line-height: 1.5em;
+}
+
+#blog-body {
   margin: 0% 12% 0% 0%;
   line-height: 1.5em;
 }
