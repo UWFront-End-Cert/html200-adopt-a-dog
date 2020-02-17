@@ -98,6 +98,10 @@ li a:active {
   margin: 3rem 0 0 3rem;
 }
 
+#form-container {
+  margin: 3rem 0 0 3rem;
+}
+
 h1 {
   font-family: 'Merriweather', serif;
   font-weight: 300;
@@ -130,7 +134,7 @@ h4 {
 h5 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
-  font-size: 0.7em;
+  font-size: 1em;
   color: #103861;
 }
 
@@ -276,17 +280,11 @@ button {
   display: flex;
   flex-flow: row wrap;
   margin: 0rem 0.8rem 3rem 0rem;
-  max-width: 80%;
+  max-width: 85%;
 }
 
-.blog-article img {
-  float: left;
-  padding: 1.2rem 3rem 2rem 0;
-}
-
-.blog-article h3 p{
-  float: right;
-  padding: 0 1rem 3rem 0;
+.blog-article h3 {
+  margin-top: 0;
 }
 
 form {
@@ -365,6 +363,11 @@ input[type=submit]:active {
   float: left;
   padding-right: 1rem;
   margin-top: 0.8rem;
+}
+
+.dogs-adopted p {
+  font-size: 0.7rem;
+  margin-top: -0.5rem;
 }
 
 .dogs-adopted h5 p {

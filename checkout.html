@@ -34,7 +34,7 @@
 
     <h2 class="form-title">Checkout</h2>
 
-    <form class="container" method="POST">
+    <form id="form-container" method="POST">
 
       <div>
         <label>Name
@@ -91,13 +91,13 @@
       <fieldset class="dogs-adopted">
         <legend>Dogs Adopted</legend>
         <div>
-            <img src="images/lucas-checkout.jpg" width="45" alt="photo of Lucas">
+            <img src="images/lucas-checkout.jpg" width="65" alt="photo of Lucas">
             <h5>Lucas</h5>
             <p>Cost to Adopt: $123.45</p>
         </div>
 
         <div>
-            <img src="images/duffy-checkout.jpg" width="45" alt="photo of Duffy">
+            <img src="images/duffy-checkout.jpg" width="65" alt="photo of Duffy">
             <h5>Duffy</h5>
             <p>Cost to Adopt: $123.45</p>
         </div>
@@ -109,7 +109,7 @@
       </div>
     </form>
 
-     <input type="submit" value="SUBMIT">
+     <input type="submit" value="SUBMIT" onclick="submitInfo()">
 
      <footer class="footer-block">
        <a href="index.html"><img src="images/adoptadog-logo.svg" width="200" alt="Adopt-a-dog logo"></a>
@@ -124,6 +124,8 @@
        </ul>
        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
      </footer>
+
+     <script src="scripts/script.js" charset="utf-8"></script>
 
   </body>
 </html>
