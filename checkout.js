@@ -5,7 +5,7 @@ function checkOut() {
   var cityBox = document.getElementById('city').value;
   var e = document.getElementById("ddlState");
   var strState = e.options[e.selectedIndex].text;
-
+  var zipBox = document.getElementById("zip").value;
   var rate_value = '';
   if (document.getElementById('r1').checked) {
   rate_value = document.getElementById('r1').value;
@@ -20,5 +20,5 @@ function checkOut() {
 
 
   alert('Thank you. The form information has been received');
-  console.log(nameBox + ", " + emailBox + ", " + cityBox + ", " + strState + ", " + rate_value + ", " + strLocation);
+  console.log(nameBox + ", " + emailBox + ", " + streetBox + ", " + cityBox + ", " + strState + ", " + zipBox + ", " + rate_value + ", " + strLocation);
 }
