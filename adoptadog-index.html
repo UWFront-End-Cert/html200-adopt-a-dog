@@ -50,11 +50,30 @@
         </div>
       </div>
 
+      <!--Try to minimize wasted white space
+      <div class="flex-container">
+        <div>
+          <img src="images/home-intro.jpg" alt="Introduction photo of dog and his owner" style="width:40%;">
+          <h1>Adopt A Dog</h1>
+          <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+             ut labore et dolore magna aliqua. Posuere morbi leo urna molestie. Fusce id velit ut tortor
+             pretium viverra suspendisse potenti. Suscipit tellus mauris a diam maecenas. Odio tempor orci
+             dapibus ultrices in. Tellus pellentesque eu tincidunt tortor. Turpis cursus in hac habitasse
+             platea. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. In tellus integer
+             feugiat scelerisque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Amet mauris
+             commodo quis imperdiet massa tincidunt nunc. Auctor urna nunc id cursus metus aliquam. Commodo
+             odio aenean sed adipiscing diam.</p>
+        </div>
+      </div>
+    -->
+
       <!--Create flexbox grid containing dog profiles-->
       <div class="grid-container">
           <div class= "grid-item">
             <div>
-            <img src="images/murphy-card.jpg" alt="Picture of Murphy" style="width:100%;">
+            <!--Use single quotations for strings-->
+            <button onclick="dogPhotoClick('Murphy', 'American Foxhound', 123.45)"><img src="images/murphy-card.jpg" alt="Picture of Murphy" style="width:100%;"></button>
+            <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
             <h3>Murphy</h3>
@@ -62,13 +81,14 @@
             <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
               Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
               non blandit massa enim nec. </p>
-            <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+             <button onclick="dogButtonClick()"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></button>
            </div>
           </div>
 
           <div class= "grid-item">
             <div>
-            <img src="images/poppy-card.jpg" alt="Picture of Poppy" style="width:100%;">
+              <button onclick="dogPhotoClick('Poppy', 'Labradoodle', 123.45)"><img src="images/poppy-card.jpg" alt="Picture of Poppy" style="width:100%;"></button>
+              <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
             <h3>Poppy</h3>
@@ -76,13 +96,14 @@
             <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
               Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
               non blandit massa enim nec. </p>
-            <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+            <button onclick="dogButtonClick()"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></button>
            </div>
           </div>
 
           <div class= "grid-item">
             <div>
-            <img src="images/jack-card.jpg" alt="Picture of Jack" style="width:100%;">
+              <button onclick="dogPhotoClick('Jack', 'Beagle', 123.45)"><img src="images/jack-card.jpg" alt="Picture of Jack" style="width:100%;"></button>
+              <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
             <h3>Jack</h3>
@@ -90,13 +111,14 @@
             <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
               Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
               non blandit massa enim nec. </p>
-            <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+            <button onclick="dogButtonClick()"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></button>
            </div>
           </div>
 
           <div class= "grid-item">
             <div>
-            <img src="images/duffy-card.jpg" alt="Picture of Duffy" style="width:100%;">
+              <button onclick="dogPhotoClick('Duffy', 'Pitbull Terrier', 123.45)"><img src="images/duffy-card.jpg" alt="Picture of Duffy" style="width:100%;"></button>
+              <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
             <h3>Duffy</h3>
@@ -104,13 +126,14 @@
             <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
               Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
               non blandit massa enim nec. </p>
-            <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+            <button onclick="dogButtonClick()"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></button>
            </div>
           </div>
 
           <div class= "grid-item">
             <div>
-            <img src="images/lucas-card.jpg" alt="Picture of Lucas" style="width:100%;">
+              <button onclick="dogPhotoClick('Lucas', 'German Shepherd', 123.45)"><img src="images/lucas-card.jpg" alt="Picture of Lucas" style="width:100%;"></button>
+              <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
             <h3>Lucas</h3>
@@ -118,13 +141,14 @@
             <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
               Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
               non blandit massa enim nec. </p>
-            <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt" style="width:100%;"></a>
+            <button onclick="dogButtonClick()"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></button>
            </div>
           </div>
 
           <div class= "grid-item">
             <div>
-            <img src="images/jake-card.jpg" alt="Picture of Jake" style="width:100%;">
+              <button onclick="dogPhotoClick('Jake', 'Labrador Retriever', 123.45)"><img src="images/jake-card.jpg" alt="Picture of Jake" style="width:100%;"></button>
+              <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
             <h3>Jake</h3>
@@ -132,13 +156,14 @@
             <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
               Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
               non blandit massa enim nec. </p>
-            <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+            <button onclick="dogButtonClick()"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></button>
            </div>
           </div>
 
          <div class= "grid-item">
            <div>
-           <img src="images/angus-card.jpg" alt="Picture of Angus" style="width:100%;">
+             <button onclick="dogPhotoClick('Angus', 'French Bulldog', 123.45)"><img src="images/angus-card.jpg" alt="Picture of Angus" style="width:100%;"></button>
+            <script src="./js/lesson4Assignment2.js"></script>
           </div>
           <div class= "grid-text">
             <h3>Angus</h3>
@@ -146,13 +171,14 @@
            <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
            Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
            non blandit massa enim nec. </p>
-           <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+           <button onclick="dogButtonClick()"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></button>
          </div>
        </div>
 
          <div class= "grid-item">
            <div>
-           <img src="images/violet-card.jpg" alt="Picture of Violet" style="width:100%;">
+             <button onclick="dogPhotoClick('Violet', 'German Shepherd', 123.45)"><img src="images/violet-card.jpg" alt="Picture of Violet" style="width:100%;"></button>
+             <script src="./js/lesson4Assignment2.js"></script>
            </div>
            <div class= "grid-text">
            <h3>Violet</h3>
@@ -160,7 +186,7 @@
            <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
              Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
              non blandit massa enim nec. </p>
-           <a href="adoptadog-checkout.html"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></a>
+           <button onclick="dogButtonClick()"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></button>
           </div>
          </div>
       </div>
