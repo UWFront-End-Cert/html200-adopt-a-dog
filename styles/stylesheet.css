@@ -1,5 +1,7 @@
 .header-container {
-  background-image: url("/Users/Admin/Desktop/html200/html200-adopt-a-dog/images/header-image.jpg");
+  background-image:
+    url("/Users/Admin/Desktop/html200/html200-adopt-a-dog/images/header-image.jpg"),
+    radial-gradient(circle, #1261A0 90%, white);
   background-repeat: no-repeat;
   display: grid;
   justify-content: space-around;
