@@ -1,0 +1,51 @@
+ * {
+   margin: 0px;
+   padding: 0px;
+ }
+
+  header {
+  background: #000000 url(images/header-image.jpg) no-repeat;
+  height: 34%;
+  width: 100%;
+  position: absolute;
+
+
+}
+#dog-adoption-agency {
+  color: green;
+  font-style: italic;
+  font-size: 20px;
+}
+
+
+.header-container {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+.logo-dog-adoption {
+   margin: 2em;
+   padding: 1em;
+
+}
+.top-checkout {
+  margin: 2em;
+  padding: 2em;
+}
+.top-checkout {
+  color: white;
+}
+.check-out {
+  margin: 1em;
+}
+.check-out a {
+
+  color: white;
+  background-color: green;
+  text-decoration: none;
+  padding: 0.625em 1em;
+
+}
