@@ -60,18 +60,16 @@
           <fieldset id="first-time-adopter">
             <legend class="checkout-title">First Time Adopter?</legend>
             <label>
-            <input class="first-time-selection" id="firstTimeYes" type="radio" name="yes-no" value="yes">Yes
-            </label>
-            <label>
-            <input class="first-time-selection-2" id="firstTimeNo" type="radio" name="yes-no" value="no">No
+            <input class="first-time-selection" id="firstTime" type="radio" name="firstTime" value="Yes">Yes
+            <input class="first-time-selection-2" id="firstTime" type="radio" name="firstTime" value="No">No
             </label>
           </fieldset>
-          <label id="pickup-location" class="checkout-title">
+          <label id="pickupLocation" class="checkout-title">
             Pickup Location
             <select id="locations" name="locations">
-              <option value="seattle">Seattle Office</option>
-              <option value="redmond">Redmond Office</option>
-              <option value="bellevue">Bellevue Office</option>
+              <option value="Seattle">Seattle Office</option>
+              <option value="Redmond">Redmond Office</option>
+              <option value="Bellevue">Bellevue Office</option>
             </select>
           </label>
           <h3 class="checkout-title">Dogs Adopted</h3>
@@ -89,7 +87,7 @@
           </div>
           <h3 class="checkout-title-final">Total Adoption Cost</h3>
           <p class="final-cost">$1234.56</p>
-          <input id="checkout-button" onclick="checkoutClick()" type="submit" value="Submit">
+          <input id="checkout-button" onClick="submitClick()" type="submit" value="Submit">
         </form>
       </div>
     </main>
