@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin:0;
+}
+header, nav, main, footer {
+  margin:0;
+}
+
+header {
+  display: block;
+  background: darkblue;
+}
+
+nav {
+  display: block;
+  background: gray;
+}
+
+footer {
+  display: block;
+  background: darkgray;
+}
+
+footer nav {
+  background:transparent;
+}
+
+header section,
+nav ul,
+main section,
+footer section {
+  max-width:1200px;
+  margin:0 auto;
+}
+
+header .logo,
+footer .logo {
+  max-width:50%;
+}
+
+.checkout-img {
+  max-width:30px;
+}
