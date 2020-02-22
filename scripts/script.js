@@ -13,11 +13,22 @@ function addTotal(fee) {
 
 /* Checkout Form */
 function submitInfo() {
-  let entries = document.getElementsByTagName('input', 'option');
-  alert('Thank you! The form information has been received.');
+    let entries1 = document.getElementsByTagName('input');
+    let entries2 = document.getElementsByTagName('select');
 
-  let i;
-  for (i = 0; i < entries.length; i++) {
-  console.log(entries[i].value);
-  }
+    alert('Thank you! The form information has been received.');
+
+    let a;
+    for (a = 0; a < entries1.length; a++) {
+    console.log(entries1[a].value);
+    }
+
+    let b;
+    for (b = 0; b < entries2.length; b++) {
+    console.log(entries2[b].value);
+    }
+
+/*  if (entries1[a].getAttribute("type") == 'radio') {
+    console.log(Radio Button checked? ${entries1[a].checked} );
+  } */
 }
