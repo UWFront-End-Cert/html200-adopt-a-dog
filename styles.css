@@ -1,0 +1,28 @@
+header {
+  background-image: url(./images/header-image.jpg);
+}
+
+.homeimg {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  display: inline;
+}
+
+.div1 {
+  float: right;
+}
+
+.checkout {
+  width: 2rem;
+  height: 2rem;
+}
+.homelogo {
+  width: 20rem;
+  height: 10rem;
+}
+.checkoutf {
+  float: right;
+  text-align: left;
+  text-overflow: clip;
+}
