@@ -19,7 +19,7 @@ function submitClick() {
 
   var firstTime = document.querySelector('input[name="firstTime"]:checked');
   console.log(firstTime.value);
-  
+
   var locations = document.getElementById("locations");
   console.log(locations.value);
 

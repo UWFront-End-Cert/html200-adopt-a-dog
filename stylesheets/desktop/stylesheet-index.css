@@ -97,6 +97,10 @@ aside {
   font-weight: bolder;
 }
 
+.hover-border {
+  outline: 4px dotted #39c639;
+}
+
 #murphy {
   grid-column: 1;
   grid-row: 1;
