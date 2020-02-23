@@ -20,7 +20,7 @@
         </div>
         <div class="grid-item-2">
           <img src="images/cart-icon.svg" alt="Click to go to checkout" style="min-width: 2rem; max-width:5%;">$1234.56
-          <p><a href="adoptadog-checkout.html"><img src="images/checkout-button.jpg" alt="Click to go to checkout" style="min-width: 7.5rem; max-width:30%;"></a>
+          <p><a href="adoptadog-checkout.html"><img src="images/checkout-button.jpg" alt="Click to go to checkout" style="min-width: 1rem; max-width:15%;"></a>
         </div>
       </div>
     </header>
@@ -32,14 +32,36 @@
         <a class="nav-link" href="adoptadog-blog.html">Blog</a>
       </nav>
 
-      <!--Home intro-->
-      <div class="grid-container">
-        <div class= "grid-item-3">
-          <img src="images/home-intro.jpg" alt="Introduction photo of dog and his owner" style="width:100%;">
+      <!--float left controls wrap. Use p class =header w/ same padding as header image class-->
+
+        <div class="content-box">
+            <h2>From Our Blog</h2>
+            <img src="images/blog-1.jpg" alt="Dog and owner looking over a canyon" style="width:100%;">
+            <h3>Traveling with your dog</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+               ut labore et dolore magna aliqua.</p>
+            <br>
+            <a href="adoptadog-blog.html">Read more >></a>
+            <br><br><br>
+            <img src="images/blog-2.jpg" alt="Many dogs sitting and behaving" style="width:100%;">
+            <h3>How to Walk Multiple Dogs</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+               ut labore et dolore magna aliqua.</p>
+            <br>
+            <a href="adoptadog-blog.html">Read more >></a>
+            <br><br><br>
+            <img src="images/blog-3.jpg" alt="Dog and owner playing fetch at dawn" style="width:100%;">
+            <h3>Teach Your Dog to Fetch!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+               ut labore et dolore magna aliqua.
+            <br>
+            <a href="adoptadog-blog.html">Read more >></a>
         </div>
-        <div class = "grid-item-4">
-          <h1>Adopt A Dog</h1>
-          <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+
+        <div class="header">
+          <img class="header-image" src="images/home-intro.jpg" alt="Introduction photo of dog and his owner">
+        <h1>Adopt A Dog</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
              ut labore et dolore magna aliqua. Posuere morbi leo urna molestie. Fusce id velit ut tortor
              pretium viverra suspendisse potenti. Suscipit tellus mauris a diam maecenas. Odio tempor orci
              dapibus ultrices in. Tellus pellentesque eu tincidunt tortor. Turpis cursus in hac habitasse
@@ -47,26 +69,11 @@
              feugiat scelerisque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Amet mauris
              commodo quis imperdiet massa tincidunt nunc. Auctor urna nunc id cursus metus aliquam. Commodo
              odio aenean sed adipiscing diam.</p>
+             <br>
+             <a href="adoptadog-blog.html" class="content-box-mobile">Link to our Blog >></a>
         </div>
-      </div>
 
-      <!--Try to minimize wasted white space
-      <div class="flex-container">
-        <div>
-          <img src="images/home-intro.jpg" alt="Introduction photo of dog and his owner" style="width:40%;">
-          <h1>Adopt A Dog</h1>
-          <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-             ut labore et dolore magna aliqua. Posuere morbi leo urna molestie. Fusce id velit ut tortor
-             pretium viverra suspendisse potenti. Suscipit tellus mauris a diam maecenas. Odio tempor orci
-             dapibus ultrices in. Tellus pellentesque eu tincidunt tortor. Turpis cursus in hac habitasse
-             platea. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. In tellus integer
-             feugiat scelerisque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Amet mauris
-             commodo quis imperdiet massa tincidunt nunc. Auctor urna nunc id cursus metus aliquam. Commodo
-             odio aenean sed adipiscing diam.</p>
-        </div>
-      </div>
-    -->
-
+      <article>
       <!--Create flexbox grid containing dog profiles-->
       <div class="grid-container">
           <div class= "grid-item">
@@ -159,39 +166,9 @@
             <button onclick="dogButtonClick()"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></button>
            </div>
           </div>
-
-         <div class= "grid-item">
-           <div>
-             <button onclick="dogPhotoClick('Angus', 'French Bulldog', 123.45)"><img src="images/angus-card.jpg" alt="Picture of Angus" style="width:100%;"></button>
-            <script src="./js/lesson4Assignment2.js"></script>
-          </div>
-          <div class= "grid-text">
-            <h3>Angus</h3>
-           <b>Cost to Adopt</b>: $123.45
-           <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
-           Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
-           non blandit massa enim nec. </p>
-           <button onclick="dogButtonClick()"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></button>
-         </div>
-       </div>
-
-         <div class= "grid-item">
-           <div>
-             <button onclick="dogPhotoClick('Violet', 'German Shepherd', 123.45)"><img src="images/violet-card.jpg" alt="Picture of Violet" style="width:100%;"></button>
-             <script src="./js/lesson4Assignment2.js"></script>
-           </div>
-           <div class= "grid-text">
-           <h3>Violet</h3>
-           <b>Cost to Adopt</b>: $123.45
-           <p>Egestas sed tempus urna et pharetra. Duis at consectetur lorem donec.
-             Turpis massa sed elementum tempus. Elementum nibh tellus molestie nunc
-             non blandit massa enim nec. </p>
-           <button onclick="dogButtonClick()"><img src="images/adopt-button.jpg" alt="Click to adopt"  style="width:100%;"></button>
-          </div>
-         </div>
-      </div>
-
-      <p class="aligncenter"><a href="adoptadog-dogs.html"><img src="images/see-more-dogs-button.jpg" alt="Click to see more dogs"  style="min-width: 20rem; max-width:20%;"></a>
+        </div>
+        <p class="aligncenter"><a href="adoptadog-dogs.html"><img src="images/see-more-dogs-button.jpg" alt="Click to see more dogs"  style="min-width: 20rem; max-width:20%;"></a>
+    </article>
 
       <footer>
         <p><img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo" style="min-width:20rem; max-width:20%;"></p>
