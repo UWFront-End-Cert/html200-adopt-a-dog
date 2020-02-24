@@ -196,8 +196,6 @@ a.button {
 
 .button,
 button {
-  display: block;
-  max-width: 200px;
   text-align: center;
   color:#093c60;
   padding:10px 35px;
@@ -300,10 +298,29 @@ form input,
 form select {
   font-family: inherit;
   font-size: 100%;
-  min-width:50%;
+  width:50%;
   border:1px solid #ececec;
   height:40px;
   padding:10px 20px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  height:15px;
+  width:15px;
+  display: inline-block;
+}
+
+form .form-horizontal {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+form .form-horizontal input,
+form .form-horizontal select {
+  width:auto;
+  margin-right:20px;
 }
 
 /* barrowing media breakpoints from boostrap :) */
@@ -361,6 +378,10 @@ form select {
   .blog .card .card-title {
     order:-1;
   }
+
+  form .form-horizontal {
+    flex-direction: column;
+  }
 }
 
 /* X-Small */
@@ -374,6 +395,32 @@ form select {
   form input,
   form select {
     width: 100%;
+  }
+  header section {
+    flex-direction: column-reverse;
+  }
+  header section article {
+    display: flex;
+    width:100%;
+  }
+
+  header section article:last-child {
+    flex-direction: row;
+  }
+  header section article:first-child {
+    flex-direction: column;
+  }
+  header section .logo,
+  footer section .logo {
+    max-width: 75%;
+    margin-top:20px;
+    align-self: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
