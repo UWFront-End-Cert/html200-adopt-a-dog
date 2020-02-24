@@ -182,6 +182,13 @@ h1, h2, h3, h4, h5, h6 {
 .text-center {
   text-align: center;
 }
+
+.justify-content-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 /* buttons */
 a.button {
   text-decoration: none;
@@ -189,6 +196,9 @@ a.button {
 
 .button,
 button {
+  display: block;
+  max-width: 200px;
+  text-align: center;
   color:#093c60;
   padding:10px 35px;
   font-weight: bold;
@@ -224,6 +234,8 @@ button.btn-gray:hover {
 }
 
 /* cards */
+
+/* dog cards */
 .dogs {
   display: flex;
   flex-wrap: wrap;
@@ -256,3 +268,114 @@ button.btn-gray:hover {
   height:auto;
   margin:0;
 }
+
+/* blog cards */
+
+.blog .card {
+  display: block;
+  margin-bottom:50px;
+  overflow: hidden;
+  clear: both;
+}
+
+.blog .card .card-img {
+  float:left;
+  margin-right:30px;
+}
+
+/* checkout form */
+form * {
+  display: block;
+}
+
+form label {
+  font-family: serif;
+  color:#093c60;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom:5px;
+}
+
+form input,
+form select {
+  font-family: inherit;
+  font-size: 100%;
+  min-width:50%;
+  border:1px solid #ececec;
+  height:40px;
+  padding:10px 20px;
+}
+
+/* barrowing media breakpoints from boostrap :) */
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1199px) {
+  .dogs .card {
+    max-width: 23%;
+  }
+  header section,
+  nav ul,
+  main section,
+  footer section {
+    padding-left:20px;
+    padding-right:20px;
+  }
+  nav ul li:first-child {
+    margin-left:0px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+  .dogs .card {
+    max-width: 48%;
+  }
+  form input,
+  form select {
+    width: 75%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 769px) {
+  .intro {
+    flex-direction: column-reverse;
+  }
+
+  .intro img {
+    margin-right:0;
+    min-width:100%;
+  }
+
+  .blog .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog .card .card-img {
+    width:100%;
+    height:auto;
+    margin:0;
+  }
+
+  .blog .card .card-title {
+    order:-1;
+  }
+}
+
+/* X-Small */
+@media (max-width: 575px) {
+  .dogs .card {
+    max-width: 100%;
+  }
+  .intro img {
+    display: none;
+  }
+  form input,
+  form select {
+    width: 100%;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
