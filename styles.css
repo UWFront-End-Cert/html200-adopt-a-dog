@@ -14,11 +14,11 @@ header, nav, main, footer {
   margin:0;
 }
 
-header section,
+header .content,
 nav ul,
-main section,
-footer section {
-  max-width:1200px;
+main .content,
+footer .content {
+  max-width:75rem;
   margin:0 auto;
 }
 
@@ -40,29 +40,29 @@ main {
   flex-direction: row;
   overflow: hidden;
   clear: both;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 
 .intro img {
-  margin-right:30px;
+  margin-right:2rem;
 }
 
 /* header */
 
-header section {
+header .content {
   display: flex;
   justify-content: space-between;
-  padding:30px 0;
+  padding:2rem 0;
   color:#ffffff;
 }
 
-header section aside {
+header .content aside {
   text-align: right;
   font-weight:bold;
 }
 
-header section aside button {
-  margin-top:15px;
+header .content aside button {
+  margin-top:1rem;
 }
 
 header h2 {
@@ -80,16 +80,8 @@ header {
   background: #093c60;
 }
 
-header article {
-
-}
-
-header aside {
-
-}
-
 .checkout-img {
-  max-width:30px;
+  max-width:2rem;
 }
 
 
@@ -97,7 +89,7 @@ header aside {
 nav {
   display: block;
   background: #ececec;
-  margin-bottom:50px;
+  margin-bottom:3rem;
 }
 
 nav ul {
@@ -114,13 +106,13 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   color:#093c60;
-  padding:25px 20px 20px 5px;
+  padding:1.56rem 1.25rem 1.25rem .3125rem;
   display: block;
   transition: color 0.2s, background-color 0.2s;
 }
 
 nav ul li:first-child {
-  margin-left:-40px;
+  margin-left:-2.5rem;
 }
 
 nav ul li a:hover {
@@ -132,7 +124,7 @@ nav ul li a:after {
   display: inline-block;
   content:"/";
   color:#093c60;
-  padding-left:20px;
+  padding-left:1.25rem;
   transition: color 0.2s;
 }
 
@@ -164,8 +156,8 @@ footer {
   background: #3d3d3d;
   color:#ffffff;
   text-align: center;
-  padding-top:75px;
-  margin-top:100px;
+  padding-top:4.7rem;
+  margin-top:6.25rem;
 }
 
 footer nav {
@@ -201,11 +193,11 @@ a.button {
 button {
   text-align: center;
   color:#093c60;
-  padding:10px 35px;
+  padding:0.625rem 2.2rem;
   font-weight: bold;
   font-size: 0.9rem;
   border:0;
-  border-radius: 2px;
+  border-radius:0.125rem;
   transition: color 0.2s, background-color 0.2s;
 }
 
@@ -252,17 +244,17 @@ button.btn-gray:hover {
   display: flex;
   flex-direction: column;
   max-width: 21%;
-  box-shadow: 0 2px 5px #cccccc;
-  padding-bottom:15px;
-  margin-bottom: 50px;
+  box-shadow: 0 0.125rem .3125rem #cccccc;
+  padding-bottom:1rem;
+  margin-bottom: 3rem;
 }
 
 .dogs .card > * {
-  margin:10px 15px 5px;
+  margin:0.625rem 1rem .3125rem;
 }
 
 .dogs .card .card-title {
-  margin-top:20px;
+  margin-top:1.25rem;
 }
 
 .dogs .card .card-img {
@@ -276,10 +268,10 @@ button.btn-gray:hover {
 .blog .card,
 .cart-confirm .card {
   display: flex;
-  margin-bottom:50px;
+  margin-bottom:3rem;
 }
 .blog .card .card-img {
-  margin-right:30px;
+  margin-right:2rem;
   display: block;
 
 }
@@ -291,31 +283,31 @@ button.btn-gray:hover {
 /* cart confirmation cards */
 .cart-confirm {
   display: flex;
-  margin-top:20px;
+  margin-top:1.25rem;
 }
 
 .cart-confirm .card {
-  margin-bottom:10px;
+  margin-bottom:0.625rem;
 }
 .cart-confirm .card .card-img {
-  max-width:75px;
-  max-height: 75px;
-  margin-right: 20px;
+  max-width:4.7rem;
+  max-height: 4.7rem;
+  margin-right: 1.25rem;
 }
 
 .cart-confirm .card:nth-child(1n+2) {
-  margin-left: 40px;
+  margin-left: 2.5rem;
 }
 
 .cart-confirm .card h4 {
   margin-top:0;
-  margin-bottom:8px;
+  margin-bottom: 0.5rem;
 }
 
 
 .cart-confirm .card p {
   margin-top:0;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .cart-confirm .card p * {
@@ -331,8 +323,8 @@ form label {
   font-family: 'Kadwa', serif;
   color:#093c60;
   font-weight: bold;
-  margin-top: 30px;
-  margin-bottom:5px;
+  margin-top: 2rem;
+  margin-bottom:0.3125rem;
 }
 
 form input,
@@ -341,14 +333,14 @@ form select {
   font-size: 100%;
   width:50%;
   border:1px solid #c0c0c0;
-  height:40px;
-  padding:10px 20px;
+  height:2.5rem;
+  padding:0.625rem 1.25rem;
 }
 
 form input[type="radio"],
 form input[type="checkbox"] {
-  height:15px;
-  width:15px;
+  height:1rem;
+  width:1rem;
   display: inline-block;
 }
 
@@ -363,7 +355,7 @@ form .form-horizontal {
 form .form-horizontal input,
 form .form-horizontal select {
   width:auto;
-  margin-right:20px;
+  margin-right:1.25rem;
 }
 
 
@@ -375,16 +367,16 @@ form .checkbox-group,
 form .radio-group {
   border:0;
   padding:0;
-  margin-bottom:20px;
+  margin-bottom:1.25rem;
 }
 
 form .checkbox-group label,
 form .radio-group label {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-top: 12px;
-  margin-right:40px;
+  padding-left: 2.2rem;
+  margin-top:0.75rem;
+  margin-right:2.5rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -410,14 +402,14 @@ form .radio-group input {
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
+  height: 1.56rem;
+  width: 1.56rem;
   border:1px solid #c0c0c0;
   transition: background .25s;
 }
 
 .radiomark {
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 .checkbox-group label:hover input ~ .checkmark,
@@ -444,20 +436,20 @@ form .radio-group input {
 
 
 .radio-group input:checked ~ .radiomark:after {
-  left:5px;
-  top:5px;
-  width:13px;
-  height:13px;
-  border-radius: 10px;
+  left:0.3125rem;
+  top:0.3125rem;
+  width:0.8125rem;
+  height:0.8125rem;
+  border-radius: 0.625rem;
   background-color: #c0c0c0;
 }
 .checkbox-group input:checked ~ .checkmark:after {
-  left:7px;
-  top:3px;
-  width:5px;
-  height:10px;
+  left:0.4375rem;
+  top:0.1875rem;
+  width:0.3125rem;
+  height:0.625rem;
   border:solid #c0c0c0;
-  border-width:0 3px 3px 0;
+  border-width:0 0.1875rem 0.1875rem 0;
   -webkit-transform:rotate(45deg);
   -ms-transform:rotate(45deg);
   transform:rotate(45deg)
@@ -470,15 +462,15 @@ form .radio-group input {
   .dogs .card {
     max-width: 23%;
   }
-  header section,
+  header .content,
   nav ul,
-  main section,
-  footer section {
-    padding-left:20px;
-    padding-right:20px;
+  main .content,
+  footer .content {
+    padding-left:1.25rem;
+    padding-right:1.25rem;
   }
   nav ul li:first-child {
-    margin-left:0px;
+    margin-left:0;
   }
 }
 
@@ -514,7 +506,7 @@ form .radio-group input {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-top:30px;
+    padding-top:2rem;
   }
 
   .blog .card .card-img {
@@ -525,7 +517,7 @@ form .radio-group input {
 
   .blog .card .card-title {
     position: absolute;
-    top:-5px;
+    top:-0.3125rem;
   }
 
   .blog .card .card-img img {
@@ -539,12 +531,12 @@ form .radio-group input {
   }
   .cart-confirm .card:nth-child(1n+2) {
     margin-left:0;
-    margin-top:20px;
+    margin-top:1.25rem;
   }
 }
 
 /* X-Small */
-@media (max-width: 575px) {
+@media (max-width: 54.7rem) {
   .dogs .card {
     max-width: 100%;
   }
@@ -558,13 +550,13 @@ form .radio-group input {
     width: 100%;
   }
 
-  header section {
-    padding:15px 20px;
+  header .content {
+    padding:1rem 1.25rem;
   }
 
-  header section h2 {
+  header .content h2 {
     font-size:1.25rem;
-    padding-right:20px;
+    padding-right:1.25rem;
   }
 
   nav ul {
