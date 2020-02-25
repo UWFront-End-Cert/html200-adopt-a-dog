@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Kadwa|Work+Sans&display=swap');
+
 * {
   box-sizing: border-box;
 }
 body {
   margin:0;
-  font-family: sans-serif;
-  font-size: 18px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
   color:#3d3d3d;
 }
 header, nav, main, footer {
@@ -175,7 +178,7 @@ footer .logo {
 
 /* typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: serif;
+  font-family: 'Kadwa', serif;
   color:#093c60;
 }
 
@@ -202,6 +205,7 @@ button {
   font-weight: bold;
   font-size: 0.9rem;
   border:0;
+  border-radius: 2px;
   transition: color 0.2s, background-color 0.2s;
 }
 
@@ -267,18 +271,55 @@ button.btn-gray:hover {
   margin:0;
 }
 
-/* blog cards */
+/* blog & cart-confirm cards */
 
-.blog .card {
-  display: block;
+.blog .card,
+.cart-confirm .card {
+  display: flex;
   margin-bottom:50px;
-  overflow: hidden;
-  clear: both;
+}
+.blog .card .card-img {
+  margin-right:30px;
+  display: block;
+
 }
 
-.blog .card .card-img {
-  float:left;
-  margin-right:30px;
+.blog .card .card-title {
+  margin-top:0;
+}
+
+/* cart confirmation cards */
+.cart-confirm {
+  display: flex;
+  margin-top:20px;
+}
+
+.cart-confirm .card {
+  margin-bottom:10px;
+}
+.cart-confirm .card .card-img {
+  max-width:75px;
+  max-height: 75px;
+  margin-right: 20px;
+}
+
+.cart-confirm .card:nth-child(1n+2) {
+  margin-left: 40px;
+}
+
+.cart-confirm .card h4 {
+  margin-top:0;
+  margin-bottom:8px;
+}
+
+
+.cart-confirm .card p {
+  margin-top:0;
+  font-size: .8rem;
+}
+
+.cart-confirm .card p * {
+  display: inline;
 }
 
 /* checkout form */
@@ -287,7 +328,7 @@ form * {
 }
 
 form label {
-  font-family: serif;
+  font-family: 'Kadwa', serif;
   color:#093c60;
   font-weight: bold;
   margin-top: 30px;
@@ -299,7 +340,7 @@ form select {
   font-family: inherit;
   font-size: 100%;
   width:50%;
-  border:1px solid #ececec;
+  border:1px solid #c0c0c0;
   height:40px;
   padding:10px 20px;
 }
@@ -315,12 +356,111 @@ form .form-horizontal {
   display: flex;
   flex-direction: row;
   width: 50%;
+  border:0;
+  padding:0;
 }
 
 form .form-horizontal input,
 form .form-horizontal select {
   width:auto;
   margin-right:20px;
+}
+
+
+form input[type="submit"] {
+  width:auto;
+}
+
+form .checkbox-group,
+form .radio-group {
+  border:0;
+  padding:0;
+  margin-bottom:20px;
+}
+
+form .checkbox-group label,
+form .radio-group label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 12px;
+  margin-right:40px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: normal;
+  color:#3d3d3d;
+}
+
+form .checkbox-group input,
+form .radio-group input {
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  cursor:pointer;
+  height:0;
+  width:0;
+}
+
+.checkmark,
+.radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border:1px solid #c0c0c0;
+  transition: background .25s;
+}
+
+.radiomark {
+  border-radius: 15px;
+}
+
+.checkbox-group label:hover input ~ .checkmark,
+.radio-group label:hover input ~ .radiomark {
+  background-color: #eee;
+}
+
+.checkbox-group input:checked ~ .checkmark,
+.radio-group input:checked ~ .radiomark {
+  background-color: white;
+}
+
+.radiomark:after,
+.checkmark:after {
+  content:"";
+  position: absolute;
+  display: none;
+}
+
+.radiomark:after,
+.checkmark:after {
+  display: block;
+}
+
+
+.radio-group input:checked ~ .radiomark:after {
+  left:5px;
+  top:5px;
+  width:13px;
+  height:13px;
+  border-radius: 10px;
+  background-color: #c0c0c0;
+}
+.checkbox-group input:checked ~ .checkmark:after {
+  left:7px;
+  top:3px;
+  width:5px;
+  height:10px;
+  border:solid #c0c0c0;
+  border-width:0 3px 3px 0;
+  -webkit-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  transform:rotate(45deg)
 }
 
 /* barrowing media breakpoints from boostrap :) */
@@ -348,13 +488,19 @@ form .form-horizontal select {
     max-width: 48%;
   }
   form input,
-  form select {
+  form select,
+  form .form-horizontal {
     width: 75%;
   }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 769px) {
+
+  h1 {
+    margin-top:0;
+  }
+
   .intro {
     flex-direction: column-reverse;
   }
@@ -367,6 +513,8 @@ form .form-horizontal select {
   .blog .card {
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding-top:30px;
   }
 
   .blog .card .card-img {
@@ -376,11 +524,22 @@ form .form-horizontal select {
   }
 
   .blog .card .card-title {
-    order:-1;
+    position: absolute;
+    top:-5px;
   }
 
-  form .form-horizontal {
+  .blog .card .card-img img {
+    min-width: 100%;
+    height: auto;
+  }
+
+  form .form-horizontal,
+  .cart-confirm {
     flex-direction: column;
+  }
+  .cart-confirm .card:nth-child(1n+2) {
+    margin-left:0;
+    margin-top:20px;
   }
 }
 
@@ -393,28 +552,19 @@ form .form-horizontal select {
     display: none;
   }
   form input,
-  form select {
+  form select,
+  form .form-horizontal input,
+  form .form-horizontal select {
     width: 100%;
   }
+
   header section {
-    flex-direction: column-reverse;
-  }
-  header section article {
-    display: flex;
-    width:100%;
+    padding:15px 20px;
   }
 
-  header section article:last-child {
-    flex-direction: row;
-  }
-  header section article:first-child {
-    flex-direction: column;
-  }
-  header section .logo,
-  footer section .logo {
-    max-width: 75%;
-    margin-top:20px;
-    align-self: center;
+  header section h2 {
+    font-size:1.25rem;
+    padding-right:20px;
   }
 
   nav ul {

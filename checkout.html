@@ -43,7 +43,7 @@
             <div class="form-group">
               <label for="state">State</label>
               <select id="state" name="state">
-                <option value="blank">Select a State</option>
+                <option value="blank">State</option>
               </select>
             </div>
             <div class="form-group">
@@ -53,9 +53,17 @@
           </div>
           <!-- first time adopter -->
           <label>First Time Adopter?</label>
-          <div class="form-horizontal">
-            <label for="yes">Yes <input id="yes" type="radio" name="first-time" value="yes"></label>
-            <label for="no">No <input id="no" type="radio" name="first-time" value="no"></label>
+          <div class="form-horizontal radio-group">
+            <label for="yes">
+              <input id="yes" type="radio" name="first-time" value="yes">
+              Yes
+              <span class="radiomark"></span>
+            </label>
+            <label for="no">
+              <input id="no" type="radio" name="first-time" value="no">
+              No
+              <span class="radiomark"></span>
+            </label>
           </div>
           <label for="pickup">Pickup Location</label>
           <select id="pickup" name="pickup">
@@ -65,15 +73,22 @@
           <div class="cart-confirm">
             <div class="card">
               <img class="card-img" src="images/lucas-checkout.jpg" alt="smiling black dog looking up into the camera.">
-              <h4 class="card-title">Lucas</h4>
-              <p><strong>Cost to Adopt:</strong> $123.45</p>
+              <div class="card-content">
+                <h4 class="card-title">Lucas</h4>
+                <p><strong>Cost to Adopt:</strong> $123.45</p>
+              </div>
             </div>
             <div class="card">
               <img class="card-img" src="images/duffy-checkout.jpg" alt="white and brown dog, white face and brown ears, looking earnestly into the camera.">
-              <h4 class="card-title">Duffy</h4>
-              <p><strong>Cost to Adopt:</strong> $123.45</p>
+              <div class="card-content">
+                <h4 class="card-title">Duffy</h4>
+                <p><strong>Cost to Adopt:</strong> $123.45</p>
+              </div>
             </div>
           </div>
+          <label>Total Adoption Cost</label>
+          <p>$1234.56</p>
+          <input type="submit" name="Submit" value="Submit" class="button btn-green">
         </form>
       </section>
     </main>
