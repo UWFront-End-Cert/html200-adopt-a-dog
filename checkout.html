@@ -2,24 +2,35 @@
 <html lang="zxx" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Checkout Page</title>
   </head>
   <body>
+
     <header>
-      <div>
-        <img src="images/adoptadog-logo.svg" alt="Adoptadog logo">
-        <img src="images/header-image.jpg" alt="Brown dog with soulful eyes looking out a window">
-        <h1>Seattle’s premiere dog adoption agency</h1>
+      <div class="header">
+        <img class="header-img" src="images/header-image.jpg" alt="Brown dog with soulful eyes looking out a window">
+        <div class="header-logo">
+          <img class="header-logo" src="images/adoptadog-logo.svg" alt="Adoptadog logo">
+          <h1>Seattle’s premiere dog adoption agency</h1>
+        </div>
       </div>
-      <div>
-        <p>$ 1234.56</p>
+      <div class="header-checkout">
+        <p><img src="images/cart-icon.svg" width="25" alt="shopping cart">
+        $ 1234.56</p>
         <a href="checkout.html">Checkout</a>
       </div>
     </header>
 
-    <h1>Checkout</h1>
+    <nav>
+      <a href="index.html">Home</a> /
+      <a href="dog.html">Dogs</a> /
+      <a href="blog.html">Blog</a>
+    </nav>
+
+    <h2 class="form-checkout">Checkout</h2>
     <br>
-    <form method="GET">
+    <form class="container" method="GET">
       <label>Name
         <br>
         <input type="text" name="yourName">
@@ -98,30 +109,34 @@
       </label>
 
       <br>
-      <div>
+      <div class="container">
         <h3>Dogs Adopted</h3>
-        <div>
-          <img src="images/lucas-checkout.jpg" alt="lucas">
-          <h4>Lucas</h4>
-          <p>Cost to Adopt: $123.45</p>
+        <div class="checkout-box">
+          <img class="checkout-pic-one" src="images/lucas-checkout.jpg" alt="lucas">
+          <div class="checkout-info-one">
+            <h4>Lucas</h4>
+            <p>Cost to Adopt: $123.45</p>
+          </div>
         </div>
 
-        <div>
-          <img src="images/duffy-checkout.jpg" alt="duffy">
-          <h4>Lucas</h4>
-          <p>Cost to Adopt: $123.45</p>
+        <div class="checkout-box">
+          <img class="checkout-pic-two" src="images/duffy-checkout.jpg" alt="duffy">
+          <div class="checkout-info-two">
+            <h4>Duffy</h4>
+            <p>Cost to Adopt: $123.45</p>
+          </div>
         </div>
       </div>
 
-      <div>
+      <div class="checkout-t">
         <h3>Total Adoption Cost</h3>
-        <p>$1234.56</p>
+        <br>$1234.56
       </div>
 
       <input type="submit" name="submit">
     </form>
 
-    <footer>
+    <footer class="footer-container">
       <div>
         <img src="images/adoptadog-logo.svg" alt="adoptadog logo">
       </div>
