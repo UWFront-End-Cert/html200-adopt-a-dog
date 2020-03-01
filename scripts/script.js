@@ -4,14 +4,31 @@ function showInfo(name,breed,fee) {
   alert(result);
 }
 
+
+/* Totals with Javascript */
+/*
 let total = 0;
 function addTotal(fee) {
   let result = ('Your total is $' + (total += fee));
   alert(result);
 }
+*/
 
 
-/* Checkout Form */
+/* Totals with jQuery */
+let total = 0;
+
+$('.addTotal').
+  click(function() {
+  total += 150;
+  $('#totalFee').text('$' + total);
+  alert('Added to cart');
+});
+
+
+
+/* Checkout Form — JavaScript */
+/*
 function submitInfo() {
     let entries1 = document.getElementsByTagName('input');
     let entries2 = document.getElementsByTagName('select');
@@ -27,8 +44,28 @@ function submitInfo() {
     for (b = 0; b < entries2.length; b++) {
     console.log(entries2[b].value);
     }
+  }
+  */
 
-/*  if (entries1[a].getAttribute("type") == 'radio') {
-    console.log(Radio Button checked? ${entries1[a].checked} );
-  } */
-}
+
+/* Checkout Form — jQuery */
+$('#submitForm').
+  click(function() {
+  alert('Thank you! The form information has been received.');
+  console.log($('form').serialize());
+});
+
+
+/* Adding jQuery to Dog Tiles */
+$('.dog-profiles img').
+  mouseenter(function() {
+  $(this).animate({opacity: '0.25'}, 'linear');
+});
+
+$('.dog-profiles img').
+  mouseleave(function() {
+  $(this).animate({opacity: '1'}, 'linear');
+})
+
+/* Source for jQuery selectors:
+https://www.w3schools.com/jquery/trysel.asp */
