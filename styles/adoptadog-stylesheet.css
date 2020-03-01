@@ -4,11 +4,16 @@ ruining some of the header and footer styles.*/
 *{margin:0;}
 
 header {
+  color: white;
+  background: linear-gradient(to right, white, purple, gold, white);
   background-image: url('../images/header-image.jpg');
   padding: 3rem;
   height: 20rem;
-  color: white;
+  width: 100%
   font-family: 'Open Sans', sans-serif;
+  background-size: cover;
+}
+body {
 }
 .header-h1 {
   color: lime;
@@ -46,7 +51,12 @@ h3 {
 }
 p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
+}
+.max-img {
+  max-width: 350px;
+  height: auto;
+}
 }
 .content-box {
   float: right;
@@ -127,6 +137,7 @@ img.wrap {
   display:grid;
   flex-direction: column;
   border: 0.125rem solid whitesmoke;
+  max-width: 350px;
 }
 .grid-text {
   padding: 0.5rem 1rem 1rem 1rem;
@@ -254,6 +265,7 @@ input[type=submit]:hover {
     padding: 2rem 10% 0rem 0.5rem;
     font-size: 0.8rem;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 350px;
   }
   .content-box-mobile {
     display: none;
