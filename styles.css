@@ -128,6 +128,7 @@ h3 {
   font-weight: 700;
   font-size: 1em;
   color: #103861;
+  margin-left: -1em;
 }
 
 h4 {
@@ -148,6 +149,7 @@ p {
   font-family: sans-serif;
   font-weight: 300;
   font-size: 1em;
+  padding-left: -1em;
 }
 
 .home-container {
@@ -223,8 +225,7 @@ p {
   font-weight: 700;
   font-size: 1em;
   padding: .5em 1em .5em 1em;
-  margin-right:45%;
-  margin-left: 35%;
+  margin-left: 40%;
   background-color: #ccc;
   border-radius: .5em;
   text-decoration: none;
@@ -249,24 +250,26 @@ p {
 .blog-article {
   display: flex;
   flex-flow: row wrap;
-  margin: 0em 1em 2em 0em;
+  margin: 0em 1em 1em 0em;
   max-width: 90%;
+  max-height: 60%;
+  padding-bottom: 10rem;
 }
 
 .blog-article img {
   float: left;
-  width: 17em;
-  height: 17em;
+  width: 25%;
+  height: 25%;
 }
 
 .blog-text {
   float: right;
-  margin-left: 20rem;
-  margin-right: 10rem;
+  margin-left: 0em;
   max-width: 80%;
   margin-top: 0;
   text-align: left;
   position: absolute;
+  padding-left: 0;
 }
 
 
@@ -276,9 +279,9 @@ form {
 }
 
 input {
-  margin: 2em 0em 3em 0em;
+  margin: 2em 2em 3em 2em;
   padding: .5em;
-  width: 65%;
+  width: 50%;
   display: block;
 }
 
@@ -321,7 +324,7 @@ input[type=submit] {
   background-color: #9bc344;
   border-radius: .5em;
   border: none;
-  width: 100px;
+  width: 10rem;
   color: #fff;
 }
 
@@ -334,7 +337,7 @@ input[type=submit]:active {
 }
 
 .form-title {
-  margin-left: 60px;
+  margin-left: 2rem;
 }
 .form-checkout {
   padding-left: 3rem;
@@ -421,9 +424,46 @@ footer nav a {
 }
 
 footer div img {
-  width: 400px;
+  width: 30%;
 }
 footer p {
   max-width: 35%;
   padding-left: 35%;
 }
+@media screen and (min-width:50rem) {
+  p {
+    font-size: .8em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+
+  }
+    .blog-text {
+      float: right;
+      margin-left: 12em;
+      margin-right: 8em;
+      max-width: 80%;
+      margin-top: 0;
+      text-align: left;
+      position: absolute;
+        margin-bottom: 6rem;
+    }
+  }
+
+  @media screen and (max-width:50rem) {
+    p {
+      font-size: .8em;
+      padding-top: .3em;
+      padding-bottom: .3em;
+
+    }
+      .blog-text {
+        float: right;
+        margin-left: 12em;
+        margin-right: 8em;
+        max-width: 80%;
+        margin-top: 0;
+        text-align: left;
+        position: absolute;
+        margin-bottom: 6rem;
+      }
+    }
