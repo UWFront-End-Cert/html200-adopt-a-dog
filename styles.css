@@ -481,6 +481,10 @@ form .radio-group input {
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 991px) {
+  header {
+    background-size: contain;
+    height: 15rem;
+  }
   .dogs .card {
     max-width: 48%;
   }
