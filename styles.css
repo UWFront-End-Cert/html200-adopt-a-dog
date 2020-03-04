@@ -49,6 +49,12 @@ main {
 
 /* header */
 
+header {
+  display: block;
+  background: #0b0b0b url("images/header-image.jpg") no-repeat right top;
+  height:31.25rem;
+}
+
 header .content {
   display: flex;
   justify-content: space-between;
@@ -72,12 +78,7 @@ header h2 {
 }
 
 header .logo {
-  max-width:50%;
-}
-
-header {
-  display: block;
-  background: #093c60;
+  max-width:75%;
 }
 
 .checkout-img {
@@ -145,7 +146,7 @@ footer nav li a {
 
 footer nav ul li a:hover:after,
 footer nav li a:hover {
-  background-color: #3d3d3d;
+  background-color: #093c60;
   color:#81b741;
 }
 
@@ -153,11 +154,15 @@ footer nav li a:hover {
 /* footer */
 footer {
   display: block;
-  background: #3d3d3d;
+  background: #093c60;
   color:#ffffff;
   text-align: center;
   padding-top:4.7rem;
   margin-top:6.25rem;
+}
+
+footer .content {
+  max-width: 30rem;
 }
 
 footer nav {
@@ -165,7 +170,7 @@ footer nav {
 }
 
 footer .logo {
-  max-width:30%;
+  max-width:75%;
 }
 
 /* typography */
@@ -533,10 +538,13 @@ form .radio-group input {
     margin-left:0;
     margin-top:1.25rem;
   }
+  footer .logo {
+    max-width:50%;
+  }
 }
 
 /* X-Small */
-@media (max-width: 54.7rem) {
+@media (max-width: 576px) {
   .dogs .card {
     max-width: 100%;
   }
