@@ -1,5 +1,5 @@
 .header {
-  height: 330px;
+  height: 20em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,19 +178,20 @@ p {
 
 .dog-profiles section {
   border: .1em solid #ccc;
-  width: 10em;
-  margin: 1em 3em 2em 0em;
+  width: 12em;
+  margin: .5em 2em 2em 0em;
 }
 
 .dog-profiles a:link {
   font-family: sans-serif;
   font-weight: 700;
   font-size: .7em;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  padding: 4px 70px 4px 62px;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  margin-left: 4em;
+  padding: 1em 1.5em 1em 1.5em;
   background-color: #9bc344;
-  border-radius: 1px;
+  border-radius: 1em;
   text-decoration: none;
   color: #fff;
 }
@@ -210,9 +211,7 @@ p {
   background-color: #103861;
 }
 
-.dog-info {
-  padding: 1em 2em 3em 2em;
-}
+
 
 .see-more {
   max-width: 100%;
