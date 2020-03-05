@@ -1,0 +1,191 @@
+main {
+	padding: 1em 6em 1em 6em;
+}
+
+
+/*[class*='col-']*/
+
+.col-sm-3 {
+	border: 1px solid rgb(243, 243, 243);
+	padding: 0;
+	margin: 1em;
+	width: 22%;
+}
+
+.col-md-offset-4 nav {
+	text-align: center;
+	padding: 1em;
+	color: rgb(25, 60, 93);
+	margin: 0;
+	background-color: rgb(236, 236, 236);
+}
+
+header {
+	height: auto;
+	width: 100%;
+	top: 0;
+	background-color: rgb(25, 60, 93);
+}
+
+footer {
+	height: auto;
+	width: 100%;
+	bottom: 0;
+	top: 0;
+	background-color: rgb(61, 61, 61);
+	color: white;
+	text-align: center;
+	margin: auto;
+	left: 50%;
+	right: 50%;
+	padding-left: 25em;
+	padding-right: 25em;
+}
+
+header nav {
+	padding: 1em 1em 1em 5em;
+	text-align: left;
+	color: rgb(25, 60, 93);
+	margin: 0;
+	background-color: rgb(236, 236, 236);
+}
+
+footer nav {
+	padding: 1em 1em 1em 5em;
+	text-align: center;
+	color: white;
+	margin: 0;
+	background-color: inherit;
+}
+
+footer nav a {
+	color: white;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+nav a {
+	color: rgb(25, 60, 93);
+	padding: 1rem;
+	margin: 1rem;
+}
+
+header img {
+	padding-top: 1em;
+	padding-left: 5em;
+	max-width: 60%;
+}
+
+footer img {
+	padding-top: 5em;
+	max-width: 50%;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	padding: 1rem;
+	margin: 1rem;
+	text-decoration: underline
+}
+
+.checkout {
+	padding-top: 2em;
+	padding-right: 4em;
+	float: right;
+	text-align: right;
+	color: white;
+}
+
+.checkout-image {
+	padding-top: 2em;
+	float: left;
+	text-align: left;
+	max-width: 25%
+}
+
+h1 {
+	color: rgb(140, 180, 82);
+	margin-top: 0;
+	margin-left: 2em;
+	padding-bottom: 1em;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: x-large;
+	color: rgb(25, 60, 93);
+	padding: .25em;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: medium;
+	color: rgb(25, 60, 93);
+	padding: .5em;
+}
+
+h4 {
+	padding: .5em;
+	font-weight: bold;
+	font-size: smaller;
+	display: inline;
+	color: black;
+}
+
+p {
+	display: inline-block;
+	padding: .5em;
+}
+
+button {
+	background-color: rgb(140, 180, 82);
+	border-style: none;
+	width: 10em;
+	display: block;
+	text-align: center;
+	color: white;
+	margin: 0 auto .5em;
+}
+
+a[role=button],
+input[type='submit'] {
+	background-color: rgb(140, 180, 82);
+	border-style: none;
+	width: 10em;
+	display: block;
+	text-align: center;
+	color: white;
+	margin: 0 auto .5em;
+}
+
+input:not([type='submit']),
+select,
+label,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	box-sizing: border-box;
+	width: auto;
+	margin: 1rem;
+	border-radius: 0px;
+	color: rgb(25, 60, 93);
+}
+
+.sr-only {
+	position: absolute;
+	left: -100000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden
+}
