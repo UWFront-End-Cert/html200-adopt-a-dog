@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang='en'  dir="ltr">
    <head>
-      <title>adoptadog checkout mockup no background</title>
+      <title>checkout adoptadog mockup</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
       <script src="https://kit.fontawesome.com/4c496fc4fb.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
    </head>
    <body>
+      <a href="#maincontent" class="sr-only" >Skip to main content</a>
       <header>
          <div class=checkout>  <i class="fas fa-shopping-cart"></i> $1234.56 <br>
             <a href="checkout.html" role="button">Checkout</a>
@@ -23,36 +26,35 @@
             <a href="blog.html">Blog</a>
          </nav>
       </header>
-      <main>
+      <main  id="maincontent">
          <h2>Checkout</h2>
          <form method="GET">
             <div class="row">
                <div class="col-md-8">
-                  <label>Name
-                  <input required type="text" class="form-control" name='Name'></label>
+                  <label>Name</label>
+                  <input required type="text" class="form-control" name='Name'>
                </div>
             </div>
             <div class="row">
                <div class="col-md-8">
-                  <label>Email Address
+                  <label>Email Address</label>
                   <input required type="email" name="Email"  aria-required="true" class="form-control" >
-                  </label>
                </div>
             </div>
             <div class="row">
                <div class="col-md-8">
-                  <label>Street Address
-                  <input required type="text" class="form-control" name='Address'></label>
+                  <label>Street Address</label>
+                  <input required type="text" class="form-control" name='Address'>
                </div>
             </div>
             <div class="row">
                <div class="col-md-3">
-                  <label>City
-                  <input required type="text" class="form-control" name="City"></label>
+                  <label>City</label>
+                  <input required type="text" class="form-control" name="City">
                </div>
                <div class="col-md-2">
                   <label for="state">  State</label>
-                  <select id='state' required class="form-control" name="State">
+                  <select id='state' title='' required class="form-control selectpicker" name="State">
                      <option value="" disabled selected hidden>Select State</option>
                      <option value="AL">Alabama</option>
                      <option value="AK">Alaska</option>
@@ -108,9 +110,8 @@
                   </select>
                </div>
                <div class="col-md-3">
-                  <label>Zip Code
+                  <label>Zip Code</label>
                   <input required class="form-control" type="number" name="Zip" aria-required="true">
-                  </label>
                </div>
             </div>
             <div class="row">
@@ -118,14 +119,8 @@
                   <label>
                   First Time Adopter? </label>  
                   <div class="form-check form-check-inline">
-                     <label class="form-check-label">
-                     <input class="form-check-input" type="radio" name="New" id="Y" value="Yes" required> Yes
-                     </label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                     <label class="form-check-label">
-                     <input class="form-check-input" type="radio" name="New" id="N" value="No" required> No
-                     </label>
+                     <input class="form-check-input" type="radio" name="New" id="Y" value="Yes" required> <span class="radio">Yes</span>
+                     <input class="form-check-input" type="radio" name="New" id="N" value="No" required> <span class='radio'>No</span>
                   </div>
                </div>
             </div>
@@ -133,34 +128,47 @@
                <div class="col-md-3">
                   <label for='location'>
                   Pickup Location</label>
-                  <select id='location' required class="form-control" name="Location">
+                  <select id='location' title='' required class="form-control selectpicker" name="Location">
                      <option value="" disabled selected hidden>Select Location</option>
+                     <optgroup label="Washington">
                      <option value="Seattle">Seattle</option>
                      <option value="Tacoma">Tacoma</option>
                      <option value="Everett">Everett</option>
+                     <optgroup label="California">
+                     <option value="Seattle">Sacramento</option>
+                     <option value="Tacoma">San Diego</option>
+                     <option value="Everett">San Fransisco</option>
                   </select>
                </div>
             </div>
+            <br>
             <label>
             Dogs Adopted    </label>   
             <div class="row">
-               <div class="col-md-4">
-                  <div class="checkout-image">
+               <div class="col-sm-4">
+                  <div class="col-sm-4 checkout-image">
                      <img src="images/lucas-checkout.jpg"  alt='adopted dog named Lucas'>
                   </div>
-                  <h3>Lucas</h3>
-                  <h4>Cost to Adopt: </h4>
-                  <p>$123.45</p>
+                  <div class='col-sm-8'>
+                     <h3>Lucas</h3>
+                     <br>
+                     <h4>Cost to Adopt: </h4>
+                     <p>$123.45</p>
+                  </div>
                </div>
-               <div class="col-md-4">
-                  <div class="checkout-image">
+               <div class="col-sm-4">
+                  <div class="col-sm-4 checkout-image">
                      <img src="images/duffy-checkout.jpg"  alt='adopted dog named Duffy'>
                   </div>
-                  <h3>Duffy</h3>
-                  <h4>Cost to Adopt: </h4>
-                  <p>$123.45</p>
+                  <div class='col-sm-8'>
+                     <h3>Duffy</h3>
+                     <br>
+                     <h4>Cost to Adopt: </h4>
+                     <p>$123.45</p>
+                  </div>
                </div>
             </div>
+            <br>
             <div class="row">
                <div class="col-md-6">
                   <label>
@@ -175,7 +183,7 @@
             </div>
          </form>
       </main>
-      <!-- <a href="#main-content" class="sr-only">Return to top of main content</a>-->
+      <a href="#maincontent" class="sr-only">Return to top of main content</a>
       <footer>
          <img src="images/adoptadog-logo.svg" alt='Adopt A Dog Logo' >
          <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
