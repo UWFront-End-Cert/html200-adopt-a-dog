@@ -7,5 +7,5 @@ let total = 0;
 
 function addTotal(cost) {
   total += cost;
-  alert('Your new total is: $' + cost);
+  alert('Your new total is: $' + total);
 }
