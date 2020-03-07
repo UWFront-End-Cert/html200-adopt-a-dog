@@ -1,5 +1,5 @@
-function showInfo(name, cost) {
-  alert(name + ' is cost '+ cost);
+function showInfo(name, breed, cost) {
+  alert(name + ', ' + breed + ', '+ 'is cost '+ cost);
 }
 
 
