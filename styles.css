@@ -71,7 +71,7 @@ h1 {
   padding-right: 0;
 }
 .dog-pic {
-  width: 12em;
+  width: 20em;
 }
 
 .header-checkout a:link {
@@ -187,7 +187,7 @@ p {
   margin: .5em 2em 2em 0em;
 }
 
-.dog-profiles a:link {
+.dog-profiles a {
   font-family: sans-serif;
   font-weight: 700;
   font-size: .7em;

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="./dog.js"></script>
     <title>Dogs</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
         </div>
       </div>
       <div class="header-checkout">
-        <p><img src="images/cart-icon.svg" width="25" alt="shopping cart">
+        <p><img src="images/cart-icon.svg" class="checkout-img" alt="shopping cart">
         $ 1234.56</p>
         <a href="checkout.html">Checkout</a>
       </div>
@@ -31,116 +32,146 @@
         <h2>Here are all of our Dogs!</h2>
         <div class="dog-profiles">
           <section>
-            <img src="images/murphy-card.jpg" class="dog-pic" alt="murphy">
+            <button onclick="showInfo('Murphy', '$123.45')">
+              <img src="images/murphy-card.jpg" class="dog-pic" alt="murphy">
+            </button>
             <div class="profile-info">
               <h3>Murphy</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
 
           <section>
-            <img src="images/poppy-card.jpg" class="dog-pic" alt="poppy">
+            <button onclick="showInfo('Puppy', '$123.45')">
+              <img src="images/poppy-card.jpg" class="dog-pic" alt="poppy">
+            </button>
             <div class="profile-info">
               <h3>Poppy</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
 
           <section>
-            <img src="images/jack-card.jpg" class="dog-pic" alt="jack">
+            <button onclick="showInfo('Jake', '$123.45')">
+              <img src="images/jack-card.jpg" class="dog-pic" alt="jack">
+            </button>
             <div class="profile-info">
               <h3>Jacky</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
 
           <section>
-            <img src="images/duffy-card.jpg" class="dog-pic" alt="duffy">
+            <button onclick="showInfo('Duffy', '$123.45')">
+              <img src="images/duffy-card.jpg" class="dog-pic" alt="duffy">
+            </button>
             <div class="profile-info">
               <h3>Duffyy</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
 
           <section>
-            <img src="images/lucas-card.jpg" class="dog-pic" alt="lucas">
+            <button onclick="showInfo('Lucas', '$123.45')">
+              <img src="images/lucas-card.jpg" class="dog-pic" alt="lucas">
+            </button>
             <div class="profile-info">
               <h3>Lucas</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
 
           <section>
-            <img src="images/jake-card.jpg" class="dog-pic" alt="jake">
+            <button onclick="showInfo('Puppy', '$123.45')">
+              <img src="images/jake-card.jpg" class="dog-pic" alt="jake">
+            </button>
             <div class="profile-info">
               <h3>Jake</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
+
           <section>
-            <img src="images/angus-card.jpg" class="dog-pic" alt="angus">
+            <button onclick="showInfo('Angus', '$123.45')">
+              <img src="images/angus-card.jpg" class="dog-pic" alt="angus">
+            </button>
             <div class="profile-info">
               <h3>Angus</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
+
           <section>
-            <img src="images/violet-card.jpg" class="dog-pic" alt="violet">
+            <button onclick="showInfo('Violet', '$123.45')">
+              <img src="images/violet-card.jpg" class="dog-pic" alt="violet">
+            </button>
             <div class="profile-info">
               <h3>Violeet</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
+
           <section>
-            <img src="images/piper-card.jpg" class="dog-pic" alt="piper">
+            <button onclick="showInfo('Piper', '$123.45')">
+              <img src="images/piper-card.jpg" class="dog-pic" alt="piper">
+            </button>
             <div class="profile-info">
               <h3>Piper</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
+
           <section>
-            <img src="images/maximus-card.jpg" class="dog-pic" alt="maximus">
+            <button onclick="showInfo('Maximus', '$123.45')">
+              <img src="images/maximus-card.jpg" class="dog-pic" alt="maximus">
+            </button>
             <div class="profile-info">
               <h3>Maximus</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
+
           <section>
-            <img src="images/luna-card.jpg" class="dog-pic" alt="luna">
+            <button onclick="showInfo('Luna', '$123.45')">
+              <img src="images/luna-card.jpg" class="dog-pic" alt="luna">
+            </button>
              <div class="profile-info">
               <h3>Luna</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
+
           <section>
-            <img src="images/stella-card.jpg" class="dog-pic" alt="stella">
-              <div class="profile-info">
+            <button onclick="showInfo('Stella', '$123.45')">
+              <img src="images/stella-card.jpg" class="dog-pic" alt="stella">
+            </button>
+            <div class="profile-info">
               <h3>Stella</h3>
               <p>Cost to Adopt: $123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <a href="checkout.html">Adopt</a>
+              <a onclick="addTotal('123.45')">Adopt</a>
             </div>
           </section>
         </div>
