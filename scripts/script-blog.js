@@ -12,6 +12,7 @@ addImg1.alt = 'Dog with owner looking out over canyon.';
 addImg1.width = '225';
 addImg1.style.cssFloat = 'left';
 addImg1.style.paddingRight = '2rem';
+addImg1.style.paddingBottom = '2rem';
 
 const addImg2 = document.createElement('img');
 const imgFile2 = document.getElementById('blog-2');
@@ -21,6 +22,7 @@ addImg2.alt = 'Multiple dogs on leashes sitting in a park, looking at dogwalker'
 addImg2.width = '225';
 addImg2.style.cssFloat = 'left';
 addImg2.style.paddingRight = '2rem';
+addImg2.style.paddingBottom = '2rem';
 
 const addImg3 = document.createElement('img');
 const imgFile3 = document.getElementById('blog-3');
@@ -30,6 +32,7 @@ addImg3.alt = 'Silhoutte of woman and dog against a sunset, holding up a ball as
 addImg3.width = '225';
 addImg3.style.cssFloat = 'left';
 addImg3.style.paddingRight = '2rem';
+addImg3.style.paddingBottom = '2rem';
 
 
 

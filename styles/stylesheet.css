@@ -349,7 +349,7 @@ input[type=submit] {
   background-color: #9bc344;
   border-radius: 1px;
   border: none;
-  width: 10%;
+  width: 20%;
   color: #fff;
 }
 
@@ -473,6 +473,9 @@ input[type=submit]:active {
   .blog-preview p {
     visibility: hidden;
     height: 0;
+  }
+  .blog-article {
+    max-width: 70%;
   }
 }
 
