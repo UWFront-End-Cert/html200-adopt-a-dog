@@ -308,6 +308,7 @@ input {
   margin: 0.5rem 0rem 1.5rem 0rem;
   padding: 0.3rem;
   width: 65%;
+  border: 1px solid #ccc;
   display: block;
 }
 
