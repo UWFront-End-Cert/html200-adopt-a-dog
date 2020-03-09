@@ -13,7 +13,7 @@
           <h2>Seattle's premiere dog adoption agency</h2>
         </div>
         <div>
-          <p><img class="checkout-img" src="images/cart-icon.svg" alt="small white cart icon">&nbsp;$1234.56</p>
+          <p><img class="checkout-img" src="images/cart-icon.svg" alt="small white cart icon">&nbsp;$<span id="cart-total"></span></p>
           <a href="checkout.html" class="button btn-green small">Checkout</a>
         </div>
       </div>
@@ -39,60 +39,60 @@
         <!-- dog cards -->
         <div class="dogs">
           <article class="card">
-            <img class="card-img" src="images/murphy-card.jpg" alt="">
+            <img class="card-img" onclick="dogInfo('Murphy','Brown and white breed',123.45)" src="images/murphy-card.jpg" alt="">
             <h3 class="card-title">Murphy</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a href="checkout.html" class="button btn-green small">Adopt</a>
+            <button onclick="addUp(123.45)" class="button btn-green small">Adopt</button>
           </article>
           <article class="card">
-            <img class="card-img" src="images/poppy-card.jpg" alt="">
+            <img class="card-img" onclick="dogInfo('Poppy','Cute Fluffy Small Breed',123.45)" src="images/poppy-card.jpg" alt="">
             <h3 class="card-title">Poppy</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a href="checkout.html" class="button btn-green small">Adopt</a>
+            <button onclick="addUp(123.45)" class="button btn-green small">Adopt</button>
           </article>
           <article class="card">
-            <img class="card-img" src="images/jack-card.jpg" alt="">
+            <img class="card-img" onclick="dogInfo('Jack','Small Jack Russell Terriro Type Breed',123.45)" src="images/jack-card.jpg" alt="">
             <h3 class="card-title">Jack</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a href="checkout.html" class="button btn-green small">Adopt</a>
+            <button onclick="addUp(123.45)" class="button btn-green small">Adopt</button>
           </article>
           <article class="card">
-            <img class="card-img" src="images/duffy-card.jpg" alt="">
+            <img class="card-img" onclick="dogInfo('Duffy','American Bull Dog Mixed Looking Breed',123.45)" src="images/duffy-card.jpg" alt="">
             <h3 class="card-title">Duffy</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a href="checkout.html" class="button btn-green small">Adopt</a>
+            <button onclick="addUp(123.45)" class="button btn-green small">Adopt</button>
           </article>
           <article class="card">
-            <img class="card-img" src="images/lucas-card.jpg" alt="">
+            <img class="card-img" onclick="dogInfo('Lucas','Black Shetland Terrior Type Breed',123.45)" src="images/lucas-card.jpg" alt="">
             <h3 class="card-title">Lucas</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a href="checkout.html" class="button btn-green small">Adopt</a>
+            <button onclick="addUp(123.45)" class="button btn-green small">Adopt</button>
           </article>
           <article class="card">
-            <img class="card-img" src="images/jake-card.jpg" alt="">
+            <img class="card-img" onclick="dogInfo('Jake','Small Terrior Lab Looking Breed',123.45)" src="images/jake-card.jpg" alt="">
             <h3 class="card-title">Jake</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a href="checkout.html" class="button btn-green small">Adopt</a>
+            <button onclick="addUp(123.45)" class="button btn-green small">Adopt</button>
           </article>
           <article class="card">
-            <img class="card-img" src="images/angus-card.jpg" alt="">
+            <img class="card-img" onclick="dogInfo('Angus','Boxer Breed',123.45)" src="images/angus-card.jpg" alt="">
             <h3 class="card-title">Angus</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a href="checkout.html" class="button btn-green small">Adopt</a>
+            <button onclick="addUp(123.45)" class="button btn-green small">Adopt</button>
           </article>
           <article class="card">
-            <img class="card-img" src="images/violet-card.jpg" alt="">
+            <img class="card-img" onclick="dogInfo('Violet','Chocolate Lab Breed',123.45)" src="images/violet-card.jpg" alt="">
             <h3 class="card-title">Violet</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a href="checkout.html" class="button btn-green small">Adopt</a>
+            <button onclick="addUp(123.45)" class="button btn-green small">Adopt</button>
           </article>
         </div>
         <p class="justify-content-center"><a class="button btn-gray" href="dogs.html">See More Dogs</a></p>
@@ -112,5 +112,6 @@
         <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
