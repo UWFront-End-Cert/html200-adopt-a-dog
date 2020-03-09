@@ -10,7 +10,7 @@ let total = 0;
 
 function addUp(cost) {
   total += cost;
-  alert(total);
+  alert('Total: $' + total);
 
   // a little something extra = updates cart total in header, but only for the page you are on (for now)
   document.getElementById("cart-total").innerHTML = total;
