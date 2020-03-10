@@ -471,28 +471,32 @@ footer p {
 }
 
 @media screen and (max-width: 576px) {
-  .container{
+  .containe {
     width: 95%;
-    margin: 1.2rem;
+    margin: 1rem;
   }
-  header {
-    height: 20rem;
+  .header {
+    height: 12rem;
     background-position: center;
   }
-
   .header-logo {
-    width: 60%;
+    width: 90%;
     position: absolute;
     top: 15%;
-    left: 7%;
+    left: 5%;
   }
   .header h1 {
-    font-size: 0rem;
+    font-size: 0;
   }
   .header-checkout {
-    top: 25%;
-    left: 7%;
-    width: 20%;
+    top: 20%;
+    padding-right: 2rem;
+    float: right;
+    align-items: center;
+
+  }
+  nav {
+    margin: 0;
   }
   .dog-profiles section {
     width: 75%;
