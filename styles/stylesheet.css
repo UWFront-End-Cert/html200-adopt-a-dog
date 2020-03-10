@@ -23,18 +23,6 @@ main {
 	background-color: rgb(220, 220, 220);
 }
 
-header {
-	height: auto;
-	width: 100%;
-	top: 0;
-	padding-bottom: 0;
-	background-size: auto;
-	background-color: rgb(25, 60, 93);
-	background: url("../images/header-image.jpg");
-	background-repeat: no-repeat;
-	background-position: top right;
-}
-
 footer {
 	height: auto;
 	width: 100%;
@@ -78,6 +66,16 @@ nav a {
 	color: rgb(25, 60, 93);
 	padding: 1rem;
 	margin: 1rem;
+}
+
+header {
+	width: 100%;
+	top: 0;
+	padding-bottom: 0;
+	background-image: url("../images/header-image.jpg");
+	background-color: rgb(25, 60, 93);
+	background-position: top right 40%;
+	background-repeat: no-repeat;
 }
 
 header img {
@@ -160,6 +158,7 @@ h4 {
 p {
 	font-family: sans-serif;
 	font-size: medium;
+	font-weight: lighter;
 	display: inline-block;
 	padding: .5em;
 }
