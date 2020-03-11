@@ -114,21 +114,21 @@ Design appears as expected on preview of the following devices:
 Site in default window size appears as expected.  
 
 
-
+- - -
 ### Testing Device: iPad Air
 
 **Browser used:** Safari
 Design appeared as expected.  
 
 
-
+- - -
 ### Testing Device: iPhone XS
 **Browser used:** Safari
 
 Design appeared as expected.  
 
 
-
+- - -
 ### Testing Device: VAIO
 **Browsers used:** Chrome and Edge
 
