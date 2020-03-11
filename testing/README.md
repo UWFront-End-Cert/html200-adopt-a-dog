@@ -17,9 +17,9 @@ traveling to various shelters trying to find a good match.
 
 ![Image of Anna](user-persona-anna.jpg)  
 
-######AGE: 27
+###### AGE: 27
 
-_OCCUPATION:_ Copywriter for a local nonprofit
+OCCUPATION: Copywriter for a local nonprofit
 
 INTERESTS: Hiking, Camping, Photography, Exploring the PNW
 
