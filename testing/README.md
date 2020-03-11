@@ -1,4 +1,4 @@
-#Adopt-a-Dog Website
+# Adopt-a-Dog Website
 
 This website allows users to browse and select dogs available for adoption.
 Photos and biographies for each dog are organized in cards, which provide
@@ -8,18 +8,18 @@ blog featuring articles from various contributors about pet care, training
 and other aspects of dog ownership. The purpose of this site is to allow
 those interested in dog adoption to take their time learning about each animal
 and make decisions on their own schedule, rather than having to spend hours
-traveling to various shelters trying to find a good match.
+traveling to various shelters trying to find a good match.  
 
 
 
 _________________________________________
 
-##User Personas
+## User Personas
 
 
 ![Image of Anna](user-persona-anna.jpg)
 
-###Anna
+### Anna
 
 
 **AGE:** 27
@@ -33,13 +33,13 @@ in adopting a dog to accompany her on her adventures. Finding a good fit is impo
 
 **DEVICES USED:** iPhone 8 and MacBook. She browses on her phone during commutes and on breaks at work, and browses on a MacBook when at home.
 
-**BROWSERS USED:** Safari, Firefox and Chrome
-
+**BROWSERS USED:** Safari, Firefox and Chrome  
+  
 
 
 ![Image of James and Angela](user-persona-janda.jpg)
 
-###James & Angela
+### James & Angela
 
 
 **AGES:** 38 (James) and 36 (Angela)
@@ -63,12 +63,12 @@ also appreciate that they can get advice about dog care and training from the Ad
 
 _________________________________________
 
-##User Testing Results:
+## User Testing Results:
 
-###Testing Device: iMac Retina 4k
+### Testing Device: iMac Retina 4k
 
 
-####GOOGLE CHROME:
+#### GOOGLE CHROME:
 Site in default window size appears as expected.
 All elements display and behave properly.
 
@@ -98,7 +98,7 @@ Final preview of following device settings was as expected:
 
 
 
-####FIREFOX:
+#### FIREFOX:
 Site in default window size appears as expected.
 
 Using Web Developer Inspect tools, no issues found.
@@ -114,14 +114,14 @@ Design appears as expected on preview of the following devices:
 
 
 
-####SAFARI:
+#### SAFARI:
 Site in default window size appears as expected.
 
 
 
 
 
-###Testing Device: iPad Air
+### Testing Device: iPad Air
 
 **Browser used:** Safari
 Design appeared as expected.
@@ -131,7 +131,7 @@ Design appeared as expected.
 
 
 
-###Testing Device: iPhone XS
+### Testing Device: iPhone XS
 
 **Browser used:** Safari
 Design appeared as expected.
@@ -140,7 +140,7 @@ Design appeared as expected.
 
 
 
-###Testing Device: VAIO
+### Testing Device: VAIO
 
 **Browsers used:** Chrome and Edge
 Design appeared as expected on both browsers.
