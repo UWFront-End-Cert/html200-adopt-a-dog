@@ -9,12 +9,6 @@ dark gray #3d3d3d
   box-sizing: border-box;
 }
 
-/*#core {
-  max-width: 90%;
-  margin: 0;
-}*/
-
-
 .hidden {
   position: relative;
   left: -10000px;
@@ -161,6 +155,12 @@ a:visited {
 
 a:hover {
   color: #81b741;
+}
+
+.blog-preview {
+  float: right;
+  display: flex;
+  flex-direction: column;
 }
 
 .centered-content-container {
@@ -325,6 +325,7 @@ a:hover {
   margin: 0 /*auto*/;
   text-align: center;
   max-width: 33%;
+  clear: both;
 }
 
 footer {
@@ -337,6 +338,7 @@ footer {
   /*margin: 1em;*/
   text-align: center;
   width: 100%;
+  clear: both;
 }
 
 .footer {
@@ -432,3 +434,8 @@ button {
   flex-flow: row wrap;
   align-items: center;
 }
+
+/* @media screen and (max-width: 576px) {
+
+  }
+} */
