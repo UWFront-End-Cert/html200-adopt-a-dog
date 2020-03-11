@@ -12,13 +12,11 @@ traveling to various shelters trying to find a good match.
 
 
 
-_________________________________________
 
 ## USER PERSONAS  
 
+
 ![Image of Anna](user-persona-anna.jpg)  
-
-
 
 ## Anna  
 
@@ -39,9 +37,7 @@ in adopting a dog to accompany her on her adventures. Finding a good fit is impo
 
 ![Image of James and Angela](user-persona-janda.jpg)  
 
-
-
-### James & Angela  
+## James & Angela  
 
 **AGES:** 38 (James) and 36 (Angela)
 
@@ -62,13 +58,12 @@ also appreciate that they can get advice about dog care and training from the Ad
 
 
 
-_________________________________________
 
 ## USER TESTING RESULTS:  
 
 ### Testing Device: iMac Retina 4k  
 
-
+----------------------------------
 #### GOOGLE CHROME:
 Site in default window size appears as expected.
 All elements display and behave properly.
@@ -84,8 +79,8 @@ Using Chrome developer tools, these issues were found:
   Submit button on checkout page cut off
   Checkout form fields not visible
 
-  **FIX:** Added paddingBottom to images in script file  for blog page
-  **FIX:** Increased width percentage for submit button on checkout form
+  **FIX:** Added paddingBottom to images in script file  for blog page  
+  **FIX:** Increased width percentage for submit button on checkout form  
   **FIX:** Decreased overall width for blog page on smaller screen sizes
 
 Final preview of following device settings was as expected:
@@ -97,7 +92,7 @@ Final preview of following device settings was as expected:
 * iPhone X
 * iPad (& Pro)  
 
-
+----------------------------------
 #### FIREFOX:
 Site in default window size appears as expected.
 
@@ -112,26 +107,29 @@ Design appears as expected on preview of the following devices:
 * Kindle Fire HDX Linus
 * Laptop with HiDPI Screen  
 
-
+----------------------------------
 #### SAFARI:
 Site in default window size appears as expected.  
 
 
-
+----------------------------------
+----------------------------------
 ### Testing Device: iPad Air
 
 **Browser used:** Safari
 Design appeared as expected.  
 
 
-
+----------------------------------
+----------------------------------
 ### Testing Device: iPhone XS
 
 **Browser used:** Safari
 Design appeared as expected.  
 
 
-
+----------------------------------
+----------------------------------
 ### Testing Device: VAIO
 
 **Browsers used:** Chrome and Edge
