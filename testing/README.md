@@ -17,10 +17,9 @@ traveling to various shelters trying to find a good match.
 
 ![Image of Anna](user-persona-anna.jpg)  
 
-----------------------------------
-AGE: 27
+######AGE: 27
 
-OCCUPATION: Copywriter for a local nonprofit
+_OCCUPATION:_ Copywriter for a local nonprofit
 
 INTERESTS: Hiking, Camping, Photography, Exploring the PNW
 
@@ -36,7 +35,6 @@ BROWSERS USED: Safari, Firefox and Chrome
 
 ![Image of James and Angela](user-persona-janda.jpg)  
 
-----------------------------------
 AGES: 38 (James) and 36 (Angela)
 
 OCCUPATION: Both are landscape architects at their own small firm
@@ -106,22 +104,19 @@ Design appears as expected on preview of the following devices:
 #### SAFARI:
 Site in default window size appears as expected.  
 
-
-----------------------------------
 ### Testing Device: iPad Air
 
 **Browser used:** Safari
 Design appeared as expected.  
 
 
-----------------------------------
 ### Testing Device: iPhone XS
 
 **Browser used:** Safari
 Design appeared as expected.  
 
 
-----------------------------------
+
 ### Testing Device: VAIO
 
 **Browsers used:** Chrome and Edge
