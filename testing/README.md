@@ -14,13 +14,13 @@ traveling to various shelters trying to find a good match.
 
 _________________________________________
 
-## User Personas
+## USER PERSONAS  
+
+![Image of Anna](user-persona-anna.jpg)  
 
 
-![Image of Anna](user-persona-anna.jpg)
 
-### Anna
-
+## Anna  
 
 **AGE:** 27
 
@@ -33,14 +33,15 @@ in adopting a dog to accompany her on her adventures. Finding a good fit is impo
 
 **DEVICES USED:** iPhone 8 and MacBook. She browses on her phone during commutes and on breaks at work, and browses on a MacBook when at home.
 
-**BROWSERS USED:** Safari, Firefox and Chrome  
-  
+**BROWSERS USED:** Safari, Firefox and Chrome   
 
 
-![Image of James and Angela](user-persona-janda.jpg)
 
-### James & Angela
+![Image of James and Angela](user-persona-janda.jpg)  
 
+
+
+### James & Angela  
 
 **AGES:** 38 (James) and 36 (Angela)
 
@@ -57,15 +58,15 @@ also appreciate that they can get advice about dog care and training from the Ad
 
 **DEVICES USED:** PC Desktop, Galaxy phones and tablet. They do a little research at the office on desktop computers, and browse at home on the tablet or phone with the kids.
 
-**BROWSERS USED:** Chrome and Firefox
+**BROWSERS USED:** Chrome and Firefox  
 
 
 
 _________________________________________
 
-## User Testing Results:
+## USER TESTING RESULTS:  
 
-### Testing Device: iMac Retina 4k
+### Testing Device: iMac Retina 4k  
 
 
 #### GOOGLE CHROME:
@@ -94,8 +95,7 @@ Final preview of following device settings was as expected:
 * iPhone 5/SE
 * iPhone 6/7/8 (& Plus)
 * iPhone X
-* iPad (& Pro)
-
+* iPad (& Pro)  
 
 
 #### FIREFOX:
@@ -110,33 +110,25 @@ Design appears as expected on preview of the following devices:
 * iPhone 6/7/8 (& Plus) iOS 11
 * iPhone X/XS iOS 12
 * Kindle Fire HDX Linus
-* Laptop with HiDPI Screen
-
+* Laptop with HiDPI Screen  
 
 
 #### SAFARI:
-Site in default window size appears as expected.
-
-
+Site in default window size appears as expected.  
 
 
 
 ### Testing Device: iPad Air
 
 **Browser used:** Safari
-Design appeared as expected.
-
-
-
+Design appeared as expected.  
 
 
 
 ### Testing Device: iPhone XS
 
 **Browser used:** Safari
-Design appeared as expected.
-
-
+Design appeared as expected.  
 
 
 
