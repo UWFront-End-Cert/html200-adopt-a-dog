@@ -117,19 +117,17 @@ Site in default window size appears as expected.
 - - -
 ### Testing Device: iPad Air
 
-**Browser used:** Safari
+**Browser used:** Safari  
 Design appeared as expected.  
 
 
 - - -
 ### Testing Device: iPhone XS
-**Browser used:** Safari
-
+**Browser used:** Safari  
 Design appeared as expected.  
 
 
 - - -
 ### Testing Device: VAIO
-**Browsers used:** Chrome and Edge
-
+**Browsers used:** Chrome and Edge  
 Design appeared as expected on both browsers.
