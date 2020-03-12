@@ -5,16 +5,23 @@ Photos and biographies for each dog are organized in cards, which provide
 the option to reserve the chosen dog by adding its fee to a shopping cart.
 User details and payment are collected on a checkout page. There is also a
 blog featuring articles from various contributors about pet care, training
-and other aspects of dog ownership. The purpose of this site is to allow
-those interested in dog adoption to take their time learning about each animal
-and make decisions on their own schedule, rather than having to spend hours
-traveling to various shelters trying to find a good match.  
+and other aspects of dog ownership.
+
+The purpose of this site is to allow those interested in dog adoption to take
+their time learning about each animal and make decisions on their own schedule,
+rather than having to spend hours traveling to various shelters trying to find
+a good match. This site was built with HTML, CSS and Javascript, and was designed
+for the audience described below. Following the user information are the results
+of testing performed on the site in different environments.
 
 
-
-## USER PERSONA 1: Anna
 
 ![Image of Anna](user-persona-anna.jpg)  
+
+## USER PERSONA 1
+
+**NAME:**  
+Anna
 
 **AGE:**  
 27
@@ -37,9 +44,13 @@ Safari, Firefox and Chrome
 
 
 
-## USER PERSONA 2: James & Angela  
 
 ![Image of James and Angela](user-persona-janda.jpg)  
+
+## USER PERSONA 2
+
+**NAMES:**  
+James and Angela
 
 **AGES:**  
 38 (James) and 36 (Angela)
@@ -75,19 +86,20 @@ Site in default window size appears as expected.
 All elements display and behave properly.
 
 Using Chrome developer tools, these issues were found:  
-**Pixel 2 (411x731) and Pixel 2XL (411x823):**
-  Submit button on checkout page cut off
-  Blog page titles not wrapping images well
-**iPhone 6/7/8 (375x667):**
-  Blog page, titles not wrapping well
-  Submit button on checkout page cut off
-  Checkout form fields not visible
+**Pixel 2 (411x731) and Pixel 2XL (411x823):**  
+* Submit button on checkout page cut off  
+* Blog page titles not wrapping images well
+
+**iPhone 6/7/8 (375x667):**  
+* Blog page, titles not wrapping well
+* Submit button on checkout page cut off
+* Checkout form fields not visible
 
   FIX: Added paddingBottom to images in script file  for blog page  
   FIX: Increased width percentage for submit button on checkout form  
   FIX: Decreased overall width for blog page on smaller screen sizes
 
-Final preview of following device settings was as expected:  
+Final preview of the following device settings was as expected:  
 * Responsive
 * Galaxy S5
 * Pixel 2 (& XL)
