@@ -78,7 +78,7 @@ h1 {
 
 
 .dog-pic {
-  width: 20em;
+  width: 100%;
 }
 
 .header-checkout a:visited {
@@ -640,7 +640,7 @@ footer p {
     clear: both;
   }
   .blog-preview {
-    display: flex;
+    display: none;
     flex-flow: column wrap;
     border-left: 1px;
     padding-left: 1rem;

@@ -5,7 +5,7 @@ function showInfo(name, breed, cost) {
 
 let total = 0;
 
-function addTotal(cost) {
-  total += cost;
+function addTotal(x) {
+  total += Number(x);
   alert('Your new total is: $' + total);
 }
