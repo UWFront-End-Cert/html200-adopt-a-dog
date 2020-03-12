@@ -65,11 +65,8 @@ Spending time with family at the beach, camping, playing board games;
 hosting family gatherings  
 
 **REASON FOR VISITING:**  
-James and Angela are interested in finding a pet for their two young children. They have limited experience with pet ownership but really
-want to give a good home to a dog that needs a family, and hope that it will be
-a nice playmate for their kids. They like being able to learn about the dog’s
-traits and personality so they can know what sort of behavior to expect. They
-also appreciate that they can get advice about dog care and training from the Adopt-a-dog blog.  
+James and Angela are interested in finding a pet for their two young children. They have limited experience with pet ownership but really want to give a good home to a dog that needs a family, and hope that it will be a nice playmate for their kids. They like being able to learn about the dog’s traits and personality, which tells them what sort of behavior they can expect. They also appreciate that they can get advice about dog care
+and training from the Adopt-a-dog blog.  
 
 **DEVICES USED:**  
 PC Desktop, Galaxy phones and tablet. They do a little research at the office on desktop computers, and browse at home on the tablet or phone with the kids.  
