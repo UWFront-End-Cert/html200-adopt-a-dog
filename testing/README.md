@@ -96,7 +96,8 @@ Using Chrome developer tools, these issues were found:
 
   FIX: Added paddingBottom to images in script file  for blog page  
   FIX: Increased width percentage for submit button on checkout form  
-  FIX: Decreased overall width for blog page on smaller screen sizes
+  FIX: Decreased overall width for blog page on smaller screen sizes  
+  FIX: Added border to form fields
 
 Final preview of the following device settings was as expected:  
 * Responsive
