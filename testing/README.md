@@ -93,8 +93,8 @@ Using Chrome developer tools, these issues were found:
 * Blog page titles not wrapping images well
 
 **iPhone 6/7/8 (375x667):**  
-* Blog page, titles not wrapping well
-* Submit button on checkout page cut off
+* Blog page, titles not wrapping well  
+* Submit button on checkout page cut off  
 * Checkout form fields not visible
 
   FIX: Added paddingBottom to images in script file  for blog page  
