@@ -45,10 +45,11 @@ Safari, Firefox and Chrome
 
 
 
-![Image of James and Angela](user-persona-janda.jpg)  
+
 
 ## USER PERSONA 2
 
+![Image of James and Angela](user-persona-janda.jpg)
 **NAMES:**  
 James and Angela
 
