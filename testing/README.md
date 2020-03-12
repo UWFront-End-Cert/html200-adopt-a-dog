@@ -3,14 +3,14 @@
 This website allows users to browse and select dogs available for adoption.
 Photos and biographies for each dog are organized in cards, which provide
 the option to reserve the chosen dog by adding its fee to a shopping cart.
-User details and payment are collected on a checkout page. There is also a
-blog featuring articles from various contributors about pet care, training
-and other aspects of dog ownership.
+User details are collected on a checkout page and the adoption request is
+submitted. There is also a blog featuring articles from various contributors
+about pet care, training and other aspects of dog ownership.
 
 The purpose of this site is to allow those interested in dog adoption to take
 their time learning about each animal and make decisions on their own schedule,
-rather than having to spend hours traveling to various shelters trying to find
-a good match. This site was built with HTML, CSS and Javascript, and was designed
+rather than spending hours traveling to various shelters searching for a good
+match. This site was built with HTML, CSS and Javascript, and was designed
 for the audience described below. Following the user information are the results
 of testing performed on the site in different environments.
 
