@@ -16,9 +16,9 @@ of testing performed on the site in different environments.
 
 
 
-![Image of Anna](user-persona-anna.jpg)  
-
 ## USER PERSONA 1
+
+![Image of Anna](user-persona-anna.jpg)  
 
 **NAME:**  
 Anna
@@ -50,6 +50,7 @@ Safari, Firefox and Chrome
 ## USER PERSONA 2
 
 ![Image of James and Angela](user-persona-janda.jpg)
+
 **NAMES:**  
 James and Angela
 
