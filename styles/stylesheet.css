@@ -427,9 +427,9 @@ button {
   align-items: center;
 }
 
-@media screen and (max-width: 576px) {
-  .grid-container {
-    width: 100%;
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  aside {
+    visibility: hidden;
   }
-  }
+
 }
