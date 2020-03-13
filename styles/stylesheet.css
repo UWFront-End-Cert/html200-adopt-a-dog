@@ -1,5 +1,6 @@
 main {
-	padding: 1em 6em 1em 6em;
+	padding: 1em 2em 1em 2em;
+	/* top, right, bottom, left */
 }
 
 .info {
@@ -9,7 +10,9 @@ main {
 	margin-bottom: 1em;
 }
 
+
 /*print needs more work*/
+
 @media print {
 	header,
 	nav,
@@ -33,47 +36,35 @@ main {
 }
 
 
-/* demonstrating use of media queries but going back to bootstrap*/
-/* media queries used in index.html(per assignment) - boodstrap used in dogs.html*/
+/* media queries for flexbox per assignment 6 commented out - boodstrap used instead*/
 
-.infoparent {
+
+/*.infoparent {
 	display: flex;
 	flex-flow: row wrap;
+}*/
+
+header {
+	background-image: url("../images/header-image.jpg"), linear-gradient(to left, grey, rgb(25, 60, 93));
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-
-/* Small Devices, Tablets */
-
-@media only screen and (min-width: 768px) {
-	.colsm12 {
-		width: 100%;
-	}
-}
-
-
-/* Medium Devices, Desktops */
-
-@media only screen and (min-width: 992px) {
-	.colmd6 {
-		width: 49.9%;
-	}
-}
-
-
-/* Large Devices, Wide Screens */
-
-@media only screen and (min-width: 1200px) {
-	.collg4 {
-		width: 33%;
-	}
-}
-
-.col-sm-offset-4 nav {
+header nav {
+	font-weight: bolder;
+	font-family: "Arial Black", "Arial Bold", "Ariel";
 	text-align: center;
-	padding: 1em;
 	color: rgb(25, 60, 93);
-	margin: 0;
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(236, 236, 236);
+}
+
+nav a {
+	font-family: serif;
+	color: rgb(25, 60, 93);
+	padding: 1.5rem;
+	margin: 1.5rem;
+	display: inline;
 }
 
 footer {
@@ -85,22 +76,12 @@ footer {
 	color: white;
 	text-align: center;
 	margin: auto;
-	padding-left: 25%;
-	padding-right: 25%;
-}
-
-header nav {
-	font-weight: bolder;
-	font-family: "Arial Black", "Arial Bold", "Ariel";
-	padding: 1em 1em 1em 5em;
-	text-align: left;
-	color: rgb(25, 60, 93);
-	margin-top: 10em;
-	background-color: rgb(236, 236, 236);
+	padding-left: 8%;
+	padding-right: 8%;
 }
 
 footer nav {
-	padding: 1em 1em 1em 5em;
+	padding: 0;
 	text-align: center;
 	color: white;
 	margin: 0;
@@ -113,28 +94,48 @@ footer nav a {
 	margin: 1rem;
 }
 
-nav a {
-	font-family: serif;
-	font-size: large;
-	color: rgb(25, 60, 93);
-	padding: 1rem;
-	margin: 1rem;
+
+/*Small Devices, Tablets */
+
+@media only screen and (max-width: 991px) {
+	/*.colsm12 {width: 100%;}*/
+	header nav {
+		font-size: 1em;
+	}
 }
 
-header {
-	width: 100%;
-	top: 0;
-	padding-bottom: 0;
-	background-image: url("../images/header-image.jpg");
-	background-color: rgb(25, 60, 93);
-	background-position: top right 40%;
-	background-repeat: no-repeat;
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+	/*.colmd6 {width: 49.9%;}*/
+	header nav {
+		font-size: 1.5em;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+	/*.collg4 {width: 33%;}*/
+	header nav {
+		font-size: 2em;
+	}
+}
+
+.col-sm-offset-4 nav {
+	text-align: center;
+	padding: 1em;
+	color: rgb(25, 60, 93);
+	margin: 0;
+	background-color: rgb(220, 220, 220);
 }
 
 header img {
 	padding-top: 1em;
-	padding-left: 5em;
-	max-width: 40%;
+	padding-left: 4em;
+	max-width: 50%;
 }
 
 footer img {
@@ -149,6 +150,7 @@ img {
 a {
 	color: rgb(81, 156, 183);
 	font-weight: bold;
+	display: block;
 	text-decoration: none;
 }
 
@@ -178,7 +180,7 @@ h1 {
 	font-style: italic;
 	color: rgb(140, 180, 82);
 	margin-top: 0;
-	margin-left: 2em;
+	margin-left: 1.5em;
 	padding-bottom: 1em;
 }
 
