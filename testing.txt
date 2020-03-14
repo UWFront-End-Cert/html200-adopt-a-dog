@@ -14,4 +14,6 @@ Based off of this persona, I decided to test my site on the following devices: P
 
 While testing, I noticed an issue with the sizing of the cart icon in the header, as it was appearing very small and off center in Safari, Edge and Firefox. I adjusted that, while still keeping the styling responsive, so that it appears consistent across browsers and breakpoints. Because I have different stylesheets for the mobile, tablet and desktop, I adjusted each individually.
 
+Another issue discovered in testing was the sizing of the images within the checkout page when viewing on Safari. Those were adjusted as well and changed to be more mobile-friendly on the smaller breakpoints. 
+
 In addition, all my pages were checking using an HTML validator, CSS validator, and ensured no console errors were showing.
