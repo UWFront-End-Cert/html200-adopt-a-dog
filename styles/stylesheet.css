@@ -196,7 +196,7 @@ h3 {
 	font-family: serif;
 	font-weight: bold;
 	font-size: large;
-	display: inline-block;
+	display: block;
 	color: rgb(25, 60, 93);
 	padding: .5em;
 }
@@ -277,4 +277,27 @@ textarea {
 	width: 1px;
 	height: 1px;
 	overflow: hidden
+}
+
+.blog,
+#maincontent {
+	display: flex;
+	align-items: flex-start;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.c1,
+.dog {
+	width: 30%;
+	min-width: 20em;
+}
+
+.c1 img {
+	width: 80%;
+	padding-bottom: 1em;
+}
+
+.c2 {
+	width: 60%;
 }

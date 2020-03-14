@@ -32,25 +32,25 @@
             <div class="row">
                <div class="col-md-8">
                   <label>Name</label>
-                  <input required type="text" class="form-control" name='Name'>
+                  <input required type="text" class="form-control" name='Name' id='name'>
                </div>
             </div>
             <div class="row">
                <div class="col-md-8">
                   <label>Email Address</label>
-                  <input required type="email" name="Email"  aria-required="true" class="form-control" >
+                  <input required id='email' type="email" name="Email"  aria-required="true" class="form-control" >
                </div>
             </div>
             <div class="row">
                <div class="col-md-8">
                   <label>Street Address</label>
-                  <input required type="text" class="form-control" name='Address'>
+                  <input id='address' required type="text" class="form-control" name='Address'>
                </div>
             </div>
             <div class="row">
                <div class="col-md-3">
                   <label>City</label>
-                  <input required type="text" class="form-control" name="City">
+                  <input id='city' required type="text" class="form-control" name="City">
                </div>
                <div class="col-md-2">
                   <label for="state">  State</label>
@@ -111,7 +111,7 @@
                </div>
                <div class="col-md-3">
                   <label>Zip Code</label>
-                  <input required class="form-control" type="number" name="Zip" aria-required="true">
+                  <input required id='zip' class="form-control" type="number" name="Zip" aria-required="true">
                </div>
             </div>
             <div class="row">
@@ -135,9 +135,9 @@
                      <option value="Tacoma">Tacoma</option>
                      <option value="Everett">Everett</option>
                      <optgroup label="California">
-                     <option value="Seattle">Sacramento</option>
-                     <option value="Tacoma">San Diego</option>
-                     <option value="Everett">San Fransisco</option>
+                     <option value="Sacramento">Sacramento</option>
+                     <option value="San Diego">San Diego</option>
+                     <option value="San Fransisco">San Fransisco</option>
                   </select>
                </div>
             </div>
@@ -178,13 +178,13 @@
             </div>
             <div class="row">
                <div class="col-md-3">
-                  <input class="form-control" type="submit" value="Submit">
+                  <input id='submit' class="form-control" type="submit" value="Submit">
                </div>
             </div>
          </form>
       </main>
       <a href="#maincontent" class="sr-only">Return to top of main content</a>
-      <footer>
+      <footer id='foot'>
          <img src="images/adoptadog-logo.svg" alt='Adopt A Dog Logo' >
          <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
          <nav>
@@ -195,5 +195,6 @@
          <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
       </footer>
       <script src="scripts/about.js"></script>
+      <script src="scripts/checkout.js"></script>
    </body>
 </html>
