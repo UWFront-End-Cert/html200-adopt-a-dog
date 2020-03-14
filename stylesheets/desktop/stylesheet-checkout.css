@@ -62,12 +62,14 @@
 }
 
 .adoption-image-1 {
-  width: 8%;
+  width: 8em;
+  margin-right: 1%;
   margin-left: 15%;
 }
 
 .adoption-image-2 {
-  width: 8%;
+  width: 8em;
+  margin-right: 1%;
   margin-left: 5%;
 }
 
