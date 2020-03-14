@@ -55,7 +55,7 @@
 
 .dogs-adopted {
   display: grid;
-  grid-template-columns: 25% 25%;
+  grid-template-columns: 30% 30%;
   margin: 0% 0% 0% 15%;
 
 }
