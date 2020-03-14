@@ -116,12 +116,13 @@ nav a:hover {
 }
 .container {
   margin-left: 5%;
+  padding-bottom: 5%;
 }
 h2 {
   font-family: serif;
   font-weight: 700;
   font-size: 2em;
-  margin-top: 2em;
+  margin-top: 1em;
   color: #103861;
 }
 
@@ -281,22 +282,29 @@ p {
   color:#103861;
 }
 
-.blog-article {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0;
-  width: 120%;
-  padding-bottom: 10%;
+.blog-title {
+  padding: 2rem 0rem 0rem 2rem;
+
 }
 
-.blog-article img {
-  float: left;
-  width: 35%;
-  height: 35%;
+.blog-container {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 9%;
 }
-
-.blog-text {
-  width: 65%;
+.blog-box1 {
+  grid-column: 1 / 2;
+}
+.blog-box1 img {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.blog-box2 {
+  grid-column: 2 / 2;
 }
 
 
@@ -370,8 +378,8 @@ input[type=submit]:active {
 }
 
 .dogs-adopted div {
-  height: 30px;
-  width: 100px;
+  height: 2em;
+  width: 5em;
   font-size: 0.6em;
   display: inline-block;
 }
@@ -390,6 +398,11 @@ input[type=submit]:active {
   grid-auto-flow: column;
   grid-row-gap: 5rem;
 }
+
+.checkout-box h4, p {
+  text-align: left;
+  padding-left: 0;
+}
 .checkout-pic-one {
   grid-area: 1 / 1 / 2 / 2;
   width: 7rem;
@@ -402,17 +415,18 @@ input[type=submit]:active {
 .checkout-info-one {
   grid-area: 1 / 2 / 2 / 3;
   padding-left: 1rem;
-  padding-right: 2em;
 
 }
 .checkout-info-two {
   grid-area: 1 / 4 / 2 / 5;
 }
 .checkout-t {
-  text-align: left;
-  padding-left: 2.7rem;
+  display: inline-block;
+  padding-left: 0;
 }
-
+.checkout-t h3, p {
+  padding-left: 1rem;
+}
 
 .footer-container {
   max-width: 100%;
@@ -506,18 +520,32 @@ footer p {
     visibility: hidden;
     height: 0;
   }
-  .blog-article {
-    width: 100%;
+  .blog-container {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
   }
-  .blog-article img {
-    width: 70%;
-    height: 70%;
-    align-items: center;
+  .blog-container img {
+    width: 65%;
   }
 
-  .blog-text {
-    width: 95%;
+  h2 {
+    font-size: 1.5em;
+    padding-bottom: 0;
+  }
+
+  .blog-container p {
+    padding-left: .5em;
+    font-size: 1em;
     text-align: left;
+  }
+  .checkout-box {
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-row-gap: 1rem;
+  }
+  .checkout-box h4, p {
+    font-size: .7em;
   }
 
   footer div img {
@@ -582,6 +610,10 @@ footer p {
     padding: 2rem;
     color: #fff;
   }
+  h2 {
+    font-size: 1em;
+  }
+  .blog
 }
 @media screen and (min-width: 768px) and (max-width: 900px) {
   .container {

@@ -30,31 +30,31 @@
 
     <h2 class="form-checkout">Checkout</h2>
     <br>
-    <form class="container" method="GET">
+    <form class="container" method="GET" id="submitForm">
       <label>Name
         <br>
-        <input type="text" name="yourName">
+        <input type="text" name="yourName" id="name">
       </label>
 
       <br>
       <label>Email Affress
         <br>
-        <input type="email" name="emailAddress">
+        <input type="email" name="emailAddress" id="email">
       </label>
       <br>
       <label>Street Address
         <br>
-        <input type="text" name="streetAddress">
+        <input type="text" name="streetAddress" id="street">
       </label>
 
       <label>City
         <br>
-        <input type="text" name="City">
+        <input type="text" name="City" id="city">
       </label>
 
       <br>
       <label>State
-        <select name="State">
+        <select name="State" id="state">
           <option value="">Plase Select An Option</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
@@ -87,17 +87,17 @@
       <fieldset>
         <legend>First Time Adopter?</legend>
         <label>
-          <input type="radio" name="first" value="yes">Yes
+          <input type="radio" name="first" value="yes" id="first-time-yes">Yes
         </label>
         <label>
-          <input type="radio" name="first" value="no">No
+          <input type="radio" name="first" value="no" id="first-time-no">No
         </label>
       </fieldset>
 
       <br>
       <label>Pickup Location
         <br>
-        <select name="pickupLocation">
+        <select name="pickupLocation" id="pickup">
           <option value="">Plase Select Pickup Location</option>
           <option value="CA">California</option>
           <option value="FL">Florida</option>
@@ -130,10 +130,10 @@
 
       <div class="checkout-t">
         <h3>Total Adoption Cost</h3>
-        <br>$1234.56
+        <p>$1234.56</p>
       </div>
 
-      <input type="submit" name="submit">
+      <input type="submit" name="submit" value="Submit" id="submitForm">
     </form>
 
     <footer class="footer-container">
@@ -148,6 +148,7 @@
       </nav>
       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
     </footer>
+    <script type="text/javascript" src="./checkout.js"></script>
 
   </body>
 </html>
