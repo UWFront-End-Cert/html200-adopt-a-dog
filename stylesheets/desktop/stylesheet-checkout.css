@@ -54,23 +54,24 @@
 }
 
 .dogs-adopted {
-  display: flex;
-}
+  display: grid;
+  grid-template-columns: 25% 25%;
+  margin: 0% 0% 0% 15%;
 
-.dogs-adopted-tile {
-  flex-flow: column;
 }
 
 .adoption-image-1 {
-  width: 8em;
-  margin-right: 1%;
-  margin-left: 15%;
+  grid-column: 1;
+  grid-row: 1;
+  width: 10em;
+
 }
 
 .adoption-image-2 {
-  width: 8em;
-  margin-right: 1%;
-  margin-left: 5%;
+  grid-column: 2;
+  grid-row: 1;
+  width: 10em;
+
 }
 
 .checkout-title-dogs {

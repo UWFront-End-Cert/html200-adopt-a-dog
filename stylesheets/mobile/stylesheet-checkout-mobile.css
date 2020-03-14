@@ -58,10 +58,6 @@
   margin: 0% 1% 0% 5%;
 }
 
-.dogs-adopted-tile {
-  flex-flow: column;
-}
-
 .adoption-image-1 {
   grid-column: 1;
   grid-row: 1;
