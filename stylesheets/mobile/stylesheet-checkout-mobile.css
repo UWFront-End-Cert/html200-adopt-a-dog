@@ -62,13 +62,14 @@
 }
 
 .adoption-image-1 {
-  width: 30%;
-  margin-left: 5%;
+  width: 6em;
+  margin-left: 3%;
+  margin-right: 1%;
 }
 
 .adoption-image-2 {
-  width: 30%;
-  margin-left: 5%;
+  width: 6em;
+  margin-right: 1%;
 }
 
 .checkout-title-dogs {
