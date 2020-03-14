@@ -10,10 +10,10 @@ Lifestyle: Emily is a Pacific Northwest native and is passionate about her job d
 Emily's family is very active and they hike and camp on the weekends. During the week, Emily helps her kids with their school work and extracurricular activities. The whole family are animal lovers but the kids have recently started asking for a family pet.
 
 
-Based off of this persona, I decided to test my site on the following devices: PC and MacBook laptop, iPhone 8, iPhone X, iPad, and Samsung Galaxy. I tested in Safari, as this is the most commonly used browser in their family, Chrome, Edge, and Firefox. While not ideal, some of these devices were tested through Chrome dev tools, as I don't have access to every device. However, I was able to check on an actual iPhone X, PC and Mac laptops and a Samsung Galaxy.
+Based off of this persona, the site was tested on the following devices: PC and MacBook laptop, iPhone 8, iPhone X, iPad, and Samsung Galaxy. I tested in Safari, as this is the most commonly used browser in their family, Chrome, Edge, and Firefox. While not ideal, some of these devices were tested through Chrome dev tools, as I don't have access to every device. However, I was able to check on an actual iPhone X, PC and Mac laptops and a Samsung Galaxy.
 
 While testing, I noticed an issue with the sizing of the cart icon in the header, as it was appearing very small and off center in Safari, Edge and Firefox. I adjusted that, while still keeping the styling responsive, so that it appears consistent across browsers and breakpoints. Because I have different stylesheets for the mobile, tablet and desktop, I adjusted each individually.
 
-Another issue discovered in testing was the sizing of the images within the checkout page when viewing on Safari. Despite appearing normal on Firefox, Chrome and Edge, the images were stretched on Safari for both mobile and desktop. Those were adjusted and styling was also changed to be more mobile-friendly on the smaller breakpoints. 
+Another issue discovered in testing was the sizing of the images within the checkout page when viewing on Safari. Despite appearing normal on Firefox, Chrome and Edge, the images were stretched on Safari for both mobile and desktop. Those were adjusted and styling was also changed to be more mobile friendly on the smaller breakpoints.
 
-In addition, all my pages were checking using an HTML validator, CSS validator, and ensured no console errors were showing.
+In addition, all of the pages were checking using an HTML validator, CSS validator, and ensured no console errors were showing.
