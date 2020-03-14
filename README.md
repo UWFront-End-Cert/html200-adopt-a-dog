@@ -12,4 +12,4 @@ Site features:
 * Easy to track totals if you plan to adopt more than one dog
 * If first time adopter is selected in checkout, you will receive a free starter kit (leash, collar, etc.)
 
-This site is designed to be responsive on all breakpoints and can be easily visited from a mobile device. Through rigorous testing, the Adoptadog website has confirmed strong cross-browser functionality. More details on the testing of the site can be found within testin.txt.
+This site is designed to be responsive on all breakpoints and can be easily visited from a mobile device. Through rigorous testing, the Adoptadog website has confirmed strong cross-browser functionality. More details on the testing of the site can be found within testing.txt.
