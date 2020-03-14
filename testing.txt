@@ -1,0 +1,17 @@
+User personas: The average visitor to this site most likely lives in the Seattle area and is looking to adopt a dog. Based on research done over the years, mobile web traffic has been consistently increasing so they are likely accessing the site using a mobile device or laptop and using the local browser on that device; most commonly, that will be Safari, Chrome or Firefox. Visitors are most likely between the ages of 25 and 50.
+
+Using this information, I've created this persona of who I believe represents the user base for the site:
+
+Persona description: Emily Sanders, 40, lives in Seattle with her husband and two kids. Her kids are 10 and 13 years old and attend a local middle school.
+
+Job: Emily works as a Sales Manager at an outdoors company and has a degree in Communication from the University of Washington. Her husband works at a local tech company.
+
+Lifestyle: Emily is a Pacific Northwest native and is passionate about her job due to her love of the outdoors. Her husband, Dave, works in tech. So the family is often introduced to the latest technology but it is not a priority to them. Often on the move, she frequently surfs the web on her iPhone X and uses the default browser, Safari. However, the family owns multiple devices, such as laptops and tablets, that the kids use at home for gaming and homework.
+Emily's family is very active and they hike and camp on the weekends. During the week, Emily helps her kids with their school work and extracurricular activities. The whole family are animal lovers but the kids have recently started asking for a family pet.
+
+
+Based off of this persona, I decided to test my site on the following devices: PC and MacBook laptop, iPhone 8, iPhone X, iPad, and Samsung Galaxy. I tested in Safari, as this is the most commonly used browser in their family, Chrome, Edge, and Firefox. While not ideal, some of these devices were tested through Chrome dev tools, as I don't have access to every device. However, I was able to check on an actual iPhone X, PC and Mac laptops and a Samsung Galaxy.
+
+While testing, I noticed an issue with the sizing of the cart icon in the header, as it was appearing very small and off center in Safari, Edge and Firefox. I adjusted that, while still keeping the styling responsive, so that it appears consistent across browsers and breakpoints. Because I have different stylesheets for the mobile, tablet and desktop, I adjusted each individually.
+
+In addition, all my pages were checking using an HTML validator, CSS validator, and ensured no console errors were showing.
