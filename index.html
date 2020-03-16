@@ -13,7 +13,10 @@
    <body>
       <a href="#maincontent" class="sr-only" >Skip to main content</a>
       <header>
-         <div class=checkout>  <i class="fas fa-shopping-cart"></i> $1234.56 <br>
+         <div class=checkout>
+            <i class="fas fa-shopping-cart"></i>
+            <div id='total'></div>
+            <br>
             <a href="checkout.html" role="button">Checkout</a>
          </div>
          <img src="images/adoptadog-logo.svg" alt='Adopt A Dog Logo' >
@@ -38,68 +41,68 @@
                <div class="row infoparent">
                   <div class="col-md-6 col-sm-12 col-lg-4">
                      <div class="col-sm-12 info">
-                        <img onclick="about('murphy')" src="images/murphy-card.jpg" alt='A dog named Murphy' >
+                        <img onclick="about('Murphy', 'Some Breed', '123.45')" src="images/murphy-card.jpg" alt='A dog named Murphy' >
                         <h3> Murphy </h3>
                         <br>
                         <h4> Cost to Adopt:</h4>
                         <p> $123.45 </p>
                         <p> Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae </p>
-                        <button id='murphy' onclick="adopt('murphy'); disableButton('murphy')">Adopt</button>
+                        <button id='murphy' onclick="disableButton('murphy')">Adopt</button> <!--adopt('murphy'); -->
                      </div>
                   </div>
                   <div class="col-md-6 col-sm-12 col-lg-4">
                      <div class="col-sm-12 info">
-                        <img onclick="about('poppy')" src="images/poppy-card.jpg" alt='A dog named Poppy' >
+                        <img onclick="about('Poppy', 'Some Breed', '123.45')" src="images/poppy-card.jpg" alt='A dog named Poppy' >
                         <h3> Poppy </h3>
                         <br>
                         <h4> Cost to Adopt:</h4>
                         <p> $123.45 </p>
                         <p> Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae </p>
-                        <button id='poppy' onclick="adopt('poppy'); disableButton('poppy')">Adopt</button>
+                        <button id='poppy' onclick="disableButton('poppy')">Adopt</button> <!--adopt('poppy'); -->
                      </div>
                   </div>
                   <div class="col-md-6 col-sm-12 col-lg-4">
                      <div class="col-sm-12 info">
-                        <img onclick="about('jack')" src="images/jack-card.jpg" alt='Jack the beagle' >
+                        <img onclick="about('Jack', 'Beagle', '123.45')" src="images/jack-card.jpg" alt='Jack the beagle' >
                         <h3> Jack </h3>
                         <br>
                         <h4> Cost to Adopt:</h4>
                         <p> $123.45 </p>
                         <p> Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae </p>
-                        <button id='jack' onclick="adopt('jack'); disableButton('jack')">Adopt</button>
+                        <button id='jack' onclick=" disableButton('jack')">Adopt</button> <!--adopt('jack');-->
                      </div>
                   </div>
                   <div class="col-md-6 col-sm-12 col-lg-4">
                      <div class="col-sm-12 info">
-                        <img onclick="about('duffy')" src="images/duffy-card.jpg" alt='A dog named Duffy' >
+                        <img onclick="about('Duffy', 'Some Breed', '123.45')" src="images/duffy-card.jpg" alt='A dog named Duffy' >
                         <h3> Duffy </h3>
                         <br>
                         <h4> Cost to Adopt:</h4>
                         <p>$123.45 </p>
                         <p> Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae </p>
-                        <button id='duffy' onclick="adopt('duffy'); disableButton('duffy')">Adopt</button>
+                        <button id='duffy' onclick=" disableButton('duffy')">Adopt</button> <!--adopt('duffy');-->
                      </div>
                   </div>
                   <div class="col-md-6 col-sm-12 col-lg-4">
                      <div class="col-sm-12 info">
-                        <img onclick="about('lucas')" src="images/lucas-card.jpg" alt='A dog named Lucas' >
+                        <img onclick="about('Lucas', 'Some Breed', '123.45')" src="images/lucas-card.jpg" alt='A dog named Lucas' >
                         <h3> Lucas </h3>
                         <br>
                         <h4> Cost to Adopt:</h4>
                         <p> $123.45 </p>
                         <p> Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae </p>
-                        <button id='lucas' onclick="adopt('lucas'); disableButton('lucas')">Adopt</button>
+                        <button id='lucas' onclick="disableButton('lucas')">Adopt</button> <!--adopt('lucas'); -->
                      </div>
                   </div>
                   <div class="col-md-6 col-sm-12 col-lg-4">
                      <div class="col-sm-12 info">
-                        <img onclick="about('jake')" src="images/jake-card.jpg" alt='Jake the yellow lab' >
+                        <img onclick="about('Jake', 'Yellow Lab', '123.45')" src="images/jake-card.jpg" alt='Jake the yellow lab' >
                         <h3> Jake </h3>
                         <br>
                         <h4> Cost to Adopt:</h4>
                         <p> $123.45 </p>
                         <p> Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae </p>
-                        <button id='jake' onclick="adopt('jake'); disableButton('jake')">Adopt</button>
+                        <button id='jake' onclick="disableButton('jake')">Adopt</button> <!--adopt('jake'); -->
                      </div>
                   </div>
                </div>
@@ -159,6 +162,7 @@
          </nav>
          <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script src="scripts/about.js"></script>
       <script src="scripts/adopt.js"></script>
    </body>

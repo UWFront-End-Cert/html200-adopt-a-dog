@@ -149,6 +149,8 @@ img {
 
 a {
 	color: rgb(81, 156, 183);
+	padding: 1rem;
+	margin: 1rem;
 	font-weight: bold;
 	display: block;
 	text-decoration: none;
@@ -156,8 +158,8 @@ a {
 
 a:hover,
 a:focus {
-	padding: 1rem;
-	margin: 1rem;
+	/*padding: 1rem;
+	margin: 1rem;*/
 	text-decoration: underline
 }
 
@@ -300,4 +302,12 @@ textarea {
 
 .c2 {
 	width: 60%;
+}
+
+.demonstration {
+	transform: scale(0.8);
+}
+
+.added-cart {
+	background-color: rgb(67, 67, 67);
 }

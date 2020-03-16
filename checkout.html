@@ -15,7 +15,10 @@
    <body>
       <a href="#maincontent" class="sr-only" >Skip to main content</a>
       <header>
-         <div class=checkout>  <i class="fas fa-shopping-cart"></i> $1234.56 <br>
+         <div class=checkout>
+            <i class="fas fa-shopping-cart"></i>  
+            <div id='total'></div>
+            <br>
             <a href="checkout.html" role="button">Checkout</a>
          </div>
          <img src="images/adoptadog-logo.svg" alt='Adopt A Dog Logo' >
@@ -147,7 +150,7 @@
             <div class="row">
                <div class="col-sm-4">
                   <div class="col-sm-4 checkout-image">
-                     <img onclick="about('lucas')" src="images/lucas-checkout.jpg"  alt='adopted dog named Lucas'>
+                     <img onclick="about('Lucas', 'Some Breed', '123.45')" src="images/lucas-checkout.jpg"  alt='adopted dog named Lucas'>
                   </div>
                   <div class='col-sm-8'>
                      <h3>Lucas</h3>
@@ -158,7 +161,7 @@
                </div>
                <div class="col-sm-4">
                   <div class="col-sm-4 checkout-image">
-                     <img onclick="about('duffy')" src="images/duffy-checkout.jpg"  alt='adopted dog named Duffy'>
+                     <img onclick="about('Duffy', 'Some Breed', '123.45')" src="images/duffy-checkout.jpg"  alt='adopted dog named Duffy'>
                   </div>
                   <div class='col-sm-8'>
                      <h3>Duffy</h3>
@@ -194,6 +197,7 @@
          </nav>
          <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script src="scripts/about.js"></script>
       <script src="scripts/checkout.js"></script>
    </body>

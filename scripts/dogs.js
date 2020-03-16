@@ -1,17 +1,20 @@
-const murphy = ["Murphy", "images/murphy-card.jpg", 'A dog named Murphy'];
-const poppy = ["Poppy", "images/poppy-card.jpg", 'A dog named Poppy'];
-const jack = ["Jack", "images/jack-card.jpg", 'Jack the beagle'];
-const duffy = ["Duffy", "images/duffy-card.jpg", 'A dog named Duffy'];
-const lucas = ["Lucas", "images/lucas-card.jpg", 'A dog named Lucas'];
-const jake = ["Jake", "images/jake-card.jpg", 'Jake the yellow lab'];
-const angus = ["Angus", "images/angus-card.jpg", 'A dog named Angus'];
-const violet = ["Violet", "images/violet-card.jpg", 'Violet the chocolate lab puppy'];
-const piper = ["Piper", "images/piper-card.jpg", 'A dog named Piper'];
-const maximus = ["Maximus", "images/maximus-card.jpg", 'A dog named Maximus'];
-const luna = ["Luna", "images/luna-card.jpg", 'A dog named Luna'];
-const stella = ["Stella", "images/stella-card.jpg", 'A dog named Stella'];
+const murphy = ["Murphy", "images/murphy-card.jpg", 'A dog named Murphy', 'Some Breed'];
+const poppy = ["Poppy", "images/poppy-card.jpg", 'A dog named Poppy', 'Some Breed'];
+const jack = ["Jack", "images/jack-card.jpg", 'Jack the beagle', 'Beagle'];
+const duffy = ["Duffy", "images/duffy-card.jpg", 'A dog named Duffy', 'Some Breed'];
+const lucas = ["Lucas", "images/lucas-card.jpg", 'A dog named Lucas', 'Some Breed'];
+const jake = ["Jake", "images/jake-card.jpg", 'Jake the yellow lab', 'Yellow Lab'];
+const angus = ["Angus", "images/angus-card.jpg", 'A dog named Angus', 'Some Breed'];
+const violet = ["Violet", "images/violet-card.jpg", 'Violet the chocolate lab puppy', 'Chocolate Lab'];
+const piper = ["Piper", "images/piper-card.jpg", 'A dog named Piper', 'Some Breed'];
+const maximus = ["Maximus", "images/maximus-card.jpg", 'A dog named Maximus', 'Some Breed'];
+const luna = ["Luna", "images/luna-card.jpg", 'A dog named Luna', 'Some Breed'];
+const stella = ["Stella", "images/stella-card.jpg", 'A dog named Stella', 'Some Breed'];
+const fee = 123.45
+
 const all = [murphy, poppy, jack, duffy, lucas, jake,
-	angus, violet, piper, maximus, luna, stella];
+	angus, violet, piper, maximus, luna, stella
+];
 const foot = document.getElementById("foot");
 const dogs = document.createElement("section");
 
@@ -27,7 +30,6 @@ function displayDogs(displayNumber) {
 	}*/
 
 	for (let x = 0; x < displayNumber; x += 1) {
-		console.log(x)
 		const object = all[x];
 		const dog = document.createElement("article");
 		dog.setAttribute("class", "dog");
@@ -35,7 +37,7 @@ function displayDogs(displayNumber) {
 		dogContent.setAttribute("class", "info");
 		const imagedog = document.createElement("img");
 		imagedog.setAttribute("id", object[0]);
-		imagedog.setAttribute("onclick", `about('${object[0].toLowerCase()}')`);
+		imagedog.setAttribute("onclick", `about( '${object[0]}', '${object[3]}', ${fee})`);
 		imagedog.setAttribute("src", object[1]);
 		imagedog.setAttribute("alt", object[2]);
 		const dogName = document.createElement("h3");
@@ -48,7 +50,7 @@ function displayDogs(displayNumber) {
 		dogParagraph.textContent = "Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"
 		const dogAdopt = document.createElement("button");
 		dogAdopt.setAttribute("id", object[0].toLowerCase());
-		dogAdopt.setAttribute("onclick", `adopt('${object[0].toLowerCase()}'); disableButton('${object[0].toLowerCase()}') `);
+		dogAdopt.setAttribute("onclick", `disableButton('${object[0].toLowerCase()}') `); /*adopt('${object[0].toLowerCase()}'); */
 		dogAdopt.textContent = 'Adopt';
 
 		dogContent.appendChild(imagedog);
@@ -67,4 +69,5 @@ function displayDogs(displayNumber) {
 //displayDogs(15);
 displayDogs(12);
 
-//Maybe one day I can make this displayNumber=6 and display it on the index.html page
+//Maybe one day I can make this displayNumber=6 and
+//display it on the index.html page
