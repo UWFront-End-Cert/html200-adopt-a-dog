@@ -35,14 +35,15 @@ h1 {
   overflow: hidden;
   width: 100%;
 }
-
-
-.header-checkout img {
-  padding-right: 0;
+.header-checkout img, p {
+  display: inline-block;
 }
+
 
 .checkout-img {
   width: 1.5em;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 
@@ -157,7 +158,8 @@ p {
 
 .home-container {
   margin: 1em 2em 2em 0em;
-  max-width: 90%;
+  width: 90%;
+  display: flex;
 }
 
 .home-container img {
@@ -166,10 +168,11 @@ p {
   width: 50%;
 }
 
-.home-container h2 p {
+
+.home-text {
   float: right;
-  padding: 1em 4em 4em 0em;
 }
+
 
 .dog-profiles {
   display: flex;
@@ -200,6 +203,7 @@ p {
   color: #fff;
 }
 
+
 .dog-profiles a:visited {
   color: #fff;
   background-color: #9bc344;
@@ -215,6 +219,10 @@ p {
   background-color: #103861;
 }
 
+.dog-profiles-shadow {
+  box-shadow: .5em .5em 1em green;
+  transform: scale(1.2);
+}
 
 
 .see-more {
@@ -257,7 +265,7 @@ p {
 }
 
 .blog-preview section {
-  padding: 0 1rem 4rem 0;
+  padding: 0 .5rem 2rem 0;
 }
 
 .blog-preview a:link {
@@ -490,10 +498,10 @@ footer p {
     font-size: 0;
   }
   .header-checkout {
-    top: 20%;
+    top: 23%;
     padding-right: 2rem;
     float: right;
-    align-items: center;
+    text-align: center;
   }
   nav {
     margin: 0;
@@ -509,13 +517,7 @@ footer p {
     text-align: left;
     padding: 1.5rem 0 1.5rem 0;
   }
-  .blog-preview {
-    border-top: 1px dotted #ccc;
-    border-left: none;
-    width: 95%;
-    padding-top: 3rem;
-    margin: 1rem;
-  }
+
   .blog-preview p {
     visibility: hidden;
     height: 0;
@@ -672,10 +674,9 @@ footer p {
     clear: both;
   }
   .blog-preview {
-    display: none;
+    display: flex;
     flex-flow: column wrap;
     border-left: 1px;
-    padding-left: 1rem;
     padding-right: 1rem;
     width: 25%;
     float: right;

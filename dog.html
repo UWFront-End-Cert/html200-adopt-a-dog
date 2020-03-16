@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="./dog.js"></script>
     <title>Dogs</title>
   </head>
   <body>
@@ -16,8 +15,9 @@
         </div>
       </div>
       <div class="header-checkout">
-        <p><img src="images/cart-icon.svg" class="checkout-img" alt="shopping cart">
-        $ 1234.56</p>
+        <img src="images/cart-icon.svg" class="checkout-img" alt="shopping cart">
+        <p id="totalCost">$0.00</p>
+        <br>
         <a href="checkout.html">Checkout</a>
       </div>
     </header>
@@ -190,6 +190,9 @@
       </nav>
       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
     </footer>
+
+    <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./dog.js"></script>
 
   </body>
 </html>
