@@ -527,7 +527,7 @@ form .radio-group input {
 /* barrowing media breakpoints from boostrap :) */
 
 /* Large devices (desktops, 992px and up) */
-@media screen (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .dogs .card {
     max-width: 23%;
   }
@@ -545,7 +545,7 @@ form .radio-group input {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media screen (max-width: 991px) {
+@media screen and (max-width: 991px) {
   header {
     background-size: contain;
     height: 15rem;
@@ -562,7 +562,7 @@ form .radio-group input {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media screen (max-width: 769px) {
+@media screen and (max-width: 769px) {
 
   h1 {
     margin-top:0;
@@ -622,7 +622,7 @@ form .radio-group input {
 }
 
 /* X-Small */
-@media screen (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .main-left .dogs .card,
   .dogs .card {
     max-width: 100%;
