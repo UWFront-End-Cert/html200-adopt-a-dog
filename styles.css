@@ -6,8 +6,8 @@
 body {
   margin:0;
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color:#3d3d3d;
 }
 header, nav, main, footer {
@@ -16,9 +16,10 @@ header, nav, main, footer {
 
 header .content,
 nav ul,
+main .home-content,
 main .content,
 footer .content {
-  max-width:75rem;
+  max-width:71rem;
   margin:0 auto;
 }
 
@@ -32,19 +33,57 @@ main {
     flex:1;
 }
 
-
 /* intro paragraph */
 
 .intro {
-  display: flex;
-  flex-direction: row;
   overflow: hidden;
   clear: both;
   margin-bottom: 3rem;
 }
 
 .intro img {
-  margin-right:2rem;
+  min-width: 100%;
+  height: auto;
+}
+
+main .home-content {
+  display: flex;
+}
+
+.main-left {
+  display: block;
+  width: 75%;
+}
+
+.main-right {
+  display: block;
+  width: 24%;
+  font-size: .8rem;
+  line-height: 1.1rem;
+}
+
+.main-right .blog .card {
+  margin-bottom:1rem;
+}
+
+.main-right .blog .card .card-img img {
+  width:100%;
+  height:auto;
+}
+
+.main-right .blog h3.card-title {
+  margin-top:1rem;
+}
+
+
+.main-right a:link, .main-right a:visited, .main-right a:hover, .main-right a:active {
+  color:#239ab9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-right a:hover, .main-right a:active {
+  text-decoration: underline;
 }
 
 /* header */
@@ -119,6 +158,7 @@ nav ul li:first-child {
 nav ul li a:hover {
   color:#ececec;
   background-color: #093c60;
+  text-decoration: none;
 }
 
 nav ul li a:after {
@@ -254,6 +294,10 @@ button.btn-gray:hover {
   margin-bottom: 3rem;
 }
 
+.main-left .dogs .card {
+  max-width: 32%;
+}
+
 .dogs .card > * {
   margin:0.625rem 1rem .3125rem;
 }
@@ -287,6 +331,22 @@ button.btn-gray:hover {
 
 .blog .card .card-title {
   margin-top:0;
+}
+
+.main-right .blog .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-right .blog {
+  padding-left:2rem;
+}
+
+.main-right .blog .card .card-img {
+  margin-right:0;
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 /* cart confirmation cards */
@@ -473,6 +533,7 @@ form .radio-group input {
   }
   header .content,
   nav ul,
+  main .home-content,
   main .content,
   footer .content {
     padding-left:1.25rem;
@@ -489,6 +550,7 @@ form .radio-group input {
     background-size: contain;
     height: 15rem;
   }
+  .main-left .dogs .card,
   .dogs .card {
     max-width: 48%;
   }
@@ -504,6 +566,14 @@ form .radio-group input {
 
   h1 {
     margin-top:0;
+  }
+
+  .main-right {
+    display: none;
+  }
+
+  .main-left {
+    width:100%;
   }
 
   .intro {
@@ -553,6 +623,7 @@ form .radio-group input {
 
 /* X-Small */
 @media (max-width: 576px) {
+  .main-left .dogs .card,
   .dogs .card {
     max-width: 100%;
   }
