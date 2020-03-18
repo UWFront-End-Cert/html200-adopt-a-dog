@@ -15,7 +15,7 @@
 
  # Test Results
 
- [link to test results](https://headieh.github.io/html200-adopt-a-dog/documents/testing.txt)
+ [link to test results](https://github.com/Headieh/html200-adopt-a-dog/blob/master/documents/testing.txt)
 
  # About
 
