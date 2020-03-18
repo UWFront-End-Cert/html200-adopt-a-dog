@@ -365,8 +365,8 @@ button {
     grid-template-columns: auto;
   }
 }
-
-/* @media screen and (max-width: 768px) {
+/* 
+@media screen and (max-width: 768px) {
   .grid-container {
       grid-template-columns: auto auto;
   }
