@@ -361,9 +361,6 @@ button {
 }
 
 @media screen and (max-width: 576px) {
-  aside {
-    display: none;
-  }
   .grid-container {
     grid-template-columns: auto;
   }
@@ -372,6 +369,12 @@ button {
 @media screen and (max-width: 768px) {
   .grid-container {
       grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 576px;) {
+  aside {
+    display: none;
   }
 }
 
