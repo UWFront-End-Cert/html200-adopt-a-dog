@@ -1,0 +1,28 @@
+USERS
+   Someone seeking a new dog to adopt.
+   Dogs require daily walks, and for this reason the site user is probably not elderly but is over the age of 18.
+   They could be a young person living on their own, or a couple seeking to get a dog to grow their family.
+   Users of this site will probably be active internet users and likely have laptops and smartphones with Chrome, Safari, Edge and Firefox.
+
+TESTING
+   To test the site, I went to the main page on multiple browsers on multiple operating systems. I clicked on all the links and had no issues.
+   I checked the javascript and jQuery by looking at the popup windows that displayed correctly, however the shopping cart total and adopt popup didn't display out 2 decimal points so I updated my code.
+   Hovering on the dog tile images behaved as expected.
+   I had no errors in the navigation and the form console logged the data correctly once submitted.
+   When filling out the form, I tested to confirm that the alert appeared and console displayed correct information after submitting.
+   Lastly, I verified responsiveness by adjusting the page size, tilting the devices and utilizing the inspect window.
+
+RESULTS
+
+   Mobile
+     iOS Mobile (iPhone8+ and iPhone SE): Site is responsive on both and blog previews are absent in the mobile
+     site as expected. Hover functionality worked when the image was clicked on and then went away when something else was clicked.
+
+   Browser   
+     Firefox 74.0 64bit - Everything displayed and functioned as expected.
+     Safari - Everything displayed and functioned as expected.
+     Edge - Everything displayed and functioned as expected.
+
+   Operating System
+     PC - Everything displayed and functioned as expected.
+     Mac - Everything displayed and functioned as expected.

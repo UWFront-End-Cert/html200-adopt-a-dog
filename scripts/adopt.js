@@ -12,8 +12,8 @@ function adopt(x) {
 	let total = eachFee.reduce(function (a, b) {
 		return a + b;
 	}, 0);
-	alert(`Total: ${total}`);
-	$("#total").text(`${total}`);
+	alert(`Total: ${total.toFixed(2)}`);
+	$("#total").text(`${total.toFixed(2)}`);
 }
 
 $('.info button').click(adopt);
