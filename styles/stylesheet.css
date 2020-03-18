@@ -203,6 +203,13 @@ a:hover {
   margin: 1em;
 }
 
+.grid-container-2 {
+  display: grid;
+  grid-gap: 1em 1em;
+  grid-template-columns: auto auto auto;
+  margin: 1em;
+}
+
 .card {
   width: 100%;
 
@@ -363,39 +370,35 @@ button {
 @media screen and (max-width: 576px) {
   .grid-container {
     grid-template-columns: auto;
+    width: 100%;
+  }
+    aside {
+      float: none;
+      visibility: hidden;
+  }
+  .intro {
+    width: 75%;
   }
 }
-/* 
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
   .grid-container {
+    grid-template-columns: auto auto;
+    width: 100%;
+  }
+  .grid-container-2 {
       grid-template-columns: auto auto;
+      width: 100%;
   }
-} */
-
-@media screen and (max-width: 576px;) {
   aside {
-    display: none;
+    float: none;
+    visibility: hidden;
   }
 }
 
-/*@media only screen and (min-width) {
-  .dog-1 {width: 75%;}
-  .dog-2 {width: 75%;}
-  .dog-3 {width: 75%;}
-  .dog-4 {width: 75%;}
-  .dog-5 {width: 75%;}
-  .dog-6 {width: 75%;}
-  .dog-7 {width: 75%;}
-  .dog-8 {width: 75%;}
-  .dog-9 {width: 75%;}
-  .dog-10 {width: 75%;}
-  .dog-11 {width: 75%;}
-  .dog-12 {width: 75%;}
-}
 
-
-/* @media print {
+@media print {
   body img {
   display: none;
   }
-} */
+}
