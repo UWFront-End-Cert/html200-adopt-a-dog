@@ -374,7 +374,7 @@ button {
   }
     aside {
       float: none;
-      visibility: hidden;
+      display: none;
   }
   .intro {
     width: 75%;
