@@ -388,7 +388,7 @@ Also the centered-content-container is affecting the centered dog tiles and the 
 
 Also you may need to edit the breakpoints so they are a more consistent transition. The aside disappears and comes back into view between 576 -768 px, and the dog grid turns back to a 3 column in the same area. */
 
-@media screen and (min-width: 768px) and (orientation: portrait) {
+/* @media screen and (min-width: 768px) and (orientation: portrait) {
   .grid-container {
     grid-template-columns: auto auto;
     width: 100%;
@@ -401,7 +401,7 @@ Also you may need to edit the breakpoints so they are a more consistent transiti
     float: none;
     display: none;
   }
-}
+} */
 
 
 @media print {
