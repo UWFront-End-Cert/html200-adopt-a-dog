@@ -164,10 +164,10 @@ a:hover {
   width: 33%;
 }
 
-.centered-content-container-1 {
+.centered-content-container {
   float: left;
   text-align: center;
-  width: 66%;
+  /* width: 66%; */
 }
 
 .centered-content {
@@ -376,9 +376,6 @@ button {
       float: none;
       display: none;
   }
-  .intro {
-    width: 75%;
-  }
 }
 
 /*
@@ -408,4 +405,4 @@ Also you may need to edit the breakpoints so they are a more consistent transiti
   body img {
   display: none;
   }
-} */
+}
