@@ -164,15 +164,15 @@ a:hover {
   width: 33%;
 }
 
-.centered-content-container {
+.centered-content-container-1 {
+  float: left;
   text-align: center;
   width: 66%;
 }
 
 .centered-content {
-  float: left;
   display: inline-block;
-  width: 85%;
+  width: auto;
 }
 
 .intro {
@@ -381,6 +381,13 @@ button {
   }
 }
 
+/*
+It is disappearing but you really want to be using display:none rather than visibility:hidden. Display None will make sure it takes up no space on the page while visibility just turns it invisible. Currently it affects how your headers and other elements are displayed.
+
+Also the centered-content-container is affecting the centered dog tiles and the size of them at the mobile resolution. After you fix the visibility issue open the chrome dev tools, go to a mobile view so there is one column, select that container and try toggling the width:66% on and off and you will see what I mean.
+
+Also you may need to edit the breakpoints so they are a more consistent transition. The aside disappears and comes back into view between 576 -768 px, and the dog grid turns back to a 3 column in the same area. */
+
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .grid-container {
     grid-template-columns: auto auto;
@@ -392,7 +399,7 @@ button {
   }
   aside {
     float: none;
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -401,4 +408,4 @@ button {
   body img {
   display: none;
   }
-}
+} */
