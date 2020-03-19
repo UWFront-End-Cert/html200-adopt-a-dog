@@ -358,7 +358,8 @@ button {
   align-items: center;
 }
 
-@media screen and (max-width: 576px) {
+
+@media only screen and (max-width: 576px) {
   aside {
     float: none;
     display: none;
@@ -375,20 +376,24 @@ button {
   .more-dogs {
     width: 100%;
   }
-  }
-
 }
 
-/*
 
-Also the centered-content-container is affecting the centered dog tiles and the size of them at the mobile resolution. After you fix the visibility issue open the chrome dev tools, go to a mobile view so there is one column, select that container and try toggling the width:66% on and off and you will see what I mean.
+/*Also the centered-content-container is affecting the centered dog tiles and the size of them at the mobile resolution. After you fix the visibility issue open the chrome dev tools, go to a mobile view so there is one column, select that container and try toggling the width:66% on and off and you will see what I mean.
 
 Also you may need to edit the breakpoints so they are a more consistent transition. The aside disappears and comes back into view between 576 -768 px, and the dog grid turns back to a 3 column in the same area. */
 
-/* @media screen and (max-width: 768px) and (orientation: portrait) {
+/* @media screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
   .grid-container-2 {
-      grid-template-columns: auto auto;
-      width: auto;
+    grid-template-rows: auto auto;
+  }
+
+  aside {
+    float: none;
+    display: none;
   }
 } */
 
