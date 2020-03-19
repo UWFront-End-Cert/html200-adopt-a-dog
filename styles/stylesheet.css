@@ -157,11 +157,12 @@ a:hover {
   color: #81b741;
 }
 
-.blog-preview {
+/*was previously .blog-preview*/
+aside {
   float: right;
   display: flex;
   flex-direction: column;
-  width: 33%;
+  /* width: 33%; */
 }
 
 .centered-content-container {
@@ -172,7 +173,7 @@ a:hover {
 
 .centered-content {
   display: inline-block;
-  width: auto;
+  width: 80%;
 }
 
 .intro {
@@ -196,14 +197,7 @@ a:hover {
   color: #494949;
 }
 
-.grid-container {
-  display: grid;
-  grid-gap: 1em 1em;
-  grid-template-columns: auto auto auto;
-  margin: 1em;
-}
-
-.grid-container-2 {
+.grid-container, .grid-container-2 {
   display: grid;
   grid-gap: 1em 1em;
   grid-template-columns: auto auto auto;
@@ -245,18 +239,16 @@ a:hover {
   color: #083c60;
 }
 
-.blog-text {
-}
-
 .more-dogs {
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
   color: #083c60;
   background-color: #d3d3d3;
   padding: .25em;
-  margin: 0 /*auto*/;
+  margin: 0 auto;
+  display: block;
   text-align: center;
-  max-width: 33%;
+  width: 33%;
   clear: both;
 }
 
@@ -266,8 +258,7 @@ footer {
   font-size: .5em;
   padding: 2em;
   border: none;
-  margin: 0;
-  /*margin: 1em;*/
+  margin: .5em;
   text-align: center;
   width: 100%;
   clear: both;
@@ -368,35 +359,36 @@ button {
 }
 
 @media screen and (max-width: 576px) {
+  aside {
+    float: none;
+    display: none;
+}
+  .centered-content-container {
+    width: auto;
+  }
   .grid-container {
     grid-template-columns: auto;
+  }
+  .grid-container-2 {
+    grid-template-rows: auto;
+  }
+  .more-dogs {
     width: 100%;
   }
-    aside {
-      float: none;
-      display: none;
   }
+
 }
 
 /*
-It is disappearing but you really want to be using display:none rather than visibility:hidden. Display None will make sure it takes up no space on the page while visibility just turns it invisible. Currently it affects how your headers and other elements are displayed.
 
 Also the centered-content-container is affecting the centered dog tiles and the size of them at the mobile resolution. After you fix the visibility issue open the chrome dev tools, go to a mobile view so there is one column, select that container and try toggling the width:66% on and off and you will see what I mean.
 
 Also you may need to edit the breakpoints so they are a more consistent transition. The aside disappears and comes back into view between 576 -768 px, and the dog grid turns back to a 3 column in the same area. */
 
-/* @media screen and (min-width: 768px) and (orientation: portrait) {
-  .grid-container {
-    grid-template-columns: auto auto;
-    width: 100%;
-  }
+/* @media screen and (max-width: 768px) and (orientation: portrait) {
   .grid-container-2 {
       grid-template-columns: auto auto;
-      width: 100%;
-  }
-  aside {
-    float: none;
-    display: none;
+      width: auto;
   }
 } */
 
