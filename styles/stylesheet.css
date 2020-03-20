@@ -162,27 +162,27 @@ aside {
   float: right;
   display: flex;
   flex-direction: column;
-  /* width: 33%; */
+  width: 33%;
+}
+
+section {
+  float: left;
+  display: inline-block;
+  width: 66%;
 }
 
 .centered-content-container {
-  float: left;
-  text-align: center;
-  /* width: 66%; */
-}
-
-.centered-content {
   display: inline-block;
-  width: 80%;
+  float: left;
+  width: 66%;
+  text-align: center;
+
 }
 
-.intro {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  /*margin: .5em;*/
-  justify-content: space-between;
-  position: relative;
+#main-content {
+  float: left;
+  display: block;
+  text-align: center;
 }
 
 .hug {
@@ -195,6 +195,7 @@ aside {
 
 .intro-text {
   color: #494949;
+  text-align: center;
 }
 
 .grid-container, .grid-container-2 {
@@ -375,7 +376,7 @@ button {
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  
+
   .centered-content-container {
     width: auto;
   }
