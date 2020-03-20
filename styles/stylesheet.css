@@ -69,7 +69,7 @@ h2 {
   font-family: 'Domine', serif;
   font-size: 2em;
   color: #083c60;
-  padding: .5em .5em .25em .5em;
+  /* padding: .5em .5em .25em .5em; */
   border: none;
   margin: 0;
   /*margin: .25em .5em .5em .5em;*/
@@ -157,18 +157,17 @@ a:hover {
   color: #81b741;
 }
 
-/*was previously .blog-preview*/
 aside {
   float: right;
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 25%;
 }
 
 section {
   float: left;
   display: inline-block;
-  width: 66%;
+  width: 75%;
 }
 
 .centered-content-container {
@@ -353,13 +352,21 @@ button {
   background-color: #81b741;
 }
 
+.adopt {
+  margin: auto;
+  text-align: center;
+}
+
 .inline {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
 
-@media screen and (min-width: 500px) and (max-width: 768px)  {
+@media screen and (max-width: 768px)  {
+  #main-content {
+    width: auto;
+  }
   aside {
     float: none;
     display: none;
@@ -375,8 +382,7 @@ button {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-
+@media screen and (min-width: 769px) {
   .centered-content-container {
     width: auto;
   }
@@ -385,9 +391,7 @@ button {
   }
   .more-dogs {
     width: 100%;
-}
-
-@media only screen and (min-width: 768px) and
+  }
 }
 
 @media print {
