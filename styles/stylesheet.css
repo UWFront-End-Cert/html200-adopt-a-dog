@@ -161,20 +161,23 @@ aside {
   float: right;
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 20%;
+  margin-right: 5%;
 }
 
 section {
   float: left;
   display: inline-block;
-  width: 75%;
+  width: 70%;
+  margin-left: 5%;
 }
 
 .centered-content-container {
   display: inline-block;
   float: left;
-  width: 66%;
+  width: 70%;
   text-align: center;
+  margin-left: 5%;
 
 }
 
@@ -186,9 +189,9 @@ section {
 
 .hug {
   padding: .25em;
-  margin: 0;
-  margin: .5em;
-  max-height: 50%;
+  margin: 0.5em;
+  height: 50%;
+  width: 30%;
   float: left;
 }
 
@@ -228,8 +231,9 @@ section {
 
 .blog-img {
   padding: .25em;
-  margin: 0;
-  /*margin: .5em;*/
+  margin: 0.5em;
+  width: 100%;
+  height: auto;
   float: left;
 }
 
@@ -379,6 +383,9 @@ button {
   }
   .more-dogs {
     width: 100%;
+  }
+  .intro-text {
+    font-size: 1.5em;
   }
 }
 
