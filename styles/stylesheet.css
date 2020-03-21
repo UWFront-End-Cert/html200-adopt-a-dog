@@ -1,3 +1,4 @@
+
 /*colors
 navy #083c60
 green #81b741
@@ -21,8 +22,11 @@ dark gray #3d3d3d
 }
 
 header {
-  background-color: #083c60;
   width: 100%;
+  background-image: url('../images/header-image.jpg');
+  background-size: auto;
+  background-position: center center;
+  background-color: linear-gradient(to left, #d3d3d3, #3d3d3d, #083c60);
   margin: 0;
 }
 
@@ -69,7 +73,6 @@ h2 {
   font-family: 'Domine', serif;
   font-size: 2em;
   color: #083c60;
-  /* padding: .5em .5em .25em .5em; */
   border: none;
   margin: 0;
 }
@@ -104,7 +107,6 @@ p {
   padding: .25em;
   border: none;
   margin: 0;
-  /*margin: .25em;*/
 }
 
 .cost {
@@ -123,7 +125,6 @@ nav ul {
   padding: 2em;
   border: none;
   margin: 0;
-  /*margin: 0 .5em .5em .5em;*/
   text-align: center;
 }
 
@@ -209,6 +210,7 @@ section {
 
 .card {
   width: 100%;
+  height: auto;
 }
 
 .dog-1, .dog-2, .dog-3, .dog-4, .dog-5, .dog-6, .dog-7, .dog-8, .dog-9, .dog-10, .dog-11, .dog-12 {
@@ -216,17 +218,11 @@ section {
   text-align: left;
 }
 
-.blog {
-  text-align: center;
-}
-
 .blog-content {
-  display: flex;
-  align-items: center;
+  display: block;
+  float: right;
   margin: 0;
-  /*margin: .5em;*/
-  justify-content: space-between;
-  position: relative;
+  border: solid red 2px;
 }
 
 .blog-img {
@@ -234,13 +230,26 @@ section {
   margin: 0.5em;
   width: 100%;
   height: auto;
-  float: left;
 }
 
-.blog-header {
+.canyon, .leashed, .fetch {
+  float: left;
+  padding: .25em;
+  margin: .25em;
+  max-width: 30%;
+  height: auto;
+}
+
+h2.blog {
+  text-align: center;
+}
+
+h2.blog-header {
   font-family: 'Domine', serif;
-  font-size: 2em;
+  font-size: 1.25em;
+  font-weight: bold;
   color: #083c60;
+  text-align: center;
 }
 
 .more-dogs {
