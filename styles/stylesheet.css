@@ -125,13 +125,13 @@ nav ul {
   padding: 2em;
   border: none;
   margin: 0;
+  margin-bottom: .25em;
   text-align: center;
 }
 
 li a.menu-links {
   color: #083c60;
   margin: 0;
-  /*margin: 0 .5em .5em .5em;*/
   border: none;
   text-decoration: none;
   text-align: center;
@@ -209,18 +209,17 @@ section {
 }
 
 .card {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
-.dog-1, .dog-2, .dog-3, .dog-4, .dog-5, .dog-6, .dog-7, .dog-8, .dog-9, .dog-10, .dog-11, .dog-12 {
+.dog {
   border: 2px solid #d3d3d3;
   text-align: left;
 }
 
 .blog-content {
-  display: block;
-  float: right;
+  display: flex;
   margin: 0;
   border: solid red 2px;
 }
@@ -233,23 +232,36 @@ section {
 }
 
 .canyon, .leashed, .fetch {
+  display: block;
   float: left;
   padding: .25em;
   margin: .25em;
-  max-width: 30%;
+  margin-right: 5%;
+  width: 30%;
   height: auto;
+
+}
+
+.blog-text {
+  display: block;
+  float: right;
+  margin-left: 5%;
+  width: 60%;
 }
 
 h2.blog {
   text-align: center;
+
 }
 
-h2.blog-header {
+.blog-header {
   font-family: 'Domine', serif;
-  font-size: 1.25em;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 900;
   color: #083c60;
   text-align: center;
+  display: inline-block;
+  float: right;
 }
 
 .more-dogs {
@@ -395,6 +407,9 @@ button {
     float: none;
     width: 100%;
   }
+  h1 {
+    width: auto
+  }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1000px) and (orientation: portrait){
@@ -409,6 +424,9 @@ button {
   }
   .more-dogs {
     width: 100%;
+  }
+  h1 {
+    width: auto;
   }
 }
 
