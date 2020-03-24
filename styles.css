@@ -90,7 +90,11 @@ main .home-content {
 
 header {
   display: block;
-  background: #0b0b0b url("images/header-image.jpg") no-repeat right top;
+  background-color: #0b0b0b;
+  background: linear-gradient(to right, #0b0b0b, #45413e);
+  background-image: url("images/header-image.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
   height:31.25rem;
 }
 
@@ -307,7 +311,7 @@ button.btn-gray:hover {
 }
 
 .dogs .card .card-img {
-  width:100%;
+  max-width:100%;
   height:auto;
   margin:0;
 }
@@ -593,7 +597,7 @@ form .radio-group input {
   }
 
   .blog .card .card-img {
-    width:100%;
+    max-width:100%;
     height:auto;
     margin:0;
   }
@@ -604,7 +608,7 @@ form .radio-group input {
   }
 
   .blog .card .card-img img {
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
   }
 
