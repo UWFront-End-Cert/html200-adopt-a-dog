@@ -1,9 +1,6 @@
 /* shared styles */
 * {
   box-sizing: border-box;
-}
-
-* {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -155,7 +152,6 @@ p.copyright {
 }
 
 /* blog styling */
-
 .blog-entry {
     margin: 0 5rem 4rem 2rem;
     overflow: auto;
@@ -187,9 +183,27 @@ p.copyright {
 }
 
 .dog-adoption-card {
-  width: 15rem;
+  width: 30%;
   border: 1px solid gray;
   margin: 1rem 1rem 1rem 1rem;
+}
+
+/* displays 2 cards in a row on table screens with room for margins */
+@media screen and (max-width: 768px) {
+  .dog-adoption-card {
+    width: 45%;
+    border: 1px solid gray;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+}
+
+/* displays 1 card in a row on mobile screens with room for margins */
+@media screen and (max-width: 576px) {
+  .dog-adoption-card {
+    width: 90%;
+    border: 1px solid gray;
+    margin: 1rem 1rem 1rem 1rem;
+  }
 }
 
 .adopt-button {
