@@ -16,15 +16,23 @@ function addUp(cost) {
   document.getElementById("cart-total").innerHTML = total;
 };
 
-const blog = document.getElementsByClassName('blog');
-const entries = [
-  {
-    title: 'Traveling With Your Dog'
-  }
-];
+  const blog = document.getElementById('blog');
+  const entries = [
+    {
+      title: 'Traveling With Your Dog'
+    },
+    {
+      title: 'How To Walk Multiple Dogs'
+    },
+    {
+      title: 'Teach Your Dog To Fetch!'
+    }
+  ];
 
-for (let i = 0; i < entries.length; i += 1) {
-  const entry = entries[i];
-  const title = document.createElement('h3');
-  title.textContent = entry.title;
-}
+  for (let i = 0; i < entries.length; i += 1) {
+    const entry = entries[i];
+    const entryTitle = document.createElement('h3');
+    entryTitle.textContent = entry.title;
+
+    blog.appendChild(entryTitle);
+  }

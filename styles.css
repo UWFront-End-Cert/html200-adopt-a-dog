@@ -62,16 +62,16 @@ main .home-content {
   line-height: 1.1rem;
 }
 
-.main-right .blog .card {
+.main-right #blog .card {
   margin-bottom:1rem;
 }
 
-.main-right .blog .card .card-img img {
+.main-right #blog .card .card-img img {
   width:100%;
   height:auto;
 }
 
-.main-right .blog h3.card-title {
+.main-right #blog h3.card-title {
   margin-top:1rem;
 }
 
@@ -319,31 +319,31 @@ button.btn-gray:hover {
 
 /* blog & cart-confirm cards */
 
-.blog .card,
+#blog .card,
 .cart-confirm .card {
   display: flex;
   margin-bottom:3rem;
 }
-.blog .card .card-img {
+#blog .card .card-img {
   margin-right:2rem;
   display: block;
 
 }
 
-.blog .card .card-title {
+#blog .card .card-title {
   margin-top:0;
 }
 
-.main-right .blog .card {
+.main-right #blog .card {
   display: flex;
   flex-direction: column;
 }
 
-.main-right .blog {
+.main-right #blog {
   padding-left:2rem;
 }
 
-.main-right .blog .card .card-img {
+.main-right #blog .card .card-img {
   margin-right:0;
   display: block;
   max-width: 100%;
@@ -586,25 +586,25 @@ form .radio-group input {
     min-width:100%;
   }
 
-  .blog .card {
+  #blog .card {
     display: flex;
     flex-direction: column;
     position: relative;
     padding-top:2rem;
   }
 
-  .blog .card .card-img {
+  #blog .card .card-img {
     max-width:100%;
     height:auto;
     margin:0;
   }
 
-  .blog .card .card-title {
+  #blog .card .card-title {
     position: absolute;
     top:-0.3125rem;
   }
 
-  .blog .card .card-img img {
+  #blog .card .card-img img {
     max-width: 100%;
     height: auto;
   }
@@ -686,8 +686,8 @@ form .radio-group input {
     border:1px solid gray;
   }
 
-  .main-right .blog .card .card-img,
-  .blog .card .card-img {
+  .main-right #blog .card .card-img,
+  #blog .card .card-img {
     display:none;
   }
 
