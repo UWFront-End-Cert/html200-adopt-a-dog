@@ -1,18 +1,5 @@
 /* shared styles */
 
-html, body {
-    position: absolute;
-    width: 100%;
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-body:after {
-    line-height: 325px; /* height of footer */
-    white-space: pre;
-    content: "\A";
-}
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -126,11 +113,8 @@ header {
 
 /* footer styling */
 footer {
-  position: absolute;
   width: 100%;
-  bottom: 0px;
   height: 325px;
-  margin-top: 325px;
   background-color: #3F3F3F;
 }
 
