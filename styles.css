@@ -90,11 +90,8 @@ main .home-content {
 
 header {
   display: block;
-  background-color: #0b0b0b;
   background: linear-gradient(to right, #0b0b0b, #45413e);
-  background-image: url("images/header-image.jpg");
-  background-repeat: no-repeat;
-  background-position: right top;
+  background: #0b0b0b url("images/header-image.jpg") no-repeat right top;
   height:31.25rem;
 }
 

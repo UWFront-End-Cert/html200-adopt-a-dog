@@ -16,7 +16,15 @@ function addUp(cost) {
   document.getElementById("cart-total").innerHTML = total;
 };
 
-const blog = document.getElementsbyClassName('blog');
-const heading = document.createElement('h1');
-heading.textContent = Adoptadog Blog;
-blog.appendChild(heading);
+const blog = document.getElementsByClassName('blog');
+const entries = [
+  {
+    title: 'Traveling With Your Dog'
+  }
+];
+
+for (let i = 0; i < entries.length; i += 1) {
+  const entry = entries[i];
+  const title = document.createElement('h3');
+  title.textContent = entry.title;
+}
