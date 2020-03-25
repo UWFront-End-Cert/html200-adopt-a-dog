@@ -15,3 +15,8 @@ function addUp(cost) {
   // a little something extra = updates cart total in header, but only for the page you are on (for now)
   document.getElementById("cart-total").innerHTML = total;
 };
+
+const blog = document.getElementsbyClassName('blog');
+const heading = document.createElement('h1');
+heading.textContent = Adoptadog Blog;
+blog.appendChild(heading);
