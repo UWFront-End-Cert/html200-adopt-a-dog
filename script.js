@@ -12,6 +12,7 @@ function addUp(cost) {
   document.getElementById("cart-total").innerHTML = total;
 };
 
+// blog
   const blog = document.querySelector('#blog');
   const entries = [
     {
@@ -37,43 +38,172 @@ function addUp(cost) {
     }
   ];
 
-  for (let i = 0; i < entries.length; i += 1) {
-    const entry = entries[i];
+  if (blog) {
+    for (let i = 0; i < entries.length; i += 1) {
+      const entry = entries[i];
 
-    const entryBody = document.createElement('article');
-    entryBody.setAttribute('class', 'card');
+      const entryBody = document.createElement('article');
+      entryBody.setAttribute('class', 'card');
 
-    const entryImg = document.createElement('div');
-    entryImg.setAttribute('class', 'card-img');
-    const imageLoc = document.createElement('img');
-    imageLoc.setAttribute('src', entry.image);
+      const entryImg = document.createElement('div');
+      entryImg.setAttribute('class', 'card-img');
+      const imageLoc = document.createElement('img');
+      imageLoc.setAttribute('src', entry.image);
 
-    const entryContent = document.createElement('div');
-    entryContent.setAttribute('class', 'card-content');
+      const entryContent = document.createElement('div');
+      entryContent.setAttribute('class', 'card-content');
 
-    const entrySnippet = document.createElement('p');
-    entrySnippet.setAttribute('class', 'snippet');
-    entrySnippet.textContent = entry.snippet;
+      const entrySnippet = document.createElement('p');
+      entrySnippet.setAttribute('class', 'snippet');
+      entrySnippet.textContent = entry.snippet;
 
-    const homeLink = document.createElement('p');
-    homeLink.setAttribute('class', 'read-more');
-    homeLink.innerHTML = '<a href="blog.html">Read more &gt;&gt;</a>';
+      const homeLink = document.createElement('p');
+      homeLink.setAttribute('class', 'read-more');
+      homeLink.innerHTML = '<a href="blog.html">Read more &gt;&gt;</a>';
 
-    const entryTitle = document.createElement('h3');
-    entryTitle.setAttribute('class', 'card-title');
-    entryTitle.textContent = entry.title;
+      const entryTitle = document.createElement('h3');
+      entryTitle.setAttribute('class', 'card-title');
+      entryTitle.textContent = entry.title;
 
-    const entryCopy = document.createElement('div');
-    entryCopy.setAttribute('class', 'card-copy');
-    entryCopy.innerHTML = entry.copy;
+      const entryCopy = document.createElement('div');
+      entryCopy.setAttribute('class', 'card-copy');
+      entryCopy.innerHTML = entry.copy;
 
-    //blog
-    blog.appendChild(entryBody);
-    entryImg.appendChild(imageLoc);
-    entryBody.appendChild(entryImg);
-    entryContent.appendChild(entryTitle);
-    entryContent.appendChild(entryCopy);
-    entryContent.appendChild(entrySnippet);
-    entryContent.appendChild(homeLink);
-    entryBody.appendChild(entryContent);
+      //blog
+      blog.appendChild(entryBody);
+      entryImg.appendChild(imageLoc);
+      entryBody.appendChild(entryImg);
+      entryContent.appendChild(entryTitle);
+      entryContent.appendChild(entryCopy);
+      entryContent.appendChild(entrySnippet);
+      entryContent.appendChild(homeLink);
+      entryBody.appendChild(entryContent);
+    };
+  }
+// dogs
+const dogs = document.querySelector('#dogs');
+const info = [
+  {
+    img: 'images/murphy-card.jpg',
+    name: 'Murphy',
+    breed: 'Brown and White',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  },
+  {
+    img: 'images/poppy-card.jpg',
+    name: 'Poppy',
+    breed:'Small, Cute, and Fluffy',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  },
+  {
+    img: 'images/jack-card.jpg',
+    name: 'Jack',
+    breed:'Small, Jack Russell Terrior',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  },
+  {
+    img: 'images/duffy-card.jpg',
+    name: 'Duffy',
+    breed:'American Bull Dog Mix',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  },
+  {
+    img: 'images/lucas-card.jpg',
+    name: 'Lucas',
+    breed:'Black Shetland Terrior Mix',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  },
+  {
+    img: 'images/jake-card.jpg',
+    name: 'Jake',
+    breed:'Small terrior, Lab mix',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  },
+  {
+    img: 'images/angus-card.jpg',
+    name: 'Angus',
+    breed:'Boxer',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  },
+  {
+    img: 'images/violet-card.jpg',
+    name: 'Violet',
+    breed:'Chocolate lab',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  },
+  {
+    img: 'images/piper-card.jpg',
+    name: 'Piper',
+    breed:'Small, fluffy, brown',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  },
+  {
+    img: 'images/maximus-card.jpg',
+    name: 'Maximus',
+    breed:'Small black and white terrior',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  },
+  {
+    img: 'images/luna-card.jpg',
+    name: 'Luna',
+    breed:'Happy golden / lab mix',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  },
+  {
+    img: 'images/stella-card.jpg',
+    name: 'Stella',
+    breed:'Small chihuahua',
+    cost: 123.45,
+    descr: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae'
+  }
+];
+
+if (dogs){
+  for (let j = 0; j < info.length; j += 1) {
+    const dog = info[j];
+
+    const dogBody = document.createElement('article');
+    dogBody.setAttribute('class', 'card');
+  //   <img class="card-img" onclick="dogInfo('Murphy','Brown and white breed',123.45)" src="images/murphy-card.jpg" alt="">
+    const dogImg = document.createElement('img');
+    const dogInfo = `dogInfo('${dog.name}','${dog.breed}',${dog.cost})`;
+    dogImg.setAttribute('class', 'card-img');
+    dogImg.setAttribute('src', dog.img);
+    dogImg.setAttribute('alt', dog.name + ' a ' + dog.breed);
+    dogImg.setAttribute('onclick', dogInfo);
+
+
+    const dogName = document.createElement('h3');
+    dogName.setAttribute('class', 'card-title');
+    dogName.textContent = dog.name;
+
+    const dogCost = document.createElement('p');
+    dogCost.innerHTML = '<strong>Cost to Adopt:</strong> $' + dog.cost;
+
+    const dogDesc = document.createElement('p');
+    dogDesc.textContent = dog.descr;
+
+    const dogBtn = document.createElement('button');
+    dogBtn.setAttribute('onclick', 'addUp(123.45)');
+    dogBtn.setAttribute('class', 'button btn-green small');
+    dogBtn.textContent = "Adopt";
+
+    dogBody.appendChild(dogImg);
+    dogBody.appendChild(dogName);
+    dogBody.appendChild(dogCost);
+    dogBody.appendChild(dogDesc);
+    dogBody.appendChild(dogBtn);
+    dogs.appendChild(dogBody);
   };
+}
