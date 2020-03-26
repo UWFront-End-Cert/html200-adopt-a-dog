@@ -66,6 +66,16 @@ main .home-content {
   margin-bottom:1rem;
 }
 
+.content #blog .card-content p.snippet,
+.content #blog .card-content p.read-more,
+.main-right #blog .card-content p {
+  display: none;
+}
+.main-right #blog .card-content p.snippet,
+.main-right #blog .card-content p.read-more {
+  display: block;
+}
+
 .main-right #blog .card .card-img img {
   width:100%;
   height:auto;
