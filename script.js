@@ -1,5 +1,5 @@
 function dogInfo(name,breed,cost) {
-  alert('This is ' + name + ', they are a ' + breed + '. It is $' + cost + ' to bring them home with you!');
+  alert('This is ' + name + ', they are a ' + breed + ' breed. It is $' + cost + ' to bring them home with you!');
 }
 
 let total = 0;

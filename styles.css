@@ -286,17 +286,17 @@ button.btn-gray:hover {
 /* cards */
 
 /* dog cards */
-.dogs {
+#dogs {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
-.dogs p {
+#dogs p {
   display: block;
   clear:both;
 }
-.dogs .card {
+#dogs .card {
   display: flex;
   flex-direction: column;
   max-width: 21%;
@@ -305,25 +305,25 @@ button.btn-gray:hover {
   margin-bottom: 3rem;
 }
 
-.main-left .dogs .card {
+.main-left #dogs .card {
   max-width: 32%;
 }
 
-.dogs .card > * {
+#dogs .card > * {
   margin:0.625rem 1rem .3125rem;
 }
 
-.dogs .card .card-title {
+#dogs .card .card-title {
   margin-top:1.25rem;
 }
 
-.dogs .card .card-img {
+#dogs .card .card-img {
   max-width:100%;
   height:auto;
   margin:0;
 }
 
-.dogs .card .card-img:hover {
+#dogs .card .card-img:hover {
   cursor: pointer;
 }
 
@@ -539,7 +539,7 @@ form .radio-group input {
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (max-width: 1199px) {
-  .dogs .card {
+  #dogs .card {
     max-width: 23%;
   }
   header .content,
@@ -561,8 +561,8 @@ form .radio-group input {
     background-size: contain;
     height: 15rem;
   }
-  .main-left .dogs .card,
-  .dogs .card {
+  .main-left #dogs .card,
+  #dogs .card {
     max-width: 48%;
   }
   form input,
@@ -634,8 +634,8 @@ form .radio-group input {
 
 /* X-Small */
 @media screen and (max-width: 576px) {
-  .main-left .dogs .card,
-  .dogs .card {
+  .main-left #dogs .card,
+  #dogs .card {
     max-width: 100%;
   }
   .intro img {
@@ -691,7 +691,7 @@ form .radio-group input {
     display: none;
   }
 
-  .dogs .card {
+  #dogs .card {
     box-shadow: none;
     border:1px solid gray;
   }
@@ -701,7 +701,7 @@ form .radio-group input {
     display:none;
   }
 
-  .dogs .card {
+  #dogs .card {
     max-width: 24%;
   }
 }
