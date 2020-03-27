@@ -82,7 +82,7 @@ if (blog) {
 }
 // dogs
 const dogsHome = document.querySelector('.home-content .main-left #dogs');
-const dogs = document.querySelector('.content #dogs');
+const dogs = document.querySelector('#dogs');
 const info = [
   {
     img: 'images/murphy-card.jpg',
@@ -172,6 +172,7 @@ const info = [
 
 if (dogs){
   for (let j = 0; j < info.length; j += 1) {
+    if (dogsHome){info.length = 6};
     const dog = info[j];
 
     const dogBody = document.createElement('article');
@@ -205,42 +206,5 @@ if (dogs){
     dogBody.appendChild(dogDesc);
     dogBody.appendChild(dogBtn);
     dogs.appendChild(dogBody);
-  };
-}
-if (dogsHome){
-  for (let j = 0; j < 6; j += 1) {
-    const dog = info[j];
-
-    const dogBody = document.createElement('article');
-    dogBody.setAttribute('class', 'card');
-    const dogImg = document.createElement('img');
-    const dogInfo = `dogInfo('${dog.name}','${dog.breed}',${dog.cost})`;
-    dogImg.setAttribute('class', 'card-img');
-    dogImg.setAttribute('src', dog.img);
-    dogImg.setAttribute('alt', dog.name + ' a ' + dog.breed);
-    dogImg.setAttribute('onclick', dogInfo);
-
-
-    const dogName = document.createElement('h3');
-    dogName.setAttribute('class', 'card-title');
-    dogName.textContent = dog.name;
-
-    const dogCost = document.createElement('p');
-    dogCost.innerHTML = '<strong>Cost to Adopt:</strong> $' + dog.cost;
-
-    const dogDesc = document.createElement('p');
-    dogDesc.textContent = dog.descr;
-
-    const dogBtn = document.createElement('button');
-    dogBtn.setAttribute('onclick', 'addUp(123.45)');
-    dogBtn.setAttribute('class', 'button btn-green small');
-    dogBtn.textContent = "Adopt";
-
-    dogBody.appendChild(dogImg);
-    dogBody.appendChild(dogName);
-    dogBody.appendChild(dogCost);
-    dogBody.appendChild(dogDesc);
-    dogBody.appendChild(dogBtn);
-    dogsHome.appendChild(dogBody);
   };
 }
