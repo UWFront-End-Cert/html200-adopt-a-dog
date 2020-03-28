@@ -5,52 +5,65 @@
   box-sizing: border-box;
 }
 body {
-  background-color: grey;
+  background-color: #f2f2f2;
 }
 header {
-  background: black url(../images/header-image.jpg)100% 100%;
-
+  background-image: url(../images/header-image.jpg);
+    background-size:100% 100%;
 }
-header img{
-  margin-left: 2.5rem;
+.adoptadog-logo img{
+
+  display:inline;
+  position: relative;
+  left: 2rem;
+  width:50%;
+  padding: 7.5rem;
+  top: 0.625rem;
 }
 .dog-adoption-agency {
-  color: green;
-  font-family: Arial;
-  font-size:1.9rem;
-  margin-left:4.375rem;
-  margin-top: -0.5625rem;
-}
-.heading-right {
-  position: absolute;
-    right: 4.6875rem;
-    width: 12.5rem;
-    margin-top: -7%;
+ color: green;
+ font-size:2.4rem;
+
+ display: inline;
+ position: relative;
+ left: 11rem;
+ bottom:8rem;
+
 
 }
-.hello {
-   width:30%;
- }
-.price{
-  color: white;
-  margin: 15%;
+.price {
+
+ display: inline;
+ position:absolute;
+ right:8rem;
+ top: 7rem;
+ color:white;
 }
-.checkout-button  a{
-  color: white;
+.checkout {
+
+display:inline;
+position:absolute;
+right:8.5rem;
+top:8.8rem;
+background-color:green;
+width:7%;
+height: 1.5rem;
+text-align: center;
+
+
+}
+.checkout a {
+  color:white;
   text-decoration: none;
-  font-weight: bold;
+}
 
-}
-.checkout-button {
-  background-color: green;
-  width: 12rem;
-  text-align: center;
-  padding: 0.625rem;
-  margin-left: -4rem;
-  margin-top: -1.3rem;
-}
+
+
+
+
+
 .top-nav {
-    background-color: #f2f2f2;
+    background-color: #d9d9d9;
 
 }
  ul {
@@ -58,6 +71,7 @@ header img{
   overflow: hidden;
   list-style-type: none;
   margin-left: 2.5rem;
+  padding:1.8rem;
  }
   li {
   float: left;
@@ -73,26 +87,27 @@ li  a {
 }
 .box {
   display: flex;
-  flex-direction: row;
-  margin: 0.875rem 3.75rem;
-
+  flex-direction:row;
+  }
+.box img {
+  margin-top:2rem;
+  margin-left:5rem;
 }
-.imgBx {
-
-}
-
 .content {
-  margin: 1.25rem;
-  padding:1.875rem;
-
+  margin-right:7rem;
+  margin-top:2rem;
+  margin-left:2rem;
 }
 .content h1 {
-  margin-top: -3.2rem;
+  margin-bottom:1.7rem;
 }
 .content p {
-  margin-top: 3.2rem;
-   line-height: 1.6;
+  font-size:1.7rem;
+  word-spacing:1rem;
+  letter-spacing: 0.02rem;
+  color:	 #666666;
 }
+
 .footer-logo {
   width: 25%;
 
@@ -115,15 +130,8 @@ footer nav {
 
 .row {
   margin: 1.875rem;
-  padding: 3.125rem;
 }
-
-
-
 .column {
-  padding: 1.875rem;
-
-
 }
 
 /* Create four equal columns that floats next to each other */
@@ -133,11 +141,11 @@ footer nav {
 }
 
 /* Clear floats after rows */
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 /* Content */
 .content {
