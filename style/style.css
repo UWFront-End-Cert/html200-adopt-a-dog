@@ -21,8 +21,8 @@ header {
   top: 0.625rem;
 }
 .dog-adoption-agency {
- color: green;
- font-size:2.4rem;
+ color:#81b741;
+ font-size:1.875rem;
 
  display: inline;
  position: relative;
@@ -45,7 +45,7 @@ display:inline;
 position:absolute;
 right:8.5rem;
 top:8.8rem;
-background-color:green;
+background-color:#81b741;
 width:7%;
 height: 1.5rem;
 text-align: center;
@@ -63,7 +63,7 @@ text-align: center;
 
 
 .top-nav {
-    background-color: #d9d9d9;
+    background-color: #ececec;
 
 }
  ul {
@@ -107,6 +107,40 @@ li  a {
   letter-spacing: 0.02rem;
   color:	 #666666;
 }
+
+
+
+.card-content {
+  border: 0.125rem solid gray;
+  width: 85%;
+  box-shadow:0 0.5rem 0.625rem 0 #888888;
+}
+
+.container {
+  height:15.625rem;
+  padding: 0.875rem  3rem;
+}
+.container h3 {
+  font-size: 1.5rem;
+  color: #094160;
+  margin:0  1rem 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer-logo {
   width: 25%;
