@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-logo-checkout-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-checkout-wrapper {
+    max-width: 200px;
+}
+
+.header-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.header-logo-heading {
+    color: #86b349;
+}
+
+.header-checkout-cart {
+    color: #ffffff;
+}
+
+.header-checkout-icon {
+    width: 1em;
+}
+
+.header-background-container {
+    background-color: #000000;
+}
+
+.header-background-image {
+    max-width: 50%;
+    z-index: -1;
+
+}
+
+.header-checkout-link {
+    background-color: #86b349;
+    padding: 1rem;
+}
+
+.header-nav {
+    background-color: #dad8d2;
+    color: #113c60;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #113c60;
+
+}
+
+main {
+    padding: 1em;
+}
+
+.dog-card-display {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.dog-card {
+    max-width: 200px;
+    padding: 1em;
+    margin: 1em;
+    border-style: solid;
+    border-color: #dad8d2;
+    border-width: 1px;
+}
+
+.dog-card-image {
+    width: 100%;
+}
+
+footer {
+    background-color: #113c60;
+}
+
+.footer-content-container {
+    max-width: 50%;
+    margin: auto;
+    color: #ffffff;
+}

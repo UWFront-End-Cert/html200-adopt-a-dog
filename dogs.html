@@ -8,23 +8,33 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-    <header>
-        <img class="header-logo" src="images/adoptadog-logo.svg" alt="adopt-a-dog logo">
-        <h1 class="header-heading">Seattle’s premiere dog adoption agency</h1>
-        <img class="header-background-image" src="images/header-image.jpg" alt="dog eyes close up">
-        <div class="header-checkout-wrapper">
-            <img class="header-checkout-icon" src="images/cart-icon.svg" alt="checkout cart icon">
-            <p class="header-checkout-cart">$1234.56</p>
-            <a href="checkout.html" class="header-checkout-link">Checkout</a>
-        </div>
-        <nav class="header-nav">
-            <a href="index.html">Home</a>/
-            <a href="dogs.html">Dogs</a>/
-            <a href="blog.html">Blog</a>
-        </nav>
-    </header>
+        <header>
+            <div class="header-logo-checkout-container">
+                <div class="header-logo-wrapper">
+                    <img src="images/adoptadog-logo.svg" alt="adopt-a-dog logo">
+                    <h1 class="header-logo-heading">Seattle’s premiere dog adoption agency</h1>
+                </div>
+                <div class="header-checkout-wrapper">
+                    <img class="header-checkout-icon" src="images/cart-icon.svg" alt="checkout cart icon">
+                    <p class="header-checkout-cart">$1234.56</p>
+                    <a href="checkout.html" class="header-checkout-link">Checkout</a>
+                </div>
+            </div>
+            <div class="header-backgrond-container">
+                <img class="header-background-image" src="images/header-image.jpg" alt="dog eyes close up">
+            </div>
+            
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dogs.html">Dogs</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
     <main>
         <h1>Here are all of our Dogs!</h1>
+        <div class="dog-card-display">
         <article class="dog-card">
             <img src="images/murphy-card.jpg" class="dog-card-image" alt="dog">
             <h2 class="dog-card-heading">Murphy</h2>
@@ -120,16 +130,21 @@
             <p class="dog-card-description">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
             <a href="" class="dog-card-adopt-link">Adopt</a>
         </article>
+        </div>
     </main>
     <footer>
-        <img class="footer-logo" src="images/adoptadog-logo.svg" alt="adopt-a-dog logo">
-        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-        <nav class="footer-nav">
-            <a href="index.html">Home</a>/
-            <a href="dogs.html">Dogs</a>/
-            <a href="blog.html">Contact</a>
-        </nav>
+        <div class="footer-content-container">
+            <img class="footer-logo" src="images/adoptadog-logo.svg" alt="adopt-a-dog logo">
+            <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dogs.html">Dogs</a></li>
+                    <li><a href="blog.html">Contact</a></li>
+                </ul>
+            </nav>
         <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+        </div>
     </footer>
     </body>
 </html>
