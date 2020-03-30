@@ -9,10 +9,12 @@ header {
     flex-direction: column;
 }
 
-.header-logo-checkout-container {
+
+.header-logo-checkout-overlay {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    z-index: 2;
 }
 
 .header-checkout-wrapper {
@@ -37,14 +39,16 @@ header {
     width: 1em;
 }
 
-.header-background-container {
+.header-background-image-container {
+    position: absolute;
+    max-width: 100%;
+    z-index: -1;
     background-color: #000000;
 }
 
 .header-background-image {
-    max-width: 50%;
-    z-index: -1;
-
+    float: right;
+    max-width: 100%;
 }
 
 .header-checkout-link {
@@ -64,7 +68,7 @@ header {
 }
 
 main {
-    padding: 1em;
+    background-color: #ffffff;
 }
 
 .dog-card-display {
