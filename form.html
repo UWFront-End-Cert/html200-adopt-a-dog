@@ -31,23 +31,23 @@
 
     <form id="main-content-2" method="GET">
     <div class="form-grid">
-      <label class="name">Name
+      <label id="name" class="name">Name
         <input type="text" name="requestName" placeholder="Your Name">
       </label>
 
-      <label class="email">Email Address
+      <label id="email" class="email">Email Address
         <input type="email" name="requestEmail" placeholder="email@email.com">
       </label>
 
-      <label class="address">Street Address
+      <label id="address" class="address">Street Address
         <input type="text" name="requestAddress" placeholder="123 Main Street">
       </label>
       <div class="inline">
-      <label class="city">City
+      <label id="city" class="city">City
         <input type="text" name="requestCity" placeholder="Seattle">
       </label>
 
-      <label class="state">State
+      <label id="state" class="state">State
         <select name="state">
           <option value="">Please select</option>
           <option value="WA">Washington</option>
@@ -56,12 +56,12 @@
         </select>
       </label>
 
-      <label class="zip">Zip Code
+      <label id="zip" class="zip">Zip Code
         <input type="text" name="requestZip" placeholder="12345">
       </label>
     </div>
       <fieldset class="radio">
-        <legend class="first">First Time Adopter?</legend>
+        <legend id="first-time" class="first">First Time Adopter?</legend>
           <label class="first radio">
             <input type="radio" name="first" value="yes">Yes
           </label>
@@ -71,7 +71,7 @@
           </label>
         </fieldset>
 
-        <label class="pick-up">Pickup Location
+        <label id="location" class="pick-up">Pickup Location
           <select name="location">
             <option value="">Please select</option>
             <option value="downtown">Downtown Seattle</option>

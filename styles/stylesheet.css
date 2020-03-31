@@ -226,6 +226,10 @@ section {
   margin: 1em;
 }
 
+#travel, #walk {
+  border: solid red 2px;
+}
+
 .blog-img {
   padding: .25em;
   margin: 0.5em;
