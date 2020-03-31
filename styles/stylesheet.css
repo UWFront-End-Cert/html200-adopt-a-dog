@@ -226,7 +226,7 @@ section {
   margin: 1em;
 }
 
-#travel, #walk {
+#travel, #walk, #fetch {
   border: solid red 2px;
 }
 
