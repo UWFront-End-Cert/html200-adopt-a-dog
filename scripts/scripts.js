@@ -1,3 +1,4 @@
+//Lesson 05 assignment
 function dogInfo(dogBio) {
   alert(dogBio);
 }
@@ -63,3 +64,8 @@ imageThree.src = 'images/blog-3.jpg';
 // form.appendChild(label);
 // form.appendChild(input);
 // }
+
+
+//document.getElementbyId('').addEventListenerdocument("click", function() {
+  //alert("Thank you. The form information has been received");
+//}
