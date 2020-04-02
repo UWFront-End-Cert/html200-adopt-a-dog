@@ -42,26 +42,28 @@ containerOne.appendChild(blogOne);
 
 
 // leverage this to generate multiple blog posts
-const div = document.createElement('div');
+const article = document.createElement('article');
 const blogs = ['containerTwo', 'containerThree'];
 for (let i = 0; i < blogs.length; i += 1) {
-  const something else = document.createElement('something else');
-  something else.textContent = blogs[i];
-  something else.setAttribute('for', blogs[i]);
+  const article = document.createElement('article');
+  article.textContent = blogs[i];
+  article.setAttribute('for', blogs[i]);
   [
-    let containerTwo = {
+    containerTwo = {
       img: 'images/blog-2.jpg',
       alt: 'Four leashed dogs in a park all look attentively at person who is walking them',
       h2: 'How To Walk Multiple Dogs',
       p: 'Fat boi doge wow such tempt lotsa pats fat boi he made many woofs, yapper length boy borkf floofs. Fluffer lotsa pats the neighborhood pupper ur givin me a spook, bork much ruin diet. Puggo very hand that feed shibe corgo fluffer, long woofer noodle horse, smol borking doggo with a long snoot for pats such treat. You are doin me a concern ur givin me a spook waggy wags noodle horse sub woofer, shoober clouds you are doing me the shock. Shooberino ur givin me a spook vvv you are doing me the shock boof many pats wrinkler maximum borkdrive, you are doing me a frighten long doggo I am bekom fat blep pupperino shibe. Porgo adorable doggo borkf tungg, doing me a frighten. Smol thicc pupperino clouds long bois fluffer tungg, the neighborhood pupper ruff blop snoot length boy vvv, doggo doge boofers smol borking doggo with a long snoot for pats sub woofer. Mlem blep heckin good boys and girls smol maximum borkdrive, heckin good boys and girls you are doing me the shock adorable doggo. you are doin me a concern long water shoob. Very good spot fluffer long doggo, vvv.'
     },
-    let containerThree = {
+    containerThree = {
       img: 'images/blog-3.jpg',
       alt: 'ilhouetted woman holds ball up for sitting dog during sunset',
       h2: 'Teach Your Dog to Fetch!',
       p: 'Fat boi doge wow such tempt lotsa pats fat boi he made many woofs, yapper length boy borkf floofs. Fluffer lotsa pats the neighborhood pupper ur givin me a spook, bork much ruin diet. Puggo very hand that feed shibe corgo fluffer, long woofer noodle horse, smol borking doggo with a long snoot for pats such treat. You are doin me a concern ur givin me a spook waggy wags noodle horse sub woofer, shoober clouds you are doing me the shock. Shooberino ur givin me a spook vvv you are doing me the shock boof many pats wrinkler maximum borkdrive, you are doing me a frighten long doggo I am bekom fat blep pupperino shibe. Porgo adorable doggo borkf tungg, doing me a frighten. Smol thicc pupperino clouds long bois fluffer tungg, the neighborhood pupper ruff blop snoot length boy vvv, doggo doge boofers smol borking doggo with a long snoot for pats sub woofer. Mlem blep heckin good boys and girls smol maximum borkdrive, heckin good boys and girls you are doing me the shock adorable doggo. you are doin me a concern long water shoob. Very good spot fluffer long doggo, vvv.'
     }
   ];
+  blogs.article.appendChild(containerTwo);
+
 
 // const div = document.createElement('div');
 // document.appendChild(div);
