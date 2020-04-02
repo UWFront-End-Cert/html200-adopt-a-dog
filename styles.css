@@ -303,8 +303,11 @@ button.btn-gray:hover {
   box-shadow: 0 0.125rem .3125rem #cccccc;
   padding-bottom:1rem;
   margin-bottom: 3rem;
+  transition: 0.3s box-shadow;
 }
-
+#dogs .card.large-tile {
+  box-shadow: 0 1rem 2rem #0c0c0c;
+}
 .main-left #dogs .card {
   max-width: 32%;
 }
@@ -422,6 +425,10 @@ form input[type="checkbox"] {
   height:1rem;
   width:1rem;
   display: inline-block;
+}
+
+form .has-error {
+  border:1px solid red;
 }
 
 form .form-horizontal {

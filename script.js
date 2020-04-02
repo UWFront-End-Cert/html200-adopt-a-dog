@@ -2,15 +2,17 @@ function dogInfo(name,breed,cost) {
   alert('This is ' + name + ', they are a ' + breed + ' breed. It is $' + cost + ' to bring them home with you!');
 }
 
-let total = 0;
+//MOVED TO JQUERY.JS
+// let total = 0;
+//
+// function addUp(cost) {
+//   total += cost;
+//   alert('Total: $' + total);
+//
+//   // a little something extra = updates cart total in header, but only for the page you are on (for now)
+//   document.getElementById("cart-total").innerHTML = total;
+// };
 
-function addUp(cost) {
-  total += cost;
-  alert('Total: $' + total);
-
-  // a little something extra = updates cart total in header, but only for the page you are on (for now)
-  document.getElementById("cart-total").innerHTML = total;
-};
 
 // blog
 const blog = document.querySelector('#blog');
@@ -197,7 +199,7 @@ if (dogs){
 
     const dogBtn = document.createElement('button');
     dogBtn.setAttribute('onclick', 'addUp(123.45)');
-    dogBtn.setAttribute('class', 'button btn-green small');
+    dogBtn.setAttribute('class', 'button btn-green small adopt');
     dogBtn.textContent = "Adopt";
 
     dogBody.appendChild(dogImg);
