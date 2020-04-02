@@ -9,12 +9,12 @@ header {
     flex-direction: column;
 }
 
-h1, h2{
+h1, h2, a{
     font-family: 'Neuton', serif;
     color: #113c60;
 }
 
-p, a{
+p{
     font-family: 'Work+Sans', serif;
 }
 
@@ -81,19 +81,24 @@ p, a{
     max-width: 100%;
 }
 
-
-
 .header-nav{
     background-color: #dad8d2;
     color: #113c60;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    padding: 0px 210px;
 }
 
 .header-nav > a {
     text-decoration: none;
     color: #113c60;
+    padding: 1em;
+}
 
+.header-nav > span {
+    padding: 1em 5px;
 }
 
 main {
@@ -115,7 +120,8 @@ main {
 .dog-card-display {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
+    margin: 0px 210px;
 }
 
 .dog-card {
@@ -150,6 +156,11 @@ main {
     width: 100%;
 }
 
+.dog-card-bold {
+    font-weight: bold;
+    margin-right: 4px;
+}
+
 .see-more-button {
     margin: auto;
     text-decoration: none;
@@ -161,8 +172,20 @@ main {
 }
 
 .blog-post {
+    font-size: larger;
     display: flex;
     flex-direction: row;
+    margin: 0px 200px;
+    padding: 1em;
+}
+
+.blog-post-text > h2 {
+    font-size: larger;
+    margin: 1em 0px 0px 0px;
+}
+
+.blog-post-text > p {
+    line-height: 110%;
 }
 
 .blog-post-image {
@@ -170,7 +193,7 @@ main {
 }
 
 .blog-post-text {
-    padding: 1em;
+    padding: 0px 1em;
     display: flex;
     flex-direction: column;
     max-height: 100%;
