@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ADOPTADOG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- CONTAINER START -->
+  <div class="container">
+
+    <!-- HEADER START -->
+    <header>
+      <div class="logo-header">
+        <img src="/images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+        <p>Seattle's premiere dog adoption agency</p>
+      </div>
+      <div class='cart-wrapper'>
+        <small>$1234.56</small>
+        <br>
+        <a href="checkout.html" class="btn-checkout">Checkout</a>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- NAV START -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <!-- NAV END -->
+
+    <!-- SECTION START -->
+    <section class="section-checkout">
+
+      <h2>Checkout</h2>
+
+      <!-- FORM START  -->
+      <form>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="address">Street Address</label><br>
+        <input type="text" id="address" name="address"><br>
+
+        <div>
+          <label for="city">City</label><br>
+          <input type="text" id="city" name="city"><br>
+
+          <label for="state">State</label><br>
+          <select id="state">
+            <option value="WA">WA</option>
+          </select><br>
+
+          <label for="zipcode">Zip Code</label><br>
+          <input type="text" id="zipcode" name="zipcode"><br>
+        </div>
+
+        <label>First Time Adopter?</label><br>
+        <input id="yes" type="radio" name="yes-no" value="Yes">Yes
+        <input id="no" type="radio" name="yes-no" value="Yes">No<br>
+
+        <label for="location">Pickup Location</label><br>
+        <select id="location">
+          <option value="none">Select</option>
+        </select><br>
+
+        <div class="cart-items">
+          <h4>Dogs Adopted</h4>
+          <div>
+            <img src="images/lucas-card.jpg" alt="dog lucas">
+            <p>Lucas</p>
+            <small><strong>Cost to Adopt:</strong> $123.45</small>
+          </div>
+          <div>
+            <img src="images/duffy-card.jpg" alt="dog duffy">
+            <p>Lucas</p>
+            <small><strong>Cost to Adopt:</strong> $123.45</small>
+          </div>
+        </div>
+
+        <!-- Total Adoption Cost  -->
+        <h3>Total Adoption Cost</h3>
+        <p>$1234.56</p>
+        <input type="submit" class="btn-submit" value="Submit">
+
+      </form>
+      <!-- FORM END -->
+
+    </section>
+    <!-- SECTION END -->
+
+    <!-- FOOTER START -->
+    <footer>
+      <img src="/images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+      <p>Aborpas nisto inci tet aut que volupti beruptiberro to ex<br> esseque invenienihil imaximu sciderdu
+        ptistiusam consequunt</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <small>&copy; 2018 Adoptadog, LLC | Seattle, WA</small>
+    </footer>
+    <!-- FOOTER END -->
+
+  </div>
+  <!-- CONTAINER END -->
+
+</body>
+
+</html>
