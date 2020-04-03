@@ -198,7 +198,6 @@ if (dogs){
     dogDesc.textContent = dog.descr;
 
     const dogBtn = document.createElement('button');
-    dogBtn.setAttribute('onclick', 'addUp(123.45)');
     dogBtn.setAttribute('class', 'button btn-green small adopt');
     dogBtn.textContent = "Adopt";
 
