@@ -9,13 +9,13 @@ header {
     flex-direction: column;
 }
 
-h1, h2, a{
+h1, h2, label{
     font-family: 'Neuton', serif;
     color: #113c60;
 }
 
-p{
-    font-family: 'Work+Sans', serif;
+p, a{
+    font-family: 'Work+Sans', sans-serif;
 }
 
 .header-logo-checkout-overlay {
@@ -105,7 +105,17 @@ main {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    padding-bottom: 3em;
 }
+
+.main-heading {
+    margin: 0px 210px;
+}
+
+.main-heading > h1 {
+    margin: 1rem;
+}
+
 
 .homepage-intro {
     display: flex;
@@ -167,6 +177,7 @@ main {
     background-color: #dad8d2;
     color: #113c60;
     font-weight: bold;
+    font-size: large;
     padding: 1em 3em;
     border-radius: 3px;
 }
@@ -204,18 +215,61 @@ footer {
 }
 
 .footer-content-container {
-    max-width: 50%;
+    padding: 3em 0px;
+    max-width: 420px;
     margin: auto;
+    text-align: center;
     color: #ffffff;
 }
 
 .footer-nav{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.footer-nav > span {
+    padding: 1em 5px;
 }
 
 .footer-nav > a {
     text-decoration: none;
     color: #ffffff;
+    padding: 1em;
+}
 
+form {
+    display: flex;
+    flex-flow: column;
+    margin: 0px 210px;
+    padding: 1em;
+    max-width: 500px;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input {
+    height: 1.5rem;
+}
+
+select {
+    max-width: 4rem;
+}
+
+#name {
+    max-width: 100%;
+}
+
+#email {
+    max-width: 100%;
+}
+
+#street {
+    max-width: 100%;
+}
+
+#zip {
+    max-width: 5rem;
 }
