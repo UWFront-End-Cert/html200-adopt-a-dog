@@ -6,6 +6,35 @@
 </head>
 <style>
 
+    .header {
+        color: white;
+        background-color: #003366;
+        padding: 20px;
+        background-image: url("lesson04-mock2-banner-image.jpg");
+        background-repeat: no-repeat;
+        background-size: 1500px 160px;
+    }
+
+    h3 {
+        color: #4CAF50;
+    }
+    aside {
+        float: right;
+        margin-right: 650px;        
+    }
+    .murphy {
+        margin-top: 85px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 80px;
+        background-color: dimgray;
+        color: white;
+        margin-top: 125px;
+        background-image: url("lesson04-mock4-footer-image.jpg");
+    }
+
 </style>
 <body>
     <header>
@@ -18,12 +47,13 @@
         <a href="#main-content" class="hidden">Skip to main contet</a>
 
         <nav>
-            <a>Home</a> /
-            <a>Dogs</a> /
-            <a>Blog</a>
+            <a href="index.html">Home</a> /
+            <a href="DogsPage.html">Dogs</a> /
+            <a href="Blog.html">Blog</a> /
+            <a href="Checkout.html">Checkout</a>
         </nav>
-
-        <img src="home-intro.jpg" alt="dog logo">
+    </header>
+        <img src="home-intro.jpg" alt="Owner hugging golden retrirver">
 
         <aside>
             <!--Use position, float or flexbox for this content to be on the right-->
@@ -41,7 +71,7 @@
             </section>
         </aside>
 
-        <section>
+        <section class="murphy">
             <img src="murphy-card.jpg" alt="dog logo">
             <h4>Murphy</h4>
                 <p>Cost to Adopt: $123.45</p>
@@ -53,6 +83,16 @@
             <input type="submit" value="Adopt" />
         </section>
 
-    </header>
+        <footer>
+            <img src="dog-logo.png" alt="dog logo">
+            <p>
+                Aborpos nisto inci tet aut que volupti beruptiberro to ex<br />
+                esseque invenienihil imaximu scideru ptistiusam consequunt
+            </p>
+            <p>Home / Dogs / Contact </p>
+            <p>Ⓒ2018 Adoptadog, LLC | Seattle, WA</p>
+        </footer>
+
+    
 </body>
 </html>

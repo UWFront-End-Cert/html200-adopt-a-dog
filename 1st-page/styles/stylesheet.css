@@ -1,0 +1,99 @@
+h1 {
+    color: whitesmoke;
+}
+
+p{
+    color: black;
+}
+
+body {
+    background-color: lightskyblue;
+}
+
+.important {
+    font-weight: bold;
+    color: black;
+}
+
+#lead-paragraph {
+    color: brown;
+    font-weight: bold;
+}
+
+.freedom {
+    color: chartreuse;
+}
+
+.nature {
+    color: green;
+}
+.happiness {
+    color: hotpink;
+}
+
+h2 {
+    width: 500px;
+    background-color: coral;
+}
+
+h3 {
+    width: 500px;
+    background-color: cadetblue;
+}
+
+.surfing {
+    font-family: 'Luckiest Guy', serif;
+    font-size: 75px;
+    background: blue;
+    padding: 1rem;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: orangered;
+    margin: 1.5rem 0 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.important {
+    font-style: italic;
+}
+
+.fa-water {
+    color: blue;
+}
+
+a:hover,
+a:focus {
+    color: #333;
+    background-color: #fff;
+}
+
+footer:hover {
+    border: 3px solid green;
+}
+
+.surfing:hover {
+    border-radius: 50%;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: .8rem;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: steelblue;
+    border-radius: 15px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset input {
+    display: inline;
+}
