@@ -30,6 +30,14 @@ p, a{
     flex-direction: column;
 }
 
+.header-logo-wrapper > p {
+    margin: 0.5rem 1rem;
+}
+
+.header-logo-wrapper > h2 {
+    margin: 0rem 1rem;
+}
+
 .header-logo-heading {
     color: #86b349;
     font-family: serif;
@@ -48,19 +56,25 @@ p, a{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    place-self: center;
+    grid-row-end: 2;
+    justify-self: end;
+    align-self: end;
 }
 
 .header-checkout-cart {
     color: #ffffff;
     grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 1;
-    place-self: center;
+    grid-row-end: 2;
+    justify-self: end;
+    align-self: baseline;
 }
 
 .header-checkout-link {
     background-color: #86b349;
-    padding: 1rem;
+    border-radius: 3px;
+    padding: .5rem 3rem;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -148,11 +162,11 @@ main {
 }
 
 .dog-card > h2{
-    margin: 1rem;
+    margin: 0rem 1rem;
 }
 
 .dog-card > p {
-    margin: 1rem;
+    margin: 0.5rem 1rem;
 }
 
 .dog-card a {
@@ -249,7 +263,8 @@ footer {
 }
 
 .dog-checkout-image {
-    max-height: 100%
+    height: 25%;
+    width: 25%;
 }
 
 form {
@@ -270,12 +285,13 @@ form {
 button {
     font-family: inherit;
     font-size: large;
-    width: 50%;
+    font-weight: bold;
+    width: 12rem;
     background-color: #86b349;
     border-radius: 3px;
     color: #ffffff;
     border: none;
-    padding: 1rem;
+    padding: 0.5rem 3rem;
 }
 
 label {
@@ -284,23 +300,21 @@ label {
 
 input {
     height: 1.5rem;
-    width: 100%;
 }
 
-input[type=radio] {
-    width: 2rem;
-    border-style: solid;
-}
 
 select, option {
-    max-width: 4rem;
     height: 28px;
     padding: 1px;
     break-inside: auto;
     box-sizing: content-box;
     border-style: solid;
+    border-radius: 0px;
+    background-color: #ffffff;
+    border-width: 1px;
     border-block-width: 1px;
     border-inline-width: 1px;
+    border-color: rgb(192, 192, 192);
     border-block-start-color: rgb(192, 192, 192);
     border-block-end-color: rgb(192, 192, 192);
     -webkit-appearance: none;
@@ -311,7 +325,11 @@ select, option {
 .form-horizontal-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: flex-start;
+}
+
+.radio-label {
+    margin-right: 1rem;
 }
 
 #name {
@@ -334,6 +352,20 @@ select, option {
     width: 12rem;
 }
 
+#adopter {
+    width: 1rem;
+    align-self: center;
+}
+
+#adopter-container {
+    width: 29rem;
+}
+
+#pickup {
+    width: 12rem;
+}
+
 #zip {
     width: 8rem;
+    flex-grow: 1;
 }
