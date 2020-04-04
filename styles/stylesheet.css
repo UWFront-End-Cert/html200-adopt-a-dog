@@ -134,12 +134,17 @@ main {
     margin: 0px 210px;
 }
 
+.dog-card-price-description > span {
+    font-weight: bold;
+}
+
 .dog-card {
     max-width: 200px;
     margin: 1em;
     border-style: solid;
     border-color: #dad8d2;
     border-width: 1px;
+    font-size: small;
 }
 
 .dog-card > h2{
@@ -240,6 +245,11 @@ footer {
 
 .dog-checkout-card {
     width: 100%;
+    font-size: small;
+}
+
+.dog-checkout-image {
+    max-height: 100%
 }
 
 form {
@@ -279,7 +289,7 @@ input {
 
 input[type=radio] {
     width: 2rem;
-
+    border-style: solid;
 }
 
 select, option {
@@ -296,6 +306,12 @@ select, option {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
+
+.form-horizontal-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #name {

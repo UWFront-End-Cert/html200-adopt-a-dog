@@ -115,10 +115,12 @@
             </div>
             <div class="form-item">
                 <label for="adopter">First Time Adopter?</label>
+                <section class="form-horizontal-container">
                 <input type="radio" name="adopter" id="adopter" value="Yes">
                 <p>Yes</p>
                 <input type="radio" name="adopter" id="adopter" value="No">
                 <p>No</p>
+                </section>
             </div>
             <div class="form-item">
                 <label for="pickup">Pickup Location</label>
@@ -130,19 +132,29 @@
             </div>
             <div class="form-item">
                 <label>Dogs Adopted</label>
+                <section class="form-horizontal-container">
                 <article class="dog-checkout-card">
-                    <img class="dog-checkout-image" src="images/lucas-checkout.jpg" alt="dog">
-                    <h2 class="dog-checkout-heading">Lucas</h2>
-                    <p class="dog-checkout-price-description"><span>Cost to Adopt:</span>$123.45</p>
+                    <div class="form-horizontal-container">
+                        <img class="dog-checkout-image" src="images/lucas-checkout.jpg" alt="dog">
+                        <div class="header-logo-wrapper">
+                            <h2>Lucas</h2>
+                            <p class="dog-card-price-description"><span>Cost to Adopt:&nbsp;</span>$123.45</p>
+                        </div>
+                    </div>
                 </article>
                 <article class="dog-checkout-card">
-                    <img class="dog-checkout-image" src="images/duffy-checkout.jpg" alt="dog">
-                    <h2 class="dog-checkout-heading">Duffy</h2>
-                    <p class="dog-checkout-price-description"><span>Cost to Adopt:</span>$123.45</p>
+                    <div class="form-horizontal-container">
+                        <img class="dog-checkout-image" src="images/duffy-checkout.jpg" alt="dog">
+                        <div class="header-logo-wrapper">
+                            <h2>Duffy</h2>
+                            <p class="dog-card-price-description"><span>Cost to Adopt:&nbsp;</span>$123.45</p>
+                        </div>
+                    </div>
                 </article>
+                </section>
             </div>
             <div class="form-item">
-                <h2>Total Adoption Cost</h2>
+                <label>Total Adoption Cost</label>
                 <p>$1234.56</p>
                 <button type="submit">Submit</button>
             </div>
