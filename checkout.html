@@ -36,16 +36,26 @@
     <main>
         <div class="main-heading"><h1>Checkout</h1></div>
         <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" />
-            <label for="email">Email Address</label>
-            <input type="email" id="email" />
-            <label for="street">Street Address</label>
-            <input type="text" id="street" />
-            <label for="city">City</label>
-            <input type="text" id="city" />
-            <label for="state">State</label>
+            <div class="form-item">
+                <label for="name">Name</label>
+                <input type="text" id="name" />
+            </div>
+            <div class="form-item">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" />
+            </div>
+            <div class="form-item">
+                <label for="street">Street Address</label>
+                <input type="text" id="street" />
+            </div>
+            <div class="form-item">
+                <label for="city">City</label>
+                <input type="text" id="city" />
+            </div>
+            <div class="form-item">
+                <label for="state">State</label>
                 <select id="state"> 
+                    <option></option>
                     <option value="AL">AL</option>
                     <option value="AK">AK</option>
                     <option value="AZ">AZ</option>
@@ -98,32 +108,44 @@
                     <option value="WI">WI</option>
                     <option value="WY">WY</option>
                 </select>
-            <label for="zip">Zip Code</label>
-            <input type="text" id="zip" />
-            <p>First Time Adopter?</p>
-            <input type="radio" name="adopter" id="yes">
-            <label for="yes">Yes</label>
-            <input type="radio" name="adopter" id="no">
-            <label for="no">No</label>
-            <label for="pickup">Pickup Location</label>
-            <select id="pickup">
-                <option value="store">Store</option>
-                <option value="home">Home</option>
-            </select>
-            <h2>Dogs Adopted</h2>
-            <article class="dog-checkout-card">
-                <img class="dog-checkout-image" src="images/lucas-checkout.jpg" alt="dog">
-                <h2 class="dog-checkout-heading">Lucas</h2>
-                <p class="dog-checkout-price-description"><span>Cost to Adopt:</span>$123.45</p>
-            </article>
-            <article class="dog-checkout-card">
-                <img class="dog-checkout-image" src="images/duffy-checkout.jpg" alt="dog">
-                <h2 class="dog-checkout-heading">Duffy</h2>
-                <p class="dog-checkout-price-description"><span>Cost to Adopt:</span>$123.45</p>
-            </article>
-            <h2>Total Adoption Cost</h2>
-            <p>$1234.56</p>
-            <button type="submit">Submit</button>
+            </div>
+            <div class="form-item">
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" />
+            </div>
+            <div class="form-item">
+                <label for="adopter">First Time Adopter?</label>
+                <input type="radio" name="adopter" id="adopter" value="Yes">
+                <p>Yes</p>
+                <input type="radio" name="adopter" id="adopter" value="No">
+                <p>No</p>
+            </div>
+            <div class="form-item">
+                <label for="pickup">Pickup Location</label>
+                <select id="pickup">
+                    <option></option>
+                    <option value="store">Store</option>
+                    <option value="home">Home</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label>Dogs Adopted</label>
+                <article class="dog-checkout-card">
+                    <img class="dog-checkout-image" src="images/lucas-checkout.jpg" alt="dog">
+                    <h2 class="dog-checkout-heading">Lucas</h2>
+                    <p class="dog-checkout-price-description"><span>Cost to Adopt:</span>$123.45</p>
+                </article>
+                <article class="dog-checkout-card">
+                    <img class="dog-checkout-image" src="images/duffy-checkout.jpg" alt="dog">
+                    <h2 class="dog-checkout-heading">Duffy</h2>
+                    <p class="dog-checkout-price-description"><span>Cost to Adopt:</span>$123.45</p>
+                </article>
+            </div>
+            <div class="form-item">
+                <h2>Total Adoption Cost</h2>
+                <p>$1234.56</p>
+                <button type="submit">Submit</button>
+            </div>
         </form>
     </main>
     <footer>

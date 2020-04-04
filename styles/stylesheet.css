@@ -238,12 +238,34 @@ footer {
     padding: 1em;
 }
 
+.dog-checkout-card {
+    width: 100%;
+}
+
 form {
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
     margin: 0px 210px;
     padding: 1em;
     max-width: 500px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    font-family: inherit;
+    font-size: large;
+    width: 50%;
+    background-color: #86b349;
+    border-radius: 3px;
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
 }
 
 label {
@@ -252,24 +274,50 @@ label {
 
 input {
     height: 1.5rem;
+    width: 100%;
 }
 
-select {
+input[type=radio] {
+    width: 2rem;
+
+}
+
+select, option {
     max-width: 4rem;
+    height: 28px;
+    padding: 1px;
+    break-inside: auto;
+    box-sizing: content-box;
+    border-style: solid;
+    border-block-width: 1px;
+    border-inline-width: 1px;
+    border-block-start-color: rgb(192, 192, 192);
+    border-block-end-color: rgb(192, 192, 192);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #name {
-    max-width: 100%;
+    width: 29rem;
 }
 
 #email {
-    max-width: 100%;
+    width: 29rem;
 }
 
 #street {
-    max-width: 100%;
+    width: 29rem;
+}
+
+#state {
+    width: 4rem;
+}
+
+#city {
+    width: 12rem;
 }
 
 #zip {
-    max-width: 5rem;
+    width: 8rem;
 }
