@@ -55,7 +55,7 @@
             <div class="form-item">
                 <label for="state">State</label>
                 <select id="state"> 
-                    <option></option>
+                    <option value="">&nbsp;</option>
                     <option value="AL">AL</option>
                     <option value="AK">AK</option>
                     <option value="AZ">AZ</option>
@@ -114,18 +114,18 @@
                 <input type="text" id="zip" />
             </div>
             <div class="form-item">
-                <label for="adopter">First Time Adopter?</label>
+                <label>First Time Adopter?</label>
                 <section class="form-horizontal-container" id="adopter-container">
-                    <input type="radio" name="adopter" id="adopter" value="Yes">
-                    <p class="radio-label">&nbsp;Yes</p>
-                    <input type="radio" name="adopter" id="adopter" value="No">
-                    <p class="radio-label">&nbsp;No</p>
+                    <input type="radio" name="adopter" id="adopter-yes" value="Yes">
+                    <label class="radio-label" for="adopter-yes">&nbsp;Yes</label>
+                    <input type="radio" name="adopter" id="adopter-no" value="No">
+                    <label class="radio-label" for="adopter-no">&nbsp;No</label>
                 </section>
             </div>
             <div class="form-item">
                 <label for="pickup">Pickup Location</label>
                 <select id="pickup">
-                    <option></option>
+                    <option value="">&nbsp;</option>
                     <option value="store">Store</option>
                     <option value="home">Home</option>
                 </select>
@@ -136,7 +136,7 @@
                 <article class="dog-checkout-card">
                     <div class="form-horizontal-container">
                         <img class="dog-checkout-image" src="images/lucas-checkout.jpg" alt="dog">
-                        <div class="header-logo-wrapper">
+                        <div class="dog-checkout-description">
                             <h2>Lucas</h2>
                             <p class="dog-card-price-description"><span>Cost to Adopt:&nbsp;</span>$123.45</p>
                         </div>
@@ -145,7 +145,7 @@
                 <article class="dog-checkout-card">
                     <div class="form-horizontal-container">
                         <img class="dog-checkout-image" src="images/duffy-checkout.jpg" alt="dog">
-                        <div class="header-logo-wrapper">
+                        <div class="dog-checkout-description">
                             <h2>Duffy</h2>
                             <p class="dog-card-price-description"><span>Cost to Adopt:&nbsp;</span>$123.45</p>
                         </div>

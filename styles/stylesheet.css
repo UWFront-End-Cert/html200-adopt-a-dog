@@ -33,14 +33,6 @@ p, a{
     margin-left: 5em;
 }
 
-.header-logo-wrapper > p {
-    margin: 0.5rem 1rem;
-}
-
-.header-logo-wrapper > h2 {
-    margin: 0rem 1rem;
-}
-
 .header-logo-heading {
     color: #86b349;
     font-family: serif;
@@ -219,7 +211,7 @@ main {
 }
 
 .blog-post-text > h2 {
-    font-size: larger;
+    font-size: 1.5em;
     margin: 1em 0px 0px 0px;
 }
 
@@ -321,11 +313,7 @@ select, option {
     border-radius: 0px;
     background-color: #ffffff;
     border-width: 1px;
-    border-block-width: 1px;
-    border-inline-width: 1px;
     border-color: rgb(192, 192, 192);
-    border-block-start-color: rgb(192, 192, 192);
-    border-block-end-color: rgb(192, 192, 192);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -339,6 +327,24 @@ select, option {
 
 .radio-label {
     margin-right: 1rem;
+    font-size: 1rem;
+    font-style: none;
+    font-family: 'Work+Sans', sans-serif;
+    color: #000000;
+    align-self: center;
+}
+
+.dog-checkout-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.dog-checkout-description > p {
+    margin: 0.5rem 1rem;
+}
+
+.dog-checkout-description > h2 {
+    margin: 0rem 1rem;
 }
 
 #name {
@@ -361,7 +367,12 @@ select, option {
     width: 12rem;
 }
 
-#adopter {
+#adopter-yes {
+    width: 1rem;
+    align-self: center;
+}
+
+#adopter-no {
     width: 1rem;
     align-self: center;
 }
