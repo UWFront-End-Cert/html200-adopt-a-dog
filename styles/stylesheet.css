@@ -21,13 +21,16 @@ p, a{
 .header-logo-checkout-overlay {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 2;
 }
 
 .header-logo-wrapper {
     display: flex;
     flex-direction: column;
+    margin-top: 3em;
+    margin-bottom: 10em;
+    margin-left: 5em;
 }
 
 .header-logo-wrapper > p {
@@ -49,10 +52,13 @@ p, a{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 2em 3em;
+    margin-right: 5em;
+    margin-top: 3em;
+    margin-bottom: 10em;
 }
 
 .header-checkout-icon {
-    width: 1em;
+    width: 1.5em;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -92,7 +98,7 @@ p, a{
 
 .header-background-image {
     float: right;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .header-nav{
@@ -191,13 +197,16 @@ main {
 }
 
 .see-more-button {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
     text-decoration: none;
     background-color: #dad8d2;
     color: #113c60;
     font-weight: bold;
     font-size: large;
-    padding: 1em 3em;
+    padding: 1rem 4rem;
     border-radius: 3px;
 }
 
