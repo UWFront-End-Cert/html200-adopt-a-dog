@@ -19,10 +19,14 @@
         <img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
         <p>Seattle's premiere dog adoption agency</p>
       </div>
-      <div class='cart-wrapper'>
-        <small>$1234.56</small>
-        <br>
-        <a href="checkout.html" class="btn-checkout">Checkout</a>
+      <div class='checkout-wrapper'>
+        <div>
+          <img src="images/cart-icon.svg" alt="cart icon">
+          <small>$270.50</small>
+        </div>
+        <div>
+          <a href="checkout.html" class="btn btn-checkout">Checkout</a>
+        </div>
       </div>
     </header>
     <!-- HEADER END -->
@@ -45,55 +49,71 @@
       <!-- FORM START  -->
       <form>
         <label for="name">Name</label><br>
-        <input type="text" id="name" name="name"><br>
+        <input type="text" id="name" name="name" required><br>
         <label for="email">Email Address</label><br>
-        <input type="email" id="email" name="email"><br>
+        <input type="email" id="email" name="email" required><br>
         <label for="address">Street Address</label><br>
-        <input type="text" id="address" name="address"><br>
+        <input type="text" id="address" name="address" required><br>
 
-        <div>
-          <label for="city">City</label><br>
-          <input type="text" id="city" name="city"><br>
-
-          <label for="state">State</label><br>
-          <select id="state">
-            <option value="WA">WA</option>
-          </select><br>
-
-          <label for="zipcode">Zip Code</label><br>
-          <input type="text" id="zipcode" name="zipcode"><br>
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="city">City</label><br>
+            <input type="text" id="city" name="city" required><br>
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <select id="state" required name="state">
+              <option value="">Select</option>
+              <option value="WA">WA</option>
+              <option value="OR">OR</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="zipcode">Zip Code</label><br>
+            <input type="text" id="zipcode" name="zipcode" required><br>
+          </div>
         </div>
 
         <label>First Time Adopter?</label><br>
-        <input id="yes" type="radio" name="yes-no" value="Yes">Yes
-        <input id="no" type="radio" name="yes-no" value="Yes">No<br>
+        <input id="yes" type="radio" name="yes-no" value="Yes" required>Yes
+        <span class="gap"></span>
+        <input id="no" type="radio" name="yes-no" value="Yes" required>No<br>
 
         <label for="location">Pickup Location</label><br>
-        <select id="location">
-          <option value="none">Select</option>
+        <select id="location" class="location" name="location" required>
+          <option value="">Select</option>
+          <option value="WA">WA</option>
         </select><br>
-
-        <div class="cart-items">
-          <h4>Dogs Adopted</h4>
-          <div>
-            <img src="images/lucas-card.jpg" alt="dog lucas">
-            <p>Lucas</p>
-            <small><strong>Cost to Adopt:</strong> $123.45</small>
-          </div>
-          <div>
-            <img src="images/duffy-card.jpg" alt="dog duffy">
-            <p>Lucas</p>
-            <small><strong>Cost to Adopt:</strong> $123.45</small>
-          </div>
-        </div>
-
-        <!-- Total Adoption Cost  -->
-        <h3>Total Adoption Cost</h3>
-        <p>$1234.56</p>
-        <input type="submit" class="btn-submit" value="Submit">
 
       </form>
       <!-- FORM END -->
+
+      <h4>Dogs Adopted</h4>
+
+      <!-- CART ITEMS START -->
+      <div class="cart-wrapper">
+        <div class="cart-item">
+          <img src="images/lucas-card.jpg" alt="dog lucas">
+          <p>Lucas</p>
+          <p><strong>Cost to Adopt:</strong> $120.00</p>
+          <a href="#" class="btn-remove">Remove</a>
+        </div>
+        <div class="cart-item">
+          <img src="images/duffy-card.jpg" alt="dog duffy">
+          <p>Duffy</p>
+          <p><strong>Cost to Adopt:</strong> $150.50</p>
+          <a href="#" class="btn-remove">Remove</a>
+        </div>
+      </div>
+      <!-- CART ITEMS END  -->
+
+      <!-- CART TOTAL  -->
+      <div class="cart-total">
+        <h3>TOTAL ADOPTION COST</h3>
+        <p class="total-cost">$270.50</p>
+        <input type="submit" class="btn btn-submit" value="SUBMIT">
+      </div>
+      <!-- CART TOTAL END  -->
 
     </section>
     <!-- SECTION END -->
