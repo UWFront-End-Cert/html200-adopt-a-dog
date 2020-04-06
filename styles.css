@@ -11,7 +11,6 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   overflow-x: hidden;
@@ -74,7 +73,7 @@ header::before {
   background: url('images/header-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -10;
+  z-index: -20;
 }
 
 .logo-header {
@@ -424,3 +423,6 @@ footer small {
   font-weight: lighter;
   letter-spacing: .5px;
 }
+
+
+/* ================== MEDIA QUERIES ================= */
