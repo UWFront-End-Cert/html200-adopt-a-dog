@@ -193,6 +193,7 @@ main {
 
 .card img {
   width: 100%;
+  cursor: pointer;
 }
 
 figure :not(img) {
