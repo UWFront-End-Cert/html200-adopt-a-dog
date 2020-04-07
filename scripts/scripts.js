@@ -67,6 +67,3 @@ function myFee(fee) {
   document.getElementById('button-final').addEventListener("click", function myAdoption() {
     alert("Thank you. The form information has been received.");
   });
-  // let arr = [];
-  // let str = arr.join(' ');
-  //   console.log(str);
