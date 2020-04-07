@@ -36,6 +36,21 @@ h1 {
   color: rgb(0, 51, 102);
   font-weight: bold;
 }
+.large-headline {
+  font-color: 30rem;
+}
+.half-width {
+  width: 5%;
+  margin: 0 auto;
+}
+/*Lesson 09 assignment jQuery*/
+.tile-border {
+  outline: 4px solid orange;
+}
+.image-border {
+  outline: 4px dotted blue;
+}
+
 h2 {
   font-family: "Times New Roman", Times, serif;
   color: rgb(0, 51, 102);

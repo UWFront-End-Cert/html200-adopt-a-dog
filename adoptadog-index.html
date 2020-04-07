@@ -19,7 +19,7 @@
           <h1 class="header-h1">Seattle's premiere dog adoption agency</h1>
         </div>
         <div class="grid-item-2">
-          <img src="images/cart-icon.svg" alt="Click to go to checkout" style="min-width: 2rem; max-width:5%;">$1234.56
+          <img src="images/cart-icon.svg" alt="Click to go to checkout" style="min-width: 2rem; max-width:5%;">Total is: <div id = "cartTotal"></div>
           <p><a href="adoptadog-checkout.html"><img src="images/checkout-button.jpg" alt="Click to go to checkout" style="min-width: 1rem; max-width:15%;"></a>
         </div>
       </div>
@@ -29,7 +29,8 @@
       <nav class="nav-header">
         <a class="nav-link" href="adoptadog-index.html">Home / </a>
         <a class="nav-link" href="adoptadog-dogs.html">Dogs / </a>
-        <a class="nav-link" href="adoptadog-blog.html">Blog</a>
+        <a class="nav-link" href="adoptadog-blog.html">Blog / </a>
+        <a class="nav-link" href="adoptadog-checkout.html"> Checkout</a>
       </nav>
 
       <!--float left controls wrap. Use p class =header w/ same padding as header image class-->
@@ -79,7 +80,7 @@
           <div class= "grid-item">
             <div>
             <!--Use single quotations for strings-->
-            <button onclick="dogPhotoClick('Murphy', 'American Foxhound', 123.45)"><img src="images/murphy-card.jpg" alt="Picture of Murphy" style="width:100%;"></button>
+            <button onclick="dogPhotoClick('Murphy', 'American Foxhound', 123.45)"><img src="images/murphy-card.jpg" alt="Picture of Murphy" style="width:100%;" id = "dogPicture"></button>
             <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
@@ -94,7 +95,7 @@
 
           <div class= "grid-item">
             <div>
-              <button onclick="dogPhotoClick('Poppy', 'Labradoodle', 123.45)"><img src="images/poppy-card.jpg" alt="Picture of Poppy" style="width:100%;"></button>
+              <button onclick="dogPhotoClick('Poppy', 'Labradoodle', 123.45)"><img src="images/poppy-card.jpg" alt="Picture of Poppy" style="width:100%;" id = "dogPicture"></button>
               <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
@@ -109,7 +110,7 @@
 
           <div class= "grid-item">
             <div>
-              <button onclick="dogPhotoClick('Jack', 'Beagle', 123.45)"><img src="images/jack-card.jpg" alt="Picture of Jack" style="width:100%;"></button>
+              <button onclick="dogPhotoClick('Jack', 'Beagle', 123.45)"><img src="images/jack-card.jpg" alt="Picture of Jack" style="width:100%;" id = "dogPicture"></button>
               <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
@@ -124,7 +125,7 @@
 
           <div class= "grid-item">
             <div>
-              <button onclick="dogPhotoClick('Duffy', 'Pitbull Terrier', 123.45)"><img src="images/duffy-card.jpg" alt="Picture of Duffy" style="width:100%;"></button>
+              <button onclick="dogPhotoClick('Duffy', 'Pitbull Terrier', 123.45)"><img src="images/duffy-card.jpg" alt="Picture of Duffy" style="width:100%;" id = "dogPicture"></button>
               <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
@@ -139,7 +140,7 @@
 
           <div class= "grid-item">
             <div>
-              <button onclick="dogPhotoClick('Lucas', 'German Shepherd', 123.45)"><img src="images/lucas-card.jpg" alt="Picture of Lucas" style="width:100%;"></button>
+              <button onclick="dogPhotoClick('Lucas', 'German Shepherd', 123.45)"><img src="images/lucas-card.jpg" alt="Picture of Lucas" style="width:100%;" id = "dogPicture"></button>
               <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
@@ -154,7 +155,7 @@
 
           <div class= "grid-item">
             <div>
-              <button onclick="dogPhotoClick('Jake', 'Labrador Retriever', 123.45)"><img src="images/jake-card.jpg" alt="Picture of Jake" style="width:100%;"></button>
+              <button onclick="dogPhotoClick('Jake', 'Labrador Retriever', 123.45)"><img src="images/jake-card.jpg" alt="Picture of Jake" style="width:100%;" id = "dogPicture"></button>
               <script src="./js/lesson4Assignment2.js"></script>
             </div>
             <div class= "grid-text">
@@ -176,10 +177,12 @@
         <nav class="nav-footer">
           <a href="adoptadog-index.html">Home / </a>
           <a href="adoptadog-dogs.html">Dogs / </a>
-          <a href="adoptadog-blog.html">Blog</a>
+          <a href="adoptadog-blog.html">Blog / </a>
+          <a href="adoptadog-checkout.html">Checkout</a>
         </nav>
         <p class="footer">© 2020 Adoptadog, LLC | Seattle, WA</p>
       </footer>
-
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src ="./js/dog.js"></script>
   </body>
 </html>
