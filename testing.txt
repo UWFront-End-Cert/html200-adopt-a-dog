@@ -1,0 +1,25 @@
+User Personas:
+
+  Based on my research, the user base for the Adopt-a-dog website are as follows:
+    -Mostly female.
+    -Younger married couples with or without kids.
+    -Have owned are cared for dogs before.
+    -Educated and have researched the challenges of adopted dogs versus say, purchasing a puppy.
+    -Middle class to upper class with some degree of expendable time.
+    -People comfortable with e-commerce.
+    -Own at least (1) each of a laptop computer and smart phone. Some may have multiple computers, such as 1 for work and 1 for
+    personal use, as well as a tablet such as an iPad.
+    -On laptop, they are likely to use Chrome, Firefox and Safari web browsers over Edge, Internet Explorer and Opera.
+    -On mobile, they are likely to browse using iOS Safari and Chrome for Android.
+
+    A user persona can be found on this link: https://github.com/cdelapena/html200-adopt-a-dog/blob/master/DelaPena_User_Persona_Lesson10.pptx
+Testing:
+
+  To ensure site quality, I have performed the following:
+    -Utilized progressive enhancement by designing with mobile in mind, then adding for desktop.
+    -Tested website on Chrome, Firefox and IE on a 15.5" PC. Looked at each page in the website and resized to ensure that dog tiles, background
+    images, etc. all adjusted appropriately to maintain readibility.
+    -Used Chrome Dev Tools to simulate presentation on different phones.
+    -Ensured standard font and color across all pages.
+    -Ensured text did not become unreadably tiny for any view.
+    -Ensured horizontal scroll bar was not present for any mobile view or device.
