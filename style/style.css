@@ -70,8 +70,8 @@ text-align: center;
 
   overflow: hidden;
   list-style-type: none;
-  margin-left: 2.5rem;
-  padding:1.8rem;
+  margin-left: 9.5rem;
+  padding:1rem;
  }
   li {
   float: left;
@@ -88,6 +88,8 @@ li  a {
 .box {
   display: flex;
   flex-direction:row;
+  margin-left:3rem;
+  padding: 3rem;
   }
 .box img {
   margin-top:2rem;
@@ -253,6 +255,141 @@ footer img {
   color:#094160;
 
 }
+
+/*sign-out page styling8*/
+
+.form-container {
+ padding:1rem 5rem;
+ width: 60%;
+ margin: 0.75rem 6rem;
+}
+.container-content label{
+ color: #094160;
+  font-family:sans-serif;
+  font-size:1.5rem;
+}
+.container-content h1 {
+  color: #094160;
+  margin: 1.5rem 0;
+}
+.form-container > div{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.form-container input, select{
+  padding: 0.938rem;
+}
+
+.city {
+  width:30%;
+  height:4.375rem;
+  float:left;
+}
+
+.city input {
+
+   width:100%;
+   margin-top:0.313rem;
+   display:block;
+   height:1.25rem;
+ }
+
+.state {
+  width:10%;
+  height:4.375rem;
+  float:left;
+  margin-left:3rem;
+}
+
+.state select {
+    display: block;
+    margin-top:0.313rem;
+    width: 100%;
+    height:1.875rem;
+}
+.zip {
+
+ width:40%;
+ float:left;
+ margin-left:4rem;
+}
+.zip input {
+
+  display:block;
+  width:100%;
+  height:1.875rem;
+  margin-top:0.2rem;
+
+}
+.radio-adopt label {
+  margin-left:0.5rem;
+
+
+
+}
+#no {
+  border:1px solid blue;
+  margin-left:1rem;
+}
+.lucduff{
+
+  width:60%;
+  margin-left:8rem;
+
+}
+
+.lucas-duffy {
+
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  text-align:center;
+
+
+
+}
+.lucas-duffy img {
+  width:150px;
+  height:100px;
+}
+.dogs-adopted-signout {
+  padding:0.5rem 0 2rem 2rem;
+  margin-left:9rem;
+  color: #094160;
+}
+.total-adoption h2{
+  padding:0.5rem 0 2rem 2rem;
+  margin-left:9rem;
+  color: #094160;
+}
+.total-adoption p {
+   padding:0.5rem 0 2rem 2rem;
+  margin-left:9rem;
+}
+.checkout-button {
+   padding:0.5rem 0 2rem 2rem;
+  margin-left:9rem;
+
+}
+.checkout-button button  {
+    background-color:#81b741;;
+    width:20%;
+    height:60px;
+    font-size:1.4rem;
+    font-weight:bold;
+    color:white;
+  }
+.total-adoption p {
+  font-size:1.5rem;
+}
+
+
+
+
+
+
+
 
 
 
