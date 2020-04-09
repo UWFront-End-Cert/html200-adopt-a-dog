@@ -6,5 +6,6 @@ submitFinal.appendChild(submitButton);
 
 
 document.getElementById('button-final').addEventListener("click", function myAdoption() {
+  console.log(document.getElementById('name').value);
   alert("Thank you. The form information has been received.");
 });
