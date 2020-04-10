@@ -4,8 +4,9 @@ submitButton.setAttribute('type', 'submit');
 submitButton.textContent = 'Submit';
 submitFinal.appendChild(submitButton);
 
-
-document.getElementById('button-final').addEventListener("click", function myAdoption() {
-  console.log(document.getElementById('name').value);
+const form = document.getElementById('myForm');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  console.log(form.elements.value);
   alert("Thank you. The form information has been received.");
-});
+})
