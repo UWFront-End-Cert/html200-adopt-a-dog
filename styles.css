@@ -57,8 +57,26 @@ p {
 }
 
 .container {
-  max-width: 75%;
+  max-width: 70%;
   margin: 0 auto;
+}
+
+.home-wrapper {
+  display: flex;
+  padding-top: 3rem;
+}
+
+.left-container {
+  width: 80%;
+}
+
+.right-container {
+  width: 30%;
+  padding-left: 2rem;
+}
+
+.mobile-show {
+  display: none;
 }
 
 /* =============== HEADER =============== */
@@ -160,19 +178,14 @@ nav ul li:not(:last-child):after {
 
 /* ================== HOME PAGE / SECTION INTRO  ================= */
 
-.intro-wrapper {
-  display: flex;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .intro-text {
   width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .intro-wrapper img {
-  width: 70%;
-  padding-right: 2rem;
+  width: 100%;
 }
 
 .intro-text h1 {
@@ -187,11 +200,11 @@ main {
 
 .card {
   border: 1px solid #d3d3d3;
-  max-width: 22%;
+  max-width: 31%;
   justify-content: space-evenly;
   margin-bottom: 2rem;
   border-radius: 0.188rem;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .card:hover {
@@ -226,13 +239,46 @@ figcaption {
 .btn-see-more {
   display: block;
   margin: 1rem auto 3rem;
-  width: 22%;
   background-color: #89939a;
   color: #fff;
 }
 
 .btn-see-more:hover {
   background-color: #16486b;
+}
+
+/* ================== ASIDE  ================= */
+
+aside h2 {
+  padding-top: 0;
+}
+
+aside figure img {
+  width: 100%;
+}
+
+aside h4 {
+  padding: .5rem 0;
+}
+
+aside figcaption {
+  padding: 0 0 .5rem 0;
+}
+
+aside a {
+  text-decoration: none;
+  color: teal;
+  font-size: 0.875rem;
+}
+
+.aside-box {
+  margin-bottom: 2rem;
+}
+
+/* ================== DOGS PAGE  ================= */
+
+.dogs-wrapper .card {
+  max-width: 23%;
 }
 
 /* ================== BLOG PAGE / SECTION BLOG  ================= */
@@ -272,13 +318,13 @@ select {
   margin-top: .5rem;
   font-size: 1rem;
   color: #555;
+  border: 1px solid #c4c4c4;
 }
 
 .form-horizontal {
   display: flex;
   flex-direction: row;
   width: 86%;
-
 }
 
 .form-group {
@@ -434,3 +480,532 @@ footer small {
 
 
 /* ================== MEDIA QUERIES ================= */
+
+
+/* Extra small devices */
+@media screen and (min-width: 320px) and (max-width: 375px) {
+
+  header {
+    height: 8rem;
+  }
+
+  header::before {
+    background-size: contain;
+  }
+
+  .logo-header,
+  .checkout-wrapper {
+    padding-top: 1.5rem;
+    width: 100%;
+    height: 8rem;
+  }
+
+  .logo-header img {
+    position: relative;
+    top: 2rem;
+  }
+
+  header p {
+    top: 0;
+  }
+
+  .mobile-show {
+    display: block;
+    color: #8bc34a;
+    font-size: 1.5rem;
+    font-style: italic;
+    position: relative;
+    top: -1rem;
+  }
+
+  .mobile-hide {
+    display: none
+  }
+
+  .btn-checkout {
+    padding: .3rem 1rem;
+    font-size: .9rem;
+  }
+
+  .container {
+    max-width: 88%;
+  }
+
+  .left-container {
+    width: 100%;
+  }
+
+  .right-container {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .home-wrapper,
+  .dogs-wrapper,
+  .section-blog,
+  .section-checkout {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  .card,
+  .dogs-wrapper .card {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .intro-text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .intro-text h1 {
+    text-align: center;
+  }
+
+  .dogs-heading h2 {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  main figure small {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .btn-see-more {
+    margin: 1rem auto 2rem;
+  }
+
+  aside {
+    margin-bottom: 1rem;
+  }
+
+  .aside-box {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  aside h2 {
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  aside figure img,
+  aside figcaption {
+    display: none;
+  }
+
+  footer img {
+    max-width: 50%;
+  }
+
+  .blog-box {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .section-blog h2,
+  .section-checkout h2 {
+    padding-top: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .blog-box img {
+    width: 100%;
+  }
+
+  .blog-content {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .blog-content h3 {
+    margin-top: 1rem;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    border: 1px solid #c4c4c4;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .form-horizontal,
+  .location,
+  .cart-wrapper,
+  .cart-item {
+    display: block;
+    width: 100%;
+  }
+
+  .cart-total {
+    text-align: center;
+    width: 100%;
+  }
+
+  .cart-item {
+    padding-right: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .cart-item p {
+    margin-top: .5rem;
+  }
+
+  .cart-item img {
+    width: 100%;
+  }
+
+  .btn-remove {
+    display: block;
+    margin-top: 1rem;
+  }
+
+}
+
+/* Small devices */
+@media screen and (min-width: 376px) and (max-width: 500px) {
+
+  header {
+    height: 12.5rem;
+  }
+
+  header::before {
+    background-size: contain;
+  }
+
+  .logo-header,
+  .checkout-wrapper {
+    padding-top: 1.5rem;
+    width: 100%;
+    height: 11rem;
+  }
+
+  .logo-header img {
+    position: relative;
+    top: 2rem;
+  }
+
+  header p {
+    top: 0;
+  }
+
+  .mobile-show {
+    display: block;
+    color: #8bc34a;
+    font-size: 1.5rem;
+    font-style: italic;
+    position: relative;
+    top: -4rem;
+  }
+
+  .mobile-hide {
+    display: none
+  }
+
+  .btn-checkout {
+    padding: .3rem 1rem;
+    font-size: .9rem;
+  }
+
+  .container {
+    max-width: 88%;
+  }
+
+  .left-container {
+    width: 100%;
+  }
+
+  .right-container {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .intro-text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .intro-text h1 {
+    text-align: center;
+  }
+
+  .home-wrapper,
+  .dogs-wrapper {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  .card,
+  .dogs-wrapper .card {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  main figure small {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .btn-see-more {
+    margin: 1rem auto 2rem;
+  }
+
+  aside {
+    margin-bottom: 1rem;
+  }
+
+  .aside-box {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  aside h2 {
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  aside figure img,
+  aside figcaption {
+    display: none;
+  }
+
+  footer img {
+    max-width: 50%;
+  }
+
+  .dogs-heading h2 {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .blog-box {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .section-blog h2,
+  .section-checkout h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .blog-box img {
+    width: 100%;
+  }
+
+  .blog-content {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .blog-content h3 {
+    margin-top: 1rem;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    border: 1px solid #c4c4c4;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .form-horizontal,
+  .location,
+  .cart-wrapper,
+  .cart-item {
+    display: block;
+    width: 100%;
+  }
+
+  .cart-total {
+    text-align: center;
+    width: 100%;
+  }
+
+  .cart-item {
+    padding-right: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .cart-item p {
+    margin-top: .5rem;
+  }
+
+  .cart-item img {
+    width: 100%;
+  }
+
+  .btn-remove {
+    display: block;
+    margin-top: 1rem;
+  }
+
+}
+
+/* Medium deveices */
+@media screen and (min-width: 501px) and (max-width: 768px) {
+
+  .container {
+    max-width: 88%;
+  }
+
+  .left-container {
+    width: 100%;
+  }
+
+  .home-wrapper {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  header,
+  header::before {
+    height: 18rem;
+  }
+
+  .card,
+  .dogs-wrapper .card {
+    max-width: 48%;
+    margin-bottom: 1rem;
+  }
+
+  .right-container {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .intro-text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .intro-text h1 {
+    text-align: center;
+  }
+
+  main figure small {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .btn-see-more {
+    margin: 1rem auto 2rem;
+  }
+
+  .right-container {
+    display: none;
+  }
+
+  .dogs-heading h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    border: 1px solid #c4c4c4;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .form-horizontal,
+  .location,
+  .cart-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+  .cart-total {
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+/* Large devices */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .container {
+    max-width: 88%;
+  }
+
+  .intro-text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  main figure small {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .btn-see-more {
+    margin: 1rem auto 2rem;
+  }
+
+}
+
+
+/* Print  */
+@media print {
+
+  header {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    color: #000;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a {
+    color: #000;
+  }
+
+  img,
+  footer img,
+  .btn {
+    display: none;
+  }
+
+  .card,
+  .dogs-wrapper .card {
+    display: block;
+    max-width: 100%;
+  }
+}

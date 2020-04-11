@@ -17,7 +17,7 @@
     <header>
       <div class="logo-header">
         <img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
-        <p>Seattle's premiere dog adoption agency</p>
+        <p class="mobile-hide">Seattle's premiere dog adoption agency</p>
       </div>
       <div class='checkout-wrapper'>
         <div>
@@ -31,6 +31,8 @@
     </header>
     <!-- HEADER END -->
 
+    <p class="mobile-show">Seattle's Premiere <br>Dog Adoption Agency</p>
+
     <!-- NAV START -->
     <nav>
       <ul>
@@ -41,133 +43,167 @@
     </nav>
     <!-- NAV END -->
 
-    <!-- SECTION START -->
-    <section class="section-intro">
+    <!-- WRAPPER START  -->
+    <div class="home-wrapper">
+      <!-- LEFT CONTAINER START  -->
+      <div class="left-container">
 
-      <div class="intro-wrapper">
-        <img src="images/home-intro.jpg" alt="man hugging a dog">
-        <div class="intro-text">
-          <h1>Adopt A Dog</h1>
-          <p>The connection between humans and dogs has been long acknowledged as one of the strongest bonds around -
-            even if, at some point, they will inevitably try to steal a sausage off your plate. They’re incredibly
-            loyal. It’s no wonder 40% of dog owners recently admitted they tell their dogs everything – we know we can
-            trust them to be there for us! Their positive attitude is infectious. Dogs get so excited over the simplest
-            things – discarded food wrappers, a trip to the corner shop – that they make you appreciate the
-            little things in life.
-          </p>
-        </div>
+        <!-- SECTION START -->
+        <section class="section-intro">
+          <div class="intro-wrapper">
+            <img src="images/home-intro.jpg" alt="Man hugging a dog">
+            <div class="intro-text">
+              <h1>Adopt A Dog</h1>
+              <p>The connection between humans and dogs has been long acknowledged as one of the strongest bonds around
+                -
+                even if, at some point, they will inevitably try to steal a sausage off your plate. They’re incredibly
+                loyal. It’s no wonder 40% of dog owners recently admitted they tell their dogs everything – we know we
+                can
+                trust them to be there for us! Their positive attitude is infectious. Dogs get so excited over the
+                simplest
+                things – discarded food wrappers, a trip to the corner shop – that they make you appreciate the
+                little things in life.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION END -->
+
+        <!-- MAIN / CARDS START -->
+        <main>
+
+          <div class="card">
+            <figure>
+              <img onclick="alertDogInfo('Murphy', 'Mixed-Breed', 123.45)" src="images/murphy-card.jpg"
+                alt="Staring sad dog">
+              <h4>Murphy</h4>
+              <small><strong>Cost to Adopt:</strong> $123.45</small>
+              <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit.
+              </figcaption>
+            </figure>
+            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img onclick="alertDogInfo('Poppy', 'Poodle', 123.45)" src="images/poppy-card.jpg" alt="Staring sad dog">
+              <h4>Poppy</h4>
+              <small><strong>Cost to Adopt:</strong> $123.45</small>
+              <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit.
+              </figcaption>
+            </figure>
+            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img onclick="alertDogInfo('Jack', 'Beagle', 123.45)" src="images/jack-card.jpg" alt="Staring sad dog">
+              <h4>Jack</h4>
+              <small><strong>Cost to Adopt:</strong> $123.45</small>
+              <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit.
+              </figcaption>
+            </figure>
+            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img onclick="alertDogInfo('Duffy', 'Pitbull', 123.45)" src="images/duffy-card.jpg" alt="Staring sad dog">
+              <h4>Duffy</h4>
+              <small><strong>Cost to Adopt:</strong> $123.45</small>
+              <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit.
+              </figcaption>
+            </figure>
+            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img onclick="alertDogInfo('Lucas', 'Shepherd', 123.45)" src="images/lucas-card.jpg"
+                alt="Staring sad dog">
+              <h4>Lucas</h4>
+              <small><strong>Cost to Adopt:</strong> $123.45</small>
+              <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit.
+              </figcaption>
+            </figure>
+            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img onclick="alertDogInfo('Jake', 'Labrador', 123.45)" src="images/jake-card.jpg" alt="Staring sad dog">
+              <h4>Jake</h4>
+              <small><strong>Cost to Adopt:</strong> $123.45</small>
+              <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit.
+              </figcaption>
+            </figure>
+            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+          </div>
+
+          <!-- SEE MORE DOGS  -->
+          <a href="dogs.html" class="btn btn-see-more">See More Dogs</a>
+
+        </main>
+        <!-- MAIN / CARDS END -->
       </div>
+      <!-- LEFT CONTAINER END -->
 
-    </section>
-    <!-- SECTION END -->
-
-    <!-- MAIN / CARDS START -->
-    <main>
-
-      <div class="card">
-        <figure>
-          <img onclick="alertDogInfo('Murphy', 'Mixed-Breed', 123.45)" src="images/murphy-card.jpg"
-            alt="Staring sad dog">
-          <h4>Murphy</h4>
-          <small><strong>Cost to Adopt:</strong> $123.45</small>
-          <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.
-          </figcaption>
-        </figure>
-        <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+      <!-- RIGHT CONTAINER START  -->
+      <div class="right-container">
+        <!-- ASIDE START  -->
+        <aside>
+          <h2>From Our Blog</h2>
+          <div class="aside-box">
+            <figure>
+              <img src="./images/blog-1.jpg" alt="Women and a dog are sitting together in the canyon">
+              <h4>Traveling With Your Dog</h4>
+              <figcaption>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis
+                nem
+                ut. </figcaption>
+            </figure>
+            <a href="blog.html">Read more >></a>
+          </div>
+          <div class="aside-box">
+            <figure>
+              <img src="./images/blog-2.jpg" alt="Multiple dogs on leash look at the dog walker">
+              <h4>How To Walk Multiple Dogs</h4>
+              <figcaption>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis
+                nem
+                ut. </figcaption>
+            </figure>
+            <a href="blog.html">Read more >></a>
+          </div>
+          <div class="aside-box">
+            <figure>
+              <img src="./images/blog-3.jpg" alt="Girl is training a dog to fetch">
+              <h4>Teach Your Dog To Fetch!</h4>
+              <figcaption>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis
+                nem
+                ut. </figcaption>
+            </figure>
+            <a href="blog.html">Read more >></a>
+          </div>
+        </aside>
+        <!-- ASIDE END -->
       </div>
-
-      <div class="card">
-        <figure>
-          <img onclick="alertDogInfo('Poppy', 'Poodle', 123.45)" src="images/poppy-card.jpg" alt="Staring sad dog">
-          <h4>Poppy</h4>
-          <small><strong>Cost to Adopt:</strong> $123.45</small>
-          <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.
-          </figcaption>
-        </figure>
-        <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
-      </div>
-
-      <div class="card">
-        <figure>
-          <img onclick="alertDogInfo('Jack', 'Beagle', 123.45)" src="images/jack-card.jpg" alt="Staring sad dog">
-          <h4>Jack</h4>
-          <small><strong>Cost to Adopt:</strong> $123.45</small>
-          <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.
-          </figcaption>
-        </figure>
-        <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
-      </div>
-
-      <div class="card">
-        <figure>
-          <img onclick="alertDogInfo('Duffy', 'Pitbull', 123.45)" src="images/duffy-card.jpg" alt="Staring sad dog">
-          <h4>Duffy</h4>
-          <small><strong>Cost to Adopt:</strong> $123.45</small>
-          <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.
-          </figcaption>
-        </figure>
-        <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
-      </div>
-
-      <div class="card">
-        <figure>
-          <img onclick="alertDogInfo('Lucas', 'Shepherd', 123.45)" src="images/lucas-card.jpg" alt="Staring sad dog">
-          <h4>Lucas</h4>
-          <small><strong>Cost to Adopt:</strong> $123.45</small>
-          <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.
-          </figcaption>
-        </figure>
-        <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
-      </div>
-
-      <div class="card">
-        <figure>
-          <img onclick="alertDogInfo('Jake', 'Labrador', 123.45)" src="images/jake-card.jpg" alt="Staring sad dog">
-          <h4>Jake</h4>
-          <small><strong>Cost to Adopt:</strong> $123.45</small>
-          <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.
-          </figcaption>
-        </figure>
-        <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
-      </div>
-
-      <div class="card">
-        <figure>
-          <img onclick="alertDogInfo('Angus', 'Boxer', 123.45)" src="images/angus-card.jpg" alt="Staring sad dog">
-          <h4>Angus</h4>
-          <small><strong>Cost to Adopt:</strong> $123.45</small>
-          <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.
-          </figcaption>
-        </figure>
-        <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
-      </div>
-
-      <div class="card">
-        <figure>
-          <img onclick="alertDogInfo('Violet', 'Labrador', 123.45)" src="images/violet-card.jpg" alt="Staring sad dog">
-          <h4>Violet</h4>
-          <small><strong>Cost to Adopt:</strong> $123.45</small>
-          <figcaption>Consectetur tempora magnam optio quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.
-          </figcaption>
-        </figure>
-        <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
-      </div>
-
-    </main>
-    <!-- MAIN / CARDS END -->
-
-    <!-- SEE MORE DOGS  -->
-    <div>
-      <a href="dogs.html" class="btn btn-see-more">See More Dogs</a>
+      <!-- RIGHT CONTAINER END  -->
     </div>
+    <!-- WRAPPER END -->
+
+
+
 
     <!-- FOOTER START -->
     <footer>
