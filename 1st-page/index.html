@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Page1 Lesson1 Assignment</title>
 </head>
+
 <style>
 
     .header {
@@ -18,13 +19,55 @@
     h3 {
         color: #4CAF50;
     }
-    aside {
-        float: right;
-        margin-right: 650px;        
+
+    .hidden {
+        position: relative;
+        left: -10000px;
+        top: auto;
     }
-    .murphy {
-        margin-top: 85px;
+
+        .hidden:focus {
+            left: 0;
+        }
+
+    nav {
+        background-color: #DCDCDC;
+        padding: 30px;
     }
+
+    .adoptIntro img {
+        float: left;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .adoptIntro {
+        margin-bottom: 80px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+        .flex > section {
+            margin-top: 100px;
+            margin-right: 30px;
+            width: 15%;
+            border: 3px solid #73AD21;
+            padding: 15px;
+        }
+
+    .flexi {
+        display: flex;
+    }
+
+        .flexi > section {
+            margin-top: 100px;
+            margin-right: 30px;
+            width: 15%;
+            border: 3px solid #73AD21;
+            padding: 15px;
+        }
 
     footer {
         text-align: center;
@@ -34,11 +77,12 @@
         margin-top: 125px;
         background-image: url("lesson04-mock4-footer-image.jpg");
     }
-
 </style>
+
 <body>
+
     <header>
-        <!--Use san serif font for all-->
+
         <section class="header">
             <img src="dog-logo.png" alt="dog logo">
             <h3><i>Seattle's premiere dog adoption agency</h3>
@@ -52,47 +96,160 @@
             <a href="Blog.html">Blog</a> /
             <a href="Checkout.html">Checkout</a>
         </nav>
-    </header>
-        <img src="home-intro.jpg" alt="Owner hugging golden retrirver">
 
-        <aside>
-            <!--Use position, float or flexbox for this content to be on the right-->
-            <section>
-                <h2>Adopt A Dog</h2>
-                <p>
-                    Iduciendiste quo magnatem iuntum quid quaest ea am,<br />
-                    tenderumet adis dolenem quidustrum fuga. Faceaquae estioria<br />
-                    derum recuptatur, cum volore, undipsa doloreium hillupta aut<br />
-                    es ut alitatuscit ommossum haritatur arum qui officae videbiti<br />
-                    corporeium faccull oribus es quidignis ipietus explam sus<br />
-                    am aut amet ant fugiatum, utem non reptat ad magnimpor aut<br />
-                    molor autatia ad est officimus accae et omnia cus, od qui ate
-                </p>
-            </section>
-        </aside>
+    </header>
+
+    <section class="adoptIntro">
+        <p>
+            <img src="home-intro.jpg" alt="Owner hugging golden retrirver"
+                 style="height:250px;width:300px;">
+            <h2>Adopt A Dog</h2>
+            Iduciendiste quo magnatem iuntum quid quaest ea am,<br />
+            tenderumet adis dolenem quidustrum fuga. Faceaquae estioria<br />
+            derum recuptatur, cum volore, undipsa doloreium hillupta aut<br />
+            es ut alitatuscit ommossum haritatur arum qui officae videbiti<br />
+            corporeium faccull oribus es quidignis ipietus explam sus<br />
+            am aut amet ant fugiatum, utem non reptat ad magnimpor aut<br />
+            molor autatia ad est officimus accae et omnia cus, od qui ate.
+        </p>
+    </section>
+
+    <section class="flex">
 
         <section class="murphy">
-            <img src="murphy-card.jpg" alt="dog logo">
+            <img src="murphy-card.jpg" alt="Adult dog with thinking face"
+                 style="height:100px;width:180px;">
             <h4>Murphy</h4>
-                <p>Cost to Adopt: $123.45</p>
-                    <p>Corrum volorit iandae<br />
-                    nimaxim cum restia volor<br />
-                    reicid ut et etur sunt arum<br />
-                    rendae pla endis re ea erum<br />
-                    qui doluptae</p>
+            <p>Cost to Adopt: $123.45</p>
+            <p>
+                Corrum volorit iandae<br />
+                nimaxim cum restia volor<br />
+                reicid ut et etur sunt arum<br />
+                rendae pla endis re ea erum<br />
+                qui doluptae
+            </p>
             <input type="submit" value="Adopt" />
         </section>
 
-        <footer>
-            <img src="dog-logo.png" alt="dog logo">
+        <section>
+            <img src="violet-card.jpg" alt="baby puppy really cute"
+                 style="height:100px;width:180px;">
+            <h4>Violet</h4>
+            <p>Cost to Adopt: $123.45</p>
             <p>
-                Aborpos nisto inci tet aut que volupti beruptiberro to ex<br />
-                esseque invenienihil imaximu scideru ptistiusam consequunt
+                Corrum volorit iandae<br />
+                nimaxim cum restia volor<br />
+                reicid ut et etur sunt arum<br />
+                rendae pla endis re ea erum<br />
+                qui doluptae
             </p>
-            <p>Home / Dogs / Contact </p>
-            <p>Ⓒ2018 Adoptadog, LLC | Seattle, WA</p>
-        </footer>
+            <input type="submit" value="Adopt" />
+        </section>
 
-    
+        <section>
+            <img src="piper-card.jpg" alt="puppy smiling"
+                 style="height:100px;width:180px;">
+            <h4>Piper</h4>
+            <p>Cost to Adopt: $123.45</p>
+            <p>
+                Corrum volorit iandae<br />
+                nimaxim cum restia volor<br />
+                reicid ut et etur sunt arum<br />
+                rendae pla endis re ea erum<br />
+                qui doluptae
+            </p>
+            <input type="submit" value="Adopt" />
+        </section>
+
+        <section>
+            <img src="maximus-card.jpg" alt="serius puppy with strong caracter"
+                 style="height:100px;width:180px;">
+            <h4>Maximus</h4>
+            <p>Cost to Adopt: $123.45</p>
+            <p>
+                Corrum volorit iandae<br />
+                nimaxim cum restia volor<br />
+                reicid ut et etur sunt arum<br />
+                rendae pla endis re ea erum<br />
+                qui doluptae
+            </p>
+            <input type="submit" value="Adopt" />
+        </section>
+
+    </section>
+
+    <section class="flexi">
+        <section>
+            <img src="jack-card.jpg" alt="pretty puppy looking up"
+                 style="height:100px;width:180px;">
+            <h4>Jack</h4>
+            <p>Cost to Adopt: $123.45</p>
+            <p>
+                Corrum volorit iandae<br />
+                nimaxim cum restia volor<br />
+                reicid ut et etur sunt arum<br />
+                rendae pla endis re ea erum<br />
+                qui doluptae
+            </p>
+            <input type="submit" value="Adopt" />
+        </section>
+
+        <section>
+            <img src="jake-card.jpg" alt="pretty puppy looking to the horizon"
+                 style="height:100px;width:180px;">
+            <h4>Jake</h4>
+            <p>Cost to Adopt: $123.45</p>
+            <p>
+                Corrum volorit iandae<br />
+                nimaxim cum restia volor<br />
+                reicid ut et etur sunt arum<br />
+                rendae pla endis re ea erum<br />
+                qui doluptae
+            </p>
+            <input type="submit" value="Adopt" />
+        </section>
+
+        <section>
+            <img src="lucas-card.jpg" alt="pretty puppy looking at you"
+                 style="height:100px;width:180px;">
+            <h4>Lucas</h4>
+            <p>Cost to Adopt: $123.45</p>
+            <p>
+                Corrum volorit iandae<br />
+                nimaxim cum restia volor<br />
+                reicid ut et etur sunt arum<br />
+                rendae pla endis re ea erum<br />
+                qui doluptae
+            </p>
+            <input type="submit" value="Adopt" />
+        </section>
+
+        <section>
+            <img src="duffy-card.jpg" alt="pretty puppy with blue eyes"
+                 style="height:100px;width:180px;">
+            <h4>Duffy</h4>
+            <p>Cost to Adopt: $123.45</p>
+            <p>
+                Corrum volorit iandae<br />
+                nimaxim cum restia volor<br />
+                reicid ut et etur sunt arum<br />
+                rendae pla endis re ea erum<br />
+                qui doluptae
+            </p>
+            <input type="submit" value="Adopt" />
+        </section>
+
+    </section>
+
+    <footer>
+        <img src="dog-logo.png" alt="dog logo">
+        <p>
+            Aborpos nisto inci tet aut que volupti beruptiberro to ex<br />
+            esseque invenienihil imaximu scideru ptistiusam consequunt
+        </p>
+        <p>Home / Dogs / Contact </p>
+        <p>2018 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
+
 </body>
 </html>
