@@ -9,7 +9,7 @@ body {
 }
 header {
   background-image: url(../images/header-image.jpg);
-    background-size:100% 100%;
+  background-size:100% 100%;
 }
 .adoptadog-logo img{
 
@@ -21,62 +21,50 @@ header {
   top: 0.625rem;
 }
 .dog-adoption-agency {
- color:#81b741;
- font-size:1.875rem;
-
- display: inline;
- position: relative;
- left: 11rem;
- bottom:8rem;
-
-
+  color:#81b741;
+  font-size:1.875rem;
+  display: inline;
+  position: relative;
+  left: 11rem;
+  bottom:8rem;
 }
 .price {
 
- display: inline;
- position:absolute;
- right:8rem;
- top: 7rem;
- color:white;
+  display: inline;
+  position:absolute;
+  right:8rem;
+  top: 7rem;
+  color:white;
 }
-.checkout {
-
-display:inline;
-position:absolute;
-right:8.5rem;
-top:8.8rem;
-background-color:#81b741;
-width:7%;
-height: 1.5rem;
-text-align: center;
-
-
-}
+ .checkout {
+  display:inline;
+  position:absolute;
+  right:8.5rem;
+  top:8.8rem;
+  background-color:#81b741;
+  width:7%;
+  height: 1.5rem;
+  text-align: center;
+} 
 .checkout a {
   color:white;
   text-decoration: none;
 }
-
-
-
-
-
-
 .top-nav {
-    background-color:  #d4d4d4;
+  background-color:  #d4d4d4;
 
 }
- ul {
+ul {
 
   overflow: hidden;
   list-style-type: none;
   margin-left: 9.5rem;
   padding:1rem;
- }
-  li {
+}
+li {
   float: left;
 
- }
+}
 li  a {
   display: block;
   text-align: center;
@@ -90,7 +78,7 @@ li  a {
   flex-direction:row;
   margin-left:3rem;
   padding: 3rem;
-  }
+}
 .box img {
   margin-top:2rem;
   margin-left:5rem;
@@ -119,13 +107,13 @@ li  a {
   margin: 2.7rem;
 }
 .row:after {
- content: "";
- display: table;
- clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 .column {
- float: left;
- width: 25%;
+  float: left;
+  width: 25%;
 }
 
 .card-content {
@@ -187,8 +175,8 @@ footer img {
 }
 .bottom-nav {
 
- margin-left: 30rem;
- width: 50%;
+  margin-left: 30rem;
+  width: 50%;
 }
 .bottom-nav ul {
   padding: 1rem;
@@ -218,7 +206,7 @@ footer img {
 .flex-container {
   display: flex;
   flex-direction: column;
-   justify-content: center;
+  justify-content: center;
 
 }
 .flex-container > div {
@@ -227,10 +215,10 @@ footer img {
 
 }
 .para-blog {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
- margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 .para-blog p {
@@ -242,7 +230,7 @@ footer img {
 
 }
 .para-blog h2 {
- color: #094160;
+  color: #094160;
   font-size: 1.7rem;
   margin-left:1.4rem;
   margin-top: 1rem;
@@ -259,12 +247,12 @@ footer img {
 /*sign-out page styling8*/
 
 .form-container {
- padding:1rem 5rem;
- width: 60%;
- margin: 0.75rem 6rem;
+  padding:1rem 5rem;
+  width: 60%;
+  margin: 0.75rem 6rem;
 }
 .container-content label{
- color: #094160;
+  color: #094160;
   font-family:sans-serif;
   font-size:1.5rem;
 }
@@ -289,11 +277,11 @@ footer img {
 
 .city input {
 
-   width:100%;
-   margin-top:0.313rem;
-   display:block;
-   height:1.25rem;
- }
+  width:100%;
+  margin-top:0.313rem;
+  display:block;
+  height:1.25rem;
+}
 
 .state {
   width:10%;
@@ -303,16 +291,16 @@ footer img {
 }
 
 .state select {
-    display: block;
-    margin-top:0.313rem;
-    width: 100%;
-    height:1.875rem;
+  display: block;
+  margin-top:0.313rem;
+  width: 100%;
+  height:1.875rem;
 }
 .zip {
 
- width:40%;
- float:left;
- margin-left:4rem;
+  width:40%;
+  float:left;
+  margin-left:4rem;
 }
 .zip input {
 
@@ -332,27 +320,12 @@ footer img {
   border:1px solid blue;
   margin-left:1rem;
 }
-.lucduff{
-
-  width:60%;
-  margin-left:8rem;
-
+.pickup {
+  width:50%;
+  padding:1rem;
 }
 
-.lucas-duffy {
 
-  display: inline-block;
-  width: 250px;
-  height: 150px;
-  text-align:center;
-
-
-
-}
-.lucas-duffy img {
-  width:150px;
-  height:100px;
-}
 .dogs-adopted-signout {
   padding:0.5rem 0 2rem 2rem;
   margin-left:9rem;
@@ -362,27 +335,72 @@ footer img {
   padding:0.5rem 0 2rem 2rem;
   margin-left:9rem;
   color: #094160;
+  margin-top:2rem;
 }
+
 .total-adoption p {
-   padding:0.5rem 0 2rem 2rem;
+  padding:0.5rem 0 2rem 2rem;
+  font-size:1.4rem;
+  margin-top:-1.7rem;
   margin-left:9rem;
 }
 .checkout-button {
-   padding:0.5rem 0 2rem 2rem;
+  padding:0.5rem 0 2rem 2rem;
   margin-left:9rem;
 
 }
 .checkout-button button  {
-    background-color:#81b741;;
-    width:20%;
-    height:60px;
-    font-size:1.4rem;
-    font-weight:bold;
-    color:white;
-  }
-.total-adoption p {
-  font-size:1.5rem;
+  background-color:#81b741;;
+  width:20%;
+  height:3.75rem;
+  font-size:1.4rem;
+  font-weight:bold;
+  color:white;
 }
+
+
+.lucas-img {
+  margin-left:11rem;
+  width:20%;
+
+}
+.lucas-img img {
+  width:6.25rem;
+  height:6.25rem;
+
+}
+.lucas-content {
+
+  position:absolute;
+  margin-left:-16rem;
+  margin-top:1rem;
+}
+
+.duffy-img {
+
+  width:20%;
+}
+.duffy-img img {
+  width:6.25rem;
+  height:6.25rem;
+}
+.lucduff > div{
+  display:inline-block;
+}
+.duffy-content {
+
+  position:absolute;
+  margin-left:-15rem;
+  margin-top:1rem;
+}
+.first-time-adopter {
+  color:#094160;
+  font-size:1.5rem;
+  margin-top:1rem;
+  margin-bottom:1.5rem;
+}
+
+
 
 
 
@@ -416,23 +434,23 @@ footer img {
 
 
 /* .footer-logo {
-  width: 25%;
+width: 25%;
 
 }
 .footer-div {
-  background-color: blue;
-  padding: 11.25rem;
-  text-align:center;
-  color: white;
+background-color: blue;
+padding: 11.25rem;
+text-align:center;
+color: white;
 }
 .footer-navbar-menu  li a{
-   color: white;
-   letter-spacing: 0.03rem;
+color: white;
+letter-spacing: 0.03rem;
 
 }
 footer nav {
 
-  margin-left: 40%;;
+margin-left: 40%;;
 }
 
 
@@ -448,9 +466,9 @@ footer nav {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* @media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
+.column {
+width: 50%;
+}
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
