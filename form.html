@@ -31,24 +31,24 @@
 
     <form id="myForm" method="GET">
     <div class="form-grid">
-      <label id="name" class="name">Name
-        <input type="text" name="requestName" placeholder="Your Name">
+      <label class="name">Name
+        <input id="name" type="text" name="requestName" placeholder="Your Name">
       </label>
 
-      <label id="email" class="email">Email Address
-        <input type="email" name="requestEmail" placeholder="email@email.com">
+      <label class="email">Email Address
+        <input id="email" type="email" name="requestEmail" placeholder="email@email.com">
       </label>
 
-      <label id="address" class="address">Street Address
-        <input type="text" name="requestAddress" placeholder="123 Main Street">
+      <label class="address">Street Address
+        <input id="address" type="text" name="requestAddress" placeholder="123 Main Street">
       </label>
       <div class="inline">
-      <label id="city" class="city">City
-        <input type="text" name="requestCity" placeholder="Seattle">
+      <label class="city">City
+        <input id="city" type="text" name="requestCity" placeholder="Seattle">
       </label>
 
-      <label id="state" class="state">State
-        <select name="state">
+      <label class="state">State
+        <select id="state" name="state">
           <option value="">Please select</option>
           <option value="WA">Washington</option>
           <option value="OR">Oregon</option>
@@ -56,14 +56,14 @@
         </select>
       </label>
 
-      <label id="zip" class="zip">Zip Code
-        <input type="text" name="requestZip" placeholder="12345">
+      <label class="zip">Zip Code
+        <input id="zip" type="text" name="requestZip" placeholder="12345">
       </label>
     </div>
       <fieldset class="radio">
-        <legend id="first-time" class="first">First Time Adopter?</legend>
+        <legend class="first">First Time Adopter?</legend>
           <label class="first radio">
-            <input type="radio" name="first" value="yes">Yes
+            <input id="first-time" type="radio" name="first" value="yes">Yes
           </label>
 
           <label>
@@ -71,8 +71,8 @@
           </label>
         </fieldset>
 
-        <label id="location" class="pick-up">Pickup Location
-          <select name="location">
+        <label class="pick-up">Pickup Location
+          <select id="location" name="location">
             <option value="">Please select</option>
             <option value="downtown">Downtown Seattle</option>
             <option value="lake">Lake City</option>

@@ -5,8 +5,12 @@ submitButton.textContent = 'Submit';
 submitFinal.appendChild(submitButton);
 
 const form = document.getElementById('myForm');
+const e =  form.elements;
+for(let i = 0; i < e.length; i++) {
+  //ACCESS NODE LIST LIKE ARRAY
+  console.log(e[i]);
+}
 form.addEventListener('submit', function(event) {
   event.preventDefault();
-  console.log(form.elements.value);
   alert("Thank you. The form information has been received.");
 })
