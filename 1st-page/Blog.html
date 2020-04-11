@@ -20,25 +20,64 @@
         color: #4CAF50;
     }
 
-    aside {
-        float: right;
-        margin-right: 650px;
-        margin-bottom: 85px;
+    .hidden {
+        position: relative;
+        left: -10000px;
+        top: auto;
     }
-            
+
+        .hidden:focus {
+            left: 0;
+        }
+
+    nav {
+        background-color: #DCDCDC;
+        padding: 30px;
+    }
+
+    .travel img {
+        float: left;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .travel {
+        margin-bottom: 200px;
+    }
+
+    .walk img {
+            float: left;
+            margin-right: 40px;
+            margin-left: 40px;            
+    }
+
+    .walk {        
+        margin-bottom: 200px;
+    }
+
+        .teach img {
+            float: left;
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+    .teach {
+        margin-bottom: 200px;
+    }
+
+           
     footer {
         text-align: center;
         padding: 80px;
         background-color: dimgray;
         color: white;
-        margin-top: 700px;
+        margin-top: 125px;
         background-image: url("lesson04-mock4-footer-image.jpg");
     }
 </style>
 
 <body>
     <header>
-        <!--Use san serif font for all-->
         <section class="header">
             <img src="dog-logo.png" alt="dog logo">
             <h3><i>Seattle's premiere dog adoption agency</h3>
@@ -55,65 +94,57 @@
     </header>
     <h2>Adoptadog Blog</h2>
 
-    <section>
-        <img src="blog-1.jpg" alt="Girl with dog looking at the grand canyon">
-    </section>
-             
-    <aside>
-        <!--Use position, float or flexbox for this content to be on the right-->
-        <section>
+    <section class="travel">
+        <p>
+            <img src="blog-1.jpg" alt="Girl with dog looking at the grand canyon">
             <h2>Traveling With Your Dog</h2>
-            <p>
-                Iduciendiste quo magnatem iuntum quid quaest ea am,<br />
-                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria<br />
-                derum recuptatur, cum volore, undipsa doloreium hillupta aut<br />
-                es ut alitatuscit ommossum haritatur arum qui officae videbiti<br />
-                corporeium faccull oribus es quidignis ipietus explam sus<br />
-                am aut amet ant fugiatum, utem non reptat ad magnimpor aut<br />
-                molor autatia ad est officimus accae et omnia cus, od qui ate
-            </p>
-        </section>
-    </aside>
-
-    <section>
-        <img src="blog-2.jpg" alt="Walking many dogs at once">
+            Iduciendiste quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem<br />
+            quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium<br />
+            hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium<br />
+            faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat<br />
+        </p>
+        <p>
+            Iduciendiste quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem<br />
+            quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium<br />
+            hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium<br />
+            faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat<br />
+        </p>
     </section>
 
-    <aside>
-        <section>
+    <section class="walk">
+        <p>
+            <img src="blog-2.jpg" alt="Walking many dogs at once">
             <h2>How To Walk Multiple Dogs</h2>
-            <p>
-                Iduciendiste quo magnatem iuntum quid quaest ea am,<br />
-                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria<br />
-                derum recuptatur, cum volore, undipsa doloreium hillupta aut<br />
-                es ut alitatuscit ommossum haritatur arum qui officae videbiti<br />
-                corporeium faccull oribus es quidignis ipietus explam sus<br />
-                am aut amet ant fugiatum, utem non reptat ad magnimpor aut<br />
-                molor autatia ad est officimus accae et omnia cus, od qui ate
-            </p>
-        </section>
-    </aside>
-
-    <section>
-        <img src="blog-3.jpg" alt="Playing fetch with the dog">
+            Iduciendiste quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem<br />
+            quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium<br />
+            hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium<br />
+            faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat<br />
+        </p>
+        <p>
+            Iduciendiste quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem<br />
+            quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium<br />
+            hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium<br />
+            faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat<br />
+        </p>
     </section>
 
-    <aside>
-        <section>
+    <section class="teach">
+        <p>
+            <img src="blog-3.jpg" alt="Playing fetch with the dog">
             <h2>Teach Your Dog To Fetch</h2>
-            <p>
-                Iduciendiste quo magnatem iuntum quid quaest ea am,<br />
-                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria<br />
-                derum recuptatur, cum volore, undipsa doloreium hillupta aut<br />
-                es ut alitatuscit ommossum haritatur arum qui officae videbiti<br />
-                corporeium faccull oribus es quidignis ipietus explam sus<br />
-                am aut amet ant fugiatum, utem non reptat ad magnimpor aut<br />
-                molor autatia ad est officimus accae et omnia cus, od qui ate
-            </p>
-        </section>
-    </aside>
-
-
+            Iduciendiste quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem<br />
+            quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium<br />
+            hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium<br />
+            faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat<br />
+        </p>
+        <p>
+            Iduciendiste quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem<br />
+            quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium<br />
+            hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium<br />
+            faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat<br />
+        </p>
+    </section>
+       
     <footer>
         <img src="dog-logo.png" alt="dog logo">
         <p>
