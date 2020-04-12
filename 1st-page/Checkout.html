@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Checkout</title>
-    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 </head>
 
 <style>
+
     .header {
         color: white;
         background-color: #003366;
@@ -20,21 +20,57 @@
         color: #4CAF50;
     }
 
+    .hidden {
+        position: relative;
+        left: -10000px;
+        top: auto;
+    }
+
+        .hidden:focus {
+            left: 0;
+        }
+
+    nav {
+        background-color: #DCDCDC;
+        padding: 30px;
+    }
+
+    button, input, select, textarea {
+        font-family: inherit;
+        font-size: 100%;
+        box-sizing: border-box;
+        display: block;
+        margin: .8rem;
+    }
+
+        input[type=submit] {
+            width: 50%;
+            background-color: steelblue;
+            border-radius: 15px;
+        }
+
+    fieldset {
+        border: none;
+    }
+
+        fieldset input {
+            display: inline;
+        }
+
     footer {
         text-align: center;
         padding: 80px;
         background-color: dimgray;
         color: white;
-        margin-top: 125px;
+        margin-top: 50px;
         background-image: url("lesson04-mock4-footer-image.jpg");
     }
-
 </style>
 
 <body>
 
     <header>
-        <!--Use san serif font for all-->
+
         <section class="header">
             <img src="dog-logo.png" alt="dog logo">
             <h3><i>Seattle's premiere dog adoption agency</h3>
@@ -48,9 +84,10 @@
             <a href="Blog.html">Blog</a> /
             <a href="Checkout.html">Checkout</a>
         </nav>
+
     </header>
 
-    <h1>Checkout</h1>
+    <h2>Checkout</h2>
 
     <form method="GET">
         <label>
@@ -68,20 +105,22 @@
             <input type="text" name="streetAddress">
         </lable>
 
-        <label>
-            City
-            <input type="text" name="city">
-        </label>
+        <fieldset class="1">
+            <label>
+                City:
+                <input type="text" name="city">
+            </label>
 
-        <label>
-            State
-            <input type="text" name="state">
-        </label>
+            <label>
+                State:
+                <input type="text" name="state">
+            </label>
 
-        <label>
-            Zipcode
-            <input type="text" name="zipcode">
-        </label>
+            <label>
+                Zipcode:
+                <input type="text" name="zipcode">
+            </label>
+        </fieldset>
 
         <fieldset>
             <legend>First Adopter?</legend>
@@ -98,7 +137,7 @@
         </fieldset>
 
         <label>
-            Pickup Location
+            Pickup Location:
             <input type="text" name="pickupLocation">
         </label>
 
@@ -112,7 +151,7 @@
             esseque invenienihil imaximu scideru ptistiusam consequunt
         </p>
         <p>Home / Dogs / Contact </p>
-        <p>Ⓒ2018 Adoptadog, LLC | Seattle, WA</p>
+        <p>2018 Adoptadog, LLC | Seattle, WA</p>
     </footer>
 
 </body>
