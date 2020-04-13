@@ -45,7 +45,7 @@ header {
   width:7%;
   height: 1.5rem;
   text-align: center;
-} 
+}
 .checkout a {
   color:white;
   text-decoration: none;
@@ -372,7 +372,7 @@ footer img {
 .lucas-content {
 
   position:absolute;
-  margin-left:-16rem;
+  margin-left:-11rem;
   margin-top:1rem;
 }
 
@@ -390,7 +390,7 @@ footer img {
 .duffy-content {
 
   position:absolute;
-  margin-left:-15rem;
+  margin-left:-11rem;
   margin-top:1rem;
 }
 .first-time-adopter {
