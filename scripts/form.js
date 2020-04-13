@@ -5,24 +5,32 @@ submitButton.textContent = 'Submit';
 submitFinal.appendChild(submitButton);
 
 const form = document.getElementById('myForm');
-const e =  form.elements;
-for(let i = 0; i < e.length; i++) {
-  //ACCESS NODE LIST LIKE ARRAY
-  console.log(e[i]);
-}
+// const e =  form.elements;
+// for(let i = 0; i < e.length; i++) {
+//   //ACCESS NODE LIST LIKE ARRAY
+//   console.log(e[i]);
+// }
 form.addEventListener('submit', function(event) {
   event.preventDefault();
   alert("Thank you. The form information has been received.");
 })
 
 //radio button console log
-//console.log($('.radio:selected').val());
+//(x.elements[i].name + ' : ' + x.elements[i].value)
+//if(x.elements[i].type == 'radio') {
+//   if(x.elements[i].checked == false) {
+//     continue;
+//   }
+// }
 
 function myAdoption() {
   const x = document.getElementById('myForm');
-  const text = '';
-  for(i = 0; i < x.length; i++) {
-    text += x.elements[i].value + '<br>';
+  let text = ' ';
+  for(let i = 0; i < x.length; i++) {
+    text += x.elements[i].name + ' : ' + x.elements[i].value + '\n';
+    console.log(text);
   }
-  console.log(document.getElementById('name').value);
+
 }
+
+// return kicks you out of the fucntion, break kicks you out of the loop, continue skips the rest of the code
