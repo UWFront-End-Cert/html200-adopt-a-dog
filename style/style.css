@@ -147,7 +147,7 @@ li  a {
 
 }
 
-.see-more-dogs button {
+/* .see-more-dogs  button {
   width: 20%;
   height: 4rem;
   margin: 2rem 5rem 7rem 40rem;
@@ -156,6 +156,29 @@ li  a {
   font-size:2rem;
   color:#094160;
 }
+.see-more-dogs a {
+  color:#094160;
+  text-decoration:none;
+} */
+
+.see-more-dogs {
+  width: 20%;
+  height: 4rem;
+  margin: 2rem 5rem 7rem 40rem;
+  background-color:#e1e1e1;
+  font-weight: bold;
+  font-size:2rem;
+  color:#094160;
+}
+.see-more-dogs a {
+  position:absolute;
+  color:#094160;
+  text-decoration:none;
+  text-align:center;
+  margin-left:2.5rem;
+  margin-top:0.6rem;
+}
+
 footer {
   background-color: #094160;
   width: 100%;
