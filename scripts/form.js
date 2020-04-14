@@ -20,6 +20,9 @@ function myAdoption() {
         continue;
       }
     }
+    if(x.elements[i].value == undefined) {
+      continue;
+    }
     text += x.elements[i].name + ' : ' + x.elements[i].value + '\n';
   }
   console.log(text);
