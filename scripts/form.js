@@ -7,10 +7,9 @@ submitFinal.appendChild(submitButton);
 const form = document.getElementById('myForm');
 form.addEventListener('submit', function(event) {
   event.preventDefault();
+  myAdoption();
   alert("Thank you. The form information has been received.");
 })
-
-
 
 function myAdoption() {
   const x = document.getElementById('myForm');
@@ -25,6 +24,3 @@ function myAdoption() {
   }
   console.log(text);
 }
-
-
-// return kicks you out of the fucntion, break kicks you out of the loop, continue skips the rest of the code
