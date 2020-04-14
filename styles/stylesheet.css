@@ -220,7 +220,7 @@ main {
 }
 
 .blog-post-image {
-    width: 100%;
+    object-fit: contain;
 }
 
 .blog-post-text {
