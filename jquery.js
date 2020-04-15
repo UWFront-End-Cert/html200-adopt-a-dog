@@ -1,4 +1,4 @@
-const total = 0;
+let total = 0;
 $(document).ready(function(){
   $(".adopt").click(function(){
       total+=123.45;
