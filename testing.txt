@@ -1,0 +1,41 @@
+## Testing
+### Google Chrome, Firefox presentation layer (on Windows machine)
+- General layout and styles appear and perform as expected
+- Google fonts load
+- Images all load at appropriate sizes
+- Layout responds to resizing of window
+
+### Google Chrome, Firefox functionality (on Windows machine)
+- Check hover effect on dog cards
+- Click on "adopt" button and ensure cart total in header is updated
+  - Didn't work at first, I had to change variable for total from 'const' to 'let' in jquery.js line 1
+- Check form functionality on checkout page
+  - If submit is clicked w/o required fields complete
+    - Alert to fill out required fields is displayed
+    - Required fields are highlighted with red border
+  - When fields are filled layout
+    - Red border is removed
+    - Form can be submitted
+    - Upon submit alert appears that information was received
+    - Form data is logged to the console
+
+### Internet Explorer 11 (on Windows machine)
+- Checked visual presentation layer
+  - Sticky footer was causing layout issues added '-ms-flex: 1 1 auto;' to main container in style.css line 34
+  - Appears to have a problem with jQuery -- wait, I didn't write these in jQuery - looks like it's with the for loop for the arrays.
+    - Dog cards not showing up on either index.html or dogs.html
+    - Blog cards not showing up on either index.html or blog.html
+
+    - For the sake of troubleshooting I looked into the issue more closely:
+	- IE doesn't support ` so I had to rewrite parts of my javascript to solve this issue. And, it does.
+	- I made a commit to show that I tested this issue. Then I reversed it and decided not to support IE because, in looking at my user data, most of our customer base uses their smart phones to view the site and when using computers at home tend to use chrome or safari.
+
+
+## iPhone 8 (Safari)
+- Checked visual presentation layer to ensure it is readable on small screen and important information is prioritized
+- Checked that all links are easily clicked and do what is expected
+- Checked that clicking on "adopt" button updates total and gives an alert to that effect
+- Checked that form functions as expected on checkout page, including required fields functionality
+- Submit button for the form does not look correctly on the iPhone
+  - added 'input[type="submit"]' to styles.css at line 249 - as those appear to be the styles that are missing
+  - added '-webkit-appearance: none; -moz-appearance: none; appearance: none;' to styles.css at line 252
