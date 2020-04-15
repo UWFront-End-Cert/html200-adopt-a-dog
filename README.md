@@ -9,19 +9,18 @@ Use GitHub to download or clone the site files [GitHub](https://github.com/HMall
 ```bash
 git clone https://github.com/HMalloy/html200-adopt-a-dog.git
 ```
-
 Site uses jQuery as well. For details on use and installation visit [jquery.com](https://jquery.com/)
+
+Site uses Google fonts
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
-
 ## License and copyright
-[Adopt a Dog](https://hmalloy.github.io/html200-adopt-a-dog/)
+[2020 Adopt a Dog](https://hmalloy.github.io/html200-adopt-a-dog/)
 
 ## Users
-[See pdf personas here](https://hmalloy.github.io/html200-adopt-a-dog/comps/personas.pdf)
+[See .pdf personas here](https://hmalloy.github.io/html200-adopt-a-dog/comps/personas.pdf)
 
 ## Testing
 ### Google Chrome, Firefox presentation layer
@@ -58,4 +57,5 @@ Please make sure to update tests as appropriate.
 - Checked that clicking on "adopt" button updates total and gives an alert to that effect
 - Checked that form functions as expected on checkout page, including required fields functionality
 - Submit button for the form does not look correctly on the iPhone
-  - added 'input[type="submit"]' to button styles at line 249
+  - added 'input[type="submit"]' to styles.css at line 249 - as those appear to be the styles that are missing
+  - added '-webkit-appearance: none; -moz-appearance: none; appearance: none;' to styles.css at line 252

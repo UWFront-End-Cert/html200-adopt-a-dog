@@ -249,6 +249,9 @@ a.button {
 input[type="submit"],
 .button,
 button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   text-align: center;
   color:#093c60;
   padding:0.625rem 2.2rem;
