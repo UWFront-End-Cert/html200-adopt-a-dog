@@ -110,7 +110,7 @@ p, a{
 }
 
 .header-nav > span {
-    padding: 1em 5px;
+    padding: 1em 0.5em;
 }
 
 main {
@@ -151,7 +151,7 @@ main {
 }
 
 .dog-card {
-    max-width: 200px;
+    max-width: 15em;
     margin: 1em;
     border-style: solid;
     border-color: #dad8d2;
@@ -185,7 +185,7 @@ main {
 
 .dog-card-bold {
     font-weight: bold;
-    margin-right: 4px;
+    margin-right: 0.25em;
 }
 
 .see-more-button {
@@ -206,7 +206,7 @@ main {
     font-size: larger;
     display: flex;
     flex-direction: row;
-    margin: 0px 200px;
+    margin: 0% 15%;
     padding: 1em;
 }
 
@@ -224,7 +224,7 @@ main {
 }
 
 .blog-post-text {
-    padding: 0px 1em;
+    padding: 0em 1em;
     display: flex;
     flex-direction: column;
     max-height: 100%;
@@ -235,8 +235,8 @@ footer {
 }
 
 .footer-content-container {
-    padding: 3em 0px;
-    max-width: 420px;
+    padding: 3em 0em;
+    max-width: 30%;
     margin: auto;
     text-align: center;
     color: #ffffff;
@@ -249,7 +249,7 @@ footer {
 }
 
 .footer-nav > span {
-    padding: 1em 5px;
+    padding: 1em 1em;
 }
 
 .footer-nav > a {
@@ -273,7 +273,7 @@ form {
     flex-flow: row wrap;
     margin: 0% 15%;
     padding: 1em;
-    max-width: 500px;
+    max-width: 40%;
 }
 
 .form-item {
@@ -360,11 +360,11 @@ select, option {
 }
 
 #state {
-    width: 4rem;
+    width: 100%;
 }
 
 #city {
-    width: 12rem;
+    width: 100%;
 }
 
 #adopter-yes {
@@ -386,6 +386,6 @@ select, option {
 }
 
 #zip {
-    width: 8rem;
+    width: 100%;
     flex-grow: 1;
 }
