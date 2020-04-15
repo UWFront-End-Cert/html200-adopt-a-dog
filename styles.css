@@ -246,6 +246,7 @@ a.button {
   text-decoration: none;
 }
 
+input[type="submit"],
 .button,
 button {
   text-align: center;

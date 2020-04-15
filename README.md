@@ -51,4 +51,11 @@ Please make sure to update tests as appropriate.
     - Dog cards not showing up on either index.html or dogs.html
     - Blog cards not showing up on either index.html or blog.html
     - Form not functioning as expected (is not catching when required fields are not filled out)
-    
+
+## iPhone 8    
+- Checked visual presentation layer to ensure it is readable on small screen and important information is prioritized
+- Checked that all links are easily clicked and do what is expected
+- Checked that clicking on "adopt" button updates total and gives an alert to that effect
+- Checked that form functions as expected on checkout page, including required fields functionality
+- Submit button for the form does not look correctly on the iPhone
+  - added 'input[type="submit"]' to button styles at line 249
