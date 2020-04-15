@@ -28,10 +28,11 @@
 
     - For the sake of troubleshooting I looked into the issue more closely:
 	- IE doesn't support ` so I had to rewrite parts of my javascript to solve this issue. And, it does.
-	- I made a commit to show that I tested this issue. Then I reversed it and decided not to support IE because, in looking at my user data, most of our customer base uses their smart phones to view the site and when using computers at home tend to use chrome or safari.
+	- I made a commit to show that I tested this issue. 
+	  Then I reversed it and decided not to support IE because, in looking at my user data, most of our customer base uses their smart phones to view the site and when using computers at home tend to use chrome or safari.
 
 
-## iPhone 8 (Safari)
+## iPhone 8 (Safari) and iPad Pro (iPadOS 13.3.1) - Safari
 - Checked visual presentation layer to ensure it is readable on small screen and important information is prioritized
 - Checked that all links are easily clicked and do what is expected
 - Checked that clicking on "adopt" button updates total and gives an alert to that effect

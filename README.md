@@ -9,9 +9,24 @@ Use GitHub to download or clone the site files [GitHub](https://github.com/HMall
 ```bash
 git clone https://github.com/HMalloy/html200-adopt-a-dog.git
 ```
-Site uses jQuery as well. For details on use and installation visit [jquery.com](https://jquery.com/)
+###Site uses jQuery 
+For details on use and installation visit [jquery.com](https://jquery.com/)
 
-Site uses Google fonts
+###Site uses Google fonts
+####Embed Font
+To embed font into a webpage, copy this code into the <head> of your HTML document.
+
+#####Standard
+<link href="https://fonts.googleapis.com/css?family=Kadwa|Work+Sans&display=swap" rel="stylesheet">
+#####CSS Import
+<style>@import url('https://fonts.googleapis.com/css?family=Kadwa|Work+Sans&display=swap');</style>
+
+####Specify in CSS
+Use the following CSS rules to specify these families:
+
+font-family: 'Work Sans', sans-serif;
+
+For examples of how fonts can be added to webpages, see the [Google Fonts getting started guide](https://developers.google.com/fonts/docs/getting_started).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
