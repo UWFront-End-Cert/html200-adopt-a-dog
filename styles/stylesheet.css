@@ -175,9 +175,10 @@ section {
 .centered-content-container {
   display: inline-block;
   float: left;
-  width: 70%;
+  width: 68%;
   text-align: center;
   margin-left: 5%;
+  margin-bottom: 1%;
 }
 
 #main-content {
@@ -204,8 +205,8 @@ section {
 .grid-container, .grid-container-2 {
   display: grid;
   grid-gap: 1em 1em;
-  grid-template-columns: auto auto auto;
-  margin: 1em;
+  grid-template-columns: 33% 33% 33%;
+  margin: auto;
 }
 
 .card {
