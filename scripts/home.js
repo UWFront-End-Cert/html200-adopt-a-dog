@@ -17,3 +17,4 @@ $(document).ready(function() {
   $('.dog').click(function() {
     $('.card').fadeIn(1000, 'linear');
   });
+});
