@@ -19,9 +19,15 @@ For details on use and installation visit [jquery.com](https://jquery.com/)
 To embed font into a webpage, copy this code into the <head> of your HTML document.
 
 ##### Standard
+
+```bash
 <link href="https://fonts.googleapis.com/css?family=Kadwa|Work+Sans&display=swap" rel="stylesheet">
+```
+
 ##### CSS Import
+```bash
 <style>@import url('https://fonts.googleapis.com/css?family=Kadwa|Work+Sans&display=swap');</style>
+```
 
 #### Specify in CSS
 Use the following CSS rules to specify these families:
