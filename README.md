@@ -32,7 +32,9 @@ To embed font into a webpage, copy this code into the <head> of your HTML docume
 #### Specify in CSS
 Use the following CSS rules to specify these families:
 
+```bash
 font-family: 'Work Sans', sans-serif;
+```
 
 For examples of how fonts can be added to webpages, see the [Google Fonts getting started guide](https://developers.google.com/fonts/docs/getting_started).
 
