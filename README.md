@@ -4,7 +4,7 @@ Adopt a dog is a site built to support people that want to adopt a dog.
 
 ## Installation
 
-Use GitHub to download or clone the site files [GitHub](https://github.com/HMalloy/html200-adopt-a-dog.git).
+Use GitHub to download or clone the site files. [GitHub](https://github.com/HMalloy/html200-adopt-a-dog.git).
 
 ```bash
 git clone https://github.com/HMalloy/html200-adopt-a-dog.git
@@ -16,7 +16,7 @@ For details on use and installation visit [jquery.com](https://jquery.com/)
 ### Site uses Google fonts
 
 #### Embed Font
-To embed font into a webpage, copy this code into the <head> of your HTML document.
+To embed font into a webpage, copy this code into the &lt;head&gt; of your HTML document.
 
 ##### Standard
 
