@@ -11,9 +11,9 @@
 // }
 
 $(document).ready(function() {
-$('.card').hover(function() {
-    $(this).css('border', 'solid #81b741 2px');
-  }, function() {
-    $(this).css('border', 'dashed #81b741 2px');
+  $('.dog').click(function() {
+    $('.card').fadeOut();
   });
-});
+  $('.dog').click(function() {
+    $('.card').fadeIn(1000, 'linear');
+  });
