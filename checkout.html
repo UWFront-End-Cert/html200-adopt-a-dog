@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ADOPTADOG</title>
+</head>
+
+<body>
+    <header>
+        <img class="header-img" src="images/header-image.jpg" alt="header img">
+        <div class="header-left">
+           <img class="header-logo" src="images/adoptadog-logo.svg" alt="adoptadog logo">
+            <h2>Seattle's premiere dog adoption agency</h2>
+        </div>
+        <div class="header-right">
+            <img class="cart-img" src="images/cart-icon.svg" alt="cart icon">
+            <h3 class="header-price">$1234.56</h3>
+            <a href="checkout.html" class="btn">Checkout</a>
+
+        </div>
+    </header>
+               
+     <nav>
+         <ul class="menu"> 
+             <li><a href="index.html">Home</a></li>
+             <li>/</li>
+             <li><a href="dogs.html">Dog</a></li>
+             <li>/</li>
+             <li><a href="blog.html">Blog</a></li>
+         </ul>
+     </nav>  
+     
+    <main class="checkout-page-main">
+        <h1 class="checkout-page-topic">Checkout</h1>
+        <form class="checkout-form" action="get">
+           
+            <div class="checkout-form-1">
+                <div><label for="name">Name</label></div>
+                <input type="text" name="Name" id="Name">
+                <div><label for="email">Email</label></div>
+                <input type="text" name="email" id="email">
+                <div><label for="address">Street Address</label></div>
+                <input type="text" name="address" id="address">
+            </div>
+          
+            <div class="row">
+                <div class="row-city">
+                    <div><label for="city">City</label></div>
+                    <input type="text" name="city" id="city">
+                </div>
+                
+                <div class="row-state">
+                    <div><label for="state">State</label></div>
+                <select name="state" id="state">
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+                </div>
+                
+                <div class="zipcode">
+                    <div><label for="zipcode">Zip code</label></div>
+                    <input type="number" name="zipcode" id="zipcode">
+                </div>
+                
+            </div>
+            <label class="firsttime" for="first-time">First Time Adoption?</label>
+                <div class="firsttime-radio">
+                    <input type="radio" name="yes" id="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="no" id="no">
+                    <label for="no">No</label>
+                </div>
+            
+            
+            <div><label class="pickup" for="pickup">Pickup Location</label></div>
+                <select class="pickup-location" name="pickup-location" id="pickup-location">
+                    <option value="seattle">Seattle</option>
+                    <option value="seattle">Tacoma</option>
+                    <option value="seattle">Olympia</option>
+                    <option value="seattle">Lynwood</option>
+                </select>
+                
+            <div class="dog-adopted"><label for="dogsadopted">Dogs Adopted</label></div>
+                <div class="dog-adopted-list">
+                    <img src="images/lucas-checkout.jpg" alt="">
+                    <div>
+                        <h4>Lucas</h4>
+                        <p><span>Cost to Adopt:</span> $123.45</p>
+                    </div>
+                    
+                     <img src="images/duffy-checkout.jpg" alt="">
+                     <div>
+                        <h4>Duffy</h4>
+                         <p><span>Cost to Adopt:</span> $123.45</p> 
+                     </div>
+                     
+                </div>
+
+            
+            <div class="total-price"><label for="total-price">Total Adoption Cost</label></div>
+           
+                <p>$1234.56</p>
+                 <a href=""><div class="submit-btn">Submit</div></a>
+            
+  
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </form>
+    </main>
+            
+    <footer>
+       <div class="footer">
+           <div class="footer-logo"><img src="images/adoptadog-logo.svg" alt="">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        </div>
+        <div class="footer-middle">
+           <ul class="footer-list">
+                <a href="index.html"><li class="footer-items">Home</li></a>
+                <li class="footer-items">/</li>
+                <a href="dogs.html"><li class="footer-items">Dogs</li></a>
+                <li class="footer-items">/</li>
+                <a href=""><li class="footer-items">Contact</li></a>
+        </ul>
+        </div>
+        
+        <p class="footer-copy-rights">© 2018 Adoptadog, LLC   |   Seattle, WA</p>
+       </div>
+        
+    </footer>
+
+</body>
+</html>
