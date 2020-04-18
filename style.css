@@ -1,6 +1,6 @@
-@charset "utf-8"
+@charset "utf-8";
 
-;html, body {
+html, body {
     height: 100vh;     
 }
     
@@ -403,4 +403,7 @@ a {
 
 .total-price > div p {
     font-size: 1.3em;
+}
+.hidden {
+    display: none;
 }

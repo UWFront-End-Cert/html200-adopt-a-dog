@@ -38,7 +38,7 @@
            
             <div class="checkout-form-1">
                 <div><label for="name">Name</label></div>
-                <input type="text" name="Name" id="Name">
+                <input type="text" name="Name" id="name">
                 <div><label for="email">Email</label></div>
                 <input type="text" name="email" id="email">
                 <div><label for="address">Street Address</label></div>
@@ -114,7 +114,8 @@
                 </div>
                 
             </div>
-            <label class="firsttime" for="first-time">First Time Adoption?</label>
+            <label class="firsttime" for="firsttime">First Time Adoption?</label>
+               <input class="hidden" type="text" id="firsttime">
                 <div class="firsttime-radio">
                     <input type="radio" name="yes" id="yes">
                     <label for="yes">Yes</label>
@@ -123,7 +124,7 @@
                 </div>
             
             
-            <div><label class="pickup" for="pickup">Pickup Location</label></div>
+            <div><label class="pickup" for="pickup-location">Pickup Location</label></div>
                 <select class="pickup-location" name="pickup-location" id="pickup-location">
                     <option value="seattle">Seattle</option>
                     <option value="seattle">Tacoma</option>
@@ -131,7 +132,8 @@
                     <option value="seattle">Lynwood</option>
                 </select>
                 
-            <div class="dog-adopted"><label for="dogsadopted">Dogs Adopted</label></div>
+            <div class="dog-adopted"><label for="dog-adopted-list">Dogs Adopted</label></div>
+                              <input class="hidden" type="text" id="dog-adopted-list">
                 <div class="dog-adopted-list">
                     <img src="images/lucas-checkout.jpg" alt="">
                     <div>
@@ -149,21 +151,11 @@
 
             
             <div class="total-price"><label for="total-price">Total Adoption Cost</label></div>
-           
+                   <input class="hidden" type="text" id="total-price">
                 <p>$1234.56</p>
                  <a href=""><div class="submit-btn">Submit</div></a>
             
   
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
         </form>
     </main>
             
@@ -174,11 +166,11 @@
         </div>
         <div class="footer-middle">
            <ul class="footer-list">
-                <a href="index.html"><li class="footer-items">Home</li></a>
+                <li class="footer-items"><a href="index.html">Home</a></li>
                 <li class="footer-items">/</li>
-                <a href="dogs.html"><li class="footer-items">Dogs</li></a>
+                <li class="footer-items"><a href="dogs.html">Dogs</a></li>
                 <li class="footer-items">/</li>
-                <a href=""><li class="footer-items">Contact</li></a>
+                <li class="footer-items"><a href="">Contact</a></li>
         </ul>
         </div>
         
