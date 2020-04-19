@@ -51,20 +51,20 @@
       <!-- FORM START  -->
       <form id="form">
         <label for="name">Name</label><br>
-        <input type="text" id="name" name="name"><br>
+        <input type="text" id="name" name="name" required><br>
         <label for="email">Email Address</label><br>
-        <input type="email" id="email" name="email"><br>
+        <input type="email" id="email" name="email" required><br>
         <label for="address">Street Address</label><br>
-        <input type="text" id="address" name="address"><br>
+        <input type="text" id="address" name="address" required><br>
 
         <div class="form-horizontal">
           <div class="form-group">
             <label for="city">City</label><br>
-            <input type="text" id="city" name="city"><br>
+            <input type="text" id="city" name="city" required><br>
           </div>
           <div class="form-group">
             <label for="state">State</label><br>
-            <select id="state" name="state">
+            <select id="state" name="state" required>
               <option value="">Select</option>
               <option value="WA">WA</option>
               <option value="OR">OR</option>
@@ -72,7 +72,7 @@
           </div>
           <div class="form-group">
             <label for="zipcode">Zip Code</label><br>
-            <input type="text" id="zipcode" name="zipcode"><br>
+            <input type="text" id="zipcode" name="zipcode" required><br>
           </div>
         </div>
 
@@ -82,7 +82,7 @@
         <input id="no" type="radio" name="yes-no" value="Yes">No<br>
 
         <label for="location">Pickup Location</label><br>
-        <select id="location" class="location" name="location">
+        <select id="location" class="location" name="location" required>
           <option value="">Select</option>
           <option value="WA">WA</option>
         </select><br>
