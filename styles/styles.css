@@ -332,6 +332,10 @@ aside {
   margin-bottom: 2rem;
 }
 
+.featured-blog-image {
+  width: 95%;
+}
+
 /* show blog previews only on iPad portrait orientation or higher */
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .featured-blog-image {
@@ -340,7 +344,7 @@ aside {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .featured-blog-content p {
+  .featured-blog-content  {
     display: none;
   }
 }
