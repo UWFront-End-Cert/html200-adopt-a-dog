@@ -178,17 +178,10 @@ p.copyright {
 .blog-image {
     float: left;
     width: 40%;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
-.blog-image img {
-    display: block;
-    width: 95%;
-    margin-right: 3px;
-    margin-bottom: 3px;
-}
-.blog-content {
-    /* margin-left: 1rem; */
-    margin-top: 0px;
-}
+
 .blog-title {
     font-weight: bold;
     font-size: 125%;
