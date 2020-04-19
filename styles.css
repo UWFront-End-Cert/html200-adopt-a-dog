@@ -344,6 +344,7 @@ select {
   font-size: 1rem;
   color: #555;
   border: 1px solid #c4c4c4;
+  padding: .5rem;
 }
 
 .form-horizontal {
