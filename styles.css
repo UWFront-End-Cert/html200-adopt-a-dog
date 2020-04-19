@@ -286,6 +286,22 @@ aside a {
   max-width: 23%;
 }
 
+.dogs-wrapper .card article h4,
+.dogs-wrapper .card article small,
+.dogs-wrapper .card article figcaption {
+  padding: .625rem;
+}
+
+.dogs-wrapper .card article small {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.dogs-wrapper .card article strong {
+  padding-right: 1rem;
+}
+
 /* ================== BLOG PAGE / SECTION BLOG  ================= */
 
 .blog-box {
@@ -293,12 +309,16 @@ aside a {
   margin-bottom: 3rem;
 }
 
-.blog-box img {
-  width: 100%;
+.blog-box h3 {
+  padding-bottom: 1rem;
+}
+
+.img-box img {
+  max-width: 100%;
 }
 
 .blog-content {
-  width: 90%;
+  width: 80%;
   margin-left: 2rem;
 }
 

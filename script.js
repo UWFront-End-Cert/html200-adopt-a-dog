@@ -1,17 +1,44 @@
-// Link JavaScript to your site.
-// Create click handlers that alerts the dog’s information when clicking on the dog’s photo.
-// You will need to pass in the params in the click handler of the dog’s name, breed and adoption fees.
-// Create click handlers on each dog’s button that will add to the total.
-// Alert this total.
+// FORM SUBMISSION
+// On the form page, display an alert that says "Thank you. 
+// The form information has been received" when the form has been submitted.
+// Console log the values inside the form, you can build a string or build an object.
 
-// alert dog's on image click
-const alertDogInfo = (name, breed, cost) => {
-  alert('Dog Name: ' + name + ' |  Breed: ' + breed + ' |  Cost: $' + cost);
-}
+//creates an empry array
+let formData = [];
 
-// alert cart total by adding all the fees
-let total = 0;
-const addToTotal = (cost) => {
-  total += cost;
-  alert('Cart Total is: $' + total);
+function validate() {
+
+  //add EventListener to the form
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    let formValues = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      address: document.getElementById('address').value,
+      city: document.getElementById('city').value,
+      state: document.getElementById('state').value,
+      zipcode: document.getElementById('zipcode').value,
+      firstAdoptY: document.getElementById('yes').value,
+      location: document.getElementById('location').value,
+      cost: document.getElementById('total-cost').textContent
+    }
+
+    //add formValues to formData an array object
+    formData.push(formValues);
+
+    //clear the form after submission
+    document.forms[0].reset();
+
+    //alert user
+    alert('Thank you. The form information has been received');
+
+    //log formData
+    console.log(formData);
+
+    //log formData in JSON format;
+    // console.log(JSON.stringify(formData));
+
+  })
+
 }
