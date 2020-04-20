@@ -31,7 +31,7 @@ dark gray #3d3d3d
 }
 
 .fas, .fa-shopping-cart {
-  float: right;
+  margin: 0 auto;
   color: #ffffff;
 }
 
@@ -226,11 +226,13 @@ section {
   grid-template-rows: auto;
 }
 
-
-.blog-img {
-  padding: .25em;
-  margin: 0.5em;
+.blog-div {
   width: 100%;
+
+}
+.blog-img {
+  margin: 0 auto;
+  width: 98%;
   height: auto;
 }
 
