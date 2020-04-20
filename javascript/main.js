@@ -23,6 +23,7 @@ function populateBlog() {
   //create article and elements
   const blogArticle = document.createElement('article');
   blogArticle.setAttribute('class', 'blog-entry');
+  blogContainer.appendChild(blogArticle);
 
   const blogImage = document.createElement('image');
   blogImage.setAttribute('class', 'blog-image');
@@ -38,5 +39,8 @@ function populateBlog() {
   blogContent.setAttribute('class', 'blog-content');
   blogContent.textContent = 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.';
   blogArticle.appendChild(blogContent);
-
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  populateBlog();
+});
