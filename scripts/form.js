@@ -32,10 +32,3 @@ $(document).ready(function () {
     console.log(text);
   });
 });
-
-
-
-// $('.adopt').click(function(){
-//   total += Number($(this).data('price'));
-//   alert('Your current total is $' + total);
-// $('#checkout-2').text('$' + total);
