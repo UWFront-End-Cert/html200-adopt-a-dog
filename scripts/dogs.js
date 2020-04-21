@@ -1,19 +1,17 @@
+function dogInfo(dogBio) {
+  alert(dogBio);
+}
+
+let total = 0;
+
 $(document).ready(function() {
-$('.card').hover(function() {
-    $(this).css('border', 'solid #81b741 2px');
-  }, function() {
-    $(this).css('border', 'dashed #81b741 2px');
+  $('.dog').click(function() {
+    $(this).children('.card').fadeOut();
+    $(this).children('.card').fadeIn(2000, 'linear');
+  });
+  $('.adopt').click(function(){
+    total += Number($(this).data('price'));
+    alert('Your current total is $' + total);
+  $('#checkout-2').text('$' + total);
   });
 });
-
-//
-// function dogInfo(dogBio) {
-//   alert(dogBio);
-// }
-//
-// let total = 0;
-//
-// function myFee(fee) {
-//   total += fee;
-//   alert(total);
-// }
