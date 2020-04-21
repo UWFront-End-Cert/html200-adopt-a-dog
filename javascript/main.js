@@ -14,30 +14,42 @@ function addToTotal(adoptionFee) {
 }
 
 //Populate blog.html content
+
+const blogTitles = ['Traveling with your dog', 'How to walk multiple dogs', 'Teach your dog to play fetch!'];
+const blogImages = ['./images/blog-1.jpg', './images/blog-2.jpg', './images/blog-3.jpg'];
+const blogEntries = [
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  'Suspendisse sed nisi lacus sed viverra tellus. In massa tempor nec feugiat nisl pretium. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a. Adipiscing diam donec adipiscing tristique risus. Tincidunt augue interdum velit euismod. In nibh mauris cursus mattis molestie a. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Egestas purus viverra accumsan in nisl nisi scelerisque. Vel pretium lectus quam id leo in.',
+  'Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Mauris augue neque gravida in fermentum. Consectetur a erat nam at lectus urna duis convallis convallis. Egestas integer eget aliquet nibh praesent tristique magna. Pharetra vel turpis nunc eget lorem. Libero enim sed faucibus turpis. Tristique risus nec feugiat in fermentum. Id volutpat lacus laoreet non curabitur gravida arcu ac tortor.'
+];
+
+
 function populateBlog() {
   //get blog container section
   const blogContainer = document.getElementsByClassName('main-blog-container')[0];
 
-  //create article and elements, and append to Blog
-  const blogArticle = document.createElement('article');
-  blogArticle.setAttribute('class', 'blog-entry');
-  blogContainer.appendChild(blogArticle);
+  for (let i = 0; i < blogTitles.length; i += 1) {
+    //create article and elements, and append to Blog
+    const blogArticle = document.createElement('article');
+    blogArticle.setAttribute('class', 'blog-entry');
+    blogContainer.appendChild(blogArticle);
 
-  const blogImage = document.createElement('img');
-  blogImage.setAttribute('class', 'blog-image');
-  blogImage.src='./images/blog-1.jpg';
-  blogImage.alt=' ';
-  blogArticle.appendChild(blogImage);
+    const blogImage = document.createElement('img');
+    blogImage.setAttribute('class', 'blog-image');
+    blogImage.src= blogImages[i];
+    blogImage.alt=' ';
+    blogArticle.appendChild(blogImage);
 
-  const blogTitle = document.createElement('h2');
-  blogTitle.setAttribute('class', 'blog-title');
-  blogTitle.textContent = 'Test title';
-  blogArticle.appendChild(blogTitle);
+    const blogTitle = document.createElement('h2');
+    blogTitle.setAttribute('class', 'blog-title');
+    blogTitle.textContent = blogTitles[i];
+    blogArticle.appendChild(blogTitle);
 
-  const blogContent = document.createElement('p');
-  blogContent.setAttribute('class', 'blog-content');
-  blogContent.textContent = 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.';
-  blogArticle.appendChild(blogContent);
+    const blogContent = document.createElement('p');
+    blogContent.setAttribute('class', 'blog-content');
+    blogContent.textContent = blogEntries[i];
+    blogArticle.appendChild(blogContent);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
