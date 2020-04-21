@@ -353,9 +353,19 @@ input[type=submit] {
   margin: 0;
 }
 
+.added {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.final {
+  margin: 0 auto;
+}
+
+
 button {
-  margin: 0;
-  width: 90%;
+  margin: 0 auto;
+  width: 50%;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
   background-color: #81b741;
