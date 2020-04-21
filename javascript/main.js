@@ -13,21 +13,20 @@ function addToTotal(adoptionFee) {
   alert('Adoption fees total: $' + feeTotal);
 }
 
-// Populate blog.html content
+//Populate blog.html content
 function populateBlog() {
   //get blog container section
-  const blogContainer = document.body.getElementsByClassName('main-blog-container');
+  const blogContainer = document.getElementsByClassName('main-blog-container')[0];
 
   //create article and elements, and append to Blog
   const blogArticle = document.createElement('article');
   blogArticle.setAttribute('class', 'blog-entry');
   blogContainer.appendChild(blogArticle);
-  // This variation also fails
-  // getElementsByClassName('main-blog-container').appendChild(blogArticle);
 
-  const blogImage = document.createElement('image');
+  const blogImage = document.createElement('img');
   blogImage.setAttribute('class', 'blog-image');
-  blogImage.src = './images/blog-1.jpg';
+  blogImage.src='./images/blog-1.jpg';
+  blogImage.alt=' ';
   blogArticle.appendChild(blogImage);
 
   const blogTitle = document.createElement('h2');
