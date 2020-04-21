@@ -3,7 +3,7 @@ let feeTotal = 0;
 // Alert when clicking on dog picture
 function alertDogInfo(name, breed, adoptionFee) {
   let txt =
-    'Name: ' + name + '\nBreed: ' + breed + '\nAdoption fee: ' + adoptionFee;
+  'Name: ' + name + '\nBreed: ' + breed + '\nAdoption fee: ' + adoptionFee;
   alert(txt);
 }
 
@@ -63,7 +63,16 @@ function populateBlog() {
   }
 }
 
+// Function declaration for submit listener
+function submissionAlert(e) {
+  e.preventDefault();
+  alert('Thank you. The form information has been received.');
+}
+
 //Listener for page load
 document.addEventListener("DOMContentLoaded", function() {
   populateBlog();
 });
+
+//Listener for checkout submit button
+document.getElementById("checkout-form").addEventListener("submit", submissionAlert);
