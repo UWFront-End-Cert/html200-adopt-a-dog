@@ -15,20 +15,20 @@ function addToTotal(adoptionFee) {
 
 // Populate blog.html content
 function populateBlog() {
-  //create blog container section
-  const blogContainer = document.createElement('section');
-  blogContainer.setAttribute('class', 'main-blog-container');
-  document.body.insertBefore('blogContainer', 'footer');
+  //get blog container section
+  const blogContainer = document.body.getElementsByClassName('main-blog-container');
 
-  //create article and elements
+  //create article and elements, and append to Blog
   const blogArticle = document.createElement('article');
   blogArticle.setAttribute('class', 'blog-entry');
   blogContainer.appendChild(blogArticle);
+  // This variation also fails
+  // getElementsByClassName('main-blog-container').appendChild(blogArticle);
 
   const blogImage = document.createElement('image');
   blogImage.setAttribute('class', 'blog-image');
   blogImage.src = './images/blog-1.jpg';
-  blogArticle.appendChild(image);
+  blogArticle.appendChild(blogImage);
 
   const blogTitle = document.createElement('h2');
   blogTitle.setAttribute('class', 'blog-title');
