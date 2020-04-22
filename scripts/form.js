@@ -8,7 +8,7 @@ let total = 0;
 
 $(document).ready(function () {
   $('#buttonFinal').click(function myAdoption() {
-  const form = document.getElementById('myForm');
+  const form = document.getElementById('buttonFinal');
   form.addEventListener('submit', function(event) {
     event.preventDefault();
     myAdoption();
