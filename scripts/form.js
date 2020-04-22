@@ -1,4 +1,4 @@
-const submitFinal = document.getElementById('button-final');
+const submitFinal = document.getElementById('buttonFinal');
 const submitButton = document.createElement('button')
 submitButton.setAttribute('type', 'submit');
 submitButton.textContent = 'Submit';
@@ -7,7 +7,7 @@ submitFinal.appendChild(submitButton);
 let total = 0;
 
 $(document).ready(function () {
-  $('#myForm').click(function myAdoption() {
+  $('#buttonFinal').click(function myAdoption() {
   const form = document.getElementById('myForm');
   form.addEventListener('submit', function(event) {
     event.preventDefault();
