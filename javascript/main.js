@@ -23,9 +23,12 @@ $(document).ready(function() {
 
 // Update total checkout in total when adopt button clicked
 $('.adopt-button').click(function(e) {
+  e.preventDefault();
   $('.checkout-total').html(`\$${feeTotal}`)
 });
 
+
+//Console log form content on checkout
 $('#checkout-button').click(function(e) {
   e.preventDefault();
   alert('Thank you. The form information has been received.');
