@@ -116,6 +116,12 @@ li  a {
   width: 25%;
 }
 
+@media (max-width:768px) {
+  .column {
+    width:48%;
+
+  }
+}
 .card-content {
   border: 0.125rem solid gray;
   width: 85%;
