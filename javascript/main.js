@@ -20,3 +20,8 @@ $(document).ready(function() {
         function() { $(this).removeClass('card-shadow'); }
     );
 });
+
+// Update total checkout in total when adopt button clicked
+$('.adopt-button').click(function(e) {
+  $('.checkout-total').html(`\$${feeTotal}`)
+});
