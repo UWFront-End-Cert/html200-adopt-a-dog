@@ -203,6 +203,11 @@ p.copyright {
   margin: 5px;
 }
 
+.card-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: .2s;
+}
+
 /* displays 2 cards in a row on table screens with room for margins */
 @media screen and (max-width: 768px) {
   .dog-adoption-card {
@@ -393,6 +398,8 @@ input[type=submit] {
   margin-bottom: .5rem;
   cursor: pointer;
 }
+
+.large-
 
 /* Comp color hex codes:
 Gray footer: #3F3F3F
