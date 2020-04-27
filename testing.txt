@@ -1,0 +1,10 @@
+Testing Steps to Ensure a Quality Site
+HTML5 Validator
+  After building out the HTML document, I used https://validator.w3.org/ to test the validity of each page's HTML. Often times, the errors that occurred were ones that were out of my control (i.e. bad value and illegal character in query when using Google Fonts) and other times errors occurred from where I placed <p> tags as place holders in some elements. As the site is built out fully, these place holders will be replaced by actual content for the site. I used https://jigsaw.w3.org/css-validator/ to confirm that I had written the CSS correctly. I continue to perdiodically validate the code even after I am done, since you can go back and make changes in the HTML as you write CSS and JavaScript.
+//Would you use span instead of div in some places, like the top of the page where the cart total is showing, to correct this error?
+
+– Browser
+
+– Browser Dev-Tools
+– Emulators
+– Actual Devices
