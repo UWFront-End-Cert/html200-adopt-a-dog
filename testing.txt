@@ -1,10 +1,15 @@
 Testing Steps to Ensure a Quality Site
 HTML5 Validator
-  After building out the HTML document, I used https://validator.w3.org/ to test the validity of each page's HTML. Often times, the errors that occurred were ones that were out of my control (i.e. bad value and illegal character in query when using Google Fonts) and other times errors occurred from where I placed <p> tags as place holders in some elements. As the site is built out fully, these place holders will be replaced by actual content for the site. I used https://jigsaw.w3.org/css-validator/ to confirm that I had written the CSS correctly. I continue to perdiodically validate the code even after I am done, since you can go back and make changes in the HTML as you write CSS and JavaScript.
-//Would you use span instead of div in some places, like the top of the page where the cart total is showing, to correct this error?
+  After building out the HTML document, I used https://validator.w3.org/ to test the validity of each page's HTML. Often times, the errors that occurred were ones that were out of my control (i.e. bad value and illegal character in query when using Google Fonts) and other times errors occurred from where I placed <p> tags as place holders in some elements. Incidentally, using the validator allows you to see what can and can't be children of elements when using place holders. For example, I found that <div> can't be a child of <i>, but <span> can. As the site is built out fully, these place holders will be replaced by actual content for the site. I used https://jigsaw.w3.org/css-validator/ to confirm that I had written the CSS correctly. I continue to periodically validate the code even after I am done, since you can go back and make changes in the HTML as you write CSS and JavaScript.
 
 – Browser
+  I downloaded Chrome, Safari, Firefox, and Opera. I opened and resized Adopt-A-Dog in these browsers and the looked as expected when simply dragging and resizing windows.
 
 – Browser Dev-Tools
+  Throughout the duration of this module, I have used Chrome DevTools. I did note that while using Opera to test a different browser, that its DevTools are very similar to Chrome's.
+
 – Emulators
+  I downloaded XCode and ran simulations on several Apple device types. The performace lagged, but ran as expected. The media queries and breakpoints occurred as they should have. The JavaScript worked as it should have. 
+
 – Actual Devices
+  I have tested my site on my Samsung GalaxyS10 since beginning to build the site. My husband and friends have also accessed Adopt-A-Dog on their devices and provided me with feedback (mostly visual aesthetics) on ways to improve my site. The JS alerts were interesting to interact with on a mobile device. I did notice that the checkout button in the header was cut off on the edge, so that will need some attention.

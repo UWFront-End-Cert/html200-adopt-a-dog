@@ -7,15 +7,8 @@ submitFinal.appendChild(submitButton);
 let total = 0;
 
 $(document).ready(function () {
-  $('#buttonFinal').click(function myAdoption() {
-  const form = document.getElementById('buttonFinal');
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    myAdoption();
-    alert("Thank you. The form information has been received.");
-  });
-  });
-  $('#myForm').click(function() {
+  $('#buttonFinal').click(function(e) {
+    e.preventDefault();
     const x = document.getElementById('myForm');
     let text = ' ';
     for (let i = 0; i < x.length; i++) {
@@ -30,5 +23,6 @@ $(document).ready(function () {
       text += x.elements[i].name + ' : ' + x.elements[i].value + '\n';
     }
     console.log(text);
+    alert("Thank you. The form information has been received.");
   });
 });
