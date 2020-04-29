@@ -9,7 +9,7 @@ HTML5 Validator
   Throughout the duration of this module, I have used Chrome DevTools. I did note that while using Opera to test a different browser, that its DevTools are very similar to Chrome's.
 
 – Emulators
-  I downloaded XCode and ran simulations on several Apple device types. The performace lagged, but ran as expected. The media queries and breakpoints occurred as they should have. The JavaScript worked as it should have. 
+  I downloaded XCode and ran simulations on several Apple device types. The performance lagged, but ran as expected. The media queries and breakpoints occurred as they should have. The JavaScript worked as it should have. 
 
 – Actual Devices
   I have tested my site on my Samsung GalaxyS10 since beginning to build the site. My husband and friends have also accessed Adopt-A-Dog on their devices and provided me with feedback (mostly visual aesthetics) on ways to improve my site. The JS alerts were interesting to interact with on a mobile device. I did notice that the checkout button in the header was cut off on the edge, so that will need some attention.
