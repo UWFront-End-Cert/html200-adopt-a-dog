@@ -120,6 +120,11 @@ main {
     padding-bottom: 3em;
 }
 
+.homepage-grid {
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+}
+
 .main-heading {
     margin: 0% 15%;
 }
@@ -168,7 +173,7 @@ main {
 }
 
 .dog-card {
-    max-width: 15em;
+    max-width: 100%;
     margin: 1em;
     border-style: solid;
     border-color: #dad8d2;
@@ -217,6 +222,10 @@ main {
     font-size: large;
     padding: 1rem 4rem;
     border-radius: 3px;
+}
+
+.blog-post-previews {
+    grid-column-start: 2;
 }
 
 @media screen and (max-width: 500px) {
@@ -268,9 +277,21 @@ footer {
     background-color: #113c60;
 }
 
+@media screen and (max-width: 500px) {
+        
+    .footer-content-container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .footer-content-container {
+        max-width: 30%;
+    }
+}
+
 .footer-content-container {
-    padding: 3em 0em;
-    max-width: 30%;
+    padding: 3em 2em;
     margin: auto;
     text-align: center;
     color: #ffffff;
