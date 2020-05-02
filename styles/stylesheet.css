@@ -141,18 +141,18 @@ main {
 
 @media screen and (max-width: 500px) {
     .dog-card-display {
-        display: flex;
-        flex-direction: column;
-        background-color: blue;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
         margin: auto;
     }
 }
 
 @media screen and (min-width: 500px) {
     .dog-card-display {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 1fr;
         margin: 0% 15%;
     }
 }
@@ -217,7 +217,6 @@ main {
     .blog-post {
         display: flex;
         flex-direction: column;
-        background-color: blue;
     }
 
     .blog-post-text {
