@@ -175,11 +175,20 @@ main {
     padding-bottom: 3em;
 }
 
-.homepage-grid {
-    display: grid;
-    grid-template-columns: 2fr, 1fr;
-    padding: 0% 15%;
-    align-items: initial;
+@media screen and (max-width: 500px) {
+    .homepage-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .homepage-grid {
+        display: grid;
+        grid-template-columns: 2fr, 1fr;
+        padding: 0% 15%;
+        align-items: initial;
+    }
 }
 
 .homepage-hero {
@@ -308,7 +317,7 @@ main {
 
 @media screen and (max-width: 500px) {
     .blog-post-previews {
-        display: hidden;
+        display: none;
     }
 }
 
