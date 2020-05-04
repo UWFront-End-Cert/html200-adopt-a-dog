@@ -46,6 +46,7 @@ p, a{
     }
 }
 
+
 .header-logo-heading {
     color: #86b349;
     font-family: serif;
@@ -61,26 +62,23 @@ p, a{
         background-color: #000000;
     }
     .header-checkout-icon {
-        width: 1.5em;
-        grid-column-start: 1;
-        grid-column-end: 2;
+        display: none;
     }
     
     .header-checkout-cart {
-        color: #ffffff;
-        grid-column-start: 2;
-        grid-column-end: 3;
+        display: none;
     }
     .header-checkout-link {
         background-color: #86b349;
         border-radius: 3px;
-        padding: .5rem 3rem;
+        padding: 0.5rem 3rem;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 2;
         place-self: center;
         text-decoration: none;
         color: #ffffff;
+        margin: 1em 0em;
     }
 }
 
