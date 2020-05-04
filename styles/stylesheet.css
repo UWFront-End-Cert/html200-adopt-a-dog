@@ -185,9 +185,8 @@ main {
 @media screen and (min-width: 500px) {
     .homepage-grid {
         display: grid;
-        grid-template-columns: 2fr, 1fr;
+        grid-template-columns: 2fr 1fr;
         padding: 0% 15%;
-        align-items: initial;
     }
 }
 
@@ -482,7 +481,6 @@ select, option {
 .radio-label {
     margin-right: 1rem;
     font-size: 1rem;
-    font-style: none;
     font-family: 'Work+Sans', sans-serif;
     color: #000000;
     align-self: center;
