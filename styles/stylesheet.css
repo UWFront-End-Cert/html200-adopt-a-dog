@@ -14,6 +14,10 @@ h1, h2, label{
     color: #113c60;
 }
 
+h1 {
+    font-size: 2em;
+}
+
 p, a{
     font-family: 'Work+Sans', sans-serif;
 }
@@ -187,6 +191,7 @@ main {
         display: grid;
         grid-template-columns: 2fr 1fr;
         padding: 0% 15%;
+        column-gap: 2em;
     }
 }
 
@@ -374,7 +379,9 @@ main {
     object-fit: contain;
 }
 
-
+.blog-preview {
+    margin-bottom: 2em;
+}
 
 footer {
     background-color: #113c60;
