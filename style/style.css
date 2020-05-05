@@ -108,12 +108,10 @@ li  a {
   width: 85%;
   box-shadow:0 0.5rem 0.625rem 0 #888888;
   margin: 2rem;
+  padding:1rem;
 }
 
-.container {
-  height:15.625rem;
-  padding: 0.875rem  3rem;
-}
+
 /* .container h3 {
   font-size: 1.5rem;
   color: #094160;
@@ -424,19 +422,11 @@ footer img {
     margin-right:8rem;
 
 }
-.grid-container > div {
-
-    padding:1rem;
-
-}
-.item-1 {
 
 
- }
  .item-1 img {
     width:100%;
 
-    height:fit-content;
 
 }
  /* .item-1 p {
@@ -469,19 +459,11 @@ footer img {
 
    display:grid;
    grid-template-columns:repeat(3, 3fr);
-   grid-auto-rows: minmax(50rem, auto);
+
 
 }
-.item-3-grid > div {
-    display:grid;
-     grid-auto-rows: minmax(31.25rem, auto);
-}
-.item-4 {
-    border:1px solid green;
-    background-color:yellow;
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-}
+
+
 #homepage-adoptadog {
   color: #094160;
   margin-top:2rem;
@@ -550,4 +532,9 @@ footer img {
    width:100%;
 
  }
+}
+@media screen and (max-width:768px) {
+  .item-2 {
+    display:none;
+  }
 }
