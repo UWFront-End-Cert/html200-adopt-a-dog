@@ -22,6 +22,10 @@ p, a{
     font-family: 'Work+Sans', sans-serif;
 }
 
+.header-logo-checkout-overlay {
+    background-image: url("../images/header-image.jpg");
+}
+
 @media screen and (max-width: 500px) {
     .header-logo-checkout-overlay {
         display: flex;
@@ -433,69 +437,63 @@ footer {
     width: 25%;
 }
 
-form {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0% 15%;
-    padding: 1em;
-    max-width: 40%;
-}
-
-.form-item {
-    display: flex;
-    flex-direction: column;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-}
-
-button {
-    font-family: inherit;
-    font-size: large;
-    font-weight: bold;
-    width: 12rem;
-    background-color: #86b349;
-    border-radius: 3px;
-    color: #ffffff;
-    border: none;
-    padding: 0.5rem 3rem;
-}
-
-label {
-    font-size: 1.5rem;
-}
-
-input {
-    height: 1.5rem;
-}
-
-
-select, option {
-    height: 28px;
-    padding: 1px;
-    break-inside: auto;
-    box-sizing: content-box;
-    border-style: solid;
-    border-radius: 0px;
-    background-color: #ffffff;
-    border-width: 1px;
-    border-color: rgb(192, 192, 192);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.form-horizontal-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.radio-label {
-    margin-right: 1rem;
-    font-size: 1rem;
-    font-family: 'Work+Sans', sans-serif;
-    color: #000000;
-    align-self: center;
+@media screen and (min-width: 500px) {
+    form {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0% 15%;
+        padding: 1em;
+        max-width: 40%;
+    }
+    .form-item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+    button {
+        font-family: inherit;
+        font-size: large;
+        font-weight: bold;
+        width: 12rem;
+        background-color: #86b349;
+        border-radius: 3px;
+        color: #ffffff;
+        border: none;
+        padding: 0.5rem 3rem;
+    }
+    label {
+        font-size: 1.5rem;
+    }
+    input {
+        height: 1.5rem;
+    }
+    select, option {
+        height: 28px;
+        padding: 1px;
+        break-inside: auto;
+        box-sizing: content-box;
+        border-style: solid;
+        border-radius: 0px;
+        background-color: #ffffff;
+        border-width: 1px;
+        border-color: rgb(192, 192, 192);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    .form-horizontal-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .radio-label {
+        margin-right: 1rem;
+        font-size: 1rem;
+        font-family: 'Work+Sans', sans-serif;
+        color: #000000;
+        align-self: center;
+    }
 }
 
 .dog-checkout-description {
