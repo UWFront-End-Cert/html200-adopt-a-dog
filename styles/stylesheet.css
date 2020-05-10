@@ -50,9 +50,22 @@ section {
   margin-right: 70px;
 }
 .mainp {
+  font-family: 'Work Sans', sans-serif;
+  font-size: x-large;
 
 }
 .mainh1 {
+  font-size: xx-large;
+  font-family: 'Neuton', serif;
+  color: darkslategrey;
+
+}
+
+.dogsh1 {
+  font-size: xxx-large;
+  font-family: 'Neuton', serif;
+  color: darkslategrey;
+  margin-left: 40px;
 
 }
 .card {
@@ -85,6 +98,9 @@ section {
   font-style: italic;
 
 }
+.cardp {
+  font-family: 'Work Sans', sans-serif;
+}
 .button {
   width:100%;
   background-color: #4CAF50; /* Green */
@@ -106,6 +122,7 @@ section {
 }
 
 .h3-title {
+  font-family: 'Work Sans', sans-serif;
 
 }
 
@@ -210,8 +227,9 @@ section {
   margin-right:0;
   margin-top:0;
   margin-bottom: 0;
-  padding-left: 250px;
+  padding-left: 280px;
   background-color:#ebebeb;
+
 }
 
 
@@ -239,11 +257,14 @@ li {
 
 li a {
   display: block;
-  color: black;
+  color: darkslategrey;
   text-align: center;
-  padding: 14px 16px;
+  padding: 30px 16px;
   text-decoration: none;
   font-weight: bold;
+  font-size: x-large;
+  font-weight: 800;
+  font-family: 'Work Sans', sans-serif;
 }
 a {
   padding-bottom: 14px;
