@@ -1,3 +1,4 @@
+
 .header {
     color: white;
     background-color: #003366;
@@ -26,39 +27,36 @@ nav {
     padding: 30px;
 }
 
-.adoptIntro img {
+.travel img {
     float: left;
     margin-right: 40px;
     margin-left: 40px;
 }
 
-.adoptIntro {
-    margin-bottom: 80px;
+.travel {
+    margin-bottom: 200px;
 }
 
-.flex {
-    display: flex;
+.walk img {
+    float: left;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
-    .flex > section {
-        margin-top: 100px;
-        margin-right: 30px;
-        width: 15%;
-        border: 3px solid #73AD21;
-        padding: 15px;
-    }
-
-.flexi {
-    display: flex;
+.walk {
+    margin-bottom: 200px;
 }
 
-    .flexi > section {
-        margin-top: 100px;
-        margin-right: 30px;
-        width: 15%;
-        border: 3px solid #73AD21;
-        padding: 15px;
-    }
+.teach img {
+    float: left;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.teach {
+    margin-bottom: 200px;
+}
+
 
 footer {
     text-align: center;

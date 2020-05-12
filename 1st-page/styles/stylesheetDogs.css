@@ -26,23 +26,13 @@ nav {
     padding: 30px;
 }
 
-.adoptIntro img {
-    float: left;
-    margin-right: 40px;
-    margin-left: 40px;
-}
-
-.adoptIntro {
-    margin-bottom: 80px;
-}
-
 .flex {
     display: flex;
 }
 
     .flex > section {
-        margin-top: 100px;
-        margin-right: 30px;
+        margin-top: 30px;
+        margin-right: 1em;
         width: 15%;
         border: 3px solid #73AD21;
         padding: 15px;
@@ -53,8 +43,20 @@ nav {
 }
 
     .flexi > section {
-        margin-top: 100px;
-        margin-right: 30px;
+        margin-top: 30px;
+        margin-right: 1em;
+        width: 15%;
+        border: 3px solid #73AD21;
+        padding: 15px;
+    }
+
+.flexin {
+    display: flex;
+}
+
+    .flexin > section {
+        margin-top: 30px;
+        margin-right: 1em;
         width: 15%;
         border: 3px solid #73AD21;
         padding: 15px;
