@@ -23,7 +23,9 @@ p, a{
 }
 
 .header-logo-checkout-overlay {
+    background-color: #000000;
     background-image: url("../images/header-image.jpg");
+    background-image: url("../images/header-image.jpg"), linear-gradient(#ffffff, #000000);
     background-position: center;
     background-size: cover;
 }
@@ -32,49 +34,19 @@ p, a{
     .header-logo-checkout-overlay {
         display: flex;
         flex-direction: column;
-        z-index: 2;
     }
     .header-logo-wrapper {
         display: flex;
         flex-direction: column;
     }
-}
-
-@media screen and (min-width: 500px) {
-    .header-logo-checkout-overlay {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        z-index: 2;
-    }
-    .header-logo-wrapper {
-        display: flex;
-        flex-direction: column;
-        margin-top: 3em;
-        margin-bottom: 10em;
-        margin-left: 5em;
-    }
-}
-
-
-.header-logo-heading {
-    color: #86b349;
-    font-family: serif;
-    font-style: italic;
-    font-weight: normal;
-}
-
-@media screen and (max-width: 500px) {
     .header-checkout-wrapper {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto;
-        background-color: #000000;
     }
     .header-checkout-icon {
         display: none;
     }
-    
     .header-checkout-cart {
         display: none;
     }
@@ -93,6 +65,18 @@ p, a{
 }
 
 @media screen and (min-width: 500px) {
+    .header-logo-checkout-overlay {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header-logo-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        margin-bottom: 10em;
+        margin-left: 5em;
+    }
     .header-checkout-wrapper {
         display: grid;
         grid-template-columns: auto auto;
@@ -130,6 +114,14 @@ p, a{
         text-decoration: none;
         color: #ffffff;
     }
+}
+
+
+.header-logo-heading {
+    color: #86b349;
+    font-family: serif;
+    font-style: italic;
+    font-weight: normal;
 }
 
 .header-nav{
@@ -183,6 +175,8 @@ main {
     font-size: large;
     margin: 1em;
     text-align: start;
+    max-width: 100%;
+    height: auto;
 }
 
 .homepage-hero > img {
@@ -286,6 +280,7 @@ main {
 
 .dog-card-image {
     max-width: 100%;
+    height: auto;
 }
 
 .dog-card-bold {
