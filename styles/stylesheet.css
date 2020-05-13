@@ -24,6 +24,8 @@ p, a{
 
 .header-logo-checkout-overlay {
     background-image: url("../images/header-image.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 @media screen and (max-width: 500px) {
@@ -129,32 +131,6 @@ p, a{
         color: #ffffff;
     }
 }
-
-@media screen and (max-width: 500px) {
-    .header-background-image-container {
-        position: absolute;
-        max-height: 100%;
-        z-index: -1;
-        background-color: #000000;
-    }
-    .header-background-image {
-        max-width: 100%;
-    }
-}
-@media screen and (min-width: 500px) {
-    .header-background-image-container {
-        position: absolute;
-        max-width: 100%;
-        z-index: -1;
-        background-color: #000000;
-    }
-    .header-background-image {
-        float: right;
-        max-width: 80%;
-    }
-}
-
-
 
 .header-nav{
     background-color: #dad8d2;
@@ -381,6 +357,8 @@ main {
 
 .blog-post-image {
     object-fit: contain;
+    max-width: 100%;
+    height: auto;
 }
 
 .blog-preview {
@@ -494,6 +472,49 @@ footer {
         color: #000000;
         align-self: center;
     }
+
+    #name {
+        width: 29rem;
+    }
+
+    #email {
+        width: 29rem;
+    }
+
+    #street {
+        width: 29rem;
+    }
+
+    #state {
+        width: 100%;
+    }
+
+    #city {
+        width: 100%;
+    }
+
+    #adopter-yes {
+        width: 1rem;
+        align-self: center;
+    }
+
+    #adopter-no {
+        width: 1rem;
+        align-self: center;
+    }
+
+    #adopter-container {
+        width: 29rem;
+    }
+
+    #pickup {
+        width: 12rem;
+    }
+
+    #zip {
+        width: 100%;
+        flex-grow: 1;
+    }
 }
 
 .dog-checkout-description {
@@ -509,45 +530,47 @@ footer {
     margin: 0rem 1rem;
 }
 
-#name {
-    width: 29rem;
-}
-
-#email {
-    width: 29rem;
-}
-
-#street {
-    width: 29rem;
-}
-
-#state {
-    width: 100%;
-}
-
-#city {
-    width: 100%;
-}
-
-#adopter-yes {
-    width: 1rem;
-    align-self: center;
-}
-
-#adopter-no {
-    width: 1rem;
-    align-self: center;
-}
-
-#adopter-container {
-    width: 29rem;
-}
-
-#pickup {
-    width: 12rem;
-}
-
-#zip {
-    width: 100%;
-    flex-grow: 1;
+@media screen and (max-width: 500px) {
+    #name {
+        max-width: 100%;
+    }
+    
+    #email {
+        max-width: 100%;
+    }
+    
+    #street {
+        max-width: 100%;
+    }
+    
+    #state {
+        max-width: 100%;
+    }
+    
+    #city {
+        max-width: 100%;
+    }
+    
+    #adopter-yes {
+        width: 1rem;
+        align-self: center;
+    }
+    
+    #adopter-no {
+        width: 1rem;
+        align-self: center;
+    }
+    
+    #adopter-container {
+        max-width: 100%;
+    }
+    
+    #pickup {
+        max-width: 100%;
+    }
+    
+    #zip {
+        width: 100%;
+        flex-grow: 1;
+    }
 }
