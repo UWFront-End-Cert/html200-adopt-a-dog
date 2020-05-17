@@ -13,19 +13,7 @@ html,body {
 body {
   background-color: #ececec;
 }
-/* header {
-  background-image: url(../images/header-image.jpg);
-  background-size:100% 100%;
-} */
- /* .adoptadog-logo img{
 
-  display:inline;
-  position: relative;
-  left: 2rem;
-  width:50%;
-  padding: 7.5rem;
-  top: 0.625rem;
-} */
 
 .headerImg {
   margin-left: 4rem;
@@ -36,7 +24,7 @@ body {
 #header-seattle-agency {
   color:#81b741;
   font-size:1.875rem;
-  position:absolute;
+  /* position:absolute; */
   margin-left:6rem;
   word-spacing:0.5rem;
 
@@ -213,7 +201,7 @@ footer {
 
 
 .bottom-nav {
- 
+
   padding-left:6rem;
   margin-top:2rem;
   width:60%;
