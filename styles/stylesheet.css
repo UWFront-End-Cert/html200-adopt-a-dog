@@ -25,7 +25,7 @@ footer {
  left: 0;
  padding-top: 50px;
  padding-bottom:50px;
- background-color: midnightblue;
+ background-color: #083b5f;
  text-align: center;
 }
 
@@ -47,6 +47,10 @@ section {
 }
 .dogimage {
   width:100%
+}
+
+.dogimage-small {
+  width:8%
 }
 .clearfix {
   overflow: auto;
@@ -83,6 +87,12 @@ section {
   transition: 0.3s;
   width: 20%;
   margin-right:50px;
+}
+
+.small-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
 }
 
 .card:hover {
@@ -131,6 +141,71 @@ section {
   cursor: pointer;
 }
 
+.divheader {
+
+}
+.button-bottom {
+  width: 20%;
+      background-color: #ebebeb;
+      border: none;
+      color: darkslategrey;
+      padding-top: 15px;
+      padding-right: 70px;
+      padding-left: 70px;
+      padding-bottom: 15px;
+      border-radius: 4px;
+      text-align: center;
+      font-weight: bold text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 20px 2px;
+      font-weight: bold;
+      margin-bottom: 150px;
+      cursor: pointer;
+  }
+
+.headertextspan{
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  float: right;
+  margin-top: -30px;
+  margin-right: 36px;
+  font-size: large;
+}
+
+  .imageclass {
+      height: 3%;
+      width: 2%;
+      float: right;
+      margin-right: 130px;
+      margin-bottom: 0px;
+      margin-top: -35px;
+      margin-left: 10px;
+  }
+
+.button-checkout {
+      width: 12%;
+      float: right;
+      font-size: 14px;
+      margin-right: 15px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding-top: 10px;
+      /* padding-right: 70px; */
+      /* padding-left: 70px; */
+      padding-bottom: 10px;
+      border-radius: 4px;
+      text-align: center;
+      font-weight: bold text-decoration: none;
+      /* display: inline-block; */
+      font-size: 16px;
+      /* margin: 20px 2px; */
+      font-weight: bold;
+      cursor: pointer;
+}
+
 .h3-title {
   font-family: 'Work Sans', sans-serif;
 
@@ -140,6 +215,7 @@ section {
   font-family: 'Neuton';
     font-weight: bold;
     font-size: x-large;
+    padding-right:10px;
 }
 
 input[type=text], select {
@@ -153,7 +229,7 @@ input[type=text], select {
 }
 
 input[type=submit] {
-  width: 100%;
+  width: 25%;
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -177,9 +253,11 @@ div {
 }
 */
 .form-div {
-  width: 40%;
-  border-radius: 0;
-    padding: 0;
+  display: flex;
+      align-items: center;
+      width: 100%;
+      border-radius: 0;
+      padding: 0;
 }
 
 
@@ -324,4 +402,11 @@ a {
   padding-bottom: 14px;
   color: #2c9ab7;
   text-decoration: none;
+}
+
+.abutton {
+  color:white;
+}
+.bbutton {
+  color:darkslategrey;
 }

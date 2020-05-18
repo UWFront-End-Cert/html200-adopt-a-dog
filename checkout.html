@@ -8,10 +8,13 @@
 </head>
 <body>
   <div>
-  <header>
-    <img src="images/adoptadog-logo.svg" alt="Smiley face" height="35%" width="35%">
-    <p class="headerp"> Seattle's premier dog adoption agency </p>
-  </header>
+    <header>
+      <img src="images/adoptadog-logo.svg" alt="Smiley face" height="35%" width="35%">
+      <img class = "imageclass"  src="images/cart-icon.svg" alt="Smiley face">  <span class = "headertextspan">$123.456</span>
+      <button class="button-checkout"> <a class = "abutton" href="checkout.html"> Checkout </a></button>
+
+      <p class="headerp"> Seattle's premier dog adoption agency </p>
+    </header>
 
   <nav class="menu">
     <ul class="navlist">
@@ -41,14 +44,50 @@
               <option value="canada">Canada</option>
               <option value="usa">USA</option>
             </select>
-          </div>
-          <div class = "form-div">
-            <label class = "label">State</label>
+
+          <!-- </div>
+          <div class = "form-div"> -->
+            <label class = "label" style = "padding-left: 10px;">State</label>
             <select id="country" name="country">
               <option value="australia">Australia</option>
               <option value="canada">Canada</option>
               <option value="usa">USA</option>
             </select>
+
+          </div>
+          <label class = "label"> First Time Adopter? </label>
+          <div style = "margin-top: 10px; margin-bottom: 10px">
+            <input type="radio" id="other" name="gender" value="other"> <span style = "margin-right: 40px"> Yes </span>
+            <input type="radio" id="other" name="gender" value="other"> <span> No </span>
+          </div>
+          <label class = "label"> Pickup Location </label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <div>
+            <label class = "label"> Dogs Adopted </label>
+          </div>
+          <div style = "display: flex; margin-top: 10px; margin-bottom: 10px">
+            <img class="dogimage-small" src="images/lucas-checkout.jpg" alt="Avatar">
+            <p style = "margin-left: 10px; font-family: 'Neuton'; font-weight: bolder; color: darkslategrey; font-size: larger;"> Popply </p>
+            <p style = "margin-top: 45px; margin-left: -48px; margin-right: 80px;"> <b>Cost to Adopt:</b> 123.45 </p>
+
+
+            <img class="dogimage-small" src="images/duffy-checkout.jpg" alt="Avatar">
+            <p style = "margin-left: 10px; font-family: 'Neuton'; font-weight: bolder; color: darkslategrey; font-size: larger;"> Popply </p>
+            <p style = "margin-top: 45px; margin-left: -48px;"> <b>Cost to Adopt:</b> 123.45 </p>
+          </div>
+            <!-- <div class="container">
+            <h3 class="h3-title"> Poppy </h3>
+            <p class = "cardp"> <b> Cost to Adopt: </b>123.45 </p>
+            </div> -->
+          <div>
+            <label class = "label"> Total Adoption Cost </label>
+          </div>
+          <div style = "margin-top: 10px; margin-bottom: 10px;">
+            <span style = "margin-right: 40px"> $123.456 </span>
           </div>
           <input type="submit" value="Submit">
         </form>
