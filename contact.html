@@ -55,9 +55,10 @@
           <label for="city">City</label>
           <input type="text" id="city">
         </div>
-        <div class="state">
+        <div class="state-item">
           <label for="state">State</label>
-          <select name="state" id="state">
+          <select name="state" id="state-select">
+            <option value="">Please Select a State</option>
             <option value="washington">Washington</option>
             <option value="montana">Montana</option>
           </select>
@@ -75,15 +76,17 @@
       First Time Adopter?
     </div>
       <div class="radio-adopt">
-        <input type="radio" id="yes">
+        <input type="radio" id="yes" name="input" value="yes">
         <label for="yes">Yes</label>
-        <input type="radio" id="no">
+      </div>
+      <div class="radio-adopt" id="input-2">
+        <input type="radio" id="no" name="input" value="no">
         <label for="no">No</label>
       </div>
     </div>
     <div class="container-content">
       <label for="pickup">Pickup Location</label>
-    <select class="pickup" name="pick" id="pickup">
+    <select class="pickup" name="pick">
       <option value="redmond">Redmond</option>
       <option value="bothell">Bothell</option>
       <option value="bellevue">Bellevue</option>
@@ -143,6 +146,6 @@
     </div>
 
   </footer>
-
+ <script src="js/main.js"></script>
 </body>
 </html>

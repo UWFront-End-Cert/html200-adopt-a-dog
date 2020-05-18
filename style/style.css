@@ -31,7 +31,7 @@ body {
 }
 .main-header {
   width:100%;
-  height:500px;
+  height:31.25rem;
   background-color:purple;
   background-image:url('../images/header-image.jpg');
   background-image: url('../images/header-image.jpg'),linear-gradient(red, yellow);
@@ -309,18 +309,18 @@ footer {
   height:1.25rem;
 }
 
-.state {
+.state-item {
   width:10%;
-  height:4.375rem;
+  /* height:4.375rem; */
   float:left;
   margin-left:3rem;
 }
 
-.state select {
+.state-item label {
   display: block;
   margin-top:0.313rem;
-  width: 100%;
-  height:1.875rem;
+  /* width: 100%;
+  height:1.875rem; */
 }
 .zip {
 
@@ -329,23 +329,22 @@ footer {
   margin-left:4rem;
 }
 .zip input {
-
   display:block;
   width:100%;
-  height:1.875rem;
+   height:1.2rem;
   margin-top:0.2rem;
-
+  margin-left:2rem;
 }
-.radio-adopt label {
+/* .radio-adopt label {
   margin-left:0.5rem;
 
 
 
-}
-#no {
+} */
+/* #no {
   border:1px solid blue;
   margin-left:1rem;
-}
+} */
 .pickup {
   width:50%;
   padding:1rem;

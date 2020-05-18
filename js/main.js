@@ -30,10 +30,10 @@ const div = document.getElementsByClassName('flex-container')[0];
 // img.setAttribute('src','file:///C:/Users/swati/OneDrive/Desktop/html200/adopt-a-dog/images/blog-1.jpg');
 // div.appendChild(img);
 for (let i = 0; i < blogContainers.length; i++) {
-  const blogContainer = blogContainers[i];
- const divblog = document.createElement('div');
-  divblog.setAttribute('class', 'blog-container');
-  const img = document.createElement('img');
+const blogContainer = blogContainers[i];
+const divblog = document.createElement('div');
+divblog.setAttribute('class', 'blog-container');
+const img = document.createElement('img');
 img.setAttribute('src', 'file:///C:/Users/swati/OneDrive/Desktop/html200/adopt-a-dog/images/blog-1.jpg');
 divblog.appendChild(img);
 
@@ -56,3 +56,11 @@ parablog.appendChild(p2);
 divblog.appendChild(parablog);
 div.appendChild(divblog);
 }
+
+// form page
+const button = document.getElementById('button');
+
+button.addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('Form Submited!!');
+})
