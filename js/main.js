@@ -57,10 +57,4 @@ divblog.appendChild(parablog);
 div.appendChild(divblog);
 }
 
-// form page
-const button = document.getElementById('button');
-
-button.addEventListener('submit', function(event) {
-  event.preventDefault();
-  alert('Form Submited!!');
-})
+/
