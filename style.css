@@ -3,15 +3,22 @@
 html, body {
     height: 100vh;     
 }
+
+a:link {text-decoration: none; color: white;}
+a:visited {text-decoration: none; color: white;}
+a:active {text-decoration: none; color: white;}
+a:hover {text-decoration: none; color: white;}
     
-    
- 
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+} 
  .header-left {
     float: left;
     position: absolute;
     top: 100px;
     left: 50px;
     color: #7CAF3F;
+    margin-left: 100px;
 }
 
 .header-right {
@@ -20,7 +27,7 @@ html, body {
     right: 100px;
     top: 100px;
     color: white;
-    display: flex;
+    display: block;
     vertical-align: middle;
     
 }
@@ -37,7 +44,6 @@ html, body {
 
 
 
-
 header {
     width: 100%;   
     
@@ -48,15 +54,20 @@ header {
     list-style: none;
     margin-left: 100px;
     padding: 0;
+    font-family: 'Playfair Display', serif;
+    
       
 }
 
 .menu li {
     padding: 0 30px;
-    font-weight: 700;
+    font-weight: 900;
     color: #164668;
 }
 
+nav ul li .menu-lists {
+    color: #164668;  
+}
 nav {
     background-color: #EBEBEB;
     height: 50px;
@@ -110,12 +121,13 @@ img.top-img {
 
 .top-title {
     color: #164668;
+    font-weight: 700;
 }
 
 .item-lists {
     width: 200px;
     height: 450px;
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
     margin-bottom: 70px;
     
     
@@ -172,8 +184,8 @@ img.top-img {
     width: 200px;
     line-height: 50px;
     text-align: center;
-   
     font-weight: 700;
+    
 }
 
 
@@ -260,6 +272,9 @@ a {
 
 .dog-page-topic {
     margin: 50px 0 0 130px;
+    font-family: 'Playfair Display', serif;
+    color: #164668;
+    font-weight: 900;
 }
 
 
@@ -269,6 +284,10 @@ a {
 
 .blog-page-topic {
     margin-left: 130px;
+    color: #164668;
+    font-family: 'Playfair Display', serif;
+    
+    
 }
 
 
@@ -288,13 +307,14 @@ a {
 
 .blog-page-contents-topic {
     margin: 0;
+    color: #164668;
+    font-weight: 900;
 }
 
 .submit-btn {
     background-color: #7CAF3F;
     height: 50px;
     width: 180px;
-    margin-left: 10px;
     text-align: center;
     line-height: 50px;
     color: white;
@@ -304,10 +324,14 @@ a {
 
 .checkout-page-topic {
     margin-left: 130px;
+    font-family: 'Playfair Display', serif;
 }
 
 .checkout-form {
     margin: 30px 130px 30px 130px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: #164668;
 }
 
 
@@ -321,6 +345,8 @@ a {
     height: 50px;
     margin-top: 10px;
     margin-bottom: 30px;
+    
+    
 }
 
 
@@ -406,4 +432,24 @@ a {
 }
 .hidden {
     display: none;
+}
+
+.cart {
+    display: flex;
+    
+}
+
+.top-checkout {
+    background-color:  #7CAF3F;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+    
+}
+
+#menu-lists {
+    color: #164668;    
 }
