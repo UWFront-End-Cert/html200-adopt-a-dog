@@ -34,7 +34,7 @@ const blogContainer = blogContainers[i];
 const divblog = document.createElement('div');
 divblog.setAttribute('class', 'blog-container');
 const img = document.createElement('img');
-img.setAttribute('src', 'file:///C:/Users/swati/OneDrive/Desktop/html200/adopt-a-dog/images/blog-1.jpg');
+img.setAttribute('src', blogContainer.img);
 divblog.appendChild(img);
 
 const parablog = document.createElement('div');
@@ -42,6 +42,7 @@ parablog.setAttribute('class', 'para-blog');
 
 const h2 = document.createElement('h2');
 h2.textContent = blogContainer.h2;
+
 
 parablog.appendChild(h2);
 
@@ -56,5 +57,3 @@ parablog.appendChild(p2);
 divblog.appendChild(parablog);
 div.appendChild(divblog);
 }
-
-/
