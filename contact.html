@@ -32,8 +32,8 @@
 
 
   <!-- Signout page form using flex-->
-
-  <div class="form-container">
+<form class="form-contact" method="get">
+  <div class="form-container" id="form">
     <div class="container-content">
       <h1>Checkout</h1>
       <label for="name">Name</label>
@@ -59,7 +59,7 @@
           <label for="state">State</label>
           <select name="state" id="state-select">
             <option value="">Please Select a State</option>
-            <option value="washington">Washington</option>
+            <option value="washington" >Washington</option>
             <option value="montana">Montana</option>
           </select>
         </div>
@@ -76,17 +76,19 @@
       First Time Adopter?
     </div>
       <div class="radio-adopt">
-        <input type="radio" id="yes" name="input" value="yes">
+        <input type="radio" id="radio1" name="firsttimeadopter" value="yes">
         <label for="yes">Yes</label>
-      </div>
-      <div class="radio-adopt" id="input-2">
-        <input type="radio" id="no" name="input" value="no">
+        <input type="radio" id="radio2" name="firsttimeadopter" value="no">
         <label for="no">No</label>
       </div>
+      <!-- <div class="radio-adopt" id="input-2">
+        <input type="radio" id="radio2" name="input" value="no">
+        <label for="no">No</label>
+      </div> -->
     </div>
     <div class="container-content">
       <label for="pickup">Pickup Location</label>
-    <select class="pickup" name="pick">
+    <select class="pickup" name="pick" id="pickup">
       <option value="redmond">Redmond</option>
       <option value="bothell">Bothell</option>
       <option value="bellevue">Bellevue</option>
@@ -127,7 +129,7 @@
     <button type="submit" name="button" id="btn" onclick="getInfo()">submit</button>
   </div>
 
-
+</form>
 
   <footer>
     <img src="images/adoptadog-logo.svg" alt="adoptadog logo">
