@@ -132,7 +132,7 @@ section {
   padding-bottom: 15px;
   border-radius: 4px;
   text-align: center;
-  font-weight:bold
+  font-weight:bold;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -155,7 +155,8 @@ section {
       padding-bottom: 15px;
       border-radius: 4px;
       text-align: center;
-      font-weight: bold text-decoration: none;
+      font-weight: bold;
+      text-decoration: none;
       display: inline-block;
       font-size: 16px;
       margin: 20px 2px;
@@ -198,7 +199,8 @@ section {
       padding-bottom: 10px;
       border-radius: 4px;
       text-align: center;
-      font-weight: bold text-decoration: none;
+      font-weight: bold;
+      text-decoration: none;
       /* display: inline-block; */
       font-size: 16px;
       /* margin: 20px 2px; */
