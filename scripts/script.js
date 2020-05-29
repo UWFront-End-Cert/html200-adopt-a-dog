@@ -12,8 +12,8 @@ let blogPosts = [
 
 let dogCards = [
     {image_url:"images/murphy-card.jpg", image_alt:"dog", name:"Murphy", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/poppy-card.jpg", image_alt:"dog", name:"Poppy", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/jack-card.jpg", image_alt:"dog", name:"Jack", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
+    {image_url:"images/poppy-card.jpg", image_alt:"dog", name:"Poppy", cost:"23.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
+    {image_url:"images/jack-card.jpg", image_alt:"dog", name:"Jack", cost:"54.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
     {image_url:"images/duffy-card.jpg", image_alt:"dog", name:"Duffy", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
     {image_url:"images/lucas-card.jpg", image_alt:"dog", name:"Lucas", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
     {image_url:"images/jake-card.jpg", image_alt:"dog", name:"Jake", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
@@ -27,7 +27,7 @@ let dogCards = [
 ]
 
 function dogCardPriceOnClick() {
-    alert ("New price is " + cartTotal);
+    alert ("This dog's price is " + this.cost);
 }
 
 function createDogCards() {
@@ -48,13 +48,13 @@ function createDogCards() {
         let headingText = document.createTextNode(e.name);
         let dogCardDescription = document.createTextNode(e.text);
         let link = document.createElement("a");
-
         price.classList.add("dog-card-price-description");
         price.appendChild(span);
         price.appendChild(document.createTextNode("$" + e.cost));
         link.classList.add("dog-card-adopt-link");
         link.href = "checkout.html"
-        link.addEventListener("click", dogCardPriceOnClick);
+        let boundFunc = dogCardPriceOnClick.bind(e);
+        link.addEventListener("click", boundFunc);
         link.appendChild(document.createTextNode("Adopt"));
         heading.appendChild(headingText);
         paragraph.appendChild(dogCardDescription);
