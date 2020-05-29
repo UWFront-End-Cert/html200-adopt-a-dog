@@ -26,29 +26,43 @@ let dogCards = [
 
 ]
 
-function dogCardPriceOnClick(dogPrice) {
-    cartTotal = cartTotal + dogPrice;
+function dogCardPriceOnClick() {
     alert ("New price is " + cartTotal);
 }
 
 function createDogCards() {
     dogCards.forEach(e => {
         let article = document.createElement("article");
+        article.classList.add("dog-card");
         let image = document.createElement("img");
+        image.classList.add("dog-card-image");
+        image.src = e.image_url;
+        image.alt = e.image_alt;
         let heading = document.createElement("h2");
+        heading.classList.add("dog-card-heading");
+        let price = document.createElement("p");
+        let span = document.createElement("span");
+        span.classList.add("dog-card-bold")
+        span.appendChild(document.createTextNode("Cost to Adopt:"))
         let paragraph = document.createElement("p");
         let headingText = document.createTextNode(e.name);
         let dogCardDescription = document.createTextNode(e.text);
-        article.classList.add("dog-card");
-        image.classList.add("dog-card-image");
-        heading.classList.add("dog-card-heading");
-        image.src = e.image_url;
-        image.alt = e.image_alt;
+        let link = document.createElement("a");
+
+        price.classList.add("dog-card-price-description");
+        price.appendChild(span);
+        price.appendChild(document.createTextNode("$" + e.cost));
+        link.classList.add("dog-card-adopt-link");
+        link.href = "checkout.html"
+        link.addEventListener("click", dogCardPriceOnClick);
+        link.appendChild(document.createTextNode("Adopt"));
         heading.appendChild(headingText);
         paragraph.appendChild(dogCardDescription);
         article.appendChild(image);
         article.appendChild(heading);
+        article.appendChild(price);
         article.appendChild(paragraph)
+        article.appendChild(link);
         document.querySelector("div.dog-card-display-full").appendChild(article);
     })
 }
