@@ -27,7 +27,7 @@ let dogCards = [
 ]
 
 function dogCardPriceOnClick() {
-    alert ("This dog's price is " + this.cost);
+    alert ("This dog's price is $" + this.cost);
 }
 
 function createDogCards() {
@@ -99,6 +99,10 @@ function onSubmit() {
     alert("Thank you. The form information has been received");
 }
 
-function homepageBlogPreview() {
-    
+function formValidation() {
+    let form = document.querySelector("form");
+    form.forEach(e => {
+        alert("test" + e);
+    })
+    console.log("test");
 }
