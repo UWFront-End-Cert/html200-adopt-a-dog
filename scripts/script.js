@@ -101,11 +101,14 @@ function onSubmit() {
 
 function formValidation() {
     let form = document.querySelectorAll("input, select");
+    let formValuesArray = [];
     form.forEach(e => {
+        formValuesArray.push(e.value);
         if (e.checked) {
             console.log(e.value + " is checked");
         } else {
             console.log(e.value);
         }
     })
+    console.log(formValuesArray);
 }
