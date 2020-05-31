@@ -33,7 +33,7 @@
         </header>
     <main>
         <div class="main-heading"><h1>Checkout</h1></div>
-        <form onsubmit="onSubmit()">
+        <form onsubmit="onSubmit();formValidation()">
             <div class="form-item">
                 <label for="name">Name</label>
                 <input type="text" id="name" />
@@ -154,7 +154,7 @@
             <div class="form-item">
                 <label>Total Adoption Cost</label>
                 <p>$1234.56</p>
-                <button type="submit">Submit</button>
+                <button type="submit" onclick="">Submit</button>
             </div>
         </form>
     </main>

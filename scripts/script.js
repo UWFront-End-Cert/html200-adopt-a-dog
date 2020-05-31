@@ -100,9 +100,10 @@ function onSubmit() {
 }
 
 function formValidation() {
-    let form = document.querySelector("form");
+    let formText = "";
+    let form = document.querySelectorAll("input, select");
     form.forEach(e => {
-        alert("test" + e);
+        formText = formText + e.value;
+        console.log(e.value);
     })
-    console.log("test");
 }
