@@ -1,9 +1,3 @@
-function dogCardTotalOnClick(name, breed, dogPrice) {
-    alert("This dog's name is " + name + " and its breed is " + breed + " and the adoption fees are: " + dogPrice);
-}
-
-let cartTotal = 0;
-
 let blogPosts = [
     {image_url:"images/blog-1.jpg", image_alt: "woman and dog sitting",title: "Traveling With Your Dog", text: ["Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.", "Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam."]}, 
     {image_url:"images/blog-2.jpg", image_alt: "dogs on leashes with dog walker",title: "How To Walk Multiple Dogs", text: ["Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.", "Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam."]}, 
@@ -25,6 +19,12 @@ let dogCards = [
     {image_url:"images/stella-card.jpg", image_alt:"dog", name:"Stella", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"}
 
 ]
+
+let cartTotal = 0;
+
+function dogCardTotalOnClick(name, breed, dogPrice) {
+    alert("This dog's name is " + name + " and its breed is " + breed + " and the adoption fees are: " + dogPrice);
+}
 
 function dogCardPriceOnClick() {
     alert ("This dog's price is $" + this.cost);
@@ -100,10 +100,12 @@ function onSubmit() {
 }
 
 function formValidation() {
-    let formText = "";
     let form = document.querySelectorAll("input, select");
     form.forEach(e => {
-        formText = formText + e.value;
-        console.log(e.value);
+        if (e.checked) {
+            console.log(e.value + " is checked");
+        } else {
+            console.log(e.value);
+        }
     })
 }
