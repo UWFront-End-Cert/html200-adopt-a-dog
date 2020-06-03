@@ -1,10 +1,14 @@
-function murphyImg() {
-    let murphy = alert('Murphy, Adult breed, $123');
+function dogPic(name, breed, price) {
+    alert(name, breed, price);   
 }
 
-function violetImg() {
-    let violet = alert('Violet, puppy breed, $123');
-}
+//function murphyImg() {
+//    let murphy = alert('Murphy, Adult breed, $123');
+//}
+
+//function violetImg() {
+//    let violet = alert('Violet, puppy breed, $123');
+//}
 
 function piperImg() {
     let piper = alert('Piper, puppy breed, $123');
