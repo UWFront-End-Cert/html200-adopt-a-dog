@@ -4,7 +4,6 @@ function dogInfo(name, breed, price) {
   let message = name + ' ,' +  breed + ', '+  price;
   alert(message);
 }
-
 function addToCart(price) {
   totalPrice += price;
 alert(`Total Amount is:  ${totalPrice}` );
@@ -68,3 +67,24 @@ function main() {
      alert("No value found");
   }
 }
+
+
+$('.card-content').hover(function(e){
+  $('img', this).addClass('tile-border');
+})
+
+$("button").click(function(){
+  $(".price").text(function(){
+   `${total}`;
+  })
+})
+
+$("button").click(function(){$(".price").text("hello world")});
+
+// $("button").click(function(){
+//     $(".price").text.function(){
+//       addToCart(price)
+//       totalPrice += price;
+//     }
+//
+// });
