@@ -6,7 +6,7 @@ function dogInfo(name, breed, price) {
 }
 function addToCart(price) {
   totalPrice += price;
-alert(`Total Amount is:  ${totalPrice}` );
+// alert(`Total Amount is:  ${totalPrice}` );
 }
 
 
@@ -68,18 +68,13 @@ function main() {
   }
 }
 
+//added jquery for index page to show total buying price on header
 
 $('.card-content').hover(function(e){
   $('img', this).addClass('tile-border');
 })
 
-$("button").click(function(){
-  $(".price").text(function(){
-   `${total}`;
-  })
-})
-
-$("button").click(function(){$(".price").text("hello world")});
+$("button").click(function(){$(".price").text(totalPrice)});
 
 // $("button").click(function(){
 //     $(".price").text.function(){
