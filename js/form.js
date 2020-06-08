@@ -3,8 +3,8 @@ function getForm(){
 }
 
 
-const btn = document.getElementById('btn');
-btn.addEventListener('click', getForm);
+// const btn = document.getElementById('btn');
+// btn.addEventListener('click', getForm);
 
 
 
@@ -45,14 +45,31 @@ function getInfo() {
   // const radioNo = document.getElementById('radio2').value;
   // const radioYes = document.getElementById('radio1').value;
  console.log(form);
- 
-// if(radio1.checked==true){
-//   console.log(radio1.value);
-//    else if(radio2.checked==true) {
-//     console.log(radio2.value);
-//     // else {
-//     //   console.log("nothing selected");
-//     // }
-//   }
-
 }
+// jquery for form page
+//console log form values
+let $form = $('.form');
+
+
+
+
+// let $form = $('.form');
+let $name = $('.name');
+let $email = $('.email');
+let $street = $('.street');
+let $city = $('.cities');
+let $state = $('.state');
+let $zipcode = $('.zipcode');
+let $pickup = $('.pickup');
+
+
+
+
+
+ $form.on('submit', function(e) {
+   console.log($name.val());
+   e.preventDefault()
+
+
+
+ });
