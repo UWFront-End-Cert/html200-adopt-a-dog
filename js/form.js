@@ -53,7 +53,7 @@ let $form = $('.form');
 
 
 
-// let $form = $('.form');
+//let $form = $('.form');
 let $name = $('.name');
 let $email = $('.email');
 let $street = $('.street');
@@ -67,9 +67,12 @@ let $pickup = $('.pickup');
 
 
  $form.on('submit', function(e) {
-   console.log($name.val());
-   e.preventDefault()
-
-
-
- });
+    console.log($name.val());
+    console.log($email.val());
+    console.log($street.val());
+    console.log($city.val());
+    console.log($state.val());
+    console.log($zipcode.val());
+    console.log($pickup.val());
+    e.preventDefault()
+});

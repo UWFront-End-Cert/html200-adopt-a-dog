@@ -71,7 +71,8 @@ function main() {
 //added jquery for index page to show total buying price on header
 
 $('.card-content').hover(function(e){
-  $('img', this).addClass('tile-border');
+  // $('img', this).addClass('tile-border');
+  $('img', this).toggleClass('tile-border');
 })
 
 $("button").click(function(){$(".price").text(totalPrice)});
