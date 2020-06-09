@@ -1,0 +1,15 @@
+User Persona:
+   Most of the visitors of this websites are  residents of the local area.
+Description: Name: Isabella Brown
+             Age: 35
+             She is a housewife with two kids lives in Seattle. Both the kids loves to play with neighbor's dog. So now Isabella wants to buy a dog for the house. 
+             She often visits many websites using her mobile and sometimes laptop. The entire family loves travelling and hiking. So a dog will be so fulfilling their family as a new 
+             member.
+
+
+TESTING ON VARIOUS BROWSERS AND DEVICES
+
+The site was tested on three different browsers and various devices.While testing i noticed many issues which were not that visible on one device. it was tested on iphone X, and I noticed 
+the fonts on header and footer are not looking great. it doesn't look uniform. The width of background color on checkout button was small as compared to fonts on mobile devices. Lists on
+navbar was not on one line. The pages have a lot of spaces on its left side.many other small issue are still there to be fixed.I did not found much difference in issues while testing on 
+different browsers.There are many small issues still persists which is essential to be fixed to achieve a great website
