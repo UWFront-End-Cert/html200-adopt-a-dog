@@ -19,7 +19,7 @@
                 </div>
                 <div class="header-checkout-wrapper">
                     <img class="header-checkout-icon" src="images/cart-icon.svg" alt="checkout cart icon">
-                    <p class="header-checkout-cart">$0</p>
+                    <p class="header-checkout-cart">$<span class="cart-value">0</span></p>
                     <a href="checkout.html" class="header-checkout-link">Checkout</a>
                 </div>
             </div>
@@ -34,7 +34,7 @@
         </header>
     <main>
         <div class="main-heading"><h1>Checkout</h1></div>
-        <form onsubmit="onSubmit();formValidation()">
+        <form>
             <div class="form-item">
                 <label for="name">Name</label>
                 <input type="text" id="name" />
@@ -154,8 +154,8 @@
             </div>
             <div class="form-item">
                 <label>Total Adoption Cost</label>
-                <p>$1234.56</p>
-                <button type="submit" onclick="">Submit</button>
+                <p>$0</p>
+                <button type="submit" id="submit-button">Submit</button>
             </div>
         </form>
     </main>

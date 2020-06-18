@@ -1,45 +1,27 @@
-$( document ).ready(function() {
-    console.log( "document loaded" );
-});
-
-$( window ).on( "load", function() {
-    console.log( "window loaded" );
-});
-
-$( "main" ).hover( function () {
-    console.log( "mouse hover" );
-});
-
-let blogPosts = [
+const blogPosts = [
     {image_url:"images/blog-1.jpg", image_alt: "woman and dog sitting",title: "Traveling With Your Dog", text: ["Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.", "Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam."]}, 
     {image_url:"images/blog-2.jpg", image_alt: "dogs on leashes with dog walker",title: "How To Walk Multiple Dogs", text: ["Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.", "Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam."]}, 
     {image_url:"images/blog-3.jpg", image_alt: "woman with dog playing fetch at sunset",title: "Teach Your Dog To Fetch!", text: ["Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.", "Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam."]}
 ]
-
-let dogCards = [
+const dogCards = [
     {image_url:"images/murphy-card.jpg", image_alt:"dog", name:"Murphy", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
     {image_url:"images/poppy-card.jpg", image_alt:"dog", name:"Poppy", cost:"23.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/jack-card.jpg", image_alt:"dog", name:"Jack", cost:"54.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/duffy-card.jpg", image_alt:"dog", name:"Duffy", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/lucas-card.jpg", image_alt:"dog", name:"Lucas", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/jake-card.jpg", image_alt:"dog", name:"Jake", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/angus-card.jpg", image_alt:"dog", name:"Angus", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/violet-card.jpg", image_alt:"dog", name:"Violet", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/piper-card.jpg", image_alt:"dog", name:"Piper", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/maximus-card.jpg", image_alt:"dog", name:"Maximus", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/luna-card.jpg", image_alt:"dog", name:"Luna", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
-    {image_url:"images/stella-card.jpg", image_alt:"dog", name:"Stella", cost:"123.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"}
-
+    {image_url:"images/jack-card.jpg", image_alt:"dog", name:"Jack", cost:"54.65", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
+    {image_url:"images/duffy-card.jpg", image_alt:"dog", name:"Duffy", cost:"98.80", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
+    {image_url:"images/lucas-card.jpg", image_alt:"dog", name:"Lucas", cost:"213.99", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
+    {image_url:"images/jake-card.jpg", image_alt:"dog", name:"Jake", cost:"132.20", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
+    {image_url:"images/angus-card.jpg", image_alt:"dog", name:"Angus", cost:"200.65", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
+    {image_url:"images/violet-card.jpg", image_alt:"dog", name:"Violet", cost:"100.60", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
+    {image_url:"images/piper-card.jpg", image_alt:"dog", name:"Piper", cost:"90.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
+    {image_url:"images/maximus-card.jpg", image_alt:"dog", name:"Maximus", cost:"100.00", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
+    {image_url:"images/luna-card.jpg", image_alt:"dog", name:"Luna", cost:"98.45", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"},
+    {image_url:"images/stella-card.jpg", image_alt:"dog", name:"Stella", cost:"25.80", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"}
 ]
 
 let cartTotal = 0;
 
 function dogCardTotalOnClick(name, breed, dogPrice) {
     alert("This dog's name is " + name + " and its breed is " + breed + " and the adoption fees are: " + dogPrice);
-}
-
-function dogCardPriceOnClick() {
-    alert ("This dog's price is $" + this.cost);
 }
 
 function createDogCards() {
@@ -52,28 +34,29 @@ function createDogCards() {
         image.alt = e.image_alt;
         let heading = document.createElement("h2");
         heading.classList.add("dog-card-heading");
-        let price = document.createElement("p");
+        let priceParagraph = document.createElement("p");
         let span = document.createElement("span");
-        span.classList.add("dog-card-bold")
-        span.appendChild(document.createTextNode("Cost to Adopt:"))
+        span.classList.add("dog-card-bold");
+        span.appendChild(document.createTextNode("Cost to Adopt:"));
+        let price = document.createElement("span");
+        price.classList.add("price-value");        
+        price.appendChild(document.createTextNode(e.cost));
         let paragraph = document.createElement("p");
         let headingText = document.createTextNode(e.name);
         let dogCardDescription = document.createTextNode(e.text);
         let link = document.createElement("a");
-        price.classList.add("dog-card-price-description");
-        price.appendChild(span);
-        price.appendChild(document.createTextNode("$" + e.cost));
+        priceParagraph.classList.add("dog-card-price-description");
+        priceParagraph.appendChild(span);
+        priceParagraph.appendChild(document.createTextNode("$"));
+        priceParagraph.appendChild(price);
         link.classList.add("dog-card-adopt-link");
-        link.href = "checkout.html"
-        let boundFunc = dogCardPriceOnClick.bind(e);
-        link.addEventListener("click", boundFunc);
         link.appendChild(document.createTextNode("Adopt"));
         heading.appendChild(headingText);
         paragraph.appendChild(dogCardDescription);
         article.appendChild(image);
         article.appendChild(heading);
-        article.appendChild(price);
-        article.appendChild(paragraph)
+        article.appendChild(priceParagraph);
+        article.appendChild(paragraph);
         article.appendChild(link);
         document.querySelector("div.dog-card-display-full").appendChild(article);
     })
@@ -107,9 +90,9 @@ function createBlogPosts() {
     })
 }
 
-function onSubmit() {
-    alert("Thank you. The form information has been received");
-}
+$('#submit-button').click(function() {
+    formValidation();
+});
 
 function formValidation() {
     let form = document.querySelectorAll("input, select");
@@ -125,6 +108,13 @@ function formValidation() {
     console.log(formValuesArray);
 }
 
-function dogAdoptOnHover() {
-
-}
+$(window).bind("load", function() {
+    $('.dog-card-adopt-link').click(function() {
+        alert( "Dog Adopted!" );
+        this.text = 'Added to Adoption Cart!';
+        let cost = parseFloat($(this).parent().find('.price-value').text());
+        console.log(cost);
+        $('.cart-value').text(parseFloat($('.cart-value').text()) + cost);
+        console.log($('.cart-value'));
+    });
+});

@@ -245,8 +245,8 @@ main {
     }
 }
 
-.dog-card-price-description > span {
-    font-weight: bold;
+.dog-card-bold {
+    font-weight:bold;
 }
 
 .dog-card {
