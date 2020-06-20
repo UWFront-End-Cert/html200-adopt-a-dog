@@ -117,4 +117,11 @@ $(window).bind("load", function() {
         $('.cart-value').text(parseFloat($('.cart-value').text()) + cost);
         console.log($('.cart-value'));
     });
+    $('.dog-card').mouseover(function() {
+        $(this).addClass('dog-card-shadow');
+    });
+
+    $('.dog-card').mouseleave(function() {
+        $(this).removeClass('dog-card-shadow');
+    });
 });

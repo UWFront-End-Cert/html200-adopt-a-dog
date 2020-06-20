@@ -288,6 +288,10 @@ main {
     margin-right: 0.25em;
 }
 
+.dog-card-shadow {
+    box-shadow: 1rem 1rem #dad8d2;
+}
+
 .see-more-button {
     text-align: center;
     text-decoration: none;
