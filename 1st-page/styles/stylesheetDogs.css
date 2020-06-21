@@ -54,12 +54,7 @@ nav {
     }
 }
 
-@media only screen and (min-width: 1050px) {
-    .flex {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-    }
-}
+
 
 
 
@@ -88,12 +83,7 @@ nav {
     }
 }
 
-@media only screen and (min-width: 1050px) {
-    .flexi {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-    }
-}
+
 
 
     .flexin {
@@ -121,12 +111,7 @@ nav {
     }
 }
 
-@media only screen and (min-width: 1050px) {
-    .flexin {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-    }
-}
+
 
 footer {
     text-align: center;
