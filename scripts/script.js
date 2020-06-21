@@ -91,10 +91,10 @@ function createBlogPosts() {
 }
 
 $('#submit-button').click(function() {
-    formValidation();
+    jqueryFormValidation();
 });
 
-function formValidation() {
+/*function formValidation() {
     let form = document.querySelectorAll("input, select");
     let formValuesArray = [];
     form.forEach(e => {
@@ -106,6 +106,15 @@ function formValidation() {
         }
     })
     console.log(formValuesArray);
+}*/
+
+function jqueryFormValidation() {
+    $("input, select").each((function( index ) {
+        console.log( index + ": " + $(this).val() );
+        if($(this).is(":checked")){
+            console.log(index + ": " + $(this).val() + " is checked");
+        }
+      }));
 }
 
 $(window).bind("load", function() {
