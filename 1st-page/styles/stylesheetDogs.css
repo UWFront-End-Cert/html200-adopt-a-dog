@@ -28,39 +28,105 @@ nav {
 
 .flex {
     display: flex;
+    
 }
 
     .flex > section {
+        margin: 0 auto;
         margin-top: 30px;
-        margin-right: 1em;
         width: 15%;
         border: 3px solid #73AD21;
         padding: 15px;
     }
+
+@media only screen and (max-width: 576px) {
+    .flex {
+        display: inline;
+        
+    }
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+    .flex {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .flex {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+
 
 .flexi {
     display: flex;
-}
+}  
 
     .flexi > section {
+        margin: 0 auto;
         margin-top: 30px;
-        margin-right: 1em;
         width: 15%;
         border: 3px solid #73AD21;
         padding: 15px;
     }
 
-.flexin {
-    display: flex;
+@media only screen and (max-width: 576px) {
+    .flexi {
+        display: inline;
+    }
+}
+/**/
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+    .flexi {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
 
-    .flexin > section {
-        margin-top: 30px;
-        margin-right: 1em;
-        width: 15%;
-        border: 3px solid #73AD21;
-        padding: 15px;
+@media only screen and (min-width: 1050px) {
+    .flexi {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
     }
+}
+
+
+    .flexin {
+        display: flex;
+    }
+
+        .flexin > section {
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 15%;
+            border: 3px solid #73AD21;
+            padding: 15px;
+        }
+
+@media only screen and (max-width: 576px) {
+    .flexin {
+        display: inline;
+    }
+}
+/**/
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+    .flexin {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .flexin {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
 
 footer {
     text-align: center;
@@ -70,3 +136,7 @@ footer {
     margin-top: 15%;
     background-image: url("lesson04-mock4-footer-image.jpg");
 }
+
+
+
+
