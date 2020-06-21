@@ -22,7 +22,7 @@
       <div class='checkout-wrapper'>
         <div>
           <img src="images/cart-icon.svg" alt="cart icon">
-          <small>$270.50</small>
+          <small id="total-cost">$00.00</small>
         </div>
         <div>
           <a href="checkout.html" class="btn btn-checkout">Checkout</a>
@@ -47,7 +47,6 @@
     <section class="section-checkout">
 
       <h2>Checkout</h2>
-
       <!-- FORM START  -->
       <form id="form">
         <label for="name">Name</label><br>
@@ -77,9 +76,9 @@
         </div>
 
         <label>First Time Adopter?</label><br>
-        <input id="yes" type="radio" name="yes-no" value="Yes">Yes
+        <input id="yes" type="radio" name="first-time" value="yes">Yes
         <span class="gap"></span>
-        <input id="no" type="radio" name="yes-no" value="Yes">No<br>
+        <input id="no" type="radio" name="first-time" value="no">No<br>
 
         <label for="location">Pickup Location</label><br>
         <select id="location" class="location" name="location" required>
@@ -114,11 +113,8 @@
         </div>
         <!-- CART TOTAL END  -->
 
-
       </form>
       <!-- FORM END -->
-
-
 
     </section>
     <!-- SECTION END -->
@@ -140,8 +136,9 @@
   </div>
   <!-- CONTAINER END -->
 
-  <!-- script  -->
-  <script src="./script.js" charset="utf-8" type="text/javascript"></script>
+  <!-- SCRIPTS   -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./jquery.js"></script>
 
 </body>
 

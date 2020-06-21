@@ -22,7 +22,7 @@
       <div class='checkout-wrapper'>
         <div>
           <img src="images/cart-icon.svg" alt="cart icon">
-          <small>$270.50</small>
+          <small id="total-cost">$00.00</small>
         </div>
         <div>
           <a href="checkout.html" class="btn btn-checkout">Checkout</a>
@@ -71,7 +71,6 @@
 
         <!-- MAIN / CARDS START -->
         <main>
-
           <div class="card">
             <figure>
               <img onclick="alertDogInfo('Murphy', 'Mixed-Breed', 123.45)" src="images/murphy-card.jpg"
@@ -83,7 +82,7 @@
                 elit.
               </figcaption>
             </figure>
-            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+            <button class="btn btn-adopt">Adopt</button>
           </div>
 
           <div class="card">
@@ -96,7 +95,7 @@
                 elit.
               </figcaption>
             </figure>
-            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+            <button class="btn btn-adopt">Adopt</button>
           </div>
 
           <div class="card">
@@ -109,7 +108,7 @@
                 elit.
               </figcaption>
             </figure>
-            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+            <button class="btn btn-adopt">Adopt</button>
           </div>
 
           <div class="card">
@@ -122,7 +121,7 @@
                 elit.
               </figcaption>
             </figure>
-            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+            <button class="btn btn-adopt">Adopt</button>
           </div>
 
           <div class="card">
@@ -136,7 +135,7 @@
                 elit.
               </figcaption>
             </figure>
-            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+            <button class="btn btn-adopt">Adopt</button>
           </div>
 
           <div class="card">
@@ -149,7 +148,7 @@
                 elit.
               </figcaption>
             </figure>
-            <button onclick="addToTotal(123.45)" class="btn btn-adopt">Adopt</button>
+            <button class="btn btn-adopt">Adopt</button>
           </div>
 
           <!-- SEE MORE DOGS  -->
@@ -202,9 +201,6 @@
     </div>
     <!-- WRAPPER END -->
 
-
-
-
     <!-- FOOTER START -->
     <footer>
       <img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
@@ -224,6 +220,8 @@
 
   <!-- SCRIPTS  -->
   <script src="./dogs.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./jquery.js"></script>
 
 </body>
 

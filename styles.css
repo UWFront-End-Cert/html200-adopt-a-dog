@@ -212,9 +212,13 @@ main {
   transition: all .2s ease-in-out;
 }
 
-.card:hover {
+.card-hover {
   box-shadow: 0 0 0.625rem rgba(.3, 0, 0, .5)
 }
+
+/* .card:hover {
+  box-shadow: 0 0 0.625rem rgba(.3, 0, 0, .5)
+} */
 
 .card img {
   width: 100%;

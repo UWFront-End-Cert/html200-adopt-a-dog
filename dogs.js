@@ -4,11 +4,11 @@ const alertDogInfo = (name, breed, cost) => {
 }
 
 // alert cart total by adding all the fees
-let total = 0;
-const addToTotal = (cost) => {
-  total += cost;
-  alert('Cart Total is: $' + total);
-}
+// let total = 0;
+// const addToTotal = (cost) => {
+//   total += cost;
+//   alert('Cart Total is: $' + total);
+// }
 
 const cards = document.querySelector('#cards');
 const dogContent = [{
@@ -104,7 +104,7 @@ for (let i = 0; i < dogContent.length; i++) {
   const dogInfo = `alertDogInfo('${dogItem.title}','${dogItem.breed}',${dogItem.cost})`;
 
   //store addToToal function in cartTotal
-  const cartTotal = `addToTotal(${dogItem.cost})`;
+  // const cartTotal = `addToTotal(${dogItem.cost})`; // moved to jquery file
 
   //creates a div with a class of blog-box
   const dogBoxDiv = document.createElement('div');
@@ -135,8 +135,7 @@ for (let i = 0; i < dogContent.length; i++) {
   const dogBtn = document.createElement('button');
   dogBtn.setAttribute('class', 'btn btn-adopt');
   dogBtn.textContent = 'Adopt';
-  dogBtn.setAttribute('onclick', cartTotal);
-
+  // dogBtn.setAttribute('onclick', cartTotal);// moved to jquery file
 
   cards.appendChild(dogBoxDiv);
   dogBoxDiv.appendChild(article);
