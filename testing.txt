@@ -1,0 +1,41 @@
+## TESTING:
+
+### Tested on Browsers:
+
+- Chrome
+- Safari
+- Mozilla
+
+### Tested Operating System:
+
+- Mac OS
+
+### Tested for Responsiveness:
+
+- Small Devices: up to 500px
+- Medium Devices: up to 768px
+- Large Devices: up to 1440px
+
+## TESTING DETAILS:
+
+- Scripts and stylesheets are loaded properly
+- Logos are displayed properly
+- Layout of the website is displayed properly
+- Navbar and nav links are positioned and aligined properly
+- Images of all dogs are loaded and displayed properly
+- Card tiles are displayed properly and evenly and responsive
+- Hover effects are working properly on tested browsers
+- Click events are tested and working properly
+- Shopping cart is tracked and displayed properly
+- Card tiles, images, text and links are displayed using jquery
+- Form is displayed properly and responsive
+- Form data is being console logged and alerted on submit
+- Colors, and gradient are consistent
+
+## TESTED DEVICES:
+
+- Iphone X
+- Ipad
+- No issues reported except the styling of the "Submit" button on the checkout.html
+- See screenshots here:
+
