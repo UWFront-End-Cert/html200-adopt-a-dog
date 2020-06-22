@@ -51,7 +51,7 @@ Tested for Responsiveness:
 
 More info on Testing:
 
-- https://github.com/jak-ashuraliev/html200-adopt-a-dog/blob/master/testing.txt
+https://github.com/jak-ashuraliev/html200-adopt-a-dog/blob/master/testing.txt
 
 ## Licensing
 
