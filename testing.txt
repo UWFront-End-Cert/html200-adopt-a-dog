@@ -34,8 +34,13 @@
 
 ## TESTED DEVICES:
 
-- Iphone X
-- Ipad
 - No issues reported except the styling of the "Submit" button on the checkout.html
-- See screenshots here:
+
+- Iphone X
+- screenshots:
+- https://github.com/jak-ashuraliev/html200-adopt-a-dog/blob/master/images/screenshots/iphone_x_screenshots.pdf
+
+- Ipad
+- screenshots:
+- https://github.com/jak-ashuraliev/html200-adopt-a-dog/blob/master/images/screenshots/ipad_screenshots.pdf
 
