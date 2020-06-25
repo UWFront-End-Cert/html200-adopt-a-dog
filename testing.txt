@@ -1,0 +1,19 @@
+Testing
+-Methodology: Testing was simple, opening the website on the browser or platform and verifying the rendering, the ability to scroll, and button clicks on the adopt page and form submission.
+
+User Personas
+-Behavior: The user base for the website is the group of people who are potential adopters of dogs. Additionally we expect people with an interest in dogs or local dogs available for adoption, pet lovers, and people reading dog blog content to also visit. It is expected that mobile viewership on the site will be most of the total viewership, potentiallly with users searching for dog adoption in their area on a search engine then navigating to Adopt-A-Dog.
+
+Browsers
+-Firefox: The webpage appears and interacts as expected.
+
+-Chrome: The webpage appears and interacts mostly as expected, but on the checkout form the text box outline is a slightly different hue of gray/black than the select box outlines.
+
+-Safari: The webpage appears and interacts as expected.
+
+Platforms
+-iOS: With Chrome browser on a mobile view, the website mostly functions as expected.  However, the widths on the checkout input and select boxes and their layout is not optimized for mobile.
+
+-Windows: Using Chrome browser, no differences were noticed in website performance or rendering on a Windows with Chrome browser.
+
+-iPad: One area for enhancement is the rendering of the blog page on portrait orientation, the text area is too narrow.  In landscape the page renders in a more correct way.  Second, the multi-select drop downs on the form are not rendering with border radii like the text inputs.  Otherwise the pages render correctly.

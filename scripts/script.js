@@ -18,8 +18,6 @@ const dogCards = [
     {image_url:"images/stella-card.jpg", image_alt:"dog", name:"Stella", cost:"25.80", text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"}
 ]
 
-let cartTotal = 0;
-
 function dogCardTotalOnClick(name, breed, dogPrice) {
     alert("This dog's name is " + name + " and its breed is " + breed + " and the adoption fees are: " + dogPrice);
 }
