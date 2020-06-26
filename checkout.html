@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADOPTADOG</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/adoptadog-logo.svg" alt="adoptadog logo">
+      <img src="images/header-image.jpg" alt="header image">
+        <div>
+          <img src="images/cart-icon.svg" alt="cart icon" width="200"> <!-- this was just way too big so I resized it for the while being-->
+          <p>$1234.56</p>
+          <a class="green-button" href="checkout.html">Checkout</a>
+        </div>
+      <nav>
+        <a href="index.html">Home</a> /
+        <a href="doggies.html">Dogs</a> /
+        <a href="blog.html">Blog</a> 
+      </nav>
+    </header>
+    <article class="checkout-form">
+      <h2>Checkout</h2>
+      <form method="GET">
+          <label class="text-label"> Name
+            <input type="text" name="name">
+          </label>
+    
+          <label class="text-label"> Email Address
+            <input type="email" name="email">
+          </label>
+
+          <label id="street-label"> Street Address
+            <input type="text" name="street">
+          </label>
+
+          <label id="city-label"> City
+            <input type="text" name="city">
+          </label>
+
+          <label id="state-label"> State
+            <select name="state">
+              <option value="WA">WA</option>
+              <option value="OR">OR</option>
+              <option value="CA">CA</option>
+              <!-- I will add all the states later :^)-->
+            </select>
+          </label>
+
+          <label id="zip-label"> Zip Code <!-- will see if I can find something better than type="number"-->
+            <input type="number" name="zip">
+          </label>
+
+            <p>First Time Adopter?</p>
+              <label>
+                <input type="radio" name="first-time" value="yes">
+                Yes
+              </label>
+              <label>
+                <input type="radio" name="first-time" value="no">
+                No
+              </label>
+    
+            <label id="pickup-location"> Pickup Location
+              <select name="location">
+                <option value="uhhh">No idea what to should be here for now...</option>
+              </select>
+            </label>
+
+            <p>Dogs Adopted</p>  
+            <div>
+              <img src="images/lucas-checkout.jpg" alt="lucas">
+              <h4>Lucas</h4>
+              <p><strong>Cost to Adopt: </strong>$123.45</p>
+            </div>
+            <div>
+              <img src="images/duffy-checkout.jpg" alt="duffy">
+              <h4>Duffy</h4>
+              <p><strong>Cost to Adopt: </strong>$123.45</p>
+            </div>
+
+            <p>Total Adoption Cost</p>
+            <p>$1234.56</p>
+          
+        <input class="green-button" type="submit" value="Submit">
+
+      </form>
+    </article>
+
+    <footer>
+      <img src="images/adoptadog-logo.svg" alt="adoptadog logo">
+      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <br><br>
+      <nav>
+        <a href="index.html">Home</a> /
+        <a href="dogs.html">Dogs</a> /
+        <a href="contact.html">Contact</a>  <!-- I wasn't sure if I should have added a contact page, as I didn't see it in the design prompt, I added the file in at least though but it's blank-->
+      </nav>
+      <br><br>
+      <p>&copy;2020 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
+  </body>
+</html>
