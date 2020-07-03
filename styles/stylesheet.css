@@ -1,0 +1,363 @@
+/* general resizing issues, come back to in later lessons*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+}
+
+header {
+  background-image: url("../images/header-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 2rem;
+  grid-column: 1 / span 3;
+}
+
+header nav{
+  margin-top: 25rem;
+  padding: 2rem 0 2rem 14.4%;
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+header nav p, header nav a {
+  padding: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav p, header nav a, h4, h2, .doggie-button, h3, #cost-label, label{
+  color: #083B5F;
+}
+
+header nav, .doggie-button {
+  background-color: #EBEBEB;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.logo-and-caption {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  padding: 5rem 0 0 7rem;
+}
+
+.caption {
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #81B741;
+  display: block;
+}
+
+.checkout {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: absolute;
+  top:4rem;
+  right:13rem;
+  color: white;
+  font-weight: bold;
+}
+
+.checkout a {
+  grid-column: 1 / span 2;
+}
+
+.checkout p {
+  font-size: 1.2rem;
+  float: right;
+}
+
+.cart {
+  float: left;
+  width: 2.5rem;
+  padding-left: 5rem;
+  padding-right: .9rem;
+}
+
+.green-button {
+  background-color: #81B741;
+  border: none;
+  border-radius:.2rem;
+  color: white;
+  padding: .7rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.green-button:hover {
+  transition-duration: 0.3s;
+  background-color: #33751e;
+}
+
+.section-header {
+  grid-column: 2/3;
+  font-size: 3rem;
+}
+
+article {
+  margin-bottom: 3rem;
+  grid-column: 2 / 3;
+}
+
+article p {
+  font-size: 1.5rem;
+}
+article img {
+  float:left;
+  padding-right: 5rem;
+  width:25%;
+}
+
+article h2 {
+  font-size: 2rem;
+}
+
+article h3 {
+  font-size: 2rem;
+}
+
+.blog {
+  margin-top: 3rem;
+}
+
+.doggies {
+  grid-column: 2 / 3;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doggie-cel img  {
+  width:100%;
+}
+
+.doggie-cel {
+  margin-bottom:5rem;
+  width:20%;
+  border: solid;
+  border-radius: 2px;
+  border-color: #EAEAEA;
+} 
+
+.doggie-cel h4 {
+  font-size: 1.5rem;
+}
+
+.doggie-cel .green-button {
+  display: grid;
+}
+
+.doggie-cel p, .doggie-cel .green-button, .doggie-cel h4 {
+  margin: 1rem 1rem 1.5rem;
+}
+
+.doggie-button {
+  white-space: nowrap; 
+  overflow: hidden; /* if i can figure out something better will get rid of this*/
+  grid-column: 2/3;
+  position: relative;
+  border: none;
+  border-radius:.2rem;
+  padding: .7rem 3rem;
+  text-align: center;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  width: 15%;
+  justify-self: center;
+}
+
+footer {
+  display: grid;
+  grid-column: 1 / span 3;
+  background-color: #083B5F;
+  color: white;
+  justify-items: center;
+  padding: 5rem 0;
+  margin-top: 6rem;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+}
+
+footer nav a, footer nav p {
+  font-weight: bolder;
+}
+
+footer img {
+  width: 20%;
+  margin-bottom: 2rem;
+}
+
+/*form styling*/
+
+form {
+  grid-column: 2/3;
+  display: grid; 
+  grid-template-columns: 10% 10% 10% 15%;
+  grid-column-gap: 1rem;
+  justify-items: start;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+form h4, form p, label {
+  font-weight: bolder;
+}
+
+input[type=text], input[type=email], input[type=number], input[type=radio], #state, #zip, #city, #location{
+  width: 100%;
+  padding: 1.3rem;
+  margin: 1rem 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#name, #email, #street {
+  grid-column: 1/ span 4;
+}
+
+#city {
+  grid-column: 1/ span 2;
+}
+
+#state-label {
+  grid-row: 7/8;
+  grid-column: 3/4;
+}
+
+#state {
+  grid-column: 3/4;
+}
+
+#zip-label {
+  grid-column: 4/5;
+  grid-row: 7/8;
+}
+
+#zip {
+  grid-column: 4/5;
+  grid-row: 8/9;
+}
+
+#first-time-label {
+  grid-column: 1/ span 2;
+  /* grid-row:9/10; */
+}
+
+/* cannot for the life of me figure out why the label will not show up to the right of the button, will come back to see how to solve this and how to maybe style the form section better*/
+
+#first-time-radio { 
+  display: flex;
+  justify-content: space-evenly;
+  grid-column: 1/ span 4;
+  margin-bottom: 2rem;
+}
+
+#first-time-radio label {
+  padding-right: 5rem;
+  font-size: initial;
+  color: initial;
+  font-weight: initial;
+  
+}
+
+input[type=radio] {
+  width: 100%;
+  height: 2rem;
+  background-color: red;
+
+/* I do not understand why they are different sizes, as doing this in codepen the result was just fine. Couldn't find solution to this.*/
+}
+
+#location-label {
+  grid-column: 1/ span 2;
+  /* grid-row: 11/12; */
+}
+
+#location {
+  grid-column: 1/span 2;
+  /* grid-row: 12/13; */
+}
+
+#adopted-label {
+  grid-column: 1/span 2;
+  /* grid-row: 13/14; */
+}
+
+#adopted-doggies {
+  grid-column: 1/span 4;
+  /* grid-row: 14/15; */
+  display:flex;
+  justify-content: flex-start;  
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+#adopted-doggies img {
+  max-width:100%;
+  margin-right: -4rem;
+  float: left;
+}
+
+#adopted-doggies p, #adopted-doggies h4 {
+  white-space: nowrap;
+  padding-right: 10rem;
+}
+
+#adopted-doggies h4 {
+  margin: .5rem 0 -.3rem;
+}
+
+#adopted-doggies p {
+  font-size: 12px;
+}
+
+#adopted-doggies p strong {
+  font-weight: bolder;
+}
+
+#cost-label {
+  grid-column: 1/span 2;
+  margin-bottom: -.5rem;
+}
+
+#cost-number {
+  grid-column: 1/2;
+  font-size: 1.2rem;
+}
+
+form .green-button {
+  grid-column: 1/ span 2;
+  width: 85%;
+  height:85%;
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
