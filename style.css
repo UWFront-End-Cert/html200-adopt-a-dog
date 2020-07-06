@@ -1,5 +1,16 @@
-@charset "utf-8";
+@charset "UTF-8";
 
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 14px; font-size: 1.4rem;
+}
+
+h1{
+    font-size: 24px; font-size: 2.4rem;
+}
 html, body {
     height: 100vh;     
 }
@@ -15,17 +26,17 @@ h2, h3 {
  .header-left {
     float: left;
     position: absolute;
-    top: 100px;
-    left: 50px;
+    top: 10rem;
+    left: 5rem;
     color: #7CAF3F;
-    margin-left: 100px;
+    margin-left: 10rem;
 }
 
 .header-right {
     float: right;
     position: absolute;
-    right: 100px;
-    top: 100px;
+    right: 10rem;
+    top: 10rem;
     color: white;
     display: block;
     vertical-align: middle;
@@ -33,7 +44,7 @@ h2, h3 {
 }
 
 .cart-img {
-    width: 50px;
+    width: 5rem;
     
 }
 
@@ -52,7 +63,7 @@ header {
 .menu {
     display: flex;
     list-style: none;
-    margin-left: 100px;
+    margin-left: 10rem;
     padding: 0;
     font-family: 'Playfair Display', serif;
     
@@ -60,7 +71,7 @@ header {
 }
 
 .menu li {
-    padding: 0 30px;
+    padding: 0 3rem;
     font-weight: 900;
     color: #164668;
 }
@@ -70,7 +81,7 @@ nav ul li .menu-lists {
 }
 nav {
     background-color: #EBEBEB;
-    height: 50px;
+    height: 5rem;
     width: 100%;
     
        
@@ -79,14 +90,14 @@ nav {
 
 ul {
     margin: 0;
-    line-height: 50px;
+    line-height: 5rem;
     
 }
 
 
 .header-img {
     width: 100%;
-    height: 500px;
+    height: 50rem;
     overflow: hidden;
     
 }
@@ -95,8 +106,8 @@ ul {
 
 .header-left {
     position: absolute;
-    top: 100px;
-    left: 30px;
+    top: 10rem;
+    left: 3rem;
 }
 
 H2 {
@@ -105,18 +116,18 @@ H2 {
 
 
 img.top-img {
-    margin-left: 130px;
-    margin-top: 30px;
-    width: 300px;
-    height: 300px;
+    margin-left: 13rem;
+    margin-top: 3rem;
+    width: 30rem;
+    height: 30rem;
 }
 
 
 
 .top-text {
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 130px;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 13rem;
 }
 
 .top-title {
@@ -125,23 +136,19 @@ img.top-img {
 }
 
 .item-lists {
-    width: 200px;
-    height: 450px;
-    border: 1px solid lightgrey;
-    margin-bottom: 70px;
-    
-    
+    width: 20rem;
+    height: 45rem;
+    border: 0.1rem solid lightgrey;
+    margin-bottom: 7rem;
 }
 
 .list-pics {
-    width: 200px;
-    height: 150px;
+    width: 20rem;
+    height: 15rem;
 }
 
-
-
 .btm-text-area {
-    padding: 10px;
+    padding: 1rem;
 }
 
 .dog-name {
@@ -173,16 +180,16 @@ img.top-img {
 
 .item {
     display: flex;
-    margin: 70px 130px 0 130px;
+    margin: 7rem 13rem 0 13rem;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .btn {
     background-color:  #7CAF3F;
-    height: 50px;
-    width: 200px;
-    line-height: 50px;
+    height: 5rem;
+    width: 20rem;
+    line-height: 5rem;
     text-align: center;
     font-weight: 700;
     
@@ -191,11 +198,11 @@ img.top-img {
 
 .adopt-btn {
     background-color: #7CAF3F;
-    height: 50px;
-    width: 180px;
-    margin-left: 10px;
+    height: 5rem;
+    width: 18rem;
+    margin-left: 1rem;
     text-align: center;
-    line-height: 50px;
+    line-height: 5rem;
     color: white;
     font-weight: 700;
     
@@ -203,11 +210,11 @@ img.top-img {
 
 .see-more-dogs {
     background-color: lightgrey;
-    width: 200px;
-    height: 50px;
+    width: 20rem;
+    height: 5rem;
     text-align: center;
     color: #164668;
-    line-height: 50px;
+    line-height: 5rem;
     margin: 0 42%;
     
     
@@ -216,9 +223,9 @@ img.top-img {
 
 footer {
     background-color: #164668;
-    height: 500px;
+    height: 50rem;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 10rem;
     position: relative;
     
 }
@@ -228,7 +235,7 @@ footer {
 }
 
 .footer-logo {
-    width: 400px;
+    width: 40rem;
     color: white;
 }
 
@@ -240,17 +247,17 @@ footer {
 }
 
 .footer-items {
-    margin-right: 30px;
+    margin-right: 3rem;
     list-style: none;
     
 }
 
 .footer-middle {
-    width: 400px;
+    width: 40rem;
 }
 
 .footer-copy-rights {
-    width: 400px;
+    width: 40rem;
     text-align: center;
     color: white;
 }
@@ -259,7 +266,7 @@ footer {
 
 .footer {
     position: absolute;
-    top: 100px;
+    top: 10rem;
     left: 35%;
 }
 
@@ -271,7 +278,7 @@ a {
 /*dog page css*/
 
 .dog-page-topic {
-    margin: 50px 0 0 130px;
+    margin: 5rem 0 0 13rem;
     font-family: 'Playfair Display', serif;
     color: #164668;
     font-weight: 900;
@@ -283,7 +290,7 @@ a {
 /*Blog page css*/
 
 .blog-page-topic {
-    margin-left: 130px;
+    margin-left: 13rem;
     color: #164668;
     font-family: 'Playfair Display', serif;
     
@@ -296,11 +303,11 @@ a {
 
 .blog-page-contents-lists {
     display: flex;
-    margin: 70px 130px;
+    margin: 7rem 13rem;
 }
 
 .blog-page-contents-letter {
-    margin-left: 50px;
+    margin-left: 5rem;
 }
 
 
@@ -313,22 +320,22 @@ a {
 
 .submit-btn {
     background-color: #7CAF3F;
-    height: 50px;
-    width: 180px;
+    height: 5rem;
+    width: 18rem;
     text-align: center;
-    line-height: 50px;
+    line-height: 5rem;
     color: white;
     font-weight: 700;
 }
 
 
 .checkout-page-topic {
-    margin-left: 130px;
+    margin-left: 13rem;
     font-family: 'Playfair Display', serif;
 }
 
 .checkout-form {
-    margin: 30px 130px 30px 130px;
+    margin: 3rem 13rem 3rem 13rem;
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     color: #164668;
@@ -341,10 +348,10 @@ a {
 }
 
 .checkout-form-1 > input {
-    width: 500px;
-    height: 50px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    width: 50rem;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     
     
 }
@@ -355,25 +362,25 @@ a {
 }
 
 .row {
-    width: 500px;
+    width: 50rem;
     font-size: 1.5em;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
         
 }
 
 .row-city > input {
-    height: 50px;
-    width: 200px;
+    height: 5rem;
+    width: 20rem;
 }
 .row-state > select {
-    height: 56px;
-    width: 100px;
+    height: 5.6rem;
+    width: 10rem;
 }
 .zipcode > input {
-    height: 50px;
-    width: 150px
+    height: 5rem;
+    width: 15rem;
 }
 
 
@@ -384,7 +391,7 @@ a {
 
 .firsttime-radio {
     font-size: 1.5em;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .pickup {
@@ -392,27 +399,27 @@ a {
 }
 
 .pickup-location {
-    height: 50px;
-    width: 200px;
-    margin-bottom: 30px;
+    height: 5rem;
+    width: 20rem;
+    margin-bottom: 3rem;
 }
 
 .dog-adopted-list > img {
-    width: 80px
+    width: 8rem;
 }
 
 
 
 .dog-adopted {
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .dog-adopted-list {
-    width: 500px;
+    width: 50rem;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
     
 }
 
@@ -441,12 +448,12 @@ a {
 
 .top-checkout {
     background-color:  #7CAF3F;
-    height: 50px;
-    width: 200px;
-    line-height: 50px;
+    height: 5rem;
+    width: 20rem;
+    line-height: 5rem;
     text-align: center;
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 3rem;
     
 }
 
