@@ -47,6 +47,7 @@ header nav a:hover {
   display: inline-block;
   text-align: center;
   padding: 5rem 0 0 7rem;
+  white-space: nowrap;
 }
 
 .caption {
@@ -61,7 +62,7 @@ header nav a:hover {
   grid-template-columns: auto auto;
   position: absolute;
   top:4rem;
-  right:13rem;
+  right:12rem;
   color: white;
   font-weight: bold;
 }
@@ -78,7 +79,7 @@ header nav a:hover {
 .cart {
   float: left;
   width: 2.5rem;
-  padding-left: 5rem;
+  padding-left: 2rem;
   padding-right: .9rem;
 }
 
@@ -89,10 +90,13 @@ header nav a:hover {
   color: white;
   padding: .7rem 3rem;
   text-align: center;
+  margin: auto;
   text-decoration: none;
   display: inline-block;
+  word-wrap: break-word;
   font-size: 16px;
   font-weight: bold;
+  max-width:100%;
 }
 
 .green-button:hover {
@@ -113,10 +117,17 @@ article {
 article p {
   font-size: 1.5rem;
 }
+
 article img {
   float:left;
   padding-right: 5rem;
   width:25%;
+  height:auto;
+}
+
+.article-image {
+  min-width: 20rem;
+  padding: 0 3rem 1rem 0;
 }
 
 article h2 {
@@ -141,6 +152,7 @@ article h3 {
 
 .doggie-cel img  {
   width:100%;
+  height:auto;
 }
 
 .doggie-cel {
@@ -149,6 +161,7 @@ article h3 {
   border: solid;
   border-radius: 2px;
   border-color: #EAEAEA;
+  min-width: 20rem;
 } 
 
 .doggie-cel h4 {
@@ -165,7 +178,6 @@ article h3 {
 
 .doggie-button {
   white-space: nowrap; 
-  overflow: hidden; /* if i can figure out something better will get rid of this*/
   grid-column: 2/3;
   position: relative;
   border: none;
@@ -178,6 +190,7 @@ article h3 {
   font-size: 100%;
   width: 15%;
   justify-self: center;
+  min-width: 12rem;
 }
 
 footer {
@@ -201,7 +214,9 @@ footer nav a, footer nav p {
 
 footer img {
   width: 20%;
+  height:auto;
   margin-bottom: 2rem;
+  min-width:22rem;
 }
 
 /*form styling*/
@@ -313,7 +328,7 @@ input[type=radio] {
 }
 
 #adopted-doggies img {
-  max-width:100%;
+  max-width:25%;
   margin-right: -4rem;
   float: left;
 }
@@ -350,6 +365,7 @@ form .green-button {
   width: 85%;
   height:85%;
   margin-top: 1rem;
+  min-width: 13rem;
 }
 
 
