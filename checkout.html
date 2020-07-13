@@ -11,7 +11,7 @@
   <header>
     <img src="images/header-image.jpg" alt="close-up of a dog searching for a good home">
     <div class="cart">
-      <img src="images/cart-icon.svg" alt="">
+      <img src="images/cart-icon.svg" alt="your checkout cart">
       <p>$1234.56</p>
       <h5><a href="checkout.html">Checkout</a></h5>
     </div>
@@ -26,7 +26,7 @@
       <a href="index.html">Home</a> <span>/</span> <a href="adoption.html">Dogs</a> <span>/</span> <a href="blog.html">Blog</a>
     </h2>
   </nav>
-  <section class="container">
+  <section class="checkout container">
     <h3>Checkout</h3>
     <form class="custmr-checkout" action="/submit.php" method="POST">
       <label for="custmrName">Name</label>
@@ -41,11 +41,13 @@
       <br>
       <input type="text" name="custmrSt" id="custmrSt">
 
-      <div class="city-state-zip">
+      <div class="city">
         <label for="custmrCity">City</label>
         <br>
         <input type="text" name="custmrCity" id="custmrCity">
+      </div>
 
+        <div class="state">
         <label for="custmrState">State</label>
         <select name="custmrState" id="custmrState">
           <option value="">-</option>
@@ -101,10 +103,13 @@
           <option value="WV">WV</option>
           <option value="WY">WY</option>
         </select>
+        </div>
 
-        <label for="custmrZip">Zip Code</label>
-        <input type="number" name="custmrZip" id="custmrZip">
-      </div>
+        <div class="zip">
+          <label for="custmrZip">Zip Code</label>
+          <input type="number" name="custmrZip" id="custmrZip">
+        </div>
+
       <br>
       <div class="custmrNew">
         <h4>First Time Adopter?</h4>
