@@ -48,7 +48,7 @@
     <section>
       <div class="flex-container">
       <div class="card">
-        <img class="dogimage" src="images/duffy-card.jpg" alt="Avatar">
+        <img class="dogimage" src="images/duffy-card.jpg" alt="Avatar" onclick="alertDogInfo('Murphy', '123.45', 'Mutt')">
         <div class="container">
           <h3 class="h3-title"> Murphy </h3>
           <p class = "cardp"> <b> Cost to Adopt: </b>123.45 </p>
@@ -57,11 +57,11 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button class="button">Adopt</button>
+          <button class="button" onclick="sumDogCost(123.45)">Adopt</button>
         </div>
       </div>
       <div class="card">
-        <img class="dogimage" src="images/jack-card.jpg" alt="Avatar">
+        <img class="dogimage" src="images/jack-card.jpg" alt="Avatar" onclick="alertDogInfo('Popy', '123.45', 'Mutt')">
         <div class="container">
         <h3 class="h3-title"> Poppy </h3>
         <p class = "cardp"> <b> Cost to Adopt: </b>123.45 </p>
@@ -70,11 +70,11 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button class="button">Adopt</button>
+          <button class="button" onclick="sumDogCost(123.45)" >Adopt</button>
         </div>
       </div>
       <div class="card">
-        <img class="dogimage" src="images/lucas-card.jpg" alt="Avatar">
+        <img class="dogimage" src="images/lucas-card.jpg" alt="Avatar" onclick="alertDogInfo('Tootie', '123.45', 'Mutt')">
         <div class="container">
           <h3 class="h3-title"> Tootie </h3>
           <p class = "cardp"> <b> Cost to Adopt: </b>123.45 </p>
@@ -83,11 +83,11 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button class="button">Adopt</button>
+          <button class="button" onclick="sumDogCost(123.45)">Adopt</button>
         </div>
       </div>
       <div class="card">
-        <img class="dogimage" src="images/luna-card.jpg" alt="Avatar">
+        <img class="dogimage" src="images/luna-card.jpg" alt="Avatar" onclick="alertDogInfo('Jack', '123.45', 'Mutt')">
         <div class="container">
         <h3 class="h3-title"> Jack </h3>
           <p class = "cardp"> <b> Cost to Adopt: </b>123.45 </p>
@@ -96,7 +96,7 @@
             reicid ut et etur sunt arum
             rendae pla endis re ea erum,
             qui doluptae</p>
-          <button class="button">Adopt</button>
+          <button class="button" onclick="sumDogCost(123.45)">Adopt</button>
         </div>
       </div>
     </div>
@@ -104,7 +104,7 @@
   <section>
     <div class="flex-container">
     <div class="card">
-      <img class="dogimage" src="images/piper-card.jpg" alt="Avatar">
+      <img class="dogimage" src="images/piper-card.jpg" alt="Avatar" onclick="alertDogInfo('Bop', '123.45', 'Mutt')">
       <div class="container">
       <h3 class="h3-title"> Bop </h3>
         <p class = "cardp"> <b> Cost to Adopt: </b>123.45 </p>
@@ -113,11 +113,11 @@
           reicid ut et etur sunt arum
           rendae pla endis re ea erum,
           qui doluptae</p>
-        <button class="button">Adopt</button>
+        <button class="button" onclick="sumDogCost(123.45)">Adopt</button>
       </div>
     </div>
     <div class="card">
-      <img class="dogimage" src="images/poppy-card.jpg" alt="Avatar">
+      <img class="dogimage" src="images/poppy-card.jpg" alt="Avatar" onclick="alertDogInfo('Donker', '123.45', 'Mutt')">
       <div class="container">
         <h3 class="h3-title"> Donker </h3>
         <p class = "cardp"> <b> Cost to Adopt: </b>123.45 </p>
@@ -126,11 +126,11 @@
           reicid ut et etur sunt arum
           rendae pla endis re ea erum,
           qui doluptae</p>
-        <button class="button">Adopt</button>
+        <button class="button" onclick="sumDogCost(123.45)">Adopt</button>
       </div>
     </div>
     <div class="card">
-      <img class="dogimage" src="images/murphy-card.jpg" alt="Avatar">
+      <img class="dogimage" src="images/murphy-card.jpg" alt="Avatar" onclick="alertDogInfo('Roofus', '123.45', 'Mutt')">
       <div class="container">
       <h3 class="h3-title"> Roofus </h3>
         <p class = "cardp"> <b> Cost to Adopt: </b>123.45 </p>
@@ -139,11 +139,11 @@
           reicid ut et etur sunt arum
           rendae pla endis re ea erum,
           qui doluptae</p>
-        <button class="button">Adopt</button>
+        <button class="button" onclick="sumDogCost(123.45)">Adopt</button>
       </div>
     </div>
     <div class="card">
-      <img class="dogimage" src="images/maximus-card.jpg" alt="Avatar">
+      <img class="dogimage" src="images/maximus-card.jpg" alt="Avatar" onclick="alertDogInfo('Marina', '123.45', 'Mutt')">
       <div class="container">
       <h3 class="h3-title"> Marina </h3>
         <p class = "cardp"> <b> Cost to Adopt: </b>123.45 </p>
@@ -152,7 +152,7 @@
           reicid ut et etur sunt arum
           rendae pla endis re ea erum,
           qui doluptae</p>
-        <button class="button">Adopt</button>
+        <button class="button" onclick="sumDogCost(123.45)">Adopt</button>
       </div>
     </div>
   </div>
@@ -168,4 +168,6 @@
     <p class="footerp"> © 2018 Kitties To Go!, LLC   |   Seattle, WA </p>
   </footer>
 
-</div></body></html>
+</div>
+<script src = "./dogs.js" charset="utf-8"></script>
+</body></html>

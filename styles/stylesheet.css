@@ -5,10 +5,6 @@ body {
 }
 
 div {
-  /*
-  min-height: 1000px;
-  margin-bottom: 100px;
-  */
 }
 
 header {
@@ -32,10 +28,8 @@ footer {
 section {
 
   margin-left: 16em;
-      /* margin-right: 255px; */
       margin-right: 15em;
       margin-top: 3em;
-      /* margin-top: 50px; */
       margin-bottom: 3em;
 }
 
@@ -64,8 +58,6 @@ section {
     margin-left: 3em;
     margin-right: 15em;
 
-    /*margin-left: 20px;
-    margin-right: 300px;*/
 }
 .mainp {
   font-family: 'Work Sans', sans-serif;
@@ -184,7 +176,6 @@ section {
         width: 2%;
         float: right;
         margin-right: 8em;
-        /* margin-bottom: 0px; */
         margin-top: -2em;
         margin-left: 1em;
   }
@@ -261,13 +252,7 @@ input[type=submit]:hover {
 form {
   margin-left:0;
 }
-/*
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-*/
+
 .form-div {
   display: flex;
       align-items: center;
@@ -328,105 +313,8 @@ a {
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
-  /* padding-left: 280px; */
 
   padding-left: 18em;
   background-color: #ebebeb;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.boldp {
-  margin-right:50px;
-  margin-top: .2rem;
-  margin-bottom: 0;
-  margin-left: 50px;
-  color: #2c9ab7;
-  padding-left:50px;
-  padding-right:50px;
-  padding-top:25px;
-  padding-bottom:5px;
-  font-weight: bold;
-}
-
-.bolditalicp {
-  margin-right:0px;
-  margin-top: 0px;
-  margin-bottom: 0;
-  margin-left: 0px;
-  color: #2c9ab7;
-  padding-left:100px;
-  padding-right:0px;
-  padding-top:0px;
-  padding-bottom:0px;
-  font-weight: bold;
-  font-style:italic;
-}
-
-.regularp {
-  margin-right:50px;
-  margin-top: .1rem;
-  margin-bottom: 0;
-  margin-left: 50px;
-  color: black;
-  padding-left:50px;
-  padding-right:50px;
-  padding-top:10px;
-  padding-bottom:10px;
-}
-
-.sidebarh3 {
-  margin-right:0;
-  margin-top: .2rem;
-  margin-bottom: 0;
-  margin-left: 0px;
-  color: black;
-  padding-left:0px;
-  padding-right:50px;
-  padding-top:10px;
-  padding-bottom:5px;
-
-}
-*/
-
-/*
-.sectionh3 {
-  margin-right:0;
-  margin-top: .2rem;
-  margin-bottom: 0;
-  margin-left: 50px;
-  color: black;
-  padding-left:50px;
-  padding-right:50px;
-  padding-top:25px;
-  padding-bottom:5px;
-
-}
-*/
-
-/*
-
-aside {
-  float: right;
-  width: 30%;
-}
-/*
-section {
-  float: left;
-  width: 63%;
-}
-*/
