@@ -111,9 +111,9 @@
       grid-column-start: 1;
       grid-column-end: 4;
       text-align: left;
-      padding: 0px 50px 30px 50px;
+      padding: 50px 50px 50px 50px;
       margin: auto;
-      width: 40%;
+      width: 60%;
     }
     .grid-item-7 {
       grid-column-start: 1;
@@ -129,7 +129,7 @@
       font-family: Georgia, serif;
       line-height: 1.6;
       color: #444444;
-      font-style: 100%;
+      font-size: 100%;
     }
     .hidden {
       position: relative;
