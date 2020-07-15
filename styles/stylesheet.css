@@ -7,6 +7,80 @@
       grid-column-start: 1;
       grid-column-end: 4;
     }
+   .flexboxcontainer3 {
+     position: absolute;
+     top: 75px;
+     width: 98%;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+    }
+    .headerbox {
+     width: 65%;
+     height: 75%;
+     font-size: 65%;
+     padding-left: 40px;
+    }
+    .headerbox2 {
+      width: 20%;
+      padding-right: 15px;
+    }
+    .header-logo {
+     width: 48%;
+     height: auto;
+    }
+    h1 {
+     font-style: italic;
+     color: #76d138; /* Green */
+     top: 55px;
+    }
+    i {
+     color: white;
+     font-size: 150%;
+    }
+    .cart-total {
+     color: white;
+     font-size: 100%;
+    }
+    .button {
+     background-color: #76d138; /* Green */
+     border: none;
+     border-radius: 3px;
+     color: white;
+     padding: 10px 40px;
+     text-align: center;
+     text-decoration: none;
+     font-size: 100%;
+     font-weight: bold;
+    }
+    .button:hover {
+      color: gray;
+    }
+    .hdcart {
+      position: absolute;
+      width: 15%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .hdcartbx {
+      width: 40px;
+      height: auto;
+      padding-left: 35px;
+    }
+    .hdcartbx2 {
+      width: 80px;
+      height: auto;
+    }
+    .hdcartbx3 {
+      width: 90%;
+      height: auto;
+      padding: 5px;
+    }
     .grid-item-2 {
       grid-column-start: 1;
       grid-column-end: 4;
@@ -55,6 +129,7 @@
       font-family: Georgia, serif;
       line-height: 1.6;
       color: #444444;
+      font-style: 100%;
     }
     .hidden {
       position: relative;
@@ -84,6 +159,7 @@
     .important {
       color: white;
       font-weight: bold;
+      padding: 15px;
     }
     .important-1:hover {
       color: gray;
@@ -91,55 +167,12 @@
     .important-1 {
       color: #1d5382; /* Blue */
       font-weight: bold;
+      font-size: 175%;
+      padding: 25px;
     }
     .header-img {
       position: relative;
       z-index: -1;
-    }
-    .header-logo {
-      position: absolute;
-      top: 50px;
-      left: 70px;
-      width: 25%;
-      height: 25%;
-      padding: 50px 50px 50px 50px;
-    }
-    h1 {
-      font-style: italic;
-      font-size: 105%;
-      color: #76d138; /* Green */
-      position: absolute;
-      top: 34%;
-      left: 8%;
-      padding: 10px 10px 10px 10px;
-    }
-    i {
-      color: white;
-      font-size: 150%;
-      position: absolute;
-      top: 15%;
-      left: 85%;
-    }
-    .cart-total {
-      color: white;
-      font-size: 100%;
-      position: absolute;
-      top: 13%;
-      left: 87.5%;
-    }
-    .button {
-      background-color: #76d138; /* Green */
-      border: none;
-      border-radius: 3px;
-      color: white;
-      padding: 5px 35px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 100%;
-      position: absolute;
-      top: 22%;
-      left: 83%;
-      font-weight: bold;
     }
     .dogs-button {
       background-color: #76d138; /* Green */
@@ -202,6 +235,12 @@
       margin: 30px;
       padding-bottom: 20px;
       border: 2px #d4d4d4 solid;
+    }
+    .box3 {
+      width: 100%;
+      padding-left: 42%;
+      padding-top: 10px;
+      padding-bottom: 60px;
     }
     .blogbox {
       width: 400px;
