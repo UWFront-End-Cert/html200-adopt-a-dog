@@ -20,7 +20,6 @@
     .headerbox {
      width: 65%;
      height: 75%;
-     font-size: 65%;
      padding-left: 40px;
     }
     .headerbox2 {
@@ -34,7 +33,7 @@
     h1 {
      font-style: italic;
      color: #76d138; /* Green */
-     top: 55px;
+     font-size: 130%;
     }
     i {
      color: white;
@@ -238,9 +237,9 @@
     }
     .box3 {
       width: 100%;
-      padding-left: 42%;
       padding-top: 10px;
       padding-bottom: 60px;
+      padding-left: 42%;
     }
     .blogbox {
       width: 400px;
