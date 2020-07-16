@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgba(0, 0, 0, .25);
+  background-image: url(images/header-image-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 440px;
+}
+
+header .banner {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+header {
+  height: 400px;
+  color: white;
+}
+
+header .title {
+  height: auto;
+  width: 25%
+}
+
+header .cart img{
+  height: auto;
+  width: 15%;
+}
+
+.cart {
+  position: relative;
+  float: right;
+}
