@@ -87,3 +87,29 @@ nav h2 * {
     font-weight: bolder;
     padding: .5rem;
 }
+
+.intro {
+  margin: 50px 25px 50px 200px;
+}
+
+article div {
+  display: inline-block;
+  position: absolute;
+  width: 40%;
+  margin: 25px 50px;
+}
+
+h3 {
+  color: navy;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.introtext p {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  line-height: 1.5rem;
+
+}
