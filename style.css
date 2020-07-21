@@ -4,7 +4,6 @@
 }
 
 html {
-  background-color: rgba(0, 0, 0, 0);
   margin: 0;
 }
 
@@ -51,7 +50,7 @@ header .cart a {
 
 header .title {
   height: auto;
-  position: relative;
+  position: absolute;
   top: 75px;
   left: 100px;
   color: yellowgreen;
@@ -111,5 +110,41 @@ h3 {
   font-family: sans-serif;
   font-weight: lighter;
   line-height: 1.5rem;
+}
 
+.current-dogs-container {
+  display: grid;
+  margin-left: 200px;
+}
+
+.dog-card {
+  border: solid 2px rgba(128, 128, 128, .25);
+  width: 174px;
+  border-top: none;
+}
+
+.dog-card img {
+  position: relative;
+  right: 2px;
+}
+
+.current-dogs-container p {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: .7rem;
+  line-height: 1rem;
+}
+
+h4 {
+  color: navy;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+h5 {
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: .6rem;
 }
