@@ -113,19 +113,25 @@ h3 {
 }
 
 .current-dogs-container {
-  display: grid;
-  margin-left: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 200px 40px;
 }
 
 .dog-card {
   border: solid 2px rgba(128, 128, 128, .25);
   width: 174px;
   border-top: none;
+  margin: 0 40px 40px 0;
 }
 
 .dog-card img {
   position: relative;
   right: 2px;
+}
+
+.dog-card img ~ * {
+  margin: 5px 10px 10px 10px;
 }
 
 .current-dogs-container p {
@@ -143,8 +149,30 @@ h4 {
 }
 
 h5 {
-  display: inline-block;
+  display: inline;
+  font-family: sans-serif;
+  font-size: .65rem;
+}
+
+h5 ~ span {
+  margin: 0;
+  position: relative;
+  right: 15px;
+  font-family: sans-serif;
+  font-size: .75rem;
+}
+
+.add-to-cart {
   font-family: sans-serif;
   font-weight: bold;
   font-size: .6rem;
+  padding: .5rem 3.5rem;
+  background-color: yellowgreen;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.dog-card div:last-child {
+  margin-bottom: 15px;
 }
