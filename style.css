@@ -88,14 +88,21 @@ h1 {
 }
 
 .intro {
-  margin: 50px 25px 50px 200px;
+  margin: 35px 25px 50px 200px;
+}
+
+.post {
+  margin: 0 0 75px;
 }
 
 article div {
   display: inline-block;
   position: absolute;
   width: 40%;
-  margin: 25px 50px;
+  margin: 0 50px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  line-height: 1.5rem;
 }
 
 h3 {
@@ -103,14 +110,28 @@ h3 {
   font-family: serif;
   font-weight: bold;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
+h4 {
+  margin-bottom: .6rem;
+}
+
+.headline {
+  margin: 50px 25px 25px 200px;
+}
+
+.post p {
+  font-size: .8rem;
+}
+
+/*
 .introtext p {
   margin-top: 10px;
   font-family: sans-serif;
   font-weight: lighter;
   line-height: 1.5rem;
-}
+}*/
 
 .current-dogs-container {
   display: flex;
@@ -195,6 +216,11 @@ h5 ~ span {
   margin: auto;
   padding: 0;
   margin-bottom: 5rem;
+}
+
+.invisible {
+  display: block;
+  visibility: hidden;
 }
 
 footer {
