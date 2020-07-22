@@ -114,8 +114,9 @@ h3 {
 
 .current-dogs-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 0 200px 40px;
+  margin: 0 200px 0;
 }
 
 .dog-card {
@@ -175,4 +176,29 @@ h5 ~ span {
 
 .dog-card div:last-child {
   margin-bottom: 15px;
+}
+
+.see-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 2.3rem;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0;
+  background-color: lightgrey;
+  text-decoration: none;
+  color: navy;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 5rem;
+}
+
+footer {
+  background-color: navy;
+  color: white;
+  text-align: center;
 }
