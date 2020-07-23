@@ -31,28 +31,30 @@
   <section class="checkout container">
     <h3 class="headline">Checkout</h3>
     <form class="custmr-checkout" action="/submit.php" method="POST">
-      <div class="item-1">
+      <div class="line-1">
         <label for="custmrName">Name</label>
         <br>
         <input type="text" name="custmrName" id="custmrName">
       </div>
-
-      <div class="item-2">
+<br>
+      <div class="line-2">
         <label for="custmrContact">Email Address</label>
         <br>
         <input type="email" name="custmrContact" id="custmrContact">
       </div>
-
-      <label for="custmrSt">Street Address</label>
       <br>
-      <input type="text" name="custmrSt" id="custmrSt">
-
+      <div class="line-3">
+        <label for="custmrSt">Street Address</label>
+        <br>
+        <input type="text" name="custmrSt" id="custmrSt">
+      </div>
+<br>
+<div class="line-4">
       <div class="city">
         <label for="custmrCity">City</label>
         <br>
         <input type="text" name="custmrCity" id="custmrCity">
       </div>
-
         <div class="state">
         <label for="custmrState">State</label>
         <select name="custmrState" id="custmrState">
@@ -115,34 +117,39 @@
           <label for="custmrZip">Zip Code</label>
           <input type="number" name="custmrZip" id="custmrZip">
         </div>
+      </div>
 
       <br>
-      <div class="custmrNew">
+      <div class="line-5">
         <h4>First Time Adopter?</h4>
         <input type="radio" id="custmrNewYes" name="custmrNew" value="yes">
         <label for="custmrNewYes">Yes</label>
         <input type="radio" id="custmrNewNo" name="custmrNew" value="no">        <label for="custmrNewNo">No</label>
       </div>
-      <br>
-      <label for="pickupLoc">Pickup Location</label>
-      <select name="pickupLoc" id="pickupLoc">
-        <option value="">-</option>
-        <option value="Seattle">Seattle</option>
-        <option value="Lake Union">Lake Union</option>
-        <option value="Georgetown">Georgetown</option>
-      </select>
-      <br>
+
+      <div class="line-6">
+        <label for="pickupLoc">Pickup Location</label>
+        <br>
+        <select name="pickupLoc" id="pickupLoc">
+          <option value="">-</option>
+          <option value="Seattle">Seattle</option>
+          <option value="Lake Union">Lake Union</option>
+          <option value="Georgetown">Georgetown</option>
+        </select>
+        <br>
+      </div>
+
       <section class="checkout-cart">
         <h4>Dogs Adopted</h4>
         <div class="cart-container">
           <div class="cart-item">
             <img src="images/lucas-checkout.jpg" alt="Black herding dog smiles for the camera happily" width="50" height="50">
-            <section class="item-details">
+            <div class="item-details">
               <h4>Lucas</h4>
               <div class="item-cost">
                 <h5>Cost to Adopt:</h5> <span>$123.45</span>
               </div>
-            </section>
+            </div>
             <div class="cart-item">
               <img src="images/duffy-checkout.jpg" alt="Short haired brown and white american terrier with blue eyes" width="50" height="50">
               <section class="item-details">

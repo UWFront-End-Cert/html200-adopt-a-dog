@@ -84,7 +84,7 @@ h1 {
 }
 
 .topnav h2 * {
-    color: navy;
+    color: rgba(0, 60, 100, 1);
     font-family: sans-serif;
     font-size: 1rem;
     text-decoration: none;
@@ -111,7 +111,7 @@ article div {
 }
 
 h3 {
-  color: navy;
+  color: rgba(0, 60, 100, 1);
   font-family: serif;
   font-weight: bold;
   font-size: 2rem;
@@ -121,13 +121,10 @@ h3 {
 
 .headline {
   margin: 50px 25px 25px 200px;
+  color: rgba(0, 60, 100, 1);
 }
 
-form {
-  margin: 25px 50% 25px 200px;
-  display: grid;
-  grid-area: ;
-}
+
 
 .post p {
   font-size: .8rem;
@@ -165,7 +162,7 @@ form {
 }
 
 h4, label {
-  color: navy;
+  color: rgba(0, 60, 100, 1);
   font-family: serif;
   font-weight: bold;
   font-size: 1.2rem;
@@ -216,19 +213,116 @@ h5 ~ span {
   padding: 0;
   background-color: lightgrey;
   text-decoration: none;
-  color: navy;
+  color: rgba(0, 60, 100, 1);
   margin: auto;
   padding: 0;
   margin-bottom: 5rem;
 }
 
+form {
+  margin: 25px 50% 25px 200px;
+  line-height: 1.5rem;
+  width: 80%;
+}
+
+form p {
+  font-family: sans-serif;
+  font-size: .8rem;
+}
+
+#custmrName {
+  width: 20rem;
+}
+
+#custmrContact {
+  width: 20rem;
+}
+
+#custmrSt {
+  width: 20rem;
+}
+input {
+  line-height: 1.5rem;
+}
+
+.line-4 div {
+  display: inline;
+}
+
+.line-5 label {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: .8rem;
+  color: rgba(0, 60, 100, 1);
+  margin-right: 2rem;
+}
+
+.line-5 h4 {
+  margin-bottom: .2rem;
+}
+
+.state label {
+  position: relative;
+  bottom: 28px;
+  left: 15px;
+}
+
+#custmrState {
+  position: relative;
+  right: 30px;
+}
+
+.zip label {
+  position: relative;
+  bottom: 28px;
+}
+
+.zip input{
+  display: inline;
+  position: relative;
+  right: 90px;
+}
+
+.line-6 {
+  margin-top: 1.5rem;
+}
+
+#pickupLoc {
+  margin-bottom: 1.5rem;
+}
+
+.cart-container {
+  margin-bottom: 2.5rem;
+}
+
+.cart-item {
+  display: flex;
+}
+
+.item-details {
+  margin: .5rem 0 .5rem 1rem;
+  line-height: .5rem;
+}
+
+.item-cost * {
+  margin-top: .3rem;
+  margin-right: 1rem;
+}
+
+.total {
+  line-height: 1rem;
+}
+
 .submit {
-  padding: .5rem 2.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  padding: .5rem 5rem;
   background-color: rgba(115, 153, 0, 1);
   text-decoration: none;
   color: white;
   font-weight: bolder;
   border: none;
+  font-size: 1rem;
 }
 
 .invisible {
