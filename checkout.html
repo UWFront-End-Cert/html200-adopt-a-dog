@@ -29,16 +29,20 @@
     </h2>
   </nav>
   <section class="checkout container">
-    <h3>Checkout</h3>
+    <h3 class="headline">Checkout</h3>
     <form class="custmr-checkout" action="/submit.php" method="POST">
-      <label for="custmrName">Name</label>
-      <br>
-      <input type="text" name="custmrName" id="custmrName">
-      <br>
-      <label for="custmrContact">Email Address</label>
-      <br>
-      <input type="email" name="custmrContact" id="custmrContact">
-      <br>
+      <div class="item-1">
+        <label for="custmrName">Name</label>
+        <br>
+        <input type="text" name="custmrName" id="custmrName">
+      </div>
+
+      <div class="item-2">
+        <label for="custmrContact">Email Address</label>
+        <br>
+        <input type="email" name="custmrContact" id="custmrContact">
+      </div>
+
       <label for="custmrSt">Street Address</label>
       <br>
       <input type="text" name="custmrSt" id="custmrSt">
@@ -130,20 +134,20 @@
       <br>
       <section class="checkout-cart">
         <h4>Dogs Adopted</h4>
-        <div class="cart container">
-          <div class="cart item">
-            <img src="images/lucas-checkout.jpg" alt="Black herding dog smiles for the camera happily">
-            <section class="item details">
+        <div class="cart-container">
+          <div class="cart-item">
+            <img src="images/lucas-checkout.jpg" alt="Black herding dog smiles for the camera happily" width="50" height="50">
+            <section class="item-details">
               <h4>Lucas</h4>
-              <div class="item cost">
+              <div class="item-cost">
                 <h5>Cost to Adopt:</h5> <span>$123.45</span>
               </div>
             </section>
-            <div class="cart item">
-              <img src="images/duffy-checkout.jpg" alt="Short haired brown and white american terrier with blue eyes">
-              <section class="item details">
+            <div class="cart-item">
+              <img src="images/duffy-checkout.jpg" alt="Short haired brown and white american terrier with blue eyes" width="50" height="50">
+              <section class="item-details">
                 <h4>Duffy</h4>
-                <div class="item cost">
+                <div class="item-cost">
                   <h5>Cost to Adopt:</h5> <span>$123.45</span>
                 </div>
               </section>
@@ -155,7 +159,7 @@
         <h4>Total Adoption Cost</h4>
         <p>$1234.56</p>
       </section>
-      <input type="submit">
+      <input type="submit" class="submit" value="Submit">
     </form>
   </section>
 

@@ -43,7 +43,6 @@ header .cart img{
 header .cart a {
   position: relative;
   top: 1.5rem;
-
   padding: .5rem 2.75rem;
   background-color: rgba(115, 153, 0, 1);
   text-decoration: none;
@@ -119,25 +118,20 @@ h3 {
   margin-bottom: 1rem;
 }
 
-h4 {
-  margin-bottom: .6rem;
-}
 
 .headline {
   margin: 50px 25px 25px 200px;
 }
 
+form {
+  margin: 25px 50% 25px 200px;
+  display: grid;
+  grid-area: ;
+}
+
 .post p {
   font-size: .8rem;
 }
-
-/*
-.introtext p {
-  margin-top: 10px;
-  font-family: sans-serif;
-  font-weight: lighter;
-  line-height: 1.5rem;
-}*/
 
 .current-dogs-container {
   display: flex;
@@ -170,11 +164,12 @@ h4 {
   color: black;
 }
 
-h4 {
+h4, label {
   color: navy;
   font-family: serif;
   font-weight: bold;
   font-size: 1.2rem;
+  margin-bottom: .6rem;
 }
 
 h5 {
@@ -225,6 +220,15 @@ h5 ~ span {
   margin: auto;
   padding: 0;
   margin-bottom: 5rem;
+}
+
+.submit {
+  padding: .5rem 2.75rem;
+  background-color: rgba(115, 153, 0, 1);
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  border: none;
 }
 
 .invisible {
