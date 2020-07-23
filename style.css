@@ -23,21 +23,27 @@ header {
 .cart {
   position: relative;
   float: right;
+  display: grid;
+  width: 20rem;
   top: 70px;
   font-family: sans-serif;
   font-weight: bolder;
+}
 
+.cartline1 {
+  position: relative;
+  left: 40px;
 }
 
 header .cart img{
-  width: 15%;
+  width: 8%;
   padding-right: 5px;
 }
 
 header .cart a {
   position: relative;
   top: 1.5rem;
-  right: 2.5rem;
+
   padding: .5rem 2.75rem;
   background-color: rgba(115, 153, 0, 1);
   text-decoration: none;
@@ -161,6 +167,7 @@ h4 {
   font-weight: lighter;
   font-size: .7rem;
   line-height: 1rem;
+  color: black;
 }
 
 h4 {
@@ -174,6 +181,7 @@ h5 {
   display: inline;
   font-family: sans-serif;
   font-size: .65rem;
+  color: black;
 }
 
 h5 ~ span {
@@ -182,6 +190,7 @@ h5 ~ span {
   right: 15px;
   font-family: sans-serif;
   font-size: .75rem;
+  color: black;
 }
 
 .add-to-cart {
