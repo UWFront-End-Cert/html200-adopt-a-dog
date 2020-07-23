@@ -1,0 +1,81 @@
+header{
+  background-color: #0D3C5F;
+  color: #ffffff;
+}
+
+h1{
+  color: #81B741;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.my-cart-container{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    float: right;
+    padding-top: 2em;
+    padding-right: 5em;
+    padding-left: 2em;
+  }
+
+.my-cart-box{
+  height: auto;
+  width: auto;
+  padding: 0.5em;
+}
+
+.my-cart{
+  height: 20px;
+  width: 20px;
+}
+
+.cart-total{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.checkout-button{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  clear: both;
+  padding: 0.5em 3em 0.5em 3em;
+  background-color: #81B741;
+}
+
+.main-logo{
+  padding-top: 2em;
+  padding-left: 5em;
+  padding-bottom: 2em;
+}
+
+.logo{
+  width: 400px;
+  padding: 0;
+}
+
+nav{
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  padding: 0.5em 10em 0.5em 10em;
+}
+
+nav li{
+  display: inline;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  color: #0D3C5F;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav li a{
+  text-decoration: none;
+  color: #0D3C5F;
+  font-family: 'Lato', sans-serif;
+}
