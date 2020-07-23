@@ -6,7 +6,7 @@
  # Project Purpose
 
  The purpose of this project was to utilize skills learned in this class, using a mockup for basic design.
- Originally the site was designed with just HTML5 and CSS. Later, Javascript and JQuery were used to add responsiveness to the site. 
+ Originally the site was designed with just HTML5 and CSS. Later, Javascript and JQuery were used to add responsiveness to the site.
 
  # Site Purpose
 
@@ -21,3 +21,9 @@
 
 Created by: Headieh Godwin
 March 17, 2020
+
+ # To migrate:
+- open your terminal and cd into the path where you want this code to exist
+- Fork and clone this repo (If you need help with this here is a helpful link:
+  https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
+- open the index.html file on your browser
