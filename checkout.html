@@ -10,7 +10,7 @@
   <body>
     <header>
       <figure class="logo-and-caption">
-        <img class="header-logo" src="images/adoptadog-logo.svg" alt="adoptadog logo" width="703" height="214">
+        <img class="header-logo" src="images/adoptadog-logo.svg" alt="adoptadog logo">
         <figcaption class="caption">Seattle's premiere dog adoption agency</figcaption>
       </figure>
         <div class="checkout">
@@ -27,35 +27,44 @@
     <article class="checkout-form">
       <h2>Checkout</h2>
       <form method="GET">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name">
+          <label>Name
+            <input type="text" id="name" name="name">
+          </label>
     
-          <label for="email"> Email Address</label>
-          <input type="email" id="email" name="email">
+          <label> Email Address
+            <input type="email" id="email" name="email">
+          </label>
 
-          <label for="street">Street Address</label>
-          <input type="text" id="street" name="street">
+          <label>Street Address
+            <input type="text" id="street" name="street">
+          </label>
 
-          <label for="city">City</label>
-          <input type="text" id="city" name="city">
+          <div id="line-4">
+            <label id="city-label"> City
+              <input type="text" id="city" name="city">
+            </label>
+  
+            <label id="state-label">State
+              <select id="state" name="state">
+                <option value="WA">WA</option>
+                <option value="OR">OR</option>
+                <option value="CA">CA</option>
+              </select>
+            </label>
+  
+            <label id="zip-label"> Zip Code
+              <input type="text" id="zip" name="zip" pattern="[0-9]*">   
+            </label>
+          </div>
 
-          <label id="state-label" for="state">State</label>
-          <select id="state" name="state">
-            <option value="WA">WA</option>
-            <option value="OR">OR</option>
-            <option value="CA">CA</option>
-          </select>
-
-          <label id="zip-label" for="zip"> Zip Code</label>
-          <input type="text" id="zip" name="zip" pattern="[0-9]*"> 
 
           <p id="first-time-label">First Time Adopter?</p>
           <div id="first-time-radio">
             <label>
-              <input  type="radio" name="first-time" value="yes">Yes
+              <input type="radio" name="first-time" value="yes"><span>Yes</span>
             </label>
             <label>
-              <input id="no-radio" type="radio" name="first-time" value="no">No
+              <input id="no-radio" type="radio" name="first-time" value="no"><span>No</span>
             </label>
           </div>
     
