@@ -1,3 +1,4 @@
+/*header style*/
 header{
   background-color: #0D3C5F;
   color: #ffffff;
@@ -47,6 +48,7 @@ img{
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
+  font-family: 'Lato', sans-serif;
   color: #ffffff;
   clear: both;
   padding: 0.5em 3em 0.5em 3em;
@@ -67,7 +69,7 @@ img{
 nav{
   box-sizing: border-box;
   background-color: #ECECEC;
-  padding: 0.5em 10em 0.5em 10em;
+  padding: 0.5em 5em 0.5em 5em;
 }
 
 nav li{
@@ -86,28 +88,36 @@ nav li a{
   font-family: 'Lato', sans-serif;
 }
 
+/*index style*/
 .index-container{
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 1.5em;
-  border: 2px solid #000000;
+  padding: 1em;
 }
 
 .index-box-img{
   height: 400px;
   width: 400px;
-  border: 2px solid #000000;
   margin: auto;
 }
 
 .index-box-text{
-  height: 400px;
+  height: 500px;
   width: 700px;
-  border: 2px solid #000000;
-  margin: auto;
+  padding-top: 1em;
+}
+
+.index-box-text-h2{
+  font-family: 'Noto Serif', serif;
+  color: #0D3C5F;
+}
+
+.index-box-text-p{
+  font-family: 'Open Sans', sans-serif;
+  overflow: auto;
 }
 
 .dogs-container{
@@ -116,9 +126,7 @@ nav li a{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2rem;
-  border: 2px solid #000000;
-
+  padding: 0 2rem 2rem 2rem;
 }
 
 .box{
@@ -126,9 +134,52 @@ nav li a{
   width: 200px;
   border: 4px solid #E9E9E9;
   margin: 1rem;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
 
-.dogs{
-  text-align: left;
+div div h3{
+  font-family: 'Noto Serif', serif;
+  color: #0D3C5F;
+  padding-left: 0.5em;
+  font-size: 24px;
+}
+
+.dogs-cost-text{
+  padding-left: 0.5em;
+  font-size: 16px;
+}
+
+.dogs-text{
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 1em;
+}
+
+.adopt-button{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5em 4em 0.5em 4em;
+  margin: 12px;
+  border-radius: 2px;
+  background-color: #81B741;
+  display: inline-block;
+}
+
+.see-dogs-container{
+  text-align: center;
+}
+
+.see-dogs-button{
+  text-align: center;
+  text-decoration: none;
+  color: #0D3C5F;
+  padding: 0.5em 3em 0.5em 3em;
+  background-color: #E9E9E9;
   font-family: 'Lato', sans-serif;
 }
