@@ -2,10 +2,7 @@ const fields = [
     {
         name: 'full-name',
         label: 'Full Name:'
-    },
-    
-    //document.write("\n"),
-    //document.write("<br />");
+    },  
 
     {
         name: 'email',
@@ -44,17 +41,10 @@ for (let i = 0; i < fields.length; i += 1) {
     label.setAttribute('for', field, name);
 
     const input = document.createElement('input');
-    document.write("&#60 br /&#62");
-    input.setAttribute('id', field.name);
-
-
-    //const space = document.write('<br/>');
-    //document.write("&#60 br /&#62");     
-
+        input.setAttribute('id', field.name);
+    
     form.appendChild(label);    
-    form.appendChild(input);
-    //document.write("&#60 br /&#62");
-    //form.appendChild(space);     
+    form.appendChild(input);    
 }
 
 const submitButton = document.createElement('button');
