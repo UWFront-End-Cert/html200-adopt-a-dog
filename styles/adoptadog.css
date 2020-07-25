@@ -118,7 +118,6 @@ header nav li a{
 
 .index-box-text-p{
   font-family: 'Open Sans', sans-serif;
-  overflow: auto;
 }
 
 .dogs-container{
@@ -186,8 +185,33 @@ div div h3{
 }
 
 /*blog style*/
+.blog-container{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 1em;
+  margin-left: 5em;
+  margin-right: 1em;
+}
 
+.blog-img{
+  margin-bottom: 3em;
+}
 
+.blog-textbox{
+  min-height: 300px;
+  min-width: 200px;
+  max-width: 800px;
+  margin-bottom: 3em;
+}
+
+.blog-text{
+  padding-left: 0.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
 
 /*footer style*/
 footer{
