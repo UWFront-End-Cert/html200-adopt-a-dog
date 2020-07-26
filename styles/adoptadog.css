@@ -223,29 +223,81 @@ div div h3{
   border: black solid 2px;
 }
 
-input, select{
+label{
+  margin: 1em;
+}
+
+input[type=text], input[type=email], select, textarea{
+  width: 60%;
   font-family: inherit;
   font-size: 100%;
   box-sizing: border-box;
   display: block;
-  margin: 1rem;
-  width: 50%;
+  padding: 12px;
+  border: 2px solid #E5E4E5;
+  resize: vertical;
+  margin-top: 5px;
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+
+.checkout-dogsselect-container{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em;
+  max-width: 60%;
+}
+
+.dog-checkout-box{
+  margin: 1em;
+}
+
+.checkout-dog-img{
+  max-width: 60px;
+}
+
+.checkout-h2{
+  font-size: 18px;
+}
+
+.checkout-cost{
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+.submit-button{
+  padding: 1em;
 }
 
 input[type=submit]{
-  min-width: 40%;
-  height: 2em;
+  padding: 15px 80px;
   color: white;
   background-color: #81B741;
-  font-family: 'Lato', sans-serif, bold;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
 }
 
 fieldset{
-  border:none;
+  border: none;
+  margin-bottom: 2em;
 }
 
-fieldset input{
+fieldset label{
   display: inline;
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+.total-cost{
+  padding: 1em;
+  font-family: 'Lato', sans-serif;
+  color: black;
 }
 
 /*footer style*/
