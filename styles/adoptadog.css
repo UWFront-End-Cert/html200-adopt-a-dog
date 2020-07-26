@@ -220,7 +220,6 @@ div div h3{
   margin-left: 5em;
   min-width: 50%;
   color: #0D3C5F;
-  border: black solid 2px;
 }
 
 label{
@@ -239,6 +238,7 @@ input[type=text], input[type=email], select, textarea{
   margin-top: 5px;
   margin-left: 1em;
   margin-bottom: 2em;
+  clear: none;
 }
 
 .checkout-dogsselect-container{
@@ -286,12 +286,14 @@ input[type=submit]{
 fieldset{
   border: none;
   margin-bottom: 2em;
+  clear: none;
 }
 
 fieldset label{
   display: inline;
   font-family: 'Lato', sans-serif;
   color: black;
+  clear: none;
 }
 
 .total-cost{
