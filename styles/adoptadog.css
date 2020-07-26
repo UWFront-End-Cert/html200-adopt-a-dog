@@ -213,6 +213,41 @@ div div h3{
   font-size: 16px;
 }
 
+/*checkout style*/
+.formstyle{
+  font-family: 'Noto Serif', serif;
+  padding: 0.5em 0em 0.5em 3em;
+  margin-left: 5em;
+  min-width: 50%;
+  color: #0D3C5F;
+  border: black solid 2px;
+}
+
+input, select{
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem;
+  width: 50%;
+}
+
+input[type=submit]{
+  min-width: 40%;
+  height: 2em;
+  color: white;
+  background-color: #81B741;
+  font-family: 'Lato', sans-serif, bold;
+}
+
+fieldset{
+  border:none;
+}
+
+fieldset input{
+  display: inline;
+}
+
 /*footer style*/
 footer{
   margin-top: 50px;
