@@ -1,22 +1,23 @@
+/*RWD WIP*/
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
-html {
+html, body {
+  width: 100%;
+  padding: 0;
   margin: 0;
 }
 
-body {
-  margin: 0;
-}
-/*test*/
+
 header {
-  height: 450px;
+  height: 28rem;
   width: fill;
   color: white;
   background-image: url(images/header-image-banner.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   margin: 0;
 }
 
@@ -25,14 +26,14 @@ header {
   float: right;
   display: grid;
   width: 20rem;
-  top: 70px;
+  top: 5rem;
   font-family: sans-serif;
   font-weight: bolder;
 }
 
 .cartline1 {
   position: relative;
-  left: 40px;
+  left: 2.2rem;
 }
 
 header .cart img{
@@ -50,14 +51,14 @@ header .cart a {
 }
 
 .logo {
-  width: 400px;
+  width: 100%;
 }
 
 header .title {
   height: auto;
   position: absolute;
-  top: 75px;
-  left: 100px;
+  top: 5rem;
+  left: 10rem;
   color: rgba(115, 153, 0, 1);
   line-height: 1rem;
   font-style: italic;
@@ -69,16 +70,16 @@ h1 {
 
 .topnav {
   background-color: rgba(0, 0, 0, .1);
-  height: 80px;
+  height: 5rem;
   width: 100%;
-  margin-top: 0px;
+  margin-top: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .topnav h2 {
-  margin-left: 8em;
+  margin-left: 12rem;
   margin-top: 1em;
 }
 
@@ -92,18 +93,18 @@ h1 {
 }
 
 .intro {
-  margin: 35px 25px 50px 200px;
+  margin: 2rem 2rem 3rem 12rem;
 }
 
 .post {
-  margin: 0 0 75px;
+  margin: 0 0 5rem;
 }
 
 article div {
   display: inline-block;
   position: absolute;
   width: 40%;
-  margin: 0 50px;
+  margin: 0 3rem;
   font-family: sans-serif;
   font-weight: lighter;
   line-height: 1.5rem;
@@ -118,7 +119,7 @@ h3 {
 }
 
 .headline {
-  margin: 50px 25px 25px 200px;
+  margin: 3rem 2rem 2rem 12rem;
   color: rgba(0, 60, 100, 1);
 }
 
@@ -130,14 +131,14 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 200px 0;
+  margin: 0 10rem 0;
 }
 
 .dog-card {
   border: solid 2px rgba(128, 128, 128, .25);
-  width: 174px;
+  width: 10.9rem;
   border-top: none;
-  margin: 0 40px 40px 0;
+  margin: 0 2rem 2rem 0;
 }
 
 .dog-card img {
@@ -146,7 +147,7 @@ h3 {
 }
 
 .dog-card img ~ * {
-  margin: 5px 10px 10px 10px;
+  margin: .5rem .75rem .75rem .75rem;
 }
 
 .current-dogs-container p {
@@ -175,7 +176,7 @@ h5 {
 h5 ~ span {
   margin: 0;
   position: relative;
-  right: 15px;
+  right: 1rem;
   font-family: sans-serif;
   font-size: .75rem;
   color: black;
@@ -193,7 +194,7 @@ h5 ~ span {
 }
 
 .dog-card div:last-child {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .see-more {
@@ -216,7 +217,7 @@ h5 ~ span {
 }
 
 form {
-  margin: 25px 50% 25px 200px;
+  margin: 3rem 2rem 2rem 12rem;
   line-height: 1.5rem;
   width: 80%;
 }
@@ -259,24 +260,24 @@ input {
 
 .state label {
   position: relative;
-  bottom: 28px;
-  left: 15px;
+  bottom: 1.7rem;
+  left: 1.7rem;
 }
 
 #custmrState {
   position: relative;
-  right: 30px;
+  right: 1.2rem;
 }
 
 .zip label {
   position: relative;
-  bottom: 28px;
+  bottom: 1.7rem;
 }
 
 .zip input{
   display: inline;
   position: relative;
-  right: 80px;
+  right: 5rem;
 }
 
 .line-6 {
@@ -335,8 +336,9 @@ footer {
   font-size: .8rem;
 }
 
-footer img {
+#footer-logo {
   margin: 1rem;
+  width: 30%;
 }
 
 footer p {
