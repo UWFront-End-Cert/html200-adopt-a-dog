@@ -66,6 +66,18 @@ nav {
         padding: 15px;
     }
 
+.preview-border {
+    outline: 5px solid orange;
+}
+
+.introPic-border {
+    outline: 5px solid green;
+}
+
+.img-border {
+    outline: 5px solid blue;
+}
+
 @media only screen and (max-width: 576px) {
     .flex {
         display: inline;

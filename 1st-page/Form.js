@@ -1,33 +1,34 @@
+//The comment code is to do all form via js
 const fields = [
-    {
-        name: 'full-name',
-        label: 'Full Name:'
-    },  
+//    {
+//        name: 'full-name',
+//        label: 'Full Name:'
+//    },
 
-    {
-        name: 'email',
-        label: 'Email Address:'
-    },
+//    {
+//        name: 'email',
+//        label: 'Email Address:'
+//    },
 
-    {
-        name: 'address',
-        label: 'Street Address:'
-    },
+//    {
+//        name: 'address',
+//        label: 'Street Address:'
+//    },
 
-    {
-        name: 'city',
-        label: 'City:'
-    },
+//    {
+//        name: 'city',
+//        label: 'City:'
+//    },
 
-    {
-        name: 'state',
-        label: 'State:'
-    },
+//    {
+//        name: 'state',
+//        label: 'State:'
+//    },
 
-    {
-        name: 'zipcode',
-        label: 'Zipcode:'
-    }
+//    {
+//        name: 'zipcode',
+//        label: 'Zipcode:'
+//    }
 ];
 
 const form = document.createElement('form');
@@ -41,10 +42,14 @@ for (let i = 0; i < fields.length; i += 1) {
     label.setAttribute('for', field, name);
 
     const input = document.createElement('input');
-        input.setAttribute('id', field.name);
+    input.setAttribute('id', field.name);
+
+    //const lineBreak = document.createElement('br')
     
     form.appendChild(label);    
-    form.appendChild(input);    
+    form.appendChild(input);
+
+    //form.appendChild(lineBreak)
 }
 
 const submitButton = document.createElement('button');
@@ -59,3 +64,8 @@ form.addEventListener('submit', function (event) {
 });
 
 console.log('input');
+
+$('.buton').click(function () {
+    alert("Thank You!");
+});
+
