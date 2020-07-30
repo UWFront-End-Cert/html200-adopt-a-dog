@@ -149,6 +149,12 @@ div div h3{
 .dogs-cost-text{
   padding-left: 0.5em;
   font-size: 16px;
+  float: left;
+}
+
+.cost{
+  float: right;
+  padding-right: 1em;
 }
 
 .dogs-text{
@@ -169,6 +175,7 @@ div div h3{
   border-radius: 2px;
   background-color: #81B741;
   display: inline-block;
+  border: none;
 }
 
 .see-dogs-container{
