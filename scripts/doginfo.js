@@ -1,5 +1,5 @@
 function dogInfo(name,breed,fee){
-  let clicked_dog = "This dog is named" + " " + name + "." + " " + name + " is a " + breed + "." + " " + name + " costs " + fee + "."
+  let clicked_dog = "This dog is named" + " " + name + "." + " " + name + " is a " + breed + "." + " " + name + " costs " + fee + ".";
   alert(clicked_dog);
 }
 
@@ -10,6 +10,6 @@ function dogAdopt(cost){
   for(let i = 0; i < total_items.length;i++){
     total += Number(total_items[i]);
   }
-  total_alert = 'Your total cost of adoption is ' + '$' + total + '.';
+  var total_alert = 'Your total cost of adoption is ' + '$' + total + '.';
   alert(total_alert);
 }
