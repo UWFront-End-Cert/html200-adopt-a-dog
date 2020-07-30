@@ -1,11 +1,61 @@
-/* general resizing issues, come back to in later lessons*/
+/* less than ipad width you will not see a sidebar */
+@media screen and (max-width: 767px) { 
+  aside {
+    display: none;
+  }
+
+  article, .doggies, .doggie-button{
+    grid-column: 2/ span 4;
+  }
+}
+
+/*mobile width*/
+@media screen and (max-width: 426px) {
+  .doggie-cel {
+    width: 100%;
+    min-width: 20rem;
+    /* color: red; */
+  }
+
+  article, .doggies, .doggie-button{
+    grid-column: 1/ span 4;
+  }
+
+}
+
+/*tablet width*/
+@media screen and (max-width: 769px) and (min-width: 426px) {
+  .doggie-cel {
+    width: 47%;
+    min-width:5rem;
+    /* color:blue; */
+  }
+
+  article, .doggies, .doggie-button{
+    grid-column: 1/ span 4;
+  }
+
+}
+
+/*laptop+ width*/
+@media screen and (min-width: 768px) {
+  article, .doggies, .doggie-button{
+    grid-column: 2/3;
+  }
+  
+  .doggie-cel {
+    width:32%;
+    min-width: 10rem;
+  }
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   display: grid;
-  grid-template-columns: 15% 70% 15%;
+  grid-template-columns: 15% 50% 20% 15%;
 }
 
 header {
@@ -13,7 +63,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 4;
   margin-bottom: 2rem;
 }
 
@@ -30,7 +80,7 @@ header nav p, header nav a {
   font-weight: bold;
 }
 
-header nav p, header nav a, h4, h2, .doggie-button, h3, #cost-label, label{
+header nav p, header nav a, h4, h2, .doggie-button, h3, #cost-label, label, #first-time-label, #adopted-label{
   color: #083B5F;
 }
 
@@ -59,12 +109,11 @@ header nav a:hover {
 }
 
 .checkout {
-  
   display: grid;
   grid-template-columns: auto auto;
   position: absolute;
   top: 4rem;
-  right: 12rem;
+  right: 7%;
   color: white;
   font-weight: bold;
 }
@@ -74,7 +123,7 @@ header nav a:hover {
 }
 
 .checkout p {
-  font-size: 1.2rem;
+  font-size: 2vh;
   float: right;
 }
 
@@ -107,13 +156,12 @@ header nav a:hover {
 }
 
 .section-header {
-  grid-column: 2/3;
+  grid-column: 2 / 4;
   font-size: 3rem;
 }
 
 article {
   margin-bottom: 3rem;
-  grid-column: 2 / 3;
 }
 
 article p {
@@ -121,35 +169,73 @@ article p {
 }
 
 article img {
-  float:left;
+  float: left;
   padding-right: 5rem;
   width:25%;
   height:auto;
-}
-
-.article-image {
   min-width: 20rem;
   padding: 0 3rem 1rem 0;
 }
 
-article h2 {
-  font-size: 2rem;
+.index-article-image {
+  float:none;
+  width: 45%;
+}
+
+article h2, aside h2 {
+  font-size: max(2vw,1.5rem);
+  
 }
 
 article h3 {
-  font-size: 2rem;
+  font-size: min(2vw,2rem);
+}
+
+aside {
+  grid-column: 3/4;
+  grid-row: 2/ span 3;
+  margin-left: 3rem;
+}
+
+.blog-side-div {
+  margin-bottom: 3rem;
+}
+
+.blog-side-div h3 {
+  font-size: 1.5rem;
+}
+
+aside h2 {
+  white-space: nowrap;
+}
+
+.blog-side-div img {
+  margin-bottom: -.3rem;
+  max-width: 100%;
+  min-width: 10rem;
+  height:auto;
+}
+
+.blog-side-div a {
+  color: rgb(96, 172, 202);
+  text-decoration: none;
 }
 
 .blog {
+  grid-column: 2 / 4;
   margin-top: 3rem;
 }
 
+
 .doggies {
-  grid-column: 2 / 3;
   display:flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.doggie-page {
+  grid-column: 2/4;
 }
 
 .doggie-cel img  {
@@ -159,12 +245,15 @@ article h3 {
 
 .doggie-cel {
   margin-bottom:5rem;
-  width:20%;
   border: solid;
   border-radius: 2px;
   border-color: #EAEAEA;
-  min-width: 20rem;
 } 
+
+.doggie-page .doggie-cel {
+  width: 20%;
+  min-width: 20rem;
+}
 
 .doggie-cel h4 {
   font-size: 1.5rem;
@@ -180,7 +269,6 @@ article h3 {
 
 .doggie-button {
   white-space: nowrap; 
-  grid-column: 2/3;
   position: relative;
   border: none;
   border-radius:.2rem;
@@ -197,7 +285,7 @@ article h3 {
 
 footer {
   display: grid;
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 4;
   background-color: #083B5F;
   color: white;
   justify-items: center;
@@ -225,8 +313,11 @@ footer img {
 
 /* form styling */
 
+.checkout-form {
+  grid-column: 2/ span 4;
+}
 
-label {
+label, #first-time-label, #adopted-label, #cost-label {
   font-size: 1.7rem;
 }
 
@@ -307,8 +398,8 @@ input[type=radio] {
 }
 
 #adopted-doggies img {
-  max-width:25%;
-  margin-right: -4rem;
+  min-width:25%;
+  margin-right: -2.3rem;
   float: left;
 }
 
@@ -336,6 +427,12 @@ input[type=radio] {
 
 #cost-number {
   font-size: 1.6rem;
+  font-weight: normal;
+}
+
+#cost-number, .indv-cost {
+  color: rgb(71, 71, 71);
+
 }
 
 form .green-button {
