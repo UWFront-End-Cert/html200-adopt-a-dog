@@ -1,0 +1,23 @@
+Lesson 10 Assignment2
+
+User Persona Description
+	Based on a quick research in three sites our user persona description for our website is targeting the millenial generation today.
+	Some research data shows that 93% of millenials own smartphones and 70% of millenials owns a laptop. According to reasearch millenials
+	are more likely and the first generation to own a laptop.
+
+Testing Details
+	Tested the pages on a laptop in three different browsers (Google Chrome, Firefox and Microsoft Edge) the pages were consistent in all 
+	three. Also tested the page on an android device and it was consistent with the browsers on a laptop when reducing the sizes. A lot 
+	of improvements	can be done on the styling for the smarth phone, for users to have a better experience when visiting the site. Also used 
+	chrome developer tools.     
+	
+	Through out the course project learned that using css, js and jquery have many advantages for designing webpages and things can be done in many
+	different ways. Also even though sometimes things seem to be simple it takes a lot of effort to get them work properly.  
+
+
+References:
+	https://www.kasasa.com/articles/generations/gen-x-gen-y-gen-z
+	https://www.pewresearch.org/fact-tank/2019/01/17/where-millennials-end-and-generation-z-begins/
+	https://www.pewresearch.org/fact-tank/2019/09/09/us-generations-technology-use/
+	https://en.wikipedia.org/wiki/Millennials#:~:text=Nielsen%20Media%20Research%20has%20defined,%2C%20but%20sometimes%201980%E2%80%932000.
+	https://www.herosmyth.com/article/75-eye-opening-statistics-how-each-generation-uses-technology#devicepref
