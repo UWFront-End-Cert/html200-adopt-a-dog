@@ -11,7 +11,5 @@ function dogAdopt(cost){
     total += Number(total_items[i]);
   }
   var total_alert = 'Your total cost of adoption is ' + '$' + total + '.';
-  console.log(total);
-  alert(total)
   alert(total_alert);
 }
