@@ -252,7 +252,11 @@ input {
 }
 
 .line-4 div {
-  display: inline;
+  display: inline-block;
+}
+
+.line-4 .city {
+  margin-bottom: 5%;
 }
 
 .line-5 label {
@@ -278,13 +282,18 @@ input {
   right: 1.2rem;
 }
 
+.zip {
+  display: inline-block;
+  margin-top: 2%;
+}
+
 .zip label {
   position: relative;
   bottom: 1.7rem;
 }
 
 .zip input{
-  display: inline;
+  display: inline-block;
   position: relative;
   right: 5rem;
 }
