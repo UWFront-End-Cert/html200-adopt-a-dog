@@ -55,7 +55,7 @@ header .cart a {
 }
 
 header .title {
-  height: auto;
+  height: 10rem;
   position: relative;
   top: 5rem;
   left: 10rem;
@@ -127,7 +127,7 @@ h3 {
 }
 
 .headline {
-  margin: 10%;
+  margin: 2rem 10% 2rem;
   color: rgba(0, 60, 100, 1);
 }
 
@@ -226,7 +226,7 @@ h5 ~ span {
 }
 
 form {
-  margin: 10%;
+  margin: 2rem 10% 2rem;
   line-height: 1.5rem;
   width: 80%;
 }
