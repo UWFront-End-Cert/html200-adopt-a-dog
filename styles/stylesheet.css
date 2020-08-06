@@ -37,12 +37,12 @@
 
 }
 
-/*laptop+ width*/
+/*laptop abd up width*/
 @media screen and (min-width: 768px) {
   article, .doggies, .doggie-button{
     grid-column: 2/3;
   }
-  
+
   .doggie-cel {
     width:32%;
     min-width: 10rem;
@@ -59,36 +59,42 @@ body {
 }
 
 header {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(121,92,9,1) 43%, rgba(255,132,0,1) 100%);
   background-image: url("../images/header-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   grid-column: 1 / span 4;
-  margin-bottom: 2rem;
+  width: 100%;
+  padding-bottom: 5rem;
 }
 
-header nav{
-  margin-top: 12rem;
+#nav-header{
+  grid-column: 1 / span 4;
+  grid-row: 2;
   padding: 2rem 0 2rem 14.4%;
   font-size: 1.5rem;
   align-self: center;
+  margin-bottom: 2rem;
+  white-space: nowrap;
+
 }
 
-header nav p, header nav a {
+#nav-header p, #nav-header a {
   padding: 0 1rem;
   text-decoration: none;
   font-weight: bold;
 }
 
-header nav p, header nav a, h4, h2, .doggie-button, h3, #cost-label, label, #first-time-label, #adopted-label{
+#nav-header p, #nav-header a, h4, h2, .doggie-button, h3, #cost-label, label, #first-time-label, #adopted-label{
   color: #083B5F;
 }
 
-header nav, .doggie-button {
+#nav-header, .doggie-button {
   background-color: #EBEBEB;
 }
 
-header nav a:hover {
+#nav-header a:hover {
   text-decoration: underline;
 }
 
@@ -96,7 +102,8 @@ header nav a:hover {
   vertical-align: top;
   display: inline-block;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
   padding: 3rem 0 0 10%;
   font-size: min(3.5vw, 40px);
   white-space: nowrap;
@@ -108,12 +115,13 @@ header nav a:hover {
   display: block;
 }
 
+
 .checkout {
   display: grid;
   grid-template-columns: auto auto;
   position: absolute;
-  top: 4rem;
-  right: 7%;
+  top: 5%;
+  right: 5%;
   color: white;
   font-weight: bold;
 }
@@ -131,7 +139,7 @@ header nav a:hover {
   float: left;
   width: 2.5rem;
   padding-left: 2rem;
-  padding-right: .9rem;
+  padding-right: 1rem;
 }
 
 .green-button {
@@ -147,7 +155,6 @@ header nav a:hover {
   word-wrap: break-word;
   font-size: 16px;
   font-weight: bold;
-  max-width:100%;
 }
 
 .green-button:hover {
@@ -193,7 +200,7 @@ article h3 {
 
 aside {
   grid-column: 3/4;
-  grid-row: 2/ span 3;
+  grid-row: 3/ span 4;
   margin-left: 3rem;
 }
 
