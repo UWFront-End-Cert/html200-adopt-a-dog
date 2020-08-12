@@ -10,15 +10,18 @@ let poppy = ['Poppy', 'terrier', '$123.45']
 let poppyString = String(poppy);
 */
 // Arrays by dog info type
-
+let dogString;
 let dogName = ['Murphy', 'Poppy', 'Jack']
 let dogBreed = ['hound', 'terrier', 'beagle']
-let dogPrice = [100, 500, 300]
+let dogPrice = [100, 200, 300]
 
 function whichDog(n, b, p) {
-  console.log(dogName[n], dogBreed[b],
-  dogPrice[p]);
+  let dogString = dogName[n] + ', ' + dogBreed[b]  + ', $' + dogPrice[p];
+  //console.log(dogString);
+  alert(dogString);
+  //return dogString; <-- do i need this line?
 }
+
 
 // Cost Calculator
 
