@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/lesson4.js"></script>
+    <script src="js/lesson6.js"></script>
+    <script>
+
+</script>
     <title>ADOPTADOG</title>
 </head>
 
 <body>
     <header>
-        <img class="header-img" src="images/header-image.jpg" alt="header img">
-        <div class="header-left">
-           <img class="header-logo" src="images/adoptadog-logo.svg" alt="adoptadog logo">
+        <div class="logo-container">
+            <img src="images/adoptadog-logo.svg" alt="adoptadog logo">
             <h2>Seattle's premiere dog adoption agency</h2>
         </div>
-        <div class="header-right">
+        <div class="cart-container">
             <div class="cart">
-               <img class="cart-img" src="images/cart-icon.svg" alt="cart icon">
-            <h3 class="header-price">$0</h3> 
+                <img class="cart-img" src="images/cart-icon.svg" alt="cart icon">
+                <h3 class="header-price" style="color: white">$0</h3> 
             </div>
             <div class="top-checkout">
                 <a href="checkout.html" class="btn">Checkout</a>
             </div>
         </div>
     </header>
-               
+        
      <nav>
          <ul class="menu"> 
              <li><a class="menu-lists" href="#a">Home</a></li>
@@ -37,113 +41,161 @@
          </ul>
      </nav>  
      
-    <main>
-        <section class="top">
-            <img class="top-img" src="images/home-intro.jpg" alt="man hugs dogs">
-            <div class="top-text">
-                <h2 class="top-title">Adopt A Dog</h2>
-                <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate </p>
-            </div>
-            
-        </section>
-        <section class="btm">
-            <div class="item">
-                <div class="item-lists">
-                    <img class="list-pics" onclick = "alertDogInfo('Murphy', 'Cocker Spaniel Mix', '$123.45')" src="images/murphy-card.jpg" alt="murphy">
-                    <div class="btm-text-area">
-                        <h3 class="dog-name">Murphy</h3>
-                        <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
-                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                    </div>
-                    <a href="#"><div class="adopt-btn">Adopt</div></a>
+    <div class = "main">
+        <div class="leftcolumn">
+            <section class="top">
+                <img class="top-img" src="images/home-intro.jpg" alt="man hugs dogs">
+                <div class="top-text">
+                    <h2 class="top-title">Adopt A Dog</h2>
+                    <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate </p>
                 </div>
                 
-                <div class="item-lists">
-                    <img class="list-pics" onclick = "alertDogInfo('Poppy', 'Labrador Retriever', '$123.45')" src="images/poppy-card.jpg" alt="murphy">
-                    <div class="btm-text-area">
-                        <h3 class="dog-name">Poppy</h3>
-                        <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
-                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            </section>
+            <div class="item-page">
+                <section class="btm">
+                    <div class="item">
+                        <div class="item-lists">
+                            <img class="list-pics" onclick = "alertDogInfo('Murphy', 'Cocker Spaniel Mix', '$123.45')" src="images/murphy-card.jpg" alt="murphy">
+                            <div class="btm-text-area">
+                                <h3 class="dog-name">Murphy</h3>
+                                <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                            </div>
+                            <a href="#"><div class="adopt-btn">Adopt</div></a>
+                        </div>
                         
-                    </div>
-                    <a href="#"><div class="adopt-btn">Adopt</div></a>
-                    
-                </div>
-                <div class="item-lists">
-                    <img class="list-pics" onclick = "alertDogInfo('Jack', 'German Shepherd', '$123.45')" src="images/jack-card.jpg" alt="murphy">
-                    <div class="btm-text-area">
-                        <h3 class="dog-name">Jack</h3>
-                        <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
-                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                        <div class="item-lists">
+                            <img class="list-pics" onclick = "alertDogInfo('Poppy', 'Labrador Retriever', '$123.45')" src="images/poppy-card.jpg" alt="murphy">
+                            <div class="btm-text-area">
+                                <h3 class="dog-name">Poppy</h3>
+                                <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                                
+                            </div>
+                            <a href="#"><div class="adopt-btn">Adopt</div></a>
+                            
+                        </div>
+                        <div class="item-lists">
+                            <img class="list-pics" onclick = "alertDogInfo('Jack', 'German Shepherd', '$123.45')" src="images/jack-card.jpg" alt="murphy">
+                            <div class="btm-text-area">
+                                <h3 class="dog-name">Jack</h3>
+                                <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                                
+                            </div>
+                            <a href="#"><div class="adopt-btn">Adopt</div></a>
+                            
+                        </div>
+                        <div class="item-lists">
+                            <img class="list-pics" onclick = "alertDogInfo('Duffy', 'Golden Retriever', '$123.45')" src="images/duffy-card.jpg" alt="murphy">
+                            <div class="btm-text-area">
+                                <h3 class="dog-name">Duffy</h3>
+                                <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                                
+                            </div>
+                            <a href="#"><div class="adopt-btn">Adopt</div></a>
+                            
+                        </div>
+                        <div class="item-lists">
+                            <img class="list-pics" onclick = "alertDogInfo('Lucas', 'Shih Tzu', '$123.45')" src="images/lucas-card.jpg" alt="murphy">
+                            <div class="btm-text-area">
+                                <h3 class="dog-name">Lucas</h3>
+                                <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                                
+                            </div>
+                            <a href="#"><div class="adopt-btn">Adopt</div></a>
+                            
+                        </div>
+                        <div class="item-lists">
+                            <img class="list-pics" onclick = "alertDogInfo('Jake', 'Siberian Husky', '$123.45')" src="images/jake-card.jpg" alt="murphy">
+                            <div class="btm-text-area">
+                                <h3 class="dog-name">Jake</h3>
+                                <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                                
+                            </div>
+                            <a href="#"><div class="adopt-btn">Adopt</div></a>
+                            
+                        </div>
+                        <div class="item-lists">
+                            <img class="list-pics" onclick = "alertDogInfo('Angus', 'Rottweiler', '$123.45')" src="images/angus-card.jpg" alt="murphy">
+                            <div class="btm-text-area">
+                                <h3 class="dog-name">Angus</h3>
+                                <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                                
+                            </div>
+                            <a href="#"><div class="adopt-btn">Adopt</div></a>
+                            
+                        </div>
+                        <div class="item-lists">
+                            <img class="list-pics" onclick = "alertDogInfo('Violet', 'French Bulldog', '$123.45')" src="images/violet-card.jpg" alt="murphy">
+                            <div class="btm-text-area">
+                                <h3 class="dog-name">Violet</h3>
+                                <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                                
+                            </div>
+                            <a href="#"><div class="adopt-btn">Adopt</div></a>
+                            
+                        </div>
+                        <div class="item-lists">
+                            <img class="list-pics" onclick = "alertDogInfo('Violet', 'Siberian Husky', '$123.45')" src="images/stella-card.jpg" alt="murphy">
+                            <div class="btm-text-area">
+                            <h3 class="dog-name">Stella</h3>
+                            <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
+                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
                         
-                    </div>
-                    <a href="#"><div class="adopt-btn">Adopt</div></a>
+                            </div>
+                            <a href="#"><div class="adopt-btn">Adopt</div></a>
                     
-                </div>
-                <div class="item-lists">
-                    <img class="list-pics" onclick = "alertDogInfo('Duffy', 'Golden Retriever', '$123.45')"  src="images/duffy-card.jpg" alt="murphy">
-                    <div class="btm-text-area">
-                        <h3 class="dog-name">Duffy</h3>
-                        <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
-                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                        
+                        </div>
+                       
                     </div>
-                    <a href="#"><div class="adopt-btn">Adopt</div></a>
-                    
-                </div>
-                <div class="item-lists">
-                    <img class="list-pics" onclick = "alertDogInfo('Lucas', 'Shih Tzu', '$123.45')" src="images/lucas-card.jpg" alt="murphy">
-                    <div class="btm-text-area">
-                        <h3 class="dog-name">Lucas</h3>
-                        <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
-                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                        
-                    </div>
-                    <a href="#"><div class="adopt-btn">Adopt</div></a>
-                    
-                </div>
-                <div class="item-lists">
-                    <img class="list-pics" onclick = "alertDogInfo('Jake', 'Siberian Husky', '$123.45')"  src="images/jake-card.jpg" alt="murphy">
-                    <div class="btm-text-area">
-                        <h3 class="dog-name">Jake</h3>
-                        <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
-                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                        
-                    </div>
-                    <a href="#"><div class="adopt-btn">Adopt</div></a>
-                    
-                </div>
-                <div class="item-lists">
-                    <img class="list-pics" onclick = "alertDogInfo('Angus', 'Rottweiler', '$123.45')" src="images/angus-card.jpg" alt="murphy">
-                    <div class="btm-text-area">
-                        <h3 class="dog-name">Angus</h3>
-                        <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
-                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                        
-                    </div>
-                    <a href="#"><div class="adopt-btn">Adopt</div></a>
-                    
-                </div>
-                <div class="item-lists">
-                    <img class="list-pics" onclick = "alertDogInfo('Violet', 'French Bulldog', '$123.45')" src="images/violet-card.jpg" alt="murphy">
-                    <div class="btm-text-area">
-                        <h3 class="dog-name">Violet</h3>
-                        <p class="cost-to-adopt">Cost to Adopt: <span class="adopt-price">$123.45</span></p>
-                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                        
-                    </div>
-                    <a href="#"><div class="adopt-btn">Adopt</div></a>
-                    
-                </div>
-               
+                
+                </section>
             </div>
-        
-        </section>
-        
-        <a href=""><div class="see-more-dogs"><h3>See More Dogs</h3></div></a>
-        
-    </main>
+            <a href="#"><div class="see-more-dogs"><h3>See More Dogs</h3></div></a>    
+        </div>
             
+       <div class="rightcolumn">
+           <div class="blog-page-preview"> 
+                <h1 class="blog-page-topic">Adoptadog Blog</h1>
+                <section class="blog-page-contents">
+                   <div class="blog-page-contents-lists">
+                       <div class="blog-page-contents-img"><img src="images/blog-1.jpg" alt="" style="width: 100%;"></div>
+                       <div class="blog-page-contents-letter">
+                           <h3 class="blog-page-contents-topic">Traveling With Your Dog</h3>
+                           <p class="showmore">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull<span class="dots">...</span><span class="more"> oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.
+                           Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</span><a>Show More >></a>
+                       </div>
+                       <!-- <button onclick="readMore()" id="myBtn">Read more</button> -->
+                   </div>s
+                   <div class="blog-page-contents-lists">
+                       <div class="blog-page-contents-img"><img src="images/blog-2.jpg" alt=""></div>
+                       <div class="blog-page-contents-letter">
+                           <h3 class="blog-page-contents-topic">How To Walk Multiple Dogs</h3>
+                           <p class="showmore">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es<span class="dots">...</span><span class="more">quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat. 
+                           Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</span><a>Show More >></a></p>
+                       </div>
+                          
+                   </div>
+                   <div class="blog-page-contents-lists">
+                       <div class="blog-page-contents-img"><img src="images/blog-3.jpg" alt=""></div>
+                       <div class="blog-page-contents-letter">
+                           <h3 class="blog-page-contents-topic">Teach Your Dog To Fetch</h3>
+                           <p class="showmore"> Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis <span class="dots">...</span> <span class="more">ipietus explam sus am aut amet ant fugiatum, utem non reptat.Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</span><a>Show More >></a></p>
+                       </div>
+                      
+                   </div>
+                    
+                </section>
+            </div>        
+        </div>
+
+    </div>           
     <footer>
        <div class="footer">
            <div class="footer-logo"><img src="images/adoptadog-logo.svg" alt="">

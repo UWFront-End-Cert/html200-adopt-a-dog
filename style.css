@@ -1,13 +1,18 @@
 @charset "UTF-8";
 
 html {
-    font-size: 62.5%;
+    font-size: 65%;
 }
 
 body{
+    font-family: Arial;
+    padding: 0px;
     font-size: 14px; font-size: 1.4rem;
+    margin: 0px;
 }
-
+* {
+  box-sizing: border-box;
+}
 h1{
     font-size: 24px; font-size: 2.4rem;
 }
@@ -22,7 +27,10 @@ a:hover {text-decoration: none; color: white;}
     
 h2, h3 {
     font-family: 'Playfair Display', serif;
-} 
+}
+
+  #more {display: none;}
+
  .header-left {
     float: left;
     position: absolute;
@@ -63,7 +71,7 @@ header {
 .menu {
     display: flex;
     list-style: none;
-    margin-left: 10rem;
+    margin-left: 6rem;
     padding: 0;
     font-family: 'Playfair Display', serif;
     
@@ -71,7 +79,7 @@ header {
 }
 
 .menu li {
-    padding: 0 3rem;
+    padding: 0 1rem;
     font-weight: 900;
     color: #164668;
 }
@@ -94,6 +102,11 @@ ul {
     
 }
 
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .header-img {
     width: 100%;
@@ -116,18 +129,46 @@ H2 {
 
 
 img.top-img {
-    margin-left: 13rem;
-    margin-top: 3rem;
-    width: 30rem;
-    height: 30rem;
+    width: 100%;
+    height: auto;
 }
 
+.showmore {
+  font-size: 1.1em;
+  margin-top: 1.5em;
+}
 
+.showmore .more, .showmore.show .dots {
+  display: none
+}
 
+.showmore.show .more {
+  display: inline
+}
+
+.showmore a {
+  cursor: pointer;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  color: darkcyan;
+}
+.showmore a:visited {
+  color: green;
+}
+
+/* mouse over link */
+.showmore a:hover {
+  color: red;
+}
+
+/* selected link */
+.showmore a:active {
+  color:    #8A2BE2;
+} 
 .top-text {
     margin-top: 3rem;
-    margin-left: 3rem;
-    margin-right: 13rem;
 }
 
 .top-title {
@@ -135,20 +176,56 @@ img.top-img {
     font-weight: 700;
 }
 
+
 .item-lists {
-    width: 20rem;
-    height: 45rem;
+    flex: 23%;
+    /*padding: 20px;*/
     border: 0.1rem solid lightgrey;
-    margin-bottom: 7rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-right: 2rem;
 }
 
+.blog-page-contents-img-inner{
+   float: left;
+}
+
+.leftcolumn {   
+    float: left;
+    width: calc(65% - 13rem);
+    margin-left: 13rem;
+}
+
+
+.rightcolumn {
+    float: left;
+    width: calc(35% - 13rem);
+    padding-left: 6rem;
+    margin-right: 13rem;
+}
+
+@media screen and (max-width: 992px) {
+  .item-lists {
+    flex: 50%;
+  }
+}
+
+.footer-logo, .footer-middle, .footer-copy-rights {
+        margin-left: 15%;
+        width: 70%;
+}
+
+.footer {
+    left: 0px;
+}
 .list-pics {
-    width: 20rem;
-    height: 15rem;
+    width: 100%;
+    height: auto;
 }
 
 .btm-text-area {
-    padding: 1rem;
+    padding: 2rem;
+    text-align: left;
 }
 
 .dog-name {
@@ -168,8 +245,8 @@ img.top-img {
 
 
 .top {
-    display: flex;
-    position: relative;
+   position: relative;
+    margin-top: 5rem;
 }
 
 .btm {
@@ -180,7 +257,6 @@ img.top-img {
 
 .item {
     display: flex;
-    margin: 7rem 13rem 0 13rem;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -200,12 +276,12 @@ img.top-img {
     background-color: #7CAF3F;
     height: 5rem;
     width: 18rem;
-    margin-left: 1rem;
+    margin: 0px auto;
     text-align: center;
     line-height: 5rem;
     color: white;
     font-weight: 700;
-    
+    margin-bottom: 3rem;    
 }
 
 .see-more-dogs {
@@ -215,10 +291,7 @@ img.top-img {
     text-align: center;
     color: #164668;
     line-height: 5rem;
-    margin: 0 42%;
-    
-    
-    
+    margin: 0 42%;   
 }
 
 footer {
@@ -252,6 +325,11 @@ footer {
     
 }
 
+.blog-container{
+    margin-left: 13rem;
+    margin-right: 13rem;
+}
+
 .footer-middle {
     width: 40rem;
 }
@@ -278,36 +356,42 @@ a {
 /*dog page css*/
 
 .dog-page-topic {
-    margin: 5rem 0 0 13rem;
     font-family: 'Playfair Display', serif;
     color: #164668;
     font-weight: 900;
 }
 
 
-
+.dog-page-container{
+    margin-left: 13rem;
+    margin-right: 13rem;
+    text-align: center;
+}
 
 /*Blog page css*/
-
+.blog-page-preview{
+    margin-top:4rem;
+}
 .blog-page-topic {
-    margin-left: 13rem;
     color: #164668;
     font-family: 'Playfair Display', serif;
-    
-    
 }
 
 
-
-
+.blog-page-contents{
+    width: 100%;
+}
 
 .blog-page-contents-lists {
-    display: flex;
-    margin: 7rem 13rem;
+    margin-bottom: 5rem;
 }
 
-.blog-page-contents-letter {
-    margin-left: 5rem;
+.blog-page-contents-letter.blog-inner {
+    margin-bottom: 0rem;
+    margin-top: 5rem;
+    margin-bottom: 20rem;
+    padding-left: 38rem;
+    font-size: 19px;
 }
 
 
@@ -459,4 +543,183 @@ a {
 
 #menu-lists {
     color: #164668;    
+}
+
+
+header
+{
+    display: block; 
+    height: 70vh; 
+    background: url('images/header-image.jpg'); 
+    background-size: cover;
+}
+
+header div.logo-container 
+{
+     float: left; 
+     padding: 10vh 7vw;
+}
+
+header div.logo-container img
+{
+    width: 30vw;
+}
+
+header div.cart-container
+{
+    float: right; 
+    padding: 10vh 5vw;
+}
+
+@media screen and (max-width: 992px) {
+    header
+    {
+        height: 100vh;
+    }
+
+    header > div
+    {
+        float: none;
+        width: 100vw;
+    }
+
+    header div.logo-container
+    {
+        padding: 20vh 10vw 10vh 10vw;
+    }
+
+    header div.logo-container > img
+    {
+
+        width: 80vw;
+    }
+
+    header div.logo-container > h2
+    {
+        text-align: center;
+    }
+
+    header div.cart-container
+    {
+        padding: 10vh 10vw;
+        text-align: center;
+    }
+
+    header div.cart-container > div.cart
+    {
+        display: none;
+    }
+
+    header div.cart-container > div
+    {
+        display: inline-block;
+    }
+
+    .footer {
+        position: absolute;
+        top: 10rem;
+        left: 3%;
+    }
+
+    .footer-middle {
+        width: 50%;
+    }
+
+    .footer-items {
+        margin-right: 1rem;
+        list-style: none;
+    }
+
+    .footer-logo {
+        width: 70%;
+        color: white;
+    }
+    .footer-copy-rights {
+        width: 50%;
+        text-align: center;
+        color: white;
+    }
+    .see-more-dogs {
+        background-color: lightgrey;
+        width: 20rem;
+        height: 5rem;
+        text-align: center;
+        color: #164668;
+        line-height: 5rem;
+        margin: 0px 23%;
+    /* text-align: center; */
+    }
+    .leftcolumn 
+    {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        width: 85%;
+    }
+
+    .dog-page-container {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    /* text-align: center; */
+    }
+    .rightcolumn 
+    {
+        display: none;
+    }
+
+
+.blog-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.blog-page-contents-letter.blog-inner {
+    margin-bottom: 4rem;
+     margin-top: 5rem; 
+    padding-left: 0rem;
+    font-size: 19px;
+   }
+
+/*checkout*/
+.checkout-page-topic {
+    margin-left: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+.checkout-form {
+    margin: 3rem 0 3rem 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: #164668;
+}
+checkout-form-1 > input {
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.row {
+    width: 100%;
+    font-size: 1.5em;
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.dog-adopted-list {
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.checkout-form-1 > input {
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.blog-page-contents-img-inner{
+   float: nones;
+}
+.checkout-page-main {
+    color: #164668;
+        padding: 40px;
 }

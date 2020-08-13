@@ -2,18 +2,6 @@
 window.onload = function(){
 	var picture_elems = document.getElementsByClassName("list-pics");
 
-
-	
-
-	// for(var i = 0; i < picture_elems.length; i++){
-	// 	picture_elems[i].addEventListener('click', function(){
-	// 		var dogName = this.parentElement.getElementsByClassName('dog-name')[0];
-	// 		var dogPrice = this.parentElement.getElementsByClassName('adopt-price')[0];
-			
-	// 		alert( "Dog Name:" + dogName.textContent + "\n" + "Dog Price:" + dogPrice.textContent + "\n" + "breed:breed");			
-	// 	})
-	// }
-
 	var purchase_elems = document.getElementsByClassName("adopt-btn");
 
 	for(var i = 0; i < purchase_elems.length; i++){
@@ -31,6 +19,13 @@ window.onload = function(){
 			alert("Total Price:"+ totalPrice);
 		})
 	}
+	//lesson6
+	document.querySelectorAll(".showmore").forEach(function (p) {
+  		p.querySelector("a").addEventListener("click", function () {
+    		p.classList.toggle("show");
+    		this.textContent = p.classList.contains("show") ? "Show Less" : "Show More";
+  		});
+	});
 }
 
 function alertDogInfo(name, breed, adoptionFee) {
