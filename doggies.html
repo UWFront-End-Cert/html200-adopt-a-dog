@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADOPTADOG</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-    <script src="scripts/script.js"></script>
+    <script src="scripts/main.js"></script>
   </head>
   <body>
     <header>
@@ -26,92 +26,12 @@
     </nav>
 
     <h2 class="section-header">Here are all of our Dogs!</h2>
-    <div class="doggies doggie-page">
-      <div class="doggie-cel">        
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/murphy-card.jpg" alt="Murphy" width="302" height="190"> <!-- don't know the breed of the dogs so i'm just leaving it as DOG for now -->
-        <h4>Murphy</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-      <div class="doggie-cel">        
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/poppy-card.jpg" alt="Poppy" width="302" height="190">
-        <h4>Poppy</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-      <div class="doggie-cel">        
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/jack-card.jpg" alt="Jack" width="302" height="190">
-        <h4>Jack</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-      <div class="doggie-cel">        
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/duffy-card.jpg" alt="Duffy" width="302" height="190">
-        <h4>Duffy</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-      <div class="doggie-cel">        
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/lucas-card.jpg" alt="Lucas" width="302" height="190">
-        <h4>Lucas</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-      <div class="doggie-cel">        
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/jake-card.jpg" alt="Jake" width="302" height="190">
-        <h4>Jake</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-      <div class="doggie-cel">        
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/angus-card.jpg" alt="Angus" width="302" height="190">
-        <h4>Angus</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-      <div class="doggie-cel">        
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/violet-card.jpg" alt="Violet" width="302" height="190">
-        <h4>Violet</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-      <div class="doggie-cel">        
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/piper-card.jpg" alt="Piper" width="302" height="190">
-        <h4>Piper</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-      <div class="doggie-cel">        
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/maximus-card.jpg" alt="Maximus" width="302" height="190">
-        <h4>Maximus</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-      <div class="doggie-cel">        
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/luna-card.jpg" alt="Luna" width="302" height="190">
-        <h4>Luna</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-      <div class="doggie-cel">         
-        <img onclick="dogPictureInfo(this.getAttribute('alt'), 'DOG', adoptionFee)" src="images/stella-card.jpg" alt="Stella" width="302" height="190">
-        <h4>Stella</h4>
-        <p><strong>Cost to Adopt: </strong>$123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a onclick="adoptionTotal(adoptionFee)" class="green-button" >Adopt</a>
-      </div>
-    </div >
+
+    <div class="doggies doggie-page" id="doggies">
+      <script>
+        createDoggies();
+      </script>
+      </div >
     <footer>
       <img src="images/adoptadog-logo.svg" alt="adoptadog logo" width="352" height="107">
       <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>

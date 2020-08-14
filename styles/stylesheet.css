@@ -37,7 +37,7 @@
 
 }
 
-/*laptop abd up width*/
+/*laptop and up width*/
 @media screen and (min-width: 768px) {
   article, .doggies, .doggie-button{
     grid-column: 2/3;
@@ -231,6 +231,12 @@ aside h2 {
 .blog {
   grid-column: 2 / 4;
   margin-top: 3rem;
+}
+
+#blogs {
+  display:flex;
+  grid-column: 2/4;
+  flex-direction: column;
 }
 
 

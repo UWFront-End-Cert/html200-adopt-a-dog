@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADOPTADOG</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-    <script src="scripts/script.js"></script>
+    <script src="scripts/main.js"></script>
   </head>
   <body>
     <header>
@@ -27,7 +27,7 @@
 
     <article class="checkout-form">
       <h2>Checkout</h2>
-      <form method="GET">
+      <form name="checkoutForm" onsubmit="return onFormSubmit()" method="GET">
           <label>Name
             <input type="text" id="name" name="name">
           </label>
@@ -92,6 +92,16 @@
             <p id="cost-number">$1234.56</p>
           
         <input class="green-button" type="submit" value="Submit">
+
+        <script>
+
+          const form = document.querySelector('form');
+
+          form.addEventListener('submit', function(event) {
+            event.preventDefault();
+          });
+
+        </script>
 
       </form>
     </article>
