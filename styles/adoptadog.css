@@ -342,7 +342,6 @@ footer nav{
   margin-right: 2em;
 }
 
-
 footer nav li{
   display: inline;
   padding-right: 0.5em;
@@ -358,4 +357,44 @@ footer nav a{
   color: white;
   font-family: 'Lato', sans-serif;
   text-align: center;
+}
+
+/*responsive style*/
+@media (max-width: 567px){
+  .dogs-container{
+    width: auto;
+  }
+  .index-box-img{
+    padding-bottom: 0em;
+    height: auto;
+  }
+  .index-container{
+    padding-bottom: 7em;
+  }
+  .blog-container{
+    margin: 0em;
+  }
+  .formstyle{
+    margin: 0em;
+    text-align: left;
+  }
+  .submit-button{
+    margin: 0em;
+    padding: 0em;
+  }
+}
+
+@media (max-width: 768px){
+  .dogs-container{
+    width: auto;
+  }
+  .non-index-h2{
+    padding: 1em;
+  }
+  .index-container{
+    height: 700px;
+  }
+  .blog-container{
+    margin: 1em;
+  }
 }
