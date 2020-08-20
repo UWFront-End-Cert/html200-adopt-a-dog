@@ -396,7 +396,7 @@ footer nav a{
   text-align: center;
 }
 
-/*responsive style*/
+/*media queries style*/
 @media screen and (max-width: 567px){
   .dogs-container{
     padding: 0em 0em 1em 0em;
@@ -509,5 +509,51 @@ footer nav a{
 @media (max-width: 1024px) and (orientation: landscape){
   aside p{
     display: none;
+  }
+}
+
+@media print{
+  header, footer, aside, nav, .index-box-img, .adopt-button, .see-dogs-container, .blog-img{
+    display: none;
+  }
+  .non-header-body{
+    width: 100%;
+  }
+  .index-container{
+    padding: 0em;
+  }
+  .non-index-h2, .blog-textbox{
+    padding: 0em;
+    margin: 0em;
+  }
+  .blog-text{
+    font-size: 12px;
+  }
+  body{
+    margin: 0em;
+    padding: 0em;
+    display: block;
+  }
+  .box{
+    width: 150px;
+    height: 280px;
+  }
+  .dogs-container{
+    padding: 0em;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  div div h3{
+    font-size: 16px;
+  }
+  .cost, .dogs-cost-text{
+    font-size: 12px;
+  }
+  .dogs-text{
+    clear: both;
+    font-size: 12px;
   }
 }
