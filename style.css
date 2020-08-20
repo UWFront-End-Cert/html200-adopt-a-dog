@@ -48,7 +48,6 @@ h2, h3 {
     color: white;
     display: block;
     vertical-align: middle;
-    
 }
 
 .cart-img {
@@ -545,12 +544,17 @@ a {
     color: #164668;    
 }
 
+body {
+    background: linear-gradient(to left, rgb(105 49 112), rgb(21 50 104));
+    background-size: 100% 70vh;
+    background-repeat: no-repeat;
+}
 
 header
 {
     display: block; 
     height: 70vh; 
-    background: url('images/header-image.jpg'); 
+    background-image: url('images/header-image.jpg');
     background-size: cover;
 }
 
@@ -572,6 +576,10 @@ header div.cart-container
 }
 
 @media screen and (max-width: 992px) {
+    body {
+        background-size: 100% 100vh;
+    }
+
     header
     {
         height: 100vh;
