@@ -101,7 +101,7 @@ header nav li a{
 
 /*index style*/
 .non-header-body{
-  width: 70%;
+  width: 80%;
 }
 
 .index-container{
@@ -134,8 +134,7 @@ header nav li a{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0 2rem 2rem 2rem;
-  float: left;
+  padding: 0 1rem 1rem 2rem;
 }
 
 .box{
@@ -145,7 +144,6 @@ header nav li a{
   margin: 2rem;
   text-align: left;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
 }
 
 div div h3{
@@ -164,13 +162,14 @@ div div h3{
 .cost{
   float: right;
   padding-right: 1em;
+  font-size: 16px;
 }
 
 .dogs-text{
   font-family: 'Open Sans', sans-serif;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  padding-bottom: 1em;
+  font-size: 16px;
 }
 
 .adopt-button{
@@ -201,7 +200,7 @@ div div h3{
 }
 
 aside{
-  width: 25%;
+  width: 20%;
   float: right;
 }
 
@@ -398,11 +397,13 @@ footer nav a{
 }
 
 /*responsive style*/
-@media (max-width: 567px){
+@media screen and (max-width: 567px){
   .dogs-container{
-    display: block;
-    padding-top: 0em;
-    margin: 10%;
+    padding: 0em 0em 1em 0em;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .index-box-img{
     padding-bottom: 0em;
@@ -448,10 +449,6 @@ footer nav a{
     width: 100%;
     margin: auto;
   }
-  .see-dogs-container{
-    text-align: center;
-    margin-left: -35%;
-  }
   .see-dogs-button{
     text-decoration: none;
     color: #0D3C5F;
@@ -461,9 +458,13 @@ footer nav a{
   }
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
   .dogs-container{
-    width: 100%;
+    padding: 0em 0em 1em 0em;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .non-index-h2{
     padding: 1em;
@@ -501,5 +502,5 @@ footer nav a{
     background-color: #81B741;
     display: block;
     border: none;
-    margin-left: 20px;
+    margin: auto;
 }
