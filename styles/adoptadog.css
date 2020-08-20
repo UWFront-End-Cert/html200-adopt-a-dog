@@ -1,6 +1,11 @@
 /*header style*/
 header{
+  background: url(../images/header-image.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
   background-color: #0D3C5F;
+  width: 100%;
+  height: 100%;
   color: #ffffff;
 }
 
@@ -95,6 +100,10 @@ header nav li a{
 }
 
 /*index style*/
+.non-header-body{
+  width: 70%;
+}
+
 .index-container{
   align-items: center;
   display: flex;
@@ -111,7 +120,6 @@ header nav li a{
 }
 
 .index-box-text{
-  height: 500px;
   width: 700px;
   padding-top: 1em;
 }
@@ -127,6 +135,7 @@ header nav li a{
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0 2rem 2rem 2rem;
+  float: left;
 }
 
 .box{
@@ -189,6 +198,35 @@ div div h3{
   padding: 0.5em 3em 0.5em 3em;
   background-color: #E9E9E9;
   font-family: 'Lato', sans-serif;
+}
+
+aside{
+  width: 25%;
+  float: right;
+}
+
+.blog-preview-img{
+  height: 150px;
+}
+
+.blog-preview-text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding-right: 1em;
+}
+
+.read-more{
+  color: #46A5C0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding-bottom: 5em;
+  text-decoration: none;
+}
+
+aside div h3{
+  font-family: 'Noto Serif', serif;
+  color: #0D3C5F;
+  font-size: 18px;
 }
 
 /*blog style*/
@@ -312,7 +350,7 @@ fieldset label{
 /*footer style*/
 footer{
   margin-top: 50px;
-  background-color: #3D3D3D;
+  background-color: #0D3C5F;
   text-align: center;
   clear: both;
   box-sizing: border-box;
@@ -337,7 +375,7 @@ footer p{
 
 footer nav{
   box-sizing: border-box;
-  background-color: #3D3D3D;
+  background-color: #0D3C5F;
   text-align: inherit;
   margin-right: 2em;
 }
@@ -362,17 +400,18 @@ footer nav a{
 /*responsive style*/
 @media (max-width: 567px){
   .dogs-container{
-    width: auto;
+    display: block;
+    padding-top: 0em;
+    margin: 10%;
   }
   .index-box-img{
     padding-bottom: 0em;
     height: auto;
   }
   .index-container{
-    padding-bottom: 7em;
-  }
-  .blog-container{
-    margin: 0em;
+    padding-bottom: 5em;
+    align-self: center;
+    width: auto;
   }
   .formstyle{
     margin: 0em;
@@ -382,19 +421,85 @@ footer nav a{
     margin: 0em;
     padding: 0em;
   }
+  aside{
+    float: none;
+    align-items: center;
+    width: 100%;
+  }
+  aside div h2{
+    padding: 0.5em;
+  }
+  .blog-preview-img{
+    width: 200px;
+    padding-top: 1em;
+    margin-left: 30%;
+  }
+  aside div h3{
+    text-align: center;
+  }
+  aside p{
+    display: none;
+  }
+  .read-more{
+    text-align: center;
+    display: block;
+  }
+  .non-header-body{
+    width: 100%;
+    margin: auto;
+  }
+  .see-dogs-container{
+    text-align: center;
+    margin-left: -35%;
+  }
+  .see-dogs-button{
+    text-decoration: none;
+    color: #0D3C5F;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: #E9E9E9;
+    font-family: 'Lato', sans-serif;
+  }
 }
 
 @media (max-width: 768px){
   .dogs-container{
-    width: auto;
+    width: 100%;
   }
   .non-index-h2{
     padding: 1em;
   }
   .index-container{
-    height: 700px;
+    height: 760px;
+    padding-bottom: 3em;
   }
   .blog-container{
     margin: 1em;
   }
+  .blog-preview-img{
+    padding-top: 1em;
+  }
+  .box-tablet{
+    width: 150px;
+    height: 375px;
+  }
+  .dogs-cost-tablet{
+    font-size: 12px;
+  }
+  .dogs-text-tablet{
+    font-size: 12px;
+  }
+  div div h3{
+    padding-left: 0.25em;
+  }
+  .adopt-button{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5em 2em 0.5em 2em;
+    background-color: #81B741;
+    display: block;
+    border: none;
+    margin-left: 20px;
 }
