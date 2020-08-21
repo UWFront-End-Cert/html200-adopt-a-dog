@@ -6,6 +6,7 @@
     <title>ADOPTADOG</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <script src="scripts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   </head>
   <body>
     <header>
@@ -15,7 +16,7 @@
       </figure>
         <div class="checkout">
           <img class="cart" src="images/cart-icon.svg" alt="cart icon">
-          <p>$1234.56</p>
+          <p id="cart-total">$0.00</p>
           <a class="green-button" href="checkout.html">Checkout</a>
         </div>
     </header>
@@ -112,7 +113,8 @@
       <nav>
         <a href="index.html">Home</a> /
         <a href="dogs.html">Dogs</a> /
-        <a href="contact.html">Contact</a>  <!-- I wasn't sure if I should have added a contact page, as I didn't see it in the design prompt, I added the file in at least though but it's blank-->
+        <a id="contact-link" href="contact.html">Contact</a>  <!-- I wasn't sure if I should have added a contact page, as I didn't see it in the design prompt, I added the file in at least though but it's blank-->
+        <script></script>
       </nav>
       <br><br>
       <p>&copy;2020 Adoptadog, LLC | Seattle, WA</p>

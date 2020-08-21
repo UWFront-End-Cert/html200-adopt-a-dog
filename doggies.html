@@ -6,6 +6,7 @@
     <title>ADOPTADOG</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <script src="scripts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   </head>
   <body>
     <header>
@@ -15,7 +16,7 @@
       </figure>
         <div class="checkout">
           <img class="cart" src="images/cart-icon.svg" alt="cart icon">
-          <p>$1234.56</p>
+          <p id="cart-total">$0.00</p>
           <a class="green-button" href="checkout.html">Checkout</a>
         </div>
     </header>
@@ -30,6 +31,7 @@
     <div class="doggies doggie-page" id="doggies">
       <script>
         createDoggies();
+        doggieZoom();
       </script>
       </div >
     <footer>

@@ -6,6 +6,7 @@
     <title>ADOPTADOG</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <script src="scripts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   </head>
   <body>
     <header>
@@ -15,7 +16,7 @@
       </figure>
         <div class="checkout">
           <img class="cart" src="images/cart-icon.svg" alt="cart icon">
-          <p>$1234.56</p>
+          <p id="cart-total">$0.00</p>
           <a class="green-button" href="checkout.html">Checkout</a>
         </div>
     </header>
@@ -24,10 +25,9 @@
       <a href="doggies.html">Dogs</a> /
       <a href="blog.html">Blog</a> 
     </nav>
-
     <article>
       <img class="article-image index-article-image" src="images/home-intro.jpg" alt="home intro" width="368" height="304">
-      <!-- the images in the mockup were wider so I didn't really know how to compensate for this without the images in the mockup -->
+      <!-- the images in the mockup were wider so I didn't redally know how to compensate for this without the images in the mockup -->
       <h2>Adopt A Dog</h2>
       <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
     </article>
@@ -55,6 +55,7 @@
     <div class="doggies" id="doggies">
       <script>
         createDoggies(6);
+        doggieZoom();
       </script>
       <!-- leaving this in just in case i need a reference of what the dog cel looks like  -->
       <!-- <div class="doggie-cel">        
@@ -72,8 +73,12 @@
       <br><br>
       <nav>
         <a href="index.html">Home</a> /
-        <a href="dogs.html">Dogs</a> /
-        <a href="contact.html">Contact</a>
+        <a href="doggies.html">Dogs</a> /
+        <a id="contact-link" href="contact.html">Contact</a>
+        <audio id="audio" src="secret/sound.wav"></audio>
+        <script>
+          mystery();
+        </script>
       </nav>
       <br><br>
       <p>&copy;2020 Adoptadog, LLC | Seattle, WA</p>

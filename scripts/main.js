@@ -15,30 +15,57 @@ function adoptionTotal(fee, name) {
     adoptList.push(name);
     total+=fee;
   }
-  console.log(name);
   alert(`Total Adoption Fee: $${total.toFixed(2)}`);
+  $('#cart-total').text(`$${total.toFixed(2)}`);
 
+}
 
+function doggieZoom() {
 
-  /* Wanted to add the names to an array so I can check if I should
-     add to the total value, or subtract from the total value when the array contains the name, but I am 
-     not sure how to get the alt attribute from the img element within a specific 'doggie-cel' parent element */
+  $('.doggie-img-container').hover(function(e) {
+    $('img', this).toggleClass('zoomed-doggie-image');
+  });
+
 }
 
 
-function onFormSubmit() {
-  let formName = document.getElementById('name').value;
-  let formEmail = document.getElementById('email').value;
-  let formStreet = document.getElementById('street').value;
-  let formCity = document.getElementById('city').value;
-  let formState = document.getElementById('state').value;
-  let formZip = document.getElementById('zip').value;
-  let formFirst = displayRadioValue();
-  let formLocation = document.getElementById('location').value;
+/* I commented out this function as I couldn't figure out a good way to implement both the adoptionTotal and the jquery
+click event, I was not too sure how to get the variables from the object I used to create the dogtiles, and use as parameters for
+the jquery click event (specifically, I do not know how to isolate the fee, the name fortunately is also the alt attribute so that is easy enough to get). 
+regardless, I am still using jquery to change the checkout total, so hopefully this still counts but if it doens't just let me know.
+*/
 
+
+// function addToCart() {
+//   $('.doggie-cel .green-button').click(function(e){
+//     $('#cart-total').text(`$${total.toFixed(2)}`);
+//     console.log(total);
+//   });
+// }
+
+function onFormSubmit() {
+  // let formName = document.getElementById('name').value;
+  // let formEmail = document.getElementById('email').value;
+  // let formStreet = document.getElementById('street').value;
+  // let formCity = document.getElementById('city').value;
+  // let formState = document.getElementById('state').value;
+  // let formZip = document.getElementById('zip').value;
+  // let formFirst = displayRadioValue();
+  // let formLocation = document.getElementById('location').value;
+
+  let formName = $('#name').val();
+  let formEmail = $('#email').val();
+  let formStreet = $('#street').val();
+  let formCity = $('#city').val();
+  let formState = $('#state').val();
+  let formZip = $('#zip').val();
+  let formFirst = $("input[name='first-time']:checked").val();
+  let formLocation = $('#location').val();;
+
+  //same as before, just using jquery to fetch the results of this 
 
   if (formName === '' || formEmail === '' || formStreet === '' ||
-      formCity === '' || formZip === '' || formFirst === '') {
+      formCity === '' || formZip === '' || formFirst == null) { //i know null is not undefined but i felt this was a easy and quick fix and now I dont have to use a helper method, i hope this is ok to use.
         alert('Please fill in all the required fields');
       }
   else {
@@ -59,14 +86,15 @@ function onFormSubmit() {
   }
 }
 
-function displayRadioValue() {
-  let ele = document.getElementsByName('first-time');
-  let result = '';
+function mystery(){
+  const sound = document.getElementById('audio');
 
-  for (i = 0; i < ele.length; i++) {
-    if (ele[i].checked)  result = ele[i].getAttribute('value');
-  }
-  return result;
+  $('#contact-link').click(function (e) {
+    event.preventDefault();
+    $(this).fadeOut(750);
+    sound.play();
+  });
+
 }
 
 function createBlogs() {
@@ -107,6 +135,9 @@ function createDoggies(amountOfDoggies = doggieProfiles.length) {
       const doggieCel = document.createElement('div');
       doggieCel.setAttribute('class', 'doggie-cel');
 
+      const doggieImgContainer = document.createElement('div');
+      doggieImgContainer.setAttribute('class', 'doggie-img-container');
+
 
       const image = document.createElement('img');
       image.src = doggieProfile.img;
@@ -117,7 +148,6 @@ function createDoggies(amountOfDoggies = doggieProfiles.length) {
 
       const name = document.createElement('h4');
       name.textContent = doggieProfile.name;
-
 
       const cost = document.createElement('p');
       cost.innerHTML = (`<strong>Cost to Adopt: </strong>$${doggieProfile.fee}`);
@@ -130,7 +160,9 @@ function createDoggies(amountOfDoggies = doggieProfiles.length) {
       button.setAttribute('onclick', `adoptionTotal(${doggieProfile.fee}, \'${doggieProfile.name}\')`);
       button.setAttribute('class', 'green-button');
 
-      doggieCel.appendChild(image);
+      doggieImgContainer.appendChild(image);
+      // doggieCel.appendChild(image);
+      doggieCel.appendChild(doggieImgContainer);
       doggieCel.appendChild(name);
       doggieCel.appendChild(cost);
       doggieCel.appendChild(description);

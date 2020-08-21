@@ -256,12 +256,21 @@ aside h2 {
   height:auto;
 }
 
+.doggie-img-container {
+  overflow: hidden;
+}
+
 .doggie-cel {
   margin-bottom:5rem;
   border: solid;
   border-radius: 2px;
   border-color: #EAEAEA;
 } 
+
+.zoomed-doggie-image {
+  transition: .2s;
+  transform: scale(1.5);
+}
 
 .doggie-page .doggie-cel {
   width: 20%;
