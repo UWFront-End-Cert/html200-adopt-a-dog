@@ -1,8 +1,7 @@
 /*header style*/
 header{
-  background: url(../images/header-image.jpg);
+  background: url(../images/header-image.jpg), radial-gradient(#81B741, black 30%);
   background-repeat: no-repeat;
-  background-color: radial-gradient(#81B741, black 30%);
   background-position: center;
   width: 100%;
   height: auto;
