@@ -1,0 +1,31 @@
+Lesson 10 Assignment
+
+User Personas
+
+	User personas are essentially fictitious characters that represent the various different types of people that visit your website.
+	This webiste is for the people how is thinking about adopting dogs as a new family. 
+	Future adopters visit our website all different kind of devices and system.
+		
+Testing
+
+	Tested the website on a desktop in various web browsers and window size (Google Chrome, Firefox, and MS Edge)
+	Tested the website on a mobie (android and IOS devices) with Google Chrome and Safari.
+	Tested the website on Window PC and MACBOOK system.
+
+Breaking Point
+
+	Mobile - 375 x 667
+	Tablet - 1024 x 768
+	Laptop - 1440 x 900
+	Desktop - 1920 x 1080
+
+Result
+
+	Browsers - Everything work as expected except dog list in 3-column view on main page. There are only 2 and it strechs out to fit in 3-column.
+	Mobile	- Everything works as expected.
+	Operating system - Everything work as expected except dog list in 3-column view on main page. There are only 2 and it strechs out to fit in 3-column.
+
+Reference
+
+	- https://www.huffpost.com/entry/user-personas-websites_b_1793594
+	
