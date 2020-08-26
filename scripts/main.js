@@ -60,7 +60,7 @@ function onFormSubmit() {
   let formState = $('#state').val();
   let formZip = $('#zip').val();
   let formFirst = $("input[name='first-time']:checked").val();
-  let formLocation = $('#location').val();;
+  let formLocation = $('#location').val();
 
   //same as before, just using jquery to fetch the results of this 
 
