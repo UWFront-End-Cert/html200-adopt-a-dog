@@ -21,9 +21,9 @@ Breaking Point
 
 Result
 
-	Browsers - Everything work as expected except dog list in 3-column view on main page. There are only 2 and it strechs out to fit in 3-column.
+	Browsers - Everything work as expected.
 	Mobile	- Everything works as expected.
-	Operating system - Everything work as expected except dog list in 3-column view on main page. There are only 2 and it strechs out to fit in 3-column.
+	Operating system - Everything work as expected. 
 
 Reference
 
