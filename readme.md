@@ -9,4 +9,4 @@ University of Washington.
 - Welcome all adopters and aim to find a great match for every adopter by providing as much information as we can about each dog.
 - Our website will help adopters to make the final decision about what is right for their family.
 ## Test Results
-- Details of test results can be found in test.txt.
+- Details of test results can be found in testing.txt.
