@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="styles/stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@200&display=swap" rel="stylesheet">
 </head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+      var amount = 0;
+      $('button').click(function () {
+           amount += 123.45;
+           console.log(amount);
+           alert('This is the amount so far '+ amount);
+       });
+      });
+</script>
+
 <body>
   <div>
   <header>
