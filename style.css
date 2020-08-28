@@ -143,8 +143,8 @@ h3 {
 .current-dogs-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 10rem 0;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 .dog-card {
@@ -402,3 +402,58 @@ footer nav h2 *{
 footer p span{
   margin: .5rem;
 }
+
+
+/* Media Queries */
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .current-dogs-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .dog-card {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+  }
+  .dog-card img {
+    right: 2px;
+    width: 101%;
+  }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .current-dogs-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .dog-card {
+    width: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+  }
+  .dog-card img {
+    right: 2px;
+    width: 101%;
+  }
+}
+/* Assignment 6 Instructions
+
+Add media queries to the course project in order to complete the following:
+
+Have the dog grid layout change from 3 columns to 1 on mobile devices
+
+Have the dog grid layout change from 3 columns to 2 on tablet devices
+
+Ensure the dog images are sized to look appropriate, this is somewhat subjective, but they should fill most of the space in the container.
+
+On the home page, include the blog previews. Show the article previews only on ipad portrait orientation and above. The links can either link to the blog page, or the blog post itself.
+Download the updated design for the dog pages
+Optional Bonus work: Make the page printable */
