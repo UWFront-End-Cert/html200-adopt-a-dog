@@ -15,11 +15,6 @@ function dogAdopt(cost){
   alert(total_alert);
 }
 
-function formAccept(){
-  var thanks = 'Thank you. The form information has been received.';
-  alert(thanks);
-}
-
 //blog page//
 const images = [
   {
@@ -77,4 +72,24 @@ for (let i = 0; i < blogtext_container.length; i += 1){
 
   blogtext_container_item.appendChild(header3);
   blogtext_container_item.appendChild(paragraph);
+}
+
+//form page//
+
+function formAccept(){
+  var thanks = 'Thank you. The form information has been received.';
+
+  var name_data = document.getElementById('name');
+  var email_data = document.getElementById('email');
+  var adr_data = document.getElementById('adr');
+  var city_data = document.getElementById('city');
+  var state_data = document.getElementById('State');
+  var zip_data = document.getElementById('zip');
+  var firsttimeadopt_data = document.getElementById('yes');
+  var notfirsttimeadopt_data = document.getElementById('no');
+  var location_data = document.getElementById('Location');
+
+  console.log(name_data.value, email_data.value, adr_data.value, city_data.value, state_data.value, zip_data.value, firsttimeadopt_data.checked, notfirsttimeadopt_data.checked, location_data.value);
+
+  alert(thanks);
 }

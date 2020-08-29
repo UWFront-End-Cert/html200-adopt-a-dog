@@ -37,13 +37,13 @@
     </section>
 
       <section class="formstyle">
-        <form method="GET">
+        <form name="checkoutform" method="GET">
           <label>Name
-            <input type="text" name="visitorName">
+            <input id="name" type="text" name="visitorName">
           </label>
 
           <label>Email Address
-            <input type="email" name="visitorEmail">
+            <input id="email" type="email" name="visitorEmail">
           </label>
 
           <label for="adr">Street Address
@@ -117,17 +117,17 @@
           <fieldset>
             <legend>First Time Adopter?</legend>
             <label>
-              <input type="radio" name="special" value="yes">
+              <input id="yes" type="radio" name="special" value="yes">
               Yes
             </label>
             <label>
-              <input type="radio" name="special" value="no">
+              <input id="no" type="radio" name="special" value="no">
               No
             </label>
           </fieldset>
 
-          <label  for="Location">Pickup Location</label>
-          <select  name="visitorLocation" id="Location">
+          <label for="Location">Pickup Location</label>
+          <select name="visitorLocation" id="Location">
               <option value="">--</option>
               <option value="pethome">Pet's Home</option>
               <option value="fosterhome">Foster Home</option>
