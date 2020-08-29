@@ -3,7 +3,8 @@ function dogInfo(name,breed,fee){
   alert(clicked_dog);
 }
 
-var total_items = []; //this must be placed outside of function in order to have variables logged into the array, as inside the function, the array will constantly reset//
+var total_items = [];
+
 function dogAdopt(cost){
   total_items.push(cost);
   var total = 0;
@@ -12,6 +13,11 @@ function dogAdopt(cost){
   }
   var total_alert = 'Your total cost of adoption is ' + '$' + total + '.';
   alert(total_alert);
+}
+
+function formAccept(){
+  var thanks = 'Thank you. The form information has been received.';
+  alert(thanks);
 }
 
 //blog page//
