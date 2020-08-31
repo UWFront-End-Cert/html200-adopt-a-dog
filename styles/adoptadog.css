@@ -397,7 +397,7 @@ footer nav a{
 }
 
 /*media queries style*/
-@media screen and (max-width: 567px){
+@media screen and (max-width: 568px){
   .dogs-container{
     padding: 0em 0em 1em 0em;
     align-items: center;
@@ -405,9 +405,20 @@ footer nav a{
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .box, .box-tablet{
+    height: 450px;
+    width: 400px;
+    border: 4px solid #E9E9E9;
+    margin: 1rem;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+  }
   .index-box-img{
     padding-bottom: 0em;
     height: auto;
+  }
+  .dogs-text{
+    clear: both;
   }
   .index-container{
     padding-bottom: 5em;
@@ -439,6 +450,18 @@ footer nav a{
     padding: 0.5em 1em 0.5em 1em;
     background-color: #E9E9E9;
     font-family: 'Lato', sans-serif;
+  }
+  .adopt-button{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 2em 1em 2em;
+    background-color: #81B741;
+    display: block;
+    border: none;
+    margin: auto;
   }
 }
 

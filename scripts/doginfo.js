@@ -78,6 +78,7 @@ for (let i = 0; i < blogtext_container.length; i += 1){
 
 function formAccept(){
   var thanks = 'Thank you. The form information has been received.';
+  var data_error = 'Please fill out all fields of the form.';
 
   var name_data = document.getElementById('name');
   var email_data = document.getElementById('email');
@@ -89,7 +90,12 @@ function formAccept(){
   var notfirsttimeadopt_data = document.getElementById('no');
   var location_data = document.getElementById('Location');
 
-  console.log(name_data.value, email_data.value, adr_data.value, city_data.value, state_data.value, zip_data.value, firsttimeadopt_data.checked, notfirsttimeadopt_data.checked, location_data.value);
+  if(name_data.value == "" || email_data.value == "" || adr_data.value == "" || city_data.value == "" || state_data.value == "" || zip_data.value == "" || location_data.value == "" || (firsttimeadopt_data.checked == false && notfirsttimeadopt_data.checked == false)){
+    alert(data_error);
 
-  alert(thanks);
+  } else {
+    console.log(name_data.value, email_data.value, adr_data.value, city_data.value, state_data.value, zip_data.value, firsttimeadopt_data.checked, notfirsttimeadopt_data.checked, location_data.value);
+
+    alert(thanks);
+  }
 }
