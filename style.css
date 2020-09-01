@@ -93,7 +93,7 @@ h1 {
 }
 
 .intro {
-  margin: 2rem;
+  margin: 5%;
   overflow: auto;
 }
 
@@ -102,6 +102,10 @@ h1 {
   float: left;
   margin-right: 2%;
   margin-bottom: 4%;
+}
+
+.introtext p {
+  font-size: 1rem;
 }
 
 .post {
@@ -441,13 +445,16 @@ footer p span{
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1033px) {
+  .introtext p {
+    font-size: .8rem;
+  }
   .current-dogs-container {
     width: 100%;
     height: auto;
     overflow: hidden;
   }
   .dog-card {
-    width: 35%;
+    width: 40%;
     margin-left: 5%;
     margin-right: 5%;
     height: auto;
@@ -469,8 +476,18 @@ footer p span{
 
 /* Home Page with Blog previews */
 @media screen and (min-width: 768px) {
+  .intro {
+    margin: 2rem 10%;
+    overflow: auto;
+  }
+
+  .intro img {
+    width: auto;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 4%;
+  }
 #blog-preview {
-  border: solid 2px red;
   float: right;
   width: 25%;
   height: auto;
@@ -479,10 +496,20 @@ footer p span{
   }
 
 #blog-preview * {
-  width: 100%;
+  width: 80%;
   height: auto;
   margin-right: 0;
   }
+
+#blog-preview img {
+  width: 65%;
+  height: 100px; /* height of container */
+  object-fit: cover ;
+}
+
+#preview-crop-3 {
+  object-position: 0 25%; /* reposition preview image 3 */
+}
 
 #blog-preview h3 {
   margin: .5rem 0;
@@ -508,25 +535,3 @@ footer p span{
   justify-content: space-between;
   }
 }
-
-/* Rule added for blog preview at large sizes */
-@media screen and (min-width: 1376px) {
-  #blog-preview {
-    height: 90%;
-  }
-}
-
-/* Assignment 6 Instructions
-
-Add media queries to the course project in order to complete the following:
-
-Have the dog grid layout change from 3 columns to 1 on mobile devices
-
-Have the dog grid layout change from 3 columns to 2 on tablet devices
-
-Ensure the dog images are sized to look appropriate, this is somewhat subjective, but they should fill most of the space in the container.
-
-On the home page, include the blog previews. Show the article previews only on ipad portrait orientation and above. The links can either link to the blog page, or the blog post itself.
-
-Download the updated design for the dog pages
-Optional Bonus work: Make the page printable */
