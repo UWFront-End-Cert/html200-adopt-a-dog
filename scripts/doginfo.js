@@ -103,10 +103,8 @@ $('form').submit(function(e){
 
 //dog tiles jquery//
 
-$('.box').click(function(e){
-  $('.adopt-button', this).addClass('adopted-button');
-  $('.adopted-button', this).fadeIn(300);
-  $('.adopted-button', this).replaceWith("<button onclick='adoptedAlert()' class='adopted-button'>Adopted</button>");
+$('.adopt-button').click(function(e){
+  $(this).replaceWith("<button onclick='adoptedAlert()' class='adopted-button'>Adopted</button>");
 });
 
 function adoptedAlert(){
