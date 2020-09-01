@@ -5,7 +5,7 @@ function dogInfo(name,breed,fee){
 
 var total_items = [];
 
-$('.adopt-button').hover(function(e){
+$('.box').hover(function(e){
   $(this).addClass('hover');
 }, function(){
   $(this).removeClass('hover');
