@@ -108,6 +108,8 @@ h1 {
   font-size: 1rem;
 }
 
+
+
 .post {
   margin: 0 0 3rem;
   overflow: auto;
@@ -422,6 +424,10 @@ footer p span{
     margin-left: auto;
     margin-right: auto;
   }
+  .introtext {
+    font-size: 1rem;
+    width: 90%;
+  }
   .current-dogs-container {
     display: block;
     width: 100%;
@@ -444,9 +450,10 @@ footer p span{
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1033px) {
-  .introtext p {
-    font-size: .8rem;
+@media screen and (min-width: 768px) and (max-width: 1145px) {
+  .introtext {
+    font-size: 1rem;
+    width: 90%;
   }
   .current-dogs-container {
     width: 100%;
@@ -454,9 +461,7 @@ footer p span{
     overflow: hidden;
   }
   .dog-card {
-    width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 43%;
     height: auto;
   }
   .dog-card img {
@@ -532,6 +537,6 @@ footer p span{
   width: 60%;
   margin: 0 10% 0;
   padding: 0;
-  justify-content: space-between;
+  justify-content: space-evenly;
   }
 }
