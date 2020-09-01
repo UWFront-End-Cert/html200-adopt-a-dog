@@ -93,15 +93,15 @@ h1 {
 }
 
 .intro {
-  margin: 2rem 10% 2rem;
+  margin: 2rem;
   overflow: auto;
 }
 
 .intro img {
   width: auto;
   float: left;
-  margin-right: 3%;
-  margin-bottom: 8%;
+  margin-right: 2%;
+  margin-bottom: 4%;
 }
 
 .post {
@@ -145,6 +145,7 @@ h3 {
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .dog-card {
@@ -152,6 +153,7 @@ h3 {
   width: 10.9rem;
   border-top: none;
   margin: 0 2rem 2rem 0;
+  height: 20em;
 }
 
 .dog-card img {
@@ -406,7 +408,16 @@ footer p span{
 
 /* Media Queries */
 /* Mobile */
-/* @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .intro {
+    text-align: center;
+  }
+  .intro img {
+    display: inline;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .current-dogs-container {
     display: block;
     width: 100%;
@@ -423,15 +434,24 @@ footer p span{
     right: 2px;
     width: 101%;
   }
+  #blog-preview {
+    display: none;
+  }
 }
 
-#blog-preview {
-  display: none;
-} */
 
 /* Tablet */
 
-/* @media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1033px) {
+  .intro {
+    text-align: center;
+    margin: 2%;
+  }
+
+  .intro img {
+    margin-right: .5%;
+
+  }
   .current-dogs-container {
     width: 100%;
     height: auto;
@@ -447,44 +467,84 @@ footer p span{
     right: 2px;
     width: 101%;
   }
-} */
+
+  h5 ~ span {
+    margin: 0;
+    position: relative;
+    right: auto;
+    font-family: sans-serif;
+    font-size: .75rem;
+    color: black;
+  }
+
+}
 
 /* Home Page with Blog previews */
-@media screen and (min-width: 768px) {
-  /* .grid-container {
+/* @media screen and (min-width: 768px) {
+ .grid-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-auto-rows: 3fr;
     justify-content: space-around;
   }
-  /* .intro {
+  .intro {
     grid-row: 1 / span 1;
     grid-column: 1 / span 2;
-  } */
-  /*
+  }
   .current-dogs-container {
     grid-row: 2 / span 2;
     grid-column: 1 / span 2;
-  } */
+  }
+} */
 
-}
 
+@media screen and (min-width: 768px) {
 #blog-preview {
   border: solid 2px red;
   float: right;
-  width: 20%;
-  height: 90%;
-  margin: 1.7rem 10% 0;
+  width: 25%;
+  height: auto;
+  margin: .7rem 1% 4%;
+  overflow: hidden;
+}
+
+#blog-preview * {
+  width: 100%;
+  height: auto;
+  margin-right: 0;
 }
 
 #blog-preview h3 {
+  margin: .5rem 0;
+}
+
+#blog-preview h4 {
+  margin: .5rem 0;
+}
+
+
+#blog-preview p {
+  line-height: 1rem;
+}
+
+#blog-preview a h6 {
   margin: 0;
 }
 
 .current-dogs-container {
   width: 60%;
+  margin: 0 10% 0;
+  padding: 0;
+  justify-content: space-between;
+}
 }
 
+
+@media screen and (min-width: 1376px) {
+  #blog-preview {
+    height: 90%;
+  }
+}
 
 /* Assignment 6 Instructions
 
