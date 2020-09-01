@@ -76,6 +76,8 @@ for (let i = 0; i < blogtext_container.length; i += 1){
 
 //form page//
 
+$('').
+
 function formAccept(){
   var thanks = 'Thank you. The form information has been received.';
   var data_error = 'Please fill out all fields of the form.';
@@ -94,8 +96,21 @@ function formAccept(){
     alert(data_error);
 
   } else {
-    console.log(name_data.value, email_data.value, adr_data.value, city_data.value, state_data.value, zip_data.value, firsttimeadopt_data.checked, notfirsttimeadopt_data.checked, location_data.value);
+
+    console.log(name_data.value, email_data.value, adr_data.value, city_data.value, state_data.value, zip_data.value, firsttimeadopt_data.value, location_data.value);
 
     alert(thanks);
   }
 }
+
+//dog tiles jquery//
+
+$('.box').click(function(e){
+  $('.adopt-button', this).addClass('adopted-button');
+  $('.adopted-button', this).fadeIn(300);
+  $('.adopted-button', this).replaceWith("<button onclick='adoptedAlert()' class='adopted-button'>Adopted</button>");
+});
+
+function adoptedAlert(){
+  alert('This dog has been adopted.');
+};

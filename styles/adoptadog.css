@@ -186,6 +186,20 @@ div div h3{
   border: none;
 }
 
+.adopted-button{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0D3C5F;
+  text-align: center;
+  padding: 0.5em 3.5em 0.5em 3.5em;
+  margin: 12px;
+  border-radius: 2px;
+  background-color: #E9E9E9;
+  display: inline-block;
+  border: none;
+}
+
 .see-dogs-container{
   text-align: center;
 }
