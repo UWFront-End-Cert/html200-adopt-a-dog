@@ -200,6 +200,20 @@ div div h3{
   border: none;
 }
 
+.submit-button{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5em 7em 0.5em 7em;
+  margin: 1em;
+  border-radius: 2px;
+  background-color: #81B741;
+  display: inline-block;
+  border: none;
+}
+
 .see-dogs-container{
   text-align: center;
 }
