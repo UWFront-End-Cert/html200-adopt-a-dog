@@ -214,6 +214,10 @@ div div h3{
   border: none;
 }
 
+.hover{
+border: black 2px solid;
+}
+
 .see-dogs-container{
   text-align: center;
 }

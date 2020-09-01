@@ -5,6 +5,12 @@ function dogInfo(name,breed,fee){
 
 var total_items = [];
 
+$('.adopt-button').hover(function(e){
+  $(this).addClass('hover');
+}, function(){
+  $(this).removeClass('hover');
+});
+
 $('.adopt-button').click(function(e){
   total_items.push(122.46);
   var total = 0;
@@ -17,8 +23,6 @@ $('.adopt-button').click(function(e){
   $(this).replaceWith("<button onclick='adoptedAlert()' class='adopted-button'>Adopted</button>");
   $('.cart-total').text('$'+total);
 });
-
-
 
 function adoptedAlert(){
   alert('This dog has been adopted.');
