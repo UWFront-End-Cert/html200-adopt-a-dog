@@ -5,15 +5,24 @@ function dogInfo(name,breed,fee){
 
 var total_items = [];
 
-function dogAdopt(cost){
-  total_items.push(cost);
+$('.adopt-button').click(function(e){
+  total_items.push(122.46);
   var total = 0;
   for(let i = 0; i < total_items.length; i++){
     total += Number(total_items[i]);
   }
   var total_alert = 'Your total cost of adoption is ' + '$' + total + '.';
   alert(total_alert);
-}
+
+  $(this).replaceWith("<button onclick='adoptedAlert()' class='adopted-button'>Adopted</button>");
+  $('.cart-total').text('$'+total);
+});
+
+
+
+function adoptedAlert(){
+  alert('This dog has been adopted.');
+};
 
 //blog page//
 const images = [
@@ -100,13 +109,3 @@ $('form').submit(function(e){
       alert(thanks);
     }
 });
-
-//dog tiles jquery//
-
-$('.adopt-button').click(function(e){
-  $(this).replaceWith("<button onclick='adoptedAlert()' class='adopted-button'>Adopted</button>");
-});
-
-function adoptedAlert(){
-  alert('This dog has been adopted.');
-};
