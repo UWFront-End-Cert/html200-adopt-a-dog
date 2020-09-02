@@ -1,0 +1,70 @@
+Testing Protocol for AdoptaDog
+
+***
+User Insight
+
+User Persona
+- Previous dog owner searching for a new dog
+- Stuck at home due to COVID
+- Uses mobile to search 
+- Seeks dog website with information, cost, and quick adoption process
+
+User Needs
+- Easy-to-use website
+- Responsive website
+
+***
+Testing Protocol 
+
+AdoptaDog will be evaluated on its appearance and functionality across most commonly used internet browsers and devices. The following browsers and devices will be used in this evaluation:
+
+Testing Browsers
+- Google Chrome
+- Safari
+- Opera
+- Microsoft Edge
+
+Testing Devices
+- Responsive Web
+- Tablet
+- Mobile
+
+Unfortunately, a PC is not available at this time, however, future testing will allow PC devices/software to be evaluated.
+
+***
+Actions
+
+Specific actions performed by AdoptaDog and its users will be measured across browsers. The actions are listed below and will be evaluated across all HTML pages: 
+
+- Website appearance loads as expected 
+- Responsive design and layout adapts to device
+- Buttons and hyperlinks flow as expected
+- JavaScript executes as expected 
+- jQuery executes as expected 
+
+***
+Outcomes
+- Website appearance loads as expected 
+   - Pass: Google Chrome, Safari, Opera
+   - Fail: Microsoft Edge
+
+- Responsive design and layout adapts to device
+   - Pass: Google Chrome, Safari, Opera, Microsoft Edge
+   - Fail: 
+
+- Buttons and hyperlinks flow as expected
+   - Pass: Google Chrome, Safari, Opera, Microsoft Edge
+   - Fail: 
+
+- JavaScript executes as expected 
+   - Pass: Google Chrome, Opera, Microsoft Edge
+   - Fail: Safari*
+
+- jQuery executes as expected 
+   - Pass: Google Chrome, Opera, Microsoft Edge
+   - Fail: Safari*
+
+***
+Summary
+
+Overall, AdoptaDog worked well across all browsers and devices. The pages loaded as expected and JavaScript/jQuery executed their actions as expected. The opportunity to test this site across multiple browsers and devices did provide insight to areas in which CSS needed to be updated, especially on Microsoft Edge. One error did occur on Safari browser, with the following message appearing in the console after 'Submit' was clicked on with a complete form: favicon load local resource error. This data error will be evaluated in further detail, as it did not seem to inhibit the code or user experience. Based on this evaluation, AdoptaDog is ready for publication.
