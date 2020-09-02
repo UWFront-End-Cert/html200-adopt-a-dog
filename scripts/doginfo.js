@@ -26,7 +26,7 @@ $('.adopt-button').click(function(e){
 
 function adoptedAlert(){
   alert('This dog has been adopted.');
-};
+}
 
 //blog page//
 const images = [
@@ -57,7 +57,7 @@ const blogtexts = [
     h3: 'Teach Your Dog To Fetch!',
     p: 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat. <br/><br/>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.'
   }
-]
+];
 
 const img_container = document.getElementsByClassName('blog-img');
 
@@ -69,7 +69,7 @@ for (let i = 0; i < img_container.length; i += 1){
   image.src = images_item.src;
   image.alt = images_item.alt;
   img_container_item.appendChild(image);
-}
+};
 
 const blogtext_container = document.getElementsByClassName('blog-textbox');
 
@@ -108,7 +108,7 @@ $('form').submit(function(e){
 
     } else {
 
-      console.log(name_data.value, email_data.value, adr_data.value, city_data.value, state_data.value, zip_data.value, firsttimeadopt_data.value, location_data.value);
+      console.log(name_data.value, email_data.value, adr_data.value, city_data.value, state_data.value, zip_data.value, firsttimeadopt_data.checked, location_data.value);
 
       alert(thanks);
     }
