@@ -108,8 +108,9 @@ $('form').submit(function(e){
 
     } else {
 
-      console.log(name_data.value, email_data.value, adr_data.value, city_data.value, state_data.value, zip_data.value, firsttimeadopt_data.checked, location_data.value); //better to get form data as key value pairs and to have method on form as POST, so that it isn't appended to website URL//
+      console.log(name_data.value, email_data.value, adr_data.value, city_data.value, state_data.value, zip_data.value, firsttimeadopt_data.checked, location_data.value); //better to get form data as key value pairs and to have method on form as POST, so that it isn't appended to website URL//g
 
       alert(thanks);
+      event.preventDefault();
     }
 });
