@@ -89,7 +89,6 @@ for (let i = 0; i < blogtext_container.length; i += 1){
 
 //form page//
 $('form').submit(function(e){
-  event.preventDefault();
   var thanks = 'Thank you. The form information has been received.';
   var data_error = 'Please fill out all fields of the form.';
 
