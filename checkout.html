@@ -37,7 +37,7 @@
     </section>
 
       <section class="formstyle">
-        <form name="checkoutform" method="GET">
+        <form name="checkoutform" method="POST">
           <label>Name
             <input id="name" type="text" name="visitorName">
           </label>
@@ -117,11 +117,11 @@
           <fieldset>
             <legend>First Time Adopter?</legend>
             <label>
-              <input id="yes" type="radio" name="special" value="yes">
+              <input id="yes" type="radio" name="firsttimeadopter" value="yes">
               Yes
             </label>
             <label>
-              <input id="no" type="radio" name="special" value="no">
+              <input id="no" type="radio" name="notfirsttimeadopter" value="no">
               No
             </label>
           </fieldset>
