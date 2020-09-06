@@ -2,145 +2,151 @@
     <html lang="zxx">
         <head>
             <title>Home - Adopt a Dog</title>
-          
-            <style>
-                header {
-                    background: #000000;
-                    background-image: url("images/header-image.jpg");
-                    height: 87px;
-                    width: 100px;
-                    background-repeat: no-repeat;
-                }
-            </style>
+            <link rel="stylesheet" type="text/css" href="styles.css">
         </head>
         <body>
             <header>
                 <img src="file:///C:/Users/Danny/Desktop/HTML200/js-cert/html200-adopt-a-dog/images/site-no-background/adoptadog-logo.svg" alt="">
-                <p><em>Seattle's premier dog adoption agency</em></p>
-                <img src="file:///C:/Users/Danny/Desktop/HTML200/js-cert/html200-adopt-a-dog/images/cart-icon.svg" alt="">
-                <p><strong>$1234.56</strong></p> 
-                <a href="checkout.html">Checkout</a>
+                <div id="header-content">
+                    <div id="header-logo">
+                        <img src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+                        <p class="tagline"><em>Seattle's premier dog adoption agency</em></p>
+                    </div>  
+                    <div id="header-checkout">
+                        <img id="cart" src="file:///C:/Users/Danny/Desktop/HTML200/adopt-a-dog/images/cart-icon.svg" alt="">                          
+                        <p id="price"><strong>$1234.56</strong></p> 
+                        <a href="checkout.html" class="green-link">Checkout</a>
+                    </div>
+                </div>
             </header>
             <nav>
-                <div>
+                <div id="nav-content">
                     <a href="index.html">Home</a>
                     <a href="all-dogs.html">Dogs</a>
                     <a href="blogS.html">Blog</a>
                 </div>
             </nav>  
             <main>
-                <div>
-                    <h1>Adopt a Dog</h1>
-                    <img src="images/home-intro.jpg" alt="a person hugging a happy looking dog">
-                    <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
-                        tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-                        derum recuptatur, cum volore, undipsa doloreium hillupta aut
-                        es ut alitatuscit ommossum haritatur arum qui officae videbiti
-                        corporeium faccull oribus es quidignis ipietus explam sus
-                        am aut amet ant fugiatum, utem non reptat ad magnienecto
-                        volorent fugia nonsedi gendand itatquos as magnimpor aut
-                        molor autatia ad est officimus accae et omnia cus, od qui ate </p>
-                </div>
-                <div>
-                    <div class="index-card">
-                        <img src="images/murphy-card.jpg" alt="timid looking dog">
-                        <h2>Murphy</h2>
-                        <p><strong>Cost to adopt:</strong>$123.45</p>
-                        <p>Corrum volorit iandae
-                            nimaxim cum restia volor
-                            reicid ut et etur sunt arum
-                            rendae pla endis re ea erum,
-                            qui doluptae</p>
-                        <a href="">Adopt</a>
+                <div id="index-main-container">
+                    <div id="index-intro-container">
+                        <img src="images/home-intro.jpg" alt="a person hugging a happy looking dog">
+                        <div id="index-intro-text">
+                            <h1>Adopt a Dog</h1>
+                            <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
+                            tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+                            derum recuptatur, cum volore, undipsa doloreium hillupta aut
+                            es ut alitatuscit ommossum haritatur arum qui officae videbiti
+                            corporeium faccull oribus es quidignis ipietus explam sus
+                            am aut amet ant fugiatum, utem non reptat ad magnienecto
+                            volorent fugia nonsedi gendand itatquos as magnimpor aut
+                            molor autatia ad est officimus accae et omnia cus, od qui ate </p>
+                        </div>                    
                     </div>
-                    <div class="index-card">
-                        <img src="images/poppy-card.jpg" alt="">
-                        <h2>Poppy</h2>
-                        <p><strong>Cost to adopt:</strong>$123.45</p>
-                        <p>Corrum volorit iandae
-                            nimaxim cum restia volor
-                            reicid ut et etur sunt arum
-                            rendae pla endis re ea erum,
-                            qui doluptae</p>
-                        <a href="">Adopt</a>
-                    </div>  
-                    <div class="index-card">
-                        <img src="images/jack-card.jpg" alt="">
-                        <h2>Jack</h2>
-                        <p><strong>Cost to adopt:</strong>$123.45</p>
-                        <p>Corrum volorit iandae
-                            nimaxim cum restia volor
-                            reicid ut et etur sunt arum
-                            rendae pla endis re ea erum,
-                            qui doluptae</p>
-                        <a href="">Adopt</a>
-                    </div>  
-                    <div class="index-card">
-                        <img src="images/duffy-card.jpg" alt="">
-                        <h2>Duffy</h2>
-                        <p><strong>Cost to adopt:</strong>$123.45</p>
-                        <p>Corrum volorit iandae
-                            nimaxim cum restia volor
-                            reicid ut et etur sunt arum
-                            rendae pla endis re ea erum,
-                            qui doluptae</p>
-                        <a href="">Adopt</a>
+                    <div id="index-grid">
+                        <div class="index-card">
+                            <img src="images/murphy-card.jpg" alt="timid looking dog">
+                            <h2>Murphy</h2>
+                            <p><strong>Cost to adopt:</strong>$123.45</p>
+                            <p>Corrum volorit iandae
+                                nimaxim cum restia volor
+                                reicid ut et etur sunt arum
+                                rendae pla endis re ea erum,
+                                qui doluptae</p>
+                            <a class="green-link" href="">Adopt</a>
+                        </div>
+                        <div class="index-card">
+                            <img src="images/poppy-card.jpg" alt="">
+                            <h2>Poppy</h2>
+                            <p><strong>Cost to adopt:</strong>$123.45</p>
+                            <p>Corrum volorit iandae
+                                nimaxim cum restia volor
+                                reicid ut et etur sunt arum
+                                rendae pla endis re ea erum,
+                                qui doluptae</p>
+                            <a class="green-link" href="">Adopt</a>
+                        </div>  
+                        <div class="index-card">
+                            <img src="images/jack-card.jpg" alt="">
+                            <h2>Jack</h2>
+                            <p><strong>Cost to adopt:</strong>$123.45</p>
+                            <p>Corrum volorit iandae
+                                nimaxim cum restia volor
+                                reicid ut et etur sunt arum
+                                rendae pla endis re ea erum,
+                                qui doluptae</p>
+                            <a class="green-link" href="">Adopt</a>
+                        </div>  
+                        <div class="index-card">
+                            <img src="images/duffy-card.jpg" alt="">
+                            <h2>Duffy</h2>
+                            <p><strong>Cost to adopt:</strong>$123.45</p>
+                            <p>Corrum volorit iandae
+                                nimaxim cum restia volor
+                                reicid ut et etur sunt arum
+                                rendae pla endis re ea erum,
+                                qui doluptae</p>
+                            <a class="green-link" href="">Adopt</a>
+                        </div>
+                        <div class="index-card">
+                            <img src="images/lucas-card.jpg" alt="">
+                            <h2>Lucas</h2>
+                            <p><strong>Cost to adopt:</strong>$123.45</p>
+                            <p>Corrum volorit iandae
+                                nimaxim cum restia volor
+                                reicid ut et etur sunt arum
+                                rendae pla endis re ea erum,
+                                qui doluptae</p>
+                            <a class="green-link" href="">Adopt</a>
+                        </div>   
+                        <div class="index-card">
+                            <img src="images/jake-card.jpg" alt="">
+                            <h2>Jake</h2>
+                            <p><strong>Cost to adopt:</strong>$123.45</p>
+                            <p>Corrum volorit iandae
+                                nimaxim cum restia volor
+                                reicid ut et etur sunt arum
+                                rendae pla endis re ea erum,
+                                qui doluptae</p>
+                            <a class="green-link" href="">Adopt</a>
+                        </div> 
+                        <div class="index-card">
+                            <img src="images/angus-card.jpg" alt="">
+                            <h2>Angus</h2>
+                            <p><strong>Cost to adopt:</strong>$123.45</p>
+                            <p>Corrum volorit iandae
+                                nimaxim cum restia volor
+                                reicid ut et etur sunt arum
+                                rendae pla endis re ea erum,
+                                qui doluptae</p>
+                            <a class="green-link" href="">Adopt</a>
+                        </div> 
+                        <div class="index-card">
+                            <img src="images/violet-card.jpg" alt="">
+                            <h2>Violet</h2>
+                            <p><strong>Cost to adopt:</strong>$123.45</p>
+                            <p>Corrum volorit iandae
+                                nimaxim cum restia volor
+                                reicid ut et etur sunt arum
+                                rendae pla endis re ea erum,
+                                qui doluptae</p>
+                            <a class="green-link" href="checkout.html">Adopt</a>
+                        </div>   
                     </div>
-                    <div class="index-card">
-                        <img src="images/lucas-card.jpg" alt="">
-                        <h2>Lucas</h2>
-                        <p><strong>Cost to adopt:</strong>$123.45</p>
-                        <p>Corrum volorit iandae
-                            nimaxim cum restia volor
-                            reicid ut et etur sunt arum
-                            rendae pla endis re ea erum,
-                            qui doluptae</p>
-                        <a href="">Adopt</a>
-                    </div>   
-                    <div class="index-card">
-                        <img src="images/jake-card.jpg" alt="">
-                        <h2>Jake</h2>
-                        <p><strong>Cost to adopt:</strong>$123.45</p>
-                        <p>Corrum volorit iandae
-                            nimaxim cum restia volor
-                            reicid ut et etur sunt arum
-                            rendae pla endis re ea erum,
-                            qui doluptae</p>
-                        <a href="">Adopt</a>
-                    </div> 
-                    <div class="index-card">
-                        <img src="images/angus-card.jpg" alt="">
-                        <h2>Angus</h2>
-                        <p><strong>Cost to adopt:</strong>$123.45</p>
-                        <p>Corrum volorit iandae
-                            nimaxim cum restia volor
-                            reicid ut et etur sunt arum
-                            rendae pla endis re ea erum,
-                            qui doluptae</p>
-                        <a href="">Adopt</a>
-                    </div> 
-                    <div class="index-card">
-                        <img src="images/violet-card.jpg" alt="">
-                        <h2>Violet</h2>
-                        <p><strong>Cost to adopt:</strong>$123.45</p>
-                        <p>Corrum volorit iandae
-                            nimaxim cum restia volor
-                            reicid ut et etur sunt arum
-                            rendae pla endis re ea erum,
-                            qui doluptae</p>
-                        <a href="checkout.html">Adopt</a>
-                    </div>
-                    <a href="all-dogs.html">See More Dogs</a>
-                </div>
+                    <div><a href="all-dogs.html" id="see-more-dogs-link">See More Dogs</a></div>
+                </div> 
             </main>
             <footer>
-               <img src="file:///C:/Users/Danny/Desktop/HTML200/js-cert/html200-adopt-a-dog/images/adoptadog-logo.svg" alt="">
-               <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
-               esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-               <a href="index.html">Home</a>
-               <a href="all-dogs.html">Dogs</a>
-               <a href="">Contact</a>
-               <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+                <div id="footer-container">
+                    <img id="footer-image" src="file:///C:/Users/Danny/Desktop/HTML200/adopt-a-dog/images/adoptadog-logo.svg" alt="">
+                    <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
+                    esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+                   <div #id="footer-nav">
+                        <a href="index.html">Home</a>
+                        <a href="all-dogs.html">Dogs</a>
+                        <a href="">Contact</a>
+                    </div>
+                    <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+                </div>    
             </footer>
         </body>
     </html>

@@ -1,0 +1,217 @@
+body {
+margin: 0;
+}
+header {
+    background-color: #000000;
+    background-image: url("images/header-image.jpg");
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+header img {
+    width: 100%;
+    height: 100%;
+}
+.tagline {
+    color: #00cc00;
+    margin-top: -1em;
+}
+header a {
+    color: white
+}
+#header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 7em;
+}
+#header-checkout {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%; 
+}
+#cart {
+    height: 2em;
+    width: 2em;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin-left: 50%;
+}
+#price {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+#checkout-link {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+nav {
+    background-color: whitesmoke;
+    height: 2em;  
+    margin-top: 0;
+}
+#nav-content {
+    display: flex;
+    flex-direction: row;
+    width: 12em;
+    justify-content: space-around;
+    margin-left: 3em;
+    padding-top: .5em;
+}
+nav a {
+    color: #00008B;
+    font-weight: bold;
+    text-decoration: none;;  
+}
+/* INDEX-SPECIFIC */
+#index-main-container {
+    margin: 4em;
+}
+#index-intro-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+#index-intro-container img {
+    float: left;
+}
+#index-intro-text {
+    padding: 2rem;
+}
+h1, h2, h3, h4, h5 {
+    color: darkblue;
+}
+h1 {
+    font-size: 20px;
+    
+}
+#index-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    background-color: white;
+}
+.index-card {
+    border: lightgray .5px solid;
+    margin: 1rem;  
+    display: flex;
+    flex-direction: column;  
+}
+.index-card img {
+    width: 100%; 
+} 
+#see-more-dogs-link {
+    display: block;
+    border: .5px gray solid;
+    background-color: lightgray;
+    font-weight: bold; 
+    text-decoration: none;
+    padding: .5em 2em;
+    text-align: center;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+.green-link {
+    background-color: #00bb00;
+    color: white;
+    padding: .3em 3em;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: .3em;
+}
+#footer-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #003355;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    margin-top: 4em;
+}
+#footer-image {
+    height: 8rem;
+    width: 18rem;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+#footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* ALL-DOGS SPECIFIC */
+
+#all-dogs-grid {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 25% 25% 25% 25%; 
+}
+
+
+/* BLOG SPECIFIC */
+
+.blog-card {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+
+}
+/* CHECKOUT SPECIFIC */
+#checkout-main-container {
+    width: 100%;
+}
+#form-container {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 2em auto;
+    line-height: 10em;
+}
+form input {
+    line-height: 3em;
+}
+form label {
+    color: blue;
+    font-size: large;
+}
+#checkout-h1 {
+    text-align: left;
+    margin-bottom: -3em;
+}
+#city-state-zip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#city-state-zip label {
+    margin-bottom: 0;
+}
+#state {
+    height: 3.5em;
+}
+#first-time {
+    display: flex;
+    flex-direction: row;
+    line-height: 0;
+    margin: -3em 0;
+}
+#checkout-cards {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 30% 20% 30%; 
+}
+.checkout-card img {
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
