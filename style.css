@@ -14,7 +14,7 @@ html, body {
 
 header {
   height: 28rem;
-  width: fill;
+  width: 100%;
   color: white;
   background-image: url(images/header-image-banner.jpg);
   background-repeat: repeat-x;
@@ -28,7 +28,7 @@ header {
   top: 5rem;
   font-family: sans-serif;
   font-weight: bolder;
-  margin-left: 10rem;
+  margin-left: 10%;
 }
 
 .cartline1 {
@@ -58,7 +58,7 @@ header .title {
   height: 10rem;
   position: relative;
   top: 5rem;
-  left: 10rem;
+  left: 10%;
   color: rgba(115, 153, 0, 1);
   line-height: 1rem;
   font-style: italic;
@@ -79,7 +79,7 @@ h1 {
 }
 
 .topnav h2 {
-  margin-left: 12rem;
+  margin-left: 11%;
   margin-top: 1em;
 }
 
@@ -415,6 +415,14 @@ footer p span{
 /* Media Queries */
 /* Mobile */
 @media screen and (max-width: 767px) {
+  header .title {
+    width: 80%;
+  }
+
+  .title h1 {
+    font-size: 1.25rem;
+  }
+
   .intro {
     text-align: center;
   }
@@ -534,7 +542,7 @@ footer p span{
   }
 
 .current-dogs-container {
-  width: 60%;
+  width: 63%;
   margin: 0 10% 0;
   padding: 0;
   justify-content: space-evenly;
