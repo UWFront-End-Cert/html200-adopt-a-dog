@@ -6,6 +6,16 @@
   <link rel="stylesheet" href="styles/stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@200&display=swap" rel="stylesheet">
 </head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $("#submitBtn").click(function(){   
+        console.log($("form").serialize());
+        console.log('This is the form data, serialized.');     
+        //$("#dogform").submit(); // Submit the form
+      });
+    });
+</script>
 <body>
   <div>
     <header>
@@ -28,7 +38,7 @@
       <h1 class="dogsh1"> Checkout </h1>
       <div class="clearfix-form">
 
-        <form action="checkout.html" method="post" id="signup">
+        <form action="checkout.html" method="post" id="dogform">
           <label class = "label">Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -89,7 +99,7 @@
           <div style = "margin-top: 10px; margin-bottom: 10px;">
             <span style = "margin-right: 40px"> $123.456 </span>
           </div>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" id="submitBtn">
         </form>
 
 
