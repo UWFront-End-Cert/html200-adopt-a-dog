@@ -13,14 +13,34 @@ html, body {
 
 
 header {
+  position: relative;
+  top: 0;
+  right: 0;
   height: 28rem;
   width: 100%;
   color: white;
   background-image: url(images/header-image-banner.jpg);
   background-repeat: repeat-x;
+  background-size: cover;
+  background-position: left center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.header-container {
+  position: relative;
+}
+
+.header-gradient {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 28rem;
+  width: 100%;
+  background-color: black;
+  background: linear-gradient(to top, black -50%, rgba(0, 50, 100, 1) 40%, rgba(0, 50, 100, 1) 70%, black 100%);
 }
 
 .cart {
