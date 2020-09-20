@@ -1,3 +1,49 @@
+   @media print {
+     body img {
+        display: none;
+     } 
+   }
+   @media screen and (min-width: 200px) {
+       .homeimage {
+          height: 400px;
+          object-fit: contain;
+       }
+   }
+   @media screen and (min-width: 200px) {
+       .blogimage2 {
+          height: 200px;
+          object-fit: contain;
+          padding-top: 30px;
+       }
+   }
+   @media screen and (min-width: 200px) {
+       img {
+         display: inline;
+          width: 100%;
+       }
+   }
+   @media screen and (max-width: 768px) {
+        .hidetext {
+          display: none;
+       }
+   }
+
+   @media screen and (max-width: 768px) {
+        .box-content1 {
+          width: 450px;
+       }
+   }
+   @media screen and (max-width: 500px) {
+        .box-content1 {
+          width: 100px;
+       }
+   }
+    .readmorelink {
+      color: #33ccff; /* LightBlue */
+      font-weight: bold;
+      font-size: 100%;
+      padding: 10px;
+    }
     .grid-container {
       display: grid;
       grid-gap: 0px 5px;
@@ -6,6 +52,66 @@
     .grid-item-1 {
       grid-column-start: 1;
       grid-column-end: 4;
+    }
+    .grid-item-4 {
+      display: grid;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 20px;
+    }
+    .grid-item-blogpreview {
+      display: grid;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 20px;
+    }
+    .moredogs-button2 {
+      width: 30%;
+      background-color: #d4d4d4; /* gray */
+      border: none;
+      border-radius: 3px;
+      color: #1d5382; /* Blue */
+      text-align: center;
+      text-decoration: none;
+      font-size: 100%;
+      margin-top: 10px;
+      margin-bottom: 75px;
+      margin-left: 32%;
+      font-weight: bold;
+    }
+    .box-content1 {
+      margin-left: 10px;
+      margin-right: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .box5 {
+      width: 200px;
+      height: auto;
+      margin: 10px;
+      padding-bottom: 20px;
+      border: 2px #d4d4d4 solid;
+    }
+    .dogs-button1 {
+      background-color: #76d138; /* Green */
+      border: none;
+      border-radius: 3px;
+      color: white;
+      padding: 10px 60px 10px 60px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 100%;
+      font-weight: bold;
+      margin-left: 15px;
+    }
+    .boldlink:hover {
+      color: gray;
     }
    .flexboxcontainer3 {
      position: absolute;
@@ -96,16 +202,21 @@
       text-align: center;
       padding: 50px;
     }
-    .grid-item-4 {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      padding-left: 50px;
-      padding-right: 50px;
+    .flexbox-content {
+      height: auto;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
-    .grid-item-5 {
-      grid-column-start: 1;
-      grid-column-end: 4;
-    }
+    .box {
+      width: 500px;
+      height: auto;
+      padding: 30px 10px 20px 10px;
+     }
+
     .grid-item-6 {
       grid-column-start: 1;
       grid-column-end: 4;
@@ -185,19 +296,6 @@
       font-weight: bold;
       margin-left: 25px;
     }
-    .moredogs-button {
-      background-color: #d4d4d4; /* gray */
-      border: none;
-      border-radius: 3px;
-      color: #1d5382; /* Blue */
-      padding: 5px 35px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 100%;
-      margin-top: 10px;
-      margin-bottom: 75px;
-      font-weight: bold;
-    }
     .submitbutton {
       background-color: #76d138; /* Green */
       border: none;
@@ -214,24 +312,10 @@
       width: 25%;
       height: 25%;
     }
-    .flexbox-content {
-      height: auto;
-      margin-left: 50px;
-      margin-right: 50px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    .box {
-      width: 500px;
-      height: auto;
-      padding: 30px 10px 20px 10px;
-     }
     .box2 {
       width: 250px;
       height: auto;
-      margin: 30px;
+      margin: 40px;
       padding-bottom: 20px;
       border: 2px #d4d4d4 solid;
     }
@@ -250,14 +334,6 @@
       width: 600px;
       height: auto;
       padding: 30px 10px 20px 10px;
-    }
-    .blogimage {
-      width: 350px;
-      height: auto;
-    }
-    img {
-      height: auto;
-      width: 100%;
     }
     p {
       padding-left: 10px;
