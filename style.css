@@ -376,7 +376,6 @@ input {
 
 .item-cost h5 {
   margin-bottom: 1rem;
-  border: 2px solid red;
 }
 
 .item-cost span {
@@ -453,11 +452,17 @@ footer p span{
   .intro {
     text-align: center;
   }
+
+  #blog-page img{
+    float: left;
+  }
+
   .intro img {
     display: inline;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    float: none;
   }
   .introtext {
     font-size: 1rem;
@@ -487,6 +492,7 @@ footer p span{
 @media screen and (max-width: 857px) {
   #blog-page div {
     width: 100%;
+    float: left;
     text-align: left;
   }
 }
