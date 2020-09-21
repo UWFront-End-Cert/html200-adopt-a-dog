@@ -147,6 +147,7 @@ article div {
   font-family: sans-serif;
   font-weight: lighter;
   line-height: 1.5rem;
+  margin: 0 10px 0;
 }
 
 h3 {
@@ -172,6 +173,12 @@ h3 {
   flex-flow: row wrap;
   width: 100%;
   margin-top: 2rem;
+}
+
+#adoption-page {
+  width: 80%;
+  margin: 0 10% 0;
+  justify-content: space-between;
 }
 
 .dog-card {
@@ -474,6 +481,13 @@ footer p span{
   }
   #blog-preview {
     display: none;
+  }
+}
+
+@media screen and (max-width: 857px) {
+  #blog-page div {
+    width: 100%;
+    text-align: left;
   }
 }
 
