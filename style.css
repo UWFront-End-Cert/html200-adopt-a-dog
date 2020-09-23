@@ -118,7 +118,6 @@ h1 {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 5%;
-  overflow: auto;
 }
 
 .intro img {
@@ -144,7 +143,6 @@ h1 {
 
 .post {
   margin: 0 0 3rem;
-  overflow: auto;
 }
 
 /* .post img {
@@ -543,7 +541,6 @@ footer p span{
 @media screen and (min-width: 768px) {
   .intro {
     margin: 2rem 10%;
-    overflow: auto;
   }
 
   /* .intro img {
