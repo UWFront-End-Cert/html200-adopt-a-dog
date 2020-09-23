@@ -45,7 +45,8 @@ header {
 
 .cart {
   position: relative;
-  top: 5rem;
+  top: 15%;
+  height: fit-content;
   font-family: sans-serif;
   font-weight: bolder;
   margin-left: 10%;
@@ -113,13 +114,14 @@ h1 {
 }
 
 .intro {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   margin: 5%;
   overflow: auto;
 }
 
 .intro img {
-  width: auto;
-  float: left;
   margin-right: 2%;
   margin-bottom: 4%;
 }
@@ -128,17 +130,27 @@ h1 {
   font-size: 1rem;
 }
 
+#blog-page img {
+  margin-bottom: 0;
+}
 
+@media screen and (max-width
+  : 869px) {
+#blog-page img {
+  margin-bottom: 3%;
+}
+
+}
 
 .post {
   margin: 0 0 3rem;
   overflow: auto;
 }
 
-.post img {
+/* .post img {
   float: left;
   margin-right: 3%;
-}
+} */
 
 
 article div {
@@ -534,12 +546,13 @@ footer p span{
     overflow: auto;
   }
 
-  .intro img {
+  /* .intro img {
     width: auto;
     float: left;
     margin-right: 2%;
     margin-bottom: 4%;
-  }
+  } */
+
 #blog-preview {
   float: right;
   width: 25%;
