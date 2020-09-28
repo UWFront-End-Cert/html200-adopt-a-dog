@@ -23,3 +23,18 @@ getting them exactly centered in the phone. Additionally, the issues with small 
 
 I used Google Chrome's Responsive mode to simulate a tablet. On tablet, the dogs showed up in two 
 columns as I expected, and issues with header resizing were less of an issue. 
+
+
+Persona for Adoptadog
+
+Name: Kelsey Smith
+Age: 35
+Occupation: Accountant
+Activities: Dungeons and Dragons, video games
+Other details: 
+ - lives in the city
+ - looking for companionship
+ - likes to surf on her phone at breaks at work
+ - uses her gaming desktop and Mozilla to surf at home
+ - Uses Internet Explorer only for work purposes because work systems are antiquated and rely on them
+
