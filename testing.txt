@@ -1,0 +1,25 @@
+Testing Notes
+
+I expect that most of the people who access this site will be 25-40 year old
+single urban Millenials. In my experience, urban millenials are highly likely to delay 
+childbearing and instead adopt a pet for companionship, particularly in their 20s and 
+early 30s while they are focusing on a carreer. They are also likely to look online
+for a pet instead of going through the usual channels like a local shelter. 
+
+
+Most of these people will be technologically literate and will use
+a smart phone to browse sites while at work and a laptop or desktop browser,
+likely Mozilla or Google Chrome, while at home. They may also use
+an Apple or Samsung Tablet while laying at home in bed to surf sites. 
+They will probably not use Internet Explorer in their personal lives. 
+
+I tested this project on desktop on Mozilla, Google Chrome, and Microsoft Edge. Basic functionality
+was present in all browsers - images loaded and jquery was functional. However, there were 
+still nagging issues with image elements in the header not resizing quite right. I think
+this is something I will have to revisit in future sites. 
+
+I tested on my phone (Samsung S9). On mobile, the dog images went to one column, but I still had trouble
+getting them exactly centered in the phone. Additionally, the issues with small header images persisted.
+
+I used Google Chrome's Responsive mode to simulate a tablet. On tablet, the dogs showed up in two 
+columns as I expected, and issues with header resizing were less of an issue. 
