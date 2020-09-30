@@ -33,8 +33,8 @@
   </nav>
   <section class="checkout container">
     <h3 class="headline">Checkout</h3>
-    <form class="custmr-checkout" >
-      <!-- action="/submit.php" method="POST" -->
+    <form class="custmr-checkout" method="POST">
+      <!-- action="/submit.php" -->
       <div class="line-1">
         <label for="custmrName">Name</label>
         <br>
@@ -170,7 +170,8 @@
         <h4>Total Adoption Cost</h4>
         <p>$1234.56</p>
       </section>
-      <input  id='button'  onclick="./scripts/checkout.js" type="submit" class="submit" value="Submit">
+      <input  id='button' onclick="myFunction(event)" type="submit" class="submit" value="Submit">
+      <!-- onclick accepts function name. function name w/(). Or, use JS file to select this button and add the event listener. -->
     </form>
   </section>
 
@@ -187,7 +188,6 @@
     <br>
     <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
   </footer>
-  <script src="./scripts/ada-01.js"></script>
   <script src="./scripts/checkout.js"></script>
 </body>
 </html>
