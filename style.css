@@ -129,8 +129,19 @@ h1 {
   font-size: 1rem;
 }
 
+#blog-page {
+  margin: 10%;
+}
+
 #blog-page img {
   margin-bottom: 0;
+  margin-right: 2%;
+}
+
+#blog-page article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 @media screen and (max-width

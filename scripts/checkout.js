@@ -23,13 +23,33 @@ logFormValues(formValuesObj); //call function
 
 // Display alert onclick submit button
 // let checkoutSubmitForm = document.getElementById('button').addEventListener("click", myFunction);
-function myFunction(event) { //this queues the console log. review event (e) mdn doc.
-  event.preventDefault(); //prevent page reload
-  //review mdn doc
-  //event.target
-  let custmrName = document.getElementById('custmrName');// place these in function logFormValues. PreventDefault
+// the line above selects the submit button and has an event listener onclick to call myFunction
+function myFunction(event) { //this queues the console log. review 'event (e)' mdn doc.
+  event.preventDefault(); //prevent page reload. review mdn doc
+  //event.target, review mdn doc
+  let custmrName = document.getElementById('custmrName');// get fields, assign variables. Place these in function myFunction.
+  let custmrContact = document.getElementById('custmrContact');
   let custmrSt = document.getElementById('custmrSt');
-  console.log(custmrName.value); //logs blank.
-  console.log(custmrSt.value); //logs blank.
+  let custmrCity = document.getElementById('custmrCity');
+  let custmrState = document.getElementById('custmrState');
+  let custmrZip = document.getElementById('custmrZip');
+  let custmrNewYes = document.getElementById('custmrNewYes');
+  let custmrNewNo = document.getElementById('custmrNewNo');
+  let pickupLoc = document.getElementById('pickupLoc');
+
+  console.log('Name: ' + custmrName.value); //logs values of field.
+  console.log('Contact: ' + custmrContact.value);
+  console.log('Address: ' + custmrSt.value);
+  console.log(custmrCity.value);
+  console.log(custmrState.value);
+  console.log(custmrZip.value);
+  //radio buttons
+  if (custmrNewYes.checked === true) {
+    console.log('New customer: Yes');
+  } else {
+    console.log('New customer: No');
+  }
+  //
+  console.log('Pickup Loc: ' + pickupLoc.value);
   alert('Thank you. The form information has been received');
 }
