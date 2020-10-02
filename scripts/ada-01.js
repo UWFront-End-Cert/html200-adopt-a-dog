@@ -15,9 +15,29 @@ function whichDog(n, b, p) {
 // Cost Calculator
 let total = 0;
 
-function costCalculator(x) {
-  total += x;
-  //return total; return not necessary. code stops at return. ok to have a function w/o a return?
-  //A: yes.
-  alert('Total Cost: $' + total);
-}
+// function costCalculator(x) {
+//   total += x;
+//   alert('Total Cost: $' + total);
+// }
+
+//refactor running cart total in jQuery
+
+$('.add-to-cart button').click(function (e) { //get button. set event istener to a function
+  function costCalculator(x) {
+    total += x;
+    alert('Total Cost: $' + total);
+  }
+})
+
+//OPO
+//get "add-to-cart button" element
+//create event handler function for a function
+// write function costCalculator inside previous function
+//(how to write a function in a function in jQuery?)
+
+
+//function call costCalculator is not recognized in the HTML file. 
+
+
+
+//get dogPrice array ?? (this JS code should move to file: ada-01.js)
