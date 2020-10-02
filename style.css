@@ -203,7 +203,7 @@ h3 {
 }
 
 .dog-card {
-  border: solid 2px rgba(128, 128, 128, .25);
+  border: solid 2px rgba(220, 220, 220, 1);
   width: 10.9rem;
   border-top: none;
   margin: 0 2rem 2rem 0;
@@ -218,6 +218,13 @@ h3 {
 
 .dog-card img ~ * {
   margin: .5rem .75rem .75rem .75rem;
+}
+
+.hover-state {
+  border: solid 2px rgba(115, 153, 0, 1);;
+  border-top: none;
+  box-shadow: 5px 10px 20px rgba(128, 128, 128, .5);
+  top: 5%;
 }
 
 .current-dogs-container p {
