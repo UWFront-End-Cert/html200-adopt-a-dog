@@ -1,5 +1,4 @@
-//dog-card drop shadow
-
+//dog-card hover effect
 $('.dog-card').hover(function (e) {
   $(this).toggleClass('hover-state');
   },
@@ -7,3 +6,5 @@ $('.dog-card').hover(function (e) {
     $(this).toggleClass('hover-state');
   }
 );
+
+//refactor
