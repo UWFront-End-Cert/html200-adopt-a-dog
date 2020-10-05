@@ -49,11 +49,7 @@ $('.submit').click(function (e) {
   console.log($('#custmrState').val());
   console.log($('#custmrZip').val());
   console.log('NewCustomer?:');
-  if ('#custmrNewYes'.checked === true) {//always logs 'no'
-    console.log($('#custmrNewYes').val());
-  } else {
-    console.log($('#custmrNewNo').val());
-  }
+  console.log($('input[name ="custmrNew"]:checked').val());//how does this syntax work?
   console.log('PickupLoc:');
   console.log($('#pickupLoc').val());
   // console.log('jQuery event connected'); //jQuery connection test
