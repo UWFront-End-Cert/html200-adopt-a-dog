@@ -91,6 +91,10 @@
       font-size: 100%;
       padding: 10px;
     }
+    .readmorelink:hover {
+      color: gray;
+      font-size: 120%;
+    }
     .grid-container {
       display: grid;
       grid-gap: 0px 5px;
@@ -185,8 +189,9 @@
     i {
      color: white;
     }
-    .cart-total {
+    #cart-total {
      color: white;
+     padding-left: 10px;
     }
     .button {
      background-color: #76d138; /* Green */
@@ -213,6 +218,7 @@
       width: 40px;
       height: auto;
       padding-left: 28px;
+      padding-bottom: 10px;
     }
     .hdcartbx2 {
       width: 80px;
@@ -279,6 +285,7 @@
     .pgrap {
       width: 60%;
       float: right;
+      font-size: 100%;
       padding: 0px 10px 40px 0px;
     }
     .h3class {
@@ -328,8 +335,17 @@
     .important-1 {
       color: #1d5382; /* Blue */
       font-weight: bold;
-      font-size: 175%;
+      font-size: 150%;
       padding: 25px;
+    }
+    .important-2 {
+      color: #1d5382; /* Blue */
+      font-weight: bold;
+      font-size: 100%;
+      padding: 15px;
+    }
+    .important-2:hover {
+      color: gray;
     }
     .dogs-button {
       background-color: #76d138; /* Green */
@@ -365,6 +381,9 @@
       margin: 40px;
       padding-bottom: 20px;
       border: 2px #d4d4d4 solid;
+    }
+    .tile-border {
+      border: 4px #47d1d1 solid;
     }
     .box3 {
       width: 100%;
