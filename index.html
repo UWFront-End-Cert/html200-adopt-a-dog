@@ -24,7 +24,7 @@
                   <i class="fas fa-shopping-cart"></i>
                 </div>
                 <div class="hdcartbx2">
-                  <p class="cart-total">$1234.56</p>
+                  <p id="cart-total"></p>
                 </div>
                 <div class="hdcartbx3">
                   <a class="button" href="checkout.html"> Checkout </a>
@@ -50,20 +50,20 @@
         </section>
         <div class="box-content1">
           <section class="box5">
-            <img onclick="doginfo('Name: Murphy   ',' Breed: Shepherd Mix  ','Adoption Fee: $123.45')" src="images/murphy-card.jpg" alt="image of dog for adoption">
+            <img class="tile-image" onclick="doginfo('Name: Murphy   ',' Breed: Shepherd Mix  ','Adoption Fee: $123.45')" src="images/murphy-card.jpg" alt="image of dog for adoption">
             <h3>Murphy</h3>
             <p>Breed: Shepherd Mix</p>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="dogs-button1 boldlink" onclick="adoptionfee('Adoption Fee: $123.45')">Adopt</a>
+            <a class="dogs-button1 boldlink" >Adopt</a>
           </section>
           <section class="box5">
-            <img onclick="doginfo('Name: Poppy   ',' Breed: Terrier Mix  ','Adoption Fee: $123.45')" src="images/poppy-card.jpg" alt="image of dog for adoption">
+            <img class="tile-image" onclick="doginfo('Name: Poppy   ',' Breed: Terrier Mix  ','Adoption Fee: $123.45')" src="images/poppy-card.jpg" alt="image of dog for adoption">
             <h3>Poppy</h3>
             <p>Breed: Terrier Mix</p>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="dogs-button1 boldlink" onclick="adoptionfee('Adoption Fee: $123.45')">Adopt</a>
+            <a class="dogs-button1 boldlink" >Adopt</a>
           </section>
           <section class="box5">
             <img onclick="doginfo('Name: Jack   ',' Breed: Beagle  ','Adoption Fee: $123.45')" src="images/jack-card.jpg" alt="image of dog for adoption">
@@ -71,7 +71,7 @@
             <p>Breed: Beagle</p>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="dogs-button1 boldlink" onclick="adoptionfee('Adoption Fee: $123.45')">Adopt</a>
+            <a class="dogs-button1 boldlink" >Adopt</a>
           </section>
           <section class="box5">
             <img onclick="doginfo('Name: Duffy   ',' Breed: Pitbull Mix  ','Adoption Fee: $123.45')" src="images/duffy-card.jpg" alt="image of dog for adoption">
@@ -79,7 +79,7 @@
             <p>Breed: Pitbull Mix</p>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="dogs-button1 boldlink" onclick="adoptionfee('Adoption Fee: $123.45')">Adopt</a>
+            <a class="dogs-button1 boldlink" >Adopt</a>
           </section>
           <section class="box5">
             <img onclick="doginfo('Name: Lucas   ',' Breed: Mixed  ','Adoption Fee: $123.45')" src="images/lucas-card.jpg" alt="image of dog for adoption">
@@ -87,7 +87,7 @@
             <p>Breed: Mixed</p>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="dogs-button1 boldlink" onclick="adoptionfee('Adoption Fee: $123.45')">Adopt</a>
+            <a class="dogs-button1 boldlink" >Adopt</a>
           </section>
           <section class="box5">
             <img onclick="doginfo('Name: Jake   ',' Breed: Lab  ','Adoption Fee: $123.45')" src="images/jake-card.jpg" alt="image of dog for adoption">
@@ -95,10 +95,10 @@
             <p>Breed: Lab</p>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="dogs-button1 boldlink" onclick="adoptionfee('Adoption Fee: $123.45')">Adopt</a>
+            <a class="dogs-button1 boldlink" >Adopt</a>
           </section>
         </div>
-        <a class="moredogs-button2 important" href="dogs-for-adoption.html">See More Dogs</a>
+        <a class="moredogs-button2 important-2" href="dogs-for-adoption.html">See More Dogs</a>
       </div>
       <div class="grid-item-blogpreview">
         <article class="previewblog">
@@ -136,6 +136,7 @@
         </footer>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="javascript/javascript.js"></script>
   </body>
 </html>
