@@ -15,29 +15,19 @@ function whichDog(n, b, p) {
 // Cost Calculator
 let total = 0;
 
-// function costCalculator(x) {
-//   total += x;
-//   alert('Total Cost: $' + total);
-// }
+function costCalculator(x) {
+  total += x;
+}
 
 //refactor running cart total in jQuery
 
-$('.add-to-cart button').click(function (e) { //get button. set event istener to a function
-  function costCalculator(x) {
-    total += x;
-    alert('Total Cost: $' + total);
-  }
-})
+$('.add-to-cart').click(function (e) { //get button. set event listener to a function
+  alert('Total Cost: $' + total);
+});
+
+
 
 //OPO
 //get "add-to-cart button" element
-//create event handler function for a function
-// write function costCalculator inside previous function
-//(how to write a function in a function in jQuery?)
-
-
-//function call costCalculator is not recognized in the HTML file. 
-
-
-
-//get dogPrice array ?? (this JS code should move to file: ada-01.js)
+//create event handler function for a function. (click, alert new total)
+//~~~Can't put costCalculator in the event handler function??? (how to w/o function call costCalculator is not recognized in the HTML file??

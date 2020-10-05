@@ -227,6 +227,10 @@ h3 {
   top: 5%;
 }
 
+.hover-state .add-to-cart, .hover-state img {
+  cursor: pointer;
+}
+
 .current-dogs-container p {
   font-family: sans-serif;
   font-weight: lighter;
