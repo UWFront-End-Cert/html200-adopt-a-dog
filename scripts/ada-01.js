@@ -15,13 +15,16 @@ function whichDog(n, b, p) {
 // Cost Calculator
 let total = 0;
 
-function costCalculator(x) {
-  total += x;
-}
+// function costCalculator(x) {
+//   total += x;
+// }
 
 //refactor running cart total in jQuery
-
+//Currently on logs 0. How to pass $amount to costCalculator??
 $('.add-to-cart').click(function (e) { //get button. set event listener to a function
+  function costCalculator(x) {
+  total += x;
+}
   alert('Total Cost: $' + total);
 });
 

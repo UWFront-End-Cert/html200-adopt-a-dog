@@ -1,25 +1,5 @@
 //Assignment 8
-
-
 // Console log the values inside the form, you can build a string or build an object.
-//get form. assign variable
-const form = document.getElementsByTagName('form');
-//get input fields. assign variables
-
-
-
-//create object for form inputs.
-const formValuesObj = {
-  name: custmrName,
-  street: custmrSt
-};
-
-//function console log form values
-function logFormValues() {
-
-}
-
-logFormValues(formValuesObj); //call function
 
 // Display alert onclick submit button
 // let checkoutSubmitForm = document.getElementById('button').addEventListener("click", myFunction);
@@ -53,3 +33,28 @@ function myFunction(event) { //this queues the console log. review 'event (e)' m
   console.log('Pickup Loc: ' + pickupLoc.value);
   alert('Thank you. The form information has been received');
 }
+//As of Assignment 9, above code is unused and has been reinterpreted into jQuery. See below.
+
+//Assignment 9: refactor console logging form inputs w/ jQuery.
+
+$('.submit').click(function (e) {
+  // myFunction(event);
+  console.log('Name:');
+  console.log($('#custmrName').val());
+  console.log('Contact:');
+  console.log($('#custmrContact').val());
+  console.log('Address:');
+  console.log($('#custmrSt').val());
+  console.log($('#custmrCity').val());
+  console.log($('#custmrState').val());
+  console.log($('#custmrZip').val());
+  console.log('NewCustomer?:');
+  if ('#custmrNewYes'.checked === true) {//always logs 'no'
+    console.log($('#custmrNewYes').val());
+  } else {
+    console.log($('#custmrNewNo').val());
+  }
+  console.log('PickupLoc:');
+  console.log($('#pickupLoc').val());
+  // console.log('jQuery event connected'); //jQuery connection test
+});
