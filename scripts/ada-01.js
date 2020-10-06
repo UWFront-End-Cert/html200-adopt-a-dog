@@ -19,7 +19,7 @@ let total = 0;
 // }
 
 //refactor running cart total in jQuery
-//Currently on logs 0. How to pass $amount to costCalculator??
+
 // $('.add-to-cart').click(function (e) { //get button. set event listener to a function
 //   function costCalculator(x) {
 //   total += x;
@@ -29,11 +29,16 @@ let total = 0;
 
 function costCalculator(x) {
   total += x;
-  alert('new total: $' + total);
+  // alert('new total: $' + total);
 }
 
 
-$('.add-to-cart').click(costCalculator);
+
+//How to pass $amount to costCalculator from adopt html button?
+$('.add-to-cart').click(function() {
+  costCalculator(dogPrice[0]);
+  console.log('total = ' + total);
+});
 
 //OPO
 //get "add-to-cart button" element
