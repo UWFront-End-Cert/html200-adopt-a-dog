@@ -1,3 +1,4 @@
+
     @media print {
         body img {
           display: none;
@@ -70,6 +71,29 @@
         .headerbox2 {
           padding-left: 23%;
         }
+    }
+    .blogbox, .blogbox3, .blogbox5 {
+      width: auto;
+      margin: 25px;
+      padding: 20px;
+    }
+    .blogbox2, .blogbox4, .blogbox6 {
+      width: 50%;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 0px;
+      font-size: 100%;
+    }
+    .h3class {
+      line-height: normal;
+      padding: 0px;
+      margin: 0px;
+      padding-top: 10%;
+      padding-left: 10px;
+      height: 30px;
+    }
+    .pgrap {
+     padding-bottom: 10%;
     }
     .gradient {
       background: linear-gradient(to bottom, #1d5382, #d4d4d4);
@@ -244,7 +268,7 @@
       text-align: center;
       padding: 50px;
     }
-    .flexbox-content {
+    .flexbox-content, .flexbox-content5, .flexbox-content6 {
       height: auto;
       margin-left: 10px;
       margin-right: 10px;
@@ -276,22 +300,6 @@
       grid-column-end: 4;
       padding-left: 50px;
       padding-right: 50px;
-    }
-    .blogimage {
-      width: 300px;
-      float: left;
-      padding: 40px 10px 20px 10px;
-    }
-    .pgrap {
-      width: 60%;
-      float: right;
-      font-size: 100%;
-      padding: 0px 10px 40px 0px;
-    }
-    .h3class {
-      width: 60%;
-      float: right;
-      padding: 40px 10px 0px 10px;
     }
     body {
       font-family: Georgia, serif;
