@@ -33,7 +33,7 @@ function myFunction(event) { //this queues the console log. review 'event (e)' m
   console.log('Pickup Loc: ' + pickupLoc.value);
   alert('Thank you. The form information has been received');
 }
-//As of Assignment 9, above code is unused and has been reinterpreted into jQuery. See below.
+//As of Assignment 9, above code (Assignment 8) is unused and has been reinterpreted into jQuery. See below.
 
 //Assignment 9: refactor console logging form inputs w/ jQuery.
 

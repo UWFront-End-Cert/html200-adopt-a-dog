@@ -18,29 +18,9 @@ let total = 0;
 //   total += x;
 // }
 
-//refactor running cart total in jQuery
-
-// $('.add-to-cart').click(function (e) { //get button. set event listener to a function
-//   function costCalculator(x) {
-//   total += x;
-// }
-//   alert('Total Cost: $' + total);
-// });
-
-function costCalculator(x) {
-  total += x;
-  // alert('new total: $' + total);
-}
-
-
-
-//How to pass $amount to costCalculator from adopt html button?
-$('.add-to-cart').click(function() {
-  costCalculator(dogPrice[0]);
-  console.log('total = ' + total);
-});
-
-//OPO
-//get "add-to-cart button" element
-//create event handler function for a function. (click, alert new total)
-//~~~Can't put costCalculator in the event handler function??? (how to w/o function call costCalculator is not recognized in the HTML file??
+//Running cart total refactored in jQuery
+$('.add-to-cart')
+  function costCalculator(x) {
+    total += x;
+    alert('Cart Total: $' + total);
+  }
