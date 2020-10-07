@@ -1,7 +1,5 @@
 // Assignment 8
 
-
-
 // get section w/ ID 'blog-page' (blog entry containter). Assign it a variable.
 let intro = document.getElementById('blog-page');
 
@@ -89,14 +87,18 @@ let entryCopy3 = document.createElement('p');
 entryCopy3.textContent = 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui of cae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat. Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.';
 //Blog Entries END
 
-// Blog objects. 1 object per blog post.
-const blogObject1 = {
-  post: post1,
+//object of arrays. arrays contain blog posts
+const blogObjects = [
+{ post: document.createElement('article').setAttribute('class', 'post'),
   image: img01,
   copyContainer: blogCopyContainer1,
   title: entryTitle1,
-  bodyCopy: entryCopy1,
-};
+  bodyCopy: entryCopy1,}
+];
+
+// Blog objects. 1 object per blog post.
+
+
 const blogObject2 = {
   post: post2,
   image: img02,

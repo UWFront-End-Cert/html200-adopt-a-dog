@@ -19,10 +19,7 @@ function myFunction(event) { //this queues the console log. review 'event (e)' m
 
   console.log('Name: ' + custmrName.value); //logs values of field.
   console.log('Contact: ' + custmrContact.value);
-  console.log('Address: ' + custmrSt.value);
-  console.log(custmrCity.value);
-  console.log(custmrState.value);
-  console.log(custmrZip.value);
+  console.log('Address: ' + custmrSt.value + ',' + custmrCity.value + ',' + custmrState.value + ' ' + custmrZip.value);
   //radio buttons
   if (custmrNewYes.checked === true) {
     console.log('New customer: Yes');
@@ -39,18 +36,12 @@ function myFunction(event) { //this queues the console log. review 'event (e)' m
 
 $('.submit').click(function (e) {
   // myFunction(event);
-  console.log('Name:');
-  console.log($('#custmrName').val());
-  console.log('Contact:');
-  console.log($('#custmrContact').val());
-  console.log('Address:');
-  console.log($('#custmrSt').val());
-  console.log($('#custmrCity').val());
-  console.log($('#custmrState').val());
-  console.log($('#custmrZip').val());
-  console.log('NewCustomer?:');
-  console.log($('input[name ="custmrNew"]:checked').val());//how does this syntax work?
-  console.log('PickupLoc:');
-  console.log($('#pickupLoc').val());
+  event.preventDefault();
+  console.log('Name: ' + $('#custmrName').val());
+  console.log('Contact: ' + $('#custmrContact').val());
+  console.log('Address: ' + $('#custmrSt').val() + ',' + $('#custmrCity').val() + ',' + $('#custmrState').val() + ' ' + $('#custmrZip').val());
+  console.log('NewCustomer?: ' + $('input[name ="custmrNew"]:checked').val());//how does this syntax work?
+  console.log('PickupLoc: ' + $('#pickupLoc').val());
+  alert('Thank you. The form information has been received');
   // console.log('jQuery event connected'); //jQuery connection test
 });
