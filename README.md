@@ -56,6 +56,8 @@ Site will mostly be accessed by users with iPhones or androids, looking for info
 
 Testing Site Notes:
 
+https://github.com/jem1520/html200-adopt-a-dog/blob/master/testing.txt
+
 Tested site on Safari Desktop, Google Chrome, Firefox, and Edge by using browser Dev-Tools to view sites at various sizes and breakpoints.
 Including viewing all pages on all browser Device Tools, looking at both portrait and landscape.
 
