@@ -6,132 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home | Adoptadog</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,700;1,400&family=Work+Sans&family=Work+Sans:wght@300;600;700;900&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <a href="#main-content" class="hidden">Skip to main content</a>
-    <header>
-      <a href="index.html"><img src="images/adoptadog-logo.svg" alt="Adoptadog logo" width="300" height="91"></a>
-      <p>Seattle's premiere dog adoption agency</p>
-      <div class="checkout">
-        <img src="images/cart-icon.svg" alt="Checkout cart" width="28" height="26">
-        <p>$1234.56</p>
-        <form action="checkout.html" method="GET">
-          <label>
-            <input type="submit" value="Checkout">
-          </label>
-        </form>
+    <div class="container">
+    <header class="header">
+      <div class="logo-and-checkout">
+        <div class="site-logo">
+          <a href="index.html"><img class="adoptadog-logo" src="images/adoptadog-logo.svg" alt="Adoptadog logo" width="450" height="135"></a>
+          <p class="logo-text">Seattle's premiere dog adoption agency</p>
+        </div>
+        <div class="checkout">
+          <div class="checkout-cart-amount">
+            <img class="checkout-cart" src="images/cart-icon.svg" alt="Checkout cart" width="28" height="26">
+            <p class="checkout-total">$1234.56</p>
+          </div>
+          <form action="checkout.html" method="GET">
+            <label>
+              <input class="checkout-button" type="submit" value="Checkout">
+            </label>
+          </form>
+        </div>
       </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="dogs.html">Dogs</a></li>
-          <li><a href="blog.html">Blog</a></li>
+        <ul class="nav">
+          <li class="nav-footer-links"><a class="nav-link-color" href="index.html">Home</a></li>
+          <li class="nav-footer-links"><a class="nav-link-color" href="dogs.html">Dogs</a></li>
+          <li class="nav-footer-links"><a class="nav-link-color" href="blog.html">Blog</a></li>
         </ul>
       </nav>
     </header>
     
     <main id="main-content">
+      
       <article>
-        <img src="images/home-intro.jpg" alt="Man hugging dog looking at the camera" width="410" height="370">
-        <h1>Adopt A Dog</h1>
-        <p>Cras pellentesque erat odio, nec congue ipsum tristique vel. Suspendisse sit amet ultricies neque, non tincidunt ex. Pellentesque velit enim, lacinia a placerat a, suscipit at quam. Pellentesque imperdiet velit sem, ut gravida mauris malesuada a. Sed venenatis consequat lectus et rhoncus. Nam vestibulum ipsum ut neque placerat euismod pellentesque non elit. Integer semper vulputate justo, eget posuere nibh imperdiet eu. Aliquam dictum dui vel mi blandit, quis scelerisque erat hendrerit. Donec dignissim eget felis non sagittis. Integer bibendum dui sit amet egestas posuere.</p>
-        <article>
-          <img src="images/murphy-card.jpg" alt="Featured dog: Murphy" width="200" height="120">
-          <h3>Murphy</h3>
-          <h4>Cost to Adopt:</h4>
-          <p>$123.45</p>
-          <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-          <form action="checkout.html" method="POST">
-            <label>
-              <input type="submit" value="Adopt">
-            </label>
-          </form>
+        <article class="intro-article">
+          <img src="images/home-intro.jpg" alt="Man hugging dog looking at the camera" width="410" height="370">
+          <div class="intro-article-text">
+            <h1>Adopt A Dog</h1>
+            <p>Cras pellentesque erat odio, nec congue ipsum tristique vel. Suspendisse sit amet ultricies neque, non tincidunt ex. Pellentesque velit enim, lacinia a placerat a, suscipit at quam. Pellentesque imperdiet velit sem, ut gravida mauris malesuada a. Sed venenatis consequat lectus et rhoncus. Nam vestibulum ipsum ut neque placerat euismod pellentesque non elit. Integer semper vulputate justo, eget posuere nibh imperdiet eu. Aliquam dictum dui vel mi blandit, quis scelerisque erat hendrerit. Donec dignissim eget felis non sagittis. Integer bibendum dui sit amet egestas posuere.</p>
+          </div>
         </article>
-        <article>
-          <img src="images/poppy-card.jpg" alt="Featured dog: Poppy" width="200" height="120">
-          <h3>Poppy</h3>
-          <h4>Cost to Adopt:</h4>
-          <p>$123.45</p>
-          <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-          <form action="checkout.html" method="POST">
-            <label>
-              <input type="submit" value="Adopt">
-            </label>
-          </form>
-        </article>
-        <article>
-          <img src="images/jack-card.jpg" alt="Featured dog: Jack" width="200" height="120">
-          <h3>Jack</h3>
-          <h4>Cost to Adopt:</h4>
-          <p>$123.45</p>
-          <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-          <form action="checkout.html" method="POST">
-            <label>
-              <input type="submit" value="Adopt">
-            </label>
-          </form>
-        </article>
-        <article>
-          <img src="images/duffy-card.jpg" alt="Featured dog: Duffy" width="200" height="120">
-          <h3>Duffy</h3>
-          <h4>Cost to Adopt:</h4>
-          <p>$123.45</p>
-          <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-          <form action="checkout.html" method="POST">
-            <label>
-              <input type="submit" value="Adopt">
-            </label>
-          </form>
-        </article>
-        <article>
-          <img src="images/lucas-card.jpg" alt="Featured dog: Lucas" width="200" height="120">
-          <h3>Lucas</h3>
-          <h4>Cost to Adopt:</h4>
-          <p>$123.45</p>
-          <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-          <form action="checkout.html" method="POST">
-            <label>
-              <input type="submit" value="Adopt">
-            </label>
-          </form>
-        </article>
-        <article>
-          <img src="images/jake-card.jpg" alt="Featured dog: Jake" width="200" height="120">
-          <h3>Jake</h3>
-          <h4>Cost to Adopt:</h4>
-          <p>$123.45</p>
-          <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-          <form action="checkout.html" method="POST">
-            <label>
-              <input type="submit" value="Adopt">
-            </label>
-          </form>
-        </article>
-        <article>
-          <img src="images/angus-card.jpg" alt="Featured dog: Angus" width="200" height="120">
-          <h3>Angus</h3>
-          <h4>Cost to Adopt:</h4>
-          <p>$123.45</p>
-          <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-          <form action="checkout.html" method="POST">
-            <label>
-              <input type="submit" value="Adopt">
-            </label>
-          </form>
-        </article>
-        <article>
-          <img src="images/violet-card.jpg" alt="Featured dog: Violet" width="200" height="120">
-          <h3>Violet</h3>
-          <h4>Cost to Adopt:</h4>
-          <p>$123.45</p>
-          <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-          <form action="checkout.html" method="POST">
-            <label>
-              <input type="submit" value="Adopt">
-            </label>
-          </form>
-        </article>
+        <div class="dog-cards-container">
+          <article>
+            <img src="images/murphy-card.jpg" alt="Featured dog: Murphy" width="200" height="120">
+            <h3>Murphy</h3>
+            <h4>Cost to Adopt:</h4>
+            <p>$123.45</p>
+            <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+            <form action="checkout.html" method="POST">
+              <label>
+                <input type="submit" value="Adopt">
+              </label>
+            </form>
+          </article>
+          <article>
+            <img src="images/poppy-card.jpg" alt="Featured dog: Poppy" width="200" height="120">
+            <h3>Poppy</h3>
+            <h4>Cost to Adopt:</h4>
+            <p>$123.45</p>
+            <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+            <form action="checkout.html" method="POST">
+              <label>
+                <input type="submit" value="Adopt">
+              </label>
+            </form>
+          </article>
+          <article>
+            <img src="images/jack-card.jpg" alt="Featured dog: Jack" width="200" height="120">
+            <h3>Jack</h3>
+            <h4>Cost to Adopt:</h4>
+            <p>$123.45</p>
+            <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+            <form action="checkout.html" method="POST">
+              <label>
+                <input type="submit" value="Adopt">
+              </label>
+            </form>
+          </article>
+          <article>
+            <img src="images/duffy-card.jpg" alt="Featured dog: Duffy" width="200" height="120">
+            <h3>Duffy</h3>
+            <h4>Cost to Adopt:</h4>
+            <p>$123.45</p>
+            <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+            <form action="checkout.html" method="POST">
+              <label>
+                <input type="submit" value="Adopt">
+              </label>
+            </form>
+          </article>
+          <article>
+            <img src="images/lucas-card.jpg" alt="Featured dog: Lucas" width="200" height="120">
+            <h3>Lucas</h3>
+            <h4>Cost to Adopt:</h4>
+            <p>$123.45</p>
+            <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+            <form action="checkout.html" method="POST">
+              <label>
+                <input type="submit" value="Adopt">
+              </label>
+            </form>
+          </article>
+          <article>
+            <img src="images/jake-card.jpg" alt="Featured dog: Jake" width="200" height="120">
+            <h3>Jake</h3>
+            <h4>Cost to Adopt:</h4>
+            <p>$123.45</p>
+            <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+            <form action="checkout.html" method="POST">
+              <label>
+                <input type="submit" value="Adopt">
+              </label>
+            </form>
+          </article>
+          <article>
+            <img src="images/angus-card.jpg" alt="Featured dog: Angus" width="200" height="120">
+            <h3>Angus</h3>
+            <h4>Cost to Adopt:</h4>
+            <p>$123.45</p>
+            <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+            <form action="checkout.html" method="POST">
+              <label>
+                <input type="submit" value="Adopt">
+              </label>
+            </form>
+          </article>
+          <article>
+            <img src="images/violet-card.jpg" alt="Featured dog: Violet" width="200" height="120">
+            <h3>Violet</h3>
+            <h4>Cost to Adopt:</h4>
+            <p>$123.45</p>
+            <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+            <form action="checkout.html" method="POST">
+              <label>
+                <input type="submit" value="Adopt">
+              </label>
+            </form>
+          </article>
+        </div>
       </article>
       <form action="dogs.html" method="GET">
         <label>
@@ -142,14 +157,15 @@
 
     <footer>
       <a href="index.html"><img src="images/adoptadog-logo.svg" alt="Adoptadog logo" width="300" height="91"></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget elit vitae eros sollicitudin cursus pretium ac felis.</p>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dogs.html">Dogs</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <p class="footer-text">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem</p>
+      <ul class="footer-links">
+        <li class="nav-footer-links"><a class="footer-link-color" href="index.html">Home</a></li>
+        <li class="nav-footer-links"><a class="footer-link-color" href="dogs.html">Dogs</a></li>
+        <li class="nav-footer-links"><a class="footer-link-color" href="contact.html">Contact</a></li>
       </ul>
       <p>&copy;2020 Adoptadog, LLC | Seattle, WA</p>
     </footer>
+  </div>
 
   </body>
 
