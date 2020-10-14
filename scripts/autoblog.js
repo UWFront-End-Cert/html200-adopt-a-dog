@@ -87,17 +87,25 @@ let entryCopy3 = document.createElement('p');
 entryCopy3.textContent = 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui of cae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat. Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.';
 //Blog Entries END
 
-//object of arrays. arrays contain blog posts
+
+
+// Blog objects. 1 object per blog post.
+/* instructor comment:
+A simpler method of doing this would be to put the text or img url directly into your array of objects ( see example below ). Then in your for() loop you can create / append the elements directly. This would cut down on the length of your code quite a bit.
+
 const blogObjects = [
-{ post: document.createElement('article').setAttribute('class', 'post'),
+    { post: "sdfsdfsdfsdf", image: "img/url/here", title: "title"}
+    { post: "sdfsdfsdfsdf", image: "img/url/here", title: "title"}
+    { post: "sdfsdfsdfsdf", image: "img/url/here", title: "title"}
+];
+*/
+const blogObject1 = {
+  post: post1,
   image: img01,
   copyContainer: blogCopyContainer1,
   title: entryTitle1,
-  bodyCopy: entryCopy1,}
-];
-
-// Blog objects. 1 object per blog post.
-
+  bodyCopy: entryCopy1,
+};
 
 const blogObject2 = {
   post: post2,
@@ -115,6 +123,21 @@ const blogObject3 = {
 };
 
 // Blog objects listed in an array (for loop)
+//consider placing blogObject contents inside your array, objArray. See instructor outline below.
+
+/*
+const blogPosts = [
+   {
+      // post 1
+   },
+   {
+      // post 2
+   },
+   {
+      // post 3
+   }
+]
+*/
 const objArray = [blogObject1, blogObject2, blogObject3];
 
 // Loop (i counter designates which blogObject)
@@ -135,6 +158,8 @@ for (i = 0; i < 3; i++) {
   document.body.appendChild(objArray[i].bodyCopy);
   objArray[i].copyContainer.appendChild(objArray[i].bodyCopy);
 };
+
+
 
 /*anatomy of a blog post (for loop breakdown):
 create a post container article, append it to intro section

@@ -1,0 +1,17 @@
+-------
+Devices
+-------
+Mac Desktop
+Android mobile
+
+-------
+OS
+-------
+macOS Sierra 10.12.6
+Android
+iOS
+
+--------
+Browsers
+--------
+Chrome, Firefox, Safari

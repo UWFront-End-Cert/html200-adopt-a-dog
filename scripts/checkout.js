@@ -36,7 +36,7 @@ function myFunction(event) { //this queues the console log. review 'event (e)' m
 
 $('.submit').click(function (e) {
   // myFunction(event);
-  event.preventDefault();
+  event.preventDefault(); //You'll want to make sure to use e.preventDefault() or change the parameter from e to event.
   console.log('Name: ' + $('#custmrName').val());
   console.log('Contact: ' + $('#custmrContact').val());
   console.log('Address: ' + $('#custmrSt').val() + ',' + $('#custmrCity').val() + ',' + $('#custmrState').val() + ' ' + $('#custmrZip').val());
