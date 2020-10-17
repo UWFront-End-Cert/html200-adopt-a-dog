@@ -297,12 +297,55 @@ form {
 
 .checkout-form {
   margin-top: 4%;
+  width: 65%;
 }
 
-.checkout-form > button, input, select, textarea {
+button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
   display: block;
+}
+
+input, select {
+  width: 100%;
+  height: 3.5rem;
+  margin-top: .75rem;
+  margin-bottom: 3rem;
+}
+
+input, select {
+  border: 1.5px solid #d6d6d6;
+}
+
+.submit-button {
+  width: 25%;
+  font-size: 1.25rem;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.city-field {
+  width: 45%;
+}
+
+.state-field {
+  width: 25%;
+  margin: 0 3% 0 3%;
+}
+
+select[name=state] {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+}
+
+.radio-buttons-container {
+  
 }
 
 
