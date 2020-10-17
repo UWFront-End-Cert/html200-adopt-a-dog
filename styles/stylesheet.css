@@ -45,32 +45,56 @@ body {
   grid-area: 3 / 1 / 4 / 2;
 }
 
+.dog-cards-container {
+  grid-area: 4 / 1 / 5 / 2;
+  display: grid;
+  grid-template-columns: 225px 225px 225px 225px;
+  grid-template-rows: auto auto auto;
+  gap: 3.5rem;
+  margin-top: 4%;
+}
+
+.see-more-dogs-button {
+  grid-area: 3 / 1 / 4 / 5;
+  margin: 0 auto;
+}
+
 footer {
   grid-area: 5 / 1 / 6 / 2;
   background-color: #083B5F;
   color: #ffffff;
-  padding: 5% 7% 5% 7%;
+  padding: 3% 7% 3% 7%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
-.dog-cards-container {
-  grid-area: 4 / 1 / 5 / 2;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto;
-  grid-gap: 5%;
-  justify-content: space-between;
-  margin-top: 5%;
+.see-more-dogs {
+  background-color: #ebebeb;
+  color: #083B5F;
+  font-size: 1.3rem;
+  padding: .75rem 2.5rem .75rem 2.5rem;
+  border: none;
 }
 
-.dog-cards-container > article {
-  border: 1px solid #ebebeb; 
+.dog-card-header-text {
+  padding: 0 1rem 0 1rem;
+  border: 2px solid #ebebeb;
+  margin-top: -5px;
 }
 
-
+.adopt-button {
+  width: 100%;
+  background-color: #81B741;
+  color: #ffffff;
+  padding: .75rem 0 .75rem 0;
+  margin: .5rem 0 1rem 0;
+  border: none;
+  font-size: 1.1rem;
+}
 
 #main-content {
   padding: 0 14% 0 14%;
@@ -88,6 +112,7 @@ ul {
 p {
   margin: 0;
   padding: 0;
+  line-height: 1.4;
 }
 
 .nav-footer-links {
@@ -111,13 +136,14 @@ footer li + li:before {
   display: flex;
   flex-flow: row wrap;
   padding-top: 2rem;
-  max-width: 30%;
+  max-width: 35%;
+  line-height: 1.7;
 }
 
 .footer-links {
   display: flex;
   flex-direction: row;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   padding-bottom: 3rem;
 }
 
@@ -129,24 +155,33 @@ h1, h2, h3, h4 {
   color: #083B5F;
   font-family: 'Neuton', serif;
   font-weight: 700;
-}
-
-h1 {
-  font-size: 2.5rem;
   padding: 0;
   margin: 0;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 h2 {
   font-size: 2rem;
+  padding: 0;
+  margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  margin-bottom: .5rem;
 }
 
 h4 {
   font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  padding: 0;
+  line-height: 1.5;
 }
 
 .logo-and-checkout {
@@ -184,7 +219,7 @@ h4 {
 .checkout-total {
  margin-left: 1rem;
  color: #ffffff;
- font-weight: 600;
+ line-height: 0;
 }
 
 .checkout-button {
@@ -192,7 +227,6 @@ h4 {
   border-radius: 2px;
   color: #ffffff;
   background-color: #81B741;
-  font-weight: 600;
   border: none;
 }
 
@@ -213,6 +247,65 @@ h4 {
 .intro-article-text > h1 {
   padding-bottom: 3%;
 }
+
+.bolded-text {
+  font-weight: 600;
+}
+
+.smaller-font-size {
+  font-size: 1rem;
+}
+
+.bolded-text-700 {
+  font-weight: 700;
+}
+
+input {
+  font-family: 'Work Sans', sans-serif;
+}
+
+form {
+  margin: 0;
+}
+
+.link-color {
+  color: #083B5F;
+  text-decoration: underline;
+}
+
+.contact-us {
+  margin-top: 1.5rem;
+}
+
+.blog-article {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+}
+
+.blog-article-text {
+  padding: 0 3% 1% 5%;
+}
+
+.blog-container {
+  margin-top: 4%;
+}
+
+.blog-article:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.checkout-form {
+  margin-top: 4%;
+}
+
+.checkout-form > button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  display: block;
+}
+
+
 
 
 
