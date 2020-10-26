@@ -1,4 +1,4 @@
-# Adoptadog
+#Adoptadog
 A mock website for a fictional Seattle based dog shelter as part of the front-end web development certificate series UWPCE HTML5200: JavaScript & Responsive Design course project.
 
 Website created with HTML5, CSS3, JS ES6, and jQuery 3.5.1
@@ -15,6 +15,9 @@ Oct. 2020
 
 ##Features
 Full responsive website tested across major browsers.  Displays basic dog info by clicking on the dog tile image. Features a running total feature by clicking on the ‘adopt’ button. Blog entries on blog generated with JS. The form on the checkout page will return entries via the console.
+
+##Personas
+See file HTML5200 - User Persona.pdf for sample personas. Note: personas are not derived from any data and is purely to get acquainted with the concepts and usage of persona documentation for educational purposes.
 
 ##Testing
 
