@@ -9,39 +9,87 @@ body {
 	height: 100%;
 }
 
-.sr-only{
-	position: absolute;
-	left: -10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
 
-}
 
 /* Header/Blog Title */
 
 .header {
-	padding: 180px;
-	background: #24BEE0;
+	background-image: url("../images/header-image.jpg");
+	background-color: black;
+	background-position: center;
+	height: 800px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
-.header h1 {
-	font-size: 80px;
-	color: white;
-	position: absolute;
-	left: 200px;
-	top: 20px;
+.header-logo {
+    width: 600px;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+	float: left;
+	margin-top: 5rem;
+	margin-left: 10rem;
+
 }
 
-.header p {
-	font-size: 40px;
-	color: white;
-	position: absolute;
-	left: 200px;
-	top: 150px;
-	font-style: italic;
+.header-logo img {
+	float: left; 
+	padding: 1rem;
+	width: 600px;
+	height: 250px;
 }
+
+.header-logo p {
+	font-family: 'Arvo', serif;
+	font-size: 35px;
+	color: green
+}
+
+
+.shoppingcart  {
+
+	width: 100px;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+	float: right;
+	margin-right: 10rem;
+	margin-top: 6rem;
+}
+.shoppingcart img {
+
+	float: right; 
+	margin: 0px 0px 15px 0px;
+	padding: 1rem;
+	width: 100px;
+	height: 100px;
+}
+
+.shoppingcart p {
+
+	font-family: 'Arvo', serif;
+	font-size: 35px;
+	color: white;
+	margin-top: 2rem;
+	
+}
+.checkout-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+   
+}
+
+
+
+
+
+
+
 
 nav {
 	text-align: center
@@ -69,117 +117,3 @@ nav li a:active {
 	color: blue;
 }
 
-.paragraph-line-space {
-	line-height: 1.6;
-	font-size: 19px;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #181818;
-}
-
-.paragraph-caption {
-	color: #0BCAE3;
-}
-
-.body-links {
-	text-decoration: none;
-	line-height: 1.6;
-	font-size: 19px;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #0BCAE3;
-}
-
-.footer-links {
-	text-decoration: none;
-	line-height: 1.6;
-	font-size: 19px;
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
-	margin: 0;
-}
-
-.header-main {
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.6;
-	font-size: 26px;
-	color: #14B7CC;
-}
-
-.header-generic {
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.6;
-	font-size: 25px;
-	color: #484848;
-}
-
-.quote {
-	line-height: 1.6;
-	font-size: 28px;
-	font-family: Arial, Helvetica, sans-serif;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	color: #18D7F0;
-}
-
-
-/* Create two unequal columns that floats next to each other */
-
-
-/* Left column */
-
-.leftcolumn {
-	float: left;
-	background-color: white;
-	width: 55%;
-	padding-left: 180px;
-}
-
-
-/* Right column */
-
-.rightcolumn {
-	float: left;
-	width: 45%;
-	background-color: white;
-	padding-right: 200px;
-	padding-left: 70px;
-}
-
-
-/* Add a card effect for articles */
-
-.card {
-	background-color: white;
-	padding: 20px;
-	margin-top: 20px;
-}
-
-.hidden {
-	position: relative;
-	left: -10000px;
-	top: auto;
-}
-.hidden:focus {
-	left:0;
-}
-
-/* Clear floats after the columns */
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-
-/* Footer */
-
-.footer {
-	text-align: center;
-	background: #484848;
-	padding: 100px;
-	margin-top: 50px;
-	color: white;
-	line-height: 1.6;
-	font-size: 19px;
-	font-family: Arial, Helvetica, sans-serif;
-}
