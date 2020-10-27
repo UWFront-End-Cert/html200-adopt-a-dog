@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	background: white;
+	margin: 0;
+	height: 100%;
+}
+
+.sr-only{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+
+}
+
+/* Header/Blog Title */
+
+.header {
+	padding: 180px;
+	background: #24BEE0;
+}
+
+.header h1 {
+	font-size: 80px;
+	color: white;
+	position: absolute;
+	left: 200px;
+	top: 20px;
+}
+
+.header p {
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	left: 200px;
+	top: 150px;
+	font-style: italic;
+}
+
+nav {
+	text-align: center
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 30px;
+	width: 100%;
+	background-color: #dddddd;
+}
+
+nav li,
+nav li a {
+	display: inline;
+	text-decoration: none;
+	font-size: 25px;
+	color: black;
+	padding-left: 25px;
+}
+
+nav li a:hover,
+nav li a:active {
+	color: blue;
+}
+
+.paragraph-line-space {
+	line-height: 1.6;
+	font-size: 19px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #181818;
+}
+
+.paragraph-caption {
+	color: #0BCAE3;
+}
+
+.body-links {
+	text-decoration: none;
+	line-height: 1.6;
+	font-size: 19px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0BCAE3;
+}
+
+.footer-links {
+	text-decoration: none;
+	line-height: 1.6;
+	font-size: 19px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	margin: 0;
+}
+
+.header-main {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+	font-size: 26px;
+	color: #14B7CC;
+}
+
+.header-generic {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+	font-size: 25px;
+	color: #484848;
+}
+
+.quote {
+	line-height: 1.6;
+	font-size: 28px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #18D7F0;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+
+/* Left column */
+
+.leftcolumn {
+	float: left;
+	background-color: white;
+	width: 55%;
+	padding-left: 180px;
+}
+
+
+/* Right column */
+
+.rightcolumn {
+	float: left;
+	width: 45%;
+	background-color: white;
+	padding-right: 200px;
+	padding-left: 70px;
+}
+
+
+/* Add a card effect for articles */
+
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.hidden {
+	position: relative;
+	left: -10000px;
+	top: auto;
+}
+.hidden:focus {
+	left:0;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Footer */
+
+.footer {
+	text-align: center;
+	background: #484848;
+	padding: 100px;
+	margin-top: 50px;
+	color: white;
+	line-height: 1.6;
+	font-size: 19px;
+	font-family: Arial, Helvetica, sans-serif;
+}
