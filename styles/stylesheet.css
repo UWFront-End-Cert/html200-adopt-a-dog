@@ -9,10 +9,6 @@ body {
 	height: 100%;
 }
 
-
-
-/* Header/Blog Title */
-
 .header {
 	background-image: url("../images/header-image.jpg");
 	background-color: black;
@@ -57,6 +53,7 @@ body {
 	float: right;
 	margin-right: 10rem;
 	margin-top: 6rem;
+	float: right;
 }
 .shoppingcart img {
 
@@ -84,13 +81,6 @@ body {
    
 }
 
-
-
-
-
-
-
-
 nav {
 	text-align: center
 }
@@ -117,3 +107,34 @@ nav li a:active {
 	color: blue;
 }
 
+.flex-container {
+	border: 3px solid blue;
+    padding: 20px 40px 40px;
+	height: 100%;
+	display: flex;
+	align-items: stretch;
+}
+
+.box {
+	flex: 1;
+	background: #fafafa;
+	background-color: white;
+	width: 55%;
+	padding-left: 180px;
+	float: left;
+	
+}
+.box img {
+	float: left;
+	margin-top: 4px;
+	margin-right: 4px;
+  }
+.box h2 {
+	color: red;
+	font-size: 200%;
+  }
+.box p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80%;
+  }
+ 
