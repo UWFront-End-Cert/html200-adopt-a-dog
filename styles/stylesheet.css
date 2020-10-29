@@ -209,3 +209,27 @@ nav li a:active {
 	color: white;
 	margin: 0;
 }
+
+.post-container {
+    margin: 20px 20px 0 0;  
+    border: 5px solid #333;
+    overflow: auto
+}
+.post-thumb {
+    float: left
+}
+.post-thumb img {
+	padding: 2rem;
+	display: block
+	
+}
+.post-content {
+	padding: 2rem;
+	margin-left: 210px
+	
+}
+.post-title {
+	padding: 2rem;
+    font-weight: bold;
+    font-size: 200%
+}
