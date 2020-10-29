@@ -189,3 +189,23 @@ nav li a:active {
 	margin: 0 auto;
 	display: block;
 }
+
+.footer {
+	text-align: center;
+	background: blue;
+	padding: 100px;
+	margin-top: 50px;
+	color: white;
+	line-height: 1.6;
+	font-size: 19px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-links {
+	text-decoration: none;
+	line-height: 1.6;
+	font-size: 19px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	margin: 0;
+}
