@@ -142,12 +142,20 @@ nav li a:active {
 .container-about p {
 	color: black;
 	font-family: 'Arvo', serif;
-	font-size: 25px;
+	font-size: 20px;
 	padding: 2px 16px;
 	position: relative;
 	left: 3rem;
 }
 
+#about-p{
+	color: black;
+	font-family: 'Arvo', serif;
+	font-size: 27px;
+	padding: 2px 16px;
+	position: relative;
+	left: 3rem;
+}
 
 
 
