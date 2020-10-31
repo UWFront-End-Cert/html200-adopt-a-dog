@@ -10,6 +10,7 @@ body {
 }
 
 .header {
+
 	background-image: url("../images/header-image.jpg");
 	background-color: black;
 	background-position: center;
@@ -25,23 +26,18 @@ body {
 	display: block;
 	background-color: transparent;
 	float: left;
-	margin-top: 5rem;
-	margin-left: 10rem;
+	padding: 3rem;
 }
 
 .header-logo img {
 	float: left;
-	padding: 1rem;
-	width: 600px;
-	height: 250px;
 }
+.slogan {
 
-.header-logo p {
-	font-family: 'Arvo', serif;
-	font-size: 35px;
-	color: green
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 27px;
+	color: #1B8F1B
 }
-
 .shoppingcart {
 	width: 100px;
 	text-align: center;
@@ -91,15 +87,16 @@ nav ul {
 nav li,
 nav li a {
 	display: inline;
-	text-decoration: none;
-	font-size: 25px;
-	color: black;
-	padding-left: 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #116694;
+    padding-left: 0.5rem;
+    font-weight: bold;
 }
 
 nav li a:hover,
 nav li a:active {
-	color: blue;
+	color: yellow;
 }
 
 .flex-container {
@@ -111,26 +108,46 @@ nav li a:active {
 }
 
 .box {
-	flex: 1;
-	background: #fafafa;
+	flex: 2;
 	background-color: white;
-	width: 55%;
+	width: 100%;
 	padding-left: 180px;
 }
 
 .box img {
 	float: left;
+	padding-top: 3rem;
 }
 
-.box h2 {
-	color: red;
-	font-size: 200%;
+.container-about {
+	width: 100%;
+	padding: 2px 16px;
+	font-family: 'Arvo', serif;
+	font-size: 20px;
+	
 }
 
-.box p {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 80%;
+.container-about h3 {
+	color: #116694;
+	font-family: 'Arvo', serif;
+	padding: 2px 16px;
+	font-size: 40px;
+	font-weight: bold;
+	position: relative;
+	left: 3rem;
 }
+
+.container-about p {
+	color: black;
+	font-family: 'Arvo', serif;
+	font-size: 25px;
+	padding: 2px 16px;
+	position: relative;
+	left: 3rem;
+}
+
+
+
 
 .grid-container {
 	display: grid;
@@ -210,25 +227,5 @@ a:hover {
 	margin: 0;
 }
 
-.post-container {
-	margin: 20px 20px 0 0;
-	border: 5px solid #333;
-	overflow: auto
-}
 
-.post-thumb {
-	float: left
-}
 
-.post-thumb img {
-	display: block
-}
-
-.post-content {
-	margin-left: 210px
-}
-
-.post-title {
-	font-weight: bold;
-	font-size: 200%
-}
