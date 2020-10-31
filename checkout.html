@@ -4,52 +4,130 @@
       <meta charset="utf-8" />
       <title>ADOPTADOG</title>
       <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" />
+      <link rel="stylesheet" type="text/css" href="styles/form-style.css" />
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
    </head>
-   <body>
-      <header>
-         <div class="header">
-            <div class="header-logo">
-               <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" />
-               <h2 class="slogan">Seattle's premiere dog adoption agency</h2>
-            </div>
-            <div class="shoppingcart">
-               <img src="images/cart-icon.svg" alt="Image of the Cart" />
-               <p>$1234.56</p>
-               <button class="checkout-button" onclick="document.location='checkout.html'">Checkout</button>
-            </div>
+  <body>
+    <header>
+      <div class="header">
+         <div class="header-logo">
+            <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" />
+            <h2 class="slogan">Seattle's premiere dog adoption agency</h2>
          </div>
-         <nav>
-            <ul>
-               <li><a href="index.html">Home</a> /</li>
-               <li><a href="dogs.html">Dogs</a> /</li>
-               <li><a href="blog.html">Blog</a> </li>
-            </ul>
-         </nav>
-      </header>
-      <main>
-         <div class="flex-container">
-            <div class="box">
-               <h3 class="alldogs-title">Checkout</h3>
-               
-            </div>
+         <div class="shoppingcart">
+            <img src="images/cart-icon.svg" alt="Image of the Cart" />
+            <p>$1234.56</p>
+            <button class="checkout-button" onclick="document.location='checkout.html'">Checkout</button>
          </div>
-      </main>
-      <footer>
-         <div class="footer">
-            <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" style="width: 25%;" />
-            <p>
-               Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
-               esseque invenienihil imaximu scideru ptistiusam consequunt <br>
-            </p>
-            <a class="footer-links" href="index.html">Home /</a>
-            <a class="footer-links" href="dogs.html"> Dogs /</a>
-            <a class="footer-links" href="blog.html"> Blog </a>
-            <p>© 2018 Adoptadog, LCC To Go | Seattle, WA</p>
+      </div>
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a> /</li>
+            <li><a href="dogs.html">Dogs</a> /</li>
+            <li><a href="blog.html">Blog</a> </li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+    <div class="flex-container">
+      <div class="box">
+        <h3 class="alldogs-title">Checkout</h3>
+        <form method="GET">
+      <label>Your name:
+        <input type="text" name="applicantName">
+      </label>
+
+      <label>Your email:
+        <input type="email" name="applicantEmail">
+      </label>
+
+      <!-- the other label syntax -->
+      <label for="city">What city are you in?</label>
+        <input id="city" type="text" name="applicantCity">
+
+      <label>How many pets do you have in your home now?
+        <input type="number" name="petCount">
+      </label>
+
+      <label>Why do you want to adopt a new pet?
+        <textarea name="applicantReason" rows="4" cols="50">Because I don't have enough cat hair on my sofa :(</textarea>
+      </label>
+
+      <fieldset class="checkbox">
+        <legend>What types of animals are you interested in adopting?</legend>
+        <label>
+        <input type="checkbox" name="species" value="dogs">Dog
+        <span class="checkmark"></span>
+        </label>
+        <label>
+        <input type="checkbox" name="species" value="cat">Cat
+        <span class="checkmark"></span>
+        </label>
+        <label>
+        <input type="checkbox" name="species" value="rabbit">Rabbit
+        <span class="checkmark"></span>
+        </label>
+        <label>
+        <input type="checkbox" name="species" value="snake">Snake
+        <span class="checkmark"></span>
+        </label>
+        <label>
+        <input type="checkbox" name="species" value="other">Other
+        <span class="checkmark"></span>
+        </label>
+      </fieldset>
+
+    <fieldset>
+      <legend>Are you interested in adopting special needs or elderly pets?</legend>
+      <label>
+        <input type="radio" name="special" value="yes">Yes
+      </label>
+      <label>
+        <input type="radio" name="special" value="no">No
+      </label>
+    </fieldset>
+
+      <label>How many hours a day is someone usually home to keep a pet company?
+        <select name="hours">
+          <option value="">Please select</option>
+          <option value="few">less than 10</option>
+          <option value="some">10 to 16</option>
+          <option value="many">more than 16</option>
+        </select>
+      </label>
+
+      <select  name="cats" size="3" multiple>
+        <option value="meh"> meh </option>
+        <option value="sax"> sax </option>
+        <option value="red"> red </option>
+      </select>
+
+
+
+
+      <label>To create account, enter a password
+        <input type="password" name="accountPW">
+      </label>
+        <input type="submit" value="Apply Now!">
+         </form>
          </div>
-      </footer>
-   </body>
+         </div>
+  </main>
+  <footer>
+    <div class="footer">
+       <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" style="width: 25%;" />
+       <p>
+          Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
+          esseque invenienihil imaximu scideru ptistiusam consequunt <br>
+       </p>
+       <a class="footer-links" href="index.html">Home /</a>
+       <a class="footer-links" href="dogs.html"> Dogs /</a>
+       <a class="footer-links" href="blog.html"> Blog </a>
+       <p>© 2018 Adoptadog, LCC To Go | Seattle, WA</p>
+    </div>
+ </footer>
+</body>
 </html>
