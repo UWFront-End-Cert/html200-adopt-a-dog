@@ -61,6 +61,15 @@ input[type=text] {
     font-weight: bold;
   }
 
+  label p{
+
+    color: black;
+	font-family: 'Arvo', serif;
+	font-size: 27px;
+	
+
+  }
+
   .display-block {
     display: block;
  }
@@ -80,3 +89,4 @@ input[type=text] {
     box-sizing: border-box;
 
  }
+
