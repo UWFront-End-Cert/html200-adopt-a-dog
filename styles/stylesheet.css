@@ -70,6 +70,7 @@ body {
 	color: white;
 	padding: 15px 32px;
 	font-size: 16px;
+	cursor: pointer;
 }
 
 nav {
@@ -152,21 +153,40 @@ nav li a:active {
 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
-	padding: 10px;
-	grid-column-gap: 100px;
+	grid-column-gap: 30px;
+	padding: 2rem;
 	width: 100%;
 }
 
 .grid-item {
-	padding: 30px;
-	font-size: 30px;
-	text-align: center;
-	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+	
+	
 	width: 300px;
-	/* margin: auto; */
-	/* text-align: center; */
-	/* font-family: arial; */
+	margin: auto;
+	text-align: center;
+	font-family: 'Arvo', serif;
+	
 }
+
+
+.grid-item h4 {
+	
+	color: #116694;
+	font-family: 'Arvo', serif;
+	padding: 2px 16px;
+	font-size: 30px;
+	font-weight: bold;
+	
+}
+
+.grid-item p {
+	
+	color: black;
+	font-family: 'Arvo', serif;
+	font-size: 16px;
+	padding: 2px 16px;
+}
+
 
 .grid-item button {
 	border: none;
@@ -174,42 +194,38 @@ nav li a:active {
 	display: inline-block;
 	padding: 8px;
 	color: white;
-	background-color: #000;
+	background-color: #4CAF50;
 	text-align: center;
 	cursor: pointer;
 	width: 100%;
 	font-size: 18px;
 }
 
-.grid-item a {
-	text-decoration: none;
-	font-size: 22px;
-	color: black;
-}
 
-.grid-item h2 {
-	color: red;
-	font-size: 20px;
-}
 
 .grid-item button:hover,
 a:hover {
 	opacity: 0.7;
 }
 
-.title {
-	color: grey;
-	font-size: 18px;
-}
+
 
 .see-more-button {
 	margin: 0 auto;
 	display: block;
+	border: none;
+		background-color: lightgrey;
+	
+		color: #116694;
+		padding: 15px 50px;
+		font-size: 20px;
+		font-weight: bold;
+		cursor: pointer;
 }
 
 .footer {
 	text-align: center;
-	background: blue;
+	background: #116694;
 	padding: 100px;
 	margin-top: 50px;
 	color: white;
