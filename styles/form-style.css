@@ -1,97 +1,74 @@
-button, input, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
+input[type=text] {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 10px 0;
     box-sizing: border-box;
-    display: block;
-    margin: 1rem;
+    
+    margin-left: 1rem;
+    
   }
+
+  input[type=radio] {
   
-  input[type=submit] {
-    width: 100%;
-    background-color: SteelBlue;
+    margin-left: 1rem;
+    
   }
-  input[type=password]:focus {
-    background-color: seagreen;
-    outline: none;
+
+  input[type=email] {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+ 
+    margin-left: 1rem;
+    
   }
-  
-  input {
-    border-radius: 15px;
-  }
-  
   fieldset {
-    border: none;
+    width: 45%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    
+    margin-left: 1rem;
   }
-  
-  fieldset input {
-    display: inline;
-  }
-  
-  /* Hide the browser's default checkbox. */
-  
-  .checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Customize the labels */
-  .checkbox label {
+  fieldset legend {
+    margin-bottom: 10px;
     display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-top: 12px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    color: #116694;
+	font-family: 'Arvo', serif;
+    padding: 2px 16px;
+    font-size: 24px;
+    font-weight: bold;
   }
-  
-  /* create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .checkbox label:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When a checkbox is checked, add a blue background */
-  .checkbox input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .checkmark:after {
+
+   fieldset label{
+    margin-bottom: 10px;
     display: block;
+    color: #116694;
+	font-family: 'Arvo', serif;
+    padding: 2px 16px;
+    font-size: 24px;
+    font-weight: bold;
+
+   }
+  label {
+    margin-bottom: 10px;
+    display: block;
+    color: #116694;
+	font-family: 'Arvo', serif;
+    padding: 2px 16px;
+    font-size: 24px;
+    font-weight: bold;
   }
+
+  .display-block {
+    display: block;
+ }
   
-  /* Style the chackmar/indicator */
-  .checkbox .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  
+ #state-select {
+    width: 100%;
+    padding: 12px 23px;
+    margin: 12px 0;
+    box-sizing: border-box;
+
+ }

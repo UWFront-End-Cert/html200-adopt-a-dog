@@ -36,82 +36,38 @@
       <div class="box">
         <h3 class="alldogs-title">Checkout</h3>
         <form method="GET">
-      <label>Your name:
-        <input type="text" name="applicantName">
-      </label>
+          <div class="display-block">
+          <label for="fname">Name</label>
+          <input type="text" id="name" name="name">
+          <label for="lname">Email Address</label>
+          <input type="email" id="email" name="email">
+          <label for="address">Steet Address</label>
+          <input type="text" id="address" name="address">
+        </div>
+      <span style="display:inline-block;">
+          <label for="city" style="display:block">City</label>
+          <input style="width: 85%;" type="text" name="city" id="city" />
+      </span>
+      
+      <span style="display:inline-block">
+        <label for="state" style="display:block">State</label>
+        <select id="state-select" name="hours">
+          <option value=""></option>
+        </select>
+      </span>
 
-      <label>Your email:
-        <input type="email" name="applicantEmail">
-      </label>
-
-      <!-- the other label syntax -->
-      <label for="city">What city are you in?</label>
-        <input id="city" type="text" name="applicantCity">
-
-      <label>How many pets do you have in your home now?
-        <input type="number" name="petCount">
-      </label>
-
-      <label>Why do you want to adopt a new pet?
-        <textarea name="applicantReason" rows="4" cols="50">Because I don't have enough cat hair on my sofa :(</textarea>
-      </label>
-
-      <fieldset class="checkbox">
-        <legend>What types of animals are you interested in adopting?</legend>
-        <label>
-        <input type="checkbox" name="species" value="dogs">Dog
-        <span class="checkmark"></span>
-        </label>
-        <label>
-        <input type="checkbox" name="species" value="cat">Cat
-        <span class="checkmark"></span>
-        </label>
-        <label>
-        <input type="checkbox" name="species" value="rabbit">Rabbit
-        <span class="checkmark"></span>
-        </label>
-        <label>
-        <input type="checkbox" name="species" value="snake">Snake
-        <span class="checkmark"></span>
-        </label>
-        <label>
-        <input type="checkbox" name="species" value="other">Other
-        <span class="checkmark"></span>
-        </label>
-      </fieldset>
-
+      <span style="display:inline-block;">
+        <label for="zipcode" style="display:block">Zipcdoe</label>
+        <input style="width: 85%;" type="text" name="zipcode" id="zipcode" />
+    </span>
     <fieldset>
-      <legend>Are you interested in adopting special needs or elderly pets?</legend>
+      <legend>First Time Adopter?</legend>
       <label>
         <input type="radio" name="special" value="yes">Yes
-      </label>
-      <label>
         <input type="radio" name="special" value="no">No
       </label>
     </fieldset>
-
-      <label>How many hours a day is someone usually home to keep a pet company?
-        <select name="hours">
-          <option value="">Please select</option>
-          <option value="few">less than 10</option>
-          <option value="some">10 to 16</option>
-          <option value="many">more than 16</option>
-        </select>
-      </label>
-
-      <select  name="cats" size="3" multiple>
-        <option value="meh"> meh </option>
-        <option value="sax"> sax </option>
-        <option value="red"> red </option>
-      </select>
-
-
-
-
-      <label>To create account, enter a password
-        <input type="password" name="accountPW">
-      </label>
-        <input type="submit" value="Apply Now!">
+        
          </form>
          </div>
          </div>
