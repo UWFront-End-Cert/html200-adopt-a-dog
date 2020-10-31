@@ -20,18 +20,17 @@ body {
 }
 
 .header-logo {
-    width: 600px;
-    text-align: center;
-    display: block;
-    background-color: transparent;
+	width: 600px;
+	text-align: center;
+	display: block;
+	background-color: transparent;
 	float: left;
 	margin-top: 5rem;
 	margin-left: 10rem;
-
 }
 
 .header-logo img {
-	float: left; 
+	float: left;
 	padding: 1rem;
 	width: 600px;
 	height: 250px;
@@ -43,21 +42,19 @@ body {
 	color: green
 }
 
-
-.shoppingcart  {
-
+.shoppingcart {
 	width: 100px;
-    text-align: center;
-    display: block;
-    background-color: transparent;
+	text-align: center;
+	display: block;
+	background-color: transparent;
 	float: right;
 	margin-right: 10rem;
 	margin-top: 6rem;
 	float: right;
 }
-.shoppingcart img {
 
-	float: right; 
+.shoppingcart img {
+	float: right;
 	margin: 0px 0px 15px 0px;
 	padding: 1rem;
 	width: 100px;
@@ -65,20 +62,18 @@ body {
 }
 
 .shoppingcart p {
-
 	font-family: 'Arvo', serif;
 	font-size: 35px;
 	color: white;
 	margin-top: 2rem;
-	
 }
+
 .checkout-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    font-size: 16px;
-   
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	font-size: 16px;
 }
 
 nav {
@@ -108,7 +103,7 @@ nav li a:active {
 }
 
 .flex-container {
-    padding: 20px 40px 40px;
+	padding: 20px 40px 40px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -122,39 +117,41 @@ nav li a:active {
 	width: 55%;
 	padding-left: 180px;
 }
+
 .box img {
 	float: left;
-  }
+}
+
 .box h2 {
 	color: red;
 	font-size: 200%;
-  }
+}
+
 .box p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 80%;
-  }
- 
-  .grid-container {
+}
+
+.grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	padding: 10px;
 	grid-column-gap: 100px;
 	width: 100%;
-	
-	
-  }
-  .grid-item {
-    padding: 30px;
-    font-size: 30px;
-    text-align: center;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-    width: 300px;
-    /* margin: auto; */
-    /* text-align: center; */
-    /* font-family: arial; */
 }
 
-  .grid-item button {
+.grid-item {
+	padding: 30px;
+	font-size: 30px;
+	text-align: center;
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+	width: 300px;
+	/* margin: auto; */
+	/* text-align: center; */
+	/* font-family: arial; */
+}
+
+.grid-item button {
 	border: none;
 	outline: 0;
 	display: inline-block;
@@ -165,26 +162,28 @@ nav li a:active {
 	cursor: pointer;
 	width: 100%;
 	font-size: 18px;
-  }
-  
-  .grid-item a {
+}
+
+.grid-item a {
 	text-decoration: none;
 	font-size: 22px;
 	color: black;
-  }
+}
 
-  .grid-item h2 {
+.grid-item h2 {
 	color: red;
 	font-size: 20px;
-  }
-  
-  .grid-item button:hover, a:hover {
+}
+
+.grid-item button:hover,
+a:hover {
 	opacity: 0.7;
-  }
-  .title {
+}
+
+.title {
 	color: grey;
 	font-size: 18px;
-  }
+}
 
 .see-more-button {
 	margin: 0 auto;
@@ -212,25 +211,24 @@ nav li a:active {
 }
 
 .post-container {
-    margin: 20px 20px 0 0;  
-    border: 5px solid #333;
-    overflow: auto
+	margin: 20px 20px 0 0;
+	border: 5px solid #333;
+	overflow: auto
 }
+
 .post-thumb {
-    float: left
+	float: left
 }
+
 .post-thumb img {
-	
 	display: block
-	
 }
+
 .post-content {
-
 	margin-left: 210px
-	
 }
-.post-title {
 
-    font-weight: bold;
-    font-size: 200%
+.post-title {
+	font-weight: bold;
+	font-size: 200%
 }
