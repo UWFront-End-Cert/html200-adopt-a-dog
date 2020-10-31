@@ -72,3 +72,11 @@ input[type=text] {
     box-sizing: border-box;
 
  }
+ select {
+    width: 30%;
+    padding: 12px 23px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+
+ }

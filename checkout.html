@@ -10,80 +10,91 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
    </head>
-  <body>
-    <header>
-      <div class="header">
-         <div class="header-logo">
-            <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" />
-            <h2 class="slogan">Seattle's premiere dog adoption agency</h2>
+   <body>
+      <header>
+         <div class="header">
+            <div class="header-logo">
+               <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" />
+               <h2 class="slogan">Seattle's premiere dog adoption agency</h2>
+            </div>
+            <div class="shoppingcart">
+               <img src="images/cart-icon.svg" alt="Image of the Cart" />
+               <p>$1234.56</p>
+               <button class="checkout-button" onclick="document.location='checkout.html'">Checkout</button>
+            </div>
          </div>
-         <div class="shoppingcart">
-            <img src="images/cart-icon.svg" alt="Image of the Cart" />
-            <p>$1234.56</p>
-            <button class="checkout-button" onclick="document.location='checkout.html'">Checkout</button>
-         </div>
-      </div>
-      <nav>
-         <ul>
-            <li><a href="index.html">Home</a> /</li>
-            <li><a href="dogs.html">Dogs</a> /</li>
-            <li><a href="blog.html">Blog</a> </li>
-         </ul>
-      </nav>
-   </header>
-   <main>
-    <div class="flex-container">
-      <div class="box">
-        <h3 class="alldogs-title">Checkout</h3>
-        <form method="GET">
-          <div class="display-block">
-          <label for="fname">Name</label>
-          <input type="text" id="name" name="name">
-          <label for="lname">Email Address</label>
-          <input type="email" id="email" name="email">
-          <label for="address">Steet Address</label>
-          <input type="text" id="address" name="address">
-        </div>
-      <span style="display:inline-block;">
-          <label for="city" style="display:block">City</label>
-          <input style="width: 85%;" type="text" name="city" id="city" />
-      </span>
-      
-      <span style="display:inline-block">
-        <label for="state" style="display:block">State</label>
-        <select id="state-select" name="hours">
-          <option value=""></option>
-        </select>
-      </span>
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a> /</li>
+               <li><a href="dogs.html">Dogs</a> /</li>
+               <li><a href="blog.html">Blog</a> </li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <div class="flex-container">
+            <div class="box">
+               <h3 class="alldogs-title">Checkout</h3>
+               <form method="GET">
+                  <div class="display-block">
+                     <label for="fname">Name</label>
+                     <input type="text" id="name" name="name">
+                     <label for="lname">Email Address</label>
+                     <input type="email" id="email" name="email">
+                     <label for="address">Steet Address</label>
+                     <input type="text" id="address" name="address">
+                  </div>
+                  <span style="display:inline-block;">
+                  <label for="city" style="display:block">City</label>
+                  <input style="width: 85%;" type="text" name="city" id="city" />
+                  </span>
+                  <span style="display:inline-block">
+                     <label for="state" style="display:block">State</label>
+                     <select id="state-select" name="hours">
+                        <option value=""></option>
+                     </select>
+                  </span>
+                  <span style="display:inline-block;">
+                  <label for="zipcode" style="display:block">Zipcdoe</label>
+                  <input style="width: 85%;" type="text" name="zipcode" id="zipcode" />
+                  </span>
+                  <fieldset>
+                     <legend>First Time Adopter?</legend>
+                     <label>
+                     <input type="radio" name="special" value="yes">Yes
+                     <input type="radio" name="special" value="no">No
+                     </label>
+                  </fieldset>
+                  <label for="pickup-location" style="display:block">Pickup Location</label>
+                  <select name="hours">
+                     <option value=""></option>
+                  </select>
 
-      <span style="display:inline-block;">
-        <label for="zipcode" style="display:block">Zipcdoe</label>
-        <input style="width: 85%;" type="text" name="zipcode" id="zipcode" />
-    </span>
-    <fieldset>
-      <legend>First Time Adopter?</legend>
-      <label>
-        <input type="radio" name="special" value="yes">Yes
-        <input type="radio" name="special" value="no">No
-      </label>
-    </fieldset>
-        
-         </form>
+
+                  <label for="dogs adopted" style="display:block; padding-top: 2rem;">Dogs Adopted </label>
+
+
+                  
+
+
+
+
+               </form>
+            </div>
          </div>
+      </main>
+      <footer>
+         <div class="footer">
+            <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" style="width: 25%;" />
+            <p>
+               Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
+               esseque invenienihil imaximu scideru ptistiusam consequunt <br>
+            </p>
+            <a class="footer-links" href="index.html">Home /</a>
+            <a class="footer-links" href="dogs.html"> Dogs /</a>
+            <a class="footer-links" href="blog.html"> Blog </a>
+            <p>© 2018 Adoptadog, LCC To Go | Seattle, WA</p>
          </div>
-  </main>
-  <footer>
-    <div class="footer">
-       <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" style="width: 25%;" />
-       <p>
-          Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
-          esseque invenienihil imaximu scideru ptistiusam consequunt <br>
-       </p>
-       <a class="footer-links" href="index.html">Home /</a>
-       <a class="footer-links" href="dogs.html"> Dogs /</a>
-       <a class="footer-links" href="blog.html"> Blog </a>
-       <p>© 2018 Adoptadog, LCC To Go | Seattle, WA</p>
-    </div>
- </footer>
-</body>
+      </footer>
+   </body>
 </html>
