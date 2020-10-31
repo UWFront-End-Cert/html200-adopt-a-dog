@@ -1,120 +1,98 @@
 <!DOCTYPE html>
 <html lang="zxx">
-    <head>
-        <meta charset="utf-8" />
-        <title>ADOPTADOG</title>
-        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" />
-        <link rel="stylesheet" type="text/css" href="styles/form-style.css">
-    </head>
-    <body>
-        <header>
-            <div class="header">
-                <div class="header-logo">
-                    <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" />
-                    <p>Seattle's premiere dog adoption agency</p>
-                </div>
-                <div class="shoppingcart">
-                    <img src="images/cart-icon.svg" alt="Image of the Cart" />
-                    <p>$1234.56</p>
-                    <button class="checkout-button" onclick="document.location='checkout.html'">Checkout</button>
-                </div>
+   <head>
+      <meta charset="utf-8" />
+      <title>ADOPTADOG</title>
+      <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" />
+      <link rel="stylesheet" type="text/css" href="styles/form-style.css">
+   </head>
+   <body>
+      <header>
+         <div class="header">
+            <div class="header-logo">
+               <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" />
+               <p>Seattle's premiere dog adoption agency</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a> /</li>
-                    <li><a href="dogs.html">Dogs</a> /</li>
-                    <li><a href="blog.html">Blog</a> /</li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="row">
-                <div class="col-75">
-                  <div class="container">
-                    <form action="/action_page.php">
-                      <div class="row">
+            <div class="shoppingcart">
+               <img src="images/cart-icon.svg" alt="Image of the Cart" />
+               <p>$1234.56</p>
+               <button class="checkout-button" onclick="document.location='checkout.html'">Checkout</button>
+            </div>
+         </div>
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a> /</li>
+               <li><a href="dogs.html">Dogs</a> /</li>
+               <li><a href="blog.html">Blog</a> /</li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <div class="row">
+            <div class="col-75">
+               <div class="container">
+                  <form action="/action_page.php">
+                     <div class="row">
                         <div class="col-50">
-                          <h3>Checkout </h3>
-                          <label for="fname"><i class="fa fa-user"></i>Name</label>
-                          <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                          <label for="email"><i class="fa fa-envelope"></i> Email Address</label>
-                          <input type="text" id="email" name="email" placeholder="john@example.com">
-                          <label for="adr"><i class="fa fa-address-card-o"></i> Street Address</label>
-                          <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                        
-              
-                          
-                           
-                                <label for="city"><i class="fa fa-institution"></i> City</label>
-                                <input type="text" id="city" name="city" placeholder="New York">
-                             
-                            
-                              <label for="state">State</label>
-                              <input type="text" id="state" name="state" placeholder="NY">
-                           
-                            
-                              <label for="zip">Zip</label>
-                              <input type="text" id="zip" name="zip" placeholder="10001">
-                            
-                        
-
-                              <legend>First Time Adopter?</legend>
-                                    <label>
-                                      <input type="radio" name="special" value="yes">Yes
-                                      <input type="radio" name="special" value="no">No
-                                    </label>
-                                
-                              <label for="adr"><i class="fa fa-address-card-o"></i> Dogs Adopted</label>
-
-
-                              <div class="post-container">                
-                                <div class="post-thumb"> <img src="images/lucas-checkout.jpg" alt="Image of Lucas Checkout " /></div>
-                                <div class="post-content">
-                                    <h3 class="post-title">Lucas</h3>
-                                    <p>
-                                       Cost to Adopt: $1234.56
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="post-container">                
+                           <h3>Checkout </h3>
+                           <label for="fname"><i class="fa fa-user"></i>Name</label>
+                           <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                           <label for="email"><i class="fa fa-envelope"></i> Email Address</label>
+                           <input type="text" id="email" name="email" placeholder="john@example.com">
+                           <label for="adr"><i class="fa fa-address-card-o"></i> Street Address</label>
+                           <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                           <label for="city"><i class="fa fa-institution"></i> City</label>
+                           <input type="text" id="city" name="city" placeholder="New York">
+                           <label for="state">State</label>
+                           <input type="text" id="state" name="state" placeholder="NY">
+                           <label for="zip">Zip</label>
+                           <input type="text" id="zip" name="zip" placeholder="10001">
+                           <legend>First Time Adopter?</legend>
+                           <label>
+                           <input type="radio" name="special" value="yes">Yes
+                           <input type="radio" name="special" value="no">No
+                           </label>
+                           <label for="adr"><i class="fa fa-address-card-o"></i> Dogs Adopted</label>
+                           <div class="post-container">
+                              <div class="post-thumb"> <img src="images/lucas-checkout.jpg" alt="Image of Lucas Checkout " /></div>
+                              <div class="post-content">
+                                 <h3 class="post-title">Lucas</h3>
+                                 <p>
+                                    Cost to Adopt: $1234.56
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="post-container">
                               <div class="post-thumb"> <img src="images/duffy-checkout.jpg" alt="Image of Duffy Checkout " /></div>
                               <div class="post-content">
-                                  <h3 class="post-title">Lucas</h3>
-                                  <p>
-                                     Cost to Adopt: $1234.56
-                                  </p>
+                                 <h3 class="post-title">Lucas</h3>
+                                 <p>
+                                    Cost to Adopt: $1234.56
+                                 </p>
                               </div>
-                          </div>
-
-                          <label for="adr"><i class="fa fa-address-card-o"></i> Total Adoption Cost </label>
-                          <label for="adr"><i class="fa fa-address-card-o"></i> $1234.56 </label>
-
+                           </div>
+                           <label for="adr"><i class="fa fa-address-card-o"></i> Total Adoption Cost </label>
+                           <label for="adr"><i class="fa fa-address-card-o"></i> $1234.56 </label>
                         </div>
-              
-                   
-                        
-                      </div>
-                    
-                      <input type="submit" value="Continue to checkout" class="btn">
-                    </form>
-                  </div>
-                </div>
-              </div>
-        </main>
-        <footer>
-            <div class="footer">
-                <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" style="width: 25%;" />
-                <p>
-                   Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
-                   esseque invenienihil imaximu scideru ptistiusam consequunt <br>
-                </p>
-               
-                <a class="footer-links" href="index.html">Home /</a>
-                <a class="footer-links" href="dogs.html"> Dogs /</a>
-                <a class="footer-links" href="blog.html"> Blog </a>
-                <p>© 2018 Adoptadog, LCC To Go | Seattle, WA</p>
-             </div>
-          </footer>
-    </body>
+                     </div>
+                     <input type="submit" value="Continue to checkout" class="btn">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div class="footer">
+            <img src="images/adoptadog-logo.svg" alt="Image of the Company Logo" style="width: 25%;" />
+            <p>
+               Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
+               esseque invenienihil imaximu scideru ptistiusam consequunt <br>
+            </p>
+            <a class="footer-links" href="index.html">Home /</a>
+            <a class="footer-links" href="dogs.html"> Dogs /</a>
+            <a class="footer-links" href="blog.html"> Blog </a>
+            <p>© 2018 Adoptadog, LCC To Go | Seattle, WA</p>
+         </div>
+      </footer>
+   </body>
 </html>
