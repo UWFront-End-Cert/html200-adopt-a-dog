@@ -13,7 +13,7 @@ body {
 	background-image: url("../images/header-image.jpg");
 	background-color: black;
 	background-position: center;
-	height: 800px;
+	height: 600px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -220,17 +220,17 @@ nav li a:active {
     float: left
 }
 .post-thumb img {
-	padding: 2rem;
+	
 	display: block
 	
 }
 .post-content {
-	padding: 2rem;
+
 	margin-left: 210px
 	
 }
 .post-title {
-	padding: 2rem;
+
     font-weight: bold;
     font-size: 200%
 }
