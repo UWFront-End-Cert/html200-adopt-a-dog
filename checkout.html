@@ -69,34 +69,32 @@
                   <select name="hours">
                      <option value=""></option>
                   </select>
-
-
                   <label for="dogs adopted" style="display:block; padding-top: 2rem;">Dogs Adopted </label>
-
-                  <span style="display:inline-block;">
-                         <img src="images/lucas-checkout.jpg" alt="Image of lucas-checkout "/>
-                         <p>Lucas </p>
-                         <p>Cost to Adopt 1234.56 </p>
-                 </span>
-                 <span style="display:inline-block;">
-                  <img src="images/duffy-checkout.jpg" alt="Image of duffy-checkout "/>
-                  <p>Duffy </p>
-                  <p>Cost to Adopt 1234.56 </p>
-                </span>
-                  
-                <label for="dogs adopted">Total Adoption Cost ! 
+                  <div class="row">
+                     <div class="column">
+                        <div class="post-container">                
+                           <div class="post-thumb"><img src="images/lucas-checkout.jpg" /></div>
+                            <div class="post-content">
+                               <h3 class="post-title">Lucas</h3>
+                               <p><strong>Cost to Adopt: </strong> $123.45</p>
+                              </div>
+                       </div>
+                     </div>
+                     <div class="column">
+                        <div class="post-container">                
+                           <div class="post-thumb"><img src="images/duffy-checkout.jpg" /></div>
+                            <div class="post-content">
+                               <h3 class="post-title">Duffy</h3>
+                               <p><strong>Cost to Adopt: </strong> $123.45</p>
+                              </div>
+                       </div>
+                     </div>
+                   </div>
+                <label for="dogs adopted"style="display:block; padding-top: 2rem;">Total Adoption Cost ! 
                   <p>$1234.56</p>
                 </label>
 
-                <input class="checkout-button"type="submit" value="Submit">
-                       
-                    
-                 
-                          
-
-
-
-
+                <input class="submit-button "type="submit" value="Submit">
                </form>
             </div>
          </div>
