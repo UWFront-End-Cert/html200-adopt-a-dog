@@ -1,140 +1,134 @@
 input[type=text] {
-    width: 45%;
-    padding: 12px 20px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    
-    margin-left: 1rem;
-    
-  }
+	width: 45%;
+	padding: 12px 20px;
+	margin: 10px 0;
+	box-sizing: border-box;
+	margin-left: 1rem;
+}
 
-  input[type=radio] {
-  
-    margin-left: 1rem;
-    
-  }
+input[type=radio] {
+	margin-left: 1rem;
+}
 
-  input[type=email] {
-    width: 45%;
-    padding: 12px 20px;
-    margin: 10px 0;
-    box-sizing: border-box;
- 
-    margin-left: 1rem;
-    
-  }
-  fieldset {
-    width: 45%;
-    padding: 12px 20px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    
-    margin-left: 1rem;
-  }
-  fieldset legend {
-    margin-bottom: 10px;
-    display: block;
-    color: #116694;
+input[type=email] {
+	width: 45%;
+	padding: 12px 20px;
+	margin: 10px 0;
+	box-sizing: border-box;
+	margin-left: 1rem;
+}
+
+fieldset {
+	width: 45%;
+	padding: 12px 20px;
+	margin: 10px 0;
+	box-sizing: border-box;
+	margin-left: 1rem;
+}
+
+fieldset legend {
+	margin-bottom: 10px;
+	display: block;
+	color: #116694;
 	font-family: 'Arvo', serif;
-    padding: 2px 16px;
-    font-size: 24px;
-    font-weight: bold;
-  }
+	padding: 2px 16px;
+	font-size: 24px;
+	font-weight: bold;
+}
 
-   fieldset label{
-    margin-bottom: 10px;
-    display: block;
-    color: #116694;
+fieldset label {
+	margin-bottom: 10px;
+	display: block;
+	color: #116694;
 	font-family: 'Arvo', serif;
-    padding: 2px 16px;
-    font-size: 24px;
-    font-weight: bold;
+	padding: 2px 16px;
+	font-size: 24px;
+	font-weight: bold;
+}
 
-   }
-  label {
-    margin-bottom: 10px;
-    display: block;
-    color: #116694;
+label {
+	margin-bottom: 10px;
+	display: block;
+	color: #116694;
 	font-family: 'Arvo', serif;
-    padding: 2px 16px;
-    font-size: 24px;
-    font-weight: bold;
-  }
+	padding: 2px 16px;
+	font-size: 24px;
+	font-weight: bold;
+}
 
-  label p{
-
-  color: black;
+label p {
+	color: black;
 	font-family: 'Arvo', serif;
 	font-size: 27px;
-	
-
-  }
-
-  .display-block {
-    display: block;
- }
-  
- #state-select {
-    width: 100%;
-    padding: 12px 23px;
-    margin: 12px 0;
-    box-sizing: border-box;
-
- }
- select {
-    width: 30%;
-    padding: 12px 23px;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    box-sizing: border-box;
-
- }
-
- .post-container {
-  margin: 20px 20px 0 0;  
-  overflow: auto;
 }
+
+.display-block {
+	display: block;
+}
+
+#state-select {
+	width: 100%;
+	padding: 12px 23px;
+	margin: 12px 0;
+	box-sizing: border-box;
+}
+
+select {
+	width: 30%;
+	padding: 12px 23px;
+	margin-left: 1rem;
+	margin-top: 1rem;
+	box-sizing: border-box;
+}
+
+.post-container {
+	margin: 20px 20px 0 0;
+	overflow: auto;
+}
+
 .post-thumb {
-  float: left;
+	float: left;
 }
+
 .post-thumb img {
-  display: block;
-  width: 200px;
+	display: block;
+	width: 200px;
 }
+
 .post-content {
-  margin-left: 210px;
+	margin-left: 210px;
 }
 
-.post-content p{
-  color: black;
-  font-family: 'Arvo', serif;
-  font-size: 18px;
-}
-.post-title {
-  font-weight: bold;
-  font-size: 200%;
-  margin-top: 3rem;
-  color: #116694;
+.post-content p {
+	color: black;
 	font-family: 'Arvo', serif;
-	
-}
-.column {
-  float: left;
+	font-size: 18px;
 }
 
-/* Clearfix (clear floats) */
+.post-title {
+	font-weight: bold;
+	font-size: 200%;
+	margin-top: 3rem;
+	color: #116694;
+	font-family: 'Arvo', serif;
+}
+
+.column {
+	float: left;
+}
+
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+	content: "";
+	clear: both;
+	display: table;
 }
 
 .submit-button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  font-family: 'Arvo', serif;
-  padding: 30px 140px;
-  font-size: 30px;
-  cursor: pointer;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	font-family: 'Arvo', serif;
+	padding: 30px 140px;
+	font-size: 30px;
+	cursor: pointer;
 }
