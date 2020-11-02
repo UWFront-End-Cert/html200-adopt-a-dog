@@ -1,80 +1,40 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en" dir="ltr">
     <head>
+        <link rel="stylesheet" href="styles.css">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Our Blog</title>
     </head>
 
     <body>
 
+      <header class="page-header">
+        <!-- <div class="header-image"><img src="../images/header-image.jpg" alt="header image"> </div> -->
+        <div class="header-logo"></div>
+        <h1 class="main-title">Seattle's Premiere dog adoption agency</h1>
+        <div class="checkout-balance">
+            <img class="cart-icon" src="../images/cart-icon.svg" alt="header image">
+            <span class="dollar">$1234.56</span>
+        </div>
+        <a class="button-checkout" href="checkout.html">checkout</a>
+    </header>
 
-        <header>
-            <div class="header-image"><img src="../images/header-image.jpg" alt="header image"> </div>
-            <div class="header-logo"><img src="../images/adoptadog-logo.svg" alt="adopt a dog logo"> </div>
-            <div class="cart-icon"><img src="../images/cart-icon.svg" alt="cart icon"> </div>
-            <button class="btn-checkout">checkout</button>
-            <h1 class="main-title">Seattle's Premiere dog adoption agency</h1>
-          </header>
-
-      <nav>
-          <div class="topnav">
-            <a class="navigation-link" href="#">Home /</a>
-            <a class="navigation-link" href="#">Dogs /</a>
-            <a class="navigation-link" href="#">Blog</a>
-          </div>
-      </nav>
+    <nav class="topnav">
+        <a class="navigation-link" href="index.html">Home</a> /
+        <a class="navigation-link" href="all-dogs.html">Dogs</a> /
+        <a class="navigation-link" href="blog.html">Blog</a>
+    </nav>
 
       <main>
 
-        <h3 class="subtitle">Adopt a dog Blog</h3>
-        <div class="blog-story">
-            <img src="../images/blog-1.jpg" alt="blog-1"> 
-            <h4 class="subtitle">Traveling With Your Dog</h4>
-            <p>Induciendisite quo magnatem iuntum quid quaest ea am,
-              tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-              derum recaptatur, cum volore, undipsa doloreium hillupta aut
-              es ut alitatuscit ommossum haritatur arum qui officae videbiti
-              corporeim faccull oribus es quidignis ipietus explam sus
-              am aut amet ant fugiatum, utem non reptat ad magnienecto
-              volorent fugia nonsedi gendand itatquos as magnimpr aut
-              molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-    
-            <p>Induciendisite quo magnatem iuntum quid quaest ea am,
-              tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-              derum recaptatur, cum volore, undipsa doloreium hillupta aut
-              es ut alitatuscit ommossum haritatur arum qui officae videbiti
-              corporeim faccull oribus es quidignis ipietus explam sus
-              am aut amet ant fugiatum, utem non reptat ad magnienecto
-              volorent fugia nonsedi gendand itatquos as magnimpr aut
-              molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-    
-        </div>
-        <div class="blog-story">
-            <img src="../images/blog-2.jpg" alt="blog-2">
-            <h4 class="subtitle">How to Walk Multiple Dogs</h4>
-            <p>Induciendisite quo magnatem iuntum quid quaest ea am,
-            tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-            derum recaptatur, cum volore, undipsa doloreium hillupta aut
-            es ut alitatuscit ommossum haritatur arum qui officae videbiti
-            corporeim faccull oribus es quidignis ipietus explam sus
-            am aut amet ant fugiatum, utem non reptat ad magnienecto
-            volorent fugia nonsedi gendand itatquos as magnimpr aut
-            molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-  
-            <p>Induciendisite quo magnatem iuntum quid quaest ea am,
-            tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-            derum recaptatur, cum volore, undipsa doloreium hillupta aut
-            es ut alitatuscit ommossum haritatur arum qui officae videbiti
-            corporeim faccull oribus es quidignis ipietus explam sus
-            am aut amet ant fugiatum, utem non reptat ad magnienecto
-            volorent fugia nonsedi gendand itatquos as magnimpr aut
-            molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-        </div>
+        <h3 class="blog-title">Adoptadog Blog</h3>
 
         <div class="blog-story">
-            <img src="../images/blog-3.jpg" alt="blog-3">
-            <h4 class="subtitle">Teach Your Dog To Fetch</h4>
-            <p>Induciendisite quo magnatem iuntum quid quaest ea am,
+            <img class="blog-image" src="../images/blog-1.jpg" alt="woman with her black dog">
+            <div>
+              <h4 class="story-title">Traveling with your dog</h4>
+              <p class="intro-paragraph">Induciendisite quo magnatem iuntum quid quaest ea am,
                 tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
                 derum recaptatur, cum volore, undipsa doloreium hillupta aut
                 es ut alitatuscit ommossum haritatur arum qui officae videbiti
@@ -82,30 +42,80 @@
                 am aut amet ant fugiatum, utem non reptat ad magnienecto
                 volorent fugia nonsedi gendand itatquos as magnimpr aut
                 molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-      
-            <p>Induciendisite quo magnatem iuntum quid quaest ea am,
+  
+              <p class="intro-paragraph">Induciendisite quo magnatem iuntum quid quaest ea am,
                 tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
                 derum recaptatur, cum volore, undipsa doloreium hillupta aut
                 es ut alitatuscit ommossum haritatur arum qui officae videbiti
                 corporeim faccull oribus es quidignis ipietus explam sus
                 am aut amet ant fugiatum, utem non reptat ad magnienecto
                 volorent fugia nonsedi gendand itatquos as magnimpr aut
-                molor autatia ad est officimus accae et omnia cus, od qui ate</p>  
+                molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+            </div>
+
+        </div>
+
+        <div class="blog-story">
+            <img class="blog-image" src="../images/blog-2.jpg" alt="4 dogs on a leash">
+            <div>
+              <h4 class="story-title">How to walk with multiple dogs</h4>
+              <p class="intro-paragraph">Induciendisite quo magnatem iuntum quid quaest ea am,
+                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+                derum recaptatur, cum volore, undipsa doloreium hillupta aut
+                es ut alitatuscit ommossum haritatur arum qui officae videbiti
+                corporeim faccull oribus es quidignis ipietus explam sus
+                am aut amet ant fugiatum, utem non reptat ad magnienecto
+                volorent fugia nonsedi gendand itatquos as magnimpr aut
+                molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+  
+              <p class="intro-paragraph">Induciendisite quo magnatem iuntum quid quaest ea am,
+                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+                derum recaptatur, cum volore, undipsa doloreium hillupta aut
+                es ut alitatuscit ommossum haritatur arum qui officae videbiti
+                corporeim faccull oribus es quidignis ipietus explam sus
+                am aut amet ant fugiatum, utem non reptat ad magnienecto
+                volorent fugia nonsedi gendand itatquos as magnimpr aut
+                molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+            </div>
+        </div>
+
+        <div class="blog-story">
+            <img class="blog-image" src="../images/blog-3.jpg" alt="woman playing with a dog">
+            <div>
+              <h4 class="story-title">Teaching your dog how to fetch</h4>
+              <p class="intro-paragraph">Induciendisite quo magnatem iuntum quid quaest ea am,
+                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+                derum recaptatur, cum volore, undipsa doloreium hillupta aut
+                es ut alitatuscit ommossum haritatur arum qui officae videbiti
+                corporeim faccull oribus es quidignis ipietus explam sus
+                am aut amet ant fugiatum, utem non reptat ad magnienecto
+                volorent fugia nonsedi gendand itatquos as magnimpr aut
+                molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+  
+              <p class="intro-paragraph">Induciendisite quo magnatem iuntum quid quaest ea am,
+                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+                derum recaptatur, cum volore, undipsa doloreium hillupta aut
+                es ut alitatuscit ommossum haritatur arum qui officae videbiti
+                corporeim faccull oribus es quidignis ipietus explam sus
+                am aut amet ant fugiatum, utem non reptat ad magnienecto
+                volorent fugia nonsedi gendand itatquos as magnimpr aut
+                molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+            </div>
         </div>
 
       </main>
 
-      <footer>
-        <img src="../images/adoptadog-logo.svg" alt="adopt a dog logo">
-      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
-        sseque invenienihil imaximu scideru ptistiusam consequauat</p>
+      <footer class="page-footer">
+        <img class="footer-logo" src="../images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <p class="footer-text">Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+            sseque invenienihil imaximu scideru ptistiusam consequauat</p>
         <nav class="footernav">
-          <a href="#home">Home /</a>
-          <a href="#dogs">Dogs /</a>
-          <a href="#contact">Contact</a>
+            <a href="index.html">Home /</a>
+            <a href="all-dogs.html">Dogs /</a>
+            <a href="blog.html">Blog</a>
         </nav>
-          <p>&#169;2018 Adoptadog, LLC | Seattle, WA</p>
-      </footer>
+        <p class="copyright">&#169;2018 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
 
     </body>
 
