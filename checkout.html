@@ -37,43 +37,43 @@
                <h3 class="alldogs-title">Checkout</h3>
                <form method="GET">
                   <div class="display-block">
-                     <label for="fname">Name</label>
+                     <label>Name</label>
                      <input type="text" id="name" name="name">
-                     <label for="lname">Email Address</label>
+                     <label>Email Address</label>
                      <input type="email" id="email" name="email">
-                     <label for="address">Steet Address</label>
+                     <label>Steet Address</label>
                      <input type="text" id="address" name="address">
                   </div>
                   <span style="display:inline-block;">
-                  <label for="city" style="display:block">City</label>
+                  <label style="display:block">City</label>
                   <input style="width: 85%;" type="text" name="city" id="city" />
                   </span>
                   <span style="display:inline-block">
-                     <label for="state" style="display:block">State</label>
+                     <label  style="display:block">State</label>
                      <select id="state-select" name="hours">
-                        <option value=""></option>
+                        
                      </select>
                   </span>
                   <span style="display:inline-block;">
-                  <label for="zipcode" style="display:block">Zipcdoe</label>
+                  <label style="display:block">Zipcdoe</label>
                   <input style="width: 85%;" type="text" name="zipcode" id="zipcode" />
                   </span>
                   <fieldset>
                      <legend>First Time Adopter?</legend>
-                     <label>
+                    
                      <input type="radio" name="special" value="yes">Yes
                      <input type="radio" name="special" value="no">No
-                     </label>
+                     
                   </fieldset>
-                  <label for="pickup-location" style="display:block">Pickup Location</label>
+                  <label  style="display:block">Pickup Location</label>
                   <select name="hours">
-                     <option value=""></option>
+                  
                   </select>
-                  <label for="dogs adopted" style="display:block; padding-top: 2rem;">Dogs Adopted </label>
+                  <label style="display:block; padding-top: 2rem;">Dogs Adopted </label>
                   <div class="row">
                      <div class="column">
                         <div class="post-container">
-                           <div class="post-thumb"><img src="images/lucas-checkout.jpg" /></div>
+                           <div class="post-thumb"><img src="images/lucas-checkout.jpg"  alt="Lucas Checkout Image"/></div>
                            <div class="post-content">
                               <h3 class="post-title">Lucas</h3>
                               <p><strong>Cost to Adopt: </strong> $123.45</p>
@@ -82,7 +82,7 @@
                      </div>
                      <div class="column">
                         <div class="post-container">
-                           <div class="post-thumb"><img src="images/duffy-checkout.jpg" /></div>
+                           <div class="post-thumb"><img src="images/duffy-checkout.jpg" alt="Duffy Checkout Image"/></div>
                            <div class="post-content">
                               <h3 class="post-title">Duffy</h3>
                               <p><strong>Cost to Adopt: </strong> $123.45</p>
@@ -90,11 +90,12 @@
                         </div>
                      </div>
                   </div>
-                  <label for="dogs adopted"style="display:block; padding-top: 2rem;">
-                     Total Adoption Cost ! 
-                     <p>$1234.56</p>
-                  </label>
-                  <input class="submit-button "type="submit" value="Submit">
+                  <div class="checkout-price">
+                     <h3 class="post-title">Total Adoption Cost </h3>
+                     <p><strong>$1234.56</strong></p>
+                  </div>
+
+                  <input class="submit-button" type="submit" value="Submit">
                </form>
             </div>
          </div>
