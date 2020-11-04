@@ -37,7 +37,8 @@ body {
 }
 
 .shoppingcart {
-	width: 100px;
+	max-width: 100%;
+    height: auto;
 	text-align: center;
 	display: block;
 	background-color: transparent;
@@ -80,7 +81,8 @@ nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 30px;
-	width: 100%;
+	max-width: 100%;
+    height: auto;
 	background-color: #dddddd;
 }
 
@@ -110,18 +112,19 @@ nav li a:active {
 .box {
 	flex: 2;
 	background-color: white;
-	width: 100%;
+	max-width: 100%;
+    height: auto;
 	padding-left: 180px;
 }
 
 .box img {
 	float: left;
 	padding-top: 3rem;
+	max-width: 100%;
+    height: auto;
 }
 
 .container-about {
-	max-width: 100%;
-    height: auto;
 	padding: 2px 16px;
 	font-family: 'Arvo', serif;
 	font-size: 20px;
@@ -195,6 +198,7 @@ nav li a:active {
 	text-align: center;
 	cursor: pointer;
 	width: 100%;
+    height: auto;
 	font-size: 18px;
 }
 
