@@ -32,7 +32,7 @@ body {
 
 .slogan {
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size: 27px;
+	font-size: 1.5rem;
 	color: #1B8F1B
 }
 
@@ -58,7 +58,7 @@ body {
 
 .shoppingcart p {
 	font-family: 'Arvo', serif;
-	font-size: 35px;
+	font-size: 2.5rem;
 	color: white;
 	margin-top: 2rem;
 }
@@ -69,7 +69,7 @@ body {
 	color: white;
 	font-family: 'Arvo', serif;
 	padding: 15px 32px;
-	font-size: 16px;
+	font-size: 1.5rem;
 	cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ nav li,
 nav li a {
 	display: inline;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 2.5rem;
 	color: #116694;
 	padding-left: 0.5rem;
 	font-weight: bold;
@@ -127,14 +127,14 @@ nav li a:active {
 .container-about {
 	padding: 2px 16px;
 	font-family: 'Arvo', serif;
-	font-size: 20px;
+	font-size: 2rem;
 }
 
 .container-about h3 {
 	color: #116694;
 	font-family: 'Arvo', serif;
 	padding: 2px 16px;
-	font-size: 40px;
+	font-size: 3rem;
 	font-weight: bold;
 	position: relative;
 	left: 3rem;
@@ -143,7 +143,7 @@ nav li a:active {
 .container-about p {
 	color: black;
 	font-family: 'Arvo', serif;
-	font-size: 20px;
+	font-size: 1.5rem;
 	padding: 2px 16px;
 	position: relative;
 	left: 3rem;
@@ -152,7 +152,7 @@ nav li a:active {
 #about-p {
 	color: black;
 	font-family: 'Arvo', serif;
-	font-size: 27px;
+	font-size: 1.7rem;
 	padding: 2px 16px;
 	position: relative;
 	left: 3rem;
@@ -177,14 +177,14 @@ nav li a:active {
 	color: #116694;
 	font-family: 'Arvo', serif;
 	padding: 2px 16px;
-	font-size: 30px;
+	font-size: 2.5rem;
 	font-weight: bold;
 }
 
 .grid-item p {
 	color: black;
 	font-family: 'Arvo', serif;
-	font-size: 16px;
+	font-size: 1.2rem;
 	padding: 2px 16px;
 }
 
@@ -199,7 +199,7 @@ nav li a:active {
 	cursor: pointer;
 	width: 100%;
     height: auto;
-	font-size: 18px;
+	font-size: 1.3rem;
 }
 
 .grid-item button:hover,
@@ -223,7 +223,7 @@ a:hover {
 	background-color: lightgrey;
 	color: #116694;
 	padding: 15px 50px;
-	font-size: 20px;
+	font-size: 1.8rem;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -236,14 +236,14 @@ a:hover {
 	padding: 100px;
 	margin-top: 50px;
 	color: white;
-	font-size: 19px;
+	font-size: 1.8rem;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-links {
 	text-decoration: none;
 	line-height: 1.6;
-	font-size: 19px;
+	font-size: 2.5rem;
 	font-family: Arial, Helvetica, sans-serif;
 	color: white;
 	margin: 0;
