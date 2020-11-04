@@ -225,12 +225,13 @@ a:hover {
 }
 
 .footer {
+	max-width: 100%;
+    height: auto;
 	text-align: center;
 	background: #116694;
 	padding: 100px;
 	margin-top: 50px;
 	color: white;
-	line-height: 1.6;
 	font-size: 19px;
 	font-family: Arial, Helvetica, sans-serif;
 }
