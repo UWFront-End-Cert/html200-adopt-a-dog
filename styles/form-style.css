@@ -8,6 +8,8 @@ input[type=text] {
 
 input[type=radio] {
 	margin-left: 1rem;
+	font-family: 'Arvo', serif;
+	padding: 2px 16px;
 }
 
 input[type=email] {
@@ -20,10 +22,7 @@ input[type=email] {
 
 fieldset {
 	width: 45%;
-	padding: 12px 20px;
-	margin: 10px 0;
-	box-sizing: border-box;
-	margin-left: 1rem;
+	
 }
 
 fieldset legend {
@@ -32,7 +31,7 @@ fieldset legend {
 	color: #116694;
 	font-family: 'Arvo', serif;
 	padding: 2px 16px;
-	font-size: 24px;
+	font-size: 1.8rem;
 	font-weight: bold;
 }
 
@@ -42,24 +41,25 @@ fieldset label {
 	color: #116694;
 	font-family: 'Arvo', serif;
 	padding: 2px 16px;
-	font-size: 24px;
+	font-size: 1.6rem;
 	font-weight: bold;
 }
 
 label {
+	width: 45%;
 	margin-bottom: 10px;
 	display: block;
 	color: #116694;
 	font-family: 'Arvo', serif;
 	padding: 2px 16px;
-	font-size: 24px;
+	font-size: 1.8rem;
 	font-weight: bold;
 }
 
 label p {
 	color: black;
 	font-family: 'Arvo', serif;
-	font-size: 27px;
+	font-size: 1.8rem;
 }
 
 .display-block {
