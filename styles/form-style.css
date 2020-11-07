@@ -22,7 +22,6 @@ input[type=email] {
 
 fieldset {
 	width: 45%;
-	
 }
 
 fieldset legend {
@@ -93,7 +92,7 @@ select {
 .post-thumb img {
 	display: block;
 	max-width: 100%;
-    height: auto;
+	height: auto;
 }
 
 .post-content {
@@ -133,9 +132,9 @@ select {
 	font-size: 2rem;
 	cursor: pointer;
 }
-.checkout-price p{
+
+.checkout-price p {
 	color: black;
 	font-family: 'Arvo', serif;
 	font-size: 2.3rem;
-
 }
