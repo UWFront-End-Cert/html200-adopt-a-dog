@@ -41,7 +41,6 @@ body {
 .shoppingcart img {
 	width: 50px;
 	height: auto;
-
 }
 
 .shoppingcart p {
@@ -102,7 +101,6 @@ nav li a:active {
 	flex: 2;
 	background-color: white;
 	padding-left: 3rem;
-	
 }
 
 .box img {
@@ -162,7 +160,7 @@ nav li a:active {
 	text-align: center;
 	padding: 10px;
 	font-family: 'Arvo', serif;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .grid-item h4 {
@@ -178,6 +176,12 @@ nav li a:active {
 	font-family: 'Arvo', serif;
 	font-size: 1rem;
 	padding: 2px 16px;
+}
+
+.grid-item img:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	opacity: 0.5;
 }
 
 .grid-item button {
