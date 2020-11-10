@@ -35,17 +35,18 @@ body {
 
 .shoppingcart {
 	float: right;
-	padding: 0.5rem;
+	padding: 2rem;
 }
 
 .shoppingcart img {
-	max-width: 100%;
+	width: 50px;
 	height: auto;
+
 }
 
 .shoppingcart p {
 	font-family: 'Arvo', serif;
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	color: white;
 }
 
@@ -55,33 +56,34 @@ body {
 	color: white;
 	font-family: 'Arvo', serif;
 	padding: 15px 32px;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	cursor: pointer;
 }
 
 nav {
-	text-align: center
+	overflow: hidden;
+	background-color: #333;
 }
 
 nav ul {
 	margin: 0;
-	padding: 2rem;
-	background-color: #dddddd;
 }
 
 nav li,
 nav li a {
-	display: inline;
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 2.5rem;
-	color: #116694;
-	padding-left: 0.5rem;
-	font-weight: bold;
+	font-size: 17px;
 }
 
 nav li a:hover,
 nav li a:active {
-	color: yellow;
+	background-color: #ddd;
+	color: black;
 }
 
 .flex-container {
@@ -127,7 +129,7 @@ nav li a:active {
 .container-about p {
 	color: black;
 	font-family: 'Arvo', serif;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	position: relative;
 	left: 3rem;
 }
@@ -160,6 +162,7 @@ nav li a:active {
 	text-align: center;
 	padding: 10px;
 	font-family: 'Arvo', serif;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .grid-item h4 {
@@ -173,7 +176,7 @@ nav li a:active {
 .grid-item p {
 	color: black;
 	font-family: 'Arvo', serif;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	padding: 2px 16px;
 }
 
