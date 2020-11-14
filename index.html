@@ -21,7 +21,7 @@
           <div class="checkout">
             <div class="checkout-cart-amount">
               <img class="checkout-cart" src="images/cart-icon.svg" alt="Checkout cart" width="28" height="26">
-              <p class="checkout-total bolded-text ">$1234.56</p>
+              <p id="checkout-total" class="checkout-total bolded-text ">$0</p>
             </div>
             <form action="checkout.html" method="GET">
               <label>
@@ -51,106 +51,76 @@
           </div>
           <div class="dog-cards-container">
             <article class="dog-card">
-              <img class="dog-card-image" src="images/murphy-card.jpg" alt="Featured dog: Murphy" width="225" height="135">
+              <img class="dog-card-image" src="images/murphy-card.jpg" onclick="viewDogInfo('Murphy', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Murphy" width="225" height="135">
               <div class="dog-card-header-text">
                 <h3>Murphy</h3>
                 <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
                 <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <form action="checkout.html" method="POST">
-                  <label>
-                    <input class="adopt-button bolded-text" type="submit" value="Adopt">
-                  </label>
-                </form>
+                <button id="dog1-button" class="adopt-button bolded-text" onclick="addFee('Murphy', '123.45', 'dog1-button', 'checkout-total')">Adopt</button>
               </div>
             </article>
             <article class="dog-card">
-              <img class="dog-card-image" src="images/poppy-card.jpg" alt="Featured dog: Poppy" width="225" height="135">
+              <img class="dog-card-image" src="images/poppy-card.jpg" onclick="viewDogInfo('Poppy', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Poppy" width="225" height="135">
               <div class="dog-card-header-text">
                 <h3>Poppy</h3>
                 <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
                 <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <form action="checkout.html" method="POST">
-                  <label>
-                    <input class="adopt-button bolded-text" type="submit" value="Adopt">
-                  </label>
-                </form>
+                <button id="dog2-button" class="adopt-button bolded-text" onclick="addFee('Poppy', '123.45', 'dog2-button', 'checkout-total')">Adopt</button>
               </div>
             </article>
             <article class="dog-card">
-              <img class="dog-card-image" src="images/jack-card.jpg" alt="Featured dog: Jack" width="225" height="135">
+              <img class="dog-card-image" src="images/jack-card.jpg" onclick="viewDogInfo('Jack', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Jack" width="225" height="135">
               <div class="dog-card-header-text">
                 <h3>Jack</h3>
                 <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
                 <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <form action="checkout.html" method="POST">
-                  <label>
-                    <input class="adopt-button bolded-text" type="submit" value="Adopt">
-                  </label>
-                </form>
+                <button id="dog3-button" class="adopt-button bolded-text" onclick="addFee('Jack', '123.45', 'dog3-button', 'checkout-total')">Adopt</button>
               </div>
             </article>
             <article class="dog-card">
-              <img class="dog-card-image" src="images/duffy-card.jpg" alt="Featured dog: Duffy" width="225" height="135">
+              <img class="dog-card-image" src="images/duffy-card.jpg" onclick="viewDogInfo('Duffy', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Duffy" width="225" height="135">
               <div class="dog-card-header-text">
                 <h3>Duffy</h3>
                 <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
                 <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <form action="checkout.html" method="POST">
-                  <label>
-                    <input class="adopt-button bolded-text" type="submit" value="Adopt">
-                  </label>
-                </form>
+                <button id="dog4-button" class="adopt-button bolded-text" onclick="addFee('Duffy', '123.45', 'dog4-button', 'checkout-total')">Adopt</button>
               </div>
             </article>
             <article class="dog-card">
-              <img class="dog-card-image" src="images/lucas-card.jpg" alt="Featured dog: Lucas" width="225" height="135">
+              <img class="dog-card-image" src="images/lucas-card.jpg" onclick="viewDogInfo('Lucas', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Lucas" width="225" height="135">
               <div class="dog-card-header-text">
                 <h3>Lucas</h3>
                 <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
                 <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <form action="checkout.html" method="POST">
-                  <label>
-                    <input class="adopt-button bolded-text" type="submit" value="Adopt">
-                  </label>
-                </form>
+                <button id="dog5-button" class="adopt-button bolded-text" onclick="addFee('Lucas', '123.45', 'dog5-button', 'checkout-total')">Adopt</button>
               </div>
             </article>
             <article class="dog-card">
-              <img class="dog-card-image" src="images/jake-card.jpg" alt="Featured dog: Jake" width="225" height="135">
+              <img class="dog-card-image" src="images/jake-card.jpg" onclick="viewDogInfo('Jake', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Jake" width="225" height="135">
               <div class="dog-card-header-text">
                 <h3>Jake</h3>
                 <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
                 <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <form action="checkout.html" method="POST">
-                  <label>
-                    <input class="adopt-button bolded-text" type="submit" value="Adopt">
-                  </label>
+                <button id="dog6-button" class="adopt-button bolded-text" onclick="addFee('Jake', '123.45', 'dog6-button', 'checkout-total')">Adopt</button>
                 </form>
               </div>
             </article>
             <article class="dog-card">
-              <img class="dog-card-image" src="images/angus-card.jpg" alt="Featured dog: Angus" width="225" height="135">
+              <img class="dog-card-image" src="images/angus-card.jpg" onclick="viewDogInfo('Angus', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Angus" width="225" height="135">
               <div class="dog-card-header-text">
                 <h3>Angus</h3>
                 <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
                 <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <form action="checkout.html" method="POST">
-                  <label>
-                    <input class="adopt-button bolded-text" type="submit" value="Adopt">
-                  </label>
-                </form>
+                <button id="dog7-button" class="adopt-button bolded-text" onclick="addFee('Angus', '123.45', 'dog7-button', 'checkout-total')">Adopt</button>
               </div>
             </article>
             <article class="dog-card">
-              <img class="dog-card-image" src="images/violet-card.jpg" alt="Featured dog: Violet" width="225" height="135">
+              <img class="dog-card-image" src="images/violet-card.jpg" onclick="viewDogInfo('Violet', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Violet" width="225" height="135">
               <div class="dog-card-header-text">
                 <h3>Violet</h3>
                 <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
                 <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <form action="checkout.html" method="POST">
-                  <label>
-                    <input class="adopt-button bolded-text" type="submit" value="Adopt">
-                  </label>
+                <button id="dog8-button" class="adopt-button bolded-text" onclick="addFee('Violet', '123.45', 'dog8-button', 'checkout-total')">Adopt</button>
                 </form>
               </div>
             </article>
@@ -176,7 +146,7 @@
         <p>&copy;2020 Adoptadog, LLC | Seattle, WA</p>
       </footer>
     </div>
-
+    <script src="scripts/dog-info.js" charset="utf-8"></script>
   </body>
 
 </html>
