@@ -20,7 +20,7 @@ body {
 	max-width: 100%;
 	height: auto;
 	float: left;
-    padding: 2rem 2rem 1rem 2rem;
+	padding: 2rem 2rem 1rem 2rem;
 }
 
 .header-logo img {
@@ -118,6 +118,7 @@ nav li a:active {
 	font-size: 2rem;
 	display: flex;
 	flex-wrap: wrap;
+	padding: 0.5rem;
 }
 
 .container-about h3 {
@@ -133,6 +134,19 @@ nav li a:active {
 	font-family: 'Arvo', serif;
 	font-size: 1rem;
 	position: relative;
+}
+
+.blog-post h3 {
+	padding: 0.5rem;
+}
+
+.blog-post p {
+	padding: 0.5rem;
+	font-size: 1rem;
+}
+
+.blog-post img {
+	padding: 0.5rem;
 }
 
 .grid-container {
