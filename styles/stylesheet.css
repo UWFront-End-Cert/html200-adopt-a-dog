@@ -11,7 +11,7 @@ body {
 .header {
 	background-repeat: no-repeat;
 	max-width: 100%;
-	height: 25rem;
+	height: 30rem;
 	background-image: url("../images/header-image.jpg");
 	background-size: cover;
 }
@@ -36,6 +36,7 @@ body {
 .shoppingcart {
 	float: right;
 	padding: 1rem;
+	
 }
 
 .shoppingcart img {
@@ -59,16 +60,20 @@ body {
 	cursor: pointer;
 }
 
+.navigation-bar {
+	width: 100%;
+}
 nav {
 	overflow: hidden;
 	background-color: #333;
 	text-align: center;
+
 }
 
 nav ul {
 	margin: 0;
 	list-style-type: none;
-	width: 100%;
+	
 	padding: 2rem;
 }
 
@@ -92,16 +97,6 @@ nav li a:active {
 	padding: 1rem;
 }
 
-.adopt-a-dog-info img {
-	
-}
-.adopt-a-dog-info h3 {
-
-}
-
-.adopt-a-dog-info p {
-
-}
 
 
 .container-blog {
@@ -112,7 +107,10 @@ nav li a:active {
 	padding: 0.5rem;
 }
 
-
+.container-blog img {
+	margin-left: 19%;
+	max-width: 100%;
+}
 
 .container-blog h3 {
 	color: #116694;
@@ -128,7 +126,9 @@ nav li a:active {
 	font-size: 1rem;
 	position: relative;
 }
-
+.blog-post {
+	margin-left:  2%;
+}
 .blog-post h3 {
 	padding: 0.5rem;
 }
@@ -147,9 +147,8 @@ nav li a:active {
     margin-left: 18.5%;
     grid-template-columns: auto auto auto auto; 
     grid-column-gap: 2rem;
-    padding: 10px;
-    max-width: 1200px;
-
+	padding: 10px;
+	margin-right: 18.5%;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 }
 @media (min-width: 600px) {
@@ -188,6 +187,8 @@ nav li a:active {
 	padding: 2px 16px;
 }
 
+.grid-item img { width: 100%; } 
+
 .grid-item img:hover {
 	cursor: pointer;
 	transform: scale(1.2);
@@ -220,6 +221,7 @@ a:hover {
 	font-weight: bold;
 	position: relative;
 	padding-left: 3rem;
+	margin-left: 19%;
 }
 
 .blog-title {
@@ -228,6 +230,7 @@ a:hover {
 	font-size: 2.8rem;
 	font-weight: bold;
 	position: relative;
+	margin-left: 19%;
 }
 
 .see-more-button {
