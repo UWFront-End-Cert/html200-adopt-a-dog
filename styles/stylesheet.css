@@ -36,7 +36,6 @@ body {
 .shoppingcart {
 	float: right;
 	padding: 1rem;
-	
 }
 
 .shoppingcart img {
@@ -63,17 +62,16 @@ body {
 .navigation-bar {
 	width: 100%;
 }
+
 nav {
 	overflow: hidden;
 	background-color: #333;
 	text-align: center;
-
 }
 
 nav ul {
 	margin: 0;
 	list-style-type: none;
-	
 	padding: 2rem;
 }
 
@@ -96,8 +94,6 @@ nav li a:active {
 .adopt-a-dog-info {
 	padding: 1rem;
 }
-
-
 
 .container-blog {
 	font-family: 'Arvo', serif;
@@ -126,9 +122,11 @@ nav li a:active {
 	font-size: 1rem;
 	position: relative;
 }
+
 .blog-post {
-	margin-left:  2%;
+	margin-left: 2%;
 }
+
 .blog-post h3 {
 	padding: 0.5rem;
 }
@@ -143,14 +141,15 @@ nav li a:active {
 }
 
 .grid-container {
-    display: grid;
-    margin-left: 18.5%;
-    grid-template-columns: auto auto auto auto; 
-    grid-column-gap: 2rem;
+	display: grid;
+	margin-left: 18.5%;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 2rem;
 	padding: 10px;
 	margin-right: 18.5%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
 @media (min-width: 600px) {
 	.grid-container {
 		grid-template-columns: repeat(3, 1fr);
@@ -187,7 +186,9 @@ nav li a:active {
 	padding: 2px 16px;
 }
 
-.grid-item img { width: 100%; } 
+.grid-item img {
+	width: 100%;
+}
 
 .grid-item img:hover {
 	cursor: pointer;
