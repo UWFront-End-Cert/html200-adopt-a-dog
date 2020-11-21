@@ -88,32 +88,23 @@ nav li a:active {
 	color: black;
 }
 
-.flex-container {
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
+.adopt-a-dog-info {
+	padding: 1rem;
 }
 
-.flex-container::after {
-	content: "";
-	clear: both;
-	display: table;
+.adopt-a-dog-info img {
+	
+}
+.adopt-a-dog-info h3 {
+
 }
 
-.box {
-	flex: 2;
-	background-color: white;
-	padding-left: 3rem;
+.adopt-a-dog-info p {
+
 }
 
-.box img {
-	float: left;
-	padding-top: 3rem;
-	max-width: 100%;
-	height: auto;
-}
 
-.container-about {
+.container-blog {
 	font-family: 'Arvo', serif;
 	font-size: 2rem;
 	display: flex;
@@ -121,7 +112,9 @@ nav li a:active {
 	padding: 0.5rem;
 }
 
-.container-about h3 {
+
+
+.container-blog h3 {
 	color: #116694;
 	font-family: 'Arvo', serif;
 	font-size: 3rem;
@@ -129,7 +122,7 @@ nav li a:active {
 	position: relative;
 }
 
-.container-about p {
+.container-blog p {
 	color: black;
 	font-family: 'Arvo', serif;
 	font-size: 1rem;
@@ -150,15 +143,15 @@ nav li a:active {
 }
 
 .grid-container {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	grid-column-gap: 2rem;
-	padding: 10px;
-	max-width: 1200px;
-	margin: 0 auto;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
+    display: grid;
+    margin-left: 18.5%;
+    grid-template-columns: auto auto auto auto; 
+    grid-column-gap: 2rem;
+    padding: 10px;
+    max-width: 1200px;
 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+}
 @media (min-width: 600px) {
 	.grid-container {
 		grid-template-columns: repeat(3, 1fr);
