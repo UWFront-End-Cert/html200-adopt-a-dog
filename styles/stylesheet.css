@@ -93,6 +93,9 @@ nav li a:active {
 
 .adopt-a-dog-info {
 	padding: 1rem;
+	margin-left: 5%;
+
+	
 }
 
 .container-blog {
@@ -104,7 +107,8 @@ nav li a:active {
 }
 
 .container-blog img {
-	margin-left: 19%;
+	margin-left: 10%;
+	padding-right: 0.5rem;
 	max-width: 100%;
 }
 
@@ -142,11 +146,11 @@ nav li a:active {
 
 .grid-container {
 	display: grid;
-	margin-left: 18.5%;
+	margin-left: 10%;
 	grid-template-columns: auto auto auto auto;
 	grid-column-gap: 2rem;
-	padding: 10px;
-	margin-right: 18.5%;
+	padding: 0.6rem;
+	margin-right: 10%;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -222,7 +226,7 @@ a:hover {
 	font-weight: bold;
 	position: relative;
 	padding-left: 3rem;
-	margin-left: 19%;
+	margin-left: 10%;
 }
 
 .blog-title {
@@ -231,7 +235,7 @@ a:hover {
 	font-size: 2rem;
 	font-weight: bold;
 	position: relative;
-	margin-left: 19%;
+	margin-left: 10%;
 }
 
 .see-more-button {
