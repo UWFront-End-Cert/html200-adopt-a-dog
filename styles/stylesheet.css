@@ -101,7 +101,7 @@ nav li a:active {
 
 .container-blog {
 	font-family: 'Arvo', serif;
-	font-size: 2rem;
+	font-size: 1rem;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0.5rem;
@@ -115,7 +115,7 @@ nav li a:active {
 .container-blog h3 {
 	color: #116694;
 	font-family: 'Arvo', serif;
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: bold;
 	position: relative;
 }
@@ -176,7 +176,7 @@ nav li a:active {
 	color: #116694;
 	font-family: 'Arvo', serif;
 	padding: 2px 16px;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: bold;
 }
 
@@ -206,7 +206,7 @@ nav li a:active {
 	cursor: pointer;
 	width: 100%;
 	height: auto;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 
 .grid-item button:hover,
@@ -217,7 +217,7 @@ a:hover {
 .alldogs-title {
 	color: #116694;
 	font-family: 'Arvo', serif;
-	font-size: 2.8rem;
+	font-size: 2rem;
 	font-weight: bold;
 	position: relative;
 	padding-left: 3rem;
@@ -227,7 +227,7 @@ a:hover {
 .blog-title {
 	color: #116694;
 	font-family: 'Arvo', serif;
-	font-size: 2.8rem;
+	font-size: 2rem;
 	font-weight: bold;
 	position: relative;
 	margin-left: 19%;
@@ -251,14 +251,14 @@ a:hover {
 	padding: 2rem;
 	margin-top: 2rem;
 	color: white;
-	font-size: 1.8rem;
+	font-size: 2rem;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-links {
 	text-decoration: none;
 	line-height: 1.6;
-	font-size: 2.5rem;
+	font-size: 1.2rem;
 	font-family: Arial, Helvetica, sans-serif;
 	color: white;
 	margin: 0;
