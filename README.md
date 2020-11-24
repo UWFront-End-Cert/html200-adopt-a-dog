@@ -1,2 +1,2 @@
 # html200-adopt-a-dog
-Initial fork for L01.
+Initial fork of L01 for html5200.
