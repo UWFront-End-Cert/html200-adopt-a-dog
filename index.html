@@ -40,97 +40,96 @@
       </header>
     
       <main id="main-content">
-      
-        <article>
-          <div class="intro-article">
-            <img class="intro-article-image" src="images/home-intro.jpg" alt="Man hugging dog looking at the camera" width="410" height="370">
-            <div class="intro-article-text">
-              <h1>Adopt A Dog</h1>
-              <p>Cras pellentesque erat odio, nec congue ipsum tristique vel. Suspendisse sit amet ultricies neque, non tincidunt ex. Pellentesque velit enim, lacinia a placerat a, suscipit at quam. Pellentesque imperdiet velit sem, ut gravida mauris malesuada a. Sed venenatis consequat lectus et rhoncus. Nam vestibulum ipsum ut neque placerat euismod pellentesque non elit. Integer semper vulputate justo, eget posuere nibh imperdiet eu. Aliquam dictum dui vel mi blandit, quis scelerisque erat hendrerit. Donec dignissim eget felis non sagittis. Integer bibendum dui sit amet egestas posuere.</p>
-            </div>
+        <article class="main-container">
+          <div class="blog-preview">
+            <h2>From Our Blog</h2>
+            <img class="blog-preview-image" src="images/blog-1.jpg" alt="Woman with dog sitting on a cliff overlooking a valley" width="328" height="310">
+              <div class="blog-preview-text">
+                <h3>Traveling With Your Dog</h3>
+                <p class="smaller-font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget elit vitae eros sollicitudin cursus pretium ac felis.</p>
+                <p class="smaller-font-size"><a href="/blog.html">Read more >></a></p> 
+              </div>
+              <img class="blog-preview-image" src="images/blog-2.jpg" alt="Four dogs on a leash, sitting down in a park, one of them is yawning" width="328" height="310">
+              <div class="blog-preview-text">
+                <h3>How to Walk Multiple Dogs</h3>
+                <p class="smaller-font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget elit vitae eros sollicitudin cursus pretium ac felis.</p>
+                <p class="smaller-font-size"><a href="/blog.html">Read more >></a></p> 
+              </div>
+              <img class="blog-preview-image" src="images/blog-3.jpg" alt="Silhouettes of person playing fetch with dog at sunset" width="328" height="310">
+              <div class="blog-preview-text">
+                <h3>Teach Your Dog to Fetch!</h3>
+                <p class="smaller-font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget elit vitae eros sollicitudin cursus pretium ac felis.</p>
+                <p class="smaller-font-size"><a href="/blog.html">Read more >></a></p>
+              </div>
           </div>
-          <div class="dog-cards-container">
-            <article class="dog-card">
-              <img class="dog-card-image" src="images/murphy-card.jpg" onclick="viewDogInfo('Murphy', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Murphy" width="225" height="135">
-              <div class="dog-card-header-text">
-                <h3>Murphy</h3>
-                <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
-                <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <button id="dog1-button" class="adopt-button bolded-text" onclick="addFee('Murphy', '123.45', 'dog1-button', 'checkout-total')">Adopt</button>
+          
+          <div class="intro-article-dogs-container">
+            <div class="intro-article">
+              <img class="intro-article-image" src="images/eric-ward-ISg37AI2A-s-unsplash-small.jpg" alt="Man hugging dog looking at the camera" width="640" height="427">
+              <div class="intro-article-text">
+                <h1>Adopt A Dog</h1>
+                <p>Cras pellentesque erat odio, nec congue ipsum tristique vel. Suspendisse sit amet ultricies neque, non tincidunt ex. Pellentesque velit enim, lacinia a placerat a, suscipit at quam. Pellentesque imperdiet velit sem, ut gravida mauris malesuada a. Sed venenatis consequat lectus et rhoncus. Nam vestibulum ipsum ut neque placerat euismod pellentesque non elit. Integer semper vulputate justo, eget posuere nibh imperdiet eu. Aliquam dictum dui vel mi blandit, quis scelerisque erat hendrerit. Donec dignissim eget felis non sagittis. Integer bibendum dui sit amet egestas posuere.</p>
               </div>
-            </article>
-            <article class="dog-card">
-              <img class="dog-card-image" src="images/poppy-card.jpg" onclick="viewDogInfo('Poppy', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Poppy" width="225" height="135">
-              <div class="dog-card-header-text">
-                <h3>Poppy</h3>
-                <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
-                <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <button id="dog2-button" class="adopt-button bolded-text" onclick="addFee('Poppy', '123.45', 'dog2-button', 'checkout-total')">Adopt</button>
-              </div>
-            </article>
-            <article class="dog-card">
-              <img class="dog-card-image" src="images/jack-card.jpg" onclick="viewDogInfo('Jack', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Jack" width="225" height="135">
-              <div class="dog-card-header-text">
-                <h3>Jack</h3>
-                <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
-                <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <button id="dog3-button" class="adopt-button bolded-text" onclick="addFee('Jack', '123.45', 'dog3-button', 'checkout-total')">Adopt</button>
-              </div>
-            </article>
-            <article class="dog-card">
-              <img class="dog-card-image" src="images/duffy-card.jpg" onclick="viewDogInfo('Duffy', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Duffy" width="225" height="135">
-              <div class="dog-card-header-text">
-                <h3>Duffy</h3>
-                <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
-                <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <button id="dog4-button" class="adopt-button bolded-text" onclick="addFee('Duffy', '123.45', 'dog4-button', 'checkout-total')">Adopt</button>
-              </div>
-            </article>
-            <article class="dog-card">
-              <img class="dog-card-image" src="images/lucas-card.jpg" onclick="viewDogInfo('Lucas', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Lucas" width="225" height="135">
-              <div class="dog-card-header-text">
-                <h3>Lucas</h3>
-                <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
-                <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <button id="dog5-button" class="adopt-button bolded-text" onclick="addFee('Lucas', '123.45', 'dog5-button', 'checkout-total')">Adopt</button>
-              </div>
-            </article>
-            <article class="dog-card">
-              <img class="dog-card-image" src="images/jake-card.jpg" onclick="viewDogInfo('Jake', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Jake" width="225" height="135">
-              <div class="dog-card-header-text">
-                <h3>Jake</h3>
-                <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
-                <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <button id="dog6-button" class="adopt-button bolded-text" onclick="addFee('Jake', '123.45', 'dog6-button', 'checkout-total')">Adopt</button>
-                </form>
-              </div>
-            </article>
-            <article class="dog-card">
-              <img class="dog-card-image" src="images/angus-card.jpg" onclick="viewDogInfo('Angus', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Angus" width="225" height="135">
-              <div class="dog-card-header-text">
-                <h3>Angus</h3>
-                <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
-                <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <button id="dog7-button" class="adopt-button bolded-text" onclick="addFee('Angus', '123.45', 'dog7-button', 'checkout-total')">Adopt</button>
-              </div>
-            </article>
-            <article class="dog-card">
-              <img class="dog-card-image" src="images/violet-card.jpg" onclick="viewDogInfo('Violet', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Violet" width="225" height="135">
-              <div class="dog-card-header-text">
-                <h3>Violet</h3>
-                <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
-                <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                <button id="dog8-button" class="adopt-button bolded-text" onclick="addFee('Violet', '123.45', 'dog8-button', 'checkout-total')">Adopt</button>
-                </form>
-              </div>
-            </article>
-
-            <form class="see-more-dogs-button" action="dogs.html" method="GET">
-              <label>
-                <input class="see-more-dogs bolded-text-700" type="submit" value="See More Dogs">
-              </label>
-            </form>
-
+            </div>
+            
+            <div class="dog-cards-container">
+              <article class="dog-card">
+                <img class="dog-card-image" src="images/murphy-card.jpg" onclick="viewDogInfo('Murphy', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Murphy" width="225" height="135">
+                <div class="dog-card-header-text">
+                  <h3>Murphy</h3>
+                  <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
+                  <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+                  <button id="dog1-button" class="adopt-button bolded-text" onclick="addFee('Murphy', '123.45', 'dog1-button', 'checkout-total')">Adopt</button>
+                </div>
+              </article>
+              <article class="dog-card">
+                <img class="dog-card-image" src="images/poppy-card.jpg" onclick="viewDogInfo('Poppy', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Poppy" width="225" height="135">
+                <div class="dog-card-header-text">
+                  <h3>Poppy</h3>
+                  <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
+                  <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+                  <button id="dog2-button" class="adopt-button bolded-text" onclick="addFee('Poppy', '123.45', 'dog2-button', 'checkout-total')">Adopt</button>
+                </div>
+              </article>
+              <article class="dog-card">
+                <img class="dog-card-image" src="images/jack-card.jpg" onclick="viewDogInfo('Jack', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Jack" width="225" height="135">
+                <div class="dog-card-header-text">
+                  <h3>Jack</h3>
+                  <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
+                  <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+                  <button id="dog3-button" class="adopt-button bolded-text" onclick="addFee('Jack', '123.45', 'dog3-button', 'checkout-total')">Adopt</button>
+                </div>
+              </article>
+              <article class="dog-card">
+                <img class="dog-card-image" src="images/duffy-card.jpg" onclick="viewDogInfo('Duffy', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Duffy" width="225" height="135">
+                <div class="dog-card-header-text">
+                  <h3>Duffy</h3>
+                  <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
+                  <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+                  <button id="dog4-button" class="adopt-button bolded-text" onclick="addFee('Duffy', '123.45', 'dog4-button', 'checkout-total')">Adopt</button>
+                </div>
+              </article>
+              <article class="dog-card">
+                <img class="dog-card-image" src="images/lucas-card.jpg" onclick="viewDogInfo('Lucas', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Lucas" width="225" height="135">
+                <div class="dog-card-header-text">
+                  <h3>Lucas</h3>
+                  <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
+                  <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+                  <button id="dog5-button" class="adopt-button bolded-text" onclick="addFee('Lucas', '123.45', 'dog5-button', 'checkout-total')">Adopt</button>
+                </div>
+              </article>
+              <article class="dog-card">
+                <img class="dog-card-image" src="images/jake-card.jpg" onclick="viewDogInfo('Jake', 'Donnec imperdiet diam dolor', '123.45')" alt="Featured dog: Jake" width="225" height="135">
+                <div class="dog-card-header-text">
+                  <h3>Jake</h3>
+                  <p class="smaller-font-size"><span class="bolded-text">Cost to Adopt: </span>$123.45</p> 
+                  <p class="smaller-font-size">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+                  <button id="dog6-button" class="adopt-button bolded-text" onclick="addFee('Jake', '123.45', 'dog6-button', 'checkout-total')">Adopt</button>
+                  </form>
+                </div>
+              </article>
+            </div>
+            <a href="dogs.html"><button class="see-more-dogs-button bolded-text-700 see-more-dogs">See More Dogs</button></a>
           </div>
         </article>
       </main>
