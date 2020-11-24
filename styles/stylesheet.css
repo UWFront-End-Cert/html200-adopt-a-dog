@@ -28,8 +28,15 @@ body {
 
 .logo-and-checkout {
   grid-area: 1 / 1 / 2 / 2;
-  background-image: url("../images/header-image2.jpg");
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+      ),
+      url("../images/header-image2.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000000;
   padding: 5% 7% 15% 7%;
 }
 
@@ -496,20 +503,23 @@ legend {
   }
 
   .logo-and-checkout {
-    grid-area: 1 / 1 / 2 / 2;
-    padding: 5% 7% 15% 7%;
+    height: 170px;
   }
 
   .site-logo {
-    width: 50%;
+    width: 40%;
   }
 
   .logo-text {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .checkout {
     margin-right: 0;
+  }
+
+  .checkout-button {
+    padding: .25rem 1rem .25rem 1rem;
   }
   
   .intro-article {
@@ -627,13 +637,25 @@ legend {
   #main-content {
     padding: 0 5% 0 5%;
   }
-  
+
+  .logo-and-checkout {
+    height: 200px;
+  }
+
   .site-logo {
-    width: 50%;
+    width: 40%;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
   }
 
   .checkout {
     margin-right: 0;
+  }
+
+  .checkout-button {
+    padding: .25rem 1rem .25rem 1rem;
   }
   
   .intro-article {
@@ -827,14 +849,6 @@ legend {
   .dogs-adopted-section {
     margin-bottom: 2rem;
   }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-@media screen and (min-width: 1200px) {
-
 }
 
 
