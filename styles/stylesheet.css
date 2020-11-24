@@ -29,6 +29,7 @@ body {
 .logo-and-checkout {
   grid-area: 1 / 1 / 2 / 2;
   background-image: url("../images/header-image2.jpg");
+  background-size: cover;
   padding: 5% 7% 15% 7%;
 }
 
@@ -211,11 +212,15 @@ h2 {
 
 h3 {
   font-size: 1.7rem;
-  margin-bottom: .5rem;
+  margin: .5rem 0 .5rem 0;
 }
 
 h4 {
   font-size: 1.4rem;
+}
+
+button {
+  cursor: pointer;
 }
 
 .dog-or-field-name {
@@ -321,7 +326,7 @@ form {
 }
 
 .blog-preview-image {
-  width: 250px;
+  max-width: 80%;
   height: auto;
 }
 
@@ -393,6 +398,7 @@ select {
   width: 40%;
   font-size: 1.25rem;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .address-container {
@@ -545,11 +551,83 @@ legend {
   .blog-preview {
     display: none;
   }
+
+  .footer-text {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    margin: .5rem 0 .5rem 0;
+  }
+
+  .blog-article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  .blog-article-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-article-text {
+    padding: 0 7% 1% 0%;
+  }
+
+  .nav {
+    padding: 2% 5% 2% 5%;
+  }
+
+  .checkout-form,
+  .submit-button,
+  .city-field,
+  .pickup-location > select {
+    width: 100%;
+  }
+
+  .radio-buttons-container {
+    width: 80%;
+  }
+
+  .address-container {
+    flex-direction: column;
+  }
+
+  .dogs-adopted-container {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .state-field {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dogs-adopted-section {
+    margin-bottom: 2rem;
+  }
 }
 
 /****************** SMALL DEVICES ************************/
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
+  #main-content {
+    padding: 0 5% 0 5%;
+  }
+  
   .site-logo {
     width: 50%;
   }
@@ -594,11 +672,83 @@ legend {
   .blog-preview {
     display: none;
   }
+
+  .footer-text {
+    max-width: 75%;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+  
+  h2 {
+    font-size: 1.9rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+    margin: .5rem 0 .5rem 0;
+  }
+
+  .blog-article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  .blog-article-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-article-text {
+    padding: 0 7% 1% 0%;
+  }
+
+  .nav {
+    padding: 2% 5% 2% 5%;
+  }
+
+  .checkout-form,
+  .submit-button,
+  .city-field,
+  .pickup-location > select {
+    width: 100%;
+  }
+
+  .radio-buttons-container {
+    width: 60%;
+  }
+
+  .address-container {
+    flex-direction: column;
+  }
+
+  .dogs-adopted-container {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .state-field {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dogs-adopted-section {
+    margin-bottom: 2rem;
+  }
 }
 
 /****************** TABLETS ************************/
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  #main-content {
+    padding: 0 5% 0 5%;
+  }
+  
   .site-logo {
     width: 40%;
   }
@@ -628,6 +778,54 @@ legend {
 
   .dog-card-image {
     width: 100%;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin: .5rem 0 .5rem 0;
+  }
+
+  .nav {
+    padding: 2% 5% 2% 5%;
+  }
+
+  .checkout-form,
+  .submit-button,
+  .city-field,
+  .pickup-location > select {
+    width: 100%;
+  }
+
+  .radio-buttons-container {
+    width: 50%;
+  }
+
+  .address-container {
+    flex-direction: column;
+  }
+
+  .dogs-adopted-container {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .state-field {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dogs-adopted-section {
+    margin-bottom: 2rem;
   }
 }
 
