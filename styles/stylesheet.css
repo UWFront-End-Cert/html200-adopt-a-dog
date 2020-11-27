@@ -103,6 +103,8 @@ footer {
 .adoptadog-logo {
   max-width: 100%;
   height: auto;
+  font-family: 'Work Sans';
+  font-weight: 900;
 }
 
 .see-more-dogs {
