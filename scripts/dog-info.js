@@ -23,6 +23,20 @@ function addFee(dogName, fee, id, checkoutTotal) {
 } 
 
 
+/*********************************CHECKOUT**************************************/
+
+let checkoutForm = document.querySelector('form');
+
+if (checkoutForm) {
+  checkoutForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you. The form information has been received.');
+    const data = Object.fromEntries(new FormData(checkoutForm).entries());
+    console.log(data);
+  });
+}
+
+
 /********************************BLOG***************************************/
 
 let id;
@@ -30,6 +44,7 @@ let title;
 let fullText;
 let imageURL;
 let imageAltText;
+let post;
 
 const blogArticles = [
   {
@@ -55,35 +70,33 @@ const blogArticles = [
   }
 ];
 
+
 for (let i = 0; i < blogArticles.length; i += 1) {
   let blogArticle = blogArticles[i];
-/*
-  let blogContainer = document.querySelector('blog-container');
-  let post = document.createElement('article');
-  blogContainer.appendChild(post);
-  post.setAttribute('class', 'blog-article');
-*/
-  let post = document.getElementById(blogArticle.id);
-  let images = document.createElement('img');
-  post.appendChild(images);
-  images.setAttribute('src', blogArticle.imageURL);
-  images.setAttribute('width', '328');
-  images.setAttribute('height', '310');
-  images.setAttribute('class', 'blog-article-image');
-  images.setAttribute('alt', blogArticle.imageAltText);
+  post = document.getElementById(blogArticle.id);
 
-  let blogTextContainer = document.createElement('div');
-  post.appendChild(blogTextContainer);
-  blogTextContainer.setAttribute('class', 'blog-article-text');
+  if (post) {
+    let images = document.createElement('img');
+    post.appendChild(images);
+    images.setAttribute('src', blogArticle.imageURL);
+    images.setAttribute('width', '328');
+    images.setAttribute('height', '310');
+    images.setAttribute('class', 'blog-article-image');
+    images.setAttribute('alt', blogArticle.imageAltText);
 
-  let headlineTitles = document.createElement('h2');
-  blogTextContainer.appendChild(headlineTitles);
-  headlineTitles.innerHTML = blogArticle.title;
+    let blogTextContainer = document.createElement('div');
+    post.appendChild(blogTextContainer);
+    blogTextContainer.setAttribute('class', 'blog-article-text');
 
-  let blogText = document.createElement('p');
-  blogTextContainer.appendChild(blogText);
-  blogText.innerHTML = blogArticle.fullText;
-  blogText.setAttribute('class', 'smaller-font-size');
+    let headlineTitles = document.createElement('h2');
+    blogTextContainer.appendChild(headlineTitles);
+    headlineTitles.innerHTML = blogArticle.title;
+
+    let blogText = document.createElement('p');
+    blogTextContainer.appendChild(blogText);
+    blogText.innerHTML = blogArticle.fullText;
+    blogText.setAttribute('class', 'smaller-font-size');
+  }
 }
 
 /* 
@@ -138,15 +151,6 @@ blogForm.addEventListener('submit', function(event) {
   document.getElementById('blog1-fullText').innerHTML = fullTextInput.value;
 });
 */
-
-const checkoutForm = document.getElementById('checkout-form');
-const submitButton = document.getElementById('checkout-submit');
-
-checkoutForm.addEventListener('submit', function(event) {
-  event.preventDefault();
-  alert('Thank you. The form information has been received.');
-});
-
 
 
 
