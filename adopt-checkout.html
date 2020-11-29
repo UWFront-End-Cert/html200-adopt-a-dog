@@ -8,31 +8,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link rel="stylesheet" href=""> -->
     </head>
-    <body>
+<body>
     <div>
-        <header><img src="images/adoptadog-logo.sv" alt="Adopt A Dog Logo">
+    <div>
+        <header><img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
             <h1><i>Seattle's premiere dog adoption agency</i></h1>
-            <img src="images/cart-icon.sv" alt="Checkout-cart icon">
+            <img src="images/cart-icon.svg" alt="Checkout-cart icon">
             <p><a href="adopt-checkout.html">Checkout</a></p>
         </header>
         <div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="adopt-dogs.html">Dogs</a></li>
-                <li><a href="adopt-blog.html">Blog</a></li>
-            </ul>
-        </nav>
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-            <footer><img src="images/adoptadog-logo.sv" alt="Adopt A Dog Logo">
-            <p>Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -40,9 +24,90 @@
                     <li><a href="adopt-blog.html">Blog</a></li>
                 </ul>
             </nav>
+        </div>
+    </div>
+<!-- <a class="skip-link" href="#maincontent">Skip to form</a>  -->
+    <div class="grid-container">
+       <section id="maincontent" class="item2">
+           <h2>Checkout</h2>
+           <form method="GET">
+               <div class="personal">
+                    <label>Name
+                        <input type="text" name="adopterName">
+                    </label><br>
+                    <label>Email Address
+                        <input type="email" name="adopterEmail">
+                    </label>
+                </div> 
+                <div class="address">
+                    <label>Street Address
+                        <input type="text" name="adopterAddress">
+                    </label><br>
+                    <label>City
+                        <input type="email" name="adopterCity">
+                    </label>
+                    <label>State
+                        <input type="text" name="adopterState">
+                    </label>    
+                    <label>Zip Code
+                        <input type="email" name="adopterZip">
+                    </label>
+                </div> 
+                <div>    
+                    <!-- <fieldset> -->
+                        <h3>First Time Adopter?</h3>
+                        <label><input type="radio" name="special" value="yes">Yes</label>
+                        <label><input type="radio" name="special" value="no">No</label>
+                    <!-- </fieldset> -->
+                </div>
+                <div>
+                    <!-- <fieldset> -->
+                    <label>Pickup Location</label>
+                        <select name="adopteePickup">
+                            <option value="here">Here</option>
+                            <option value="there">There</option>
+                            <option value="everywhere">Everywhere</option>
+                            <option value="somewhere">Somewhere</option>
+                            <option value="overhere">Overhere</option>
+                            <option value="overthere">Overthere</option>
+                            <option value="nowhere">Nowhere</option>
+
+                        </select>
+                    <!-- </fieldset> -->
+                </div>
+                <div>
+                    <h3>Dogs Adopted</h3>
+                </div>
+                <div>
+                    <img src="images/duffy-card.jpg" alt="Descripion of featured dog.">
+                    <h4>Duffy</h4>
+                    <p><strong>Cost to Adopt: </strong>$123.45</p>
+                    <img src="images/lucas-card.jpg" alt="Descripion of featured dog.">
+                    <h4>Lucas</h4>
+                    <p><strong>Cost to Adopt: </strong>$123.45</p>
+                </div>
+                <div>
+                    <h3>Total Adoption Cost</h3>
+                    $1234.56
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+       </section>
+        </div>
+
+        <div>
+            <footer><img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+            <p>Some text, abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adopt-dogs.html">Dogs</a></li>
+                    <li><a href="adopt-blog.html">Blog</a>This is 'Contact' on the mock-up.</li>Is another page required?
+                </ul>
+            </nav>
             <p>2018 Adoptadog, LLC | Seattle, WA</p>
             </footer>
         </div>
     </div>
-    </body>
+</body>
 </html>
