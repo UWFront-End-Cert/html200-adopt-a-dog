@@ -99,60 +99,6 @@ for (let i = 0; i < blogArticles.length; i += 1) {
   }
 }
 
-/* 
-const blogFields = [
-  {
-    name: 'title',
-    label: 'Title'
-  },
-  {
-    name: 'fullText',
-    label: 'Full text'
-  },
-  {
-    name: 'image',
-    label: 'Image URL'
-  }
-];
-
-const blogForm = document.createElement('form');
-document.body.appendChild(blogForm);
-
-for (let i = 0; i < blogFields.length; i += 1) {
-  const blogField = blogFields[i];
-  
-  const label = document.createElement('label');
-  label.textContent = blogField.label;
-  label.setAttribute('for', blogField.name);
-
-  const input = document.createElement('input');
-  input.setAttribute('id', blogField.name);
-
-  blogForm.appendChild(label);
-  blogForm.appendChild(input);
-}
-
-const submitButton = document.createElement('button');
-submitButton.setAttribute('type', 'submit');
-submitButton.textContent = 'Submit';
-
-blogForm.appendChild(submitButton);
-
-let titleInput = document.getElementById('title');
-let fullTextInput = document.getElementById('fullText');
-let imageInput = document.getElementById('image');
-
-blogForm.addEventListener('submit', function(event) {
-  event.preventDefault();
-  alert('Thank you. The form information has been received.');
-  console.log('Title: ' + titleInput.value + '\n' + 'Full text: ' + fullTextInput.value + '\n' + 'Image: ' + imageInput.value);
-  document.getElementById('blog1-title').textContent = titleInput.value;
-  document.getElementById('blog1-image').setAttribute('src', imageInput.value);
-  document.getElementById('blog1-fullText').innerHTML = fullTextInput.value;
-});
-*/
-
-
 
 
 
