@@ -9,7 +9,7 @@
       <img src="images/logo.jpeg" alt="Adopt a Dog Logo">
       <p>Seattle's premiere dog adoption agency</p>
       <img src="images/cart-icon.svg" alt="cart-icon">
-      <button type="checkout-button">Checkout</button>
+      <button type="button">Checkout</button>
     </header>
     <nav>
       <a href="index.html">Home</a> /
@@ -19,12 +19,11 @@
     <h2>Checkout</h2>
     <form action="/action.php" method="GET">
       <label for ="name">Name </label> <br>
-        <input type="text" name="name"> <br>
+        <input type="text" id="name" name="name"> <br>
       <label for="email">Email Address: </label> <br>
-        <input type="email" name="email"> <br>
-      <Container>
+        <input type="email" id="email" name="email"> <br>
         <label for="city">City</label>
-        <input type="text" name="city"> <br>
+        <input type="text" id="city" name="city"> <br>
         <label for="state">State</label>
           <select name="state" id="state">
             <option value="WA">WA</option>
@@ -33,12 +32,11 @@
             <option value="ID">AZ</option>
           </select>
         <label for="zip-code">Zip Code</label>
-        <input type="text" name="zip-code">
-      </container>
-      <label for="first-time-adopter">First Time Adopter?</label>
-      <input type="radio" name="yes_no" checked>Yes</input>
-      <input type="radio" name="yes_no" checked>No</input>
-      <label for="location">Pickup Location</label>
+        <input type="text" id="zip-code" name="zip-code"> <br>
+      <label for="first-time-adopter">First Time Adopter?</label><br>
+      <input type="radio" id="first-time-adopter" name="yes_no" checked>Yes
+      <input type="radio" name="yes_no" checked>No
+      <label for="location">Pickup Location</label><br>
         <select name="location" id="location">
           <option value="Wallingford">Wallingford</option>
           <option value="Seattle">Wallingford</option>
