@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AdoptaDog</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.jpeg" alt="Adopt a Dog Logo">
+      <p>Seattle's premiere dog adoption agency</p>
+      <img src="images/cart-icon.svg" alt="cart-icon">
+      <button type="checkout-button">Checkout</button>
+    </header>
+    <nav>
+      <a href="index.html">Home</a> /
+      <a href="moredogs.html">Dogs</a> /
+      <a href="contact.html">Contact</a>
+    </nav>
+    <h2>Checkout</h2>
+    <form action="/action.php" method="GET">
+      <label for ="name">Name </label> <br>
+        <input type="text" name="name"> <br>
+      <label for="email">Email Address: </label> <br>
+        <input type="email" name="email"> <br>
+      <Container>
+        <label for="city">City</label>
+        <input type="text" name="city"> <br>
+        <label for="state">State</label>
+          <select name="state" id="state">
+            <option value="WA">WA</option>
+            <option value="OR">OR</option>
+            <option value="CA">CA</option>
+            <option value="ID">AZ</option>
+          </select>
+        <label for="zip-code">Zip Code</label>
+        <input type="text" name="zip-code">
+      </container>
+      <label for="first-time-adopter">First Time Adopter?</label>
+      <input type="radio" name="yes_no" checked>Yes</input>
+      <input type="radio" name="yes_no" checked>No</input>
+      <label for="location">Pickup Location</label>
+        <select name="location" id="location">
+          <option value="Wallingford">Wallingford</option>
+          <option value="Seattle">Wallingford</option>
+          <option value="Rainier Beach">Rainier Beach</option>
+        </select>
+      <p>Dogs Adopted</p>
+      <p>Total Adoption Cost</p>
+      <input type="submit" value="Submit">
+      </form>
+      <footer>
+        <img src="images/adoptadog-logo.svg" alt="adoptadog logo">
+        <p>placeholdertext</p>
+        <nav>
+          <a href="index.html">Home</a> /
+          <a href="moredogs.html">Dogs</a> /
+          <a href="contact.html">Contact</a>
+        </nav>
+        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      </footer>
+    </body>
+  </html>
