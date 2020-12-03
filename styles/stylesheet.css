@@ -334,21 +334,26 @@ a:hover {
 
 
 
-@media screen and (max-width: 576px) {
+@media  (max-width: 568px) {
     .blog-home-block  {
 		display: none;
     }
 }
 
-@media screen and (max-width: 576px) {
-    .grid-container  {
-		grid-template-columns: auto
+@media  (max-width: 1024px) {
+    .blog-home-block  {
+		display: none;
     }
 }
-@media screen and (max-width: 768px) {
-    .grid-container  {
+
+@media  (max-width: 1024px) {
+    .grid-container {
 		grid-template-columns: auto auto
     }
 }
 
-
+@media  (max-width: 568px) {
+    .grid-container {
+		grid-template-columns: auto 
+    }
+}
