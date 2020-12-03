@@ -93,7 +93,7 @@ nav li a:active {
 
 .adopt-a-dog-info {
 	padding: 1rem;
-	margin-left: 5%;
+	margin-left: 10%;
 
 	
 }
@@ -115,7 +115,7 @@ nav li a:active {
 .container-blog h3 {
 	color: #116694;
 	font-family: 'Arvo', serif;
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: bold;
 	position: relative;
 }
@@ -123,7 +123,7 @@ nav li a:active {
 .container-blog p {
 	color: black;
 	font-family: 'Arvo', serif;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	position: relative;
 }
 
@@ -144,15 +144,7 @@ nav li a:active {
 	padding: 0.5rem;
 }
 
-.grid-container {
-	display: grid;
-	margin-left: 10%;
-	grid-template-columns: auto auto auto auto;
-	grid-column-gap: 2rem;
-	padding: 0.6rem;
-	margin-right: 10%;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
+
 
 @media (min-width: 576px) {
 	.grid-container {
@@ -171,7 +163,15 @@ nav li a:active {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
-
+.grid-container {
+	display: grid;
+    margin-left: 10%;
+    grid-template-columns: auto auto auto auto;
+	margin-right: 10%;
+	padding: 2rem;
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 .grid-item {
 	max-width: 100%;
 	height: auto;
@@ -279,4 +279,13 @@ a:hover {
 .footer-links:hover,
 .footer-links:active {
 	color: yellow;
+}
+
+.flex-container {
+	height: 100%;
+	display: flex;
+}
+
+.box {
+	border-radius: 25px;
 }
