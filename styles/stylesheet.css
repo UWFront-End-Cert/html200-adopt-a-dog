@@ -115,7 +115,9 @@ nav li a:active {
 #home-page-image {
 	margin-left: 10%;
 	padding-right: 0.5rem;
-	width: 410px;
+	padding-top: 0.5rem;
+	height: auto;
+	width: 50%;
 }
 
 .container-blog h3 {
@@ -161,6 +163,7 @@ nav li a:active {
 
 .container-blog-home img {
 	margin-left: 10%;
+	
 }
 
 
@@ -335,12 +338,6 @@ a:hover {
 
 
 @media  (max-width: 568px) {
-    .blog-home-block  {
-		display: none;
-    }
-}
-
-@media  (max-width: 1024px) {
     .blog-home-block  {
 		display: none;
     }
