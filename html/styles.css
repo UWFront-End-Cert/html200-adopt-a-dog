@@ -94,6 +94,71 @@ main {
   padding-bottom: 50px;
 }
 
+.home-main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.home-section {
+  flex-shrink: 2;
+}
+
+.blog-preview {
+  flex-basis: 450px;
+  display: none;
+  padding: 0 4rem;
+ 
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .blog-preview {
+    display: block;
+  }
+}
+
+.blog-preview .title {
+  color: #134350;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.blog-preview-snippet {
+  margin-bottom: 4rem;
+}
+
+.blog-preview-snippet .picture {
+  display: block;
+  width: 100%;
+}
+
+.blog-preview-snippet .subtitle {
+  color: #134350;
+  font-size: 1.2rem;
+  margin: 1rem 0 0 0;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.blog-preview-snippet .summary {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.blog-preview-snippet .read-more {
+  color: #8181b6;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.blog-preview-snippet .read-more:hover {
+  text-decoration: underline;
+}
+.blog-preview-snippet .read-more::after {
+  content: " >>";
+}
+
 .introduction {
   display: flex;
   align-items: flex-start;
@@ -116,19 +181,53 @@ main {
   line-height: 25px;
 }
 
-.dog-grid {
+@media only screen and (max-width:500px) {
+  .introduction {
+    flex-direction: column;
+    align-items: flex-start;
+  
+  }
+
+  .introduction .intro-image {
+    width: 100%;
+    margin-right: 40px;
+    display: block;
+  }
+}
+
+.dog-grid, .all-dogs-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 20px;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 650px) {
+.all-dogs-grid {
+  grid-template-columns: auto auto auto auto;
+}
+
+@media only screen and (max-width: 768px) {
   .dog-grid {
     grid-template-columns: auto auto; 
   }
+
+  .all-dogs-grid {
+    grid-template-columns: auto auto auto;
+  }
 }
+
+
+@media only screen and (max-width: 576px) {
+  .dog-grid {
+    grid-template-columns: auto; 
+  }
+
+  .all-dogs-grid {
+    grid-template-columns: auto auto;
+  }
+}
+
 
 
 
