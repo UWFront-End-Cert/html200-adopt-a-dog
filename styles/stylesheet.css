@@ -770,7 +770,7 @@ legend {
 
 /****************** TABLETS ************************/
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px), or, (orientation: landscape) {
   #main-content {
     padding: 0 5% 0 5%;
   }
