@@ -91,8 +91,8 @@ select {
 
 .post-thumb img {
 	display: block;
-	max-width: 100%;
 	height: auto;
+	width: 100%;
 }
 
 .post-content {
