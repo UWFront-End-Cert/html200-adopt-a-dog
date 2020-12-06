@@ -8,8 +8,6 @@ input[type=text] {
 
 input[type=radio] {
 	margin-left: 1rem;
-	font-family: 'Arvo', serif;
-	padding: 2px 16px;
 }
 
 input[type=email] {
@@ -22,6 +20,10 @@ input[type=email] {
 
 fieldset {
 	width: 45%;
+	padding: 12px 20px;
+	margin: 10px 0;
+	box-sizing: border-box;
+	margin-left: 1rem;
 }
 
 fieldset legend {
@@ -30,7 +32,7 @@ fieldset legend {
 	color: #116694;
 	font-family: 'Arvo', serif;
 	padding: 2px 16px;
-	font-size: 1.2rem;
+	font-size: 24px;
 	font-weight: bold;
 }
 
@@ -40,25 +42,24 @@ fieldset label {
 	color: #116694;
 	font-family: 'Arvo', serif;
 	padding: 2px 16px;
-	font-size: 1.2rem;
+	font-size: 24px;
 	font-weight: bold;
 }
 
 label {
-	width: 45%;
 	margin-bottom: 10px;
 	display: block;
 	color: #116694;
 	font-family: 'Arvo', serif;
 	padding: 2px 16px;
-	font-size: 1.2rem;
+	font-size: 24px;
 	font-weight: bold;
 }
 
 label p {
 	color: black;
 	font-family: 'Arvo', serif;
-	font-size: 1.2rem;
+	font-size: 27px;
 }
 
 .display-block {
@@ -91,8 +92,7 @@ select {
 
 .post-thumb img {
 	display: block;
-	height: auto;
-	width: 100%;
+	width: 200px;
 }
 
 .post-content {
@@ -102,12 +102,12 @@ select {
 .post-content p {
 	color: black;
 	font-family: 'Arvo', serif;
-	font-size: 1.2rem;
+	font-size: 18px;
 }
 
 .post-title {
 	font-weight: bold;
-	font-size: 2rem;
+	font-size: 200%;
 	margin-top: 3rem;
 	color: #116694;
 	font-family: 'Arvo', serif;
@@ -129,12 +129,12 @@ select {
 	color: white;
 	font-family: 'Arvo', serif;
 	padding: 30px 140px;
-	font-size: 1.2rem;
+	font-size: 30px;
 	cursor: pointer;
 }
-
-.checkout-price p {
+.checkout-price p{
 	color: black;
 	font-family: 'Arvo', serif;
-	font-size: 2rem;
+	font-size: 28px;
+
 }
