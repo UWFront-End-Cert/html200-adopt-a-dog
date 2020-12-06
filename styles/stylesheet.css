@@ -496,6 +496,7 @@ legend {
   font-size: 1.5rem;
 }
 
+
 /****************** MEDIA QUERIES *******************************/
 
 
@@ -632,6 +633,10 @@ legend {
 
   .dogs-adopted-section {
     margin-bottom: 2rem;
+  }
+
+  .dog-card {
+    margin-bottom: 1rem;
   }
 }
 
@@ -770,7 +775,7 @@ legend {
 
 /****************** TABLETS ************************/
 
-@media screen and (min-width: 768px), or, (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 1366px) {
   #main-content {
     padding: 0 5% 0 5%;
   }
@@ -854,8 +859,6 @@ legend {
     margin-bottom: 2rem;
   }
 }
-
-
 
 
 
