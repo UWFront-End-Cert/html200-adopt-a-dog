@@ -9,11 +9,15 @@ body {
 }
 
 .header {
-	background-repeat: no-repeat;
+	background-repeat: tile;
 	max-width: 100%;
 	height: 30rem;
-	background-image: url("../images/header-image.jpg");
+	background-image: url("../images/header-image.jpg"); 
 	background-size: cover;
+	
+	background-color: #333;
+	
+	
 }
 
 .header-logo {
@@ -25,6 +29,8 @@ body {
 
 .header-logo img {
 	float: left;
+	height: auto;
+	width: 100%;
 }
 
 .slogan {
@@ -39,8 +45,8 @@ body {
 }
 
 .shoppingcart img {
-	width: 50px;
 	height: auto;
+	width: 50%;
 }
 
 .shoppingcart p {
@@ -110,6 +116,8 @@ nav li a:active {
 	margin-left: 10%;
 	padding-right: 0.5rem;
 	max-width: 100%;
+	height: auto;
+	
 }
 
 #home-page-image {
@@ -150,6 +158,8 @@ nav li a:active {
 
 .blog-post img {
 	padding: 0.5rem;
+	height: auto;
+	width: 100%;
 }
 
 
@@ -163,6 +173,9 @@ nav li a:active {
 
 .container-blog-home img {
 	margin-left: 10%;
+	height: auto;
+	width: 50%;
+	
 	
 }
 
@@ -242,6 +255,8 @@ nav li a:active {
 }
 
 .grid-item img {
+	
+	height: auto;
 	width: 100%;
 }
 
@@ -340,13 +355,22 @@ a:hover {
 @media  (max-width: 568px) {
     .blog-home-block  {
 		display: none;
-    }
+	
+	}
+	.header {
+		background: linear-gradient(to right, black, #00BFFF ); 
+
+	}
 }
 
 @media  (max-width: 1024px) {
     .grid-container {
 		grid-template-columns: auto auto
-    }
+	}
+	.header {
+		background: linear-gradient(to right, black, #00BFFF ); 
+
+	}
 }
 
 @media  (max-width: 568px) {
