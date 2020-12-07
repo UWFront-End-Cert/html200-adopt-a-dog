@@ -1,0 +1,83 @@
+------User Personas------
+
+User base for the Adoptadog site:
+People looking for a dog to adopt, either for themselves or for someone they know.
+People looking to adopt a pet, and are unsure what kind of pet to get.
+People who love dogs and enjoy browsing through pet adoption sites.
+
+Of those who wish to adopt:
+They may be looking to adopt right away or in the future.
+They may be first-time adopters.
+They may have lost a pet and wish to adopt another one.
+They may already have a pet and wish to adopt another one.
+
+What do users need?
+Info on the dog – breed, age, cost, temperament
+Adoption costs
+Contact information for Adoptadog site, if they have further questions
+
+Devices and browsers used to access Adoptadog:
+Desktop
+PC and Mac – Chrome, Firefox, Edge
+
+Tablets
+iOS -- Safari (default) and Chrome
+Android -- Chrome
+
+Phones
+iOS – Safari (default) and Chrome
+Android -- Chrome
+
+
+Example persona:
+
+-Catherine Jones
+-Age: 55
+-Has worked at a non-profit for over 15 years
+-Owns a home in West Seattle with a small backyard
+-Moderately tech savvy, owns a 4 year-old iPhone, 3 year-old iPad and 5 year old laptop
+-Enjoys hiking, traveling, cooking, knitting and spending time with friends
+-Catherine’s black lab, Luna, passed away recently, at age 13. Catherine’s still grieving for Luna, but is ready to look for another pet and companion.
+-Catherine is looking at Adoptadog to find her next pet and hiking partner. She wants to find a 1-2 year old lab or lab mix and will take her time to find the right dog that matches her personality.
+-Will likely use her iPad and Safari browser when viewing the Adoptadog site
+-She may also use her Dell laptop with Chrome when ready to fill out the form on Adoptadog. She prefers using a keyboard when filling out forms, versus using her iPad.
+
+
+
+
+------Testing------
+
+Research:
+https://en.wikipedia.org/wiki/Usage_share_of_web_browsers
+
+Top desktop browsers:
+Chrome
+Edge
+Firefox
+Safari
+
+Top mobile browsers:
+Chrome
+Safari
+
+Top tablet browsers:
+Safari
+Chrome
+
+
+Testing steps:
+First, test all pages/functionality via desktop in Chrome, Firefox, Edge.
+
+Then, view the site in Chrome dev tools.
+Test all pages/functionality on all of the mobile modes first, then test the rotate mode with each.
+Then test all pages/functionality with the tablets, then test the rotate mode with each.
+
+Then, test all pages/functionality with any devices, if you have them. I tested with iPhone 11 and a new iPad.
+
+Fix bugs as they are found, then resume all testing steps above to ensure there are no new bugs or regression.
+
+The main bug found during this testing process involved tablets in landscape mode. The media query for tablets was adjusted to incorporate the widest pixel width for the iPad Pro. Other bugs included resizing the checkout dog images and including bottom margin for the dog cards in the mobile media query.
+
+
+
+
