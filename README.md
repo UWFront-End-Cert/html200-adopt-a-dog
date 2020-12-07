@@ -1,8 +1,6 @@
 # html200-adopt-a-dog
 UW Front-End Certification project: Adoptadog site
 
-README
-
 Adoptadog: Seattle's premiere dog adoption agency
 
 Adoptadog was written with HTML, CSS, Javascript and jQuery.
