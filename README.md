@@ -1,4 +1,4 @@
-# html200-adopt-a-dog
+# Adoptadog
 UW Front-End Certification project: Adoptadog site
 
 Adoptadog: Seattle's premiere dog adoption agency
