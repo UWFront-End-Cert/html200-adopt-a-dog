@@ -13,9 +13,12 @@ body {
 .page-header {
   position: relative;
   display: block;
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   background-image: url('../images/header-image.jpg');
+  background-image: url('../images/header-image.jpg'), linear-gradient(black,  #1c270e);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .page-header .header-logo {
@@ -24,6 +27,7 @@ body {
   margin-top: 20px;
   margin-bottom: 0;
   background-image: url('../images/adoptadog-logo.svg');
+  
   background-repeat: no-repeat;
 }
 
