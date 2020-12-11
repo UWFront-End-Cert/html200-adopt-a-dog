@@ -38,32 +38,38 @@
                <form method="GET">
                   <div class="display-block">
                      <label>Name</label>
-                     <input type="text" id="name" name="name">
+                     <input type="text" id="nameValue" name="name">
                      <label>Email Address</label>
-                     <input type="email" id="email" name="email">
+                     <input type="email" id="emailValue" name="email">
                      <label>Steet Address</label>
-                     <input type="text" id="address" name="address">
+                     <input type="text" id="addressValue" name="address">
                   </div>
                   <span style="display:inline-block;">
                   <label style="display:block">City</label>
-                  <input style="width: 85%;" type="text" name="city" id="city" />
+                  <input style="width: 85%;" type="text" name="city" id="cityValue" />
                   </span>
                   <span style="display:inline-block">
                   <label  style="display:block">State</label>
-                  <select id="state-select" name="hours">         
+                  <select id="stateValue" name="states">
+                     <option value="Oregon">Oregon</option>
+                     <option value="Washignton" selected="selected">Washignton</option>
+                     <option value="California">California</option>         
                   </select>
                   </span>
                   <span style="display:inline-block;">
                   <label style="display:block">Zipcdoe</label>
-                  <input style="width: 85%;" type="text" name="zipcode" id="zipcode" />
+                  <input style="width: 85%;" type="text" name="zipcode" id="zipcodeValue" />
                   </span>
                   <fieldset>
                      <legend>First Time Adopter?</legend>
-                     <input type="radio" name="special" value="yes">Yes
-                     <input type="radio" name="special" value="no">No     
+                     <input type="radio" name="special" value="yes" id="firstTimeValueYes">Yes
+                     <input type="radio" name="special" value="no"  id="firstTimeValueNo">No     
                   </fieldset>
                   <label  style="display:block">Pickup Location</label>
-                  <select name="hours">
+                  <select name="pickup" id="pickupValue">
+                     <option value="Place1">Place1</option>
+                     <option value="Place2" selected="selected">Place2</option>
+                     <option value="Place3">Place3</option>   
                   </select>
                   <label style="display:block; padding-top: 2rem;">Dogs Adopted </label>
                   <div class="row">
@@ -88,9 +94,9 @@
                   </div>
                   <div class="checkout-price">
                      <h3 class="post-title">Total Adoption Cost </h3>
-                     <p><strong>$1234.56</strong></p>
+                     <p id="totalAdoptionCost"><strong>$1234.56</strong></p>
                   </div>
-                  <input class="submit-button" type="submit" value="Submit">
+                  <input onclick="checkoutSubmit('Thank you. The form information has been received')" class="submit-button" type="submit" value="Submit">
                </form>
             </div>
          </div>
@@ -108,5 +114,6 @@
             <p>© 2018 Adoptadog, LCC To Go | Seattle, WA</p>
          </div>
       </footer>
+      <script src="scripts/myscripts.js"></script>
    </body>
 </html>
