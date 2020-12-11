@@ -111,11 +111,20 @@ nav li a:active {
 	padding: 0.5rem;
 }
 
-.container-blog img {
-	margin-left: 10%;
+.container-blog img {	
 	padding-right: 0.5rem;
 	max-width: 100%;
 	height: auto;
+	
+	
+}
+#blog-title-page {
+	color: #116694;
+	font-family: 'Arvo', serif;
+	font-size: 2rem;
+	font-weight: bold;
+	position: relative;
+	margin-left: 5%;
 	
 }
 
@@ -303,6 +312,7 @@ a:hover {
 	position: relative;
 	margin-left: 10%;
 }
+
 
 .see-more-button {
 	margin: 0 auto;
