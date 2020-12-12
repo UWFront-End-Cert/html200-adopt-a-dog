@@ -13,17 +13,34 @@ body {
 .page-header {
   position: relative;
   display: block;
-  height: 300px;
+  height: 400px;
   overflow: hidden;
   background-image: url('../images/header-image.jpg');
   background-image: url('../images/header-image.jpg'), linear-gradient(black,  #1c270e);
   background-repeat: no-repeat;
   background-size: 100%;
+  transition: height 1s;
+}
+
+
+/* This media queries is for Small to Medium devices */
+@media only screen and (max-width: 768px) {
+  .page-header {
+    height: 200px;
+  }
+}
+
+
+/* This media queries is for print */
+@media print {
+  body img {
+    display: none;
+  }
 }
 
 .page-header .header-logo {
-  height: 100px;
-  margin-left: 100px;
+  height: 25%;
+  margin-left: 6%;
   margin-top: 20px;
   margin-bottom: 0;
   background-image: url('../images/adoptadog-logo.svg');
@@ -36,7 +53,7 @@ body {
   color: white;
   position: absolute;
   top: 20px;
-  right: 100px;
+  right: 6%;
 }
 
 .page-header .checkout-balance .cart-icon {
@@ -50,11 +67,16 @@ body {
 }
 
 .page-header .main-title {
-  margin-left: 100px;
+  margin-left: 6%;
   margin-top: 0;
   font-family: sans-serif;
-  font-size: 14pt;
+  font-size: 1.2rem;
   color: #81B841;
+}
+@media only screen and (max-width: 768px) {
+  .page-header .main-title {
+    font-size: 1rem;
+  }
 }
 
 .page-header .button-checkout {
@@ -62,12 +84,12 @@ body {
   border: none;
   color: white;
   padding: 5px 20px;
-  font-size: 7pt;
+  font-size: 0.6rem;
 }
 
 .page-header .button-checkout {
   position: absolute;
-  right: 95px;
+  right: 6%;
   top: 50px;
   text-transform: capitalize;
   text-decoration: none; 
@@ -114,12 +136,14 @@ main {
  
 }
 
-
-@media only screen and (min-width: 1200px) {
+/* This media querie is for Medium devices */
+@media only screen and (min-width: 768px) {
   .blog-preview {
     display: block;
   }
 }
+
+
 
 .blog-preview .title {
   color: #134350;
@@ -185,7 +209,8 @@ main {
   line-height: 25px;
 }
 
-@media only screen and (max-width:500px) {
+/* This media querie is for Medium devices */
+@media only screen and (max-width:992px) {
   .introduction {
     flex-direction: column;
     align-items: flex-start;
@@ -199,7 +224,7 @@ main {
   }
 }
 
-.dog-grid, .all-dogs-grid {
+.dog-grid {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
@@ -207,32 +232,19 @@ main {
   margin-bottom: 30px;
 }
 
-.all-dogs-grid {
-  grid-template-columns: auto auto auto auto;
-}
-
+/* This media querie is for Medium devices */
 @media only screen and (max-width: 768px) {
   .dog-grid {
     grid-template-columns: auto auto; 
   }
-
-  .all-dogs-grid {
-    grid-template-columns: auto auto auto;
-  }
 }
 
-
+/* This media querie is for Small devices */
 @media only screen and (max-width: 576px) {
   .dog-grid {
     grid-template-columns: auto; 
   }
-
-  .all-dogs-grid {
-    grid-template-columns: auto auto;
-  }
 }
-
-
 
 
 .dog-grid .dog-card {
@@ -300,13 +312,26 @@ main {
 .blog-story {
   display: flex;
   flex-direction: row;
-  margin: 20px 0;
-  align-items: center;
+  margin: 2rem 0;
+  align-items: flex-start;
 }
 
 .blog-story .blog-image {
-  width: 350px;
-  margin-right: 40px;
+  width: 40%;
+  margin-right: 4rem;
+  transition: width 1s;
+}
+
+@media only screen and (max-width: 650px) {
+  .blog-story {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-story .blog-image {
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+  }
+
 }
 
 .blog-story .story-title {
