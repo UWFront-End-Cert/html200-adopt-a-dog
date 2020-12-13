@@ -130,9 +130,9 @@ main {
 }
 
 .blog-preview {
-  flex-basis: 450px;
+  flex-basis: 400px;
   display: none;
-  padding: 0 4rem;
+  padding: 0 3rem;
  
 }
 
@@ -233,7 +233,7 @@ main {
 }
 
 /* This media querie is for Medium devices */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .dog-grid {
     grid-template-columns: auto auto; 
   }
