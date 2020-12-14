@@ -30,8 +30,26 @@ function checkoutSubmit(message) {
     alert(firstTimeValueYes);
     alert(firstTimeValueNo);
   
-  
-    
-
 }
 
+$(function(){
+
+    $( '.grid-item img' ).mouseenter(function() {
+        $(this).animate({opacity: "1"});
+        $(this).css('transform', 'scale(1.2)');
+        
+
+      }).mouseleave(function() {
+        $(this).animate({opacity: "0.5"});
+        $(this).css('box-shadow', '10px 10px 10px #888');
+        $(this).css('transform', 'scale(1.0)');
+
+      });
+
+        $("button").click(function(){
+            $(this).animate({opacity: "0.7"});
+            $(this).css('background-color','blue');
+            
+        });
+    
+});

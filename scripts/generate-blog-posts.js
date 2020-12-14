@@ -61,20 +61,6 @@ for(let i =0; i <arrayOfBlogObjects.length; i +=1) {
     blogPostHeader.appendChild(blogPostFirstP);
 
 
-  
-
-
-
-    
-    /*
-    const blog = arrayOfBlogObjects[i];
-
-    const divContainterBlog = document.createElement('div');
-    divContainterBlog.className = blog.containterBlogClass;
-
-    blogBlock.appendChild(divContainterBlog);
-  */
-
 
 
 }
