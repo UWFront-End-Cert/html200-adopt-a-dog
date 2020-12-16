@@ -41,7 +41,7 @@
          <div class="flex-container">
             <div class="box">
                <h3 class="alldogs-title">Checkout</h3>
-               <form method="GET">
+               <form method="POST">
                   <div class="display-block">
                      <label>Name</label>
                      <input type="text" id="nameValue" name="name">
@@ -102,7 +102,7 @@
                      <h3 class="post-title">Total Adoption Cost </h3>
                      <p id="totalAdoptionCost"><strong>$1234.56</strong></p>
                   </div>
-                  <input onclick="checkoutSubmit('Thank you. The form information has been received')" class="submit-button" type="submit" value="Submit">
+                  <input onclick="checkoutSubmit(event)" class="submit-button" type="submit" value="Submit">
                </form>
             </div>
          </div>

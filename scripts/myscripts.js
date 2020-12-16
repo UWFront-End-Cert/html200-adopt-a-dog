@@ -9,8 +9,11 @@ function adoptButton(cost) {
     alert(`Total = $${total.toFixed(2)}`);
 }
 
-function checkoutSubmit(message) {
-    alert(message);
+function checkoutSubmit(event) {
+    
+    
+    event.preventDefault();
+    
     let nameValue = document.getElementById("nameValue").value;
     let emailValue = document.getElementById("emailValue").value;
     let addressValue = document.getElementById("addressValue").value;
@@ -20,16 +23,10 @@ function checkoutSubmit(message) {
     let zipcodeValue = document.getElementById("zipcodeValue").value;
     let firstTimeValueYes = document.getElementById("firstTimeValueYes").value;
     let firstTimeValueNo = document.getElementById("firstTimeValueNo").value;
-    alert(nameValue);
-    alert(emailValue);
-    alert(addressValue);
-    alert(cityValue);
-    alert(stateValue);
-    alert(pickupValue);
-    alert(zipcodeValue);
-    alert(firstTimeValueYes);
-    alert(firstTimeValueNo);
-  
+    console.log(`Name: ${nameValue} Email: ${emailValue} Address: ${addressValue} City: ${cityValue} State: ${stateValue} PickupLocation ${pickupValue} ZipCode: ${zipcodeValue} FirstTime ${firstTimeValueYes},${firstTimeValueNo}`);
+    alert('Thank you. The form information has been received');
+    
+    
 }
 
 $(function(){
@@ -49,6 +46,7 @@ $(function(){
         $("button").click(function(){
             $(this).animate({opacity: "0.7"});
             $(this).css('background-color','blue');
+
             
         });
     
