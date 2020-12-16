@@ -269,6 +269,12 @@ nav li a:active {
 	width: 100%;
 }
 
+.grid-item img:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	opacity: 0.5;
+}
+
 .grid-item button {
 	border: none;
 	outline: 0;
@@ -283,6 +289,10 @@ nav li a:active {
 	font-size: 1.2rem;
 }
 
+.grid-item button:hover,
+a:hover {
+	opacity: 0.7;
+}
 
 .alldogs-title {
 	color: #116694;
@@ -372,4 +382,3 @@ nav li a:active {
 		grid-template-columns: auto 
     }
 }
-
