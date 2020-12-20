@@ -1,0 +1,45 @@
+sans-serif
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'martel', sans-serif;
+  color: LightGreen;
+  font-size: 1rem;
+}
+
+h2 {
+  font-family: 'martel', sans-serif;
+  color: OliveDrab;
+}
+
+h3 {
+  font-family: 'martel';
+  color: MidnightBlue;
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-family: 'martel';
+  color: MidnightBlue;
+}
+
+h5 {
+  font-family: 'martel', san-serif;
+  color: white;
+  font-size: 0.8rem;
+}
+
+h6 {
+  font-family: 'martel', sans-serif;
+  color: MidnightBlue;
+  font-size: 1rem;
+}
+
+a {
+font-family: 'martel', sans-serif;
+color: MidnightBlue;
+font-size: 0.8rem;
+}
+
