@@ -185,6 +185,11 @@ nav ul li:hover {
   box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.898);
 }
 
+#our-dogs {
+  font-size: large;
+  margin-left: 13%;
+}
+
   .main-section {
     display: flex;
     /* margin: .25rem 5rem 5rem 5rem; */
@@ -206,7 +211,6 @@ nav ul li:hover {
   margin: 0 auto;
   padding: 5%;
   width: 75%;
-  /* margin: 3rem 6.5rem 3rem 6.5rem; */
 }
 
  .container img {
@@ -255,17 +259,37 @@ p:nth-of-type(2) {
 }
 
 p:nth-of-type(3) {
+  /* color: red; */
+  padding: 1rem;
   background-color: green;
 }
 
   div p a {
     color: white;
-    /* padding: .5rem 1rem .5rem 1rems; */
+    /* padding: 1rems; */
     /* padding: center; */
     font-size: large;
     /* margin: 3.5rem; */
-    text-align: center;
+    /* text-align: center; */
     text-decoration: none;
+  }
+
+  #more-dogs {
+    color: black;
+    /* margin: 5rem; */
+    padding: 1rem;
+    background-color: gray;
+  }
+/* 
+  .blog-container {
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  .dog-blog {
+    display: flex;
+    flex: 2 1 auto;
+    justify-content: space-around;
   }
 
   footer {
@@ -317,3 +341,114 @@ p:nth-of-type(3) {
     /* margin-left: 8%; */
 
   }
+
+  /* *******************************************************************************8 */
+
+/* body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+} */
+/* 
+* {
+  box-sizing: border-box;
+} */
+
+/* .row {
+  display: -ms-flexbox; 
+  IE10
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  IE10
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; 
+  IE10
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  IE10
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  IE10
+  flex: 75%;
+} */
+/* 
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+} */
+
+/* .container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+} */
+
+/* input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+} */
+
+/* .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+} */
+
+/* .btn:hover {
+  background-color: #45a049;
+} */
+/* 
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+} */
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+/* @media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+} */
