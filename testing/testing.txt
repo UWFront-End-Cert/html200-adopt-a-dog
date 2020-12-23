@@ -50,7 +50,6 @@ Text, controls and images are aligned properly
 src: https://www.testingexcellence.com/how-to-test-responsive-web-design/
 
 
-
 Some of the tools used to test the website are listed below:
 
  1) HTML5 Validator
@@ -59,3 +58,12 @@ Some of the tools used to test the website are listed below:
  4) Emulators
  5) Actual Devices
 
+The approach used to test the Adopt A Dog website is known as:
+
+Progressive Enhancement (UW Course Material)
+> Design mobile first, then add features for desktop sites.
+– The preferred way to design sites.
+
+Another great reference that helped into the resposnive web design principles are the lessons found on W3Schools found below:
+
+https://www.w3schools.com/css/css_rwd_intro.asp
