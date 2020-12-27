@@ -353,6 +353,12 @@ main {
   padding-right: 45%;
 }
 
+@media only screen and (max-width: 750px) {
+  .checkout-form {
+    padding-right: 0;
+  }
+}
+
 .checkout-form label, 
 .checkout-form h4 {
   display: block;
@@ -417,6 +423,7 @@ main {
 
 .checkout-form .state-input {
   margin: 0 5px;
+  min-width: 4rem;
 }
 
 .dog-list {
