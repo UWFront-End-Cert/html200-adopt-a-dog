@@ -1,0 +1,267 @@
+html, body, a {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background: linear-gradient(to right bottom, #648880, #293f50);
+    background-image: url('../images/header-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+    height: 12rem;
+    max-height: 25rem;
+    min-height: 20rem;
+    min-width: 30rem;
+    padding: 4rem;
+    width: auto;
+}
+#adoptadog-logo {
+    width:20rem;
+}
+#hero-h1 {
+    color: #82B841;
+    display: block;
+    font-family: "Neuton", "Times New Roman", serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+#cart-icon {
+    display: inline-block;
+    max-width: 1.5rem;
+    padding-right: .5rem;
+}
+.nav-links {
+    color: #0D3D60;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: .8rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+.nav-bar {
+    background-color: #ECECEC;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem 6rem 1rem 6rem;
+}
+h1 {
+    color: #0D3D60;
+    font-family: "Neuton", "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .05rem;
+    margin: 0;
+}
+
+p {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: .9rem;
+}
+h2 {
+color: #0D3D60;
+font-family: "Neuton", "Times New Roman", serif;
+font-size: 1.25rem;
+font-weight: bold;
+letter-spacing: .05rem;
+}
+label {
+  color: #0D3D60;
+  display: block;
+  font-family: "Neuton", "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: .05rem;
+  padding-bottom: .25rem;
+}
+
+input[type=text] {
+  border: 1px solid #d7d7d8;
+  border-radius: 1px;
+  height: 2rem;
+  min-width: 20rem;
+  width: 40%;
+}
+input[type=radio] {
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: .9rem;
+}
+p#header-total {
+    color: white;
+    display: inline-block;
+    font-size: .8rem;
+}
+.header-container-1 {
+    display: inline-block;
+}
+.header-container-2 {
+    float: right;
+    text-align: right;
+}
+.primary-button {
+    background-color: #82B841;
+    border-radius: 2.5px;
+    color: white;
+    display: block;
+    font-family: "Work Sans", sans-serif;
+    font-size: .8rem;
+    padding: .5rem 1rem .5rem 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+.adopt-button {
+  background-color: #82B841;
+  border-radius: 2.5px;
+  color: white;
+  display: block;
+  font-family: "Work Sans", sans-serif;
+  font-size: .8rem;
+  width: 80%;
+  text-decoration: none;
+  text-align: center;  
+  padding: .5rem 0 .5rem 0;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+.grey-button {
+  background-color: #ECECEC;
+  border-radius: 2.5px;
+  color: white;
+  display: inline-block;
+  font-family: "Work Sans", sans-serif;
+  font-size: .8rem;
+  width: 25%;
+  text-decoration: none;
+  text-align: center;  
+  padding: .5rem 0 .5rem 0;
+}
+a.grey-button {
+  color: #0D3D60;
+  display: block;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  width: 20%;
+}
+.main-content-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+#intro-content {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+}
+.intro-content-wrapper {
+  display: inline;
+}
+
+.intro-container {
+  display: flex;
+  padding-bottom: 2rem;
+}
+.column-1 {
+  flex: 33.33%;
+  padding-right: 3rem;
+}
+.column-1 img{
+ width: 100%;
+}
+.column-2 {
+  flex: 66.66%;
+
+}
+.col img {
+  width: 100%;
+}
+.col p h2 {
+  margin-left: 1rem;
+}
+.flex-grid {
+    display: flex;
+  }
+  .flex-grid .col {
+    flex: 1;
+  }
+  .flex-grid-forths {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .flex-grid-forths .col {
+    width: 22%;
+  }
+  .flex-grid-forths p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  @media (max-width: 500px) {
+    .flex-grid,
+    .flex-grid-forths {
+      display: block;
+      .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .flex-grid { 
+    margin: 0 0 20px 0;
+  }
+  .col {
+    border: 1px solid rgb(186, 191, 196);
+  }
+  .dogs-adopted-container img p h3{
+    display: inline-block;
+    border: green;
+  }
+
+  footer {
+    background-color: #0D3D60;
+    display: flex;
+    flex-direction: column;
+    background-color: #003366;
+    align-items: center;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+  }
+  .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    width: 30%;
+    min-width: 25%;
+  }
+  .footer-words {
+    margin: auto;
+    max-width: 60%;
+    padding-bottom: 1rem;
+    text-align: center;
+    line-height: 1.25rem;
+  }
+  .footer-nav {
+    left: 0px;
+    height: 40px;
+    padding-top: .5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-nav a {
+    color: white;  
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  .footer-copywrite {
+    text-align: center;
+  }
+
