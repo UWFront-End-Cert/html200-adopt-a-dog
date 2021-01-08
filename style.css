@@ -1,45 +1,201 @@
-sans-serif
-* {
-  box-sizing: border-box;
-}
-
-h1 {
+h1{
   font-family: 'martel', sans-serif;
   color: LightGreen;
   font-size: 1rem;
 }
 
-h2 {
-  font-family: 'martel', sans-serif;
+h2{
+  font-family: 'Helvetica', sans-serif;
   color: OliveDrab;
 }
 
-h3 {
+h3{
+  font-family: 'martel';
+  color: MidnightBlue;
+  font-size: 1.5rem;
+}
+
+h4{
   font-family: 'martel';
   color: MidnightBlue;
   font-size: 1.2rem;
+  margin: 0px;
 }
 
-h4 {
-  font-family: 'martel';
-  color: MidnightBlue;
-}
-
-h5 {
-  font-family: 'martel', san-serif;
+h5{
+  font-family: 'Helvetica', san-serif;
   color: white;
   font-size: 0.8rem;
 }
 
-h6 {
-  font-family: 'martel', sans-serif;
+h6{
+  font-family: 'Helvetica', sans-serif;
   color: MidnightBlue;
   font-size: 1rem;
 }
 
-a {
-font-family: 'martel', sans-serif;
-color: MidnightBlue;
-font-size: 0.8rem;
+a{
+  font-family: 'Helvetica', sans-serif;
+  color: MidnightBlue;
+  font-size: 0.8rem;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.nav{
+  background-color: Gainsboro;
+  padding: 20px;
+}
+
+/* =============================== HEADER =============================== */
+header{
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+header img{
+  width:100%;
+  height: 500px;
+}
+
+.header-container{
+  position: absolute;
+  bottom: 170px;
+  left: 100px;
+  width: 1500px;
+  height: 300px;
+}
+
+#adopt-a-dog-logo{
+  width: 300px;
+  height: 100px;
+}
+
+.header-container h2{
+  font-family: "Georgia", "Garamond", serif;
+  font-size: 1rem;
+}
+
+#shopping-cart{
+  width: 20px;
+  height: 20px;
+  float: left;
+  padding-right: 5px;
+}
+
+/* =============================== INDEX PAGE =============================== */
+/* ============= INTRODUCTION ============= */
+.introduction{
+  padding: 40px;
+  overflow: hidden;
+}
+
+.introduction img {
+  margin-left: 170px;
+  margin-right: 30px;
+  float: left;
+}
+
+.introduction h3{
+  margin-right: 300px;
+  display: block;
+}
+
+.introduction p{
+  font-family: 'Helvetica', san-serif;
+  margin-right: 300px;
+  line-height: 1.6;
+}
+
+/* ============= DOG CARDS ============= */
+
+article{
+  margin-left: 200px;
+  margin-right: 10%;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+article > * {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+article h4{
+  color:MidnightBlue;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.see-more{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* =============================== BLOG PAGE =============================== */
+.blog{
+  padding: 40px;
+  overflow: hidden;
+}
+
+.blog img {
+  margin-left: 100px;
+  margin-right: 50px;
+  float: left;
+}
+
+.blog h3{
+  margin: 20px;
+  display: block;
+}
+
+.blog p{
+  font-family: 'Helvetica', san-serif;
+  margin-right: 200px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* =============================== CHECKOUT PAGE =============================== */
+.questionnaire h4{
+  padding-top: 30px;
+}
+
+.testing{
+  float:left;
+}
+/* =============================== FOOTER =============================== */
+
+footer{
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: rgb(17, 64, 105);
+  display: block;
+  color: white;
+}
+
+#footer-title{
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.footer-nav{
+  background-color: rgb(17, 64, 105); 
+}
+
+.footer-nav a{
+  color: white;
+}
