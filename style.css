@@ -97,6 +97,7 @@ header img{
 .introduction img {
   margin-left: 170px;
   margin-right: 30px;
+  width: 100%;
   float: left;
 }
 
@@ -109,26 +110,31 @@ header img{
   font-family: 'Helvetica', san-serif;
   margin-right: 300px;
   line-height: 1.6;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* ============= DOG CARDS ============= */
 
 article{
   margin-left: 200px;
-  margin-right: 10%;
-  margin-bottom: 100px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article p{
+  width: 170px;
+  line-height: 1.5;
 }
 
 article > * {
   font-family: 'Helvetica', sans-serif;
   font-size: 0.8rem;
   color: black;
-  background-color: rgba(0, 0, 0, 0);
+  flex-basis: 25%;
+  justify-content: space-evenly;
   border-radius: 4px;
-  padding: 10px;
 }
 
 article h4{
@@ -162,6 +168,7 @@ article h4{
 
 .blog p{
   font-family: 'Helvetica', san-serif;
+  width: 100%;
   margin-right: 200px;
   line-height: 1.6;
   font-size: 15px;
