@@ -5,6 +5,7 @@
 	<meta charset = "utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="./style.css" rel="stylesheet">
+	<script src="./script.js"></script>
 	<title>My Main Adopt-A-Dog Website</title>
 </head>
 
@@ -17,7 +18,7 @@
 			<img id="adopt-a-dog-logo" src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
 			<h2><em>Seattle's premiere dog adoption agency</em></h2>
 			<img id="shopping-cart" src="images/cart-icon.svg" alt="Shopping Cart Icon">
-			<p>Cart Icon $1234.56</p>
+			<p>$1234.56</p>
 			<p><a href="Checkout.html"><strong>Checkout Button</strong></a></p>
 		</div>
 	</header>
@@ -43,73 +44,73 @@
 
 	<article>
 		<div>
-			<img src="images/murphy-card.jpg" alt="Murphy" style="width:170px;height:100px;">
+			<img onclick="alertDogInfo('Murphy', 'Irish Setter', 123.45)" src="images/murphy-card.jpg" alt="Murphy">
 			<h4>Murphy</h4>
 			<strong>Cost to Adopt:</strong> $123.45
-			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p><br>
-			<strong>ADOPT BUTTON</strong>
+			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+			<button onclick="adoptionTotal(123.45)" class="btn btn-adopt">Adopt</button>
 		</div>
 		
 		<div>
-			<img src="images/poppy-card.jpg" alt="Poppy" style="width:170px;height:100px;"><br>
+			<img onclick="alertDogInfo('Poppy', 'Maltese', 123.45)" src="images/poppy-card.jpg" alt="Poppy">
 			<h4>Poppy</h4>
 			<strong>Cost to Adopt:</strong> $123.45
-			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p><br>
-			<strong>ADOPT BUTTON</strong>
+			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+			<button onclick="adoptionTotal(123.45)" class="btn btn-adopt">Adopt</button>
 		</div>
 
 		<div>
-			<img src="images/jack-card.jpg" alt="Jack" style="width:170px;height:100px;"><br>
+			<img onclick="alertDogInfo('Jack', 'Beagle', 123.45)" src="images/jack-card.jpg" alt="Jack">
 			<h4>Jack</h4>
 			<strong>Cost to Adopt:</strong> $123.45
-			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p><br>
-			<strong>ADOPT BUTTON</strong>
+			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+			<button onclick="adoptionTotal(123.45)" class="btn btn-adopt">Adopt</button>
 		</div>
 
 		
 		<div>
-			<img src="images/duffy-card.jpg" alt="Duffy" style="width:170px;height:100px;"><br>
+			<img onclick="alertDogInfo('Duffy', 'Pitbull', 123.45)" src="images/duffy-card.jpg" alt="Duffy">
 			<h4>Duffy</h4>
 			<strong>Cost to Adopt:</strong> $123.45
-			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p><br>
-			<strong>ADOPT BUTTON</strong>
+			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+			<button onclick="adoptionTotal(123.45)" class="btn btn-adopt">Adopt</button>
 		</div>
 		
 		<div>
-			<img src="images/lucas-card.jpg" alt="Lucas" style="width:170px;height:100px;"><br>
+			<img onclick="alertDogInfo('Lucas', 'Shepherd', 123.45)" src="images/lucas-card.jpg" alt="Lucas">
 			<h4>Lucas</h4>
 			<strong>Cost to Adopt:</strong> $123.45
-			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p><br>
-			<strong>ADOPT BUTTON</strong>
+			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+			<button onclick="adoptionTotal(123.45)" class="btn btn-adopt">Adopt</button>
 		</div>
 		
 		<div>
-			<img src="images/jake-card.jpg" alt="Jake" style="width:170px;height:100px;"><br>
+			<img onclick="alertDogInfo('Jake', 'Labrador', 123.45)" src="images/jake-card.jpg" alt="Jake">
 			<h4>Jake</h4>
 			<strong>Cost to Adopt:</strong> $123.45
-			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p><br>
-			<strong>ADOPT BUTTON</strong>
+			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+			<button onclick="adoptionTotal(123.45)" class="btn btn-adopt">Adopt</button>
 		</div>
 
 		<div>
-			<img src="images/angus-card.jpg" alt="Angus" style="width:170px;height:100px;"><br>
+			<img onclick="alertDogInfo('Angus', 'Boxer', 123.45)" src="images/angus-card.jpg" alt="Angus">
 			<h4>Angus</h4>
 			<strong>Cost to Adopt:</strong> $123.45
-			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p><br>
-			<strong>ADOPT BUTTON</strong>
+			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+			<button onclick="adoptionTotal(123.45)" class="btn btn-adopt">Adopt</button>
 		</div>
 
 		<div>
-			<img src="images/violet-card.jpg" alt="Violet" style="width:170px;height:100px;"><br>
+			<img onclick="alertDogInfo('Violet', 'Labrador', 123.45)" src="images/violet-card.jpg" alt="Violet">
 			<h4>Violet</h4>
 			<strong>Cost to Adopt:</strong> $123.45
-			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p><br>
-			<strong>ADOPT BUTTON</strong>
+			<p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+			<button onclick="adoptionTotal(123.45)" class="btn btn-adopt">Adopt</button>
 		</div>
 	</article>
 
-	<div class="see-more">
-		<p>See more dogs</p>
+	<div class="btn-see-more">
+		<button>See More Dogs</button>
 	</div>
 
 	<footer>

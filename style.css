@@ -40,11 +40,6 @@ a{
   font-size: 0.8rem;
 }
 
-img{
-  max-width: 100%;
-  height: auto;
-}
-
 .nav{
   background-color: Gainsboro;
   padding: 20px;
@@ -119,12 +114,18 @@ header img{
 
 article{
   margin-left: 200px;
+  margin-right: 200px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+article img{
+  width:80%;
 }
 
 article p{
-  width: 170px;
+  width: 80%;
   line-height: 1.5;
 }
 
@@ -133,7 +134,6 @@ article > * {
   font-size: 0.8rem;
   color: black;
   flex-basis: 25%;
-  justify-content: space-evenly;
   border-radius: 4px;
 }
 
@@ -144,8 +144,21 @@ article h4{
   margin-bottom: 5px;
 }
 
-.see-more{
-  text-align: center;
+.btn-adopt {
+  width: 80%;
+  padding: 10px;
+  color: white;
+  background-color: MediumSeaGreen;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.btn-see-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 100px;
 }
 
@@ -156,22 +169,21 @@ article h4{
 }
 
 .blog img {
-  margin-left: 100px;
-  margin-right: 50px;
+  margin-left: 170px;
+  margin-right: 30px;
+  width: 100%;
   float: left;
 }
 
-.blog h3{
-  margin: 20px;
+.blog h4{
+  margin-right: 300px;
   display: block;
 }
 
 .blog p{
   font-family: 'Helvetica', san-serif;
-  width: 100%;
-  margin-right: 200px;
+  margin-right: 300px;
   line-height: 1.6;
-  font-size: 15px;
 }
 
 /* =============================== CHECKOUT PAGE =============================== */
