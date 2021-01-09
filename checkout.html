@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adopt a Dog: Checkout</title>
+    <!--link rel="stylesheet" type="text/css" href="styles/stylesheet.css"-->
+    <!--temporary CSS settings so white graphics are visible-->
+    <style>
+      header{
+        background-color: black;
+        color: green;
+      }
+      footer{
+        background-color: #093c60;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#main-content" class="hidden">Skip to main content >></a>
+    <header>
+      <!-- Backgound image of dog face to be inserted with CSS later-->
+      <img src="images/adoptadog-logo.svg" alt="white silhouette of a sitting dog next to Adopt A Dog logotype" width="25%">
+      <h2>Seattle's premier dog adoption agency</h2>
+      <img src="images/cart-icon.svg" width="3%">
+      <p><a href="#">Checkout</a></p>
+      <nav>
+        <a href="index.html">Home</a> /
+        <a href="dogs.html">Dogs</a> /
+        <a href="blog.html">Blog</a>
+      </nav>
+    </header>
+
+    <!-- Main Page Content -->
+    <div id="main-content">
+      <h1>Checkout</h1>
+      <form method="POST">
+        <label>Name
+          <input type="text" name="name">
+        </label>
+
+        <label>Email Address
+          <input type="email" name="email">
+        </label>
+
+        <label>Street Address
+          <input type="text" name="street-address">
+        </label>
+
+        <label>City
+          <input type="text" name="city">
+        </label>
+
+        <label>State
+          <select name="state">
+            <option value="{blank}"></option>
+            <option value="AL">AL - Alabama</option>
+            <option value="AK">AK - Alaska</option>
+            <option value="AZ">AZ - Arizona</option>
+            <option value="AR">AR - Arkansas</option>
+            <option value="CA">CA - California</option>
+            <option value="CO">CO - Colorado</option>
+            <option value="CT">CT - Connecticut</option>
+            <option value="DC">DC - District of Columbia</option>
+            <option value="DE">DE - Deleware</option>
+            <option value="FL">FL - Florida</option>
+            <option value="GA">GA - Georgia</option>
+            <option value="HI">HI - Hawaii</option>
+            <option value="ID">ID - Idaho</option>
+            <option value="IL">IL - Illinois</option>
+            <option value="IN">IN - Indiana</option>
+            <option value="IA">IA - Iowa</option>
+            <option value="KS">KS - Kansas</option>
+            <option value="KY">KY - Kentucky</option>
+            <option value="LA">LA - Louisiana</option>
+            <option value="ME">ME - Maine</option>
+            <option value="MD">MD - Maryland</option>
+            <option value="MA">MA - Massachusetts</option>
+            <option value="MI">MI - Michigan</option>
+            <option value="MN">MN - Minnesota</option>
+            <option value="MS">MS - Mississippi</option>
+            <option value="MO">MO - Missouri</option>
+            <option value="MT">MT - Montana</option>
+            <option value="NE">NE - Nebraska</option>
+            <option value="NV">NV - Nevada</option>
+            <option value="NH">NH - New Hampshire</option>
+            <option value="NJ">NJ - New Jersey</option>
+            <option value="NM">NM - New Mexico</option>
+            <option value="NY">NY - New York</option>
+            <option value="NC">NC - North Carolina</option>
+            <option value="ND">ND - North Dakota</option>
+            <option value="OH">OH - Ohio</option>
+            <option value="OK">OK - Oklahoma</option>
+            <option value="OR">OR - Oregon</option>
+            <option value="PA">PA - Pennsylvania</option>
+            <option value="PR">PR - Puerto Rico</option>
+            <option value="RI">RI - Rhode Island</option>
+            <option value="SC">SC - South Carolina</option>
+            <option value="SD">SD - South Dakota</option>
+            <option value="TN">TN - Tennessee</option>
+            <option value="TX">TX - Texas</option>
+            <option value="UT">UT - Utah</option>
+            <option value="VT">VT - Vermont</option>
+            <option value="VA">VA - Virginia</option>
+            <option value="WA">WA - Washington</option>
+            <option value="WV">WV - West Virginia</option>
+            <option value="WI">WI - Wisconsin</option>
+            <option value="WY">WY - Wyoming</option>
+          </select>
+        </label>
+
+        <label>Zip Code
+          <input type="number" name="zipcode" maxlength="10">
+        </label>
+
+        <fieldset>
+          <legend>First Time Adopter?</legend>
+          <label>
+            <input type="radio" name="first-adopt" value="yes">Yes
+          </label>
+          <label>
+            <input type="radio" name="first-adopt" value="no">No
+          </label>
+
+          <label>Pickup Location
+            <select name="location">
+              <option value="seattle" selected>Seattle</option>
+              <option value="bellevue">Bellevue</option>
+              <option value="tacoma">Tacoma</option>
+            </select>
+          </label>
+
+          <h3>Dogs Adopted</h3>
+          <article>
+            <img src="images/lucas-card.jpg">
+            <p>Lucas</p>
+            <p>Cost to Adopt: $123.45</p>
+          </article>
+          <article>
+            <img src="images/duffy-card.jpg">
+            <p>Duffy</p>
+            <p>Cost to Adopt: $123.45</p>
+          </article>
+
+          <h3>Total Adoption Cost</h3>
+          <p>$1234.56</p>
+      </form>
+    </div>
+
+    <footer>
+      <img src="images/adoptadog-logo.svg" alt="white silhouette of a sitting dog next to Adopt A Dog logotype"  width="25%">
+      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex  esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <nav>
+        <a href="index.html">Home</a> /
+        <a href="dogs.html">Dogs</a> /
+        <a href="#">Contact</a>
+      </nav>
+      <p>© 2018 Adoptadog, LLC   |   Seattle, WA</p>
+    </footer>
+  </body>
+</html>
