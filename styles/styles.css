@@ -173,14 +173,9 @@ nav ul li:hover {
 }
 
   .item {
-    /* flex: 1; */
-    /* display: flex; */
-    border: 5px solid rgba(0, 0, 0, 0.03);
+    /* border: 5px solid rgba(0, 0, 0, 0.03); */
+    border: 5px solid rgba(24, 18, 204, 0.15);
     border-radius: 3px;
-    /* background-color: rgb(233, 225, 225);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s; */
-    /* flex-direction: column; */
     margin: 0 1rem 2rem;
 }
   
@@ -191,6 +186,7 @@ nav ul li:hover {
 div h2 {
   color: steelblue;
   margin: 0 .5rem .5rem .5rem;
+  padding: .5rem;
 }
 
 div h1 {
@@ -260,12 +256,41 @@ div p a {
     padding: 1rem;
     background-color: gray;
   }
+
+  .blog-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15% 8%;
+  }
   
   .dog-blog {
     display: flex;
-    flex: 2 1 auto;
-    justify-content: space-around;
+    flex-direction: row;
+    margin: 0 1rem 2rem;
+    
   }
+
+  .dog-blog img {
+    min-width: 25em;
+    max-height: 25em;
+  }
+
+  .dog-blog h2 {
+  color: mediumseagreen;
+}
+
+.dog-blogh2P p {
+  display: flex;
+  flex-direction: column;
+  color: magenta;
+  margin: 0 .5rem;
+  padding: .5rem;
+  max-width: 50em;
+}
+
+/* .dog-blog p {
+  color: violet;
+} */
 
   footer {
     display: flex;
