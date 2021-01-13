@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AdoptaDog</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  </head>
+  <body>
+      <header class="header-image">
+        <div class="container1">
+          <img id="logo-size" src="images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
+          <p>Seattle's premiere dog adoption agency</p>
+        </div>
+        <div class="container2">
+          <img id=cart-size src="images/cart-icon.svg" alt="cart-icon">
+          <p>$1234.56</p>
+        </div>
+          <button id="header-button" type="button">Checkout</button>
+      </header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home / </a></li>
+        <li><a href="moredogs.html">Dogs / </a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h2 id="adoptdogheading">Checkout</h2>
+    <form action="/action.php" method="GET">
+      <label for ="name">Name </label> <br>
+        <input type="text" id="name" name="name"> <br>
+      <label for="email">Email Address: </label> <br>
+        <input type="email" id="email" name="email"> <br>
+        <div class="container9">
+          <div class="item4">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+          </div>
+          <div class="item4">
+            <label for="state">State</label>
+            <select name="state" id="state">
+              <option value="WA">WA</option>
+              <option value="OR">OR</option>
+              <option value="CA">CA</option>
+              <option value="ID">AZ</option>
+            </select>
+          </div>
+          <div class="item4">
+            <label for="zip-code">Zip Code</label>
+            <input type="text" id="zip-code" name="zip-code"> <br>
+          </div>
+        </div>
+      <label for="first-time-adopter">First Time Adopter?</label><br>
+      <input type="radio" id="first-time-adopter" name="yes_no" checked>Yes
+      <input type="radio" name="yes_no" checked>No <br>
+      <label for="location">Pickup Location</label><br>
+        <select name="location" id="location">
+          <option value="Wallingford">Wallingford</option>
+          <option value="Seattle">Wallingford</option>
+          <option value="Rainier Beach">Rainier Beach</option>
+        </select>
+      <p>Dogs Adopted</p>
+      <p>Total Adoption Cost</p>
+      <input type="submit" value="Submit">
+      </form>
+      <footer>
+        <img src="images/adoptadog-logo.svg" alt="adoptadog logo">
+        <p>placeholdertext</p>
+        <nav>
+          <a href="index.html">Home</a> /
+          <a href="moredogs.html">Dogs</a> /
+          <a href="contact.html">Contact</a>
+        </nav>
+        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      </footer>
+    </body>
+  </html>
