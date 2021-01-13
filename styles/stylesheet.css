@@ -63,6 +63,11 @@ font-size: 1.25rem;
 font-weight: bold;
 letter-spacing: .05rem;
 }
+.card-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
 label {
   color: #0D3D60;
   display: block;
@@ -114,12 +119,9 @@ p#header-total {
   display: block;
   font-family: "Work Sans", sans-serif;
   font-size: .8rem;
-  width: 80%;
   text-decoration: none;
   text-align: center;  
-  padding: .5rem 0 .5rem 0;
-  margin-left: 1rem;
-  margin-bottom: 1.5rem;
+  padding: .5rem;
 }
 .grey-button {
   background-color: #ECECEC;
@@ -151,7 +153,7 @@ a.grey-button {
 }
 #intro-content {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.75rem;
 }
 .intro-content-wrapper {
@@ -193,10 +195,7 @@ a.grey-button {
   .flex-grid-forths .col {
     width: 22%;
   }
-  .flex-grid-forths p {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+
   @media (max-width: 500px) {
     .flex-grid,
     .flex-grid-forths {
