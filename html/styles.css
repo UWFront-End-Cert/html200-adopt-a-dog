@@ -252,6 +252,14 @@ main {
   overflow: hidden;
 }
 
+.dog-grid .dog-card .dog-picture-wrapper  {
+  overflow:hidden;
+  height: 126px;
+}
+
+.dog-grid .dog-card .dog-picture-wrapper .dog-picture {
+  transition: 0.2s transform ease-in-out;  
+}
 
 .dog-grid .dog-card .dog-picture {
   width: 100%;

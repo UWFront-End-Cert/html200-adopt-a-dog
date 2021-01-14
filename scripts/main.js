@@ -1,16 +1,17 @@
-function showDogInformation(dog, breed, price) {
-    const description = 'You have clicked on ' + dog + '. That ' + breed + ' costs ' + price;
-    alert(description);
+
+
+
+function initialize() {
+    let sum = 0;
+    $('.dog-link').click(
+        function adopt() {
+            sum += 123.45
+            $('#total').text(sum)
+        }
+    ) 
 }
 
-let sum = 0;
-function adoptDog(price) {
-    sum = price + sum;
-    //sum += price;
-    alert('Total Price $' + sum);
-}
-
-
+$(document).ready(initialize) 
 
 
 
