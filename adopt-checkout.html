@@ -6,75 +6,66 @@
         <title>Adopt A Dog</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/styles.css">
-        <!-- <link rel="stylesheet" href=""> -->
     </head>
 <body>
     <div>
-    <section class="img-container">
-      <div class="logo" ><img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
-          <h1><i>Seattle's premiere dog adoption agency</i></h1>
-      </div>    
-      <div class="chk-cart" style="padding-bottom: 25%"> 
-                  <img src="images/cart-icon.svg" alt="Checkout-cart icon">
-                  <input type="submit" value="Checkout" class="btn">
-                  <!-- <input type="submit" value="Submit" class="btn"> -->
-                  <!-- <p><a href="adopt-checkout.html">Checkout</a></p> -->
-      </div>
-  </section>
+        <section class="img-container">
+            <div class="logo" ><img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+                <h1><i>Seattle's premiere dog adoption agency</i></h1>
+            </div>    
+            <div class="chk-cart" style="padding-bottom: 25%"> 
+                <img src="images/cart-icon.svg" alt="Checkout-cart icon">
+                <input type="submit" value="Checkout" class="btn">
+            </div>
+        </section>
 
-      <nav>
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="adopt-dogs.html">Dogs</a></li>
-              <li><a href="adopt-blog.html">Blog</a></li>
-          </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt-dogs.html">Dogs</a></li>
+                <li><a href="adopt-blog.html">Blog</a></li>
+            </ul>
+        </nav>
 
 <!-- <a class="skip-link" href="#maincontent">Skip to form</a>  -->
-    <div class="grid-container">
-       <section id="maincontent" class="item2">
-           <h2>Checkout</h2>
-          <form method="GET">
-            <div class="row">
-                <div class="col-50">
-                  <label for="fname"> Name</label>
-                  <input type="text" id="fname" name="adopterFullName" placeholder="Your full name goes here.">
-                  <label for="email"> Email</label>
-                  <input type="text" id="email" name="adopterEmail" placeholder="Your email address goes here.">
-                  <label for="adr"> Street Address</label>
-                  <input type="text" id="adr" name="adopterAddress" placeholder="Your street address goes here.">
-      
-                  <div class="row">
-                      <div  class="col-50">
-                          <label for="city"> City</label>
-                          <input type="text" id="city" name="city" placeholder="Your city goes here.">
-                      </div>
-                      <div class="col-25">
-                      <label for="state">State</label>
-                      <input type="text" id="state" name="state" placeholder="WA">
+        <form class="dog-form">
+            <div>
+                <h2>Checkout</h2>
+
+                <div class="contact">
+                    <label for="fname"> Name</label>
+                    <input type="text" id="fname" name="adopterFullName" placeholder="Your full name goes here.">
+                    <label for="email"> Email Address</label>
+                    <input type="text" id="email" name="adopterEmail" placeholder="Your email address goes here.">
+                    <label for="adr"> Street Address</label>
+                    <input type="text" id="adr" name="adopterAddress" placeholder="Your street address goes here.">      
+                    <div class="contact2">
+                        <div>
+                            <label for="city"> City</label>
+                            <input type="text" id="city" name="city" placeholder="Your city goes here.">
+                        </div>
+                        <div>
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" placeholder="WA">    
+                        </div>
+                        <div>
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" name="zip" placeholder="12345">        
+                        </div>
                     </div>
-                    <div class="col-25">
-                      <label for="zip">Zip</label>
-                      <input type="text" id="zip" name="zip" placeholder="12345">
-                    </div>
-                  </div>
                 </div>
-      
-                
-              </div>
-      
-                <div>    
-                    <!-- <fieldset> -->
+
+                <div class="first-time-adopter">    
                         <h3>First Time Adopter?</h3>
                         <label><input type="radio" name="special" value="yes">Yes</label>
                         <label><input type="radio" name="special" value="no">No</label>
-                    <!-- </fieldset> -->
                 </div>
+
                 <div>
-                    <!-- <fieldset> -->
                     <label>Pickup Location</label>
+                    <div>
                         <select name="adopteePickup">
                             <option value="here">Here</option>
                             <option value="there">There</option>
@@ -83,44 +74,48 @@
                             <option value="overhere">Overhere</option>
                             <option value="overthere">Overthere</option>
                             <option value="nowhere">Nowhere</option>
-
-                        </select>
-                    <!-- </fieldset> -->
+                        </select>    
+                    </div>
                 </div>
-                <div>
+
+                <div class="">
+                    <div>
                     <h3>Dogs Adopted</h3>
+                    </div>
+                    <div class="dogs-adopted">
+                        <img src="images/lucas-card.jpg" alt="Descripion of featured dog.">
+                        <div>
+                        <h4>Lucas</h4>
+                        <p><strong>Cost to Adopt: </strong>$123.45</p>    
+                        </div>
+                        <img src="images/duffy-card.jpg" alt="Descripion of featured dog.">
+                        <div>
+                        <h4>Duffy</h4>
+                        <p><strong>Cost to Adopt: </strong>$123.45</p>    
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Total Adoption Cost</h3>$1234.56
+                    </div>
                 </div>
-                <div>
-                    <img src="images/duffy-card.jpg" alt="Descripion of featured dog.">
-                    <h4>Duffy</h4>
-                    <p><strong>Cost to Adopt: </strong>$123.45</p>
-                    <img src="images/lucas-card.jpg" alt="Descripion of featured dog.">
-                    <h4>Lucas</h4>
-                    <p><strong>Cost to Adopt: </strong>$123.45</p>
-                </div>
-                <div>
-                    <h3>Total Adoption Cost</h3>
-                    $1234.56
-                </div>
-                <!-- <input type="submit" value="Submit"> -->
-                <input type="submit" value="Submit" class="btn">
 
-          </form>
-      </section>
-    </div>
-      <div>
-          <footer><img class="ftr-img" src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
-          <p>Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj  <br>eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-              <nav>
-                  <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="adopt-dogs.html">Dogs</a></li>
-                      <li><a href="adopt-blog.html">Blog</a></li>
-                  </ul>
-              </nav>
-              <p>2018 Adoptadog, LLC | Seattle, WA</p>
-          </footer>
-      </div>
+                <input type="submit" value="Submit" class="btn">
+            </div>    
+        </form>
+
+        <div>
+        <footer><img class="ftr-img" src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+        <p>Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj  <br>eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adopt-dogs.html">Dogs</a></li>
+                    <li><a href="adopt-blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <p>2018 Adoptadog, LLC | Seattle, WA</p>
+        </footer>
+        </div>
 
     </div>
 </body>

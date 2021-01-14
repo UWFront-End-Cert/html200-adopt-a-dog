@@ -14,7 +14,7 @@
     font-weight: 900;
     font-size: 10px;
     /* color: var(--black); */
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+    /* text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07); */
     height: 100%;
     /* margin: 0; */
   }
@@ -141,16 +141,11 @@ nav ul li:hover {
   box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.898);
 }
 
-#our-dogs {
-  font-size: large;
-  margin: 4% 0 0 13.5%;
-}
-
   .main-section {
     display: flex;
     background: white;
-    padding: 5% 15%;
-    border: 1px solid black;
+    padding: 5% 0 5%;
+    /* border: 3px solid red; */
 }
 
 .main-section img {
@@ -160,10 +155,11 @@ nav ul li:hover {
 /* Flexbox styling for containers: */
 .container {
   display: flex;
-  justify-content: space-around;
-  border: 1px solid mistyrose;
+  justify-content: flex-start;
+  /* justify-content: space-between; */
+  /* border: 3px solid black; */
   flex-wrap: wrap;
-  margin: 4rem 14rem;
+  /* margin: 4rem 14rem; */
 }
 
  
@@ -190,8 +186,9 @@ div h2 {
 }
 
 div h1 {
-  color: red;
+  color: steelblue;
   font-size: 3rem;
+  padding-left: 10px;
 }
 
 p:nth-of-type(2) {
@@ -261,12 +258,14 @@ div p a {
     display: flex;
     flex-direction: column;
     padding: 0 15% 8%;
+    /* border: 3px solid black; */
   }
   
   .dog-blog {
     display: flex;
     flex-direction: row;
     margin: 0 1rem 2rem;
+    /* border: 3px solid black; */
     
   }
 
@@ -282,15 +281,82 @@ div p a {
 .dog-blogh2P p {
   display: flex;
   flex-direction: column;
-  color: magenta;
+  color: black;
   margin: 0 .5rem;
   padding: .5rem;
   max-width: 50em;
 }
 
-/* .dog-blog p {
-  color: violet;
-} */
+form h2, h3, h4, label, select {
+  color: steelblue;
+  font-size: large;
+}
+
+form h2 {
+  margin: 0 0 .5em;
+  padding: unset;
+  font-size: x-large;
+}
+
+.contact {
+  flex: 1; 
+ order: 1;
+  margin-right: 32em; 
+}
+.contact input {
+ width: 100%;
+}
+.contact input,
+.contact button {
+ padding: 1em;
+ margin-bottom: 1em;
+}
+.contact button {
+background: gray;
+color: white;
+border: 0;
+}
+
+.contact2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dog-form {
+  display: flex;
+  flex-direction: column;
+  /* added 1.13 */
+  /* justify-content: space-around; */
+  /* border: 3px solid black; */
+  flex-wrap: wrap;
+  margin: 4rem 14rem;
+  /* min-width: 80%; */
+}
+
+.dog-form img {
+  max-width: 10em;
+  margin: 0 .5em 0 0;
+}
+
+.dogs-adopted {
+  display: flex;
+}
+
+.dogs-adopted div {
+  margin: 0 1em;
+}
+
+form .btn {
+  width: 25%;
+  margin: 1em 0;
+  padding: .5em;
+  color: white;
+}
+
+.first-time-adopter {
+  margin: 0 0 4em;
+}
 
   footer {
     display: flex;
