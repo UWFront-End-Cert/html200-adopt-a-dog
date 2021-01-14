@@ -129,6 +129,8 @@ h2 {
 }
 
 .dog-card {
+    display: flex;
+    flex-flow: row wrap; 
     width: 20.1%;
     box-shadow: 0 0 20px -10px;
     margin: 1.5em;
@@ -143,6 +145,8 @@ h3 {
 }
 
 .dog-card p {
+    display: flex;
+    flex-flow: row wrap; 
     font-size: .6em;
     width: 80%;
     padding-left: 2em;
@@ -150,6 +154,8 @@ h3 {
 }
 
 .adopt-button {
+    display: flex;
+    flex-flow: row wrap; 
     padding: 8px 70px;
     background-color: #81b741;
     color: #FFF;
