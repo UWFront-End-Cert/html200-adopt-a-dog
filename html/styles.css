@@ -250,19 +250,18 @@ main {
 .dog-grid .dog-card {
   border: solid 2px gray;
   overflow: hidden;
+  max-width: 235px;
 }
 
 .dog-grid .dog-card .dog-picture-wrapper  {
-  overflow:hidden;
-  height: 126px;
+  overflow: hidden;
+  height: 130px;
 }
 
 .dog-grid .dog-card .dog-picture-wrapper .dog-picture {
-  transition: 0.2s transform ease-in-out;  
-}
-
-.dog-grid .dog-card .dog-picture {
-  width: 100%;
+  transition: 0.2s all ease-in-out;
+  display: block; 
+  position: relative; 
 }
 
 .dog-grid .dog-card .dog-name {
@@ -291,6 +290,7 @@ main {
   font-weight: bold;
   background-color:  #81B841;
   color: white;
+  cursor: pointer;
 }
 
 .dog-grid .dog-card .dog-link:hover {

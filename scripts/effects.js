@@ -9,13 +9,15 @@ function initialize() {
     )
 
     $('.dog-grid .dog-card .dog-picture-wrapper .dog-picture').hover(
-        function zoom() {
+        function zoom() {      
             $(this).css("transform", 'scale(1.2)')
         },
         function unzoom() {
             $(this).css("transform", 'scale(1.0)')
         }
     )
+
+    
 
     $('.dog-link').click(
         function makeRipple() {
