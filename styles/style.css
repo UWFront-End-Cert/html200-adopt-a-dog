@@ -1,0 +1,44 @@
+header {
+    background-image: url("../images/header-image.jpg");
+    height: 400px;
+
+}
+
+header h1 {
+    color: rgb(18, 146, 18);
+    font-size: 1.25rem;
+}
+
+header p {
+    color: white;
+}
+
+.logo {
+    width: 20%;
+}
+
+.cart {
+    width: 2.5%
+}
+
+nav {
+    
+}
+
+fieldset {
+    border:white;
+}
+
+.amount {
+    font-size: .75rem;
+}
+
+footer {
+    height: 350px;
+    background-color: Navy;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
