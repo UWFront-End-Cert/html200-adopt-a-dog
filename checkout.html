@@ -12,16 +12,14 @@
         <p>Seattle's premiere dog adoption agency</p>
       </div>
       <div>
-        <img width="30px" src="images/cart-icon.svg" alt="Shopping cart icon">
+        <img width="30" src="images/cart-icon.svg" alt="Shopping cart icon">
         <p>$1234.56</p>
         <button type="button">Checkout</button>
       </div>
       <div>
         <ul>
-          <li>Home</li>
-          <span>/</span>
-          <li>Dogs</li>
-          <span>/</span>
+          <li>Home / </li>
+          <li>Dogs / </li>
           <li>Blog</li>
         </ul>
       </div>
@@ -30,40 +28,38 @@
     <form class="" action="index.html" method="post">
 
       <label for="name">Name</label>
-      <input type="text" name="name">
+      <input type="text" name="name" id="name">
 
       <label for="email">Email Address</label>
-      <input type="text" name="email">
+      <input type="text"  name="email" id="email">
 
       <label for="street">Street Address</label>
-      <input type="text" name="street">
+      <input type="text" name="street" id="street">
 
       <label for="city">City</label>
-      <input type="text" name="city">
+      <input type="text" name="city" id="city">
 
       <label for="state">State</label>
-      <select name="state">
-        <option value="" style="display:none;"></option>
+      <select name="state" id="state">
         <option value="washington">WA</option>
         <option value="oregon">OR</option>
         <option value="california">CA</option>
       </select>
 
       <label for="zip">Zip Code</label>
-      <input type="text" name="zip">
+      <input type="text" name="zip" id="zip">
 
       <p>First Time Adopter?<p>
-        <input type= "radio" name="returning" value="yes">
+        <input type= "radio" name="returning" id="yes" value="yes">
         <label for="yes">Yes</label>
 
-        <input type= "radio" name="returning" value="no">
+        <input type= "radio" name="returning" id="no" value="no">
         <label for="no">No</label>
 
       <br>
 
       <label for="pickup">Pickup Location</label>
-      <select name="pickup">
-        <option value="" style="display:none;"></option>
+      <select name="pickup" id="pickup">
         <option value="Seattle">Seattle</option>
         <option value="Bellevue">Bellevue</option>
         <option value="Everett">Everett</option>
@@ -84,9 +80,9 @@
       <p>Total Adoption Costs</p>
       <p>$1234.56</p>
 
-      <input type="submit" name="" value="Submit">
+      <input type="submit" value="Submit">
     </form>
-    
+
     <footer>
       <img src="images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
       <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
