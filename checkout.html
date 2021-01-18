@@ -18,117 +18,115 @@
     <nav>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="./index.html">Home</a>
         </li>
         <li>
-          <a href="#">Dogs</a>
+          <a href="./dogs.html">Dogs</a>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <a href="./blog.html">Blog</a>
         </li>
       </ul>
     </nav>
 
     <main id="wrapper">
-      <section class="flex-container">
-        <h2 class="hide">Section Header</h2>
-          <article class="div1">
-            <h2 id="a1">Adopt A Dog</h2>
+      <section class="left, liability">
+        <h3>Checkout</h3>
+        <form action="/action_page.php">
+          <label for="name">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-            <img src="./images/home-intro.jpg" alt="Man in red shirt hugging is adopted golden retriever">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email" placeholder="Your Email Address..">
 
-            <p>Are you looking for a companion that will alway love you no matter what, even when you are huddled over that boxed wine thinking about the current situation that is your life during the Covid Crisis?!?!?  WELL HAVE WE GOT SOME NEW FOR YOU!!!  Adoping a Dog or puppy will provide you with a loving creature that loves you no matter what!  Even when you regret everything in your life they will be by your side licking the crap out of you and showing endless affection.  All of our Dogs and Puppies are up on current shots and vaccines and will provide you with years of hugs, snuggling, and friendship!</p>
+          <label for="street-add">Street Address</label>
+          <input type="text" id="street-add" name="street-add" placeholder="Your Street Address..">
 
-          </article>
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="City..">
 
-          <article class="div2">
+          <label for="state">State</label>
+          <select id="crecord" name="criminal-record">
+            <option value="Placeholder">...</option>
+            <option value="AL">Alabama</option>
+          	<option value="AK">Alaska</option>
+          	<option value="AZ">Arizona</option>
+          	<option value="AR">Arkansas</option>
+          	<option value="CA">California</option>
+          	<option value="CO">Colorado</option>
+          	<option value="CT">Connecticut</option>
+          	<option value="DE">Delaware</option>
+          	<option value="DC">District Of Columbia</option>
+          	<option value="FL">Florida</option>
+          	<option value="GA">Georgia</option>
+          	<option value="HI">Hawaii</option>
+          	<option value="ID">Idaho</option>
+          	<option value="IL">Illinois</option>
+          	<option value="IN">Indiana</option>
+          	<option value="IA">Iowa</option>
+          	<option value="KS">Kansas</option>
+          	<option value="KY">Kentucky</option>
+          	<option value="LA">Louisiana</option>
+          	<option value="ME">Maine</option>
+          	<option value="MD">Maryland</option>
+          	<option value="MA">Massachusetts</option>
+          	<option value="MI">Michigan</option>
+          	<option value="MN">Minnesota</option>
+          	<option value="MS">Mississippi</option>
+          	<option value="MO">Missouri</option>
+          	<option value="MT">Montana</option>
+          	<option value="NE">Nebraska</option>
+          	<option value="NV">Nevada</option>
+          	<option value="NH">New Hampshire</option>
+          	<option value="NJ">New Jersey</option>
+          	<option value="NM">New Mexico</option>
+          	<option value="NY">New York</option>
+          	<option value="NC">North Carolina</option>
+          	<option value="ND">North Dakota</option>
+          	<option value="OH">Ohio</option>
+          	<option value="OK">Oklahoma</option>
+          	<option value="OR">Oregon</option>
+          	<option value="PA">Pennsylvania</option>
+          	<option value="RI">Rhode Island</option>
+          	<option value="SC">South Carolina</option>
+          	<option value="SD">South Dakota</option>
+          	<option value="TN">Tennessee</option>
+          	<option value="TX">Texas</option>
+          	<option value="UT">Utah</option>
+          	<option value="VT">Vermont</option>
+          	<option value="VA">Virginia</option>
+          	<option value="WA">Washington</option>
+          	<option value="WV">West Virginia</option>
+          	<option value="WI">Wisconsin</option>
+          	<option value="WY">Wyoming</option>
+          </select>
 
-            <img class="dogimg" src="./images/murphy-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+          <label for="zipcode">Zip Code</label>
+          <input type="text" id="zipcode" name="zipcode" placeholder="Zip Code..">
 
-            <h3>Murphy</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>is sidoes this work?mply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <a href="#link" class="Adopt-link">Adopt</a>
-          </article>
+          <fieldset>
+            <legend>First Time Adopter?</legend>
+            <label>Yes
+              <input type="radio" name="yes" value="yes">
+            </label>
 
-          <article class="div2">
+            <label>No
+              <input type="radio" name="no" value="no">
+            </label>
+          </fieldset>
 
-            <img class="dogimg"  src="./images/poppy-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+          <label for="pul">Pickup Location</label>
+          <select id="pul" name="pul">
+            <option value="Placeholder">...</option>
+            <option value="Store">Store</option>
+          	<option value="Home">Home</option>
+          </select>
 
-            <h3>Poppy</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <a href="#link" class="Adopt-link">Adopt</a>
-          </article>
 
-          <article class="div2">
 
-            <img class="dogimg"  src="./images/jack-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
-
-            <h3>Jack</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <a href="#link" class="Adopt-link">Adopt</a>
-          </article>
-
-          <article class="div2">
-
-            <img class="dogimg"  src="./images/duffy-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
-
-            <h3>Duffy</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <a href="#link" class="Adopt-link">Adopt</a>
-          </article>
-
-          <article class="div2">
-
-            <img class="dogimg"  src="./images/lucas-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
-
-            <h3>Lucas</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <a href="#link" class="Adopt-link">Adopt</a>
-          </article>
-
-          <article class="div2">
-
-            <img class="dogimg"  src="./images/jake-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
-
-            <h3>Jake</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <a href="#link" class="Adopt-link">Adopt</a>
-          </article>
-
-          <article class="div2">
-
-            <img class="dogimg" src="./images/angus-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
-
-            <h3>Angus</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <a href="#link" class="Adopt-link">Adopt</a>
-          </article>
-
-          <article class="div2">
-
-            <img class="dogimg" src="./images/violet-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
-
-            <h3>Violet</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <a href="#link" class="Adopt-link">Adopt</a>
-          </article>
-
+          <input type="submit" value="Submit">
+        </form>
       </section>
-
-      <a href="#link" class="smdlink">See More Dogs</a>
-
-
-
-
-
 
     </main>
 
