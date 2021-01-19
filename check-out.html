@@ -34,20 +34,20 @@
             <a class="nav-links" href="blog.html">Blog</a>
         </nav>
     
-    <!-- Main Conent, grid for dog thumbnails with flexbox -->
+    <!-- Main Conent -->
     <div class="main-content-container">
         <div class="intro-container">
             <h1>Checkout</h1>
         </div>
         <form action="#">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name"><br><br>
+            <input type="text" id="name" name="name">
             
             <label for="email">Email Address</label>
-            <input type="text" id="email" name="email"><br><br>
+            <input type="text" id="email" name="email">
             
             <label for="address">Street Address</label>
-            <input type="text" id="address" name="address"><br><br>
+            <input type="text" id="address" name="address">
             
             <label for="city">City</label>
             <input type="text" id="city" name="city">
@@ -62,10 +62,10 @@
             </select>
 
             <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="zip"><br><br>
+            <input type="text" id="zip" name="zip">
             
-            <label for="radio">First Time Adopter?
-                <input type="radio" name="yes">Yes</label> 
+            <label for="radio">First Time Adopter?</label>
+                <label><input type="radio" name="yes">Yes</label> 
                 <label><input type="radio" name="no">No</label> 
 
             <label for="pickup">Pickup</label>
@@ -80,21 +80,24 @@
             <h2>Dogs Adopted</h2>
             <div class="dogs-adopted-container">
                 <img src=images/lucas-checkout.jpg alt="Grey and white shepherd/pit mix dog looking at camera">
-                <h3>Lucas</h3>
-                <p><strong>Cost to Adopt:</strong> $123.45</p>
+                <div class="name-cost">
+                    <h3>Lucas</h3>
+                    <p><strong>Cost to Adopt:</strong> $123.45</p>
+                </div>
             </div>    
-            <br>
 
             <div class="dogs-adopted-container">
                 <img src=images/duffy-checkout.jpg alt="Pitbull dog with white face and blue eyes looking at camera">
-                <h3>Duffy</h3>
-                <p><strong>Cost to Adopt:</strong> $123.45</p>
+                <div class="name-cost">
+                    <h3>Duffy</h3>
+                    <p><strong>Cost to Adopt:</strong> $123.45</p>
+                </div>
             </div>
             
             <h2>Total Adoption Cost</h2>
             <p>$1,234.56</p>
 
-            <input type="submit" value="Submit">
+            <a href="#" class="check-out-button">Submit</a>
         </form>   
     </div>
    
