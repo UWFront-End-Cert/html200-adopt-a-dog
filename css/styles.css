@@ -1,0 +1,286 @@
+/**layout**/
+.row{
+  margin-bottom: 2rem;
+}
+main{
+  max-width: 1100px;
+  margin: auto;
+}
+.d-flex{
+  display: flex;
+}
+
+/**fonts**/
+body, p {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.75rem;
+}
+h1{
+  font-size:2.25rem;
+  font-family: 'Vollkorn', serif;
+  color: #093c60;
+  font-weight: bold;
+  margin-bottom:2rem;
+}
+h2{
+  font-size:2rem;
+  font-family: 'Vollkorn', serif;
+  color: #093c60;
+  font-weight: bold;
+}
+h3{
+  font-size:1.75rem;
+  font-family: 'Vollkorn', serif;
+  color: #093c60;
+  font-weight: bold;
+}
+h4{
+  font-size:1.5rem;
+  font-family: 'Vollkorn', serif;;
+  color: #093c60;
+}
+h5{
+  font-size:1rem;
+  font-family: 'Vollkorn', serif;;
+}
+h6{
+  font-size:1rem;
+  font-family: 'Vollkorn', serif;;
+}
+nav a, header nav a{
+  color: #093c60;
+  font-weight: bold;
+}
+/**Header Section**/
+header{
+  color: white;
+}
+header{
+background-image: url(../images/header-image.jpg);
+background-size: cover;
+}
+.header-top{
+  padding-top:64px;
+  padding-bottom:210px;
+  margin-bottom: 0 !important;
+}
+.header-top, header nav {
+  margin:auto;
+  max-width: 1300px;
+}
+header nav ul, footer nav ul{
+  text-align: left;
+  padding-top: 16px;
+  list-style-type: none;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+
+nav ul li{
+  float:left;
+  font-weight: bold
+}
+nav ul li::after{
+    content: "/";
+    color: #093c60;
+}
+nav li:last-child:after {
+  content: "";
+}
+nav ul li a{
+  padding: 14px 16px;
+}
+nav ul li a:hover{
+  text-decoration: none;
+  color: #81b741;
+}
+
+nav ul li a.active:hover{
+  color: #093c60;
+}
+
+.top-nav{
+  background-color: #ececec;
+  padding-bottom: 16px;
+  margin-bottom: 2rem;
+}
+
+header .cart{
+  text-align: right;
+}
+
+.logo-text{
+  font-size: 1.5rem;
+  color: #81b741;
+  font-style: italic;
+  font-weight: 400;
+  font-family: 'Vollkorn', serif;
+}
+
+
+/**footer**/
+footer{
+  background-color: #093c60;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.footer-container{
+  max-width: 30%;
+  margin:auto;
+}
+footer img{
+  padding-bottom: 32px;
+}
+footer a, footer p {
+  color: white;
+}
+footer p{
+  padding-bottom:16px;
+  justify-content: center;
+}
+.footer-nav{
+  display: grid;
+}
+footer nav{
+  justify-self:center;
+  padding-bottom: 16px;
+
+}
+footer nav ul{
+  justify-content: center;
+  padding-left: 0px;
+  padding-bottom:16px;
+}
+footer nav ul li:after{
+  color:white;
+}
+
+
+/**images**/
+main img{
+  width: 100%;
+}
+
+/** Buttons **/
+.button{
+  font-weight: bolder;
+  border-radius: 2px;
+  font-size:1rem;
+}
+form button, .button {
+  border: 1px solid transparent;
+  padding: 4px 64px;
+}
+.button:hover{
+  text-decoration: none;
+}
+
+.grey-button{
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 1.05px;
+  color: #093c60;
+  padding: 12px 64px;
+  text-align: center;
+  background-color: #ececec;
+}
+
+.green-button{
+  color:white;
+  background-color: #81b741;
+}
+
+.checkout-btn{
+  padding:8px 42px;
+  font-size: .75rem;
+}
+
+ .full-width{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px;
+}
+.grid{
+  display: grid
+}
+
+.button-row{
+  justify-self:center;
+}
+
+
+/**Dog Cards**/
+.dog-card img{
+  width: 100%;
+}
+.info-section{
+  border:solid #ececec 1px;
+  border-top: none;
+  padding:8px 12px 16px 12px;
+  margin-bottom: 32px;
+}
+.info-section p{
+  font-size:.75rem;
+  line-height: 1.25rem;
+}
+
+/**blog page***/
+article.blog{
+  margin-bottom:4rem;
+}
+.blog-photo{
+  margin-bottom:2rem;
+}
+
+/***checkout form**/
+form{
+  max-width:66%;
+  margin-bottom: 6rem;
+}
+label, legend, h2.dogs{
+  color:#093c60;
+  font-family: 'Vollkorn', serif;
+  font-weight: bold;
+  font-size:1.25rem;
+}
+label, fieldset{
+  margin-top:32px;
+}
+.first label{
+  margin-top:0px;
+}
+.radio-item{
+padding-right:16px;
+}
+
+label.radio-opt {
+  margin-top:0px;
+  font-family: 'Montserrat', sans-serif;
+  color:black;
+  font-weight: 400;
+  align-items: flex-start;
+  font-size: 1rem;
+}
+
+input[type="text"], select{
+  width:100%;
+  border:solid #ececec 2px;
+}
+
+.select{
+    height: 2.1rem;
+}
+
+.checkout-img{
+  width:75px;
+  height: 75px;
+  object-fit: cover;
+}
+div.checkout-name {
+    padding-left: 8px;
+}
+.checkout-name p{
+  font-size: .75rem;
+  line-height: .75rem;
+}
