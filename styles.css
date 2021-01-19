@@ -1,0 +1,151 @@
+* {
+    padding:0;
+    margin:0;
+    
+}
+body {
+}
+header {
+    width: 100%;
+    height:225px;
+    background-color:navy;
+
+}
+.header-holder {
+    width:90%;
+    margin: 0px auto;
+    display:flex;
+    justify-content: space-between;
+}
+.left-side-header {
+   margin-top: 35px;
+   color:lightgreen;
+}
+.left-side-header img {
+    width:400px;
+}
+.left-side-header p {
+    font-size:1.5em;
+    font-style:italic;
+}
+.right-side-header {
+    color:white;
+    margin-top: 35px;
+}
+.right-side-header button{
+    margin-top: 5px;
+    width:100%;
+}
+nav {
+    width:100%;
+    height:80px;
+    background-color:beige;
+
+}
+ul.header-nav-list-holder {
+    margin-left:100px;
+    height:80px;
+    line-height:80px;
+    margin-right:5px;
+    float:left;
+    display:inline;
+    list-style-type: none;
+
+}
+a {
+    color:navy !important;
+    text-decoration:none;
+}
+li.header-nav-list-item {
+    
+    margin-right:20px;
+    float:left;
+}
+#wrapper {
+    width:85%;
+    height:1000px;
+    margin:0px auto;
+    background-color:white;
+    
+}
+.grid-item-container {
+    display:grid;
+    column-gap: 6.67%;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto;
+ 
+}
+.initial-box {
+    margin-top:20px;
+    grid-column: 1/ span 4;
+    display:flex;
+    flex-direction:row;
+    
+}
+.sub-initial-box {
+    margin-left: 6.67%;
+}
+.intro-para {
+    line-height:25px;
+}
+.adoption-pic {
+    width:100%;
+}
+.initial-box img {
+    width:30%;
+}
+.dog-holder {
+    margin-top: 20%;
+    border-style: outset;
+}
+dog-cost {
+    font-weight:600;
+}
+.adopt-button {
+  width:100%;
+  height:30px;
+  color:white;
+  background-color:lightgreen;
+}
+footer {
+    margin-top:350px;
+    height:350px;
+    background:darkgray;
+    clear:both;
+    display:flex;
+    flex-direction:row wrap;
+    justify-content:center;
+    align-items:center;
+}
+footer img {
+    width:100%;
+    display:block;
+}
+.footer-text-holder {
+    display:block;
+}
+.footer-text {
+    display:block;
+}
+.footer-nav {
+    margin-left: 40px;
+    height:80px;
+    background-color:darkgray;
+}
+ul {
+    height:80px;
+    line-height:80px;
+    float:left;
+    list-style-type:none;
+
+}
+li {
+    display:inline;
+}
+.footer-holder {
+    width:300px;
+}
+.footer-link {
+    display:inline;
+}
+
