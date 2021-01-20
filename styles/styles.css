@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: .8rem;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-family: 'Neuton', sans-serif;
+  color: #093c60;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: 'Neuton', sans-serif;
+  color: #093c60;
+  font-size: 1.4rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Neuton', sans-serif;
+  color: #093c60;
+}
+
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hidden:focus {
+  left: 0;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-image: url("../images/header-image.jpg");
+}
+
+nav {
+  font-weight: 600;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+nav a {
+  color: #093c60;
+}
+
+footer a {
+  color: white;
+}
+
+.green {
+  color: #81b741;
+}
+
+.white {
+  color: white;
+}
+
+button {
+  color: white;
+  font-weight: 600;
+  background-color: #81b741;
+  border: none;
+}
+
+button a {
+  color: white;
+}
+
+footer {
+    width: 100%;
+    background-color: #093c60;
+    background-size: cover;
+}
