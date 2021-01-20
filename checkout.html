@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="styles.css">  
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <title></title>
+  <title>Checkout</title>
 </head>
 
 <body>
@@ -13,10 +13,12 @@
 <header>
 <div class="header-holder">
 <section class="left-side-header">
-<img src="images/adoptadog-logo.svg">
+<h3 class="hidden-header">Left Side Header</h3>
+<img src="images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
 <p>Seattle's premiere dog adoption agency</p>
 </section>
 <section class="right-side-header">
+<h3 class="hidden-header">Right Side Header</h3>
   <p><i class="fas fa-shopping-cart"></i> $1234.56  </p>
   <button> Checkout</button>
     
@@ -44,15 +46,15 @@
       <label class="form-label" for="name">Email</label><br>
   <input class="form-box" type="email" id="email" name="email"><br>
      <label class="form-label" for="address">Street Address</label><br>
-    <input class="form-box" type="street-address" id="address" name="address"><br>
+    <input class="form-box" type="text" id="address" name="address"><br>
     <div class="city-state-zip-holder">
     <div class="location-holder">
     <label class="form-label" for="city">City</label>
-    <input class="form-box" type="name" id="city" name="city">
+    <input class="form-box" type="text" id="city" name="city">
     </div><!--end location-holder"-->
     <div class="location-holder">
     <label class="form-label" for="state">State</label>
-    <select>
+    <select id="state">
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
@@ -108,17 +110,17 @@
 </div><!--end state holder-->
  <div class="location-holder">
     <label class="form-label" for="zip">Zipcode</label>
-    <input class="form-box" type="zipcode" id="zip" name="zip">
+    <input class="form-box" type="text" id="zip" name="zip">
     </div><!--end location-holder"-->
     </div><!--end city-state-holder-->
     <br>
     <label class="form-label" for="adoption-option">First Time Adopter?</label><br>
-     <input type="radio" id="yes" name="adoption-option" value="yes">
-  <label for="male">Yes</label>
-  <input class="form-box" type="radio" id="no" name="adoption-option" value="female">
-  <label for="no">No</label><br>
+     <input type="radio" id="adoption-option" name="adoption-option" value="yes">
+  <label for="adoption-option">Yes</label>
+  <input class="form-box" type="radio" id="adoption-option2" name="adoption-option" value="no">
+  <label for="adoption-option2">No</label><br>
     <label class="form-label" for="store">Pickup Location</label><br>
-    <select class="form-box">
+    <select class="form-box" id="store">
     <option value="store-1">Store-1</option>
      <option value="store-2">Store-2</option>
      <option value="store-3">Store-3</option>
@@ -127,14 +129,14 @@
     <h3>Dogs Adopted</h3>
     <div class="dog-checkout-holder-container">
     <div class="dog-checkout-holder">
-    <img src="images/lucas-checkout.jpg">
+    <img src="images/lucas-checkout.jpg" alt="Lucas">
     <div class="dog-checkout-text-holder">
     <p class="dog-name-checkout">Lucas</p>
     <p class="dog-checkout-price">Cost to Adopt: $123.45</p>
     </div><!--dog-checkout-text-holder-->
         </div>
      <div class="dog-checkout-holder">
-    <img src="images/duffy-checkout.jpg">
+    <img src="images/duffy-checkout.jpg" alt="Duffy">
     <div class="dog-checkout-text-holder">
     <p class="dog-name-checkout">Duffy</p>
     <p class="dog-checkout-price">Cost to Adopt: $123.45</p>
@@ -155,7 +157,7 @@
 </div><!--end grid-item-container-->
      <footer>
     <div class="footer-holder">
-    <div class="footer-img-holder"> <img src="images/adoptadog-logo.svg">
+    <div class="footer-img-holder" > <img src="images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
         </div>
     <div class="footer-text-holder">
     <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate ante ac tellus sagittis pretium. Sed at nulla justo. Nam sed tincidunt nibh, at sodales ex. </p>
