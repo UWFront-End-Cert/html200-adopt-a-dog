@@ -130,7 +130,7 @@ footer {
     background:darkgray;
     clear:both;
     display:flex;
-    flex-direction:row wrap;
+    flex-flow:row wrap;
     justify-content:center;
     align-items:center;
 }
@@ -215,3 +215,4 @@ li {
 }
 .footer-link {
     display:inline;
+}
