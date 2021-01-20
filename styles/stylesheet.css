@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    background-image: url("../images/header-image.jpg");
+}
+
+.logo {
+    width: 30%;
+    font-weight: bold;
+    margin-left: 2.5%;
+}
+
+header .cart {
+    width: 2.5%
+}
+
+header h1 {
+    color: limegreen;
+    font-style: italic;
+    font-size: 1.25rem;
+    margin-left: 2.5%;
+}
+
+button {
+    width: 10%;
+    padding: .5% .75%
+}
+
+nav {
+    background-color: lightgray;
+}
+
+nav ul,
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 10%;
+}
+
+
+nav li,
+footer li,
+nav p,
+footer p {
+    list-style: none;
+    padding: 1% 0% 1% 1.5%;
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+nav a,
+footer a {
+    text-decoration: none;
+}
+
+fieldset {
+    border: 1px solid white;
+}
+
+label,
+legend {
+    font-weight:bold;
+}
+
+.adopter label {
+    font-weight:normal;
+}
+
+.city-state {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.city-state input,
+.city-state select {
+    width: 20%;
+}
+
+.adopter div,
+.adopted-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.personal-info,
+.adopted-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.location {
+    display: inline-block;
+}
+
+
+footer {
+    background-color: rgb(26, 7, 110);
+    text-align: center;
+}
+
+footer a,
+footer p,
+footer li {
+    color: white;
+}
