@@ -52,6 +52,19 @@ ul.header-nav-list-holder {
     list-style-type: none;
 
 }
+h2.dogs-list-header {
+    margin-top: 20px;
+    margin-left:100px;
+    color:darkblue;
+}
+h2.adoption-header {
+    margin: 20px 0 20px 100px;
+    color:darkblue;
+}
+h3 {
+    color: darkblue;
+    display:inline;
+}
 a {
     color:navy !important;
     text-decoration:none;
@@ -61,14 +74,10 @@ li.header-nav-list-item {
     margin-right:20px;
     float:left;
 }
-#wrapper {
-    width:85%;
-    height:1000px;
-    margin:0px auto;
-    background-color:white;
-    
 }
 .grid-item-container {
+    width:85%;
+    margin: 0px auto;
     display:grid;
     column-gap: 6.67%;
     grid-template-columns: 20% 20% 20% 20%;
@@ -82,8 +91,35 @@ li.header-nav-list-item {
     flex-direction:row;
     
 }
+
 .sub-initial-box {
     margin-left: 6.67%;
+}
+.blog-main-holder {
+    width:85%;
+    margin: 0px auto 120px auto;
+    grid-column: 1/ span 4;
+}
+.blog-img-holder {
+    float:left;
+    margin-right: 20px;
+}
+.blog-text-holder {
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+.blog-sub-header {
+    display:block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+.blog-sub-paragraph {
+   display:inline;
+   padding-top: 20px; 
+    margin-bottom: 20px;
+    
 }
 .intro-para {
     line-height:25px;
@@ -98,6 +134,7 @@ li.header-nav-list-item {
     margin-top: 20%;
     border-style: outset;
 }
+
 dog-cost {
     font-weight:600;
 }
@@ -108,7 +145,7 @@ dog-cost {
   background-color:lightgreen;
 }
 footer {
-    margin-top:350px;
+    margin-top:20px;
     height:350px;
     background:darkgray;
     clear:both;
