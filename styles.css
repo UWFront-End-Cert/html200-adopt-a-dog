@@ -43,7 +43,7 @@ nav {
 
 }
 ul.header-nav-list-holder {
-    margin-left:100px;
+    margin-left:8%;
     height:80px;
     line-height:80px;
     margin-right:5px;
@@ -51,19 +51,6 @@ ul.header-nav-list-holder {
     display:inline;
     list-style-type: none;
 
-}
-h2.dogs-list-header {
-    margin-top: 20px;
-    margin-left:100px;
-    color:darkblue;
-}
-h2.adoption-header {
-    margin: 20px 0 20px 100px;
-    color:darkblue;
-}
-h3 {
-    color: darkblue;
-    display:inline;
 }
 a {
     color:navy !important;
@@ -74,7 +61,24 @@ li.header-nav-list-item {
     margin-right:20px;
     float:left;
 }
+.dogs-list-header {
+    margin-left: 7.5%;
+    margin-top: 2%;
 }
+.page-header {
+    margin-left: 110px;
+    margin-bottom:20px;
+}
+/*
+
+#wrapper {
+    width:85%;
+    height:1000px;
+    margin:0px auto;
+    background-color:white;
+    
+}
+*/
 .grid-item-container {
     width:85%;
     margin: 0px auto;
@@ -91,35 +95,8 @@ li.header-nav-list-item {
     flex-direction:row;
     
 }
-
 .sub-initial-box {
     margin-left: 6.67%;
-}
-.blog-main-holder {
-    width:85%;
-    margin: 0px auto 120px auto;
-    grid-column: 1/ span 4;
-}
-.blog-img-holder {
-    float:left;
-    margin-right: 20px;
-}
-.blog-text-holder {
-    margin-left: 20px;
-    margin-bottom: 20px;
-
-}
-.blog-sub-header {
-    display:block;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    
-}
-.blog-sub-paragraph {
-   display:inline;
-   padding-top: 20px; 
-    margin-bottom: 20px;
-    
 }
 .intro-para {
     line-height:25px;
@@ -134,7 +111,6 @@ li.header-nav-list-item {
     margin-top: 20%;
     border-style: outset;
 }
-
 dog-cost {
     font-weight:600;
 }
@@ -142,10 +118,10 @@ dog-cost {
   width:100%;
   height:30px;
   color:white;
-  background-color:lightgreen;
+  background-color:green;
 }
 footer {
-    margin-top:20px;
+    margin-top:50px;
     height:350px;
     background:darkgray;
     clear:both;
@@ -157,6 +133,57 @@ footer {
 footer img {
     width:100%;
     display:block;
+}
+.blog-main-holder {
+    display: flex;
+/*    flex-flow: row wrap;*/
+    grid-column: 1/ span 4;
+    margin-bottom: 25px;
+}
+.blog-img-holder {
+    display:inline;
+}
+.blog-text-holder {
+    display: inline;
+    margin-left: 20px;
+}
+p.blog-sub-paragraph {
+    margin-bottom: 20px;
+}
+.form-label {
+    color: darkblue;
+}
+.form-box {
+    margin-bottom:25px;
+}
+.city-state-zip-holder {
+    display:flex;
+    flex-flow: row;
+}
+.location-holder {
+    margin-right: 20px;
+}
+.dog-checkout-holder-container {
+    display:flex;
+    flex-flow: row nowrap;
+}
+.dog-checkout-holder {
+    width: 450px;
+    background-color:red;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    margin-right:20px;
+    margin-bottom: 20px;
+}
+.dog-checkout-holder img {
+    display:inline;
+}
+.dog-checkout-text-holder {
+    width: 160px;
+}
+.checkout-cost {
+    margin-bottom: 20px;
 }
 .footer-text-holder {
     display:block;
@@ -184,5 +211,3 @@ li {
 }
 .footer-link {
     display:inline;
-}
-
