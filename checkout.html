@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./styles/master.css">
+    <style>
+      body {
+         background-color: lightgray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/adoptadog-logo.svg" width="200" alt="adoptadog logo">
+      <p>Seattle's premiere dog adoption agency</p>
+
+      <img src="images/cart-icon.svg" width="24" alt="shopping cart icon">
+      <p>$1234.56</p>
+      <button type="button">Checkout</button>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+      <h2>Checkout</h2>
+
+
+      <form class="" action="checkout.html" method="post">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="street">Street Address</label><br>
+        <input type="text" id="street" name="street"><br>
+
+        <label for="city">City</label><br>
+        <input type="text" id="city" name="city"><br>
+
+        <label for="state">State</label><br>
+        <input type="text" id="state" name="state"><br>
+
+        <label for="zip_code">Zip Code</label><br>
+        <input type="text" id="zip_code" name="zip_code"><br>
+
+        <label for="yes">First time adopter?</label><br>
+        <input type="radio" id="yes" name="firsttimeadopter" value="Yes">Yes<br>
+        <input type="radio" id="no" name="firsttimeadopter" value="No">No<br>
+
+        <label for="location">Pickup location</label>
+        <select name="location" id="location">
+          <option value="store">Select a location</option>
+        </select><br>
+
+        <div class="">
+          <h3>Dogs Adopted</h3>
+          <img src="images/lucas-checkout.jpg" width="75" alt="lucas dog">
+          <h4>Lucas</h4>
+          <p>Cost to Adopt: $123.45</p>
+
+          <img src="images/duffy-checkout.jpg" width="75" alt="duffy dog">
+          <h4>Duffy</h4>
+          <p>Cost to Adopt: $123.45</p>
+        </div>
+
+        <h3>Total Adoption Cost</h3>
+        <p>Cost to Adopt: $1234.56</p>
+
+        <input type="submit" value="Submit">
+
+      </form>
+  </main>
+
+  <footer>
+    <img src="images/adoptadog-logo.svg" width="150" alt="adoptadog logo">
+    <h5>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequun</h5>
+
+    <nav class="footernav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p class="copyright">© 2020 Adoptadog, LLC   |   Seattle, WA</p>
+
+  </footer>
+
+</body>
+
+</html>
