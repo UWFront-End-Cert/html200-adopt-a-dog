@@ -24,6 +24,10 @@ header {
 .left-side-header img {
     width:400px;
 }
+.hidden-header {
+    font-size: 1px;
+    visibility:hidden;
+}
 .left-side-header p {
     font-size:1.5em;
     font-style:italic;
