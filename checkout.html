@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <title>AdoptADog Checkout</title>
+    <meta name="author" content="Valerie V. Mehring">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1>ADOPTADOG</h1>
+      <h2>Seattle's premiere dog adoption agency</h2>
+      <!-- <img src="images/cart-icon.svg" alt=""> -->
+      <p>$246.90</p>
+      <a href="checkout.html">
+        <button type="button" name="Checkout">Checkout</button></a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="dogs.html">Dogs</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+    <main>
+      <h3>Checkout</h3>
+      <form class="" action="index.html" method="post">
+        <label>Name
+          <input type="text" name="name" id="name"></label>
+        <label>Email
+          <input type="email" id="email" name="email"></label>
+        <label>Street address
+          <input type="text" name="address" id="address"></label>
+        <label>City
+          <input type="text" name="city" id="city"></label>
+        <label>State
+          <select name="state" id="state">
+          <option value="WA">WA</option>
+          <option value="OR">OR</option></select>
+        </label>
+        <label>Zip code
+          <input type="text" name="zip" id="zip"></label>
+        <legend>First time adopter?</legend>
+          <label>Yes<input type="radio" name="FTA" id="Yes"></label>
+          <label>No<input type="radio" name="FTA" id="No"></label>
+        <label>Pickup location
+          <select name="pickup" id="pickup">
+          <option value="Main office">Main office</option>
+          <option value="Foster home">Foster home</option></select>
+        </label>
+        <h4>Dogs Adopted</h4>
+        <figure>
+          <img src="images/lucas-checkout.jpg">
+          <figcaption>
+            <h5>Lucas</h5>
+            <p> Cost to adopt: $123.45</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/duffy-checkout.jpg">
+          <figcaption>
+            <h5>Duffy</h5>
+            <p>Cost to adopt: $123.45</p>
+          </figcaption>
+        </figure>
+        <h4>Total Adoption Cost</h4>
+        <p>$246.90</p>
+        <input type="submit" value="submit">
+      </form>
+    </main>
+    <footer>
+      <h1>ADOPTADOG</h1>
+      <p>Put a bird on it cliche meh, kale chips typewriter marfa pork belly
+        farm-to-table normcore hexagon irony.</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="dogs.html">Dogs</a>
+        <a href="#">Contact</a>
+      </nav>
+      <p>&copy 2018 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
+  </body>
+</html>
