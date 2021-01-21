@@ -25,7 +25,38 @@
     </header>
 
     <main>
+      <section>
+        <h2>Checkout</h2>
+        <form name="adoption-checkout-form" method="get">
+          <label>Name
+            <input type="text" name="name">
+          </label>
+          <label>Email Address
+            <input type="text" name="email-address">
+          </label>
+          <label>Street Address
+            <input type="text" name="street-address">
+          </label>
+          <label>City
+            <input type="text" name="city">
+          </label>
 
+          <label>Zip Code
+            <input type="text" name="zip-code">
+          </label>
+          <fieldset>
+            <legend>First Time Adopter</legend>
+            <label>Yes
+              <input type="radio" name="first-time-choice" value="yes">
+            </label>
+            <label>No
+              <input type="radio" name="first-time-choice" value="no">
+            </label>
+          </fieldset>
+
+          <input type="submit" name="submit" value="Submit">
+        </form>
+      </section>
     </main>
 
     <footer>
