@@ -349,3 +349,9 @@ footer a {
     padding: 1em;
     font-size: 1.5em;
 }
+
+@media screen and (max-width: 600px) {
+  .dog-card {
+    min-width: 53%;
+  }
+}
