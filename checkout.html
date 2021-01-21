@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--insert meta data here-->
+	<title>Adoptadog - Seattle's premiere dog adoption agency</title>
+	<link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f336ee7e9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<!--insert contents here.-->
+    
+    <header id="top" class="pageheader">
+        <div class="headertext">
+        <h1><img src="images/adoptadog-logo.svg" width="400px" alt="adoptadog-logo"></h1>
+        <h2><i>Seattle's premiere dog adoption agency</i></h2>
+        </div>
+    </header>
+    <ul class="ulnav">
+        <li class="linav">
+            <a class="active" href="./index.html">Home</a>
+        </li>
+        <li class="linav">
+            <a href="./dogs.html">Dogs</a>
+        </li>
+        <li class="linav">
+            <a href="./blog.html">Blog</a>
+        </li>
+    </ul>
+
+	<main>
+        <h1>Checkout</h1>
+        <div>
+            <form action="/action_page.php">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+          
+              <label for="email">Email Address</label>
+              <input type="text" id="email" name="email" placeholder="Your email address..">
+              
+              <label for="address">Street Address</label>
+              <input type="text" id="address" name="address" placeholder="Your street address..">
+              
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="Your city..">
+          
+              <label for="state">State</label>
+              <select id="state" name="state">
+                <option value="washington">Washington</option>
+                <option value="oregon">Oregon</option>
+                <option value="california">California</option>
+              </select>
+            
+              <label for="zip">Zip Code</label>
+              <input type="text" id="zip" name="zip" placeholder="Your zip code..">
+            
+            <fieldset>
+            <legend>First Time Adopter?</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            </fieldset>
+            
+            <label for="pickuplocation">Pickup Location</label>
+              <select id="pickuplocation" name="pickuplocation">
+                <option value="store">store</option>
+                <option value="home">home</option>
+                <option value="public">public setting</option>
+              </select>
+            
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+	</main>
+	<footer class="pagefooter">
+
+        <img src="images/adoptadog-logo.svg" alt="adoptadog-logo" width="400px">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
+            esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <ul class="ulnavfooter">
+			<li class="linavfooter">
+                <a class="active" href="./index.html">Home</a>
+			</li>
+			<li class="linavfooter">
+				<a href="./dogs.html">Dogs</a>
+			</li>
+			<li class="linavfooter">
+				<a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+		<small>&#169;2021 Adoptadog, LLC | Seattle, WA</small>
+	</footer>
+</body>
+</html>
