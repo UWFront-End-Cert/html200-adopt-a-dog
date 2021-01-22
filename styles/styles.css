@@ -48,34 +48,6 @@
     position: relative;
   }
 
-  /* {
-      background-image: url(../images/header-image.jpg);
-      height: 70%;
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-size: 100% 35%;
-      position: relative;
-  } */
-
-  /* header h1 {
-      color: yellowgreen;
-      position: relative;
-      left: 10rem;
-      bottom: 7rem;
-      font-size: 20px;
-  } */
-
-  /* .logo {
-    position: relative; 
-    height: 0; 
-    width: 10%; 
-    padding: 0;
-    padding-bottom: 100%;
-    top: 50%;
-    left: 10%;
-  } */
-
 .logo img {
       position: relative;
       width: 30%;
@@ -150,6 +122,11 @@ nav ul li:hover {
 
 .main-section img {
     margin: 0 3rem 0 0;
+    max-width: 40em;
+}
+
+article p {
+  font-size: large;
 }
 
 /* Flexbox styling for containers: */
@@ -194,8 +171,10 @@ div h1 {
 p:nth-of-type(2) {
   color: rgb(79, 70, 70);
   color: orange;
+  color: black;
   max-width: 18em;
   padding: .5rem;
+  font-size:1em;
 }
 
 div p a {
@@ -210,42 +189,6 @@ div p a {
 
 }
 
-/* was using to style adopt btn but not needed, Keep for now */
-/* p:nth-of-type(3) a { */
-  /* color: red; */
-  /* padding: .5rem 1rem; */
-  /* background-color: green; */
-  /* display: flex;
-      justify-content: center; */
-/* } */
-
-/* skeleton from https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card */
-/* .cards { */
-/* .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-gap: 20px;
-} */
-
-/* .card { */
-/* .item {  
-  display: grid;
-  grid-template-rows: max-content 200px 1fr;
-} */
-
-/* .card img { */
-/* .item img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-} */
-
-/* try for grid */
-  /* div p {
-    justify-content: center;
-  } */
-
-
   #more-dogs {
     display: flex;
     color: black;
@@ -258,14 +201,14 @@ div p a {
     display: flex;
     flex-direction: column;
     padding: 0 15% 8%;
-    /* border: 3px solid black; */
+    border: 3px solid black;
   }
   
   .dog-blog {
     display: flex;
     flex-direction: row;
     margin: 0 1rem 2rem;
-    /* border: 3px solid black; */
+    border: 3px solid black;
     
   }
 
@@ -276,6 +219,7 @@ div p a {
 
   .dog-blog h2 {
   color: mediumseagreen;
+  font-size: large;
 }
 
 .dog-blogh2P p {
@@ -285,6 +229,7 @@ div p a {
   margin: 0 .5rem;
   padding: .5rem;
   max-width: 50em;
+  font-size: 1.5rem;
 }
 
 form h2, h3, h4, label, select {

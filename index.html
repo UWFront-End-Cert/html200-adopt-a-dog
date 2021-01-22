@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,9 +15,11 @@
             <div class="logo" ><img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
                 <h1><i>Seattle's premiere dog adoption agency</i></h1>
             </div>    
+            <!-- tried href on tags div, img, input and none work. If I have content then can clk and jump -->
             <div class="chk-cart" style="padding-bottom: 25%"> 
-                        <img src="images/cart-icon.svg" alt="Checkout-cart icon">
-                        <input type="submit" value="Checkout" class="btn">
+                <img src="images/cart-icon.svg" alt="Checkout-cart icon">
+                <a href="adopt-checkout.html">.</a>
+                <input type="submit" value="Checkout" class="btn">
             </div>
         </section>
 
@@ -33,80 +34,86 @@
         </div>
     
                 <!-- Note to me re:outline HTML5 https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era-webdesign-16824 -->
-<div class="blog-container">
-        <section class="main-section">
+        <div class="blog-container">
+            <section class="main-section">
+                <div>
+                    <img src="images/home-intro.jpg" alt="Floppy ear dog facing us, human embracing dog facing away.">
+                </div>    
+                <article>
+                    <h1>Adopt A Dog</h1>
+                    <p>Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
+                </article>
+            </section>
+
+            <div class="container">
+                <div class="item">
+                    <img src="images/murphy-card.jpg" onclick="dogInfo('Murphy ','Dog ',123.45)" alt="Descripion of featured dog.">
+                    <h2>Murphy</h2>
+                    <p><strong>Cost to Adopt: </strong>$123.45</p>
+                    <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
+                    <p><a onclick="feeTotal(123.45)">Adopt</a></p>
+                </div>
+                <div class="item">
+                    <img src="images/poppy-card.jpg" onclick="dogInfo('Poppy ','Dog ',123.45)" alt="Descripion of featured dog.">
+                    <h2>Poppy</h2>
+                    <p><strong>Cost to Adopt: </strong>$123.45</p>
+                    <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
+                    <p><a onclick="feeTotal(123.45)">Adopt</a></p>
+                </div>
+                <div class="item">
+                    <img src="images/jack-card.jpg" onclick="dogInfo('Jack ','Dog ',123.45)" alt="Descripion of featured dog.">
+                    <h2>Jack</h2>
+                    <p><strong>Cost to Adopt: </strong>$123.45</p>
+                    <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
+                    <p><a onclick="feeTotal(123.45)">Adopt</a></p>
+                </div>
+                <div class="item">
+                    <img src="images/duffy-card.jpg" onclick="dogInfo('Duffy ','Dog ',123.45)" alt="Descripion of featured dog.">
+                    <h2>Duffy</h2>
+                    <p><strong>Cost to Adopt: </strong>$123.45</p>
+                    <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
+                    <p><a onclick="feeTotal(123.45)">Adopt</a></p>
+                </div>
+                <div class="item">
+                    <img src="images/lucas-card.jpg" onclick="dogInfo('Lucas ','Dog ',123.45)" alt="Descripion of featured dog.">
+                    <h2>Lucas</h2>
+                    <p><strong>Cost to Adopt: </strong>$123.45</p>
+                    <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
+                    <p><a onclick="feeTotal(123.45)">Adopt</a></p>
+                </div>
+                <div class="item">
+                    <img src="images/jake-card.jpg" onclick="dogInfo('Jake ','Dog ',123.45)" alt="Descripion of featured dog.">
+                    <h2>Jake</h2>
+                    <p><strong>Cost to Adopt: </strong>$123.45</p>
+                    <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
+                    <p><a onclick="feeTotal(123.45)">Adopt</a></p>
+                </div>
+                <div class="item">
+                    <img src="images/angus-card.jpg" onclick="dogInfo('Angus ','Dog ',123.45)" alt="Descripion of featured dog.">
+                    <h2>Angus</h2>
+                    <p><strong>Cost to Adopt: </strong>$123.45</p>
+                    <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
+                    <p><a onclick="feeTotal(123.45)">Adopt</a></p>
+                </div>
+                <div class="item">
+                    <img src="images/violet-card.jpg" onclick="dogInfo('Violet ','Dog ',123.45)" alt="Descripion of featured dog.">
+                    <h2>Violet</h2>
+                    <p><strong>Cost to Adopt: </strong>$123.45</p>
+                    <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
+                    <!-- <p><a onclick="feeTotal(123.45)" href="adopt-checkout.html">Adopt</a></p> -->
+                    <p><a onclick="feeTotal(123.45)">Adopt</a></p>
+
+                </div>
+            </div>
+
             <div>
-                <img src="images/home-intro.jpg" alt="Floppy ear dog facing us, human embracing dog facing away.">
-            </div>    
-            <article>
-                <h1>Adopt A Dog</h1>
-                <p>Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-            </article>
-        </section>
-
-        <div class="container">
-            <div class="item">
-                <img src="images/murphy-card.jpg" alt="Descripion of featured dog.">
-                <h2>Murphy</h2>
-                <p><strong>Cost to Adopt: </strong>$123.45</p>
-                <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-                <p><a href="adopt-checkout.html">Adopt</a></p>
-            </div>
-            <div class="item">
-                <img src="images/poppy-card.jpg" alt="Descripion of featured dog.">
-                <h2>Poppy</h2>
-                <p><strong>Cost to Adopt: </strong>$123.45</p>
-                <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-                <p><a href="adopt-checkout.html">Adopt</a></p>
-            </div>
-            <div class="item">
-                <img src="images/jack-card.jpg" alt="Descripion of featured dog.">
-                <h2>Jack</h2>
-                <p><strong>Cost to Adopt: </strong>$123.45</p>
-                <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-                <p><a href="adopt-checkout.html">Adopt</a></p>
-            </div>
-            <div class="item">
-                <img src="images/duffy-card.jpg" alt="Descripion of featured dog.">
-                <h2>Duffy</h2>
-                <p><strong>Cost to Adopt: </strong>$123.45</p>
-                <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-                <p><a href="adopt-checkout.html">Adopt</a></p>
-            </div>
-            <div class="item">
-                <img src="images/lucas-card.jpg" alt="Descripion of featured dog.">
-                <h2>Lucas</h2>
-                <p><strong>Cost to Adopt: </strong>$123.45</p>
-                <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-                <p><a href="adopt-checkout.html">Adopt</a></p>
-            </div>
-            <div class="item">
-                <img src="images/jake-card.jpg" alt="Descripion of featured dog.">
-                <h2>Jake</h2>
-                <p><strong>Cost to Adopt: </strong>$123.45</p>
-                <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-                <p><a href="adopt-checkout.html">Adopt</a></p>
-            </div>
-            <div class="item">
-                <img src="images/angus-card.jpg" alt="Descripion of featured dog.">
-                <h2>Angus</h2>
-                <p><strong>Cost to Adopt: </strong>$123.45</p>
-                <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-                <p><a href="adopt-checkout.html">Adopt</a></p>
-            </div>
-            <div class="item">
-                <img src="images/violet-card.jpg" alt="Descripion of featured dog.">
-                <h2>Violet</h2>
-                <p><strong>Cost to Adopt: </strong>$123.45</p>
-                <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-                <p><a href="adopt-checkout.html">Adopt</a></p>
-            </div>
+                <p><a id="more-dogs" href="adopt-dogs.html">See More Dogs</a></p>
+            </div>            
         </div>
-
-        <div>
-            <p><a id="more-dogs" href="adopt-dogs.html">See More Dogs</a></p>
-        </div>
-</div>                
+        <!-- used buttons to test onclick, worked, can remove -->
+        <!-- <button onclick="numberToSquare()">Click Here To Square!</button>
+        <button onclick="numbersToMultiply()">Click Here To Multiply!</button> -->
+    
         <div>
             <footer><img class="ftr-img" src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
                 <p>Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj  <br>eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
@@ -122,6 +129,7 @@
         </div>
 
     </div>
-    
+
+    <script src="js-adoptadog/img-info.js" charset="utf-8"></script>
 </body>
 </html>
