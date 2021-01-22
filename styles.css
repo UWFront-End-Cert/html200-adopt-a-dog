@@ -51,6 +51,7 @@ h1 {
     font-size: 1em;
     font-weight: bold;
     border-radius: 2px;
+    margin-right: 4em;
 }
 
 
@@ -129,7 +130,7 @@ h2 {
 }
 
 .dog-card {
-    width: 20.1%;
+    width: 20%;
     box-shadow: 0 0 20px -10px;
     margin: 1.5em;
     padding-bottom: 1.5em;
@@ -352,6 +353,25 @@ footer a {
 
 @media screen and (max-width: 600px) {
   .dog-card {
-    min-width: 53%;
-  }
+    min-width: 53.2%;
+    }
+    
+    form {
+        font-size: .8em;
+    }
+    
+    #city-zip {
+        display: flex;
+        flex-flow: column nowrap;
+        
+    }
+    
+    select {
+        margin-bottom: 1.2em;
+    }
+    
+    #dog-cart {
+        display: flex;
+        flex-direction: column;
+    }
 }
