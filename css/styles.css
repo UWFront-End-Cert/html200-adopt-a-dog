@@ -60,7 +60,7 @@ h5{
 h6{
   font-size:1rem;
   font-family: var(--title-font);
-  
+  }
 nav a, header nav a{
   color: var(--color-navy);
   font-weight: bold;
