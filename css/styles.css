@@ -1,3 +1,17 @@
+/**Global Colors & Fonts**/
+:root{
+ --color-white: #ffffff;
+ --color-navy: #093c60;
+ --color-grey: #ececec;
+ --color-green: #81b741;
+ --color-black: #000000;
+ 
+ --title-font:'Vollkorn', serif;
+ --body-font:'Montserrat', sans-serif;
+}
+
+
+
 /**layout**/
 .row{
   margin-bottom: 2rem;
@@ -12,68 +26,70 @@ main{
 
 /**fonts**/
 body, p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--body-font);
   line-height: 1.75rem;
 }
 h1{
   font-size:2.25rem;
-  font-family: 'Vollkorn', serif;
-  color: #093c60;
+  font-family: var(--title-font);
+  color: var(--color-navy);
   font-weight: bold;
   margin-bottom:2rem;
 }
 h2{
   font-size:2rem;
-  font-family: 'Vollkorn', serif;
-  color: #093c60;
+  font-family: var(--title-font);
+  color: var(--color-navy);
   font-weight: bold;
 }
 h3{
   font-size:1.75rem;
-  font-family: 'Vollkorn', serif;
-  color: #093c60;
+  font-family: var(--title-font);
+  color: var(--color-navy);
   font-weight: bold;
 }
 h4{
   font-size:1.5rem;
-  font-family: 'Vollkorn', serif;;
-  color: #093c60;
+  font-family: var(--title-font);
+  color: var(--color-navy);
 }
 h5{
   font-size:1rem;
-  font-family: 'Vollkorn', serif;;
+  font-family: var(--title-font);
 }
 h6{
   font-size:1rem;
-  font-family: 'Vollkorn', serif;;
-}
+  font-family: var(--title-font);
+  
 nav a, header nav a{
-  color: #093c60;
+  color: var(--color-navy);
   font-weight: bold;
 }
+
+
 /**Header Section**/
 header{
-  color: white;
+  color: var(--color-white);
 }
 header{
 background-image: url(../images/header-image.jpg);
 background-size: cover;
 }
 .header-top{
-  padding-top:64px;
-  padding-bottom:210px;
+  padding-top:4rem;
+  padding-bottom:13.125rem;
   margin-bottom: 0 !important;
 }
 .header-top, header nav {
   margin:auto;
-  max-width: 1300px;
+  max-width: 9.55rem;
 }
 header nav ul, footer nav ul{
   text-align: left;
-  padding-top: 16px;
+  padding-top: 1rem;
   list-style-type: none;
   overflow: hidden;
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 
 nav ul li{
@@ -82,26 +98,26 @@ nav ul li{
 }
 nav ul li::after{
     content: "/";
-    color: #093c60;
+    color: var(--color-navy);
 }
 nav li:last-child:after {
   content: "";
 }
 nav ul li a{
-  padding: 14px 16px;
+  padding: 0.875rem 1rem;
 }
 nav ul li a:hover{
   text-decoration: none;
-  color: #81b741;
+  color: var(--color-green);
 }
 
 nav ul li a.active:hover{
-  color: #093c60;
+  color: var(--color-navy);
 }
 
 .top-nav{
-  background-color: #ececec;
-  padding-bottom: 16px;
+  background-color: var(--color-grey);
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -111,7 +127,7 @@ header .cart{
 
 .logo-text{
   font-size: 1.5rem;
-  color: #81b741;
+  color: var(--color-green);
   font-style: italic;
   font-weight: 400;
   font-family: 'Vollkorn', serif;
@@ -120,23 +136,23 @@ header .cart{
 
 /**footer**/
 footer{
-  background-color: #093c60;
+  background-color: var(--color-navy);
   text-align: center;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .footer-container{
   max-width: 30%;
   margin:auto;
 }
 footer img{
-  padding-bottom: 32px;
+  padding-bottom: 2rem;
 }
 footer a, footer p {
   color: white;
 }
 footer p{
-  padding-bottom:16px;
+  padding-bottom: 1rem;
   justify-content: center;
 }
 .footer-nav{
@@ -144,13 +160,13 @@ footer p{
 }
 footer nav{
   justify-self:center;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 
 }
 footer nav ul{
   justify-content: center;
-  padding-left: 0px;
-  padding-bottom:16px;
+  padding-left: 0rem;
+  padding-bottom: 1rem;
 }
 footer nav ul li:after{
   color:white;
@@ -166,11 +182,11 @@ main img{
 .button{
   font-weight: bolder;
   border-radius: 2px;
-  font-size:1rem;
+  font-size: 1rem;
 }
 form button, .button {
   border: 1px solid transparent;
-  padding: 4px 64px;
+  padding: .25rem 4rem;
 }
 .button:hover{
   text-decoration: none;
@@ -180,26 +196,26 @@ form button, .button {
   font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: 1.05px;
-  color: #093c60;
-  padding: 12px 64px;
+  color: var(--color-navy);
+  padding: .75rem 4rem;
   text-align: center;
-  background-color: #ececec;
+  background-color: var(--color-grey);
 }
 
 .green-button{
   color:white;
-  background-color: #81b741;
+  background-color: var(--color-green);
 }
 
 .checkout-btn{
-  padding:8px 42px;
+  padding: 0.5rem 2.625rem;
   font-size: .75rem;
 }
 
  .full-width{
   text-align: center;
   width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 .grid{
   display: grid
@@ -215,10 +231,10 @@ form button, .button {
   width: 100%;
 }
 .info-section{
-  border:solid #ececec 1px;
+  border:solid var(--color-grey) 1px;
   border-top: none;
-  padding:8px 12px 16px 12px;
-  margin-bottom: 32px;
+  padding: 0.5rem 0.75rem 1rem;
+  margin-bottom: 2rem;
 }
 .info-section p{
   font-size:.75rem;
@@ -239,25 +255,25 @@ form{
   margin-bottom: 6rem;
 }
 label, legend, h2.dogs{
-  color:#093c60;
+  color:var(--color-navy);
   font-family: 'Vollkorn', serif;
   font-weight: bold;
   font-size:1.25rem;
 }
 label, fieldset{
-  margin-top:32px;
+  margin-top: 2rem;
 }
 .first label{
-  margin-top:0px;
+  margin-top: 0rem;
 }
 .radio-item{
-padding-right:16px;
+padding-right: 1rem;
 }
 
 label.radio-opt {
-  margin-top:0px;
+  margin-top: 0rem;
   font-family: 'Montserrat', sans-serif;
-  color:black;
+  color: var(--color-black);
   font-weight: 400;
   align-items: flex-start;
   font-size: 1rem;
@@ -265,7 +281,7 @@ label.radio-opt {
 
 input[type="text"], select{
   width:100%;
-  border:solid #ececec 2px;
+  border:solid var(--color-grey) 2px;
 }
 
 .select{
@@ -273,12 +289,12 @@ input[type="text"], select{
 }
 
 .checkout-img{
-  width:75px;
-  height: 75px;
+  width: 4.68rem;
+  height: 4.68rem;
   object-fit: cover;
 }
 div.checkout-name {
-    padding-left: 8px;
+    padding-left: 0.5rem;
 }
 .checkout-name p{
   font-size: .75rem;
