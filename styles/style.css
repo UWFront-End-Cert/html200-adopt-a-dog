@@ -1,6 +1,18 @@
+* {
+    font-size: 1.15rem;
+    margin: 0;
+}
+
 header {
     background-image: url("../images/header-image.jpg");
-    height: 400px;
+    background-position: right;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -13,32 +25,320 @@ header p {
     color: white;
 }
 
-.logo {
-    width: 20%;
+.header-left {
+    padding-left: 6%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+
+}
+
+.header-right {
+    padding-right: 6%;
+    padding-top: 2%;
+    padding-bottom: 10%;
 }
 
 .cart {
-    width: 2.5%
+    width: 25%;
 }
 
 nav {
-    
+    background-color: lightgray;
+}
+
+nav a,
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li,
+footer li {
+    list-style-type: none;
+    padding: 1%;
+
+}
+
+nav ul {
+    margin-left: 12%;
+
+}
+
+nav ul,
+footer ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 15%;
+}
+
+button {
+    text-align: center;
+    color: white;
+    background-color: rgb(18, 146, 18);
+}
+
+header button {
+    width: 100%
+}
+
+.dogs button {
+    width: 80%;
+
+}
+
+.center button  {
+    width: 10%;
+    margin-left: 45%;
+
+}
+
+.more-dogs {
+    width: 20%;
+    margin-top: 6%;
+
+}
+
+.submit button {
+    width: 10%;
+    margin-left: 15%;
+}
+
+.dogs img {
+    width: 100%;
+}
+
+.dogs article {
+    border: solid lightgrey;
+}
+
+.dogs h3,
+.dogs h4,
+.dogs p,
+.dogs button {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+
+.pay {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    margin-bottom: 5%;
+    text-align: right;
+}
+
+.pay img {
+    margin-left: 85%;
+}
+
+.adopt {
+    display: grid;
+    grid-template-columns: 30% 40%;
+    grid-template-rows: 25% 75%;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    padding-top: 3%;
+}
+
+.adopt img {
+    width: 100%;
+}
+
+.dogs {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto auto;
+    grid-column-gap: 3%;
+    grid-row-gap: 5%;
+    margin-left: 15%;
+    margin-right: 5%;
+    padding-bottom: 2%
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: 30% 40%;
+    grid-template-rows: auto auto;
+    grid-column-gap: 3%;
+    grid-row-gap: 5%;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    /* padding-top: 3%; */
+
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog p {
+    padding-bottom: 5%;
+}
+
+.blog h3 {
+    padding-bottom: 3%;
+}
+
+.col-1 {
+    grid-column-start: 1;
+}
+
+.col-2 {
+    grid-column-start: 2;
+}
+
+.col-3 {
+    grid-column-start: 3;
+}
+
+.col-4 {
+    grid-column-start: 4;
+}
+
+.col1-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.row-1 {
+    grid-row-start: 1;
+}
+
+.row-2 {
+    grid-row-start: 2;
+}
+
+.row-3 {
+    grid-row-start: 3;
 }
 
 fieldset {
-    border:white;
+    border: white;
 }
 
 .amount {
     font-size: .75rem;
 }
 
+form {
+
+}
+
+.name {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10%;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+
+}
+
+.city-state {
+    display: grid;
+    grid-template-columns: 20% 15% 10%;
+    grid-template-rows: auto;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+.first-time {
+    width: 15%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+.location {
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+.adopting {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+
+}
+
+.total {
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+.total p {
+    margin-top: 1.5%;
+    font-size: 1rem;
+}
+
+label, fieldset{
+    font-weight: bold;
+}
+
+input, fieldset {
+    margin-top: 1.5%;
+}
+
+select {
+    margin-left: 1.5%;
+}
+
+label, input, select {
+    display: block; 
+}
+
 footer {
-    height: 350px;
     background-color: Navy;
     color: white;
+    text-align: center;
+    padding-bottom: 2.5%;
+    margin-top: 6%;
+}
+
+footer img {
+    width: 25%;
+    padding-top: 2.5%;
+
 }
 
 footer a {
     color: white;
+}
+
+footer div {
+    text-align: center;
+
+}
+
+footer ul {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+footer li {
+    display: inline-block;
 }

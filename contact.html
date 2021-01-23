@@ -10,18 +10,25 @@
 
 <body>
     <header>
-        <img class="logo" src="images/adoptadog-logo.svg" alt="adoptadog logo">
-        <h1>Seattle’s premiere dog adoption agency</h1>
-        <img class="cart" src="images/cart-icon.svg" alt="shopping cart">
-        <p>$1234.56</p>
-        <button>Checkout</button>
-
+        <div class="header-left">
+            <img class="logo" src="images/adoptadog-logo.svg" alt="adoptadog logo">
+            <h1>Seattle’s premiere dog adoption agency</h1>
+        </div>
+        <div class="header-right">
+            <div class="pay">
+            <img class="cart col-1 row-1" src="images/cart-icon.svg" alt="shopping cart">
+            <p class="col-2 row-1">$1234.56</p>
+        </div>
+            <button>Checkout</button>
+        </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">home</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li>/</li>
             <li><a href="dogs.html">Dogs</a></li>
+            <li>/</li>
             <li><a href="blog.html">Blog</a></li>
 
         </ul>
@@ -30,201 +37,117 @@
     <h2>Checkout</h2>
 
     <form method="get" name="contact-form">
+        <div class="name">
+            <label class="col-1 row-1"> Name
+                <input class="label-text" type="text" name="name" autofocus>
+            </label>
 
-        <label> Name
-            <input class="label-text" type="text" name="name" autofocus>
-        </label>
+            <label class="col-1 row-2"> email
+                <input class="label-text" type="email" name="email" placeholder="example@example.com">
+            </label>
 
-        <label> email
-            <input class="label-text" type="email" name="email" placeholder="example@example.com">
-        </label>
+            <label class="col-1 row-3"> Street Address
+                <input class="label-text" type="text" id="address">
+            </label>
+        </div>
 
-        <label> Street Address
-            <input class="label-text" type="text" id="address">
-        </label>
+        <div class="city-state">
+            <label> City
+                <input class="label-text" type="text" id="city">
+            </label>
 
-        <label> City
-            <input class="label-text" type="text" id="city">
-        </label>
+            <label>State
+                <select name="menu-items">
 
-        <label>State
-            <select name="menu-items">
+                    <option value="oregon">Oregon</option>
 
-                <option value="Alabama">Alabama </option>
+                    <option value="washington" selected>Washington</option>
 
-                <option value="alaska">Alaska</option>
+                </select>
 
-                <option value="arizona">Arizona</option>
+            </label>
 
-                <option value="arkansas">Arkansas</option>
+            <label> Zipcode
+                <input class="label-text" type="text" id="zipcode">
+            </label>
+        </div>
 
-                <option value="california">California</option>
-
-                <option value="colorado">Colorado</option>
-
-                <option value="connecticut">Connecticut</option>
-
-                <option value="delaware">Delaware</option>
-
-                <option value="florida">Florida</option>
-
-                <option value="georgia">Georgia</option>
-
-                <option value="hawaii">Hawaii</option>
-
-                <option value="idaho">Idaho</option>
-
-                <option value="illinois">Illinois</option>
-
-                <option value="indiana">Indiana</option>
-
-                <option value="iowa">Iowa</option>
-
-                <option value="kansas">Kansas</option>
-
-                <option value="kentucky">Kentucky</option>
-
-                <option value="louisiana">Louisiana</option>
-
-                <option value="maine">Maine</option>
-
-                <option value="maryland">Maryland</option>
-
-                <option value="massachusetts">Massachusetts</option>
-
-                <option value="michigan">Michigan</option>
-
-                <option value="minnesota">Minnesota</option>
-
-                <option value="mississippi">Mississippi</option>
-
-                <option value="missouri">Missouri</option>
-
-                <option value="montana">Montana</option>
-
-                <option value="nebraska">Nebraska</option>
-
-                <option value="nevada">Nevada</option>
-
-                <option value="new hampshire">New Hampshire</option>
-
-                <option value="new jersey">New Jersey</option>
-
-                <option value="new mexico">New Mexico</option>
-
-                <option value="new york">New York</option>
-
-                <option value="north carolina">North Carolina</option>
-
-                <option value="north dakota">North Dakota</option>
-
-                <option value="ohio">Ohio</option>
-
-                <option value="oklahoma">Oklahoma</option>
-
-                <option value="oregon">Oregon</option>
-
-                <option value="pennsylvania">Pennsylvania</option>
-
-                <option value="rhode island">Rhode Island</option>
-
-                <option value="south carolina">South Carolina</option>
-
-                <option value="south dakota">South Dakota</option>
-
-                <option value="tennessee">Tennessee</option>
-
-                <option value="texas">Texas</option>
-
-                <option value="utah">Utah</option>
-
-                <option value="vermont">Vermont</option>
-
-                <option value="virginia">Virginia</option>
-
-                <option value="washington" selected>Washington</option>
-
-                <option value="west virginia">West Virginia</option>
-
-                <option value="wisconsin">Wisconsin</option>
-
-                <option value="wyoming">Wyoming</option>
-
-            </select>
-
-        </label>
-
-        <label> Zipcode
-            <input class="label-text" type="text" id="zipcode">
-        </label>
-
-        <fieldset>First Time Adopter?
-            <label for="yes">Yes
+        <fieldset class="first-time col1-2 row-1">First Time Adopter?
+            <label class="col-1 row-2" for="yes">Yes
                 <input id="yes" type="radio" name="first-time-adopter" value="Yes">
             </label>
 
-            <label for="no">No
+            <label class="col-2 row-2" for="no">No
                 <input id="no" type="radio" name="first-time-adopter" value="No">
             </label>
-
         </fieldset>
 
-        <label>Pickup Location
-            <select name="menu-items">
-                <option value="location-1">Location 1</option>
-                <option value="location-2">Location 2</option>
-                <option value="location-3">Location 3</option>
-                <option value="location-4">Location 4</option>
-                <option value="location-5">Location 5</option>
-            </select>
-        </label>
+        <div class="location">
+            <label>Pickup Location
+                <select name="menu-items">
+                    <option value="location-1">Location 1</option>
+                    <option value="location-2">Location 2</option>
+                    <option value="location-3">Location 3</option>
+                    <option value="location-4">Location 4</option>
+                    <option value="location-5">Location 5</option>
+                </select>
+            </label>
+        </div>
 
         <section>
 
-            <label>Dogs Adopted</label>
+            <div class="adopting">
 
-            <div>
-                <div>
-                    <img src="images/lucas-checkout.jpg" alt="Picture of Lucas the dog">
-                    <h5>Lucas</h5>
-                    <h6>Cost to Adopt: $123.45</h6>
-                </div>
-
-                <div>
-                    <img src="images/duffy-checkout.jpg" alt="Picture of Duffy the dog">
-                    <h5>Duffy</h5>
-                    <h6>Cost to Adopt: $123.45</h6>
-                </div>
+                <label class="col-1 row-1">Dogs Adopted</label>
+                
+                    <img class="col-1 row-2" src="images/lucas-checkout.jpg" alt="Picture of Lucas the dog">
+                    <div class="col-2 row-2">
+                        <h5>Lucas</h5>
+                        <h6>Cost to Adopt: $123.45</h6>
+                    </div>
+            
+                    <img class="col-3 row-2" src="images/duffy-checkout.jpg" alt="Picture of Duffy the dog">
+                    <div class="col-4 row-2">
+                        <h5>Duffy</h5>
+                        <h6>Cost to Adopt: $123.45</h6>
+                    </div>
             </div>
 
         </section>
 
-        <section>
+        <section class="total">
 
             <label>Total Adoption Cost</label>
             <p class="amount">$1234.56</p>
 
         </section>
 
+        <div class="submit">
         <button>Submit</button>
+    </div>
 
     </form>
 
     <footer>
 
+
         <img class="logo" src="images/adoptadog-logo.svg" alt="adoptadog logo">
+
         <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam
             consequunt</p>
-        <nav>
+        <div>
             <ul>
-                <li><a href="index.html">home</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li>/</li>
                 <li><a href="dogs.html">Dogs</a></li>
+                <li>/</li>
                 <li><a href="contact.html">Contact</a></li>
 
             </ul>
+        </div>
 
-            <p>&copy; 2021 Adoptadog. LLC | Seattle, WA</p>
-        </nav>
+        <p>&copy; 2021 Adoptadog. LLC | Seattle, WA</p>
+
 
     </footer>
 </body>
