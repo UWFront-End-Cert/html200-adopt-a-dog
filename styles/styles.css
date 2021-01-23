@@ -1,0 +1,127 @@
+* { border: 1px solid black; }
+
+
+/* HEADER STYLING */
+
+header {
+  background-image: url("../images/header-image.jpg");
+  background-color: black;
+  background-size: cover;
+
+  /* BRing this back after building the nav bar */
+  /* height: 18.5rem; */
+}
+
+.header-top {
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;;
+}
+
+.logo-bundle{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo-bundle p {
+  color: #2cc749;
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+img[src="images/adoptadog-logo.svg"] {
+  width: 80%;
+}
+
+.shopping-cart p {
+  display: inline-block;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.cart-button {
+  background-color: #2cc749;
+  border: none;
+  color: white;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  display: block;
+}
+
+/* HEADER STYLING: NAVIGATION */
+
+.header-nav {
+  display: flex;
+  background: gray;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.header-nav li {
+  color: white;
+  flex: 1 0 0;
+  height: 2.5rem;
+  /* text-align: center; */
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+/* HEADER STYLING: MEDIA QUERIES */
+
+@media only screen and (max-width: 450px) {
+
+  /* Full Span Button on Mobile */
+  .shopping-cart {
+    flex: 100%;
+  }
+
+  .cart-button {
+    background-color: #2cc749;
+    border: none;
+    color: white;
+    padding: 1rem 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Remove this after styling body */
+section img{
+  width: 100%;
+}
