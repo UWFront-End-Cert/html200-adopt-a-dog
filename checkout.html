@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>>Adopt A Dog</title>
+
+  <link rel="stylesheet" type="text/css" href="./styles/checkout.css">
+
+</head>
+
+<body>
+  <header>
+    <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+    <h1>Seattle's Premiere dog adoption agency</h1>
+    <img src="./images/cart-icon.svg" alt="shopping cart icon">
+    <p>check out</p>
+  </header>
+
+  <main>
+    <nav class="col span_3_of_12">
+      <ul class="menunavigation">
+        <li class="menunavigationitem"><a href="./index.html">Home</a></li>
+        <li class="menunavigationitem"><a href="./doglist.html">Dogs</a></li>
+        <li class="menunavigationitem"><a href="./blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <h2>Checkout</h2>
+    <form class="" method="get" name="check-out-cart">
+      <div class="row">
+        <label for="name" Autofocus>Name
+          <input type="text" name="name" value="name" id="name" required>
+        </label>
+      </div>
+
+      <div class="row">
+        <label for="email">Email Address
+          <input type="email" name="email" value="email" id="email" required>
+        </label>
+      </div>
+
+      <div class="row">
+        <label for="address">Street Address
+          <input type="text" name="address" value="address" id="address" required>
+        </label>
+      </div>
+
+      <div class="row">
+        <label for="city">City
+          <input type="text" name="city" value="city" id="city" required>
+        </label>
+
+        <label for="state">State
+          <input type="text" name="state" value="state" id="state" required>
+        </label>
+
+        <label for="zipcode">Zip Code
+          <input type="number"
+          name="zipcode" id="zipcode" required>
+        </label>
+      </div>
+
+      <div class="row">
+        <fieldset>
+          <legend>First Time Adopter?</legend>
+
+          <input type="radio" name="firsttimeadoper" value="Yes" id="yes">
+          <label for="yes" id="Yes">Yes</label>
+
+          <input type="radio" name="firsttimeadoper" value="No" id="no">
+          <label for="no" id="No">No</label>
+
+        </fieldset>
+
+      </div>
+
+
+      <div class="row">
+        <label for="location">Pickup Location</label>
+        <select name="location" id="location">
+          <option value="Location1">Location1</option>
+          <option value="Location2">Location2</option>
+          <option value="Location3">Location3</option>
+        </select>
+
+      </div>
+      <h3>Dogs Adopted</h3>
+      <img src="./images/lucas-card.jpg" alt="picture of dog named lucas">
+
+      <h4>Lucas</h4>
+      <p>Cost to Adopt: $123.45</p>
+      <img src="./images/duffy-card.jpg" alt="picture of dog named duffy">
+      <h4>Duffy</h4>
+      <p>Cost to Adopt: $123.45</p>
+      <h3>Total Adoption Cost</h3>
+      <p>$1234.56</p>
+
+
+      <div class="row">
+        <input type="submit" name="submit" value="submit">
+
+      </div>
+    </form>
+
+
+
+
+  </main>
+  <footer>
+    <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+    <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+
+    <nav>
+      <a class="footernavigationitem" href="./index.html">Home</a>
+      <span> / </span>
+      <a class="footernavigationitem" href="./doglist.html">Dogs</a>
+      <span> / </span>
+      <a class="footernavigationitem">Contact</a>
+    </nav>
+      <p>2018 Adoptadog, LLC | Seattle, WA</p>
+
+  </footer>
