@@ -1,4 +1,4 @@
-* { border: 1px solid black; }
+/* * { border: 1px solid black; } */
 
 
 /* HEADER STYLING */
@@ -7,13 +7,10 @@ header {
   background-image: url("../images/header-image.jpg");
   background-color: black;
   background-size: cover;
-
-  /* BRing this back after building the nav bar */
-  /* height: 18.5rem; */
 }
 
 .header-top {
-  margin: 0 1.5rem 1.5rem 1.5rem;
+  margin: 0 1.5rem 4rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,31 +59,38 @@ img[src="images/adoptadog-logo.svg"] {
 /* HEADER STYLING: NAVIGATION */
 
 .header-nav {
-  display: flex;
-  background: gray;
-  margin: 0;
-  padding: 0;
+  /*
+  2. style the footer
+  3. Apply to the rest of the pages.  */
+
+  background: #E4E4E4;
   list-style: none;
-  justify-content: space-between;
+  padding-left: 0;
+
 }
 
 .header-nav li {
-  color: white;
-  flex: 1 0 0;
-  height: 2.5rem;
-  /* text-align: center; */
+  display: inline-block;
+  margin: 1rem 2rem;
+
 }
 
 .header-nav a {
   text-decoration: none;
-  color: white;
+  color: #253979;
   font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   font-size: 1rem;
 }
 
 /* HEADER STYLING: MEDIA QUERIES */
 
 @media only screen and (max-width: 450px) {
+
+  /* Background Image */
+  .header-top {
+    margin: 0 1.5rem 1.25rem 1.5rem;
+  }
 
   /* Full Span Button on Mobile */
   .shopping-cart {
@@ -98,6 +102,7 @@ img[src="images/adoptadog-logo.svg"] {
     border: none;
     color: white;
     padding: 1rem 2.5rem;
+    margin: 0;
     text-align: center;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
@@ -107,18 +112,30 @@ img[src="images/adoptadog-logo.svg"] {
     width: 100%;
   }
 
+  /* Mobile Nav Bar */
+
+  .header-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .header-nav li {
+    color: white;
+    flex: 1 0 0;
+    height: 2.5rem;
+    margin: 0;
+  }
+
+  .header-nav a {
+    font-size: 1rem;
+    display: block;
+    line-height: 2.5rem;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Remove this after styling body */
