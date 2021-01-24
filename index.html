@@ -14,7 +14,9 @@
   </figure>
   <p class="slogan">Seattle's premiere dog adoption agency</p>
   <img src="images/cart-icon.svg" alt="" width="30">
-  <button type="submit" name="checkout" formmethod=POST id="checkout-total">Checkout</button>
+  <form action="checkout.html">
+    <input class="checkout" type="submit" value="Checkout" onclick="checkout.html"/>
+  </form>
   <p class="checkout-total">$1234.56</p>
   <nav class="header-nav">
         <ul>
@@ -27,12 +29,13 @@
 <section id="main-content">
   <h2 class="skip-link">content</h2>
 </section>
-<section class="home-intro">  
+<section class="home-intro">
+  <h2 class="intro">Adopt A Dog</h2>
   <article>
+    <h3 class="heading-text-hidden"></h3>
     <figure>
       <img src="images/home-intro.jpg" alt="" width=375>
     </figure>
-    <h2>Adopt A Dog</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra lacus vel diam sodales congue. Ut ac tortor rhoncus, porta odio quis, pellentesque orci. Vestibulum efficitur lectus sed erat consectetur rhoncus. Donec efficitur pellentesque turpis non dapibus. Duis sit amet sem eleifend augue fermentum porttitor. Sed semper eros vitae euismod laoreet. In molestie vehicula metus, quis feugiat risus. In condimentum nisl sit amet diam efficitur, eget placerat tortor lacinia. </p>
   </article>
   <article class="pup-profile">

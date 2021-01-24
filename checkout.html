@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ADOPT-A-DOG HOME</title>
+</head>
+
+<body>
+<header>
+  <h1 class="title-text-hidden">Welcome to Adopt A Dog</h1>
+  <figure>
+    <img src="images/adoptadog-logo.svg" alt="" width="450">
+  </figure>
+  <p class="slogan">Seattle's premiere dog adoption agency</p>
+  <img src="images/cart-icon.svg" alt="" width="30">
+  <form action="checkout.html">
+    <input class="checkout" type="submit" value="Checkout" onclick="checkout.html"/>
+  </form>
+  <p class="checkout-total">$1234.56</p>
+  <nav class="header-nav">
+        <ul>
+          <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
+          <li><a href="adoption-list.html">Dogs&nbsp;&nbsp;&nbsp;/</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+</header>
+<section id="main-content">
+  <h2 class="skip-link">content</h2>
+</section>
+<section class="checkout">
+  <h2>Checkout</h2>
+  <div class="container">
+    <form action="/action.php" method="GET">
+      <label for="first-name">Name
+        <input type="text" name="firstName" value="">
+      </label>
+      <label for="email">Email Address
+        <input type="email" id="email" name="email">
+      </label>
+      <label>Street Address</label>
+        <textarea rows="10" cols="30" name="description"></textarea>
+      <label>Please enter a contact phone number
+        <input type="tel" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
+      </label>
+      <fieldset>
+        <legend>Would you like to be contacted by phone?</legend>
+        <label>
+          <input type="radio" name="contactPreference" value="yes">Yes
+        </label>
+      </fieldset>
+     <label>
+       <input type="radio" name="contactPreference" value="no">No
+     </label>
+      <label>What time would be best to contact you?
+        <select name = "dropdown">
+          <option value = "Mornning" selected>6am-10am</option>
+          <option value = "Mid-day">10am-2pm</option>
+          <option value = "Evening">2pm-6pm</option>
+        </select>
+      </label>
+     <input type="submit" name="submit" value="Submit">
+   </form>
+  </div>
+
+</section>
+<footer class="footer-small">
+  <figure class=footer-fig>
+    <img src="images/adoptadog-logo.svg" alt="" width="350">
+  </figure>
+  <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+  <nav class="footer-nav">
+    <ul>
+      <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
+      <li><a href="">Dogs&nbsp;&nbsp;&nbsp;/</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  <p>&copy; 2018 Adoptadog, &#x2758; LLC Seattle, WA</p>
+</footer>
+</body>
+</html>
