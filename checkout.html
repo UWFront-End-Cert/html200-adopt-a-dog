@@ -3,24 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name= "viewport" content="width=device-width, initial-scale=1">
-    <title>Adopt a Dog - Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Adopt a Dog - Checkout</title>
   </head>
   <body>
     <header>
-      <div>
-        <img src="images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
-        <p>Seattle's premiere dog adoption agency</p>
+      <div class="header-top">
+        <div class="logo-bundle">
+          <img src="images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
+          <p>Seattle's premiere dog adoption agency</p>
+        </div>
+        <div class="shopping-cart">
+          <img width="30" src="images/cart-icon.svg" alt="Shopping cart icon">
+          <p>$1234.56</p>
+          <button class="cart-button" type="button">Checkout</button>
+        </div>
       </div>
       <div>
-        <img width="30" src="images/cart-icon.svg" alt="Shopping cart icon">
-        <p>$1234.56</p>
-        <button type="button">Checkout</button>
-      </div>
-      <div>
-        <ul>
-          <li>Home / </li>
-          <li>Dogs / </li>
-          <li>Blog</li>
+        <ul class="header-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="our-dogs.html">Dogs</a></li>
+          <li><a href="blog.html">Blog</a></li>
         </ul>
       </div>
     </header>
@@ -84,14 +90,16 @@
     </form>
 
     <footer>
-      <img src="images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
-      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-      <ul>
-        <li>Home</li>
-        <li>Dogs</li>
-        <li>Contact</li>
-      </ul>
-      <small>&copy;	 2018 Adoptadog, LLC | Seattle, WA</small>
+      <div class="footer-elements">
+        <img class="footer-logo" src="images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="our-dogs.html">Dogs</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <small>&copy;	 2018 Adoptadog, LLC | Seattle, WA</small>
+      </div>
     </footer>
   </body>
 </html>
