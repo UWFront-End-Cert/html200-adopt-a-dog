@@ -55,19 +55,27 @@ ul.header-nav-list-holder {
     height:80px;
     line-height:80px;
     margin-right:5px;
-    float:left;
-    display:inline;
+    display:flex;
+    flex-direction:row;
     list-style-type: none;
-
 }
 a {
     color:navy !important;
     text-decoration:none;
 }
+a.needs-slash::after {
+    content: "/";
+    padding-left:10px;
+    margin-right:-5px;
+}
+a.needs-slash2::after {
+    content: "/";
+    padding-left:5px;
+    padding-right: 5px;
+}
 li.header-nav-list-item {
     
     margin-right:20px;
-    float:left;
 }
 .dogs-list-header {
     margin-left: 7.5%;
