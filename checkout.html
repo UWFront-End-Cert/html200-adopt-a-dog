@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ADOPT-A-DOG HOME</title>
+</head>
+
+<body>
+<header>
+  <h1 class="title-text-hidden">Welcome to Adopt A Dog</h1>
+  <figure>
+    <img src="images/adoptadog-logo.svg" alt="" width="450">
+  </figure>
+  <p class="slogan">Seattle's premiere dog adoption agency</p>
+  <img src="images/cart-icon.svg" alt="" width="30">
+  <form action="checkout.html">
+    <input class="checkout" type="submit" value="Checkout" onclick="checkout.html"/>
+  </form>
+  <p class="checkout-total">$1234.56</p>
+  <nav class="header-nav">
+        <ul>
+          <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
+          <li><a href="adoption-list.html">Dogs&nbsp;&nbsp;&nbsp;/</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+</header>
+<section id="main-content">
+  <h2 class="skip-link">content</h2>
+</section>
+<section class="checkout">
+  <h2>Checkout</h2>
+  <div class="container">
+    <form action="/action.php" method="GET">
+      <label>Name
+        <input type="text" name="firstName" value="">
+      </label>
+      <label>Email Address
+        <input type="email" id="email" name="email">
+      </label>
+      <label>Street Address</label>
+        <textarea rows="10" cols="30" name="description"></textarea>
+      <label>City
+        <input type="text" name="city" value="">
+      </label>
+      <label>State
+        <select id="state" name="state">
+        	<option value="AL">AL</option>
+        	<option value="AK">AK</option>
+        	<option value="AR">AR</option>
+        	<option value="AZ">AZ</option>
+        	<option value="CA">CA</option>
+        	<option value="CO">CO</option>
+        	<option value="CT">CT</option>
+        	<option value="DC">DC</option>
+        	<option value="DE">DE</option>
+        	<option value="FL">FL</option>
+        	<option value="GA">GA</option>
+        	<option value="HI">HI</option>
+        	<option value="IA">IA</option>
+        	<option value="ID">ID</option>
+        	<option value="IL">IL</option>
+        	<option value="IN">IN</option>
+        	<option value="KS">KS</option>
+        	<option value="KY">KY</option>
+        	<option value="LA">LA</option>
+        	<option value="MA">MA</option>
+        	<option value="MD">MD</option>
+        	<option value="ME">ME</option>
+        	<option value="MI">MI</option>
+        	<option value="MN">MN</option>
+        	<option value="MO">MO</option>
+        	<option value="MS">MS</option>
+        	<option value="MT">MT</option>
+        	<option value="NC">NC</option>
+        	<option value="NE">NE</option>
+        	<option value="NH">NH</option>
+        	<option value="NJ">NJ</option>
+        	<option value="NM">NM</option>
+        	<option value="NV">NV</option>
+        	<option value="NY">NY</option>
+        	<option value="ND">ND</option>
+        	<option value="OH">OH</option>
+        	<option value="OK">OK</option>
+        	<option value="OR">OR</option>
+        	<option value="PA">PA</option>
+        	<option value="RI">RI</option>
+        	<option value="SC">SC</option>
+        	<option value="SD">SD</option>
+        	<option value="TN">TN</option>
+        	<option value="TX">TX</option>
+        	<option value="UT">UT</option>
+        	<option value="VT">VT</option>
+        	<option value="VA">VA</option>
+        	<option value="WA">WA</option>
+        	<option value="WI">WI</option>
+        	<option value="WV">WV</option>
+        	<option value="WY">WY</option>
+        </select>
+      </label>
+      <label>Zip Code
+        <input type="text" name="zipCode" value="">
+      </label>
+        <label>First Time Adopter?
+          <input type="radio" name="firstTimeAdopter" value="yes">Yes
+        </label>
+      <label>
+       <input type="radio" name="firstTimeAdopter" value="no">No
+      </label>
+      <label>Pickup Location
+        <select name = "dropdown">
+          <option value = "Here">Here</option>
+          <option value = "There">There</option>
+          <option value = "Anywhere">Anywhere</option>
+        </select>
+      </label>
+      <label>Dogs Adopted
+        <img src="images/lucas-checkout.jpg" alt="" width="75">
+        <img src="images/duffy-checkout.jpg" alt="" width="75">
+      </label>
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </div>
+</section>
+
+<footer class="footer-small">
+  <figure class=footer-fig>
+    <img src="images/adoptadog-logo.svg" alt="" width="350">
+  </figure>
+  <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+  <nav class="footer-nav">
+    <ul>
+      <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
+      <li><a href="">Dogs&nbsp;&nbsp;&nbsp;/</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  <p>&copy; 2018 Adoptadog, &#x2758; LLC Seattle, WA</p>
+</footer>
+</body>
+</html>
