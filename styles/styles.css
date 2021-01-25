@@ -61,6 +61,10 @@ header h2 {
   justify-content: space-between;
 }
 
+.ftrlogo {
+  height: 30%;
+}
+
 .b2box {
   height: 70%;
   width: 40%;
@@ -75,6 +79,12 @@ header h2 {
 
 .ckout {
   margin: 4%;
+}
+
+.art1 {
+  width: 60%;
+  display: inline-block;
+  margin: 10%;
 }
 
 
@@ -160,6 +170,7 @@ nav li a:hover {
 
 .div1 {
   width: 98%;
+  display: inline-table;
 }
 
 .div2 {
@@ -295,6 +306,11 @@ footer {
   text-align:center;
   color: #ffffff;
   background-color: #0A3C61;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-items: center;
 }
 
 #catlogo {
