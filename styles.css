@@ -17,6 +17,7 @@ header {
     display:flex;
     justify-content: space-between;
 }
+
 .left-side-header {
    margin-top: 3%;
    color:lightgreen;
@@ -35,6 +36,9 @@ header {
 .right-side-header {
     color:white;
     margin-top: 3%;
+}
+.shopping-cart {
+    width:25px;
 }
 .right-side-header button{
     margin-top: 3%;
