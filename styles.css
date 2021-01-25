@@ -116,6 +116,9 @@ li.header-nav-list-item {
 .sub-initial-box {
     margin-left: 6.67%;
 }
+h2.adopt-primary-header {
+    margin-bottom: 10px;
+}
 .intro-para {
     line-height:35px;
 }
@@ -202,6 +205,17 @@ p.blog-sub-paragraph {
 }
 .checkout-cost {
     margin-bottom: 20px;
+}
+.see-more-dogs-button-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+button.see-more-dogs-button {
+    height:40px;
+    width:180px;
+    background-color:lightgray;
+    color:navy;
 }
 .footer-text-holder {
     display:block;
