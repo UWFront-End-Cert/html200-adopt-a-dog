@@ -18,11 +18,11 @@ header {
     justify-content: space-between;
 }
 .left-side-header {
-   margin-top: 35px;
+   margin-top: 3%;
    color:lightgreen;
 }
 .left-side-header img {
-    width:400px;
+    width:75%;
 }
 .hidden-header {
     font-size: 1px;
@@ -34,10 +34,10 @@ header {
 }
 .right-side-header {
     color:white;
-    margin-top: 35px;
+    margin-top: 3%;
 }
 .right-side-header button{
-    margin-top: 5px;
+    margin-top: 3%;
     width:100%;
 }
 nav {
@@ -70,8 +70,9 @@ li.header-nav-list-item {
     margin-top: 2%;
 }
 .page-header {
-    margin-left: 110px;
-    margin-bottom:20px;
+    margin-left: 7.5%;
+    margin-top:2%;
+    margin-bottom:2%;
 }
 /*
 
