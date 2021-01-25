@@ -38,7 +38,8 @@ header {
     margin-top: 3%;
 }
 .shopping-cart {
-    width:25px;
+    width:20px;
+    padding-right: 2px;
 }
 .right-side-header button{
     margin-top: 3%;
@@ -116,7 +117,7 @@ li.header-nav-list-item {
     margin-left: 6.67%;
 }
 .intro-para {
-    line-height:25px;
+    line-height:35px;
 }
 .adoption-pic {
     width:100%;
@@ -222,6 +223,7 @@ ul {
 }
 li {
     display:inline;
+    text-justify: center;
 }
 .footer-holder {
     width:300px;
