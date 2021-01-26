@@ -11,27 +11,35 @@
   <body>
     <a href="#main-content" class="hidden">Skip to main content</a>
     <main>
-      <header>
-        <img src="./images/adoptadog-logo.svg" alt="Adoptadog logo" width="300">
-        <h2 class="header-headline">Seattle's premiere dog adoption agency</h2>
-        <img src="./images/cart-icon.svg" alt="shopping cart icon" width="25">
-        <p class="white-text">$1234.56</p>
-        <a href="./checkout.html"><p class="green-button">Checkout</p></a>
+      <header class="flex-header">
+        <div class="flex-header-1">
+          <img src="./images/adoptadog-logo.svg" alt="Adoptadog logo" width="300">
+          <h2 class="header-headline">Seattle's premiere dog adoption agency</h2>
+        </div>
+        <div class="flex-header-2">
+          <div class="flex-cart">
+            <img class="flex-icon" src="./images/cart-icon.svg" alt="shopping cart icon" width="20">
+            <p class="flex-price white-text">$1234.56</p>
+          </div>
+          <a href="./checkout.html">
+            <p class="green-button">Checkout</p>
+          </a>
+        </div>
       </header>
-      <nav class="gray-background">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./dogs.html">Dogs</a></li>
-          <li><a href="./blog.html">Blog</a></li>
+      <nav>
+        <ul class="flex-nav">
+          <li class="flex-nav-home"><a href="./index.html">Home &nbsp; &nbsp; &nbsp;/</a></li>
+          <li class="flex-nav-dogs"><a href="./dogs.html">Dogs &nbsp; &nbsp; &nbsp;/</a></li>
+          <li class="flex-nav-blog"><a href="./blog.html">Blog</a></li>
         </ul>
       </nav>
-      <section>
+      <section class="checkout">
         <h1>Checkout</h1>
-        <form>
-          <label for="fullName">Name</label>
+        <form class="form-grid" method="GET">
+          <label class="form-span" for="fullName">Name</label>
           <input type="text" name="fullName" id="fullName">
           <label for="emailAddress">Email Address</label>
-          <input type="email" name="emailAddress" id="emailAddress">
+          <input type="text" name="emailAddress" id="emailAddress">
           <label for="streetAddress">Street Address</label>
           <input type="text" name="streetAddress" id="streetAddress">
           <label for="city">City</label>
@@ -49,11 +57,11 @@
           </fieldset>
           <label for="pickupLocation">Pickup Location</label>
           <input type="text" name="pickupLocation" id="pickupLocation">
-          <h2>Dogs Adopted</h2>
-          <img src="./images/lucas-checkout.jpg" alt="face of black dog looking up at viewer">
+          <h3>Dogs Adopted</h3>
+          <img src="./images/lucas-checkout.jpg" alt="face of black dog looking up at viewer" width="50">
           <h3>Lucas</h3>
           <p>Cost to Adopt: $123.45</p>
-          <img src="./images/duffy-checkout.jpg" alt="white and brown pit pull type dog looking at camera">
+          <img src="./images/duffy-checkout.jpg" alt="white and brown pit pull type dog looking at camera" width="50">
           <h3>Duffy</h3>
           <p>Cost to Adopt: $123.45</p>
           <h2>Total Adoption Cost</h2>
@@ -63,16 +71,18 @@
       </section>
     </main>
     <footer class="white-text">
-      <img src="./images/adoptadog-logo.svg" alt="Adoptadog logo" width="200">
-      <p>Doge many pats snoot super chub maximum borkdrive stop it fren, super chub blep sub woofer long doggo.</p>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./dogs.html">Dogs</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-        </ul>
-      </nav>
-      <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
+      <div class="center-footer">
+        <img src="./images/adoptadog-logo.svg" alt="Adoptadog logo" width="200">
+        <p>Doge many pats snoot super chub maximum borkdrive stop it fren, super chub blep sub woofo.</p>
+        <nav>
+          <ul class="flex-footer-nav">
+            <li class="footer-nav-home"><a href="./index.html">Home &nbsp; &nbsp;/</a></li>
+            <li class="footer-nav-dogs"><a href="./dogs.html">Dogs &nbsp; &nbsp;/</a></li>
+            <li class="footer-nav-blog"><a href="./blog.html">Blog</a></li>
+          </ul>
+        </nav>
+        <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
+      </div>
     </footer>
   </body>
 </html>
