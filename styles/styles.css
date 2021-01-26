@@ -306,26 +306,22 @@ footer {
   text-align:center;
   color: #ffffff;
   background-color: #0A3C61;
-  height: 25rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-items: center;
+  width: 100%;
+  background-size: cover;
+  padding: 40px 0 20px 0;
+  display: block;
 }
 
-#catlogo {
-  position: relative;
-  top: 6rem;
-}
+
 
 .footer-p {
-  position: relative;
-  top: 6rem;
+  display: block;
 }
 
 .footer-nav-1 {
-  position: relative;
-  top: 6rem;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 .footer-nav-ul {
