@@ -35,39 +35,77 @@
       </nav>
       <section class="checkout">
         <h1>Checkout</h1>
-        <form class="form-grid" method="GET">
-          <label class="form-span" for="fullName">Name</label>
-          <input type="text" name="fullName" id="fullName">
-          <label for="emailAddress">Email Address</label>
-          <input type="text" name="emailAddress" id="emailAddress">
-          <label for="streetAddress">Street Address</label>
-          <input type="text" name="streetAddress" id="streetAddress">
-          <label for="city">City</label>
-          <input type="text" name="city" id="city">
-          <label for="state">State</label>
-          <input type="text" name="state" id="state">
-          <label for="zipCode">Zip Code</label>
-          <input type="text" name="zipCode" id="zipCode">
-          <fieldset>
+
+        <form method="GET">
+          <div class="form-grid">
+          <div class="form-grid-name">
+            <label class="form-span" for="fullName">Name</label>
+            <input type="text" name="fullName" id="fullName">
+          </div>
+          <div class="form-grid-email">
+            <label for="emailAddress">Email Address</label>
+            <input type="text" name="emailAddress" id="emailAddress">
+          </div>
+          <div class="form-grid-street">
+            <label for="streetAddress">Street Address</label>
+            <input type="text" name="streetAddress" id="streetAddress">
+          </div>
+          <div class="form-grid-city">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+          </div>
+          <div class="form-grid-state">
+            <label for="state">State</label>
+            <input type="text" name="state" id="state">
+          </div>
+          <div class="form-grid-zip">
+            <label for="zipCode">Zip Code</label>
+            <input type="text" name="zipCode" id="zipCode">
+          </div>
+          <fieldset class="form-grid-adopter">
             <legend>First Time Adopter?</legend>
             <input id="yes" type="radio" name="yes" value="yes">
-            <label for="yes">Yes</label>
+            <label for="yes">Yes &nbsp; &nbsp;</label>
             <input id="no" type="radio" name="no" value="no">
             <label for="no">No</label>
           </fieldset>
-          <label for="pickupLocation">Pickup Location</label>
-          <input type="text" name="pickupLocation" id="pickupLocation">
-          <h3>Dogs Adopted</h3>
-          <img src="./images/lucas-checkout.jpg" alt="face of black dog looking up at viewer" width="50">
-          <h3>Lucas</h3>
-          <p>Cost to Adopt: $123.45</p>
-          <img src="./images/duffy-checkout.jpg" alt="white and brown pit pull type dog looking at camera" width="50">
-          <h3>Duffy</h3>
-          <p>Cost to Adopt: $123.45</p>
-          <h2>Total Adoption Cost</h2>
-          <p>$1234.56</p>
-          <button type="submit">Submit</button>
+          <div class="form-grid-pickup">
+            <label for="pickupLocation">Pickup Location</label>
+            <input type="text" name="pickupLocation" id="pickupLocation">
+          </div>
+
+          <div class="form-grid-adopted">
+                <h3>Dogs Adopted</h3>
+
+            <div class="flex-adopted-container">
+              <div class="dogs-adopted">
+                <img src="./images/lucas-checkout.jpg" alt="face of black dog looking up at viewer" width="60">
+              </div>
+              <div class="dogs-cost">
+                <h3>Lucas</h3>
+                <p><strong>Cost to Adopt:</strong> $123.45</p>
+              </div>
+              <div class="dogs-adopted">
+                <img src="./images/duffy-checkout.jpg" alt="white and brown pit pull type dog looking at camera" width="60">
+              </div>
+              <div class="dogs-cost">
+                <h3>Duffy</h3>
+                <p><strong>Cost to Adopt:</strong> $123.45</p>
+            </div>
+          </div>
+
+          </div>
+
+          <div class="form-grid-total">
+            <h2>Total Adoption Cost</h2>
+            <p>$1234.56</p>
+          </div>
+        </div>
+            <button class="form-grid-button" type="submit">Submit</button>
+          </div>
+        </div>
         </form>
+
       </section>
     </main>
     <footer class="white-text">
