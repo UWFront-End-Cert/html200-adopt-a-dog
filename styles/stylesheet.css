@@ -4,40 +4,100 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h2 {
+    margin-top: 3%;
+}
+
+h2,
+h3,
+h4,
+.dogs img,
+.dogs p {
+    margin-bottom: 5%;
+}
+
+h3,
+h4,
+.dogs p,
+.dogs button {
+    margin-left: 3%;
+    margin-right: 10%;
+}
+
 header {
     background-color: black;
     color: white;
     background-image: url("../images/header-image.jpg");
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo {
-    width: 30%;
     font-weight: bold;
-    margin-left: 2.5%;
+    /* margin-left: 2.5%; */
 }
 
-header .cart {
-    width: 2.5%
+.cart {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    font-size: .8rem;
 }
 
 header h1 {
-    color: limegreen;
+    color: #008A00;
     font-style: italic;
     font-size: 1.25rem;
-    margin-left: 2.5%;
+    /* margin-left: 2.5%; */
 }
 
-button {
-    width: 10%;
-    padding: .5% .75%
+.hdr-left {
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    /* width:50%; */
+}
+
+.hdr-right {
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* width:5%; */
+}
+
+header button {
+    padding: 5% 40%;
+    background-color: #008A00;
+    border: 1px solid rgb(48, 44, 44);
+    color: white;
+    font-weight: bold;
+    font-size: .7rem;
+}
+
+header p {
+    font-size: .7rem;
+    padding-top: 30%;
+}
+
+header img,
+header p,
+header button {
+    margin-top: 10%;
+}
+
+.cart img {
+    width: 50%;
+    margin-right: 15%;
 }
 
 nav {
     background-color: lightgray;
 }
 
-nav ul,
-footer ul {
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -46,13 +106,11 @@ footer ul {
     padding-left: 10%;
 }
 
-
 nav li,
 footer li,
-nav p,
-footer p {
+nav p {
     list-style: none;
-    padding: 1% 0% 1% 1.5%;
+    padding: 1% 0% 1% 1%;
     font-size: .75rem;
     font-weight: bold;
 }
@@ -62,17 +120,100 @@ footer a {
     text-decoration: none;
 }
 
+
+#wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+.intro {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.dogs {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    grid-gap: 3% 3%;
+}
+
+.dogs img {
+    width: 100%;
+}
+
+.dogs button {
+    width: 90%;
+    padding: 1% 10%;
+    background-color: #008A00;
+    color: white;
+    font-weight: bold;
+}
+
+.more-dogs button {
+    width: 100%;
+    padding: 1% 40%;
+    background-color: #008A00;
+    color: white;
+    font-weight: bold;
+}
+
+.more-dogs img {
+    width: 100%;
+}
+
+.more-dogs a {
+    text-decoration: none;
+    /* padding: 1% 20%; */
+}
+
+
+.more-dogs {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    grid-gap: 3% 3%;
+
+}
+
+
+.position-button {
+    height: 10%;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.center-button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* form styling for contact page*/
+
 fieldset {
     border: 1px solid white;
 }
 
 label,
 legend {
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .adopter label {
-    font-weight:normal;
+    font-weight: normal;
 }
 
 .city-state {
@@ -107,14 +248,74 @@ legend {
     display: inline-block;
 }
 
+/* footer styling */
 
 footer {
-    background-color: rgb(26, 7, 110);
+    background-color: rgb(20, 66, 109);
     text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 footer a,
 footer p,
 footer li {
     color: white;
+}
+
+
+footer img {
+    width: 25%;
+    text-align: center;
+}
+
+footer p {
+    list-style: none;
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.center-footer {
+    margin: auto;
+    width: 50%;
+}
+
+.col-1 {
+    grid-column-start: 1;
+}
+
+.col-2 {
+    grid-column-start: 2;
+}
+
+.col-3 {
+    grid-column-start: 3;
+}
+
+.col-4 {
+    grid-column-start: 4;
+}
+
+.row-1 {
+    grid-row-start: 1;
+}
+
+.row-2 {
+    grid-row-start: 2;
+}
+
+.row-3 {
+    grid-row-start: 3;
+}
+
+.row-4 {
+    grid-row-start: 4;
 }
