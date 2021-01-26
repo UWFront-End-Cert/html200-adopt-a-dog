@@ -422,7 +422,8 @@ template {
   box-sizing: border-box;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -447,14 +448,19 @@ h2 {
   margin: 0;
 }
 
-h3,
+h3 {
+  font-family: 'Neuton', sans-serif;
+  color: #093c60;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
 h4,
 h5,
 h6 {
   font-family: 'Neuton', sans-serif;
   color: #093c60;
   margin: 0;
-
 }
 
 .hidden {
@@ -497,7 +503,6 @@ header {
   margin-left: auto;
 }
 
-
 .flex-cart {
   display: flex;
   height: 3rem;
@@ -527,7 +532,7 @@ header {
 main nav:first-of-type {
   background: #ececec;
   padding-left: 4.5rem;
-  }
+}
 
 nav {
   font-weight: 600;
@@ -553,6 +558,9 @@ nav {
 .flex-nav-blog {
   flex: 1rem;
 }
+
+
+/* dogs grid layout */
 
 .main-container {
   display: grid;
@@ -662,19 +670,22 @@ nav {
   padding-bottom: 4rem;
 }
 
-.grid-main1 > img,
-.grid-main3 > img,
-.grid-main4 > img,
-.grid-main5 > img,
-.grid-main6 > img,
-.grid-main7 > img,
-.grid-main8 > img,
-.grid-main9 > img,
-.grid-main10 > img {
+.grid-main1>img,
+.grid-main3>img,
+.grid-main4>img,
+.grid-main5>img,
+.grid-main6>img,
+.grid-main7>img,
+.grid-main8>img,
+.grid-main9>img,
+.grid-main10>img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
 }
+
+
+/* blog grid layout */
 
 .blog-container {
   display: grid;
@@ -729,6 +740,12 @@ nav {
   padding-bottom: 3rem;
 }
 
+.checkout {
+  padding-top: 2rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -742,17 +759,6 @@ footer a {
 }
 
 .white-text {
-  color: white;
-}
-
-button {
-  color: white;
-  font-weight: 600;
-  background-color: #81b741;
-  border: none;
-}
-
-button a {
   color: white;
 }
 
@@ -781,7 +787,7 @@ footer {
 }
 
 .footer-nav-home {
-    flex: 3.5rem;
+  flex: 3.5rem;
 }
 
 .footer-nav-dogs {
@@ -790,4 +796,84 @@ footer {
 
 .footer-nav-blog {
   flex: 2rem;
+}
+
+
+/* form */
+
+input {
+  margin-bottom: 2rem;
+}
+
+label,
+legend {
+  font-family: 'Neuton', sans-serif;
+  color: #093c60;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+label[for="yes"],
+[for="no"] {
+  font-family: 'Work Sans', sans-serif;
+  font-size: .8rem;
+  line-height: 1.5rem;
+}
+
+input[type=text],
+select {
+  width: 60%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: block;
+  outline: 1px black;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[id=city],
+select {
+  width: 25%;
+}
+
+input[id=state],
+select {
+  width: 15%;
+}
+
+input[id=zipCode],
+select {
+  width: 15%;
+}
+
+input[id=pickupLocation],
+select {
+  width: 25%;
+}
+
+input:focus {
+  background-color: #e4fcc9;
+  outline: none;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset input {
+  display: inline;
+  margin-right: .2rem;
+}
+
+button {
+  color: white;
+  font-weight: 600;
+  background-color: #81b741;
+  border: none;
+}
+
+button a {
+  color: white;
 }
