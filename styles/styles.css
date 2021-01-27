@@ -19,6 +19,10 @@ header {
   margin-bottom: 1.5rem;
 }
 
+.shopping-cart-icon {
+  width: 1.5rem;
+}
+
 .logo-bundle p {
   color: #2cc749;
   font-family: "Lora", serif;
