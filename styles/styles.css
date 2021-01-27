@@ -733,6 +733,7 @@ nav {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   padding-top: 2rem;
+  padding-left: 1.5rem;
 }
 
 .grid-blog-3 {
@@ -745,6 +746,7 @@ nav {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   padding-top: 2rem;
+  padding-left: 1.5rem;
 }
 
 .grid-blog-5 {
@@ -757,6 +759,7 @@ nav {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
   padding-top: 2rem;
+  padding-left: 1.5rem;
   padding-bottom: 3rem;
 }
 
