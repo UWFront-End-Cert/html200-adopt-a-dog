@@ -8,17 +8,35 @@ h2 {
     margin-top: 3%;
 }
 
+
+
 h2,
 h3,
 h4,
 .dogs img,
-.dogs p {
+.dogs p,
+.all-dogs p {
     margin-bottom: 5%;
 }
+
+.blog1 h2,
+.blog2 h2,
+.blog3 h2,
+.blog1 p,
+.blog2 p,
+.blog3 p {
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+/* .blog1 p, .blog2 p , .blog3 p{
+    font-size: .9rem;
+} */
 
 h3,
 h4,
 .dogs p,
+.all-dogs p,
 .dogs button {
     margin-left: 3%;
     margin-right: 10%;
@@ -123,7 +141,8 @@ footer a {
 
 #wrapper {
     margin-left: 10%;
-    margin-right: 10%;
+    /* margin-right: 5%; */
+    /* background-color: lightblue; */
 }
 
 
@@ -136,60 +155,58 @@ footer a {
     margin-bottom: 5%;
 }
 
-.dogs {
+.dogs,
+.all-dogs {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto auto;
     margin-top: 5%;
-    margin-bottom: 7%;
+    margin-bottom: 15%;
     grid-gap: 3% 3%;
+
 }
 
 .dogs img {
     width: 100%;
 }
 
-.dogs button {
+.dogs button,
+.all-dogs button {
     width: 90%;
-    padding: 1% 10%;
+    padding: 1% 10% 1% 10%;
     background-color: #008A00;
     color: white;
     font-weight: bold;
 }
 
-.more-dogs button {
+.dogs img,
+.all-dogs img {
     width: 100%;
-    padding: 1% 40%;
-    background-color: #008A00;
-    color: white;
-    font-weight: bold;
 }
 
-.more-dogs img {
-    width: 100%;
+.more-dogs {
+    width: 200px;
+    background-color: lightgray;
+    padding: 5% 5%;
+    padding-bottom: 25%;
 }
 
 .more-dogs a {
     text-decoration: none;
-    /* padding: 1% 20%; */
-}
+    padding: 0 15%;
+    width: 100%;
 
-
-.more-dogs {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto auto auto;
-    margin-top: 5%;
-    margin-bottom: 7%;
-    grid-gap: 3% 3%;
+    color: rgb(20, 66, 109);
+    font-weight: bold;
 
 }
-
 
 .position-button {
     height: 10%;
     position: relative;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
+    margin-top: 12%;
+
 }
 
 .center-button {
@@ -201,38 +218,35 @@ footer a {
     transform: translateY(-50%);
 }
 
+.blog1,
+.blog2,
+.blog3 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10%;
+    padding-right: 15%;
+}
+
+.blog1 {
+    margin-top: 5%;
+}
+
+.blog3 {
+    padding-bottom: 10%;
+}
+
+.blog1 img,
+.blog2 img,
+.blog3 img {
+    width: 90%;
+    height: auto;
+}
+
 /* form styling for contact page*/
 
 fieldset {
     border: 1px solid white;
-}
-
-label,
-legend {
-    font-weight: bold;
-}
-
-.adopter label {
-    font-weight: normal;
-}
-
-.city-state {
-    display: block;
-    padding-bottom: 15px;
-}
-
-.city-state input,
-.city-state select {
-    width: 20%;
-}
-
-.adopter div,
-.adopted-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .personal-info,
@@ -244,9 +258,51 @@ legend {
     flex-wrap: wrap;
 }
 
-.location {
-    display: inline-block;
+label,
+legend {
+    font-weight: bold;
+    padding-bottom: 2%;
+
 }
+
+input,
+select {
+    display: block;
+    padding-bottom: 2%;
+    width: 500px;
+
+}
+
+.city-state,
+.adopter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    /* padding-bottom: 15px; */
+}
+
+
+.adopter label {
+    font-weight: normal;
+}
+
+.city-state input,
+.city-state select {
+    width: 90%;
+}
+
+.adopter div,
+.adopted-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
 
 /* footer styling */
 
@@ -255,6 +311,7 @@ footer {
     text-align: center;
     padding-bottom: 5%;
     padding-top: 5%;
+    /* margin-top: 5%; */
 }
 
 footer ul {
