@@ -1,0 +1,120 @@
+/* Body and general styling */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+h3 {
+  color: #3b6860;
+  font: 2rem "Irish Grover", cursive;
+}
+.hidden {
+  display: none;
+}
+h4 {
+  color: #3b6860;
+  font: 1.6rem "Irish Grover", cursive;
+}
+h5 {
+  color: #3b6860;
+  font: 1.3rem "Irish Grover", cursive;
+}
+p {
+  font: 1rem/1.5rem Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  font: 1rem Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #2c4e48;
+}
+button, .button {
+  display: inline-block;
+  padding: .4rem;
+  border: solid .2rem #3b6860;
+  border-radius: .2rem;
+  color: #000000;
+  background-color: #85bbb1;
+  text-align: center;
+  font-variant: small-caps;
+  font-weight: bold;
+  line-height: 1rem;
+}
+/* Header styling */
+header {
+  width: 100%;
+  height: auto;
+  background: url("../images/header-image.jpg");
+  padding: 0;
+  border: 0;
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    "title title cart"
+    "spacer spacer spacer"
+    "nav nav nav";
+  grid-gap: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(3rem, auto);
+}
+h1 {
+ display: inline-block;
+ color: #ffffff;
+ font: 4rem "Irish Grover", cursive;
+ padding: 2rem;
+ grid-area: title;
+}
+h1::before {
+  display: inline-block;
+  content: url("../images/adoptadog-logo-small.svg");
+  width: 6rem;
+}
+h2 {
+  display: inline-block;
+  color: #85bbb1;
+  font: italic 2rem Arial, Helvetica, sans-serif;
+  padding: 2rem;
+  grid-area: title;
+}
+.cart {
+  display: inline;
+  width: 20%;
+  margin: 2rem;
+  border: 0;
+  padding: 0;
+  grid-area: cart;
+}
+header > p {
+  display: inline;
+  padding: 2rem;
+  color: #ffffff;
+  grid-area: cart;
+}
+header a.button {
+  grid-area: cart;
+  width: 6rem;
+  height: 1rem;
+}
+header > nav {
+  display: block;
+  padding: .5rem .5rem .5rem 3rem;
+  grid-area: nav;
+  width: 100%;
+  background-color: #bfbfbf;
+}
+nav > ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline-block;
+  padding: 1rem;
+}
+/* Main styling */
+main {
+  margin: 0;
+  border: 0;
+  padding: 4rem;
+}
