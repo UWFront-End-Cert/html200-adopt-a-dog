@@ -72,12 +72,11 @@ nav {
   padding-left: 60px;
   font-weight: bold;
   background-color: #ccc;
-    height: 2.5rem;
+  height: 2.5rem;
 }
 
 ul {
   list-style-type: none;
-   /* position: fixed; - Make it stick, even on scroll */
 }
 
 li {
@@ -109,7 +108,7 @@ text-decoration: none;
 
 .intro {
   grid-column: 1 / 4;
-  background-image: url("../images/home-intro.jpg");
+  background-image: url("images/home-intro.jpg");
   background-size: cover; /* fit image into grid */
   margin-top: 2rem;
 }
