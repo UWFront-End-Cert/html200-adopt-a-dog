@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
     <title>Adoptadog - Checkout</title>
   </head>
 
@@ -28,31 +29,65 @@
       <section>
         <h2>Checkout</h2>
         <form name="adoption-checkout-form" method="get">
-          <label>Name
-            <input type="text" name="name">
+          <label for="name">Name
+            <input type="text" name="name" id="name">
           </label>
-          <label>Email Address
-            <input type="text" name="email-address">
+          <label for="email-address">Email Address
+            <input type="text" name="email-address" id="email-address">
           </label>
-          <label>Street Address
-            <input type="text" name="street-address">
+          <label for="street-address">Street Address
+            <input type="text" name="street-address" id="street-address">
           </label>
-          <label>City
-            <input type="text" name="city">
+          <label for="city">City
+            <input type="text" name="city" id="city">
           </label>
-
-          <label>Zip Code
-            <input type="text" name="zip-code">
+          <label for="state">
+            <select name="state" id="state">
+              <option value="ca">CA</option>
+              <option value="or">OR</option>
+              <option value="wa">WA</option>
+            </select>
+          </label>
+          <label for="zip-code">Zip Code
+            <input type="text" name="zip-code" id="zip-code">
           </label>
           <fieldset>
             <legend>First Time Adopter</legend>
-            <label>Yes
-              <input type="radio" name="first-time-choice" value="yes">
+            <label for="first-time-yes">Yes
+              <input type="radio" name="first-time-choice" id="first-time-yes" value="yes">
             </label>
-            <label>No
-              <input type="radio" name="first-time-choice" value="no">
+            <label for="first-time-no">No
+              <input type="radio" name="first-time-choice" id="first-time-no" value="no">
             </label>
           </fieldset>
+          <label for="pickup-location">Pickup Location
+            <select name="pickup-location" id="pickup-location">
+              <option value="in-store">In store</option>
+              <option value="dropoff">Dropoff</option>
+            </select>
+          </label>
+
+          <section>
+            <h3>Dogs Adopted</h3>
+            <div class="dog-adopted-checkout-item">
+              <img src="./images/lucas-checkout.jpg" alt="Facial shot of a black dog">
+              <h3>Lucas</h3>
+              <p>
+                <span>Cost to Adopt:</span>
+                $123.45
+              </p>
+            </div>
+            <div class="dog-adopted-checkout-item">
+              <img src="./images/duffy-checkout.jpg" alt="Facial shot of a brown and white dog">
+              <h3>Duffy</h3>
+              <p>
+                <span>Cost to Adopt:</span>
+                $123.45
+              </p>
+            </div>
+          </section>
+          <h3>Total Adoption Cost</h3>
+          <p>$1234.56</p>
 
           <input type="submit" name="submit" value="Submit">
         </form>
@@ -71,7 +106,7 @@
           <li><a href="blog-page.html">Blog</a></li>
         </ul>
       </nav>
-      <p>Copyright 2018 Adoptadop, LLC | Seattle, WA</p>
+      <p>&copy; 2018 Adoptadop, LLC | Seattle, WA</p>
     </footer>
   </body>
 
