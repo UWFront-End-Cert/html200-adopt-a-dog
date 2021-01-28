@@ -108,18 +108,50 @@ button:hover {
   margin-left: 6rem;
   margin-top: 2rem;
   margin-right: 6rem;
+  margin-bottom: 2rem;
 }
-#summary {
+.summary {
   grid-area: 1 / 1 / 2 / 4;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 2rem;
 }
-#summary h2, #summary p {
+.summary div {
   margin-left: 2rem;
 }
-#summary img {
+.summary img {
+  height: 15rem;
+}
+.blog {
+  margin-left: 6rem;
+  margin-top: 2rem;
+}
+#sec-1 {
+  grid-area: 1 / 1 / 2 / 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+#sec-2 {
+  grid-area: 2 / 1 / 3 / 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+#sec-3 {
+  grid-area: 3 / 1 / 4 / 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+#sec-1 div, #sec-2 div, #sec-3 div {
+  margin-left: 2rem;
+}
+#sec-1 img, #sec-2 img, #sec-3 img {
   height: 15rem;
 }
 #page-content {
@@ -167,6 +199,7 @@ footer {
   position: relative;
   bottom: 0;
   text-align: center;
+  margin-top: 1rem;
 }
 footer p {
   display: block;
