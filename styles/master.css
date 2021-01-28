@@ -25,7 +25,7 @@ p {
 .header-image {
   background-repeat:no-repeat;
   background-color: #000;
-  background-image: url("../images/header-image.jpg");
+  background-image: url("images/header-image.jpg");
   background-size: cover; /* fit image into div */
   height: 15rem;
 }
