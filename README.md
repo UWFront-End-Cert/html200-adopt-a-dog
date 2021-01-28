@@ -1,6 +1,6 @@
 # Nayela's Adopt a Dog Website
 
-My Adopt a Dog Website is about adopting dogs. Parents who are intersted to buy dogs for their children.
+My Adopt a Dog Website is about adopting dogs. Parents who are intersted to buy dogs for their children. This **is** a test.
 
 # Testing
 

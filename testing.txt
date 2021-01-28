@@ -1,0 +1,24 @@
+User Feedback:
+Responses from another visitor to my website using a MAC Operating System (Desktop) to analyze adopt a dog website:
+She is a college student and a working professional.
+The responses are below:
+•	Easy to understand what is it all about?
+o	It is easy to understand what the website is for from the main banner on the home page of the website.
+o	However, beyond the fact that it is a dog adoption agency, I don't know any other information about the company or program because the descriptions on basically everything are all gibberish.
+•	Is it user-friendly?
+o	It is user friendly in that the navigation bar is very simple and works properly. 
+o	Because it is only a couple pages, it is easy to know where to go and how to get there.
+•	Does it take you where you are supposed to be?
+o	Not completely sure what "it" is referring to in this question. But the navigation does lead me to the correct page. 
+•	Does the check-out page work correctly?
+o	When you click on the checkout button, it does work and take you to the appropriate page.
+o	The "total adoption cost" does not add up correctly. (For example, if you select 2 dogs to adopt, it says the total is $1234.56 which is inaccurate based on the prices you have listed. I know these are probably just placeholder numbers, but I'd assume that the programming would automatically calculate the correct number for this. 
+o	You did not include a space for a person to enter payment information.
+o	In the address section, you only have 4 states listed as options to choose from when you should include all states. 
+o	Not sure if this was intentional or not but the submit button doesn't work.
+•	What is your overall experience after visiting this website?
+o	The website was good for the content that it included (although all of the content was gibberish so I couldn't really tell what certain sections were). 
+o	Including a lot of pictures was a good idea and will help to bring in interested customers.
+o	The navigation bar was easy to understand and intuitive to get to. 
+o	It was very simple which is good in making sure the user doesn't get lost finding things on the website.
+o	However, if this were an actual company's website, I would probably want more content and information available to me easily. For example, it would be beneficial to add a "Contact Us" page so that customers can get in touch with you. Also, an "About Us" page or other pages that include more information that can help an interested customer would be beneficial. 
