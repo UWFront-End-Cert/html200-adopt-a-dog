@@ -12,26 +12,31 @@
   <body>
     <div class="wrapper" id="clearfix">
       <header>
-        <h1>Adopt A Dog</h1>
-        <p>Seattle's premiere dog adoption agency</p>
-        <a href="#main-content" class="hidden">Skip to main content</a>
-        <img src="./images/cart-icon.svg" alt="Shopping Cart Icon" width="50" height="50">
-        <p>$1234.56</p>
-        <button onclick="document.location='./checkout.html'">Checkout</button>
-        <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo" width="200" height="100">
-        <nav class="main-menu">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li>/</li>
-            <li><a href="./dogs.html">Dogs</a></li>
-            <li>/</li>
-            <li><a href="./blog.html">Blog</a></li>
-          </ul>
-        </nav>
+        <div class="logo">
+          <h1><img src="./images/adoptadog-logo.svg" alt="adopt a dog logo"></h1>
+          <p>Seattle's premiere dog adoption agency</p>
+        </div>
+        <a href="#main" class="hidden">Skip to main content</a>
+        <div class="checkout">
+          <div>
+            <img src="./images/cart-icon.svg" alt="Shopping Cart Icon">
+            <p id="cost">$1234.56</p>
+          </div>
+          <button onclick="document.location='./checkout.html'">Checkout</button>
+        </div>
       </header>
+      <nav class="menu">
+        <ul>
+          <li><a class="active" href="./index.html">Home</a></li>
+          <li>/</li>
+          <li><a href="./dogs.html">Dogs</a></li>
+          <li>/</li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+      </nav>
 
-      <article class="checkout" id="main-content">
-        <h2 id="main-content">Checkout</h2>
+      <article class="checkout">
+        <h2 id="main">Checkout</h2>
         <form method="post" name="checkout-form">
           <label>Name<br>
             <input type="text" name="name">
