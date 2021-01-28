@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Adopt a Dog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
+        <p>Seattle's premiere dog adoption agency</p>
+        <img src="images/cart-icon.svg" alt="checkout cart icon">
+        <input type="submit" value="Checkout">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dog-adopt.html">Dogs</a>
+            <a href="dog-blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Checkout</h2>
+        <form method="GET">
+            <label>Name
+                <input type="text" name="applicantsName">
+            </label>
+
+            <label>Email Address
+                <input type="email" name="applicantsEmail">
+            </label>
+
+            <label>Street Address
+                <input type="text" name="applicantsAddress">
+            </label>
+
+            <label>City
+                <input type="text" name="applicantsCity">
+            </label>
+
+            <label>State
+                <input type="text" name="applicantsState">
+            </label>
+
+            <label>Zip Code
+                <input type="text" name="applicantsZipcode">
+            </label>
+            <fieldset>
+                <legend>First Time Adopter?</legend>
+                <label>
+                    <input type="radio" name="everAdopt" value="yes">
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="everAdopt" value="no">
+                    No
+                </label>
+            </fieldset>
+
+            <label>Pickup Location
+            <select name="location">
+                <option value="">Please select</option>
+                <option value="seattle">Seattle</option>
+                <option value="kirland">Kirkland</option>
+                <option value="bellevue">Bellevue</option>
+                </select>
+            </label>
+
+            <h3>Dogs Adopted</h3>
+            <img src="images/lucas-card.jpg" alt="A picture of dog lucas">
+            <h3>Lucas</h3>
+            <p>Cost to Adopt: $123.45</p>
+
+            <img src="images/duffy-card.jpg" alt="A picture of dog duffy">
+            <h3>Duffy</h3>
+            <p>Cost to Adopt: $123.45</p>
+
+            <label>Total Adoption Cost
+                <input type="submit" name="adoptionTotal">
+            </label>
+          </form>
+        </section>
+    <footer>
+        <img src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
+        <p>Aborpos nisto inci tet qut que volupti beruptiberro to ex</p>
+        <p>esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dog-adopt.html">Dogs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p>2018 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
+</body>
+</html>
