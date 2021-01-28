@@ -25,9 +25,9 @@ p {
 .header-image {
   background-repeat:no-repeat;
   background-color: #000;
-  height: 250px;
+  background-image: url("../images/header-image.jpg");
   background-size: cover; /* fit image into div */
-  background-image: url(images/header-image.jpg);
+  height: 15rem;
 }
 
 .image-logo {
@@ -109,7 +109,7 @@ text-decoration: none;
 
 .intro {
   grid-column: 1 / 4;
-  background-image: url(home-intro.jpg);
+  background-image: url("../images/home-intro.jpg");
   background-size: cover; /* fit image into grid */
   margin-top: 2rem;
 }
