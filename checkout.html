@@ -35,8 +35,8 @@
         </ul>
       </nav>
 
-      <article class="checkout">
-        <h2 id="main">Checkout</h2>
+      <article class="checkout-page">
+        <h2 class="check" id="main">Checkout</h2>
         <form method="post" name="checkout-form">
           <label>Name<br>
             <input type="text" name="name">
@@ -56,6 +56,7 @@
           <br>
           <label>State<br>
             <select class="state-list" name="state">
+              <option disabled selected value> -- select an option -- </option>
               <option value="ny">NY</option>
               <option value="co">CO</option>
               <option value="wa">WA</option>
@@ -79,6 +80,7 @@
           <br>
           <label>Pickup Location<br>
             <select class="pickup" name="pickup">
+              <option disabled selected value> -- select an option -- </option>
               <option value="store">Store</option>
               <option value="park">Park</option>
               <option value="home">Home</option>
@@ -89,7 +91,7 @@
             <img src="./images/lucas-checkout.jpg" alt="A picture of Lucas, the black Shepherd mix" width="50" height="50">
             Lucas
             <strong>Cost to Adopt:</strong> $123.45
-
+            <br>
             <img src="./images/duffy-checkout.jpg" alt="A picture of Duffy, the pitbull mix" width="50" height="50">
             Duffy
             <strong>Cost to Adopt:</strong> $123.45

@@ -62,7 +62,7 @@ header img {
   color: white;
   font-style: normal;
 }
-button {
+button, .checkout-page input[type=submit] {
   background-color: lightgreen;
   color: white;
   font-size: 1rem;
@@ -74,7 +74,7 @@ button {
   transition-duration: 0.4s;
   text-align: center;
 }
-button:hover {
+button:hover, .checkout-page input[type=submit]:hover {
   background-color: green;
 }
 .hidden {
@@ -189,6 +189,20 @@ button:hover {
 }
 #dogs:hover {
   background-color: green;
+}
+.checkout-page {
+  display: grid;
+  margin-left: 6rem;
+  margin-top: 2rem;
+  margin-right: 6rem;
+  margin-bottom: 2rem;
+}
+.checkout-page label, .checkout-page input[type=text] {
+  display: block;
+}
+.checkout-page label, .checkout-page div {
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 footer {
   background-color: darkblue;
