@@ -39,6 +39,9 @@ h6 {
   margin: 0;
 }
 
+
+/* skip link */
+
 .hidden {
   position: relative;
   left: -10000px;
@@ -48,6 +51,9 @@ h6 {
 .hidden:focus {
   left: 0;
 }
+
+
+/* header */
 
 header {
   background-image: url("../images/header-image.jpg");
@@ -73,6 +79,10 @@ header {
   align-items: flex-start;
 }
 
+.flex-header-1 img {
+  width: 18.5rem;
+}
+
 .flex-header-2 {
   margin-left: auto;
 }
@@ -82,6 +92,10 @@ header {
   height: 3rem;
   width: 100px;
   flex-wrap: nowrap;
+}
+
+.flex-cart img {
+  width: 20px;
 }
 
 .flex-icon {
@@ -104,6 +118,9 @@ header {
   width: 100%;
   padding-top: .3rem;
 }
+
+
+/* top navigation */
 
 main nav:first-of-type {
   background: #ececec;
@@ -258,6 +275,9 @@ nav {
   max-height: 100%;
 }
 
+
+/* individual dog listings */
+
 .dog-box {
   box-shadow: 0rem .2rem .7rem #c9c9c9;
   font-size: .7rem;
@@ -294,6 +314,7 @@ nav {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   padding-top: 2rem;
+  width: 15rem;
 }
 
 .grid-blog-2 {
@@ -306,6 +327,7 @@ nav {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   padding-top: 2rem;
+  width: 15rem;
 }
 
 .grid-blog-4 {
@@ -318,6 +340,7 @@ nav {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
   padding-top: 2rem;
+  width: 15rem;
 }
 
 .grid-blog-6 {
@@ -326,9 +349,15 @@ nav {
   padding: 2rem 0 1.5rem;
 }
 
+
+/* checkout page main wrapper */
+
 .checkout {
   padding: 3% 10% 7% 10%;
 }
+
+
+/* links */
 
 a:link {
   text-decoration: none;
@@ -341,6 +370,9 @@ nav a {
 footer a {
   color: white;
 }
+
+
+/* footer */
 
 footer {
   background-color: #093c60;
@@ -356,6 +388,10 @@ footer {
   color: white;
   text-align: center;
   margin: auto;
+}
+
+.center-footer img {
+  width: 200px;
 }
 
 .flex-footer-nav {
@@ -454,6 +490,11 @@ footer {
   flex: 10%;
 }
 
+.dogs-adopted img {
+  width: 55px;
+  padding: .5rem .5rem 1rem 0rem;
+}
+
 .dogs-cost {
   flex: 35%;
   padding-top: .5rem;
@@ -461,7 +502,6 @@ footer {
 
 .dogs-cost p {
   margin-top: 0;
-  padding-bottom: 1rem;
 }
 
 input {
@@ -520,6 +560,9 @@ fieldset input {
 form img {
   padding: .5rem .5rem 0;
 }
+
+
+/* green buttons in dog boxes and form */
 
 button {
   color: white;
