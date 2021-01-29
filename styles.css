@@ -134,6 +134,13 @@ h2 {
     box-shadow: 0 0 20px -10px;
     margin: 1.5em;
     padding-bottom: 1.5em;
+    border: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
 }
 
 h3 {
@@ -160,6 +167,7 @@ h3 {
     text-decoration: none;
     border-radius: 3px;
     margin-left: .4em;
+    border: none;
 }
 
 

@@ -4,11 +4,15 @@ function adoptAlert(name, breed, adoptionFee) {
     alert(result);
 }
 
-function feeCalc() {
-    const fee = 123.45;
-    let result = 0;
-    
-    result = "Your total is: " + "$" + fee;
-    
-    alert(result);
+
+let total = 0;
+let fee = 123.45;
+
+function feeCalc(fee) {
+        total += fee;
+        
+    alert("Added adoption fee of " + fee + " to your cart! Your cart total is $" + total);
+    console.log(total);
 }
+
+ 
