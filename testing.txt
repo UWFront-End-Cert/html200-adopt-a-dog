@@ -1,24 +1,147 @@
+Lesson 10 Assignment Course Project – Nayela Ahmed
+Analyzing User Behavior for Adopt a Dog Website.
+Defining the User Persona:
+The personas that would use this website are parents with dog-loving children. 
+The devices that they might use are an iPhone, Samsung, Laptop, and a Desktop. 
+Operating systems are PC and MAC.
+
+
 User Feedback:
-Responses from another visitor to my website using a MAC Operating System (Desktop) to analyze adopt a dog website:
+Responses from another visitor to my website using a MAC Operating System (Desktop)
+to analyze adopt a dog website:
 She is a college student and a working professional.
 The responses are below:
 •	Easy to understand what is it all about?
-o	It is easy to understand what the website is for from the main banner on the home page of the website.
-o	However, beyond the fact that it is a dog adoption agency, I don't know any other information about the company or program because the descriptions on basically everything are all gibberish.
+o	It is easy to understand what the website is for from the main banner on the home page
+    of the website.
+o	However, beyond the fact that it is a dog adoption agency, I don't know any other information
+    about the company or program because the descriptions on basically everything are all gibberish.
 •	Is it user-friendly?
 o	It is user friendly in that the navigation bar is very simple and works properly. 
 o	Because it is only a couple pages, it is easy to know where to go and how to get there.
 •	Does it take you where you are supposed to be?
-o	Not completely sure what "it" is referring to in this question. But the navigation does lead me to the correct page. 
+o	Not completely sure what "it" is referring to in this question. But the navigation does lead
+     me to the correct page. 
 •	Does the check-out page work correctly?
 o	When you click on the checkout button, it does work and take you to the appropriate page.
-o	The "total adoption cost" does not add up correctly. (For example, if you select 2 dogs to adopt, it says the total is $1234.56 which is inaccurate based on the prices you have listed. I know these are probably just placeholder numbers, but I'd assume that the programming would automatically calculate the correct number for this. 
+o	The "total adoption cost" does not add up correctly. (For example, if you select 
+    2 dogs to adopt, it says the total is $1234.56 which is inaccurate based on the prices 
+    you have listed. I know these are probably just placeholder numbers, but I'd assume that the 
+    programming would automatically calculate the correct number for this. 
 o	You did not include a space for a person to enter payment information.
-o	In the address section, you only have 4 states listed as options to choose from when you should include all states. 
+o	In the address section, you only have 4 states listed as options to choose from when you should 
+    include all states. 
 o	Not sure if this was intentional or not but the submit button doesn't work.
 •	What is your overall experience after visiting this website?
-o	The website was good for the content that it included (although all of the content was gibberish so I couldn't really tell what certain sections were). 
+o	The website was good for the content that it included (although all of the content was gibberish 
+    so I couldn't really tell what certain sections were). 
 o	Including a lot of pictures was a good idea and will help to bring in interested customers.
 o	The navigation bar was easy to understand and intuitive to get to. 
-o	It was very simple which is good in making sure the user doesn't get lost finding things on the website.
-o	However, if this were an actual company's website, I would probably want more content and information available to me easily. For example, it would be beneficial to add a "Contact Us" page so that customers can get in touch with you. Also, an "About Us" page or other pages that include more information that can help an interested customer would be beneficial. 
+o	It was very simple which is good in making sure the user doesn't get lost finding things on 
+    the website.
+o	However, if this were an actual company's website, I would probably want more content and 
+    information available to me easily. For example, it would be beneficial to add a "Contact Us" 
+    page so that customers can get in touch with you. Also, an "About Us" page or other pages that 
+    include more information that can help an interested customer would be beneficial. 
+
+Fixes: Following the visitor's remark from above I corrected the checkout bug. 
+We don't have a payment gateway so that is why there is no space to collect users payment information.
+
+
+
+
+PC
+Testing on Google Chrome
+Testing the website on iPhone mode using inspects:
+Home
+Clicks: Every click is working as it should. Only the “see more dogs” button is not working. 
+As a user that can be frustrating. Something I have fixed to make the website more users friendly.
+Scrolling:
+It seems to work nicely. Only the “see more dogs” button doesn’t work. All the pages in the 
+navigation bar “Home”, “Dogs”, and “Blog” links well and is working. When I stroll down and up 
+I am able to find the navigation bar on the top and at the bottom. This makes it easy to access 
+all the pages.
+Obstacles: while visiting the website, it seemed that the dog’s page does not give the user 
+the prices to see on the checkout button up top. That can make the user leave the page. 
+To solve this problem I have fixed the issue by making each dog card work the way they are 
+supposed to. So every time the user clicks on each dog card, now the cart adds the prices, 
+whereas before it did not do anything.
+
+
+
+
+Dogs Page
+Clicks: When I click on each card the picture of the dog enlarges, and the button Adopt shows 
+the animation but it does not show the price on the shopping cart. The reason for that was 
+that it was not part of the assignment. Now I fixed it so it works. 
+The Submit button on the checkout page does not work. This can be frustrating to the user, 
+so I tried make the submit button work to make it user friendly.
+Scrolling
+Scrolling works from top to bottom. Each navigation pages work on the top navigation bar and 
+all the way to the bottom. But the shopping crat is not working as it should. It is not adding 
+the dog prices. As I said before this issue was very bothersome so I am trying to fix it.
+Obstacles – As a user if the issues with the Submit Button and how the prices were not 
+adding up correctly on the dogs page persisted and were not fixed it can make the 
+user leave the page and go to another website that is working properly. So, 
+I tried to fix this as well. If this were a real website for actual users the dummy 
+type would be a big issue and I would definitely fix it so users are not disturbed by the gibberish.
+Blog Page
+Clicks: Clicks are working fine for the blog page. Navigation bar links are working well. 
+The blog page is a nice for the user to find out what they can do with their new dog and 
+be inspired to fulfill their dream of owning their little puppy.
+Scrolling: This page scrolls just fine. Scrolls up and down and navigates to all the pages. 
+The pictures look good and it is informative and clean.
+Obstacles – Although I did not find any obstacles on the blog page, if this was a real 
+website the dummy type would definitely deter users and leave the website. 
+I know I have said this before but that can be an issue for the actual 
+users if this was not a fictitious website. Also, the same problem with the buttons 
+on the “Home Page”, “See More Dogs” and on the “checkout page”. 
+As a user I noticed that nothing was happening. But we don’t have a server so that is 
+why the submit button is not working.
+
+Testing the website on PC Desktop:
+Home
+Clicks: It would be nice to find out where users are clicking the most and where 
+they are not interested at all. In testing on the Desktop my findings were positive 
+because every click was working as it should. Only the “see more dogs” button did not working. 
+So I am fixing it to make it work because I want customers to stay on the page. 
+This same issue was present on the iPhone as well.
+Scrolling:
+It seems to work nicely. Only the “see more dogs” button doesn’t work. 
+All the pages in the navigation bar “Home”, “Dogs”, and “Blog” links well 
+and is working. But the checkout page does not work currently, I am working on fixing that.
+Obstacles while visiting the website seems to be how the dogs page does not give 
+the user the prices to see on the checkout button up top. That can make the user leave the page. 
+Dogs Page
+Clicks: When I click on each card the picture of the dog enlarges, and the button Adopt shows 
+the animation but it does not update the price on the shopping cart. The reason for that was 
+that it was not part of the assignment. Now I fixed it so it works.
+Scrolling
+Scrolling works from top to bottom. Each navigation pages work on the top navigation bar and 
+all the way to the bottom. But the shopping crat is not working as it should. It is not adding 
+the dog prices.
+Obstacles – As a user this can make me leave the page and go to another website that is 
+working properly.
+
+
+Blog Page
+Clicks: Clicks are working fine for the blog page. Navigation bar links are working well. 
+Only this page is a nice for the user to find out what they can do with their new dog.
+Scrolling: This page scrolls just fine. Scrolls up and down and navigates to all the pages. 
+The pictures look good and it is informative.
+Obstacles – Buttons are not working. The “see more dogs” on the Home Page and 
+the “check-out page”. I am working on fixing it right now.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

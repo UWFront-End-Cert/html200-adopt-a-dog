@@ -307,6 +307,7 @@ main {
   text-align: center;
   text-transform: capitalize;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .blog-title, 
