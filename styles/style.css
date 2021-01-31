@@ -33,13 +33,32 @@ header p {
 }
 
 .header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     padding-right: 6%;
     padding-top: 2%;
     padding-bottom: 10%;
 }
 
 .cart {
-    width: 25%;
+    width: 20%;
+}
+
+.pay {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.pay p {
+    margin-top: 10%;
+}
+.pay img {
+    margin-right: 5%;
 }
 
 nav {
@@ -82,14 +101,17 @@ button {
     text-align: center;
     color: white;
     background-color: rgb(18, 146, 18);
-}
-
-header button {
-    width: 100%
+    font-weight: bold;
 }
 
 .dogs button {
+    margin-left: 10%;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     width: 80%;
+    border: solid 1px rgb(18, 146, 18)
 
 }
 
@@ -100,8 +122,15 @@ header button {
 }
 
 .more-dogs {
-    width: 20%;
+    background-color: lightgrey;
+    color: navy;
+    font-weight: bold;
+    border: solid 1px lightgrey;
+    width: 30%;
     margin-top: 6%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    
 
 }
 
@@ -125,18 +154,6 @@ header button {
     padding-right: 5%;
     padding-left: 5%;
     padding-bottom: 2%;
-}
-
-.pay {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: auto;
-    margin-bottom: 5%;
-    text-align: right;
-}
-
-.pay img {
-    margin-left: 85%;
 }
 
 .adopt {
@@ -208,8 +225,8 @@ header button {
 }
 
 .col1-2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    /* grid-column-start: 1; */
+    grid-column: 1/2;
 }
 
 .row-1 {
@@ -232,10 +249,6 @@ fieldset {
     font-size: .75rem;
 }
 
-form {
-
-}
-
 .name {
     display: grid;
     grid-template-columns: 70%;
@@ -251,18 +264,26 @@ form {
     display: grid;
     grid-template-columns: 20% 15% 10%;
     grid-template-rows: auto;
-    margin-left: 15%;
-    margin-right: 10%;
+    grid-row-gap: 10%;
+    margin-left: 15%; 
+    /* margin-right: 10%;  */
     margin-bottom: 3%;
 }
 
+.city-state input, .city-state select {
+    margin-top: 5%;
+
+} 
+
+#zipcode {
+    margin-top: 10%;
+}
+
 .first-time {
-    width: 15%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
-    margin-left: 15%;
-    margin-right: 10%;
+    grid-template-columns: 7% 7%;
+    grid-template-rows: auto;
+    margin-top: 1.5%;
     margin-bottom: 3%;
 }
 
@@ -272,15 +293,28 @@ form {
     margin-bottom: 3%;
 }
 
+.location select {
+    margin-top: 1.5%;
+}
+
 .adopting {
     width: 50%;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto auto;
+    grid-template-columns: 10% 25% 10% 25%;
+    grid-template-rows: auto;
     margin-left: 15%;
-    margin-right: 10%;
+    /* margin-right: 10%; */
     margin-bottom: 3%;
 
+}
+
+.adopting img {
+    width: 85%;
+}
+
+.adopt-label {
+    margin-bottom: 1.5%;
+    margin-left: 15%;
 }
 
 .total {
@@ -294,16 +328,20 @@ form {
     font-size: 1rem;
 }
 
+fieldset {
+    margin-left: 15%;
+}
+
 label, fieldset{
     font-weight: bold;
 }
 
-input, fieldset {
-    margin-top: 1.5%;
+fieldset label {
+    font-weight: normal;
 }
 
-select {
-    margin-left: 1.5%;
+input, fieldset {
+    margin-top: 1.5%;
 }
 
 label, input, select {
