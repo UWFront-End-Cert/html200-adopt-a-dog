@@ -1,0 +1,84 @@
+/*
+ * Colors, fonts and other non-layout styling.
+ */
+header {
+  background-color: #003366;
+}
+header h1 {
+  color: #009900;
+  font-size: 1.3rem;
+}
+header nav {
+  background-color: #E6E6E6;
+}
+.header-cart {
+  color: white;
+}
+.header-cart a {
+  color: #FFFFFF;
+  background-color: #009900;
+  text-decoration: none;
+}
+nav a {
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
+}
+footer {
+  background-color: #404040;
+  color: #FFFFFF;
+}
+footer p {
+  font-size: 0.8rem;
+}
+nav a {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*
+ * Layout-related styling: header and footer
+ */
+.header-main {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 3% 6%;
+}
+.logo-and-name {
+  width: 45%;
+}
+.header-cart {
+  width: 15%;
+  height: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+.header-cart img {
+  width: 20%;
+  padding: 0% 5%;
+}
+.header-cart a {
+  width: 100%;
+  padding: 5% 10%;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row;
+  padding: 2% 10%;
+}
+nav li {
+  padding: 0rem 1rem;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-main {
+  width: 30%;
+  padding: 2%;
+}
