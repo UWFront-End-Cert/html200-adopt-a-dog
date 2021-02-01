@@ -1,6 +1,15 @@
 /*
  * Colors, fonts and other non-layout styling.
  */
+h1 {
+  color: #003366;
+}
+h2 {
+  color: #003366;
+}
+h3 {
+  color: #003366;
+}
 header {
   background-color: #003366;
 }
@@ -31,9 +40,30 @@ footer {
 footer p {
   font-size: 0.8rem;
 }
-nav a {
+footer nav a {
   color: #FFFFFF;
   font-weight: bold;
+  text-decoration: none;
+}
+.profile-card {
+  border: solid 2px #D9D9D9;
+}
+.profile-card-text p {
+  font-size: 0.8rem;
+}
+.profile-card-text span {
+  font-weight: bold;
+}
+.profile-card a {
+  color: #FFFFFF;
+  background-color: #009900;
+  font-weight: bold;
+  text-decoration: none;
+}
+.more-dogs-link a {
+  color: #003366;
+  font-weight: bold;
+  background-color: #E6E6E6;
   text-decoration: none;
 }
 
@@ -81,4 +111,54 @@ footer {
 .footer-main {
   width: 30%;
   padding: 2%;
+}
+
+/*
+ * Layout-related styling: main page
+ */
+ main {
+   padding: 0% 10%;
+ }
+.main-page-intro {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 5%;
+}
+.main-page-intro img {
+  width: 30%;
+}
+.main-page-intro-text {
+  width: 60%;
+  padding: 0% 5%;
+}
+.main-page-adopt {
+  padding-bottom: 10%;
+}
+.profile-cards {
+  display: flex;
+  flex-flow: row wrap;
+}
+.profile-card {
+  width: 20%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.profile-card img {
+  width: 100%;
+}
+.profile-card a {
+  margin: 5% 10%;
+  padding: 5% 10%;
+}
+.profile-card-text {
+  padding: 0% 10%;
+}
+.more-dogs-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.more-dogs-link a {
+  padding: 2% 5%;
 }
