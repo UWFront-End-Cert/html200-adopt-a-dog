@@ -162,3 +162,21 @@ footer {
 .more-dogs-link a {
   padding: 2% 5%;
 }
+
+/*
+ * Layout-related styling: main page
+ */
+.blog {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 5%;
+}
+.blog img {
+  padding-top: 5%;
+  width: 30%;
+  height: 30%
+}
+.blog-text {
+  width: 60%;
+  padding: 0% 5%;
+}
