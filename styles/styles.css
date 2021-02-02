@@ -134,22 +134,32 @@ nav {
 
 .flex-nav {
   display: flex;
-  width: 30%;
+  width: 250px;
   height: 3rem;
   flex-wrap: nowrap;
   padding: .8rem 0rem 1.5rem;
 }
 
 .flex-nav-home {
-  flex: 1rem;
+  flex: 1.5rem;
 }
 
 .flex-nav-dogs {
-  flex: 1rem;
+  flex: 1.5rem;
 }
 
 .flex-nav-blog {
-  flex: 1rem;
+  flex: 3rem;
+}
+
+/* add slash after nav menu items */
+
+.flex-nav-home a::after {
+  content: "/";
+}
+
+.flex-nav-dogs a::after {
+  content: "/";
 }
 
 
@@ -292,6 +302,9 @@ nav {
   padding: 0rem .7rem .7rem .7rem;
 }
 
+.p-bold {
+  font-weight: bold;
+}
 
 /* blog grid layout */
 
@@ -411,6 +424,16 @@ footer {
 
 .footer-nav-blog {
   flex: 2rem;
+}
+
+/* add slash after nav menu items */
+
+.footer-nav-home a::after {
+  content: "/";
+}
+
+.footer-nav-dogs a::after {
+  content: "/";
 }
 
 
