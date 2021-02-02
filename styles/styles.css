@@ -9,6 +9,11 @@ p {
   font-family: "Open sans", sans-serif;
 }
 
+h3 {
+  font-family: "Lora", serif;
+  color: #0e4769;
+}
+
 /* HEADER STYLING */
 
 header {
@@ -168,16 +173,57 @@ main {
   font-size: 1.4rem;
 }
 
+/* DOG CARD CSS */
+
+.dog-card-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.dog-card {
+  border: 2px solid #e8e8e8;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.20);
+}
+
+.dog-card > h3 {
+  margin-left: 1rem;
+
+}
+
+.dog-card > p:nth-of-type(1) {
+  display: inline;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.dog-card > p:nth-of-type(2) {
+  display: inline;
+}
+
+.dog-card > p:nth-of-type(3) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.dog-card > button {
+  background-color: green;
+  font-size: 1rem;
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+
 @media only screen and (max-width: 1350px) {
   main {
     margin: .5rem 1rem;
   }
 
   .about-us {
-    /* grid-template-columns: minmax(100px , .5fr) 1fr; */
-    /* grid-template-columns: minmax(.5fr , 1fr) 1fr; */
-    /* grid-template-columns: minmax(20% , 1fr) 1fr; */
-    margin-top: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(100% , 1fr));
     grid-gap: 0;
   }
