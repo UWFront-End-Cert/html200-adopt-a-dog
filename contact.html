@@ -10,7 +10,6 @@
 
 <body>
 
-
     <header>
         <section class="hdr-left">
             <img class="logo" src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
@@ -25,8 +24,6 @@
             <!--end of cart  -->
             <button type="submit" value="Submit" name="submit">Checkout</button>
         </section> <!-- end of hdr-right -->
-
-
     </header>
 
     <nav>
@@ -41,9 +38,8 @@
     </nav>
 
     <form>
-        <div id="wrapper">
+        <div class="wrapper">
             <h2>Checkout</h2>
-
             <fieldset>
                 <div class="personal-info">
                     <label for="name">Name
@@ -124,12 +120,15 @@
 
                 <fieldset class="adopter">
                     <legend>First Time Adopter?</legend>
-                    <div class="first-time">
+                    <div class = "first-time" >
+                     <div>
                         <input type="radio" id="yes" name="prev-adopter" value="Yes">
                         <label for="yes">Yes </label>
-
+                    </div>
+                    <div>
                         <input type="radio" id="no" name="prev-adopter" value="No">
                         <label for="no">No </label>
+                    </div>
                     </div> <!--  end of adopter div -->
 
                 </fieldset>
@@ -144,7 +143,7 @@
                 </div> <!--  end of location div -->
             </fieldset>
 
-            <section>
+            <section class = "dogs-adopted">
                 <h4>Dogs Adopted</h4>
                 <div class="adopted-row">
                     <article class="adopted-row">
@@ -173,14 +172,15 @@
                 </div>
             </section>
 
-            <section>
+            <section class = "cost">
                 <h4>Total Adoption Costs</h4>
 
                 <p>$1234.56</p>
 
             </section>
+            <!-- end of cost -->
 
-            <button type="submit" value="Submit" name="submit">Submit</button>
+            <button class = "contact-button" type="submit" value="Submit" name="submit">Submit</button>
         </div>
         <!-- end of wrapper -->
     </form>
