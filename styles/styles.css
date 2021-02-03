@@ -1,341 +1,329 @@
 /* FONT STYLES */
 
 h1 {
-  font-family: "Lora", serif;
-  font-weight: 700;
+	font-family: "Lora", serif;
+	font-weight: 700;
+	color: #0e4769;
 }
 
 p {
-  font-family: "Open sans", sans-serif;
+	font-family: "Open sans", sans-serif;
 }
 
 h3 {
-  font-family: "Lora", serif;
-  color: #0e4769;
+	font-family: "Lora", serif;
+	color: #0e4769;
 }
+
+.our-dogs-title {
+	margin: 3rem 0 3rem 0;
+}
+
 
 /* HEADER STYLING */
 
 header {
-  background-image: url("../images/header-image.jpg");
-  background-color: black;
-  background-size: cover;
+	background-image: url("../images/header-image.jpg");
+	background-color: black;
+	background-size: cover;
 }
 
 .header-top {
-  margin: 0 1.5rem 4rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;;
+	margin: 0 1.5rem 4rem 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	;
 }
 
-.logo-bundle{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.logo-bundle {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .shopping-cart-icon {
-  width: 1.5rem;
+	width: 1.5rem;
 }
 
 .logo-bundle p {
-  color: #2cc749;
-  font-family: "Lora", serif;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 1.5rem;
-  margin: 0;
-  margin-right: 1rem;
-  padding: 0;
+	color: #2cc749;
+	font-family: "Lora", serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 1.5rem;
+	margin: 0;
+	margin-right: 1rem;
+	padding: 0;
 }
 
 .header-logo {
-  width: 80%;
+	width: 80%;
 }
 
 .shopping-cart p {
-  display: inline-block;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+	display: inline-block;
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
 }
 
 .cart-button {
-  background-color: #2cc749;
-  border: none;
-  color: white;
-  padding: 1rem 2.5rem;
-  text-align: center;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  display: block;
+	background-color: #2cc749;
+	border: none;
+	color: white;
+	padding: 1rem 2.5rem;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+	display: block;
 }
+
 
 /* HEADER STYLING: NAVIGATION */
 
 .header-nav {
-  background: #E4E4E4;
-  list-style: none;
-  padding: .5rem 0;
-
+	background: #E4E4E4;
+	list-style: none;
+	padding: .5rem 0;
 }
 
 .header-nav li {
-  display: inline-block;
-  margin: 1rem 0;
+	display: inline-block;
+	margin: 1rem 0;
 }
 
 .header-nav a {
-  text-decoration: none;
-  color: #253979;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 1rem 2rem;
+	text-decoration: none;
+	color: #253979;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+	padding: 1rem 2rem;
 }
 
 .header-nav a:hover {
-  background-color: #253979;
-  color: white;
+	background-color: #253979;
+	color: white;
 }
+
 
 /* FOOTER STYLING */
 
-  footer {
-    background-color: #253979;
-  }
+footer {
+	background-color: #253979;
+}
 
-  .footer-elements {
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.footer-elements {
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
-  .footer-logo {
-    width: 45%;
-  }
+.footer-logo {
+	width: 45%;
+}
 
-  .footer-nav {
-    padding: 0;
-  }
+.footer-nav {
+	padding: 0;
+}
 
-  .footer-nav li {
-    font-family: "Open Sans", sans-serif;
-    color: white;
-    display: inline-block;
-    margin: 1rem;
-  }
+.footer-nav li {
+	font-family: "Open Sans", sans-serif;
+	color: white;
+	display: inline-block;
+	margin: 1rem;
+}
 
-  .footer-nav a {
-    text-decoration: none;
-    color: white;
-  }
+.footer-nav a {
+	text-decoration: none;
+	color: white;
+}
 
-  .footer-elements p {
-    font-family: "Open sans", sans-serif;
-    font-size: 1rem;
-    width: 60%;
-    color: white;
-    margin-bottom: 0;
-    text-align: center;
-  }
+.footer-elements p {
+	font-family: "Open sans", sans-serif;
+	font-size: 1rem;
+	width: 60%;
+	color: white;
+	margin-bottom: 0;
+	text-align: center;
+}
 
-  small {
-    color: white;
-  }
+small {
+	color: white;
+}
+
 
 /* INDEX CSS */
 
 main {
-  margin: 1rem 10rem;
+	margin: 1rem 10rem;
 }
 
 .about-us {
-  margin-bottom: 6rem;
-  margin-top: 3rem;
-  display: grid;
-  /* grid-template-columns: 1fr 1fr; */
-  grid-template-columns: minmax(300px, .5fr) 1fr;
-  gap: 2.5rem;
-
+	margin-bottom: 6rem;
+	margin-top: 3rem;
+	display: grid;
+	/* grid-template-columns: 1fr 1fr; */
+	grid-template-columns: minmax(300px, .5fr) 1fr;
+	gap: 2.5rem;
 }
 
-.about-us-blurb{
-  align-self: center;
-  justify-self: center;
+.about-us-blurb {
+	align-self: center;
+	justify-self: center;
 }
 
 .about-us-blurb p {
-  font-size: 1.4rem;
+	font-size: 1.4rem;
 }
+
 
 /* DOG CARD CSS */
 
 .dog-card-board {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 3rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 3rem;
+}
+
+.od-card-board {
+	margin-bottom: 4rem;
 }
 
 .dog-card {
-  border: 2px solid #e8e8e8;
-  border-radius: 3px;
-  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.20);
+	border: 2px solid #e8e8e8;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.20);
 }
 
 .dog-card-details {
-  padding: 1rem;
+	padding: 1rem;
 }
 
-.dog-card > h3 {
-  margin-left: 1rem;
-
+.dog-card>h3 {
+	margin-left: 1rem;
 }
 
-.dog-card-details > p:nth-of-type(1) {
-  display: inline;
-  font-weight: 700;
+.dog-card-details>p:nth-of-type(1) {
+	display: inline;
+	font-weight: 700;
 }
 
-.dog-card-details > p:nth-of-type(2) {
-  display: inline;
+.dog-card-details>p:nth-of-type(2) {
+	display: inline;
 }
 
-.dog-card-details > button {
-  background-color: green;
-  font-size: 1rem;
-  font-family: "Open sans", sans-serif;
-  font-weight: 700;
-  color: white;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: none;
+.dog-card-details>button {
+	background-color: green;
+	font-size: 1rem;
+	font-family: "Open sans", sans-serif;
+	font-weight: 700;
+	color: white;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none;
 }
 
 .see-more-dogs-button {
-  background-color: #E4E4E4;
-  font-size: 1rem;
-  font-family: "Open sans", sans-serif;
-  font-weight: 700;
-  color: #253979;
-  padding: 10px 30px;
-  border: none;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
+	background-color: #E4E4E4;
+	font-size: 1rem;
+	font-family: "Open sans", sans-serif;
+	font-weight: 700;
+	color: #253979;
+	padding: 15px 30px;
+	border: none;
+	text-align: center;
+	display: block;
+	margin: 2rem auto 4rem auto;
 }
 
 @media only screen and (max-width: 1350px) {
-  main {
-    margin: .5rem 1rem;
-  }
-
-  .about-us {
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(100% , 1fr));
-    grid-gap: 0;
-  }
-
-  .about-us-blurb p {
-    font-size: 1.2rem;
-  }
-
+	main {
+		margin: .5rem 1rem;
+	}
+	.about-us {
+		margin-top: 1.5rem;
+		margin-bottom: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+		grid-gap: 0;
+	}
+	.about-us-blurb p {
+		font-size: 1.2rem;
+	}
 }
-
-
 
 @media only screen and (max-width: 450px) {
-
-  /* HEADER AND FOOTER STYLING: MEDIA QUERIES */
-  /* Background Image */
-  .header-top {
-    margin: 0 1.5rem 1.25rem 1.5rem;
-  }
-
-  /* Full Span Button on Mobile */
-  .shopping-cart {
-    flex: 100%;
-  }
-
-  .cart-button {
-    background-color: #2cc749;
-    border: none;
-    color: white;
-    padding: 1rem 2.5rem;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    display: block;
-    width: 100%;
-  }
-
-  /* Mobile Nav Bar */
-
-  .header-nav {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    justify-content: space-between;
-    text-align: center;
-  }
-
-  .header-nav li {
-    color: white;
-    flex: 1 0 0;
-    height: 2.5rem;
-    margin: 0;
-  }
-
-  .header-nav a {
-    font-size: 1rem;
-    display: block;
-    line-height: 2.5rem;
-    padding: 0;
-
-  }
-
-  /* MOBILE FOOTER STYLING */
-
-  .footer-elements {
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-logo {
-    width: 75%;
-  }
-
-  .footer-elements p {
-    width: 80%;
-    margin-bottom: 0;
-  }
-
-  .footer-nav li {
-    margin: .75rem;
-  }
-
+	/* HEADER AND FOOTER STYLING: MEDIA QUERIES */
+	/* Background Image */
+	.header-top {
+		margin: 0 1.5rem 1.25rem 1.5rem;
+	}
+	/* Full Span Button on Mobile */
+	.shopping-cart {
+		flex: 100%;
+	}
+	.cart-button {
+		background-color: #2cc749;
+		border: none;
+		color: white;
+		padding: 1rem 2.5rem;
+		margin: 0;
+		text-align: center;
+		text-decoration: none;
+		font-family: "Open Sans", sans-serif;
+		font-weight: 700;
+		font-size: 1rem;
+		display: block;
+		width: 100%;
+	}
+	/* Mobile Nav Bar */
+	.header-nav {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		justify-content: space-between;
+		text-align: center;
+	}
+	.header-nav li {
+		color: white;
+		flex: 1 0 0;
+		height: 2.5rem;
+		margin: 0;
+	}
+	.header-nav a {
+		font-size: 1rem;
+		display: block;
+		line-height: 2.5rem;
+		padding: 0;
+	}
+	/* MOBILE FOOTER STYLING */
+	.footer-elements {
+		padding: 2rem 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-logo {
+		width: 75%;
+	}
+	.footer-elements p {
+		width: 80%;
+		margin-bottom: 0;
+	}
+	.footer-nav li {
+		margin: .75rem;
+	}
 }
-
-
-
-
-
-
 
 
 /* Remove this after styling images they are breaking the page */
-section img{
-  width: 100%;
+
+section img {
+	width: 100%;
 }
