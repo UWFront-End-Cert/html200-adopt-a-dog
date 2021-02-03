@@ -363,9 +363,6 @@ main {
 	}
 }
 
-
-/* Remove this after styling images they are breaking the page */
-
-section img {
-	width: 100%;
+img {
+  width: 100%;
 }
