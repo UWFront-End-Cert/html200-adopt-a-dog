@@ -24,22 +24,22 @@ header h1 {
   position: absolute;
   left: 13rem;
   top: 1rem;
-  font-size: 60px;
+  font-size: 3rem;
   font-family: sans-serif;
 }
 
 header h2 {
   color: white;
   position: absolute;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-family: sans-serif;
   font-style: italic;
-  line-height: 36px;
+  line-height: 2rem;
 }
 
 .b-box {
   width: 30rem;
-  height: 100px;
+  height: 3rem;
 }
 
 /*
@@ -124,7 +124,7 @@ nav ul {
 }
 
 nav li {
-  float: left;
+  display: inline-block;
 }
 
 nav li a {
@@ -140,7 +140,7 @@ nav li a:hover {
   background-color: Grey;
 }
 
-#wrapper {
+.wrapper {
   width: 80%;
   min-height: auto;
   margin: 2rem auto;
@@ -170,7 +170,7 @@ nav li a:hover {
 
 .div1 {
   width: 98%;
-  display: inline-table;
+  display: flex;
 }
 
 .div2 {
