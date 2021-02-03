@@ -9,22 +9,29 @@
 
   <body>
     <header>
-      <img src="images/adoptadog-logo.svg" width="200" alt="adoptadog logo">
-      <p>Seattle's premiere dog adoption agency</p>
-
-      <img src="images/cart-icon.svg" width="24" alt="shopping cart icon">
-      <p>$1234.56</p>
-      <button type="button">Checkout</button>
+        <div class="header-image">
+          <div class="image-logo">
+            <img src="images/adoptadog-logo.svg"  alt="adoptadog-logo" />
+          </div>
+        <div class="cart-icon">
+          <img src="images/cart-icon.svg"  alt="shopping cart icon" />
+          $1234.56
+          <button class="btn-checkout-header "type="button">Checkout</button>
+        </div>
+        <div class="tagline">Seattle's premiere dog adoption agency
+        </div>
+      </div>
 
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="dogs.html">Dogs</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">Home</a><span class="nav-slash">&#47;</span></li>
+            <li><a href="dogs.html">Dogs</a><span class="nav-slash">&#47;</span></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-
 
     <main>
       <h2>Here are all of our Dogs!</h2>
@@ -169,5 +176,4 @@
     </footer>
 
 </body>
-
 </html>
