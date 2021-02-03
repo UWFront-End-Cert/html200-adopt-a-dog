@@ -74,7 +74,7 @@ width: auto;
 nav {
   font-size: .8rem;
   color: #0f52ba;
-  padding-left: 60px;
+  padding-left: 70px;
   font-weight: bold;
   background-color: #ccc;
   height: 2rem;
@@ -121,6 +121,26 @@ text-decoration: none;
 .intro-copy {
   grid-column: 4 / 9;
 }
+
+/************ blog ***************/
+
+.blog {
+    margin-left: 7rem;
+    margin-right: 7rem;
+    display: flex;
+    padding-top: 0px;
+}
+
+.blogheader {
+  padding-left: 7rem;
+}
+
+.blog-image {
+    width: 30%;
+    padding-right: 2rem;
+    align-self: flex-start;
+}
+
 
 .card-1 {
   grid-column: 1 / 3;
