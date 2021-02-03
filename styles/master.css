@@ -25,7 +25,7 @@ p {
 .header-image {
   background-repeat:no-repeat;
   background-color: #000;
-  background-image: url("images/header-image.jpg");
+  background-image: url("../images/header-image.jpg");
   background-size: cover; /* fit image into div */
   height: 15rem;
 }
@@ -51,11 +51,16 @@ p {
 .cart-icon {
   width: 3%;
   padding-right: 4rem;
+  margin-top: -4rem;
   float: right;
   vertical-align: top; /*why not working? */
 }
 
-
+.btn-checkout-header {
+  background-color: #90b52a;
+  margin-top: 1rem;
+  color: #fff;
+}
 /* center content;
 .center {
 display: block;
@@ -108,7 +113,7 @@ text-decoration: none;
 
 .intro {
   grid-column: 1 / 4;
-  background-image: url("images/home-intro.jpg");
+  background-image: url("../images/home-intro.jpg");
   background-size: cover; /* fit image into grid */
   margin-top: 2rem;
 }
