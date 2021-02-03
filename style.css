@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas:
+  "header  header  header"
+  "nav     nav     nav"
+  "content content content"
+  "footer  footer  footer"
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+}
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+.hidden:focus {
+  left: 0;
+}
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link{
+  visibility: hidden;
+}
+.welcome {
+  visibility: hidden;
+}
+.main-header {
+  grid-area: header;
+  background-color: #003366;
+  padding-top: 0rem;
+}
+.header-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.logo-header-wrapper {
+  padding-left: 0rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  background-color:;
+  margin: auto;
+}
+.logo {
+
+}
+.slogan {
+  font-size: 2rem;
+  color: #06c106;
+}
+.checkout-cart-wrapper {
+  padding-right: 0rem;
+  padding-bottom: 6rem;
+  padding-top: 0rem;
+  background-color:;
+  margin: auto;
+}
+.main-nav {
+  grid-area: nav;
+  flex-basis: 100%;
+  display: flex;
+  background-color: #e6e6e6;
+  padding: 2rem;
+  padding-left: 16rem;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #003366;
+  font-family: serif;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.main-content {
+  grid-area: content;
+}
+.main-footer {
+  grid-area: footer;
+  background-color: #403f3e;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.footer-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #403f3e;
+  color: #ffffff;
+}
+.footer-fig {
+
+}
+.footer-info {
+  width: 27rem;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1.7rem;
+}
+.footer-nav a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0.5rem;
+}
+.copyright {
+  font-family: sans-serif;
+  font-weight: 400;
+}

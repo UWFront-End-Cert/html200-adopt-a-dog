@@ -4,29 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <title>ADOPT-A-DOG HOME</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<header>
-  <h1 class="title-text-hidden">Welcome to Adopt A Dog</h1>
-  <figure>
-    <img src="images/adoptadog-logo.svg" alt="" width="450">
-  </figure>
-  <p class="slogan">Seattle's premiere dog adoption agency</p>
-  <img src="images/cart-icon.svg" alt="" width="30">
-  <form action="checkout.html">
-    <input class="checkout" type="submit" value="Checkout" onclick="checkout.html"/>
-  </form>
-  <p class="checkout-total">$1234.56</p>
-  <nav class="header-nav">
-        <ul>
-          <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
-          <li><a href="adoption-list.html">Dogs&nbsp;&nbsp;&nbsp;/</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
+<a href="#main-content" class="sr-only">Skip to main content</a>
+<div class="wrapper">
+<header class=main-header>
+  <div class="header-container">
+    <div class="logo-header-wrapper"
+      <h1 class="welcome">Welcome to Adopt A Dog</h1>
+      <figure class="logo">
+        <img src="images/adoptadog-logo.svg" alt="" width="450">
+      </figure>
+      <p class="slogan">Seattle's premiere dog adoption agency</p>
+    </div>
+    <div class="checkout-cart-wrapper">
+      <img src="images/cart-icon.svg" alt="" width="30">
+      <p class="checkout-total">$1234.56</p>
+      <form action="checkout.html" class="checkout-button">
+        <input class="checkout" type="submit" value="Checkout" onclick="checkout.html"/>
+      </form>
+    </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
+      <li><a href="adoption-list.html">Dogs&nbsp;&nbsp;&nbsp;/</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+  </div>
 </header>
-<section id="main-content">
+<section class="hidden" id="main-content">
   <h2 class="skip-link">content</h2>
 </section>
 <section class="home-intro">
@@ -114,11 +123,12 @@
     <button type="submit" value="Go to Google">See More Dogs!</button>
   </form>
 </section>
-<footer class="footer-small">
+<footer class="main-footer">
+  <div class="footer-wrapper">
   <figure class=footer-fig>
     <img src="images/adoptadog-logo.svg" alt="" width="350">
   </figure>
-  <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+  <p class="footer-info">Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
   <nav class="footer-nav">
     <ul>
       <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
@@ -126,7 +136,10 @@
       <li><a href="">Contact</a></li>
     </ul>
   </nav>
-  <p>&copy; 2018 Adoptadog, &#x2758; LLC Seattle, WA</p>
+  <p class="copyright">&copy; 2018 Adoptadog, &#x2758; LLC Seattle, WA</p>
+</div>
 </footer>
+</div>
+
 </body>
 </html>
