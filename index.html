@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopt A Dog</title>
     <!-- normalize linking -->
     <link rel="stylesheet" href="./styles/normalize.css" />
@@ -19,7 +20,7 @@
         <div class="checkout">
           <div>
             <img src="./images/cart-icon.svg" alt="Shopping Cart Icon">
-            <p id="cost">$1234.56</p>
+            <p class="cost">$1234.56</p>
           </div>
           <button onclick="document.location='./checkout.html'">Checkout</button>
         </div>
@@ -34,7 +35,7 @@
         </ul>
       </nav>
 
-      <article id="main-content">
+      <article class="main-content">
         <div class="summary">
           <img src="./images/home-intro.jpg" alt="A man hugging a golden dog">
           <div>
@@ -43,7 +44,7 @@
           </div>
         </div>
 
-        <div id="page-content">
+        <div class="page-content">
           <section>
             <img src="./images/murphy-card.jpg" alt="A picture of Murphy, a brown and white dog">
             <h3>Murphy</h3>
@@ -110,7 +111,7 @@
         </div>
       </article>
 
-      <button type="button" name="more-dogs" onclick="document.location='./dogs.html'" id="dogs">See More Dogs</button>
+      <button type="button" name="more-dogs" onclick="document.location='./dogs.html'" class="dogs">See More Dogs</button>
     </div>
 
     <footer>
@@ -122,7 +123,7 @@
           <li>/</li>
           <li><a href="./dogs.html">Dogs</a></li>
           <li>/</li>
-          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
