@@ -14,12 +14,14 @@
 .row{
   margin-bottom: 2rem;
 }
+
 main{
   max-width: 68.75rem;
   margin: auto;
   padding-left:0.75rem;
   padding-right:0.75rem;
 }
+
 .d-flex{
   display: flex;
 }
@@ -29,6 +31,7 @@ body, p {
   font-family: var(--body-font);
   line-height: 1.75rem;
 }
+
 h1{
   font-size:2.25rem;
   font-family: var(--title-font);
@@ -36,31 +39,37 @@ h1{
   font-weight: bold;
   margin-bottom:2rem;
 }
+
 h2{
   font-size:2rem;
   font-family: var(--title-font);
   color: var(--color-navy);
   font-weight: bold;
 }
+
 h3{
   font-size:1.75rem;
   font-family: var(--title-font);
   color: var(--color-navy);
   font-weight: bold;
 }
+
 h4{
   font-size:1.5rem;
   font-family: var(--title-font);
   color: var(--color-navy);
 }
+
 h5{
   font-size:1rem;
   font-family: var(--title-font);
 }
+
 h6{
   font-size:1rem;
   font-family: var(--title-font);
   }
+
 nav a, header nav a{
   color: var(--color-navy);
   font-weight: bold;
@@ -71,19 +80,23 @@ nav a, header nav a{
 header{
   color: var(--color-white);
 }
+
 header{
   background-image: url(../images/header-image.jpg);
   background-size: cover;
 }
+
 .header-top{
   padding-top:4rem;
   padding-bottom:13.125rem;
   margin-bottom: 0 !important;
 }
+
 .header-top, header nav {
   margin:auto;
   max-width: 81.25rem;
 }
+
 header nav ul, footer nav ul{
   text-align: left;
   padding-top: 1rem;
@@ -91,43 +104,54 @@ header nav ul, footer nav ul{
   overflow: hidden;
   margin-bottom: 0rem;
 }
+
 nav ul li{
   float:left;
   font-weight: bold
 }
+
 nav ul li::after{
   content: "/";
   color: var(--color-navy);
 }
+
 nav li:last-child:after {
   content: "";
 }
+
 nav ul li a{
   padding: 0.875rem 1rem;
 }
+
 nav ul li a:hover{
   text-decoration: none;
   color: var(--color-green);
 }
+
 nav ul li a.active:hover{
   color: var(--color-navy);
 }
+
 .top-nav{
   background-color: var(--color-grey);
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
+
 header .cart{
   display: flex;
   flex-direction: column;
 }
+
 p.checkout{
   display:flex;
   justify-content: flex-end;
 }
+
 .checkout strong{
   padding-left: .5rem;
 }
+
 .logo-text{
   font-size: 1.5rem;
   color: var(--color-green);
@@ -141,19 +165,24 @@ p.checkout{
     display:flex;
     flex-direction:column;
   }
+
   .logo img{
     margin:auto;
   }
+
   .logo h2{
     display: flex;
     justify-content:center;
   }
+
   p.checkout{
     justify-content:center;
   }
+
   .col.cart{
     padding-top: 0.5rem;
   }
+
   .header-top{
     padding-bottom:4rem;
   }
@@ -167,6 +196,7 @@ footer{
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
 .footer-container{
   max-width: 30%;
   margin:auto;
@@ -181,25 +211,31 @@ footer{
 footer img{
   padding-bottom: 2rem;
 }
+
 footer a, footer p {
   color: white;
 }
+
 footer p{
   padding-bottom: 1rem;
   justify-content: center;
 }
+
 .footer-nav{
   display: grid;
 }
+
 footer nav{
   justify-self:center;
   padding-bottom: 1rem;
 }
+
 footer nav ul{
   justify-content: center;
   padding-left: 0rem;
   padding-bottom: 1rem;
 }
+
 footer nav ul li:after{
   color:white;
 }
@@ -215,13 +251,16 @@ main img{
   border-radius: 2px;
   font-size: 1rem;
 }
+
 form button, .button {
   border: 1px solid transparent;
   padding: .25rem 4rem;
 }
+
 .button:hover{
   text-decoration: none;
 }
+
 .grey-button{
   font-size: 1.25rem;
   font-weight: 800;
@@ -231,22 +270,27 @@ form button, .button {
   text-align: center;
   background-color: var(--color-grey);
 }
+
 .green-button{
   color:white;
   background-color: var(--color-green);
 }
+
 .checkout-btn{
   padding: 0.5rem 2.625rem;
   font-size: .75rem;
 }
+
  .full-width{
   text-align: center;
   width: 100%;
   margin-bottom: 0rem;
 }
+
 .grid{
   display: grid
 }
+
 .button-row{
   justify-self:center;
 }
@@ -255,12 +299,14 @@ form button, .button {
 .dog-card img{
   width: 100%;
 }
+
 .info-section{
   border:solid var(--color-grey) 1px;
   border-top: none;
   padding: 0.5rem 0.75rem 1rem;
   margin-bottom: 2rem;
 }
+
 .info-section p{
   font-size:.75rem;
   line-height: 1.25rem;
@@ -270,6 +316,7 @@ form button, .button {
 article.blog{
   margin-bottom:4rem;
 }
+
 .blog-photo{
   margin-bottom:2rem;
 }
@@ -279,21 +326,26 @@ form{
   max-width:66%;
   margin-bottom: 6rem;
 }
+
 label, legend, h2.dogs{
   color:var(--color-navy);
   font-family: 'Vollkorn', serif;
   font-weight: bold;
   font-size:1.25rem;
 }
+
 label, fieldset{
   margin-top: 2rem;
 }
+
 .first label{
   margin-top: 0rem;
 }
+
 .radio-item{
   padding-right: 1rem;
 }
+
 label.radio-opt {
   margin-top: 0rem;
   font-family: 'Montserrat', sans-serif;
@@ -302,21 +354,26 @@ label.radio-opt {
   align-items: flex-start;
   font-size: 1rem;
 }
+
 input[type="text"], select{
   width:100%;
   border:solid var(--color-grey) 2px;
 }
+
 .select{
   height: 2.1rem;
 }
+
 .checkout-img{
   width: 4.68rem;
   height: 4.68rem;
   object-fit: cover;
 }
+
 div.checkout-name {
   padding-left: 0.5rem;
 }
+
 .checkout-name p{
   font-size: .75rem;
   line-height: .75rem;
