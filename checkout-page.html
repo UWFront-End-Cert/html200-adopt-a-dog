@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adoptadog - Checkout</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
   </head>
 
   <body>
@@ -31,67 +32,73 @@
     </header>
 
     <main>
-      <section>
+      <section class="checkout-container">
         <h2>Checkout</h2>
         <form name="adoption-checkout-form" method="get">
           <label for="name">Name
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" class="input-long">
           </label>
           <label for="email-address">Email Address
-            <input type="text" name="email-address" id="email-address">
+            <input type="text" name="email-address" id="email-address" class="input-long">
           </label>
           <label for="street-address">Street Address
-            <input type="text" name="street-address" id="street-address">
+            <input type="text" name="street-address" id="street-address" class="input-long">
           </label>
-          <label for="city">City
-            <input type="text" name="city" id="city">
-          </label>
-          <label for="state">
-            <select name="state" id="state">
-              <option value="ca">CA</option>
-              <option value="or">OR</option>
-              <option value="wa">WA</option>
-            </select>
-          </label>
-          <label for="zip-code">Zip Code
-            <input type="text" name="zip-code" id="zip-code">
-          </label>
-          <fieldset>
-            <legend>First Time Adopter</legend>
-            <label for="first-time-yes">Yes
-              <input type="radio" name="first-time-choice" id="first-time-yes" value="yes">
+          <div class="city-state-zip">
+            <label for="city">City
+              <input type="text" name="city" id="city" class="input-city">
             </label>
-            <label for="first-time-no">No
-              <input type="radio" name="first-time-choice" id="first-time-no" value="no">
+            <label for="state">State
+              <select name="state" id="state" class="input-state">
+                <option value="ca">CA</option>
+                <option value="or">OR</option>
+                <option value="wa">WA</option>
+              </select>
             </label>
-          </fieldset>
+            <label for="zip-code">Zip Code
+              <input type="text" name="zip-code" id="zip-code" class="input-zip-code">
+            </label>
+          </div>
+          <div>
+            <p class="form-label">First Time Adopter</p>
+            <input type="radio" name="first-time-choice" id="first-time-yes" value="yes">
+            <label for="first-time-yes">Yes</label>
+            <input type="radio" name="first-time-choice" id="first-time-no" value="no">
+            <label for="first-time-no">No</label>
+          </div>
           <label for="pickup-location">Pickup Location
-            <select name="pickup-location" id="pickup-location">
+            <select name="pickup-location" id="pickup-location" class="input-pickup">
               <option value="in-store">In store</option>
               <option value="dropoff">Dropoff</option>
             </select>
           </label>
 
-          <section>
-            <h3>Dogs Adopted</h3>
-            <div class="dog-adopted-checkout-item">
-              <img src="./images/lucas-checkout.jpg" alt="Facial shot of a black dog">
-              <h3>Lucas</h3>
-              <p>
-                <span>Cost to Adopt:</span>
-                $123.45
-              </p>
-            </div>
-            <div class="dog-adopted-checkout-item">
-              <img src="./images/duffy-checkout.jpg" alt="Facial shot of a brown and white dog">
-              <h3>Duffy</h3>
-              <p>
-                <span>Cost to Adopt:</span>
-                $123.45
-              </p>
+          <section class="checkout-dogs-container">
+            <p class="form-label">Dogs Adopted</p>
+            <div class="checkout-dogs">
+              <div class="checkout-dog">
+                <img src="./images/lucas-checkout.jpg" alt="Facial shot of a black dog">
+                <div class="checkout-dog-text">
+                  <h4>Lucas</h4>
+                  <p>
+                    <span class="cost-label">Cost to Adopt:</span>
+                    $123.45
+                  </p>
+                </div>
+              </div>
+              <div class="checkout-dog">
+                <img src="./images/duffy-checkout.jpg" alt="Facial shot of a brown and white dog">
+                <div class="checkout-dog-text">
+                  <h4>Duffy</h4>
+                  <p>
+                    <span class="cost-label">Cost to Adopt:</span>
+                    $123.45
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
-          <h3>Total Adoption Cost</h3>
+          <p class="form-label">Total Adoption Cost</p>
           <p>$1234.56</p>
 
           <input type="submit" name="submit" value="Submit">

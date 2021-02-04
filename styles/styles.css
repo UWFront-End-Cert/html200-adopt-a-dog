@@ -10,6 +10,9 @@ h2 {
 h3 {
   color: #003366;
 }
+h4 {
+  color: #003366;
+}
 header {
   background-color: #003366;
 }
@@ -66,6 +69,26 @@ footer nav a {
   background-color: #E6E6E6;
   text-decoration: none;
 }
+.form-label {
+  color: #003366;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+form label {
+  color: #003366;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.cost-label {
+  font-weight: bold;
+}
+.checkout-dog p {
+  font-size: 0.7rem;
+}
+input[type="submit"] {
+  color: #FFFFFF;
+  background-color: #009900;
+}
 
 /*
  * Layout-related styling: header and footer
@@ -114,7 +137,7 @@ footer {
 }
 
 /*
- * Layout-related styling: main page
+ * Layout-related styling: main page, and dogs page
  */
  main {
    padding: 0% 10%;
@@ -164,7 +187,7 @@ footer {
 }
 
 /*
- * Layout-related styling: main page
+ * Layout-related styling: blog page
  */
 .blog {
   display: flex;
@@ -174,9 +197,89 @@ footer {
 .blog img {
   padding-top: 5%;
   width: 30%;
-  height: 30%
+  height: 30%;
 }
 .blog-text {
   width: 60%;
   padding: 0% 5%;
+}
+
+/*
+ * Layout-related styling: checkout page
+ */
+ .checkout-container {
+   width: 50%;
+ }
+form {
+  display: flex;
+  flex-direction: column;
+}
+form h3 {
+  margin: 0;
+}
+form label {
+  margin: 0;
+}
+.form-label {
+  margin: 0;
+}
+form input {
+  height: 1.5rem;
+  margin-bottom: 1rem;
+}
+form select {
+  height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.input-short {
+  width: 15%;
+}
+.input-medium {
+  width: 50%;
+}
+.input-long {
+  width: 99%;
+}
+.city-state-zip {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.input-city {
+  width: 100%;
+}
+.input-state {
+  width: 100%;
+}
+.input-zip-code {
+  width: 100%;
+}
+.input-pickup {
+  width: 90%;
+}
+.checkout-dogs-container {
+  margin-bottom: 1rem;
+}
+.checkout-dogs {
+  display: flex;
+  flex-flow: row wrap;
+}
+.checkout-dog {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+}
+.checkout-dog h4 {
+  margin: 0;
+}
+.checkout-dog p {
+  margin: 0;
+}
+.checkout-dog img {
+  width: 25%;
+  padding-right: 5%;
+}
+input[type="submit"] {
+  width: 50%;
+  height: 2rem;
 }
