@@ -11,11 +11,15 @@
   </head>
   <body>
     <header>
-      <h1>ADOPTADOG</h1>
-      <h2>Seattle's premiere dog adoption agency</h2>
-      <div class="cart"><img src="images/cart-icon.svg"> </div>
-      <p>$246.90</p>
-      <a href="checkout.html" class="button">checkout</a>
+      <div class="title">
+        <h1>ADOPTADOG</h1>
+        <h2>Seattle's premiere dog adoption agency</h2>
+      </div>
+      <div class="cartinfo">
+        <div class="cart"><img src="images/cart-icon.svg"> </div>
+        <p>$246.90</p>
+        <a class="button" href="checkout.html">checkout</a>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -49,8 +53,8 @@
           <label>No<input type="radio" name="FTA" id="No"></label>
         <label>Pickup location
           <select name="pickup" id="pickup">
-          <option value="Main office">Main office</option>
-          <option value="Foster home">Foster home</option></select>
+          <option value="Main office">Seattle</option>
+          <option value="Foster home">Portland</option></select>
         </label>
         <h4>Dogs Adopted</h4>
         <figure>
@@ -78,10 +82,13 @@
         farm-to-table normcore hexagon irony.</p>
       <nav>
         <a href="index.html">Home</a>
-        <a href="dogs.html">Dogs</a>
-        <a href="#">Contact</a>
-      </nav>
-      <p>&copy 2018 Adoptadog, LLC | Seattle, WA</p>
+        <li> | </li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li> | </li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <p>&copy 2018 AdoptADog, LLC | Seattle, WA</p>
     </footer>
   </body>
 </html>
