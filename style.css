@@ -6,12 +6,6 @@
 .wrapper {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-areas:
-  "header  header  header"
-  "nav     nav     nav"
-  "content content content"
-  "footer  footer  footer"
 }
 nav ul {
   display: flex;
@@ -42,9 +36,10 @@ nav ul {
   visibility: hidden;
 }
 .main-header {
-  grid-area: header;
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
   background-color: #003366;
-  padding-top: 0rem;
+
 }
 .header-container {
   display: flex;
@@ -90,10 +85,78 @@ nav ul {
   font-weight: 900;
 }
 .main-content {
-  grid-area: content;
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+}
+.home-intro {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 90%;
+}
+.latest-blog {
+  width: 45%;
+  background-color: red;
+  line-height:;
+}
+.blog-intro {
+  font-size: ;
+  font-family: serif;
+}
+.blog-intro-image {
+  width: 50%;
+  background-color: red;
+  text-align: center;
+  padding-bottom: 3rem;
+  }
+.blog-entry {
+  line-height: 1.7rem;
+  text-align: left;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+.pup-profile {
+  width: 18%;
+  margin: auto;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  overflow: hidden;
+  }
+.profile-pic {
+  padding: 0rem;
+}
+.pup-profile, h3, p, button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.pup-style {
+  padding: 0rem;
+  border-style: solid;
+  border-color: gray;
+  border-width: 0px 2px 2px 2px;
+}
+.adopt-this-dog {
+  background-color: green;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+.full-adoption-list {
+  flex-basis: 100%;
+  margin: auto;
+  text-align: center;
+}
+.full-adoption-list > button {
+  padding: 0.5rem 3rem 0.5rem 3rem;
 }
 .main-footer {
-  grid-area: footer;
+  grid-row: 4 / 5;
+  grid-column: 1 / 4;
   background-color: #403f3e;
   padding-top: 4rem;
   padding-bottom: 4rem;
