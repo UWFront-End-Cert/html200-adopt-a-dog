@@ -131,6 +131,7 @@ h2.adopt-primary-header {
 .dog-holder {
     margin-top: 20%;
     border-style: outset;
+    padding:5px;
 }
 dog-cost {
     font-weight:600;
@@ -157,12 +158,13 @@ footer img {
 }
 .blog-main-holder {
     display: flex;
-/*    flex-flow: row wrap;*/
     grid-column: 1/ span 4;
     margin-bottom: 25px;
 }
 .blog-img-holder {
     display:inline;
+    flex-grow:0;
+    flex-shrink:0;
 }
 .blog-text-holder {
     display: inline;
@@ -190,7 +192,6 @@ p.blog-sub-paragraph {
 }
 .dog-checkout-holder {
     width: 450px;
-    background-color:red;
     display:flex;
     flex-direction:row;
     align-items: center;
@@ -227,6 +228,7 @@ button.see-more-dogs-button {
     margin-left: 40px;
     height:80px;
     background-color:darkgray;
+    display:flex;
 }
 ul {
     height:80px;
@@ -240,7 +242,8 @@ li {
     text-justify: center;
 }
 .footer-holder {
-    width:300px;
+    max-width: 300px;
+    width:100%;
 }
 .footer-link {
     display:inline;
