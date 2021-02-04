@@ -10,8 +10,6 @@
  --body-font:'Montserrat', sans-serif;
 }
 
-
-
 /**layout**/
 .row{
   margin-bottom: 2rem;
@@ -74,8 +72,8 @@ header{
   color: var(--color-white);
 }
 header{
-background-image: url(../images/header-image.jpg);
-background-size: cover;
+  background-image: url(../images/header-image.jpg);
+  background-size: cover;
 }
 .header-top{
   padding-top:4rem;
@@ -93,14 +91,13 @@ header nav ul, footer nav ul{
   overflow: hidden;
   margin-bottom: 0rem;
 }
-
 nav ul li{
   float:left;
   font-weight: bold
 }
 nav ul li::after{
-    content: "/";
-    color: var(--color-navy);
+  content: "/";
+  color: var(--color-navy);
 }
 nav li:last-child:after {
   content: "";
@@ -112,22 +109,18 @@ nav ul li a:hover{
   text-decoration: none;
   color: var(--color-green);
 }
-
 nav ul li a.active:hover{
   color: var(--color-navy);
 }
-
 .top-nav{
   background-color: var(--color-grey);
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
-
 header .cart{
   display: flex;
   flex-direction: column;
 }
-
 p.checkout{
   display:flex;
   justify-content: flex-end;
@@ -135,7 +128,6 @@ p.checkout{
 .checkout strong{
   padding-left: .5rem;
 }
-
 .logo-text{
   font-size: 1.5rem;
   color: var(--color-green);
@@ -146,8 +138,8 @@ p.checkout{
 
 @media screen and (max-width:678px){
   .logo {
-  display:flex;
-  flex-direction:column;
+    display:flex;
+    flex-direction:column;
   }
   .logo img{
     margin:auto;
@@ -181,10 +173,10 @@ footer{
 }
 
 @media screen and (max-width:898px){
-.footer-container{
-  max-width: 80%;
+ .footer-container{
+    max-width: 80%;
   }
-  }
+}
 
 footer img{
   padding-bottom: 2rem;
@@ -202,7 +194,6 @@ footer p{
 footer nav{
   justify-self:center;
   padding-bottom: 1rem;
-
 }
 footer nav ul{
   justify-content: center;
@@ -212,7 +203,6 @@ footer nav ul{
 footer nav ul li:after{
   color:white;
 }
-
 
 /**images**/
 main img{
@@ -232,7 +222,6 @@ form button, .button {
 .button:hover{
   text-decoration: none;
 }
-
 .grey-button{
   font-size: 1.25rem;
   font-weight: 800;
@@ -242,17 +231,14 @@ form button, .button {
   text-align: center;
   background-color: var(--color-grey);
 }
-
 .green-button{
   color:white;
   background-color: var(--color-green);
 }
-
 .checkout-btn{
   padding: 0.5rem 2.625rem;
   font-size: .75rem;
 }
-
  .full-width{
   text-align: center;
   width: 100%;
@@ -261,11 +247,9 @@ form button, .button {
 .grid{
   display: grid
 }
-
 .button-row{
   justify-self:center;
 }
-
 
 /**Dog Cards**/
 .dog-card img{
@@ -308,9 +292,8 @@ label, fieldset{
   margin-top: 0rem;
 }
 .radio-item{
-padding-right: 1rem;
+  padding-right: 1rem;
 }
-
 label.radio-opt {
   margin-top: 0rem;
   font-family: 'Montserrat', sans-serif;
@@ -319,23 +302,20 @@ label.radio-opt {
   align-items: flex-start;
   font-size: 1rem;
 }
-
 input[type="text"], select{
   width:100%;
   border:solid var(--color-grey) 2px;
 }
-
 .select{
-    height: 2.1rem;
+  height: 2.1rem;
 }
-
 .checkout-img{
   width: 4.68rem;
   height: 4.68rem;
   object-fit: cover;
 }
 div.checkout-name {
-    padding-left: 0.5rem;
+  padding-left: 0.5rem;
 }
 .checkout-name p{
   font-size: .75rem;
