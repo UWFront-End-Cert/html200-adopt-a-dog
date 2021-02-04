@@ -98,7 +98,7 @@ nav {
 }
 
 nav li {
-  padding: 0 5px 0 5px;
+  padding: 0 5px;
   position: relative;
   left: 11rem;
 }
@@ -145,8 +145,8 @@ nav li a:hover {
   min-height: auto;
   margin: 2rem auto;
   overflow: hidden;
-  line-height: 32px;
-  font-size: 16px;
+  line-height: 1.5rem;
+  font-size: 1rem;
   font-family: sans-serif;
 }
 
@@ -170,7 +170,7 @@ nav li a:hover {
 
 .div1 {
   width: 98%;
-  display: flex;
+  display: inline-table;
 }
 
 .div2 {
@@ -188,7 +188,7 @@ nav li a:hover {
 .row::after {
     content: "";
     clear: both;
-    display: table;
+    display: flex;
 }
 
 .span_3_of_12 {
@@ -231,20 +231,16 @@ nav li a:hover {
 
 
 
-#a1 {
+.a1 {
   font-size: 24px;
   font-family: sans-serif;
   color: rgb(44, 154, 183);
 }
 
-#a2 {
-  font-size: 24px;
-  font-family: sans-serif;
-  color: rgb(44, 154, 183);
-}
+
 
 em {
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 
@@ -262,11 +258,6 @@ em {
 
 
 
-#cat-week {
-  text-align: left;
-  position: relative;
-  left: 36px;
-}
 
 input[type=text], select, textarea {
   width: 100%;
