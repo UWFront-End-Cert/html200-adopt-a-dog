@@ -10,26 +10,17 @@
  --body-font:'Montserrat', sans-serif;
 }
 
-/**layout**/
-.row{
-  margin-bottom: 2rem;
-}
-
-main{
-  max-width: 68.75rem;
-  margin: auto;
-  padding-left:0.75rem;
-  padding-right:0.75rem;
-}
-
-.d-flex{
-  display: flex;
-}
-
 /**fonts**/
 body, p {
   font-family: var(--body-font);
   line-height: 1.75rem;
+  margin:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  line-height: 1.2;
+  margin-top:0;
 }
 
 h1{
@@ -49,9 +40,12 @@ h2{
 
 h3{
   font-size:1.75rem;
+  line-height: 1.2;
   font-family: var(--title-font);
   color: var(--color-navy);
   font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
 }
 
 h4{
@@ -106,7 +100,7 @@ header nav ul, footer nav ul{
 }
 
 nav ul li{
-  float:left;
+  display: inline-block;
   font-weight: bold
 }
 
@@ -218,7 +212,6 @@ footer a, footer p {
 
 footer p{
   padding-bottom: 1rem;
-  justify-content: center;
 }
 
 .footer-nav{
@@ -246,6 +239,10 @@ main img{
 }
 
 /** Buttons **/
+a{
+  text-decoration: none;
+}
+
 .button{
   font-weight: bolder;
   border-radius: 2px;
@@ -287,10 +284,6 @@ form button, .button {
   margin-bottom: 0rem;
 }
 
-.grid{
-  display: grid
-}
-
 .button-row{
   justify-self:center;
 }
@@ -310,6 +303,7 @@ form button, .button {
 .info-section p{
   font-size:.75rem;
   line-height: 1.25rem;
+  padding-bottom: 1rem;
 }
 
 /**blog page***/
