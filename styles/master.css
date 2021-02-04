@@ -21,7 +21,6 @@ p {
   width: 100%;
 }
 
-
 .header-image {
   background-repeat:no-repeat;
   background-color: #000;
@@ -36,7 +35,6 @@ p {
   padding-top: 2rem;
   /* z-index: 1; */
 }
-
 
 .tagline {
   font-size: 1.25rem;
@@ -122,6 +120,7 @@ text-decoration: none;
   grid-column: 4 / 9;
 }
 
+
 /************ blog ***************/
 
 .blog {
@@ -142,29 +141,67 @@ text-decoration: none;
 }
 
 
+/************ card ***************/
+.img {
+  width: 100%;  /* fit image into grid */
+}
+
+.btn-adopt {
+  width: 100%;
+  background-color: #90b52a;
+  border-radius: .2rem;
+  padding: .5rem;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.btn-seemoredogs {
+  width: 20%;
+  background-color: #ccc;
+  border-radius: .2rem;
+  padding: .5rem;
+  color: #29465b;
+  font-weight: bold;
+  margin-top: 1rem;
+  align-content: center;
+}
+
+.card > div {
+padding: .75rem;
+}
+
+.card > h5 {
+  color: #000;
+}
+
 .card-1 {
   grid-column: 1 / 3;
   grid-row: 2;
-  min-height: 200px;
   border: 1px solid #999;
+  line-height: 10%;
 }
+
 
 .card-2 {
   grid-column: 3 / 5;
   grid-row: 2;
   border: 1px solid #999;
+  line-height: 10%;
 }
 
 .card-3 {
   grid-column: 5 / 7;
   grid-row: 2;
   border: 1px solid #999;
+  line-height: 10%;
 }
 
 .card-4 {
   grid-column: 7 / 9;
   grid-row: 2;
   border: 1px solid #999;
+  line-height: 10%;
 }
 
 .card-5 {
@@ -172,24 +209,28 @@ text-decoration: none;
   grid-row: 3;
   min-height: 200px;
   border: 1px solid #999;
+  line-height: 10%;
 }
 
 .card-6 {
   grid-column: 3 / 5;
   grid-row: 3;
   border: 1px solid #999;
+  line-height: 10%;
 }
 
 .card-7 {
   grid-column: 5 / 7;
   grid-row: 3;
   border: 1px solid #999;
+  line-height: 10%;
 }
 
 .card-8 {
   grid-column: 7 / 9;
   grid-row: 3;
   border: 1px solid #999;
+  line-height: 10%;
 }
 
 
