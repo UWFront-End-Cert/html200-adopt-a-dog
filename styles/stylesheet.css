@@ -50,18 +50,23 @@ header nav ul {
   float: right;
 }
 
-main {
+.index-main {
   display:flex;
   flex-direction: column;
+  justify-content: center;
   padding-top: 1rem;
   padding-left: 1rem;
 
 }
+
 .intro {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows:auto;
-  grid-gap: 1rem;
+  display: flex;
+}
+
+.intro-article{
+  display:flex;
+  flex-direction:column;
+  padding-left: 3rem;
 }
 
 .main-dogs {
@@ -74,9 +79,12 @@ main {
 .dog-photos {
   display:flex;
   flex-direction:column;
-  padding-top: 1rem;
 }
 
+figure {
+  display: flex;
+  justify-content: center
+}
 h3 {
  color: #0077b3;
 }
@@ -108,23 +116,52 @@ button {
 
 /* blog page starts here */
 
+h1, h2, h3 {
+  font-family: 'EB Garamond', serif;
+}
+
+p {
+  font-family: lora;
+}
+
+.blog-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding-left: 2rem;
+}
+
 .blog-page {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
   padding-top: 2rem;
 }
 
+.blog {
+  width: 45%;
+}
+
 /* footer starts here */
+
 footer {
   background-color: #03a3df;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 2rem;
+  align-content: center;
 }
 
-.footer-nav {
-  display: flex;
-  justify-content: center;
+.footer-navlist {
+  list-style: none;
+  font-family: Helvetica Neue;
+  color: black;
+  font-size: 20px;
+  padding-right: 2rem;
+}
+
+footer nav ul  {
+ display: flex;
+ flex-direction:row;
 }
