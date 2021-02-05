@@ -37,12 +37,14 @@ p {
 }
 
 .flex-1 {
-width: 70%;
+width: auto;
 }
 
 .flex-2 {
-width: 30%;
+display: flex;
+width: auto;
 flex-direction: row;
+align-items: flex-end;
 }
 
 
@@ -55,7 +57,7 @@ flex-direction: row;
 }
 
 .image-logo {
-  width: 200px;
+  width: 250px;
   padding-left: 4rem;
   padding-top: 2rem;
   /* z-index: 1; */
@@ -71,12 +73,30 @@ flex-direction: row;
   font-family: Times, serif;
 }
 
+.cart-total {
+  font-size: .75rem;
+  font-weight: lighter;
+
+  color: #fff;
+  line-height: 1.1;
+  font-family: Arial, sans-serif;
+}
+
 .cart-icon {
-  width: 3%;
-  padding-right: 4rem;
-  margin-top: -4rem;
-  float: right;
-  vertical-align: top; /*why not working? */
+  width: 2rem;
+  padding-top: 2rem;
+  padding-right: 1rem;
+}
+
+.btn-checkout-header {
+  background-color: #90b52a;
+  color: #fff;
+  margin-top: 1rem;
+  margin-right: 4rem;
+  padding: .3rem 2.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: .1rem;
 }
 
 /* center content;
@@ -166,16 +186,7 @@ text-decoration: none;
   width: 100%;  /* fit image into grid */
 }
 
-.btn-checkout-header {
-  background-color: #90b52a;
-  margin-top: 1rem;
-  margin-right: auto;
-  color: #fff;
-  border: none;
-  padding: .5rem 2rem;
-  font-weight: bold;
-  border-radius: .2rem;
-}
+
 
 .btn-adopt {
   width: 100%;
