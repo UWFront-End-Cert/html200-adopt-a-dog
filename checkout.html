@@ -32,7 +32,7 @@
     </header>
     <main>
       <h3>Checkout</h3>
-      <form class="" action="index.html" method="post">
+      <form action="index.html" method="post">
         <label>Name
           <input type="text" name="name" id="name"></label>
         <label>Email
@@ -42,35 +42,32 @@
         <label>City
           <input type="text" name="city" id="city"></label>
         <label>State
-          <select name="state" id="state">
-          <option value="WA">WA</option>
-          <option value="OR">OR</option></select>
+            <select name="state" id="state">
+              <option value="WA">WA</option>
+              <option value="OR">OR</option>
+            </select>
         </label>
         <label>Zip code
           <input type="text" name="zip" id="zip"></label>
         <legend>First time adopter?</legend>
-          <label>Yes<input type="radio" name="FTA" id="Yes"></label>
-          <label>No<input type="radio" name="FTA" id="No"></label>
+          <label class="indent">Yes<input type="radio" name="FTA" id="Yes"></label>
+          <label class="indent">No<input type="radio" name="FTA" id="No"></label>
         <label>Pickup location
           <select name="pickup" id="pickup">
           <option value="Main office">Seattle</option>
           <option value="Foster home">Portland</option></select>
         </label>
         <h4>Dogs Adopted</h4>
-        <figure>
+        <div class="checkout-card">
           <img src="images/lucas-checkout.jpg">
-          <figcaption>
-            <h5>Lucas</h5>
-            <p> Cost to adopt: $123.45</p>
-          </figcaption>
-        </figure>
-        <figure>
+          <h5>Lucas</h5>
+          <p><span>Cost to adopt:</span> $123.45</p>
+        </div>
+        <div class="checkout-card">
           <img src="images/duffy-checkout.jpg">
-          <figcaption>
-            <h5>Duffy</h5>
-            <p>Cost to adopt: $123.45</p>
-          </figcaption>
-        </figure>
+          <h5>Duffy</h5>
+          <p><span>Cost to adopt:</span> $123.45</p>
+        </div>
         <h4>Total Adoption Cost</h4>
         <p>$246.90</p>
         <input type="submit" value="submit">
