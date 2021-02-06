@@ -10,6 +10,7 @@
 .intro-grid h2 {
   text-align: left;
   font-size: 2rem;
+  color: #01344a;
   padding: 7% 7% 7% 0%;
 }
 
@@ -22,13 +23,33 @@
   width: 100%;
 }
 
+.dog-tiles-grid h3 {
+  text-align: left;
+  padding: 0% 5%;
+  color: #01344a;
+}
+
+.dog-tiles-grid p1 {
+  text-align: left;
+  padding: 0% 5%;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.dog-tiles-grid p {
+  text-align: left;
+  padding: 0% 5%;
+  font-size: .8rem;
+}
+
 .col {
   border-style: solid;
   border-color: red;
   border-width: thin;
 }
 
-/* Grid */
+/* Grid   column-gap: 6%;
+  row-gap: 6%;*/
 
 .intro-grid {
   display: flex;
@@ -41,11 +62,15 @@
 .dog-tiles-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  column-gap: 6%;
+  /*how can i put in a in betweem the rows?*/
 }
 
 .dog-tiles-grid .col {
-  width: 25%;
+  width: 20.5%;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: thin;
 }
 
 @media (max-width: 768px) {

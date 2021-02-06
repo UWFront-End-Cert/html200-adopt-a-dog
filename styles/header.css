@@ -16,7 +16,7 @@ header {
   grid-row: 1;
   font-size: 0.9rem;
   font-family: 'Dancing Script', cursive;
-  background-color: #005691;
+  background-color: #01344a;
   padding: 3rem;
   }
 
@@ -28,7 +28,7 @@ header {
   grid-column: 3/5;
   grid-row: 1;
   font-size: 1rem;
-  background-color: #005691;
+  background-color: #01344a;
   padding: 3rem;
 }
 
@@ -40,6 +40,7 @@ header {
   grid-column: 3/5;
   grid-row: 1;
   width:50%;
+  color: white;
 }
 
 .header nav {
