@@ -1,0 +1,55 @@
+
+{
+  box-sizing: border-box;
+}
+
+.intro-grid, .dog-tiles-grid {
+  padding: 1% 15%;
+}
+
+.intro-grid {
+  margin: 0 0 20px 0;
+}
+
+.dog-tiles-grid img {
+  width: 100%;
+}
+
+.col {
+  border-style: solid;
+  border-color: red;
+  border-width: thin;
+}
+
+/* Grid */
+
+.intro-grid {
+  display: flex;
+}
+
+.intro-grid .col {
+  flex: 1;
+}
+
+.dog-tiles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dog-tiles-grid .col {
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  .intro-grid,
+.dog-tiles-grid {
+    display: block;
+  }
+
+  .intro-grid .col,
+.dog-tiles-grid .col {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
