@@ -1,14 +1,21 @@
-
-{
-  box-sizing: border-box;
-}
-
 .intro-grid, .dog-tiles-grid {
   padding: 1% 15%;
 }
 
-.intro-grid {
-  margin: 0 0 20px 0;
+.intro-grid img {
+  width: 100%;
+  padding: 7% 7% 7% 0%;
+}
+
+.intro-grid h2 {
+  text-align: left;
+  font-size: 2rem;
+  padding: 7% 7% 7% 0%;
+}
+
+.intro-grid p {
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 .dog-tiles-grid img {
@@ -50,6 +57,6 @@
   .intro-grid .col,
 .dog-tiles-grid .col {
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 0 0 0;
   }
 }
