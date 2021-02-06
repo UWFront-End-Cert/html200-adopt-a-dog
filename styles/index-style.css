@@ -1,4 +1,4 @@
-sectionv {
+.intro-grid, .dog-tiles-grid {
   padding: 1% 15%;
 }
 
@@ -42,7 +42,7 @@ sectionv {
   font-size: .8rem;
 }
 
-div {
+.div {
   border-style: solid;
   border-color: red;
   border-width: thin;
@@ -74,23 +74,14 @@ div {
 }
 
 @media (max-width: 768px) {
-  .intro-grid,.dog-tiles-grid {
+  .intro-grid,
+.dog-tiles-grid {
     display: block;
   }
 
-  .intro-grid .col, .dog-tiles-grid .col {
+  .intro-grid .col,
+.dog-tiles-grid .col {
     width: 100%;
     margin: 0 0 0 0;
   }
-}
-
-button {
-  display: flex;
-  width: 75%;
-  align-content: center;
-}
-
-.more-dogs-button {
-  display: flex;
-  align-items: center;
 }

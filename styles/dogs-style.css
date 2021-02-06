@@ -73,14 +73,3 @@ div {
     margin: 0 0 0 0;
   }
 }
-
-button {
-  display: flex;
-  width: 75%;
-  align-content: center;
-}
-
-.more-dogs-button {
-  display: flex;
-  align-items: center;
-}
