@@ -1,0 +1,86 @@
+section {
+  padding: 1% 15%;
+}
+
+.all-dogs h2 {
+  color: #01344a;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.dog-tiles-grid img {
+  width: 100%;
+}
+
+.dog-tiles-grid h3 {
+  text-align: left;
+  padding: 0% 5%;
+  color: #01344a;
+}
+
+.dog-tiles-grid p1 {
+  text-align: left;
+  padding: 0% 5%;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.dog-tiles-grid p {
+  text-align: left;
+  padding: 0% 5%;
+  font-size: .8rem;
+}
+
+div {
+  border-style: solid;
+  border-color: red;
+  border-width: thin;
+}
+
+/* Grid   column-gap: 6%;
+  row-gap: 6%;*/
+
+.header-all-dogs {
+  display: flex:
+}
+
+.header-all-dogs .all-dogs {
+  flex: 1;
+}
+
+.dog-tiles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6%;
+  /*how can i put in a in betweem the rows?*/
+}
+
+.dog-tiles-grid .col {
+  width: 20.5%;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: thin;
+}
+
+@media (max-width: 768px) {
+  .header-all-dogs,.dog-tiles-grid {
+    display: block;
+  }
+
+  .header-all-dogs .all-dogs, .dog-tiles-grid .col {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+}
+
+button {
+  display: flex;
+  width: 75%;
+  align-content: center;
+}
+
+.more-dogs-button {
+  display: flex;
+  align-items: center;
+}
