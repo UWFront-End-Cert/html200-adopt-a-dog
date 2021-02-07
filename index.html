@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/structure.css">
     <link rel="stylesheet" href="./css/styles.css">
-
-
   </head>
   <body>
     <header>
@@ -47,30 +45,30 @@
         </div>
         <div class="row">
           <!-- Murphy -->
-          <article class="dog-card col-lg-3 col-sm-6">
-            <img src="./images/murphy-card.jpg" alt="Close up of Murphy the Dog">
+          <article class="dog-card col-lg-3">
+            <img src="./images/murphy-card.jpg" alt="Close up of Murphy the Dog" onclick="dogInfo('Murphy','boxer lab mix', '$123.45')">
             <div class="info-section">
               <h3>Murphy</h3>
-              <p><strong>Cost to Adopt:</strong> $123.45</p>
+              <p><strong>Cost to Adopt:</strong> $100.00</p>
               <p>Corrum volrit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re as erum, qui doluptae</p>
-              <button type="submit" onclick="window.location.href='./checkout.html';" class=" button green-button full-width">Adopt</button>
+              <button type="submit" onclick="totalCost(100)" class=" button green-button full-width">Adopt</button>
             </div>
           </article>
 
           <!-- Poppy -->
-          <article class="dog-card col-lg-3 col-sm-6">
-            <img src="./images/poppy-card.jpg" alt="Close up of Poppy the Dog">
+          <article class="dog-card col-lg-3">
+            <img src="./images/poppy-card.jpg" alt="Close up of Poppy the Dog" onclick="dogInfo('Poppy','pomeranian', '$123.45')">
             <div class="info-section">
               <h3>Poppy</h3>
-              <p><strong>Cost to Adopt:</strong> $123.45</p>
+              <p><strong>Cost to Adopt:</strong> $120.00</p>
               <p>Corrum volrit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re as erum, qui doluptae</p>
-              <button type="submit" onclick="window.location.href='./checkout.html';" class=" button green-button full-width">Adopt</button>
+              <button type="submit" onclick="totalCost(120)" class=" button green-button full-width">Adopt</button>
             </div>
           </article>
 
           <!-- Jack -->
-          <article class="dog-card col-lg-3 col-sm-6">
-            <img src="./images/jack-card.jpg" alt="Close up of Jack the Dog">
+          <article class="dog-card col-lg-3">
+            <img src="./images/jack-card.jpg" alt="Close up of Jack the Dog" onclick="dogInfo('Jack','terrier', '$123.45')">
             <div class="info-section">
               <h3>Jack</h3>
               <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -80,8 +78,8 @@
           </article>
 
           <!-- Duffy -->
-          <article class="dog-card col-lg-3 col-sm-6">
-            <img src="./images/duffy-card.jpg" alt="Close up of Duffy the Dog">
+          <article class="dog-card col-lg-3">
+            <img src="./images/duffy-card.jpg" alt="Close up of Duffy the Dog" onclick="dogInfo('Duffy','boxer', '$123.45')">
             <div class="info-section">
               <h3>Duffy</h3>
               <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -91,8 +89,8 @@
           </article>
 
           <!-- Lucas -->
-          <article class="dog-card col-lg-3 col-sm-6">
-            <img src="./images/lucas-card.jpg" alt="Close up of Lucas the Dog">
+          <article class="dog-card col-lg-3">
+            <img src="./images/lucas-card.jpg" alt="Close up of Lucas the Dog" onclick="dogInfo('Lucas','shepard lab mix', '$123.45')">
             <div class="info-section">
               <h3>Lucas</h3>
               <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -102,8 +100,8 @@
           </article>
 
           <!-- Jake -->
-          <article class="dog-card col-lg-3 col-sm-6">
-            <img src="./images/jake-card.jpg" alt="Close up of Jake the Dog">
+          <article class="dog-card col-lg-3">
+            <img src="./images/jake-card.jpg" alt="Close up of Jake the Dog" onclick="dogInfo('Jake','yellow lab', '$123.45')">
             <div class="info-section">
               <h3>Jake</h3>
               <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -113,8 +111,8 @@
           </article>
 
           <!-- Angus -->
-          <article class="dog-card col-lg-3 col-sm-6">
-            <img src="./images/angus-card.jpg" alt="Close up of Angus the Dog">
+          <article class="dog-card col-lg-3">
+            <img src="./images/angus-card.jpg" alt="Close up of Angus the Dog" onclick="dogInfo('Murphy','boxer', '$123.45')">
             <div class="info-section">
               <h3>Angus</h3>
               <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -124,8 +122,8 @@
           </article>
 
           <!-- Violet -->
-          <article class="dog-card col-lg-3 col-sm-6">
-            <img src="./images/violet-card.jpg" alt="Close up of Violet the Dog">
+          <article class="dog-card col-lg-3">
+            <img src="./images/violet-card.jpg" alt="Close up of Violet the Dog" onclick="dogInfo('Violet','chocolate lab', '$123.45')">
             <div class="info-section">
               <h3>Violet</h3>
               <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -157,6 +155,8 @@
         </div>
         <p>&#169; 2018 Adoptadog, LLC | Seattle, WA</p>
       </div>
+      <script src="./js/javascript.js">
+      </script>
     </footer>
   </body>
 </html>
