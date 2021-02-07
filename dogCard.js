@@ -1,24 +1,21 @@
-let dogName =
-let dogAdoptCost =
 
-
-
-
-let dogInfo = document.getElementsByClassName('dogName dogAdoptCost');
-alert(dogInfo);
-
-
-
-
-function dogInfo(dogName + dogAdoptCost) {
-  document.getElementByClassName("dogName dogAdoptCost").innerHTML = "h3";
-  document.innerHTML = h3
-  return [];
+function dogInfo ('dogName + dogAdoptCost') {
+  let dogInfo = 
 }
+alert(dogName);
 
-dogCard = ()
-onclick="dogInfo()"
-alert(dogInfo);
+
+
+
+//function dogInfo(dogName + dogAdoptCost) {
+  //document.getElementByClassName("dogName dogAdoptCost").innerHTML = "h3";
+  //document.innerHTML = h3
+  //return [];
+//}
+
+//dogCard = ()
+//onclick="dogInfo()"
+//alert(dogInfo);
 
 //function getElementsByClassName(id) {
   //return [document.getElementById(id)];
