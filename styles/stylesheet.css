@@ -3,6 +3,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    font-size:100%;
 }
 
 h1,
@@ -192,7 +193,8 @@ footer a {
     background-color: lightgray;
     padding: .75rem 1rem;
     text-align: center;
-    margin: 3rem 35rem;
+    margin: 0 auto 3rem auto;
+    display:block;
 }
 
 .more-dogs a {

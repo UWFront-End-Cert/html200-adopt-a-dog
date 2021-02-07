@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Dogs</title>
+    <script src="js/dogs-javascript.js" charset="utf-8"></script>
     <link href="styles/stylesheet.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -38,208 +39,235 @@
 
         </ul>
     </nav>
-<div class = "wrapper">
-    <h2>Here are all of our Dogs!</h2>
+    <div class="wrapper">
+        <h2>Here are all of our Dogs!</h2>
 
-    <section class = "all-dogs">
-      
-        <article class = "col-1 row-1">
-            <img src="images/murphy-card.jpg" alt="Tan and white boxer-mix named Murphy">
-            <h3>
-                Murphy
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <section class="all-dogs">
+
+            <article class="col-1 row-1">
+                <img src="images/murphy-card.jpg" alt="Tan and white boxer-mix named Murphy"
+                    onclick=" dogInfo('Murphy', 'Boxer Mix', '$123.45.')">
+                <h3>
+                    Murphy
+                </h3>
+                <h4>
+                    Cost to adopt: $123.45
+                </h4>
+                <p>
+                    Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
+                    Maecenas
+                    feugiat facilisis mi nec vehicula.
+                </p>
+                <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
-        <article class = "col-2 row-1">
-            <img src="images/poppy-card.jpg" alt="Gray and white Shih-tzu named Poppy">
-            <h3>
-                Poppy
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <article class = " col-2 row-1">
+                    <img src="images/poppy-card.jpg" alt="Gray and white Shih-tzu named Poppy"
+                        onclick=" dogInfo('Poppy', 'Shi-tzu', '$123.45.')">
+                    <h3>
+                        Poppy
+                    </h3>
+                    <h4>
+                        Cost to adopt: $123.45
+                    </h4>
+                    <p>
+                        Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
+                        Maecenas
+                        feugiat facilisis mi nec vehicula.
+                    </p>
+                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
-        <article class = "col-3 row-1">
-            <img src="images/jack-card.jpg" alt="Tan and white beagle named Jack">
-            <h3>
-                Jack
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <article class = " col-3 row-1">
+                        <img src="images/jack-card.jpg" alt="Tan and white beagle named Jack"
+                            onclick=" dogInfo('Jack', 'Beagle', '$123.45.')">
+                        <h3>
+                            Jack
+                        </h3>
+                        <h4>
+                            Cost to adopt: $123.45
+                        </h4>
+                        <p>
+                            Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut
+                            imperdiet. Maecenas
+                            feugiat facilisis mi nec vehicula.
+                        </p>
+                        <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
-        <article class = "col-4 row-1">
-            <img src="images/duffy-card.jpg" alt="Tan and white pit bull named Duffy">
-            <h3>
-                Duffy
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <article class = " col-4 row-1">
+                            <img src="images/duffy-card.jpg" alt="Tan and white pit bull named Duffy"
+                                onclick=" dogInfo('Duffy', 'Pit Bull', '$123.45.')">
+                            <h3>
+                                Duffy
+                            </h3>
+                            <h4>
+                                Cost to adopt: $123.45
+                            </h4>
+                            <p>
+                                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut
+                                imperdiet. Maecenas
+                                feugiat facilisis mi nec vehicula.
+                            </p>
+                            <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
-        <article class = "col-1 row-2">
-            <img src="images/lucas-card.jpg" alt="Black gernman sheppard  named Murphy">
-            <h3>
-                Lucas
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <article class = " col-1 row-2">
+                                <img src="images/lucas-card.jpg" alt="Black gernman sheppard  named Lucas"
+                                    onclick=" dogInfo('Lucas', 'German Shepard', '$123.45.')">
+                                <h3>
+                                    Lucas
+                                </h3>
+                                <h4>
+                                    Cost to adopt: $123.45
+                                </h4>
+                                <p>
+                                    Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut
+                                    imperdiet. Maecenas
+                                    feugiat facilisis mi nec vehicula.
+                                </p>
+                                <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
-        <article  class = "col-2 row-2">
-            <img src="images/jake-card.jpg" alt="Light beige and tan retriever named Murphy">
-            <h3>
-                Jake
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <article  class = " col-2 row-2">
+                                    <img src="images/jake-card.jpg" alt="Light beige and tan retriever named Jake"
+                                        onclick=" dogInfo('Jake', 'Retriever', '$123.45.')">
+                                    <h3>
+                                        Jake
+                                    </h3>
+                                    <h4>
+                                        Cost to adopt: $123.45
+                                    </h4>
+                                    <p>
+                                        Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo
+                                        ut imperdiet. Maecenas
+                                        feugiat facilisis mi nec vehicula.
+                                    </p>
+                                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
-        <article  class = "col-3 row-2">
-            <img src="images/angus-card.jpg" alt="Tan,white and black boxer named Angus">
-            <h3>
-                Angus
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <article  class = " col-3 row-2">
+                                        <img src="images/angus-card.jpg" alt="Tan,white and black boxer named Angus"
+                                            onclick=" dogInfo('Angus', 'Boxer', '$123.45.')">
+                                        <h3>
+                                            Angus
+                                        </h3>
+                                        <h4>
+                                            Cost to adopt: $123.45
+                                        </h4>
+                                        <p>
+                                            Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non
+                                            justo ut imperdiet. Maecenas
+                                            feugiat facilisis mi nec vehicula.
+                                        </p>
+                                        <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
-        <article  class = "col-4 row-2">
-            <img src="images/violet-card.jpg"  alt="Chocolate lab puppy named Violet">
-            <h3>
-                Violet
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <article  class = " col-4 row-2">
+                                            <img src="images/violet-card.jpg" alt="Chocolate lab puppy named Violet"
+                                                onclick=" dogInfo('Violet', 'Chocolate Labrador', '$123.45.')">
+                                            <h3>
+                                                Violet
+                                            </h3>
+                                            <h4>
+                                                Cost to adopt: $123.45
+                                            </h4>
+                                            <p>
+                                                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor
+                                                non justo ut imperdiet. Maecenas
+                                                feugiat facilisis mi nec vehicula.
+                                            </p>
+                                            <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
-        <article  class = "col-1 row-3">
-            <img src="images/piper-card.jpg"  alt="Golden Retriever named Piper">
-            <h3>
-               Piper
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <article  class = " col-1 row-3">
+                                                <img src="images/piper-card.jpg" alt="Golden Retriever named Piper"
+                                                    onclick=" dogInfo('Piper', 'Golden Retriever', '$123.45.')">
+                                                <h3>
+                                                    Piper
+                                                </h3>
+                                                <h4>
+                                                    Cost to adopt: $123.45
+                                                </h4>
+                                                <p>
+                                                    Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed
+                                                    auctor non justo ut imperdiet. Maecenas
+                                                    feugiat facilisis mi nec vehicula.
+                                                </p>
+                                                <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
-        <article class = "col-2 row-3">
-            <img src="images/maximus-card.jpg" alt="Miniature Schnauzer mix named Maximus">
-            <h3>
-                Maximus
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <article class = " col-2 row-3">
+                                                    <img src="images/maximus-card.jpg" alt="Terrier mix named Maximus"
+                                                        onclick=" dogInfo('Maximus', 'Terrier Mix', '$123.45.')">
+                                                    <h3>
+                                                        Maximus
+                                                    </h3>
+                                                    <h4>
+                                                        Cost to adopt: $123.45
+                                                    </h4>
+                                                    <p>
+                                                        Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed
+                                                        auctor non justo ut imperdiet. Maecenas
+                                                        feugiat facilisis mi nec vehicula.
+                                                    </p>
+                                                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
-        <article class = "col-3 row-3">
-            <img src="images/luna-card.jpg"  alt="Yellow lab named Luna">
-            <h3>
-                Luna
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <article class = " col-3 row-3">
+                                                        <img src="images/luna-card.jpg" alt="Yellow lab named Luna"
+                                                            onclick=" dogInfo('Luna', 'Yellow Labrador', '$123.45.')">
+                                                        <h3>
+                                                            Luna
+                                                        </h3>
+                                                        <h4>
+                                                            Cost to adopt: $123.45
+                                                        </h4>
+                                                        <p>
+                                                            Nullam at urna convallis, ornare turpis ut, fermentum odio.
+                                                            Sed auctor non justo ut imperdiet. Maecenas
+                                                            feugiat facilisis mi nec vehicula.
+                                                        </p>
+                                                        <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
-        <article class = "col-4 row-3">
-            <img src="images/stella-card.jpg" alt="Chihuahua named Stella">
-            <h3>
-                Stella
-            </h3>
-            <h4>
-                Cost to adopt: $123.45
-            </h4>
-            <p>
-                Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet. Maecenas
-                feugiat facilisis mi nec vehicula. 
-            </p>
-            <button type="submit" value="Adopt" name="adopt">Adopt</button>
+        <article class = " col-4 row-3">
+                                                            <img src="images/stella-card.jpg"
+                                                                alt="Chihuahua named Stella"
+                                                                onclick=" dogInfo('Stella', 'Chihuahua', '$123.45.')">
+                                                            <h3>
+                                                                Stella
+                                                            </h3>
+                                                            <h4>
+                                                                Cost to adopt: $123.45
+                                                            </h4>
+                                                            <p>
+                                                                Nullam at urna convallis, ornare turpis ut, fermentum
+                                                                odio. Sed auctor non justo ut imperdiet. Maecenas
+                                                                feugiat facilisis mi nec vehicula.
+                                                            </p>
+                                                            <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
         </article>
 
     </section>
 </div>
     <footer>
 
-        <img class="logo" src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
-        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam
-            consequunt</p>
-        <ul>
-            <li> <a href="./index.html">Home</a></li>
-            <li>/</li>
-            <li> <a href="./dogs.html">Dogs</a></li>
-            <li>/</li>
-            <li> <a href="./contact.html">Contact</a></li>
+        <img class=" logo" src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
+                                                                <p>Aborpos nisto inci tet aut que volupti beruptiberro
+                                                                    to ex esseque invenienihil imaximu scideru
+                                                                    ptistiusam
+                                                                    consequunt</p>
+                                                                <ul>
+                                                                    <li> <a href="./index.html">Home</a></li>
+                                                                    <li>/</li>
+                                                                    <li> <a href="./dogs.html">Dogs</a></li>
+                                                                    <li>/</li>
+                                                                    <li> <a href="./contact.html">Contact</a></li>
 
-        </ul>
-        <p>&copy;2020 Adoptadog, LLC | Seattle, WA</p>
-    </footer>
+                                                                </ul>
+                                                                <p>&copy;2020 Adoptadog, LLC | Seattle, WA</p>
+                                                                </footer>
 
 </body>
 
