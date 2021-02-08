@@ -173,6 +173,11 @@ li a {
     padding-top: 0px;
 }
 
+.margintop {
+  margin-top: 0;
+}
+
+
 .blogheader {
   padding-left: 7rem;
 }
