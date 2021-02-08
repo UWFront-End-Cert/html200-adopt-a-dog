@@ -12,13 +12,13 @@
   <body>
     <a href="#main-content" class="hidden">Skip to main content</a>
     <main>
-      <header class="flex-header">
-        <div class="flex-header-1">
+      <header class="flex-header-container">
+        <div class="flex-header-logo-container">
           <img src="./images/adoptadog-logo.svg" alt="Adoptadog logo">
           <h2 class="header-headline">Seattle's premiere dog adoption agency</h2>
         </div>
-        <div class="flex-header-2">
-          <div class="flex-cart">
+        <div class="flex-header-checkout-container">
+          <div class="flex-cart-container">
             <img class="flex-icon" src="./images/cart-icon.svg" alt="shopping cart icon">
             <p class="flex-price">$1234.56</p>
           </div>
@@ -28,17 +28,15 @@
         </div>
       </header>
       <nav>
-        <ul class="flex-nav">
-          <li class="flex-nav-home"><a href="./index.html">Home &nbsp; &nbsp;</a></li>
-          <li class="flex-nav-dogs"><a href="./dogs.html">Dogs &nbsp; &nbsp;</a></li>
-          <li class="flex-nav-blog"><a href="./blog.html">Blog</a></li>
+        <ul class="flex-nav-container">
+          <li class="flex-nav-item nav-slash"><a class="nav-backslash" href="./index.html">Home &nbsp; &nbsp;</a></li>
+          <li class="flex-nav-item nav-slash"><a href="./dogs.html">Dogs &nbsp; &nbsp;</a></li>
+          <li class="flex-nav-item"><a href="./blog.html">Blog</a></li>
         </ul>
       </nav>
       <section class="main-container">
-        <div class="grid-main-heading">
-          <h1>Here are all of our Dogs!</h1>
-        </div>
-        <div class="grid-main3">
+        <h1>Here are all of our Dogs!</h1>
+        <div class="dog-boxes-container">
           <div class="dog-box">
             <img src="./images/murphy-card.jpg" alt="light brown and white face of large dog">
             <div>
@@ -48,8 +46,6 @@
               <button type="submit">Adopt</button>
             </div>
           </div>
-        </div>
-        <div class="grid-main4">
           <div class="dog-box">
             <img src="./images/poppy-card.jpg" alt="fluffy white small dog running toward viewer">
             <div>
@@ -59,8 +55,6 @@
               <button type="submit">Adopt</button>
             </div>
           </div>
-        </div>
-        <div class="grid-main5">
           <div class="dog-box">
             <img src="./images/jack-card.jpg" alt="fluffy white small dog running toward viewer">
             <div>
@@ -70,8 +64,6 @@
               <button type="submit">Adopt</button>
             </div>
           </div>
-        </div>
-        <div class="grid-main6">
           <div class="dog-box">
             <img src="./images/duffy-card.jpg" alt="fluffy white small dog running toward viewer">
             <div>
@@ -81,8 +73,6 @@
               <button type="submit">Adopt</button>
             </div>
           </div>
-        </div>
-        <div class="grid-main7">
           <div class="dog-box">
             <img src="./images/lucas-card.jpg" alt="fluffy white small dog running toward viewer">
             <div>
@@ -92,8 +82,6 @@
               <button type="submit">Adopt</button>
             </div>
           </div>
-        </div>
-        <div class="grid-main8">
           <div class="dog-box">
             <img src="./images/jake-card.jpg" alt="fluffy white small dog running toward viewer">
             <div>
@@ -103,8 +91,6 @@
               <button type="submit">Adopt</button>
             </div>
           </div>
-        </div>
-        <div class="grid-main9">
           <div class="dog-box">
             <img src="./images/angus-card.jpg" alt="fluffy white small dog running toward viewer">
             <div>
@@ -114,8 +100,6 @@
               <button type="submit">Adopt</button>
             </div>
           </div>
-        </div>
-        <div class="grid-main10">
           <div class="dog-box">
             <img src="./images/violet-card.jpg" alt="fluffy white small dog running toward viewer">
             <div>
@@ -125,8 +109,6 @@
               <button type="submit">Adopt</button>
             </div>
           </div>
-        </div>
-        <div class="grid-main12">
           <div class="dog-box">
             <img src="./images/piper-card.jpg" alt="fluffy white small dog running toward viewer">
             <div>
@@ -136,8 +118,6 @@
               <button type="submit">Adopt</button>
             </div>
           </div>
-        </div>
-        <div class="grid-main13">
           <div class="dog-box">
             <img src="./images/maximus-card.jpg" alt="fluffy white small dog running toward viewer">
             <div>
@@ -147,8 +127,6 @@
               <button type="submit">Adopt</button>
             </div>
           </div>
-        </div>
-        <div class="grid-main14">
           <div class="dog-box">
             <img src="./images/luna-card.jpg" alt="fluffy white small dog running toward viewer">
             <div>
@@ -158,8 +136,6 @@
               <button type="submit">Adopt</button>
             </div>
           </div>
-        </div>
-        <div class="grid-main15">
           <div class="dog-box">
             <img src="./images/stella-card.jpg" alt="fluffy white small dog running toward viewer">
             <div>
@@ -177,10 +153,10 @@
         <img src="./images/adoptadog-logo.svg" alt="Adoptadog logo">
         <p>Doge many pats snoot super chub maximum borkdrive stop it fren, super chub blep sub woofo.</p>
         <nav>
-          <ul class="flex-footer-nav">
-            <li class="footer-nav-home"><a href="./index.html">Home &nbsp; &nbsp;</a></li>
-            <li class="footer-nav-dogs"><a href="./dogs.html">Dogs &nbsp; &nbsp;</a></li>
-            <li class="footer-nav-blog"><a href="./blog.html">Blog</a></li>
+          <ul class="footer-nav-container">
+            <li class="footer-nav-item nav-slash"><a href="./index.html">Home &nbsp; &nbsp;</a></li>
+            <li class="footer-nav-item nav-slash"><a href="./dogs.html">Dogs &nbsp; &nbsp;</a></li>
+            <li class="footer-nav-item"><a href="./blog.html">Blog</a></li>
           </ul>
         </nav>
         <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
