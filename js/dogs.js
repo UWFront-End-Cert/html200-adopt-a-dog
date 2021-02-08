@@ -3,8 +3,8 @@ function pictureInfo(dog, breed, price) {
     alert(result);
 }
 
-let sum = 0;
+let total = 0;
 function Price(price) {
-    result = price + sum;
-    alert('Total Cost to Adopt $' + result);
+    total = price + total;
+    alert('Total Cost to Adopt $' + total);
 } 
