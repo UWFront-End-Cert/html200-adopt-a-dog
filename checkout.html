@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
+<html lang="zxx" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Adopt A Dog</title>
   </head>
+
   <body>
     <header>
-      <figure class="company-logo">
-        <img src="images/adoptadog-logo.svg" alt="Company Logo">
-      </figure>
+      <div class="header-figures">
 
-      <figure class="cart-icon">
-        <img src="images/cart-icon.svg" alt="Cart Icon">
-        <figcaption>$123.56</figcaption>
-      </figure>
-      <button type="button" name="button">Checkout</button>
+        <figure class="company-logo">
+          <img src="images/adoptadog-logo.svg" alt="Company Logo">
+          <figcaption class="company">Seattle’s premiere dog adoption agency</figcaption>
+        </figure>
 
-      <nav>
-        <ul>
-          <li class="navlist"><a href="index.html">Home</a></li>
-          <li class="navlist"><a href="dogs.html">Dogs</a></li>
-          <li class="navlist"><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
+        <figure class="cart-icon">
+          <img src="images/cart-icon.svg" alt="Cart Icon">
+          <button id="cart" type="button" name="checkout"><a href="checkout.html">Checkout</a></button>
+        </figure>
+      </div>
+
+      <div class="header-nav">
+
+        <nav>
+          <ul>
+            <li class="navlist"><a href="index.html">Home</a><span class="seperator">&#47;</span></li>
+            <li class="navlist"><a href="dogs.html">Dogs</a><span class="seperator">&#47;</span></li>
+            <li class="navlist"><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+
+      </div>
 
     </header>
     <main>
@@ -109,20 +120,20 @@
     </main>
 
     <footer>
-      <figure>
+      <figure class="company-logo">
         <img src="images/adoptadog-logo.svg" alt="Company Logo">
       </figure>
-      <small>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</small>
+      <p><span class="footer-span">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</span></p>
 
       <nav class="footer-nav">
         <ul>
-          <li class="navlist"><a href="index.html">Home</a></li>
-          <li class="navlist"><a href="dogs.html">Dogs</a></li>
+          <li class="navlist"><a href="index.html">Home</a><span class="seperator">&#47;</span></li>
+          <li class="navlist"><a href="dogs.html">Dogs</a><span class="seperator">&#47;</span></li>
           <li class="navlist"><a href="blog.html">Blog</a></li>
         </ul>
       </nav>
 
-      <small>2018 Adoptadog, LLC | Seattle, WA</small>
+      <p><span class="footer-span-2">2018 Adoptadog, LLC | Seattle, WA</span></p>
 
     </footer>
   </body>

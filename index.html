@@ -1,139 +1,146 @@
 <!DOCTYPE html>
-
 <html lang="zxx" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/stylesheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Adopt A Dog</title>
   </head>
+
   <body>
     <header>
+      <div class="header-figures">
 
-      <figure class="company-logo">
-        <img src="images/adoptadog-logo.svg" alt="Company Logo">
-      </figure>
+        <figure class="company-logo">
+          <img src="images/adoptadog-logo.svg" alt="Company Logo">
+          <figcaption class="company">Seattle’s premiere dog adoption agency</figcaption>
+        </figure>
 
-      <figure class="cart-icon">
-        <img src="images/cart-icon.svg" alt="Cart Icon">
-      </figure>
+        <figure class="cart-icon">
+          <img src="images/cart-icon.svg" alt="Cart Icon">
+          <button id="cart" type="button" name="checkout"><a href="checkout.html">Checkout</a></button>
+        </figure>
+      </div>
 
-      <nav>
-        <ul>
-          <li class="navlist"><a href="index.html">Home</a></li>
-          <li class="navlist"><a href="dogs.html">Dogs</a></li>
-          <li class="navlist"><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
+      <div class="header-nav">
+
+        <nav>
+          <ul>
+            <li class="navlist"><a href="index.html">Home</a><span class="seperator">&#47;</span></li>
+            <li class="navlist"><a href="dogs.html">Dogs</a><span class="seperator">&#47;</span></li>
+            <li class="navlist"><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+
+      </div>
 
     </header>
-    <main class="index-main">
-      <div class="intro">
+
+    <main class="index-page">
+      <div class="intro-top-content">
         <figure class="intro-figure">
           <img src="images/home-intro.jpg" alt="Photo of a man hugging a dog">
         </figure>
-      <article class="intro-article">
-        <h1>Adopt A Dog</h1>
 
-        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+        <article class="intro-article">
+
+          <h1>Adopt A Dog</h1>
+
+          <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+
+        </article>
       </div>
-      </article>
 
-      </div>
+    <div class="intro-bottom-content">
 
-
-    <div class="main-dogs">
-
-      <section class="dog-photos">
-        <figure>
-          <img src="images/murphy-card.jpg" alt="Picture of Murphy" width="60%">
+      <section class="intro-dogs">
+        <figure class="intro-img">
+          <img src="images/murphy-card.jpg" alt="Picture of Murphy" width="90%">
         </figure>
         <h3>Murphy</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button type="button" name="button">Adopt</button>
+        <button id="dogs-button" type="button" name="button">Adopt</button>
       </section>
 
-      <section class="dog-photos">
-        <figure>
-          <img src="images/poppy-card.jpg" alt="Picture of Poppy" width="60%">
+      <section class="intro-dogs">
+        <figure class="intro-img">
+          <img src="images/poppy-card.jpg" alt="Picture of Poppy" width="90%">
         </figure>
         <h3>Poppy</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button type="button" name="button">Adopt</button>
+        <button id="dogs-button" type="button" name="button">Adopt</button>
       </section>
 
-      <section class="dog-photos">
-        <figure>
-          <img src="images/jack-card.jpg" alt="Picture of Jack" width="60%">
+      <section class="intro-dogs">
+        <figure class="intro-img">
+          <img src="images/jack-card.jpg" alt="Picture of Jack" width="90%">
         </figure>
         <h3>Jack</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button type="button" name="button">Adopt</button>
+        <button id="dogs-button" type="button" name="button">Adopt</button>
       </section>
 
-      <section class="dog-photos">
-        <figure>
-          <img src="images/duffy-checkout.jpg" alt="Picture of Duffy" width="60%">
+      <section class="intro-dogs">
+        <figure class="intro-img">
+          <img src="images/duffy-checkout.jpg" alt="Picture of Duffy" width="90%">
         </figure>
         <h3>Duffy</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button type="button" name="button">Adopt</button>
+        <button id="dogs-button" type="button" name="button">Adopt</button>
       </section>
 
-      <section class="dog-photos">
-        <figure>
-          <img src="images/lucas-checkout.jpg" alt="Picture of Lucas" width="60%">
+      <section class="intro-dogs">
+        <figure class="intro-img">
+          <img src="images/lucas-checkout.jpg" alt="Picture of Lucas" width="90%">
         </figure>
         <h3>Lucas</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button type="button" name="button">Adopt</button>
+        <button id="dogs-button" type="button" name="button">Adopt</button>
       </section>
 
-      <section class="dog-photos">
-        <figure>
-          <img src="images/jake-card.jpg" alt="Picture of Jake" width="60%">
+      <section class="intro-dogs">
+        <figure class="intro-img">
+          <img src="images/jake-card.jpg" alt="Picture of Jake" width="90%">
         </figure>
         <h3>Jake</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button type="button" name="button">Adopt</button>
+        <button id="dogs-button" type="button" name="button">Adopt</button>
       </section>
 
-      <section class="dog-photos">
-        <figure>
-          <img src="images/angus-card.jpg" alt="Picture of Angus" width="60%">
+      <section class="intro-dogs">
+        <figure class="intro-img">
+          <img src="images/angus-card.jpg" alt="Picture of Angus" width="90%">
         </figure>
         <h3>Angus</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button type="button" name="button">Adopt</button>
+        <button id="dogs-button" type="button" name="button">Adopt</button>
       </section>
 
-      <section class="dog-photos">
-        <figure>
-          <img src="images/violet-card.jpg" alt="Picture of Violet" width="60%">
+      <section class="intro-dogs">
+        <figure class="intro-img">
+          <img src="images/violet-card.jpg" alt="Picture of Violet" width="90%">
         </figure>
         <h3>Violet</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button type="button" name="button">Adopt</button>
+        <button id="dogs-button" type="button" name="button">Adopt</button>
       </section>
 
-      <div class="more-dogs">
-        <button type="button" name="button">See More Dogs</button>
       </div>
 
+      <div class="more-dogs">
+        <button id="dogs-button-more" type="button" name="button">Adopt</button>
       </div>
 
     </main>
@@ -142,17 +149,17 @@
       <figure class="company-logo">
         <img src="images/adoptadog-logo.svg" alt="Company Logo">
       </figure>
-      <p><span>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</span></p>
+      <p><span class="footer-span">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</span></p>
 
       <nav class="footer-nav">
         <ul>
-          <li class="footer-navlist"><a href="index.html">Home</a></li>
-          <li class="footer-navlist"><a href="dogs.html">Dogs</a></li>
-          <li class="footer-navlist"><a href="blog.html">Blog</a></li>
+          <li class="navlist"><a href="index.html">Home</a><span class="seperator">&#47;</span></li>
+          <li class="navlist"><a href="dogs.html">Dogs</a><span class="seperator">&#47;</span></li>
+          <li class="navlist"><a href="blog.html">Blog</a></li>
         </ul>
       </nav>
 
-      <p><span>2018 Adoptadog, LLC | Seattle, WA</span></p>
+      <p><span class="footer-span-2">2018 Adoptadog, LLC | Seattle, WA</span></p>
 
     </footer>
   </body>
