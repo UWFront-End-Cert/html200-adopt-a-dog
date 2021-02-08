@@ -1,10 +1,13 @@
 function dogInfo(dog, breed, cost) {
-    const result = 'This dog is named ' + dog + '.  '+  dog + ' is a ' + breed + ' and will cost ' + cost +'.';
-    alert(result);
+  const result = 'This dog is named ' + dog + '.  '+  dog + ' is a ' + breed + ' and will cost $' + cost +'.';
+  alert(result);
 }
 
-let sum = 0;
+
+let totalCost = 0;
 function sumCost(cost) {
-   let totalCost = cost + sum;
-    alert('Total Adoption Fees: $' + totalCost);
+totalCost = parseFloat((cost + totalCost).toFixed(2)); 
+alert('Total Adoption Fees: $' + totalCost);
 }
+
+
