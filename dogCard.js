@@ -1,11 +1,14 @@
-
-function dogInfo ('dogName + dogAdoptCost') {
-  let dogInfo = 
+function dogInfo() {
+  let content = document.getElementById('adoptPoppy').textContent;
+  alert(content);
 }
-alert(dogName);
 
 
 
+//function dogInfo() {
+
+  //alert("hello");
+//}
 
 //function dogInfo(dogName + dogAdoptCost) {
   //document.getElementByClassName("dogName dogAdoptCost").innerHTML = "h3";
