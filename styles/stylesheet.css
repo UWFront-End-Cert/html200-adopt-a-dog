@@ -177,8 +177,8 @@ p.container3 {
   display: flex;
   flex-flow: row wrap;
   position: relative;
-  flex: 1 1 auto;
-  clear: both;
+  /* flex: 1 1 auto; */
+  /* clear: both; */
 }
 .item1 {
   border-width: 0.5px;
@@ -303,8 +303,10 @@ article p {
   flex-flow: row wrap;
   position: relative;
   padding-bottom: 2rem;
+  /* flex: 1 1 auto;
+  clear: both; */
   /* max-height: 30rem; */
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 .container8 {
   display: flex;
@@ -359,7 +361,7 @@ input {
   margin: 1rem;
 }
 .container12 {
-  width: 89%;
+  width: 95%;
   display: flex;
   flex-flow: row wrap;
   position: relative;
