@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <title>Adopt a Dog - Home</title>
   </head>
   <body>
@@ -47,8 +48,8 @@
       </section>
       <div class="dog-card-board">
         <div class="dog-card">
-          <img src="images/murphy-card.jpg" alt="Portrait of Murphy">
-          <div class="dog-card-details">
+          <img onclick="infoRipper('murphy')" src="images/murphy-card.jpg" alt="Portrait of Murphy">
+          <div id="first-pup" class="dog-card-details">
             <h3>Murphy</h3>
             <p>Cost to Adopt: </p>
             <p>$123.45</p>
@@ -57,8 +58,8 @@
           </div>
         </div>
         <div class="dog-card">
-          <img src="images/poppy-card.jpg" alt="Portrait of Poppy">
-          <div class="dog-card-details">
+          <img onclick="infoRipper('poppy')" src="images/poppy-card.jpg" alt="Portrait of Poppy">
+          <div id="second-pup" class="dog-card-details">
             <h3>Poppy</h3>
             <p>Cost to Adopt: </p>
             <p>$123.45</p>
