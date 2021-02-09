@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <!-- Metadata -->
+    <meta name="description" content="Seattle’s premiere dog adoption agency">
+    <meta name="keywords" content="Adoptadog, dog adoption, agency, Seattle">
+    <meta name="author" content="Juan Bermejo Gallego, UW Front-End Developer HTML,CSS, and JS Course">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adopt A Dog - Homepage index</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <!-- External link -->
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <!-- Google font external link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">  
+      <!-- Script goes here -->
+    <script src="./scripts/script.js" charset="utf-8"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-left">
+            <img class="top-logo" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">    
+            <div class="slogan">
+                <p>Seattle’s premiere dog adoption agency</p>
+            </div> 
+        </div>
+        <div class="checkout">
+            <!-- <a href="./checkout.html">       -->
+            <img src="./images/cart-icon.svg" alt="cart icon">
+            <small class="total">&#36;1234.56</small>
+            <input onClick="window.location.href='./checkout.html'" type="button" value="Checkout">
+            <!-- </a> -->
+        </div>
+    </header>
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="./index.html" aria-label="Return to homepage">home</a></li>
+            <li><a href="./dogs.html" aria-label="Read more about our puppies">dogs</a></li>
+            <li><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
+        </ul>
+    </nav>
+    <!-- Whole content  -->
+    <div>
+    <main>
+        <img src="./images/home-intro.jpg" alt="a man embracing a dog">
+        <article class="intro">
+            <h1>Adopt A Dog</h1>
+            <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
+                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+                derum recuptatur, cum volore, undipsa doloreium hillupta aut
+                es ut alitatuscit ommossum haritatur arum qui officae videbiti
+                corporeium faccull oribus es quidignis ipietus explam sus
+                am aut amet ant fugiatum, utem non reptat ad magnienecto
+                volorent fugia nonsedi gendand itatquos as magnimpor aut
+                molor autatia ad est officimus accae et omnia cus, od qui ate </p>
+        </article>
+    </main>
+    <!-- Card Dogs here -->
+    <section id="puppies">
+        <!-- h3 for avoiding validation errors -->
+        <h3>heading hidden</h3>
+        <article>
+            <img class="card" src="./images/murphy-card.jpg" alt="Murphy profile picture" onclick="infoMurphy();">
+            <h2>murphy</h2>
+            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+            <p class="dog-name">Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+            <input type="button" value="Adopt" name="adoptDog" onclick="cost();">
+        </article>
+        <article>
+            <img class="card" src="./images/poppy-card.jpg" alt="Poppy profile picture" onclick="infoPoppy();">
+            <h2>poppy</h2>
+            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+            <p class="dog-name">Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+            <input type="button" value="Adopt" name="adoptDog" onclick="cost();">
+        </article>
+        <article>
+            <img class="card" src="./images/jack-card.jpg" alt="Jack profile picture" onclick="infoJack();">
+            <h2>jack</h2>
+            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+            <p class="dog-name">Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+            <input type="button" value="Adopt" name="adoptDog" onclick="cost();">
+        </article>
+        <article>
+            <img class="card" src="./images/duffy-card.jpg" alt="Duffy profile picture" onclick="infoDuffy()">
+            <h2>duffy</h2>
+            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+            <p class="dog-name">Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+            <input type="button" value="Adopt" name="adoptDog" onclick="cost();">
+        </article>
+        <article>
+            <img class="card" src="./images/lucas-card.jpg" alt="Lucas profile picture" onclick="infoLucas();">
+            <h2>lucas</h2>
+            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+            <p class="dog-name">Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+            <input type="button" value="Adopt" name="adoptDog" onclick="cost();">
+        </article>
+        <article>
+            <img class="card" src="./images/jake-card.jpg" alt="Jake profile picture" onclick="infoJake();">
+            <h2>jake</h2>
+            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+            <p class="dog-name">Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+            <input type="button" value="Adopt" name="adoptDog" onclick="cost();">
+        </article>
+        <article>
+            <img class="card" src="./images/angus-card.jpg" alt="Angus profile picture" onclick="infoAngus();">
+            <h2>angus</h2>
+            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+            <p class="dog-name">Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+            <input type="button" value="Adopt" name="adoptDog" onclick="cost();">
+        </article>
+        <article>
+            <img class="card" src="./images/violet-card.jpg" alt="Violet profile picture" onclick="infoViolet();">
+            <h2>violet</h2>
+            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+            <p class="dog-name">Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+            <input type="button" value="Adopt" name="adoptDog" onclick="cost();">
+        </article>
+    </section>
+    <!-- See more dogs button -->
+    <button aria-label="See more puppies clicking here" onClick="window.location.href='./dogs.html'">See More Dogs</button>
+    <!-- onclick="myDialog.close()" -->
+    </div>
+    <footer>
+        <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <!-- Footer navigation bar -->
+        <nav>
+            <ul class="bottom-nav">
+                <li><a href="./dogs.html" aria-label="Read more about our puppies">dogs</a></li>
+                <li><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <small>&copy; 2021 Adoptadog, LLC &#124; Seattle, WA</small>
+    </footer>
+
+  
+</body>
+</html>
