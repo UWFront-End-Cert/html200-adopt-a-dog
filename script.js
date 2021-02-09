@@ -27,25 +27,22 @@
     // }
 
 function infoRipper(dogName) {
-
-  //Create an array with all dogs in the page
   let dogArray = document.getElementsByClassName('dog-card-details');
-  console.log(dogArray);
-
-  //Finds the dog name in the loop to compare
-  // console.log(dogArray[0].firstElementChild.innerHTML.toLowerCase());
-
-
-  //Loop through this array and identify the dogName
 
   for (let i = 0; i < dogArray.length; i++){
-    let dogFinder = dogArray[i].firstElementChild.innerHTML.toLowerCase();
-    console.log(dogFinder);
+    let dogFinder = dogArray[i].firstElementChild.innerText.toLowerCase();
 
-    if (dogName === dogFinder[i]) {
-      alert('Found the dog' + dogName + ' ' + dogFinder)
-    } else {
-      alert(dogName + ' was compared to ' + dogFinder);
+    // The [i] in the comparison was breaking the loop
+    // if (dogName === dogFinder[i]) {
+    //   alert(dogName + ' === ' + dogFinder)
+    //   break;
+    // } else {
+    //   alert(dogName + ' != ' + dogFinder);
+    //   break;
+    // }
+
+    if (dogName === dogFinder) {
+      alert(dogArray[i].innerText);
     }
   }
 }
