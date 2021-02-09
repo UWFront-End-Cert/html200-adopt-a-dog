@@ -1,10 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="zxx">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Checkout</title>
   </head>
+
   <body>
+    <header>
+      <img src="/images/adoptadog-logo.svg" alt="Adoptadog logo">
+      <img src="/images/cart-icon.svg" alt="shopping cart icon">
+      <img src="/images/header-img.jpg" alt="adoptadog header image">
+      <h1>Seattle's premiere dog adoption agency</h1>
+      <a href="adoptdog-check.html" class="checkout-class">Checkout</a>
+    </header>
+
+
+    <nav>
+    <a href="index.html">Home /</a>
+    <a href="our-dogs.html">Dog's /</a>
+    <a href="adoptdog-blog.html">Blog</a>
+    </nav>
+
+    <form class="checkout-dog-form" method="post">
+
+          <h1>Checkout</h1>
+
+          <label>Name
+            <input type="text" name="applicantName">
+          </label>
+
+
+          <label>Email Address
+            <input type="email" name="emailAddress">
+          </label>
+
+
+          <label>Street Address
+            <input type="text" name="streetAddress">
+          </label>
+
+
+          <label>City
+            <input type="text" name="streetAddress">
+          </label>
+
+          <label>State
+            <select name="state">
+              <option value="ak">Alaska</option>
+              <option value="al">Alabama</option>
+              <option value="ar">Arkansas</option>
+            </select>
+          </label>
+
+        <label>Zip Code
+          <input type="text" name="zipCode">
+        </label>
+        <fieldset>
+        <legend>First Time Adopter?</legend>
+        <label>
+           <input type="radio" name="special" value="yes">
+           Yes
+        </label>
+        <label>
+          <input type="radio" name="special" value="no">
+          No
+        </label>
+        </fieldset>
+        <label>Pickup Location
+          <select name="location">
+            <option value="none">Select Pickup Location</option>
+          </select>
+        </label>
+
+        <h2>Dogs Adopted</h2>
+        <section class="lucas-adopted">
+          <h3>Lucas</h3>
+          <img src="/images/lucas-checkout.jpg" alt="Picture of Lucas">
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+        </section>
+        <section class="duffy-adopted">
+          <h3>Duffy</h3>
+          <img src="/images/duffy-checkout.jpg" alt="Picture of Duffy">
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+        </section>
+        <h2>Total Adoption Cost</h2>
+        <p>$1234.56</p>
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+      <img src="/images/adoptadog-logo.svg" alt="Adoptadog logo">
+      <p class="footer-icon-text">ADOPTADOG</p>
+      <p class="footer-text">Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <nav class="footer-nav">
+      <a href="index.html">Home /</a>
+      <a href="our-dogs.html">Dog's /</a>
+      <a href="adoptdog-blog.html">Blog</a>
+      </nav>
+      <p class="footer-text">© 2018 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
 
   </body>
 </html>
