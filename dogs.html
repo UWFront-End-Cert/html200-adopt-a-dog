@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/master.css">
-    <title>Here are all of our Dogs!</title>
+
+    <script src="./dogCard.js">
+    </script>
+
+    <title>Adopt A Dog</title>
   </head>
 
   <body>
@@ -27,10 +31,10 @@
           </div>
 
           <div class=""><button class="btn-checkout-header "type="button">Checkout</button>
-          </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
       <nav>
         <div class="nav">
@@ -43,148 +47,147 @@
       </nav>
 
 
-
     <main>
-      <h2>Here are all of our Dogs!</h2>
-        <section>
-          <div class="card">
-            <img src="images/murphy-card.jpg" width="175" alt="murphy dog">
-            <div>
-              <h3><b>Murphy</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
+      <h1 class="blogheader">Here are all our Dogs!</h1>
+
+        <div class="grid">
+            <div class="card card-1">
+              <img onclick="dogInfo()" class="img" src="images/murphy-card.jpg"  alt="dog named murphy" />
+              <div id="card1">
+                <h3>Murphy</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
+                <button class="btn-adopt" type="button">Adopt</button>
+              </div>
+            </div>
+
+            <div class="card card-2">
+              <img onclick="dogInfo()" class="img" src="images/poppy-card.jpg"  alt="dog named poppy" />
+              <div>
+                <h3>Poppy</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
               <button class="btn-adopt" type="button">Adopt</button>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img src="images/poppy-card.jpg" width="175" alt="poppy dog">
-            <div class="container">
-              <h3><b>Poppy</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
+            <div class="card card-3">
+              <img class="img" src="images/jack-card.jpg"  alt="dog named jack" />
+              <div>
+                <h3>Jack</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
               <button class="btn-adopt" type="button">Adopt</button>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img src="images/jack-card.jpg" width="175" alt="jack dog">
-            <div class="container">
-              <h3><b>Jack</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
+            <div class="card card-4">
+              <img class="img" src="images/duffy-card.jpg"  alt="dog named duffy" />
+              <div>
+                <h3>Duffy</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
               <button class="btn-adopt" type="button">Adopt</button>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img src="images/duffy-card.jpg" width="175" alt="duffy dog">
-            <div class="container">
-              <h3><b>Duffy</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
+            <div class="card card-5">
+              <img class="img" src="images/lucas-card.jpg"  alt="dog named lucas" />
+              <div>
+                <h3>Lucas</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
+                <button class="btn-adopt" type="button">Adopt</button>
+              </div>
+            </div>
+
+            <div class="card card-6">
+              <img class="img" src="images/jake-card.jpg"  alt="dog named jake" />
+              <div>
+                <h3>Jack</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
               <button class="btn-adopt" type="button">Adopt</button>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img src="images/lucas-card.jpg" width="175" alt="lucas dog">
-            <div class="container">
-              <h3><b>Lucas</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
+            <div class="card card-7">
+              <img class="img" src="images/angus-card.jpg"  alt="angus named jake" />
+              <div>
+                <h3>Jack</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
               <button class="btn-adopt" type="button">Adopt</button>
+              </div>
             </div>
-          </div>
-
-          <div class="card">
-            <img src="images/jake-card.jpg" width="175" alt="jack dog">
-            <div class="container">
-              <h3><b>Jack</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
+            <div class="card card-8">
+              <img class="img" src="images/violet-card.jpg"  alt="violet named jake" />
+              <div>
+                <h3>Violet</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
               <button class="btn-adopt" type="button">Adopt</button>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img src="images/angus-card.jpg" width="175" alt="angus dog">
-            <div class="container">
-              <h3><b>Angus</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
+
+
+            <div class="card card-9">
+              <img class="img" src="images/lucas-card.jpg"  alt="dog named lucas" />
+              <div>
+                <h3>Lucas</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
+                <button class="btn-adopt" type="button">Adopt</button>
+              </div>
+            </div>
+
+            <div class="card card-10">
+              <img class="img" src="images/jake-card.jpg"  alt="dog named jake" />
+              <div>
+                <h3>Jack</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
               <button class="btn-adopt" type="button">Adopt</button>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img src="images/violet-card.jpg" width="175" alt="violet dog">
-            <div class="container">
-              <h3><b>Violet</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
+            <div class="card card-11">
+              <img class="img" src="images/angus-card.jpg"  alt="angus named jake" />
+              <div>
+                <h3>Jack</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
               <button class="btn-adopt" type="button">Adopt</button>
+              </div>
             </div>
-          </div>
-
-          <div class="card">
-            <img src="images/piper-card.jpg" width="175" alt="piper dog">
-            <div class="container">
-              <h3><b>Piper</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
+            <div class="card card-12">
+              <img class="img" src="images/violet-card.jpg"  alt="violet named jake" />
+              <div>
+                <h3>Violet</h3>
+                <h5>Cost to Adopt: $123.45</h5>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
               <button class="btn-adopt" type="button">Adopt</button>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img src="images/maximus-card.jpg" width="175" alt="Maximus dog">
-            <div class="container">
-              <h3><b>Maximus</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
-              <button class="btn-adopt" type="button">Adopt</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="images/luna-card.jpg" width="175" alt="luna dog">
-            <div class="container">
-              <h3><b>Luna</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
-              <button class="btn-adopt" type="button">Adopt</button>>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="images/stella-card.jpg" width="175" alt="Stella dog">
-            <div class="container">
-              <h3><b>Stella</b></h3>
-              <h4><b>Cost to Adopt:</b> $123.45</h4>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta</p>
-              <button class="btn-adopt" type="button">Adopt</button>
-            </div>
-          </div>
-
-    </section>
-
-  </main>
-
-  <!-- footer Content -->
-  <footer class="footer">
-    <div class="footer-logo"><img src="images/adoptadog-logo.svg"  alt="adoptadog-logo"></div>
-      <p class="copyright">Aborpos nisto inci tet aut que volupti beruptiberro to ex<br> esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-
-      <div class="nav-footer">
-        <ul>
-          <li class="footer-nav"><a href="index.html">Home</a> <span class="nav-slash">&#47;</span></li>
-          <li class="footer-nav"><a href="dogs.html">Dogs</a><span class="nav-slash">&#47;</span></li>
-          <li class="footer-nav"><a href="#">Contact</a></li>
-        </ul>
       </div>
-        <p class="copyright">©  2020  Adoptadog, LLC   &nbsp;|&nbsp;   Seattle, WA</p>
-    </footer>
+      </main>
 
-</body>
+      <!-- footer Content -->
+      <footer class="footer">
+        <div class="footer-logo"><img src="images/adoptadog-logo.svg"  alt="adoptadog-logo"></div>
+          <p class="copyright">Aborpos nisto inci tet aut que volupti beruptiberro to ex<br> esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+
+          <div class="nav-footer">
+            <ul>
+              <li class="footer-nav"><a href="index.html">Home</a> <span class="nav-slash">&#47;</span></li>
+              <li class="footer-nav"><a href="dogs.html">Dogs</a><span class="nav-slash">&#47;</span></li>
+              <li class="footer-nav"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+            <p class="copyright">©  2020  Adoptadog, LLC   &nbsp;|&nbsp;   Seattle, WA</p>
+        </footer>
+
+  </body>
 </html>
