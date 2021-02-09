@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>ADOPT-A-DOG HOME</title>
+  <title>ADOPT-A-DOG CHECKOUT</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<header>
-  <h1 class="title-text-hidden">Welcome to Adopt A Dog</h1>
-  <figure>
-    <img src="images/adoptadog-logo.svg" alt="" width="450">
-  </figure>
-  <p class="slogan">Seattle's premiere dog adoption agency</p>
-  <img src="images/cart-icon.svg" alt="" width="30">
-  <form action="checkout.html">
-    <input class="checkout" type="submit" value="Checkout" onclick="checkout.html"/>
-  </form>
-  <p class="checkout-total">$1234.56</p>
-  <nav class="header-nav">
-        <ul>
-          <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
-          <li><a href="adoption-list.html">Dogs&nbsp;&nbsp;&nbsp;/</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
+<a href="#main-content" class="sr-only">Skip to main content</a>
+<div class="wrapper">
+<header class=main-header>
+  <div class="header-container">
+    <div class="logo-header-wrapper"
+      <figure class="logo">
+        <img src="images/adoptadog-logo.svg" alt="" width="450">
+      </figure>
+      <p class="slogan">Seattle's premiere dog adoption agency</p>
+    </div>
+    <div class="checkout-cart-wrapper">
+      <img src="images/cart-icon.svg" alt="" width="30">
+      <p class="checkout-total">$1234.56</p>
+      <form action="checkout.html" class="checkout-button">
+        <input class="checkout" type="submit" value="Checkout" onclick="checkout.html"/>
+      </form>
+    </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
+      <li><a href="adoption-list.html">Dogs&nbsp;&nbsp;&nbsp;/</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+  </div>
 </header>
-<section id="main-content">
+<section class="sr-only" id="main-content">
   <h2 class="skip-link">content</h2>
 </section>
-<section class="checkout">
+<section class="main-checkout">
   <h2>Checkout</h2>
-  <div class="container">
+  <div class="spacer-left">
+  </div>
+  <div class="form-wrapper">
     <form action="/action.php" method="GET">
       <label>Name
-        <input type="text" name="firstName" value="">
+        <input type="text" id="name" name="name" value="">
       </label>
       <label>Email Address
         <input type="email" id="email" name="email">
       </label>
       <label>Street Address</label>
-        <textarea rows="10" cols="30" name="description"></textarea>
+        <input type="text" id="address" name="address">
       <label>City
-        <input type="text" name="city" value="">
+        <input type="text" id="city" name="city" value="">
       </label>
       <label>State
         <select id="state" name="state">
@@ -100,7 +109,7 @@
         </select>
       </label>
       <label>Zip Code
-        <input type="text" name="zipCode" value="">
+        <input type="text" id="zipCode" name="zipCode" value="">
       </label>
         <label>First Time Adopter?
           <input type="radio" name="firstTimeAdopter" value="yes">Yes
@@ -122,13 +131,15 @@
       <input type="submit" name="submit" value="Submit">
     </form>
   </div>
+  <div class="spacer-right">
+  </div>
 </section>
-
-<footer class="footer-small">
+<footer class="main-footer">
+  <div class="footer-wrapper">
   <figure class=footer-fig>
     <img src="images/adoptadog-logo.svg" alt="" width="350">
   </figure>
-  <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+  <p class="footer-info">Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
   <nav class="footer-nav">
     <ul>
       <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
@@ -136,7 +147,10 @@
       <li><a href="">Contact</a></li>
     </ul>
   </nav>
-  <p>&copy; 2018 Adoptadog, &#x2758; LLC Seattle, WA</p>
+  <p class="copyright">&copy; 2018 Adoptadog, &#x2758; LLC Seattle, WA</p>
+</div>
 </footer>
+</div>
+
 </body>
 </html>
