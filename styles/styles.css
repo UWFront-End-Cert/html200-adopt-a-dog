@@ -3,7 +3,7 @@
   border: 1px solid black;
 }
 
-/*--------Header--------*/
+/*--------Header-All-pages------*/
 header {
   background-image: url(../images/header-image.jpg);
   background-repeat: no-repeat;
@@ -42,40 +42,72 @@ header p {
   color: #ffffff;
 }
 
-/*--------main-index--index.html-----*/
+/*--------main-index.html-----*/
 main {
   padding-left: 8rem;
 }
 
-
-/*.flex-container {
+/* section boy hugging dog */
+/*.flex-container-top {
   display: flex;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
 .flex-item-image {
 }
+.flex-item-title{
+}
+.flex-item-about {
+}
+/*-----section--flex-container-index----*/
+.flex-container-index {
+
+}
+.flex-item-1 {
+  width: 30%;
+}
+.flex-item-2 {
+  padding-left: 1rem;
+}
+.flex-item-3 {
+  padding-left: 1rem;
+}
+.flex-item-4 {
+  padding-left: 1rem;
+}
+.flex-item-5 {
+  padding-left: 1rem;
+}
+.flex-item-6 {
+  padding-left: 1rem;
+}
+.flex-item-7 {
+  padding-left: 1rem;
+}
+.flex-item-8 {
+  padding-left: 1rem;
+}
 .flex-item-image {
 
 }
-.flex-item-title{
+.flex-item-name {
 
 }
-.flex-item-about {
+.flex-dog-cost {
 
 }
-.flex-1 {
-  width: 30%;
+.flex-dog-info {
+
 }
-.flex-2 {
-  padding-left: 1rem;
+.flex-dog-button {
+
 }
-.flex-3 {
-  padding-left: 1rem;
-}
+
 .see-more {
   padding: 1rem 1rem 1rem 1rem;
 }
+
+
 /*-----Index grid container-with items----*/
 
 /*.grid-container-index {
@@ -151,8 +183,22 @@ main {
 .grid-dog-input {
 
 }
-
 /*--------section-blog--------*/
+.blog-adoptadog-h1 {
+
+}
+.container-blog {
+
+}
+.blog-topic {
+
+}
+.blog-image {
+
+}
+.blog-topic-info {
+  
+}
 
 /*--------section-listing--------*/
 
@@ -243,7 +289,16 @@ fieldset {
   padding: 0;
   margin: 0;
 }
-
+/*----Nav Menu Top----*/
+.nav-head {
+  padding-top: 1rem;
+}
+.nav-item-head {
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+  padding-left: 0rem;
+}
 /*-------footer-------*/
 footer {
   background-color: teal;
@@ -263,19 +318,8 @@ footer p {
 .footer-logo {
   max-height: 5rem;
 }
-/*----footer nav-----*/
-/*.nav {
-  list-style: none;
-  width: 30%;
-  font-weight: bold;
-  line-height: 3rem;
-  padding-left: 30rem;
-  text-decoration: none;
-  color: white;
-}*/
 .nav-footer {
   padding-left: 30rem;
-
 }
 .nav-item-ft {
   color: #ffffff;
@@ -284,15 +328,6 @@ footer p {
 }
 .space {
   padding: 0 2rem 0 2rem;
-}
-.nav-head {
-  padding-top: 1rem;
-}
-.nav-item-head {
-  color: #000000;
-  font-weight: 600;
-  text-decoration: none;
-  padding-left: 0rem;
 }
 
 
