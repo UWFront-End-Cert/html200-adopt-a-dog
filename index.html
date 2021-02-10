@@ -4,12 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/master.css">
-
     <script src="./dogCard.js">
     </script>
-
     <title>Adopt A Dog</title>
-
   </head>
 
   <body>
@@ -31,7 +28,8 @@
             </div>
           </div>
 
-          <div class=""><button class="btn-checkout-header "type="button">Checkout</button>
+          <div class="">
+            <button class="btn-checkout-header "type="button">Checkout</button>
         </div>
       </div>
     </div>
@@ -58,11 +56,11 @@
 
             <div class="card card-1">
               <img onclick="dogInfo()" class="img" src="images/murphy-card.jpg"  alt="dog named murphy" />
-              <div id="card1">
+              <div>
                 <h3>Murphy</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-                <button class="btn-adopt" type="button">Adopt</button>
+                <button onclick="adoptCost()" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
 
@@ -72,71 +70,71 @@
                 <h3>Poppy</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-              <button class="btn-adopt" type="button">Adopt</button>
+              <button onclick="adoptCost()" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
 
             <div class="card card-3">
-              <img class="img" src="images/jack-card.jpg"  alt="dog named jack" />
+              <img onclick="dogInfo()" class="img" src="images/jack-card.jpg"  alt="dog named jack" />
               <div>
                 <h3>Jack</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-              <button class="btn-adopt" type="button">Adopt</button>
+                <button onclick="adoptCost()" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
 
             <div class="card card-4">
-              <img class="img" src="images/duffy-card.jpg"  alt="dog named duffy" />
+              <img onclick="dogInfo()" class="img" src="images/duffy-card.jpg"  alt="dog named duffy" />
               <div>
                 <h3>Duffy</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-              <button class="btn-adopt" type="button">Adopt</button>
+              <button onclick="adoptCost()" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
 
             <div class="card card-5">
-              <img class="img" src="images/lucas-card.jpg"  alt="dog named lucas" />
+              <img onclick="dogInfo()" class="img" src="images/lucas-card.jpg"  alt="dog named lucas" />
               <div>
                 <h3>Lucas</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-                <button class="btn-adopt" type="button">Adopt</button>
+                <button onclick="adoptTotal()" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
 
             <div class="card card-6">
-              <img class="img" src="images/jake-card.jpg"  alt="dog named jake" />
+              <img "dogInfo()" class="img" src="images/jake-card.jpg"  alt="dog named jake" />
               <div>
                 <h3>Jack</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-              <button class="btn-adopt" type="button">Adopt</button>
+                <button onclick="adoptCost()" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
 
             <div class="card card-7">
-              <img class="img" src="images/angus-card.jpg"  alt="angus named jake" />
+              <img "dogInfo()" class="img" src="images/angus-card.jpg"  alt="angus named jake" />
               <div>
                 <h3>Jack</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-              <button class="btn-adopt" type="button">Adopt</button>
+                <button onclick="adoptCost()" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
             <div class="card card-8">
-              <img class="img" src="images/violet-card.jpg"  alt="violet named jake" />
+              <img "dogInfo()" class="img" src="images/violet-card.jpg"  alt="violet named jake" />
               <div>
                 <h3>Violet</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-              <button class="btn-adopt" type="button">Adopt</button>
+                <button onclick="adoptCost()" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
       </div>
 
-        <button class="center btn-seemoredogs" type="button">See More Dogs</button>
+        <button onclick="href='/dogs.html'" class="center btn-seemoredogs" type="button">See More Dogs</button>
       </main>
 
       <!-- footer Content -->
