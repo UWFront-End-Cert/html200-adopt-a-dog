@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <title>Adopt a Dog - Home</title>
   </head>
   <body>
@@ -19,7 +19,7 @@
         </div>
         <div class="shopping-cart">
           <img class="shopping-cart-icon" src="images/cart-icon.svg" alt="Shopping cart icon">
-          <p>$1234.56</p>
+          <p id="totals">$00.00</p>
           <button class="cart-button" type="button">Checkout</button>
         </div>
       </div>
@@ -52,9 +52,9 @@
           <div id="first-pup" class="dog-card-details">
             <h3>Murphy</h3>
             <p>Cost to Adopt: </p>
-            <p>$123.45</p>
+            <p>$120.50</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button type="button" name="adopt">Adopt</button>
+            <button onclick="priceRipper()" type="button" name="adopt">Adopt</button>
           </div>
         </div>
         <div class="dog-card">
@@ -62,9 +62,9 @@
           <div id="second-pup" class="dog-card-details">
             <h3>Poppy</h3>
             <p>Cost to Adopt: </p>
-            <p>$123.45</p>
+            <p>$50.50</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button type="button" name="adopt">Adopt</button>
+            <button onclick="priceRipper()"type="button" name="adopt">Adopt</button>
           </div>
         </div>
         <div class="dog-card">
@@ -72,9 +72,9 @@
           <div class="dog-card-details">
             <h3>Jack</h3>
             <p>Cost to Adopt: </p>
-            <p>$123.45</p>
+            <p>$70.99</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button type="button" name="adopt">Adopt</button>
+            <button onclick="priceRipper()" type="button" name="adopt">Adopt</button>
           </div>
         </div>
         <div class="dog-card">
@@ -82,9 +82,9 @@
           <div class="dog-card-details">
             <h3>Duffy</h3>
             <p>Cost to Adopt: </p>
-            <p>$123.45</p>
+            <p>$500.00</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button type="button" name="adopt">Adopt</button>
+            <button onclick="priceRipper()" type="button" name="adopt">Adopt</button>
           </div>
         </div>
         <div class="dog-card">
@@ -94,7 +94,7 @@
             <p>Cost to Adopt: </p>
             <p>$123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button type="button" name="adopt">Adopt</button>
+            <button onclick="priceRipper()" type="button" name="adopt">Adopt</button>
           </div>
         </div>
         <div class="dog-card">
@@ -102,9 +102,9 @@
             <div class="dog-card-details">
               <h3>Jake</h3>
               <p>Cost to Adopt: </p>
-              <p>$123.45</p>
+              <p>$15.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button type="button" name="adopt">Adopt</button>
+              <button onclick="priceRipper()" type="button" name="adopt">Adopt</button>
             </div>
         </div>
         <div class="dog-card">
@@ -112,9 +112,9 @@
             <div class="dog-card-details">
               <h3>Angus</h3>
               <p>Cost to Adopt: </p>
-              <p>$123.45</p>
+              <p>$10.32</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button type="button" name="adopt">Adopt</button>
+              <button onclick="priceRipper()" type="button" name="adopt">Adopt</button>
             </div>
         </div>
         <div class="dog-card">
@@ -122,9 +122,9 @@
           <div class="dog-card-details">
             <h3>Violet</h3>
             <p>Cost to Adopt: </p>
-            <p>$123.45</p>
+            <p>$90.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button type="button" name="adopt">Adopt</button>
+            <button onclick="priceRipper()" type="button" name="adopt">Adopt</button>
         </div>
         </div>
       </div>
@@ -142,5 +142,6 @@
         <small>&copy;	 2018 Adoptadog, LLC | Seattle, WA</small>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

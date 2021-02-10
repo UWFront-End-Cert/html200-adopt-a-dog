@@ -1,46 +1,28 @@
+// Create an array from .dog-card-details class
+let dogArray = document.getElementsByClassName('dog-card-details');
 
-// Creates an Array of all the dog's information
-//I need to find what number(dog) I'm looking for
+// Total of Shopping Cart
+let adoptionTotalString = document.getElementById('totals').innerText.substr(1);
+let adoptionTotalNumber = parseFloat(adoptionTotalString);
 
-    // function infoRipper() {
-    //   let dogArray = document.getElementsByClassName('dog-card-details');
-    //   console.log(dogArray);
-    //   console.log(dogArray[0].innerText);
-    //   alert("itworks");
-    // }
+// Get price of the selected card button
+function priceRipper() {
+  let specificPriceString = event.path[1].children[2].innerText;
+  let specificPriceNumber = parseFloat(specificPriceString.substr(1));
+  adoptionTotalNumber = adoptionTotalNumber + specificPriceNumber;
+  alert('Total price of adoption: $' + adoptionTotalNumber);
+}
 
-//inforipper is pulling the wrong information. infoRipper is pulling the last one
-//If only there was a way to pass it a parameter to check from? hmm
+// When 'this' was the parameter it returned the button's elements
+// Maybe I can go to it's siblings?
+  // function priceRipper(e) {
+  //   console.log(e);
+  // }
 
-    // function infoRipper1() {
-    //   let elem = document.getElementById('first-pup')
-    //   console.log(elem);
-    //   console.log(elem.innerText);
-    //   alert("I should call Murphy");
-    // }
-    //
-    // function infoRipper() {
-    //   let elem = document.getElementById('second-pup')
-    //   console.log(elem);
-    //   console.log(elem.innerText);
-    //   alert("I should Call Poppy");
-    // }
-
+//Alerts users of clicked dog picture
 function infoRipper(dogName) {
-  let dogArray = document.getElementsByClassName('dog-card-details');
-
   for (let i = 0; i < dogArray.length; i++){
     let dogFinder = dogArray[i].firstElementChild.innerText.toLowerCase();
-
-    // The [i] in the comparison was breaking the loop
-    // if (dogName === dogFinder[i]) {
-    //   alert(dogName + ' === ' + dogFinder)
-    //   break;
-    // } else {
-    //   alert(dogName + ' != ' + dogFinder);
-    //   break;
-    // }
-
     if (dogName === dogFinder) {
       alert(dogArray[i].innerText);
     }
