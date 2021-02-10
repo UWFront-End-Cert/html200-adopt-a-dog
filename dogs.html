@@ -4,133 +4,156 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopt a Dog: Dogs</title>
-    <!--link rel="stylesheet" type="text/css" href="styles/stylesheet.css"-->
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <!--temporary CSS settings so white graphics are visible-->
-    <style>
-      header{
-        background-color: black;
-        color: green;
-      }
-      footer{
-        background-color: #093c60;
-        color: white;
-      }
-    </style>
   </head>
 
-  <body>
+  <body class="grid-container">
     <a href="#main-content" class="hidden">Skip to main content >></a>
     <header>
-      <!-- Backgound image of dog face to be inserted with CSS later-->
-      <img src="images/adoptadog-logo.svg" alt="white silhouette of a sitting dog next to Adopt A Dog logotype">
-      <h2>Seattle's premier dog adoption agency</h2>
-      <img src="images/cart-icon.svg" alt="cart icon">
-      <p><a href="checkout.html">Checkout</a></p>
-      <nav>
+      <div class="logo-container">
+        <img id="header-logo" src="images/adoptadog-logo.svg" alt="white silhouette of a sitting dog next to Adopt A Dog logotype">
+        <h2 id="tag-line">Seattle's premier dog adoption agency</h2>
+      </div>
+      <div class="cart-container">
+        <p><img id="icon" src="images/cart-icon.svg" alt="cart icon"><span class="bold">$1234.56</span></p>
+        <a href="checkout.html" class="green-button">Checkout</a>
+      </div>
+      <nav class="head">
         <a href="index.html">Home</a> /
-        <a href="#">Dogs</a> /
+        <a href="dogs.html">Dogs</a> /
         <a href="blog.html">Blog</a>
       </nav>
     </header>
 
     <!-- Main Page Content -->
-    <div id="main-content">
-      <h1>Here are all of our Dogs!</h1>
-      <article>
-        <img src="images/murphy-card.jpg" alt="the apprehensive face of a caramel and white boxer mix looking up and to the left">
-        <h2>Murphy</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+    <div class="grid-top blurb-txt" id="main-content">
+      <h2>Here are all of our Dogs!</h2>
+    </div>
+
+    <div class="grid-middle horizontal">
+      <article class="tile">
+        <img src="images/murphy-card.jpg" class="tile-img" alt="the apprehensive face of a caramel and white boxer mix looking up and to the left">
+        <div class="tile-txt">
+          <h3>Murphy</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
-      <article>
-        <img src="images/poppy-card.jpg" alt="a smiling, cream and grey Shih Tzu mix trots toward the camera along a shaded road">
-        <h2>Poppy</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+      <article class="tile">
+        <img src="images/poppy-card.jpg" class="tile-img" alt="a smiling, cream and grey Shih Tzu mix trots toward the camera along a shaded road">
+        <div class="tile-txt">
+          <h3>Poppy</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
-      <article>
-        <img src="images/jack-card.jpg" alt="a beagle puppy eagerly sits and looks up with a look of adoration">
-        <h2>Jack</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+      <article class="tile">
+        <img src="images/jack-card.jpg" class="tile-img" alt="a beagle puppy eagerly sits and looks up with a look of adoration">
+        <div class="tile-txt">
+          <h3>Jack</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
-      <article>
-        <img src="images/duffy-card.jpg" alt="a tan hound-staffy mix with a white face and blue eyes eagerly looks up at the camera">
-        <h2>Duffy</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+      <article class="tile">
+        <img src="images/duffy-card.jpg" class="tile-img" alt="a tan hound-staffy mix with a white face and blue eyes eagerly looks up at the camera">
+        <div class="tile-txt">
+          <h3>Duffy</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
-      <article>
-        <img src="images/lucas-card.jpg" alt="a black shepherd mix with white markings on its snout grins upward at the camera">
-        <h2>Lucas</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+      <article class="tile">
+        <img src="images/lucas-card.jpg" class="tile-img" alt="a black shepherd mix with white markings on its snout grins upward at the camera">
+        <div class="tile-txt">
+          <h3>Lucas</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
-      <article>
-        <img src="images/jake-card.jpg" alt="a very good boy a yellow labrador retriever sits and patiently waits for attention">
-        <h2>Jake</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+      <article class="tile">
+        <img src="images/jake-card.jpg" class="tile-img" alt="a very good boy a yellow labrador retriever sits and patiently waits for attention">
+        <div class="tile-txt">
+          <h3>Jake</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
-      <article>
-        <img src="images/angus-card.jpg" alt="a tan and black Stafforshire bull terrier lays in the grass grinning adoringly at the camera">
-        <h2>Angus</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+      <article class="tile">
+        <img src="images/angus-card.jpg" class="tile-img" alt="a tan and black Stafforshire bull terrier lays in the grass grinning adoringly at the camera">
+        <div class="tile-txt">
+          <h3>Angus</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
-      <article>
-        <img src="images/violet-card.jpg" alt="a tiny chocolate labrador retriever sits on a stone floor looking up at the camera">
-        <h2>Violet</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+      <article class="tile">
+        <img src="images/violet-card.jpg" class="tile-img" alt="a tiny chocolate labrador retriever sits on a stone floor looking up at the camera">
+        <div class="tile-txt">
+          <h3>Violet</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
-      <article>
-        <img src="images/piper-card.jpg" alt="a Nova Scotia Duck Toller stands in a field of grasses, ears forward, grinning with her tongue lolling out of her mouth">
-        <h2>Piper</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+      <article class="tile">
+        <img src="images/piper-card.jpg" class="tile-img" alt="a Nova Scotia Duck Toller stands in a field of grasses, ears forward, grinning with her tongue lolling out of her mouth">
+        <div class="tile-txt">
+          <h3>Piper</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
-      <article>
-        <img src="images/maximus-card.jpg" alt="a black terrier mix with white markings stands looking eagerly upward at the camera">
-        <h2>Maximus</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+      <article class="tile">
+        <img src="images/maximus-card.jpg" class="tile-img" alt="a black terrier mix with white markings stands looking eagerly upward at the camera">
+        <div class="tile-txt">
+          <h3>Maximus</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
-      <article>
-        <img src="images/luna-card.jpg" alt="an adult yellow labrador retriever sits grinning adoringly">
-        <h2>Luna</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+      <article class="tile">
+        <img src="images/luna-card.jpg" class="tile-img" alt="an adult yellow labrador retriever sits grinning adoringly">
+        <div class="tile-txt">
+          <h3>Luna</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
-      <article>
-        <img src="images/stella-card.jpg" alt="a small tan chihuahua with a white face lays looking at the camera fondly">
-        <h2>Stella</h2>
-        <h3>Cost to Adopt: $123.45</h3>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <a href="#">Adopt</a>
+      <article class="tile">
+        <img src="images/stella-card.jpg" class="tile-img" alt="a small tan chihuahua with a white face lays looking at the camera fondly">
+        <div class="tile-txt">
+          <h3>Stella</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <a href="#" class="tile-link green-button">Adopt</a>
+        </div>
       </article>
     </div>
 
+    <div class="grid-bottom">
+    </div>
+
     <footer>
-      <img src="images/adoptadog-logo.svg" alt="white silhouette of a sitting dog next to Adopt A Dog logotype">
-      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex  esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <img src="images/adoptadog-logo.svg" class="foot-img" alt="white silhouette of a sitting dog next to Adopt A Dog logotype">
+      <p class="foot">Aborpos nisto inci tet aut que volupti beruptiberro to ex  esseque invenienihil imaximu scideru ptistiusam consequunt</p>
       <nav>
         <a href="index.html">Home</a> /
-        <a href="#">Dogs</a> /
+        <a href="#main-content">Dogs</a> /
         <a href="#">Contact</a>
       </nav>
-      <p>© 2018 Adoptadog, LLC   |   Seattle, WA</p>
+      <p class="foot">© 2018 Adoptadog, LLC   |   Seattle, WA</p>
     </footer>
   </body>
 </html>
