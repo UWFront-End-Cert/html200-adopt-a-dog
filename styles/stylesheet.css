@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/*Positioning and Page Sectioning Rules*/
+.hidden {
+  position: absolute;
+  left:-10000px;
+  top: auto;
+  color: white;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+}
+
+header {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  background-image: url("../images/header-image.jpg");
+  background-color: #101010;
+  background-size: 85%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 20rem;
+  margin-bottom: 1rem;
+}
+
+.grid-top {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.grid-middle {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 2;
+}
+
+.grid-bottom {
+  grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+  margin: 1rem 0 2rem 0;
+}
+
+footer {
+  grid-column: 1 / span 6;
+  grid-row: 6 / span 1;
+  background-color: #093c60;
+  color: white;
+  height: 100%;
+  text-align: center;
+}
+
+.left-img {
+  float: left;
+  width: 35%;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 0 15%;
+  justify-content: space-between;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.clear-float {
+  clear: both;
+}
+
+/*Text Stylings: Universal --> More specific*/
+h1, h2, h3 {
+  font-family: 'Georgia', 'Garamond', serif;
+  color: #093C60;
+  margin: 0.5rem 0;
+}
+
+p {
+  font-size: 75%;
+  line-height: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 75%;
+  font-weight: bold;
+}
+
+h4, h5 {
+  font-family: 'Georgia', 'Garamond', serif;
+  color: #093C60;
+  font-weight: bold;
+}
+
+.blurb-txt {
+  padding: 0.5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center-txt {
+  text-align: center;
+}
+
+.light-txt {
+  font-weight: lighter;
+}
+
+.green-button {
+  position: relative;
+  top: 1rem;
+  right: 3rem;
+  background-color: #81B741;
+  color: white;
+  font-size: 80%;
+  margin: 5% 0;
+  padding: 7% 45%;
+  border-radius: 1px;
+}
+
+.page-link {
+  background-color: #E6E6E6;
+  color: #093C60;
+  font-size: 80%;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 1% 5%;
+}
+
+/*Rules for Styling the Header*/
+.logo-container {
+  float: left;
+  width: 30%;
+  margin: 2rem 5rem;
+}
+
+#tag-line {
+  color: #81B741;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 100%;
+  margin: 0;
+}
+
+.cart-container {
+  float: right;
+  text-align: right;
+  font-weight: lighter;
+  font-size: 100%;
+  height: 2rem;
+  margin: 2rem 5rem;
+}
+
+#icon {
+  position: static;
+  padding-right: 0.5rem;
+  width: 1.5rem;
+}
+
+nav.head {
+  clear: both;
+  position: absolute;
+  top: 17rem;
+  width: 100%;
+  background-color: #E6E6E6;
+  color: #093C60;
+  padding: 1rem 0;
+  text-indent: 15%;
+}
+
+/*Rules for Styling Dog Profile Cards*/
+.tile {
+  margin: 1.5rem 1rem;
+  width: 20%;
+  height: 100%;
+  text-align: left;
+  font-size: 85%;
+  box-shadow: 5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6;
+}
+
+.tile-img {
+  width: 100%;
+}
+
+.tile-txt {
+  margin: 0.5rem;
+}
+
+.bio-txt {
+  line-height: 150%;
+  margin: 5% 0 8% 0;
+}
+
+.tile-link {
+  display: block;
+  position: static;
+}
+
+/*Rules for Styling Form*/
+label, legend {
+  font-family: 'Georgia', 'Garamond', serif;
+  color: #093C60;
+  width: 60%;
+  font-size: 90%;
+  font-weight: bold;
+  margin: 1.5rem 0 0 0;
+}
+
+input {
+  margin: 0.5rem 0.75rem 0 0;
+  border: 1px solid #E6E6E6;
+}
+
+select {
+  border: 1px solid #E6E6E6;
+  margin: 0.5rem 0.75rem 0 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.txt-entry {
+  height: 1.5rem;
+}
+
+.drop-select {
+  height: 1.75rem;
+}
+
+.address {
+  width: 60%;
+  margin-bottom: 1.5rem;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.width-35 {
+  width: 35%;
+}
+
+.space-down {
+  margin-top: 1.5rem;
+}
+
+.radio-style {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: black;
+  font-size: 75%;
+  padding-right: 2rem;
+}
+
+.cart-item {
+  float: left;
+  width: 35%;
+}
+
+.square {
+  float:left;
+  width: 4rem;
+  height: 4rem;
+  padding-right: 0.75rem;
+  margin-bottom: 2rem;
+  object-fit: cover;
+}
+
+.submit {
+  background-color: #81B741;
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  padding: 1% 10%;
+  margin-top: 3%;
+  border: none;
+  border-radius: 2px;
+}
+
+/*Rules for Styling the Footer*/
+.foot-img {
+  width: 30%;
+  margin-top: 2rem;
+}
+
+p.foot {
+  width: 40%;
+  margin: 2% auto;
+}
