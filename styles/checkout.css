@@ -1,0 +1,820 @@
+* {
+    box-sizing: border-box;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Default font replaced */
+    font-family: 'Roboto', sans-serif;
+    /* font-family: sans-serif; */
+    font-size: 1.3rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/header-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 375px;
+}
+
+.top-left {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 0 8rem;
+}
+
+.checkout {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 4rem 0;
+}
+
+.top-logo {
+    max-width: 100%; 
+    width: 100%;
+}
+
+div.slogan {
+    font-style: italic;
+    font-size: 1.7rem;
+    color: #a1c349;
+    margin-top: 0;
+}
+
+.slogan p {
+    margin: 0;
+}
+
+/* [src="./images/cart-icon.svg"] {
+    max-width: 100%;
+    width: 5%;
+} */
+
+/* Cart icon targeted by using as selector the checkout class and its nested child 'img'  */
+.checkout img {
+    max-width: 100%;
+    width: 5%;
+}
+
+.total {
+    /* hex color value, all lowercase, updated */
+    color: #fff;
+    padding-bottom: 0;
+}
+
+/* [value="Checkout"]  */
+/* .checkout input {
+    width: 20%; 
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    background-color: #a1c349;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 2px;
+    border: none; 
+} */
+
+.main-nav {
+    background-color: rgb(224, 224, 226);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+ul { 
+    font-size: .85em; 
+    color: #ccc; 
+    margin: 1.5rem 0 1.5rem 12rem;
+    padding-left: 0;
+    display: inline-flex;
+}
+
+li { 
+    list-style-type: none;
+     /* A little bit of extra padding added in this item */
+    padding-right: 40px;
+    float: none;
+}
+    
+li:after {
+    content: "/";
+    color: #0a3d61;
+    font-size: 1.3em;
+    padding-left: 1rem;
+    position: absolute;
+}
+
+li:last-of-type:after {
+    content: none;
+}
+
+li:last-child {
+    padding-right: 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #0a3d61;
+}
+
+/* This style has been omitted */
+/* a[href="./blog.html"]{
+    padding-left: 10px;
+} */
+
+h1 {
+    color: #0a3d61;
+    font-size: 2rem;
+}
+    
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 12rem 0 12rem; 
+}
+    
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 12rem;
+}
+    
+label {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #0a3d61;
+    margin-bottom: .5rem;
+}
+
+input {
+    width: 50%;
+    height: 3rem;
+    font-size: 1.4rem;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 50%;
+}
+
+label[for="city"] {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+input[id="city"] {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+label[for="state"] {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+select[name="state"] {
+    grid-column: 3;
+    grid-row: 2;
+    width: 75%;
+}
+
+/* input[id="state"] {
+    grid-column: 3;
+    grid-row: 2;
+    width: 75%;
+} */
+
+label[for="zipcode"] {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+input[id="zipcode"] {
+    grid-column: 4;
+    grid-row: 2;
+    width: 90%;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: flex;
+    width: 30%;
+}
+
+legend {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #0a3d61;        
+    margin-bottom: .5rem;
+}
+
+fieldset label {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 0;
+    align-self: center;
+    margin: 0 2rem;
+}
+
+input[type="radio"] {
+    width: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    width: 20%;
+    height: 3rem;
+    /* Font size updated */
+    font-size: 1.4rem;
+}
+
+section {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, .10fr);
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.lucas {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lucas-cost {
+    display: flex;
+    flex-direction: column;
+}
+
+.duffy {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.duffy-cost {
+    display: flex;
+    flex-direction: column;
+}
+  
+h2 {
+    color: #0a3d61;
+    font-size: 1.6rem;
+}
+
+h2::first-letter {
+    text-transform: uppercase;
+}
+
+span {
+    font-weight: bold;
+}
+
+article small {
+    color: #000;
+    font-size: .9rem;
+    padding: 0;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 1rem 0 0 0;
+    color: #0a3d61;
+}
+
+img[src="./images/lucas-checkout.jpg"] {
+    width: 63%;
+}
+
+img[src="./images/duffy-checkout.jpg"] {
+    width: 63%;
+}
+  
+#total {
+    width: 20%;
+    font-size: 1.6rem;
+}
+
+/* ----------------------------------- */
+.btn {
+    width: 18rem;
+    height: 3.4rem;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    /* hex color value, all lowercase, updated */
+    color: #ffffff;
+    background-color: #a1c349;
+}
+
+/* ------------- footer ------------------------------- */
+footer {
+    background-color: #0a3d61;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* [src="./images/adoptadog-logo.svg"] */
+footer img {
+    max-width: 100%;
+    width: 32%;
+    padding-top: 4rem;
+}
+
+footer > p {
+    /* display: block; */
+    margin-left: 35%;
+    margin-right: 35%;
+    /* margin: 0 5rem; */
+    text-align: center;
+    /* hex color value, all lowercase, updated */
+    color: #ffffff;
+    line-height: 1.8rem;
+}
+
+.bottom-nav {
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+ul.bottom-nav a {
+    color: #fff;
+    padding-left: 1rem;
+}
+
+ul.bottom-nav > li:after {
+    /* hex color value, all lowercase, updated */
+    color: #fff;
+}
+
+a:first-child {
+    padding-left: 0;
+}
+
+small {
+    padding-bottom: 4rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+/* Media queries */
+/* Extra large Screens 1200px and up*/
+@media (max-width: 1250px) {
+
+    /* [src="./images/adoptadog-logo.svg"]  */
+    .top-logo {
+       width: 100%;
+    }
+
+    main {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        /* padding: 2rem 6rem; */
+        padding: 2rem 0 0 12rem;
+    }
+
+    .checkout {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 4rem 6rem 0 0;
+    }
+
+    /* [src="./images/adoptadog-logo.svg"]  */
+    footer img {
+        max-width: 100%;
+        width: 35%;
+        padding-top: 4rem;
+    }
+
+    ul.bottom-nav a {
+        color: #fff;
+        font-size: 1.2rem;
+    }
+}
+
+/* Large devices 992px and up */
+@media (max-width: 1029px) {
+
+    /* [src="./images/adoptadog-logo.svg"]  */
+    .top-logo {       
+        width: 150%;
+    }
+
+    .checkout {
+        width: 37%;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 4rem 0 0;
+    }
+
+    ul {
+        font-size: 1.5rem;
+        color: #ccc;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    li {    
+        list-style-type: none;
+        padding-right: 3rem;
+    }
+    
+    li:after {
+        content: "/";
+        color: #0a3d61;
+        font-size: 1.3em;
+        padding-left: 1.2rem;
+        position: absolute;
+    }
+
+    form {
+        padding: 2rem 7rem;
+    }
+
+    input {
+        width: 75%;
+        height: 3rem;
+    }
+
+    .location {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+        width: 76%;
+    }
+
+    input[id="city"] {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    fieldset {
+        padding: 0;
+        margin: 0;
+        border: none;
+        display: flex;
+        width: 55%;
+    }
+
+    section {
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, .10fr);
+        width: 79%;
+        margin-bottom: 2rem;
+    }
+
+    select {
+        width: 28%;
+        height: 3rem;
+    }
+
+    #total {
+        width: 35%;
+        font-size: 1.6rem;
+    }
+
+    /* [src="./images/adoptadog-logo.svg"] */
+    footer img {
+        max-width: 100%;
+        width: 45%;
+        padding-top: 4rem;
+    }   
+
+    footer > p {
+        margin-left: 28%;
+        margin-right: 28%;
+    }    
+}
+
+/* Medium devices, tablets 768px and up */
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 3rem;
+    }
+
+    .top-left {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 2rem 0 2rem;
+    }
+
+    /* [src="./images/adoptadog-logo.svg"]  */
+    .top-logo {
+        /* max-width: 100%;
+        width: 100%;     */
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .slogan p {
+        text-align: center;
+    }
+
+    .checkout {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0 0 0;
+    }
+
+    form {
+        padding: 2rem 6rem;
+    }
+
+    label {
+        margin-bottom: 1rem;
+    }
+
+    .location {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+        width: 100%;
+    }
+
+    input[id="city"] {
+        width: 90%;
+    }
+
+    input[id="zipcode"] {
+        grid-column: 4;
+        grid-row: 2;
+        width: 8rem;
+    }
+
+    fieldset {
+        width: 86%;
+    }
+
+    select {
+        width: 48%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        height: 3rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    /* [src="./images/adoptadog-logo.svg"] */
+    footer img {
+        max-width: 100%;
+        width: 63%;
+        padding-top: 4rem;
+    }
+    
+    footer > p {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+/* Small devices 576px and up */
+@media (max-width: 605px) {
+
+    /* [src="./images/adoptadog-logo.svg"]  */
+    .top-logo {
+        width: 225%;
+        height: auto;
+    }
+
+    .slogan p {
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 3rem;
+    }
+
+    label[for="total"] {
+        align-self: center;
+    }
+
+    #total {
+        align-self: center;
+    }
+    
+    .btn {
+        align-self: center;
+    }
+
+    footer img {
+        width: 70%;
+    }
+    
+    .bottom-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.bottom-nav li {
+        padding: 1rem 0;
+    }
+
+    ul.bottom-nav > li:after {
+        display: none;
+    }
+
+    footer > p {
+        margin-left: 20%;
+        margin-right: 20%;
+    }  
+}
+
+@media (max-width: 540px) {
+    article.intro {
+        width: 92%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 495px) {
+    
+    /* [src="./images/home-intro.jpg"]  */
+    .top-logo {
+        width: 375px;
+        height: 350px;
+    }
+
+    main {
+        padding-top: 0;
+    }
+
+    form {
+        padding: 1rem 2rem;
+    }
+
+    section {
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+    }
+
+    fieldset {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lucas {
+        margin-bottom: 1rem;
+    }
+
+    footer img {
+        width: 75%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    /* [src="./images/adoptadog-logo.svg"]  */
+    .top-logo {
+        width: 300%;    
+    }
+
+    .top-left {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 1rem 0 1rem;
+        margin-bottom: 0;
+    }
+
+    .slogan {
+        margin-bottom: 0;
+    }
+
+    .slogan p {
+        font-size: 1.5rem;
+    }
+
+    .checkout {
+        margin-bottom: 0;
+    }
+
+    .main-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        padding-right: 0;
+        padding-top: 1.2rem;
+    }
+
+    .main-nav ul li:first-child {
+        padding-top: 0;
+    }
+    
+    li:after {
+        display: none;
+    }
+
+    main {
+        padding: 1rem 0;
+    }
+
+    form {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label[for="state"], [for="zipcode"] {
+        margin-top: 1rem;
+    }
+
+    footer > p {
+        /* display: block; */
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media (max-width: 280px) {
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    label {
+        text-align: center;
+    }
+
+    .location {
+        align-items: center;
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+    #total {
+        width: 60%;
+    }
+
+    select {
+        align-self: center;
+        width: 75%;
+    }
+
+    .btn {
+        width: 10rem;
+    }
+
+    footer img {
+        width: 82%;
+    }
+}

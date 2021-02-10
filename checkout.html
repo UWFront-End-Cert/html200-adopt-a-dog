@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Metadata -->
+    <meta name="description" content="Seattle’s premiere dog adoption agency">
+    <meta name="keywords" content="Adoptadog, dog adoption, agency, Seattle">
+    <meta name="author" content="Juan Bermejo Gallego, UW Front-End Developer HTML,CSS, and JS Course">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adopt A Dog - Checkout page</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="./styles/checkout.css">
+    <!-- Google font external link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / top of the page -->
+    <header>
+        <div class="top-left">
+            <img class="logo" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+            <div class="slogan">
+                <p>Seattle’s premiere dog adoption agency</p>
+            </div>
+        </div>       
+        <div class="checkout">
+            <img src="./images/cart-icon.svg" alt="cart icon">
+            <small class="total">$1234.56</small>
+            <!-- <input type="button" value="Checkout" name="checkout"> -->
+        </div>
+    </header>
+    <!-- Navigation bar / main top menu -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="./index.html" aria-label="Return to homepage">home</a></li>
+            <li><a href="./dogs.html" aria-label="Read more about our puppies">dogs</a></li>
+            <li><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
+        </ul>
+    </nav>
+    <!-- Main content of the page -->
+    <main>
+        <h1>Checkout</h1>
+    </main>
+    <!-- Form starts here -->
+    <!-- Autocomplete added, but it is tuned off -->
+    <!-- Method added -->
+    <form action="" method="GET" autocomplete="off">
+        <label for="name">Name</label>
+            <!-- Required attribute has been added -->
+            <input id="name" type="text" name="clientName" placeholder="John / Joanna Doe" required>
+        <br>
+        <label>Email Address</label>
+            <!-- Placeholder updated -->
+            <input type="email" name="clientEmail" placeholder="your@email.com">
+        <br>
+        <label for="address">Street Address</label>
+            <!-- Autofocus, and placeholder added in this input -->
+            <input id="address" type="text" name="clientAddress" placeholder="0-9 Empty Road SE" autofocus>
+        <br>
+        <div class="location">
+            <label for="city">City</label>
+                <!-- Placeholder added in this input -->
+                <input id="city" type="text" name="clientCity" placeholder="Seattle">  
+            <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="">WA</option>
+                    <option value="1">OR</option>
+                    <option value="2">AK</option>
+                    <option value="3">CA</option>
+                </select>
+                <!-- Added a maxlength and a placeholder  -->
+                <!-- <input id="state" type="text" maxlength="2" name="clientState" placeholder="WA"> -->
+            <label for="zipcode">Zip Code</label>
+                <!-- a pattern, a placeholder and a max value of numbers added -->
+                <input type="text" id="zipcode" pattern="[0-9]*" placeholder="98102" max="99999">               <!-- <input id="zipcode" type="number" name="clientZipcode"> -->
+        </div>
+        <br>
+        <fieldset>
+            <legend>First Time Adopter?</legend>
+            <!-- id added -->
+            <input type="radio" id="yes" name="yes" value="yes">
+                <label for="yes">Yes</label>
+            <!-- id added -->
+            <input type="radio" id="no" name="no" value="no">
+                <label for="no">No</label>
+        </fieldset> 
+        <br>
+        <label for="location">Pickup Location</label>
+            <select name="location">
+                <!-- Local locations are set as option values  -->
+                <option value="">Please select</option>
+                <option value="1">Seattle</option>
+                <option value="2">Tacoma</option>
+                <option value="3">Everett</option>
+            </select>
+        <br>
+        <section>
+            <h2>Dogs Adopted</h2>
+            <article class="lucas">
+                <img src="./images/lucas-checkout.jpg" alt="Lucas image">
+                <div class="lucas-cost">
+                    <h3>Lucas</h3>
+                    <small><span>Cost to adopt&#58;</span> &#36;123.45</small>
+                </div>
+            </article>
+            <article class="duffy">
+                <img src="./images/duffy-checkout.jpg" alt="Duffy image">
+                <div class="duffy-cost">
+                    <h3>Duffy</h3>
+                    <small><span>Cost to adopt&#58;</span> &#36;123.45</small>
+                </div>
+            </article>
+        </section>
+        <br>
+        <label for="total">Total Adoption Cost</label>
+            <!-- Updated the grand total number, it was wrong -->
+            <input class="form-control" id="total" name="totalAdoption" value="&#36;246,90"> 
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <!-- Footer -->
+    <footer>
+        <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <!-- Bottom nav-bar -->
+        <nav>
+            <ul class="bottom-nav">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./dogs.html">dogs</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <small>&copy; Adoptadog, LLC &#124; Seattle, WA</small>
+    </footer>
+</body>
+</html>
