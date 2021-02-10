@@ -196,17 +196,19 @@ width: 20%;
   }
 }
 
-.blog-link {
-  background-color: #c3d2e4;
-  color: #0D3D60;
-  display: block;
-  font-family: "Work Sans", Arial, sans-serif;
-  font-size: .8rem;
-  font-weight: 800;
-  text-decoration: none;
-  width: 100%;
-  text-align: center;
-  padding: 2rem 6rem 2rem 6rem;
+@media screen and (max-width: 576px) {
+  .blog-link {
+    background-color: cadetblue;
+    color: #ffffff;
+    display: block;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 2rem;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+  }
 }
 #blog-content {
   float: right;
