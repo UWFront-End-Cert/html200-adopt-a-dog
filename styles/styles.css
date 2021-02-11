@@ -57,7 +57,7 @@ footer nav a {
 .profile-card-text span {
   font-weight: bold;
 }
-.profile-card a {
+.profile-card button {
   color: #FFFFFF;
   background-color: #009900;
   font-weight: bold;
@@ -170,7 +170,7 @@ footer {
 .profile-card img {
   width: 100%;
 }
-.profile-card a {
+.profile-card button {
   margin: 5% 10%;
   padding: 5% 10%;
 }
