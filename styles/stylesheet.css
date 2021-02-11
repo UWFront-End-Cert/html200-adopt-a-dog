@@ -137,6 +137,10 @@ main {
   font-size: 1rem;
 }
 
+.dogimage {
+  width: 100%;
+}
+
 /* footer starts here */
 
 footer {
@@ -186,7 +190,7 @@ footer a {
   padding-top: 2rem;
 }
 
-#dogs-button {
+.dogs-button {
   width: 65%;
   border: none;
   border-radius: .2rem;
