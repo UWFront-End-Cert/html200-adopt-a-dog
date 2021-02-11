@@ -55,11 +55,13 @@ h1 {
 h2 {
   color: #083B60;
   font-family: Garamond, Georgia, Serif;
+  padding: 7% 15% 0% 15%;
+
 }
 
 
 .doglist {
-  padding: 10%;
+  padding: 0% 15%;
   display: flex;
   flex-wrap: wrap;
 
@@ -91,7 +93,7 @@ h2 {
   font-family: "Georgia", Garamond, serif;
 }
 
-.AdoptButton {
+button {
   background-color: green;
   color: white;
   padding: 1rem;
