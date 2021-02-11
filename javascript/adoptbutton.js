@@ -2,7 +2,7 @@ let Final = 0;
 
 function AddtoCart(value) {
     Final = Final + value;
-    alert("The total adoption fee is: " + Final);
+    alert("Adding " + value + "to cart.  The total adoption fee is now: " + Final);
 };
 
 function Dog(Name,Breed,Fee) {
