@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <script src="./javascript/doginfo.js" charset="utf-8"></script>
     <header>
       <div class="header-figures">
 
@@ -22,7 +23,7 @@
 
         <figure class="cart-icon">
           <img src="images/cart-icon.svg" alt="Cart Icon">
-          <button id="cart" type="button" name="checkout"><a href="checkout.html">Checkout</a></button>
+          <a href="checkout.html" class="checkout">Checkout</a>
         </figure>
       </div>
 
@@ -40,109 +41,110 @@
 
     </header>
 
-    <main class="index-page">
-      <div class="intro-top-content">
-        <figure class="intro-figure">
-          <img src="images/home-intro.jpg" alt="Photo of a man hugging a dog">
-        </figure>
+    <main>
+      <div class="index-page">
+        <div class="intro-top-content">
+          <figure class="intro-figure">
+            <img src="images/home-intro.jpg" alt="Photo of a man hugging a dog">
+          </figure>
 
-        <article class="intro-article">
+          <article class="intro-article">
 
-          <h1>Adopt A Dog</h1>
+            <h1>Adopt A Dog</h1>
 
-          <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
 
-        </article>
+          </article>
+        </div>
+
+      <div class="intro-bottom-content">
+
+        <section class="intro-dogs">
+          <figure class="intro-img">
+            <img class="dogimage" src="images/murphy-card.jpg" alt="Picture of Murphy" onclick="dogInformation(name = 'Murphy', breed = 'Labrador', price = '$123.45')">
+          </figure>
+          <h3>Murphy</h3>
+          <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="dogs-button" type="button" name="button">Adopt</button>
+        </section>
+
+        <section class="intro-dogs">
+          <figure class="intro-img">
+            <img class="dogimage" src="images/poppy-card.jpg" alt="Picture of Poppy" onclick="dogInformation('name = Poppy', breed = 'avachon', price = '$123.45')">
+          </figure>
+          <h3>Poppy</h3>
+          <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="dogs-button" type="button" name="button">Adopt</button>
+        </section>
+
+        <section class="intro-dogs">
+          <figure class="intro-img">
+            <img class="dogimage" src="images/jack-card.jpg" alt="Picture of Jack" onclick="dogInformation(name = 'Jack', breed = 'Beagle', price = '$123.45')">
+          </figure>
+          <h3>Jack</h3>
+          <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="dogs-button" type="button" name="button">Adopt</button>
+        </section>
+
+        <section class="intro-dogs">
+          <figure class="intro-img">
+            <img class="dogimage" src="images/duffy-checkout.jpg" alt="Picture of Duffy" onclick="dogInformation(name = 'Duffy', breed = 'Terrier', price = '$123.45')">
+          </figure>
+          <h3>Duffy</h3>
+          <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="dogs-button" type="button" name="button">Adopt</button>
+        </section>
+
+        <section class="intro-dogs">
+          <figure class="intro-img">
+            <img class="dogimage" src="images/lucas-checkout.jpg" alt="Picture of Lucas" onclick="dogInformation(name = 'Lucas', breed = 'Pointer', price = '$123.45')">
+          </figure>
+          <h3>Lucas</h3>
+          <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="dogs-button" type="button" name="button">Adopt</button>
+        </section>
+
+        <section class="intro-dogs">
+          <figure class="intro-img">
+            <img class="dogimage" src="images/jake-card.jpg" alt="Picture of Jake" onclick="dogInformation(name = 'Jake', breed = 'labrador', price = '$123.45')">
+          </figure>
+          <h3>Jake</h3>
+          <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="dogs-button" type="button" name="button">Adopt</button>
+        </section>
+
+        <section class="intro-dogs">
+          <figure class="intro-img">
+            <img class="dogimage" src="images/angus-card.jpg" alt="Picture of Angus" onclick="dogInformation(name = 'Murphy', breed = 'Boxer', price = '$123.45')">
+          </figure>
+          <h3>Angus</h3>
+          <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="dogs-button" type="button" name="button">Adopt</button>
+        </section>
+
+        <section class="intro-dogs">
+          <figure class="intro-img">
+            <img class="dogimage" src="images/violet-card.jpg" alt="Picture of Violet" onclick="dogInformation(name = 'Violet', breed = 'Labrador', price = '$123.45')">
+          </figure>
+          <h3>Violet</h3>
+          <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="dogs-button" type="button" name="button">Adopt</button>
+        </section>
+
+        </div>
+
+        <div class="more-dogs">
+          <button id="dogs-button-more" type="button" name="button">Adopt</button>
+        </div>
       </div>
-
-    <div class="intro-bottom-content">
-
-      <section class="intro-dogs">
-        <figure class="intro-img">
-          <img src="images/murphy-card.jpg" alt="Picture of Murphy" width="90%">
-        </figure>
-        <h3>Murphy</h3>
-        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button id="dogs-button" type="button" name="button">Adopt</button>
-      </section>
-
-      <section class="intro-dogs">
-        <figure class="intro-img">
-          <img src="images/poppy-card.jpg" alt="Picture of Poppy" width="90%">
-        </figure>
-        <h3>Poppy</h3>
-        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button id="dogs-button" type="button" name="button">Adopt</button>
-      </section>
-
-      <section class="intro-dogs">
-        <figure class="intro-img">
-          <img src="images/jack-card.jpg" alt="Picture of Jack" width="90%">
-        </figure>
-        <h3>Jack</h3>
-        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button id="dogs-button" type="button" name="button">Adopt</button>
-      </section>
-
-      <section class="intro-dogs">
-        <figure class="intro-img">
-          <img src="images/duffy-checkout.jpg" alt="Picture of Duffy" width="90%">
-        </figure>
-        <h3>Duffy</h3>
-        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button id="dogs-button" type="button" name="button">Adopt</button>
-      </section>
-
-      <section class="intro-dogs">
-        <figure class="intro-img">
-          <img src="images/lucas-checkout.jpg" alt="Picture of Lucas" width="90%">
-        </figure>
-        <h3>Lucas</h3>
-        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button id="dogs-button" type="button" name="button">Adopt</button>
-      </section>
-
-      <section class="intro-dogs">
-        <figure class="intro-img">
-          <img src="images/jake-card.jpg" alt="Picture of Jake" width="90%">
-        </figure>
-        <h3>Jake</h3>
-        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button id="dogs-button" type="button" name="button">Adopt</button>
-      </section>
-
-      <section class="intro-dogs">
-        <figure class="intro-img">
-          <img src="images/angus-card.jpg" alt="Picture of Angus" width="90%">
-        </figure>
-        <h3>Angus</h3>
-        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button id="dogs-button" type="button" name="button">Adopt</button>
-      </section>
-
-      <section class="intro-dogs">
-        <figure class="intro-img">
-          <img src="images/violet-card.jpg" alt="Picture of Violet" width="90%">
-        </figure>
-        <h3>Violet</h3>
-        <p><span class="dogs">Cost to Adopt:</span> $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <button id="dogs-button" type="button" name="button">Adopt</button>
-      </section>
-
-      </div>
-
-      <div class="more-dogs">
-        <button id="dogs-button-more" type="button" name="button">Adopt</button>
-      </div>
-
     </main>
 
     <footer>
