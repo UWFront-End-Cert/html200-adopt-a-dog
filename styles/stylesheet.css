@@ -50,6 +50,10 @@ h1 {
   font-weight: bold;
   letter-spacing: .05rem;
   margin: 0;
+
+}
+.blog-h1 {
+  padding-bottom: 2rem;
 }
 p {
   font-family: "Work Sans", Arial, sans-serif;
@@ -84,7 +88,15 @@ font-size: 1.25rem;
 font-weight: bold;
 letter-spacing: .05rem;
 padding-bottom: .5rem;
-padding-top: 2rem;
+padding-top: 1rem;
+}
+.answer-label {
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: .9rem;
+  line-height: 1.25rem;
+  display: inline;
+  padding-left: 1rem;
+  padding-bottom: 4rem;
 }
 input[type=text] {
 border: 1px solid #d7d7d8;
@@ -234,7 +246,7 @@ width: 20%;
   padding-bottom: 1rem;
 }
 .intro-container {
-padding-bottom: 2rem;
+padding-bottom: 1rem;
 }
 
 .col img {
