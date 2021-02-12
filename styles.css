@@ -71,8 +71,7 @@ a.needs-slash::after {
 }
 a.needs-slash2::after {
     content: "/";
-    padding-left:5px;
-    padding-right: 5px;
+    padding: 0px 5px 0px 5px;
 }
 li.header-nav-list-item {
     
@@ -124,6 +123,7 @@ h2.adopt-primary-header {
 }
 .adoption-pic {
     width:100%;
+    max-height: 100%;
 }
 .initial-box img {
     width:30%;
@@ -191,7 +191,7 @@ p.blog-sub-paragraph {
     flex-flow: row nowrap;
 }
 .dog-checkout-holder {
-    width: 450px;
+    width: 100%;
     display:flex;
     flex-direction:row;
     align-items: center;
@@ -213,9 +213,10 @@ p.blog-sub-paragraph {
     margin-top: 30px;
 }
 button.see-more-dogs-button {
-    height:40px;
-    width:180px;
+    height:3rem;
+    width:9rem;
     background-color:lightgray;
+    font-size:1rem;
     color:navy;
 }
 .footer-text-holder {
