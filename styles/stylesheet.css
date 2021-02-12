@@ -126,7 +126,7 @@ h4, h5 {
   color: white;
   font-size: 80%;
   margin: 5% 0;
-  padding: 7% 40%;
+  padding: 7% 35%;
   border-radius: 1px;
 }
 
@@ -185,7 +185,6 @@ nav.head {
 .tile {
   margin: 1.5rem 1rem;
   width: 20%;
-  height: 100%;
   text-align: left;
   font-size: 85%;
   box-shadow: 5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6;
