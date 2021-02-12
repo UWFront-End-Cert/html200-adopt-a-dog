@@ -1,13 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "../../../linkedin"
-		},
-		{
-			"path": "../.."
-		},
-		{
 			"path": ".."
+		},
+		{
+			"path": "../../../youtube-HTML"
 		}
 	],
 	"settings": {}
