@@ -121,12 +121,12 @@ h4, h5 {
 .green-button {
   position: relative;
   top: 1rem;
-  right: 3rem;
+  right: 2.5rem;
   background-color: #81B741;
   color: white;
   font-size: 80%;
   margin: 5% 0;
-  padding: 7% 45%;
+  padding: 7% 40%;
   border-radius: 1px;
 }
 
