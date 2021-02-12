@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <script src="./alerts.js" charset="utf-8"></script>
   <title>Adoptadog</title>
 </head>
 
@@ -36,100 +37,101 @@
   </section>
 
   <section class="dog-tiles-grid">
+
     <div class="col">
-      <img src="images/murphy-card.jpg" alt="image of dog">
+      <img  src="images/murphy-card.jpg" alt="image of dog" onclick="clicklImage('Name: Murphy, Breed: American Staffordshire - $100')">
         <h3>Murphy</h3>
-          <p1>Cost to adopt: $500</p1>
+          <p1>Cost to adopt: $100</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button class=dog-card_button name="Adopt" onclick="adopt(100)">Adopt</button>
     </div>
 
     <div class="col">
-      <img src="images/poppy-card.jpg" alt="image of dog">
+      <img src="images/poppy-card.jpg" alt="image of dog" onclick="clicklImage('Name: Poppy, Breed: Bichon - 200')">
         <h3>Poppy</h3>
-          <p1>Cost to adopt: $500</p1>
+          <p1>Cost to adopt: $200</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button class=dog-card_button name="Adopt" onclick="adopt(200)">Adopt</button>
     </div>
 
     <div class="col">
-      <img src="images/jack-card.jpg" alt="image of dog">
+      <img src="images/jack-card.jpg" alt="image of dog" onclick="clicklImage('Name: Jack, Breed: Beagle - $300')">
         <h3>Jack</h3>
-          <p1>Cost to adopt: $500</p1>
+          <p1>Cost to adopt: $300</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button type="button" name="Adopt" onclick="adopt(300)">Adopt</button>
     </div>
 
     <div class="col">
-      <img src="images/duffy-card.jpg" alt="image of dog">
+      <img src="images/duffy-card.jpg" alt="image of dog" onclick="clicklImage('Name: Duffy, Breed: Pitbull - $400')">
         <h3>Duffy</h3>
-          <p1>Cost to adopt: $500</p1>
+          <p1>Cost to adopt: $400</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button type="button" name="Adopt" onclick="adopt(400)">Adopt</button>
     </div>
 
     <div class="col">
-      <img src="images/lucas-card.jpg" alt="image of dog">
+      <img src="images/lucas-card.jpg" alt="image of dog" onclick="clicklImage('Name: Lucas, Breed: Lab Mix - $500')">
         <h3>Lucas</h3>
           <p1>Cost to adopt: $500</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button type="button" name="Adopt" onclick="adopt(500)">Adopt</button>
     </div>
 
     <div class="col">
-      <img src="images/jake-card.jpg" alt="image of dog">
+      <img src="images/jake-card.jpg" alt="image of dog" onclick="clicklImage('Name: Jake, Breed: Yellow Lab - $600')">
         <h3>Jake</h3>
-          <p1>Cost to adopt: $500</p1>
+          <p1>Cost to adopt: $600</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button type="button" name="Adopt" onclick="adopt(600)">Adopt</button>
     </div>
 
     <div class="col">
-      <img src="images/angus-card.jpg" alt="image of dog">
+      <img src="images/angus-card.jpg" alt="image of dog" onclick="clicklImage('Name: Angus, Breed: Boxer - $700')">
         <h3>Angus</h3>
-          <p1>Cost to adopt: $500</p1>
+          <p1>Cost to adopt: $700</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button type="button" name="Adopt" onclick="adopt(700)">Adopt</button>
     </div>
 
     <div class="col">
-      <img src="images/violet-card.jpg" alt="image of dog">
+      <img src="images/violet-card.jpg" alt="image of dog" onclick="clicklImage('Name: Violet, Breed: Chocolate Lab - $800')">
         <h3>Violet</h3>
-          <p1>Cost to adopt: $500</p1>
+          <p1>Cost to adopt: $800</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button type="button" name="Adopt" onclick="adopt(800)">Adopt</button>
     </div>
 
     <div class="col">
-      <img src="images/piper-card.jpg" alt="image of dog">
+      <img src="images/piper-card.jpg" alt="image of dog" onclick="clicklImage('Name: Piper, Breed: Toller - $900')">
         <h3>Piper</h3>
           <p1>Cost to adopt: $500</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button type="button" name="Adopt" onclick="adopt(900)">Adopt</button>
     </div>
 
     <div class="col">
-      <img src="images/maximus-card.jpg" alt="image of dog">
+      <img src="images/maximus-card.jpg" alt="image of dog" onclick="clicklImage('Name: Maximus, Breed: Schnauzer - $1000')">
         <h3>Maximus</h3>
           <p1>Cost to adopt: $500</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button type="button" name="Adopt" onclick="adopt(1000)">Adopt</button>
     </div>
 
     <div class="col">
-      <img src="images/luna-card.jpg" alt="image of dog">
+      <img src="images/luna-card.jpg" alt="image of dog" onclick="clicklImage('Name: Luna, Breed: Happy Lab - $1100')">
         <h3>Luna</h3>
           <p1>Cost to adopt: $500</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button type="button" name="Adopt" onclick="adopt(1100)">Adopt</button>
     </div>
 
     <div class="col">
-      <img src="images/stella-card.jpg" alt="image of dog">
+      <img src="images/stella-card.jpg" alt="image of dog" onclick="clicklImage('Name: Stella, Breed: Chihuahua - $1200')">
         <h3>Stella</h3>
           <p1>Cost to adopt: $500</p1>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" name="Adopt">Adopt</button>
+      <button type="button" name="Adopt" onclick="adopt(1200)">Adopt</button>
     </div>
 
   <footer>
