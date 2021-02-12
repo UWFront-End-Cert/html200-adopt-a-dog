@@ -55,7 +55,7 @@ nav ul {
 }
 .slogan {
   font-size: 2rem;
-  color: #06c106;
+  color: #72a65a;
 }
 .checkout-cart-wrapper {
   padding-right: 0rem;
@@ -65,10 +65,19 @@ nav ul {
   margin: auto;
 }
 .checkout-button {
-  background-color: green;
+  background-color: #ffffff;
 }
 .checkout {
   padding:0.5rem;
+  color: #ffffff;
+  font-weight: 900;
+  background-color: #72a65a;
+  padding: 0.25rem 2rem 0.25rem 2rem;
+  border: 0;
+  border-radius: 1px;
+}
+.checkout-total {
+  color: #ffffff;
 }
 .main-nav {
   grid-area: nav;
@@ -137,25 +146,34 @@ nav ul {
 .pup-style {
   padding: 0rem;
   border-style: solid;
-  border-color: gray;
+  border-color: #e6e6e6;
   border-width: 0px 2px 2px 2px;
 }
 .adopt-this-dog {
-  background-color: green;
+  background-color: #72a65a;
   color: #ffffff;
   width: 90%;
+  margin:auto;
   margin-bottom: 1rem;
-  padding: 0.25rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
   border: none;
   border-radius: 2px;
+  font-family: sans-serif;
+  font-weight: 900;
 }
 .full-adoption-list {
-  flex-basis: 100%;
+  flex-basis: 25%;
   margin: auto;
   text-align: center;
 }
 .full-adoption-list > button {
-  padding: 0.5rem 3rem 0.5rem 3rem;
+  padding: 0.35rem 1.5rem 0.35rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-family: sans-serif;
+  background-color: #e8e8e8;
+  border: 0;
+  color: #003366;
 }
 .main-footer {
   grid-row: 4 / 5;
@@ -194,6 +212,11 @@ nav ul {
   font-family: sans-serif;
   font-weight: 400;
 }
+.all-our-dogs {
+  flex-basis: 100%;
+  margin: auto;
+  text-align: center;
+}
 .blog-articles {
   order: 0;
   flex-basis: 100%;
@@ -217,22 +240,25 @@ nav ul {
 }
 .main-checkout {
   grid-row: 3 / 4;
-  grid-column: 1 / 4;
+  grid-column: 2 / 3;
   display: grid;
+  padding-right: 5rem;
+  padding-left: 5rem;
   grid-gap: 0rem;
   font-size: 1.2rem;
   font-weight:
-
-}
+  }
 input, textarea, select, button{
   display: block;
   background-color: #ffffff;
   color: #000000;
   padding: 1rem;
-  margin: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   font-family: inherit;
   width: 100%;
-  height: 3rem;
+  border: 1px solid gray;
+  box-sizing: border-box;
 }
 input[type=radio]{
   display: inline;
@@ -240,27 +266,52 @@ input[type=radio]{
 .main-checkout > h2 {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  width: auto;
   color: #003366;
+  margin-bottom;
 }
 .form-wrapper {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
-label {
+.form, label, legend {
   color: #003366;
+  font-size: 1.3rem;
   font-weight: 900;
 }
-.spacer-left {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  width: 25%;
+.
+#state {
+  display: inl ine;
 }
-.spacer-right {
-  grid-row: 2 / 3;
-  grid-column: 3 / 4;
-  width: 25%;
+#city {
+  width: 15rem;
 }
-#city #state #zipCode {
+.city-state-zip {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.adoption-submit {
+  width: 45%;
+  color: #ffffff;
+  background-color: #72a65a;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border: 0;
+  border-radius: 1px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+fieldset {
+  border: none;
   display: inline;
+  width: 30%;
+}
+.pickup > select {
+  width: 40%;
+}
+.total-cost {
+  font-size: 1.3rem;
+  font-family: sans-serif;
 }
