@@ -95,10 +95,21 @@ h2 {
   font-family: "Georgia", Garamond, serif;
 }
 
-.AdoptButton {
+button {
   background-color: green;
   color: white;
   padding: 1rem;
+  width: 100%;
+}
+
+h3 {
+  margin: auto;
+}
+
+p {
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .SeeMoreDogs {

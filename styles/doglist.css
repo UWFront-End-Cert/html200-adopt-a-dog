@@ -61,7 +61,7 @@ h2 {
 
 
 .doglist {
-  padding: 0% 15%;
+  margin: 0% 15%;
   display: flex;
   flex-wrap: wrap;
 
@@ -97,8 +97,18 @@ button {
   background-color: green;
   color: white;
   padding: 1rem;
+  width: 100%;
 }
 
+h3 {
+  margin: auto;
+}
+
+p {
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 /* footer setting */
 footer {
@@ -169,7 +179,6 @@ footer {
 
 .span_4_of_12 {
   width: 33.33%;
-
 }
 
 .span_5_of_12 {
@@ -199,7 +208,6 @@ footer {
 
 .span_10_of_12 {
   width: 83.33%;
-
 }
 
 .span_11_of_12 {
