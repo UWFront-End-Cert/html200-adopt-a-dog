@@ -1,0 +1,13 @@
+TESTING
+
+Firefox (Version 82.0.2)
+Mobile – 576px breakpoint
+Tablet – 768px breakpoint
+Desktop – 992px breakpoint
+
+Google Chrome (Version 88.0.4324.146)
+
+IE (Version 1809)
+
+
+
