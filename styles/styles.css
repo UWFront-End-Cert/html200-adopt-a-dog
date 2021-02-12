@@ -1,29 +1,16 @@
 /* adopt-a-dog stylesheet */
-
-:root {
-    --yellow: #ffc600;
-    --black: #272727;
-  }
-  
+ 
   body, html {
-    /* border-box box model allows us to add padding and border to our elements without increasing their size */
     box-sizing: border-box;
-    /* A system font stack so things load nice and quick! */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
       Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 900;
+    /* font-weight: 900; */
+    font-weight: normal;
     font-size: 10px;
-    /* color: var(--black); */
-    /* text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07); */
     height: 100%;
-    /* margin: 0; */
+    margin: 0;
   }
   
-  /*
-    WAT IS THIS?!
-    We inherit box-sizing: border-box; from our <html> selector
-    Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
-  */
   *,
   *:before,
   *:after {
@@ -35,7 +22,7 @@
     margin: 1%;
     background-color: white;
     background-attachment: fixed;
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
     /* background-repeat: no-repeat; */
   }
   
@@ -53,7 +40,6 @@
       width: 30%;
       margin-top: 5%;
       margin-left: 8%;
-  
   }
 
 .logo h1 {
@@ -94,19 +80,22 @@
 
   nav li {
       display: inline-flex;
-      padding: 1rem 2rem 1rem 4rem;
-      font-size: large;
+      /* padding: 1rem 2rem 1rem 2rem; */
+      /* font-size: large; */
       color: black;
   }
 
   nav li a {
     color: black;
     text-decoration: none;
+    padding: 1rem 2rem 1rem 2rem;
+    /* border-radius: 3px; */
   }
 
 nav ul li {
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.85);
+  /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.85); */
   transition: 0.3s;
+  border-radius: 3px;
 }
 
 nav ul li:hover {
@@ -115,57 +104,63 @@ nav ul li:hover {
 
   .main-section {
     display: flex;
+    flex-direction: column;
     background: white;
-    padding: 5% 0 5%;
+    margin: 3% 12%;
     /* border: 3px solid red; */
 }
 
 .main-section img {
-    margin: 0 3rem 0 0;
-    max-width: 40em;
+    /* margin: 0 3rem 0 0; */
+    /* max-width: 40em; */
 }
 
 article p {
-  font-size: large;
+  font-size: 1.5em;
+  padding: 0;
+  font-weight: normal;
 }
 
 /* Flexbox styling for containers: */
 .container {
   display: flex;
-  justify-content: flex-start;
-  /* justify-content: space-between; */
+  /* justify-content: flex-start; */
+  justify-content: space-between;
   /* border: 3px solid black; */
   flex-wrap: wrap;
   /* margin: 4rem 14rem; */
 }
 
- 
- .item img {
-  max-width: 18em;
-  /* display: block; */
-}
-
   .item {
     /* border: 5px solid rgba(0, 0, 0, 0.03); */
-    border: 5px solid rgba(24, 18, 204, 0.15);
+    border: 1.5px solid rgba(24, 18, 204, 0.15);
     border-radius: 3px;
-    margin: 0 1rem 2rem;
-}
-  
+    margin: .5em .5em;
+    max-width: 16em;
+  }
+
+
+  .item img {
+    max-width: 100%;
+    /* display: block; */
+  }  
+  /* .item h2, p {
+    padding: 0em .5em;
+  } */
   .item:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.62);
   }
 
 div h2 {
   color: steelblue;
-  margin: 0 .5rem .5rem .5rem;
-  padding: .5rem;
+  /* margin: 0 .5rem .5rem 0; */
+  /* padding: .5rem; */
 }
 
 div h1 {
   color: steelblue;
-  font-size: 3rem;
-  padding-left: 10px;
+  font-size: 2.5em;
+  /* padding-left: 10px; */
 }
 
 p:nth-of-type(2) {
@@ -173,7 +168,7 @@ p:nth-of-type(2) {
   color: orange;
   color: black;
   max-width: 18em;
-  padding: .5rem;
+  /* padding: .5rem; */
   font-size:1em;
 }
 
@@ -181,55 +176,98 @@ div p a {
   display: flex;
   color: white;
   font-size: large;
-  text-decoration: none;
+  /* text-decoration: none; */
   background-color: green;
   padding: .5rem 1rem;
-  margin: 0 1%;
+  /* margin: 0 1%; */
   justify-content: center;
 
 }
 
+p strong {
+  /* padding: 0 0 0 .5rem; */
+}
   #more-dogs {
     display: flex;
     color: black;
-    margin: 0% 41% 7% 41%;
-    padding: 1rem;
-    background-color: gray;
+    margin: 0% 0% 20% 0%;
+    padding: .85em 2.5em;
+    background-color: #ebdfdf;
+    width: 100%;
+    border-radius: 3px;
+    /* justify-content: left; */
+    text-decoration: none;
+    font-weight: bold;
+    color: steelblue;
   }
 
   .blog-container {
     display: flex;
     flex-direction: column;
-    padding: 0 15% 8%;
-    border: 3px solid black;
+    padding: 0 20% 5%;
+    /* border: 3px solid black; */
+  }
+
+  .blogpage-container h1 {
+    padding: 0 20%;
+    /* border: 3px solid black; */
+  }
+
+  .blogpage-container h2 {
+    padding-top: 0;
+    /* border: 3px solid black; */
+  }
+
+
+
+  .blogpage-container .dog-blog {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 20% 5%;
+    /* border: 3px solid black; */
+  }
+
+  .blogpage-container .dog-blogh2P {
+    padding: 0 3em;
+    /* border: 3px solid black; */
   }
   
   .dog-blog {
-    display: flex;
-    flex-direction: row;
-    margin: 0 1rem 2rem;
-    border: 3px solid black;
+    /* display: flex; */
+    /* flex-direction: row; */
+    margin: 0 0 2rem;
+    /* border: 3px solid black; */
     
   }
 
   .dog-blog img {
-    min-width: 25em;
-    max-height: 25em;
+    /* min-width: 25em; */
+    /* max-height: 19em; */
+    max-width: 100%;
+    height: auto;
   }
 
   .dog-blog h2 {
-  color: mediumseagreen;
-  font-size: large;
+  /* color: mediumseagreen; */
+  /* font-size: normal; */
 }
 
 .dog-blogh2P p {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   color: black;
-  margin: 0 .5rem;
-  padding: .5rem;
-  max-width: 50em;
-  font-size: 1.5rem;
+  /* margin: 0 .5rem; */
+  padding: 0;
+  /* max-width: 50em; */
+  /* max-width: 100%; */
+  /* height: auto; */
+  font-size: 1.5em;
+}
+
+.dog-blog a {
+  color: steelblue;
+  font-size: 12px;
+  text-decoration: none;
 }
 
 form h2, h3, h4, label, select {
@@ -349,53 +387,70 @@ form .btn {
 
   }
 
-  /* *******************************************************************************8 */
-
-/* .container {
-  background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-} */
-
-/* input[type=text] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-.icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: 24px;
-} */
-
-/* .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
-} */
-
-/* .btn:hover {
-  background-color: #45a049;
-} */
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-/* @media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
+  .flex-nav ul {
+    padding-left: 13em;
   }
-} */
+
+ 
+  .mainpage-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5em;
+    border: 3px solid gold;
+  }
+
+  .indexpage1st-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid fuchsia; */
+    /* flex: 2; */
+  }
+
+  .indexpage1st-container .main-section img {
+    min-width: 100%;
+    max-height: 500px;
+  }
+
+  .main-section img {
+    flex: 2;
+    /* border: 3px solid blue; */
+  }
+
+  .blog-sidebar {
+    display: flex;
+    /* flex: 1; */
+        /* border: 3px solid blue; */
+  }
+
+  .indexdogs-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin: 0% 12%;
+    /* border: 3px solid red; */
+  }
+
+  .item h2, p {
+    padding: 0 10px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .mainpage-content {
+    flex-direction: column;
+      }
+}
+
+@media (max-width: 500px) {
+  .blog-sidebar {
+  display: none;
+  }
+  }
+
+  /* no img when printing */
+@media print {
+    body img {
+        display: none;
+    }
+}
