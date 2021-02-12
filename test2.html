@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      header {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+        background-image: url("images/header-image.jpg");
+        background-color: #101010;
+        background-size: 85%;
+        background-position: right center;
+        background-repeat: no-repeat;
+        color: white;
+        height: 20rem;
+        margin-bottom: 1rem;
+      }
+
+      .logo-container {
+        background-color: white;
+        float: left;
+        width: 25%;
+        margin: 2rem 5rem;
+      }
+
+      nav.head {
+        position: relative;
+        top: 17rem;
+        background-color: #E6E6E6;
+        color: #093C60;
+        padding: 1rem;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+      }
+
+      .grid-page {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+      }
+
+      .dog-link {
+        background-color: grey;
+        color: blue;
+        padding: 1rem;
+      }
+
+      fieldset {
+        border: none;
+      }
+
+      input {
+        margin-right: 0.5rem;
+      }
+
+      .radio-style {
+        padding-right: 2rem;
+        color: pink;
+      }
+    </style>
+  </head>
+
+  <body class="grid-container">
+    <header>
+      <div class="logo-container">
+        <h1>Webpage Name</h1>
+        <h2>subtitle</h2>
+      </div>
+      <nav class="head">
+        <a href="#">Link 1</a> /
+        <a href="#">Link 2</a> /
+        <a href="#">Link 3</a> /
+      </nav>
+    </header>
+
+    <form method="POST" class="grid-page">
+      <fieldset>
+        <legend>First Time Adopter?</legend>
+        <label class="radio-style light-txt">
+          <input type="radio" name="first-adopt" value="yes">Yes
+        </label>
+        <label class="radio-style light-txt">
+          <input type="radio" name="first-adopt" value="no">No
+        </label>
+      </fieldset>
+    </form>
+
+    <!--<div class="grid-page">
+      <a class="dog-link" href=#>See More Dogs</a>
+    </div>-->
+  </body>
+</html>

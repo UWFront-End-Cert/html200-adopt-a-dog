@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adopt a Dog</title>
+    <style>
+      * {
+        margin: 0;
+        font-family: 'Helvetica', 'Arial', sans-serif;
+      }
+
+      header {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+        background-image: url("images/header-image.jpg");
+        background-color: #101010;
+        background-size: 85%;
+        background-position: right center;
+        background-repeat: no-repeat;
+        color: white;
+        height: 20rem;
+        margin-bottom: 1rem;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Georgia', 'Garamond', serif;
+        color: #093C60;
+        margin: 0.5rem 0;
+      }
+
+      .logo-container {
+        background-color: white;
+        float: left;
+        width: 25%;
+        margin: 2rem 5rem;
+      }
+
+      #tag-line {
+        color: #81B741;
+        text-align: center;
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 100%;
+        margin: 0;
+      }
+
+      .cart-container {
+        float: right;
+        text-align: right;
+        font-weight: lighter;
+        font-size: 100%;
+        height: 2rem;
+        margin: 2rem 5rem;
+      }
+
+      #icon {
+        position: relative;
+        right: 0.5rem;
+        width: 10%;
+      }
+
+      .green-button {
+        position: relative;
+        top: 1rem;
+        background-color: #81B741;
+        color: white;
+        text-align: center;
+        font-size: 80%;
+        margin-top: 5%;
+        padding: 3% 20%;
+        border-radius: 1px;
+      }
+
+      nav.head {
+        clear: both;
+        position: absolute;
+        top: 17rem;
+        width: 100%;
+        background-color: #E6E6E6;
+        color: #093C60;
+        padding: 1rem 0;
+        text-indent: 15%;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 75%;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 75%;
+        line-height: 1.25rem;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+      }
+
+      .grid-top {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+      }
+
+      .grid-middle {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 2;
+      }
+
+      .grid-bottom {
+        grid-column: 2 / span 1;
+        grid-row: 5 / span 1;
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      .left-img {
+        float: left;
+        width: 35%;
+        padding: 1rem 1rem 1rem 0;
+      }
+
+      .blurb-txt {
+        padding: 0.5rem;
+      }
+
+      .bio-txt {
+        line-height: 150%;
+        margin: 0.5rem 0 0 0;
+      }
+
+      .horizontal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1 0 15%;
+        justify-content: space-between;
+      }
+
+      .tile {
+        margin: 0.5rem 0;
+        width: 23%;
+        height: 100%;
+        text-align: left;
+        font-size: 85%;
+        box-shadow: 5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6;
+      }
+
+      .tile-img {
+        width: 100%;
+      }
+
+      .tile-txt {
+        margin: 0.5rem;
+      }
+
+      .tile-link {
+        display: block;
+        position: static;
+        text-align: center;
+      }
+
+      .page-link {
+        background-color: #E6E6E6;
+        color: #093C60;
+        font-size: 80%;
+        font-weight: bold;
+        white-space: nowrap;
+        padding: 1% 5%;
+      }
+
+      footer {
+        grid-column: 1 / span 6;
+        grid-row: 6 / span 1;
+        background-color: #093c60;
+        color: white;
+        height: 15rem;
+        text-align: center;
+      }
+
+      p.foot {
+        width: 30%;
+        margin: 2% auto;
+      }
+    </style>
+  </head>
+
+  <body class="grid-container">
+    <header>
+      <div class="logo-container">
+        <h1>Webpage Title</h1>
+        <h2 id="tag-line">A phrase that is a subtitle</h2>
+      </div>
+      <div class="cart-container">
+        <p><img id="icon" src="images/cart-icon.svg">$1234.56</p>
+        <a class="green-button" href="checkout.html">Checkout</a>
+      </div>
+      <nav class="head">
+        <a href="#">Link 1</a> /
+        <a href="#">Link 2</a> /
+        <a href="#">Link 3</a> /
+      </nav>
+    </header>
+
+
+    <section class="grid-top">
+      <img class="left-img" src="images/home-intro.jpg">
+      <div class="blurb-txt">
+        <h1>Page Title</h1>
+        <p >This is an intro paragraph talking all about this website and what this company does. Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
+  am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+      </div>
+    </section>
+
+    <div class="grid-middle horizontal">
+      <article class="tile">
+        <img class="tile-img" src="images/murphy-card.jpg">
+        <div class="tile-txt">
+          <h3>Dog's Name</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">This is the dog's bio. It tells about about who's the goodest boy and why he'll be the best pet ever. You should definitely adopt this pup here.</p>
+          <a class="tile-link green-button" href="#">Adopt</a>
+        </div>
+      </article>
+      <article class="tile">
+        <img class="tile-img" src="images/murphy-card.jpg">
+        <div class="tile-txt">
+          <h3>Dog's Name</h3>
+          <p>Cost to Adopt: $123.45</p>
+          <p>This is the dog's bio. It tells about about who's the goodest boy and why he'll be the best pet ever. You should definitely adopt this pup here.</p>
+          <a class="green-button" href="#">Adopt</a>
+        </div>
+      </article>
+      <article class="tile">
+        <img class="tile-img" src="images/murphy-card.jpg">
+        <h3>Dog's Name</h3>
+        <p>Cost to Adopt: $123.45</p>
+        <p>This is the dog's bio. It tells about about who's the goodest boy and why he'll be the best pet ever. You should definitely adopt this pup here.</p>
+        <a href="#">Adopt</a>
+      </article>
+      <article class="tile">
+        <img class="tile-img" src="images/murphy-card.jpg">
+        <h3>Dog's Name</h3>
+        <p>Cost to Adopt: $123.45</p>
+        <p>This is the dog's bio. It tells about about who's the goodest boy and why he'll be the best pet ever. You should definitely adopt this pup here.</p>
+        <a href="#">Adopt</a>
+      </article>
+      <article class="tile">
+        <img class="tile-img" src="images/murphy-card.jpg">
+        <h3>Dog's Name</h3>
+        <p>Cost to Adopt: $123.45</p>
+        <p>This is the dog's bio. It tells about about who's the goodest boy and why he'll be the best pet ever. You should definitely adopt this pup here.</p>
+        <a href="#">Adopt</a>
+      </article>
+      <article class="tile">
+        <img class="tile-img" src="images/murphy-card.jpg">
+        <h3>Dog's Name</h3>
+        <p>Cost to Adopt: $123.45</p>
+        <p>This is the dog's bio. It tells about about who's the goodest boy and why he'll be the best pet ever. You should definitely adopt this pup here.</p>
+        <a href="#">Adopt</a>
+      </article>
+      <article class="tile">
+        <img class="tile-img" src="images/murphy-card.jpg">
+        <h3>Dog's Name</h3>
+        <p>Cost to Adopt: $123.45</p>
+        <p>This is the dog's bio. It tells about about who's the goodest boy and why he'll be the best pet ever. You should definitely adopt this pup here.</p>
+        <a href="#">Adopt</a>
+      </article>
+      <article class="tile">
+        <img class="tile-img" src="images/murphy-card.jpg">
+        <h3>Dog's Name</h3>
+        <p>Cost to Adopt: $123.45</p>
+        <p>This is the dog's bio. It tells about about who's the goodest boy and why he'll be the best pet ever. You should definitely adopt this pup here.</p>
+        <a href="#">Adopt</a>
+      </article>
+    </div>
+    <div class="grid-bottom">
+      <a class="page-link" href="dogs.html">See More Dogs</a>
+    </div>
+
+    <footer>
+      <h2>Bottom Title</h2>
+      <p class="foot">Some text at the bottom of the page telling you a little bit about this website in teeny tiny font</p>
+      <nav>
+        <a href="#">Link 1</a> /
+        <a href="#">Link 2</a> /
+        <a href="#">Link 3</a> /
+      </nav>
+    </footer>
+  </body>
+</html>
