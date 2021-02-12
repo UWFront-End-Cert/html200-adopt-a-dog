@@ -1,0 +1,162 @@
+* {box-sizing: border-box;}
+
+* {font-family: 'Titillium Web', sans-serif;}
+
+header {
+  display: flex;
+  background-color: #093c66;
+  flex-direction: column;
+  padding: 2em;
+}
+
+header img {
+  width: 30%;
+}
+
+header button {
+  display: flex;
+  width: 10em;
+  justify-content: center;
+  padding: .5em;
+  background-color: #4CAF50;
+
+  border: none;
+  color: white;
+}
+
+.checkout {
+  justify-content: center;
+  flex-direction: column;
+  align-self: flex-end;
+  display: flex;
+}
+
+i {
+  color: white;
+  font-size: 1em;
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 1em;
+}
+
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+nav {
+
+  background-color: #e1e7eb;
+  width: 100%;
+  padding: 1.5em;
+}
+
+nav li {
+display:inline
+
+}
+
+h1 {
+  font-style: italic;
+  font-size: 2em;
+  color: #73c74a;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5%;
+  margin-top: 5%;
+
+}
+section p {
+  font-size: 1.5em;
+}
+
+
+.lead-article {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 2em;
+  margin-top: 0;
+  padding-right: 5%;
+}
+
+h2 {
+  color: #093c66;
+}
+
+main {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+
+}
+
+main article {
+  width: 20%;
+  margin: 2%;
+  margin-left: 0;
+  border: solid #e1e7eb .25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+main article img {
+  width: 100%;
+}
+
+ article button {
+   width: 90%;
+   padding: .5em;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   margin-bottom: 1em;
+
+}
+
+article h4,h5,p,button {
+  margin: .5em;
+
+}
+
+form {
+ display: flex;
+ justify-content: center;
+
+}
+
+form button {
+   width:25%;
+   background-color: #e1e7eb;
+   border: none;
+   color: #093c66;
+   font-size: 1em;
+   font-weight: bold;
+}
+
+footer {
+  background-color: #534d46;
+  text-align: center;
+  color: white;
+
+}
+
+footer li {
+  display:inline;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}

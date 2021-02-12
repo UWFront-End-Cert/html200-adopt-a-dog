@@ -3,13 +3,24 @@
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title> dog adoption</title>
-     <link rel="stylesheet" type= "text/css" href= "./styles/styles.css">
- </head>
+  <title> dog adoption</title>
+  <script src="https://kit.fontawesome.com/2315930367.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type= "text/css" href= "./styles/styles.css">
+  <script src="./script.js"></script>
+</head>
 <body>
   <header>
-    <h1><img src="./images/adoptadog-logo.svg" alt="logo" width= "400"/>Seattle’s premiere dog adoption agency</h1>
-    <button type="button" onclick="alert('To be added')">Checkout</button>
+
+    <div class= "checkout">
+      <i class="fas fa-shopping-cart"></i>
+      <button type="button" onclick="alert('To be added')">Checkout</button>
+
+  </div>
+
+    <img src="./images/adoptadog-logo.svg" alt="logo">
+    <h1>Seattle’s premiere dog adoption agency</h1>
   </header>
   <nav>
       <ul>
@@ -18,57 +29,61 @@
         <li><a href="./blog.html">Blog/</a></li>
       </ul>
   </nav>
-  <article class="main-article">
+  <section>
     <img src="./images/home-intro.jpg" alt="man holding gold retriever dog" />
+    <article class= "lead-article">
     <h2> Adopt A Dog</h2>
     <p>
       Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
 am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate
 </p>
   </article>
+</section>
+
 
   <main>
     <article>
-      <img src="./images/murphy-card.jpg" alt="brown dog">
+      <img src="./images/murphy-card.jpg" onclick="murphy()" alt="brown dog">
       <h4>Murphy</h4>
       <h5>Cost to Adopt: $123.45</h5>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+      <p>Murphy is a Boxer mix. She is 3 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
         <button type="button" onclick="alert('To be added')">Adopt</button>
     </article>
     <article>
-      <img src="./images/poppy-card.jpg" alt="white fluffy dog">
+      <img src="./images/poppy-card.jpg" onclick="poppy()" alt="white fluffy dog">
       <h4>Poppy</h4>
       <h5>Cost to Adopt: $123.45</h5>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+      <p>Poppy is a Shih Tzu. She is 2 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
         <button type="button" onclick="alert('To be added')">Adopt</button>
     </article>
     <article>
-      <img src="./images/jack-card.jpg" alt="brown and white dog looking up">
+      <img src="./images/jack-card.jpg" onclick="jack()" alt="brown and white dog looking up">
       <h4>Jack</h4>
       <h5>Cost to Adopt: $123.45</h5>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+      <p>Jack is a Beagle puppy. She is 10 weeks old neutered, microchipped, vaccinated and ready for a new forever home.
       </p>
         <button type="button" onclick="alert('To be added')">Adopt</button>
     </article>
     <article>
-      <img src="./images/duffy-card.jpg" alt="white and brown pitbull mix">
+      <img src="./images/duffy-card.jpg" onclick="duffy()" alt="white and brown pitbull mix">
       <h4>Duffy</h4>
       <h5>Cost to Adopt: $123.45</h5>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+      <p>Duffy is a playful Pitbull. She is 6 months, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
         <button type="button" onclick="alert('To be added')">Adopt</button>
     </article>
     <article>
-      <img src="./images/lucas-card.jpg" alt="black dog looking up">
+      <img src="./images/lucas-card.jpg" onclick="lucas()" alt="black dog looking up">
       <h4>Lucas</h4>
       <h5>Cost to Adopt: $123.45</h5>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+      <p>Lucas is a German Shppard mix. He is 4 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
         <button type="button" onclick="alert('To be added')">Adopt</button>
     </article>
     <article>
+      <img src="./images/jake-card.jpg" onclick="jake()" alt="black dog looking up">
       <h4>Jake</h4>
       <h5>Cost to Adopt: $123.45</h5>
       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
@@ -76,26 +91,27 @@ am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi 
         <button type="button" onclick="alert('To be added')">Adopt</button>
     </article>
     <article>
-      <img src="./images/angus-card.jpg" alt="brown boxer mix dog">
+      <img src="./images/angus-card.jpg" onclick="angus()" alt="brown boxer mix dog">
       <h4>Angus</h4>
-      <h5>Cost to Adopt: $123.45</h5>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+      <h5>Cost to Adopt: $150.00</h5>
+      <p>Angus is a lovely Boxer. He is 2 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
         <button type="button" onclick="alert('To be added')">Adopt</button>
     </article>
     <article>
-      <img src="./images/violet-card.jpg" alt="brown blue eyed puppy">
+      <img src="./images/violet-card.jpg" onclick="violet()"  alt="brown blue eyed puppy">
       <h4>Violet</h4>
-      <h5>Cost to Adopt: $123.45</h5>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+      <h5>Cost to Adopt: $200.00</h5>
+      <p>Violet is chocolate lab dachsund mix. She is 6 weeks old neutered, microchipped, vaccinated and ready for a new forever home.
       </p>
         <button type="button" onclick="alert('To be added')">Adopt</button>
     </article>
   </main>
 
-  <button onclick="window.location.href='./all-dogs.html';">
-     See More Dogs
-   </button>
+
+  <form>
+      <button type="submit" formaction="./all-dogs.html">See More Dogs</button>
+   </form>
 
 
   <footer>
@@ -104,9 +120,9 @@ am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi 
     </p>
     <p> esseque invenienihil imaximu scideru ptistiusam consequunt
     </p>
-    <p><a href="#">Home / </a></p>
-    <p><a href="./all-dogs.html">Dogs / </a></p>
-    <p><a href="#">Contact</a></p>
+    <li><a href="#">Home / </a></li>
+    <li><a href="./all-dogs.html">Dogs / </a></li>
+    <li><a href="#">Contact</a></li>
     <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
   </footer>
 
