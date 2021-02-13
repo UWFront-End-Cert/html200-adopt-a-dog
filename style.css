@@ -275,7 +275,7 @@ input[type=radio]{
 }
 .form, label, legend {
   color: #003366;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 900;
 }
 .
@@ -305,7 +305,9 @@ input[type=radio]{
 }
 fieldset {
   border: none;
-  display: inline;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5rem;
   width: 30%;
 }
 .pickup > select {
@@ -314,4 +316,24 @@ fieldset {
 .total-cost {
   font-size: 1.3rem;
   font-family: sans-serif;
+}
+.checkout-selections {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  display: flex;
+  flex-flow: column wrap;
+  height: 5rem;
+}
+.cost-total {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.adoption-amount {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+.first-time {
+  width: 120%;
 }
