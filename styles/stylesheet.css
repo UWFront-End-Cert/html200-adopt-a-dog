@@ -85,10 +85,9 @@ header nav ul {
 /* index page start here */
 
 main {
-  display:flex;
-  flex-direction: column;
-  padding-left: 10rem;
-  padding-top: 2rem;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .intro-top-content {
