@@ -1,8 +1,9 @@
-
-* {
+/** {
   border: 1px solid black;
+}*/
+body {
+  margin: 0;
 }
-
 /*--------Header-All-pages------*/
 header {
   background-image: url(../images/header-image.jpg);
@@ -20,7 +21,6 @@ header p {
   font-size: 1rem;
   margin: 0;
 }
-
 .svg-dog-header {
   width: 20%;
   height: auto;
@@ -35,205 +35,106 @@ header p {
   height: 5%;
   padding-left: 2%
 }
+.svg-cart img p {
+  display: block;
+  flex-direction: row;
+}
 .cart-btn {
-  width: 8%;
-  height: 5%;
-  background-color: #7CFC00;
   color: #ffffff;
+  background-color: #33cc33;
+  padding: .3rem 1rem .3rem 1.5rem;
+  /*top right bottom left*/
 }
+.adopt-a-dog-intro {
+  padding-left: 5%;
 
-/*--------main-index.html-----*/
-main {
-  padding-left: 8rem;
 }
-
+.title-about {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+/*--------index.html-----*/
 /* section boy hugging dog */
 .flex-container-top {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  padding: 2%;
+  /*align-items: flex-start;
+  justify-content: flex-start;*/
 }
-.flex-item-image-top {
+.index-image-top {
   /*height: 10%;*/
-  width: 180%;
-}
-.title-about {
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  margin: 1rem;
-}
-.flex-item-title-top {
-  height: 30px;
-  width: 50%;
-  margin: 0;
-}
-.flex-item-about {
-  height: 100px;
-  width: 50%;
-}
-/*-----section--flex-container-index----*/
-.flex-container-index-1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.flex-item-1 {
-  width: 100%;
-  height: 25%;
-}
-.flex-item-2 {
-  padding-left: 1rem;
-  height: 25%;
-}
-.flex-item-3 {
-  padding-left: 1rem;
-  height: 25%;
-}
-.flex-item-4 {
-  padding-left: 1rem;
-  height: 25%;
-}
-.flex-container-index-2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.flex-item-5 {
-  padding-left: 1rem;
-  height: 25%;
-}
-.flex-item-6 {
-  padding-left: 1rem;
-  height: 25%;
-}
-.flex-item-7 {
-  padding-left: 1rem;
-  height: 25%;
-}
-.flex-item-8 {
-  padding-left: 1rem;
-  height: 25%;
-}
-.flex-item-image {
-  width: 100%;
-}
-.flex-item-dog {
-  width: 25%;
-}
-.flex-dog-cost {
-  width: 25%
-}
-.flex-dog-info {
-  width: 25%;
-}
-.flex-dog-button {
-  width: 25%;
-}
-
-.see-more {
-  padding: 1rem 1rem 1rem 1rem;
-}
-
-
-/*-----Index grid container-with items----*/
-
-/*.grid-container-index {
-  display: grid;
-  grid-template-rows: 100px  100px;
-  grid-template-columns: 200px 200px 200px 200px;
-  background-color: #03a3df;
-  margin-left: 30px;
-}
-
-.photo-size {
   width: 30%;
 }
-
-.grid-item-1 {
-  grid-row: 1; grid-column: 1;
-  padding-top: 1rem;
+.flex-container-index-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5rem;
+  flex-wrap: wrap;
 }
-.grid-item-2 {
-  grid-row: 1; grid-column: 2;
-  padding-top: 1rem;
-  
+/*----Dog Card Info---*/
+.dog-card {
+  border: 4px solid black;
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
-.grid-item-3 {
-  grid-row: 1; grid-column: 3;
-  padding-top: 1rem;
-  
+.dog-card > .dog-item-image {
+  width: 100%;
+  padding: 0;
 }
-.grid-item-4 {
-  grid-row: 1; grid-column: 4;
-  padding-top: 1rem;
-  
+.dog-content {
+  padding: .5rem;
 }
-.grid-item-5 {
-  grid-row: 1; grid-column: 5;
-  padding-top: 1rem;
-  
+.flex-dog-button {
+  background-color: #33cc33;
+  color: white;
+  font-family: "Times New Roman", Times,  serif;
+  font-weight: bold;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  align-items: center;
+  height: 10rem;
 }
-.grid-item-6 {
-  grid-row: 1; grid-column: 6;
-  padding-top: 1rem;
-  
+.see-more {
+  display: block;
+  text-align: center;
+  color: #008080;
+  font-weight: bold;
+  padding: 2%;
+  text-decoration: none;
+  font-family: "Times New Roman", Times,  serif;
 }
-.grid-item-7 {
-  grid-row: 1; grid-column: 7;
-  padding-top: 1rem;
-  
-}
-.grid-item-8 {
-  grid-row: 1; grid-column: 8;
-  padding-top: 1rem;
-  
-}
-/*----grid-items-----*/
-.dog-listing-container {
-  
-}
-.dog-listing-title {
-
-}
-.grid-item-image {
-
-}
-.grid-item-dog {
-
-}
-.grid-dog-cost {
-
-}
-.grid-dog-info {
-
-}
-.grid-dog-input {
-
-}
-/*--------section-blog--------*/
+/*-----Dog Listing html--->
+/*-----section-blog--------*/
 .blog-adoptadog-h1 {
-
+  padding: 30rem;
 }
 .container-blog {
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75%;
+  padding: 5rem;
 }
 .blog-topic {
-
+  display: inline-block;
+  color: #008080;
 }
 .blog-image {
-
+  width: 15%;
 }
-.blog-topic-info {
-  
+.blog-item {
+  width: 35%;
 }
+/*--------checkout form --------*/
 
-/*--------section-listing--------*/
-
-/*--------section-checkout form-------*/
+/*-------section-checkout form-------*/
 input {
   font-family: inherit;
   font-size: 100%;
@@ -241,11 +142,11 @@ input {
   display: block;
   max-width: 20rem;
 }
-/*label {
+label {
   width: 75%;
   padding-top: .5rem;
   padding-bottom: .5rem;
-}*/
+}
 .label-other {
   width: 40%;
   padding-top: .5rem;
@@ -262,7 +163,6 @@ input {
 }
 .short-zip {
   width: 30%;
-
 }
 .form-main {
  padding-left: 10%;
@@ -284,9 +184,6 @@ input:focus {
   flex-direction: row;
   width: 30%
 }
-.dog {
-  width: 30%;
-}
 fieldset {
   width: 25%;
 }
@@ -295,44 +192,24 @@ fieldset {
   margin-right: 2rem;
 }
 .dogs-adopted {
-  display: grid;
+  display: flex;
   flex-direction: row;
-  grid-template-rows: 7rem;
 }
-.grid-1 {
-  grid-row: 1; grid-column: 1;
-  line-height: .5rem;
-  padding: 0;
-  margin: 0;
-}
-.grid-2 {
-  grid-row: 1; grid-column: 2;
-  padding: 0;
-  margin: 0;
-}
-.grid-3 {
-  grid-row: 1; grid-column: 3;
-  padding: 0;
-  margin: 0;
-}
-.grid-4 {
-  grid-row: 1; grid-column: 4;
-  padding: 0;
-  margin: 0;
+.checkout-image {
+  width: 10rem;
 }
 /*----Nav Menu Top----*/
 .nav-head {
-  padding-top: 1rem;
+  padding: 2rem;
 }
 .nav-item-head {
   color: #000000;
   font-weight: 600;
   text-decoration: none;
-  padding-left: 0rem;
 }
 /*-------footer-------*/
 footer {
-  background-color: teal;
+  background-color: #008080;
   max-height: 20%;
   color: #ffffff;
   padding-bottom: 1rem;
@@ -360,5 +237,3 @@ footer p {
 .space {
   padding: 0 2rem 0 2rem;
 }
-
-
