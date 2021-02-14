@@ -63,7 +63,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1 0 15%;
+  /*flex: 1 0 15%;*/
   justify-content: space-between;
 }
 
@@ -85,14 +85,15 @@ h1, h2, h3 {
 }
 
 p {
-  font-size: 75%;
-  line-height: 1.25rem;
+  font-size: 90%;
+  line-height: 1.5rem;
+  font-weight: lighter;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  font-size: 75%;
+  font-size: 85%;
   font-weight: bold;
 }
 
@@ -183,10 +184,11 @@ nav.head {
 
 /*Rules for Styling Dog Profile Cards*/
 .tile {
-  margin: 1.5rem 1rem;
-  width: 20%;
+  margin: 1.5rem 0;
+  width: 8rem;
+  min-width: 21%;
+  font-size: 90%;
   text-align: left;
-  font-size: 85%;
   box-shadow: 5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6;
 }
 
