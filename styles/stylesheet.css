@@ -63,7 +63,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1 0 15%;
+  /*flex: 1 0 15%;*/
   justify-content: space-between;
 }
 
@@ -183,8 +183,9 @@ nav.head {
 
 /*Rules for Styling Dog Profile Cards*/
 .tile {
-  margin: 1.5rem 1rem;
-  width: 20%;
+  margin: 1.5rem 0;
+  width: 10rem;
+  min-width: 21%;
   text-align: left;
   font-size: 85%;
   box-shadow: 5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6;
