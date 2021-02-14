@@ -1,0 +1,497 @@
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+  color: #484848;
+}
+
+.hidden:focus {
+  left: 0;
+}
+
+body {
+  color: #484848;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+.logo-and-checkout {
+  grid-area: 1 / 1 / 2 / 2;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+      ),
+      url("../images/header-image2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  padding: 5% 7% 15% 7%;
+}
+
+.nav {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: row;
+  padding: 2% 14% 2% 14%;
+  margin-top: -1%;
+  background-color: #ebebeb;
+}
+
+.intro-article {
+  grid-area: intro;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-preview {
+  grid-area: blog;
+  margin-left: 3rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "intro blog";
+}
+
+.intro-article-dogs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dog-cards-container {
+  grid-area: dogs;
+  display: grid;
+  grid-template-columns: repeat(4, 225px);
+  gap: 2rem;
+  margin: 4% 0 4% 0;
+}
+
+.dogs-page-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 225px);
+  gap: 3rem;
+  margin: 4% 0 4% 0;
+}
+
+footer {
+  grid-area: 5 / 1 / 6 / 2;
+  background-color: #083B5F;
+  color: #ffffff;
+  padding: 3% 7% 3% 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.adoptadog-logo {
+  max-width: 100%;
+  height: auto;
+  font-family: 'Work Sans';
+  font-weight: 900;
+}
+
+.see-more-dogs {
+  margin: 0 auto;
+  background-color: #ebebeb;
+  color: #083B5F;
+  font-size: 1.3rem;
+  padding: .75rem 2.5rem .75rem 2.5rem;
+  border: none;
+}
+
+.dog-card {
+  border: 2px solid #ebebeb;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.dog-card-header-text {
+  padding: 0 1rem 0 1rem;
+  margin-top: -5px;
+}
+
+.dog-card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.adopt-button {
+  width: 100%;
+  background-color: #81B741;
+  color: #ffffff;
+  padding: .75rem 0 .75rem 0;
+  margin: .5rem 0 1rem 0;
+  border: none;
+  font-size: 1.1rem;
+}
+
+#main-content {
+  padding: 0 14% 0 14%;
+}
+
+a {
+  text-decoration: none;
+  color: #239bb9;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.nav-footer-links {
+  list-style-type: none;
+}
+
+nav li + li:before,
+footer li + li:before {
+  content: "/";
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.nav-link-color {
+  color: #083B5F;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.footer-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-text {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 2rem;
+  max-width: 35%;
+  line-height: 1.7;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.footer-link-color {
+  color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+  color: #083B5F;
+  font-family: 'Neuton', serif;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+  margin: .5rem 0 .5rem 0;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.dog-or-field-name {
+  color: #083B5F;
+  font-family: 'Neuton', serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: .5rem;
+}
+
+.logo-and-checkout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text {
+  font-family: 'Neuton', serif;
+  color: #81B741;
+  font-size: 2.25rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: -10px;
+}
+
+.checkout {
+  margin-right: 2rem;
+}
+
+.checkout-cart-amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.checkout-total {
+  margin-left: 1rem;
+  color: #ffffff;
+  line-height: 0;
+  margin-bottom: .5rem;
+}
+
+.checkout-button {
+  border-radius: 2px;
+  color: #ffffff;
+  background-color: #81B741;
+  border: none;
+  padding: .25rem 2.5rem .25rem 2.5rem;
+}
+
+.intro-article-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro-article-text {
+  padding: 3% 3% 1% 0;
+}
+
+.intro-article-text > p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.intro-article-text > h1 {
+  padding-bottom: 3%;
+}
+
+.bolded-text {
+  font-weight: 600;
+}
+
+.smaller-font-size {
+  font-size: 1rem;
+}
+
+.smallest-font-size {
+  font-size: .90rem;
+}
+
+.bolded-text-700 {
+  font-weight: 700;
+}
+
+form {
+  margin: 0;
+}
+
+.link-color {
+  color: #083B5F;
+  text-decoration: underline;
+}
+
+.contact-us {
+  margin-top: 1.5rem;
+}
+
+.blog-preview-image {
+  max-width: 80%;
+  height: auto;
+}
+
+.blog-preview-text {
+  margin-bottom: 2rem;
+}
+
+.blog-article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2%;
+  margin-top: 10%;
+}
+
+.blog-article-image {
+  grid-area: 1 / 1 / 2 / 2;
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-article-text {
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 0 7% 1% 5%;
+}
+
+.blog-container {
+  margin-top: 4%;
+}
+
+.blog-article:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.checkout-form {
+  margin-top: 4%;
+  width: 65%;
+}
+
+button, input, select, textarea {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 100%;
+  display: block;
+}
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  padding: .75rem .5rem .75rem .5rem;
+  margin-top: .75rem;
+  margin-bottom: 3rem;
+  border: 1.5px solid #d6d6d6;
+  font-size: 1rem;
+}
+
+select {
+  width: 100%;
+  margin: .75rem 0 3rem 0;
+  border: 1.5px solid #d6d6d6;
+  padding: .75rem .5rem .75rem .5rem;
+  font-size: 1rem;
+}
+
+.submit-button {
+  border-radius: 2px;
+  color: #ffffff;
+  background-color: #81B741;
+  border: none;
+  width: 40%;
+  font-size: 1.25rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.city-field {
+  width: 60%;
+}
+
+.state-field {
+  width: 25%;
+  margin: 0 3% 0 3%;
+}
+
+select[name=state] {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 3rem;
+  margin-left: 0;
+}
+
+input[type=radio] {
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 0 .75rem 0 0;
+}
+
+.radio-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.radio-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-top: .75rem;
+}
+
+legend {
+  padding: 0;
+}
+
+.pickup-location > select {
+  width: 45%;
+}
+
+.dogs-adopted-container {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0 3rem 0;
+}
+
+.dogs-adopted-section {
+  display: flex;
+  flex-direction: row;
+  margin-right: 8%;
+}
+
+.dogs-adopted-section-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+.dogs-adopted-image-text {
+  margin-left: 1rem;
+}
+
+.adoption-total {
+  margin: 0 0 2rem 0;
+}
+
+.adoption-total > p {
+  font-size: 1.5rem;
+}
