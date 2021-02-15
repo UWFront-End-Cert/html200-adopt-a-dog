@@ -142,6 +142,7 @@ nav ul {
   padding-right: 5rem;
   width: 80%;
   margin: auto;
+  color: #003366;
 }
 .latest-blog {
   width: 45%;
@@ -282,12 +283,22 @@ nav ul {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  height: 20rem;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+ justify-content:flex-start;
+ align-items:flex-start;
+ overflow:;
+ height:;
+ gap: 2rem;
+}
+.blog-preview > article {
+  width: 50%;
+  order:;
+  overflow: auto;
 }
 .blog-image {
   width: 40%;
+  order:;
 }
 .blog-preview > h3 {
   width: 33%;
