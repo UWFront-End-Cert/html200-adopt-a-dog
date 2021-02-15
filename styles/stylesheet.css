@@ -41,7 +41,6 @@ header {
 .grid-bottom {
   grid-column: 2 / span 1;
   grid-row: 5 / span 1;
-  margin: 1rem 0 2rem 0;
 }
 
 footer {
@@ -55,8 +54,9 @@ footer {
 
 .left-img {
   float: left;
-  width: 35%;
-  padding: 1rem 1rem 1rem 0;
+  width: 16rem;
+  max-width: 40%;
+  padding: 1rem 2rem 1rem 0;
 }
 
 .horizontal {
@@ -85,15 +85,18 @@ h1, h2, h3 {
 }
 
 p {
-  font-size: 75%;
-  line-height: 1.25rem;
+  font-size: 85%;
+  line-height: 1.4rem;
+  font-weight: lighter;
+  margin-top: 1rem;
 }
 
-a {
+a, button {
   text-decoration: none;
   color: inherit;
-  font-size: 75%;
+  font-size: 85%;
   font-weight: bold;
+  border: none;
 }
 
 h4, h5 {
@@ -104,6 +107,11 @@ h4, h5 {
 
 .blurb-txt {
   padding: 0.5rem;
+}
+
+.blog {
+  font-size: 90%;
+  margin: 1rem 0;
 }
 
 .bold {
@@ -121,12 +129,13 @@ h4, h5 {
 .green-button {
   position: relative;
   top: 1rem;
-  right: 2.5rem;
+  right: 2rem;
   background-color: #81B741;
   color: white;
   font-size: 80%;
   margin: 5% 0;
-  padding: 7% 35%;
+  width: 100%;
+  padding: 7% 38%;
   border-radius: 1px;
 }
 
@@ -184,10 +193,10 @@ nav.head {
 /*Rules for Styling Dog Profile Cards*/
 .tile {
   margin: 1.5rem 0;
-  width: 10rem;
+  width: 8rem;
   min-width: 21%;
+  font-size: 90%;
   text-align: left;
-  font-size: 85%;
   box-shadow: 5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6;
 }
 
@@ -260,7 +269,7 @@ fieldset {
 }
 
 .space-down {
-  margin-top: 1.5rem;
+  margin-top: 5%;
 }
 
 .radio-style {
