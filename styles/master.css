@@ -161,6 +161,19 @@ li a {
   grid-column: 4 / 9;
 }
 
+/************ checkout form ***************/
+
+.checkoutform {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  display: flex;
+  padding-top: 0px;
+}
+
+.citystatezip {
+  display: inline-block;
+  padding-top: 0px;
+}
 
 /************ blog ***************/
 
