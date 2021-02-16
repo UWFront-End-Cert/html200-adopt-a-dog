@@ -163,11 +163,50 @@ li a {
 
 /************ checkout form ***************/
 
+/* contact form */
+input, select, textarea {
+  
+  font-weight: bold;
+  font-family: Times, serif;
+  color: #29465b;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  width: 100vh;
+  line-height: 28px;
+  margin: .5rem 0px .5rem 0px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #90b52a;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 10px 2px;
+  cursor: pointer;
+  width: 150px;
+  border-radius: .2rem;
+}
+
+/* input[type="submit"]:hover {
+  background: #036D9B;
+}
+
+input[type="submit"]:active {
+  background: #015270;
+} */
+
+input {
+  border-radius: 0px;
+}
+
 .checkoutform {
   margin-left: 6rem;
-  margin-right: 6rem;
-  display: flex;
-  padding-top: 0px;
+  margin-right: 20rem;
+  display: grid;
+  padding-top: 20px;
 }
 
 .citystatezip {
