@@ -3,12 +3,18 @@ function dogInfo() {
   alert('Breed: Beagle, Name: Murphy, Cost to adopt:$123.45');
 }
 
+  let total = 0;
 
-function adoptCost() {
-  let adoptCost = 0;
-  let adoptTotal =  ('Cost to adopt is:' + ' ' +  '\$' + 123.45)
-alert(adoptTotal);
+function adoptCost(price) {
+  total = price + total;
+  console.log("TOTAL:", total)
 }
+
+// function adoptCost() {
+//   let adoptCost = 0;
+//   let adoptTotal =  ('Cost to adopt is:' + ' ' +  '\$' + 123.45)
+// alert(adoptTotal);
+// }
 
 
 //var x = 1; var y = 2; var result = x + y;
