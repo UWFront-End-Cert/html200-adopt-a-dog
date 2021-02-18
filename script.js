@@ -44,14 +44,8 @@ function violet() {
 }
 
 
-//  UNABLE TO GET FUNCTION TO WORK     function dogAdder(){
-            //let a = Number(document.getElementById('a').value);
-            //let b = Number(document.getElementById('b').value);
-            //let c = Number(document.getElementById('c').value);
-            //let d = Number(document.getElementById('d').value);
-
-            //let total = a + b + c + d;
-
-            //document.getElementById("total").value = total;
-
-        //}
+//let total = 0;
+//function adopt(price) {
+  //total = price + total;
+  //console.log("TOTAL:"), total);
+//}
