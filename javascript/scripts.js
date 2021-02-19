@@ -23,7 +23,7 @@ let cartContents = [];
 let adoptionTotal = 0;
 
 function cartSummary(name) {
-  cartContents.push(name); //need to figure out a way to prevent user from clicking on same dog twice
+  cartContents.push(name); //need to figure out a way to prevent same dog from being added to cart twice
   let cartList = cartContents.join(', ');
   adoptionTotal += 123.45;
   result = `With ${name} added to the cart, your total is $${Number(adoptionTotal).toFixed(2)}. In your cart: ${cartList}`;
