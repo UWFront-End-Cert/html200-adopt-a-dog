@@ -66,7 +66,6 @@ nav ul {
   padding-left: 0rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
-  background-color:;
   margin: auto;
 }
 .logo {
@@ -80,7 +79,6 @@ nav ul {
   padding-right: 0rem;
   padding-bottom: 6rem;
   padding-top: 0rem;
-  background-color:;
   margin: auto;
 }
 .checkout-button {
@@ -147,10 +145,8 @@ nav ul {
 .latest-blog {
   width: 45%;
   background-color: #ffffff;
-  line-height:;
 }
 .blog-intro {
-  font-size: ;
   font-family: serif;
 }
 .blog-intro-image {
@@ -287,18 +283,14 @@ nav ul {
           flex-flow: row wrap;
  justify-content:flex-start;
  align-items:flex-start;
- overflow:;
- height:;
  gap: 2rem;
 }
 .blog-preview > article {
   width: 50%;
-  order:;
   overflow: auto;
 }
 .blog-image {
   width: 40%;
-  order:;
 }
 .blog-preview > h3 {
   width: 33%;
@@ -321,7 +313,6 @@ nav ul {
   padding-left: 5rem;
   grid-gap: 0rem;
   font-size: 1.2rem;
-  font-weight:
   }
 input, textarea, select, button{
   display: block;
@@ -360,9 +351,6 @@ input[type=radio]{
   color: #003366;
   font-size: 1.4rem;
   font-weight: 900;
-}
-#state {
-  display: inl ine;
 }
 #city {
   width: 15rem;
