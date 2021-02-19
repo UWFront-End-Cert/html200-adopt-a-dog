@@ -196,6 +196,8 @@ nav.head {
   width: 8rem;
   min-width: 21%;
   font-size: 90%;
+ /* width: 10rem;
+ min-width: 21%;*/
   text-align: left;
   box-shadow: 5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6;
 }
