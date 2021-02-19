@@ -27,12 +27,37 @@
   }
   
   .img-container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/header-image.jpg);
-    height: 50%;
-    background-position: center;
+    /* using the following 4 lines of code for testing purposes */
+    /* background: #eb01a5; */
+    /* background-image: url(../images/header-image.jpg); fallback */
+    /* background-image: url(../images/header-image.jpg), linear-gradient(#eb01a5, #d13531); */
+    /* background-image: linear-gradient(45deg, #eb017e, #d13631), url(../images/header-image.jpg); */
+    /* background-image: linear-gradient(240deg, rgba(255, 0, 0, 0.401), rgba(255, 255, 0, 0.462)); */
+    /* background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.401), rgba(255, 255, 0, 0.462)), url(../images/header-image.jpg); */
+    background-image: linear-gradient(240deg, rgba(255, 0, 0, 0.401), rgba(255, 255, 0, 0.462)), url(../images/header-image.jpg);
+    /* background-image: linear-gradient(rgba(230, 172, 119, 0.156), rgba(188, 191, 22, 0.918)), url(../images/header-image.jpg); */
+    /* background-image: url(../images/header-image.jpg); */
+    /* background-image: linear-gradient(45deg, red 0 40%, yellow 60% 100%), url(../images/header-image.jpg); */
+    /* height: 50%; */
+    /* width: 100%; */
+    /* background-position: center center; */
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    /* background-color: blue; */
+    /* background-color: blue, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    /* background: linear-gradient(
+      to right,
+      red, 
+      orange, 
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+  ); */
+
+    /* position: relative; */
   }
 
 .logo img {
@@ -40,7 +65,18 @@
       width: 30%;
       margin-top: 5%;
       margin-left: 8%;
-  }
+      /* background: linear-gradient(
+        to right,
+        red, 
+        orange, 
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+    ); */
+  
+    }
 
 .logo h1 {
     color: yellowgreen;
@@ -75,7 +111,7 @@
   
   nav {
       display: flex;
-      background-color: gray;
+      background-color: #ebdfdf;
   }
 
   nav li {
@@ -231,6 +267,22 @@ p strong {
     padding: 0 3em;
     /* border: 3px solid black; */
   }
+
+  .blogpage-container img {
+    /* max-width: 10em; */
+    /* max-height: 25em; */
+    /* height: 20%; */
+  }
+
+  @media screen and (max-width: 900px) {
+    .blogpage-container .dog-blog {
+      flex-direction: column;
+      /* padding: 3% 30%; */
+    }
+    .blogpage-container img {
+      width: 100%;
+    }
+  }
   
   .dog-blog {
     /* display: flex; */
@@ -311,9 +363,11 @@ border: 0;
   flex-direction: column;
   /* added 1.13 */
   /* justify-content: space-around; */
-  /* border: 3px solid black; */
+  border: 3px solid black;
   flex-wrap: wrap;
-  margin: 4rem 14rem;
+  /* margin: 4rem 14rem; */
+  margin: 4rem auto;
+  padding: 0 20% 8%;
   /* min-width: 80%; */
 }
 
@@ -324,6 +378,12 @@ border: 0;
 
 .dogs-adopted {
   display: flex;
+}
+
+@media screen and (max-width: 650px) {
+  .dogs-adopted {
+    flex-direction: column;
+  }
 }
 
 .dogs-adopted div {
@@ -389,6 +449,7 @@ form .btn {
 
   .flex-nav ul {
     padding-left: 13em;
+    background-color: #ebdfdf;
   }
 
  
@@ -396,7 +457,7 @@ form .btn {
     display: flex;
     flex-direction: row;
     padding: 0 5em;
-    border: 3px solid gold;
+    /* border: 3px solid gold; */
   }
 
   .indexpage1st-container {
@@ -419,6 +480,7 @@ form .btn {
 
   .blog-sidebar {
     display: flex;
+    padding-right: 7em;
     /* flex: 1; */
         /* border: 3px solid blue; */
   }
@@ -454,3 +516,10 @@ form .btn {
         display: none;
     }
 }
+
+/* @media screen and (max-width: 700px) {
+  .dog-blog {
+      display: block;
+      float: none;
+  }
+} */
