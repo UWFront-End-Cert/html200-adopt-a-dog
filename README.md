@@ -1,4 +1,21 @@
 html200-adopt-a-dog
+
+LAST UPDATE, 2-19-2021
+
+The biggest changes has been committed in script.js, all the same functions (which were for each dog) are in just one function called 'dogInfo', as suggested. The second function previouly called 'cost', now 'total' includes the math operation, instead of displaying a string.
+
+parameters and arguments are defined in the function to keep the program stable.
+
+Click handlers of index.html and dogs.html contain the dog's information as a string, instead of in the JS file. All the multiple functions have been removed.
+
+To add some fun... in every dog's bio, the paragraph element contains 'doggy impsum'.
+
+Adopt button fixed, when it's clicked, an alert pops up showing up the price. Then, if you click on other dog adopt's button, the total price increase the value, respectively.
+
+
+
+PREVIOUS NOTES:
+
 The CSS of Blog's page is now linked to the main stylesheet page, located in the same folder 'styles', name of the file: 'style.css'.
 
 In the 'scripts' folder there are two JavaScript files, one of them is the main one which is linked to 'index.html' and 'dogs.html'. So, 'script-two.js' is the result of making another alternative program to run pages but I definitely chose the first attempt, 'script.js'
