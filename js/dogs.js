@@ -1,5 +1,5 @@
 function pictureInfo(dog, breed, price) {
-    let result = 'Name: ' + dog + ' Breed: ' + breed + ' Price: ' + price;
+    const result = 'Name: ' + dog + ' Breed: ' + breed + ' Price: ' + price;
     alert(result);
 }
 

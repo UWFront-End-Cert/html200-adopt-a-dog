@@ -5,9 +5,15 @@
 
 }
 
+.wrapper1 {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
 .wrapper {
     margin-left: 5rem;
-    margin-right: 5rem;
+    margin-right: 5rem;  
 }
 
 header {
@@ -15,7 +21,6 @@ header {
     background-position: right;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,6 +68,7 @@ header p {
 .pay p {
     margin-top: 2rem;
 }
+
 .pay img {
     margin-right: 1rem;
 }
@@ -102,9 +108,6 @@ h2 {
     padding-bottom: 2rem;
 }
 
-.adopt h2 {
-    padding-left: 0rem;
-}
 
 button {
     text-align: center;
@@ -114,7 +117,7 @@ button {
 }
 
 .dogs button {
-    display:block;
+    display: block;
     margin: 1rem auto;
     width: 80%;
     border: solid 1px rgb(18, 146, 18);
@@ -126,12 +129,12 @@ button {
     color: navy;
     font-weight: bold;
     border: solid 1px lightgrey;
-    display:block;
+    display: block;
     width: 30%;
     margin: 2rem auto 0 auto;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    
+
 
 }
 
@@ -152,7 +155,8 @@ button {
 
 .dogs h3,
 .dogs h4,
-.dogs p, .dogs button  {
+.dogs p,
+.dogs button {
     padding-right: .5rem;
     padding-left: .5rem;
     padding-bottom: .5rem;
@@ -160,16 +164,16 @@ button {
 
 .adopt {
     display: flex;
-    display: row;
+    flex-direction: row;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     margin-bottom: 5rem;
     padding-top: 3rem;
 }
 
 .adopt img {
     width: 100%;
-    margin-right: 5rem;
+    /* margin-right: 5rem; */
 }
 
 .dogs {
@@ -180,13 +184,69 @@ button {
     padding-bottom: 3rem;
 }
 
+/* @media screen and (max-width: 575px) {
+    .dogs {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .dogs {
+        width: 48%;
+    }
+} */
+.main-content{
+    width: 60%;
+}
+
+@media screen and (max-width: 575px) { */
+    .main-content {
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width: 991px) {
+    .dogs {
+        width: 48%;
+    }
+}
+
+.blog-preview {
+    width: 25%;
+    margin-left: 3rem;
+}
+
+.blog-preview img {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.blog-preview h2 {
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+}
+
+.blog-preview h3 {
+    margin-top: 2rem;
+}
+
+.blog-preview p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 575px) {
+    .blog-preview {
+       display: none;
+    }
+}
+
 .blog {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    margin-bottom: 3rem; 
-     
+    margin-bottom: 3rem;
 
 }
 
@@ -228,10 +288,11 @@ fieldset {
     margin-bottom: 3rem;
 }
 
-.city-state input, .city-state select {
+.city-state input,
+.city-state select {
     margin-top: 1rem;
 
-} 
+}
 
 .first-time {
     display: grid;
@@ -273,10 +334,11 @@ fieldset {
 .total p {
     margin-top: 1.5rem;
     font-size: 1rem;
-    
+
 }
 
-label, fieldset{
+label,
+fieldset {
     font-weight: bold;
 }
 
@@ -284,12 +346,15 @@ fieldset label {
     font-weight: normal;
 }
 
-input, fieldset {
+input,
+fieldset {
     margin-top: 1.5rem;
 }
 
-label, input, select {
-    display: block; 
+label,
+input,
+select {
+    display: block;
 }
 
 footer {
