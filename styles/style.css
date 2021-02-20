@@ -91,7 +91,7 @@ footer li {
 }
 
 nav ul {
-    margin-left: 10rem;
+    margin-left: 5rem;
 
 }
 
@@ -199,7 +199,7 @@ button {
     width: 60%;
 }
 
-@media screen and (max-width: 575px) { */
+@media screen and (max-width: 575px) { 
     .main-content {
         width: 100%;
     }
@@ -207,7 +207,7 @@ button {
 
 @media screen and (max-width: 991px) {
     .dogs {
-        width: 48%;
+        width: 40%;
     }
 }
 
