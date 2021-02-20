@@ -36,15 +36,16 @@
           <li class="flex-nav-item"><a href="./blog.html">Blog</a></li>
         </ul>
       </nav>
-      <section class="main-container">
-        <div class="photo-article-container">
-          <img class="photo-article-img" src="./images/home-intro.jpg" alt="man hugging dog">
-          <div class="photo-article-text">
-            <h1>Adopt A Dog</h1>
-            <p>Doggo ipsum heck smol borking doggo with a long snoot for pats stop it fren doggo heck sub woofer, stop it fren sub woofer yapper. Snoot puggorino doggorino maximum borkdrive blop, big ol long doggo much ruin diet. Big ol vvv doggorino the neighborhood pupper adorable doggo long water shoob bork, puggo maximum borkdrive what a nice floof such treat. Very taste wow floofs shooberino long water shoob, long woofer bork. Stop it fren the neighborhood pupper heckin good boys doge, thicc.</p>
-          </div>
-        </div>
-        <div class="dog-boxes-container">
+
+      <div class="home-main-container">
+
+        <div class="dogs-column">
+          <img src="./images/home-intro-wide.png" alt="man hugging dog">
+          
+          <h1>Adopt A Dog</h1>
+          <p>Doggo ipsum heck smol borking doggo with a long snoot for pats stop it fren doggo heck sub woofer, stop it fren sub woofer yapper. Snoot puggorino doggorino maximum borkdrive blop, big ol long doggo much ruin diet. Big ol vvv doggorino the neighborhood pupper adorable doggo long water shoob bork, puggo maximum borkdrive what a nice floof such treat. Very taste wow floofs shooberino long water shoob, long woofer bork. Stop it fren the neighborhood pupper heckin good boys doge, thicc.</p>
+        
+        <div class="home-dog-boxes-container">
           <div class="dog-box">
             <img onClick="dogInfo(name = 'Murphy', breed = 'Pointer', price = '$125')" src="./images/murphy-card.jpg" alt="light brown and white face of large dog">
             <div>
@@ -99,31 +100,33 @@
               <button onClick="priceTotal(150)" type="submit">Adopt</button>
             </div>
           </div>
-          <div class="dog-box">
-            <img onClick="dogInfo(name = 'Angus', breed = 'Boxer', price = '$160')" src="./images/angus-card.jpg" alt="fluffy white small dog running toward viewer">
-            <div>
-              <h2>Angus</h2>
-              <p><span class="p-bold">Cost to Adopt:</span> $160</p>
-              <p>Shoober waggy wags vvv shoober shoob, ruff dat tungg tho blep. Very taste wow floofs shooberino long water shoob, long woofer bork.</p>
-              <button onClick="priceTotal(160)" type="submit">Adopt</button>
-            </div>
-          </div>
-          <div class="dog-box">
-            <img onClick="dogInfo(name = 'Violet', breed = 'Labrador Puppy', price = '$250')" src="./images/violet-card.jpg" alt="fluffy white small dog running toward viewer">
-            <div>
-              <h2>Violet</h2>
-              <p><span class="p-bold">Cost to Adopt:</span> $250</p>
-              <p>Shoober waggy wags vvv shoober shoob, ruff dat tungg tho blep. Very taste wow floofs shooberino long water shoob, long woofer bork.</p>
-              <button onClick="priceTotal(250)" type="submit">Adopt</button>
-            </div>
-          </div>
         </div>
         <div class="green-button-container">
           <a href="./dogs.html">
             <p class="green-button">See More Dogs</p>
           </a>
         </div>
-      </section>
+      </div>
+
+      <div class="sidebar">
+        <h1>From Our Blog</h1>
+        <img src="./images/sidebar-traveling.png" alt="man hugging dog">
+        <h3>Traveling With Your Dog</h3>
+        <p>Doggo ipsum heck smol borking doggo with a long snoot for pats stop it fren doggo heck sub woofer, stop it fren sub woofer yapper.</p>
+        <p><a href="./blog.html">Read more >></a></p>
+
+        <img src="./images/sidebar-multiple.png" alt="man hugging dog">
+        <h3>How To Walk Multiple Dogs</h3>
+        <p>Doggo ipsum heck smol borking doggo with a long snoot for pats stop it fren doggo heck sub woofer, stop it fren sub woofer yapper.</p>
+        <p><a href="./blog.html">Read more >></a></p>
+
+        <img src="./images/sidebar-fetch.png" alt="man hugging dog">
+        <h3>Teach Your Dog To Fetch!</h3>
+        <p>Doggo ipsum heck smol borking doggo with a long snoot for pats stop it fren doggo heck sub woofer, stop it fren sub woofer yapper.</p>
+        <p><a href="./blog.html">Read more >></a></p>
+
+      </div>
+      
     </main>
     <footer>
       <div class="center-footer">
@@ -141,3 +144,4 @@
     </footer>
   </body>
 </html>
+
