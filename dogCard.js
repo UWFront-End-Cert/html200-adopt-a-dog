@@ -7,7 +7,7 @@ function dogInfo() {
 
 function adoptCost(price) {
   total = price + total;
-  console.log("TOTAL:", total)
+  console.log("TOTAL:", total);
 }
 
 // function adoptCost() {
