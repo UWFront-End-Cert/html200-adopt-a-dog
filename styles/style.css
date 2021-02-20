@@ -7,6 +7,7 @@
 
 .wrapper1 {
     margin-left: 5rem;
+    margin-right: 5rem;
     display: flex;
     flex-direction: row;
 }
@@ -169,11 +170,11 @@ button {
     flex-wrap: wrap;
     margin-bottom: 5rem;
     padding-top: 3rem;
+    width: 100%;
 }
 
 .adopt img {
     width: 100%;
-    /* margin-right: 5rem; */
 }
 
 .dogs {
@@ -184,7 +185,11 @@ button {
     padding-bottom: 3rem;
 }
 
-/* @media screen and (max-width: 575px) {
+.main-content{
+    width: 70%;
+}
+
+@media screen and (max-width: 767px) {
     .dogs {
         width: 100%;
     }
@@ -194,25 +199,10 @@ button {
     .dogs {
         width: 48%;
     }
-} */
-.main-content{
-    width: 60%;
-}
-
-@media screen and (max-width: 575px) { 
-    .main-content {
-        width: 100%;
-    }
-} 
-
-@media screen and (max-width: 991px) {
-    .dogs {
-        width: 40%;
-    }
 }
 
 .blog-preview {
-    width: 25%;
+    width: 20%;
     margin-left: 3rem;
 }
 
