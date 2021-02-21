@@ -257,6 +257,17 @@ button {
     padding-bottom: 3%;
 }
 
+.blog-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 575px) {
+    .blog-link {
+        display: block;
+    }
+}
+
 fieldset {
     border: white;
 }
