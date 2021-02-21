@@ -6,15 +6,15 @@
 }
 
 .wrapper1 {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     display: flex;
     flex-direction: row;
 }
 
 .wrapper {
-    margin-left: 5rem;
-    margin-right: 5rem;  
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 header {
@@ -166,7 +166,6 @@ button {
 .adopt {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 5rem;
     padding-top: 3rem;
@@ -179,25 +178,34 @@ button {
 
 .dogs {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    grid-column-gap: 1rem;
-    grid-row-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 32%));
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
     padding-bottom: 3rem;
 }
 
-.main-content{
+.main-content {
     width: 70%;
 }
 
-@media screen and (max-width: 767px) {
-    .dogs {
+@media screen and (max-width: 575px) {
+    .main-content {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 575px) {
     .dogs {
-        width: 48%;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(0rem, 100%));
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1279px) {
+    .dogs {
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(0rem, 45%));
     }
 }
 
@@ -227,7 +235,8 @@ button {
 
 @media screen and (max-width: 575px) {
     .blog-preview {
-       display: none;
+        display: none;
+
     }
 }
 
@@ -267,7 +276,6 @@ fieldset {
     grid-template-rows: auto auto auto;
     grid-row-gap: 10%;
     margin-bottom: 3rem;
-
 }
 
 .city-state {
