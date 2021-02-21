@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ADOPT-A-DOG LIST</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5398a5e1fc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,8 +26,11 @@
       <form action="checkout.html" class="checkout-button">
         <input class="checkout" type="submit" value="Checkout" onclick="checkout.html"/>
       </form>
+      <input type="image" id="cart" alt="checkout-cart"
+       src="images/cart-icon.svg" width="30">
     </div>
   <nav class="main-nav">
+    <div class="toggle"><i class="fas fa-bars"></i></div>
     <ul>
       <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
       <li><a href="adoption-list.html">Dogs&nbsp;&nbsp;&nbsp;/</a></li>
@@ -109,8 +114,8 @@
     <figure class="profile-pic">
       <img src="images/angus-card.jpg" alt="" width="215">
     </figure>
-    <h3>Angus</h3>
     <div class="pup-style">
+    <h3>Angus</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
     <button class="adopt-this-dog">Adopt</button>
@@ -177,7 +182,7 @@
   <figure class=footer-fig>
     <img src="images/adoptadog-logo.svg" alt="" width="350">
   </figure>
-  <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+  <p class="footer-info">Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
   <nav class="footer-nav">
     <ul>
       <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
@@ -185,9 +190,10 @@
       <li><a href="">Contact</a></li>
     </ul>
   </nav>
-  <p>&copy; 2018 Adoptadog, &#x2758; LLC Seattle, WA</p>
+  <p class="copyright">&copy; 2018 Adoptadog, &#x2758; LLC Seattle, WA</p>
 </div>
 </footer>
 </div>
+
 </body>
 </html>

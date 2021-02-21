@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ADOPT-A-DOG CHECKOUT</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5398a5e1fc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-  <a href="#main-content" class="sr-only">Skip to main content</a>
-  <div class="wrapper">
-  <header class=main-header>
-    <div class="header-container">
-      <div class="logo-header-wrapper">
-        <figure class="logo">
-          <img src="https://raw.githubusercontent.com/anthonyjprater/html200-adopt-a-dog/03b398599e59ce82f84f98ea543dab27beb2a113/images/adoptadog-logo.svg" alt="" width="450">
-        </figure>
-        <p class="slogan">Seattle's premiere dog adoption agency</p>
-      </div>
-      <div class="checkout-cart-wrapper">
-        <img src="images/cart-icon.svg" alt="" width="30">
-        <p class="checkout-total">$1234.56</p>
-        <form action="checkout.html" class="checkout-button">
-          <input class="checkout" type="submit" value="Checkout" onclick="checkout.html"/>
-        </form>
-      </div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
-        <li><a href="adoption-list.html">Dogs&nbsp;&nbsp;&nbsp;/</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
+<a href="#main-content" class="sr-only">Skip to main content</a>
+<div class="wrapper">
+<header class=main-header>
+  <div class="header-container">
+    <div class="logo-header-wrapper">
+      <figure class="logo">
+        <img src="images/adoptadog-logo.svg" alt="" width="450">
+      </figure>
+      <p class="slogan">Seattle's premiere dog adoption agency</p>
     </div>
-  </header>
+    <div class="checkout-cart-wrapper">
+      <img src="images/cart-icon.svg" alt="" width="30">
+      <p class="checkout-total">$1234.56</p>
+      <form action="checkout.html" class="checkout-button">
+        <input class="checkout" type="submit" value="Checkout" onclick="checkout.html"/>
+      </form>
+      <input type="image" id="cart" alt="checkout-cart"
+       src="images/cart-icon.svg" width="30">
+    </div>
+  <nav class="main-nav">
+    <div class="toggle"><i class="fas fa-bars"></i></div>
+    <ul>
+      <li><a href="index.html">Home&nbsp;&nbsp;&nbsp;/</a></li>
+      <li><a href="adoption-list.html">Dogs&nbsp;&nbsp;&nbsp;/</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+  </div>
+</header>
   <section class="sr-only" id="main-content">
     <h2 class="skip-link">content</h2>
   </section>
