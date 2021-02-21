@@ -91,11 +91,6 @@ footer li {
 
 }
 
-nav ul {
-    margin-left: 2rem;
-
-}
-
 nav ul,
 footer ul {
     display: flex;
