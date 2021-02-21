@@ -39,175 +39,231 @@
 
         </ul>
     </nav>
-    <div class="wrapper">
-        <section class="intro ">
-            <img class="intro-text col-1 row-1" src="images/home-intro.jpg" alt="Man hugging his dog">
+    <div class="wrapper-home">
+        <div class="main-content">
 
-            <div class="col-2 row-1">
-                <h2>Adopt a Dog</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est lectus, egestas sed erat eget,
-                    venenatis
-                    finibus magna. Quisque ultrices felis ut dolor maximus, in tincidunt quam consequat. Nunc convallis
-                    ex
-                    eu
-                    aliquet scelerisque. Proin tincidunt ante et metus rutrum, id faucibus magna pretium. Nulla pulvinar
-                    sed
-                    purus non convallis. Praesent luctus pulvinar elementum. Etiam mollis ante aliquam, posuere sem
-                    eget,
-                    pretium urna. Vivamus convallis neque a rutrum tempus. Pellentesque blandit imperdiet pulvinar.
-                    Aenean
-                    vitae
-                    rhoncus neque. Sed varius blandit ex. Donec condimentum eleifend mauris at pretium. Mauris dolor
-                    est,
-                    auctor
-                    ut ornare vel, fringilla non leo. Phasellus tempor vitae nulla quis aliquet.
-                </p>
-            </div> <!-- end of intro-text -->
+            <section class="intro ">
+                <img class="intro-text" src="images/home-intro2.jpg" alt="Man hugging his dog">
 
-        </section> <!-- end of intro -->
+                <div>
+                    <h2>Adopt a Dog</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est lectus, egestas sed erat
+                        eget,
+                        venenatis
+                        finibus magna. Quisque ultrices felis ut dolor maximus, in tincidunt quam consequat. Nunc
+                        convallis
+                        ex
+                        eu
+                        aliquet scelerisque. Proin tincidunt ante et metus rutrum, id faucibus magna pretium. Nulla
+                        pulvinar
+                        sed
+                        purus non convallis. Praesent luctus pulvinar elementum. Etiam mollis ante aliquam, posuere sem
+                        eget,
+                        pretium urna. Vivamus convallis neque a rutrum tempus. Pellentesque blandit imperdiet pulvinar.
+                        Aenean
+                        vitae
+                        rhoncus neque. Sed varius blandit ex. Donec condimentum eleifend mauris at pretium. Mauris dolor
+                        est,
+                        auctor
+                        ut ornare vel, fringilla non leo. Phasellus tempor vitae nulla quis aliquet.
+                    </p>
+                </div> <!-- end of intro-text -->
 
-        <div class="dogs">
-            <article class="col-1 row-1">
-                <img src="images/murphy-card.jpg" alt="Tan and white boxer-mix dog named Murphy" onclick="dogInfo('Murphy', 'Boxer Mix', '123.45.')" > 
-                <h3>
-                    Murphy
-                </h3>
-                <h4>
-                    Cost to adopt: $123.45
-                </h4>
-                <p>
-                    Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
-                    Maecenas
-                    feugiat facilisis mi nec vehicula.
-                </p>
-                <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+            </section> <!-- end of intro -->
+
+            <div class="dogs">
+                <article class = "dog-info">
+                    <img src="images/murphy-card.jpg" alt="Tan and white boxer-mix dog named Murphy"
+                        onclick="dogInfo('Murphy', 'Boxer Mix', '123.45.')">
+                    <h3>
+                        Murphy
+                    </h3>
+                    <h4>
+                        Cost to adopt: $123.45
+                    </h4>
+                    <p>
+                        Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
+                        Maecenas
+                        feugiat facilisis mi nec vehicula.
+                    </p>
+                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                </article>
+
+                <article class = "dog-info">
+                    <img src="images/poppy-card.jpg" alt="Gray and white Shih-tzu dog named Poppy"
+                        onclick=" dogInfo('Poppy', 'Shih-tzu', '123.45.')">
+                    <h3>
+                        Poppy
+                    </h3>
+                    <h4>
+                        Cost to adopt: $123.45
+                    </h4>
+                    <p>
+                        Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
+                        Maecenas
+                        feugiat facilisis mi nec vehicula.
+                    </p>
+                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                </article>
+
+                <article class = "dog-info">
+                    <img src="images/jack-card.jpg" alt="Tan and white beagle named Jack"
+                        onclick=" dogInfo('Jack', 'Beagle', '123.45.')">
+                    <h3>
+                        Jack
+                    </h3>
+                    <h4>
+                        Cost to adopt: $123.45
+                    </h4>
+                    <p>
+                        Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
+                        Maecenas
+                        feugiat facilisis mi nec vehicula.
+                    </p>
+                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                </article>
+
+                <article class = "dog-info">
+                    <img src="images/duffy-card.jpg" alt="Tan and white pit bull named Duffy"
+                        onclick=" dogInfo('Duffy', 'Pit Bull', '123.45.')">
+                    <h3>
+                        Duffy
+                    </h3>
+                    <h4>
+                        Cost to adopt: $123.45
+                    </h4>
+                    <p>
+                        Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
+                        Maecenas
+                        feugiat facilisis mi nec vehicula.
+                    </p>
+                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                </article>
+
+                <article class = "dog-info">
+                    <img src="images/lucas-card.jpg" alt="Black gernman sheppard  named Lucas"
+                        onclick=" dogInfo('Lucas', 'German Sheppard', '123.45.')">
+                    <h3>
+                        Lucas
+                    </h3>
+                    <h4>
+                        Cost to adopt: $123.45
+                    </h4>
+                    <p>
+                        Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
+                        Maecenas
+                        feugiat facilisis mi nec vehicula.
+                    </p>
+                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                </article>
+
+
+                <article class = "dog-info">
+                    <img src="images/jake-card.jpg" alt="Light beige and tan retriever named Jake"
+                        onclick=" dogInfo('Jake', 'Retriever', '123.45.')">
+                    <h3>
+                        Jake
+                    </h3>
+                    <h4>
+                        Cost to adopt: $123.45
+                    </h4>
+                    <p>
+                        Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
+                        Maecenas
+                        feugiat facilisis mi nec vehicula.
+                    </p>
+                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                </article>
+
+                <article class = "dog-info">
+                    <img src="images/angus-card.jpg" alt="Tan,white and black boxer named Angus"
+                        onclick=" dogInfo('Angus', 'Boxer', '123.45.')">
+                    <h3>
+                        Angus
+                    </h3>
+                    <h4>
+                        Cost to adopt: $123.45
+                    </h4>
+                    <p>
+                        Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
+                        Maecenas
+                        feugiat facilisis mi nec vehicula.
+                    </p>
+                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                </article>
+
+                <article class = "dog-info">
+                    <img src="images/violet-card.jpg" alt="Chocolate lab puppy named Violet"
+                        onclick=" dogInfo('Violet', 'Chocolate Lab', '123.45.')">
+                    <h3>
+                        Violet
+                    </h3>
+                    <h4>
+                        Cost to adopt: $123.45
+                    </h4>
+                    <p>
+                        Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut
+                        imperdiet.
+                        Maecenas
+                        feugiat facilisis mi nec vehicula.
+                    </p>
+                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                </article>
+
+             
+                
+
+            </div> <!-- end of dogs -->
+
+            <button class="more-dogs" type="submit" value="More" name="more">See More
+                Dogs</button>
+        
+            <!-- To link I need to figure out the javascript I should use
+            <button class="more-dogs" type="submit" value="More" name="more" onclick="./dogs.html='default.asp'"> See More
+                    Dogs</a></button> -->
+
+        </div> <!-- end of main-content -->
+
+        <aside>
+            <h2> From Our Blog</h2>
+            <article>
+
+                <img src="images/blog-1.jpg" alt="Man viewing the Grand Canyon with his dog">
+                <h3>Traveling with Your Dog</h3>
+                <p>Iciustiam, et ad quiaes cum que
+                    excea sinciendi qui offic temquas
+                    doluptios dolupta tiandebis nem ut.</p>
+                <a href="./blog.html.travel">Read more >></a>
+
             </article>
 
-            <article class="col-2 row-1">
-                <img src="images/poppy-card.jpg" alt="Gray and white Shih-tzu dog named Poppy" onclick=" dogInfo('Poppy', 'Shih-tzu', '123.45.')">
-                <h3>
-                    Poppy
-                </h3>
-                <h4>
-                    Cost to adopt: $123.45
-                </h4>
-                <p>
-                    Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
-                    Maecenas
-                    feugiat facilisis mi nec vehicula.
-                </p>
-                <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+            <article>
+
+                <img src="images/blog-2.jpg" alt="Man viewing the Grand Canyon with his dog">
+                <h3>How to Walk Multiple Dogs</h3>
+                <p>Iciustiam, et ad quiaes cum que
+                    excea sinciendi qui offic temquas
+                    doluptios dolupta tiandebis nem ut.</p>
+                <a href="./blog.html">Read more >></a>
+
             </article>
 
-            <article class="col-3 row-1">
-                <img src="images/jack-card.jpg" alt="Tan and white beagle named Jack" onclick=" dogInfo('Jack', 'Beagle', '123.45.')">
-                <h3>
-                    Jack
-                </h3>
-                <h4>
-                    Cost to adopt: $123.45
-                </h4>
-                <p>
-                    Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
-                    Maecenas
-                    feugiat facilisis mi nec vehicula.
-                </p>
-                <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+            <article>
+
+                <img src="images/blog-3.jpg" alt="Man viewing the Grand Canyon with his dog">
+                <h3>Teach Your Dog to Fetch</h3>
+                <p>Iciustiam, et ad quiaes cum que
+                    excea sinciendi qui offic temquas
+                    doluptios dolupta tiandebis nem ut.</p>
+                <a href="./blog.html">Read more >></a>
+
             </article>
 
-            <article class="col-4 row-1">
-                <img src="images/duffy-card.jpg" alt="Tan and white pit bull named Duffy" onclick=" dogInfo('Duffy', 'Pit Bull', '123.45.')">
-                <h3>
-                    Duffy
-                </h3>
-                <h4>
-                    Cost to adopt: $123.45
-                </h4>
-                <p>
-                    Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
-                    Maecenas
-                    feugiat facilisis mi nec vehicula.
-                </p>
-                <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
-            </article>
-
-            <article class="col-1 row-2">
-                <img src="images/lucas-card.jpg" alt="Black gernman sheppard  named Lucas" onclick=" dogInfo('Lucas', 'German Sheppard', '123.45.')">
-                <h3>
-                    Lucas
-                </h3>
-                <h4>
-                    Cost to adopt: $123.45
-                </h4>
-                <p>
-                    Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
-                    Maecenas
-                    feugiat facilisis mi nec vehicula.
-                </p>
-                <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
-            </article>
-
-
-            <article class="col-2 row-2">
-                <img src="images/jake-card.jpg" alt="Light beige and tan retriever named Jake" onclick=" dogInfo('Jake', 'Retriever', '123.45.')">
-                <h3>
-                    Jake
-                </h3>
-                <h4>
-                    Cost to adopt Jake: $123.45
-                </h4>
-                <p>
-                    Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
-                    Maecenas
-                    feugiat facilisis mi nec vehicula.
-                </p>
-                <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
-            </article>
-
-            <article class="col-3 row-2">
-                <img src="images/angus-card.jpg" alt="Tan,white and black boxer named Angus" onclick=" dogInfo('Angus', 'Boxer', '123.45.')">
-                <h3>
-                    Angus
-                </h3>
-                <h4>
-                    Cost to adopt Angus: $123.45
-                </h4>
-                <p>
-                    Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut imperdiet.
-                    Maecenas
-                    feugiat facilisis mi nec vehicula.
-                </p>
-                <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
-            </article>
-
-            <article class="col-4 row-2">
-                <img src="images/violet-card.jpg" alt="Chocolate lab puppy named Violet" onclick=" dogInfo('Violet', 'Chocolate Lab', '123.45.')">
-                <h3>
-                    Violet
-                </h3>
-                <h4>
-                    Cost to adopt Violet: $123.45
-                </h4>
-                <p>
-                    Nullam at urna convallis, ornare turpis ut, fermentum odio. Sed auctor non justo ut
-                    imperdiet.
-                    Maecenas
-                    feugiat facilisis mi nec vehicula.
-                </p>
-                <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
-            </article>
-
-        </div> <!-- end of dogs -->
-
-
-        <button class="more-dogs" type="submit" value="More" name="more">See More
-            Dogs</button>
-
-        <!-- To link I need to figure out the javascript I should use
-        <button class="more-dogs" type="submit" value="More" name="more" onclick="./dogs.html='default.asp'"> See More
-                Dogs</a></button> -->
+        </aside>
     </div>
+    <!-- end of wrapper-home -->
+
 
 
     <footer>
