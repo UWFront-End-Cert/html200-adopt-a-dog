@@ -219,7 +219,9 @@ footer a {
     grid-gap: 1% 1%;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    overflow:auto;
 }
+
 
 .dogs article {
     border: lightgray solid 1px;
