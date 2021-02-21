@@ -39,6 +39,7 @@ h6 {
   margin: 0;
 }
 
+
 /* skip link */
 
 .hidden {
@@ -51,12 +52,19 @@ h6 {
   left: 0;
 }
 
+
 /* header */
 
 header {
   background-image: url("../images/header-image.jpg");
   background-size: cover;
-  padding: 2rem 6rem 6rem;
+  padding: 2rem 4rem 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 2rem 2.5rem 2rem;
+  }
 }
 
 .header-headline {
@@ -83,6 +91,13 @@ header {
 
 .flex-header-checkout-container {
   margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-header-checkout-container {
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
 }
 
 .flex-cart-container {
@@ -123,16 +138,23 @@ header {
   padding-top: 3rem;
 }
 
+
 /* top navigation */
 
 main nav:first-of-type {
   background: #ececec;
   box-shadow: 0rem .2rem .7rem #c9c9c9;
-  padding-left: 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  main nav:first-of-type {
+    padding-left: 0rem auto;
+  }
 }
 
 nav {
   font-weight: 600;
+  padding-left: 5rem;
 }
 
 .flex-nav-container {
@@ -147,26 +169,33 @@ nav {
   flex: 1.5rem;
 }
 
+
 /* add slash after nav menu items */
 
 .nav-slash a::after {
   content: "/";
 }
 
+
 /* container for all pages */
+
 .main-container {
   width: 80%;
   margin: 2rem auto;
 }
 
+
 /* home page container */
+
 .home-main-container {
   display: flex;
   width: 85%;
   margin: 2rem auto;
 }
 
+
 /* home page intro block */
+
 .dogs-column {
   width: 66%;
 }
@@ -177,7 +206,7 @@ nav {
 }
 
 .sidebar {
-  width: 30%;
+  width: 35%;
   padding-left: 3rem;
 }
 
@@ -198,8 +227,25 @@ nav {
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+  .dogs-column {
+    width: 100%;
+  }
+}
+
+
+/* hide sidebar on mobile */
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+
 /* home page dogs grid layout */
-.home-dog-boxes-container {
+
+.home-dogs-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -209,7 +255,21 @@ nav {
   padding-top: 1rem;
 }
 
+@media screen and (max-width: 900px) {
+  .home-dogs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-dogs-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
 /* dogs grid layout */
+
 .dog-boxes-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -224,6 +284,7 @@ nav {
   object-fit: cover;
   max-height: 100%;
 }
+
 
 /* individual dog listings */
 
@@ -244,6 +305,7 @@ nav {
 .p-bold {
   font-weight: bold;
 }
+
 
 /* blog photo/text flex layout */
 
@@ -267,6 +329,7 @@ nav {
   margin-bottom: 2rem;
 }
 
+
 /* links */
 
 a:link {
@@ -280,6 +343,7 @@ nav a {
 footer a {
   color: white;
 }
+
 
 /* footer */
 
@@ -314,6 +378,7 @@ footer {
 .footer-nav-item {
   flex: 1.5rem;
 }
+
 
 /* form */
 
@@ -462,6 +527,7 @@ form img {
   padding: .5rem .5rem 0;
 }
 
+
 /* green buttons in dog boxes and form */
 
 button {
@@ -480,4 +546,3 @@ form button {
 button a {
   color: white;
 }
-
