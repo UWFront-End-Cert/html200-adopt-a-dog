@@ -114,7 +114,6 @@ header button {
 header p {
     font-size: .9rem;
     padding-top: 1rem;
-
 }
 
 header img,
@@ -129,9 +128,6 @@ header button {
         margin-left: 6em;
     }
 }
-
-
-
 
 .cart img {
     width: 30%;
@@ -197,7 +193,6 @@ footer a {
     width: 70%;
 }
 
-
 .intro {
     display: flex;
     flex-direction: row;
@@ -210,7 +205,6 @@ footer a {
     width: 100%;
 }
 
-
 .dogs,
 .all-dogs {
     display: grid;
@@ -222,10 +216,8 @@ footer a {
     overflow:auto;
 }
 
-
 .dogs article {
     border: lightgray solid 1px;
-
 }
 
 @media screen and (max-width: 575px) {
@@ -241,9 +233,6 @@ footer a {
         overflow:auto;
     }
 }
-
-
-
 
 .dog-info button,
 .all-dogs button {
@@ -263,16 +252,12 @@ footer a {
     width: 100%;
 }
 
-
 aside {
     width: 25%;
     margin-left: 5%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-content: center;
-
-
 }
 
 aside img,
@@ -299,6 +284,18 @@ aside img {
     }
 }
 
+.blog-link {
+    display:none;
+    text-align: center;
+    margin-top: 2rem; 
+}
+
+@media screen and (max-width: 575px) {
+    .blog-link  {
+        display: block;
+    }
+}
+
 .more-dogs {
     width: 15rem;
     background-color: lightgray;
@@ -316,25 +313,18 @@ aside img {
     height: 10%;
 }
 
-
 .blog {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: auto;
     grid-gap: 1% 1%;
     margin-top: 3rem;
-    /* margin-bottom: 3rem; */
     padding-right: 5rem;
 }
 
 .blog:nth-child(1) {
     margin-top: 3rem;
 }
-
-/* .blog:nth-child(3) {
-    padding-bottom: 5rem;
-} */
-
 
 .blog img {
     width: 90%;
@@ -354,19 +344,16 @@ fieldset {
     justify-content: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
-
 }
 
 .adopted-column {
     margin-left: 1rem;
 }
 
-
 label,
 legend {
     font-weight: bold;
     padding-bottom: 1rem;
-
 }
 
 input,
@@ -375,8 +362,6 @@ select {
     padding-bottom: .75rem;
     width: 300%;
 }
-
-
 
 .location select {
     width: 25%;
@@ -388,7 +373,6 @@ select {
     justify-content: flex-start;
     align-content: center;
     flex-wrap: wrap;
-
 }
 
 .personal-info input,
@@ -399,10 +383,7 @@ select {
 .city-state input,
 .city-state select {
     margin-top: 1rem;
-
 }
-
-
 
 .city-state input,
 .city-state select {
@@ -473,7 +454,6 @@ footer p,
 footer li {
     color: white;
 }
-
 
 footer img {
     width: 25%;
