@@ -260,6 +260,7 @@ button {
 .blog-link {
     text-align: center;
     margin-top: 2rem;
+    display: none;
 }
 
 @media screen and (max-width: 575px) {
