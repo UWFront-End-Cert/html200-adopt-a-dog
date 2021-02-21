@@ -203,10 +203,10 @@ input, select, textarea, label {
   color: #29465b;
   font-size: 1.2rem;
   box-sizing: border-box;
-  display: block;
+  display: ;
   width: 100vh;
   line-height: 28px;
-  margin: .5rem 0px .5rem 0px;
+  margin: .5rem 0px;
 }
 
 input {
@@ -215,7 +215,6 @@ input {
   font-size: 1rem;
   color: #000;
   border-radius: 0px;
-  margin-bottom: 1.2rem;
 }
 
 input[type="submit"] {
@@ -231,14 +230,23 @@ input[type="submit"] {
   border-radius: .2rem;
 }
 
+form {
+}
+
 .checkoutform {
   margin-left: 6rem;
   margin-right: 20rem;
   padding-top: 20px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 80px 80px;
+  grid-gap: .5rem;
+}
+
 .citystatezip {
-  padding-right: 396px;
+  display: inline-block;
   padding-top: 0px;
 }
 
