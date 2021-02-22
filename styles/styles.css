@@ -76,7 +76,7 @@ header {
 
 .flex-header-container {
   display: flex;
-  height: 17rem;
+  height: 20rem;
   flex-wrap: wrap;
 }
 
@@ -95,7 +95,6 @@ header {
 
 @media screen and (max-width: 600px) {
   .flex-header-checkout-container {
-    margin: 0 auto;
     padding-top: 2rem;
   }
 }
@@ -180,7 +179,7 @@ nav {
 /* container for all pages */
 
 .main-container {
-  width: 80%;
+  width: 85%;
   margin: 2rem auto;
 }
 
@@ -278,6 +277,17 @@ nav {
   grid-auto-rows: auto;
   width: 100%;
   padding-top: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .dog-boxes-container {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+@media screen and (max-width: 600px) {
+  .dog-boxes-container {
+    grid-template-columns: repeat(1, 1fr)
+  }
 }
 
 .dog-box>img {
