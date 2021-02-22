@@ -175,7 +175,7 @@ header {
 }
 
 @media print {
-  button, .green-button, .flex-nav-container, .flex-header-checkout-container {
+  nav, button, .green-button, .flex-nav-container, .flex-header-checkout-container {
     display: none;
   }
 }
@@ -216,13 +216,6 @@ nav {
 .flex-nav-item {
   flex: 1.5rem;
 }
-
-@media print {
-  nav, .flex-nav-container, .flex-nav-item {
-    display: none;
-  }
-}
-
 
 /* add slash after nav menu items */
 
