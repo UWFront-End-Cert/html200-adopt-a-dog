@@ -5,6 +5,7 @@ body {
   padding: 0;
   border: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 h3 {
@@ -21,7 +22,6 @@ h4 {
 h5 {
   color: #3b6860;
   font: 1.3rem "Irish Grover", cursive;
-  margin:1rem;
 }
 p {
   font: 1rem/1.5rem Arial, Helvetica, sans-serif;
@@ -62,25 +62,21 @@ a:hover h4, a:active h4 {
   color: #ffffad;
   text-shadow: .2rem .2rem .3rem #274841;
 }
+
 /* Header styling */
+
 header {
   width: 100%;
   height: auto;
   background: url("../images/header-image.jpg");
-  padding: 0;
+  background-clip: border-box;
+  padding: 2rem 2rem 0 0;
   border: 0;
   margin: 0;
-  display: grid;
-  grid-template-areas:
-    "title title cart"
-    "spacer spacer spacer"
-    "nav nav nav";
-  grid-gap: 0;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: minmax(3rem, auto);
 }
 .title {
   grid-area: title;
+  width: 100%;
   padding: 2rem;
   display: flex;
   flex-flow: column wrap;
@@ -97,7 +93,7 @@ h1 {
 h1::before {
   display: inline-block;
   content: url("../images/adoptadog-logo-small.svg");
-  width: 5rem;
+  width: 4.5rem;
 }
 h2 {
   color: #85bbb1;
@@ -108,10 +104,11 @@ h2 {
 }
 .cartinfo {
   grid-area: cart;
+  width: 100%;
   margin-right: 0;
   margin-left: auto;
-  max-width: 14rem;
-  max-height: 14rem;
+  /*max-width: 14rem;
+  max-height: 14rem;*/
   padding: 2rem;
   display: flex;
   flex-flow: row wrap;
@@ -131,36 +128,46 @@ header  p {
   color: #ffffff;
 }
 header a.button {
-  margin-right: 2rem;
+  margin: 2rem;
 }
 header > nav {
   display: block;
-  padding: .5rem .5rem .5rem 3rem;
+  padding: .5rem .5rem .5rem 1.5rem;
   grid-area: nav;
   width: 100%;
   background-color: #bfbfbf;
+  border: 0;
+  margin: 0;
 }
 nav > ul {
   list-style-type: none;
+  padding: 0;
 }
 nav li {
   display: inline-block;
   padding: 1rem;
 }
+
 /* Main styling */
+
 main {
   margin: 0;
   border: 0;
-  padding: 4rem;
+  box-sizing: border-box;
 }
 article {
   display: block;
+  grid-column-start: 1;
+  grid-row-start: 1;
   height: auto;
   padding: 1rem;
   margin-bottom: 3rem;
   box-sizing: border-box;
 }
-article > img {
+.intro > img {
+  max-width: 100%;
+}
+.blog-article > img {
   float: left;
   object-fit: contain;
   padding: 2rem;
@@ -177,34 +184,36 @@ article > p {
   margin: 0;
   box-sizing: border-box;
 }
-div.dogfolio {
+.dogfolio {
   display: flex;
+  grid-column-start: 1;
+  grid-row-start: 2;
   width: 100%;
   flex-flow: row wrap;
   padding: 2rem;
   box-sizing: border-box;
 }
-div.dogcard {
+.dogcard {
   display: inline-flex;
   flex-flow: column wrap;
   align-items: center;
   margin: 1.25rem;
-  box-shadow: 0 0 .2rem .2rem #815437;
-  padding: 0rem;
+  box-shadow: 0 0 .15rem .15rem #724b31;
+  padding: 0 0 .5rem 0;
   box-sizing: border-box;
 }
-div.dogcard span {
+.dogcard span {
   font-weight: bold;
 }
-div.dogcard h4 {
+.dogcard h4 {
   text-align: center;
   margin: .5rem auto 0 auto;
 }
-div.dogcard p {
+.dogcard p {
   margin: .5rem;
   align-self: flex-start;
 }
-div.dogcard p + a {
+.dogcard p + a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -215,78 +224,211 @@ div.dogcard p + a {
 .dogpic {
   width: 100%;
 }
-@media screen and (min-width: 1200px) {
-  div.dogcard {
-    width: 20%;
+@media screen and (min-width: 1024px) {
+  header {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-areas:
+      "title title cart"
+      "spacer spacer spacer"
+      "nav nav nav";
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(3rem, auto);
   }
-  div.dogcard > p {
-    font-size: .75rem;
+  main {
+    padding: 3rem 5rem;
   }
-}
-@media screen and (max-width: 1200px) {
-  div.dogcard {
+  .index {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-column-gap: 3rem;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 0;
+  }
+  .dogcard {
     width: 28%;
   }
-  div.dogcard > p {
+  .dogcard > p {
     font-size: .75rem;
   }
 }
-@media screen and (max-width: 600px) {
-  div.dogcard {
-    width: 45%;
+@media screen and (max-width: 1024px) {
+  header {
+  display: grid;
+  box-sizing: border-box;
+    grid-template-areas:
+      "title title cart"
+      "spacer spacer spacer"
+      "nav nav nav";
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(3rem, auto);
   }
-  div.dogcard > p {
+  main {
+    padding: 2rem 3rem;
+  }
+  .index {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-column-gap: 2rem;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 0;
+  }
+  .dogcard {
+    width: 42%;
+  }
+  .dogcard > p {
     font-size: .75rem;
   }
 }
-@media screen and (max-width: 400px) {
-  div.dogcard {
+@media screen and (max-width: 768px) {
+  header {
+  display: grid;
+  box-sizing: border-box;
+    grid-template-areas:
+      "title title cart"
+      "spacer spacer spacer"
+      "nav nav nav";
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(3rem, auto);
+  }
+  .index {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-column-gap: 2rem;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 0;
+  }
+  .cartinfo {
+    margin-right: auto;
+  }
+  .dogcard {
     width: 100%;
   }
+  .dogcard > p {
+    font-size: .75rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h1::before {
+    width: 3.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 }
+@media screen and (max-width: 576px) {
+  header {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    text-align: center;
+  }
+  .cartinfo {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h1::before {
+    width: 2.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  nav li {
+    padding: .5rem;
+  }
+  main {
+    padding: 1rem;
+  }
+  .index {
+    display: block;
+  }
+  .dogcard {
+    width: 100%;
+  }
+  aside {
+    display: none;
+  }
+}
+aside {
+  grid-column-start: 2;
+  grid-row: 1 / 3;
+  border: 0;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  box-sizing: border-box;
+}
+aside h3 {
+  margin-top: 0;
+}
+.blog-excerpt {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.blog-excerpt img {
+  object-fit: contain;
+  max-width: 100%;
+}
+.blog-excerpt h5 {
+  margin: 1rem 0;
+}
+.blog-excerpt p {
+  font-size: .8rem;
+}
+.see-more-dogs {
+  grid-column: 1 / 3;
+  grid-row-start: 3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 /* Footer styling */
+
 footer {
   display: block;
   width: 100%;
-  background-color: #3b6860;
+  background-color: #274841;
   color: #ffffff;
   padding: 4em;
   text-align: center;
   box-sizing: border-box;
-}
-footer h1 {
-  font-size: 3.5rem;
-}
-footer h1::before {
-  width: 4rem;
 }
 footer a:link, footer a:visited {
   color: #ffffff;
 }
 footer a:hover, footer a:active {
   color: #ffffad;
-  text-shadow: .2rem .2rem .3rem #1d3530;
+  text-shadow: .2rem .2rem .3rem #0e1b18;
 }
+
 /* Form styling */
+
 form {
   font: 1.2rem/1.5rem Arial, Helvetica, sans-serif;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   form {
     width: 50%;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   form {
     width: 67%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   form {
     width: 100%;
   }
 }
-
 label, legend {
   display: block;
   padding: .5rem;
@@ -294,7 +436,7 @@ label, legend {
 .indent {
   padding: .3rem 1.5rem;
 }
-div.checkout-card {
+.checkout-card {
   max-width: 10rem;
   display: inline-flex;
   flex-flow: column wrap;
@@ -304,10 +446,13 @@ div.checkout-card {
   padding: 0rem;
   box-sizing: border-box;
 }
-div.checkout-card span {
+.checkout-card h5 {
+  margin: 1rem;
+}
+.checkout-card span {
   font-weight: bold;
 }
-div.checkout-card p {
+.checkout-card p {
   margin: 1rem;
   font-size: .75rem;
 }
