@@ -168,17 +168,15 @@ li a {
 }
 
 .intro {
-  grid-column: 1 / 7;
-  grid-row: 1;
   background-image: url("../images/home-intro-large.jpg");
-  background-size: cover; /* fit image into grid */
   margin-top: 1rem;
-  height: 75vh;
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
 }
 
 .intro-copy {
-  grid-column: 1 / 7;
-  grid-row: 2;
+
 }
 
 .intro-copy > p {
@@ -308,6 +306,22 @@ form {
 .btn-seemoredogs > a {
   text-decoration: none;
   color: #29465b;
+}
+
+.flex-row-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 0 2rem 2rem 0;
+  width: 200px;
+  height: auto;
+  border: 1px solid;
 }
 
 
