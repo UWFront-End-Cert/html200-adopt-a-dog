@@ -67,10 +67,23 @@ header {
   }
 }
 
+@media screen and (max-width: 320px) {
+  header {
+    padding-left: .6rem;
+  }
+}
+
 .header-headline {
   color: #81b741;
   font-style: italic;
   line-height: .2rem;
+}
+
+@media screen and (max-width: 320px) {
+  header h2 {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+  }
 }
 
 .flex-header-container {
@@ -78,6 +91,9 @@ header {
   height: 20rem;
   flex-wrap: wrap;
 }
+
+
+/* logo & tagline */
 
 .flex-header-logo-container {
   flex: 1;
@@ -87,6 +103,9 @@ header {
 .flex-header-logo-container img {
   width: 18.5rem;
 }
+
+
+/* cart, price, checkout button */
 
 .flex-header-checkout-container {
   margin: 0;
@@ -99,10 +118,16 @@ header {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .flex-header-checkout-container {
+    padding-top: 1rem;
+    margin-left: 5.5rem;
+  }
+}
+
 .flex-cart-container {
   display: flex;
   height: 3rem;
-  width: 120px;
   flex-wrap: nowrap;
 }
 
@@ -143,25 +168,31 @@ header {
 main nav:first-of-type {
   background: #ececec;
   box-shadow: 0rem .2rem .7rem #c9c9c9;
+  padding-left: 5.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   main nav:first-of-type {
-    padding-left: 0rem auto;
+    padding-left: 5.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main nav:first-of-type {
+    padding-left: 4rem;
   }
 }
 
 nav {
   font-weight: 600;
-  padding-left: 5rem;
 }
 
 .flex-nav-container {
   display: flex;
-  width: 250px;
+  width: 15rem;
   height: 3rem;
   flex-wrap: nowrap;
-  padding: .8rem 0rem 1.5rem;
+  padding-top: .8rem;
 }
 
 .flex-nav-item {
@@ -176,7 +207,7 @@ nav {
 }
 
 
-/* container for all pages */
+/* main container for all pages */
 
 .main-container {
   width: 85%;
@@ -203,6 +234,9 @@ nav {
   object-fit: cover;
   width: 100%;
 }
+
+
+/* home page blog sidebar */
 
 .sidebar {
   width: 35%;
@@ -408,6 +442,10 @@ footer {
 
 .footer-nav-item {
   flex: 1.5rem;
+}
+
+footer nav {
+  padding-left: 1rem;
 }
 
 
