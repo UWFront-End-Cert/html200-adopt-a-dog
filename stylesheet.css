@@ -1,6 +1,16 @@
 ﻿body {
 }
 
+.shopping-cart{
+    width: 30px;
+    height: auto;
+}
+
+.btn {
+    background-color: #81B741;
+    color: white;
+    width: 100px;
+}
 
 .grid-container {
     display: grid;
