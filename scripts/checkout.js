@@ -5,3 +5,9 @@ function submitAlert() {
 }
 
 // console.log field inputs
+let formFields = [];
+let data = document.getElementsByTagName ('input');
+console.log(formFields);
+
+
+

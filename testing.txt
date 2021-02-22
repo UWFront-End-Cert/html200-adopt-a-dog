@@ -1,13 +1,34 @@
 TESTING
 
-Firefox (Version 82.0.2)
-Mobile – 576px breakpoint
-Tablet – 768px breakpoint
-Desktop – 992px breakpoint
+Fixes
+Mobile (576px breakpoint)
+- Width of navigation bar wasn’t set to 100% so it was stopping short of viewing area to the right
+- Centered/expanded checkout button and total on mobile by adding media query
+- Added media query to decrease padding-left and right on mobile of main content well area
 
-Google Chrome (Version 88.0.4324.146)
+The site was tested on the following browsers at listed breakpoints:
 
 IE (Version 1809)
+Site performed well in IE, no major issues noted. 
+- Mobile – 576px breakpoint
+- Tablet – 768px breakpoint
+- Desktop – 992px breakpoint
+
+Google Chrome (Version 88.0.4324.146)
+Site performed well in Google Chrome, no major issues noted. 
+- Mobile – 576px breakpoint
+- Tablet – 768px breakpoint
+- Desktop – 992px breakpoint
+
+Firefox (Version 82.0.2)
+Site performed well in Google Chrome, no major issues noted.
+- Mobile – 576px breakpoint
+- Tablet – 768px breakpoint
+- Desktop – 992px breakpoint
+
+
+
+
 
 
 

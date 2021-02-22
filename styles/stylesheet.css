@@ -42,6 +42,7 @@ header {
   margin-right: auto;
   margin-left: auto;
   padding: 1rem 6rem 1rem 6rem;
+  width: 100%;
 }
 h1 {
   color: #0D3D60;
@@ -130,6 +131,16 @@ p#header-total {
   float: right;
   text-align: right;
 }
+@media screen and (max-width: 576px) {
+ .header-container-2 {
+  display: block;
+  text-align: center;
+  float: left;
+  width: 300px;
+  padding: 20px;
+  }
+}
+
 .primary-button {
   background-color: #82B841;
   border-radius: 2.5px;
@@ -219,6 +230,26 @@ width: 20%;
     text-decoration: none;
     width: 100%;
     text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-content-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-bar {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
   }
 }
 #blog-content {
