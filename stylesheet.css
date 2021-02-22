@@ -1,2 +1,65 @@
 ﻿body {
 }
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header' 'nav ' 'main '  'footer ';
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template-areas: 'left middle right';
+}
+
+.middle {
+    grid-area: middle;
+    grid-column: 1/span 3;
+}
+
+.left {
+    grid-area: left;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.right {
+    grid-area: right;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: blue;
+}
+
+li {
+    display: inline;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.logo-text {
+    margin: 0em;
+    font-size:x-large; 
+    color: rgb(129, 183, 65); 
+    padding-left: 100px;
+}
+
+.nav {
+    display: inline;
+    grid-area: nav;
+    background-color: lightgray;
+    font-size: 25px;
+    padding-left: 100px;
+    height: 130px;
+    align-items: center;
+}
+
