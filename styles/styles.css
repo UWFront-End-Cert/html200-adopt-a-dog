@@ -39,6 +39,12 @@ h6 {
   margin: 0;
 }
 
+@media print {
+  h1, h2, h3, h4, h5, h6, p {
+    color: black
+  }
+}
+
 
 /* skip link */
 
@@ -77,6 +83,12 @@ header {
   color: #81b741;
   font-style: italic;
   line-height: .2rem;
+}
+
+@media print {
+  .header-headline {
+    color: black;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -162,6 +174,12 @@ header {
   padding-top: 3rem;
 }
 
+@media print {
+  button, .green-button, .flex-nav-container, .flex-header-checkout-container {
+    display: none;
+  }
+}
+
 
 /* top navigation */
 
@@ -197,6 +215,12 @@ nav {
 
 .flex-nav-item {
   flex: 1.5rem;
+}
+
+@media print {
+  nav, .flex-nav-container, .flex-nav-item {
+    display: none;
+  }
 }
 
 
@@ -337,6 +361,13 @@ nav {
   box-shadow: 0rem .2rem .7rem #c9c9c9;
   font-size: .7rem;
   line-height: 1.2rem;
+}
+
+@media print {
+  .dog-box {
+    box-shadow: none;
+    border: 1px black;
+  }
 }
 
 .dog-box img {
