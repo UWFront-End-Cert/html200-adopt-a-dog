@@ -10,4 +10,6 @@
 
 <h2>Documentation</h2>
 <h3>Testing</h3>
-<p>The site was tested across several browsers. This included Google Chrome, Firefox and Internet Explorer. To access the full testing documentation, please refer to the following: </p>
+<p>The site was tested across several browsers. This included Google Chrome, Firefox and Internet Explorer. To access the full testing documentation, please refer to the testing.txt file in the following repository: <a href="https://github.com/Mbochman034/html200-adopt-a-dog">https://github.com/Mbochman034/html200-adopt-a-dog</a>
+</p>
+
