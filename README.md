@@ -20,3 +20,6 @@
 
 <h2>Licensing</h2>
 <p>The <strong>Adopt a Dog</strong> website is licensed under the GNU Public License V3</p>
+
+<h2>Contact Us</h2>
+<p>Please don't hesitate to <a href="mailto:adoptadogcontact@gmail.com">email the Adopt a Dog team</a> if you have any questions or suggestions. We'd love to hear from you!</p>
