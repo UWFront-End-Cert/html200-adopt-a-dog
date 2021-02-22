@@ -13,7 +13,6 @@
 <p>The site was tested across several browsers. This included Google Chrome, Firefox and Internet Explorer. To access the full testing documentation, please refer to the <strong>testing.txt</strong> file in the following repository: <a href="https://github.com/Mbochman034/html200-adopt-a-dog">https://github.com/Mbochman034/html200-adopt-a-dog</a>
 </p>
 
-
 <h3>Research</h3>
 <p>The site was built using a user-centric approach. To better understand our users, user personas were populated to refer to while building the site. This ensured the population that most uses the site were able to access using their prefered devices. Please refer to the <strong>personas.pdf</strong> file in the following repository: <a href="https://github.com/Mbochman034/html200-adopt-a-dog">https://github.com/Mbochman034/html200-adopt-a-dog</a>
 </p>
