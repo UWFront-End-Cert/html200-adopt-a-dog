@@ -10,3 +10,4 @@
 
 <h2>Documentation</h2>
 <h3>Testing</h3>
+<p>The site was tested across several browsers. This included Google Chrome, Firefox and Internet Explorer. To access the full testing documentation, please refer to the following: </p>
