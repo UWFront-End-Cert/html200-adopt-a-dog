@@ -15,6 +15,8 @@
 
 
 <h3>Research</h3>
-<p>The site was built using a user-centric approach. To better understand our users, user personas were populated to refer to while building the site. This ensured the population that most uses the site were able to access using their prefered devices. Please refer to the <strong>user-persona.pdf</strong> file in the following repository: <a href="https://github.com/Mbochman034/html200-adopt-a-dog">https://github.com/Mbochman034/html200-adopt-a-dog</a>
+<p>The site was built using a user-centric approach. To better understand our users, user personas were populated to refer to while building the site. This ensured the population that most uses the site were able to access using their prefered devices. Please refer to the <strong>personas.pdf</strong> file in the following repository: <a href="https://github.com/Mbochman034/html200-adopt-a-dog">https://github.com/Mbochman034/html200-adopt-a-dog</a>
 </p>
 
+<h2>Licensing</h2>
+<p>The <strong>Adopt a Dog</strong> website is licensed under the GNU Public License V3</p>
