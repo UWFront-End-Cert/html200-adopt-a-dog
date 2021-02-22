@@ -11,8 +11,10 @@
 
 <body>
   <header>
-    <img class="svg-dog-header" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
-    <p>Seattle's premiere dog adoption agency</p>
+    <div>
+      <img class="svg-dog-header" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
+      <p>Seattle's premiere dog adoption agency</p>
+    </div>
     <div>
       <img class="svg-cart" src="images/cart-icon.svg" alt="checkout cart icon">
       <input class="cart-btn" type="submit" value="Checkout">
@@ -74,21 +76,22 @@
           <option value="bellevue">Bellevue</option>
         </select>
       </label>
-
-      <h3>Dogs Adopted</h3>
-      <div class="dogs-adopted">
-        <img class="checkout-image" src="images/lucas-card.jpg" alt="A picture of dog lucas">
-        <h3>Lucas</h3>
-        <p>Cost to Adopt: $123.45</p>
-
-        <img class="checkout-image" src="images/duffy-card.jpg" alt="A picture of dog duffy">
-        <h3>Duffy</h3>
-        <p>Cost to Adopt: $123.45</p>
-      </div>
-
-      <label>Total Adoption Cost
-        <input type="submit" name="adoptionTotal">
-      </label>
+      <section>
+        <h3>Dogs Adopted</h3>
+        <div class="dogs-adopted">
+          <img class="checkout-image" src="images/lucas-card.jpg" alt="Dog lucas">
+          <h3>Lucas</h3>
+          <p>Cost to Adopt: $123.45</p>
+          <img class="checkout-image" src="images/duffy-card.jpg" alt="Dog duffy">
+          <h3>Duffy</h3>
+          <p>Cost to Adopt: $123.45</p>
+        </div>
+        <div>
+          <label>Total Adoption Cost
+            <input type="submit" name="adoptionTotal">
+          </label>
+        </div>
+      </section>
     </form>
   </main>
   <footer class="svg-dog-footer">

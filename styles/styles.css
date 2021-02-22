@@ -67,7 +67,9 @@ body {
     flex-direction: column;
     padding-left: 2%;
   }
+
   /*--------index.html-----*/
+
   /* section boy hugging dog */
   .flex-container-top {
     display: flex;
@@ -87,6 +89,16 @@ body {
     padding: 5rem;
     flex-wrap: wrap;
   }
+  .row-one {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  .row-two {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
   /*----Dog Card Info---*/
   .dog-card {
     border: 4px solid black;
@@ -101,9 +113,6 @@ body {
   .dog-card > .dog-item-image {
     width: 100%;
     padding: 0;
-  }
-  .dog-content {
-    padding: .5rem;
   }
   .flex-dog-button {
     background-color: #33cc33;
@@ -124,16 +133,21 @@ body {
     text-decoration: none;
     font-family: "Times New Roman", Times,  serif;
   }
-  /*-----Dog Listing html--->
-  /*-----section-blog--------*/
+  /*-----Dog Card Bottom---*/
+/*------Dog Listing Cared---*/
+.dog-listing-title {
+  margin-left: 2rem;
+}
+
+
+
+
+/*------Dog-blog html ___*/
   .blog-adoptadog-h1 {
     padding: 2rem;
     margin: 0;
   }
- .dog-listing-title {
-   margin-left: 2rem;
-
- }
+ 
   .container-blog {
     display: flex;
     flex-direction: row;
@@ -155,8 +169,10 @@ body {
     padding: .5rem;
     margin: 0;
   }
-  /*--------checkout form --------*/
+  /*---Dog Blog Bottom----*/
   
+  
+  /*--------checkout form --------*/
   /*-------section-checkout form-------*/
   input {
     font-family: inherit;
@@ -198,15 +214,7 @@ body {
     border-color: #c0c0c0;
     box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
   }
-  .dog-pickup {
-    display: inline;
-    padding-top: 10rem;
-  }
-  .dog-select {
-    display: flex;
-    flex-direction: row;
-    width: 30%
-  }
+
   fieldset {
     width: 25%;
   }
