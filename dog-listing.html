@@ -11,13 +11,14 @@
 
 <body>
   <header>
+    <div class="cart-checkout">
+      <img class="svg-cart" src="images/cart-icon.svg" alt="checkout cart icon">
+      <label>$1234.56</label>
+      <input class="cart-btn" type="submit" value="Checkout">
+    </div>
     <div>
       <img class="svg-dog-header" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
       <p>Seattle's premiere dog adoption agency</p>
-    </div>
-    <div>
-      <img class="svg-cart" src="images/cart-icon.svg" alt="checkout cart icon">
-      <input class="cart-btn" type="submit" value="Checkout">
     </div>
   </header>
   <main>
@@ -31,7 +32,7 @@
       <div>
         <h2 class="dog-listing-title">Here are all the Dogs!</h2>
       </div>
-      <div>
+      <div class="row-one">
         <article class="dog-card">
           <img class="dog-item-image" src="images/murphy-card.jpg" alt="Dog murphy"
             onClick="clickHandler('Dogs Name: Murphy, Dog Breed:Bracco Italiano, Cost: $1,000.00')">
@@ -69,7 +70,7 @@
           <button class="flex-dog-button">Adopt</button>
         </article>
       </div>
-      <div>
+      <div class="row-two">
         <article class="dog-card">
           <img class="dog-item-image" src="images/lucas-card.jpg" alt="Dog lucas"
             onClick="clickHandler('Dogs Name: Lucas, Dog Breed: Protugese Podengo, Cost: $500.00')">
@@ -107,10 +108,10 @@
           <button class="flex-dog-button">Adopt</button>
         </article>
       </div>
-      <div>
+      <div class="row-three">
         <article class="dog-card">
           <img class="dog-item-image" src="images/piper-card.jpg" alt="Dog piper"
-            onClick="clickHandler('Dogs Name: Piper, Dog Breed: Retriever, Cost: $1,000.00')">>
+            onClick="clickHandler('Dogs Name: Piper, Dog Breed: Retriever, Cost: $1,000.00')">
           <h3>Piper</h3>
           <p>Cost to Adopt: $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
@@ -119,7 +120,7 @@
         </article>
         <article class="dog-card">
           <img class="dog-item-image" src="images/maximus-card.jpg" alt="Dog maximus"
-            onClick="clickHandler('Dogs Name: Maximus, Dog Breed: Rat Terrier, Cost: $1,000.00')">>
+            onClick="clickHandler('Dogs Name: Maximus, Dog Breed: Rat Terrier, Cost: $1,000.00')">
           <h3>Maximus</h3>
           <p>Cost to Adopt: $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
@@ -128,7 +129,7 @@
         </article>
         <article class="dog-card">
           <img class="dog-item-image" src="images/luna-card.jpg" alt="Dog luna"
-            onClick="clickHandler('Dogs Name: Luna, Dog Breed: Golden lab, Cost: $1,000.00')">>
+            onClick="clickHandler('Dogs Name: Luna, Dog Breed: Golden lab, Cost: $1,000.00')">
           <h3>Luna</h3>
           <p>Cost to Adopt: $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
@@ -137,7 +138,7 @@
         </article>
         <article class="dog-card">
           <img class="dog-item-image" src="images/stella-card.jpg" alt="Dog stella"
-            onClick="clickHandler('Dogs Name: Stella, Dog Breed: Chihuahua, Cost: $1,000.00')">>
+            onClick="clickHandler('Dogs Name: Stella, Dog Breed: Chihuahua, Cost: $1,000.00')">
           <h3>Stella</h3>
           <p>Cost to Adopt: $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
@@ -153,11 +154,11 @@
     <p>Aborpos nisto inci tet qut que volupti beruptiberro to ex</p>
     <p>esseque invenienihil imaximu scideru ptistiusam consequunt</p>
     <nav class="nav-footer">
-      <a class="nav-item-ft" href="index.html">Home<span class="space">/</span></a>
+      <a class="nav-item-ft copyright" href="index.html">Home<span class="space">/</span></a>
       <a class="nav-item-ft" href="dog-listing.html">Dogs<span class="space">/</span></a>
-      <a class="nav-item-head" href="checkout.html">Checkout</a>
+      <a class="nav-item-ft" href="checkout.html">Checkout</a>
     </nav>
-    <p>2018 Adoptadog, LLC | Seattle, WA</p>
+    <p>@ 2018 Adoptadog, LLC | Seattle, WA</p>
   </footer>
 </body>
 
