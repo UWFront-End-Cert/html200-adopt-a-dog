@@ -138,15 +138,32 @@ li:first-of-type {
   margin-right: 5rem;
 }
 .container3 {
-  display: flex;
-  flex-flow: row wrap;
-  margin-left: 3rem;
+  /* display: flex;
+  flex-flow: column wrap; */
+  margin-left: 5rem;
+  border: 1px solid red;
+  /* position: absolute; */
+  /* justify-content: center; */
 }
 .container3 img {
-  width: 100%;
+  /* min-width: 100%; */
+  /* height: auto; */
+  margin-left: 1rem;
+  margin-top: 1rem;
+  max-width: 30rem;
   height: auto;
-  margin-left: 5rem;
-  margin-top: 5rem;
+  /* width: auto;
+  max-height: 25rem; */
+  margin-bottom: 1rem;
+  /* clear: both; */
+  /* margin-right: 1rem; */
+  /* float: right; */
+  /* display: block; */
+
+  /*
+  /* max-height: 20rem; */ */
+  /* height: auto; */
+  align-items: center;
 }
 /* img.container3 {
   position: relative;
@@ -157,26 +174,29 @@ p.container3 {
   float: right;
   text-align: center;
 } */
-.imgresize {
+/* .imgresize {
   min-width: 15rem;
   max-width: 20rem;
   height: auto;
-}
+} */
 .container4 {
-  display: flex;
-  flex-flow: column wrap;
-  float: right;
+  /* display: flex;
+  flex-flow: row wrap; */
+  /* float: right; */
   margin-left: 2rem;
   font-size: 1.2em;
-  width: 30rem;
+  /* width: 30rem; */
   min-width: 30rem;
-  margin-right: 10rem;
+  margin-right: 2rem;
+  border: 1px solid red;
+  align-items: center;
 }
 .container5, .container6 {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   position: relative;
+  margin-left: 3rem;
   /* flex: 1 1 auto; */
   /* clear: both; */
 }
@@ -190,11 +210,12 @@ p.container3 {
   flex-direction: column;
   margin-top: 2rem;
   padding-bottom: 1rem;
-  width: 15rem;
+  width: 12rem;
 }
 .card-images {
  width: 100%;
  height: auto;
+
 }
 .cardnames {
   margin-left: 1rem;
@@ -220,7 +241,7 @@ p.container3 {
   flex-direction: column;
   margin-top: 2rem;
   padding-bottom: 1rem;
-  width: 15rem;
+  width: 12rem;
   /* clear: both; */
 }
 .item3 {
@@ -257,13 +278,14 @@ p.container3 {
   max-width: 300px;
 }
 footer {
-  display: block;
+  /* display: block; */
   /* flex-flow: column wrap; */
   background-color: #003366;
   align-items: center;
   padding: 3rem;
   text-decoration: none;
   color: white;
+  clear: both;
   /* clear: both; */
   /* position: absolute;
   bottom: 0px; */
@@ -287,8 +309,13 @@ footer p {
 }
 #adoptdogheading {
   color: #003366;
-  margin-left: 5rem;
+  /* margin-left: 1rem; */
+  margin-right: 2rem;
   margin-bottom: 1rem;
+  /* margin-right: 1rem; */
+  align-items: center;
+  border: 1px red solid;
+  /* width: 100%; */
 }
 article p {
   font-weight: lighter;
@@ -379,12 +406,96 @@ nav {
 } */
 .container12 img {
   /* width: 100%; */
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
   /* margin-right: 5rem; */
   margin-left: 2rem;
   max-width: 20rem;
-  max-height: 20rem;
+  /* max-height: 20rem; */
   /* width: auto; */
   /* max-height: 20rem; */
 }
+.float-right {
+  /* display: flex; */
+  float: right;
+  width: 30%;
+  border: 1px solid red;
+  margin-right: 1rem;
+  /* clear: both; */
+}
+.float-left {
+  /* display: flex; */
+  /* float: left; */
+  width: 60%;
+  border: 1px solid red;
+  margin-right: 1rem;
+  /* clear: both;  */
+}
+.container12side img {
+  /* width: 100%; */
+  max-width: 100%;
+  height: auto;
+  /* margin-right: 5rem; */
+  /* margin-left: 2rem; */
+  /* max-height: 15rem; */
+  float: left;
+  /* width: auto; */
+  /* max-height: 20rem; */
+}
+.container12side {
+  /* width: 95%; */
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  margin: 1rem;
+}
+.container8side {
+  display: flex;
+  flex-direction: column;
+  /* float: right; */
+  /* margin-left: 2rem; */
+  font-size: 1rem;
+  width: 100%;
+  /* margin-right: 5rem; */
+}
+
+@media screen and (max-width: 576px) {
+  .item2 {
+    display: block;
+    float: none;
+  }
+  .item1 {
+    display: block;
+    float: none;
+  }
+  .float-right {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (@min-width: 10%) {
+  .float-right
+  .container12 {
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    margin: 2.1rem;
+  }
+}
+.container12 {
+  width: 95%;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  margin: 2.1rem;
