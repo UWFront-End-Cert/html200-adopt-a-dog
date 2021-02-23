@@ -181,3 +181,10 @@ img{
 .pb-4{
   padding-bottom:2rem;
 }
+
+.ml-0{
+  margin-left:0px;
+}
+.mr-0{
+  margin-right:0px;
+}
