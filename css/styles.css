@@ -179,6 +179,7 @@ p.checkout{
   p.checkout{
     display:flex;
     justify-content: flex-end;
+    padding-bottom: .5rem;
   }
 
   .col.cart{
