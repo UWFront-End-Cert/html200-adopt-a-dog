@@ -49,12 +49,16 @@
                          'dog2 dog2 dog2 dog2' 
                          'end end end end';
     padding-left: 200px;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 200px;
 }
 
+h1 {
+    color: #093C60;
+}
+
 .img-three {
-    width: 250px;
+    width: 500px;
     height: auto;
 }
 
