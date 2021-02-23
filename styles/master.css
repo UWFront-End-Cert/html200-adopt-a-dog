@@ -5,6 +5,7 @@ body {
   font-size: 1rem;
   color: #444444;
   font-kerning: normal;
+  font-weight: lighter;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,21 +31,21 @@ p {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
   align-items: flex-start;
   flex-direction: row;
   width: 100%;
 }
 
 .flex-1 {
-width: auto;
+  width: auto;
 }
 
 .flex-2 {
-display: flex;
-width: auto;
-flex-direction: row;
-align-items: flex-end;
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .header-image {
@@ -143,8 +144,7 @@ li a {
 }
 
 
-
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 576px) {
   .card-container {
     display: flex;
     grid-gap: 1.5rem;
@@ -152,26 +152,27 @@ li a {
     margin-left: 6rem;
     margin-right: 6rem;
   }
+}
 
-  .card {
-    flex-direction: row;
-    width: 100%;
+@media screen and (max-width: 768px) {
+  #content-right {
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .card-container {
-    display: felx;
+    display: flex;
     grid-gap: 1rem;
     width: auto;
     margin-left: 6rem;
     margin-right: 6rem;
   }
-}
 
 .intro {
   margin-top: 2rem;
   margin-left: 2rem;
+  margin-right: 1rem;
   height: auto;
   /* width: 100%; */
 }
@@ -183,6 +184,13 @@ li a {
 
 .intro-copy {
     margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.intro-copy > P {
+    font-size: 1.1rem;
+    font-weight: lighter;
+    line-height: 1.6rem;
 }
 
 /************ checkout form ***************/
@@ -266,6 +274,16 @@ input[type="submit"]:active {
     padding-top: 1.75rem;
 }
 
+.blog-image-index {
+    width: 90%;
+}
+
+.blog-readmore > a {
+    font-size: .75rem;
+    text-decoration: none;
+    color: #007fff;
+    margin-bottom: 2rem;
+}
 
 /************ card ***************/
 .img {
@@ -306,28 +324,43 @@ input[type="submit"]:active {
 
 
 #content-left {
-flex: 70%;
+flex: 65%;
 }
 
 #content-right {
 flex: 30%;
+padding-right: 1rem;
+padding-left: 1rem;
 }
 
 .card {
   width: 200px;
-  margin: 0 .4rem .4rem 1rem;
+  margin: 0 0 .1rem .4rem;
   border: 1px solid lightgray;
 }
 
 .card > div {
-padding: .75rem;
+  padding: .75rem;
 }
 
-.card > h5 {
-  color: #000;
+.card > div > h3 {
+  color: #29465b;
+  margin: .1rem 0 -.5rem -.1rem;
+  padding: 0rem;
 }
 
+.card > div > h5 {
+  color: #454545;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem 0 -.5rem -.1rem;
+  padding: 0rem;
+}
 
+.card > div > p {
+  color: #454545;
+  font-size: .9rem;
+  line-height: 1.25rem;
+}
 
 
 /* footer */
