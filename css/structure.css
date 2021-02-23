@@ -30,75 +30,154 @@ img{
   vertical-align: middle;
 }
 
-/**Columns**/
+/**Columns - mobile**/
 .col{
   flex: 1 0 0;
   max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1rem;
+  padding-left:  1rem;
 }
 
-.col-sm-2{
+.col-xs-2{
   flex: 0 0 16.66%;
   max-width:16.66%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
-.col-sm-3{
+.col-xs-3{
   flex: 0 0 25%;
   max-width:25%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
-.col-sm-4{
+.col-xs-4{
   flex: 0 0 33.33%;
   max-width: 33.33%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
-.col-sm-6{
+.col-xs-6{
   flex: 0 0 50%;
   max-width: 50%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
-.col-sm-8{
+.col-xs-8{
   flex: 0 0 66.66%;
   max-width: 66.66%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
-.col-sm-9{
+.col-xs-9{
   flex: 0 0 75%;
   max-width:75%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
-.col-sm-12{
+.col-xs-12{
   flex: 0 0 100%;
   max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
-.col-lg-3{
-  flex: 0 0 25%;
-  max-width:25%;
-  padding-right: 15px;
-  padding-left: 15px;
+.hidden-xs{
+  display: none;
 }
 
-@media screen and (max-width:1000px){
-  .dog-card.col-lg-3{
+.hidden-sm{
+  display: block;
+}
+
+.hidden-md{
+  display: block;
+}
+
+.hidden-lg{
+  display: block;
+}
+
+/**Columns - SMALL**/
+@media screen and (min-width:500px){
+  .hidden-xs{
+    display: block;
+  }
+
+  .hidden-sm{
+    display: none;
+  }
+
+  .col-sm-3{
+    flex: 0 0 25%;
+    max-width:25%;
+  }
+  .col-sm-4{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .col-sm-6{
     flex: 0 0 50%;
     max-width:50%;
   }
+  .col-sm-8{
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+  }
+  .col-sm-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
+
+/**Columns - tablet**/
+
+@media screen and (min-width:768px){
+  .col-md-3{
+    flex: 0 0 25%;
+    max-width:25%;
+  }
+  .col-md-4{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .col-md-6{
+    flex: 0 0 50%;
+    max-width:50%;
+  }
+  .col-md-8{
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+  }
+  .col-md-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .hidden-sm{
+    display: block;
+  }
+
+  .hidden-md{
+    display: none;
+  }
+
+}
+/**Columns - desktop**/
+
+@media screen and (min-width:992px){
+  .col-lg-3{
+    flex: 0 0 25%;
+    max-width:25%;
+  }
+
+  .col-lg-4{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+
+  .hidden-md{
+    display: block;
+  }
+
+  .hidden-lg{
+    display: none;
+  }
+}
 /**spacing**/
+
+.pb-4{
+  padding-bottom:2rem;
+}

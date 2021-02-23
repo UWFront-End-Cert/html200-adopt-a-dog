@@ -28,7 +28,7 @@ h1{
   font-family: var(--title-font);
   color: var(--color-navy);
   font-weight: bold;
-  margin-bottom:2rem;
+  margin-bottom:.75rem;
 }
 
 h2{
@@ -78,12 +78,6 @@ header{
 header{
   background-image: url(../images/header-image.jpg);
   background-size: cover;
-}
-
-.header-top{
-  padding-top:4rem;
-  padding-bottom:13.125rem;
-  margin-bottom: 0 !important;
 }
 
 .header-top, header nav {
@@ -137,10 +131,7 @@ header .cart{
   flex-direction: column;
 }
 
-p.checkout{
-  display:flex;
-  justify-content: flex-end;
-}
+
 
 .checkout strong{
   padding-left: .5rem;
@@ -154,31 +145,50 @@ p.checkout{
   font-family: 'Vollkorn', serif;
 }
 
-@media screen and (max-width:678px){
-  .logo {
-    display:flex;
-    flex-direction:column;
-  }
+.logo {
+  display:flex;
+  flex-direction:column;
+}
 
-  .logo img{
-    margin:auto;
-  }
+.logo img{
+  margin:auto;
+}
 
-  .logo h2{
-    display: flex;
-    justify-content:center;
-  }
+.logo h2{
+  display: flex;
+  justify-content:center;
+}
 
-  p.checkout{
-    justify-content:center;
-  }
+p.checkout{
+  justify-content:center;
+}
 
-  .col.cart{
-    padding-top: 0.5rem;
-  }
+.col.cart{
+  padding-top: 0.5rem;
+}
 
   .header-top{
     padding-bottom:4rem;
+  }
+
+ @media screen and (min-width:678px){
+  .logo , .logo h2{
+    display:block;
+  }
+
+  p.checkout{
+    display:flex;
+    justify-content: flex-end;
+  }
+
+  .col.cart{
+    padding-top: 0;
+  }
+
+  .header-top{
+    padding-top:4rem;
+    padding-bottom:13.125rem;
+    margin-bottom: 0 !important;
   }
 }
 
@@ -191,15 +201,18 @@ footer{
   padding-bottom: 4rem;
 }
 
-.footer-container{
-  max-width: 30%;
-  margin:auto;
-}
 
-@media screen and (max-width:898px){
+
+
  .footer-container{
     max-width: 80%;
+    margin:auto;
   }
+
+@media screen and (min-width:898px){
+.footer-container{
+  max-width: 30%;
+}
 }
 
 footer img{
@@ -308,11 +321,39 @@ form button, .button {
 
 /**blog page***/
 article.blog{
-  margin-bottom:4rem;
+  margin-bottom: 4rem;
 }
 
 .blog-photo{
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar .blog-photo{
+  margin-bottom: 1rem;
+}
+
+.sidebar h2{
+  margin-bottom:0px;
+}
+
+.sidebar h3{
+  font-size:1.5rem;
+}
+
+.blog div p:first-of-type{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 5em;
+}
+
+
+a.blog-btn{
+  color:var(--color-navy);
+  font-weight: bold;
+}
+p .blog-btn{
+  padding-top:1rem;
+  display: block;
 }
 
 /***checkout form**/
