@@ -26,7 +26,9 @@
     grid-template-areas: 'header' 'nav ' 'main '  'footer ';
 }
 
-.footer {
+.footer {  
+    padding-top: 30px;
+    padding-bottom: 30px;
     grid-area: footer;
     color: white;
     background-color: #093C60;
@@ -35,14 +37,30 @@
 
 
 .img-two {
-    width: 100px;
+    width: 300px;
     height: auto;
 }
 
 .main {
     display: grid;
     grid-area: main;
+    grid-template-areas: 'photo description description description' 
+                         'dog dog dog dog' 
+                         'dog2 dog2 dog2 dog2' 
+                         'end end end end';
     padding-left: 200px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.img-three {
+    width: 250px;
+    height: auto;
+}
+
+.nav-two {
+    grid-area: nav;
+    line-height: 50px;
 }
 
 .nav {
@@ -111,6 +129,24 @@ a.one:visited {
 
 a.one:hover {
     color: mediumblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.two:link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.two:visited {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.two:hover {
+    color: white;
     font-weight: bold;
     text-decoration: none;
 }
