@@ -1,0 +1,33 @@
+/*--- Desktop 960px, Tablet 760px, mobile 480px---*/
+
+
+@media screen (max-width: 500px) {
+
+}
+
+@media screen (max-width: 500px) {
+
+}
+
+@media screen (max-width: 500px) {
+
+}
+
+@media screen (max-width: 500px) {
+
+}
+
+@media all and (max-width: 500px) {
+
+}
+
+@media print {
+    body {
+        color: white;
+}
+}
+@media (orientation: landscape), (max-width: 500px) {
+    .title {
+        color: white;
+    }
+}

@@ -6,14 +6,13 @@ body {
   }
   /*--------Header-All-pages------*/
   header {
+    width: 100%;
     background-image: url(../images/header-image.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
     background-size: cover;
-    max-height: 100%;
-    max-width: 100%;
     height: 25rem;
   }
+
+
   header p {
     color: #7CFC00;
     padding-left: 6rem;
@@ -22,11 +21,8 @@ body {
     margin: 0;
   }
   .svg-dog-header {
-    width: 20%;
-    height: auto;
-    padding-left: 6rem;
-    padding-top: 5rem;
-  
+    width: 25%;
+    padding-left: 6rem; 
   }
   .cart-checkout {
     display: flex;
@@ -37,11 +33,18 @@ body {
     justify-content: center;
   }
   .svg-cart {
-    width: 2%;
+    width: 15%;
     height: 5%;
     padding-bottom: .5rem;
+    color: white;
   }
- /* .svg-cart img p {
+  .price {
+    color: white;
+  }
+  .cart-box {
+    text-align: flex-end;
+  }
+/* .svg-cart img p {
     display: block;
     flex-direction: row;
   }*/
@@ -79,13 +82,10 @@ main {
   .adopt-a-dog-intro {
     width: 100%;
     display: flex;
-    flex-direction:row;
     flex-wrap: wrap;
   }
     /* section boy hugging dog */
     .flex-container-top {
-      display: flex;
-      flex-direction: row;
       height: 100%;
       /*align-items: flex-start;
       justify-content: flex-start;*/
@@ -93,13 +93,13 @@ main {
     .index-image-top {
       display: flex;
       align-items: flex-start;
-      width: 70%;
+      width: 80%;
       padding: 3rem 0 3rem 0;
     }
     .title-about {
       width: 50%;
       color: #008080;
-      font-size: 1rem;;
+      font-size: 1.2rem;;
       padding-top: 2rem;
       line-height: 1.5rem;
     }
@@ -116,22 +116,16 @@ main {
   }
   .row-one {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding-bottom: 2rem;
     gap: 2rem;
   }
   .row-two {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding-bottom: 1rem;
     gap: 2rem;
   }
   .row-three {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding-bottom: 1rem;
     gap: 2rem;
   }
@@ -144,7 +138,6 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     box-sizing: border-box;
-    justify-content: space-around;
     align-items: center;
   }
   .dog-card > .dog-item-image {
@@ -152,8 +145,9 @@ main {
     padding: 0;
   }
 .dog-card p {
+  text-align:inherit;
   align-items: center;
-  padding: 0;
+  padding-left: .5rem;
 }
 
   .flex-dog-button {
@@ -201,7 +195,9 @@ main {
 /*------Dog-blog html ___*/  
 .blog-adoptadog-h1 {
     color: #008080;
-    padding: 2rem;
+    padding: 3rem;
+    padding-left: 0;
+    font-size: 1.5rem;
     margin: 0;
   }
  .container-blog {
@@ -249,23 +245,28 @@ color: black;
   
   /*--------checkout form --------*/
   /*-------section-checkout form-------*/
+  .title-adoptadog {
+    color: #008080;
+    padding: 3rem 0 1rem 0;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
   input {
     font-family: inherit;
     font-size: 100%;
     box-sizing: border-box;
     display: block;
     max-width: 20rem;
+    height: 10%;
   }
   label {
     width: 75%;
     padding-top: .5rem;
     padding-bottom: .5rem;
+
   }
-  .label-other {
-    width: 40%;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-  }
+
   .input-other {
     width: 75%;
   }
@@ -302,15 +303,39 @@ color: black;
     flex-direction: row;
   }
   .checkout-image {
-    width: 10rem;
+    width: 7rem;
+    height: auto;
   }
+ .dogs-adopted {
+  color: #008080;
+  padding: .5rem 0 .5rem 0;
+  font-size: 1.1rem;
+  margin: 0;
+ } 
+.adopted-dogs {
+  display: flex;
+  flex-direction: row:
+}
+.adopted-dog-1 {
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+.adopted-dog-2 {
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 1rem;
+}
+.cost {
+  padding-top: 2rem;
+}
 
   /*-------footer-------*/
   footer {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    text-align: center;
     flex-wrap: wrap;
     width: 100%;
     height: 10%;
@@ -328,11 +353,9 @@ color: black;
   .nav-footer {
     display: flex;
     flex-direction: row;
-    align-items: center;
   }
   .nav-item-ft {
     color: #ffffff;
     text-decoration: none;
-    padding-left: 2rem;
   }
 

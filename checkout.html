@@ -12,8 +12,10 @@
 <body>
   <header>
     <div class="cart-checkout">
-      <img class="svg-cart" src="images/cart-icon.svg" alt="checkout cart icon">
-      <label>$1234.56</label>
+      <div class="cart-box">
+        <img class="svg-cart" src="images/cart-icon.svg" alt="checkout cart icon">
+        <label class="price">$1234.56</label>
+      </div>
       <input class="cart-btn" type="submit" value="Checkout">
     </div>
     <div>
@@ -29,7 +31,7 @@
       <a class="nav-item-head" href="dog-blog.html">Dog Blog<span class="space">/</span></a>
       <a class="nav-item-head" href="checkout.html">Checkout</a>
     </nav>
-    <h2>Checkout</h2>
+    <h2 class="title-adoptadog">Checkout</h2>
     <form method="GET">
       <div class="form-width">
         <label class="label-other">First/Last Name
@@ -78,17 +80,21 @@
         </select>
       </label>
       <section>
-        <h3>Dogs Adopted</h3>
-        <div class="dogs-adopted">
+        <h3 class="dogs-adopted">Dogs Adopted</h3>
+        <div class="adopted-dogs">
           <img class="checkout-image" src="images/lucas-card.jpg" alt="Dog lucas">
-          <h3>Lucas</h3>
-          <p>Cost to Adopt: $123.45</p>
+          <div class="adopted-dog-1">
+            <h3>Lucas</h3>
+            <p>Cost to Adopt: $123.45</p>
+          </div>
           <img class="checkout-image" src="images/duffy-card.jpg" alt="Dog duffy">
-          <h3>Duffy</h3>
-          <p>Cost to Adopt: $123.45</p>
+          <div class="adopted-dog-2">
+            <h3>Duffy</h3>
+            <p>Cost to Adopt: $123.45</p>
+          </div>
         </div>
         <div>
-          <label>Total Adoption Cost
+          <label class="cost">Total Adoption Cost
             <input type="submit" name="adoptionTotal">
           </label>
         </div>
