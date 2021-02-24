@@ -81,6 +81,21 @@
   }
 }
 
+@media print {
+  body {
+    filter: grayscale(100%);
+  }
+  header {
+    display: none;
+  }
+  img:not(.tile-img) {
+    display: none;
+  }
+  p {
+    color: black;
+  }
+}
+
 /*Positioning and Page Sectioning Rules*/
 .hidden {
   position: absolute;
