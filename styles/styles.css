@@ -6,8 +6,22 @@ h1 {
 	color: #0e4769;
 }
 
+h2 {
+	font-size: 2em;
+	font-family: "Lora", serif;
+	font-weight: 700;
+	color: #0e4769;
+}
+
+
 p {
 	font-family: "Open sans", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #3399ff;
+
 }
 
 h3 {
@@ -19,6 +33,11 @@ h3 {
 	margin: 3rem 0 3rem 0;
 }
 
+.cta {
+	color: #3399ff;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+}
 
 /* HEADER STYLING */
 
@@ -181,6 +200,11 @@ main {
 	font-size: 1.4rem;
 }
 
+.index-main {
+	display: grid;
+	grid-template-columns: 70% 1fr;
+	grid-gap: 4rem;
+}
 
 /* DOG CARD CSS */
 
@@ -267,6 +291,10 @@ main {
 		margin: .5rem 1rem;
 	}
 
+	.index-main {
+		grid-gap: 2rem;
+	}
+
 	.about-us {
 		margin-top: 1.5rem;
 		margin-bottom: 1rem;
@@ -288,6 +316,14 @@ main {
 @media only screen and (max-width: 850px) {
 	/* HEADER AND FOOTER STYLING: MEDIA QUERIES */
 	/* Background Image */
+	.index-main {
+		grid-template-columns: 1fr;
+	}
+
+	aside {
+		display: none;
+	}
+
 	.header-top {
 		margin: 0 1.5rem 1.25rem 1.5rem;
 	}
