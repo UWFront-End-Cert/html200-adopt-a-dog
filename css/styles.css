@@ -160,6 +160,7 @@ header .cart{
 }
 
 p.checkout{
+  display: flex;
   justify-content:center;
 }
 
@@ -171,6 +172,7 @@ p.checkout{
     padding-bottom:4rem;
   }
 
+/** SM screens + **/
  @media screen and (min-width:678px){
   .logo , .logo h2{
     display:block;
