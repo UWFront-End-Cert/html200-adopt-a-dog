@@ -12,11 +12,11 @@
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 15% 70% 15%;
+  grid-template-columns: 12.5% 25% 25% 25% 12.5%;
 }
 
 header {
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 5;
   grid-row: 1 / span 1;
   background-image: url("../images/header-image.jpg");
   background-color: #101010;
@@ -28,23 +28,44 @@ header {
   margin-bottom: 1rem;
 }
 
+.grid-left-top {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.grid-left-middle {
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 1;
+}
+
+.grid-left-bottom {
+  grid-column: 2/ span 2;
+  grid-row: 4 / span 1;
+}
+
+.grid-aside-right {
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 2;
+  margin-left: 3rem;
+}
+
 .grid-top {
-  grid-column: 2 / span 1;
+  grid-column: 2 / span 3;
   grid-row: 2 / span 1;
 }
 
 .grid-middle {
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 2;
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 1;
 }
 
 .grid-bottom {
-  grid-column: 2 / span 1;
-  grid-row: 5 / span 1;
+  grid-column: 2 / span 3;
+  grid-row: 4 / span 1;
 }
 
 footer {
-  grid-column: 1 / span 6;
+  grid-column: 1 / span 5;
   grid-row: 6 / span 1;
   background-color: #093c60;
   color: white;
@@ -57,6 +78,15 @@ footer {
   width: 16rem;
   max-width: 40%;
   padding: 1rem 2rem 1rem 0;
+}
+
+.top-img {
+  width: 100%;
+  margin: auto;
+  max-height: 15rem;
+  object-fit: cover;
+  object-position: 50% 75%;
+  padding: 0 0 2rem 0;
 }
 
 .horizontal {
@@ -85,16 +115,16 @@ h1, h2, h3 {
 }
 
 p {
-  font-size: 85%;
-  line-height: 1.4rem;
+  font-size: 1em;
+  line-height: 1.5rem;
   font-weight: lighter;
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 a, button {
   text-decoration: none;
   color: inherit;
-  font-size: 85%;
+  font-size: 0.8em;
   font-weight: bold;
   border: none;
 }
@@ -110,7 +140,7 @@ h4, h5 {
 }
 
 .blog {
-  font-size: 90%;
+  font-size: 0.9em;
   margin: 1rem 0;
 }
 
@@ -126,13 +156,17 @@ h4, h5 {
   font-weight: lighter;
 }
 
+.teal-txt {
+  color: #239AB9;
+}
+
 .green-button {
   position: relative;
   top: 1rem;
   right: 2rem;
   background-color: #81B741;
   color: white;
-  font-size: 80%;
+  font-size: 0.8em;
   margin: 5% 0;
   width: 100%;
   padding: 7% 38%;
@@ -142,7 +176,7 @@ h4, h5 {
 .page-link {
   background-color: #E6E6E6;
   color: #093C60;
-  font-size: 80%;
+  font-size: 0.8em;
   font-weight: bold;
   white-space: nowrap;
   padding: 1% 5%;
@@ -192,12 +226,11 @@ nav.head {
 
 /*Rules for Styling Dog Profile Cards*/
 .tile {
-  margin: 1.5rem 0;
-  width: 8rem;
-  min-width: 21%;
+  margin: 0.75rem 0;
+  width: 15rem;
+  max-width: 31%;
+  /*min-width: 21%;*/
   font-size: 90%;
- /* width: 10rem;
- min-width: 21%;*/
   text-align: left;
   box-shadow: 5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6;
 }
@@ -218,6 +251,23 @@ nav.head {
 .tile-link {
   display: block;
   position: static;
+}
+
+/*Rules for Styling Blog Preview Sidebar*/
+.preview {
+  margin-bottom: 3rem;
+}
+
+.preview-img {
+  width: 100%;
+  max-height: 8rem;
+  object-fit: cover;
+  /*object-position: 50% 35%;*/
+}
+
+.preview-txt {
+  font-size: 0.9em;
+  margin-bottom: 1em;
 }
 
 /*Rules for Styling Form*/
