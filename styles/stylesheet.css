@@ -38,6 +38,10 @@
     max-width: 40%;
     padding: 1rem 2rem 1rem 0;
   }
+  .cart-item {
+    float: left;
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 767px) { /*set mobile-specific styles*/
@@ -64,6 +68,10 @@
     display: block;
     width: 100%;
     margin: auto;
+  }
+  .cart-item {
+    clear: both;
+    width: 80%;
   }
 }
 
@@ -399,10 +407,10 @@ fieldset {
   padding-right: 2rem;
 }
 
-.cart-item {
+/*.cart-item {
   float: left;
   width: 35%;
-}
+}*/
 
 .square {
   float:left;
