@@ -4,10 +4,33 @@
 }
 
 /*Media Queries*/
-@media screen and (min-width: 768px) { /*set grid template for non-mobile devices*/
+@media screen and (min-width: 768px) { /*set layout & styles for non-mobile devices*/
   .grid-container {
     display: grid;
     grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+  }
+  .logo-container {
+    float: left;
+    width: 30%;
+    margin: 5% 8%;
+  }
+  .cart-container {
+    float: right;
+    text-align: right;
+    font-weight: lighter;
+    font-size: 100%;
+    height: 2rem;
+    margin-top: 5%;
+  }
+  .checkout-button {
+    position: relative;
+    top: 1rem;
+  }
+  .grid-top, .grid-middle, .grid-bottom {
+    grid-column: 2 / span 3;
+  }
+  .tile {
+    min-width: 23%;
   }
 }
 
@@ -16,12 +39,16 @@
     display: grid;
     grid-template-columns: 12.5% 37.5% 37.5% 12.5%;
   }
+  .logo-container {
+    width: 50%;
+    margin: 5% auto 2% auto;
+  }
   .grid-aside-right {
     display: none;
     width: 0;
   }
-  .grid-left-top, .grid-left-middle, .grid-left-bottom {
-    grid-column: 2 / span 3;
+  .grid-top, .grid-middle, .grid-bottom {
+    grid-column: 2 / span 2;
   }
   .tile {
     min-width: 100%;
@@ -55,7 +82,7 @@ header {
   background-position: right center;
   background-repeat: no-repeat;
   color: white;
-  height: 20rem;
+  height: 21rem;
   margin-bottom: 1rem;
 }
 
@@ -81,17 +108,17 @@ header {
 }
 
 .grid-top {
-  grid-column: 2 / span 3;
+  /*grid-column: 2 / span 3;*/
   grid-row: 2 / span 1;
 }
 
 .grid-middle {
-  grid-column: 2 / span 3;
+  /*grid-column: 2 / span 3;*/
   grid-row: 3 / span 1;
 }
 
 .grid-bottom {
-  grid-column: 2 / span 3;
+  /*grid-column: 2 / span 3;*/
   grid-row: 4 / span 1;
 }
 
@@ -194,13 +221,12 @@ h4, h5 {
 .green-button {
   position: relative;
   top: 1rem;
-  right: 2rem;
   background-color: #81B741;
   color: white;
   font-size: 0.8em;
   margin: 5% 0;
   width: 100%;
-  padding: 7% 38%;
+  padding: 0.5em 3em;
   border-radius: 1px;
 }
 
@@ -213,12 +239,11 @@ h4, h5 {
   padding: 1% 5%;
 }
 
-/*Rules for Styling the Header*/
-.logo-container {
+/*.logo-container {
   float: left;
   width: 30%;
   margin: 2rem 5rem;
-}
+}*/
 
 #tag-line {
   color: #81B741;
@@ -234,8 +259,8 @@ h4, h5 {
   text-align: right;
   font-weight: lighter;
   font-size: 100%;
-  height: 2rem;
-  margin: 2rem 5rem;
+  /*height: 2rem;*/
+  margin-right: 8%;
 }
 
 #icon {
@@ -247,7 +272,7 @@ h4, h5 {
 nav.head {
   clear: both;
   position: absolute;
-  top: 17rem;
+  top: 18rem;
   width: 100%;
   background-color: #E6E6E6;
   color: #093C60;
