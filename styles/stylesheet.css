@@ -32,9 +32,15 @@
   .tile {
     min-width: 23%;
   }
+  .left-img {
+    float: left;
+    width: 16rem;
+    max-width: 40%;
+    padding: 1rem 2rem 1rem 0;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) { /*set mobile-specific styles*/
   .grid-container {
     display: grid;
     grid-template-columns: 12.5% 37.5% 37.5% 12.5%;
@@ -53,9 +59,15 @@
   .tile {
     min-width: 100%;
   }
+  .left-img {
+    clear: both;
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width:991px) {
+@media screen and (min-width: 768px) and (max-width:991px) { /*set styles for tablets*/
   .tile {
     min-width: 45%;
   }
@@ -131,12 +143,12 @@ footer {
   text-align: center;
 }
 
-.left-img {
+/*.left-img {
   float: left;
   width: 16rem;
   max-width: 40%;
   padding: 1rem 2rem 1rem 0;
-}
+}*/
 
 .top-img {
   width: 100%;
