@@ -48,23 +48,10 @@
                          'dog dog dog dog' 
                          'dog2 dog2 dog2 dog2' 
                          'end end end end';
-    padding-left: 200px;
+    padding-left: 240px;
     padding-top: 50px;
     padding-bottom: 200px;
-}
-
-h1 {
-    color: #093C60;
-}
-
-.img-three {
-    width: 500px;
-    height: auto;
-}
-
-.nav-two {
-    grid-area: nav;
-    line-height: 50px;
+    column-gap: 50px;
 }
 
 .nav {
@@ -73,8 +60,27 @@ h1 {
     font-size: 25px;
     padding-left: 200px;
     line-height: 50px;
+    
 }
 
+h1 {
+    color: #093C60;
+}
+
+.img-three {
+    width: 400px;
+    height: auto;
+}
+
+.main-article {
+    font-size: x-large;
+    line-height: 35px;
+}
+
+.nav-two {
+    grid-area: nav;
+    line-height: 50px;
+}
 
 .header {
     display: grid;
@@ -89,7 +95,7 @@ h1 {
 
 .left {
     grid-area: left;
-    padding-left: 50px;
+    padding-left: 150px;
     padding-top: 50px;
 }
 
@@ -110,12 +116,17 @@ img {
     height: auto;
 }
 
+.img-four {
+    width:  100%;
+    height: auto;
+    font-weight: bolder;
+}
+
 
 .logo-text {
     margin: 0em;
     font-size:x-large; 
     color: rgb(129, 183, 65); 
-    padding-left: 100px;
 }
 
 
