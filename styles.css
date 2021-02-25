@@ -249,3 +249,44 @@ li {
 .footer-link {
     display:inline;
 }
+@media (max-width: 576px) {
+    .grid-item-container {
+        grid-template-columns: 100%;
+    }
+    .initial-box {
+        grid-column-start:1;
+    }
+    .dog-and-human {
+        max-width:50%;
+    }
+    .intro-para {
+        font-size:.8em;
+        line-height:1.2em;
+    }
+    
+    .dog-holder {
+        grid-column-start;1;
+        grid-column-end:2;
+        width:100%;
+    }
+    .header-holder {
+        width:100%;
+    }
+    
+}
+/*
+@media (max-width:768px) {
+    .grid-item-container {
+       grid-template-columns:1fr 1fr;
+    }
+    initial-box {
+        grid-column-start:1;
+    }
+    .dog-holder {
+        grid-column-start:1;
+        flex-wrap:wrap;
+        align-content:space-around;
+    }
+   
+    }
+*/
