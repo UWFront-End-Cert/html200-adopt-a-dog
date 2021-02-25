@@ -20,17 +20,67 @@ body a:hover {
   text-decoration: underline;
 }
 /********** MEDIA QUERIES **********/
-/* for phones - dog grid layout needs to change from 3 columns to 1 (homescreen) */
-@media not print and (min-width: 576px) {
-
+/* for phones - dog grid layout needs to change from 3 columns to 1 (home) */
+@media not print and (min-width: 576px) and (max-width: 767px) {
+  .main-content {
+    width: 25%;
+  }
 }
-/* for tablet - dog grid layout needs to change from 3 columns to 2 (homescreen) */
-@media not print and (min-width: 768px) {
-
+/* for tablet - dog grid layout needs to change from 3 columns to 2 (home) */
+@media not print and (min-width: 768px) and (max-width: 991px) {
+  .main-content {
+    width: 50%;
+  }
 }
 /* for computer - dog grid layout 3 columns (homescreen) */
 @media not print and (min-width: 992px) {
-
+  .main-content {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem 4rem;
+  }
+  .main-content-blog {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem 6rem;
+  }
+  .summary {
+    flex: 70%;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .blog-aside {
+    flex: 30%;
+    margin: -1rem 6rem 2rem 4rem;
+  }
+  .page-content {
+    grid-gap: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .page-content-dogs {
+    grid-area: 2 / 1 / 3 / 4;
+    grid-gap: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .page-content-dogs section, .page-content section {
+    width: 13rem;
+    border: solid 1px lightgrey;
+    border-radius: 1px;
+  }
+  .page-content-dogs section h3, .page-content-dogs section p, .page-content-dogs section button, .page-content section h3, .page-content section p, .page-content section button {
+    margin: 1rem;
+  }
+  .page-content-dogs section img, .page-content section img {
+    height: 8rem;
+    width: 13rem;
+    padding-right: 1px;
+  }
+  .page-content-dogs section button, .page-content section button {
+    width: 11rem;
+    height: 2rem;
+  }
 }
 /* Bonus: make it printable */
 /********** HEADER **********/
@@ -120,23 +170,19 @@ button:hover, .checkout-page input[type=submit]:hover {
   color: lightgreen;
 }
 /********** PAGE ARTICLE **********/
-.main-content {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 2rem 6rem;
-}
-.summary {
-  grid-area: 1 / 1 / 2 / 4;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-.summary div {
+.summary div, .summary img {
   margin-left: 2rem;
 }
 .summary img {
   height: 15rem;
+}
+.dogs {
+  display: block;
+  margin: 3rem auto;
+  height: 2rem;
+  width: 12rem;
+  background-color: lightgrey;
+  color: black;
 }
 /********** BLOG PAGE **********/
 .blog {
@@ -148,46 +194,26 @@ button:hover, .checkout-page input[type=submit]:hover {
   flex-direction: row;
   align-items: center;
   margin-bottom: 2rem;
-  margin-left: 2rem;
+  /* margin-left: 1rem; */
 }
 .sec img {
   height: 15rem;
   margin-right: 2rem;
 }
 /********** DOG LIST **********/
-.page-content {
-  grid-area: 2 / 1 / 3 / 4;
-  grid-gap: 3rem;
-  display: flex;
-  flex-flow: row wrap;
-}
-.page-content section {
-  width: 13rem;
-  border: solid 1px lightgrey;
-  border-radius: 1px;
-}
-.page-content section h3, .page-content section p, .page-content section button {
-  margin: 1rem;
-}
-.page-content section img {
-  height: 8rem;
-  width: 13rem;
-  padding-right: 1px;
-}
-.page-content section button {
-  width: 11rem;
-  height: 2rem;
-}
-.dogs {
-  display: block;
-  margin: 3rem auto;
-  height: 2rem;
-  width: 12rem;
-  background-color: lightgrey;
-  color: black;
-}
 .dogs:hover {
   background-color: green;
+}
+/********** BLOG ASIDE (HOME PAGE) **********/
+.blog-aside button {
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  background-color: white;
+  color: blue;
+}
+.blog-aside button:hover {
+  color: lightgreen;
+  text-decoration: underline;
 }
 /********** CHECKOUT PAGE **********/
 .checkout-page {
