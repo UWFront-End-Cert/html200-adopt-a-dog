@@ -214,6 +214,7 @@ footer a {
     margin-top: 3rem;
     margin-bottom: 3rem;
     overflow:auto;
+
 }
 
 .dogs article {
@@ -223,14 +224,14 @@ footer a {
 @media screen and (max-width: 575px) {
     .dogs {
         grid-template-columns: repeat(auto-fit, minmax(0rem, 100%));
-        overflow:auto;
+        /* overflow:auto; */
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 1279px) {
     .dogs {
         grid-template-columns: repeat(auto-fit, minmax(0rem, 45%));
-        overflow:auto;
+        /* overflow:auto; */
     }
 }
 
