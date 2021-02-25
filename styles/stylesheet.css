@@ -32,6 +32,9 @@
   .tile {
     min-width: 23%;
   }
+  .mobile-only {
+    display: none;
+  }
   .left-img {
     float: left;
     width: 16rem;
