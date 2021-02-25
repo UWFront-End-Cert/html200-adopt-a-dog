@@ -48,87 +48,120 @@
         </ul>
     </nav>
     <!-- Whole content  -->
-    <div>
-    <main>
-        <img src="./images/home-intro.jpg" alt="a man embracing a dog">
-        <article class="intro">
-            <h1>Adopt A Dog</h1>
-            <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
-                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-                derum recuptatur, cum volore, undipsa doloreium hillupta aut
-                es ut alitatuscit ommossum haritatur arum qui officae videbiti
-                corporeium faccull oribus es quidignis ipietus explam sus
-                am aut amet ant fugiatum, utem non reptat ad magnienecto
-                volorent fugia nonsedi gendand itatquos as magnimpor aut
-                molor autatia ad est officimus accae et omnia cus, od qui ate </p>
-        </article>
-    </main>
-    <!-- Card Dogs here -->
-    <section id="puppies">
-        <!-- h3 for avoiding validation errors -->
-        <h3>heading hidden</h3>
-        <!-- The general click handler used for dog cards is called infoDog -->
-        <article>
-            <img class="card" src="./images/murphy-card.jpg" alt="Murphy profile picture" onclick="dogInfo('Murphy, Breed: Boxer, Cost: $123.45');">
-            <h2>murphy</h2>
-            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
-            <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
-            <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
-        </article>
-        <article>
-            <img class="card" src="./images/poppy-card.jpg" alt="Poppy profile picture" onclick="dogInfo('Poppy, Breed: Asian Terrier, Cost: $123.45')">
-            <h2>poppy</h2>
-            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
-            <p class="dog-name">You are doing me the shock what a nice floof borking doggo the neighborhood pupper heckin angery woofer.</p>
-            <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
-        </article>
-        <article>
-            <img class="card" src="./images/jack-card.jpg" alt="Jack profile picture" onclick="dogInfo('Jack, Breed: Beagle, Cost: $123.45')">
-            <h2>jack</h2>
-            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
-            <p class="dog-name">Aqua doggo puggo dat tungg tho snoot sub woofer, lotsa pats snoot you are doing me a frighten.</p>
-            <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
-        </article>
-        <article>
-            <img class="card" src="./images/duffy-card.jpg" alt="Duffy profile picture" onclick="dogInfo('Duffy, Breed: American Bulldog, Cost: $123.45')">
-            <h2>duffy</h2>
-            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
-            <p class="dog-name">Long bois clouds doggorino thicc blep you are doing me a frighten borkf, lotsa pats very jealous pupper boofers fat boi very taste.</p>
-            <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
-        </article>
-        <article>
-            <img class="card" src="./images/lucas-card.jpg" alt="Lucas profile picture" onclick="dogInfo('Lucas, Breed: Labrador, Cost: $123.45')">
-            <h2>lucas</h2>
-            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
-            <p class="dog-name">What a nice floof fat boi very taste wow puggo doggorino, woofer wrinkler. Length boy very good spot.</p>
-            <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
-        </article>
-        <article>
-            <img class="card" src="./images/jake-card.jpg" alt="Jake profile picture" onclick="dogInfo('Jake, Breed: English Pointer/Rhodesian, Cost: $123.45')">
-            <h2>jake</h2>
-            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
-            <p class="dog-name">Length boy very good spot long bois most angery pupper I have ever seen very good spot, heck lotsa pats.</p>
-            <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
-        </article>
-        <article>
-            <img class="card" src="./images/angus-card.jpg" alt="Angus profile picture" onclick="dogInfo('Angus,Breed: Bullmastiff, Cost: $123.45')">
-            <h2>angus</h2>
-            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
-            <p class="dog-name">Heckin good boys and girls mlem I am bekom fat heckin angery woofer waggy wags, wow such tempt fluffer snoot porgo.</p>
-            <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
-        </article>
-        <article>
-            <img class="card" src="./images/violet-card.jpg" alt="Violet profile picture" onclick="dogInfo('Violet, Breed: Field Spaniel, Cost: $123.45')">
-            <h2>violet</h2>
-            <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
-            <p class="dog-name">I am bekom fat puggorino borkdrive tungg waggy wags stop it fren, long doggo long water shoob big ol fluffer.</p>
-            <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
-        </article>
-    </section>
-    <!-- See more dogs button -->
-    <button aria-label="See more puppies clicking here" onClick="window.location.href='./dogs.html'">See More Dogs</button>
-    <!-- onclick="myDialog.close()" -->
-    </div>
+    <div class="whole-content">
+    
+        <div class="left-content">
+            <main>
+                <img src="./images/home-intro-wider.png" alt="a man embracing a dog">
+                <article class="intro">
+                    <h1>Adopt A Dog</h1>
+                    <p class="intro_about">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am.</p>
+                </article>
+            </main>
+        <!-- Card Dogs here -->
+            <section class="home_puppies" id="puppies">
+                <!-- h3 for avoiding validation errors -->
+                <h3>heading hidden</h3>
+                <!-- The general click handler used for dog cards is called infoDog -->
+                <article class="dog-card">
+                    <img class="card" src="./images/murphy-card.jpg" alt="Murphy profile picture" onclick="dogInfo('Murphy, Breed: Boxer, Cost: $123.45');">
+                    <h2>murphy</h2>
+                    <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+                    <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
+                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                </article>
+                <article class="dog-card">
+                    <img class="card" src="./images/poppy-card.jpg" alt="Poppy profile picture" onclick="dogInfo('Poppy, Breed: Asian Terrier, Cost: $123.45')">
+                    <h2>poppy</h2>
+                    <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+                    <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
+                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                </article>
+                <article class="dog-card">
+                    <img class="card" src="./images/jack-card.jpg" alt="Jack profile picture" onclick="dogInfo('Jack, Breed: Beagle, Cost: $123.45')">
+                    <h2>jack</h2>
+                    <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+                    <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
+                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                </article>
+                <article class="dog-card">
+                    <img class="card" src="./images/duffy-card.jpg" alt="Duffy profile picture" onclick="dogInfo('Duffy, Breed: American Bulldog, Cost: $123.45')">
+                    <h2>duffy</h2>
+                    <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+                    <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
+                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                </article>
+                <article class="dog-card lucas">
+                    <img class="card" src="./images/lucas-card.jpg" alt="Lucas profile picture" onclick="dogInfo('Lucas, Breed: Labrador, Cost: $123.45')">
+                    <h2>lucas</h2>
+                    <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+                    <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
+                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                </article>
+                <article class="dog-card jake">
+                    <img class="card" src="./images/jake-card.jpg" alt="Jake profile picture" onclick="dogInfo('Jake, Breed: English Pointer/Rhodesian, Cost: $123.45')">
+                    <h2>jake</h2>
+                    <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+                    <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
+                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                </article>
+                <!-- <article>
+                    <img class="card" src="./images/angus-card.jpg" alt="Angus profile picture" onclick="dogInfo('Angus,Breed: Bullmastiff, Cost: $123.45')">
+                    <h2>angus</h2>
+                    <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+                    <p class="dog-name">Heckin good boys and girls mlem I am bekom fat heckin angery woofer waggy wags, wow such tempt fluffer snoot porgo.</p>
+                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                </article>
+                <article>
+                    <img class="card" src="./images/violet-card.jpg" alt="Violet profile picture" onclick="dogInfo('Violet, Breed: Field Spaniel, Cost: $123.45')">
+                    <h2>violet</h2>
+                    <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
+                    <p class="dog-name">I am bekom fat puggorino borkdrive tungg waggy wags stop it fren, long doggo long water shoob big ol fluffer.</p>
+                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                </article> -->
+            </section>
+        <!-- See more dogs button -->
+        <button aria-label="See more puppies clicking here" onClick="window.location.href='./dogs.html'">See More Dogs</button>
+        <!-- onclick="myDialog.close()" -->
+        </div>
+
+        <!-- Sidebar -->
+        <div class="right-content">
+            <div class="blog_content">
+                <!-- <h1 class="blog__heading"> -->
+                <h1>From Our Blog</h1>
+                <article class="blog_article">
+                    <img class="blog_article__image" src="./images/blog-1-wider.png" alt="a young woman embracing a dog watching the Gran Canyon">
+                    <div class="grid_article">
+                        <h2 class="topic_heading">Traveling With Your Dog</h2>
+                        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+                            quidustrum fuga.</p>
+                            <a class="link_blog" href="./blog.html">Read more >></a>
+                    </div>
+                </article>
+                <article class="blog_article">
+                    <img class="blog_article__image" src="./images/blog-2-wider.png" alt="a dog-keeper caring four dogs out in a street">
+                    <div class="grid_article">
+                        <h2 class="topic_heading">How To Walk Multiple Dogs</h2>
+                        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+                            quidustrum fuga.</p>
+                            <a class="link_blog" href="./blog.html">Read more >></a>
+                    </div>
+                </article>
+                <article class="blog_article">
+                    <img class="blog_article__image" src="./images/blog-3-wider.png" alt="a siluette of a young woman holding a ball and a dog is ready to play in the sunset">
+                    <div class="grid_article">
+                        <h2 class="topic_heading">Teach Your Dog To Fetch&#33;</h2>
+                        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+                            quidustrum fuga.</p>
+                            <a class="link_blog" href="./blog.html">Read more >></a>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div> 
+    
     <footer>
         <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
         <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>

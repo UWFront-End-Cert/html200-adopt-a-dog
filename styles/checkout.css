@@ -6,9 +6,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    /* Default font replaced */
     font-family: 'Roboto', sans-serif;
-    /* font-family: sans-serif; */
     font-size: 1.3rem;
 }
 
@@ -52,34 +50,15 @@ div.slogan {
     margin: 0;
 }
 
-/* [src="./images/cart-icon.svg"] {
-    max-width: 100%;
-    width: 5%;
-} */
-
-/* Cart icon targeted by using as selector the checkout class and its nested child 'img'  */
 .checkout img {
     max-width: 100%;
     width: 5%;
 }
 
 .total {
-    /* hex color value, all lowercase, updated */
     color: #fff;
     padding-bottom: 0;
 }
-
-/* [value="Checkout"]  */
-/* .checkout input {
-    width: 20%; 
-    padding: 0.5rem 2rem;
-    margin-top: 1rem;
-    background-color: #a1c349;
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 2px;
-    border: none; 
-} */
 
 .main-nav {
     background-color: rgb(224, 224, 226);
@@ -98,7 +77,6 @@ ul {
 
 li { 
     list-style-type: none;
-     /* A little bit of extra padding added in this item */
     padding-right: 40px;
     float: none;
 }
@@ -125,11 +103,6 @@ a {
     font-weight: bold;
     color: #0a3d61;
 }
-
-/* This style has been omitted */
-/* a[href="./blog.html"]{
-    padding-left: 10px;
-} */
 
 h1 {
     color: #0a3d61;
@@ -188,12 +161,6 @@ select[name="state"] {
     width: 75%;
 }
 
-/* input[id="state"] {
-    grid-column: 3;
-    grid-row: 2;
-    width: 75%;
-} */
-
 label[for="zipcode"] {
     grid-column: 4;
     grid-row: 1;
@@ -238,13 +205,11 @@ input[type="radio"] {
 select {
     width: 20%;
     height: 3rem;
-    /* Font size updated */
     font-size: 1.4rem;
 }
 
 section {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, .10fr);
     width: 50%;
@@ -321,7 +286,6 @@ img[src="./images/duffy-checkout.jpg"] {
     font-size: 1.4rem;
     font-weight: bold;
     border: none;
-    /* hex color value, all lowercase, updated */
     color: #ffffff;
     background-color: #a1c349;
 }
@@ -335,7 +299,6 @@ footer {
     font-size: 1rem;
 }
 
-/* [src="./images/adoptadog-logo.svg"] */
 footer img {
     max-width: 100%;
     width: 32%;
@@ -343,12 +306,9 @@ footer img {
 }
 
 footer > p {
-    /* display: block; */
     margin-left: 35%;
     margin-right: 35%;
-    /* margin: 0 5rem; */
     text-align: center;
-    /* hex color value, all lowercase, updated */
     color: #ffffff;
     line-height: 1.8rem;
 }
@@ -363,7 +323,6 @@ ul.bottom-nav a {
 }
 
 ul.bottom-nav > li:after {
-    /* hex color value, all lowercase, updated */
     color: #fff;
 }
 
@@ -381,16 +340,13 @@ small {
 /* Extra large Screens 1200px and up*/
 @media (max-width: 1250px) {
 
-    /* [src="./images/adoptadog-logo.svg"]  */
     .top-logo {
        width: 100%;
     }
 
     main {
         display: flex;
-        /* flex-direction: column; */
         align-items: center;
-        /* padding: 2rem 6rem; */
         padding: 2rem 0 0 12rem;
     }
 
@@ -402,7 +358,6 @@ small {
         padding: 4rem 6rem 0 0;
     }
 
-    /* [src="./images/adoptadog-logo.svg"]  */
     footer img {
         max-width: 100%;
         width: 35%;
@@ -417,8 +372,6 @@ small {
 
 /* Large devices 992px and up */
 @media (max-width: 1029px) {
-
-    /* [src="./images/adoptadog-logo.svg"]  */
     .top-logo {       
         width: 150%;
     }
@@ -484,7 +437,6 @@ small {
 
     section {
         display: grid;
-        /* grid-template-columns: repeat(2, 1fr); */
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, .10fr);
         width: 79%;
@@ -501,7 +453,6 @@ small {
         font-size: 1.6rem;
     }
 
-    /* [src="./images/adoptadog-logo.svg"] */
     footer img {
         max-width: 100%;
         width: 45%;
@@ -531,10 +482,7 @@ small {
         padding: 4rem 2rem 0 2rem;
     }
 
-    /* [src="./images/adoptadog-logo.svg"]  */
     .top-logo {
-        /* max-width: 100%;
-        width: 100%;     */
         width: 90%;
         max-width: 100%;
     }
@@ -568,7 +516,6 @@ small {
     .location {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        /* grid-template-rows: repeat(2, 1fr); */
         width: 100%;
     }
 
@@ -603,7 +550,6 @@ small {
         text-align: center;
     }
 
-    /* [src="./images/adoptadog-logo.svg"] */
     footer img {
         max-width: 100%;
         width: 63%;
@@ -619,7 +565,6 @@ small {
 /* Small devices 576px and up */
 @media (max-width: 605px) {
 
-    /* [src="./images/adoptadog-logo.svg"]  */
     .top-logo {
         width: 225%;
         height: auto;
@@ -678,8 +623,7 @@ small {
 }
 
 @media (max-width: 495px) {
-    
-    /* [src="./images/home-intro.jpg"]  */
+
     .top-logo {
         width: 375px;
         height: 350px;
@@ -715,7 +659,6 @@ small {
 
 @media (max-width: 375px) {
 
-    /* [src="./images/adoptadog-logo.svg"]  */
     .top-logo {
         width: 300%;    
     }
@@ -776,7 +719,6 @@ small {
     }
 
     footer > p {
-        /* display: block; */
         margin-left: 20%;
         margin-right: 20%;
     }
@@ -817,4 +759,120 @@ small {
     footer img {
         width: 82%;
     }
+}
+
+@media print {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        margin: 0;
+    }
+
+    .top-left {
+        padding: 0;
+    }
+
+    .logo {
+        -webkit-filter: invert(.75); 
+        filter: invert(.75);
+        width: 90%;  
+    }
+
+    .slogan p {
+        color: #000;
+        text-align: center;
+    }
+
+    .checkout {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .checkout img {
+        -webkit-filter: invert(.75); 
+        filter: invert(.75);
+    }
+    .main-nav {
+        display: none;
+    }
+
+    main {
+        margin: 3rem 0 0 0;
+    }
+
+    h1 {
+        color: #000;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 2% 8%;
+        padding: 0;
+    }
+
+    label,
+    legend {
+        font-size: 1.2rem;
+        color: #000;
+    }
+
+    fieldset {
+        display: block;
+    }
+
+    fieldset label {
+        font-size: 1rem;
+        color: #000;
+    }
+    input {
+        height: 2rem;
+        font-size: 1rem;
+        color: #000;
+    }
+
+    input[type="radio"] {
+        width: 1rem;
+    }
+
+    label[for="location"] {
+        font-size: 1rem;
+        color: #000;
+        margin-top: 1rem;
+    }
+
+    select {
+        height: 1.4rem;
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        color: #000;
+    }
+
+    img[src="./images/lucas-checkout.jpg"] {
+        filter: grayscale(1);
+    }
+
+    img[src="./images/duffy-checkout.jpg"] {
+        filter: grayscale(1);
+    }
+
+    h3 {
+        font-size: 1rem;
+        color: #000;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    footer img {
+        -webkit-filter: invert(.75); 
+          filter: invert(.75);
+    }
+
 }

@@ -47,24 +47,19 @@
         <h1>Checkout</h1>
     </main>
     <!-- Form starts here -->
-    <!-- Autocomplete added, but it is tuned off -->
-    <!-- Method added -->
-    <form action="" method="GET" autocomplete="off">
+    <form method="GET" autocomplete="off">
         <label for="name">Name</label>
-            <!-- Required attribute has been added -->
             <input id="name" type="text" name="clientName" placeholder="John / Joanna Doe" required>
         <br>
         <label>Email Address</label>
-            <!-- Placeholder updated -->
             <input type="email" name="clientEmail" placeholder="your@email.com">
         <br>
         <label for="address">Street Address</label>
-            <!-- Autofocus, and placeholder added in this input -->
-            <input id="address" type="text" name="clientAddress" placeholder="0-9 Empty Road SE" autofocus>
+            <input id="address" type="text" name="clientAddress" placeholder="0-9 Empty Road SE">
+            <!-- autofocus -->
         <br>
         <div class="location">
             <label for="city">City</label>
-                <!-- Placeholder added in this input -->
                 <input id="city" type="text" name="clientCity" placeholder="Seattle">  
             <label for="state">State</label>
                 <select name="state" id="state">
@@ -73,25 +68,20 @@
                     <option value="2">AK</option>
                     <option value="3">CA</option>
                 </select>
-                <!-- Added a maxlength and a placeholder  -->
-                <!-- <input id="state" type="text" maxlength="2" name="clientState" placeholder="WA"> -->
             <label for="zipcode">Zip Code</label>
-                <!-- a pattern, a placeholder and a max value of numbers added -->
-                <input type="text" id="zipcode" pattern="[0-9]*" placeholder="98102" max="99999">               <!-- <input id="zipcode" type="number" name="clientZipcode"> -->
+                <input type="text" id="zipcode" pattern="[0-9]*" placeholder="98102">               <!-- <input id="zipcode" type="number" name="clientZipcode"> -->
         </div>
         <br>
         <fieldset>
             <legend>First Time Adopter?</legend>
-            <!-- id added -->
             <input type="radio" id="yes" name="yes" value="yes">
                 <label for="yes">Yes</label>
-            <!-- id added -->
             <input type="radio" id="no" name="no" value="no">
                 <label for="no">No</label>
         </fieldset> 
         <br>
         <label for="location">Pickup Location</label>
-            <select name="location">
+            <select name="location" id="location">
                 <!-- Local locations are set as option values  -->
                 <option value="">Please select</option>
                 <option value="1">Seattle</option>
@@ -118,7 +108,6 @@
         </section>
         <br>
         <label for="total">Total Adoption Cost</label>
-            <!-- Updated the grand total number, it was wrong -->
             <input class="form-control" id="total" name="totalAdoption" value="&#36;246,90"> 
             <br>
             <button type="submit" class="btn btn-primary">Submit</button>
