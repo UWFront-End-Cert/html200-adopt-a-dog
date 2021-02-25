@@ -31,7 +31,7 @@ p {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
   width: 100%;
@@ -149,7 +149,7 @@ li a {
     display: flex;
     flex-direction: column;
     grid-gap: 1.5rem;
-    width: auto;
+    width: 100%;
     margin-left: 6rem;
     margin-right: 6rem;
   }
