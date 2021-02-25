@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopt A Dog</title>
     <!-- linking script.js -->
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/dogcost.js"></script>
     <!-- normalize linking -->
     <link rel="stylesheet" href="./styles/normalize.css" />
     <!-- stylesheet linking -->
@@ -46,69 +46,93 @@
           </div>
         </div>
 
+        <div class="blog-aside">
+          <aside>
+            <h2>From Our Blog</h2>
+            <section>
+              <img src="./images/blog-1-1.jpg" alt="A person and their black dog overlooking a canyon">
+              <h3>Traveling With Your Dog</h3>
+              <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+              <button type="button" name="more">Read more >></button>
+            </section>
+            <section>
+              <img src="./images/blog-2-1.jpg" alt="Four dogs of different breeds on leashes, sitting down">
+              <h3>How To Walk Multiple Dogs</h3>
+              <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+              <button type="button" name="more">Read more >></button>
+            </section>
+            <section>
+              <img src="./images/blog-3-1.jpg" alt="Sihlouettes of girl with a ball in her hand and a dog sitting down, looking at the ball">
+              <h3>Teach Your Dog To Fetch!</h3>
+              <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+              <button type="button" name="more">Read more >></button>
+            </section>
+          </aside>
+        </div>
+
         <div class="page-content">
           <section>
-            <img src="./images/murphy-card.jpg" alt="A picture of Murphy, a brown and white dog" onclick="alert('This is ' + dogInfo('Murphy', 'a Boxer', 123.45))">
+            <img src="./images/murphy-card.jpg" alt="A picture of Murphy, a brown and white dog" onclick="dogInfo('Murphy', 'a Boxer', 123.45)">
             <h3>Murphy</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nec ligula lobortis tincidunt. In faucibus nisi quis orci imperdiet, a suscipit odio tristique.</p>
-            <button type="button" name="adopt" onclick="alert('Your total is: ' + totalCost(123.45))">Adopt</button>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt" onclick="totalCost(123.45)">Adopt</button>
           </section>
 
           <section>
-            <img src="./images/poppy-card.jpg" alt="A picture of Poppy, a white Shi Tsu" onclick="alert('This is ' + dogInfo('Poppy', 'a Shi Tsu', 123.45))">
+            <img src="./images/poppy-card.jpg" alt="A picture of Poppy, a white Shi Tsu" onclick="dogInfo('Poppy', 'a Shi Tsu', 123.45)">
             <h3>Poppy</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nec ligula lobortis tincidunt. In faucibus nisi quis orci imperdiet, a suscipit odio tristique.</p>
-            <button type="button" name="adopt" onclick="alert('Your total is: ' + totalCost(123.45))">Adopt</button>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt" onclick="totalCost(123.45)">Adopt</button>
           </section>
 
           <section>
-            <img src="./images/jack-card.jpg" alt="A picture of Jack, a brown and white Beagle" onclick="alert('This is ' + dogInfo('Jack', 'a Beagle', 123.45))">
+            <img src="./images/jack-card.jpg" alt="A picture of Jack, a brown and white Beagle" onclick="dogInfo('Jack', 'a Beagle', 123.45)">
             <h3>Jack</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nec ligula lobortis tincidunt. In faucibus nisi quis orci imperdiet, a suscipit odio tristique.</p>
-            <button type="button" name="adopt" onclick="alert('Your total is: ' + totalCost(123.45))">Adopt</button>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt" onclick="totalCost(123.45)">Adopt</button>
           </section>
 
           <section>
-            <img src="./images/duffy-card.jpg" alt="A picture of Duffy, a brown and white pitbull mix" onclick="alert('This is ' + dogInfo('Duffy', 'a Pitbull mix', 123.45))">
+            <img src="./images/duffy-card.jpg" alt="A picture of Duffy, a brown and white pitbull mix" onclick="dogInfo('Duffy', 'a Pitbull mix', 123.45)">
             <h3>Duffy</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nec ligula lobortis tincidunt. In faucibus nisi quis orci imperdiet, a suscipit odio tristique.</p>
-            <button type="button" name="adopt" onclick="alert('Your total is: ' + totalCost(123.45))">Adopt</button>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt" onclick="totalCost(123.45)">Adopt</button>
           </section>
 
           <section>
-            <img src="./images/lucas-card.jpg" alt="A picture of Lucas, a black Shepherd mix" onclick="alert('This is ' + dogInfo('Lucas', 'a Shepherd mix', 123.45))">
+            <img src="./images/lucas-card.jpg" alt="A picture of Lucas, a black Shepherd mix" onclick="dogInfo('Lucas', 'a Shepherd mix', 123.45)">
             <h3>Lucas</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nec ligula lobortis tincidunt. In faucibus nisi quis orci imperdiet, a suscipit odio tristique.</p>
-            <button type="button" name="adopt" onclick="alert('Your total is: ' + totalCost(123.45))">Adopt</button>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt" onclick="totalCost(123.45)">Adopt</button>
           </section>
 
           <section>
-            <img src="./images/jake-card.jpg" alt="A picture of Jake, yellow labrador" onclick="alert('This is ' + dogInfo('Jake', 'a Yellow Lab', 123.45))">
+            <img src="./images/jake-card.jpg" alt="A picture of Jake, yellow labrador" onclick="dogInfo('Jake', 'a Yellow Lab', 123.45)">
             <h3>Jake</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nec ligula lobortis tincidunt. In faucibus nisi quis orci imperdiet, a suscipit odio tristique.</p>
-            <button type="button" name="adopt" onclick="alert('Your total is: ' + totalCost(123.45))">Adopt</button>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt" onclick="totalCost(123.45)">Adopt</button>
           </section>
 
           <section>
-            <img src="./images/angus-card.jpg" alt="A picture of Angus, a brown and white Boxer" onclick="alert('This is ' + dogInfo('Angus', 'a Boxer', 123.45))">
+            <img src="./images/angus-card.jpg" alt="A picture of Angus, a brown and white Boxer" onclick="dogInfo('Angus', 'a Boxer', 123.45)">
             <h3>Angus</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nec ligula lobortis tincidunt. In faucibus nisi quis orci imperdiet, a suscipit odio tristique.</p>
-            <button type="button" name="adopt" onclick="alert('Your total is: ' + totalCost(123.45))">Adopt</button>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt" onclick="totalCost(123.45)">Adopt</button>
           </section>
 
           <section>
-            <img src="./images/violet-card.jpg" alt="A picture of Violet, a chocolate labrador puppy" onclick="alert('This is ' + dogInfo('Violet', 'a Chocolate Lab', 123.45))">
+            <img src="./images/violet-card.jpg" alt="A picture of Violet, a chocolate labrador puppy" onclick="dogInfo('Violet', 'a Chocolate Lab', 123.45)">
             <h3>Violet</h3>
             <p><strong>Cost to Adopt:</strong> $123.45</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nec ligula lobortis tincidunt. In faucibus nisi quis orci imperdiet, a suscipit odio tristique.</p>
-            <button type="button" name="adopt" onclick="alert('Your total is: ' + totalCost(123.45))">Adopt</button>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt" onclick="totalCost(123.45)">Adopt</button>
           </section>
         </div>
       </article>

@@ -19,6 +19,20 @@ body a:hover {
   color: black;
   text-decoration: underline;
 }
+/********** MEDIA QUERIES **********/
+/* for phones - dog grid layout needs to change from 3 columns to 1 (homescreen) */
+@media not print and (min-width: 576px) {
+
+}
+/* for tablet - dog grid layout needs to change from 3 columns to 2 (homescreen) */
+@media not print and (min-width: 768px) {
+
+}
+/* for computer - dog grid layout 3 columns (homescreen) */
+@media not print and (min-width: 992px) {
+
+}
+/* Bonus: make it printable */
 /********** HEADER **********/
 header {
   background: black url(../images/header-image.jpg) center no-repeat; /* shorthand for: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit  */
@@ -134,8 +148,6 @@ button:hover, .checkout-page input[type=submit]:hover {
   flex-direction: row;
   align-items: center;
   margin-bottom: 2rem;
-}
-.sec {
   margin-left: 2rem;
 }
 .sec img {
@@ -160,6 +172,7 @@ button:hover, .checkout-page input[type=submit]:hover {
 .page-content section img {
   height: 8rem;
   width: 13rem;
+  padding-right: 1px;
 }
 .page-content section button {
   width: 11rem;
