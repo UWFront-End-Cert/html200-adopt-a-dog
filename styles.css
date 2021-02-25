@@ -102,15 +102,19 @@ li.header-nav-list-item {
     display:grid;
     column-gap: 6.67%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: autofit, minmax(100px,auto);
  
 }
 .initial-box {
     margin-top:20px;
-    grid-column: 1/ span 4;
+    grid-column: 1/ span 3;
     display:flex;
     flex-direction:row;
     
+}
+.blog-aside {
+    grid-column-start:3;
+    grid-column-end:4;
 }
 .sub-initial-box {
     margin-left: 6.67%;
@@ -128,6 +132,11 @@ h2.adopt-primary-header {
 .initial-box img {
     width:30%;
 }
+
+.dog-tile-holder {
+    grid-column:1 / span 3;
+    width:30%;
+} 
 .dog-holder {
     margin-top: 20%;
     border-style: outset;
@@ -158,7 +167,7 @@ footer img {
 }
 .blog-main-holder {
     display: flex;
-    grid-column: 1/ span 4;
+    grid-column: 1/ span 3;
     margin-bottom: 25px;
 }
 .blog-img-holder {
