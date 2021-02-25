@@ -147,6 +147,7 @@ li a {
 @media screen and (min-width: 576px) {
   .card-container {
     display: flex;
+    flex-direction: column;
     grid-gap: 1.5rem;
     width: auto;
     margin-left: 6rem;
