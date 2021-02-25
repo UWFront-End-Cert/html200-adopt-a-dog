@@ -33,135 +33,173 @@
     </header>
 
     <main>
-      <section class="main-page-intro">
-        <img src="./images/home-intro.jpg" alt="Side view of a man embracing a smiling dog">
-        <div class="main-page-intro-text">
-          <h2>Adopt A Dog</h2>
-          <p>
-            Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate
-          </p>
-        </div>
-      </section>
+      <div class="main-page-main-column">
+        <section class="main-page-intro">
+          <img src="./images/home-intro.jpg" alt="Side view of a man embracing a smiling dog">
+          <div class="main-page-intro-text">
+            <h2>Adopt A Dog</h2>
+            <p>
+              Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate
+            </p>
+          </div>
+        </section>
 
-      <section class="main-page-adopt">
-        <div class="profile-cards">
-          <div class="profile-card">
-            <img src="./images/murphy-card.jpg" alt="Facial shot of a brown-faced dog" onclick="showDogInfo('Murphy', 'Hound', 10)">
-            <div class="profile-card-text">
-              <h3>Murphy</h3>
-              <p>
-                <span>Cost to Adopt:</span>
-                $123.45
-              </p>
-              <p>
-                Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-              </p>
+        <section class="main-page-adopt">
+          <div class="profile-cards">
+            <div class="profile-card">
+              <img src="./images/murphy-card.jpg" alt="Facial shot of a brown-faced dog" onclick="showDogInfo('Murphy', 'Hound', 10)">
+              <div class="profile-card-text">
+                <h3>Murphy</h3>
+                <p>
+                  <span>Cost to Adopt:</span>
+                  $123.45
+                </p>
+                <p>
+                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+                </p>
+              </div>
+              <button type="button" name="button" onclick="addDogToTotal(10)">Adopt</button>
             </div>
-            <button type="button" name="button" onclick="addDogToTotal(10)">Adopt</button>
-          </div>
-          <div class="profile-card">
-            <img src="./images/poppy-card.jpg" alt="Front shot of a white dog walking" onclick="showDogInfo('Poppy', 'Terrier', 13)">
-            <div class="profile-card-text">
-              <h3>Poppy</h3>
-              <p>
-                <span>Cost to Adopt:</span>
-                $123.45
-              </p>
-              <p>
-                Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-              </p>
+            <div class="profile-card">
+              <img src="./images/poppy-card.jpg" alt="Front shot of a white dog walking" onclick="showDogInfo('Poppy', 'Terrier', 13)">
+              <div class="profile-card-text">
+                <h3>Poppy</h3>
+                <p>
+                  <span>Cost to Adopt:</span>
+                  $123.45
+                </p>
+                <p>
+                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+                </p>
+              </div>
+              <button type="button" name="button" onclick="addDogToTotal(13)">Adopt</button>
             </div>
-            <button type="button" name="button" onclick="addDogToTotal(13)">Adopt</button>
-          </div>
-          <div class="profile-card">
-            <img src="./images/jack-card.jpg" alt="Angle shot from above of a brown and white dog" onclick="showDogInfo('Jack', 'Malamute', 8)">
-            <div class="profile-card-text">
-              <h3>Jack</h3>
-              <p>
-                <span>Cost to Adopt:</span>
-                $123.45
-              </p>
-              <p>
-                Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-              </p>
+            <div class="profile-card">
+              <img src="./images/jack-card.jpg" alt="Angle shot from above of a brown and white dog" onclick="showDogInfo('Jack', 'Malamute', 8)">
+              <div class="profile-card-text">
+                <h3>Jack</h3>
+                <p>
+                  <span>Cost to Adopt:</span>
+                  $123.45
+                </p>
+                <p>
+                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+                </p>
+              </div>
+              <button type="button" name="button" onclick="addDogToTotal(8)">Adopt</button>
             </div>
-            <button type="button" name="button" onclick="addDogToTotal(8)">Adopt</button>
-          </div>
-          <div class="profile-card">
-            <img src="./images/duffy-card.jpg" alt="Facial shot of a white-faced dog" onclick="showDogInfo('Duffy', 'Bulldog', 10)">
-            <div class="profile-card-text">
-              <h3>Duffy</h3>
-              <p>
-                <span>Cost to Adopt:</span>
-                $123.45
-              </p>
-              <p>
-                Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-              </p>
+            <div class="profile-card">
+              <img src="./images/duffy-card.jpg" alt="Facial shot of a white-faced dog" onclick="showDogInfo('Duffy', 'Bulldog', 10)">
+              <div class="profile-card-text">
+                <h3>Duffy</h3>
+                <p>
+                  <span>Cost to Adopt:</span>
+                  $123.45
+                </p>
+                <p>
+                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+                </p>
+              </div>
+              <button type="button" name="button" onclick="addDogToTotal(10)">Adopt</button>
             </div>
-            <button type="button" name="button" onclick="addDogToTotal(10)">Adopt</button>
-          </div>
-          <div class="profile-card">
-            <img src="./images/lucas-card.jpg" alt="Facial shot of a black-faced dog" onclick="showDogInfo('Lucas', 'Coonhound', 16)">
-            <div class="profile-card-text">
-              <h3>Lucas</h3>
-              <p>
-                <span>Cost to Adopt:</span>
-                $123.45
-              </p>
-              <p>
-                Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-              </p>
+            <div class="profile-card">
+              <img src="./images/lucas-card.jpg" alt="Facial shot of a black-faced dog" onclick="showDogInfo('Lucas', 'Coonhound', 16)">
+              <div class="profile-card-text">
+                <h3>Lucas</h3>
+                <p>
+                  <span>Cost to Adopt:</span>
+                  $123.45
+                </p>
+                <p>
+                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+                </p>
+              </div>
+              <button type="button" name="button" onclick="addDogToTotal(16)">Adopt</button>
             </div>
-            <button type="button" name="button" onclick="addDogToTotal(16)">Adopt</button>
-          </div>
-          <div class="profile-card">
-            <img src="./images/Jake-card.jpg" alt="Side facial shot of a tan dog" onclick="showDogInfo('Jake', 'Shepherd', 20)">
-            <div class="profile-card-text">
-              <h3>Jake</h3>
-              <p>
-                <span>Cost to Adopt:</span>
-                $123.45
-              </p>
-              <p>
-                Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-              </p>
+            <div class="profile-card">
+              <img src="./images/Jake-card.jpg" alt="Side facial shot of a tan dog" onclick="showDogInfo('Jake', 'Shepherd', 20)">
+              <div class="profile-card-text">
+                <h3>Jake</h3>
+                <p>
+                  <span>Cost to Adopt:</span>
+                  $123.45
+                </p>
+                <p>
+                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+                </p>
+              </div>
+              <button type="button" name="button" onclick="addDogToTotal(20)">Adopt</button>
             </div>
-            <button type="button" name="button" onclick="addDogToTotal(20)">Adopt</button>
-          </div>
-          <div class="profile-card">
-            <img src="./images/angus-card.jpg" alt="Facial shot of a smiling, brown and black faced dog" onclick="showDogInfo('Angus', 'Spaniel', 17)">
-            <div class="profile-card-text">
-              <h3>Angus</h3>
-              <p>
-                <span>Cost to Adopt:</span>
-                $123.45
-              </p>
-              <p>
-                Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-              </p>
+            <div class="profile-card">
+              <img src="./images/angus-card.jpg" alt="Facial shot of a smiling, brown and black faced dog" onclick="showDogInfo('Angus', 'Spaniel', 17)">
+              <div class="profile-card-text">
+                <h3>Angus</h3>
+                <p>
+                  <span>Cost to Adopt:</span>
+                  $123.45
+                </p>
+                <p>
+                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+                </p>
+              </div>
+              <button type="button" name="button" onclick="addDogToTotal(17)">Adopt</button>
             </div>
-            <button type="button" name="button" onclick="addDogToTotal(17)">Adopt</button>
-          </div>
-          <div class="profile-card">
-            <img src="./images/violet-card.jpg" alt="Shot from above of a dark brown dog" onclick="showDogInfo('Violet', 'Beagle', 12)">
-            <div class="profile-card-text">
-              <h3>Violet</h3>
-              <p>
-                <span>Cost to Adopt:</span>
-                $123.45
-              </p>
-              <p>
-                Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-              </p>
+            <div class="profile-card">
+              <img src="./images/violet-card.jpg" alt="Shot from above of a dark brown dog" onclick="showDogInfo('Violet', 'Beagle', 12)">
+              <div class="profile-card-text">
+                <h3>Violet</h3>
+                <p>
+                  <span>Cost to Adopt:</span>
+                  $123.45
+                </p>
+                <p>
+                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+                </p>
+              </div>
+              <button type="button" name="button" onclick="addDogToTotal(12)">Adopt</button>
             </div>
-            <button type="button" name="button" onclick="addDogToTotal(12)">Adopt</button>
           </div>
+          <div class="more-dogs-link">
+            <a href="adopt-page.html">See More Dogs</a>
+          </div>
+        </section>
+      </div>
+
+      <aside class="main-page-blog-preview">
+        <h2>From Our Blog</h2>
+        <div class="blog-previews">
+          <article class="blog-preview">
+            <img src="./images/blog-1.jpg" alt="Back-facing shot of a woman with a dog, and a scenic view in the background">
+            <div class="blog-preview-text">
+              <h3>Traveling With Your Dog</h3>
+              <p>
+                Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga.
+              </p>
+              <a href="blog-page.html">Read more >></a>
+            </div>
+          </article>
+          <article class="blog-preview">
+            <img src="./images/blog-2.jpg" alt="A group of dogs all on leashes">
+            <div class="blog-preview-text">
+              <h3>How to Walk Multiple Dogs</h3>
+              <p>
+                Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga.
+              </p>
+              <a href="blog-page.html">Read more >></a>
+            </div>
+          </article>
+          <article class="blog-preview">
+            <img src="./images/blog-3.jpg" alt="Black outline of a woman and a dog, with a red-orage sky in the background">
+            <div class="blog-preview-text">
+              <h3>Teach Your Dog To Fetch</h3>
+              <p>
+                Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga.
+              </p>
+              <a href="blog-page.html">Read more >></a>
+            </div>
+          </article>
         </div>
-        <div class="more-dogs-link">
-          <a href="adopt-page.html">See More Dogs</a>
-        </div>
-      </section>
+      </aside>
     </main>
 
     <footer>
