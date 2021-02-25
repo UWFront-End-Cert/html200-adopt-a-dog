@@ -197,6 +197,22 @@ main {
 .blog-preview img {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .main-page-blog-preview {
+    display: none;
+  }
+  .main-page-main-column {
+    width: 100%;
+  }
+  .profile-card {
+    width: 42%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .profile-card {
+    width: 88%;
+  }
+}
 
 /*
  * Layout-related styling: blog page
