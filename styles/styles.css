@@ -188,22 +188,275 @@ blockquote{
     text-align: center;
   }
 
-  .flex-item{
+  /* .flex-item{
     width: 20%;
     min-width: 20rem;
     margin: 1rem;
-  }
+  } */
 
-  .flexbox-wrapper{
+  /* .flexbox-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
+  } */
+
+  /* article{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } */
 
   article{
-    display: block;
+    border-style: groove;
   }
 
-  img{
+  article img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
+    min-width: 100%;
+  }
+  article p{
+    text-align: center;
+  }
+  article h3{
+    text-align: center;
+  }
+  article h4{
+    text-align: center;
+  }
+
+  article button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.container {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  /* background-color: peachpuff; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 400px){
+  .box{
+    width: 100%;
+    border-style: groove;
+  }
+  main{
+    margin: 0 0 0 0;
+  }
+  /* img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  p{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+  h4{
+    text-align: center;
+  }
+  button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+}
+
+@media screen and (min-width: 768px) {
+  .box{
+    width: 45%;
+    border-style: groove;
+  }
+  article img{
+    min-width: 75%;
+  }
+  /* img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  p{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+  h4{
+    text-align: center;
+  }
+  button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+}
+@media screen and (min-width: 1000px) {
+  .box{
+    width: 32%;
+    border-style: groove;
+  }
+  main{
+    margin: 2rem;
+    align-items: center;
+  }
+  article img{
+    min-width: 100%;
+  }
+  /* img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  p{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+  h4{
+    text-align: center;
+  }
+  button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+}
+
+img{
+  max-width:100%;
+}
+
+/* experimental grid stuff below */
+/* * {
+  box-sizing: border-box;
+  text-align:center;
+} */
+
+.col {
+  float: left;
+  padding: 2rem;
+  /* border: 1px solid red; */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.span_1_of_12 {
+  width: 8.33%;
+  }
+  
+  .span_2_of_12 {
+  width: 16.66%;
+  }
+  
+  .span_3_of_12 {
+  width: 25%;
+  }
+  
+  .span_4_of_12 {
+  width: 33.33%;
+  }
+  
+  .span_5_of_12 {
+  width: 41.66%;
+  }
+  
+  .span_6_of_12 {
+  width: 50%;
+  }
+  
+  .span_7_of_12 {
+  width: 58.33%;
+  }
+  
+  .span_8_of_12 {
+  width: 66.66%;
+  }
+  
+  .span_9_of_12 {
+  width: 75%;
+  }
+  
+  .span_10_of_12 {
+  width: 83.33%;
+  }
+  
+  .span_11_of_12 {
+  width: 91.66%;
+  }
+  
+  .span_12_of_12 {
+  width: 100%;
   }

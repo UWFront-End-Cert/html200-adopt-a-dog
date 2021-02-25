@@ -5,6 +5,7 @@
 	<title>Adoptadog - Seattle's premiere dog adoption agency</title>
 	<link rel="stylesheet" type="text/css" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3f336ee7e9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -30,8 +31,7 @@
     </ul>
 
 	<main>
-        <button><a href="checkout.html">Checkout</a></button>
-
+        
         <!-- <div class="grid-container">
             <div class="grid-item"><img src="./images/murphy-card.jpg" alt="brown dog named murphy">
                 <h3>Murphy</h3>
@@ -77,7 +77,7 @@
           </div> -->
 
 		<section>
-            <img src="./images/home-intro.jpg" alt="man hugging brown dog lovingly">
+            <img src="./images/home-intro-wide.png" alt="man hugging brown dog lovingly" width="100%">
             <h1>Adopt A Dog</h1>
             <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
                 tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
@@ -88,10 +88,10 @@
                 volorent fugia nonsedi gendand itatquos as magnimpor aut
                 molor autatia ad est officimus accae et omnia cus, od qui ate </p>
 		</section>
-        <section>
-            <div class="flexbox-wrapper">
-            <div class="flex-item">
-        <article>
+        <section class="container">
+            <!-- <div class="flexbox-wrapper"> -->
+            
+        <article class="box">
             <img src="./images/murphy-card.jpg" alt="brown dog named murphy" onclick="dogInfo(name = 'Murphy', breed = 'lab', fee = '123.45')">
             <h3>Murphy</h3>
             <h4>Cost to Adopt: $123.45</h4>
@@ -102,10 +102,8 @@
                 qui doluptae</p>
             <button onclick="adoptionTotal(fee = 123.45)" type="submit">Adopt</button>
         </article>
-        </div>
 
-        <div class="flex-item">
-        <article>
+        <article class="box">
             <img src="./images/poppy-card.jpg" alt="white shaggy dog named poppy" onclick="dogInfo(name = 'Poppy', breed = 'Terrier', fee = '123.45')">
             <h3>Poppy</h3>
             <h4>Cost to Adopt: $123.45</h4>
@@ -116,10 +114,9 @@
                 qui doluptae</p>
             <button onclick="adoptionTotal(fee = 123.45)" type="submit">Adopt</button>
         </article>
-        </div>
 
-        <div class="flex-item">
-        <article>
+
+        <article class="box">
             <img src="./images/jack-card.jpg" alt="white and brown dog named Jack" onclick="dogInfo(name = 'Jack', breed = 'Unknown breed', fee = '123.45')">
             <h3>Jack</h3>
             <h4>Cost to Adopt: $123.45</h4>
@@ -130,10 +127,8 @@
                 qui doluptae</p>
             <button onclick="adoptionTotal(fee = 123.45)" type="submit">Adopt</button>
         </article>
-        </div>
 
-        <div class="flex-item">
-        <article>
+        <article class="box">
             <img src="./images/duffy-card.jpg" alt="White and brown dog named duffy" onclick="dogInfo(name = 'Duffy', breed = 'Unknown breed', fee = '123.45')">
             <h3>Duffy</h3>
             <h4>Cost to Adopt: $123.45</h4>
@@ -144,10 +139,9 @@
                 qui doluptae</p>
             <button onclick="adoptionTotal(fee = 123.45)" type="submit">Adopt</button>
         </article>
-        </div>
 
-        <div class="flex-item">
-        <article>
+
+        <article class="box">
             <img src="./images/lucas-card.jpg" alt="black dog named lucas" onclick="dogInfo(name = 'Lucas', breed = 'Unknown breed', fee = '123.45')">
             <h3>Lucas</h3>
             <h4>Cost to Adopt: $123.45</h4>
@@ -158,10 +152,8 @@
                 qui doluptae</p>
             <button onclick="adoptionTotal(fee = 123.45)" type="submit">Adopt</button>
         </article>
-        </div>
 
-        <div class="flex-item">
-        <article>
+        <article class="box">
             <img src="./images/jake-card.jpg" alt="white and slightly brown dog named jake" onclick="dogInfo(name = 'Jake', breed = 'Unknown breed', fee = '123.45')">
             <h3>Jake</h3>
             <h4>Cost to Adopt: $123.45</h4>
@@ -172,10 +164,8 @@
                 qui doluptae</p>
             <button onclick="adoptionTotal(fee = 123.45)" type="submit">Adopt</button>
         </article>
-        </div>
 
-        <div class="flex-item">
-        <article>
+        <article class="box">
             <img src="./images/angus-card.jpg" alt="mostly brown dog with some white named angus" onclick="dogInfo(name = 'Angus', breed = 'Unknown breed', fee = '123.45')">
             <h3>Angus</h3>
             <h4>Cost to Adopt: $123.45</h4>
@@ -186,10 +176,8 @@
                 qui doluptae</p>
             <button onclick="adoptionTotal(fee = 123.45)" type="submit">Adopt</button>
         </article>
-        </div>
 
-        <div class="flex-item">
-        <article>
+        <article class="box">
             <img src="./images/violet-card.jpg" alt="dark brown puppy named violet" onclick="dogInfo(name = 'Violet', breed = 'Unknown breed', fee = '123.45')">
             <h3>Violet</h3>
             <h4>Cost to Adopt: $123.45</h4>
@@ -200,10 +188,10 @@
                 qui doluptae</p>
             <button onclick="adoptionTotal(fee = 123.45)" type="submit">Adopt</button>
         </article>
-        </div>
-        </div>
-        <button>See More Dogs</button>
+        
         </section>
+        <button>See More Dogs</button>
+        <button><a href="checkout.html">Checkout</a></button>
 	</main>
 	<footer class="pagefooter">
 
