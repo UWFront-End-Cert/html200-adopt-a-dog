@@ -106,7 +106,7 @@ main {
   flex-direction:column;
 }
 
-.right-content {
+.right-content-desktop {
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -157,6 +157,52 @@ div.blog {
 .dogimage {
   width: 100%;
 }
+
+@media screen and (min-width: 1025px) {
+    .right-content-desktop{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .right-content-mobile{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .right-content-desktop{
+    display:flex;
+    flex-direction:column;
+    padding-left: 1.5rem;
+  }
+
+  .right-content-mobile{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .index-dogs{
+    width: 100%;
+  }
+
+  .right-content-desktop{
+    display:none;
+  }
+
+  .right-content-mobile{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+  }
+
+  .container{
+    display:flex;
+    flex-direction: row;
+  }
+
+}
+
 
 /* footer starts here */
 
@@ -278,7 +324,7 @@ header a {
   color: #085E9F;
 }
 
-div.right-content p {
+div.right-content-desktop p {
   font-size: .8rem;
   padding-bottom: 1rem;
 }
