@@ -22,13 +22,13 @@ body a:hover {
 /********** MEDIA QUERIES **********/
 /* for phones - dog grid layout needs to change from 3 columns to 1 (home) */
 @media not print and (min-width: 576px) and (max-width: 767px) {
-  .main-content {
+  .main-content, .main-content-blog {
     width: 25%;
   }
 }
 /* for tablet - dog grid layout needs to change from 3 columns to 2 (home) */
 @media not print and (min-width: 768px) and (max-width: 991px) {
-  .main-content {
+  .main-content, .main-content-blog {
     width: 50%;
   }
 }
