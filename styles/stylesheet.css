@@ -22,18 +22,6 @@ body a:hover {
 /********** MEDIA QUERIES **********/
 /* for phones - dog grid layout needs to change from 3 columns to 1 (home) and hide blog aside */
 @media not print and (min-width: 576px) and (max-width: 767px) {
-  .main-content, .main-content-blog, .blog-aside {
-    width: 25%;
-  }
-}
-/* for tablet - dog grid layout needs to change from 3 columns to 2 (home) */
-@media not print and (min-width: 768px) and (max-width: 991px) {
-  .main-content, .main-content-blog, .blog-aside {
-    width: 50%;
-  }
-}
-/* for computer - dog grid layout 3 columns (homescreen) */
-@media not print and (min-width: 992px) {
   .main-content {
     display: flex;
     /* flex-flow: row wrap;
@@ -47,11 +35,14 @@ body a:hover {
     margin: 2rem 6rem;
   }
   .home-content {
+    display: grid;
     flex: 70%;
     align-items: center;
     margin-bottom: 2rem;
   }
   .blog-aside {
+    /* having trouble figuring out why this part isn't working */
+    display: none;
     flex: 30%;
     flex-flow: row wrap;
     margin: -1rem 6rem 2rem 4rem;
@@ -84,6 +75,30 @@ body a:hover {
   .page-content-dogs section button, .page-content section button {
     width: 11rem;
     height: 2rem;
+  }
+}
+/* for tablet - dog grid layout needs to change from 3 columns to 2 (home) */
+@media not print and (min-width: 768px) and (max-width: 991px) {
+  .main-content, .main-content-blog, .blog-aside {
+    width: 50%;
+  }
+  .blog-aside {
+    display: grid;
+    flex: 30%;
+    flex-flow: row wrap;
+    margin: -1rem 6rem 2rem 4rem;
+  }
+}
+/* for computer - dog grid layout 3 columns (homescreen) */
+@media not print and (min-width: 992px) {
+  .main-content, .main-content-blog {
+    width: 70%;
+  }
+  .blog-aside {
+    display: grid;
+    flex: 30%;
+    flex-flow: row wrap;
+    margin: -1rem 6rem 2rem 4rem;
   }
 }
 /* Bonus: make it printable */
