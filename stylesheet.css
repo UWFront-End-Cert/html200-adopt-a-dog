@@ -60,9 +60,8 @@
 .see-dogs {
     display: grid;
     grid-area: main;
-    grid-row: 5;
-    grid-column: 1/span 5;
-    grid-template-columns: repeat(4, 1fr);
+    grid-row: 4;
+    grid-column: 1/ 5;
 }
 
 .space {
