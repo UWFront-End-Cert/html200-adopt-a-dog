@@ -53,6 +53,21 @@
     grid-gap: 50px;
 }
 
+.grid-item {
+    border: 2px solid grey;
+}
+
+.grid-row-wrapper {
+    display: contents;
+}
+
+    .grid-row-wrapper > .grid-item {
+        border: 2px solid lightgrey;
+    }
+
+.dog-name {
+    color: #093C60;
+}
 
 .description {
     grid-column: 2 / 5;
@@ -63,6 +78,7 @@
     grid-area: nav;
     background-color: #ECECEC;
     font-size: 25px;
+    color:#093C60;
     padding-left: 200px;
     line-height: 50px;
 }
