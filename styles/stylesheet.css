@@ -22,13 +22,13 @@ body a:hover {
 /********** MEDIA QUERIES **********/
 /* for phones - dog grid layout needs to change from 3 columns to 1 (home) */
 @media not print and (min-width: 576px) and (max-width: 767px) {
-  .main-content, .main-content-blog {
+  .main-content, .main-content-blog, .blog-aside {
     width: 25%;
   }
 }
 /* for tablet - dog grid layout needs to change from 3 columns to 2 (home) */
 @media not print and (min-width: 768px) and (max-width: 991px) {
-  .main-content, .main-content-blog {
+  .main-content, .main-content-blog, .blog-aside {
     width: 50%;
   }
 }
@@ -36,21 +36,24 @@ body a:hover {
 @media not print and (min-width: 992px) {
   .main-content {
     display: flex;
-    flex-flow: row wrap;
-    margin: 2rem 4rem;
+    /* flex-flow: row wrap;
+    margin: 2rem 4rem; */
+    width: 80%;
+    margin: 2rem auto;
   }
   .main-content-blog {
     display: flex;
     flex-flow: row wrap;
     margin: 2rem 6rem;
   }
-  .summary {
+  .home-content {
     flex: 70%;
     align-items: center;
     margin-bottom: 2rem;
   }
   .blog-aside {
     flex: 30%;
+    flex-flow: row wrap;
     margin: -1rem 6rem 2rem 4rem;
   }
   .page-content {
