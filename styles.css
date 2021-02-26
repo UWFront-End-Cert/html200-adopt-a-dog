@@ -9,7 +9,7 @@ body {
 header {
     width: 100%;
     height:225px;
-    background-color:navy;
+    background-image: url(images/header-image.jpg);
 
 }
 .header-holder {
@@ -106,18 +106,42 @@ li.header-nav-list-item {
  
 }
 .initial-box {
-    margin-top:20px;
+    margin-top:10%;
     grid-column: 1/ span 3;
-    display:flex;
-    flex-direction:row;
     
 }
+.dog-and-human {
+    max-width:100%;
+}
 .blog-aside {
-    grid-column-start:3;
-    grid-column-end:4;
+    grid-column-start:4;
+    grid-column-end:5;
+    display:flex;
+    flex-direction:column;
+    margin-top:10%;
+}
+.blog-aside-main-page {
+    margin-top:5%;
+}
+.sub-head-main-aside {
+    color:darkblue;
+    margin-bottom:5%;
+}
+.blog-aside-main-page-link {
+    color:darkcyan important!;
+    margin-top:5%;
+}
+.main-page-blog-image {
+    max-width:100%;
+    height:auto;
+    margin-bottom:5%;
 }
 .sub-initial-box {
     margin-left: 6.67%;
+}
+.link-to-blog {
+    display:none;
+    padding-top:5%;
 }
 h2.adopt-primary-header {
     margin-bottom: 10px;
@@ -127,20 +151,26 @@ h2.adopt-primary-header {
 }
 .adoption-pic {
     width:100%;
-    max-height: 100%;
 }
 .initial-box img {
-    width:30%;
+    display:block;
 }
 
 .dog-tile-holder {
     grid-column:1 / span 3;
-    width:30%;
+    display:flex;
+    flex-flow:row wrap;
 } 
 .dog-holder {
     margin-top: 20%;
-    border-style: outset;
+    border-style: double;
     padding:5px;
+}
+
+.main-page .dog-holder {
+    margin-top:10%;
+    width:30%;
+    margin-right:3%;
 }
 dog-cost {
     font-weight:600;
@@ -217,6 +247,7 @@ p.blog-sub-paragraph {
     margin-bottom: 20px;
 }
 .see-more-dogs-button-holder {
+    grid-column-start:2;
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -259,42 +290,56 @@ li {
     display:inline;
 }
 @media (max-width:768px) {
+    
     .grid-item-container {
        display:flex;
        flex-flow:row wrap;
     }
+    .initial-box {
+        width:60%;
+    }
+    .blog-aside {
+        width:30%;
+    }
     initial-box {
         grid-column-start:1;
     }
-    .dog-holder {
+    .main-page .dog-holder {
         grid-column-start:1;
         width:46%;
         flex-flow:row wrap;
     }
-   
+    .see-more-dogs-button-holder {
+        margin-left:40%;
+    }
+    
     }
 @media (max-width: 576px) {
     .grid-item-container {
-        grid-template-columns: 1fr;
+        display:flex;
     }
     .initial-box {
-        grid-column-start:1;
-    }
-    .dog-and-human {
-        max-width:50%;
+        width:100%;
+        
     }
     .intro-para {
         font-size:.8em;
         line-height:1.2em;
     }
+    a.link-to-blog {
+        display:show;
+    }
+    .blog-aside {
+        display:none;
+    }
     
-    .dog-holder {
-        grid-column-start;1;
-        grid-column-end:2;
+    .main-page .dog-holder {
         width:100%;
     }
     .header-holder {
         width:100%;
     }
-    
+    .see-more-dogs-button-holder {
+        margin-left:33%;
+    }
 }

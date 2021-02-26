@@ -6,7 +6,7 @@
       <link rel="stylesheet" type="text/css" href="styles.css">
       <title>Home</title>
    </head>
-   <body>
+   <body class="main-page">
   
       <header>
          <div class="everything-holder">
@@ -32,15 +32,39 @@
          </ul>
       </nav>
       <div class="grid-item-container">
+       
+       
          <section class="initial-box">
             <h2 class="hidden-header">Initial Box Header</h2>
-            <img class="dog-and-human" src="images/home-intro.jpg" alt="dog and human">
+            <img class="dog-and-human" src="images/home-intro-new.png" alt="dog and human">
             <div class="sub-initial-box">
                <h2 class="adopt-primary-header">Adopt a Dog</h2>
-               <p class="intro-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus feugiat elementum. Pellentesque aliquet in lacus laoreet hendrerit. Proin eget tellus odio. Sed posuere sem eget blandit cursus. Curabitur venenatis, leo a malesuada sollicitudin, nunc diam luctus mauris, id semper urna massa maximus orci.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus feugiat elementum. Pellentesque aliquet in lacus laoreet hendrerit. Proin eget tellus odio. Sed posuere sem eget blandit cursus. Curabitur venenatis, leo a malesuada sollicitudin, nunc diam luctus mauris, id semper urna massa maximus orci.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus feugiat elementum. Pellentesque aliquet in lacus laoreet hendrerit. Proin eget tellus odio. Sed posuere sem eget blandit cursus. Curabitur venenatis, leo a malesuada sollicitudin, nunc diam luctus mauris, id semper urna massa maximus orci.</p>
+               <p class="intro-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus feugiat elementum. Pellentesque aliquet in lacus laoreet hendrerit. Proin eget tellus odio. Sed posuere sem eget blandit cursus. Curabitur venenatis, leo a malesuada sollicitudin, nunc diam luctus mauris, id semper urna massa maximus orci.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus feugiat elementum. Pellentesque aliquet in lacus laoreet hendrerit. Proin eget tellus odio. Sed posuere sem eget blandit cursus. Curabitur venenatis, leo a malesuada sollicitudin, nunc diam luctus mauris, id semper urna massa maximus orci.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus feugiat elementum. Pellentesque aliquet in lacus laoreet hendrerit. Proin eget tellus odio. Sed posuere sem eget blandit cursus. Curabitur venenatis, leo a malesuada sollicitudin, nunc diam luctus mauris, id semper urna massa maximus orci. </p> 
+                <a class="link-to-blog" href="blog.html">>>Click to go to the blog </a>
             </div>
+            
          </section>
-        <div class="blog-aside"></div>
+       
+         <div class="blog-aside"> <h2 class="blog-aside-title">From Our Blog</h2>
+        <article class="blog-aside-main-page"><img class="main-page-blog-image" src="images/blog-1-main-page.png">
+        <h3 class="sub-head-main-aside">Traveling with your dog</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae congue dolor, vitae fringilla nisi.</p>     
+        <a class="blog-aside-main-page-link" href="blog.html">Read more >>></a> 
+            </article>
+        <article class="blog-aside-main-page"><img class="main-page-blog-image" src="images/blog-2-main-page.png">
+        <h3 class="sub-head-main-aside">How to walk multiple dogs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae congue dolor, vitae fringilla nisi.</p>     
+        <a class="blog-aside-main-page-link" href="blog.html">Read more >>></a> 
+            </article>   
+         <article class="blog-aside-main-page"><img class="main-page-blog-image" src="images/blog-3-main-page.png">
+        <h3 class="sub-head-main-aside">Teach your dog to fetch</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae congue dolor, vitae fringilla nisi.</p>     
+        <a class="blog-aside-main-page-link" href="blog.html">Read more >>></a> 
+            </article>
+          
+          </div>
+        
+          
         <div class="dog-tile-holder">
          <div class="dog-holder">
             <h2 class="hidden-header">Adoption Pic</h2>
@@ -85,26 +109,14 @@
             <p class="dog-cost">Cost to Adopt: $90</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus feugiat elementum. Pellentesque aliquet in lacus laoreet hendrerit. Proin eget tellus odio. Sed posuere sem eget blandit cursus. Curabitur venenatis, leo a malesuada sollicitudin, nunc diam luctus mauris, id semper urna massa maximus orci. </p>
             <button onclick = "arraySummer(90)" class="adopt-button">Adopt</button>
+
          </div>
-         <div class="dog-holder">
-            <img onclick = "dogInfoSheetReturn(120, 'Angus', 'Mutt')" class="adoption-pic" src="images/angus-card.jpg" alt="Angus">
-            <h3>Angus</h3>
-            <p class="dog-cost">Cost to Adopt: $120</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus feugiat elementum. Pellentesque aliquet in lacus laoreet hendrerit. Proin eget tellus odio. Sed posuere sem eget blandit cursus. Curabitur venenatis, leo a malesuada sollicitudin, nunc diam luctus mauris, id semper urna massa maximus orci. </p>
-            <button onclick = "arraySummer(120)" class="adopt-button">Adopt</button>
-         </div>
-         <div class="dog-holder">
-            <img onclick = "dogInfoSheetReturn(140, 'Violet', 'Mutt')" class="adoption-pic" src="images/violet-card.jpg" alt="Violet">
-            <h3>Violet</h3>
-            <p class="dog-cost">Cost to Adopt: $140</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus feugiat elementum. Pellentesque aliquet in lacus laoreet hendrerit. Proin eget tellus odio. Sed posuere sem eget blandit cursus. Curabitur venenatis, leo a malesuada sollicitudin, nunc diam luctus mauris, id semper urna massa maximus orci. </p>
-            <button onclick = "arraySummer(140)" class="adopt-button">Adopt</button>
-         </div>
+     
         </div>
-      </div>
-        <div class="see-more-dogs-button-holder">
+           <div class="see-more-dogs-button-holder">
       <button class="see-more-dogs-button">See more Dogs</button>
         </div>
+      </div>
       <footer>
          <div class="footer-holder">
             <div class="footer-img-holder"> <img src="images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
