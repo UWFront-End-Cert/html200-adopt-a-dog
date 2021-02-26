@@ -62,11 +62,20 @@
     grid-area: main;
     grid-row: 4;
     grid-column: 1/ 5;
+    padding-left: 430px;
+    padding-right: 430px;
 }
 
 .space {
     padding-bottom: 10px;
     padding-left: 10px;
+}
+
+button {
+    color: #093C60;
+    font-weight: bolder;
+    font-size: x-large;
+    border: hidden;
 }
 
 .btn2 {
