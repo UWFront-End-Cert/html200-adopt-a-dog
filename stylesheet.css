@@ -2,6 +2,9 @@
 }
 
 
+.cart {
+    justify-content: center;
+}
 
 .shopping-cart{
     padding-left: 10px;
@@ -19,6 +22,7 @@
     width: 150px;
     border: none;
     border-radius: 2px;
+    text-align: center;
 }
 
 .grid-container {
@@ -53,17 +57,34 @@
     grid-gap: 50px;
 }
 
+.see-dogs {
+    display: grid;
+    grid-area: main;
+    grid-row: 5;
+    grid-column: 1/span 5;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.space {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.btn2 {
+    display: block;
+    text-align: center;
+}
+
 .grid-item {
-    border: 2px solid grey;
 }
 
 .grid-row-wrapper {
     display: contents;
 }
 
-    .grid-row-wrapper > .grid-item {
-        border: 2px solid lightgrey;
-    }
+.grid-row-wrapper > .grid-item {
+    border: 2px solid lightgrey;
+}
 
 .dog-name {
     color: #093C60;
@@ -123,6 +144,7 @@ h1 {
     grid-area: right;
     padding-right: 50px;
     padding-top: 50px;
+    justify-items: center;
 }
 
 
