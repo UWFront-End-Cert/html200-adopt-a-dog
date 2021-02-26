@@ -20,7 +20,7 @@ body a:hover {
   text-decoration: underline;
 }
 /********** MEDIA QUERIES **********/
-/* for phones - dog grid layout needs to change from 3 columns to 1 (home) */
+/* for phones - dog grid layout needs to change from 3 columns to 1 (home) and hide blog aside */
 @media not print and (min-width: 576px) and (max-width: 767px) {
   .main-content, .main-content-blog, .blog-aside {
     width: 25%;
@@ -57,9 +57,10 @@ body a:hover {
     margin: -1rem 6rem 2rem 4rem;
   }
   .page-content {
-    grid-gap: 3rem;
+    grid-gap: 2rem;
     display: flex;
     flex-flow: row wrap;
+    margin-left: 2rem;
   }
   .page-content-dogs {
     grid-area: 2 / 1 / 3 / 4;
