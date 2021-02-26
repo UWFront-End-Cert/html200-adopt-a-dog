@@ -46,6 +46,8 @@ p {
   width: auto;
   flex-direction: row;
   align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 4rem;
 }
 
 .header-image {
@@ -92,6 +94,7 @@ p {
   color: #fff;
   margin-top: 1rem;
   margin-right: 4rem;
+  margin-left: 4rem;
   padding: .3rem 2.5rem;
   font-weight: bold;
   border: none;
@@ -241,8 +244,6 @@ input[type="submit"] {
   border-radius: .2rem;
 }
 
-
-
 .citystatezip {
   display: flex;
   flex-wrap: nowrap;
@@ -267,7 +268,6 @@ input[type="submit"] {
 }
 
 .blog-image {
-    width: 30%;
     padding-right: 2rem;
     align-self: flex-start;
     padding-top: 1.75rem;
