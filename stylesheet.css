@@ -89,13 +89,6 @@
 }
 
 .grid-item {
-}
-
-.grid-row-wrapper {
-    display: contents;
-}
-
-.grid-row-wrapper > .grid-item {
     border: 2px solid lightgrey;
 }
 
@@ -119,11 +112,6 @@
 
 h1 {
     color: #093C60;
-}
-
-.img-three {
-/*    height: 330px;
-    width: auto;*/
 }
 
 .main-article {
