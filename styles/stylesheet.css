@@ -89,7 +89,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: flex-start;
+    align-content: center;
 }
 
 @media screen and (max-width: 575px) {
@@ -123,6 +123,7 @@ header button {
     justify-content: center;
     align-content: center;
     font-size: .8rem;
+
 }
 
 .cart img {
@@ -136,6 +137,10 @@ header button {
     }
 }
 
+@media screen and (max-width:1279px) {
+    .cart {
+        font-size: .6rem;
+    }
 
 .cart p {
     margin-left: 1rem;
@@ -144,7 +149,7 @@ header button {
 
 
 header button {
-    width: 50%;
+    width: 70%;
     display: block;
     margin: 0 auto;
     padding: .5rem 2rem .5rem 2rem;
@@ -155,7 +160,7 @@ header button {
     font-size: .9rem;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width:1279px) {
     header button {
         width: 80%;
     }
