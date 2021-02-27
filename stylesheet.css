@@ -61,10 +61,6 @@
     grid-gap: 50px;
 }
 
-.test {
-    padding-right: 0px;
-}
-
 .see-dogs {
     display: grid;
     grid-area: main;
@@ -85,10 +81,10 @@
     color: #093C60;
     background-color: lightgray;
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: x-large;
     border: hidden;
     text-decoration: none;
-    padding: 10px;
+    padding: 8px;
     border-radius: 3px;
 }
 
