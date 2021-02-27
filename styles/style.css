@@ -18,6 +18,7 @@
 }
 
 header {
+    background: linear-gradient(blue, black);
     background-image: url("../images/header-image.jpg");
     background-position: right;
     background-size: 100% 100%;
@@ -245,7 +246,8 @@ button {
 }
 
 .blog img {
-    width: 75%;
+    width: 100%;
+    height: 300px;
     margin-right: 5rem;
 }
 
@@ -255,6 +257,21 @@ button {
 
 .blog h3 {
     padding-bottom: 3%;
+}
+
+@media screen and (max-width: 575px) {
+    .blog {
+      flex-wrap: wrap;
+      
+        
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .blog img {
+        padding-bottom: 2rem;
+        height: 400px;
+    }
 }
 
 .blog-link {
