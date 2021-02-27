@@ -56,7 +56,7 @@ aside h2 {
 
 /* styling for header */
 header {
-    background:linear-gradient(rgb(96, 136, 95.1), rgb(156, 206, 230));
+    background: linear-gradient(rgb(96, 136, 95.1), rgb(156, 206, 230));
     color: white;
     background-image: url("../images/header-image.jpg");
     background-size: cover;
@@ -86,7 +86,7 @@ header h1 {
 
 .hdr-right {
 
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: flex-start;
@@ -120,7 +120,7 @@ header button {
 .cart {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-content: center;
     font-size: .8rem;
 }
@@ -133,7 +133,7 @@ header button {
 @media screen and (max-width: 575px) {
     .cart img {
         width: 25%;
-    }     
+    }
 }
 
 
@@ -145,7 +145,7 @@ header button {
 
 header button {
     width: 50%;
-    display:block;
+    display: block;
     margin: 0 auto;
     padding: .5rem 2rem .5rem 2rem;
     background-color: #008A00;
@@ -234,13 +234,17 @@ footer a {
 }
 
 @media screen and (max-width: 575px) {
-    .dogs {
+
+    .dogs,
+    .all-dogs {
         grid-template-columns: repeat(auto-fit, minmax(0rem, 100%));
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 1279px) {
-    .dogs {
+
+    .dogs,
+    .all-dogs {
         grid-template-columns: repeat(auto-fit, minmax(0rem, 45%));
     }
 }
@@ -261,6 +265,7 @@ footer a {
 .dogs img,
 .all-dogs img {
     width: 100%;
+    /* height:auto; */
 }
 
 /* formatting for blog column on home page */
@@ -308,6 +313,7 @@ aside img {
         display: block;
     }
 }
+
 /* styling for button on home page to view more dogs */
 .more-dogs {
     width: 15rem;
@@ -451,8 +457,7 @@ select {
 footer {
     background-color: rgb(20, 66, 109);
     text-align: center;
-    padding-bottom: 5%;
-    padding-top: 5%;
+    padding: 5% 1%;
     margin-top: 5%;
 }
 
@@ -461,7 +466,7 @@ footer ul {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 footer a,
@@ -482,6 +487,7 @@ footer p {
 }
 
 .center-footer {
-    margin: auto;
+    margin: 0 auto;
+    display:block;
     width: 50%;
 }
