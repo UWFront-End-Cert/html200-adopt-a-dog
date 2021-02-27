@@ -88,6 +88,8 @@
     font-size: xx-large;
     border: hidden;
     text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
 }
 
 .grid-item {
