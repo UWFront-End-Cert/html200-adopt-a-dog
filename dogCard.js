@@ -1,33 +1,39 @@
 
-function dogInfo() {
-  alert('Breed: Beagle, Name: Murphy, Cost to adopt:$123.45');
+function clickHandler(str) {
+  alert(str);
 }
 
   let total = 0;
-
-function adoptCost(price) {
+function adopt(price) {
   total = price + total;
-  console.log("TOTAL:", total);
+  console.log("Total:", total);
 }
 
-// function adoptCost() {
-//   let adoptCost = 0;
-//   let adoptTotal =  ('Cost to adopt is:' + ' ' +  '\$' + 123.45)
-// alert(adoptTotal);
+
+
+
+
+
+
+
+
+
+
+
+
+// const Murphy = {
+//   Name: 'Murphy',
+//   Breed: 'Beagle',
+//   Cost: $123.45
+// }
+//
+//
+// let total = 0;
+//
+// function adoptCost(price) {
+//   total = price + total;
+//   console.log("TOTAL:", total);
 // }
 
-
-//var x = 1; var y = 2; var result = x + y;
-
-//let dogDetail = document.getElementById('card1').textContent;
-//alert(dogDetail);
-//}
-
-//function dogInfo() {
-  //let dogDetail = document.getElementsByClassName('card1').innerHTML;
-  //dogDetail[0, 1, 2].innerHTML
-
-//function dogInfo() {
-  //let dogDetail = document.getElementById('card1').innerHTML;
-  //alert(dogDetail);
-//}
+// function clickHandler() {
+//   alert('Breed: Beagle, Name: Murphy, Cost to adopt:$123.45');

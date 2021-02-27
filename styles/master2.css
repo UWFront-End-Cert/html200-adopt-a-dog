@@ -45,12 +45,14 @@ p {
   width: auto;
   flex-direction: row;
   align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 4rem;
 }
 
 .header-image {
   background-repeat:no-repeat;
   background-color: #000;
-  background-image: url("../images/header-image.jpg");
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, .1), rgba(139, 69, 19, .5)), url("../images/header-image.jpg");
   background-size: cover; /* fit image into div */
   height: 15rem;
 }
@@ -74,8 +76,7 @@ p {
 
 .cart-total {
   font-size: .75rem;
-  font-weight: lighter;
-
+  font-weight: bold;
   color: #fff;
   line-height: 1.1;
   font-family: Arial, sans-serif;
@@ -90,8 +91,9 @@ p {
 .btn-checkout-header {
   background-color: #90b52a;
   color: #fff;
-  margin-top: 1rem;
+  margin-top: .75rem;
   margin-right: 4rem;
+  margin-left: 4rem;
   padding: .3rem 2.5rem;
   font-weight: bold;
   border: none;
@@ -101,17 +103,8 @@ p {
 .btn-checkout-header > a {
   text-decoration: none;
   color: #fff;
-
+  font-size: .75rem;
 }
-
-/* center content;
-.center {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: auto;
-}
-*/
 
 nav {
   font-size: .8rem;
