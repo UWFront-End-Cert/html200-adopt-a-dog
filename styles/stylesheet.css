@@ -67,7 +67,7 @@ aside h3 {
 
 /* styling for header */
 header {
-    background: linear-gradient(rgb(96, 136, 95.1), rgb(156, 206, 230));
+    background: linear-gradient(to left, darkgreen, rgb(156, 206, 230));
     color: white;
     background-image: url("../images/header-image.jpg");
     background-size: cover;
@@ -505,7 +505,7 @@ select {
 /* footer styling */
 
 footer {
-    background-color: rgb(20, 66, 109);
+    background: linear-gradient(50deg, darkgreen, rgb(156, 206, 230));
     text-align: center;
     padding: 5% 1%;
     margin-top: 5%;
