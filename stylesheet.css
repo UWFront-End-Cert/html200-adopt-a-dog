@@ -6,6 +6,9 @@
     margin-bottom: -30px;
 }
 
+body {
+    margin: 0px;
+}
 
 .cart {
     justify-content: center;
