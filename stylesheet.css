@@ -1,6 +1,8 @@
-﻿﻿body {
+﻿.title {
+    grid-area: main;
+    grid-row: 1;
+    grid-column: 1/ 5;
 }
-
 
 
 .cart {
@@ -62,13 +64,10 @@
 }
 
 .see-dogs {
-    display: grid;
     grid-area: main;
     grid-row: 4;
     grid-column: 1/ 5;
-    padding-left: 420px;
-    padding-right: 420px;
-    justify-content: center;
+    text-align: center;
 }
 
 .space {
