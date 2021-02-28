@@ -24,81 +24,83 @@
     </div>
   </header>
 
+
+  <nav class="nav-head">
+    <a class="nav-item-head" href="index.html">Home<span class="space">/</span></a>
+    <a class="nav-item-head" href="dog-listing.html">Dog Listing<span class="space">/</span></a>
+    <a class="nav-item-head" href="dog-blog.html">Dog Blog<span class="space">/</span></a>
+    <a class="nav-item-head" href="checkout.html">Checkout</a>
+  </nav>
   <main class="form-main">
-    <nav class="nav-head">
-      <a class="nav-item-head" href="index.html">Home<span class="space">/</span></a>
-      <a class="nav-item-head" href="dog-listing.html">Dog Listing<span class="space">/</span></a>
-      <a class="nav-item-head" href="dog-blog.html">Dog Blog<span class="space">/</span></a>
-      <a class="nav-item-head" href="checkout.html">Checkout</a>
-    </nav>
-    <h2 class="title-adoptadog">Checkout</h2>
-    <form method="GET">
-      <div class="form-width">
-        <label class="label-other">First/Last Name
-          <input class="input-other" type="text" name="applicantsName">
-        </label>
+    <form method="GET" class="information">
+      <section class="form-group-1">
+        <h2 class="title-adoptadog">Checkout</h2>
+        <label for="name">First and Last Name:</label>
+        <input type="text" name="applicantsName" placeholder="Full name">
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" placeholder="Email">
 
-        <label class="label-other">Email Address
-          <input class="input-other" type="email" name="applicantsEmail" placeholder="example@gmail.com">
-        </label>
+        <label for="street-address">Street Address:</label>
+        <input type="text" name="street-address" placeholder="Street address">
 
-        <label class="label-other">Street Address
-          <input class="input-other" type="text" name="applicantsAddress">
-        </label>
+        <label for="city">City:</label>
+        <input type="text" name="city" placeholder="City"></label>
 
-        <label class="label-other">City
-          <input class="short-city" type="text" name="applicantsCity">
-        </label>
-
-        <label class="label-other">State
-          <input class="short-state" type="text" name="applicantsState">
-        </label>
-
-        <label class="label-other">Zip Code
-          <input class="short-zip" type="text" name="applicantsZipcode">
-        </label>
-      </div>
-
-      <fieldset>
-        <legend class="fieldset-legend">First Time Adopter?</legend>
-        <label>
-          <input type="radio" name="everAdopt" value="yes">
-          Yes
-        </label>
-        <label>
-          <input type="radio" name="everAdopt" value="no">
-          No
-        </label>
-      </fieldset>
-
-      <label>Pickup Location
-        <select class="pickup" name="location">
-          <option value="">Please select</option>
-          <option value="seattle">Seattle</option>
-          <option value="kirland">Kirkland</option>
-          <option value="bellevue">Bellevue</option>
+        <label for="state">State:</label>
+        <select class="select-menu" name="state">
+          <option value="WA">Washington</option>
+          <option value="OR">Oregon</option>
+          <option value="CA">California</option>
         </select>
-      </label>
+
+        <label for="street-address">Zip Code:</label>
+        <input type="text" name="zipcode" placeholder="Zipcode">
+        </label>
+      </section>
+      <section class="form-group-2">
+        <fieldset>
+          <legend>First Time Adopter?</legend>
+          <div class="first-time">
+            <input class="radio" type="radio" name="everAdopt" value="yes">Yes<br>
+          </div>
+          <div class="first-time">
+            <input class="radio" type="radio" name="everAdopt" value="no">No<br>
+          </div>
+
+        </fieldset>
+        <section class="pickup-section">
+          <label for="pick-up">Pickup Location:</label>
+          <select class="pickup" name="pick-up">
+            <option value="">Please select</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Kirkland">Kirkland</option>
+            <option value="Bellevue">Bellevue</option>
+            <option value="Portland">Portland</option>
+            <option value="San Francisco">San Francisco</option>
+          </select>
+        </section>
+      </section>
+
       <section>
         <h3 class="dogs-adopted">Dogs Adopted</h3>
         <div class="adopted-dogs">
           <img class="checkout-image" src="images/lucas-card.jpg" alt="Dog lucas">
-          <div class="adopted-dog-1">
+          <div class="adopted-text">
             <h3>Lucas</h3>
             <p>Cost to Adopt: $123.45</p>
           </div>
           <img class="checkout-image" src="images/duffy-card.jpg" alt="Dog duffy">
-          <div class="adopted-dog-2">
+          <div class="adopted-text">
             <h3>Duffy</h3>
             <p>Cost to Adopt: $123.45</p>
           </div>
         </div>
-        <div>
-          <label class="cost">Total Adoption Cost
-            <input type="submit" name="adoptionTotal">
-          </label>
-        </div>
       </section>
+      <div class="cost">
+        <label class="cost">Total Adoption Cost</label>
+        <p>$1234.56</p>
+        <input type="submit" name="adoptionTotal" class="submit-button">
+      </div>
     </form>
   </main>
   <footer class="svg-dog-footer">
