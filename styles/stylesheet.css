@@ -30,6 +30,13 @@ h4,
     margin-bottom: 1rem;
 }
 
+.dogs-h2 {
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+
 .blog h2,
 .blog p {
     margin-top: 0;
@@ -266,7 +273,7 @@ footer a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 32%));
     grid-gap: 1% 1%;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     overflow: auto;
 
@@ -298,7 +305,7 @@ footer a {
     color: white;
     font-weight: bold;
     display: block;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 
 .dogs img,
