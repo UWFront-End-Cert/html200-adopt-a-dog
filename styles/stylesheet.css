@@ -24,18 +24,22 @@
   display: flex;
   flex-direction: row wrap;
   color: white;
-  padding-right: 10rem;
+  padding-right: 2rem;
   padding-top: 6rem;
 }
 #logo-size {
   margin-top: 4rem;
   height: 8rem;
   width: auto;
+  display: flex;
+  float: right;
 }
 #cart-size {
   height: 2rem;
   width: 2rem;
   padding-right: 1rem;
+  display: flex;
+  float: right;
 }
 
 header {
@@ -104,7 +108,6 @@ li:first-of-type {
   /* display: flex;
   flex-flow: column wrap; */
   margin-left: 0.2rem;
-  border: 1px solid red;
   /* width: 100%; */
   /* position: absolute; */
   /* justify-content: center; */
@@ -140,7 +143,6 @@ li:first-of-type {
   /* width: 30rem; */
   /* min-width: 30rem; */
   margin-right: 0.2rem;
-  border: 1px solid red;
   align-items: center;
 }
 .container5, .container6 {
@@ -277,14 +279,22 @@ footer p {
   margin: 2rem;
   text-align: center;
 }
-#adoptdogheading {
+#adoptdogheading1 {
   color: #003366;
   /* margin-left: 1rem; */
   margin-right: 2rem;
   margin-bottom: 1rem;
   /* margin-right: 1rem; */
   align-items: center;
-  border: 1px red solid;
+  /* width: 100%; */
+}
+#adoptdogheading2 {
+  color: #003366;
+  /* margin-left: 1rem; */
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  /* margin-right: 1rem; */
+  align-items: center;
   /* width: 100%; */
 }
 article p {
@@ -340,9 +350,11 @@ input {
 .container10 {
   display: flex;
   flex-direction: column;
-  width: 15rem;
-  min-width: 15rem;
+  /* width: 15rem;
+  min-width: 15rem; */
   float: right;
+  /* clear: both; */
+  /* padding-bottom: 10rem; */
 }
 .container3 img {
   width: 100%;
@@ -388,13 +400,11 @@ nav {
   /* display: flex; */
   float: right;
   width: 35%;
-  border: 1px solid red;
   margin-right: 1rem;
   /* clear: both; */
 }
 .float-left {
   width: 60%;
-  border: 1px solid red;
   margin-right: 1rem;
   /* margin-left: 1rem; */
   /* clear: both;  */
@@ -449,9 +459,30 @@ nav {
     align-self: center;
 
     /* width: 17rem; */
-@media screen and (max-width: 558px) {
+@media screen and (max-width: 400px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  li:first-of-type {
+    margin-left: 0rem;
+  }
+  .container10 {
+    display: none;
+  }
+  .container1 {
+    margin-left: 3rem;
+  }
+
+}
+@media screen and (max-width: 576px) {
   .container1 p {
     display: none;
+  }
+  #logo-size {
+    height: 4rem;
   }
   .float-right {
     display: none;
@@ -492,11 +523,6 @@ nav {
   .float-left {
     align-items: center;
     width: 100%;
-  }
-  #logo-size {
-    height: 2rem;
-    width: auto;
-    margin-left: 0.1rem;
   }
   .container1 p {
     font-size: 1rem;
@@ -593,8 +619,8 @@ nav {
     width: 100%;
   }
   #logo-size {
-    height: 2rem;
-    width: auto;
+    height: 4rem;
+    /* width: auto; */
     margin-left: 0.1rem;
   }
   .container1 p {
@@ -613,7 +639,7 @@ nav {
     padding-right: 1rem;
     /* margin: 0; */
     /* float: none; */
-    margin-right: 9rem;
+    margin-right: 0rem;
   }
   #cart-size {
     width: 1rem;
@@ -642,10 +668,10 @@ nav {
     font-size: 1rem;
     margin: 1rem;
   }
-  .mobile-header {
+  /* .mobile-header {
     display: flex;
     flex-direction: column;
-  }
+  } */
   .container3 img {
     max-width: 40rem;
     justify-content: center;
