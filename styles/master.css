@@ -37,11 +37,11 @@ p {
   width: 100%;
 }
 
-.flex-1 {
+.header-left {
   width: auto;
 }
 
-.flex-2 {
+.header-right {
   display: flex;
   width: auto;
   flex-direction: row;
@@ -139,7 +139,10 @@ li a {
 
 
 @media screen and (min-width: 576px) {
-  .flex-container {
+  .card {
+    width: 48%;
+  }
+  /* .flex-container {
     padding-left: 1rem;
   }
 
@@ -148,13 +151,13 @@ li a {
     flex-direction: column;
     grid-gap: 1.5rem;
     width: 100%;
-  }
+  } */
 
 
 }
 
 @media screen and (max-width: 768px) {
-  #content-right {
+  .content-right {
     display: none;
   }
 }
@@ -324,11 +327,11 @@ input[type="submit"] {
 }
 
 
-#content-left {
+.content-left {
 flex: 65%;
 }
 
-#content-right {
+.content-right {
 flex: 30%;
 padding-right: 1rem;
 padding-left: 1rem;

@@ -36,11 +36,11 @@ p {
   width: 100%;
 }
 
-.flex-1 {
+.header-left {
   width: auto;
 }
 
-.flex-2 {
+.header-right {
   display: flex;
   width: auto;
   flex-direction: row;
