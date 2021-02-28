@@ -61,6 +61,10 @@ aside h2 {
     margin-top: 3rem;
 }
 
+aside h3 {
+    margin-left: 0rem;
+}
+
 /* styling for header */
 header {
     background: linear-gradient(rgb(96, 136, 95.1), rgb(156, 206, 230));
