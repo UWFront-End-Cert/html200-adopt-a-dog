@@ -255,20 +255,11 @@ input[type="submit"] {
 
 /************ blog ***************/
 
-/* .blog-container {
-  width: 90%;
-  margin: 0 auto;
-  background-color: dodgerblue;
-  min-height: 900px;
-  padding: 2rem;
-} */
-
 .blog {
   margin-left: 6rem;
   margin-right: 6rem;
   display: flex;
   padding-top: 0px;
-  border: 1px solid red;
 }
 
 .blogheader {

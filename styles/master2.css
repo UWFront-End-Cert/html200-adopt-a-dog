@@ -209,27 +209,13 @@ input[type="submit"] {
   border-radius: .2rem;
 }
 
-/* input[type="submit"]:hover {
-  background: #036D9B;
-}
-
-input[type="submit"]:active {
-  background: #015270;
-} */
-
-
-
-
-
 .checkoutform {
-
   margin-left: 6rem;
   margin-right: 20rem;
   padding-top: 20px;
 }
 
 .citystatezip {
-
 padding-right: 396px;
   padding-top: 0px;
 }
