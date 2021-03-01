@@ -7,6 +7,7 @@
   <title>ADOPT-A-DOG LIST</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/5398a5e1fc.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="adoptadog.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
     </div>
     <div class="checkout-cart-wrapper">
       <img src="images/cart-icon.svg" alt="" width="30">
-      <p class="checkout-total">$1234.56</p>
+      <p class="checkout-total" id="cartUpdate">$0.00</p>
       <form action="checkout.html" class="checkout-button">
         <input class="checkout" type="submit" value="Checkout" onclick="checkout.html"/>
       </form>
@@ -46,134 +47,134 @@
   <h2 class="all-our-dogs">Here are all of our Dogs!</h2>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/murphy-card.jpg" alt="" width="215">
+      <img src="images/murphy-card.jpg" alt="" width="215" onclick="puppyCard(0)">
     </figure>
     <div class="pup-style">
     <h3>Murphy</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/poppy-card.jpg" alt="" width="215">
+      <img src="images/poppy-card.jpg" alt="" width="215" onclick="puppyCard(1)">
     </figure>
     <div class="pup-style">
     <h3>Poppy</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/jack-card.jpg" alt="" width="215">
+      <img src="images/jack-card.jpg" alt="" width="215" onclick="puppyCard(2)">
     </figure>
     <div class="pup-style">
     <h3>Jack</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/duffy-card.jpg" alt="" width="215">
+      <img src="images/duffy-card.jpg" alt="" width="215" onclick="puppyCard(3)">
     </figure>
     <div class="pup-style">
     <h3>Duffy</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/lucas-card.jpg" alt="" width="215">
+      <img src="images/lucas-card.jpg" alt="" width="215" onclick="puppyCard(4)">
     </figure>
     <div class="pup-style">
     <h3>Lucas</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/jake-card.jpg" alt="" width="215">
+      <img src="images/jake-card.jpg" alt="" width="215" onclick="puppyCard(5)">
     </figure>
     <div class="pup-style">
     <h3>Jake</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/angus-card.jpg" alt="" width="215">
+      <img src="images/angus-card.jpg" alt="" width="215" onclick="puppyCard(6)">
     </figure>
     <div class="pup-style">
     <h3>Angus</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/violet-card.jpg" alt="" width="215">
+      <img src="images/violet-card.jpg" alt="" width="215" onclick="puppyCard(7)">
     </figure>
     <div class="pup-style">
     <h3>Violet</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/piper-card.jpg" alt="" width="215">
+      <img src="images/piper-card.jpg" alt="" width="215" onclick="puppyCard(8)">
     </figure>
     <div class="pup-style">
     <h3>Piper</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/maximus-card.jpg" alt="" width="215">
+      <img src="images/maximus-card.jpg" alt="" width="215" onclick="puppyCard(9)">
     </figure>
     <div class="pup-style">
     <h3>Maximus</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/luna-card.jpg" alt="" width="215">
+      <img src="images/luna-card.jpg" alt="" width="215" onclick="puppyCard(10)">
     </figure>
     <div class="pup-style">
     <h3>Luna</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
   <article class="pup-profile">
     <figure class="profile-pic">
-      <img src="images/stella-card.jpg" alt="" width="215">
+      <img src="images/stella-card.jpg" alt="" width="215" onclick="puppyCard(11)">
     </figure>
     <div class="pup-style">
     <h3>Stella</h3>
     <p>Cost to Adopt: $123.45</p>
     <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog">Adopt</button>
+    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
     </div>
   </article>
 </section>
