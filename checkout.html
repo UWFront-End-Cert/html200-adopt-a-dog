@@ -19,7 +19,7 @@
       <input class="cart-btn" type="submit" value="Checkout">
     </div>
     <div>
-      <img class="svg-dog-header" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
+      <img class="svg-dog-header linear-gradient-1" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
       <p>Seattle's premiere dog adoption agency</p>
     </div>
   </header>
@@ -35,27 +35,27 @@
     <form method="GET" class="information">
       <section class="form-group-1">
         <h2 class="title-adoptadog">Checkout</h2>
-        <label for="name">First and Last Name:</label>
+        <label>First and Last Name:</label>
         <input type="text" name="applicantsName" placeholder="Full name">
-        <label for="email">Email Address:</label>
+        <label>Email Address:</label>
         <input type="email" name="email" placeholder="Email">
 
-        <label for="street-address">Street Address:</label>
+        <label>Street Address:</label>
         <input type="text" name="street-address" placeholder="Street address">
 
-        <label for="city">City:</label>
-        <input type="text" name="city" placeholder="City"></label>
+        <label>City:</label>
+        <input type="text" name="city" placeholder="City">
 
-        <label for="state">State:</label>
+        <label>State:</label>
         <select class="select-menu" name="state">
+          <option value="Please select">Please select</option>
           <option value="WA">Washington</option>
           <option value="OR">Oregon</option>
           <option value="CA">California</option>
         </select>
 
-        <label for="street-address">Zip Code:</label>
+        <label>Zip Code:</label>
         <input type="text" name="zipcode" placeholder="Zipcode">
-        </label>
       </section>
       <section class="form-group-2">
         <fieldset>
@@ -69,9 +69,9 @@
 
         </fieldset>
         <section class="pickup-section">
-          <label for="pick-up">Pickup Location:</label>
+          <label>Pickup Location:</label>
           <select class="pickup" name="pick-up">
-            <option value="">Please select</option>
+            <option value="Please select">Please select</option>
             <option value="Seattle">Seattle</option>
             <option value="Kirkland">Kirkland</option>
             <option value="Bellevue">Bellevue</option>
@@ -87,18 +87,24 @@
           <img class="checkout-image" src="images/lucas-card.jpg" alt="Dog lucas">
           <div class="adopted-text">
             <h3>Lucas</h3>
-            <p>Cost to Adopt: $123.45</p>
+            <div class="inline-price">
+              <p class="total-cost">Cost to Adopt: </p>
+              <p class="price-adopt"> $123.45</p>
+            </div>
           </div>
           <img class="checkout-image" src="images/duffy-card.jpg" alt="Dog duffy">
           <div class="adopted-text">
             <h3>Duffy</h3>
-            <p>Cost to Adopt: $123.45</p>
+            <div class="inline-price">
+              <p class="total-cost">Cost to Adopt: </p>
+              <p class="price-adopt"> $123.45</p>
+            </div>
           </div>
         </div>
       </section>
       <div class="cost">
         <label class="cost">Total Adoption Cost</label>
-        <p>$1234.56</p>
+        <p class="price-adopt">$1234.56</p>
         <input type="submit" name="adoptionTotal" class="submit-button">
       </div>
     </form>
