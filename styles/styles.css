@@ -15,7 +15,7 @@ header {
 }
 
 header p {
-  color: #7CFC00;
+  color: #7cfc00;
   width: 100%;
   padding-left: 6rem;
   font-style: initial;
@@ -23,7 +23,7 @@ header p {
   margin: 0;
 }
 .svg-dog-header {
-  width: 30%; 
+  width: 30%;
   height: 25%;
   padding-top: 10rem;
   padding-left: 5rem;
@@ -45,7 +45,7 @@ h3 {
 .svg-cart {
   width: 15%;
   height: 5%;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   color: white;
 }
 .price {
@@ -66,7 +66,7 @@ h3 {
 .cart-btn {
   color: #ffffff;
   background-color: #33cc33;
-  padding: .3rem 1rem .3rem 1.5rem;
+  padding: 0.3rem 1rem 0.3rem 1.5rem;
   width: 50%;
   /*top right bottom left*/
 }
@@ -75,26 +75,25 @@ h3 {
   color: #008080;
 }
 
-
 /*----header all bottom---*/
-  /*----Nav Menu Top----*/
-  .nav-head {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-left: 13%;
-  }
-  .nav-item-head {
-    color: #008080;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 1rem;
-    padding-top: 2rem;
-  }
+/*----Nav Menu Top----*/
+.nav-head {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 13%;
+}
+.nav-item-head {
+  color: #008080;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  padding-top: 2rem;
+}
 
-  .space {
-    padding: 0 2rem 0 2rem;
-  }
+.space {
+  padding: 0 2rem 0 2rem;
+}
 /*---Nav end---*/
 /*-------Main Index.html with 6 dogs-----*/
 .main-index {
@@ -104,16 +103,26 @@ h3 {
 
 /*------Top of Home page index.html --*/
 main {
-padding: 0rem 20rem 2rem 10rem;
-display: flex;
-flex-direction: column;
+  /* padding: 0rem 20rem 2rem 10rem; */
+  display: flex;
+  flex-direction: row;
 }
 .dog-listing-container {
-  width: 55%;
+  width: 75%;
 }
 .dog-blog-aside {
-  width: 20%;
-  align-items:flex-end;
+  width: 25%;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .dog-blog-aside {
+    display: none;
+  }
+
+  .dog-listing-container {
+    width: 100%;
+  }
 }
 .adopt-a-dog-intro {
   display: flex;
@@ -121,28 +130,28 @@ flex-direction: column;
   width: 100%;
   height: auto;
 }
-  /* section boy hugging dog */
-  .index-image-top {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    height: 20rem;
-    background-size: cover;
-    padding: 3rem 0 1rem 0;
-  }
-  .title-index {
-    color: #008080;
-    font-weight:700;
-  }
-  .title-about {
-    width: 100%;
-    color:#A9A9A9;
-    font-size: 1.2rem;;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    line-height: 1.5rem;
-    justify-content:space-evenly;
-  }
+/* section boy hugging dog */
+.index-image-top {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+  padding: 3rem 0 1rem 0;
+}
+.title-index {
+  color: #008080;
+  font-weight: 700;
+}
+.title-about {
+  width: 100%;
+  color: #a9a9a9;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.5rem;
+  justify-content: space-evenly;
+}
 .index-row-1 {
   width: 100%;
   height: 30%;
@@ -168,7 +177,8 @@ flex-direction: column;
 
 .flex-container-index-1 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -192,8 +202,11 @@ flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
   box-sizing: border-box;
-  margin: 1rem;
+  margin: 0;
 }
+
+/* TODO: write media queries to fix dog card widths */
+
 .dog-card-index > .dog-item-image {
   width: 100%;
   padding: 0;
@@ -203,21 +216,21 @@ flex-direction: column;
   padding: 0;
 }
 .dog-card p {
-text-align:inherit;
-align-items: center;
-padding-left: .5rem;
-padding-right: .5rem;
+  text-align: inherit;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .index-text {
   color: #000000;
   padding-left: 1rem;
-  padding-right: .8rem;
+  padding-right: 0.8rem;
 }
 
 .flex-dog-button {
   background-color: #33cc33;
   color: white;
-  font-family: "Times New Roman", Times,  serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   width: 75%;
   height: 15%;
@@ -226,14 +239,13 @@ padding-right: .5rem;
 .button-index {
   background-color: #33cc33;
   color: white;
-  font-family: "Times New Roman", Times,  serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   font-size: 1rem;
   width: 80%;
   height: 9%;
   margin-bottom: 1rem;
   margin-left: 1rem;
-
 }
 
 /*---dog card end ---*/
@@ -243,26 +255,26 @@ padding-right: .5rem;
   color: #008080;
   font-weight: bold;
   text-decoration: none;
-  font-family: "Times New Roman", Times,  serif;
+  font-family: "Times New Roman", Times, serif;
   padding-top: 1rem;
 }
 /*---bottom of dog listing index.html---*/
 /*------Dog Listing Card---*/
 
 /*----Dog listing html---*/
-.dog-list-container{
-width: 100%;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-padding-top: 2rem;
-gap: 1rem;
+.dog-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  gap: 1rem;
 }
 
 .dog-listing-title {
-margin-left: 0;
-color: #008080;
-padding-top: 2rem;
+  margin-left: 0;
+  color: #008080;
+  padding-top: 2rem;
 }
 .row-one {
   display: flex;
@@ -280,7 +292,7 @@ padding-top: 2rem;
   gap: 2rem;
 }
 
-/*------Dog-blog html ___*/  
+/*------Dog-blog html ___*/
 .blog-adoptadog-h1 {
   color: #008080;
   padding: 3rem;
@@ -303,8 +315,6 @@ padding-top: 2rem;
   padding-bottom: 2rem;
 }
 .blog-image {
-
-
 }
 .blog-topic {
   color: #008080;
@@ -323,15 +333,14 @@ padding-top: 2rem;
   margin: 0;
 }
 .p-1 {
-color: black;
-font-size: 1.2em;
+  color: black;
+  font-size: 1.2em;
 }
 .p-2 {
-color: black;
-font-size: 1.2em;
+  color: black;
+  font-size: 1.2em;
 }
 /*---Dog Blog Bottom----*/
-
 
 /*--------Checkout Form --------*/
 /*-------section-checkout form-------*/
@@ -350,7 +359,7 @@ label {
 }
 .form-main {
   padding-left: 10%;
- }
+}
 .form-group-1 {
   margin-bottom: 1em;
   padding: 10px;
@@ -380,7 +389,6 @@ select {
 }
 .pickup-section {
   padding: 2rem 1rem 1rem 0;
-
 }
 .pickup {
   width: 25%;
@@ -392,7 +400,7 @@ select {
 }
 .adopted-text {
   flex-direction: column;
-  line-height: .8rem;
+  line-height: 0.8rem;
   padding-left: 1.5rem;
   width: 25%;
   font-size: 1.5rem;
@@ -401,13 +409,11 @@ select {
 .total-index {
   font-weight: bold;
   font-size: inherit;
-
-
 }
 .price-index {
- font-size: inherit;
- font-weight: 500;
- padding-left: 1rem;
+  font-size: inherit;
+  font-weight: 500;
+  padding-left: 1rem;
 }
 
 .pricing {
@@ -431,7 +437,7 @@ fieldset {
   margin: 0;
 }
 .first-time {
-  padding: .5rem;
+  padding: 0.5rem;
   align-self: flex-start;
 }
 .cost {
@@ -451,7 +457,7 @@ fieldset {
   height: 20%;
   color: #000000;
   font-size: 1rem;
-  background-color: #7CFC00;
+  background-color: #7cfc00;
 }
 .title-adoptadog {
   color: #008080;
@@ -465,7 +471,7 @@ legend {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: 10%;
