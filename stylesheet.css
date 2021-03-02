@@ -266,9 +266,21 @@ input {
     width: 100px;
 }
 
-.first-time {
+.pickup {
+    width: 300px;
 }
 
-.block {
-    display: block;
+.adopted {
+    display: flex;
+    height: 50px;
+    width: auto;
+}
+
+.test {
+    display: inline-block;
+}
+
+.small-dog {
+    height: 50px;
+    width: auto;
 }
