@@ -274,6 +274,7 @@ input {
     display: flex;
     height: 50px;
     width: auto;
+    justify-content: space-between;
 }
 
 .test {
@@ -283,4 +284,8 @@ input {
 .small-dog {
     height: 50px;
     width: auto;
+}
+
+h3 {
+    margin: 0px;
 }
