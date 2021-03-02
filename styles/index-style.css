@@ -1,17 +1,34 @@
-.intro-grid, .dog-tiles-grid {
-  padding: 1% 15%;
+.div {
+  border-style: solid;
+  border-color: red;
+  border-width: thin;
+}
+
+section {
+  padding: 1% 12%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.intro-grid  {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .intro-grid img {
   width: 100%;
-  padding: 7% 7% 7% 0%;
 }
 
 .intro-grid h2 {
   text-align: left;
   font-size: 2rem;
   color: #01344a;
-  padding: 7% 7% 7% 0%;
 }
 
 .intro-grid p {
@@ -19,69 +36,64 @@
   font-size: 1.2rem;
 }
 
-.dog-tiles-grid img {
+.dog-tiles-grid {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/*Phone min-width: 576px*/
+.col {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: thin;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*Tablet min-width: 768px*/
+@media screen and (min-width: 768px) {
+  .col {
+    width: 48%;
+  }
+}
+
+  /*Desktop min-width: 992px*/
+  @media screen and (min-width: 1000px) {
+    .col {
+      width: 31%;
+    }
+  }
+
+.dog-tiles-grid img{
   width: 100%;
 }
 
 .dog-tiles-grid h3 {
+  width: 100%;
   text-align: left;
-  padding: 0% 5%;
+  padding: 0rem 1rem;
   color: #01344a;
 }
 
 .dog-tiles-grid p1 {
+  width: 100%;
   text-align: left;
-  padding: 0% 5%;
+  padding: 0rem 1rem;
   font-size: .8rem;
   font-weight: bold;
 }
 
 .dog-tiles-grid p {
+  width: 100%;
   text-align: left;
-  padding: 0% 5%;
+  padding: 0rem 1rem;
   font-size: .8rem;
-}
-
-.div {
-  border-style: solid;
-  border-color: red;
-  border-width: thin;
-}
-
-/* Grid   column-gap: 6%;
-  row-gap: 6%;*/
-
-.intro-grid {
-  display: flex;
-}
-
-.intro-grid .col {
-  flex: 1;
-}
-
-.dog-tiles-grid {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 6%;
-  /*how can i put in a in betweem the rows?*/
-}
-
-.dog-tiles-grid .col {
-  width: 20.5%;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: thin;
-}
-
-@media (max-width: 768px) {
-  .intro-grid,
-.dog-tiles-grid {
-    display: block;
-  }
-
-  .intro-grid .col,
-.dog-tiles-grid .col {
-    width: 100%;
-    margin: 0 0 0 0;
-  }
 }
