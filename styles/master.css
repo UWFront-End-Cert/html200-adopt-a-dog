@@ -1,3 +1,6 @@
+* {
+  border: 1px solid red;
+}
 body {
   margin: 0;
   box-sizing: border-box;
@@ -137,32 +140,6 @@ li a {
   font-weight: lighter;
 }
 
-
-@media screen and (min-width: 576px) {
-  .card {
-    width: 100%;
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-  .content-right {
-    display: none;
-  }
-
-  .card {
-    width: 48%;
-  }
-}
-
-
-@media screen and (min-width: 768px) {
-  .card-container {
-    display: flex;
-    width: auto;
-
-} /*entire content flex proportion important */
-
 .intro {
   margin-top: 2rem;
   margin-left: 2rem;
@@ -272,11 +249,6 @@ input[type="submit"] {
     margin-bottom: 2rem;
 }
 
-/************ card ***************/
-.img {
-  width: 100%;  /* fit image into grid */
-}
-
 .btn-adopt {
   width: 100%;
   background-color: #90b52a;
@@ -302,28 +274,32 @@ input[type="submit"] {
   color: #29465b;
 }
 
+
+/************ card ***************/
+.img {
+  width: 100%;
+  display: inline-block;
+   /* fit image into grid */
+}
+
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2rem .3rem .5rem 1rem;
-  flex-direction: row;
-}
-
-
-.content-left {
-flex: 65%;
-}
-
-.content-right {
-flex: 30%;
-padding-right: 1rem;
-padding-left: 1rem;
+	width: 90%;
+	max-width: 1440px;
+	padding: 1rem;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 .card {
-  width: 30%;
-  margin: 0 0 .1rem .4rem;
-  border: 1px solid lightgray;
+	height: fit-content;
+	width: 100%; /* mobile first width: 100%;  */
+	display: flex;
+	align-items: flex-start;
+	/* justify-content: initial; */
+  margin: 0;
+  outline: 1px solid lightgray;
 }
 
 .card > div {
@@ -333,7 +309,7 @@ padding-left: 1rem;
 .card > div > h3 {
   color: #29465b;
   margin: .1rem 0 -.5rem -.1rem;
-  padding: 0rem;
+  padding: .7rem 0 .1rem 0;
 }
 
 .card > div > h5 {
@@ -349,6 +325,33 @@ padding-left: 1rem;
   line-height: 1.25rem;
 }
 
+@media screen and (min-width: 768px) {
+	.card {
+		width: 48%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.card {
+		width: 31%;
+	}
+}
+
+
+
+.content-left {
+flex: 65%;
+}
+
+.content-right {
+flex: 30%;
+padding-right: 1rem;
+padding-left: 1rem;
+}
+
+
+
+
 
 /* footer */
 .footer {
@@ -358,29 +361,27 @@ padding-left: 1rem;
   margin-top: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  align-content: center;
+  vertical-align: middle;
 }
 
 .footer-logo {
   width: 10rem;
-  margin: auto; /* Center a Div with CSS Margin Auto */
+  margin: 0 auto; /* Center a Div with CSS Margin Auto */
 }
 
 .copyright {
-  clear: both;
+  /* clear: both; */
   text-align: center;
   color: #FFF;
   font-size: .7rem;
-  font-weight:bold;
-  line-height: 1.5;
 }
 
 .nav-footer {
   text-align: center;
   font-size: .70rem;
   font-weight: bold;
-  padding-top: .5rem; /* vertical-align list */
-  padding-bottom: .5rem;
+  padding: .2rem 0 0 0; /* vertical-align list */
+
   color: #fff;
 }
 
