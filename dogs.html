@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/master2.css">
+    <link rel="stylesheet" href="./styles/master.css">
 
     <script src="./dogCard.js">
     </script>
@@ -49,10 +49,10 @@
 
     <main>
       <h1 class="blogheader">Here are all our Dogs!</h1>
-        <div class="grid">
-            <div class="card card-1">
-              <img onclick="dogInfo()" class="img" src="images/murphy-card.jpg"  alt="dog named murphy" />
+        <div class="card-container">
+            <div class="card">
               <div>
+              <img onclick="dogInfo()" class="img" src="images/murphy-card.jpg"  alt="dog named murphy" />
                 <h3>Murphy</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
@@ -60,9 +60,9 @@
               </div>
             </div>
 
-            <div class="card card-2">
-              <img onclick="dogInfo()" class="img" src="images/poppy-card.jpg"  alt="dog named poppy" />
+            <div class="card">
               <div>
+              <img onclick="dogInfo()" class="img" src="images/poppy-card.jpg"  alt="dog named poppy" />
                 <h3>Poppy</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
@@ -70,9 +70,9 @@
               </div>
             </div>
 
-            <div class="card card-3">
-              <img class="img" src="images/jack-card.jpg"  alt="dog named jack" />
+            <div class="card">
               <div>
+              <img class="img" src="images/jack-card.jpg"  alt="dog named jack" />
                 <h3>Jack</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
@@ -80,9 +80,9 @@
               </div>
             </div>
 
-            <div class="card card-4">
-              <img class="img" src="images/duffy-card.jpg"  alt="dog named duffy" />
+            <div class="card">
               <div>
+              <img class="img" src="images/duffy-card.jpg"  alt="dog named duffy" />
                 <h3>Duffy</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
@@ -90,9 +90,9 @@
               </div>
             </div>
 
-            <div class="card card-5">
-              <img class="img" src="images/lucas-card.jpg"  alt="dog named lucas" />
+            <div class="card">
               <div>
+              <img class="img" src="images/lucas-card.jpg"  alt="dog named lucas" />
                 <h3>Lucas</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
@@ -100,9 +100,9 @@
               </div>
             </div>
 
-            <div class="card card-6">
-              <img class="img" src="images/jake-card.jpg"  alt="dog named jake" />
+            <div class="card">
               <div>
+              <img class="img" src="images/jake-card.jpg"  alt="dog named jake" />
                 <h3>Jack</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
@@ -110,18 +110,19 @@
               </div>
             </div>
 
-            <div class="card card-7">
-              <img class="img" src="images/angus-card.jpg"  alt="angus named jake" />
+            <div class="card">
               <div>
+              <img class="img" src="images/angus-card.jpg"  alt="angus named jake" />
                 <h3>Jack</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
               <button onclick="adoptCost(123.45)" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
-            <div class="card card-8">
-              <img class="img" src="images/violet-card.jpg"  alt="violet named jake" />
+
+            <div class="card">
               <div>
+              <img class="img" src="images/violet-card.jpg"  alt="violet named jake" />
                 <h3>Violet</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
@@ -129,11 +130,9 @@
               </div>
             </div>
 
-
-
-            <div class="card card-9">
-              <img class="img" src="images/lucas-card.jpg"  alt="dog named lucas" />
+            <div class="card">
               <div>
+              <img class="img" src="images/lucas-card.jpg"  alt="dog named lucas" />
                 <h3>Lucas</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
@@ -141,9 +140,9 @@
               </div>
             </div>
 
-            <div class="card card-10">
-              <img class="img" src="images/jake-card.jpg"  alt="dog named jake" />
+            <div class="card">
               <div>
+              <img class="img" src="images/jake-card.jpg"  alt="dog named jake" />
                 <h3>Jack</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
@@ -151,18 +150,19 @@
               </div>
             </div>
 
-            <div class="card card-11">
-              <img class="img" src="images/angus-card.jpg"  alt="angus named jake" />
+            <div class="card">
               <div>
+              <img class="img" src="images/angus-card.jpg"  alt="angus named jake" />
                 <h3>Jack</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
               <button onclick="adoptCost(123.45)" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
-            <div class="card card-12">
-              <img class="img" src="images/violet-card.jpg"  alt="violet named jake" />
+
+            <div class="card">
               <div>
+              <img class="img" src="images/violet-card.jpg"  alt="violet named jake" />
                 <h3>Violet</h3>
                 <h5>Cost to Adopt: $123.45</h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
