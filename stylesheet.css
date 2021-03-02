@@ -220,7 +220,6 @@ a.two:hover {
 }
 
 input[type=text], select {
-    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -230,7 +229,6 @@ input[type=text], select {
 }
 
 input[type=submit] {
-    width: 100%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -244,6 +242,7 @@ label {
     color: #093C60;
     font-weight: bolder;
     font-size: large;
+    display: block;
 }
 
 input {
@@ -251,5 +250,25 @@ input {
 }
 
 .address {
-    float: left
+    display: flex;
+    justify-content: space-between;
+}
+
+.city {
+    width: 300px;
+}
+
+.state {
+    width: 100px;
+}
+
+.zip {
+    width: 100px;
+}
+
+.first-time {
+}
+
+.block {
+    display: block;
 }

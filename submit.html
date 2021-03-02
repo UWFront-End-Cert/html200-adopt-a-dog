@@ -36,64 +36,71 @@
             <div class="title">
                 <h1>Checkout</h1>
             </div>
-            <form>
+            <form class="block">
                 <label for="fname">Name</label>
-                <input type="text" id="fname" name="firstname">
-
+                <input type="text" name="firstname"/>
                 <label for="Eaddress">Email Address</label>
-                <input type="text" id="lname" name="lastname">
+                <input type="text" name="lastname"/>
 
                 <label for="Eaddress">Street Address</label>
-                <input type="text" id="lname" name="lastname">
+                <input type="text" name="lastname"/>
 
-                <div>
-                    <label for="Eaddress">City</label>
-                    <label for="country">State</label>
-                    <label for="Zcode">Zip Code</label>
-
-                    <input class="address" type="text" id="lname" name="lastname">
-                    <select class="address"  id="state" name="state"></select>
-                    <input class="address"  type="text" id="zcode" name="lastname">
+                <div class="address">
+                    <label class="city" for="Eaddress">City  </label>
+                    <label class="state" for="country">State  </label>
+                    <label class="zip" for="Zcode">Zip Code</label>
                 </div>
-                <label for="fadopter">First Time Adopter?</label> <br />
-                <input type="checkbox" value="1" id="checkboxOneInput" /> Yes
-                <input type="checkbox" value="1" id="checkboxOneInput" /> No <br />
+
+                <div class="address">
+                    <input class="city" type="text" name="lastname">
+                    <select class="state" name="state"></select>
+                    <input class="zip" type="text" name="lastname"/>
+
+                </div>
+
+                <label for="fadopter">First Time Adopter?</label> 
+
+                <div class="first-time">
+                    <input class="zip" type="checkbox" value="1" /> Yes
+                    <input class="zip" type="checkbox" value="1" /> No
+                </div>
 
                 <label for="country">Pickup Location</label>
-                <select id="state" name="state"></select>
+                <select name="state"  ></select>
 
                 <label for="Eaddress">Dogs Adopted</label>
 
 
                 <label for="Eaddress">Total Adoption Cost</label>
+                
                 <label class="btn2">
-                    <input type="submit" value="Adopt" class="btn">
+                    <input type="submit" value="Adopt" class="btn"/>
                 </label>
-            </form>
 
+            </form>
         </div>
-        <div class="footer">
-            <img src="images/adoptadog-logo.svg" alt="Logo" class="img-two">
-            <p>
-                Aborpos nisto inci tet aut que volupti beruptiberro to ex
-            </p>
-            <p>
-                esseque invenienihil imaximu scideru ptistiusam consequun
-            </p>
-            <div class="nav-two">
-                <nav>
-                    <ul>
-                        <li><a class="two" href="index.html">Home   /</a></li>
-                        <li><a class="two" href="dogs.html">Dogs    /</a></li>
-                        <li><a class="two" href="contact.html">Contact </a></li>
-                    </ul>
-                </nav>
-            </div>
-            <p>
-                © 2018 Adoptadog, LLC | Seattle, WA
-            </p>
+    <div class="footer">
+        <img src="images/adoptadog-logo.svg" alt="Logo" class="img-two">
+        <p>
+            Aborpos nisto inci tet aut que volupti beruptiberro to ex
+        </p>
+        <p>
+            esseque invenienihil imaximu scideru ptistiusam consequun
+        </p>
+        <div class="nav-two">
+            <nav>
+                <ul>
+                    <li><a class="two" href="index.html">Home   /</a></li>
+                    <li><a class="two" href="dogs.html">Dogs    /</a></li>
+                    <li><a class="two" href="contact.html">Contact </a></li>
+                </ul>
+            </nav>
         </div>
+        <p>
+            © 2018 Adoptadog, LLC | Seattle, WA
+        </p>
     </div>
+</div>
 
 </body>
 </html>
