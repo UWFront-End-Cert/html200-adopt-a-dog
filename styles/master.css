@@ -346,27 +346,34 @@ input[type="submit"] {
   line-height: 1.25rem;
 }
 
-@media screen and (min-width: 375px) {
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
 	.card {
 		width: 100%;
 	}
+  .content-right {
+    display: none;
+  }
+  .content-left {
+    width: 95%;
+  }
 }
 
+/* Medium devices (portrait tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-	.card {
-		width: 48%;
+  .content-left {
+    width: 65%;
+  }
+  .card {
+		width: 46%;
 	}
-
-  /* .content-right {
-    width: 25%;
-  } */
 }
 
 @media screen and (min-width: 1000px) {
 	.card {
 		width: 31%;
 	}
-} */
+}
 
 
 
