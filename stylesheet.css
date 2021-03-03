@@ -240,6 +240,10 @@ input[type=submit] {
     cursor: pointer;
 }
 
+.check {
+    width: auto;
+}
+
 .spread {
     margin: 10px 0px;
 }
@@ -280,7 +284,6 @@ input {
     display: flex;
     height: 50px;
     width: auto;
-    justify-content: space-between;
 }
 
 .test {
@@ -293,9 +296,13 @@ input {
 }
 
 h3 {
-    margin: 0px;
+    margin: 0px 10px;
 }
 
 .small-text {
-    margin: 0px;
+    margin: 0px 10px;
+}
+
+.submit {
+    width: 150px;
 }
