@@ -41,6 +41,10 @@ body {
     grid-template-areas: 'header' 'nav' 'main' 'footer';
 }
 
+.white {
+    color: white;
+}
+
 .footer {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -221,7 +225,6 @@ a.two:hover {
 
 input[type=text], select {
     padding: 12px 20px;
-    margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -232,10 +235,13 @@ input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.spread {
+    margin: 10px 0px;
 }
 
 label {

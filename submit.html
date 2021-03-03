@@ -15,7 +15,7 @@
                 <p class="logo-text">Seattle's premiere dog adoption policy</p>
             </div>
             <div class="right">
-                <img src="images/cart-icon.svg" alt="shopping cart" class="shopping-cart" />
+                <img src="images/cart-icon.svg" alt="shopping cart" class="shopping-cart" /> <span class="white">$1234.45</span>
                 <form method="GET">
                     <label>
                         <input type="submit" value="Checkout" class="btn">
@@ -37,13 +37,12 @@
                 <h1>Checkout</h1>
             </div>
             <form>
-                <label for="fname">Name</label>
-                <input type="text" name="firstname"/>
-                <label for="Eaddress">Email Address</label>
-                <input type="text" name="lastname"/>
-
-                <label for="Eaddress">Street Address</label>
-                <input type="text" name="lastname"/>
+                <label class="spread" for="fname">Name</label>
+                <input class="spread" type="text" name="firstname" />
+                <label class="spread" for="Eaddress">Email Address</label>
+                <input class="spread" type="text" name="lastname" />
+                <label class="spread" for="Eaddress">Street Address</label>
+                <input class="spread" type="text" name="lastname" />
 
                 <div class="address">
                     <label class="city" for="Eaddress">City  </label>
@@ -51,42 +50,43 @@
                     <label class="zip" for="Zcode">Zip Code</label>
                 </div>
 
-                <div class="address">
+                <div class="address spread">
                     <input class="city" type="text" name="lastname">
                     <select class="state" name="state"></select>
-                    <input class="zip" type="text" name="lastname"/>
+                    <input class="zip" type="text" name="lastname" />
 
                 </div>
 
-                <label for="fadopter">First Time Adopter?</label> 
+                <label class="spread" for="fadopter">First Time Adopter?</label>
 
                 <div class="first-time">
                     <input class="zip" type="checkbox" value="1" /> Yes
                     <input class="zip" type="checkbox" value="1" /> No
                 </div>
 
-                <label for="country">Pickup Location</label>
-                <select class="pickup" name="state"  ></select>
+                <label class="spread" for="country">Pickup Location</label>
+                <select class="pickup spread" name="state"></select>
 
                 <label for="Eaddress">Dogs Adopted</label>
-                
-                <div class="adopted">
+
+                <div class="adopted spread">
                     <img src="images\lucas-card.jpg" class="small-dog" />
                     <div class="test">
                         <h3>Lucas</h3>
                         <p class="small-text"><b>Cost to Adopt:</b> 123.45</p>
                     </div>
-                    <img src="images\duffy-card.jpg" class="small-dog"/>
+                    <img src="images\duffy-card.jpg" class="small-dog" />
                     <div class="test">
                         <h3>Duffy</h3>
                         <p class="small-text"><b>Cost to Adopt:</b> 123.45</p>
                     </div>
                 </div>
 
-                <label for="Eaddress">Total Adoption Cost</label>
-                
+                <label class="spread" for="Eaddress">Total Adoption Cost</label>
+                <p>$1234.56</p>
+
                 <label class="btn2">
-                    <input type="submit" value="Adopt" class="btn"/>
+                    <input type="submit" value="Adopt" class="btn" />
                 </label>
 
             </form>
