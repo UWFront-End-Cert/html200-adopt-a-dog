@@ -40,7 +40,13 @@ h6 {
 }
 
 @media print {
-  h1, h2, h3, h4, h5, h6, p {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
     color: black
   }
 }
@@ -61,21 +67,16 @@ h6 {
 
 /* header */
 
-header {
+.main-header {
+  background: linear-gradient(to top, #81b741, #093c60 60%);
+  padding: 2rem 5rem;
   background-image: url("../images/header-image.jpg");
   background-size: cover;
-  padding: 2rem 5rem;
 }
 
 @media screen and (max-width: 600px) {
-  header {
+  .main-header {
     padding: 2rem 2.5rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  header {
-    padding-left: .6rem;
   }
 }
 
@@ -91,16 +92,17 @@ header {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   header h2 {
     font-size: 1.3rem;
-    padding-left: 1rem;
+    text-align: center;
+    padding-top: .5rem;
   }
 }
 
 .flex-header-container {
   display: flex;
-  height: 20rem;
+  height: 15rem;
   flex-wrap: wrap;
 }
 
@@ -114,6 +116,14 @@ header {
 
 .flex-header-logo-container img {
   width: 18.5rem;
+}
+
+@media screen and (max-width: 415px) {
+  .flex-header-logo-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -175,7 +185,11 @@ header {
 }
 
 @media print {
-  nav, button, .green-button, .flex-nav-container, .flex-header-checkout-container {
+  nav,
+  button,
+  .green-button,
+  .flex-nav-container,
+  .flex-header-checkout-container {
     display: none;
   }
 }
@@ -186,36 +200,33 @@ header {
 main nav:first-of-type {
   background: #ececec;
   box-shadow: 0rem .2rem .7rem #c9c9c9;
-  padding-left: 5.5rem;
-}
-
-@media screen and (max-width: 576px) {
-  main nav:first-of-type {
-    padding-left: 5.8rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  main nav:first-of-type {
-    padding-left: 4rem;
-  }
 }
 
 nav {
   font-weight: 600;
+  color: black;
 }
 
 .flex-nav-container {
   display: flex;
-  width: 15rem;
+  width: 300px;
   height: 3rem;
   flex-wrap: nowrap;
   padding-top: .8rem;
+  padding-left: 8%;
 }
 
 .flex-nav-item {
   flex: 1.5rem;
 }
+
+@media screen and (max-width: 420px) {
+  .flex-nav-container {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
+
 
 /* add slash after nav menu items */
 
@@ -248,8 +259,8 @@ nav {
 }
 
 .dogs-column>img {
-  object-fit: cover;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -344,7 +355,8 @@ nav {
 
 .dog-box>img {
   object-fit: cover;
-  max-height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -391,6 +403,7 @@ nav {
 }
 
 .photo-article-img {
+  display: block;
   width: 259px;
   height: 245px;
   margin-right: 2rem;
@@ -400,7 +413,7 @@ nav {
 @media screen and (max-width: 600px) {
   .photo-article-img {
     width: 100%;
-    height: 100%;
+    height: auto;
     margin-right: 0;
   }
 }
