@@ -16,9 +16,9 @@
             </div>
             <div class="right">
                 <img src="images/cart-icon.svg" alt="shopping cart" class="shopping-cart" /> <span class="white">$1234.45</span>
-                <form method="GET">
+                <form action="submit.html" method="GET">
                     <label>
-                        <input type="submit" value="Checkout" class="btn">
+                        <button class="btn" type="submit">Checkout</button>
                     </label>
                 </form>
             </div>
@@ -38,22 +38,22 @@
             </div>
             <form>
                 <label class="spread" for="fname">Name</label>
-                <input class="spread" type="text" name="firstname" />
-                <label class="spread" for="Eaddress">Email Address</label>
+                <input class="spread" type="text" name="fname" />
+                <label class="spread" for="eaddress">Email Address</label>
                 <input class="spread" type="text" name="lastname" />
-                <label class="spread" for="Eaddress">Street Address</label>
-                <input class="spread" type="text" name="lastname" />
+                <label class="spread" for="address">Street Address</label>
+                <input class="spread" type="text" name="address" />
 
                 <div class="address">
-                    <label class="city" for="Eaddress">City  </label>
-                    <label class="state" for="country">State  </label>
-                    <label class="zip" for="Zcode">Zip Code</label>
+                    <label class="city" for="city">City  </label>
+                    <label class="state" for="state">State  </label>
+                    <label class="zip" for="zcode">Zip Code</label>
                 </div>
 
                 <div class="address spread">
-                    <input class="city" type="text" name="lastname">
+                    <input class="city" type="text" name="city">
                     <select class="state" name="state"></select>
-                    <input class="zip" type="text" name="lastname" />
+                    <input class="zip" type="text" name="zcode" />
 
                 </div>
 
@@ -64,10 +64,10 @@
                     <input  class="check" type="checkbox" value="1" /> <span>No</span>
                 </div>
 
-                <label class="spread" for="country">Pickup Location</label>
-                <select class="pickup spread" name="state"></select>
+                <label class="spread" for="loc">Pickup Location</label>
+                <select class="pickup spread" name="loc"></select>
 
-                <label for="Eaddress">Dogs Adopted</label>
+                <label>Dogs Adopted</label>
 
                 <div class="adopted spread">
                     <img src="images\lucas-card.jpg" class="small-dog" />
@@ -82,7 +82,7 @@
                     </div>
                 </div>
 
-                <label class="spread" for="Eaddress">Total Adoption Cost</label>
+                <label class="spread">Total Adoption Cost</label>
                 <p>$1234.56</p>
 
                 <label>
