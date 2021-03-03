@@ -11,15 +11,14 @@
 
 <body>
   <header>
+    <!--Boy sitting holding dog with title basket and cart-->
     <div class="svg-dog-header">
       <img src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
-      <p>Seattle's premiere dog adoption agency stoday</p>
+      <p>Seattle's premiere dog adoption agency</p>
     </div>
     <div class="cart-checkout">
-      <div class="cart-box">
-        <img class="svg-cart" src="images/cart-icon.svg" alt="checkout cart icon">
-        <label class="price">$1234.56</label>
-      </div>
+      <img class="svg-cart" src="images/cart-icon.svg" alt="checkout cart icon">
+      <span class="price">$1234.56</span>
       <input class="cart-btn" type="submit" value="Checkout">
     </div>
   </header>
@@ -30,6 +29,7 @@
     <a class="nav-item-head" href="checkout.html">Checkout</a>
   </nav>
   <main class="main-index">
+    <!--Start of container holding dog-->
     <div class="dog-listing-container">
       <section class="adopt-a-dog-intro">
         <img class="index-image-top" src="images/home-intro.jpg" alt="A young man hugging a dog">
@@ -55,8 +55,8 @@
             <p class="total-index">Cost to Adopt: </p>
             <p class="price-index"> $123.45</p>
           </div>
-          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re doluptae
-          </p>
+          <p class="index-text">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae</p>
           <button class="button-index">Adopt</button>
         </article>
         <article class="dog-card-index">
@@ -120,10 +120,12 @@
           <button class="button-index">Adopt</button>
         </article>
       </section>
-      <a class="see-more" href="dog-listing.html">See More Dogs</a>
+      <button onclick="href=dog-listing.html" class="see-more" type=button>See More Dogs</button>
     </div>
+    <!--End of container-->
+    <!--Start of aside ride side-->
     <aside class="dog-blog-aside">
-      <h1 class="dog-blog-heading">From Our Blog</h1>
+      <h1>From Our Blog</h1>
       <div class="dog-item">
         <img class="dog-blog-img" src="images/blog-1.jpg"
           alt="A woman sitting looking out over the Grand Canyon with a dog">
@@ -153,6 +155,7 @@
         </div>
         <a class="list-blog" href="dog-listing.html">Read more >> </a>
       </div>
+      <!--End of Aside-->
     </aside>
     <script src="scripts/adopt-a-dog.js"></script>
   </main>
