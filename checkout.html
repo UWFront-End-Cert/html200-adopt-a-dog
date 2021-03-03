@@ -46,7 +46,7 @@
       <form action="checkout.html" method="post">
         <div class="form-container">
           <h1>Checkout</h1>
-            <div class="">
+            <div>
               <label for="name">Name</label>
               <input type="text" id="name" name="name">
 
@@ -57,7 +57,7 @@
               <input type="text" id="street" name="street">
             </div>
 
-            <div class="citystatezip">
+            <div class="container-state">
               <div class="citystatezipinput">
                 <label for="city">City</label>
                 <input type="text" id="city" name="city">
@@ -71,8 +71,8 @@
                 </select>
               </div>
 
-
-              <div><label for="zip_code">Zip Code</label>
+              <div>
+                <label for="zip_code">Zip Code</label>
                 <input type="text" id="zip_code" name="zip_code">
               </div>
             </div>
@@ -102,14 +102,16 @@
 
                   <div class="flex-dir-col">
                     <div class="dog-adopted-name">Lucas</div>
-                    <div class="dog-adopted-cost">Cost to Adopt: $123.45</div>
+                    <div class="dog-adopted-cost">Cost to Adopt: <span class="fontnormal">$123.45</span></div>
                   </div>
+
+                  <div class="spacer"></div>
 
                   <div><img src="images/duffy-checkout.jpg" width="75" alt="duffy dog"></div>
 
                   <div class="flex-dir-col">
                     <div class="dog-adopted-name">Duffy</div>
-                    <div class="dog-adopted-cost">Cost to Adopt: $123.45</div>
+                    <div class="dog-adopted-cost">Cost to Adopt: <span class="fontnormal">$123.45</span></div>
                   </div>
               </div>
 

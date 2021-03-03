@@ -189,12 +189,11 @@ li a {
 
 /* contact form */
 .form-container {
-  display: flex;
   margin-left: 6rem;
   margin-right: 10rem;
   padding-top: 20px;
   border: 1px solid red;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 }
 
 .form-container input {
@@ -207,7 +206,7 @@ input, select, textarea, label {
   color: #29465b;
   font-size: 1.2rem;
   box-sizing: border-box;
-  width: 100vh;
+  width: 100%;
   line-height: 2rem;
   margin: 0 0 0 0;
 }
@@ -234,13 +233,50 @@ input[type="submit"] {
   border-radius: .2rem;
 }
 
-.citystatezip {
+.container-state {
   display: flex;
   flex-wrap: nowrap;
-  /* justify-content: space-between; */
-  align-items: flex-start;
   flex-direction: row;
-  width: 100%;
+  justify-content: space-between;
+  /* width: 50%; */
+}
+
+.citystatezipinput {
+  padding-right: .5rem;
+}
+
+.form-location {
+  width: 40%;
+}
+
+.flex-dir-col {
+  flex-direction: row;
+  padding-left: .5rem;
+}
+
+.dog-adopted {
+  display: flex;
+
+}
+
+.dog-adopted-name {
+  font-family: Times, serif;
+  font-weight: bold;
+  padding-top: .5rem;
+  padding-bottom: .2rem;
+  color: #29465b;
+}
+
+.dog-adopted-cost {
+  font-size: .75rem;
+  font-weight: bold;
+}
+.spacer {
+  width: 4rem;
+}
+
+.fontnormal {
+  font-weight: normal;
 }
 
 /************ blog ***************/
@@ -341,6 +377,39 @@ input[type="submit"] {
 }
 
 .card > div > p {
+  color: #454545;
+  font-size: .9rem;
+  line-height: 1.25rem;
+}
+
+.card-sm {
+	height: fit-content;
+	width: 22%;
+	display: flex;
+	align-items: flex-start;
+	/* justify-content: initial; */
+  margin: 0;
+  outline: 1px solid lightgray;
+}
+
+.card-sm > div {
+  padding: .75rem;
+}
+
+.card-sm > div > h3 {
+  color: #29465b;
+  margin: .1rem 0 -.5rem -.1rem;
+  padding: .7rem 0 .1rem 0;
+}
+
+.card-sm > div > h5 {
+  color: #454545;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem 0 -.5rem -.1rem;
+  padding: 0rem;
+}
+
+.card-sm > div > p {
   color: #454545;
   font-size: .9rem;
   line-height: 1.25rem;
