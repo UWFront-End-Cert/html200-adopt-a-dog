@@ -14,7 +14,9 @@ h4 {
   color: #003366;
 }
 header {
-  background-color: #003366;
+  background-image: linear-gradient(to bottom right, #003366, white);
+  background-image: url('../images/header-image.jpg');
+  background-size: cover;
 }
 header h1 {
   color: #009900;
@@ -153,14 +155,14 @@ main {
 }
 .main-page-intro {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   padding-bottom: 5%;
 }
 .main-page-intro img {
-  width: 30%;
+  width: 80%;
 }
 .main-page-intro-text {
-  width: 60%;
+  width: 75%;
   padding: 0% 5%;
 }
 .main-page-adopt {
@@ -198,17 +200,17 @@ main {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
+  .profile-card {
+    width: 42%;
+  }
+}
+@media screen and (max-width: 576px) {
   .main-page-blog-preview {
     display: none;
   }
   .main-page-main-column {
     width: 100%;
   }
-  .profile-card {
-    width: 42%;
-  }
-}
-@media screen and (max-width: 576px) {
   .profile-card {
     width: 88%;
   }
