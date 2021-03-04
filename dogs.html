@@ -8,6 +8,7 @@
     <meta name="keywords" content="Adoptadog, dog adoption, agency, Seattle">
     <meta name="author" content="Juan Bermejo Gallego, UW Front-End Developer HTML,CSS, and JS Course">
     <!-- Viewport -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopt A Dog - Dog's page</title>
     <!-- Favicons -->
@@ -31,18 +32,25 @@
                 <p>Seattle’s premiere dog adoption agency</p>
             </div>
         </div>       
-        <div class="checkout">
-            <img src="./images/cart-icon.svg" alt="cart icon">
+        <!-- <div class="checkout"> -->
+        <!-- I have replaced the class name to one more appropiate -->
+        <div class="top-right">
+            <!-- finally, I gave a class to the cart icon image  -->
+            <img class="cart-icon" src="./images/cart-icon.svg" alt="cart icon">
             <small class="total">&#36;1234.56</small>
             <input onClick="window.location.href='./checkout.html'" type="button" value="Checkout">
         </div>
     </header>
     <!-- Navigation bar -->
-    <nav class="main-nav">
-        <ul>
-            <li><a href="./index.html" aria-label="Return to homepage">home</a></li>
-            <li><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
-            <li><a href="./dogs.html" aria-label="Learn more about our puppies">dogs</a></li>
+    <!-- <nav class="main-nav"> -->
+    <!-- Updated a proper new class name -->
+    <nav class="main-nav-top">
+        <!-- Added a class to this element to give more flexibity, it is reusable for the footer nav menu  -->
+        <ul class="nav-ul">
+            <!-- More consistency, add classes to list elements -->
+            <li class="nav-list"><a href="./index.html" aria-label="Return to homepage">home</a></li>
+            <li class="nav-list"><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
+            <li class="nav-list"><a href="./dogs.html" aria-label="Learn more about our puppies">dogs</a></li>
         </ul>
     </nav>
     <!-- Main content -->
@@ -142,17 +150,21 @@
     </div>
     <!-- Footer -->
     <footer>
-        <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
-        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <!-- Class added in the logo  -->
+        <img class="footer-logo" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <!-- A specific class for the paragraph -->
+        <p class="footer-p">Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
         <!-- Footer nav-bar -->
-        <nav>
-            <ul class="bottom-nav">
-                <li><a href="./index.html" aria-label="Return to homepage">home</a></li>
-                <li><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
-                <li><a href="#">contact</a></li>
+        <!-- A specific class for the the footer navigation bar -->
+        <nav class="nav-footer">
+            <!-- <ul class="bottom-nav"> -->
+            <ul class="nav-ul-footer">
+                <li class="nav-list-footer"><a href="./index.html" aria-label="Return to homepage">home</a></li>
+                <li class="nav-list-footer"><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
+                <li class="nav-list-footer"><a href="#">contact</a></li>
             </ul>
         </nav>
-        <small>&copy; 2021 Adoptadog, LLC &#124; Seattle, WA</small>
+        <small class="copyright">&copy; 2021 Adoptadog, LLC &#124; Seattle, WA</small>
     </footer>
 </body>
 </html>

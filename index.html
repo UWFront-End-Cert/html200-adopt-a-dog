@@ -8,6 +8,7 @@
     <meta name="keywords" content="Adoptadog, dog adoption, agency, Seattle">
     <meta name="author" content="Juan Bermejo Gallego, UW Front-End Developer HTML,CSS, and JS Course">
     <!-- Viewport -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopt A Dog - Homepage index</title>
     <!-- Favicons -->
@@ -31,20 +32,26 @@
                 <p>Seattle’s premiere dog adoption agency</p>
             </div> 
         </div>
-        <div class="checkout">
-            <!-- <a href="./checkout.html">       -->
-            <img src="./images/cart-icon.svg" alt="cart icon">
+        <!-- <div class="checkout"> -->
+        <!-- I have replaced the class name to one more appropiate -->
+        <div class="top-right">
+            <!-- finally, I gave a class to the cart icon image  -->
+            <img class="cart-icon" src="./images/cart-icon.svg" alt="cart icon">
             <small class="total">&#36;1234.56</small>
             <input onClick="window.location.href='./checkout.html'" type="button" value="Checkout">
             <!-- </a> -->
         </div>
     </header>
     <!-- Navigation Menu -->
-    <nav class="main-nav">
-        <ul>
-            <li><a href="./index.html" aria-label="Return to homepage">home</a></li>
-            <li><a href="./dogs.html" aria-label="Read more about our puppies">dogs</a></li>
-            <li><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
+    <!-- <nav class="main-nav"> -->
+    <!-- Updated a proper new class name -->
+    <nav class="main-nav-top">
+        <!-- Added a class to this element to give more flexibity, it is reusable for the footer nav menu  -->
+        <ul class="nav-ul">
+            <!-- More consistency, add classes to list elements -->
+            <li class="nav-list"><a href="./index.html" aria-label="Return to homepage">home</a></li>
+            <li class="nav-list"><a href="./dogs.html" aria-label="Read more about our puppies">dogs</a></li>
+            <li class="nav-list"><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
         </ul>
     </nav>
     <!-- Whole content  -->
@@ -52,7 +59,21 @@
     
         <div class="left-content">
             <main>
-                <img src="./images/home-intro-wider.png" alt="a man embracing a dog">
+                <!-- <img class="home-intro-wider" src="./images/home-intro-wider.png" alt="a man embracing a dog"> -->
+                
+                <picture>
+                    <source  srcset="./images/home-intro-410-370.jpg"
+                            type="image/jpg"
+                            media="all and (max-width:650px)"
+                    />
+                    <source srcset="./images/home-intro-wider-light.png"
+                            type="image/png"
+                            media="all and (min-width: 768px)"
+                    />
+
+                    <img class="home-intro-wider" src="./images/home-intro-wider-light.png" alt="a man embracing a dog">
+                </picture>
+           
                 <article class="intro">
                     <h1>Adopt A Dog</h1>
                     <p class="intro_about">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am.</p>
@@ -105,21 +126,7 @@
                     <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
                     <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
                 </article>
-                <!-- <article>
-                    <img class="card" src="./images/angus-card.jpg" alt="Angus profile picture" onclick="dogInfo('Angus,Breed: Bullmastiff, Cost: $123.45')">
-                    <h2>angus</h2>
-                    <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
-                    <p class="dog-name">Heckin good boys and girls mlem I am bekom fat heckin angery woofer waggy wags, wow such tempt fluffer snoot porgo.</p>
-                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
-                </article>
-                <article>
-                    <img class="card" src="./images/violet-card.jpg" alt="Violet profile picture" onclick="dogInfo('Violet, Breed: Field Spaniel, Cost: $123.45')">
-                    <h2>violet</h2>
-                    <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
-                    <p class="dog-name">I am bekom fat puggorino borkdrive tungg waggy wags stop it fren, long doggo long water shoob big ol fluffer.</p>
-                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
-                </article> -->
-            </section>
+               </section>
         <!-- See more dogs button -->
         <button aria-label="See more puppies clicking here" onClick="window.location.href='./dogs.html'">See More Dogs</button>
         <!-- onclick="myDialog.close()" -->
@@ -131,30 +138,68 @@
                 <!-- <h1 class="blog__heading"> -->
                 <h1>From Our Blog</h1>
                 <article class="blog_article">
-                    <img class="blog_article__image" src="./images/blog-1-wider.png" alt="a young woman embracing a dog watching the Gran Canyon">
+                    <!-- <img class="blog_article__image" src="./images/blog-1-wider.png" alt="a young woman embracing a dog watching the Gran Canyon"> -->
+                    <picture>
+                        <source srcset="./images/blog-1-flat-light.png"
+                                type="image/png"
+                                media=" (max-width:1000px) and (min-width: 1400px)"
+                        >
+                        <source srcset="./images/blog-1.jpg"
+                                type="image/jpg"
+                                media="(min-width:1000px) and (max-width:1400px)">
+
+                        <img class="blog_article__image" src="./images/blog-1-flat-light.png" alt="a young woman embracing a dog watching the Gran Canyon">        
+                    </picture>
+
                     <div class="grid_article">
                         <h2 class="topic_heading">Traveling With Your Dog</h2>
                         <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
                             quidustrum fuga.</p>
-                            <a class="link_blog" href="./blog.html">Read more >></a>
+                            <a class="link_blog" href="./blog-2.html#first-topic">Read more >></a>
                     </div>
                 </article>
                 <article class="blog_article">
-                    <img class="blog_article__image" src="./images/blog-2-wider.png" alt="a dog-keeper caring four dogs out in a street">
+                    <!-- <img class="blog_article__image" src="./images/blog-2-wider.png" alt="a dog-keeper caring four dogs out in a street"> -->
+
+                    <picture>
+                        <source srcset="./images/blog-2-flat-light.png"
+                                type="image/png"
+                                media=" (max-width:1000px) and (min-width: 1400px)"
+                        >
+                        <source srcset="./images/blog-2.jpg"
+                                type="image/jpg"
+                                media="(min-width:1000px) and (max-width:1400px)">
+
+                        <img class="blog_article__image" src="./images/blog-2-flat-light.png" alt="a young woman embracing a dog watching the Gran Canyon">        
+                    </picture>
+
                     <div class="grid_article">
                         <h2 class="topic_heading">How To Walk Multiple Dogs</h2>
                         <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
                             quidustrum fuga.</p>
-                            <a class="link_blog" href="./blog.html">Read more >></a>
+                            <a class="link_blog" href="./blog-2.html#second-topic">Read more >></a>
                     </div>
                 </article>
                 <article class="blog_article">
-                    <img class="blog_article__image" src="./images/blog-3-wider.png" alt="a siluette of a young woman holding a ball and a dog is ready to play in the sunset">
+                    <!-- <img class="blog_article__image" src="./images/blog-3-wider.png" alt="a siluette of a young woman holding a ball and a dog is ready to play in the sunset"> -->
+
+                    <picture>
+                        <source srcset="./images/blog-3-flat-light.png"
+                                type="image/png"
+                                media=" (max-width:1000px) and (min-width: 1400px)"
+                        >
+                        <source srcset="./images/blog-3.jpg"
+                                type="image/jpg"
+                                media="(min-width:1000px) and (max-width:1400px)">
+
+                        <img class="blog_article__image" src="./images/blog-3-flat-light.png" alt="a young woman embracing a dog watching the Gran Canyon">        
+                    </picture>
+
                     <div class="grid_article">
                         <h2 class="topic_heading">Teach Your Dog To Fetch&#33;</h2>
                         <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
                             quidustrum fuga.</p>
-                            <a class="link_blog" href="./blog.html">Read more >></a>
+                            <a class="link_blog" href="./blog-2.html#third-topic">Read more >></a>
 
                     </div>
                 </article>
@@ -163,17 +208,21 @@
     </div> 
     
     <footer>
-        <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
-        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <!-- Class added in the logo  -->
+        <img class="footer-logo" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <!-- A specific class for the paragraph -->
+        <p class="footer-p">Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
         <!-- Footer navigation bar -->
-        <nav>
-            <ul class="bottom-nav">
-                <li><a href="./dogs.html" aria-label="Read more about our puppies">dogs</a></li>
-                <li><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
-                <li><a href="#">contact</a></li>
+        <!-- A specific class for the the footer navigation bar -->
+        <nav class="nav-footer">
+            <!-- <ul class="bottom-nav"> -->
+            <ul class="nav-ul-footer">
+                <li class="nav-list-footer"><a href="./dogs.html" aria-label="Read more about our puppies">dogs</a></li>
+                <li class="nav-list-footer"><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
+                <li class="nav-list-footer"><a href="#">contact</a></li>
             </ul>
         </nav>
-        <small>&copy; 2021 Adoptadog, LLC &#124; Seattle, WA</small>
+        <small class="copyright">&copy; 2021 Adoptadog, LLC &#124; Seattle, WA</small>
     </footer>
 </body>
 </html>
