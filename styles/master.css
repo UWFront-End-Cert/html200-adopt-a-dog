@@ -141,7 +141,6 @@ li a {
   font-weight: lighter;
 }
 
-
 .content-left {
   width: 65%;
 }
@@ -153,8 +152,6 @@ li a {
 
 /* background-color: red; */
 }
-
-
 
 .intro {
   margin-top: 2rem;
@@ -192,7 +189,8 @@ li a {
   margin-left: 6rem;
   margin-right: 10rem;
   padding-top: 20px;
-  border: 1px solid red;
+  max-width: 500px;
+  /* border: 1px solid red; */
   /* justify-content: flex-start; */
 }
 
@@ -233,6 +231,7 @@ input[type="submit"] {
   border-radius: .2rem;
 }
 
+/************ form ***************/
 .container-state {
   display: flex;
   flex-wrap: nowrap;
@@ -420,6 +419,9 @@ input[type="submit"] {
 	.card {
 		width: 100%;
 	}
+  .card-sm {
+    	width: 100%;
+  }
   .content-right {
     display: none;
   }
@@ -436,12 +438,20 @@ input[type="submit"] {
   .card {
 		width: 46%;
 	}
+
+  .card-sm {
+      width: 30%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
 	.card {
 		width: 31%;
 	}
+
+  .card-sm {
+      width: 23%;
+  }
 }
 
 
