@@ -2,7 +2,13 @@ html200-adopt-a-dog
 
 LAST UPDATE, 3-3-2021
 
-Responsive images week's assignment. style.css has been updated. Reworked with media queries.
+Responsive images week's assignment. 
+- style.css and html files have been updated. 
+- Media Queries now starts from mobile to desktop version.
+- Experience on compressing and editing images.
+- HTML files has been reinforced by applying classes to a make a robust sections of each pages, especially in headers and footers.
+- Reduced innecesary extra lines of coding.
+- Examined through the dev-tools > network, the capacity of how this pages render in a satisfactory time performance. Tested and rendered in Mozilla, Chrome and Brave web    browsers.
 
 
 2-19-2021
