@@ -22,10 +22,6 @@ p {
   line-height: 1.5rem;
 }
 
-/* .content {
-  width: 100%;
-} */
-
 .center {
   display: block;
   margin-left: auto;
@@ -183,15 +179,11 @@ li a {
 }
 
 /************ checkout form ***************/
-
-/* contact form */
 .form-container {
   margin-left: 6rem;
   margin-right: 10rem;
   padding-top: 20px;
   max-width: 500px;
-  /* border: 1px solid red; */
-  /* justify-content: flex-start; */
 }
 
 .form-container input {
