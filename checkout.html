@@ -32,7 +32,7 @@
       </div>
     </header>
 
-  <nav>
+  <nav role="navigation">
     <div>
       <ul>
         <li><a href="index.html">Home</a><span class="nav-slash">&#47;</span></li>
@@ -65,7 +65,7 @@
 
               <div class="citystatezipinput">
                 <label for="state">State</label>
-                <select id="state" name="state">
+                <select id="state" name="state" class="font-normal-black">
                   <option value="Washington">WA</option>
                   <option value="Alaska">AK</option>
                 </select>
@@ -91,19 +91,19 @@
             </div>
 
             <div class="form-location">
-              <h2>Pickup location</h2>
-              <select name="location" id="location">
+              <h3>Pickup location</h3>
+              <select name="location" id="location" class="font-normal-black">
                 <option value="store">Select a location</option>
               </select>
             </div>
 
-              <h2>Dogs Adopted</h2>
+              <h3>Dogs Adopted</h3>
               <div class="dog-adopted">
                   <div><img src="images/lucas-checkout.jpg" width="75" alt="lucas dog"></div>
 
                   <div class="flex-dir-col">
                     <div class="dog-adopted-name">Lucas</div>
-                    <div class="dog-adopted-cost">Cost to Adopt: <span class="fontnormal">$123.45</span></div>
+                    <div class="dog-adopted-cost">Cost to Adopt: <span class="font-normal">$123.45</span></div>
                   </div>
 
                   <div class="spacer"></div>
@@ -112,15 +112,15 @@
 
                   <div class="flex-dir-col">
                     <div class="dog-adopted-name">Duffy</div>
-                    <div class="dog-adopted-cost">Cost to Adopt: <span class="fontnormal">$123.45</span></div>
+                    <div class="dog-adopted-cost">Cost to Adopt: <span class="font-normal">$123.45</span></div>
                   </div>
               </div>
 
 
-            <h2>Total Adoption Cost</h2>
+            <h3>Total Adoption Cost</h3>
             <div class="dog-adopted-totalcost">$1234.56</div>
 
-            <input type="submit" value="Submit">
+            <button onclick="" class="btn-submit" type="button">Submit</button>
         </div>
       </form>
     </main>

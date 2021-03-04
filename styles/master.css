@@ -210,16 +210,16 @@ input {
   margin-bottom: 1.2rem;
 }
 
-input[type="submit"] {
-  width: 100%;
+.btn-submit {
   background-color: #90b52a;
+  font-weight: bold;
   border: none;
   color: white;
   padding: 8px 16px;
   text-decoration: none;
-  margin: 10px 2px;
+  margin: 20px 2px;
   cursor: pointer;
-  width: 150px;
+  width: 11rem;
   border-radius: .2rem;
 }
 
@@ -247,7 +247,6 @@ input[type="submit"] {
 
 .dog-adopted {
   display: flex;
-
 }
 
 .dog-adopted-name {
@@ -262,11 +261,19 @@ input[type="submit"] {
   font-size: .75rem;
   font-weight: bold;
 }
+
+.font-normal-black {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #000;
+}
+
 .spacer {
   width: 4rem;
 }
 
-.fontnormal {
+.font-normal {
   font-weight: normal;
 }
 
@@ -317,8 +324,7 @@ input[type="submit"] {
   border: none;
 }
 
-.btn-seemoredogs > a {
-  text-decoration: none;
+.btn-seemoredogs {
   color: #29465b;
 }
 
