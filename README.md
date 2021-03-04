@@ -1,6 +1,11 @@
 html200-adopt-a-dog
 
-LAST UPDATE, 2-19-2021
+LAST UPDATE, 3-3-2021
+
+Responsive images week's assignment. style.css has been updated. Reworked with media queries.
+
+
+2-19-2021
 
 The biggest changes has been committed in script.js, all the same functions (which were for each dog) are in just one function called 'dogInfo', as suggested. The second function previouly called 'cost', now 'total' includes the math operation, instead of displaying a string.
 
