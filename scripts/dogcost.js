@@ -2,8 +2,8 @@
 let total = 0;
 
 // alert when the dog's pic is clicked on
-function dogInfo(dogName, breed, fee) {
-  alert(dogName, breed, fee);
+function dogInfo(str) {
+  alert(str);
 }
 
 // alert with total cost

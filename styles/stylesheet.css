@@ -21,18 +21,24 @@ body a:hover {
 }
 /********** MEDIA QUERIES **********/
 /* for phones - dog grid layout needs to change from 3 columns to 1 (home) and hide blog aside */
-@media not print and (min-width: 576px) and (max-width: 767px) {
+@media screen and (max-width: 767.9999px) {
   .main-content {
     display: flex;
-    /* flex-flow: row wrap;
-    margin: 2rem 4rem; */
-    width: 80%;
-    margin: 2rem auto;
+    width: 90%;
+    margin: 1rem auto;
   }
   .main-content-blog {
     display: flex;
     flex-flow: row wrap;
     margin: 2rem 6rem;
+  }
+  .summary img {
+    display: flex;
+    width: 90%;
+    height: auto;
+  }
+  .summary {
+    width: 90%;
   }
   .home-content {
     display: grid;
@@ -41,23 +47,23 @@ body a:hover {
     margin-bottom: 2rem;
   }
   .blog-aside {
-    /* having trouble figuring out why this part isn't working */
     display: none;
     flex: 30%;
     flex-flow: row wrap;
     margin: -1rem 6rem 2rem 4rem;
   }
   .page-content {
-    grid-gap: 2rem;
-    display: flex;
-    flex-flow: row wrap;
     margin-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    grid-auto-rows: minmax(20rem, auto);
   }
   .page-content-dogs {
-    grid-area: 2 / 1 / 3 / 4;
-    grid-gap: 3rem;
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    grid-auto-rows: minmax(20rem, auto);
   }
   .page-content-dogs section, .page-content section {
     width: 13rem;
@@ -78,33 +84,101 @@ body a:hover {
   }
 }
 /* for tablet - dog grid layout needs to change from 3 columns to 2 (home) */
-@media not print and (min-width: 768px) and (max-width: 991px) {
-  .main-content, .main-content-blog, .blog-aside {
+@media screen and (min-width: 768px) and (max-width: 991.9999px) {
+  .main-content {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .main-content-blog {
+    margin: 2rem 6rem;
     width: 50%;
   }
   .blog-aside {
-    display: grid;
-    flex: 30%;
-    flex-flow: row wrap;
     margin: -1rem 6rem 2rem 4rem;
+    width: 30%;
+  }
+  .page-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    grid-auto-rows: minmax(20rem, auto);
+  }
+  .page-content-dogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    grid-auto-rows: minmax(20rem, auto);
+  }
+  .page-content-dogs section, .page-content section {
+    width: 13rem;
+    border: solid 1px lightgrey;
+    border-radius: 1px;
+  }
+  .page-content-dogs section h3, .page-content-dogs section p, .page-content-dogs section button, .page-content section h3, .page-content section p, .page-content section button {
+    margin: 1rem;
+  }
+  .page-content-dogs section img, .page-content section img {
+    height: 8rem;
+    width: 13rem;
+    padding-right: 1px;
+  }
+  .page-content-dogs section button, .page-content section button {
+    width: 11rem;
+    height: 2rem;
   }
 }
 /* for computer - dog grid layout 3 columns (homescreen) */
-@media not print and (min-width: 992px) {
-  .main-content, .main-content-blog {
+@media screen and (min-width: 992px) {
+  .main-content {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .main-content-blog {
+    margin: 2rem 6rem;
     width: 70%;
   }
   .blog-aside {
-    display: grid;
-    flex: 30%;
-    flex-flow: row wrap;
     margin: -1rem 6rem 2rem 4rem;
+    width: 30%;
+  }
+  .page-content {
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    grid-auto-rows: minmax(20rem, auto);
+  }
+  .page-content-dogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    grid-auto-rows: minmax(20rem, auto);
+  }
+  .page-content-dogs section, .page-content section {
+    width: 13rem;
+    border: solid 1px lightgrey;
+    border-radius: 1px;
+  }
+  .page-content-dogs section h3, .page-content-dogs section p, .page-content-dogs section button, .page-content section h3, .page-content section p, .page-content section button {
+    margin: 1rem;
+  }
+  .page-content-dogs section img, .page-content section img {
+    height: 8rem;
+    width: 13rem;
+    padding-right: 1px;
+  }
+  .page-content-dogs section button, .page-content section button {
+    width: 11rem;
+    height: 2rem;
   }
 }
-/* Bonus: make it printable */
 /********** HEADER **********/
 header {
-  background: black url(../images/header-image.jpg) center no-repeat; /* shorthand for: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit  */
+  /* background: black url('../images/header-image.jpg') top no-repeat; /* shorthand for: bg-color, bg-image, position/bg-size, bg-repeat, bg-origin, bg-clip, bg-attachment, initial|inherit  */
+  background-color: black;
+  background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url('../images/header-image.jpg');
   height: 20rem;
   width: 100%;
   display: flex;
@@ -172,7 +246,7 @@ button:hover, .checkout-page input[type=submit]:hover {
 .menu ul {
   list-style-type: none; /* removes bullet points */
   margin: 0; /* removes browser defaults */
-  padding: 0 100px;
+  padding: 0 auto;
   overflow: hidden;
   background-color: lightgrey;
   font-weight: bold; /* makes text bold */
