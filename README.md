@@ -5,6 +5,7 @@ LAST UPDATE, 3-3-2021
 Responsive images week's assignment. 
 - style.css and html files have been updated. 
 - Media Queries now starts from mobile to desktop version.
+- Media Queries and images interactions, new tags and properties (techniques) to make the image files lighter parsing them properly with all web browsers.
 - Experience on compressing and editing images.
 - HTML files has been reinforced by applying classes to consolidate robust sections in all each pages, especially in headers and footers.
 - Reduced innecesary extra lines of coding.
