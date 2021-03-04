@@ -74,8 +74,9 @@ header {
 }
 
 header {
-  background-image: url(../images/header-image.jpg);
   background-size: cover;
+  background-image:linear-gradient(var(--color-green),black); /**backup if img bkgrd doesn't show**/
+  background-image: linear-gradient(rgba( 0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../images/header-image.jpg);
 }
 
 .header-top, header nav {
@@ -203,7 +204,7 @@ footer {
   max-width: 80%;
   margin: auto;
 }
-
+/** Md screens and up **/
 @media screen and (min-width:898px) {
   .footer-container {
     max-width: 30%;
