@@ -4,17 +4,12 @@
   text-decoration: none; /*gets rid of the underline under the text*/
 }
 
-/* header {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows:auto;
-  grid-gap: 1rem;
-  background-color: #03a3df;
-  padding: 1rem 0rem 1rem 9rem;
-} */
-
 div.header-figures {
-  background-color: #085E9F;
+  background-image: linear-gradient(to bottom, #085E9F, #669999);
+  background-image: url('../images/header-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15rem;
   padding-left: 9.5rem;
   display: flex;
   flex-direction: row;
