@@ -2,7 +2,7 @@
   border: 1px solid black;
 }*/
 body {
-  margin: 0;
+  width: 100%
 }
 /*--------Header-All-pages------*/
 header {
@@ -40,16 +40,23 @@ h3 {
 .cart-checkout {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   width: 20%;
   height: 20%;
-  padding-right: 2rem;
   padding-top: 3rem;
 }
 .svg-cart {
-  width: 15%;
-  height: 40%;
-  padding-bottom: 0.5rem;
+  width: 35%;
+  height: 100%;
   color: white;
+}
+.cart-container {
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50%;
+  height: 40%;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 .price {
   color: white;
@@ -68,7 +75,7 @@ h3 {
 }*/
 .cart-btn {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: #ffffff;
   background-color: #33cc33;
   padding: 0.3rem 1rem 0.3rem 1.5rem;
@@ -115,7 +122,6 @@ main {
 }
 .dog-listing-container {
   width: 66%;
-
 }
 .dog-blog-aside {
   width: 25%;
@@ -130,17 +136,6 @@ main {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-size: 1.2rem;
-
-}
-
-@media screen and (max-width: 767px) {
-  .dog-blog-aside {
-    display: none;
-  }
-
-  .dog-listing-container {
-    width: 100%;
-  }
 }
 .adopt-a-dog-intro {
   display: flex;
@@ -205,8 +200,6 @@ main {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-
-
 }
 
 /*----Dog Card Info---*/
@@ -264,8 +257,8 @@ main {
   margin-bottom: 1rem;
 }
 .button-index {
-  background-color: #33cc33;
-  color: white;
+  background-color:  #7cfc00;
+  color: #737373;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   font-size: 1rem;
@@ -526,4 +519,220 @@ footer p {
 .nav-item-ft {
   color: #ffffff;
   text-decoration: none;
+}
+/*----------
+/*-----Media Screen 576px Cell Phone---*/
+@media screen and (max-width: 576px) {
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    display: flex;
+    width: auto;
+    background-image: url(../images/header-image.jpg);
+    background-size:cover;
+    height: 15rem;
+    /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
+  }
+  .svg-dog-header {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 25%;
+    padding: 5rem 0 1rem 4rem;
+  }
+   .svg-dog-header p {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0
+   }
+   .nav-head {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.5rem;
+  }
+  .nav-item-head {
+    color:#2f4f4f;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-top: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  header p {
+    color: #7cfc00;
+    width: 100%;
+    padding-left: 5rem;
+    font-style:normal;
+    font-size: 2rem;
+    margin: 0;
+  }
+  h3 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.5rem;
+    justify-content: left;
+    margin: 1rem 0 0 1rem;
+  }
+  .dog-card-index {
+    border: 2px solid #e8e8e8;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-left: 3rem;
+  }
+  .price-index {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 0 0 1rem;
+  }
+  .pricing {
+    display: flex;
+    flex-direction: row;
+    width: 100%
+    /*padding: 0 1rem 0 1rem;*/
+  }
+  .total-index {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .title-about {
+    width: 100%;
+    color: #000000;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    line-height: 1.5rem;
+    justify-content: space-evenly;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .title-about p {
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+
+  }
+  .button-index {
+    background-color: #595959;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 80%;
+    height: 9%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  .adopt-a-dog-intro {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin-left: 4rem;
+  }
+  .dog-listing-container {
+    width: 100%;
+  }
+}
+
+/*----iPad with orientation: landscape-----*/
+@media screen and (max-width: 1024px)   and (orientation: landscape) {
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .svg-dog-header {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+    padding: 5rem 0 1rem 4rem;
+  }
+   .svg-dog-header p {
+    font-size: inherit;
+    width: 100%;
+    padding: 0;
+    font-size: 1rem;
+   }
+   .blog-text {
+    color: #000000;
+    width: 80%;
+    display: none;
+  }
+  .dog-title-travel {
+    justify-content: space-around;
+    align-items: center;
+    color: #696969;
+    margin-left: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: .9rem;
+    padding-bottom: 1rem;
+  }
+  .dog-blog-aside {
+    width: 25%;
+    align-items: flex-end;
+    margin-top: 5rem;
+  }
+  .dog-item {
+    padding-bottom: 1rem;
+    color: #008080;
+  }
+  .list-blog {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: #008080;
+    font-size: 1.1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+  }
+  .price-index {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    /*padding: 0 1rem 0 1rem;*/
+  }
+  .total-index {
+    font-weight: bold;
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+  .dog-card-index {
+    border: 2px solid #e8e8e8;
+    height: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  header p {
+    color: #7cfc00;
+    width: 100%;
+    padding-top: 4rem;
+    padding-left: 6rem;
+    font-style: initial;
+    font-size: 1.7rem;
+    margin: 0;
+  }
+  .svg-dog-header {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 25%;
+    padding-top: 10rem;
+    padding-left: 5rem;
+  }
 }
