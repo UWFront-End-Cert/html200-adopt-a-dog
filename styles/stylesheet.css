@@ -55,6 +55,9 @@
   .logo-container {
     width: 50%;
     margin: 5% auto 2% auto;
+    background-color: #10101099; /*set background opacity to 60%*/
+    padding: 1rem;
+    border-radius: 15px;
   }
   .grid-aside-right {
     display: none;
@@ -114,11 +117,10 @@
 header {
   grid-column: 1 / span 5;
   grid-row: 1 / span 1;
-  background-image: url("../images/header-image.jpg");
+  background-image: url("../images/header-image.jpg"), linear-gradient(to top, #093c60, black);
   background-color: #101010;
-  background-size: 85%;
-  background-position: right center;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 30%;
   color: white;
   height: 21rem;
   margin-bottom: 1rem;
@@ -178,7 +180,7 @@ footer {
 
 .top-img {
   width: 100%;
-  margin: auto;
+  margin: 1rem auto 0 auto;
   max-height: 15rem;
   object-fit: cover;
   object-position: 50% 75%;
@@ -353,7 +355,7 @@ nav.head {
 
 .preview-img {
   width: 100%;
-  max-height: 8rem;
+  max-height: 12rem;
   object-fit: cover;
   /*object-position: 50% 35%;*/
 }
