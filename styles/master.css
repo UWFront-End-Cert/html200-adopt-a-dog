@@ -186,7 +186,6 @@ li a {
   max-width: 500px;
 }
 
-
 input, select, textarea, label {
   font-weight: bold;
   font-family: Times, serif;
@@ -197,8 +196,6 @@ input, select, textarea, label {
   line-height: 2rem;
   margin: 0 0 1rem 0;
 }
-
-
 
 .btn-submit {
   background-color: #90b52a;
@@ -219,7 +216,6 @@ input, select, textarea, label {
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
-  /* width: 50%; */
 }
 
 .citystatezipinput {
@@ -231,8 +227,12 @@ input, select, textarea, label {
 }
 
 .flex-dir-col {
+  display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   padding-left: .5rem;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .dog-adopted {
@@ -252,6 +252,10 @@ input, select, textarea, label {
   font-weight: bold;
 }
 
+.dog-adopted-totalcost {
+  margin-top: -.5rem;
+}
+
 .font-normal-black {
   font-family: Arial, sans-serif;
   font-size: 1rem;
@@ -267,21 +271,26 @@ input, select, textarea, label {
   font-weight: normal;
 }
 
-/* .flex-dir-row {
+.flex-dir-row {
+  display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
-  align-items: flex-start;
-  outline: 1px solid green;
-  /* width: 50%; */
-} */
-
-input[type="radio"] {
-  align-left: 10px;
-  margin-right: 0px;
-  width: auto;
-  display: inline-block;
+  justify-content: flex-start;
+  width: 30%;
+  margin-top: -1rem;
 }
 
+input[type="radio"] {
+  margin-right: .5rem;
+  width: auto; /* important for sizing  */
+}
 
+.radio-label {
+  font-weight: lighter;
+  font-family: Arial, sans-serif;
+  color: #000;
+  font-size: .9rem;
+}
 
 /************ blog ***************/
 
