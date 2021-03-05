@@ -354,11 +354,11 @@ footer a {
         width: 100%;
     } 
     .dog-card {
-    display: block;
-    margin-bottom: 4em;
-    margin-left: 0;
-    width: 100%;
-    padding-bottom: 2em;
+        width: 770px;
+        display: block;
+        margin-bottom: 4em;
+        margin-left: 0;
+        padding-bottom: 2em;
     }
     .dog-card img {
         height: 520px;
@@ -468,7 +468,7 @@ footer a {
         margin-bottom: 2em;
     }
     .dog-card {
-        width: 23%;
+        width: 100%;
         display: block;
         margin-right: 1em;
         margin-left: 0;
