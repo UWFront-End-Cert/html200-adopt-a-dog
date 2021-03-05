@@ -200,7 +200,7 @@ footer img {
 }
 .blog-main-holder {
     display: flex;
-    grid-column: 1/ span 3;
+    grid-column: 1/ span 4;
     margin-bottom: 25px;
 }
 .blog-img-holder {

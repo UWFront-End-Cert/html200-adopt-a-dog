@@ -37,8 +37,8 @@ function blogFieldsGenerator() {
         const blogSubPara = document.createElement('p');
         blogSubPara.className = 'blog-sub-paragraph';
         blogSubPara.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odio eleifend dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.'
+        blogTextHolder.appendChild(blogSubPara);
 
-       
         
         
         
