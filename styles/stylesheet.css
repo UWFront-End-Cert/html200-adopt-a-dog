@@ -1,5 +1,5 @@
 .header-image {
-  background-image: url("../images/header-image.jpg");
+  background: linear-gradient(to top, transparent, #FFFF00 99%), url("../images/header-image.jpg");
   background-repeat: no-repeat;
   /* height: auto; */
   /* height: auto; */
