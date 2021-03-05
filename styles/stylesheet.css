@@ -91,11 +91,12 @@ p {
   margin-top: 1rem;
 }
 
-a {
+a, button {
   text-decoration: none;
   color: inherit;
   font-size: 85%;
   font-weight: bold;
+  border: none;
 }
 
 h4, h5 {
@@ -128,12 +129,13 @@ h4, h5 {
 .green-button {
   position: relative;
   top: 1rem;
-  right: 2.5rem;
+  right: 2rem;
   background-color: #81B741;
   color: white;
   font-size: 80%;
   margin: 5% 0;
-  padding: 7% 35%;
+  width: 100%;
+  padding: 7% 38%;
   border-radius: 1px;
 }
 
@@ -191,14 +193,11 @@ nav.head {
 /*Rules for Styling Dog Profile Cards*/
 .tile {
   margin: 1.5rem 0;
-<<<<<<< HEAD
-  width: 10rem;
-  min-width: 21%;
-=======
   width: 8rem;
   min-width: 21%;
   font-size: 90%;
->>>>>>> 0645ee1a6cea47be266e007e39d8a186e414d6eb
+ /* width: 10rem;
+ min-width: 21%;*/
   text-align: left;
   box-shadow: 5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6;
 }
