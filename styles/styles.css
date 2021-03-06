@@ -241,6 +241,11 @@ nav {
   margin: 2rem auto;
 }
 
+.blog-page-title {
+  width: 85%;
+  margin: 2rem auto;
+}
+
 
 /* home page container */
 
@@ -315,7 +320,7 @@ nav {
   padding-top: 1rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 975px) {
   .home-dogs-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -389,19 +394,19 @@ nav {
 
 /* blog photo/text flex layout */
 
-.photo-article-container {
+.blog-container {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 2rem;
 }
 
 @media screen and (max-width: 600px) {
-  .photo-article-container {
+  .blog-container {
     flex-wrap: wrap;
   }
 }
 
-.photo-article-img {
+.blog-img {
   display: block;
   width: 259px;
   height: 245px;
@@ -410,21 +415,21 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
-  .photo-article-img {
+  .blog-img {
     width: 100%;
     height: auto;
     margin-right: 0;
   }
 }
 
-.photo-article-text {
+.blog-text {
   width: 65%;
   height: auto;
   margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 600px) {
-  .photo-article-text {
+  .blog-text {
     flex-wrap: wrap;
     width: 100%;
   }
