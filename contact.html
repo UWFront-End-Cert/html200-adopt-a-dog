@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link href="styles/stylesheet.css" type="text/css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -120,15 +121,15 @@
 
                 <fieldset class="adopter">
                     <legend>First Time Adopter?</legend>
-                    <div class = "first-time" >
-                     <div>
-                        <input type="radio" id="yes" name="prev-adopter" value="Yes">
-                        <label for="yes">Yes </label>
-                    </div>
-                    <div>
-                        <input type="radio" id="no" name="prev-adopter" value="No">
-                        <label for="no">No </label>
-                    </div>
+                    <div class="first-time">
+                        <div>
+                            <input type="radio" id="yes" name="prev-adopter" value="Yes">
+                            <label for="yes">Yes </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="no" name="prev-adopter" value="No">
+                            <label for="no">No </label>
+                        </div>
                     </div> <!--  end of adopter div -->
 
                 </fieldset>
@@ -143,7 +144,7 @@
                 </div> <!--  end of location div -->
             </fieldset>
 
-            <section class = "dogs-adopted">
+            <section class="dogs-adopted">
                 <h4>Dogs Adopted</h4>
                 <div class="adopted-row">
                     <article class="adopted-row">
@@ -172,7 +173,7 @@
                 </div>
             </section>
 
-            <section class = "cost">
+            <section class="cost">
                 <h4>Total Adoption Costs</h4>
 
                 <p>$1234.56</p>
@@ -180,7 +181,8 @@
             </section>
             <!-- end of cost -->
 
-            <button class = "contact-button" type="submit" value="Submit" name="submit">Submit</button>
+            <button id="contact-button" class="contact-button" type="submit" value="Submit" name="submit">Submit</button>
+            <script src="js/form.js" charset="utf-8"></script>
         </div>
         <!-- end of wrapper -->
     </form>
