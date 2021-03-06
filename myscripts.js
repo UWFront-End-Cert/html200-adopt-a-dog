@@ -32,6 +32,11 @@ alert('Your total cost is $' + total);
 function dogInfoSheetReturn(dogCost,dogName, dogBreed){
     alert('Your dog cost ' + '$' + dogCost + ' and is named ' + dogName + ' of the breed ' + dogBreed + '.');
 }
+function formSubmitButton(e){
+    e.preventDefault();
+    alert('Thank you. The form information has been received.');
+    console.log('test');
+}
 function blogFieldsGenerator() {
         console.log('Test');
         gridItemContainer = document.getElementById('gridItemContainer');
