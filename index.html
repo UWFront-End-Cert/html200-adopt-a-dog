@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1" charset="utf-8">
   <title>Adopt A Dog</title>
 
   <link rel="stylesheet" type="text/css" href="./styles/index.css">
@@ -11,33 +11,19 @@
 </head>
 
 <body>
-  <header>
-    <div class="row">
-      <div class="col span_4_of_12">
-        <img class="header-logo" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+  <header class="col-12">
+    <div class="header-banner">
+      <div class="header-logo">
+        <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
         <h1>Seattle's Premiere dog adoption agency</h1>
-
       </div>
-      <div class="col span_7_of_12">
-
-      </div>
-      <div class="col span_1_of_12">
+      <div class="check-cart">
         <img class="shopping-cart" src="./images/cart-icon.svg" alt="shopping cart icon">
-      </div>
-      <div class="col span_6_of_12">
-      </div>
-      <div class="col span_2_of_12">
-        <p class="check-out">check out</p>
 
+        <p class="check-out">check out</p>
       </div>
     </div>
-  </header>
-
-
-
-
-  <main>
-    <div class="row span_12_of_12 headernavigation">
+    <div class="headernavigation">
       <nav>
         <a class="headernavigationitem" href="./index.html">Home</a>
         <span> / </span>
@@ -46,89 +32,126 @@
         <a class="headernavigationitem" href="./blog.html">Blog</a>
       </nav>
     </div>
+  </header>
 
-    <section class="row description">
-      <img class="col span_4_of_12" src="./images/home-intro.jpg" alt="person hugging a dog">
-      <div class="description-text col span_8_of_12">
-        <h2>Adopt A Dog</h2>
+  <main class="">
+    <section class="maintext col-8">          <section class="description">
+      <img class="description-image" src="./images/home-intro-rec.png" alt="person hugging a dog">
+      <div class="description-text">
+        <h2 class="description-title">Adopt A Dog</h2>
         <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti
           corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate </p>
       </div>
-
     </section>
 
     <section class="doglist">
       <div class="dogs">
         <img class="dog-image" src="./images/murphy-card.jpg" alt="picture of dog named murphy" onclick=Dog("Murphy","Unknown",123.45)>
-        <h3 class="dogname col span_12_of_12">Murphy</h3>
-        <p class="col span_12_of_12">Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p class="col span_12_of_12"><button onclick=AddtoCart(123.45)>Adopt</button></p>
+        <h3 class="dogname">Murphy</h3>
+        <p class="cost">Cost to Adopt: $123.45</p>
+        <p class="dog-description">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p class=""><button onclick=AddtoCart(123.45)>Adopt</button></p>
       </div>
 
       <div class="dogs">
         <img class="dog-image" src="./images/poppy-card.jpg" alt="picture of dog named poppy" onclick=Dog("Poppy","Unknown",123.45)>
-        <h3 class="dogname col span_12_of_12">Poppy</h3>
-        <p class="col span_12_of_12">Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p class="col span_12_of_12"><button onclick=AddtoCart(123.45)>Adopt</button></p>
+        <h3 class="dogname">Poppy</h3>
+        <p class="cost">Cost to Adopt: $123.45</p>
+        <p class="dog-description">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p class=""><button onclick=AddtoCart(123.45)>Adopt</button></p>
       </div>
 
       <div class="dogs">
         <img class="dog-image" src="./images/jack-card.jpg" alt="picture of dog named jack" onclick=Dog("Jack","Unknown",123.45)>
-        <h3 class="dogname col span_12_of_12">Jack</h3>
-        <p class="col span_12_of_12">Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p class="col span_12_of_12"><button onclick=AddtoCart(123.45)>Adopt</button></p>
+        <h3 class="dogname">Jack</h3>
+        <p class="cost">Cost to Adopt: $123.45</p>
+        <p class="dog-description">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p class=""><button onclick=AddtoCart(123.45)>Adopt</button></p>
       </div>
 
       <div class="dogs">
         <img class="dog-image" src="./images/duffy-card.jpg" alt="picture of dog named duffy" onclick=Dog("Duffy","Unknown",123.45)>
-        <h3 class="dognamecol span_12_of_12">Duffy</h3>
-        <p class="col span_12_of_12">Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p class="col span_12_of_12"><button onclick=AddtoCart(123.45)>Adopt</button></p>
+        <h3 class="dogname">Duffy</h3>
+        <p class="cost">Cost to Adopt: $123.45</p>
+        <p class="dog-description">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p class=""><button onclick=AddtoCart(123.45)>Adopt</button></p>
       </div>
 
       <div class="dogs">
         <img class="dog-image" src="./images/lucas-card.jpg" alt="picture of dog named lucas" onclick=Dog("Lucas","Unknown",123.45)>
-        <h3 class="dogname col span_12_of_12">Lucas</h3>
-        <p class="col span_12_of_12">Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p class="col span_12_of_12"><button onclick=AddtoCart(123.45)>Adopt</button></p>
+        <h3 class="dogname">Lucas</h3>
+        <p class="cost">Cost to Adopt: $123.45</p>
+        <p class="dog-description">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p class=""><button onclick=AddtoCart(123.45)>Adopt</button></p>
       </div>
 
       <div class="dogs">
         <img class="dog-image" src="./images/jake-card.jpg" alt="picture of dog named jake" onclick=Dog("Jake","Unknown",123.45)>
-        <h3 class="dogname col span_12_of_12">Jake</h3>
-        <p class="col span_12_of_12">Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p class="col span_12_of_12"><button onclick=AddtoCart(123.45)>Adopt</button></p>
+        <h3 class="dogname">Jake</h3>
+        <p class="cost">Cost to Adopt: $123.45</p>
+        <p class="dog-description">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p class=""><button onclick=AddtoCart(123.45)>Adopt</button></p>
       </div>
 
       <div class="dogs">
         <img class="dog-image" src="./images/angus-card.jpg" alt="picture of dog named angus" onclick=Dog("Angus","Unknown",123.45)>
-        <h3 class="dogname col span_12_of_12">Angus</h3>
-        <p class="col span_12_of_12">Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p class="col span_12_of_12"><button onclick=AddtoCart(123.45)>Adopt</button></p>
+        <h3 class="dogname">Angus</h3>
+        <p class="cost">Cost to Adopt: $123.45</p>
+        <p class="dog-description">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p class=""><button onclick=AddtoCart(123.45)>Adopt</button></p>
       </div>
 
       <div class="dogs">
         <img class="dog-image" src="./images/violet-card.jpg" alt="picture of dog named violet" onclick=Dog("Violet","Unknown",123.45)>
-        <h3 class="dogname col span_12_of_12">Violet</h3>
-        <p class="col span_12_of_12">Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p class="col span_12_of_12"><button onclick=AddtoCart(123.45)>Adopt</button></p>
-      </div>
-      <div class="row col span_5_of_12">
-        <p class="SeeMoreDogs align-items-center" href="./doglist.html">See More Dogs</p>
+        <h3 class="dogname">Violet</h3>
+        <p class="cost">Cost to Adopt: $123.45</p>
+        <p class="dog-description">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p class=""><button onclick=AddtoCart(123.45)>Adopt</button></p>
       </div>
     </section>
+    <p class="SeeMoreDogs" href="./doglist.html">See More Dogs</p>
+  </section>
+  <aside class="col-4">
+    <h2 class="blog-title">From Our Blog</h2>
+    <div class="blogitem" href="./blog.html">
+      <img class="blogimage" src="./images/blog-1.jpg" alt="person watching view with dog">
+      <div class="blogpreview">
+
+        <h3>Traveling With Your Dog</h3>
+        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+        <p>Read More >>></p>
+      </div>
+    </div>
 
 
+    <div class="blogitem" href="./blog.html">
+
+      <img class="blogimage" src="./images/blog-2.jpg" alt="four dogs in chain on street">
+      <div class="blogpreview">
+
+        <h3>How to Walk Multiple Dogs</h3>
+        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+        <p>Read More >>></p>
+
+      </div>
+
+    </div>
+
+    <div class="blogitem" href="./blog.html">
+
+      <img class="blogimage" src="./images/blog-3.jpg" alt="dog with person play ball during sunset">
+      <div class="blogpreview">
+
+        <h3>Teach Your Dog To Fetch!</h3>
+        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+        <p>Read More >>></p>
+
+      </div>
+
+    </div>
+  </aside>
   </main>
-  <footer>
+  <footer class="col-12">
     <img class="footerImage" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
     <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
 
