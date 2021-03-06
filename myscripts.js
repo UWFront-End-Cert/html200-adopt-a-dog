@@ -36,7 +36,7 @@ function blogFieldsGenerator() {
         console.log('Test');
         gridItemContainer = document.getElementById('gridItemContainer');
 
-        
+        for (i = 0; i < dogBlogData.length; i ++){
         const blogMainHolder = document.createElement('article');
         blogMainHolder.className = 'blog-main-holder';
         gridItemContainer.appendChild(blogMainHolder);
@@ -44,18 +44,18 @@ function blogFieldsGenerator() {
         blogImageHolder.className = 'blog-img-holder';
         blogMainHolder.appendChild(blogImageHolder);
         const image = document.createElement('img');
-        image.src = dogBlogData[0].image;
+        image.src = dogBlogData[i].image;
         blogImageHolder.appendChild(image);  
         const blogTextHolder = document.createElement('div');
         blogTextHolder.className = 'blog-text-holder';
         blogMainHolder.appendChild(blogTextHolder);
         const blogSubHeader = document.createElement('h3');
         blogSubHeader.className = 'blog-sub-header';
-        blogSubHeader.textContent = dogBlogData[0].title;
+        blogSubHeader.textContent = dogBlogData[i].title;
         blogTextHolder.appendChild(blogSubHeader);
         const blogSubPara = document.createElement('p');
         blogSubPara.className = 'blog-sub-paragraph';
-        blogSubPara.textContent = dogBlogData[0].blogText;
+        blogSubPara.textContent = dogBlogData[i].blogText;
         blogTextHolder.appendChild(blogSubPara);    
-
+        }
 }
