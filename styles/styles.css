@@ -4,7 +4,7 @@
 body {
   width: 100%
 }
-/*--------Header-All-pages------*/
+/*-----Header-All-pages------*/
 header {
   display: flex;
   width: 100%;
@@ -13,22 +13,15 @@ header {
   height: 25rem;
   /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
 }
-
 header p {
   color: #7cfc00;
-  width: 100%;
-  padding-left: 6rem;
+  width: 150%;
   font-style: initial;
-  font-size: 1.7rem;
-  margin: 0;
+  font-size: 1rem;
+  margin: 0 0 0 13%;
 }
-.svg-dog-header {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 25%;
-  padding-top: 10rem;
-  padding-left: 5rem;
+h1 {
+  color: #008080;
 }
 h3 {
   color:#2f4f4f;
@@ -37,18 +30,18 @@ h3 {
   justify-content: left;
   margin: 1rem 0 0 1rem;
 }
+.svg-dog-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 13%;
+  width: 100%;
+}
 .cart-checkout {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 20%;
   height: 20%;
   padding-top: 3rem;
-}
-.svg-cart {
-  width: 35%;
-  height: 100%;
-  color: white;
 }
 .cart-container {
   flex-direction: row;
@@ -56,39 +49,26 @@ h3 {
   width: 50%;
   height: 40%;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
-.price {
+.svg-cart {
+  width: 35%;
+  height: 40%;
   color: white;
 }
-.price-adopt {
-  color: #000000;
-  font-weight: 100;
-  font-size: 1.5rem;
-}
-.cart-box {
-  display: flex;
-}
-/* .svg-cart img p {
-  display: block;
-  flex-direction: row;
-}*/
 .cart-btn {
   display: flex;
   justify-content: center;
   color: #ffffff;
   background-color: #33cc33;
   padding: 0.3rem 1rem 0.3rem 1.5rem;
-  width: 50%;
-  /*top right bottom left*/
+  width: 100%;
 }
-.dog-item {
-  padding-bottom: 1rem;
-  color: #008080;
+.price {
+  color: white;
 }
-
-/*----header all bottom---*/
-/*----Nav Menu Top----*/
+/*-----------------End of Header------------------*/
+/*--------------Start Nav Menu Top Start----------*/
 .nav-head {
   display: flex;
   flex-direction: row;
@@ -96,46 +76,26 @@ h3 {
   margin-left: 13%;
 }
 .nav-item-head {
-  color:#2f4f4f;
+  color: #008080;
   font-weight: 600;
   text-decoration: none;
   font-size: 1.2rem;
   padding-top: 2rem;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .space {
   padding: 0 2rem 0 2rem;
 }
-/*---Nav end---*/
-/*-------Main Index.html with 6 dogs-----*/
+/*--------------End of Nav Menu Top----------------*/
+/*------------------Main Start-----------------*/
 .main-index {
   display: flex;
   width: 100%;
 }
-
-/*------Top of Home page index.html --*/
-main {
-  /* padding: 0rem 20rem 2rem 10rem; */
-  display: flex;
-  flex-direction: row;
-}
+/*-------------Section Container for Top Main------*/
+/*-------------Boy hugging dog----------------*/
 .dog-listing-container {
   width: 66%;
-}
-.dog-blog-aside {
-  width: 25%;
-  align-items: flex-end;
-  margin-top: 2rem;
-}
-.dog-title-travel {
-  justify-content: space-around;
-  align-items: center;
-  color: #696969;
-  margin-left: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-style: normal;
-  font-size: 1.2rem;
 }
 .adopt-a-dog-intro {
   display: flex;
@@ -144,7 +104,6 @@ main {
   margin-left: 7rem;
   height: auto;
 }
-/* section boy hugging dog */
 .index-image-top {
   display: flex;
   align-items: flex-start;
@@ -152,10 +111,6 @@ main {
   height: 20rem;
   background-size: cover;
   padding: 3rem 0 1rem 0;
-}
-.title-index {
-  color:#2f4f4f;
-  font-weight: 700;
 }
 .title-about {
   width: 100%;
@@ -166,33 +121,12 @@ main {
   line-height: 1.5rem;
   justify-content: space-evenly;
 }
-.index-row-1 {
-  width: 100%;
-  height: 30%;
-  display: flex;
-  gap: 2rem;
-}
-.index-row-2 {
-  width: 100%;
-  height: 30%;
-  display: flex;
-  gap: 2rem;
-}
-.list-blog {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.title-index {
   color: #008080;
-  font-size: 1.1rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: none;
+  font-weight: 700;
 }
-.blog-text {
-  color: #000000;
-  width: 80%;
-}
-/*--------index.html-----*/
-/*---dogs listed on index.html ----*/
-
+/*--------End of Section Boy hugging dog----------*/
+/*--------Start Flex Container with dogs----------*/
 .flex-container-index-1 {
   display: flex;
   flex-direction: row;
@@ -200,18 +134,6 @@ main {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-}
-
-/*----Dog Card Info---*/
-.dog-card {
-  border: 2px solid #e8e8e8;
-  width: 20%;
-  height: 20%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  align-items: center;
 }
 .dog-card-index {
   border: 2px solid #e8e8e8;
@@ -224,37 +146,27 @@ main {
   box-sizing: border-box;
   margin: 2rem;
 }
-
-/* TODO: write media queries to fix dog card widths */
-
 .dog-card-index > .dog-item-image {
   width: 100%;
   padding: 0;
 }
-.dog-card > .dog-item-image {
-  width: 100%;
-  padding: 0;
+.pricing {
+  display: flex;
+  padding: 1em;
 }
-.dog-card p {
-  text-align: inherit;
-  align-items: center;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.total-index {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.price-index {
+  font-size: inherit;
+  font-weight: 500;
+  padding: 0 0 0 1rem;
 }
 .index-text {
   color: #000000;
   padding-left: 1rem;
   padding-right: 0.8rem;
-}
-
-.flex-dog-button {
-  background-color: #33cc33;
-  color: white;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-  width: 75%;
-  height: 15%;
-  margin-bottom: 1rem;
 }
 .button-index {
   background-color:  #7cfc00;
@@ -267,15 +179,47 @@ main {
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
-
-/*---dog card end ---*/
+/*--------------End of section with dog listings----------*/
+/*--------------Begin Aside on Index page-----------*/
+.dog-blog-aside {
+  width: 25%;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+.dog-item {
+  padding-bottom: 1rem;
+  color: #008080;
+}
+.dog-title-travel {
+  justify-content: space-around;
+  align-items: center;
+  color: #008080;
+  margin-left: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.blog-text {
+  color: #000000;
+  width: 80%;
+}
+.list-blog {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #008080;
+  font-size: 1.1rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+/*----------End of Asidge Blog listing------------*/
+/*----------See More at bottom of Index-----------*/
 .see-more {
   display: flex;
   width: 15rem;
   justify-content: center;
   text-align: center;
   align-items: center;
-  color:#2f4f4f;
+  
   font-weight: bold;
   text-decoration: none;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -283,216 +227,7 @@ main {
   padding: .7rem 2.5rem .7rem 2.5rem;
   margin: 1rem 0 2rem 39%;
 }
-/*---bottom of dog listing index.html---*/
-/*------Dog Listing Card---*/
-
-/*----Dog listing html---*/
-.dog-list-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-top: 2rem;
-  gap: 1rem;
-}
-
-.dog-listing-title {
-  margin-left: 0;
-  color: #008080;
-  padding-top: 2rem;
-}
-.row-one {
-  display: flex;
-  padding-bottom: 2rem;
-  gap: 2rem;
-}
-.row-two {
-  display: flex;
-  padding-bottom: 1rem;
-  gap: 2rem;
-}
-.row-three {
-  display: flex;
-  padding-bottom: 1rem;
-  gap: 2rem;
-}
-
-/*------Dog-blog html ___*/
-.blog-adoptadog-h1 {
-  color: #008080;
-  padding: 3rem;
-  padding-left: 0;
-  font-size: 2rem;
-  margin-left: 10%;
-}
-.container-blog {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-  padding-left: 0;
-  /*padding: 5rem;*/
-}
-.blog-item {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 2rem;
-}
-.blog-image {
-}
-.blog-topic {
-  color: #008080;
-  width: 100%;
-  margin-top: 0;
-  padding-top: 0;
-}
-.blog-content {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  height: 15rem;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
-  padding-top: 0;
-  margin: 0;
-}
-.p-1 {
-  color: black;
-  font-size: 1.2em;
-}
-.p-2 {
-  color: black;
-  font-size: 1.2em;
-}
-/*---Dog Blog Bottom----*/
-
-/*--------Checkout Form --------*/
-/*-------section-checkout form-------*/
-.infomation {
-  line-height: 1.4;
-  display: flex;
-  flex-direction: column;
-  height: 45%;
-}
-label {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #008080;
-}
-.form-main {
-  padding-left: 10%;
-}
-.form-group-1 {
-  margin-bottom: 1em;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.form-group-2 {
-  margin-bottom: 1em;
-  padding: 10px;
-}
-.adopted-dogs img {
-  width: 20%;
-}
-input {
-  width: 50%;
-  height: 2rem;
-  border: 1px solid #808080;
-}
-select {
-  width: 51%;
-  height: 2rem;
-}
-.select-menu {
-  font-size: 1rem;
-  height: 2rem;
-}
-.pickup-section {
-  padding: 2rem 1rem 1rem 0;
-}
-.pickup {
-  width: 25%;
-  height: 2rem;
-  border: 1px solid #000000;
-}
-.adopted-dogs {
-  display: flex;
-}
-.adopted-text {
-  flex-direction: column;
-  line-height: 0.8rem;
-  padding-left: 1.5rem;
-  width: 25%;
-  font-size: 1.5rem;
-  color: #008080;
-}
-.total-index {
-  font-weight: bold;
-  font-size: 1rem;
-}
-.price-index {
-  font-size: inherit;
-  font-weight: 500;
-  padding: 0 0 0 1rem;
-}
-
-.pricing {
-  display: flex;
-  padding: 1em;
-}
-.inline-price {
-  display: flex;
-  flex-direction: row;
-  font-size: 1rem;
-}
-.total-cost {
-  color: #000000;
-  font-weight: 800;
-  font-size: 1.5rem;
-}
-fieldset {
-  width: 15%;
-  justify-content: left;
-  padding: 0;
-  margin: 0;
-}
-.first-time {
-  padding: 0.5rem;
-  align-self: flex-start;
-}
-.cost {
-  padding-top: 5%;
-  color: #008080;
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-weight: bold;
-}
-.dogs-adopted {
-  color: #008080;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.submit-button {
-  width: 14%;
-  height: 20%;
-  color: #000000;
-  font-size: 1rem;
-  background-color: #7cfc00;
-}
-.title-adoptadog {
-  color: #008080;
-}
-legend {
-  color: #008080;
-  font-size: 1rem;
-  font-weight: bold;
-}
-/*-------footer-------*/
+/*----------Begin Footer-----------------*/
 footer {
   display: flex;
   flex-direction: column;
@@ -520,7 +255,286 @@ footer p {
   color: #ffffff;
   text-decoration: none;
 }
-/*----------
+/*--------------End of Footer------------------*/
+/*--Start Dog Card listings page-----------*/
+.all-dogs-container {
+  width: 60%;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0 2rem 13%;
+}
+.dog-card {
+  border: 2px solid #e8e8e8;
+  width: 20%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.dog-card > .dog-item-image {
+  width: 100%;
+  padding: 0;
+}
+.dog-card p {
+  text-align: inherit;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.pricing-listing {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+
+}
+.total-listing { 
+  font-weight: bold;
+}
+.price-listing {
+
+}
+
+.flex-dog-button {
+  background-color: #33cc33;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  width: 75%;
+  height: 15%;
+  margin: 0 0 1rem 1rem;
+  align-items: center;
+}
+/*-------------End Dog Card Information---------------*/
+/*-------------dog-listing.index.html---------------*/
+.main-dog-list {
+  display: flex;
+  width: 100%;
+}
+/* --- index container---*/
+.dog-list-container {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  padding-top: 10rem;
+  gap: 1rem;
+  margin-left: 13%;;
+}
+
+.dog-listing-title {
+  color: #008080;
+  width: 100%;
+  margin: 0;
+}
+.dog-name {
+  color: #008080;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3em;
+}
+
+/*---------Start Dog-blog.html----------*/
+.blog-adoptadog-h1 {
+  color: #008080;
+  padding: 3rem;
+  padding-left: 0;
+  font-size: 2rem;
+  margin-left: 13%;
+}
+main {
+  display: flex;
+  flex-direction: row;
+}
+.container-blog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 13%;
+  padding-left: 0;
+  /*padding: 5rem;*/
+}
+.blog-item {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 7rem;
+  width: 90%;
+}
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 15rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 0;
+  margin: 0;
+}
+.blog-topic {
+  color: #008080;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+/*-------------End Dog-blog.html page---------*/
+/*-------------Checkout.html form----------------*/
+.form-main {
+  padding-left: 10%;
+}
+.infomation {
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  height: 45%;
+}
+.form-group-1 {
+  margin-bottom: 1em;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title-adoptadog {
+  color: #008080;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-group-2 {
+  margin-bottom: 1em;
+  padding: 10px;
+}
+.first-time {
+  padding: 0.5rem;
+  align-self: flex-start;
+}
+.pickup-section {
+  padding: 2rem 1rem 1rem 0;
+}
+.pickup {
+  width: 25%;
+  height: 2rem;
+  border: 1px solid #000000;
+}
+.dogs-adopted {
+  color: #008080;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.adopt-final{
+  width: 10%;
+}
+.adopted-dogs {
+  display: flex;
+}
+.adopted-dogs img {
+  width: 10%;
+  margin-left: 1rem;
+}
+.adopted-text {
+  flex-direction: column;
+  line-height: 0.8rem;
+  padding-left: 1.5rem;
+  width: 25%;
+  font-size: 1.5rem;
+  color: #008080;
+}
+.going-home {
+  color: #008080;
+  padding: 0;
+  margin-left: 0;
+  
+}
+.last-button {
+  width: 15%;
+  height: 3rem;
+  background-color: #7cfc00;
+  margin: 0 0 2rem 1rem;
+}
+.inline-price {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+}
+.total-cost {
+  color: #000000;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.price-adopt {
+  color: #000000;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-left: 1%;
+}
+.cost-container {
+  margin-top: 1rem;
+
+}
+.cost {
+  padding-top: 5%;
+  color: #008080;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-weight: bold;
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+select {
+  width: 51%;
+  height: 2rem;
+}
+.select-menu {
+  font-size: 1rem;
+  height: 2rem;
+}
+.cart-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  padding-top: 2rem;
+}
+.submit-button {
+  width: 14%;
+  height: 20%;
+  color: #000000;
+  font-size: 1rem;
+  background-color: #7cfc00;
+}
+legend {
+  color: #008080;
+  font-size: 1rem;
+  font-weight: bold;
+}
+fieldset {
+  width: 15%;
+  justify-content: left;
+  padding: 0;
+  margin: 0;
+}
+label {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #008080;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input {
+  width: 50%;
+  height: 2rem;
+  border: 1px solid #808080;
+}
+/*----------Bottom of Checkout.html----------*/
+/*----------Media Queries information--------*/
+/*XXXXXXXXXXXXXXXXXX---576px---XXXXXXXXXXXXXXXXXXX*/
 /*-----Media Screen 576px Cell Phone---*/
 @media screen and (max-width: 576px) {
   body {
@@ -541,10 +555,11 @@ footer p {
     flex-direction: column;
     width: 50%;
     height: 25%;
-    padding: 5rem 0 1rem 4rem;
+    padding: 1rem 0 0 4rem;
   }
-   .svg-dog-header p {
-    font-size: 1rem;
+   .header-text {
+    font-size: .5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     padding: 0
    }
@@ -570,7 +585,7 @@ footer p {
     margin: 0;
   }
   h3 {
-    color: #000000;
+    color: #008080;
     font-weight: bold;
     font-size: 1.5rem;
     justify-content: left;
@@ -616,7 +631,6 @@ footer p {
     justify-content: center;
     align-items: center;
     width: 100%
-
   }
   .button-index {
     background-color: #595959;
@@ -640,99 +654,88 @@ footer p {
     width: 100%;
   }
 }
-
-/*----iPad with orientation: landscape-----*/
-@media screen and (max-width: 1024px)   and (orientation: landscape) {
-  body {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .svg-dog-header {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 50%;
-    padding: 5rem 0 1rem 4rem;
-  }
-   .svg-dog-header p {
-    font-size: inherit;
-    width: 100%;
-    padding: 0;
-    font-size: 1rem;
-   }
-   .blog-text {
-    color: #000000;
-    width: 80%;
-    display: none;
-  }
-  .dog-title-travel {
-    justify-content: space-around;
-    align-items: center;
-    color: #696969;
-    margin-left: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-size: .9rem;
-    padding-bottom: 1rem;
-  }
-  .dog-blog-aside {
-    width: 25%;
-    align-items: flex-end;
-    margin-top: 5rem;
-  }
-  .dog-item {
-    padding-bottom: 1rem;
-    color: #008080;
-  }
-  .list-blog {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    color: #008080;
-    font-size: 1.1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-  }
-  .price-index {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  .pricing {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-
-    /*padding: 0 1rem 0 1rem;*/
-  }
-  .total-index {
-    font-weight: bold;
-    font-size: 1rem;
-    padding-left: 1rem;
-  }
-  .dog-card-index {
-    border: 2px solid #e8e8e8;
-    height: 8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-  }
-  header p {
-    color: #7cfc00;
-    width: 100%;
-    padding-top: 4rem;
-    padding-left: 6rem;
-    font-style: initial;
-    font-size: 1.7rem;
-    margin: 0;
-  }
-  .svg-dog-header {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 25%;
-    padding-top: 10rem;
-    padding-left: 5rem;
-  }
+/*XXXXXXXXXXXXXX--Tablet--1024px---XXXXXXXXXXXXXXXXXXX*/
+/*----iPad with orientation: landscape max 1024----*/
+@media screen and (max-width: 1024px) and    (orientation: landscape) {
+    body {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .svg-dog-header {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 50%;
+      padding: 5rem 0 1rem 4rem;
+    }
+    .svg-dog-header p {
+      font-size: inherit;
+      width: 100%;
+      padding: 0;
+      font-size: 1rem;
+    }
+    .blog-text {
+      color: #000000;
+      width: 80%;
+      display: none;
+    }
+    .dog-title-travel {
+      justify-content: space-around;
+      align-items: center;
+      color: #696969;
+      margin-left: 0;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-style: normal;
+      font-size: .9rem;
+      padding-bottom: 1rem;
+    }
+    .list-blog {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      color: #008080;
+      font-size: 1.1rem;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      text-decoration: none;
+    }
+    .price-index {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .pricing {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    .total-index {
+      font-weight: bold;
+      font-size: 1rem;
+      padding-left: 1rem;
+    }
+    .dog-card-index {
+      border: 2px solid #e8e8e8;
+      height: 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+    header p {
+      color: #7cfc00;
+      width: 100%;
+      padding-top: 4rem;
+      padding-left: 6rem;
+      font-style: initial;
+      font-size: 1.7rem;
+      margin: 0;
+    }
+    .svg-dog-header {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 25%;
+      padding-top: 10rem;
+      padding-left: 5rem;
+    }
 }

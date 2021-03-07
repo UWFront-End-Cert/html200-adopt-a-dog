@@ -12,15 +12,18 @@
 <body>
   <header>
     <div class="cart-checkout">
+      <div>
+        <img class="svg-dog-header" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
+        <p>Seattle's premiere dog adoption agency</p>
+      </div>
       <div class="cart-box">
         <img class="svg-cart" src="images/cart-icon.svg" alt="checkout cart icon">
-        <label class="price">$1234.56</label>
+        <label class="price"> $1234.56</label>
       </div>
-      <input class="cart-btn" type="submit" value="Checkout">
-    </div>
-    <div>
-      <img class="svg-dog-header linear-gradient-1" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
-      <p>Seattle's premiere dog adoption agency</p>
+      <div>
+        <input class="cart-btn" type="submit" value="Checkout">
+      </div>
+
     </div>
   </header>
 
@@ -61,10 +64,10 @@
         <fieldset>
           <legend>First Time Adopter?</legend>
           <div class="first-time">
-            <input class="radio" type="radio" name="everAdopt" value="yes">Yes<br>
+            <input type="radio" name="everAdopt" value="yes">Yes<br>
           </div>
           <div class="first-time">
-            <input class="radio" type="radio" name="everAdopt" value="no">No<br>
+            <input type="radio" name="everAdopt" value="no">No<br>
           </div>
 
         </fieldset>
@@ -84,17 +87,17 @@
       <section>
         <h3 class="dogs-adopted">Dogs Adopted</h3>
         <div class="adopted-dogs">
-          <img class="checkout-image" src="images/lucas-card.jpg" alt="Dog lucas">
+          <img src="images/lucas-card.jpg" alt="Dog lucas">
           <div class="adopted-text">
-            <h3>Lucas</h3>
+            <h3 class="going-home">Lucas</h3>
             <div class="inline-price">
               <p class="total-cost">Cost to Adopt: </p>
               <p class="price-adopt"> $123.45</p>
             </div>
           </div>
-          <img class="checkout-image" src="images/duffy-card.jpg" alt="Dog duffy">
+          <img src="images/duffy-card.jpg" alt="Dog duffy">
           <div class="adopted-text">
-            <h3>Duffy</h3>
+            <h3 class="going-home">Duffy</h3>
             <div class="inline-price">
               <p class="total-cost">Cost to Adopt: </p>
               <p class="price-adopt"> $123.45</p>
@@ -102,10 +105,10 @@
           </div>
         </div>
       </section>
-      <div class="cost">
+      <div class="cost-container">
         <label class="cost">Total Adoption Cost</label>
         <p class="price-adopt">$1234.56</p>
-        <input type="submit" name="adoptionTotal" class="submit-button">
+        <input class="last-button" type="submit" name="adoptionTotal" class="submit-button">
       </div>
     </form>
   </main>
