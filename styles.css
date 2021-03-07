@@ -1,19 +1,163 @@
+/*Structure*/
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  /*border: 2px dotted pink;*/
+
+}
+
+.adopt-a-dog {
+  height: 100%;
+  width: 100%;
+  /*border: 1px solid blue;*/
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+  /*border: 1.5px solid black;*/
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.header-child {
+  padding: 2rem 1.25rem 1.25rem 0;
+  /*border: 1px dotted green;*/
+  width: 45%;
+}
+
+.intro {
+  flex: 0 0 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.intro-image {
+  display: flex;
+  /*border: 2px dotted green;*/
+
+}
+
+.intro-text {
+  /*border: 2px dotted DodgerBlue;*/
+}
+
+#cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-right: 0;
+}
+
+.main-nav {
+  padding: 1.25rem 1.25rem 1.25rem 5rem;
+  background-color: #ececec;
+  width: 100%;
+  /*border: 1px solid red;*/
+}
+
+.dogs-for-adoption {
+  height: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+}
+
+.card {
+  flex: 1 0 20%; /*1 0 18%*/
+  margin: 2%;
+  width: 25%; /*calc(100% * (1/4) - 20px - 2px);*/
+  border: 1.5px solid #eaeaea;
+
+}
+
+.card img {
+  width: 100%;
+
+}
+
+.bio {
+  margin-top: -1.5rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-bottom: 1.15rem;
+  padding-top: .75rem;
+}
+
+.adopt {
+    color: #ffffff;
+    background-color: #81b741;
+    padding: .25rem 0 .25rem 0;
+    width: 100%;
+  }
+
+/*Style*/
 header {
-  background-image:url("./images/header-image.jpg");
+  background-color: pink;
+  background-image: url("./images/header-image.jpg");
+  background-size: 100%;
+
 }
 
 footer {
   background-color: #0a3c60;
+
+}
+
+p {
+
 }
 
 h2 {
-  color: green;
+  color: #0a3c60;
+}
+
+h3 {
+  color: #81b741;
+}
+
+h4 {
+  font-weight: bold;
+  color: #0a3c60;
+  font-family: serif;
 }
 
 h6 {
   color: #ffffff;
 }
 
+nav {
+  font-family: sans-serif;
+  font-weight: bold;
+
+}
+
+nav a {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+nav a:nth-child(n+2):before {
+  content: "/";
+  color: white;
+}
+
 li {
   color: #ffffff;
+}
+
+#checkout {
+  background-color: #81b741;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#more-dogs {
+  color: #0a3c60;
+  background-color: #ececec;
 }

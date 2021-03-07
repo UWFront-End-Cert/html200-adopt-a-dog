@@ -7,25 +7,33 @@
     <title>Blog</title>
 </head>
 <body>
-  <header title="Adopt A Dog">
-    <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
-    <h3>Seattle's premiere dog adoption agency</h3>
-    <section title="Cart Total">
-      <img src="./images/cart-icon.svg" alt="Shopping Cart Icon" width=2%>
-      <p>$XXXXX</p>
-      <button type="button" name="checkout">Checkout</button>
-
-      <nav title="Main Menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="dogs.html">Dogs</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
+  <header title="Adopt A Dog" class="adopt-a-dog">
+    <div class="flex-container">
+      <div class="header">
+        <div class="header-child">
+          <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+          <h3>Seattle's premiere dog adoption agency</h3>
+        </div>
+        <div class="header-child" id="cart">
+          <div><img src="./images/cart-icon.svg" alt="Shopping Cart Icon">
+          <p>$XXXXX</p></div>
+          <button type="button" name="checkout" id="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="main-nav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="dogs.html">Dogs</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </div>
+    </div>
   </header>
   <main>
-    <h2>Adoptadog Blog</h2>
     <section title="Dog Blog">
+      <h2>Adoptadog Blog</h2>
       <div class="flex-container">
         <article class="blog-post">
             <img src="./images/blog-1.jpg" alt="Woman And Dog Looking At The Grand Canyon">
@@ -45,6 +53,7 @@
               <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat. </p>
               <p>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>
         </article>
+      </div>
     </section>
   </main>
 
