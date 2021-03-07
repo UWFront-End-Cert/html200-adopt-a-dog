@@ -1,23 +1,26 @@
 
 let totalCostArray = [];
-const dogBlogData = [
+const dogBlogData = 
+[
     {
     image: './images/blog-1.jpg',
+    altText: 'Dog with Owner on a cliff',
     title:'How to Walk your Dog',
     blogText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et mlesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odio eleifend dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.'
-},
-{
+    },
+    {
     image: './images/blog-2.jpg',
+    altText: 'Multiple dogs on leashes',
     title: 'How to Walk Multiple Dogs',
     blogText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odi eleifend dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.'
-},
-{
+    },
+    {
     image: './images/blog-3.jpg',
+    altText: 'Dog and owner with sunset',
     title: 'How to Teach Your Dog To Fetch',
     blogText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odio eleifen dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.'
-}
-]  
-;
+    }
+];
 
 function arraySummer(dogCost) {
     totalCostArray.push (dogCost);
@@ -32,9 +35,10 @@ function arraySummer(dogCost) {
 function dogInfoSheetReturn(dogCost,dogName, dogBreed){
     alert('Your dog cost ' + '$' + dogCost + ' and is named ' + dogName + ' of the breed ' + dogBreed + '.');
 }
-function formSubmitButton(e){
-    e.stopPropagation();
-    e.preventDefault();
+function formSubmitButton(event) {
+    console.log('test3');
+    debugger;
+    event.preventDefault();
      alert('Thank you. The form information has been received.');
     console.log('test');
 }
@@ -51,6 +55,7 @@ function blogFieldsGenerator() {
             blogMainHolder.appendChild(blogImageHolder);
             const image = document.createElement('img');
             image.src = dogBlogData[i].image;
+            image.alt = dogBlogData[i].altText;
             blogImageHolder.appendChild(image);  
             const blogTextHolder = document.createElement('div');
             blogTextHolder.className = 'blog-text-holder';
@@ -65,3 +70,4 @@ function blogFieldsGenerator() {
             blogTextHolder.appendChild(blogSubPara);    
         }
 }
+console.log('test2');
