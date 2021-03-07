@@ -247,7 +247,7 @@ button {
 
 .blog img {
     width: 100%;
-    height: 350px;
+    height: auto;
     margin-right: 5rem;
 }
 
