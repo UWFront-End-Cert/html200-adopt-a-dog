@@ -20,12 +20,12 @@ const dogBlogData = [
 ;
 
 function arraySummer(dogCost) {
-totalCostArray.push (dogCost);
+    totalCostArray.push (dogCost);
 
-let summer = (cost, totalCost) => cost + totalCost;
-totalCostArray.push(0);
-let total = (totalCostArray.reduce(summer));
-alert('Your total cost is $' + total);
+    let summer = (cost, totalCost) => cost + totalCost;
+    totalCostArray.push(0);
+    let total = (totalCostArray.reduce(summer));
+    alert('Your total cost is $' + total);
 
 }
 
@@ -33,34 +33,35 @@ function dogInfoSheetReturn(dogCost,dogName, dogBreed){
     alert('Your dog cost ' + '$' + dogCost + ' and is named ' + dogName + ' of the breed ' + dogBreed + '.');
 }
 function formSubmitButton(e){
+    e.stopPropagation();
     e.preventDefault();
-    alert('Thank you. The form information has been received.');
+     alert('Thank you. The form information has been received.');
     console.log('test');
 }
 function blogFieldsGenerator() {
         console.log('Test');
-        gridItemContainer = document.getElementById('gridItemContainer');
+        const gridItemContainer = document.getElementById('gridItemContainer');
 
         for (i = 0; i < dogBlogData.length; i ++){
-        const blogMainHolder = document.createElement('article');
-        blogMainHolder.className = 'blog-main-holder';
-        gridItemContainer.appendChild(blogMainHolder);
-        const blogImageHolder = document.createElement('div');
-        blogImageHolder.className = 'blog-img-holder';
-        blogMainHolder.appendChild(blogImageHolder);
-        const image = document.createElement('img');
-        image.src = dogBlogData[i].image;
-        blogImageHolder.appendChild(image);  
-        const blogTextHolder = document.createElement('div');
-        blogTextHolder.className = 'blog-text-holder';
-        blogMainHolder.appendChild(blogTextHolder);
-        const blogSubHeader = document.createElement('h3');
-        blogSubHeader.className = 'blog-sub-header';
-        blogSubHeader.textContent = dogBlogData[i].title;
-        blogTextHolder.appendChild(blogSubHeader);
-        const blogSubPara = document.createElement('p');
-        blogSubPara.className = 'blog-sub-paragraph';
-        blogSubPara.textContent = dogBlogData[i].blogText;
-        blogTextHolder.appendChild(blogSubPara);    
+            const blogMainHolder = document.createElement('article');
+            blogMainHolder.className = 'blog-main-holder';
+            gridItemContainer.appendChild(blogMainHolder);
+            const blogImageHolder = document.createElement('div');
+            blogImageHolder.className = 'blog-img-holder';
+            blogMainHolder.appendChild(blogImageHolder);
+            const image = document.createElement('img');
+            image.src = dogBlogData[i].image;
+            blogImageHolder.appendChild(image);  
+            const blogTextHolder = document.createElement('div');
+            blogTextHolder.className = 'blog-text-holder';
+            blogMainHolder.appendChild(blogTextHolder);
+            const blogSubHeader = document.createElement('h3');
+            blogSubHeader.className = 'blog-sub-header';
+            blogSubHeader.textContent = dogBlogData[i].title;
+            blogTextHolder.appendChild(blogSubHeader);
+            const blogSubPara = document.createElement('p');
+            blogSubPara.className = 'blog-sub-paragraph';
+            blogSubPara.textContent = dogBlogData[i].blogText;
+            blogTextHolder.appendChild(blogSubPara);    
         }
 }
