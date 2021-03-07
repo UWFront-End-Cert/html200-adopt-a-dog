@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Neuton:ital@0;1&family=Work+Sans:ital,wght@0,300;0,600;0,900;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <script src="./scripts/dog-info.js"></script>
   </head>
   <body>
     <a href="#main-content" class="hidden">Skip to main content</a>
@@ -39,7 +38,7 @@
       </nav>
       <section class="main-container">
         <h1>Checkout</h1>
-        <form method="GET">
+        <form method="GET" id="checkoutForm">
           <div class="form-grid-container">
             <div class="form-grid-name">
               <label class="form-span" for="fullName">Name</label>
@@ -105,7 +104,7 @@
               <h2>Total Adoption Cost</h2>
               <p>$1234.56</p>
             </div>
-            <button class="form-grid-button" type="submit">Submit</button>
+            <button class="form-grid-button" type="submit" id="submitButton">Submit</button>
           </div>
         </form>
       </section>
@@ -124,5 +123,7 @@
         <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
       </div>
     </footer>
+    <script src="./scripts/dog-info.js"></script>
+    <script src="./scripts/checkout-form.js"></script>
   </body>
 </html>
