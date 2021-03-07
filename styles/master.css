@@ -293,16 +293,17 @@ input[type="radio"] {
 }
 
 /************ blog ***************/
+.blog-container {
+  width: 80%;
+  margin: 0 auto;
+}
 
 .blog {
-  margin-left: 6rem;
-  margin-right: 6rem;
   display: flex;
   padding-top: 0px;
 }
 
 .blogheader {
-  padding-left: 6rem;
   margin-bottom: 0;
 }
 
@@ -438,8 +439,13 @@ input[type="radio"] {
   .content-right {
     display: none;
   }
+  
   .content-left {
     width: 95%;
+  }
+
+  .blog {
+    flex-direction: column;
   }
 }
 
