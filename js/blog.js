@@ -32,22 +32,22 @@ for (let i = 0; i < blogInfo.length; i++) {
 
 
     const image = document.createElement('img');
-    image.setAttribute('src', 'images/blog-1.jpg');
-    image.setAttribute('alt', 'Person viewing the Grand Canyon with their dog');
+    image.setAttribute('src', blogInfo[i].image);
+    image.setAttribute('alt', blogInfo[i].alt);
     article.appendChild(image);
 
     const blogDiv = document.createElement('div');
     article.appendChild(blogDiv);
 
     const blogHeader = document.createElement('h3');
-    blogHeader.innerHTML = '<h3>Traveling With Your Dog</h3>';
+    blogHeader.innerHTML = blogInfo[i].h3;
     blogDiv.appendChild(blogHeader);
 
     const paragraph1 = document.createElement('p');
-    paragraph1.innerHTML = '<p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam</p>';
+    paragraph1.innerHTML = blogInfo[i].p;
     blogDiv.appendChild(paragraph1);
 
     const paragraph2 = document.createElement('p');
-    paragraph2.innerHTML = '<p>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>';
+    paragraph2.innerHTML = blogInfo[i].p2;
     blogDiv.appendChild(paragraph2);
 }
