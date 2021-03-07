@@ -30,7 +30,9 @@ h4,
     margin-bottom: 1rem;
 }
 
-.dogs-h2 {
+
+.dogs-h2,
+.blog-title  {
     margin-top:2rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;

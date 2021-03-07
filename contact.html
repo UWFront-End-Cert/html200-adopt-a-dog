@@ -38,10 +38,10 @@
         </ul>
     </nav>
 
-    <form>
+    <form id="orderForm">
         <div class="wrapper">
             <h2>Checkout</h2>
-            <fieldset>
+            <fieldset id = "Personal-Info">
                 <div class="personal-info">
                     <label for="name">Name
                         <input type="text" id="name" autofocus></label>
@@ -119,7 +119,7 @@
                     </label>
                 </div> <!--  end of city-state div -->
 
-                <fieldset class="adopter">
+                <fieldset id = "FirstTimeAdopter?" class="adopter">
                     <legend>First Time Adopter?</legend>
                     <div class="first-time">
                         <div>
@@ -181,8 +181,9 @@
             </section>
             <!-- end of cost -->
 
-            <button id="contact-button" class="contact-button" type="submit" value="Submit" name="submit">Submit</button>
-            <script src="js/form.js" charset="utf-8"></script>
+            <button id="contact-button" class="contact-button" type="submit" value="Submit"
+                name="submit">Submit</button>
+
         </div>
         <!-- end of wrapper -->
     </form>
@@ -203,6 +204,7 @@
         <p>&copy;2020 Adoptadog, LLC | Seattle, WA</p>
     </footer>
 
+    <script src="js/form.js" charset="utf-8"></script>
 </body>
 
 </html>
