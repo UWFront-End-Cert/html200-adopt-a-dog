@@ -14,12 +14,6 @@ function priceRipper() {
   document.getElementById('totals').innerText = '$' + adoptionTotalNumber;
 }
 
-// When 'this' was the parameter in the handler it returned the button's elements
-// Maybe I can go to it's siblings? Does it know the context? investigate later.
-  // function priceRipper(e) {
-  //   console.log(e);
-  // }
-
 //Alerts users of clicked dog picture
 function infoRipper(dogName) {
   for (let i = 0; i < dogArray.length; i++){
