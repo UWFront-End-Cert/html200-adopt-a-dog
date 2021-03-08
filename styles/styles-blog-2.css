@@ -1,8 +1,6 @@
-/*-----539 is @media for 360px----*/
-/*-----871 is @media for 768px----*/
-/*-----1103 is @media for 992px---*/
-/*-----1417  is @media for 1024px landscape---*/
-
+/** {
+  border: 1px solid black;
+}*/
 body {
   width: 100%
 }
@@ -13,7 +11,7 @@ header {
   background-image: url(../images/header-image.jpg);
   background-size: cover;
   height: 25rem;
-  background: linear-gradient(to right, #A52A2A, #A9A9A9);
+  /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
 }
 header p {
   color: #7cfc00;
@@ -42,6 +40,7 @@ h3 {
   width: 20%;
   padding-top: 5rem;
 }
+
 .cart-checkout {
   display: flex;
   flex-direction: column;
@@ -95,13 +94,13 @@ h3 {
 .space {
   padding: 0 2rem 0 2rem;
 }
-/*---End of Nav Menu Top------*/
-/*---Main Start-----------------*/
+/*--------------End of Nav Menu Top----------------*/
+/*------------------Main Start-----------------*/
 .main-index {
   display: flex;
   width: 100%;
 }
-/*-----Section Container for Top Main------*/
+/*-------------Section Container for Top Main------*/
 /*-------------Boy hugging dog----------------*/
 .dog-listing-container {
   width: 66%;
@@ -134,8 +133,8 @@ h3 {
   color: #008080;
   font-weight: 700;
 }
-/*---End of Section Boy hugging dog----------*/
-/*--Start Flex Container with dogs----------*/
+/*--------End of Section Boy hugging dog----------*/
+/*--------Start Flex Container with dogs----------*/
 .flex-container-index-1 {
   display: flex;
   flex-direction: row;
@@ -221,8 +220,8 @@ h3 {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
 }
-/*-End of Asidge Blog listing------------*/
-/*--See More at bottom of Index-----------*/
+/*----------End of Asidge Blog listing------------*/
+/*----------See More at bottom of Index-----------*/
 .see-more {
   display: flex;
   width: 15rem;
@@ -265,7 +264,7 @@ footer p {
   color: #ffffff;
   text-decoration: none;
 }
-/*----End of Footer------------------*/
+/*--------------End of Footer------------------*/
 /*--Start Dog Card listings page-----------*/
 .all-dogs-container {
   width: 60%;
@@ -301,6 +300,7 @@ footer p {
   display: flex;
   flex-direction: row;
   padding-left: 0;
+
 }
 .total-listing { 
   font-weight: bold;
@@ -315,8 +315,8 @@ footer p {
   margin: 0 0 1rem 1rem;
   align-items: center;
 }
-/*--End Dog Card Information------*/
-/*---dog-listing.index.html---------------*/
+/*-------------End Dog Card Information---------------*/
+/*-------------dog-listing.index.html---------------*/
 .main-dog-list {
   display: flex;
   width: 100%;
@@ -333,6 +333,7 @@ footer p {
   gap: 1rem;
   margin-left: 13%;;
 }
+
 .dog-listing-title {
   color: #008080;
   width: 100%;
@@ -343,6 +344,7 @@ footer p {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.3em;
 }
+
 /*---------Start Dog-blog.html----------*/
 .blog-adoptadog-h1 {
   color:#2f4f4f;
@@ -387,7 +389,7 @@ main {
   padding-top: 0;
 }
 /*-------------End Dog-blog.html page---------*/
-/*-----Checkout.html form----------------*/
+/*-------------Checkout.html form----------------*/
 .form-main {
   padding-left: 10%;
 }
@@ -451,7 +453,8 @@ main {
 .going-home {
   color: #008080;
   padding: 0;
-  margin-left: 0; 
+  margin-left: 0;
+  
 }
 .last-button {
   width: 15%;
@@ -478,6 +481,7 @@ main {
 }
 .cost-container {
   margin-top: 1rem;
+
 }
 .cost {
   padding-top: 5%;
@@ -534,337 +538,12 @@ input {
   height: 2rem;
   border: 1px solid #808080;
 }
-/*-------360px-------*/
-/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
-/*--Media Screen 360px Cell Phone---Galaxy S5*/
-/*---3 columns to 1 column on Cell phone-----*/
-@media only screen and (min-width: 360px) {
-  body {
-    width: 500px;
-    padding: 0;
-    margin: 0;
-  }
-  header {
-    display: flex;
-    width: 120%;
-    background-image: url(../images/header-image.jpg);
-    height: 15rem;
-    /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
-  }
-  .svg-dog-header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .dog-img-header {
-    width: 25%;
-    padding-top: 5rem;
-  }
-  .dog-img-header p {
-    font-size: 1rem;
-  }
-  .space {
-    padding: 0 .5rem 0 .5rem;
-  }
-  .nav-head {
-    display: flex;
-    align-items: center;
-    padding: 0rem 0 1rem 3rem;
-    width: 110%;
-  }
-  .nav-item-head {
-    color:#2f4f4f;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: .8rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    align-items: center;
-  }
-  .main-index {
-    display: flex;
-    width: 100%;
-  }
-  .dog-blog-aside {
-    display: none;
-  }
-  .main-index {
-    display: flex;
-    width: 100%;
-  }
-  .dog-listing-container {
-    width: 100%;
-  }
-  .adopt-a-dog-intro {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0%
-  }
-  .index-image-top {
-    display: flex;
-    align-items: flex-start;
-    width: 60%;
-    height: 8rem;
-    background-size: cover;
-    padding: 1rem 0 1rem 2rem;
-  }
-  .title-about {
-    width: 80%;
-    color: #a9a9a9;
-    font-size: .8rem;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-    line-height: 1.5rem;
-    justify-content: space-evenly;
-  }
-  .title-about p {
-    color: #000000;
-    justify-content: center;
-    align-items: center;
-    width: 61%;
-    padding: 0 2rem 0 0;
-  }
-  .title-index {
-    color:#2f4f4f;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  .flex-container-index-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-  .dog-card-index {
-    display: flex;
-    border: 2px solid #e8e8e8;
-    height: 8%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-  }
-  .dog-card-index > .dog-item-image {
-    padding: 0;
-  }
-  .pricing {
-    display: flex;
-    padding: 1em;
-  }
-  .total-index {
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  .price-index {
-    font-size: inherit;
-    font-weight: 500;
-    padding: 0 0 0 1rem;
-  }
-  .index-text {
-    color: #000000;
-    padding-left: 1rem;
-    padding-right: 0.8rem;
-  }
-  .button-index {
-    background-color:  #88cc00;
-    color: #737373;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-    font-size: 1rem;
-    width: 80%;
-    height: 9%;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-  }
-  .pricing-listing {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-  }
-  .total-listing { 
-    font-weight: bold;
-  }
-  .flex-dog-button {
-    background-color: #88cc00;
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-    width: 75%;
-    height: 15%;
-    margin: 0 0 1rem 1rem;
-    align-items: center;
-  }
-  .dog-name {
-    color:#2f4f4f;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3em;
-  }
-  /*-----Dog Listing----*/
-  .dog-listing-title {
-    color:#2f4f4f;
-    width: 100%;
-    margin: 0;
-  }
-  /*-----Blog Listing----*/
-  .blog-adoptadog-h1 {
-    color:#2f4f4f;
-    padding: 3rem;
-    padding-left: 0;
-    font-size: 2rem;
-    margin-left: 13%;
-  }
-  .hide-text {
-    display: none;
-  }
-  /*-----Adopt Blog----*/
-  .blog-adoptadog-h1 {
-    color:#2f4f4f;
-    padding: 2rem;
-    padding-left: 0;
-    font-size: 2rem;
-    margin-left: 13%;
-  }
-  main {
-    display: flex;
-    flex-direction: row;
-  }
-  .container-blog {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 13%;
-    padding-left: 0;
-  }
-  .blog-text-info {
-    color: #000000;
-    width: 80%;
-  }
-  .blog-item {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 4rem;
-    width: 100%;
-  }
-  .blog-topic {
-    color:#2f4f4f;
-    width: 100%;
-    margin-top: 0;
-    padding: 0;
-  }
-  .blog-text {
-    color: #000000;
-    width: 80%;
-    display: none;
-  }
-  .dog-title-travel {
-    justify-content: space-around;
-    align-items: center;
-    color: #696969;
-    margin-left: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-  }
-  .dogs-adopted {
-    color:#2f4f4f;
-    font-size: .5rem;
-    font-weight: bold;
-    padding-bottom: 1rem;
-  }
-  .adopt-final{
-    width: 10%;
-  }
-  .adopted-dogs {
-    display: flex;
-    width: 100%;
-  }
-  .adopted-dogs img {
-    width: 10%;
-    margin-left: 1rem;
-  }
-  .adopted-text {
-    flex-direction: column;
-    line-height: 0.8rem;
-    width: 100%;
-    font-size: .5rem;
-    font-family:'Times New Roman', Times, serif;
-    color: #008080;
-  }
-  .inline-price {
-    display: flex;
-    flex-direction: row;
-    font-size: 1rem;
-    width: 40%;
-  }
-  .total-cost {
-    color: #000000;
-    font-weight: 500;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-  }
-  .price-adopt {
-    color: #000000;
-    font-weight: 100;
-    margin-left: 1%;
-  }
-  .inline-price {
-    display: flex;
-    flex-direction: row;
-    font-size: 1rem;
-    width: 100%;
-  }
-  .going-home {
-    color:#2f4f4f;
-  }
-  .see-more {
-    display: flex;
-    width: 15rem;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-weight: bold;
-    text-decoration: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    padding: .7rem 2.5rem .7rem 2.5rem;
-    margin: 1rem 0 2rem 2rem;
-  }
-  /*------------FOOTER--------*/
-  footer {
-    display: flex;
-    flex-direction: column;
-    width: 309px;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #003366;
-    color: #ffffff;
-  }
-  footer p {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-  .footer-logo {
-    max-height: 5rem;
-    font-weight: bold;
-  }
-  .nav-footer {
-    display: flex;
-    flex-direction: row;
-  }
-  .nav-item-ft {
-    color: #ffffff;
-    text-decoration: none;
-  }
-}
+
 /*----------Bottom of Checkout.html----------*/
+/*----------Media Queries information--------*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXX---768px---XXXXXXXXXXX---DONE--XXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /*-----Media Screen 768px tablet Phone---*/
 /*---3 columns to 2 columns-----*/
 @media only screen and (min-width: 768px) {
@@ -1090,10 +769,13 @@ input {
       color:#2f4f4f;
     }
 }
-/*---Media Queries information--------*/
-/*XXXXXXXXX---992px---XXXXXXXXXXXXXXXXXXX*/
-/*-----Media Screen 992px Cell Phone---*/
 
+/*----------Bottom of Checkout.html----------*/
+/*----------Media Queries information--------*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXX---992px---XXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*-----Media Screen 992px Cell Phone---*/
 @media only screen and (max-width: 992px) {
   body {
     width: 100%;
@@ -1134,7 +816,7 @@ input {
     background-image: url(../images/header-image.jpg);
     background-size:cover;
     height: 15rem;
-    background: linear-gradient(to right, #A52A2A, #A9A9A9);
+    /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
   }
    .header-text {
     font-size: .5rem;
@@ -1146,6 +828,7 @@ input {
     display: flex;
     flex-direction: row;
     padding: 1rem 0 1.5rem 13%;
+
   }
   .nav-item-head {
     color:#2f4f4f;
@@ -1309,6 +992,16 @@ input {
 .total-listing { 
   font-weight: bold;
 }
+/*.flex-dog-button {
+  background-color: #33cc33;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  width: 75%;
+  height: 15%;
+  margin: 0 0 1rem 1rem;
+  align-items: center;
+}*/
   /*----blog-page-----*/
   .blog-adoptadog-h1 {
     color:#2f4f4f;
@@ -1401,10 +1094,11 @@ input {
   }
 
 }
-/*  *XX--   1024 landscape  */
-/*Tablet--1024px--landscape---*/
-/*--iPad with orientation: landscape max 1024----*/
-@media only screen and (min-width: 1024px) and  (orientation: landscape) {
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXX--Tablet--1024px---XXXXXXXXXXXXXXXXXXX*/
+/*----iPad with orientation: landscape max 1024----*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@media only screen and (max-width: 1024px) and    (orientation: landscape) {
     body {
       width: 100%;
       padding: 0;
