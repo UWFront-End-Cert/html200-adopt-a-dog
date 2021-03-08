@@ -86,36 +86,29 @@ blog3Para1.textContent = 'Lotsa pats noodle horse very good spot clouds fat boi,
 let blog3Para2 = document.createElement('p');
 blog3Para2.textContent = 'Bork long woofer I am bekom fat ur givin me a spook vvv. Shoober adorable doggo you are doin me a concern adorable doggo very good spot tungg dat tungg tho wrinkler wow very biscit doge, very jealous pupper he made many woofs doggo maximum borkdrive waggy wags clouds h*ck. Read more...';
 
-
-// blog objects
-const blog1 = {
-  blogPost: blogPost1,
-  image: blogImg1,
-  textContainer: blogText1,
-  blogTitle: blogTitle1,
-  blogPara1: blog1Para1,
-  blogPara2: blog1Para2,
-};
-
-const blog2 = {
-  blogPost: blogPost2,
-  image: blogImg2,
-  textContainer: blogText2,
-  blogTitle: blogTitle2,
-  blogPara1: blog2Para1,
-  blogPara2: blog2Para2,
-};
-
-const blog3 = {
-  blogPost: blogPost3,
-  image: blogImg3,
-  textContainer: blogText3,
-  blogTitle: blogTitle3,
-  blogPara1: blog3Para1,
-  blogPara2: blog3Para2,
-};
-
-const blogArray = [blog1, blog2, blog3];
+const blogArray = [
+  { blogPost: blogPost1,
+    image: blogImg1,
+    textContainer: blogText1,
+    blogTitle: blogTitle1,
+    blogPara1: blog1Para1,
+    blogPara2: blog1Para2,
+  },
+  { blogPost: blogPost2,
+    image: blogImg2,
+    textContainer: blogText2,
+    blogTitle: blogTitle2,
+    blogPara1: blog2Para1,
+    blogPara2: blog2Para2,
+  },
+  { blogPost: blogPost3,
+    image: blogImg3,
+    textContainer: blogText3,
+    blogTitle: blogTitle3,
+    blogPara1: blog3Para1,
+    blogPara2: blog3Para2,
+  },
+];
 
 for (i = 0; i < 3; i++) {
   document.body.appendChild(blogArray[i].blogPost);
