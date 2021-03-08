@@ -40,14 +40,14 @@ for (let i = 0; i < blogInfo.length; i++) {
     article.appendChild(blogDiv);
 
     const blogHeader = document.createElement('h3');
-    blogHeader.innerHTML = blogInfo[i].h3;
+    blogHeader.textContent = blogInfo[i].h3;
     blogDiv.appendChild(blogHeader);
 
     const paragraph1 = document.createElement('p');
-    paragraph1.innerHTML = blogInfo[i].p;
+    paragraph1.textContent = blogInfo[i].p;
     blogDiv.appendChild(paragraph1);
 
     const paragraph2 = document.createElement('p');
-    paragraph2.innerHTML = blogInfo[i].p2;
+    paragraph2.textContent = blogInfo[i].p2;
     blogDiv.appendChild(paragraph2);
 }
