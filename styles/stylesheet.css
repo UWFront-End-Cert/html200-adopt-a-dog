@@ -32,7 +32,8 @@ h4,
 
 
 .dogs-h2,
-.blog-title  {
+.blog-title,
+.form-title  {
     margin-top:2rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
@@ -280,13 +281,14 @@ footer a {
     grid-template-columns: repeat(auto-fit, minmax(0, 32%));
     grid-gap: 1% 1%;
     margin-top: 1rem;
-    margin-bottom: 3rem;
-    overflow: auto;
+    margin-bottom: 5rem;
+    /* overflow: auto; */
 
 }
 
-.dogs article {
-    border: lightgray solid 1px;
+.dogs article,
+.all-dogs article {
+    border: lightgray solid 3px;
 }
 
 @media screen and (max-width: 575px) {
@@ -374,6 +376,7 @@ aside img {
     text-align: center;
     margin: 0 auto;
     display: block;
+ 
 }
 
 .more-dogs a {
@@ -392,6 +395,7 @@ aside img {
     grid-template-rows: auto;
     grid-gap: 2% 5%;
     margin-top: 3rem;
+    margin-bottom: 3rem;
     /* padding-right: 5rem; */
 }
 
@@ -496,12 +500,13 @@ select {
 /* styling for button on contact page */
 .contact-button {
     width: 15rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: .5rem 2rem;
     background-color: #008A00;
     color: white;
     font-weight: bold;
+    clear:both;
 }
 
 /* footer styling */
@@ -511,6 +516,7 @@ footer {
     text-align: center;
     padding: 5% 1%;
     margin-top: 5%;
+  
 }
 
 footer ul {

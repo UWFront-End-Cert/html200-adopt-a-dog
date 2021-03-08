@@ -12,11 +12,11 @@
       for (let i = 0; i < formdata.length - 1; i++) {
 
           const id = document.getElementById('orderForm').elements[i].id;
-          const val = document.getElementById('orderForm').elements[i].value;
+          const value = document.getElementById('orderForm').elements[i].value;
 
           //   console.log("ID: ", id);
           //   console.log("Value: ", val);
-          const submitdata = ("ID: " + id + " " + "Value: " + val);
+          const submitdata = ("ID: " + id + " " + "Value: " + value);
           console.log(submitdata);
 
       }

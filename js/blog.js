@@ -2,7 +2,7 @@
 // alert("Hello");
 const container = document.getElementById('container')
 
-let blogContent = [
+const blogContent = [
     {'blogImg':"images/blog-1.jpg" , 
      'blogAltText':'Man viewing the Grand Canyon with his dog',
      'blogHeader':'Traveling with Your Dog',
@@ -47,17 +47,15 @@ for (let i = 0; i<blogContent.length; i++) {
 
 // children of the div include the header and two paragraphs
     let blogH2 = document.createElement('h2');
-    blogH2.innerHTML = blogContent[i].blogHeader;
+    blogH2.textContent = blogContent[i].blogHeader;
     blogDiv.appendChild(blogH2);
 
     let blogPar1 = document.createElement('p');
-    blogPar1.setAttribute('id', 'blog-par1');
-    blogPar1.innerHTML = blogContent[i].blogP1;
+    blogPar1.textContent = blogContent[i].blogP1;
     blogDiv.appendChild(blogPar1);
 
     let blogPar2 = document.createElement('p');
-    blogPar2.setAttribute('id', 'blog-par2');
-    blogPar2.innerHTML = blogContent[i].blogP2;
+    blogPar2.textContent = blogContent[i].blogP2;
     blogDiv.appendChild(blogPar2);
 
 
