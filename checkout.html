@@ -31,9 +31,9 @@
       <!--<div id="wrapper">-->
       <h2 class="page-header">Checkout</h2>
       <div class="grid-item-container">
-         <form>
+         <form onSubmit="formSubmitButton(event)">
             <label class="form-label" for="name">Name</label><br>
-            <input class="form-box" type="text" id="name" name="name"><br>
+            <input class="form-box" type="text" id="full-name" name="name"><br>
             <label class="form-label" for="email">Email</label><br>
             <input class="form-box" type="email" id="email" name="email"><br>
             <label class="form-label" for="address">Street Address</label><br>
@@ -142,7 +142,7 @@
             <h3>Total Adoption Cost</h3>
             <p class="checkout-cost">$123.45</p>
             <br>
-            <button type="submit" class="adopt-button" onSubmit="formSubmitButton(e)">Submit</button>
+            <button onclick= "formDataProvider()" type="submit" class="adopt-button" >Submit</button>
          </form>
       </div>
       <!--end grid-item-container-->
@@ -164,6 +164,6 @@
          </div>
       </footer>
       <!--</div>-->
-      <script src="./myscripts.js"></script>
+      <script src="myscripts2.js"></script>
    </body>
 </html>

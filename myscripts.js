@@ -32,15 +32,8 @@ function arraySummer(dogCost) {
 
 }
 
-function dogInfoSheetReturn(dogCost,dogName, dogBreed){
+function dogInfoSheetReturn(dogCost,dogName, dogBreed) {
     alert('Your dog cost ' + '$' + dogCost + ' and is named ' + dogName + ' of the breed ' + dogBreed + '.');
-}
-function formSubmitButton(event) {
-    console.log('test3');
-    debugger;
-    event.preventDefault();
-     alert('Thank you. The form information has been received.');
-    console.log('test');
 }
 function blogFieldsGenerator() {
         console.log('Test');
@@ -70,4 +63,3 @@ function blogFieldsGenerator() {
             blogTextHolder.appendChild(blogSubPara);    
         }
 }
-console.log('test2');
