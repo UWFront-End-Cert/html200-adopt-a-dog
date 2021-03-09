@@ -36,7 +36,6 @@ function dogInfoSheetReturn(dogCost,dogName, dogBreed) {
     alert('Your dog cost ' + '$' + dogCost + ' and is named ' + dogName + ' of the breed ' + dogBreed + '.');
 }
 function blogFieldsGenerator() {
-        console.log('Test');
         const gridItemContainer = document.getElementById('gridItemContainer');
 
         for (i = 0; i < dogBlogData.length; i ++){

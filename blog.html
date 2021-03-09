@@ -6,7 +6,7 @@
       <link rel="stylesheet" type="text/css" href="styles.css">
       <title>Blog</title>
    </head>
-   <body>
+   <body onload="blogFieldsGenerator()">
       <header>
          <div class="header-holder">
             <section class="left-side-header">
@@ -29,7 +29,6 @@
          </ul>
       </nav>
       <!--<div id="wrapper">-->
-         <button onclick = "blogFieldsGenerator()" class="adopt-button">Activate</button>
       <h2 class="page-header">Adoptadog Blog</h2>
      
       <div id="gridItemContainer" class="grid-item-container">
@@ -87,7 +86,7 @@
                <ul>
                   <li><a href="index.html" class="needs-slash2">Home</a></li>
                   <li><a href="dogs.html" class="needs-slash2">Dogs</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="checkout.html">Contact</a></li>
                </ul>
             </nav>
             <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>

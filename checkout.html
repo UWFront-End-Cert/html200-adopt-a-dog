@@ -31,7 +31,7 @@
       <!--<div id="wrapper">-->
       <h2 class="page-header">Checkout</h2>
       <div class="grid-item-container">
-         <form onSubmit="formSubmitButton(event)">
+         <form name="formDataHolder" onSubmit="formSubmitButton(event)">
             <label class="form-label" for="name">Name</label><br>
             <input class="form-box" type="text" id="full-name" name="name"><br>
             <label class="form-label" for="email">Email</label><br>
@@ -110,15 +110,15 @@
             <!--end city-state-holder-->
             <br>
             <label class="form-label" for="adoption-option">First Time Adopter?</label><br>
-            <input type="radio" id="adoption-option" name="adoption-option" value="yes">
+            <input name= "adoption-option" type="radio" id="adoption-option" name="adoption-option" value="yes">
             <label for="adoption-option">Yes</label>
-            <input class="form-box" type="radio" id="adoption-option2" name="adoption-option" value="no">
+            <input name = "adoption-option" class="form-box" type="radio" id="adoption-option2" name="adoption-option" value="no">
             <label for="adoption-option2">No</label><br>
             <label class="form-label" for="store">Pickup Location</label><br>
             <select class="form-box" id="store">
-               <option value="store-1">Store-1</option>
-               <option value="store-2">Store-2</option>
-               <option value="store-3">Store-3</option>
+               <option value="Store-1">Store-1</option>
+               <option value="Store-2">Store-2</option>
+               <option value="Store-3">Store-3</option>
             </select>
             <h3>Dogs Adopted</h3>
             <div class="dog-checkout-holder-container">
