@@ -38,23 +38,23 @@
       </nav>
       <section class="main-container">
         <h1>Checkout</h1>
-        <form method="GET" id="checkoutForm">
+        <form id="checkoutForm" name="checkoutForm" action="/action_page.php" method="GET">
           <div class="form-grid-container">
             <div class="form-grid-name">
               <label class="form-span" for="fullName">Name</label>
-              <input type="text" name="fullName" id="fullName">
+              <input type="text" id="fullName" name="fullName" required>
             </div>
             <div class="form-grid-email">
               <label for="emailAddress">Email Address</label>
-              <input type="text" name="emailAddress" id="emailAddress">
+              <input type="text" name="emailAddress" required id="emailAddress">
             </div>
             <div class="form-grid-street">
               <label for="streetAddress">Street Address</label>
-              <input type="text" name="streetAddress" id="streetAddress">
+              <input type="text" name="streetAddress" required id="streetAddress">
             </div>
             <div class="form-grid-city">
               <label for="city">City</label>
-              <input type="text" name="city" id="city">
+              <input type="text" name="city" required id="city">
             </div>
             <div class="form-grid-state">
               <label for="state">State</label>
@@ -65,9 +65,9 @@
             </div>
             <div class="form-grid-zip">
               <label for="zipCode">Zip Code</label>
-              <input type="text" name="zipCode" id="zipCode">
+              <input type="text" name="zipCode" required id="zipCode">
             </div>
-            <fieldset class="form-grid-adopter" id="firstAdopter">
+            <fieldset class="form-grid-adopter" id="firstAdopter" name="adopter" required>
               <legend>First Time Adopter?</legend>
               <input id="yes" type="radio" name="adopter" value="yes">
               <label for="yes">Yes &nbsp; &nbsp;</label>
