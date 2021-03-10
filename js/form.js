@@ -16,7 +16,7 @@
 
           //   console.log("ID: ", id);
           //   console.log("Value: ", val);
-          const submitdata = ("ID: " + id + " " + "Value: " + value);
+          const submitdata = (id + ": " + value);
           console.log(submitdata);
 
       }
