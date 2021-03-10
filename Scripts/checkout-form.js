@@ -8,7 +8,8 @@ form.addEventListener('submit', function(event) {
   
   for (let i = 0; i < formData.length - 1; i++) {
     const val = document.getElementById('checkoutForm').elements[i].value;
-    console.log(val);
+    const id = document.getElementById('checkoutForm').elements[i].id;
+    console.log(id + ': ' + val);
   }
 
 let firstAdopterYes = document.getElementById('yes');
