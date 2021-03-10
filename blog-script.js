@@ -49,6 +49,21 @@ const checkout = [
   }
 ];
 
+const dogHouse = [
+  {
+    name: 'Lucas',
+    cost: 123.45,
+    img: 'images/lucas-card.jpg',
+    altText: 'Portrait of Lucas'
+  },
+  {
+    name: 'Duffy',
+    cost: 150,
+    img: 'images/duffy-card.jpg',
+    altText: 'Potrait of Duffy'
+  }
+];
+
 const form = document.createElement('form');
 mainStart.appendChild(form);
 
@@ -114,6 +129,44 @@ for (let i=0; i< checkout.length; i++){
         form.appendChild(input);
   }
 
+}
 
+//This is where the Dog cards are assembled
+
+const dogQuestion = document.createElement('p');
+dogQuestion.innerText = 'Dogs Adopted';
+
+form.appendChild(dogQuestion);
+
+for(let i = 0; i < dogHouse.length; i++){
+  const dogCard = document.createElement('img');
+  dogCard.setAttribute('src', dogHouse[i].img);
+
+  const  dogName = document.createElement('p');
+  dogName.innerText = dogHouse[i].name;
+
+  const costLabel = document.createElement('p');
+  costLabel.innerText = 'Cost to adopt: ';
+
+  const dogPrice = document.createElement('p');
+  const dogObjectPrice = dogHouse[i].cost;
+  dogPrice.innerText = dogObjectPrice.toString();
+
+  form.appendChild(dogCard);
+  form.appendChild(dogName);
+  form.appendChild(costLabel);
+  form.appendChild(dogPrice);
 
 }
+
+const totalTag = document.createElement('p');
+totalTag.innerText = 'Total Adoption Cost';
+
+const totalDogAdoptionPrice = document.createElement('p');
+
+// How to find the total sum of all the dogs?
+// Create a function that pulls the price and adds them togehter?
+// Or is there a way to pull that information from above loop?
+
+
+// Lastly create the submit button
