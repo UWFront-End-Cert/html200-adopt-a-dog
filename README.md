@@ -1,6 +1,16 @@
 html200-adopt-a-dog
 
-LAST UPDATE, 3-3-2021
+LAST UPDATE 03/10/2021
+Assignment Lesson 08 
+
+1. blog.html page has been updated by refactoring the articles, the blog posts, dynamically from JavaScript.
+2. checkout.html page has been updated by injecting JavaScript in the elements of the form. 
+3. The alert that says "Thank you. The form information has been received" has been implemented.
+4. Console log the values inside the form, except the 'Dog Adopted' and the 'Total Adoption Cost'.
+5. style.css has been updated to re-style a bit the blog.html grid layout.
+
+
+3-3-2021
 
 Responsive images week's assignment. 
 - style.css and html files have been updated. 
