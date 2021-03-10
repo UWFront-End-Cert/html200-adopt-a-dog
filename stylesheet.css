@@ -72,10 +72,9 @@ body {
 }
 
 .see-dogs {
-    grid-area: main;
-    grid-row: 4;
-    grid-column: 1/ 5;
+    display: block;
     text-align: center;
+    width: 100%;
 }
 
 .space {
