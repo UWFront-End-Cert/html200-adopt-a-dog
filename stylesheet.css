@@ -1,8 +1,7 @@
 ﻿
 .title {
     grid-area: main;
-    grid-row: 1;
-    grid-column: 1/ 5;
+    width: 100%;
     margin-bottom: -30px;
 }
 
