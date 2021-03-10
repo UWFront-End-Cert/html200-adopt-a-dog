@@ -1,4 +1,3 @@
-
 const posts = [
 	{
 		title: 'Traveling With Your Dog',
@@ -26,19 +25,5 @@ for ( i = 0; i < posts.length; i++) {
 	const imagealt = post.imagealt;
 	const title = post.title;
 	const content = post.content;
-
-// 	const blogContainer = document.createElement('div')
-// 	const thing = document.appendChild('h2')
-// 	el.textContent = (title + content)
-// blogContainer
-
-
-
-
-
-// console.log(posts[i]);
 	console.log(imagesrc + title + content);
-	// blogContainer.appendChild(posts[i]);
 };
-
-// blogContainer.innerHTML = posts[i]; (undefined)
