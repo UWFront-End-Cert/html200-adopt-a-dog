@@ -1,6 +1,18 @@
 html200-adopt-a-dog
 
-LAST UPDATE, 2-19-2021
+LAST UPDATE, 3-3-2021
+
+Responsive images week's assignment. 
+- style.css and html files have been updated. 
+- Media Queries now starts from mobile to desktop version.
+- Media Queries and images interactions, new tags and properties (techniques) to make the image files lighter parsing them properly with all web browsers.
+- Experience on compressing and editing images.
+- HTML files has been reinforced by applying classes to consolidate robust sections in all each pages, especially in headers and footers.
+- Reduced innecesary extra lines of coding.
+- Examined through the dev-tools > network, the capacity of how this pages render in a satisfactory time performance. Tested and rendered in Mozilla, Chrome and Brave web    browsers.
+
+
+2-19-2021
 
 The biggest changes has been committed in script.js, all the same functions (which were for each dog) are in just one function called 'dogInfo', as suggested. The second function previouly called 'cost', now 'total' includes the math operation, instead of displaying a string.
 
