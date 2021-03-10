@@ -244,7 +244,6 @@ h3 {
   justify-content: center;
   text-align: center;
   align-items: center;
-  
   font-weight: bold;
   text-decoration: none;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -556,7 +555,7 @@ legend {
   font-weight: bold;
 }
 fieldset {
-  width: 15%;
+  width: 20%;
   justify-content: left;
   padding: 0;
   margin: 0;
@@ -574,10 +573,11 @@ input {
   height: 2rem;
   border: 1px solid #808080;
 }
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /*--Media Query 360px--*/
-/*--Cell Phone Galaxy S5--*/
-/*--3 columns to 1 column--*/
-@media only screen and (max-width: 360px) {
+/*--3 columns to 1--*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@media only screen and (min-width: 360px) {
   body {
     width: 500px;
     padding: 0;
@@ -587,20 +587,21 @@ input {
     display: flex;
     width: 120%;
     background-image: url(../images/header-image.jpg);
-    height: 15rem;
+    height: 12rem;
     /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
   }
   .svg-dog-header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 18rem;
   }
   .dog-img-header {
-    width: 25%;
-    padding-top: 5rem;
+    width: 50;
+    padding-top: 2rem;
   }
   .dog-img-header p {
     font-size: 1rem;
+    width: 20rem;
   }
   .space {
     padding: 0 .5rem 0 .5rem;
@@ -615,7 +616,7 @@ input {
     color:#2f4f4f;
     font-weight: 600;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: 1rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
   }
@@ -626,17 +627,13 @@ input {
   .dog-blog-aside {
     display: none;
   }
-  .main-index {
-    display: flex;
-    width: 100%;
-  }
   .dog-listing-container {
     width: 60%;
   }
   .adopt-a-dog-intro {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 45rem;
     margin-left: 0%
   }
   .index-image-top {
@@ -648,9 +645,9 @@ input {
     padding: 1rem 0 1rem 2rem;
   }
   .title-about {
-    width: 80%;
+    width: 25rem;
     color: #a9a9a9;
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding: 1rem 1.5rem 1rem 2.1rem;
     line-height: 1.5rem;
     justify-content: space-evenly;
   }
@@ -658,15 +655,12 @@ input {
     color: #000000;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    width: 61%;
-    padding: 0 2rem 0 0;
-    margin: 0;
   }
   .title-index {
     color:#2f4f4f;
     font-weight: bold;
     font-size: 1.5rem;
+    justify-content: center;
   }
   .flex-container-index-1 {
     display: flex;
@@ -674,9 +668,9 @@ input {
     justify-content: left;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 100%;
+    width: 40rem;
     height: auto;
-    margin: 0;
+    margin-left: 3rem;
   }
   .dog-card-index {
     display: flex;
@@ -706,18 +700,14 @@ input {
     font-weight: 500;
     padding: 0 0 0 1rem;
   }
-  .index-text {
-    color: #000000;
-    padding: 0 0.8rem 0 0;
-  }
   .button-index {
     background-color:  #88cc00;
-    color: #737373;
+    color: #ffffff;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 80%;
-    height: 9%;
+    height: 3rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
   }
@@ -809,11 +799,23 @@ input {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
   }
+  fieldset {
+    width: 20%;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+  }
   .dogs-adopted {
     color:#2f4f4f;
     font-size: .5rem;
     font-weight: bold;
     padding-bottom: 1rem;
+  }
+  .first-time {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    align-self: flex-start;
   }
   .adopt-final{
     width: 10%;
@@ -878,14 +880,12 @@ input {
     text-decoration: none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
-    padding: .7rem 2.5rem .7rem 2.5rem;
-    margin: 1rem 0 2rem 2rem;
   }
   /*------------FOOTER--------*/
   footer {
     display: flex;
     flex-direction: column;
-    width: 309px;
+    width: 100%;
     align-items: center;
     flex-wrap: wrap;
     background-color: #003366;
@@ -909,33 +909,114 @@ input {
     text-decoration: none;
   }
 }
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /*--Media Screen 768px tablet Phone--*/
-@media only screen and (max-width: 768px) {
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@media only screen and (min-width: 768px) {
   body {
     width: 100%;
     padding: 0;
     margin: 0;
   }
+  .dog-img-header p {
+    padding: 0;
+    font-size: 1rem;
+    margin-left: 2rem;
+    width: 200%;
+  }
+  .dog-img-header {
+    width: 500%;
+    height: 40%;
+    padding-left: 1rem;
+    align-items: flex-start;
+  }
+  .svg-dog-header {
+    display: flex;
+    width: auto;
+    height: 70%;
+  }
+  .dog-img-header {
+    width: 20%;
+    padding-top: 5rem;
+  }
+  .svg-dog-header p {
+    font-size: inherit;
+    width: 200%;
+  }
+  .nav-head {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0 1.5rem 5rem;
+  }
+  .nav-item-head {
+    color:#2f4f4f;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .title-about {
+    width: 100%;
+    color: #a9a9a9;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+    justify-content: space-evenly;
+  }
+  .title-about p {
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    width: 84%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .title-index {
+    color:#2f4f4f;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: .8rem;
+  }
+  .blog-adoptadog-h1 {
+    color:#2f4f4f;
+    padding-left: 0;
+    font-size: 1.5rem;
+    margin-left: 13%;
+  }
   .dog-blog-aside {
     display: none;
+  }
+  .blog-topic {
+    color:#2f4f4f;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.2rem;
+  }
+  .blog-text-info {
+    color: #000000;
+    width: 100%;
+    margin: 0;
   }
   .main-index {
     display: flex;
     width: 100%;
   }
   .dog-listing-container {
-    width: 60%; 
+    width: 100%; 
   }
   .adopt-a-dog-intro {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin-left: 7rem;
+    width: 100%;
+    margin: 0 3rem 0 3rem;
   }
   .index-image-top {
     display: flex;
     align-items: flex-start;
-    width: 100%;
+    width: 80%;
     height: 20rem;
     background-size: cover;
     padding: 3rem 0 1rem 0;
@@ -959,8 +1040,9 @@ input {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 95%;
     height: auto;
+    margin-left: 0;
   }
   .dog-card-1 {
     display: flex;
@@ -1082,7 +1164,7 @@ input {
   }
   .dogs-adopted {
     color:#2f4f4f;
-    font-size: .5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 1rem;
   }
@@ -1117,6 +1199,11 @@ input {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
   }
+  fieldset {
+    width: 30%;
+    padding: 0;
+    margin: 0;
+  }
   .price-adopt {
     color: #000000;
     font-weight: 100;
@@ -1131,10 +1218,14 @@ input {
   .going-home {
     color:#2f4f4f;
   }
+  .cost {
+    font-size: 1.3rem;
+  }
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*--Media Screen 992px Cell Phone---*/
-@media only screen and (max-width: 992px) {
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+@media only screen and (min-width: 992px) {
   body {
     width: 100%;
     padding: 0;
@@ -1209,6 +1300,15 @@ input {
     justify-content: left;
     margin: 1rem 0 0 1rem;
   }
+  .flex-container-index-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    margin-left: 2rem;
+  }
   .all-dogs-container {
     width: 60%;
     display: flex;
@@ -1242,11 +1342,15 @@ input {
   .pricing-listing {
     display: flex;
     flex-direction: row;
+    width: 100%;
     padding-left: 0;
-
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .7rem;
   }
   .total-listing { 
     font-weight: bold;
+    font-size: .7rem;
+    padding-top: .6rem;
   }
   .flex-dog-button {
     background-color: #88cc00;
@@ -1259,18 +1363,18 @@ input {
     align-items: center;
   }
   .price-index {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 500;
-    padding: 0 0 0 1rem;
+    padding-right: .5rem;
   }
   .pricing {
     display: flex;
     flex-direction: row;
-    width: 100%
+    width: 100%;
   }
   .total-index {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: .8rem;
   }
   .title-about {
     width: 100%;
@@ -1285,8 +1389,15 @@ input {
     color: #000000;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    font-size: 1.5rem;
+    width: 85;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .index-text {
+    color: #696969;
+    font-size: 1rem;
+    font-style: normal;
+    padding: 0 .5rem 0 1.4rem;
   }
   .button-index {
     background-color: #88cc00;
@@ -1432,6 +1543,19 @@ input {
     font-weight: 500;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
+  .total-price {
+    color: #000000;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  fieldset {
+    width: 20%;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+  }
   .price-adopt {
     color: #000000;
     font-weight: 100;
@@ -1439,9 +1563,11 @@ input {
     margin-left: 1%;
   }
 }
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /*--Tablet--1024px--landscape--*/
 /*--iPad with orientation: landscape max 1024--*/
-@media only screen and (max-width: 1024px) and  (orientation: landscape) {
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@media only screen and (min-width: 1024px) and  (orientation: landscape) {
   body {
     width: 100%;
     padding: 0;
