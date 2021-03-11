@@ -1,0 +1,8 @@
+function BlogPosts(blogImageSrc, blogImageAlt,blogHeader, blogBody){
+  this.blogImageSrc = blogImageSrc;
+  this.blogImageAlt = blogImageAlt;
+  this.blogHeader = blogHeader;
+  this.blogBody = blogBody;
+}
+
+let post1 = new BlogPosts('./images/blog-1.jpg' , 'Picture one', 'Traveling With Your Dog', 'Iduciendisite quo magnatem iuntum quid quaest');

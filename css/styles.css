@@ -336,7 +336,7 @@ article.blog {
   font-size: 1.5rem;
 }
 
-.blog div p:first-of-type {
+.blog.highlight div p:first-of-type {
   overflow: hidden;
   text-overflow: ellipsis;
   height: 5em;
