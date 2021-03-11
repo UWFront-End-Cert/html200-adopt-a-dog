@@ -394,3 +394,7 @@ main {
 img {
 	width: 100%;
 }
+
+.checkout-button-a {
+	color: white;
+}
