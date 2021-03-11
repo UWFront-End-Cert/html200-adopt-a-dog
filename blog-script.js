@@ -1,5 +1,6 @@
 
 const mainStart = document.getElementById('main-start');
+let dogTotalCosts = 0;
 
 const checkout = [
   {
@@ -63,6 +64,12 @@ const dogHouse = [
     altText: 'Potrait of Duffy'
   }
 ];
+
+
+//Helps calculate total costs of dogs
+function totalAdder(price) {
+    dogTotalCosts = dogTotalCosts + price;
+}
 
 const form = document.createElement('form');
 mainStart.appendChild(form);
@@ -128,7 +135,6 @@ for (let i=0; i< checkout.length; i++){
         form.appendChild(label);
         form.appendChild(input);
   }
-
 }
 
 //This is where the Dog cards are assembled
@@ -157,16 +163,24 @@ for(let i = 0; i < dogHouse.length; i++){
   form.appendChild(costLabel);
   form.appendChild(dogPrice);
 
+  totalAdder(dogObjectPrice);
 }
+
+//Total Cost and Submit Button
 
 const totalTag = document.createElement('p');
 totalTag.innerText = 'Total Adoption Cost';
 
 const totalDogAdoptionPrice = document.createElement('p');
+totalDogAdoptionPrice.innerText = `$${dogTotalCosts}`;
 
-// How to find the total sum of all the dogs?
-// Create a function that pulls the price and adds them togehter?
-// Or is there a way to pull that information from above loop?
-
+form.appendChild(totalTag);
+form.appendChild(totalDogAdoptionPrice);
 
 // Lastly create the submit button
+
+const submitButton = document.createElement('input');
+submitButton.setAttribute('type', 'submit');
+submitButton.setAttribute('value', 'Submit');
+
+form.appendChild(submitButton);
