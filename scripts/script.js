@@ -44,6 +44,7 @@ const allBlogData = {
 }
 
 addBlogs();
+setupFormHandling();
 
 function addBlogs() {
   console.log('Creating blog elements');
@@ -54,9 +55,11 @@ function addBlogs() {
   }
 
   console.log('Adding blog elements');
-  const section = document.getElementsByTagName('section')[0];
-  for (let i = 0; i < blogsToAdd.length; i++) {
-    section.appendChild(blogsToAdd[i]);
+  const section = document.getElementById('blog-page-content');
+  if (section !== null) {
+    for (let i = 0; i < blogsToAdd.length; i++) {
+      section.appendChild(blogsToAdd[i]);
+    }
   }
 }
 
@@ -91,4 +94,44 @@ function createBlog(blogData) {
   blog.appendChild(blogContents);
 
   return blog;
+}
+
+function setupFormHandling() {
+  const forms = document.getElementsByTagName('form');
+  if (forms.length !== 0) {
+    const form = forms[0];
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank you. The form information has been received.');
+
+      // 1. Read form values
+      const name = document.getElementById('name').value;
+      const emailAddress = document.getElementById('email-address').value;
+      const streetAddress = document.getElementById('street-address').value;
+      const city = document.getElementById('city').value;
+      const state = document.getElementById('state').value;
+      const zipCode = document.getElementById('zip-code').value;
+      const pickupLocation = document.getElementById('pickup-location').value;
+
+      const firstTimeChoiceOptions = document.getElementsByName('first-time-choice');
+      let firstTimeChoice = null;
+      for (let i = 0; i < firstTimeChoiceOptions.length; i++) {
+        if (firstTimeChoiceOptions[i].checked) {
+            firstTimeChoice = firstTimeChoiceOptions[i].value;
+        }
+      }
+
+      // 2. Construct the string
+      let formValues = 'Name: ' + name + '\n';
+      formValues += 'Email Address: ' + emailAddress + '\n';
+      formValues += 'Street Address: ' + streetAddress + '\n';
+      formValues += 'City: ' + city + '\n';
+      formValues += 'State: ' + state + '\n';
+      formValues += 'Zip Code: ' + zipCode + '\n';
+      formValues += 'First Time: ' + firstTimeChoice + '\n';
+      formValues += 'Pickup Location: ' + pickupLocation;
+
+      console.log(formValues);
+    })
+  }
 }
