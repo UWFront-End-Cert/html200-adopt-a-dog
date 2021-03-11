@@ -1,208 +1,79 @@
+const blogMain = document.getElementById('blog-Main');
 
-const mainStart = document.getElementById('main-start');
-let dogTotalCosts = 0;
-
-const checkout = [
+const blogs = [
   {
-    dropDown: false,
-    name: 'name',
-    label: 'Name'
+    img: 'images/blog-1.jpg',
+    alt: 'Pet and owner overlooking a canyon',
+    title:'Traveling with your Dog',
+    parOne: 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat',
+    parTwo: 'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.'
   },
   {
-    dropDown: false,
-    name: 'email',
-    label: 'E-Mail'
+    img:'images/blog-2.jpg',
+    alt: 'Mutliple dogs on leash',
+    title: 'How to walk multiple dogs on a leash',
+    parOne: 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat',
+    parTwo: 'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.'
   },
   {
-    dropDown: false,
-    name: 'address',
-    label: 'Street Address'
-  },
-  {
-    dropDown: false,
-    name: 'city',
-    label: 'City'
-  },
-  {
-    dropDown: true,
-    name: 'state',
-    label: 'State',
-    choices: ['WA', 'CA', 'OR']
-  },
-  {
-    dropDown: false,
-    name: 'zip',
-    label: 'Zip Code'
-  },
-  {
-    dropDown: false,
-    type: 'radio',
-    name: 'returning',
-    answer: ['Yes', 'No'],
-    id: 'yes'
-  },
-  {
-    dropDown: true,
-    name: 'pickup',
-    label: 'Pickup Location',
-    id: 'pickup',
-    choices: ['Seattle', 'Portland', 'San Francisco']
+    img:'images/blog-3.jpg',
+    alt: 'Person playing fetch with their dog',
+    title: 'Teach Your Dog To Fetch',
+    parOne: 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat',
+    parTwo: 'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.'
   }
 ];
 
-const dogHouse = [
-  {
-    name: 'Lucas',
-    cost: 123.45,
-    img: 'images/lucas-card.jpg',
-    altText: 'Portrait of Lucas'
-  },
-  {
-    name: 'Duffy',
-    cost: 150,
-    img: 'images/duffy-card.jpg',
-    altText: 'Potrait of Duffy'
-  }
-];
+// Creates Header Element
 
-//Helps calculate total costs of dogs
-function totalAdder(price) {
-    dogTotalCosts = dogTotalCosts + price;
+const blogHeader = document.createElement('h1');
+blogHeader.innerText = 'Adopt a dog Blog';
+blogHeader.setAttribute('class', 'our-dogs-title');
+
+blogMain.appendChild(blogHeader);
+
+// Creates Parent Div Container
+
+const blogContainerBoard = document.createElement('div');
+blogContainerBoard.setAttribute('class', 'blog-container-board');
+
+blogMain.appendChild(blogContainerBoard);
+
+//Creates the blogs Elements
+
+for(let i = 0; i < blogs.length; i++){
+
+  // Creates Article
+  const article = document.createElement('article');
+  article.setAttribute('class', 'blog-container');
+
+  blogMain.appendChild(article);
+
+  //Creates Image
+  const blogImage = document.createElement('img');
+  blogImage.setAttribute('class', 'blog-img');
+  blogImage.setAttribute('src', blogs[i].img);
+  blogImage.setAttribute('alt', blogs[i].alt);
+
+  article.appendChild(blogImage);
+
+  //Creates Second Div with paragraphs
+  const blogCopy = document.createElement('div');
+  blogCopy.setAttribute('class', 'blog-copy');
+
+  article.appendChild(blogCopy);
+
+  const innerHeader = document.createElement('h2');
+  innerHeader.innerText = blogs[i].title;
+
+  blogCopy.appendChild(innerHeader);
+
+  const parOne = document.createElement('p');
+  parOne.innerText = blogs[i].parOne;
+  const parTwo = document.createElement('p');
+  parTwo.innerText = blogs[i].parTwo;
+
+  blogCopy.appendChild(parOne);
+  blogCopy.appendChild(parTwo);
+
 }
-
-const form = document.createElement('form');
-form.setAttribute('id', 'formContainer');
-mainStart.appendChild(form);
-
-for (let i=0; i< checkout.length; i++){
-
-  const field = checkout[i];
-
-  if(field.dropDown === true) {
-    //Makes the dropdown
-    const label = document.createElement('label');
-    label.textContent = field.label;
-    label.setAttribute('for', field.name);
-
-    const select = document.createElement('select');
-    select.setAttribute('id', field.name);
-    select.setAttribute('name', field.name);
-
-    form.appendChild(label);
-    form.appendChild(select);
-
-    //Creates the options of the dropdown
-    for (let i=0; i < field['choices'].length; i++) {
-      const option = document.createElement('option');
-      option.setAttribute('value', field['choices'][i]);
-      option.innerText = field['choices'][i];
-      select.appendChild(option);
-    }
-
-  } else if (field.type === 'radio') {
-      //Creates the question
-      const pQuestion = document.createElement('p');
-      pQuestion.innerText = 'First time adopter?';
-      form.appendChild(pQuestion);
-
-      //Creates the radio input buttons and label
-      for (let i=0; i < field['answer'].length; i++){
-
-        const input = document.createElement('input');
-        input.setAttribute('type', field.type);
-        input.setAttribute('name', field.name);
-        input.setAttribute('id', field['answer'][i]);
-        input.setAttribute('value', field['answer'][i]);
-
-        const label = document.createElement('label');
-        label.textContent = field['answer'][i];
-        label.setAttribute = field['answer'][i];
-
-        form.appendChild(input);
-        form.appendChild(label);
-        }
-
-      } else {
-
-        //Creates text input
-        const label = document.createElement('label');
-        label.textContent = field.label;
-        label.setAttribute('for', field.name);
-
-        const input = document.createElement('input');
-        input.setAttribute('id', field.name);
-
-        form.appendChild(label);
-        form.appendChild(input);
-  }
-}
-
-//This is where the Dog cards are assembled
-
-const dogQuestion = document.createElement('p');
-dogQuestion.innerText = 'Dogs Adopted';
-
-form.appendChild(dogQuestion);
-
-for(let i = 0; i < dogHouse.length; i++){
-  const dogCard = document.createElement('img');
-  dogCard.setAttribute('src', dogHouse[i].img);
-
-  const  dogName = document.createElement('p');
-  dogName.innerText = dogHouse[i].name;
-
-  const costLabel = document.createElement('p');
-  costLabel.innerText = 'Cost to adopt: ';
-
-  const dogPrice = document.createElement('p');
-  const dogObjectPrice = dogHouse[i].cost;
-  dogPrice.innerText = dogObjectPrice.toString();
-
-  form.appendChild(dogCard);
-  form.appendChild(dogName);
-  form.appendChild(costLabel);
-  form.appendChild(dogPrice);
-
-  totalAdder(dogObjectPrice);
-}
-
-//Total Cost and Submit Button
-
-const totalTag = document.createElement('p');
-totalTag.innerText = 'Total Adoption Cost';
-
-const totalDogAdoptionPrice = document.createElement('p');
-totalDogAdoptionPrice.innerText = `$${dogTotalCosts}`;
-
-form.appendChild(totalTag);
-form.appendChild(totalDogAdoptionPrice);
-
-// Lastly create the submit button
-
-const submitButton = document.createElement('input');
-submitButton.setAttribute('type', 'submit');
-submitButton.setAttribute('value', 'Submit');
-
-form.appendChild(submitButton);
-
-
-// Confirmation and Console Logs User Input
-
-form.addEventListener('submit', function(e) {
-  event.preventDefault();
-  alert('The information has been successfully submitted!');
-
-  const formData = document.getElementById('formContainer').elements;
-  const submission = {};
-
-  for (let i = 0; i < formData.length - 1; i++){
-    const value = document.getElementById('formContainer').elements[i].value;
-    const id = document.getElementById('formContainer').elements[i].id;
-
-    submission[id] = value;
-
-    console.log('Value: ', value);
-    console.log('ID:', id);
-  }
-  console.log(submission);
-});
