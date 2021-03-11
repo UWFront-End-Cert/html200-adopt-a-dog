@@ -56,8 +56,21 @@ function addBlogs() {
     blogDiv.appendChild(blogHeaderfield);
     blogDiv.appendChild(blogBodyfield);
 
+  }
 }
+
+//On the form page, display an alert that says "Thank you. The form information has been received" when the form has been submitted.
+document.getElementById('submitForm').addEventListener = "submit", formAlert();
+
+function formAlert(){
+  event.preventDefault();//prevent it from refreshing page
+  console.log("running alert function");
+  //alert ("Thank you. The form information has been received.");
 }
+
+
+
+
 //create click handlers that alerts the dogs information when clickin on the dog's photo"
 function dogInfo(dogName, breed, fees){
   alert(`To adopt ${dogName}, the ${breed}, it will cost ${fees}.`);
