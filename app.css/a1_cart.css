@@ -82,10 +82,11 @@
     
     .cart {
         position: absolute;
-        left: 75%;
+        left: 77%;
         top: 15%;
         width: 10%;
         height: 10%;
+        transform: scale(.75);
     }
     
     span {
@@ -98,6 +99,7 @@
         height: 10%;
         font-size: 2rem;
         font-weight: 700;
+        transform: scale(.75);
     }
     
     .checkout {
@@ -122,7 +124,49 @@
     }
     
     .float {
+        margin-top: -2%;
+        margin-right: 20rem;
+        /* display: flex;
+        position: relative;
+        justify-content: center;
+        flex-direction: row; */
+        display: inline-block;
+    }
+    
+    .right {
+        position: relative;
+        float: right;
+        left: 45%;
+        bottom: 14rem;
         margin-top: -8%;
+    }
+    
+    .dog_container {
+        /* display: flex;
+        justify-content: space-evenly;
+        flex-direction: row; */
+        display: inline-block;
+        position: relative;
+        height: 10rem;
+    }
+    
+    .name {
+        float: right;
+        position: relative;
+        left: -51%;
+        font-size: 3rem;
+        bottom: 4rem;
+        display: block;
+    }
+    
+    .cost {
+        clear: none;
+        float: right;
+        display: block;
+        position: relative;
+        left: 2%;
+        bottom: -2rem;
+        font-size: 2.5rem;
     }
     
     .logo {
@@ -242,12 +286,6 @@ nav+p {
         /* display: block;*/
     }
     
-    .dog_container {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-    }
-    
     .adopted {
         /* display: flex;
     justify-content: center;
@@ -329,4 +367,8 @@ nav+p {
     .dog_container {
         position: relative;
         left: -13%;
+    }
+    
+    label[for="yes"] {
+        padding-left: 2rem;
     }

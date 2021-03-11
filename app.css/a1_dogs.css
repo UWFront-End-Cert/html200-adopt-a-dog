@@ -67,10 +67,11 @@ div.main img {
 
 .cart {
     position: absolute;
-    left: 75%;
+    left: 77%;
     top: 15%;
     width: 10%;
     height: 10%;
+    transform: scale(.75);
 }
 
 span {
@@ -83,6 +84,7 @@ span {
     height: 10%;
     font-size: 2rem;
     font-weight: 700;
+    transform: scale(.75);
 }
 
 .checkout {
@@ -158,6 +160,23 @@ div h3,
 div p,
 div strong {
     padding-left: 1rem;
+}
+
+h3 {
+    margin-bottom: -.75rem;
+    font-size: 1.75rem;
+}
+
+.cost {
+    font-size: 1.5rem;
+}
+
+.bio {
+    margin-top: -1%;
+}
+
+div strong {
+    font-size: 1.5rem;
 }
 
 div button {
