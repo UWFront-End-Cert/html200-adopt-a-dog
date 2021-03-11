@@ -23,9 +23,9 @@ el.addEventListener("click", function (event) {
         // console.log(value);
         // console.log(checked);
 
-        if (id === 'result' && checked === true) {
+        if (id === 'resultY' && checked === true, id === 'resultN' && checked === true) {
             console.log(selection);
-        } else if (id === 'result' && checked === false) {
+        } else if (id === 'resultY' && checked === false, id === 'resultN' && checked === false) {
           function log(message) {
             if (debug) { 
               console.log(submitdata);
@@ -37,7 +37,7 @@ el.addEventListener("click", function (event) {
               console.log(submitdata);
             }
           }
-        } else if (id !== 'result', id !== 'fieldset') {
+        } else if (id !== 'resultY', id !== 'resultN',id !== 'fieldset') {
             console.log(submitdata);
         } 
     }
