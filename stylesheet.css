@@ -59,6 +59,8 @@ body {
     height: auto;
 }
 
+
+
 .main {
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +105,6 @@ body {
 }
 
 
-
 h2 {
     color: #093C60;
     margin: 0;
@@ -124,11 +125,35 @@ h1 {
     margin: 0;
 }
 
+
+.top {
+    display: flex;
+}
+
+.img-three {
+    display: flex;
+    width: 300px;
+    height: auto;
+    padding-right: 10px;
+}
+
+.container {
+    flex-direction: column;
+}
+
+
 .main-article {
+    display: flex;
+    flex-direction: column;
     font-size: x-large;
     line-height: 35px;
 }
 
+
+.front-page-head{
+    display: flex;
+    flex-direction: column;
+}
 .nav-two {
     grid-area: nav;
     line-height: 50px;
