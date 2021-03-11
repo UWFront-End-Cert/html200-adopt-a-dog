@@ -4,6 +4,9 @@
 /*--@media for 992px Line 1226--*/
 /*--@media for 1024px Line 1567--*/
 
+* {
+  box-sizing: border-box;;
+}
 body {
   width: 100%
 }
@@ -585,7 +588,7 @@ input {
   }
   header {
     display: flex;
-    width: 120%;
+    width: 100%;
     background-image: url(../images/header-image.jpg);
     height: 12rem;
     /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
@@ -596,7 +599,7 @@ input {
     width: 18rem;
   }
   .dog-img-header {
-    width: 50;
+    width: 50%;
     padding-top: 2rem;
   }
   .dog-img-header p {
@@ -610,7 +613,7 @@ input {
     display: flex;
     align-items: center;
     padding: 0rem 0 1rem 3rem;
-    width: 110%;
+    width: 100%;
   }
   .nav-item-head {
     color:#2f4f4f;
@@ -629,6 +632,15 @@ input {
   }
   .dog-listing-container {
     width: 60%;
+  }
+  .blog-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 0;
+    height: 15rem;
+    padding: 1rem 0 2rem 0;
+    margin: 0;
   }
   .adopt-a-dog-intro {
     display: flex;
@@ -764,32 +776,36 @@ input {
   }
   .container-blog {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    margin-left: 10%;
     padding-left: 0;
   }
   .blog-text-info {
     color: #000000;
-    width: 80%;
+    width: 100%;
+    font-size: 1rem;
   }
   .blog-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom: 4rem;
-    width: 100%;
-  }
+
+    }
   .blog-topic {
     color:#2f4f4f;
     width: 100%;
     margin-top: 0;
     padding: 0;
+    font-size: 1.2rem;
   }
   .blog-text {
     color: #000000;
     width: 80%;
     display: none;
+  }
+  .blog-image {
+      width: 50%;
   }
   .dog-title-travel {
     justify-content: space-around;
@@ -807,7 +823,7 @@ input {
   }
   .dogs-adopted {
     color:#2f4f4f;
-    font-size: .5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 1rem;
   }
@@ -822,11 +838,12 @@ input {
   }
   .adopted-dogs {
     display: flex;
+    flex-direction: column;
     width: 100%;
   }
   .adopted-dogs img {
-    width: 10%;
-    margin-left: 1rem;
+    width: 50%;
+    align-items: center;
   }
   .adopted-text {
     flex-direction: column;
@@ -838,26 +855,26 @@ input {
   }
   .inline-price {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 1rem;
-    width: 40%;
+    width: 50%;
     color: #000000;
   }
   .total-cost {
     color: #000000;
     font-weight: 500;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .total-price {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #000000;
     padding-left: 1rem;
   }
   .price-adopt {
     color: #000000;
     font-weight: 100;
-    margin-left: 1%;
+    margin-left: 1rem;
     font-size: 1rem;
   }
   .inline-price {
@@ -880,6 +897,17 @@ input {
     text-decoration: none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
+  }
+  .last-button {
+    width: 25%;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #88cc00;
+    color: white;
+    margin: 0 0 2rem 1rem;
+    border: 0;
   }
   /*------------FOOTER--------*/
   footer {
@@ -918,6 +946,14 @@ input {
     padding: 0;
     margin: 0;
   }
+  header {
+    display: flex;
+    background-image: url(../images/header-image.jpg);
+    background-size:auto;
+    height: 15rem;
+    width: auto;
+    /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
+  }
   .dog-img-header p {
     padding: 0;
     font-size: 1rem;
@@ -932,8 +968,7 @@ input {
   }
   .svg-dog-header {
     display: flex;
-    width: auto;
-    height: 70%;
+    width: 10rem;
   }
   .dog-img-header {
     width: 20%;
@@ -946,7 +981,7 @@ input {
   .nav-head {
     display: flex;
     flex-direction: row;
-    padding: 1rem 0 1.5rem 5rem;
+
   }
   .nav-item-head {
     color:#2f4f4f;
@@ -982,8 +1017,8 @@ input {
   .blog-adoptadog-h1 {
     color:#2f4f4f;
     padding-left: 0;
-    font-size: 1.5rem;
-    margin-left: 13%;
+    font-size: 1rem;
+    margin-left: 40rem;
   }
   .dog-blog-aside {
     display: none;
@@ -994,6 +1029,22 @@ input {
     margin-top: 0;
     padding-top: 0;
     font-size: 1.2rem;
+  }
+  .blog-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 15rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 0;
+    margin: 0;
+  }
+  .blog-topic {
+    color:#2f4f4f;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
   }
   .blog-text-info {
     color: #000000;
@@ -1049,7 +1100,7 @@ input {
     border: 2px solid #e8e8e8;
     flex-wrap: wrap;
     align-items: center;
-    width: 30%;
+    width: 38%;
     height: 25%;
   }
   .dog-card-1 > .dog-item-image {
@@ -1075,11 +1126,12 @@ input {
   .pricing-listing {
     display: flex;
     flex-direction: row;
-    padding: 0;
-    margin: 0;
+    width: 100%;
   }
   .total-listing { 
+    display: flex;
     font-weight: bold;
+    font-size: .9rem;
   }
   .flex-dog-button {
     background-color: #88cc00;
@@ -1095,6 +1147,8 @@ input {
     color:#2f4f4f;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3em;
+    margin: 1rem 0 0 0;
+    padding-left: 0;
   }
   /*--Dog Listing--*/
   .dog-listing-title {
@@ -1102,6 +1156,16 @@ input {
     width: 100%;
     margin: 0;
   }
+  .price-listing {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+    /*--Dog Listing--*/
+  .dog-listing-title {
+      color:#2f4f4f;
+      width: 100%;
+      font-size: 2rem;
+    }
   /*--Blog Listing--*/
   .blog-adoptadog-h1 {
     color:#2f4f4f;
@@ -1112,6 +1176,17 @@ input {
   }
   .hide-text {
     display: none;
+  }
+  .all-dogs-container {
+    width: 70%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0 2rem 0;
   }
   /*--Adopt Blog--*/
   .blog-adoptadog-h1 {
@@ -1176,8 +1251,7 @@ input {
     width: 100%;
   }
   .adopted-dogs img {
-    width: 10%;
-    margin-left: 1rem;
+    width: 30%;
   }
   .adopted-text {
     flex-direction: column;
@@ -1199,15 +1273,23 @@ input {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
   }
-  fieldset {
-    width: 30%;
+  .total-price {
+    font-size: 1rem;
+    color: #000000;
+    padding-left: 1rem;
+  }
+.sel-rad {
+  width: 30%;
+  padding: .5rem;
+}
+fieldset {
+    width: 40%;
     padding: 0;
     margin: 0;
   }
   .price-adopt {
     color: #000000;
     font-weight: 100;
-    margin-left: 1%;
   }
   .inline-price {
     display: flex;
@@ -1221,11 +1303,15 @@ input {
   .cost {
     font-size: 1.3rem;
   }
+  input {
+    width: 100%;
+  }
 }
+
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*--Media Screen 992px Cell Phone---*/
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   body {
     width: 100%;
     padding: 0;
@@ -1238,7 +1324,6 @@ input {
     padding: 0;
     font-size: 1rem;
     margin-left: 2rem;
-    width: 200%;
   }
   .dog-img-header {
     width: 500%;
@@ -1249,7 +1334,7 @@ input {
   .svg-dog-header {
     display: flex;
     width: auto;
-    height: 70%;
+    height: 4rem;
   }
   .dog-img-header {
     width: 20%;
@@ -1276,7 +1361,7 @@ input {
    .nav-head {
     display: flex;
     flex-direction: row;
-    padding: 1rem 0 1.5rem 13%;
+    padding: 1rem 0 1.5rem 6rem;
   }
   .nav-item-head {
     color:#2f4f4f;
@@ -1300,6 +1385,13 @@ input {
     justify-content: left;
     margin: 1rem 0 0 1rem;
   }
+  .index-image-top {
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    height: 20rem;
+    background-size: cover;
+  }
   .flex-container-index-1 {
     display: flex;
     flex-direction: row;
@@ -1307,7 +1399,6 @@ input {
     flex-wrap: wrap;
     width: 90%;
     height: auto;
-    margin-left: 2rem;
   }
   .all-dogs-container {
     width: 60%;
@@ -1339,6 +1430,20 @@ input {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .total-index {
+    font-weight: bold;
+    padding-left: .7rem;
+    font-size: 1.2rem;
+  }
+  .price-index {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
   .pricing-listing {
     display: flex;
     flex-direction: row;
@@ -1362,19 +1467,10 @@ input {
     margin: 0 0 1rem 1rem;
     align-items: center;
   }
-  .price-index {
-    font-size: .8rem;
-    font-weight: 500;
-    padding-right: .5rem;
-  }
   .pricing {
     display: flex;
     flex-direction: row;
     width: 100%;
-  }
-  .total-index {
-    font-weight: bold;
-    font-size: .8rem;
   }
   .title-about {
     width: 100%;
@@ -1389,7 +1485,7 @@ input {
     color: #000000;
     justify-content: center;
     align-items: center;
-    width: 85;
+    width: 85%;
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
@@ -1404,9 +1500,9 @@ input {
     color: #ffffff;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-    font-size: 1rem;
-    width: 80%;
-    height: 9%;
+    font-size: 1.5rem;
+    width: 90%;
+    height: 20%;
     margin-bottom: 1rem;
     margin-left: 1rem;
   }
@@ -1415,10 +1511,16 @@ input {
     flex-direction: column;
     width: 80%;
     height: auto;
-    margin-left: 4rem;
+    padding-left: 3rem;
   }
   .dog-listing-container {
     width: 100%;
+  }
+  .dog-name {
+    color:#2f4f4f;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    margin-left: 1.5rem;
   }
 /*--Dog-listing.html--*/
 .all-dogs-container {
@@ -1520,6 +1622,7 @@ input {
   }
   .adopted-dogs {
     display: flex;
+    flex-direction: row;
   }
   .adopted-dogs img {
     width: 10%;
@@ -1562,8 +1665,13 @@ input {
     font-size: 1.5rem;
     margin-left: 1%;
   }
-}
-/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+  .sel-rad {
+    width: 50%;
+  }q
+  input {
+    width: 70%;
+  }
+  /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /*--Tablet--1024px--landscape--*/
 /*--iPad with orientation: landscape max 1024--*/
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
@@ -1653,4 +1761,84 @@ input {
     padding-top: 10rem;
     padding-left: 5rem;
   }
+  .dogs-adopted {
+    display: flex;
+    flex-direction: row;
+    color:#2f4f4f;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+  .adopted-dogs {
+    display: flex;
+  }
+  .adopted-dogs img {
+    width: 10%;
+    margin-left: 1rem;
+  }
+  .container-blog {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+  }
+  .blog-text-info {
+    color: #000000;
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .blog-item {
+    display: flex;
+    padding-bottom: 4rem;
+    }
+  .blog-topic {
+    color:#2f4f4f;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  .svg-dog-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 13%;
+    width: 100%;
+  }
+  .dog-img-header {
+    width: 20%;
+    padding-top: 5rem;
+  }
+  .dog-card {
+    border: 2px solid #e8e8e8;
+    width: 23%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .dog-card > .dog-item-image {
+    width: 100%;
+    padding: 0;
+  }
+  .dog-card p {
+    text-align: inherit;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .all-dogs-container {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0 2rem 0;
+  }
+}
 }
