@@ -15,29 +15,29 @@ const allBlogData = {
   blogs: [
     {
       imageSource: './images/blog-1.jpg',
-      imageAltText: 'another dog picture',
-      title: 'Another Blog post Title One',
+      imageAltText: 'Back-facing shot of a woman with a dog, and a scenic view in the background',
+      title: 'Traveling With Your Dog',
       paragraphs: [
-        'Lorem ipsum one',
-        'Lorem ipsum two'
+        'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.',
+        'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.'
       ]
     },
     {
       imageSource: './images/blog-2.jpg',
-      imageAltText: 'another dog picture',
-      title: 'Another Blog post Title Two',
+      imageAltText: 'A group of dogs all on leashes',
+      title: 'How to Walk Multiple Dogs',
       paragraphs: [
-        'Lorem ipsum one',
-        'Lorem ipsum two'
+        'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.',
+        'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.'
       ]
     },
     {
       imageSource: './images/blog-3.jpg',
-      imageAltText: 'another dog picture',
-      title: 'Another Blog post Title Three',
+      imageAltText: 'Black outline of a woman and a dog, with a red-orage sky in the background',
+      title: 'Teach Your Dog To Fetch',
       paragraphs: [
-        'Lorem ipsum one',
-        'Lorem ipsum two'
+        'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.',
+        'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.'
       ]
     }
   ]
