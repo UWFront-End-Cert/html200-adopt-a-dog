@@ -65,13 +65,13 @@ const dogHouse = [
   }
 ];
 
-
 //Helps calculate total costs of dogs
 function totalAdder(price) {
     dogTotalCosts = dogTotalCosts + price;
 }
 
 const form = document.createElement('form');
+form.setAttribute('id', 'formContainer');
 mainStart.appendChild(form);
 
 for (let i=0; i< checkout.length; i++){
@@ -184,3 +184,25 @@ submitButton.setAttribute('type', 'submit');
 submitButton.setAttribute('value', 'Submit');
 
 form.appendChild(submitButton);
+
+
+// Confirmation and Console Logs User Input
+
+form.addEventListener('submit', function(e) {
+  event.preventDefault();
+  alert('The information has been successfully submitted!');
+
+  const formData = document.getElementById('formContainer').elements;
+  const submission = {};
+
+  for (let i = 0; i < formData.length - 1; i++){
+    const value = document.getElementById('formContainer').elements[i].value;
+    const id = document.getElementById('formContainer').elements[i].id;
+
+    submission[id] = value;
+
+    console.log('Value: ', value);
+    console.log('ID:', id);
+  }
+  console.log(submission);
+});
