@@ -14,9 +14,27 @@ function addDogToTotal(adoptionFee) {
 const allBlogData = {
   blogs: [
     {
+      imageSource: './images/blog-1.jpg',
+      imageAltText: 'another dog picture',
+      title: 'Another Blog post Title One',
+      paragraphs: [
+        'Lorem ipsum one',
+        'Lorem ipsum two'
+      ]
+    },
+    {
+      imageSource: './images/blog-2.jpg',
+      imageAltText: 'another dog picture',
+      title: 'Another Blog post Title Two',
+      paragraphs: [
+        'Lorem ipsum one',
+        'Lorem ipsum two'
+      ]
+    },
+    {
       imageSource: './images/blog-3.jpg',
       imageAltText: 'another dog picture',
-      title: 'Another Blog post Title',
+      title: 'Another Blog post Title Three',
       paragraphs: [
         'Lorem ipsum one',
         'Lorem ipsum two'
@@ -28,10 +46,18 @@ const allBlogData = {
 addBlogs();
 
 function addBlogs() {
-  const blog = createBlog(allBlogData.blogs[0]);
+  console.log('Creating blog elements');
+  const blogsToAdd = [];
+  for (let i = 0; i < allBlogData.blogs.length; i++) {
+    const blog = createBlog(allBlogData.blogs[i]);
+    blogsToAdd.push(blog);
+  }
 
+  console.log('Adding blog elements');
   const section = document.getElementsByTagName('section')[0];
-  section.appendChild(blog);
+  for (let i = 0; i < blogsToAdd.length; i++) {
+    section.appendChild(blogsToAdd[i]);
+  }
 }
 
 function createBlog(blogData) {
@@ -47,15 +73,19 @@ function createBlog(blogData) {
   blogContents.className = 'blog-text';
   const blogTitle = document.createElement('h3');
   blogTitle.textContent = blogData.title;
-  const blogText1 = document.createElement('p');
-  blogText1.textContent = blogData.paragraphs[0];
-  const blogText2 = document.createElement('p');
-  blogText2.textContent = blogData.paragraphs[1];
+
+  const blogTexts = [];
+  for (let i = 0; i < blogData.paragraphs.length; i++) {
+    const blogText = document.createElement('p');
+    blogText.textContent = blogData.paragraphs[i];
+    blogTexts.push(blogText);
+  }
 
   // 2. Link the elements together
   blogContents.appendChild(blogTitle);
-  blogContents.appendChild(blogText1);
-  blogContents.appendChild(blogText2);
+  for (let i = 0; i < blogTexts.length; i++) {
+    blogContents.appendChild(blogTexts[i]);
+  }
 
   blog.appendChild(blogImage);
   blog.appendChild(blogContents);
