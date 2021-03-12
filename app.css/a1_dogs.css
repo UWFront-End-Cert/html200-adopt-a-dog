@@ -137,9 +137,10 @@ nav a {
     clear: none;
     display: block;
     z-index: 100000;
-    position: absolute;
+    position: relative;
     left: 13%;
     top: 63%;
+    margin-bottom: -8rem;
 }
 
 .main div {

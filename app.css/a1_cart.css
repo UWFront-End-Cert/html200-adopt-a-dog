@@ -123,17 +123,66 @@
         width: 18rem;
     }
     
+    .adopted {
+        display: flex;
+        /* border: 1px solid black; */
+        width: 200%;
+        text-align: left;
+    }
+    
+    .adopted div {
+        margin-bottom: none;
+        padding: none;
+        margin: none;
+    }
+    
+    .adopted img {
+        object-fit: cover;
+        width: 30%;
+    }
+    
+    .dog_container {
+        display: flex;
+        justify-content: start;
+        /* border: 1px solid black; */
+        width: auto;
+        /* position: relative;
+        left: 1% */
+    }
+    
     .float {
-        margin-top: -2%;
-        margin-right: 20rem;
-        /* display: flex;
-        position: relative;
-        justify-content: center;
-        flex-direction: row; */
-        display: inline-block;
+        display: flex;
+        justify-content: none;
+        /* border: 1px solid black; */
+        margin: none;
+        transform: scale(.5);
+        padding: none;
+        margin-left: -12%;
     }
     
     .right {
+        margin-left: -25%;
+    }
+    
+    .contents {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+    
+    .name {
+        font-size: 3rem;
+    }
+    
+    .cost {
+        font-size: 2.5rem;
+    }
+    /* .float {
+        margin-top: -2%;
+        margin-right: 20rem;
+                display: inline-block;
+    }
+       .right {
         position: relative;
         float: right;
         left: 45%;
@@ -142,9 +191,7 @@
     }
     
     .dog_container {
-        /* display: flex;
-        justify-content: space-evenly;
-        flex-direction: row; */
+        
         display: inline-block;
         position: relative;
         height: 10rem;
@@ -168,6 +215,7 @@
         bottom: -2rem;
         font-size: 2.5rem;
     }
+     */
     
     .logo {
         height: 15rem;
@@ -268,37 +316,6 @@ nav+p {
         top: 1.2rem;
     }
     
-    .adopted div {
-        transform: scale(.75);
-        margin-bottom: none;
-        padding: none;
-        margin: none;
-    }
-    
-    .adopted img {
-        object-fit: cover;
-        display: inline;
-        height: 15rem;
-        width: 15rem;
-    }
-    
-    .adopted p {
-        /* display: block;*/
-    }
-    
-    .adopted {
-        /* display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -25%; */
-        text-align: left;
-    }
-    
-    .adopted * {
-        /* margin-left: -5%; */
-        /* padding: none; */
-    }
-    
     form p,
     legend {
         font-size: 3rem;
@@ -362,11 +379,6 @@ nav+p {
     .adopted>p {
         /* position: relative;
         left: -38%; */
-    }
-    
-    .dog_container {
-        position: relative;
-        left: -13%;
     }
     
     label[for="yes"] {
