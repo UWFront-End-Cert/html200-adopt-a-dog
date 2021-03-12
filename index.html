@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> dog adoption</title>
-  <script src="https://kit.fontawesome.com/2315930367.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/2315930367.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
   <link rel="stylesheet" type= "text/css" href= "./styles/styles.css">
   <script src="./script.js"></script>
 </head>
@@ -15,7 +18,7 @@
 
     <div class= "checkout">
       <i class="fas fa-shopping-cart"></i>
-      <button type="button" onclick="alert('To be added')">Checkout</button>
+      <button type="button" onclick="alert('adoptCart')">Checkout</button>
 
   </div>
 
@@ -29,89 +32,100 @@
         <li><a href="./blog.html">Blog/</a></li>
       </ul>
   </nav>
-  <section>
-    <img src="./images/home-intro.jpg" alt="man holding gold retriever dog" />
-    <article class= "lead-article">
-    <h2> Adopt A Dog</h2>
-    <p>
-      Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
-am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate
-</p>
+
+
+<aside>
+  <h2><a href="./blog.html">From Our Blog</a></h2>
+  <article>
+    <img src="./images/blog1.png" alt="brown dog">
+    <h4>Traveling With Your Dog</h4>
+    <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.
+    </p>
+      <h5><a href="./blog.html">Read more >></a></h5>
   </article>
+  <article>
+    <img src="./images/blog2.png" alt="brown dog">
+    <h4>How To Walk Multiple Dogs</h4>
+    <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.
+    </p>
+      <h5><a href="./blog.html">Read more >></a></h5>
+  </article>
+  <article>
+    <img src="./images/blog3.png" alt="brown dog">
+    <h4>Teach Your Dog To Fetch!</h4>
+    <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.
+    </p>
+      <h5><a href="./blog.html">Read more >></a></h5>
+  </article>
+
+</aside>
+<section>
+  <img src="./images/new-home-image.png" alt="man holding gold retriever dog" />
+  <article class= "lead-article">
+  <h2> Adopt A Dog</h2>
+  <p>
+    Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am
+</p>
+</article>
 </section>
 
 
   <main>
     <article>
-      <img src="./images/murphy-card.jpg" onclick="murphy()" alt="brown dog">
+      <img src="./images/murphy-card.jpg" onclick="dogInfo('Murphy','Boxer mix.  ',150.00)" alt="brown dog">
       <h4>Murphy</h4>
       <h5>Cost to Adopt: $150.00</h5>
       <p>Murphy is a Boxer mix. She is 3 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
-        <button type="button" onclick="adopt(150.00)">Adopt</button>
+        <button type="button" onclick="feeTotal(150.00)">Adopt</button>
     </article>
     <article>
-      <img src="./images/poppy-card.jpg" onclick="poppy()" alt="white fluffy dog">
+      <img src="./images/poppy-card.jpg" onclick="dogInfo('Poppy','Shih Tzu ',150.00)" alt="white fluffy dog">
       <h4>Poppy</h4>
       <h5>Cost to Adopt: $150.00</h5>
       <p>Poppy is a Shih Tzu. She is 2 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
-        <button type="button" onclick="adopt(150.00)">Adopt</button>
+        <button type="button" onclick="feeTotal(150.00)">Adopt</button>
     </article>
     <article>
-      <img src="./images/jack-card.jpg" onclick="jack()" alt="brown and white dog looking up">
+      <img src="./images/jack-card.jpg" onclick="dogInfo('Jake','Beagle ',200.00)" alt="brown and white dog looking up">
       <h4>Jack</h4>
       <h5>Cost to Adopt: $200.00</h5>
-      <p>Jack is a Beagle puppy. She is 10 weeks old neutered, microchipped, vaccinated and ready for a new forever home.
+      <p>Jack is a Beagle puppy. She is 10 weeks old, neutered, microchipped, vaccinated, playful/happy and ready for a new forever home.
       </p>
-        <button type="button" onclick="adopt(200.00)">Adopt</button>
+        <button type="button" onclick="feeTotal(200.00)">Adopt</button>
     </article>
     <article>
-      <img src="./images/duffy-card.jpg" onclick="duffy()" alt="white and brown pitbull mix">
+      <img src="./images/duffy-card.jpg" onclick="dogInfo('Duffy','Pitbull ',150.00)" alt="white and brown pitbull mix">
       <h4>Duffy</h4>
       <h5>Cost to Adopt: $150.00</h5>
       <p>Duffy is a Pitbull. She is 6 months, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
-        <button type="button" onclick="adopt(150.00)">Adopt</button>
+        <button type="button" onclick="feeTotal(150.00)">Adopt</button>
     </article>
     <article>
-      <img src="./images/lucas-card.jpg" onclick="lucas()" alt="black dog looking up">
+      <img src="./images/lucas-card.jpg" onclick="dogInfo('Lucas ','German Sheppard mix ',150.00)" alt="black German Shppard mix">
       <h4>Lucas</h4>
       <h5>Cost to Adopt: $150.00</h5>
-      <p>Lucas is a German Shppard mix. He is 4 years old, microchipped, vaccinated, house/leash trained and ready for a new forever home.
+      <p>Lucas is a German Sheppard mix. He is 4 years old, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
-        <button type="button" onclick="adopt(150.00)">Adopt</button>
+        <button type="button" onclick="feeTotal(150.00)">Adopt</button>
     </article>
     <article>
-      <img src="./images/jake-card.jpg" onclick="jake()" alt="black dog looking up">
+      <img src="./images/jake-card.jpg" onclick="dogInfo('Jake ','Labrador Retriever ',150.00)" alt="black dog looking up">
       <h4>Jake</h4>
       <h5>Cost to Adopt: $150.00</h5>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+      <p>Jake is a Labrador. He is 4 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
-        <button type="button" onclick="adopt(150.00)">Adopt</button>
+        <button type="button" onclick="feeTotal(150.00)">Adopt</button>
     </article>
-    <article>
-      <img src="./images/angus-card.jpg" onclick="angus()" alt="brown boxer mix dog">
-      <h4>Angus</h4>
-      <h5>Cost to Adopt: $150.00</h5>
-      <p>Angus is a Boxer. He is 2 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
-      </p>
-        <button type="button" onclick="adopt(150.00)">Adopt</button>
-    </article>
-    <article>
-      <img src="./images/violet-card.jpg" onclick="violet()"  alt="brown blue eyed puppy">
-      <h4>Violet</h4>
-      <h5>Cost to Adopt: $200.00</h5>
-      <p>Violet is chocolate lab dachsund mix. She is 6 weeks old neutered, microchipped, vaccinated and ready for a new forever home.
-      </p>
-        <button type="button" onclick="adopt(200.00)">Adopt</button>
-    </article>
+
   </main>
 
 
-  <form>
-      <button type="submit" formaction="./all-dogs.html">See More Dogs</button>
-   </form>
+  <div class="all-button"><button onclick="window.location.href='https://w3docs.com';">
+      See More Dogs
+    </button></div>
 
 
   <footer>

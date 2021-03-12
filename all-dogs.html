@@ -3,15 +3,19 @@
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>all dogs</title>
-     <link rel="stylesheet" type= "text/css" href= "./styles/styles.css">
- </head>
+  <title> dog adoption</title>
+  <script src="https://kit.fontawesome.com/2315930367.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type= "text/css" href= "./styles/styles.css">
+  <script src="./script.js"></script>
+</head>
 <body>
   <header>
 
     <div class= "checkout">
       <i class="fas fa-shopping-cart"></i>
-      <button type="button" onclick="alert('To be added')">Checkout</button>
+      <button type="button" onclick="alert('adoptCart')">Checkout</button>
 
   </div>
 
@@ -29,72 +33,71 @@
       <h2>Here are all our dogs!</h2>
   </article>
 
-      <main>
+    <main class = "main-all-dogs">
       <article>
-        <img src="./images/murphy-card.jpg" alt="brown dog">
+        <img src="./images/murphy-card.jpg" onclick="dogInfo('Murphy','Boxer mix.  ',150.00)" alt="brown dog">
         <h4>Murphy</h4>
-        <h5>Cost to Adopt: $123.45</h5>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+        <h5>Cost to Adopt: $150.00</h5>
+        <p>Murphy is a Boxer mix. She is 3 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
         </p>
-          <button type="button" onclick="alert('To be added')">Adopt</button>
+          <button type="button" onclick="feeTotal(150.00)">Adopt</button>
       </article>
       <article>
-        <img src="./images/poppy-card.jpg" alt="white fluffy dog">
+        <img src="./images/poppy-card.jpg" onclick="dogInfo('Poppy','Shih Tzu ',150.00)" alt="white fluffy dog">
         <h4>Poppy</h4>
-        <h5>Cost to Adopt: $123.45</h5>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+        <h5>Cost to Adopt: $150.00</h5>
+        <p>Poppy is a Shih Tzu. She is 2 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
         </p>
-          <button type="button" onclick="alert('To be added')">Adopt</button>
+          <button type="button" onclick="feeTotal(150.00)">Adopt</button>
       </article>
       <article>
-        <img src="./images/jack-card.jpg" alt="brown and white dog looking up">
+        <img src="./images/jack-card.jpg" onclick="dogInfo('Jake','Beagle ',200.00)" alt="brown and white dog looking up">
         <h4>Jack</h4>
-        <h5>Cost to Adopt: $123.45</h5>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+        <h5>Cost to Adopt: $200.00</h5>
+        <p>Jack is a Beagle puppy. She is 10 weeks old, neutered, microchipped, vaccinated, playful/happy and ready for a new forever home.
         </p>
-          <button type="button" onclick="alert('To be added')">Adopt</button>
+          <button type="button" onclick="feeTotal(200.00)">Adopt</button>
       </article>
       <article>
-        <img src="./images/duffy-card.jpg" alt="white and brown pitbull mix">
+        <img src="./images/duffy-card.jpg" onclick="dogInfo('Duffy','Pitbull ',150.00)" alt="white and brown pitbull mix">
         <h4>Duffy</h4>
-        <h5>Cost to Adopt: $123.45</h5>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
+        <h5>Cost to Adopt: $150.00</h5>
+        <p>Duffy is a Pitbull. She is 6 months, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
         </p>
-          <button type="button" onclick="alert('To be added')">Adopt</button>
+          <button type="button" onclick="feeTotal(150.00)">Adopt</button>
       </article>
       <article>
-        <img src="./images/lucas-card.jpg" alt="black dog looking up">
-        <h4>Lucas</h4>
-        <h5>Cost to Adopt: $123.45</h5>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-        </p>
-          <button type="button" onclick="alert('To be added')">Adopt</button>
+          <img src="./images/lucas-card.jpg" onclick="dogInfo('Lucas ','German Sheppard mix ',150.00)" alt="black German Shppard mix">
+          <h4>Lucas</h4>
+          <h5>Cost to Adopt: $150.00</h5>
+          <p>Lucas is a German Sheppard mix. He is 4 years old, microchipped, vaccinated, house/leash trained and ready for a new forever home.
+          </p>
+            <button type="button" onclick="feeTotal(150.00)">Adopt</button>
+        </article>
+        <article>
+          <img src="./images/jake-card.jpg" onclick="dogInfo('Jake ','Labrador Retriever ',150.00)" alt="black dog looking up">
+          <h4>Jake</h4>
+          <h5>Cost to Adopt: $150.00</h5>
+          <p>Jake is a Labrador. He is 4 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
+          </p>
+            <button type="button" onclick="feeTotal(150.00)">Adopt</button>
+        </article>
+        <article>
+          <img src="./images/angus-card.jpg" onclick="dogInfo('Angus ','Boxer mix ',150.00)" alt="brown boxer mix dog">
+          <h4>Angus</h4>
+          <h5>Cost to Adopt: $150.00</h5>
+          <p>Angus is a Boxer. He is 2 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
+          </p>
+            <button type="button" onclick="feeTotal(150.00)">Adopt</button>
+        </article>
+        <article>
+          <img src="./images/violet-card.jpg" onclick="dogInfo('Violet ','Chocolate lab dachsund mix ',200.00)"  alt="brown blue eyed puppy">
+          <h4>Violet</h4>
+          <h5>Cost to Adopt: $200.00</h5>
+          <p>Violet is chocolate lab dachsund mix. She is 6 weeks old neutered, microchipped, vaccinated and ready for a new forever home.
+          </p>
+            <button type="button" onclick="feeTotal(200.00)">Adopt</button>
       </article>
-      <article>
-        <img src="./images/jake-card.jpg" alt="black dog looking up">
-        <h4>Jake</h4>
-        <h5>Cost to Adopt: $123.45</h5>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-        </p>
-          <button type="button" onclick="alert('To be added')">Adopt</button>
-      </article>
-      <article>
-        <img src="./images/angus-card.jpg" alt="brown boxer mix dog">
-        <h4>Angus</h4>
-        <h5>Cost to Adopt: $123.45</h5>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-        </p>
-          <button type="button" onclick="alert('To be added')">Adopt</button>
-      </article>
-      <article>
-        <img src="./images/violet-card.jpg" alt="brown blue eyed puppy">
-        <h4>Violet</h4>
-        <h5>Cost to Adopt: $123.45</h5>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-        </p>
-          <button type="button" onclick="alert('To be added')">Adopt</button>
-      </article>
-
 
 
     <article>
@@ -103,7 +106,7 @@
       <h5>Cost to Adopt: $123.45</h5>
       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
       </p>
-        <button type="button" onclick="alert('To be added')">Adopt</button>
+        <button type="button" onclick="feeTotal(200.00)">Adopt</button>
     </article>
     <article>
       <img src="./images/maximus-card.jpg" alt="black and tan dog with mustache">
@@ -111,7 +114,7 @@
       <h5>Cost to Adopt: $123.45</h5>
       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
       </p>
-        <button type="button" onclick="alert('To be added')">Adopt</button>
+        <button type="button" onclick="feeTotal(200.00)">Adopt</button>
     </article>
     <article>
       <img src="./images/luna-card.jpg" alt="happy tan dog">
@@ -119,7 +122,7 @@
       <h5>Cost to Adopt: $123.45</h5>
       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
       </p>
-        <button type="button" onclick="alert('To be added')">Adopt</button>
+        <button type="button" onclick="feeTotal(200.00)">Adopt</button>
     </article>
     <article>
       <img src="./images/stella-card.jpg" alt="chihuahua laying head on pillow">
@@ -127,7 +130,7 @@
       <h5>Cost to Adopt: $123.45</h5>
       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
       </p>
-        <button type="button" onclick="alert('To be added')">Adopt</button>
+        <button type="button" onclick="feeTotal(200.00)">Adopt</button>
      </article>
 
 </main>
