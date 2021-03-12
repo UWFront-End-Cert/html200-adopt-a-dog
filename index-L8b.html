@@ -1,0 +1,109 @@
+<!-- index page for L8b dynamic form creation -->
+<!-- L8b assignment     
+	On the form page, display an alert that says "Thank you. The form information has been received" when the form has been submitted.
+    Console log the values inside the form, you can build a string or build an object.
+Bonus 1: Validate that all the form fields have been filled out and that the email address is a valid address.
+Bonus 2: Generate all the dog tiles dynamically from an array. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dynamic Markup with JavaScript Example</title>
+       <script language="javascript"  src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    </head>
+	<script id="demo" type="text/javascript">
+
+	// example 1
+	const container = document.getElementById('container');
+	const image = document.createElement('img');
+	image.src= './my-image.jpg';
+	container.appendChild(image);
+	const title = document.createElement('h1');
+	title.textContent= 'My Image';
+	container.insertBefore(title, image);
+	
+	// example 2
+	const form = document.createElement('form');
+		const fields = ['field1', 'field2'];
+		
+		for (let i= 0; i< fields.length; i+= 1) {
+			const label = document.createElement('label');
+			label.textContent= fields[i];
+			label.setAttribute('for',fields[i]);
+			const input = document.createElement('input');
+			input.setAttribute('id', fields[i]);
+			form.appendChild(label);
+			form.appendChild(input);
+		};
+
+	// example 3
+		const submitButton= document.createElement('button');
+		submitButton.setAttribute('type','submit');
+		submitButton.textContent = 'Submit';
+		form.appendChild(submitButton);
+		form.addEventListener('submit', function(e) {// do things on submit});
+	});
+	</script>
+	
+	<!-- <script id="demo" type="text/javascript">
+		$(document).ready(function() {
+			// our array of objects for some data to play with
+			var arr = [
+				{ fname : "Bart", lname : "Simpson", email: "bsimpson@somedomain.com"},
+				{ fname : "Alfred E", lname : "Newman", email: "aenewman@somedomain.com"},
+				{ fname : "Steve", lname : "Austin", email: "saustin@somedomain.com"}
+			]
+
+			var i = 0,
+				arrLen = arr.length - 1
+				str = "";
+			// loop through all elements in the array, building a form for each object
+			for (; i <= arrLen; i++ ) {
+			str = str + '<form>'
+							+ '<label for="fname"><b>First Name:</b></label> <input type="text" name="fname" size="20" value="' + arr[i].fname + '" />'
+							+ '<label for="lname"><b>Last Name:</b></label> <input type="text" name="lname" size="20" value="' + arr[i].lname + '" />'
+							+ '<label for="email"><b>Email:</b></label> <input type="text" name="email" size="20" value="' + arr[i].email + '" />'
+							+ '<button type="submit">Submit</button>'
+						+ "</form>";
+			};
+			//append the markup to the DOM
+			$("#foo").html(str);
+		});
+	</script> -->
+    <body>
+		<div id="container"></div>
+		<div id="foo"></div>
+    </body>
+</html>
+
+<!-- <script>
+	const form = document.createElement('form');
+	const fields = ['field1', 'field2'];
+	
+	for (let i= 0; i< fields.length; i+= 1) {
+		const label = document.createElement('label');
+		label.textContent= fields[i];
+		label.setAttribute('for',fields[i]);
+		const input = document.createElement('input');
+		input.setAttribute('id', fields[i]);
+		form.appendChild(label);
+		form.appendChild(input);
+	};
+</script> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>L8b form creation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Lesson 8b Dynamic Form Creation</h1>
+        <script src="./js-adoptadog/adopt-blog2.js"></script>
+    </body>
+</html> -->
