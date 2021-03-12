@@ -84,10 +84,10 @@ body a:hover {
   }
 }
 /* for tablet - dog grid layout needs to change from 3 columns to 2 (home) */
-@media screen and (min-width: 768px) and (max-width: 991.9999px) {
+@media screen and (min-width: 768px) {
   .main-content {
     display: flex;
-    width: 70%;
+    max-width: 95%;
     margin: 0 auto;
   }
   .main-content-blog {
@@ -132,12 +132,12 @@ body a:hover {
 @media screen and (min-width: 992px) {
   .main-content {
     display: flex;
-    width: 70%;
+    max-width: 90%;
     margin: 0 auto;
   }
   .main-content-blog {
     margin: 2rem 6rem;
-    width: 70%;
+    max-width: 90%;
   }
   .blog-aside {
     margin: -1rem 6rem 2rem 4rem;
