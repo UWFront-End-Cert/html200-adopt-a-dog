@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopt A Dog</title>
-    <!-- linking script.js -->
+    <!-- linking dogcost.js -->
     <script src="./scripts/dogcost.js"></script>
     <!-- normalize linking -->
     <link rel="stylesheet" href="./styles/normalize.css" />
@@ -40,8 +40,8 @@
 
       <article class="checkout-page">
         <h2 class="check" id="main">Checkout</h2>
-        <form method="post" name="checkout-form">
-          <label>Name<br>
+        <form method="post" name="checkout-form" id=checkout>
+          <!-- <label>Name<br>
             <input type="text" name="name">
           </label>
           <br>
@@ -89,7 +89,7 @@
               <option value="home">Home</option>
             </select>
           </label>
-          <br>
+          <br> -->
           <label>Dogs Adopted<br>
             <img src="./images/lucas-checkout.jpg" alt="A picture of Lucas, the black Shepherd mix" width="50" height="50">
             Lucas
@@ -104,10 +104,13 @@
             $1234.56
           </label>
           <br>
-          <input type="submit" name="send" value="Submit">
+          <!-- <input type="submit" name="send" value="Submit"> -->
         </form>
       </article>
     </div>
+
+    <!-- linking form.js -->
+    <script src="./scripts/form.js"></script>
 
     <footer>
       <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo" width="200" height="100">
