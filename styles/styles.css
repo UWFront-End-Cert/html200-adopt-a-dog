@@ -163,6 +163,16 @@ nav li a:hover {
   font-family: sans-serif;
 }
 
+.wrapper3{
+  width: 80%;
+  min-height: auto;
+  margin: 2rem auto;
+  overflow: hidden;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
 .blog-container {
   margin-top: 6rem;
 }
