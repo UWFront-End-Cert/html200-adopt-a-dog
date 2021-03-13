@@ -4,7 +4,7 @@ const formAlertSubmitt = document.getElementById('submitForm');
 formAlertSubmitt.addEventListener('click', {
   handleEvent: function (event) {
     event.preventDefault();
-    alert('Element clicked through handleEvent property!');
+    alert('Thank you. The form information has been received.');
   }
 });
 
