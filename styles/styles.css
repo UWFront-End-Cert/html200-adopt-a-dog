@@ -153,6 +153,29 @@ nav li a:hover {
   display: flex;
 }
 
+.wrapper2 {
+  width: 80%;
+  min-height: auto;
+  margin: 2rem auto;
+  overflow: hidden;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.blog-container {
+  margin-top: 6rem;
+}
+
+.blog-article {
+  display: flex;
+  padding: 67px 0px 0px 0px;
+}
+
+.blog-article_text-box {
+  padding: 2rem;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
