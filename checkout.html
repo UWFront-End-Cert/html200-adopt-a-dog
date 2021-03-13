@@ -116,12 +116,16 @@
               <label for="zipCode">Zip Code</label>
               <input type="text" name="zipCode" required id="zipCode">
             </div>
-            <fieldset class="form-grid-adopter" id="firstAdopter" name="adopter" required>
+
+            <fieldset id="firstAdopter" name="adopter">
               <legend>First Time Adopter?</legend>
-              <input id="yes" type="radio" name="adopter" value="yes">
-              <label for="yes">Yes &nbsp; &nbsp;</label>
-              <input id="no" type="radio" name="adopter" value="no">
-              <label for="no">No</label>
+              <label>Yes
+                <input id="yes" type="radio" name="adopter" value="yes">
+              </label>
+
+              <label>No
+                <input id="no" type="radio" name="adopter" value="no">
+              </label>
             </fieldset>
             <div class="form-grid-pickup">
               <label for="pickupLocation">Pickup Location</label>
