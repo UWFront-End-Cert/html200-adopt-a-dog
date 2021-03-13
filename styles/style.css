@@ -146,8 +146,16 @@ button {
     width: 100%;
 }
 
-.dogs article {
-    border: solid lightgrey;
+.grey-border{
+    border: lightgrey solid 3px;
+}
+
+.green-border, .chosen {
+    border: rgb(18, 146, 18) solid 3px;
+}
+
+.no-border {
+    border: none;
 }
 
 .dogs h3,
@@ -308,6 +316,7 @@ fieldset {
     grid-template-rows: auto;
     grid-row-gap: 10%;
     margin-bottom: 3rem;
+    padding-top: 1.5rem;
 }
 
 .city-state input,

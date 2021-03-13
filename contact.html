@@ -39,22 +39,22 @@
 
     <form id = "form" method="get" name="contact-form">
         <div class="name">
-            <label class="col-1 row-1"> Name
+            <label> Name
                 <input class="label-text" type="text" name="name" autofocus id ="name">
             </label>
 
-            <label class="col-1 row-2"> email
+            <label> email
                 <input class="label-text" type="email" name="email" placeholder="example@example.com" id ="email">
             </label>
 
-            <label class="col-1 row-3"> Street Address
-                <input class="label-text" type="text" id="address">
+            <label> Street Address
+                <input class="label-text" type="text" name="address" id="address">
             </label>
         </div>
 
         <div class="city-state">
             <label> City
-                <input class="label-text" type="text" id="city">
+                <input class="label-text" type="text" name="city" id="city">
             </label>
 
             <label>State
@@ -69,7 +69,7 @@
             </label>
 
             <label> Zipcode
-                <input class="label-text" type="text" id="zipcode">
+                <input class="label-text" type="text" name="zipcode" id="zipcode">
             </label>
         </div>
 
@@ -127,7 +127,6 @@
 
         <div class="submit" id="submit">
             <button>Submit</button>
-            <script src="js/form.js" charset="utf-8"></script>
         </div>
 
     </form>
@@ -156,6 +155,9 @@
 
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"> </script>
+    <script src="js/form.js" charset="utf-8"></script>
 </body>
 
 </html>
