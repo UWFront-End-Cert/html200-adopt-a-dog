@@ -8,6 +8,13 @@ let totalCost = 0;
 function sumCost(cost) {
 totalCost = parseFloat((cost + totalCost).toFixed(2)); 
 alert('Total Adoption Fees: $' + totalCost);
+
+$('button').click(function(){
+  $('.total').text(totalCost);
+});
+
 }
+
+
 
 

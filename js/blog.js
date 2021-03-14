@@ -30,7 +30,6 @@ for (let i = 0; i<blogContent.length; i++) {
     
 // each blog is assigned to an aritcle which are enclosed in a container
     let blogArticle = document.createElement('article');
-    blogArticle.setAttribute('id', 'blog');
     blogArticle.setAttribute('class', 'blog');
     container.appendChild(blogArticle);
 
@@ -41,7 +40,6 @@ for (let i = 0; i<blogContent.length; i++) {
     blogArticle.appendChild(blogImage);
 
     let blogDiv = document.createElement('div');
-    blogDiv.setAttribute('id', 'blog-text');
     blogDiv.setAttribute('class', 'blog-text');
     blogArticle.appendChild(blogDiv);
 

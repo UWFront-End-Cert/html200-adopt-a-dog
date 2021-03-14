@@ -44,19 +44,19 @@
             <fieldset id = "fieldset">
                 <div class="personal-info">
                     <label for="name">Name
-                        <input type="text" id="name" autofocus></label>
+                        <input type="text" name="name" id="name" autofocus></label>
 
                     <label for="email">Email Address
                         <input type="email" name="email" id="email" placeholder="your-user-id@provider-name.com">
                     </label>
 
                     <label class="address" for="address">Street Address
-                        <input type="text" id="address"></label>
+                        <input type="text" name = "address" id="address"></label>
                 </div> <!--  end of personal-info div -->
 
                 <div class="city-state">
                     <label for="city">City
-                        <input type="text" id="city">
+                        <input type="text" name = "city" id="city">
                     </label>
 
                     <label for="state">State
@@ -115,20 +115,20 @@
                     </label>
 
                     <label for="zipcode">Zip Code
-                        <input type="text" id="zipcode">
+                        <input type="text" name = "zipcode" id="zipcode">
                     </label>
                 </div> <!--  end of city-state div -->
 
                 <fieldset id = "fieldset" class="adopter">
                     <legend>First Time Adopter?</legend>
                     <div class="first-time">
-                        <div>
+                        <div class="radio_button">
                             <input type="radio" id="resultY" name="prev-adopter" value="Yes">
-                            <label for="yes">Yes </label>
+                            <label for="yes">Yes</label>
                         </div>
-                        <div>
+                        <div class="radio_button">
                             <input type="radio" id="resultN" name="prev-adopter" value="No">
-                            <label for="no">No </label>
+                            <label for="no">No</label>
                         </div>
                     </div> <!--  end of adopter div -->
 
@@ -145,14 +145,14 @@
             </fieldset>
 
             <section class="dogs-adopted">
-                <h4>Dogs Adopted</h4>
+                <h3>Dogs Adopted</h3>
                 <div class="adopted-row">
                     <article class="adopted-row">
                         <img src="images/lucas-checkout.jpg" alt="Black gernman sheppard  named Murphy">
                         <div class="adopted-column">
-                            <h5>
+                            <h4>
                                 Lucas
-                            </h5>
+                            </h4>
                             <p>
                                 <span>Cost to adopt:</span> $123.45
                                 <p>
@@ -162,9 +162,9 @@
                     <article class="adopted-row">
                         <img src="images/duffy-checkout.jpg" alt="Tan and white pit bull named Duffy">
                         <div class="adopted-column">
-                            <h5>
+                            <h4>
                                 Duffy
-                            </h5>
+                            </h4>
                             <p>
                                 <span>Cost to adopt:</span> $123.45
                             </p>
@@ -174,7 +174,7 @@
             </section>
 
             <section class="cost">
-                <h4>Total Adoption Costs</h4>
+                <h3>Total Adoption Costs</h3>
 
                 <p>$1234.56</p>
 
@@ -204,7 +204,9 @@
         <p>&copy;2020 Adoptadog, LLC | Seattle, WA</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/form.js" charset="utf-8"></script>
+
 
 </body>
 

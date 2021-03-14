@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script src="js/dogs-javascript.js" charset="utf-8"></script>
     <link href="styles/stylesheet.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -20,7 +19,7 @@
         <section class="hdr-right">
             <div class="cart">
                 <img class="cart" src="images/cart-icon.svg" alt="image of a cart">
-                <p>$1234.56</p>
+                <p class = 'total'>$1234.56</p>
             </div>
             <!--end of cart  -->
             <button type="submit" value="Submit" name="submit">Checkout</button>
@@ -73,7 +72,7 @@
             </section> <!-- end of intro -->
 
             <div class="dogs">
-                <article class = "dog-info">
+                <article class="dog-info noshow">
                     <img src="images/murphy-card.jpg" alt="Tan and white boxer-mix dog named Murphy"
                         onclick="dogInfo('Murphy', 'Boxer Mix', '123.45.')">
                     <h3>
@@ -87,10 +86,10 @@
                         Maecenas
                         feugiat facilisis mi nec vehicula.
                     </p>
-                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                    <button class = "dog-button" type ="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
                 </article>
 
-                <article class = "dog-info">
+                <article class="dog-info noshow">
                     <img src="images/poppy-card.jpg" alt="Gray and white Shih-tzu dog named Poppy"
                         onclick=" dogInfo('Poppy', 'Shih-tzu', '123.45.')">
                     <h3>
@@ -104,10 +103,10 @@
                         Maecenas
                         feugiat facilisis mi nec vehicula.
                     </p>
-                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                    <button class = "dog-button" type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
                 </article>
 
-                <article class = "dog-info">
+                <article class="dog-info noshow">
                     <img src="images/jack-card.jpg" alt="Tan and white beagle named Jack"
                         onclick=" dogInfo('Jack', 'Beagle', '123.45.')">
                     <h3>
@@ -121,10 +120,10 @@
                         Maecenas
                         feugiat facilisis mi nec vehicula.
                     </p>
-                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                    <button class = "dog-button" type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
                 </article>
 
-                <article class = "dog-info">
+                <article class="dog-info noshow">
                     <img src="images/duffy-card.jpg" alt="Tan and white pit bull named Duffy"
                         onclick=" dogInfo('Duffy', 'Pit Bull', '123.45.')">
                     <h3>
@@ -138,10 +137,10 @@
                         Maecenas
                         feugiat facilisis mi nec vehicula.
                     </p>
-                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                    <button class = "dog-button" type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
                 </article>
 
-                <article class = "dog-info">
+                <article class="dog-info noshow">
                     <img src="images/lucas-card.jpg" alt="Black gernman sheppard  named Lucas"
                         onclick=" dogInfo('Lucas', 'German Sheppard', '123.45.')">
                     <h3>
@@ -155,11 +154,11 @@
                         Maecenas
                         feugiat facilisis mi nec vehicula.
                     </p>
-                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                    <button class = "dog-button" type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
                 </article>
 
 
-                <article class = "dog-info">
+                <article class="dog-info noshow">
                     <img src="images/jake-card.jpg" alt="Light beige and tan retriever named Jake"
                         onclick=" dogInfo('Jake', 'Retriever', '123.45.')">
                     <h3>
@@ -173,10 +172,10 @@
                         Maecenas
                         feugiat facilisis mi nec vehicula.
                     </p>
-                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                    <button class = "dog-button" type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
                 </article>
 
-                <article class = "dog-info">
+                <article class="dog-info noshow">
                     <img src="images/angus-card.jpg" alt="Tan,white and black boxer named Angus"
                         onclick=" dogInfo('Angus', 'Boxer', '123.45.')">
                     <h3>
@@ -190,10 +189,10 @@
                         Maecenas
                         feugiat facilisis mi nec vehicula.
                     </p>
-                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                    <button class = "dog-button" type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
                 </article>
 
-                <article class = "dog-info">
+                <article class="dog-info noshow">
                     <img src="images/violet-card.jpg" alt="Chocolate lab puppy named Violet"
                         onclick=" dogInfo('Violet', 'Chocolate Lab', '123.45.')">
                     <h3>
@@ -208,32 +207,32 @@
                         Maecenas
                         feugiat facilisis mi nec vehicula.
                     </p>
-                    <button type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
+                    <button class = "dog-button" type="submit" value="Adopt" name="adopt" onclick="sumCost(123.45)">Adopt</button>
                 </article>
 
-             
-                
+
+
 
             </div> <!-- end of dogs -->
 
             <button class="more-dogs" type="submit" value="More" name="more">See More
                 Dogs</button>
-        
+
             <!-- To link I need to figure out the javascript I should use
             <button class="more-dogs" type="submit" value="More" name="more" onclick="./dogs.html='default.asp'"> See More
                     Dogs</a></button> -->
 
-            <section class = "blog-link">
+            <section class="blog-link">
                 <h3> From Our Blog</h3>
                 <a href="./blog.html">Read more >></a>
-                
+
             </section>
 
         </div> <!-- end of main-content -->
 
         <aside>
             <h2> From Our Blog</h2>
-            <article>
+            <article class = "no-border">
 
                 <img src="images/blog-1.jpg" alt="Man viewing the Grand Canyon with his dog">
                 <h3>Traveling with Your Dog</h3>
@@ -244,7 +243,7 @@
 
             </article>
 
-            <article>
+            <article class = "no-border">
 
                 <img src="images/blog-2.jpg" alt="Man viewing the Grand Canyon with his dog">
                 <h3>How to Walk Multiple Dogs</h3>
@@ -255,7 +254,7 @@
 
             </article>
 
-            <article>
+            <article class = "no-border">
 
                 <img src="images/blog-3.jpg" alt="Man viewing the Grand Canyon with his dog">
                 <h3>Teach Your Dog to Fetch</h3>
@@ -290,6 +289,9 @@
         <p>&copy;2020 Adoptadog, LLC | Seattle, WA</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/dogs-javascript.js" charset="utf-8"></script>
+    <script src="js/dogs-jquery.js" charset="utf-8"></script>
 </body>
 
 </html>
