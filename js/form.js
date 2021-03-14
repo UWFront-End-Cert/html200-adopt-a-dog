@@ -6,29 +6,26 @@ formAlertSubmitt.textContent = 'Submit';
 
 
 form.addEventListener('submit', function(e){
+  //On the form page, display an alert that says
+  //"Thank you. The form information has been received" when the form has been submitted.
   event.preventDefault();
   alert('Thank you. The form information has been received.');
-})
 
-//formAlertSubmitt.addEventListener('click', {
-//  handleEvent: function (event) {
-//    event.preventDefault();
-//    alert('Thank you. The form information has been received.');
-//  }
-//});
+  //Console log the values inside the form,
+  //you can build a string or build an object.
 
-//formAlertSubmitt.addEventListener('submit', function(){
-//  event.preventDefault(); //prevents it from refreshing the page
-//  console.log("running alert function");
-//  alert("Thank you. The form information has been received.");
+  const checkoutFormData = form.elements;
+  console.log(checkoutFormData);
+  // minus one because we don't want to include submit button
+  const submitData = {};
 
-//  const dogData = document.getElementById('dogdataForm').elements;
-//  const submitDogData = {};
-//});
+  for(let i = 0; i < checkoutFormData.length; i++){
 
-//Console log the values inside the form,
-//you can build a string or build an object.
+    const fieldData = form.element[i].value;
+    const fieldName = form.element[i].id;
 
-
-let checkoutFrom = [];
-document.getElementById
+    console.log(fieldName);
+    submitData[fieldData] = fieldName;
+  }
+console.log(submitData);
+});
