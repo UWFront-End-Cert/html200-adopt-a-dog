@@ -286,13 +286,18 @@ footer a {
 .noshow {
     border: lightgray solid 3px;
 }
-.adopted,
+
 .show {
+    border: blue solid 3px;
+}
+
+.adopted
+    {
     border: #008A00 solid 3px;
 }
 
 .no-border {
-    border:none;
+    border: none;
 }
 
 @media screen and (max-width: 575px) {
@@ -312,7 +317,7 @@ footer a {
 }
 
 .dog-info button,
-.all-dogs button {
+.dog-button {
     width: 90%;
     padding: .75rem 1rem;
     background-color: #008A00;
@@ -374,24 +379,40 @@ aside img {
     }
 }
 
-/* styling for button on home page to view more dogs */
-.more-dogs {
-    width: 15rem;
-    background-color: lightgray;
-    padding: .75rem 1rem;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-
+/* styling for button on home page to view more dogs and clear selection */
+.dog-selection{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
+ 
 }
 
-.more-dogs a {
+.more-dogs,
+.clear-dogs,
+.clear-more-dogs {
+    width: 13rem;
+    background-color: lightblue;
+    padding: .75rem 1rem;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+}
+
+.clear-more-dogs {
+    display:block;
+    margin: 0 auto;
+}
+
+/* .more-dogs a,
+.clear-dogs-more a {
     text-decoration: none;
     width: 100%;
     color: rgb(20, 66, 109);
-    font-weight: bold;
+    font-weight:bold;
     height: 10%;
-}
+} */
 
 /* styling for blog page */
 
