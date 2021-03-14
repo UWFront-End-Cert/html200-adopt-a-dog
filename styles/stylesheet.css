@@ -36,7 +36,7 @@ h4,
 .form-title {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 
@@ -52,6 +52,10 @@ h4,
 .all-dogs p {
     margin-left: 1rem;
     margin-right: 2rem;
+}
+
+.blog h3 {
+    font-size: 1.5rem;
 }
 
 .dogs-adopted h3,
@@ -214,7 +218,7 @@ header button {
 }
 
 nav {
-    background-color: lightgray;
+    background: linear-gradient(50deg, darkgreen, rgb(156, 206, 230));
 }
 
 nav ul {
@@ -238,6 +242,11 @@ nav p {
 nav a,
 footer a {
     text-decoration: none;
+}
+
+nav li,
+nav a {
+    color:white;
 }
 
 /* styling for home page */
@@ -291,10 +300,9 @@ footer a {
     border: blue solid 3px;
 }
 
-.adopted
-    {
+.adopted {
     border: #008A00 solid 3px;
-    background-color:lightgreen;
+    background-color: lightgreen;
 }
 
 .no-border {
@@ -381,29 +389,38 @@ aside img {
 }
 
 /* styling for button on home page to view more dogs and clear selection */
-.dog-selection{
-    display:flex;
+.dog-selection {
+    display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-content: flex-start;
     flex-wrap: wrap;
- 
+
 }
 
 .more-dogs,
-.clear-dogs,
-.clear-more-dogs {
+.clear-dogs {
     width: 13rem;
     background-color: lightblue;
     padding: .75rem 1rem;
     text-align: center;
-    color:black;
+    color: black;
     font-weight: bold;
 }
 
 .clear-more-dogs {
-    display:block;
+    width:25%;
+    background-color: lightblue;
+    padding: .75rem 1rem;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+
+}
+
+.center-button {
     margin: 0 auto;
+    display: block;
 }
 
 /* .more-dogs a,

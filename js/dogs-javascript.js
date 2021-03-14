@@ -43,15 +43,26 @@ $('article').on('mouseout', function (e) {
 
 $('.dog-button').on('click', function (e) {
   $(this).parent().addClass('adopted');
+  $(this).text('Adopted');
 })
 
 // //clear selected adoption change the border to gray and the dollar amount in the header to 0 when the user clicks on the clear selection button
+// $('.clear-dogs').click(function (e) {
+//   $('article').removeClass('adopted');
+//   $('article').addClass('noshow');
+//   $('.dog-button').text('Adopt');
+// })
+
+// $('.clear-more-dogs').click(function (e) {
+//   $('article').removeClass('adopted');
+//   $('article').addClass('noshow');
+//   $('.dog-button').text('Adopt');
+// })
+
 $('.clear-dogs').click(function (e) {
-  $('article').removeClass('adopted');
-  $('article').addClass('noshow');
-})
+  location.href = "./index.html";
+  })
 
 $('.clear-more-dogs').click(function (e) {
-  $('article').removeClass('adopted');
-  $('article').addClass('noshow');
+  location.href = "./dogs.html";
 })

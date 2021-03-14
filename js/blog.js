@@ -44,9 +44,9 @@ for (let i = 0; i<blogContent.length; i++) {
     blogArticle.appendChild(blogDiv);
 
 // children of the div include the header and two paragraphs
-    let blogH2 = document.createElement('h2');
-    blogH2.textContent = blogContent[i].blogHeader;
-    blogDiv.appendChild(blogH2);
+    let blogH3 = document.createElement('h3');
+    blogH3.textContent = blogContent[i].blogHeader;
+    blogDiv.appendChild(blogH3);
 
     let blogPar1 = document.createElement('p');
     blogPar1.textContent = blogContent[i].blogP1;
