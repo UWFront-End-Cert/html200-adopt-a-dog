@@ -19,12 +19,11 @@ form.addEventListener('submit', function(e){
   // minus one because we don't want to include submit button
   const submitData = {};
 
-  for(let i = 0; i < checkoutFormData.length; i++){
+  for(i = 0; i < checkoutFormData.length-1; i++){
+    const fieldData = form[i].value;
+    const fieldName = form[i].id;
 
-    const fieldData = form.element[i].value;
-    const fieldName = form.element[i].id;
-
-    console.log(fieldName);
+    console.log(`${fieldName}: ${fieldData}`);
     submitData[fieldData] = fieldName;
   }
 console.log(submitData);
