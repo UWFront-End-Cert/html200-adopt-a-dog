@@ -52,10 +52,12 @@ h4,
 .all-dogs p {
     margin-left: 1rem;
     margin-right: 2rem;
+    
 }
 
 .blog h3 {
     font-size: 1.5rem;
+    margin-left: 0rem;
 }
 
 .dogs-adopted h3,
