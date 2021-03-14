@@ -294,6 +294,7 @@ footer a {
 .adopted
     {
     border: #008A00 solid 3px;
+    background-color:lightgreen;
 }
 
 .no-border {
