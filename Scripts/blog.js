@@ -26,7 +26,7 @@ blog1Para1.textContent = 'Lotsa pats noodle horse very good spot clouds fat boi,
 
 // create first blog paragraph 2
 let blog1Para2 = document.createElement('p');
-blog1Para2.textContent = 'Bork long woofer I am bekom fat ur givin me a spook vvv. Shoober adorable doggo you are doin me a concern adorable doggo very good spot tungg dat tungg tho wrinkler wow very biscit doge, very jealous pupper he made many woofs doggo maximum borkdrive waggy wags clouds h*ck. Read more...';
+blog1Para2.textContent = 'Bork long woofer I am bekom fat ur givin me a spook vvv. Shoober adorable doggo you are doin me a concern adorable doggo very good spot tungg dat tungg tho wrinkler wow very biscit doge, very jealous pupper he made many woofs doggo maximum borkdrive waggy wags clouds h*ck.';
 
 
 // BLOG 2
@@ -54,7 +54,7 @@ blog2Para1.textContent = 'Lotsa pats noodle horse very good spot clouds fat boi,
 
 // create 2nd blog paragraph 2
 let blog2Para2 = document.createElement('p');
-blog2Para2.textContent = 'Bork long woofer I am bekom fat ur givin me a spook vvv. Shoober adorable doggo you are doin me a concern adorable doggo very good spot tungg dat tungg tho wrinkler wow very biscit doge, very jealous pupper he made many woofs doggo maximum borkdrive waggy wags clouds h*ck. Read more...';
+blog2Para2.textContent = 'Bork long woofer I am bekom fat ur givin me a spook vvv. Shoober adorable doggo you are doin me a concern adorable doggo very good spot tungg dat tungg tho wrinkler wow very biscit doge, very jealous pupper he made many woofs doggo maximum borkdrive waggy wags clouds h*ck.';
 
 
 // BLOG 3
@@ -84,24 +84,26 @@ blog3Para1.textContent = 'Lotsa pats noodle horse very good spot clouds fat boi,
 
 // create 3rd blog paragraph 2
 let blog3Para2 = document.createElement('p');
-blog3Para2.textContent = 'Bork long woofer I am bekom fat ur givin me a spook vvv. Shoober adorable doggo you are doin me a concern adorable doggo very good spot tungg dat tungg tho wrinkler wow very biscit doge, very jealous pupper he made many woofs doggo maximum borkdrive waggy wags clouds h*ck. Read more...';
+blog3Para2.textContent = 'Bork long woofer I am bekom fat ur givin me a spook vvv. Shoober adorable doggo you are doin me a concern adorable doggo very good spot tungg dat tungg tho wrinkler wow very biscit doge, very jealous pupper he made many woofs doggo maximum borkdrive waggy wags clouds h*ck.';
 
-const blogArray = [
-  { blogPost: blogPost1,
+const blogArray = [{
+    blogPost: blogPost1,
     image: blogImg1,
     textContainer: blogText1,
     blogTitle: blogTitle1,
     blogPara1: blog1Para1,
     blogPara2: blog1Para2,
   },
-  { blogPost: blogPost2,
+  {
+    blogPost: blogPost2,
     image: blogImg2,
     textContainer: blogText2,
     blogTitle: blogTitle2,
     blogPara1: blog2Para1,
     blogPara2: blog2Para2,
   },
-  { blogPost: blogPost3,
+  {
+    blogPost: blogPost3,
     image: blogImg3,
     textContainer: blogText3,
     blogTitle: blogTitle3,
