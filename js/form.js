@@ -24,7 +24,7 @@ form.addEventListener('submit', function(e){
     const fieldName = form[i].id;
 
     console.log(`${fieldName}: ${fieldData}`);
-    submitData[fieldData] = fieldName;
+    submitData[fieldName] = fieldData;
   }
 console.log(submitData);
 });
