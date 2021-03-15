@@ -475,18 +475,21 @@ fieldset {
 label,
 legend {
     font-weight: bold;
-    padding-bottom: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 input,
 select {
     display: block;
-    padding-bottom: .75rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     width: 150%;
 }
 
 .location select {
     width: 25%;
+    margin-left:1rem;
 }
 
 .city-state {
@@ -519,8 +522,27 @@ select {
     color: black;
 }
 
+.first-time {
+    margin-bottom: 2rem;
+}
+
 .first-time,
-.first-time div,
+.radio-button {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left:1rem;
+}
+
+@media screen and (max-width: 576px) {
+    .first-time {
+        width: 90%;
+    }
+}
+
+/* styling for Dogs Adopted section on contact page*/
 .adopted-row {
     display: flex;
     flex-direction: row;
@@ -528,34 +550,25 @@ select {
     align-content: center;
     flex-wrap: wrap;
     margin-bottom: .5rem;
-}
-
-
-/* .radio_button {
-    width:50%;
-} */
-
-.radio_button label {
-    display: inline-block;
-    margin: 0rem 0;
     width: 50%;
-    text-align: center;
-}
-
-.radio_button input {
-    margin-left: 1rem;
 
 }
+@media screen and (max-width: 576px) {
+    .adopted-row {
+        width: 90%;
+    }
+}
 
 
-/* styling for Dogs Adopted section on contact page*/
+
+
 .dogs-adopted {
     margin-top: 1rem;
 }
 
 .dogs-adopted img {
     width: 25%;
-    height:auto;
+    height: auto;
     margin-left: 2rem;
     margin-top: 1rem;
 }
