@@ -29,21 +29,31 @@ $('.clear-more-dogs').click(function(){
 
 }
 
-// change the border on dog tiles to BLUE when user mouses over the article
-
+// change the border on dog tiles to Green and background to light green when user mouses over the article
 $('article').on('mouseover', function (e) {
   $(this).removeClass('noshow');
   $(this).addClass('show');
 })
 
+// change the border on dog tiles to Gray and no background when user mouses off the article
 $('article').on('mouseout', function (e) {
   $(this).removeClass('show');
   $(this).addClass('noshow');
 })
 
+// permanently change the border on dog tiles to Green, background to light green and button text to adopted when clicks on the adopt button
 $('.dog-button').on('click', function (e) {
   $(this).parent().addClass('adopted');
   $(this).text('Adopted');
+})
+
+// refresh page to clear tile formatting and total Cost amts when Clear Selection button is clicked
+$('.clear-dogs').click(function (e) {
+  location.href = "./index.html";
+  })
+
+$('.clear-more-dogs').click(function (e) {
+  location.href = "./dogs.html";
 })
 
 // //clear selected adoption change the border to gray and the dollar amount in the header to 0 when the user clicks on the clear selection button
@@ -58,11 +68,3 @@ $('.dog-button').on('click', function (e) {
 //   $('article').addClass('noshow');
 //   $('.dog-button').text('Adopt');
 // })
-
-$('.clear-dogs').click(function (e) {
-  location.href = "./index.html";
-  })
-
-$('.clear-more-dogs').click(function (e) {
-  location.href = "./dogs.html";
-})

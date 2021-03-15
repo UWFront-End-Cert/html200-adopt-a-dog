@@ -293,7 +293,9 @@ nav a {
 }
 
 .show {
-    border: blue solid 3px;
+    border:  #008A00 solid 3px;
+    background-color: lightgreen;
+
 }
 
 .adopted {
