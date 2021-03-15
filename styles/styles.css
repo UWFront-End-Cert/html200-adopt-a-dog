@@ -2,7 +2,7 @@
 /*--@media for 375px Line 585--*/
 /*--@media for 768px Line 952--*/
 * {
-  box-sizing: border-box;;
+  box-sizing: border-box;
 }
 /*--Header-All-pages--*/
 header {
@@ -11,7 +11,7 @@ header {
   background-size:auto;
   height: 25rem;
   width: 100%;
-  background: linear-gradient(to right, #A52A2A, #A9A9A9);
+  /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
 }
 header p {
   color: #7cfc00;
@@ -563,7 +563,7 @@ input {
     width: 100%;
     background-image: url(../images/header-image.jpg);
     height: 12rem;
-    background: linear-gradient(to right, #A52A2A, #A9A9A9);
+    /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
   }
   .cart-box {
     display: flex;
