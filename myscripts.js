@@ -21,7 +21,7 @@ const dogBlogData =
     blogText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odio eleifen dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.'
     }
 ];
-
+let total = 0.00;
 function arraySummer(dogCost) {
     totalCostArray.push (dogCost);
 
@@ -29,7 +29,7 @@ function arraySummer(dogCost) {
     totalCostArray.push(0);
     let total = (totalCostArray.reduce(summer));
     alert('Your total cost is $' + total);
-
+    $('#checkout-value').html('$' + total);
 }
 
 function dogInfoSheetReturn(dogCost,dogName, dogBreed) {

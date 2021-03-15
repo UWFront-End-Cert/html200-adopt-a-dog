@@ -42,6 +42,13 @@ header {
     color:white;
     margin-top: 3%;
 }
+#header-checkout-button {
+    display:block;
+    width:70px;
+}
+#checkout-value {
+    display:inline;
+}
 .shopping-cart {
     width:20px;
     padding-right: 2px;
