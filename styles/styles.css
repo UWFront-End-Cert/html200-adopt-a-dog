@@ -1,17 +1,17 @@
 /*--Media Query Locations--*/
 /*--@media for 375px Line 585--*/
-/*--@media for 768px Line 952--*/
+/*--@media for 768px Line 927--*/
 * {
   box-sizing: border-box;
 }
 /*--Header-All-pages--*/
 header {
   display: flex;
-  background-image: url(../images/header-image.jpg);
+  background-image: url(../images/cute-dogs.jpg);
   background-size: 100% 100%;
   height: 25rem;
   width: 100%;
-  /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
+  background: linear-gradient(to right, #A52A2A, #A9A9A9);
 }
 header p {
   color: #7cfc00;
@@ -38,7 +38,11 @@ h3 {
 }
 .dog-img-header {
   width: 100%;
-  padding-top: 10rem;
+  padding-top: 14rem;
+}
+.dog-img-header p {
+  color: #ffffff;
+  font-size: 1.5rem;
 }
 .cart-container {
   flex-direction: row;
@@ -561,10 +565,10 @@ input {
   header {
     display: flex;
     width: 100%;
-    background-image: url(../images/header-image.jpg);
-    background-size: contain;
+    background-image: url(../images/cute-dogs.jpg);
+    background-size: 100% 100%;
     height: 12rem;
-    /*background: linear-gradient(to right, #A52A2A, #A9A9A9);*/
+    background: linear-gradient(to right, #A52A2A, #A9A9A9);
   }
   .cart-box {
     display: flex;
@@ -595,13 +599,14 @@ input {
     width: 20rem;
     padding: 0;
     margin-left: 1rem;
+    color: #ffffff;
   }
   .svg-dog-header {
     display: flex;
     flex-direction: column;
     width: 50%;
     margin-left: 1rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
   .nav-head-margin {
     padding-top: 1rem;
@@ -922,25 +927,30 @@ input {
 @media only screen and (max-width: 768px) and (min-width: 700px) {
   header {
     display: flex;
-    background-image: url(../images/header-image.jpg);
+    background-image: url(../images/cute-dogs.jpg);
+    background: linear-gradient(to right, #A52A2A, #A9A9A9);
     background-size: 100% 100%;
     height: 15rem;
-    width: 100;
+    width: 100%;
   }
   .dog-img-header {
     margin: 0;
-    padding: 0;
+    padding-top: 1rem;
+  }
+  .dog-img-header p {
+    color: #ffffff;
   }
   .svg-dog-header {
     display: flex;
     width: 100%;
     margin: 0;
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-left: 1rem;
   }
   .svg-dog-header p {
     font-size: inherit;
     width: 200%;
+    color: #ffffff;
   }
   .nav-head {
     padding: 0 0 1rem 3rem;
