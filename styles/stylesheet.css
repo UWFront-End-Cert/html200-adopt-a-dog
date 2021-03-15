@@ -534,6 +534,7 @@ select {
     align-items: center;
     justify-content: flex-start;
     margin-left:1rem;
+    margin-right:2rem;
 }
 
 @media screen and (min-width: 576px) and (max-width: 1279px) {
@@ -550,7 +551,7 @@ select {
 }
 
 #resultY {
-    margin-right:2rem;
+
 }
 
 /* styling for Dogs Adopted section on contact page*/
