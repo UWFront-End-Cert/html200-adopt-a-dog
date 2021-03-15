@@ -46,6 +46,11 @@ h4,
     margin-bottom: 1rem;
 }
 
+.blog h2 {
+    font-size: 2rem;
+}
+
+
 h3,
 h4,
 .dogs p,
@@ -56,8 +61,10 @@ h4,
 }
 
 .blog h3 {
-    font-size: 1.5rem;
+
     margin-left: 0rem;
+    font-size: 1.5rem;
+
 }
 
 .dogs-adopted h3,
@@ -68,10 +75,12 @@ h4,
 
 aside h2 {
     margin-top: 3rem;
+    font-size: 1.5rem;
 }
 
 aside h3 {
     margin-left: 0rem;
+    font-size: 1rem;
 }
 
 /* styling for header */
@@ -545,6 +554,7 @@ select {
 
 .dogs-adopted img {
     width: 25%;
+    height:auto;
     margin-left: 2rem;
     margin-top: 1rem;
 }
