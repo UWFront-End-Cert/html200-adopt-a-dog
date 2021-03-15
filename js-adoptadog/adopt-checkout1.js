@@ -68,13 +68,28 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
     alert('Thank you. The form information has been received');
 
-    let formInput = document.getElementsByTagName('input');
-for(let j = 1; j < formInput.length; j++) {
-    console.log(formInput[j].value);
+
+let formInput = document.getElementsByTagName('input');
+let formLabel = document.getElementsByTagName('label');
+for(let j = 1,  l = 0; j < formInput.length, l < formLabel.length-1; j++, l++) {
+    console.log(formLabel[l].innerHTML + ': ' + formInput[j].value);
 }
+
+
+// let formInput = document.getElementsByTagName('input');
+// for(let j = 1; j < formInput.length; j++) {
+//     console.log(formInput[j].value);
+// }
+
+// let formLabel = document.getElementsByTagName('label');
+// for(let l = 0; l < formLabel.length-1; l++) {
+//     console.log(formLabel[l].innerHTML);
+// }
+
 });
 
 // let formInput = document.getElementsByTagName('input');
 // for(let j = 1; j < formInput.length; j++) {
 //     console.log(formInput[j].value);
 // }
+
