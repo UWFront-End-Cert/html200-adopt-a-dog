@@ -558,11 +558,16 @@ select {
     align-content: center;
     flex-wrap: wrap;
     margin-bottom: .5rem;
+    
 }
 
 
 .dogs-adopted {
     margin-top: 1rem;
+}
+
+.adopted-row{
+    width:50%;
 }
 
 .dogs-adopted img {
