@@ -549,6 +549,10 @@ select {
     }
 }
 
+#resultY {
+    margin-right:2rem;
+}
+
 /* styling for Dogs Adopted section on contact page*/
 .adopted-info,
 .adopted-row {
