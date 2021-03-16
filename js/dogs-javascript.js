@@ -8,23 +8,21 @@ function dogInfo(dog, breed, cost) {
 let totalCost = 0;
 function sumCost(cost) {
 totalCost = parseFloat((cost + totalCost).toFixed(2)); 
-alert('Total Adoption Fees: $' + totalCost);
+alert('Total Adoption Fees: $' + totalCost.toFixed(2));
 
 //Update total cost in header with cummulative amount 
 
 $('.dog-button').click(function(){
-  $('.total').text(totalCost);
+  $('.total').text('$'+totalCost.toFixed(2));
 });
 
 // set total cost in header to 0 when Clear Selection button is clicked
 $('.clear-dogs').click(function(){
   $('.total').text('$0.00');
-  // $(totalCost).val(0);
 });
 
 $('.clear-more-dogs').click(function(){
   $('.total').text('$0.00');
-  // $(totalCost).val(0);
 });
 
 }
