@@ -30,7 +30,6 @@ header h1 {
 
 header h2 {
   color: white;
-  position: absolute;
   font-size: 1.5rem;
   font-family: sans-serif;
   font-style: italic;
@@ -73,6 +72,12 @@ header h2 {
   margin: 4%;
   min-width: 227px;
   max-width: 484px;
+}
+
+.total-cart {
+  display: grid;
+  margin: 6rem;
+  min-width: 7rem;
 }
 
 .hdrtxt {
