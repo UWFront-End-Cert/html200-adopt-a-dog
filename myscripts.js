@@ -28,9 +28,16 @@ function arraySummer(dogCost) {
     let summer = (cost, totalCost) => cost + totalCost;
     totalCostArray.push(0);
     let total = (totalCostArray.reduce(summer));
-    alert('Your total cost is $' + total);
+    // alert('Your total cost is $' + total);
     $('#checkout-value').html('$' + total);
 }
+$('button').click(function(event) {
+    $('button').removeClass('button-effect');
+    $(this).addClass('button-effect');
+});
+
+
+
 
 function dogInfoSheetReturn(dogCost,dogName, dogBreed) {
     alert('Your dog cost ' + '$' + dogCost + ' and is named ' + dogName + ' of the breed ' + dogBreed + '.');

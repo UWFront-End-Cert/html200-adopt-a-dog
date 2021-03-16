@@ -176,6 +176,14 @@ h2.adopt-primary-header {
     border-style: double;
     padding:5px;
 }
+.zoom-effect {
+    transform:scale(1.5);
+}
+
+
+
+  
+
 
 .main-page .dog-holder {
     margin-top:10%;
@@ -185,11 +193,21 @@ h2.adopt-primary-header {
 dog-cost {
     font-weight:600;
 }
+
 .adopt-button {
   width:100%;
   height:30px;
   color:white;
-  background-color:green;
+  border-radius:0.6em;
+  background-color:rgb(50, 212, 50);
+  position:relative;
+  overflow:hidden;
+}
+.button-effect {
+
+    transition: box-shadow 300 ms ease-in-out, color 600ms ease-in-out;
+    background-color:rgb(28, 133, 28);
+    
 }
 footer {
     margin-top:50px;
