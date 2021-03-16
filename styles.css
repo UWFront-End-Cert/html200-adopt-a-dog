@@ -202,9 +202,10 @@ dog-cost {
   background-color:rgb(50, 212, 50);
   position:relative;
   overflow:hidden;
+  transition: 1s all ease;
+  
 }
 .button-effect {
-
     transition: box-shadow 300 ms ease-in-out, color 600ms ease-in-out;
     background-color:rgb(28, 133, 28);
     
