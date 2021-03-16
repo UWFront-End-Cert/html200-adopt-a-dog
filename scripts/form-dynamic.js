@@ -5,3 +5,8 @@ document.getElementById('formSubmitButton').addEventListener('click', function (
   const formData = document.getElementById('formContainter');
   console.log(formData);
 });
+
+function submitform()
+{
+  document.checkoutform.submit();
+}
