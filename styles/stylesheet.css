@@ -554,10 +554,6 @@ select {
     }
 }
 
-#resultY {
-
-}
-
 /* styling for Dogs Adopted section on contact page*/
 .adopted-info,
 .adopted-row {
@@ -625,13 +621,16 @@ footer ul {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap;
-}
+ }
 
 footer a,
 footer p,
 footer li {
     color: white;
+}
+
+footer li{
+ 
 }
 
 footer img {
