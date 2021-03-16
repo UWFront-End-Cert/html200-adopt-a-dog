@@ -23,3 +23,13 @@ function infoRipper(dogName) {
     }
   }
 }
+
+//Applies Effect to dogtiles
+
+
+$('.dog-card').hover(
+  function(){
+  $(this).addClass('blue-border')
+}, function(){
+  $(this).removeClass('blue-border');
+});

@@ -206,3 +206,5 @@ form.addEventListener('submit', function(e) {
   }
   console.log(submission);
 });
+
+//Refactor this code so that it does it but with Jqueery. 
