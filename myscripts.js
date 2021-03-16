@@ -31,10 +31,7 @@ function arraySummer(dogCost) {
     // alert('Your total cost is $' + total);
     $('#checkout-value').html('$' + total);
 }
-$('button').click(function(event) {
-    $('button').removeClass('button-effect');
-    $(this).addClass('button-effect');
-});
+
 
 
 
@@ -69,3 +66,14 @@ function blogFieldsGenerator() {
             blogTextHolder.appendChild(blogSubPara);    
         }
 }
+
+
+$('button').click(function(event) {
+    $('button').removeClass('button-effect');
+    $(this).addClass('button-effect');
+});
+$('.adoption-pic').hover(function(){
+    $(this).addClass('zoom-effect');
+    }, function(){
+    $(this).removeClass('zoom-effect');
+    });
