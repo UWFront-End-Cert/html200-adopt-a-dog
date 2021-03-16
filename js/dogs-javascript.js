@@ -27,7 +27,7 @@ $('.clear-more-dogs').click(function(){
 
 }
 
-// change the border on dog tiles to Green and background to light green when user mouses over the article
+// change the border on dog tiles to Green and background to light blue when user mouses over the article
 $('article').on('mouseover', function (e) {
   $(this).removeClass('noshow');
   $(this).addClass('show');
