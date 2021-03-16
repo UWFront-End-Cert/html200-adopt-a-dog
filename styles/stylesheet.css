@@ -378,6 +378,7 @@ aside img {
     display: none;
     text-align: center;
     margin-top: 2rem;
+    margin-bottom:1rem;
 }
 
 @media screen and (max-width: 575px) {
