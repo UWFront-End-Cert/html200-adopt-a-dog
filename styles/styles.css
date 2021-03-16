@@ -11,7 +11,7 @@ header {
   background-size: 100% 100%;
   height: 25rem;
   width: 100%;
-  background: linear-gradient(to right, #A52A2A, #A9A9A9);
+  background: linear-gradient(to right, #a52a2a, #a9a9a9);
 }
 header p {
   color: #7cfc00;
@@ -21,10 +21,10 @@ header p {
   margin: 0 0 0 5rem;
 }
 h1 {
-  color:#2f4f4f;
+  color: #2f4f4f;
 }
 h3 {
-  color:#2f4f4f;
+  color: #2f4f4f;
   font-weight: bold;
   font-size: 1.5rem;
   justify-content: left;
@@ -38,7 +38,11 @@ h3 {
 }
 .dog-img-header {
   width: 100%;
-  padding-top: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 14rem; */
 }
 .dog-img-header p {
   color: #ffffff;
@@ -74,16 +78,16 @@ h3 {
   display: flex;
   flex-direction: row;
   padding-left: 40%;
-  background-color: #DCDCDC;
-  padding: .5rem 0 2rem 11rem;
+  background-color: #dcdcdc;
+  padding: 0.5rem 0 2rem 11rem;
 }
 .nav-item-head {
-  color:#2f4f4f;
+  color: #2f4f4f;
   font-weight: 600;
   text-decoration: none;
   font-size: 1.2rem;
   padding-top: 2rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
 }
 .nav-head-margin {
@@ -126,11 +130,11 @@ h3 {
   justify-content: space-evenly;
 }
 .title-index {
-  color:#2f4f4f;
+  color: #2f4f4f;
   font-weight: 700;
   font-size: 2rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  padding-left: .8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 0.8rem;
 }
 .flex-container-index-1 {
   display: flex;
@@ -139,7 +143,7 @@ h3 {
   flex-wrap: wrap;
 }
 .dog-card-index {
-  border:3px solid #e8e8e8;
+  border: 3px solid #e8e8e8;
   width: 28%;
   height: 20%;
   display: flex;
@@ -161,24 +165,24 @@ h3 {
   font-weight: bold;
   font-size: 1rem;
   margin-left: 1rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .price-index {
   font-size: 1.1rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  padding-left: .5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 0.5rem;
 }
 .index-text {
   color: #696969;
   font-size: 1.4rem;
   font-style: normal;
-  padding: 0 .5rem 0 1.4rem;
+  padding: 0 0.5rem 0 1.4rem;
   width: 100%;
 }
 .button-index {
-  background-color:  #88cc00;
+  background-color: #88cc00;
   color: #ffffff;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
   width: 88%;
@@ -199,7 +203,7 @@ h3 {
   justify-content: space-around;
   color: #008080;
   margin-left: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.2rem;
 }
 .blog-text {
@@ -211,7 +215,7 @@ h3 {
   padding-bottom: 1rem;
   color: #008080;
   font-size: 1.1rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
 }
 .see-more {
@@ -222,9 +226,9 @@ h3 {
   align-items: center;
   font-weight: bold;
   text-decoration: none;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
-  padding: .7rem 2.5rem .7rem 2.5rem;
+  padding: 0.7rem 2.5rem 0.7rem 2.5rem;
   margin: 1rem 0 2rem 39%;
 }
 footer {
@@ -270,7 +274,7 @@ footer p {
   border: 2px solid #e8e8e8;
   width: 20rem;
   display: flex;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 .dog-card > .dog-item-image {
   width: 100%;
@@ -287,18 +291,18 @@ footer p {
   padding-left: 0;
   margin-left: 0;
 }
-.total-listing { 
+.total-listing {
   font-weight: bold;
   font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .price-listing {
-display: flex;
+  display: flex;
 }
 .flex-dog-button {
   background-color: #88cc00;
   color: white;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   width: 90%;
@@ -322,24 +326,24 @@ display: flex;
   width: 80%;
   padding-top: 10rem;
   gap: 1rem;
-  margin-left: 13%;;
+  margin-left: 13%;
 }
 .dog-listing-title {
-  color:#2f4f4f;
+  color: #2f4f4f;
   width: 100%;
   font-size: 2.2rem;
   margin: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .dog-name {
-  color:#2f4f4f;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #2f4f4f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
   margin-left: 1rem;
 }
 /*--Start Dog-blog.html--*/
 .blog-adoptadog-h1 {
-  color:#2f4f4f;
+  color: #2f4f4f;
   padding: 3rem;
   padding-left: 0;
   font-size: 2rem;
@@ -389,7 +393,7 @@ main {
   margin: 0;
 }
 .blog-topic {
-  color:#2f4f4f;
+  color: #2f4f4f;
   width: 100%;
   margin-top: 0;
   padding-top: 0;
@@ -417,7 +421,7 @@ main {
   justify-content: space-around;
 }
 .title-adoptadog {
-  color:#2f4f4f;
+  color: #2f4f4f;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .form-group-2 {
@@ -437,12 +441,12 @@ main {
   border: 1px solid #000000;
 }
 .dogs-adopted {
-  color:#2f4f4f;
+  color: #2f4f4f;
   font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 1rem;
 }
-.adopt-final{
+.adopt-final {
   width: 10%;
 }
 .adopted-dogs {
@@ -461,15 +465,15 @@ main {
   color: #008080;
 }
 .going-home {
-  color:#2f4f4f;
+  color: #2f4f4f;
   padding: 0;
-  margin-left: 0; 
+  margin-left: 0;
 }
 .last-button {
   width: 15%;
   height: 3rem;
   font-size: 1.2rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   background-color: #88cc00;
   color: white;
@@ -478,7 +482,7 @@ main {
 .total-price {
   color: #000000;
   padding-left: 1rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .inline-price {
   display: flex;
@@ -489,20 +493,20 @@ main {
   color: #000000;
   font-weight: 800;
   font-size: 1.1rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .price-adopt {
   color: #000000;
   font-weight: 100;
   font-size: 1.2rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 1%;
 }
 .cost-container {
   margin-top: 3rem;
 }
 .cost {
-  color:#2f4f4f;
+  color: #2f4f4f;
   font-size: 1.2rem;
   font-weight: bold;
   margin-left: 1rem;
@@ -530,7 +534,7 @@ select {
   background-color: #88cc00;
 }
 legend {
-  color:#2f4f4f;
+  color: #2f4f4f;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -549,7 +553,7 @@ label {
   padding-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
-  color:#2f4f4f;
+  color: #2f4f4f;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 input {
@@ -568,12 +572,12 @@ input {
     background-image: url(../images/cute-dogs.jpg);
     background-size: 100% 100%;
     height: 12rem;
-    background: linear-gradient(to right, #A52A2A, #A9A9A9);
+    background: linear-gradient(to right, #a52a2a, #a9a9a9);
   }
   .cart-box {
     display: flex;
     flex-direction: row-reverse;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     width: 30%;
   }
   .svg-cart {
@@ -617,12 +621,12 @@ input {
     padding: 0rem 0 1rem 1.4rem;
   }
   .nav-item-head {
-    color:#2f4f4f;
+    color: #2f4f4f;
     text-decoration: none;
     font-size: 1rem;
   }
   .space {
-    padding: 0 .5rem 0 .5rem;
+    padding: 0 0.5rem 0 0.5rem;
   }
   .main-index {
     display: flex;
@@ -646,7 +650,7 @@ input {
     padding: 0 1.5rem 0 2.1rem;
   }
   .title-index {
-    color:#2f4f4f;
+    color: #2f4f4f;
     font-size: 1.5rem;
     padding: 0;
   }
@@ -654,7 +658,7 @@ input {
     justify-content: space-around;
     color: #008080;
     margin-left: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2rem;
   }
   .flex-container-index-1 {
@@ -672,8 +676,8 @@ input {
     padding: 0;
   }
   .dog-name {
-    color:#2f4f4f;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #2f4f4f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3em;
   }
   .pricing {
@@ -691,7 +695,7 @@ input {
     color: #696969;
   }
   .button-index {
-    background-color:  #88cc00;
+    background-color: #88cc00;
     color: #ffffff;
     font-size: 1.5rem;
   }
@@ -727,7 +731,7 @@ input {
     color: #ffffff;
     text-decoration: none;
   }
-/*------Dog Listing-----*/
+  /*------Dog Listing-----*/
   .main-dog-list {
     display: flex;
     justify-content: center;
@@ -746,7 +750,7 @@ input {
     margin: 3rem 0 2rem 0;
   }
   .dog-listing-title {
-    color:#2f4f4f;
+    color: #2f4f4f;
     width: 100%;
     margin: 0;
     font-size: 1.5rem;
@@ -755,24 +759,24 @@ input {
     border: 2px solid #e8e8e8;
     width: 20rem;
     display: flex;
-    margin: .5rem;
+    margin: 0.5rem;
   }
   .dog-card > .dog-item-image {
     width: 100%;
   }
   .dog-name {
-    color:#2f4f4f;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #2f4f4f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     margin-left: 1rem;
-  } 
+  }
   .pricing-listing {
     display: flex;
     flex-direction: row;
     padding: 0;
     margin: 0;
   }
-  .total-listing { 
+  .total-listing {
     font-weight: bold;
   }
   .flex-dog-button {
@@ -794,7 +798,7 @@ input {
     padding-left: 0;
   }
   .blog-adoptadog-h1 {
-    color:#2f4f4f;
+    color: #2f4f4f;
     font-size: 1.5rem;
     margin: 0 0 0 1rem;
     padding: 1rem 0 1rem 2rem;
@@ -817,7 +821,7 @@ input {
     margin: 0;
   }
   .blog-topic {
-    color:#2f4f4f;
+    color: #2f4f4f;
     font-size: 1.2rem;
     width: 30rem;
     margin-top: 1rem;
@@ -832,7 +836,7 @@ input {
   .hide-text {
     display: none;
   }
-/*------Checkout-----*/
+  /*------Checkout-----*/
   fieldset {
     flex-direction: row;
     width: 60%;
@@ -846,7 +850,7 @@ input {
     width: 86%;
   }
   .dogs-adopted {
-    color:#2f4f4f;
+    color: #2f4f4f;
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 1rem;
@@ -863,12 +867,12 @@ input {
     flex-direction: column;
     line-height: 0.8rem;
     width: 100%;
-    font-size: .5rem;
-    font-family:'Times New Roman', Times, serif;
+    font-size: 0.5rem;
+    font-family: "Times New Roman", Times, serif;
     color: #008080;
   }
   .going-home {
-    color:#000000;
+    color: #000000;
   }
   .pickup {
     width: 40%;
@@ -881,7 +885,7 @@ input {
     padding-bottom: 1rem;
     font-size: 1rem;
     font-weight: bold;
-    color:#2f4f4f;
+    color: #2f4f4f;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .inline-price {
@@ -891,7 +895,7 @@ input {
   .total-cost {
     color: #000000;
     font-weight: 500;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
   }
   .total-price {
@@ -913,7 +917,7 @@ input {
     width: 80%;
     height: 3rem;
     font-size: 1.2rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     background-color: #88cc00;
     color: white;
@@ -928,7 +932,7 @@ input {
   header {
     display: flex;
     background-image: url(../images/cute-dogs.jpg);
-    background: linear-gradient(to right, #A52A2A, #A9A9A9);
+    background: linear-gradient(to right, #a52a2a, #a9a9a9);
     background-size: 100% 100%;
     height: 15rem;
     width: 100%;
@@ -956,16 +960,16 @@ input {
     padding: 0 0 1rem 3rem;
   }
   .nav-item-head {
-    color:#2f4f4f;
+    color: #2f4f4f;
     text-decoration: none;
   }
   .title-index {
-    color:#2f4f4f;
+    color: #2f4f4f;
     font-weight: bold;
     font-size: 1.5rem;
   }
   .dog-listing-container {
-    width: 100%; 
+    width: 100%;
   }
   .adopt-a-dog-intro {
     display: flex;
@@ -994,58 +998,58 @@ input {
     flex-wrap: wrap;
   }
   .dog-card-index {
-    width: 37%;;
+    width: 37%;
     flex-wrap: wrap;
   }
   .dog-name {
-    color:#2f4f4f;
+    color: #2f4f4f;
     font-size: 1.3em;
   }
   .index-text {
     color: #696969;
     font-size: 1.4rem;
     font-style: normal;
-    padding: 0 .5rem 1rem 1.4rem;
+    padding: 0 0.5rem 1rem 1.4rem;
     width: 100%;
     margin: 0;
   }
   .dog-blog-aside {
     display: none;
   }
-/*----bottom of index page-----*/
-.dog-listing-title {
-  color:#2f4f4f;
-  width: 100%;
-  margin: 0;
-  font-size: 1.5rem;
-}
-.price-listing {
-  font-size: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.dog-card-1 {
-  flex-wrap: wrap;
-  width: 40%;
-}
-.dog-name {
-  color:#2f4f4f;
-  margin-left: .5rem;
-}
-.pricing-listing {
-  display: flex;
-  flex-direction: row;
-}
-.total-listing { 
-  font-weight: bold;
-  font-size: .8rem;
-  width: 50%;
-  margin: 0;
-  padding-top: 1rem;
-}
-.price-listing {
-  display: flex;
-  margin: 0;
-  padding: 1rem 0 0 0;
+  /*----bottom of index page-----*/
+  .dog-listing-title {
+    color: #2f4f4f;
+    width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .price-listing {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .dog-card-1 {
+    flex-wrap: wrap;
+    width: 40%;
+  }
+  .dog-name {
+    color: #2f4f4f;
+    margin-left: 0.5rem;
+  }
+  .pricing-listing {
+    display: flex;
+    flex-direction: row;
+  }
+  .total-listing {
+    font-weight: bold;
+    font-size: 0.8rem;
+    width: 50%;
+    margin: 0;
+    padding-top: 1rem;
+  }
+  .price-listing {
+    display: flex;
+    margin: 0;
+    padding: 1rem 0 0 0;
   }
   /*----Dog Blog----*/
   .container-blog {
@@ -1053,7 +1057,7 @@ input {
     margin-left: 4rem;
   }
   .blog-adoptadog-h1 {
-    color:#2f4f4f;
+    color: #2f4f4f;
     padding: 2rem;
     padding-left: 0;
     font-size: 2rem;
@@ -1078,7 +1082,7 @@ input {
     width: 100%;
   }
   .blog-topic {
-    color:#2f4f4f;
+    color: #2f4f4f;
     margin: 0;
   }
   /*--------Checkout----*/
@@ -1102,12 +1106,12 @@ input {
     margin-left: 1rem;
   }
   .dogs-adopted {
-    color:#2f4f4f;
+    color: #2f4f4f;
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 1rem;
   }
-  .adopt-final{
+  .adopt-final {
     width: 10%;
   }
   /*.adopted-dogs {
@@ -1121,8 +1125,8 @@ input {
     flex-direction: column;
     line-height: 0.8rem;
     width: 100%;
-    font-size: .5rem;
-    font-family:'Times New Roman', Times, serif;
+    font-size: 0.5rem;
+    font-family: "Times New Roman", Times, serif;
     color: #000000;
     margin: 0;
     padding-left: 1rem;
@@ -1130,7 +1134,7 @@ input {
   .total-cost {
     color: #000000;
     font-weight: 500;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
   }
   .total-price {
