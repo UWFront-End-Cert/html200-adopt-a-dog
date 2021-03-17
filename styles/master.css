@@ -84,15 +84,16 @@ p {
 }
 
 .cart-icon {
-  width: 2rem;
+  width: 1.5rem;
   padding-top: 2rem;
   padding-right: 1rem;
 }
 
 .btn-checkout-header {
   background-color: #90b52a;
+  font-size: .75rem;
   color: #fff;
-  margin-top: .75rem;
+  margin-top: .5rem;
   margin-right: 4rem;
   margin-left: 4rem;
   padding: .3rem 2.5rem;
@@ -439,7 +440,7 @@ input[type="radio"] {
   .content-right {
     display: none;
   }
-  
+
   .content-left {
     width: 95%;
   }
