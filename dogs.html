@@ -4,188 +4,176 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>html200-adopt-a-dog</title>
-      <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="app.js"></script>
   </head>
   <body>
 
-
     <header class="header-images">
       <div class="background2Box">
-      <img class="logoHeader" src="./images/adoptadog-logo.svg" alt="Company Logo">
-      <h2 class="headertext"> Seattle's premiere dog adoption agency</h2>
-    </div>
-      <a class="checkout "href="./checkout.html">Checkout</a>
+        <img class="logoHeader" src="./images/adoptadog-logo.svg" alt="Company Logo" id="adoptadog-logo">
+        <h2 class="hdrtxt">Seattle's premiere dog adoption agency</h2>
+      </div>
+        <a class="checkout" href="./Contact.html">Checkout</a>
+
     </header>
 
     <nav>
       <ul>
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="#">Dogs</a>
-        </li>
-        <li>
-          <a href="./blog.html">Blog</a>
-        </li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Dogs</a></li>
+        <li><a href="./blog.html">Blog</a></li>
       </ul>
     </nav>
 
-    <main id="wrapper">
+    <main class="wrapper">
       <section class="flex-container">
         <h2 class="div1">Here are all of our Dogs!</h2>
-          <article class="div2">
+          <article class="dogs">
 
-            <img class="dogimg" src="./images/murphy-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Murphy', breed = 'Boxer', price = '$135')" src="./images/murphy-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Murphy</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="Adopt-link"href="#link">Adopt</a>
+            <h4>Cost to Adopt: $135</h4>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 135)" class="adopt-link">Adopt</a>
           </article>
 
-          <article>
+          <article class="dogs">
 
-            <img class="dogimg" src="./images/poppy-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Poppy', breed = 'Mix', price = '$110')" src="./images/poppy-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Poppy</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="Adopt-link" href="#link">Adopt</a>
+            <h4>Cost to Adopt: $110</h4>
+            <p>does this work? ummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 110)" class="adopt-link">Adopt</a>
           </article>
 
-          <article class="div2">
+          <article class="dogs">
 
-            <img class="dogimg" src="./images/jack-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Jack', breed = 'Yellow Lab', price = '$115')" src="./images/jack-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Jack</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="Adopt-link" href="#link">Adopt</a>
+            <h4>Cost to Adopt: $115</h4>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 115)" class="adopt-link">Adopt</a>
           </article>
 
-          <article class="div2">
+          <article class="dogs">
 
-            <img  class="dogimg"src="./images/duffy-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Duffy', breed = 'Pointer', price = '$123.45')" src="./images/duffy-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Duffy</h3>
             <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a href="#link" class="Adopt-link">Adopt</a>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 123.45)" class="adopt-link">Adopt</a>
           </article>
 
-          <article class="div2">
+          <article class="dogs">
 
-            <img class="dogimg" src="./images/lucas-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Lucas', breed = 'Pointer', price = '$130')" src="./images/lucas-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Lucas</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="Adopt-link"href="#link">Adopt</a>
+            <h4>Cost to Adopt: $130</h4>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 130)" class="adopt-link">Adopt</a>
           </article>
 
-          <article class="div2">
+          <article class="dogs">
 
-            <img  class="dogimg" src="./images/jake-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Jake', breed = 'Yellow Lab', price = '$150')" src="./images/jake-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Jake</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="Adopt-link" href="#link">Adopt</a>
+            <h4>Cost to Adopt: $150</h4>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 150)" class="adopt-link">Adopt</a>
           </article>
 
-          <article class="div2">
+          <article class="dogs">
 
-            <img class="dogimg" src="./images/angus-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Angus', breed = 'Yellow Lab', price = '$125')" src="./images/angus-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Angus</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="Adopt-link"href="#link" >Adopt</a>
+            <h4>Cost to Adopt: $125</h4>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 125)" class="adopt-link">Adopt</a>
           </article>
 
-          <article class="div2">
+          <article class="dogs">
 
-            <img class="dogimg"src="./images/violet-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Violet', breed = 'Brown Lab', price = '$165')" src="./images/violet-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Violet</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="Adopt-link" href="#link">Adopt</a>
+            <h4>Cost to Adopt: $165</h4>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 165)" class="adopt-link">Adopt</a>
           </article>
 
-          <article class="div2">
+          <article class="dogs">
 
-            <img class="dogimg"  src="./images/piper-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Piper', breed = 'Retreiver', price = '$150')" src="./images/piper-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Piper</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="Adopt-link"href="#link">Adopt</a>
+            <h4>Cost to Adopt: $150</h4>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 150)" class="adopt-link">Adopt</a>
           </article>
 
-          <article class="div2">
+          <article class="dogs">
 
-            <img class="dogimg"  src="./images/maximus-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Maximus', breed = 'No Idea', price = '$110')" src="./images/maximus-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Maximus</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="Adopt-link" href="#link">Adopt</a>
+            <h4>Cost to Adopt: $110</h4>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 110)" class="adopt-link">Adopt</a>
           </article>
 
-          <article class="div2">
+          <article class="dogs">
 
-            <img  class="Adopt-link"src="./images/luna-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Luna', breed = 'Lab', price = '$120')" src="./images/luna-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Luna</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="Adopt-link" href="#link" >Adopt</a>
+            <h4>Cost to Adopt: $120</h4>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 120)" class="adopt-link">Adopt</a>
           </article>
 
-          <article class="div2">
+          <article class="dogs">
 
-            <img  class="dogimg"src="./images/stella-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+            <img class="dogimages" onclick="info(name = 'Luna', breed = 'chi-something', price = '$75')" src="./images/stella-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
 
             <h3>Stella</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <a class="Adopt-link"href="#link">Adopt</a>
+            <h4>Cost to Adopt: $75</h4>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <a href="#link" onclick="price(price = 75)" class="adopt-link">Adopt</a>
           </article>
 
       </section>
 
-      <a href="#link">See More Dogs</a>
-
-
-
-
-
+      <a href="#link" class="smdlink">See More Dogs</a>
 
     </main>
 
-
-    <footer>
-      <img src="./html200-adopt-a-dog/images/adoptadog-logo.svg" alt="Company Logo">
-      <p>blah blah blah blah blah <br> blah blah blah</p>
-      <nav>
-        <ul>
-          <li>
+    <footer class="footer">
+      <img class="ftrlogo" src="./images/adoptadog-logo.svg" alt="Company Logo">
+      <p class="footer-p">blah blah blah blah blah <br> blah blah blah</p>
+      <nav class="footer-nav-1">
+        <ul class="footer-nav-ul">
+          <li class="footer-nav-li">
             <a href="#">Home</a>
           </li>
-          <li>
+          <li class="footer-nav-li">
             <a href="#">Dogs</a>
           </li>
-          <li>
+          <li class="footer-nav-li">
             <a href="#">Contact</a>
           </li>
         </ul>
       </nav>
-      <p>©2018 Adoptadog, LLC   |   Seattle, WA</p>
+      <p class="footer-p">©2018 Adoptadog, LLC   |   Seattle, WA</p>
     </footer>
 
 
 </body>
-
 </html>
