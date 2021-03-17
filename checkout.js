@@ -182,29 +182,29 @@ form.appendChild(totalDogAdoptionPrice);
 const submitButton = document.createElement('input');
 submitButton.setAttribute('type', 'submit');
 submitButton.setAttribute('value', 'Submit');
+submitButton.setAttribute('class', 'form-button');
 
 form.appendChild(submitButton);
 
+//Confirmation and Console Logs User Input
 
-// Confirmation and Console Logs User Input
 
-form.addEventListener('submit', function(e) {
+$('.form-button').click(function(){
+  alert('Your Information has been submitted!');
+
   event.preventDefault();
-  alert('The information has been successfully submitted!');
-
-  const formData = document.getElementById('formContainer').elements;
+  const formData = $('#formContainer').get();
   const submission = {};
 
-  for (let i = 0; i < formData.length - 1; i++){
-    const value = document.getElementById('formContainer').elements[i].value;
-    const id = document.getElementById('formContainer').elements[i].id;
+  for(let i = 0; i < formData[0].length - 1; i++){
+
+    const value = formData[0][i].value;
+    const id = formData[0][i].id;
 
     submission[id] = value;
 
-    console.log('Value: ', value);
-    console.log('ID:', id);
+    console.log('Value: ' + formData[0][i].value)
+    console.log('ID : ' + formData[0][i].id)
   }
   console.log(submission);
-});
-
-//Refactor this code so that it does it but with Jqueery. 
+})
