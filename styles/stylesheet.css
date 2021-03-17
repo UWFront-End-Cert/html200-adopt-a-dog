@@ -1,4 +1,5 @@
 /* Body and general styling */
+
 body {
   background-color: #ffffff;
   color: #000000;
@@ -42,7 +43,7 @@ button, a.button {
   border: solid .2rem #3b6860;
   border-radius: .2rem;
   color: #274841;
-  background-color: #85bbb1;
+  background-color: #97C4BB;
   text-align: center;
   font-variant: small-caps;
   font-weight: bold;
@@ -68,8 +69,8 @@ a:hover h4, a:active h4 {
 header {
   width: 100%;
   height: auto;
-  background: url("../images/header-image.jpg");
   background-clip: border-box;
+  background-image: linear-gradient(160deg, #274841, #97C4BB);
   padding: 2rem 2rem 0 0;
   border: 0;
   margin: 0;
@@ -96,7 +97,7 @@ h1::before {
   width: 4.5rem;
 }
 h2 {
-  color: #85bbb1;
+  color: #97C4BB;
   font: italic 1.75rem Arial, Helvetica, sans-serif;
   padding: 1rem;
   margin: 0;
@@ -107,8 +108,6 @@ h2 {
   width: 100%;
   margin-right: 0;
   margin-left: auto;
-  /*max-width: 14rem;
-  max-height: 14rem;*/
   padding: 2rem;
   display: flex;
   flex-flow: row wrap;
@@ -190,30 +189,42 @@ article > p {
   grid-row-start: 2;
   width: 100%;
   flex-flow: row wrap;
-  padding: 2rem;
   box-sizing: border-box;
 }
-.dogcard {
+.dogcard, .dogcard-focus {
   display: inline-flex;
   flex-flow: column wrap;
   align-items: center;
-  margin: 1.25rem;
   box-shadow: 0 0 .15rem .15rem #724b31;
   padding: 0 0 .5rem 0;
   box-sizing: border-box;
 }
-.dogcard span {
+.dogcard {
+  margin: 1.25rem;
+  padding: 2rem;
+  transition: all .5s ease;
+}
+.dogcard-focus {
+    z-index: 1;
+    margin: .5rem;
+    padding: 1rem;
+    transition: all .5s ease;
+}
+.dogcard span, .dogcard-focus span {
   font-weight: bold;
 }
-.dogcard h4 {
+.dogcard h4, .dogcard-focus h4 {
   text-align: center;
   margin: .5rem auto 0 auto;
 }
-.dogcard p {
+.dogcard-focus h4 {
+  font-size: 2rem;
+}
+.dogcard p, .dogcard-focus p {
   margin: .5rem;
   align-self: flex-start;
 }
-.dogcard p + a {
+.dogcard p + a, .dogcard-focus p + a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,6 +237,7 @@ article > p {
 }
 @media screen and (min-width: 1024px) {
   header {
+    background: url("../images/header-image.jpg");
     display: grid;
     box-sizing: border-box;
     grid-template-areas:
@@ -252,11 +264,19 @@ article > p {
   .dogcard > p {
     font-size: .75rem;
   }
+  .dogcard-focus {
+    width: 35%;
+  }
+  .dogcard-focus p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+  }
 }
 @media screen and (max-width: 1024px) {
   header {
-  display: grid;
-  box-sizing: border-box;
+    background: url("../images/header-image1200px.jpg");
+    display: grid;
+    box-sizing: border-box;
     grid-template-areas:
       "title title cart"
       "spacer spacer spacer"
@@ -281,11 +301,19 @@ article > p {
   .dogcard > p {
     font-size: .75rem;
   }
+  .dogcard-focus {
+    width: 62.5%;
+  }
+  .dogcard-focus p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
-  display: grid;
-  box-sizing: border-box;
+    background: url("../images/header-image1000px.jpg");
+    display: grid;
+    box-sizing: border-box;
     grid-template-areas:
       "title title cart"
       "spacer spacer spacer"
@@ -310,6 +338,10 @@ article > p {
   .dogcard > p {
     font-size: .75rem;
   }
+  .dogcard-focus p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+  }
   h1 {
     font-size: 3.5rem;
   }
@@ -322,15 +354,30 @@ article > p {
 }
 @media screen and (max-width: 576px) {
   header {
+    background: url("../images/header-image0600px.jpg");
+    background-repeat: no-repeat;
     display: flex;
     flex-flow: column wrap;
     width: 100%;
     text-align: center;
   }
+  .title {
+    padding: 1rem 2rem;
+  }
   .cartinfo {
+    padding: 1rem 2rem;
     justify-content: space-around;
     align-items: center;
     margin: 0;
+  }
+  .cart {
+    margin: 1rem 1rem 1rem 2rem;
+  }
+  .cartinfo p {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+  .cartinfo a.button {
+    margin: 1rem 2rem;
   }
   h1 {
     font-size: 2.5rem;
@@ -350,13 +397,18 @@ article > p {
   .index {
     display: block;
   }
-  .dogcard {
+  .dogcard, .dogcard-focus {
     width: 100%;
+  }
+  .dogcard-focus p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
   aside {
     display: none;
   }
 }
+
 aside {
   grid-column-start: 2;
   grid-row: 1 / 3;
@@ -466,36 +518,35 @@ input[type=text], input[type=email], select {
   padding: .5rem;
   margin: .25rem .25rem .25rem .5rem;
 }
+input[type=text]:focus, input[type=email]:focus, select:focus {
+  background-color: #ffffad;
+}
 input[type=text], input[type=email] {
   display: block;
   width: 75%;
 }
-input[type=submit] {
-  display: block;
+input[type=submit], input[type=reset] {
+  display: inline-block;
   padding: .3rem .4rem;
+  margin: 1rem;
   border: solid .2rem #3b6860;
   border-radius: .2rem;
   color: #274841;
-  background-color: #85bbb1;
+  background-color: #97C4BB;
   text-align: center;
   font-variant: small-caps;
   font-weight: bold;
   font-size: 1.2rem;
   line-height: 1.2rem;
 }
-input[type=submit]:hover, input[type=submit]:active {
+input[type=submit]:hover, input[type=submit]:active,
+input[type=reset]:hover, input[type=reset]:active {
   color: #ffffad;
   text-shadow: .2rem .2rem .3rem #274841;
-}
-input:not[type="radio"]:focus {
-  background-color: #ffffad;
 }
 select, option {
   font-size: 1.1rem;
 }
-/* option:hover, option:focus {
-  background-color: #3b6860;
-} */
 input[type="radio"] {
   width: 1.25rem;
   height: 1.25rem;
