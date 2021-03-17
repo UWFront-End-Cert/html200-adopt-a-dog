@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/master.css">
-    <script src="./scripts/dogCard.js">
-    </script>
     <title>Adopt A Dog</title>
   </head>
 
@@ -23,7 +21,7 @@
           <div class="header-right">
             <div class="cart-icon"><img src="images/cart-icon.svg"  alt="shopping cart icon" />
             </div>
-            <div class="cart-total">$1234.56
+            <div class="cart-total">$00.00
             </div>
           </div>
 
@@ -56,47 +54,47 @@
         <div class="card-container" id="dog-grid">
           <div class="card">
             <div id="murphy">
-              <img onClick="clickHandler('Murphy, Breed Schnauzer, Cost $123.45')" class="img" src="images/murphy-card.jpg"  alt="dog named murphy" />
+              <img onclick="clickHandler('Murphy, Breed Schnauzer, Cost $123.45')" class="img" src="images/murphy-card.jpg"  alt="dog named murphy" />
               <h3>Murphy</h3>
               <h5>Cost to Adopt: <span class="font-normal">$123.45</span></h5>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-              <button onClick="adopt(123.45)" class="btn-adopt" type="button">Adopt</button>
+              <button onclick="adopt(123.45)" class="btn-adopt" type="button">Adopt</button>
             </div>
           </div>
 
             <div class="card">
               <div>
-              <img onClick="clickHandler('Poppy, Breed Terrier, Cost $123.45')" class="img" src="images/poppy-card.jpg"  alt="dog named poppy" />
+              <img onclick="clickHandler('Poppy, Breed Terrier, Cost $123.45')" class="img" src="images/poppy-card.jpg"  alt="dog named poppy" />
                 <h3>Poppy</h3>
                 <h5>Cost to Adopt: <span class="font-normal">$123.45</span></h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-              <button onClick="adopt(123.45)" class="btn-adopt" type="button">Adopt</button>
+              <button onclick="adopt(123.45)" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
 
             <div class="card">
               <div>
-                <img onClick="clickHandler('Jack, Breed Beagle, Cost $123.45')" class="img" src="images/jack-card.jpg"  alt="dog named jack" />
+                <img onclick="clickHandler('Jack, Breed Beagle, Cost $123.45')" class="img" src="images/jack-card.jpg"  alt="dog named jack" />
                   <h3>Jack</h3>
                   <h5>Cost to Adopt: <span class="font-normal">$123.45</span></h5>
                   <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-                  <button onClick="adopt(123.45)" class="btn-adopt" type="button">Adopt</button>
+                  <button onclick="adopt(123.45)" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
 
             <div class="card">
               <div>
-                <img onClick="clickHandler('Duffy, Breed Boxer, Cost $123.45')" class="img" src="images/duffy-card.jpg"  alt="dog named duffy" />
+                <img onclick="clickHandler('Duffy, Breed Boxer, Cost $123.45')" class="img" src="images/duffy-card.jpg"  alt="dog named duffy" />
                   <h3>Duffy</h3>
                   <h5>Cost to Adopt: <span class="font-normal">$123.45</span></h5>
                   <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-                <button onClick="adopt(123.45)" class="btn-adopt" type="button">Adopt</button>
+                <button onclick="adopt(123.45)" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
 
             <div class="card">
               <div>
-              <img onClick="clickHandler('Lucas, Breed Schnauzer, Cost $123.45')" class="img" src="images/lucas-card.jpg"  alt="dog named lucas" />
+              <img onclick="clickHandler('Lucas, Breed Schnauzer, Cost $123.45')" class="img" src="images/lucas-card.jpg"  alt="dog named lucas" />
                 <h3>Lucas</h3>
                 <h5>Cost to Adopt: <span class="font-normal">$123.45</span></h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
@@ -106,12 +104,12 @@
 
             <div class="card">
               <div>
-              <img onClick="clickHandler('Jack, Breed Retriever, Cost $123.45')" class="img" src="images/jake-card.jpg"  alt="dog named jake" />
+              <img onclick="clickHandler('Jack, Breed Retriever, Cost $123.45')" class="img" src="images/jake-card.jpg"  alt="dog named jake" />
 
                 <h3>Jack</h3>
                 <h5>Cost to Adopt: <span class="font-normal">$123.45</span></h5>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui dolupta
-                <button onClick="adopt(123.45)" class="btn-adopt" type="button">Adopt</button>
+                <button onclick="adopt(123.45)" class="btn-adopt" type="button">Adopt</button>
               </div>
             </div>
           </div>
@@ -173,5 +171,6 @@
 
         <p class="copyright">©  2021 Adoptadog, LLC &nbsp;|&nbsp; Seattle, WA</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./scripts/dogCard.js"></script>
   </body>
-</html>

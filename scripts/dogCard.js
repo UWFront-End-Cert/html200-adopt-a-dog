@@ -4,36 +4,11 @@ function clickHandler(str) {
 }
 
   let total = 0;
-function adopt(price) {
+  function adopt(price) {
   total = price + total;
-  console.log("Total:", total);
+  alert('Total $' + total.toFixed(2));
+
+  $('.btn-adopt').click(function() {
+    $('.cart-total').text('$'+ total.toFixed(2));
+  });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const Murphy = {
-//   Name: 'Murphy',
-//   Breed: 'Beagle',
-//   Cost: $123.45
-// }
-//
-//
-// let total = 0;
-//
-// function adoptCost(price) {
-//   total = price + total;
-//   console.log("TOTAL:", total);
-// }
-
-// function clickHandler() {
-//   alert('Breed: Beagle, Name: Murphy, Cost to adopt:$123.45');
