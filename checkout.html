@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d04e98713e.js" crossorigin="anonymous"></script>
     <script src="scripts/script.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" charset="utf-8"></script>
     <title>AdoptADog Checkout</title>
     <meta name="author" content="Valerie V. Mehring">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,7 @@
       </div>
       <div class="cartinfo">
         <div class="cart"><img src="images/cart-icon.svg"> </div>
-        <p>$246.90</p>
+        <p class="display-total">$0</p>
         <a class="button" href="checkout.html">checkout</a>
       </div>
       <nav>
@@ -36,29 +37,30 @@
       <h3>Checkout</h3>
       <p>All fields are required.</p>
       <form action="index.html" method="post" id="checkout-form">
-        <label>Name
-          <input type="text" name="name" id="name"></label>
+        <label>Full Name
+          <input type="text" name="name" id="name" required></label>
         <label>Email
-          <input type="email" id="email" name="email"></label>
+          <input type="email" id="email" name="email" required></label>
         <label>Street address
-          <input type="text" name="address" id="address"></label>
+          <input type="text" name="address" id="address" required></label>
         <label>City
-          <input type="text" name="city" id="city"></label>
+          <input type="text" name="city" id="city" required></label>
         <label>State
-            <select name="state" id="state">
+            <select name="state" id="state" required>
               <option value="WA">WA</option>
               <option value="OR">OR</option>
             </select>
         </label>
         <label>Zip code
-          <input type="text" name="zip" id="zip"></label>
+          <input type="text" name="zip" id="zip" required></label>
         <legend>First time adopter?</legend>
-          <label class="indent">Yes<input type="radio" name="FTA" id="Yes"></label>
-          <label class="indent">No<input type="radio" name="FTA" id="No"></label>
+          <label class="indent">Yes<input type="radio" name="FTA" id="Yes" required></label>
+          <label class="indent">No<input type="radio" name="FTA" id="No" required></label>
         <label>Pickup location
-          <select name="pickup" id="pickup">
-          <option value="Main office">Seattle</option>
-          <option value="Foster home">Portland</option></select>
+          <select name="pickup" id="pickup" required>
+          <option value="Seattle">Seattle</option>
+          <option value="Spokane">Spokane</option>
+          <option value="Portland">Portland</option></select>
         </label>
         <h4>Dogs Adopted</h4>
         <div class="checkout-card">
@@ -73,7 +75,7 @@
         </div>
         <h4>Total Adoption Cost</h4>
         <p>$246.90</p>
-        <script src="scripts/checkoutForm.js" charset="utf-8"></script>
+        <script src="scripts/jQueryCheckout.js" charset="utf-8"></script>
       </form>
     </main>
     <footer>

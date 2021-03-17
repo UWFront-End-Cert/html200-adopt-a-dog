@@ -28,8 +28,8 @@ form.addEventListener('submit', function(event) {
   for (let i = 0; i < formData.length - 1; i++) {
     const val = document.getElementById('checkout-form').elements[i].value;
     const id = document.getElementById('checkout-form').elements[i].id;
-    console.log('Value: ', val);
     console.log('Id: ', id);
+    console.log('Value: ', val);
     submitData[id] = val;
   }
 

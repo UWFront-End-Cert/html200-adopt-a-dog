@@ -54,3 +54,12 @@ for (i = 0; i < posts.length; i++) {
 
     el.appendChild(blogPost);
   }
+
+//const dogArticle = document.createElement("article");
+//dogArticle.setAttribute('class', 'blog-article');
+
+//const template =
+//<img src=${blog.image} alt=${blog.alt}>
+//<div class="blog-article_text-box">
+//  <h3 class="blog-article_heading">${blog.headline}</h3>
+//</div>
