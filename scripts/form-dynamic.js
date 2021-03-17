@@ -2,11 +2,18 @@ document.getElementById('formSubmitButton').addEventListener('click', function (
   event.preventDefault();
   alert("Thank you. The form information has been received.");
 
-  const formData = document.getElementById('formContainter');
-  console.log(formData);
+// const formData = (i = 0; i < fromData.length; i++)
+// let queryString = $('#checkoutform').serialize();
+  console.log(document.getElementById('name').value);
+
 });
 
-function submitform()
-{
-  document.checkoutform.submit();
-}
+
+
+// const formData = document.getElementById('formContainter');
+// console.log(formData);
+//
+// function submitform()
+// {
+//   document.checkoutform.submit();
+// }

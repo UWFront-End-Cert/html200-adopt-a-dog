@@ -373,6 +373,11 @@ input[type="radio"] {
   outline: 1px solid lightgray;
 }
 
+.dog-image {
+	border: 1px solid gray;
+  background-color: #ccc;
+}
+
 .card > div {
   padding: .75rem;
 }
