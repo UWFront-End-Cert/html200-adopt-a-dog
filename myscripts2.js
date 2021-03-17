@@ -38,19 +38,19 @@ $('#primaryForm').submit(function(event){
     console.log('Your state is ' + stateSpot + '.');
     const zipCodeSpot = $('#zip').val();
     console.log('Your zipcode is ' + zipCodeSpot + '.');
-    if ($('#adoption-option').checked) {
-        console.log('This is your first time adopting.')
+    if ($('#adoption-option').is(':checked')){
+        console.log('This is your first time adopting.');
     }
-    else if ($('#adoption-option2').checked) {
-        console.log('This is not your first time adopting.')
+    else if ($('#adoption-option2').is(':checked')) {
+        console.log('This is not your first time adopting.');
     }
     else {
-        console.log('You did not select an option for first time adopting.');
+        console.log('You did not select an adoption option.')
     }
-    
+    const storeNumberValue = $('#store').val();
+    console.log('You will pick up at ' + storeNumberValue + '.');
 });
 
 function formSubmitButton(event) {
-    event.preventDefault();
     alert('Thank you. The form information has been received.');
 }

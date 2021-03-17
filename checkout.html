@@ -31,7 +31,7 @@
       <!--<div id="wrapper">-->
       <h2 class="page-header">Checkout</h2>
       <div class="grid-item-container">
-         <form name="formDataHolder" onSubmit="formSubmitButton(event)" id="primaryForm">
+         <form name="formDataHolder" id="primaryForm">
             <label class="form-label" for="name">Name</label><br>
             <input class="form-box" type="text" id="full-name" name="name"><br>
             <label class="form-label" for="email">Email</label><br>
@@ -142,7 +142,7 @@
             <h3>Total Adoption Cost</h3>
             <p class="checkout-cost">$123.45</p>
             <br>
-            <button onclick= "formDataProvider()" type="submit" class="adopt-button" >Submit</button>
+            <button onclick= "formSubmitButton()" type="submit" class="adopt-button" >Submit</button>
          </form>
       </div>
       <!--end grid-item-container-->
