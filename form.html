@@ -3,15 +3,19 @@
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title> dog adoption</title>
-     <link rel="stylesheet" type= "text/css" href= "./styles/styles.css">
- </head>
+  <title> dog adoption</title>
+  <script src="https://kit.fontawesome.com/2315930367.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type= "text/css" href= "./styles/styles.css">
+  <script src="./script.js"></script>
+</head>
 <body>
   <header>
 
     <div class= "checkout">
       <i class="fas fa-shopping-cart"></i>
-      <button type="button" onclick="alert('To be added')">Checkout</button>
+      <button type="button" onclick="alert('adoptCart')">Checkout</button>
 
   </div>
 
@@ -25,6 +29,8 @@
         <li><a href="./blog.html">Blog/</a></li>
       </ul>
   </nav>
+  <div class= "dog-form">
+    <h2>Checkout</h2>
   <form action="/action.php" method="GET" name="checkout">
     <label> Name
       <input type="text" name="name">
@@ -37,10 +43,12 @@
   <label> Address
     <input type="text" name="address">
   </label>
+  <hr>
   <div class="row">
     <label> City
       <input type="text" name="city">
     </label>
+
     <label> State
       <select name="state">
         <option value="AL">Alabama</option>
@@ -95,10 +103,12 @@
       	<option value="WI">Wisconsin</option>
       	<option value="WY">Wyoming</option>
       </select>
+
     </label>
     <label>Zipcode
       <input id="zip" name="zip" type="text" pattern="[0-9]*">
     </label>
+
   </div>
     <label>First Time Adopter?
       <input type="radio" name="yes" value="yes"> Yes
@@ -117,17 +127,24 @@
   </label>
   <hr>
   <input type="submit" value="Submit">
-  <footer>
-    <img src="./images/adoptadog-logo.svg" alt="logo" width= "300"/>
-    <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
-    </p>
-    <p> esseque invenienihil imaximu scideru ptistiusam consequunt
-    </p>
-    <p><a href="#">Home / </a></p>
-    <p><a href="./all-dogs.html">Dogs / </a></p>
-    <p><a href="#">Contact</a></p>
-    <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
-  </footer>
+</div>
+<footer>
+  <img src="./images/adoptadog-logo.svg" alt="logo" width= "300"/>
+  <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
+  </p>
+  <p> esseque invenienihil imaximu scideru ptistiusam consequunt
+  </p>
+  <ul>
+  <li><a href="#">Home / </a></li>
+  <li><a href="./all-dogs.html">Dogs / </a></li>
+  <li><a href="#">Contact</a></li>
+  </ul>
+  <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+
+</footer>
+
+</body>
+</html>
 
 </body>
 </html>

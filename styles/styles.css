@@ -5,14 +5,30 @@
 
 header {
   display: flex;
-  background-color: #093c66;
+
   flex-direction: column;
   padding: 2em;
-  background-image: url(..images/header-image.jpg);
+
+  background: rgb(115,136,153);
+  background: linear-gradient(0deg, rgba(115,136,153,1) 0%, rgba(9,60,102,1) 100%);
+  background-size: auto;
+  background-image: url('../images/header-image.jpg');
+
+
+
 }
 
-header img {
-  width: 30%;
+
+.logo {
+  width: 70%;
+}
+
+.logo img {
+  width: 60%;
+}
+
+.logo h1 {
+  font-size: 2em;
 }
 
 header button {
@@ -46,7 +62,6 @@ body {
 }
 
 nav {
-
   background-color: #e1e7eb;
   width: 100%;
   padding: 1.5em;
@@ -65,18 +80,11 @@ nav a {
 }
 h1 {
   font-style: italic;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #73c74a;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 5%;
-  width: 70%;
 
-}
 section p {
   font-size: 1.5em;
 }
@@ -193,13 +201,17 @@ footer a {
 
 }
 
-@media only screen
-and (max-device-width: 320px)
-and (orientation: portrait) {
+@media (min-width: 320px) {
   aside {
     display: none;
   }
-
+  section img {
+    max-width: 100%;
+    height: auto;
+  }
+  section {
+    width: 100%;
+  }
 }
 
 
@@ -213,6 +225,13 @@ and (orientation: portrait) {
     max-width: 100%;
     height: auto;
   }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
   aside {
     display: none;
   }
@@ -243,6 +262,13 @@ and (orientation: portrait) {
      width: 70%;
   }
 
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5%;
+    width: 70%;
+  }
   aside {
     display: flex;
     flex-direction: column;
@@ -284,4 +310,80 @@ and (orientation: portrait) {
     width: 100%;
   }
 }
-/* form */
+/* *******************FORM*******************/
+
+.dog-form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3em;
+  padding-bottom: 3em;
+
+}
+
+.dog-form label {
+  font-size: 1.5em;
+  height: 3em;
+
+}
+
+input {
+    width: 100%;
+    height: 3em;
+}
+
+input[type=radio] {
+  width:10%;
+}
+
+input[type=submit] {
+  width:20%;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+label select {
+  height: 3em;
+}
+hr {
+ margin: 1em;
+ visibility: hidden;
+ color: white;
+}
+
+/* *******************BLOG *******************/
+.main-blog {
+  display:flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.blog-article img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+
+ .blog-article p {
+  display: flex;
+  justify-content: flex-end;
+
+ }
+.blog-article {
+  display: flex;
+  flex-flow: row wrap;
+  margin:2em;
+
+}
+
+.blog-article h3 {
+  display: block;
+}
