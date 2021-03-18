@@ -43,9 +43,6 @@ const allBlogData = {
   ]
 }
 
-addBlogs();
-setupFormHandling();
-
 function addBlogs() {
   console.log('Creating blog elements');
   const blogsToAdd = [];
@@ -135,3 +132,14 @@ function setupFormHandling() {
     })
   }
 }
+
+$(function() {
+  addBlogs();
+  setupFormHandling();
+
+  $('.profile-card').hover(function() {
+    $(this).css('border', 'red dashed 2px');
+  }, function() {
+    $(this).css('border', 'none');
+  });
+});
