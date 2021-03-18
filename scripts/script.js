@@ -94,43 +94,32 @@ function createBlog(blogData) {
 }
 
 function setupFormHandling() {
-  const forms = document.getElementsByTagName('form');
-  if (forms.length !== 0) {
-    const form = forms[0];
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      alert('Thank you. The form information has been received.');
+  $('form').submit(function(event) {
+    event.preventDefault();
+    alert('Thank you. The form information has been received.');
 
-      // 1. Read form values
-      const name = document.getElementById('name').value;
-      const emailAddress = document.getElementById('email-address').value;
-      const streetAddress = document.getElementById('street-address').value;
-      const city = document.getElementById('city').value;
-      const state = document.getElementById('state').value;
-      const zipCode = document.getElementById('zip-code').value;
-      const pickupLocation = document.getElementById('pickup-location').value;
+    // 1. Read form values
+    const name = $('#name').val();
+    const emailAddress = $('#email-address').val();
+    const streetAddress = $('#street-address').val();
+    const city = $('#city').val();
+    const state = $('#state').val();
+    const zipCode = $('#zip-code').val();
+    const pickupLocation = $('#pickup-location').val();
+    const firstTimeChoice = $('input[name="first-time-choice"]:checked').val();
 
-      const firstTimeChoiceOptions = document.getElementsByName('first-time-choice');
-      let firstTimeChoice = null;
-      for (let i = 0; i < firstTimeChoiceOptions.length; i++) {
-        if (firstTimeChoiceOptions[i].checked) {
-            firstTimeChoice = firstTimeChoiceOptions[i].value;
-        }
-      }
+    // 2. Construct the string
+    let formValues = 'Name: ' + name + '\n';
+    formValues += 'Email Address: ' + emailAddress + '\n';
+    formValues += 'Street Address: ' + streetAddress + '\n';
+    formValues += 'City: ' + city + '\n';
+    formValues += 'State: ' + state + '\n';
+    formValues += 'Zip Code: ' + zipCode + '\n';
+    formValues += 'First Time: ' + firstTimeChoice + '\n';
+    formValues += 'Pickup Location: ' + pickupLocation;
 
-      // 2. Construct the string
-      let formValues = 'Name: ' + name + '\n';
-      formValues += 'Email Address: ' + emailAddress + '\n';
-      formValues += 'Street Address: ' + streetAddress + '\n';
-      formValues += 'City: ' + city + '\n';
-      formValues += 'State: ' + state + '\n';
-      formValues += 'Zip Code: ' + zipCode + '\n';
-      formValues += 'First Time: ' + firstTimeChoice + '\n';
-      formValues += 'Pickup Location: ' + pickupLocation;
-
-      console.log(formValues);
-    })
-  }
+    console.log(formValues);
+  });
 }
 
 $(function() {
