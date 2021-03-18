@@ -1,6 +1,9 @@
-document.getElementById('formSubmitButton').addEventListener('click', function (e) {
-  event.preventDefault();
-  alert("Thank you. The form information has been received.");
+
+$('button').click(function () {
+  $('form').submit(function() {
+    event.preventDefault();
+    alert("Thank you. The form information has been received.");
+  });
 });
 
   document.body
@@ -9,15 +12,8 @@ document.getElementById('formSubmitButton').addEventListener('click', function (
   console.log(element.name + '\:',  element.value);
 })
 
-
-
-
-
-
-
-
-
-
-
-
-  // console.log('name:', element.name, 'value:', element.value);
+// Assignment 8 code
+// document.getElementById('formSubmitButton').addEventListener('click', function (e) {
+//   event.preventDefault();
+//   alert("Thank you. The form information has been received.");
+// });
