@@ -323,3 +323,30 @@ div.right-content-desktop p {
   font-size: .8rem;
   padding-bottom: 1rem;
 }
+
+.dog-photos {
+  box-shadow: 0rem .1rem .3rem lightgrey;
+  padding-bottom: 1rem;
+  /* zoom starts here */
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+}
+
+.transition {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.intro-dogs {
+  box-shadow: 0rem .1rem .3rem lightgrey;
+  padding-bottom: 1rem;
+}
+
+.dog-card {
+	border: 1px solid gray;
+  background-color: #ccc;
+}

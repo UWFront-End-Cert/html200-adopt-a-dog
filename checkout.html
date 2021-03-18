@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="zxx" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -13,6 +14,7 @@
 
   <body>
     <script src="./javascript/doginfo.js"></script>
+
     <header>
       <div class="header-figures">
 
@@ -45,7 +47,7 @@
 
       <h1>Checkout</h1>
 
-      <form class="checkout" action="checkout.html" method="get">
+      <form class="checkout" id="checkout" action="checkout.html" method="get">
 
         <label class="name">Name
           <input type="text" name="applicantName">
@@ -113,7 +115,7 @@
         </fieldset>
 
         <label class="button">
-          <input type="submit" value="Submit">
+          <input type="submit" name="submit" value="Submit">
         </label>
 
       </form>
@@ -138,5 +140,8 @@
       <p><span class="footer-span-2">2018 Adoptadog, LLC | Seattle, WA</span></p>
 
     </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="./javascript/checkout.js"></script>
   </body>
 </html>

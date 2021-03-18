@@ -1,6 +1,4 @@
-// console.log('hello  world');
-
-function dogInformation(name, breed, price) {
+function adoptionFee(name, breed, price) {
   alert(name + ',' + ' ' + breed + ',' + ' ' + price);
   }
 
