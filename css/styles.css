@@ -302,6 +302,10 @@ form button, .button {
   width: 100%;
 }
 
+.darkborder h3{
+  text-shadow: 2px 2px grey;
+}
+
 .info-section {
   border: solid var(--color-grey) 1px;
   border-top: none;
