@@ -19,7 +19,7 @@
 
         <aside class="header-cart">
           <img src="./images/cart-icon.svg" alt="White outline of a shopping cart">
-          <p>$1234.56</p>
+          <p id="cart-total-main-page">$0.00</p>
           <a href="checkout-page.html">Checkout</a>
         </aside>
       </div>
@@ -52,119 +52,7 @@
         </section>
 
         <section class="main-page-adopt">
-          <div class="profile-cards">
-            <div class="profile-card">
-              <img src="./images/murphy-card.jpg" alt="Facial shot of a brown-faced dog" onclick="showDogInfo('Murphy', 'Hound', 10)">
-              <div class="profile-card-text">
-                <h3>Murphy</h3>
-                <p>
-                  <span>Cost to Adopt:</span>
-                  $123.45
-                </p>
-                <p>
-                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-                </p>
-              </div>
-              <button type="button" name="button" onclick="addDogToTotal(10)">Adopt</button>
-            </div>
-            <div class="profile-card">
-              <img src="./images/poppy-card.jpg" alt="Front shot of a white dog walking" onclick="showDogInfo('Poppy', 'Terrier', 13)">
-              <div class="profile-card-text">
-                <h3>Poppy</h3>
-                <p>
-                  <span>Cost to Adopt:</span>
-                  $123.45
-                </p>
-                <p>
-                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-                </p>
-              </div>
-              <button type="button" name="button" onclick="addDogToTotal(13)">Adopt</button>
-            </div>
-            <div class="profile-card">
-              <img src="./images/jack-card.jpg" alt="Angle shot from above of a brown and white dog" onclick="showDogInfo('Jack', 'Malamute', 8)">
-              <div class="profile-card-text">
-                <h3>Jack</h3>
-                <p>
-                  <span>Cost to Adopt:</span>
-                  $123.45
-                </p>
-                <p>
-                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-                </p>
-              </div>
-              <button type="button" name="button" onclick="addDogToTotal(8)">Adopt</button>
-            </div>
-            <div class="profile-card">
-              <img src="./images/duffy-card.jpg" alt="Facial shot of a white-faced dog" onclick="showDogInfo('Duffy', 'Bulldog', 10)">
-              <div class="profile-card-text">
-                <h3>Duffy</h3>
-                <p>
-                  <span>Cost to Adopt:</span>
-                  $123.45
-                </p>
-                <p>
-                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-                </p>
-              </div>
-              <button type="button" name="button" onclick="addDogToTotal(10)">Adopt</button>
-            </div>
-            <div class="profile-card">
-              <img src="./images/lucas-card.jpg" alt="Facial shot of a black-faced dog" onclick="showDogInfo('Lucas', 'Coonhound', 16)">
-              <div class="profile-card-text">
-                <h3>Lucas</h3>
-                <p>
-                  <span>Cost to Adopt:</span>
-                  $123.45
-                </p>
-                <p>
-                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-                </p>
-              </div>
-              <button type="button" name="button" onclick="addDogToTotal(16)">Adopt</button>
-            </div>
-            <div class="profile-card">
-              <img src="./images/Jake-card.jpg" alt="Side facial shot of a tan dog" onclick="showDogInfo('Jake', 'Shepherd', 20)">
-              <div class="profile-card-text">
-                <h3>Jake</h3>
-                <p>
-                  <span>Cost to Adopt:</span>
-                  $123.45
-                </p>
-                <p>
-                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-                </p>
-              </div>
-              <button type="button" name="button" onclick="addDogToTotal(20)">Adopt</button>
-            </div>
-            <div class="profile-card">
-              <img src="./images/angus-card.jpg" alt="Facial shot of a smiling, brown and black faced dog" onclick="showDogInfo('Angus', 'Spaniel', 17)">
-              <div class="profile-card-text">
-                <h3>Angus</h3>
-                <p>
-                  <span>Cost to Adopt:</span>
-                  $123.45
-                </p>
-                <p>
-                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-                </p>
-              </div>
-              <button type="button" name="button" onclick="addDogToTotal(17)">Adopt</button>
-            </div>
-            <div class="profile-card">
-              <img src="./images/violet-card.jpg" alt="Shot from above of a dark brown dog" onclick="showDogInfo('Violet', 'Beagle', 12)">
-              <div class="profile-card-text">
-                <h3>Violet</h3>
-                <p>
-                  <span>Cost to Adopt:</span>
-                  $123.45
-                </p>
-                <p>
-                  Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-                </p>
-              </div>
-              <button type="button" name="button" onclick="addDogToTotal(12)">Adopt</button>
-            </div>
+          <div class="profile-cards profile-cards-main-page">
           </div>
           <div class="more-dogs-link">
             <a href="adopt-page.html">See More Dogs</a>

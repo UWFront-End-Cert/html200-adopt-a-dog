@@ -8,7 +8,99 @@ function showDogInfo(dogName, dogBreed, adoptionFee) {
 let totalPrice = 0;
 function addDogToTotal(adoptionFee) {
   totalPrice += adoptionFee;
-  alert('Total cost: ' + totalPrice);
+  $('#cart-total-main-page').text('$' + totalPrice);
+}
+
+const allDogData = {
+  dogs: [
+    {
+      imageSource: './images/murphy-card.jpg',
+      imageAltText: 'Facial shot of a brown-faced dog',
+      name: 'Murphy',
+      breed: 'Hound',
+      bio: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
+      cost: 23.54
+    },
+    {
+      imageSource: './images/poppy-card.jpg',
+      imageAltText: 'Front shot of a white dog walking',
+      name: 'Poppy',
+      breed: 'Terrier',
+      bio: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
+      cost: 73.21
+    },
+    {
+      imageSource: './images/jack-card.jpg',
+      imageAltText: 'Angle shot from above of a brown and white dog',
+      name: 'Jack',
+      breed: 'Malamute',
+      bio: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
+      cost: 33.9
+    },
+    {
+      imageSource: './images/duffy-card.jpg',
+      imageAltText: 'Facial shot of a white-faced dog',
+      name: 'Duffy',
+      breed: 'Bulldog',
+      bio: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
+      cost: 72.11
+    },
+    {
+      imageSource: './images/lucas-card.jpg',
+      imageAltText: 'Facial shot of a black-faced dog',
+      name: 'Lucas',
+      breed: 'Coonhound',
+      bio: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
+      cost: 42.74
+    },
+    {
+      imageSource: './images/jake-card.jpg',
+      imageAltText: 'Side facial shot of a tan dog',
+      name: 'Jake',
+      breed: 'Shepherd',
+      bio: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
+      cost: 90.37
+    },
+    {
+      imageSource: './images/angus-card.jpg',
+      imageAltText: 'Facial shot of a smiling, brown and black faced dog',
+      name: 'Angus',
+      breed: 'Spaniel',
+      bio: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
+      cost: 58.29
+    },
+    {
+      imageSource: './images/duffy-card.jpg',
+      imageAltText: 'Shot from above of a dark brown dog',
+      name: 'Violet',
+      breed: 'Beagle',
+      bio: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
+      cost: 32.51
+    }
+  ]
+}
+
+function addDogs() {
+  console.log('Creating dog cards');
+  const dogCardContainer = $('.profile-cards-main-page');
+  for (let i = 0; i < allDogData.dogs.length; i++) {
+    const dog = allDogData.dogs[i];
+    dogCardContainer.append(
+      '<div class="profile-card">' +
+        '<img src="' + dog.imageSource + '" ' +
+             'alt="' + dog.imageAltText + '" ' +
+             'onclick="showDogInfo(\'' + dog.name + '\', \'' + dog.breed + '\', ' + dog.cost + ')">' +
+        '<div class="profile-card-text">' +
+          '<h3>' + dog.name + '</h3>' +
+          '<p>' +
+            '<span>Cost to Adopt:</span>' + dog.cost +
+          '</p>' +
+          '<p>' + dog.bio + '</p>' +
+        '</div>' +
+        '<button type="button" name="button" onclick="addDogToTotal(' + dog.cost + ')">Adopt</button>' +
+      '</div>'
+    );
+  }
 }
 
 const allBlogData = {
@@ -123,6 +215,7 @@ function setupFormHandling() {
 }
 
 $(function() {
+  addDogs();
   addBlogs();
   setupFormHandling();
 
