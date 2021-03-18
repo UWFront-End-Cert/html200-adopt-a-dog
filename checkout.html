@@ -15,36 +15,35 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="./styles/checkout.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <!-- Google font external link -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header / top of the page -->
-    <header>
+    <!-- <header> -->
+    <header class="head-image-filter head-image">
         <div class="top-left">
-            <img class="logo" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+            <img class="top-logo" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
             <div class="slogan">
-                <p>Seattle’s premiere dog adoption agency</p>
+                <p class="motto">Seattle’s premiere dog adoption agency</p>
             </div>
         </div>       
-        <div class="checkout">
-            <img src="./images/cart-icon.svg" alt="cart icon">
-            <small class="total">$1234.56</small>
-        </div>
+        <div class="top-right"></div>
     </header>
 
     <!-- Navigation bar / main top menu -->
-    <nav class="main-nav">
-        <ul>
-            <li><a href="./index.html" aria-label="Return to homepage">home</a></li>
-            <li><a href="./dogs.html" aria-label="Read more about our puppies">dogs</a></li>
-            <li><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
+    <nav class="main-nav-top">
+        <ul class="nav-ul">
+            <li class="nav-list"><a href="./index.html" aria-label="Return to homepage">home</a></li>
+            <li class="nav-list"><a href="./dogs.html" aria-label="Read more about our puppies">dogs</a></li>
+            <li class="nav-list"><a href="./blog.html" aria-label="Learn more about our services">blog</a></li>
         </ul>
     </nav>
     <!-- Main content of the page -->
     <main>
-        <h1>Checkout</h1>
+        <h1 class="check-heading">Checkout</h1>
     </main>
     <!-- Form starts here -->
     <form id="form" class="form" method="GET" autocomplete="off">
@@ -62,7 +61,7 @@
             <label for="city">City</label>
                 <input id="city" type="text" name="clientCity" placeholder="Seattle">  
             <label for="state">State</label>
-                <select name="state" id="state" required>
+                <select name="state" id="state">
                     <option value="Alabama">AL</option>
                     <option value="Alaska">AK</option>
                     <option value="Arizona">AZ</option>
@@ -153,27 +152,29 @@
         </section>
         <br>
         <label for="total">Total Adoption Cost</label>
-            <input class="form-control" id="total" name="totalAdoption" value="&#36;246,90"> 
+            <small id="total">&#36;<span id="grand">246,90</span></small>
             <br>
-            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
             <input type="submit" class="btn btn-primary" id="submit">
     </form>
+ 
     <!-- Footer -->
     <footer>
-        <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
-        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <img class="footer-logo" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <p class="footer-p">Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
         <!-- Bottom nav-bar -->
-        <nav>
-            <ul class="bottom-nav">
-                <li><a href="./index.html">home</a></li>
-                <li><a href="./dogs.html">dogs</a></li>
-                <li><a href="#">contact</a></li>
+        <nav class="nav-footer">
+            <ul class="nav-ul-footer">
+                <li class="nav-list-footer"><a href="./index.html">home</a></li>
+                <li class="nav-list-footer"><a href="./dogs.html">dogs</a></li>
+                <li class="nav-list-footer"><a href="#">contact</a></li>
             </ul>
         </nav>
-        <small>&copy; Adoptadog, LLC &#124; Seattle, WA</small>
+        <small class="copyright">&copy; Adoptadog, LLC &#124; Seattle, WA</small>
     </footer>
 
-    <script src="./scripts/form.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./scripts/script-query.js"></script>
     
 </body>
 </html>

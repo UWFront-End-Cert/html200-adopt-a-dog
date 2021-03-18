@@ -10,100 +10,6 @@ body {
     font-size: 1.3rem;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    background-image: url(../images/header-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    width: 100%;
-    height: 375px;
-}
-
-.top-left {
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 0 0 8rem;
-}
-
-.checkout {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 4rem 0;
-}
-
-.top-logo {
-    max-width: 100%; 
-    width: 100%;
-}
-
-div.slogan {
-    font-style: italic;
-    font-size: 1.7rem;
-    color: #a1c349;
-    margin-top: 0;
-}
-
-.slogan p {
-    margin: 0;
-}
-
-.checkout img {
-    max-width: 100%;
-    width: 5%;
-}
-
-.total {
-    color: #fff;
-    padding-bottom: 0;
-}
-
-.main-nav {
-    background-color: rgb(224, 224, 226);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-ul { 
-    font-size: .85em; 
-    color: #ccc; 
-    margin: 1.5rem 0 1.5rem 12rem;
-    padding-left: 0;
-    display: inline-flex;
-}
-
-li { 
-    list-style-type: none;
-    padding-right: 40px;
-    float: none;
-}
-    
-li:after {
-    content: "/";
-    color: #0a3d61;
-    font-size: 1.3em;
-    padding-left: 1rem;
-    position: absolute;
-}
-
-li:last-of-type:after {
-    content: none;
-}
-
-li:last-child {
-    padding-right: 0;
-}
-
-a {
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: #0a3d61;
-}
-
 h1 {
     color: #0a3d61;
     font-size: 2rem;
@@ -276,136 +182,13 @@ img[src="./images/duffy-checkout.jpg"] {
 #total {
     width: 20%;
     font-size: 1.6rem;
-}
-
-/* ----------------------------------- */
-.btn {
-    width: 18rem;
-    height: 3.4rem;
-    margin: 0;
-    font-size: 1.4rem;
+    color: #000;
     font-weight: bold;
-    border: none;
-    color: #ffffff;
-    background-color: #a1c349;
 }
 
-/* ------------- footer ------------------------------- */
-footer {
-    background-color: #0a3d61;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1rem;
-}
+/* Media Queries */
 
-footer img {
-    max-width: 100%;
-    width: 32%;
-    padding-top: 4rem;
-}
-
-footer > p {
-    margin-left: 35%;
-    margin-right: 35%;
-    text-align: center;
-    color: #ffffff;
-    line-height: 1.8rem;
-}
-
-.bottom-nav {
-    margin: 1.5rem 0 1.5rem 0;
-}
-
-ul.bottom-nav a {
-    color: #fff;
-    padding-left: 1rem;
-}
-
-ul.bottom-nav > li:after {
-    color: #fff;
-}
-
-a:first-child {
-    padding-left: 0;
-}
-
-small {
-    padding-bottom: 4rem;
-    color: #fff;
-    margin-top: 1rem;
-}
-
-/* Media queries */
-/* Extra large Screens 1200px and up*/
-@media (max-width: 1250px) {
-
-    .top-logo {
-       width: 100%;
-    }
-
-    main {
-        display: flex;
-        align-items: center;
-        padding: 2rem 0 0 12rem;
-    }
-
-    .checkout {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 4rem 6rem 0 0;
-    }
-
-    footer img {
-        max-width: 100%;
-        width: 35%;
-        padding-top: 4rem;
-    }
-
-    ul.bottom-nav a {
-        color: #fff;
-        font-size: 1.2rem;
-    }
-}
-
-/* Large devices 992px and up */
 @media (max-width: 1029px) {
-    .top-logo {       
-        width: 150%;
-    }
-
-    .checkout {
-        width: 37%;
-        display: flex;
-        flex-direction: column;
-        padding: 4rem 4rem 0 0;
-    }
-
-    ul {
-        font-size: 1.5rem;
-        color: #ccc;
-        padding-left: 0;
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    li {    
-        list-style-type: none;
-        padding-right: 3rem;
-    }
-    
-    li:after {
-        content: "/";
-        color: #0a3d61;
-        font-size: 1.3em;
-        padding-left: 1.2rem;
-        position: absolute;
-    }
-
     form {
         padding: 2rem 7rem;
     }
@@ -452,52 +235,10 @@ small {
         width: 35%;
         font-size: 1.6rem;
     }
-
-    footer img {
-        max-width: 100%;
-        width: 45%;
-        padding-top: 4rem;
-    }   
-
-    footer > p {
-        margin-left: 28%;
-        margin-right: 28%;
-    }    
 }
 
 /* Medium devices, tablets 768px and up */
 @media (max-width: 768px) {
-
-    header {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        padding-bottom: 3rem;
-    }
-
-    .top-left {
-        display: flex;
-        flex-direction: column;
-        padding: 4rem 2rem 0 2rem;
-    }
-
-    .top-logo {
-        width: 90%;
-        max-width: 100%;
-    }
-
-    .slogan p {
-        text-align: center;
-    }
-
-    .checkout {
-        width: 100%;
-        padding: 0;
-        align-items: center;
-        margin-top: 2rem;
-    }
-
     main {
         display: flex;
         flex-direction: column;
@@ -549,31 +290,10 @@ small {
     h1 {
         text-align: center;
     }
-
-    footer img {
-        max-width: 100%;
-        width: 63%;
-        padding-top: 4rem;
-    }
-    
-    footer > p {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
 }
 
-/* Small devices 576px and up */
+/* Small devices 576px and over */
 @media (max-width: 605px) {
-
-    .top-logo {
-        width: 225%;
-        height: auto;
-    }
-
-    .slogan p {
-        text-align: center;
-    }
-    
     form {
         display: flex;
         flex-direction: column;
@@ -591,28 +311,6 @@ small {
     .btn {
         align-self: center;
     }
-
-    footer img {
-        width: 70%;
-    }
-    
-    .bottom-nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    ul.bottom-nav li {
-        padding: 1rem 0;
-    }
-
-    ul.bottom-nav > li:after {
-        display: none;
-    }
-
-    footer > p {
-        margin-left: 20%;
-        margin-right: 20%;
-    }  
 }
 
 @media (max-width: 540px) {
@@ -623,12 +321,6 @@ small {
 }
 
 @media (max-width: 495px) {
-
-    .top-logo {
-        width: 375px;
-        height: 350px;
-    }
-
     main {
         padding-top: 0;
     }
@@ -651,62 +343,16 @@ small {
     .lucas {
         margin-bottom: 1rem;
     }
-
-    footer img {
-        width: 75%;
-    }
 }
 
 @media (max-width: 375px) {
-
-    .top-logo {
-        width: 300%;    
-    }
-
-    .top-left {
-        display: flex;
-        flex-direction: column;
-        padding: 4rem 1rem 0 1rem;
-        margin-bottom: 0;
-    }
-
-    .slogan {
-        margin-bottom: 0;
-    }
-
-    .slogan p {
-        font-size: 1.5rem;
-    }
-
-    .checkout {
-        margin-bottom: 0;
-    }
-
-    .main-nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-nav ul li {
-        padding-right: 0;
-        padding-top: 1.2rem;
-    }
-
-    .main-nav ul li:first-child {
-        padding-top: 0;
-    }
-    
-    li:after {
-        display: none;
-    }
-
     main {
         padding: 1rem 0;
     }
 
     form {
-        padding: 0 1rem 1rem 1rem;
+        padding: 0;
+        margin: 2rem;
     }
 
     .location {
@@ -717,15 +363,9 @@ small {
     label[for="state"], [for="zipcode"] {
         margin-top: 1rem;
     }
-
-    footer > p {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
 }
 
 @media (max-width: 280px) {
-
     h1 {
         text-align: center;
         font-size: 2rem;
@@ -755,52 +395,9 @@ small {
     .btn {
         width: 10rem;
     }
-
-    footer img {
-        width: 82%;
-    }
 }
 
 @media print {
-    header {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        margin: 0;
-    }
-
-    .top-left {
-        padding: 0;
-    }
-
-    .logo {
-        -webkit-filter: invert(.75); 
-        filter: invert(.75);
-        width: 90%;  
-    }
-
-    .slogan p {
-        color: #000;
-        text-align: center;
-    }
-
-    .checkout {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-    
-    .checkout img {
-        -webkit-filter: invert(.75); 
-        filter: invert(.75);
-    }
-    .main-nav {
-        display: none;
-    }
-
-    main {
-        margin: 3rem 0 0 0;
-    }
 
     h1 {
         color: #000;
@@ -869,10 +466,4 @@ small {
     .btn {
         display: none;
     }
-
-    footer img {
-        -webkit-filter: invert(.75); 
-          filter: invert(.75);
-    }
-
 }

@@ -20,23 +20,23 @@
     <!-- Google font external link -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">  
-      <!-- Script goes here -->
-    <script src="./scripts/script.js"></script>
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="head-image-filter head-image">
         <div class="top-left">
             <img class="top-logo" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">    
             <div class="slogan">
-                <p>Seattle’s premiere dog adoption agency</p>
+                <p class="motto">Seattle’s premiere dog adoption agency</p>
             </div> 
         </div>
   
         <div class="top-right">
-            <img class="cart-icon" src="./images/cart-icon.svg" alt="cart icon">
-            <small class="total">&#36;1234.56</small>
-            <input onClick="window.location.href='./checkout.html'" type="button" value="Checkout">
+            <div class="top-right_cart">
+                <img class="cart-icon" src="./images/cart-icon.svg" alt="cart icon">
+                <small class="total">&#36;<span id="grand">0</span></small>
+            </div>
+            <input onClick="window.location.href='./checkout.html'" type="button" value="Checkout" class="checkout-btn">
         </div>
     </header>
     
@@ -51,19 +51,15 @@
 
     <!-- Whole content  -->
     <div class="whole-content">
-    
         <div class="left-content">
             <main>
-                <!-- <img class="home-intro-wider" src="./images/home-intro-wider.png" alt="a man embracing a dog"> -->
                 <picture>
                     <source  srcset="./images/home-intro-410-370.jpg"
                             type="image/jpg"
-                            media="all and (max-width:650px)"
-                    />
+                            media="all and (max-width:650px)"/>
                     <source srcset="./images/home-intro-wider-light.png"
                             type="image/png"
-                            media="all and (min-width: 768px)"
-                    />
+                            media="all and (min-width: 768px)"/>
 
                     <img class="home-intro-wider" src="./images/home-intro-wider-light.png" alt="a man embracing a dog">
                 </picture>
@@ -80,139 +76,130 @@
                 <h3>heading hidden</h3>
 
                 <article class="dog-card">
-                    <img class="card" src="./images/murphy-card.jpg" alt="Murphy profile picture" onclick="dogInfo('Murphy, Breed: Boxer, Cost: $123.45');">
+                    <img class="card" id="murphy" src="./images/murphy-card.jpg" alt="Murphy profile picture"/> 
+                    <!-- onclick="dogInfo('Murphy, Breed: Boxer, Cost: $123.45');" -->
                     <h2>murphy</h2>
                     <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
                     <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
-                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                    <input class="adopt" type="button" value="Adopt">
                 </article>
-
+            
                 <article class="dog-card">
-                    <img class="card" src="./images/poppy-card.jpg" alt="Poppy profile picture" onclick="dogInfo('Poppy, Breed: Asian Terrier, Cost: $123.45')">
+                    <img class="card" id="poppy" src="./images/poppy-card.jpg" alt="Poppy profile picture"/>
+                    <!-- onclick="dogInfo('Poppy, Breed: Asian Terrier, Cost: $123.45')" -->
                     <h2>poppy</h2>
                     <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
                     <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
-                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                    <input class="adopt" type="button" value="Adopt">
+                    <!-- <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)"> -->
                 </article>
 
                 <article class="dog-card">
-                    <img class="card" src="./images/jack-card.jpg" alt="Jack profile picture" onclick="dogInfo('Jack, Breed: Beagle, Cost: $123.45')">
+                    <img class="card" id="jack" src="./images/jack-card.jpg" alt="Jack profile picture"/>
+                    <!-- onclick="dogInfo('Jack, Breed: Beagle, Cost: $123.45')" -->
                     <h2>jack</h2>
                     <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
                     <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
-                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                    <input class="adopt" type="button" value="Adopt">
+                    <!-- <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)"> -->
                 </article>
 
                 <article class="dog-card">
-                    <img class="card" src="./images/duffy-card.jpg" alt="Duffy profile picture" onclick="dogInfo('Duffy, Breed: American Bulldog, Cost: $123.45')">
+                    <img class="card" id="duffy" src="./images/duffy-card.jpg" alt="Duffy profile picture"/>
+                    <!-- onclick="dogInfo('Duffy, Breed: American Bulldog, Cost: $123.45')" -->
                     <h2>duffy</h2>
                     <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
                     <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
-                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                    <input class="adopt" type="button" value="Adopt">
+                    <!-- <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)"> -->
                 </article>
 
                 <article class="dog-card lucas">
-                    <img class="card" src="./images/lucas-card.jpg" alt="Lucas profile picture" onclick="dogInfo('Lucas, Breed: Labrador, Cost: $123.45')">
+                    <img class="card" id="lucas" src="./images/lucas-card.jpg" alt="Lucas profile picture"/>
+                    <!-- onclick="dogInfo('Lucas, Breed: Labrador, Cost: $123.45')" -->
                     <h2>lucas</h2>
                     <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
                     <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
-                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                    <input class="adopt" type="button" value="Adopt">
+                    <!-- <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)"> -->
                 </article>
 
                 <article class="dog-card jake">
-                    <img class="card" src="./images/jake-card.jpg" alt="Jake profile picture" onclick="dogInfo('Jake, Breed: English Pointer/Rhodesian, Cost: $123.45')">
+                    <img class="card" id="jake" src="./images/jake-card.jpg" alt="Jake profile picture"/>
+                    <!-- onclick="dogInfo('Jake, Breed: English Pointer/Rhodesian, Cost: $123.45')" -->
                     <h2>jake</h2>
                     <small class="dog-name"><span class="cost">Cost to Adopt&#58;</span> &#36;123.45</small>
                     <p class="dog-name">Doggo ipsum porgo borking doggo what a nice floof shooberino, I am bekom fat floofs.</p>
-                    <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)">
+                    <input class="adopt" type="button" value="Adopt">
+                    <!-- <input type="button" value="Adopt" name="adoptDog" onclick="total(123.45)"> -->
                 </article>
-
             </section>
 
         <!-- See more dogs button -->
-        <button aria-label="See more puppies clicking here" onClick="window.location.href='./dogs.html'">See More Dogs</button>
-   
+            <button aria-label="See more puppies clicking here" onClick="window.location.href='./dogs.html'">See More Dogs</button>
         </div>
-
         <!-- Sidebar -->
         <div class="right-content">
             <div class="blog_content">
                 <h1>From Our Blog</h1>
                 <article class="blog_article">
-                    <!-- <img class="blog_article__image" src="./images/blog-1-wider.png" alt="a young woman embracing a dog watching the Gran Canyon"> -->
                     <picture>
                         <source srcset="./images/blog-1-flat-light.png"
                                 type="image/png"
-                                media=" (max-width:1000px) and (min-width: 1400px)"
-                        >
+                                media=" (max-width:1000px) and (min-width: 1400px)"/>
                         <source srcset="./images/blog-1.jpg"
                                 type="image/jpg"
-                                media="(min-width:1000px) and (max-width:1400px)">
+                                media="(min-width:1000px) and (max-width:1400px)"/>
 
-                        <img class="blog_article__image" src="./images/blog-1-flat-light.png" alt="a young woman embracing a dog watching the Gran Canyon">        
+                        <img class="blog_article__image" src="./images/blog-1-flat-light.png" alt="a young woman embracing a dog watching the Gran Canyon"/>        
                     </picture>
 
                     <div class="grid_article">
                         <h2 class="topic_heading">Traveling With Your Dog</h2>
                         <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
                             quidustrum fuga.</p>
-<<<<<<< HEAD
                             <a class="link_blog" href="./blog.html">Read more >></a>
-=======
-                            <a class="link_blog" href="./blog.html#first-topic">Read more >></a>
->>>>>>> 040cc0d32c243d3d90d726b1de14493a7f013c83
                     </div>
                 </article>
+                
                 <article class="blog_article">
-                    <!-- <img class="blog_article__image" src="./images/blog-2-wider.png" alt="a dog-keeper caring four dogs out in a street"> -->
                     <picture>
                         <source srcset="./images/blog-2-flat-light.png"
                                 type="image/png"
-                                media=" (max-width:1000px) and (min-width: 1400px)"
-                        >
+                                media=" (max-width:1000px) and (min-width: 1400px)"/>
                         <source srcset="./images/blog-2.jpg"
                                 type="image/jpg"
-                                media="(min-width:1000px) and (max-width:1400px)">
+                                media="(min-width:1000px) and (max-width:1400px)"/>
 
-                        <img class="blog_article__image" src="./images/blog-2-flat-light.png" alt="a young woman embracing a dog watching the Gran Canyon">        
+                        <img class="blog_article__image" src="./images/blog-2-flat-light.png" alt="a young woman embracing a dog watching the Gran Canyon"/>        
                     </picture>
 
                     <div class="grid_article">
                         <h2 class="topic_heading">How To Walk Multiple Dogs</h2>
                         <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
                             quidustrum fuga.</p>
-<<<<<<< HEAD
                             <a class="link_blog" href="./blog.html">Read more >></a>
-=======
-                            <a class="link_blog" href="./blog.html#second-topic">Read more >></a>
->>>>>>> 040cc0d32c243d3d90d726b1de14493a7f013c83
                     </div>
-                </article>
-                <article class="blog_article">
-                    <!-- <img class="blog_article__image" src="./images/blog-3-wider.png" alt="a siluette of a young woman holding a ball and a dog is ready to play in the sunset"> -->
 
+                </article>
+                
+                <article class="blog_article">
                     <picture>
                         <source srcset="./images/blog-3-flat-light.png"
                                 type="image/png"
-                                media=" (max-width:1000px) and (min-width: 1400px)"
-                        >
+                                media=" (max-width:1000px) and (min-width: 1400px)"/>
                         <source srcset="./images/blog-3.jpg"
                                 type="image/jpg"
-                                media="(min-width:1000px) and (max-width:1400px)">
+                                media="(min-width:1000px) and (max-width:1400px)"/>
 
-                        <img class="blog_article__image" src="./images/blog-3-flat-light.png" alt="a young woman embracing a dog watching the Gran Canyon">        
+                        <img class="blog_article__image" src="./images/blog-3-flat-light.png" alt="a young woman embracing a dog watching the Gran Canyon"/>        
                     </picture>
 
                     <div class="grid_article">
                         <h2 class="topic_heading">Teach Your Dog To Fetch&#33;</h2>
                         <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
                             quidustrum fuga.</p>
-<<<<<<< HEAD
                             <a class="link_blog" href="./blog.html">Read more >></a>
-=======
-                            <a class="link_blog" href="./blog.html#third-topic">Read more >></a>
->>>>>>> 040cc0d32c243d3d90d726b1de14493a7f013c83
-
                     </div>
                 </article>
             </div>
@@ -220,7 +207,7 @@
     </div> 
     
     <footer>
-        <img class="footer-logo" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <img class="footer-logo" src="./images/adoptadog-logo.svg" alt="adopt a dog logo"/>
         <p class="footer-p">Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
         
         <!-- Footer navigation bar -->
@@ -233,5 +220,9 @@
         </nav>
         <small class="copyright">&copy; 2021 Adoptadog, LLC &#124; Seattle, WA</small>
     </footer>
+    <!-- SCRIPT EXTERNAL LINKS -->
+    <!-- jQuery script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./scripts/script-query.js"></script>
 </body>
 </html>
