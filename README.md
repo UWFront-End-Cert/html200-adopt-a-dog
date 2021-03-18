@@ -1,6 +1,15 @@
 html200-adopt-a-dog
 
-LAST UPDATE 03/10/2021
+LAST UPDATE 03/17/2021
+Assignment Lesson 09 - Milestone 3 assignment
+
+Implementing jQuery API was the chanllenge of this week's assignment.
+
+
+
+
+
+03/10/2021
 Assignment Lesson 08 
 
 1. blog.html page has been updated by refactoring the articles, the blog posts, dynamically from JavaScript.
