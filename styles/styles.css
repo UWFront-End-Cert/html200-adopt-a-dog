@@ -189,6 +189,7 @@ h3 {
   height: 3rem;
   margin: 0 0 1rem 1rem;
   border: 0;
+  position: relative;
 }
 .dog-blog-aside {
   width: 30%;
