@@ -6,5 +6,18 @@ document.getElementById('formSubmitButton').addEventListener('click', function (
   document.body
   .querySelectorAll('form [name]')
   .forEach(element => {
-  console.log('name:', element.name, 'value:', element.value);
+  console.log(element.name + '\:',  element.value);
 })
+
+
+
+
+
+
+
+
+
+
+
+
+  // console.log('name:', element.name, 'value:', element.value);
