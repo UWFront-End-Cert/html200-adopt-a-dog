@@ -5,15 +5,6 @@ let dogArray = document.getElementsByClassName('dog-card-details');
 let adoptionTotalString = document.getElementById('totals').innerText.substr(1);
 let adoptionTotalNumber = parseFloat(adoptionTotalString);
 
-// Get price of the selected card button and set the price
-function priceRipper() {
-  let specificPriceString = event.path[1].children[2].innerText;
-  let specificPriceNumber = parseFloat(specificPriceString.substr(1));
-  adoptionTotalNumber = adoptionTotalNumber + specificPriceNumber;
-  alert('Total price of adoption: $' + adoptionTotalNumber);
-  document.getElementById('totals').innerText = '$' + adoptionTotalNumber;
-}
-
 //Alerts users of clicked dog picture
 function infoRipper(dogName) {
   for (let i = 0; i < dogArray.length; i++){
@@ -23,6 +14,19 @@ function infoRipper(dogName) {
     }
   }
 }
+
+// Get price of the selected card button and set the price
+
+$('.dog-card-board button').click(function(){
+
+    let pupPriceString = event.path[1].children[2].innerText;
+    let pupPriceNumber = parseFloat(pupPriceString.substr(1));
+
+    adoptionTotalNumber = adoptionTotalNumber + pupPriceNumber;
+    alert('Total price of adoption: $' + adoptionTotalNumber);
+
+    $('#totals').html('$'+ adoptionTotalNumber);
+})
 
 //Applies Effect to dogtiles
 
