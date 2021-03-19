@@ -152,18 +152,12 @@ h6 {
   flex-wrap: nowrap;
 }
 
-.flex-cart img {
-  width: 20px;
-}
-
 .flex-icon {
-  width: 25px;
-  flex: 25px;
+  width: 60px;
   padding: 0px 15px 0px;
 }
 
 .flex-price {
-  flex: 30px;
   color: white;
 }
 
@@ -497,7 +491,7 @@ footer nav {
   grid-template-columns: 24% 24% 24% 24%;
   grid-template-rows: auto;
   grid-column-gap: 1.5%;
-  width: 50%;
+  width: 80%;
 }
 
 @media screen and (max-width: 414px) {
