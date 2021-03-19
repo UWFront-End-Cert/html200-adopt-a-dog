@@ -58,12 +58,12 @@ $(function() {
             $(this).fadeOut();
             $(this).fadeOut('slow');
             $(this).fadeOut(2000);
-        })
+        });
 
         $('.whole-content, .dogs, .blog, .form').click(function(){
             $('footer').fadeIn();
             $('footer').fadeIn(3000);
-        })
+        });
         
     // Total from cart is tracked
     $(function(){
@@ -80,7 +80,7 @@ $(function() {
     $('#form').submit(function(event) {
           console.log($(this).serializeArray());
             event.preventDefault();
-        });
+     });
     
 
     // Click event on adopt tiles
