@@ -12,17 +12,8 @@ $('article.dog-card').hover(
   }
 );
 
-//zooms on dog photo
-$('article.dog-card img').hover(
-  function zoomin(e){
 
-  }, function zoomout(){
-
-  }
-);
-
-
-//add ripple effect to your button
+//add ripple effect to your button - I'm not the genius of this... was able to put this together with things I found online.
 function createRipple(event) {
   const button = event.currentTarget;
 
@@ -33,7 +24,7 @@ function createRipple(event) {
   circle.style.width = circle.style.height = `${diameter}px`;
   circle.style.left = `${event.clientX - (button.offsetLeft + radius)}px`;
   circle.style.top = `${event.clienty - (button.offsetTop + radius)}px`;
-  circle.addClass("ripple");
+  circle.classList.add("ripple");
 
   const ripple = button.getElementsByClassName("ripple")[0];
 
