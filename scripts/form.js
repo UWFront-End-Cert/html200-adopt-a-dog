@@ -1,9 +1,3 @@
-// Generate the form dynmically from JavaScript
-
-// On the form page, display an alert that says "Thank you. The form information has been received" when the form has been submitted.
-
-// Console log the values inside the form, you can build a string or build an object.
-
 const form = document.createElement('form');
 form.setAttribute('id', 'checkoutForm');
 
@@ -35,7 +29,21 @@ const submitButton = document.createElement('button');
 submitButton.setAttribute('type', 'submit');
 submitButton.textContent = 'Submit!';
 
-form.addEventListener('submit', function(event) {
+// form.addEventListener('submit', function(event) {
+//   const formData = document.getElementById('checkoutForm').elements;
+//   const submitData = {};
+//
+//   for (let i = 0; i < formData.length-1; i++) {
+//     const val = document.getElementById('checkoutForm').elements[i].value;
+//     const id = document.getElementById('checkoutForm').elements[i].id;
+//     console.log('Value: ' + val);
+//     console.log('ID: ' + id);
+//     submitData[id] = val;
+//   }
+//   alert('Thank you. The form information has been received.');
+// });
+
+$('form').on('submit', function(event) {
   event.preventDefault();
   const formData = document.getElementById('checkoutForm').elements;
   const submitData = {};
@@ -48,7 +56,7 @@ form.addEventListener('submit', function(event) {
     submitData[id] = val;
   }
   alert('Thank you. The form information has been received.');
-})
+});
 
 form.appendChild(submitButton);
 

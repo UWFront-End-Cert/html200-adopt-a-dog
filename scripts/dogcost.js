@@ -13,15 +13,7 @@ function totalCost(cost) {
   alert('Your total is: $' + total);
 }
 
-/* From class:
-function clickHandler(str) {
-  alert(str);
-}
-
-let total = 0;
-
-function adopt(price) {
-  total = price + total;
-  console.log("Total: ", total);
-}
-*/
+// when a button is clicked on, add the cost to the total and update the text at the top (class .cost)
+$('button').click(function() {
+  $('.cost').text('$' + total);
+});

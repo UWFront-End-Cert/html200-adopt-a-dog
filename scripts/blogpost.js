@@ -58,4 +58,4 @@ for (let i = 0; i < arrPosts.length; i++) {
   sec.appendChild(blogDiv);
   // appenc sec to the article
   articleCon.appendChild(sec);
-}
+};
