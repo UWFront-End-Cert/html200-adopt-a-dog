@@ -29,7 +29,7 @@ function arraySummer(dogCost) {
     totalCostArray.push(0);
     let total = (totalCostArray.reduce(summer));
     // alert('Your total cost is $' + total);
-    $('#checkout-value').html('$' + total);
+    $('#checkout-value').html('$' + total.toFixed(2));
 }
 
 
