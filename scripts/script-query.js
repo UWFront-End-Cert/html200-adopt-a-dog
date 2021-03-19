@@ -66,25 +66,15 @@ $(function() {
         })
         
     // Total from cart is tracked
-//     $(function(){
-//         let addItem = 0;
-//         $('.adopt').click(function adoptadog() {
-//             addItem += 123.45;
-//             let cart = addItem.toFixed(2);
-//             $('.total').text(cart);
-//             $('#grand').text(cart);
-        })
-//     });
-    
-        $(function(){
+    $(function(){
         let addItem = 0;
         $('.adopt').click(function adoptadog() {
             addItem += 123.45;
-            let cart = addItem;
-            $('.total').text("$" + cart.toFixed(2));
-//             $('#grand').text(cart);
+            let cart = addItem.toFixed(2);
+            $('.total').text(cart);
+            // $('#grand').text(cart);
         })
-    });
+     });
 
     // Form data is handled, in the console
     $('#form').submit(function(event) {
