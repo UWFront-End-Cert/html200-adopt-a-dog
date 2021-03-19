@@ -24,5 +24,5 @@ $('.dogtile').hover(
 
 // when a button is clicked on, add the cost to the total and update the text at the top (class .cost)
 $('button').click(function(e) {
-  $('.cost').text('$' + total);
+  $('.cost').text('$' + total.toFixed(2));
 });

@@ -43,22 +43,14 @@ submitButton.textContent = 'Submit!';
 //   alert('Thank you. The form information has been received.');
 // });
 
-$('form').on('submit', function(e) {
-  event.preventDefault();
-  const formData = document.getElementById('checkoutForm').elements;
-  const submitData = {};
-
-  for (let i = 0; i < formData.length-1; i++) {
-    const val = document.getElementById('checkoutForm').elements[i].value;
-    const id = document.getElementById('checkoutForm').elements[i].id;
-    console.log('Value: ' + val);
-    console.log('ID: ' + id);
-    submitData[id] = val;
-  }
-  alert('Thank you. The form information has been received.');
-});
-
 form.appendChild(submitButton);
 
 const checkout = document.getElementById('checkout');
 checkout.appendChild(form); //have this be the last thing
+
+$('form').on('submit', function(e) {
+  e.preventDefault();
+  const result = $('checkoutForm').serializeArray();
+  alert('Thank you. The form information has been received.');
+  console.log('Result: ', result);
+});
