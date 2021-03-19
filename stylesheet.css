@@ -128,8 +128,11 @@ h1 {
 
 
 .top {
+    display: inline-block;
+}
+
+.top-2 {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .img-three {
@@ -141,8 +144,6 @@ h1 {
 
 
 .container {
-    width: 600px;
-    flex-direction: column;
     padding-left: 20px;
 }
 
@@ -150,6 +151,7 @@ h1 {
 .main-article {
     font-size: x-large;
     line-height: 35px;
+    width: 100%;
 }
 
 
@@ -157,6 +159,7 @@ h1 {
     display: flex;
     flex-direction: column;
 }
+
 .nav-two {
     grid-area: nav;
     line-height: 50px;
