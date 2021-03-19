@@ -1,0 +1,23 @@
+USER PERSONA
+Name: Stephanie
+Age: 26
+Occupation: fisheries scientist
+Activities: camping, rock climbing, cooking, travel 
+Other details: 
+-married for 1 year
+-lives in suburban area
+-owns a 3 year old windows computer and 2 year old iphone
+
+
+TESTED SITE ON
+Checked for responsivness by reducing and enlarging window size in all desktop browsers. Checked readability on mobile devices. Confirmed that form fields are sized appropriately for all devices. Checked spacing, margins, and confirmed images display without distortion in all viewports.  
+
+• Desktop
+  - Chrome
+  - Safari
+  - Edge
+  - Firefox
+
+• Mobile
+  - Chrome
+  - Safari
