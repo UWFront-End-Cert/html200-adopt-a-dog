@@ -9,16 +9,16 @@ function clickHandler(str) {
   alert('Total $' + total.toFixed(2));
 
   $('.btn-adopt').click(function() {
-    $('.div').text('$'+ total.toFixed(2));
+    $('.cart-total').text('$'+ total.toFixed(2));
   });
 }
 
 //hover event
 
 $('.card').mouseover(function() {
-  $('.dogcard').addClass('dog-image');
+  $(this).addClass('dog-image');
 });
 
 $('.card').mouseout(function() {
-  $('.dogcard').removeClass('dog-image');
+  $(this).removeClass('dog-image');
 });
