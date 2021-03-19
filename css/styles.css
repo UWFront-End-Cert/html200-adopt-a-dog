@@ -303,7 +303,7 @@ form button, .button {
 }
 
 .darkborder h3{
-  text-shadow: 2px 2px grey;
+  text-shadow: 1px 2px #c5bcbc;
 }
 
 .info-section {
@@ -317,6 +317,27 @@ form button, .button {
   font-size: .75rem;
   line-height: 1.25rem;
   padding-bottom: 1rem;
+}
+
+#dogsection button{
+  position: relative;
+  overflow: hidden;
+  padding:12px;
+}
+
+span.ripple{
+  position: absolute;
+  border-radius: 50%; 
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+  to{
+    transform: scale(4);
+    opacity: 0;
+  }
 }
 
 /**blog page***/
