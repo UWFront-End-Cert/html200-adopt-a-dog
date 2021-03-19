@@ -71,8 +71,8 @@ $(function() {
         $('.adopt').click(function adoptadog() {
             addItem += 123.45;
             let cart = addItem.toFixed(2);
-            $('.total').text(cart);
-            // $('#grand').text(cart);
+//             $('.total').text(cart);
+            $('#grand').text(cart);
         })
      });
 
