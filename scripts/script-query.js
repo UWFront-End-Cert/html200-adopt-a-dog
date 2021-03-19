@@ -38,6 +38,7 @@ $(function() {
             $(this).css('background-color', '#fff');
             $(this).css('border', '1px solid #a1c349');
         });
+    
         $('input[value="Adopt"], .checkout-btn, .btn-primary').mouseleave(function(){
             $(this).css('color', '#fff');
             $(this).css('background-color', '#a1c349');
@@ -69,7 +70,7 @@ $(function() {
         let addItem = 0;
         $('.adopt').click(function adoptadog() {
             addItem += 123.45;
-            let cart = addItem.toFixed(2);
+            let cart = ('{$}')addItem.toFixed(2);
             $('.total').text(cart);
 //             $('#grand').text(cart);
         })
