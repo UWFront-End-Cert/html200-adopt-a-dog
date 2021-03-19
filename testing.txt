@@ -9,15 +9,15 @@ Other details:
 -owns a 3 year old windows computer and 2 year old iphone
 
 
-TESTED SITE ON
+TESTING
 Checked for responsivness by reducing and enlarging window size in all desktop browsers. Checked readability on mobile devices. Confirmed that form fields are sized appropriately for all devices. Checked spacing, margins, and confirmed images display without distortion in all viewports.  
 
-• Desktop
-  - Chrome
-  - Safari
-  - Edge
-  - Firefox
+• Desktop browsers
+  - Google Chrome Version 88.0.4324.96 
+  - iOS Safari 14.0.2
+  - Microsoft Edge 89.0.774.57
+  - Firefox 82.0.2
 
-• Mobile
-  - Chrome
-  - Safari
+• Mobile browsers
+  - Google Chrome
+  - iOS Safari
