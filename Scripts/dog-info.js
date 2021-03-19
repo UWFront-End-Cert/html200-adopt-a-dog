@@ -5,7 +5,7 @@ $('.dog-box').on({
       width: '110%',
       height: '110%x',
       top: '-=15px',
-      left: '-=15px'
+      left: '-=15px',
     }, 300);
   },
   mouseleave: function () {
@@ -13,12 +13,12 @@ $('.dog-box').on({
       width: '100%',
       height: '100%',
       top: '+=15px',
-      left: '+=15px'
+      left: '+=15px',
     }, 300);
   }
 });
 
-// button changes color onclick
+// button changes color and text onclick
 $('button').click(function () {
   $(this).css("background-color", "#093c60");
   $(this).text("Adopting");
@@ -29,13 +29,14 @@ function dogInfo(name, breed, price) {
   alert(name + ',' + ' ' + breed + ',' + ' ' + price);
 }
 
+
 let total = 0;
 
-$('button')
+function dogPrice(price) {
+  total = price + total;
+  alert('Total:' + ' ' + '$' + total);
 
-function dogPrice(x) {
-  total += x;
-  alert('Total dog price: $' + total);
+  $('#cartTotal').text(total.toFixed(2));
 }
 
 // click on Adopt button, alerts total of Adopt button clicks
