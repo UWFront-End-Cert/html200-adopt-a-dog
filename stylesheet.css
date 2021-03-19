@@ -165,10 +165,10 @@ h1 {
     flex-direction: column;
 }
 
-.blog-text p {
-    font-size: x-large;
-    width: 100%;
-}
+    .blog-text p {
+        font-size: x-large;
+        width: 100%;
+    }
 
 
 .nav-two {
