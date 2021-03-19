@@ -17,9 +17,14 @@ $(function() {
             $('.head-image-filter').toggleClass('head-image');
         });
 
+        // Hover effect on dog tiles
+        $('.dog-card').hover(function(){
+            $(this).toggleClass('border');
+        });
+
         $('.total').css('font-weight', 'bold');
 
-        // Hover effect on dog tiles, and the rest of the images to make the design more consistant
+        // Hover effect on images to make the design more consistant
         $('img.card, .home-intro-wider, .blog_article__image, .blog-image').mouseenter(function(){
             console.log("mouse has entered")
             $(this).fadeTo('slow', .50);
@@ -27,7 +32,7 @@ $(function() {
             console.log("mouse has left");
             $(this).fadeTo('fast', 1);
         });
-
+       
         $('input[value="Adopt"], .checkout-btn, .btn-primary').hover(function(){
             $(this).css('color','#a1c349');
             $(this).css('background-color', '#fff');

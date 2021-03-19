@@ -1130,3 +1130,13 @@ footer {
         display: none;
     }
 }
+
+/* Dog Tiles border */
+.border {
+    /* border: 3rem solid black; */
+    border:rgb(167, 167, 173);
+    border-style: solid;
+    border-top-color:#fff;
+    border-width: 2px;
+    box-shadow: 0 10px 8px -6px rgb(192, 192, 199);
+}
