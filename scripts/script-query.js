@@ -38,7 +38,6 @@ $(function() {
             $(this).css('background-color', '#fff');
             $(this).css('border', '1px solid #a1c349');
         });
-    
         $('input[value="Adopt"], .checkout-btn, .btn-primary').mouseleave(function(){
             $(this).css('color', '#fff');
             $(this).css('background-color', '#a1c349');
@@ -58,13 +57,13 @@ $(function() {
             $(this).fadeOut();
             $(this).fadeOut('slow');
             $(this).fadeOut(2000);
-        });
+        })
 
         $('.whole-content, .dogs, .blog, .form').click(function(){
             $('footer').fadeIn();
             $('footer').fadeIn(3000);
-        });
-        
+        })
+        // 
     // Total from cart is tracked
     $(function(){
         let addItem = 0;
@@ -73,13 +72,13 @@ $(function() {
             let cart = addItem.toFixed(2);
             $('#grand').text(cart);
         })
-     });
+    });
 
     // Form data is handled, in the console
     $('#form').submit(function(event) {
           console.log($(this).serializeArray());
             event.preventDefault();
-     });
+        });
     
 
     // Click event on adopt tiles
