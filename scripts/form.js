@@ -43,7 +43,7 @@ submitButton.textContent = 'Submit!';
 //   alert('Thank you. The form information has been received.');
 // });
 
-$('form').on('submit', function(event) {
+$('form').on('submit', function(e) {
   event.preventDefault();
   const formData = document.getElementById('checkoutForm').elements;
   const submitData = {};
