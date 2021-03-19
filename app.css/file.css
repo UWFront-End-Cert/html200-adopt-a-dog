@@ -3,75 +3,133 @@ html {
     font-size: 62.5%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+
 body {
     font-family: 'Brygada 1918', serif;
     line-height: 1.6;
-    display: flex;
 }
 
+
+/*not an optimal solution, seems there is a goddamn issue with the fucking padding somewhere god fucking dammint*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 40% 20%;
+    height: fit-content;
+    height: 175rem;
+}
+
+
+/*what are the best practices for defining height*/
+
 .header {
-    grid-area: header;
+    /* height: 45%; */
+    grid-area: 1/1/2/2;
 }
 
 .main {
-    grid-area: main;
+    /* height: 20%; */
+    grid-area: 2/1/3/2;
 }
 
-.main1 {
-    grid-area: main1;
+.dogs {
+    /* height: 40%; */
+    grid-area: 3/1/5/2;
 }
 
 .footer {
-    grid-area: footer;
+    /* height: 20%; */
+    grid-area: 5/1/6/2;
 }
 
-.grid_container {
-    display: grid;
-    grid-template-areas: 'header' 'main' 'main1' 'footer';
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 1% 40% 20%;
-    grid-gap: 1rem;
+.nav {
+    display: block;
 }
 
 
-/*header from blog*/
+/*header shit*/
 
 .header {
-    margin-bottom: 10rem;
-    background-color: black;
     background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
     height: 40rem;
-    width: 100%;
-    position: relative;
-    background-color: black;
-    background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
+    width: auto;
     background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    /* background-position: top; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+}
+
+.logo {
+    height: 15rem;
 }
 
 .header h1 {
+    color: white;
+    font-size: 2.75rem;
     font-family: 'Courgette', cursive;
-    font-size: 2.5rem;
     color: rgb(155, 226, 11);
-    position: absolute;
-    left: 3.0%;
-    top: 43%;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_content {
+    /* display: flex;
+justify-content: space-between;
+align-items: flex-end; */
+}
+
+.header1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5rem;
+    margin-left: 6rem;
+}
+
+.header2 {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 10rem;
+    margin-right: 3rem;
+    margin-top: 6rem;
+    flex-direction: column;
 }
 
 .cart {
-    position: absolute;
-    left: 77%;
-    top: 15%;
-    width: 10%;
-    height: 10%;
-    transform: scale(.75)
+    width: 4rem;
+    height: 4rem;
+    /* transform: scale(.25); */
 }
 
 span {
-    position: absolute;
-    z-index: 10000;
     color: white;
-    left: 82%;
-    top: 17%;
     width: 10%;
     height: 10%;
     font-size: 2rem;
@@ -80,9 +138,6 @@ span {
 }
 
 .checkout {
-    position: absolute;
-    left: 78%;
-    top: 28%;
     width: 15rem;
     height: 3rem;
     font-size: 1.75rem;
@@ -96,23 +151,23 @@ span {
     background-color: rgb(170, 253, 2);
 }
 
-.logo {
-    height: 15rem;
-    position: relative;
-    display: block;
-    top: 15%;
-    left: 1%;
+
+/*main*/
+
+
+/*nav bar*/
+
+.primary a:first-child {
+    margin-left: 15rem;
 }
 
 .primary {
     position: relative;
+    bottom: 90%;
     z-index: 10000;
     display: block;
     background-color: rgba(192, 192, 192, 0.3);
     padding: 1.3rem;
-    position: relative;
-    padding-left: 15%;
-    top: 62%;
 }
 
 nav a {
@@ -123,130 +178,141 @@ nav a {
     color: black;
 }
 
-
-/*from blog, */
-
 .main {
-    margin: 5rem 20rem 5rem 20rem;
-    margin-top: 1rem;
-    margin-right: 20rem;
-    margin-bottom: 0rem;
-    margin-left: 20rem;
+    position: relative;
+    margin: none;
+    margin-top: 5rem;
+    height: 40rem;
+    flex: 1;
 }
 
-.main>h1 {
-    color: black;
-    font-size: 3.5rem;
-}
-
-.content {
+.main div:nth-of-type(2) {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 6rem;
+    margin-left: 19rem;
+    margin-right: 18rem;
+    margin-bottom: 5rem;
 }
 
-.content>img {
-    margin-right: 5rem;
+.main_content {
+    margin-left: 2.5rem;
 }
 
-h2 {
-    margin-top: -2.5%;
+.main_content h2 {
     font-size: 3rem;
 }
 
-h2+p {
+.main_content p {
     font-size: 2rem;
-    margin-top: -2%;
+}
+
+.main {
+    /* margin-left: 15rem;
+    margin-right: 15rem; */
 }
 
 
-/*from dogs css, class is accurate*/
+/*dogs..................................................................................................................................................................................*/
 
-div.main1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.main1 {
+.dogs {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: 15rem;
     margin-right: 15rem;
-    margin-top: 1rem;
+    margin-top: 22rem;
+    position: relative;
+    height: 85rem;
+    flex: 1;
 }
 
-.main1 div {
+.dogs div {
+    object-fit: cover;
     box-shadow: 0px 0px 15px gray;
-    position: relative;
-    top: 50%;
     width: 23rem;
     height: 38rem;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: left;
     text-align: left;
-    margin: 10rem 2rem 0rem 2rem;
+    margin: 3rem 1rem 1rem 3rem;
 }
 
-div h3,
-div p,
-div strong {
+
+/*this shit is fucked. trying to select the everything but the img inside each dog card always selects the img, should be a much easy solution something, how to select all but dog img
+  and apply styles to everything but the dog img;?????*/
+
+.dog_cards:not(img) {}
+
+.dog_cards h3,
+p {
     padding-left: 1rem;
-    margin: none;
+    padding-right: 1rem;
+    /* border: 2px solid black; */
 }
 
-h3 {
-    margin-bottom: -.75rem;
-    font-size: 1.75rem;
-}
-
-.cost {
-    font-size: 1.5rem;
-}
-
-.bio {
-    margin-top: -1%;
-}
-
-div strong {
-    margin-left: -.9rem;
-    font-size: 1.5rem;
-}
-
-div p {}
-
-div strong {}
-
-div button {
-    height: 2.75rem;
-    justify-content: center;
-    width: 18rem;
-    position: relative;
-    top: 3%;
-    border-radius: 2%;
-    align-items: end;
-    align-self: center;
+.dog_cards button {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    height: 4rem;
     background-color: rgb(155, 226, 11);
+    font-size: 1.6rem;
     color: white;
-    font-size: 1.3rem;
     font-weight: 700;
     border-style: none;
+    border-radius: 2%;
 }
 
-div button:hover {
+.dog_cards button:hover {
     background-color: rgb(170, 253, 2);
 }
 
+#dog_img {
+    /* border: 3px solid black;
+    padding-left: none;
+    padding-right: none;
+    all: revert;
+    width: 23rem;
+    margin-left: -1.25rem; */
+}
 
-/*from dogs */
+
+/*more button is position relative and is not in dogs or footer flex container, keep in mind for quries as will have its own behavior...........................................*/
+
+.more {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(135, 136, 133);
+    font-weight: 700;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    width: 21rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+    z-index: 10000;
+    align-self: center;
+    bottom: 45rem;
+    margin: 0 auto;
+    margin-left: 65rem;
+}
+
+
+/*footer shit........................................................................................................................................................................*/
 
 .footer {
-    margin-top: 5%;
-    padding-top: 6rem;
+    background-color: rgb(12, 73, 122);
+    height: 35rem;
+    margin-top: 15rem;
+    padding-top: 15rem;
     clear: both;
     position: relative;
     display: flex;
@@ -254,10 +320,8 @@ div button:hover {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(12, 73, 122);
-    bottom: 0;
-    top: 100%;
     text-align: center;
-    padding-bottom: 3.5%;
+    padding-bottom: 15rem;
 }
 
 .footer img {
@@ -277,58 +341,149 @@ div.footer_nav {
 
 div.footer_nav a {
     color: white;
-    padding: 5%;
+    padding: 1.3rem;
 }
 
-.main {}
 
-.more {
-    display: flex;
-    color: white;
-    text-decoration: none;
-    background-color: rgb(135, 136, 133);
-    font-weight: 700;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
-    width: 21rem;
-    height: 5rem;
+/*queries..........................................................................................................................................................................*/
+
+
+/*when screen is very small header background will just be that blue ya heard*/
+
+
+/* first div inside header content */
+
+
+/*for small laptop*/
+
+@media (min-width: 711px) and (max-width: 776px) {
+    .header {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .header1 {
+        align-self: center;
+    }
+    .header2 {
+        margin: none;
+        align-self: center;
+    }
+}
+
+
+/*for tablet*/
+
+@media (min-width: 479px) and (max-width:710px) {
+    .container {
+        width: fit-content;
+    }
+    .header {
+        background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
+        background-color: green;
+        background-size: cover;
+        width: auto;
+        background-origin: border-box;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .header1 {
+        margin-right: 5rem;
+    }
+    .header2 {
+        display: flex;
+        align-self: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center margin-bottom: 5rem;
+    }
+    .header2 div {
+        display: none;
+        /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!centering content of this fucking div align-items: center; */
+    }
+    .cart {
+        height: 5rem;
+        width: 5rem;
+    }
+    .checkout {
+        width: 50rem;
+        align-self: center;
+        margin-left: 4rem;
+    }
+}
+
+
+/*phone*/
+
+
+/*add landscape later*/
+
+
+/* and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2)  */
+
+@media (max-width: 576px) {
+    /* html {
+    width: 100%;
+    margin: auto 0;
+} */
+    .header {
+        /* background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image/background-mobile.jpg?raw=true); */
+        background-image: none;
+        background-color: rgb(12, 73, 122);
+        width: fit-content;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    .header2 div {
+        /* display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    position: relative;
-    left: 42.5%;
-    z-index: 100001;
-    bottom: 12%;
-}
-
-.more:hover {
-    background-color: rgb(212, 214, 207);
-}
-
-div button {
-    height: 2.75rem;
-    justify-content: center;
-    width: 18rem;
-    position: relative;
-    top: 3%;
-    border-radius: 2%;
-    align-items: end;
-    align-self: center;
-    background-color: rgb(155, 226, 11);
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 700;
-    border-style: none;
-}
-
-div button:hover {
-    background-color: rgb(170, 253, 2);
-}
-
-.main1 {
-    margin-top: -10%;
-    margin-bottom: 5%;
+    align-content: center; */
+        display: none;
+    }
+    .header1 {
+        display: flex;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        width: auto;
+    }
+    .header1,
+    .header2 {
+        margin: auto 0;
+    }
+    .header2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        width: auto;
+    }
+    .button {
+        text-align: center;
+    }
+    .checkout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        width: 45rem;
+        height: 7rem;
+        font-size: 6rem;
+    }
+    .checkout:hover {
+        background-color: rgb(170, 253, 2);
+    }
 }

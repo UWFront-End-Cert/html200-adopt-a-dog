@@ -3,55 +3,102 @@ html {
     font-size: 62.5%;
 }
 
+
+/* Just add the universal selector (*) to your CSS, this will apply any rule to every element on the page. If any elements need them you can 
+then add margins or padding to those elements themselves. This helps get rid of spacing when you can't quite tell what is causing it. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+
 body {
     font-family: 'Brygada 1918', serif;
     line-height: 1.6;
 }
 
+
+/*...............................pay attention to html and bodies and all other containers margins.............................................................*/
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 20%);
+    height: 200rem;
+    position: relative;
+}
+
 .header {
-    grid-area: header;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-.main1 {
-    grid-area: main1;
-}
-
-.main2 {
-    grid-area: main2;
-}
-
-.main3 {
-    grid-area: main3;
+.main {
+    grid-column: 1/2;
+    grid-row: 2/5;
 }
 
 .footer {
-    grid-area: footer;
+    grid-column: 1/2;
+    grid-row: 5/6;
 }
 
-.grid-container {
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-areas: 'header' 'main1' 'main2' 'main3' 'footer';
-    grid-gap: 1rem;
-    display: flex;
-}
+
+/*....................................................header shit.........................................................*/
 
 .header {
     margin-bottom: 10rem;
     background-color: black;
     background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
     height: 40rem;
-    width: 100%;
+    width: auto;
     position: relative;
-    background-color: black;
-    background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
     background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+}
+
+.logo {
+    height: 15rem;
+}
+
+.header h1 {
+    color: white;
+    font-size: 2.75rem;
+    font-family: 'Courgette', cursive;
+    color: rgb(155, 226, 11);
+    display: flex;
+    justify-content: space-around;
+    margin-top: -2rem;
+}
+
+.cart {
+    width: 4rem;
+    height: 4rem;
+    /* transform: scale(.25); */
+}
+
+span {
+    color: white;
+    width: 10%;
+    height: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    transform: scale(.75);
 }
 
 .checkout {
-    position: absolute;
-    left: 78%;
-    top: 28%;
     width: 15rem;
     height: 3rem;
     font-size: 1.75rem;
@@ -65,43 +112,60 @@ body {
     background-color: rgb(170, 253, 2);
 }
 
-.logo {
-    height: 15rem;
-    position: relative;
-    display: block;
-    top: 15%;
-    left: 1%;
+.header_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5rem;
+    margin-left: 6rem;
 }
 
-.header h1 {
-    font-family: 'Courgette', cursive;
-    font-size: 2.5rem;
-    color: rgb(155, 226, 11);
-    position: absolute;
-    left: 3.0%;
-    top: 43%;
+.header_bottom {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 10rem;
+    margin-right: 3rem;
+    margin-top: 6rem;
+    flex-direction: column;
 }
 
-.cart {
-    position: absolute;
-    left: 77%;
-    top: 15%;
-    width: 10%;
-    height: 10%;
-    transform: scale(.75);
+
+/*nav will be outside of main this time, as opposed to the top of main, will try to postion relatively between header and main section once main is complete*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 15rem 5rem 15rem;
 }
 
-span {
-    position: absolute;
-    z-index: 10000;
-    color: white;
-    left: 82%;
-    top: 17%;
-    width: 10%;
-    height: 10%;
-    font-size: 2rem;
-    font-weight: 700;
-    transform: scale(.75);
+.main h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.content {
+    display: flex;
+    font-size: 1.75rem;
+}
+
+.main div {
+    margin-bottom: 3rem;
+}
+
+.content div {
+    margin-left: 3rem;
+}
+
+.content div h2 {
+    margin-bottom: 2rem;
+}
+
+
+/*nav.......................................................................*/
+
+.primary a:first-child {
+    margin-left: 10rem;
 }
 
 .primary {
@@ -111,8 +175,7 @@ span {
     background-color: rgba(192, 192, 192, 0.3);
     padding: 1.3rem;
     position: relative;
-    padding-left: 15%;
-    top: 62%;
+    bottom: 160rem;
 }
 
 nav a {
@@ -123,44 +186,14 @@ nav a {
     color: black;
 }
 
-.main1,
-.main2,
-.main3 {
-    margin: 5rem 20rem 5rem 20rem;
-}
 
-.main1>h1 {
-    color: black;
-    font-size: 3.5rem;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.content>img {
-    margin-right: 5rem;
-}
-
-h2 {
-    margin-top: -2.5%;
-    font-size: 3rem;
-}
-
-h2+p {
-    font-size: 2rem;
-    margin-top: -2%;
-}
-
-nav+p {
-    color: white;
-}
+/*.........................................................footer.........................................................*/
 
 .footer {
-    margin-top: 5%;
-    padding-top: 6rem;
+    background-color: rgb(12, 73, 122);
+    height: 35rem;
+    margin-top: 15rem;
+    padding-top: 15rem;
     clear: both;
     position: relative;
     display: flex;
@@ -168,10 +201,8 @@ nav+p {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(12, 73, 122);
-    bottom: 0;
-    top: 100%;
     text-align: center;
-    padding-bottom: 3.5%;
+    padding-bottom: 15rem;
 }
 
 .footer img {
@@ -191,5 +222,5 @@ div.footer_nav {
 
 div.footer_nav a {
     color: white;
-    padding: 5%;
+    padding: 1.3rem;
 }
