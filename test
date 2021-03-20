@@ -1,0 +1,107 @@
+
+User Persona
+=====================================================================
+Name:  Sandy Smith
+Age: 37
+Occupation: CEO of the Smith Family
+Activities:  Taking long walks; hiking; exploring new areas; spending time with family
+Other Details:
+•	Married
+•	Mother of a 4-year old son
+•	Planning to move from an apartment to a new home in the next 6 months
+•	Interested in adopting a rescue dog when they have their new home
+•	Owns multiple devices including an iphone and ipad that are several years old
+•	Other family members have android phone (also several years old) and a recently purchased Windows 10 computer
+
+
+Test Plan:
+====================================================================
+The site will be tested using the following browsers:
+•	Chrome on a personal computer
+•	Firefox on a personal computer
+•	Opera on a personal computer
+•	Chrome on an iphone
+•	Safari on an ipad
+
+Accessibility testing will be performed by evaluating the site in Chrome’s Light house Tool
+Responsiveness testing will be performed by loading the site on the type of device specified
+Functional testing will be performed by following these steps:
+1.	Home Page 
+1.1.	Page renders in format matching design
+1.2.	Blog aside
+1.2.1.	On personal computer and ipad, blog aside appears
+1.2.2.	On iphone blog aside does not appear.  Link to blog appears after dog tiles.
+1.3.	Dog tiles
+1.3.1.	  On personal computer, tiles display three across
+1.3.2.	  On ipad tiles display two across
+1.3.3.	  On iphone tiles display one across
+1.4.	Validate links:
+1.4.1.	  Header
+1.4.1.1.	Home link – user remains on existing page
+1.4.1.2.	Dogs link moves user to Dogs page
+1.4.1.3.	Blog link moves user to Blog Page
+1.4.2.	  Checkout button moves user to checkout form
+1.4.3.	  See More Dogs button when clicked user moves to Dogs page
+1.4.4.	  Adopt button 
+1.4.4.1.	User receives a message “Total Adoption Fees X” where x is the total cost of all dogs selected
+1.4.4.2.	Amount in header is updated with the total cost of all dogs selected
+1.4.5.	  Clear Your Selections button – the page refreshes clearing all selections and dollar amounts
+1.4.6.	  Footer
+1.4.6.1.	Home link – user remains on existing page
+1.4.6.2.	Dogs link moves user to Dogs page
+1.4.6.3.	Contact link moves user to checkout form
+2.	Dogs page
+2.1.	Page renders in format matching design
+2.2.	Dog tiles
+2.2.1.	  On personal computer, tiles display three across
+2.2.2.	  On ipad tiles display two across
+2.2.3.	  On iphone tiles display one across
+2.3.	Validate links:
+2.3.1.	  Header
+2.3.1.1.	Home link moves user to Home Page
+2.3.1.2.	Dogs link remains on existing pagee
+2.3.1.3.	Blog link moves user to Blog Page
+2.3.2.	  Checkout button moves user to checkout form
+2.3.3.	  Adopt button 
+2.3.3.1.	User receives a message “Total Adoption Fees X” where x is the total cost of all dogs selected
+2.3.3.2.	Amount in header is updated with the total cost of all dogs selected
+2.3.4.	  Clear Your Selections button – the page refreshes clearing all selections and dollar amounts
+2.3.5.	  Footer
+2.3.5.1.	Home link moves user to Home Page
+2.3.5.2.	Dogs link user remains on existing pagee
+2.3.5.3.	Contact link moves user to checkout form
+3.	Blog page
+3.1.	Page renders in format matching design
+3.2.	Blogs
+3.2.1.	  On personal computer, image appears to the left and text appears to the right
+3.2.2.	  On ipad image appears to the left and text appears to the right  
+3.2.3.	On iphone image appears to the left and text appears to the right Validate links:
+3.3.	  Header
+3.3.1.	Home link moves user to Home page
+3.3.2.	Dogs link moves user to Dogs page
+3.3.3.	Blog link user remains on existing page
+3.4.	  Checkout button moves user to checkout form
+3.5.	  Footer
+3.5.1.	Home link – link moves user to Home page
+3.5.2.	Dogs link moves user to Dogs page
+3.5.3.	Contact link moves user to checkout form
+4.	Checkout
+4.1.	Page renders in format matching design
+4.2.	  Header
+4.2.1.	Home link moves user to Home page
+4.2.2.	Dogs link moves user to Dogs page
+4.2.3.	Blog link moves user to Blog Page
+4.3.	  Checkout button moves user to checkout form
+4.4.	  Footer
+4.4.1.	Home link link moves user to Home page
+4.4.2.	Dogs link moves user to Dogs page
+4.4.3.	Contact link user remains on existing page
+4.5.	When submit button is clicked
+4.5.1.	 Form data does not clear
+4.5.2.	 user receives a message “Thank you. The form information has been received.”
+4.5.3.	 On a personal computer - The data entered in the form is returned in the console log
+
+Results of testing:
+=====================================================================
+All scenarios passed testing on each browser type and device.
+The site received a score of 100 in the Chrome Lighthouse tool.
