@@ -8,7 +8,7 @@ The Adopt a Dog website is written in HTML, CSS and JS. Most pages are linked to
 
 ### Testing
 This website has been tested on MacOSX browsers (Chrome, Safari and Firefox) and also on Apple devices (iphone 5, iphone 11 and ipad mini).
-[testing document](https://akliz.github.io/html200-adopt-a-dog/testing.txt)
+* [testing document](https://akliz.github.io/html200-adopt-a-dog/testing.txt)
 
 ## Version History
 * 0.2
