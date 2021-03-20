@@ -22,9 +22,9 @@ the design of the page. The primary goal is showcasing adoptable dogs and the se
 + Predictable work hours
 + Experienced dog owner, currently searching for a 3rd dog to add to the family
 + Lives on a large enclosed plot of land and will allow pets to roam around
-### Testing Plan
+## Testing Plan
 The site is optimized for Firefox, Chrome and Edge internet browsers. The site accommodates popular desktop, tablet and web sizes. The pages were tested on browser, iPhone and Android devices.
 
 ---
-### License
+## License
 [jquery](https://code.jquery.com/)
