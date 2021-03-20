@@ -57,13 +57,13 @@ $(function() {
             $(this).fadeOut();
             $(this).fadeOut('slow');
             $(this).fadeOut(2000);
-        })
+        });
 
         $('.whole-content, .dogs, .blog, .form').click(function(){
             $('footer').fadeIn();
             $('footer').fadeIn(3000);
-        })
-        // 
+        });
+        
     // Total from cart is tracked
     $(function(){
         let addItem = 0;
@@ -78,9 +78,9 @@ $(function() {
     $('#form').submit(function(event) {
           console.log($(this).serializeArray());
             event.preventDefault();
-        });
+            alert("Thank you. The form information has been received");
+    });
     
-
     // Click event on adopt tiles
     $(function(){
         $('#murphy').click(function(){
@@ -103,7 +103,7 @@ $(function() {
         });
         $('#angus').click(function(){
             alert('Name: Angus, Breed: Bullmastiff, Cost: $123.45');
-                            });
+        });
         $('#violet').click(function(){
             alert('Name: Violet, Breed: Field Spaniel, Cost: $123.45');
         });
