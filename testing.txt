@@ -1,0 +1,35 @@
+User Research
+- Persona: the college student
+- Name: Julia Smith
+- Age: 20
+- Has a partner
+- Occupation: Student, pursuing a Bachelor's in Computer Science
+- Living situation: Lives in a 1-bedroom apartment off-campus.
+- Tech details: She is very comfortable using a computer and loves to help her peers. Works out of a laptop, prefers Chrome and Firefox and has high speed internet. Also has a Samsung smartphone.
+- Activities: Avid hiker and biking is her main mode of transport
+- Other details: She is looking to adopt a dog that can keep up with her active lifestyle that also is friendly with other pets and people.
+
+- Additional considerations:
+  - Dial-up internet
+  - Colorblindness
+  - Not-tech-savvy people (those who need help with using technology)
+  - Older technology (Internet Explorer, flip phone w/ internet access ability, older generation smart phones, etc.)
+
+Testing:
+-Firefox Desktop-
+  - full screen and adjusting the screen width and height and testing each page
+
+-Edge Desktop-
+  - full screen and adjusting the screen width and height and testing each page
+
+-Opera Desktop-
+  - full screen and adjusting the screen width and height and testing each page
+
+-Chrome Desktop-
+  - full screen and adjusting the screen width and height and testing each page
+
+-Safari App (on iPad)-
+  - test each page and button for appropriate behaviour
+
+-Firefox Focus (on Samsung Galaxy 9)-
+  - test each page and button for appropriate behaviour
