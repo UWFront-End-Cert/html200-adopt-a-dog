@@ -23,3 +23,5 @@ the design of the page. The primary goal is showcasing adoptable dogs and the se
 + Experienced dog owner, currently searching for a 3rd dog to add to the family
 + Lives on a large enclosed plot of land and will allow pets to roam around
 ---
+### License
+[jquery](https://code.jquery.com/)
