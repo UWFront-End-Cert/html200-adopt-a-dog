@@ -16,7 +16,7 @@ alert(result);
 });
 
 $('button').on('click', function() {
-    const values = $('form').serialize();
+    const values = $('form').serializeArray();
     console.log(values);
   })
 

@@ -1,0 +1,23 @@
+Persona:
+Name: Lady Gaga
+
+Job Title: Exotic Veterinarian
+
+Demographics:
+•	35 years old
+•	Single
+•	Has 3 parrots, a bearded dragon and, a sulcata tortoise
+•	Is now interested in a rescue dog (preferably a French bulldog) to act as an office dog and a partner outdoors
+
+Goals and Tasks: 
+She is focused on providing the best care to exotic pets.
+
+Spends time:
+•	Hiking and Snowboarding 
+•	Long walks around the block
+•	Caring for pets
+
+Environment: Has access to high-speed internet and mobile devices, but despises Internet Explorer.  
+
+Testing
+The following steps were taken to test the site:
