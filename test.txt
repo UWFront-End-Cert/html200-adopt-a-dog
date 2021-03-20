@@ -20,4 +20,12 @@ Spends time:
 Environment: Has access to high-speed internet and mobile devices, but despises Internet Explorer.  
 
 Testing
-The following steps were taken to test the site:
+The following steps were taken using the following browsers to test the site:
+•	Chrome, Firefox, and Opera
+•	I checked to see if the pages rendered properly on each browser. 
+•	I tested the responsiveness by resizing the window in each browser.
+•	Clicked on each button to validate that links are working as expected.
+
+Results
+Everything worked as expected in all three browsers except I found a bug in the cart icon on the contact page that I was able to fix.
+
