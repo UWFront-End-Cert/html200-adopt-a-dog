@@ -1,0 +1,26 @@
+Welcome to the Adopt-a-Dog website!
+
+Testing was done on Browsers:
+- Chrome
+- Firefox
+- Opera
+- Edge
+- Safari
+Note: Older versions of these browsers may have different results.  If this happens, if it possible to update your browser we recommend it. IE that is no longer supported by Microsoft was not part of verification.
+
+Environments tested:
+- MacBook Air
+- Windows 10 and Windows 7
+- Android 8 and newer
+
+Testing Steps:
+- Ensure the page loads properly, even when the network has slow.
+- All browsers present the website with little or no issues viewing.
+- Each page was viewed and dogs selected to purchase. 
+- When each dog is selected it adds to the total of the cart.
+- When removing a dog from the cart the price is removed from total.
+- Ensure when paying for adopted dog the price total is correct.
+- Sizing the page to various widths to ensure the viewing pleasure is not lost
+
+Thank you for visiting adopt-a-dog website!
+Suzanne DePoe
