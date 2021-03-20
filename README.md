@@ -19,8 +19,8 @@ This website has been tested on MacOSX browsers (Chrome, Safari and Firefox) and
 ## Authors
 This website was created by Liz Cullivan as a class project and portfolio piece to demonstrate my skills in HTML, CSS, and JS.
 
-Linkedin Profile: https://www.linkedin.com/in/finchelizabeth/
+[Linkedin Profile] (https://www.linkedin.com/in/finchelizabeth/)
 
 ## Acknowledgements
 Inspiration for the ripple effect buttons:
-*[CSS-Tricks](https://css-tricks.com/how-to-recreate-the-ripple-effect-of-material-design-buttons/)
+* [CSS-Tricks](https://css-tricks.com/how-to-recreate-the-ripple-effect-of-material-design-buttons/)
