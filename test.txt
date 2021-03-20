@@ -25,7 +25,7 @@ The following steps were taken using the following browsers to test the site:
 •	I checked to see if the pages rendered properly on each browser. 
 •	I tested the responsiveness by resizing the window in each browser.
 •	Clicked on each button to validate that links are working as expected.
-
+•	I tested it on a Mac, Iphone and Ipad air.  I had another user test it on a PC.
 Results
 Everything worked as expected in all three browsers except I found a bug in the cart icon on the contact page that I was able to fix.
 
