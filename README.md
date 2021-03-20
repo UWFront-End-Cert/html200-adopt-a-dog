@@ -3,7 +3,7 @@ html200-adopt-a-dog
 LAST UPDATE 03/17/2021
 Assignment Lesson 09 - Milestone 3 assignment
 
-Implementing jQuery API was the chanllenge of this week's assignment.
+Implementing jQuery API was the challenge of this week's assignment.
 
 
 
