@@ -168,6 +168,12 @@ p.checkout {
 .header-top {
   padding-bottom: 4rem;
 }
+.logo img{
+  width:300px;
+}
+.logo .logo-text{
+  text-align: center
+}
 
 /** SM screens + **/
 @media screen and (min-width:678px) {
@@ -190,6 +196,9 @@ p.checkout {
     padding-bottom: 13.125rem;
     margin-bottom: 0 !important;
   }
+  .logo .logo-text{
+    text-align: left;
+  }
 }
 
 /**footer**/
@@ -209,6 +218,7 @@ footer {
   .footer-container {
     max-width: 30%;
   }
+
 }
 
 footer img {
@@ -327,7 +337,7 @@ form button, .button {
 
 span.ripple{
   position: absolute;
-  border-radius: 50%; 
+  border-radius: 50%;
   transform: scale(0);
   animation: ripple 600ms linear;
   background-color: rgba(255, 255, 255, 0.7);
