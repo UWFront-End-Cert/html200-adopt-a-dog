@@ -7,10 +7,7 @@ function dogInfo(dogName, breed, fees){
 let cartTotal = 0; //declare total outside of function so it can be added to each time the function is run
 
 function totalCost(fee){
-
   cartTotal = cartTotal + fee;
   alert (`Your Total Adoption Cost is ${cartTotal}`);
-  $('p.checkout strong').text(`$ ${cartTotal}`);
-
-
+  $('p.checkout strong').text(`$ ${cartTotal.toFixed(2)}`);
 }

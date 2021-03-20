@@ -18,7 +18,7 @@
           <h2 class="logo-text">Seattle's premiere dog adoption agency</h2>
         </div>
         <div class="col cart">
-          <p class="checkout"><img src="./images/cart-icon.svg" width="20" alt="shopping cart icon"><strong> $1234.56</strong></p>
+          <p class="checkout"><img src="./images/cart-icon.svg" width="20" alt="shopping cart icon"><strong> $00.00</strong></p>
           <p class="checkout"><a href="./checkout.html" class="button green-button checkout-btn" >Checkout</a></p>
         </div>
       </div>
@@ -40,27 +40,27 @@
           <div class="form-row row">
             <div class="col col-sm-12 pb-4" >
               <label for="name">Name</label>
-              <input type="text" id="name">
+              <input type="text" id="name" name="name">
             </div>
 
             <div class="col col-sm-12 pb-4">
               <label for="email">Email Address</label>
-              <input type="text" id="email">
+              <input type="text" id="email" name="email">
             </div>
 
             <div class="col col-sm-12 pb-4">
               <label for="street">Street Address</label>
-              <input type="text" id="street">
+              <input type="text" id="street" name="street">
             </div>
 
             <div class="col col-sm-6">
               <label for="city">City</label>
-              <input type="text" id="city">
+              <input type="text" id="city" name="city">
             </div>
 
             <div class="col col-sm-3">
               <label for="state">State</label>
-              <select id="state" class="select">
+              <select id="state" name="state" class="select">
                 <option selected>Choose...</option>
                 <option>AK</option>
                 <option>NC</option>
@@ -77,18 +77,18 @@
 
             <div class="col col-sm-3">
               <label for="zip">Zipcode</label>
-              <input type="text" id="zip">
+              <input type="text" id="zip" name="zip">
             </div>
 
             <div class="col col-sm-12 pb-4">
               <fieldset class="d-flex">
                 <legend>First Time Adopter?</legend>
                 <div class="radio-item">
-                  <input type="radio" id="yes" class="radio-item-input">
+                  <input type="radio" id="yes" name="First Time Adopter" class="radio-item-input">
                   <label for="yes"  class="radio-opt">Yes</label>
                 </div>
                 <div class="radio-item">
-                  <input type="radio" id="no" class="radio-item-input">
+                  <input type="radio" id="no" name="Not First Time Adopter" class="radio-item-input">
                   <label for="no" class="radio-opt">No</label>
                 </div>
 
@@ -97,7 +97,7 @@
 
             <div class="col col-sm-6 pb-4">
               <label for="pickup-location">Pickup Location</label>
-              <select id="pickup-location" class="select">
+              <select id="pickup-location" name="pickup-location" class="select">
                 <option selected>Choose...</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -132,7 +132,7 @@
             </div>
 
             <div class="col col-sm-12 pb-4">
-              <button id="submitForm" type="submit" class="button green-button" value="submit">Submit</button>
+              <button id="submitForm" name="submitForm" type="submit" class="button green-button" value="submit">Submit</button>
             </div>
           </div>
         </form>
