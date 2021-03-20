@@ -15,12 +15,25 @@ function infoRipper(dogName) {
   }
 }
 
-// Get price of the selected card button and set the price
+// Get price of the selected card button and set the price NOT SUPPORTED ON FIREFOX
 
-$('.dog-card-board button').click(function(){
+// $('.dog-card-board button').click(function(){
+//
+//     let pupPriceString = event.path[1].children[2].innerText;
+//     let pupPriceNumber = parseFloat(pupPriceString.substr(1));
+//
+//     adoptionTotalNumber = adoptionTotalNumber + pupPriceNumber;
+//     alert('Total price of adoption: $' + adoptionTotalNumber);
+//
+//     $('#totals').html('$'+ adoptionTotalNumber);
+// })
 
-    let pupPriceString = event.path[1].children[2].innerText;
-    let pupPriceNumber = parseFloat(pupPriceString.substr(1));
+$('.dog-card-board button').click(function(e){
+
+    // Returns an array of the Event information - above code wasn't supported in firefox
+    let eventObject =  event.composedPath();
+    let path = eventObject[1].childNodes[5].innerText;
+    let pupPriceNumber = parseFloat(path.substr(1));
 
     adoptionTotalNumber = adoptionTotalNumber + pupPriceNumber;
     alert('Total price of adoption: $' + adoptionTotalNumber);
