@@ -1,0 +1,48 @@
+Analytics:
+
+User persona:
+Persona: Pet lovers that are using the site to look for companion pets to socialize with their other pets. Very humanitarian.
+Name: Bob and Linda Belcher
+Age: Mid 50’s
+Reason: Interested in adding to their family since they’re empty nesters.
+Primary Device(s): Each have access to a 2-3 year old smart phone, and a 8 year old desktop from when their kids graduated college.
+Technological Competency: Okay with technology, but sometimes need help from their kids. Always relying on wifi and using hand-me-down technologies.
+
+General Persona:
+Ideally, website is user friendly and should work on a wide variety of devices for a wide general audience. The theme of the site is Simple & Clean. 
+
+Browsers tested as of 3/19/2021:
+* Google Chrome v89
+* Firefox v86.0.1
+* Edge (chormium) v89
+* Safari (iOS)
+* Safari (macOS Catalina)
+* Internet Explorer 11 (blog page and some general navigation does not work as intended.)
+
+Devices Tested:
+Android: Google Pixel 3 - 2018
+iOS: iPhone 12 mini - 2020
+Windows 10: desktop mode @1080p. AMD Ryzen 3600x, Nvidia 2060 Super
+macOS: Catalina @1440p Retina display. Macbook Pro 16 - 2018.
+iPad OS: iPad 4 (2nd generation)
+Dell Latitude 5400 (Windows 10 Enterprise), 720p 14 inch.
+
+Testing:
+* various devices and various resolutions within Chrome and Firefox
+* Various browsers on physical devices (the big 4)
+* Network traffic (3g simulation, 4g LTE simulation, 5g (actual), and gigabit ethernet)
+
+Passing variables:
+* All buttons must be visible and reachable on the screen.
+* The text must scale so that it is legible to the user.
+* The photos must display properly and proportionately on various resolutions
+* Mobile, Tablet, and Desktop views must be enabled on the respective resolutions.
+* all code on the site must execute as identified in the code without errors.
+
+Method:
+* Device A (regardless of OS) tests all major browsers (chrome, firefox, safari, edge chromium, IE), starting from the smallest possible reslution, to the highest.
+* Once passed, continue steps on Device B.
+* Repeat above 2 steps until all devices are displaying the website with desired results specified in the Media queries.
+
+Results:
+3/19/2021 - Pass, however IE11 shows some signs of incompatibility and Blog page needs some editing (known issue).

@@ -57,10 +57,10 @@
             
             <fieldset>
             <legend>First Time Adopter?</legend>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
+            <input type="radio" id="yes" name="yes" value="yes">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" id="no" name="no" value="no">
+            <label for="No">No</label>
             </fieldset>
             
             <label for="pickuplocation">Pickup Location</label>
@@ -70,12 +70,14 @@
                 <option value="public">public setting</option>
               </select>
             
-              <input type="submit" value="Submit">
+              <input type="submit" onclick="adoptionConfirmation()" value="Submit">
+              <button onclick="adoptionConfirmation()">Confirm</button>
             </form>
           </div>
 <h1>Dogs Adopted</h1>
     <img src="./images/lucas-checkout.jpg" alt="lucas-checkout">
     <img src="./images/duffy-checkout.jpg" alt="duffy-checkout">
+
 	</main>
 	<footer class="pagefooter">
 
@@ -95,5 +97,7 @@
         </ul>
 		<small>&#169;2021 Adoptadog, LLC | Seattle, WA</small>
 	</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/adoptadog.js" charset="utf-8"></script>
 </body>
 </html>

@@ -2,12 +2,36 @@ function dogInfo(name, breed, fee) {
     alert(name + ' is a ' + breed + ' and costs $' + fee + ' to adopt!');
     }
 
-    let feeTotal = 0;
+let feeTotal = 0;
 
-    function adoptionTotal(fee) {
-      feeTotal = fee + feeTotal;
-      alert('Total adoption fees: ' + '$' + feeTotal);
-    }
+function adoptionTotal(fee) {
+  feeTotal = fee + feeTotal;
+  alert('Total adoption fees: ' + '$' + feeTotal);
+  }
+
+
+// function formDataProvider() {
+//       const nameData = document.getElementById('name').value;
+//       console.log('Your name is ' + nameData + '.');
+//       const emailAddress = document.getElementById('email').value;
+//       console.log('Your email address is ' + emailAddress + '.');
+//       const physicalAddress = document.getElementById('address').value;
+//       console.log('Your address is ' + physicalAddress);
+//       const cityLocation = document.getElementById('city').value;
+//       console.log('Your city is ' + cityLocation + '.');
+//       const stateLocation = document.getElementById('state').value;
+//       console.log('Your state is ' + stateLocation + '.');
+//       const zipCodeNumber = document.getElementById('zip').value;
+//       console.log('Your zipcode is ' + zipCodeNumber + '.');
+//       if (document.getElementById('adoption-option').checked) {
+//       console.log('This is your first time adopting.');
+//       }
+
+
+// function adoptionConfirmation() {
+//   alert('Thank you. The form information has been received');
+// }
+
 
 // console.log($('img'))
 $(function(){
@@ -65,3 +89,11 @@ $('.dogcardimg').hover(function(){
   //form handler submission
   //dynamic blog
   //cart running total
+
+let total = 0;
+function adopt(price){
+  total = price + total;
+  console.log("Total:", total);
+
+  $("#cart-total").text(total.toFixed(2));
+}

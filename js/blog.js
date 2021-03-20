@@ -4,7 +4,7 @@ const blogs = [
         text: "blah blah",
         image: "./images/blog-1.jpg",
         alt: "dog stuff with people",
-        class: "blogImage",
+        // class: "blogImage",
         para: "the quick brown fox jumps over the lazy dog <br/> Everything in its right place"
     },
     {
@@ -12,14 +12,14 @@ const blogs = [
         text: "blah blah",
         image: "./images/blog-2.jpg",
         alt: "dog stuff with people",
-        class: "blogImage"
+        // class: "blogImage"
     },
     {
         headline: "teach dogs to walk Blog 3",
         text: "blah blah",
         image: "./images/blog-3.jpg",
         alt: "dog stuff with people",
-        class: "blogImage",
+        // class: "blogImage",
         para: "the quick brown fox jumps over the lazy dog <br/> Everything in its right place"
     }
 ]; //array of objects
