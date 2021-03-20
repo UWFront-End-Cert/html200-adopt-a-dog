@@ -23,7 +23,7 @@ the design of the page. The primary goal is showcasing adoptable dogs and the se
 + Experienced dog owner, currently searching for a 3rd dog to add to the family
 + Lives on a large enclosed plot of land and will allow pets to roam around
 ## Testing Plan
-The site is optimized for Firefox, Chrome and Edge internet browsers. The site accommodates popular desktop, tablet and web sizes. The pages were tested on browser, iPhone and Android devices.
+The site is optimized for Firefox, Chrome, Edge and Opera internet browsers. The site accommodates popular desktop, tablet and web sizes. The pages were tested on browser and Android devices. Firefox was the only browser to have issues with handling the event object, it would return an error saying that the event object did not exist. As a workaround, I used the event.composedPath() method to create the object. This worked accross all browsers. 
 
 ---
 ## License
