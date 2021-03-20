@@ -1,15 +1,33 @@
-Tested Site on Multiple Browsers:
-- Chrome
+##Personas
+
+###Breanna James
+- Age: 11 year old female (going on 18)
+- Education: 6th grade
+- Work Experience: Shovels snow off neighbors deck, babysits her sibilings, and makes felt elf ornaments to sell at her local town's craft fairs
+- Technical Experience: Know how to use the smart tv, her iPad and can navigate the school laptop they sent home for her to use during "zoom school"
+- Motivations: Is saving up to get a dog that will snuggle with her at night and scare the bears away in the summer when she walks to the park. She wants a dog that is already potty trained.
+
+###Marci Jean
+- Age: 68 year old female
+- Education: graduated community college
+- Work Experience: Worked as a real estate agent for 12 years and then as a book keeper for 20 years. Looking forward to working very part time (semi-retiring - doesn't want to not work).
+- Technical Experience: Is comfortable with Window computers and her iphone. Never wanted to work on computers so didn't take typing class serious in school and there for still uses only her pointer fingers and thumbs to type anything. Is willing to learn new technology if one of her kids or grandkids take the time to show her something.
+- Motivations: Looking for a small dog that doesn't need much attention. She wants to have motivation to go on walks by herself (plus the dog) to keep herself healthy as she continues to age. 
+
+
+##Tested Site on Multiple Browsers:
+
+###Chrome
   - alert boxes work
   - sized down on a browser nicely
   - responsiveness
     - Tested on iphone 5 size (one that you can't tell from a computer) - noticed somethings don't size properly and needed to make adjustments
     - Tested on iphone 11 size (appears as it doesn when you size down to the smallest size on laptop)
 
-- Safari
+###Safari
   - alert boxes work and actually look nicer than on chrome!
   - responsiveness - Header doesn't break down as small as the chrome browser. Doesn't look bad so no changes made.
 
-- Firefox
+###Firefox
   - responsiveness - this browser allows you to go to smaller widths so it does size down to mobile width nicely.
   - responsiveness - needed to change up classes on form to resize properly - adjustment was needed because originally coded to size down from desktop rather than size up from mobile.
