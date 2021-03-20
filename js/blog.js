@@ -32,7 +32,7 @@ function addBlogs() {
     article.setAttribute('id', articleID);
 
     const imageDiv = document.createElement('div');
-    imageDiv.setAttribute('class', 'col col-md-4 col-sm-12 blog-photo');
+    imageDiv.setAttribute('class', 'col col-xs-12 col-md-4 blog-photo');
 
     const image = document.createElement('img');
     image.setAttribute('src', fields[i].blogImageSrc);
@@ -44,7 +44,7 @@ function addBlogs() {
     imageDiv.appendChild(image);
 
     const blogDiv = document.createElement('div');
-    blogDiv.setAttribute('class', 'col col-md-8 col-sm-12');
+    blogDiv.setAttribute('class', 'col col-xs-12 col-md-8');
 
     const blogHeaderfield = document.createElement('h2');
     blogHeaderfield.textContent = fields[i].blogHeader;

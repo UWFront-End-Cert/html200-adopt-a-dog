@@ -1,0 +1,9 @@
+Tested Site on Multiple Browsers:
+- Chrome - alert boxes work,
+- Safari
+  - alert boxes work and actually look nicer than on chrome!
+  - responsiveness - Header doesn't break down as small as the chrome browser. Doesn't look bad so no changes made.
+- Firefox
+  - responsiveness - this browser allows you to go to smaller widths so it does size down to mobile width nicely.
+  - responsiveness - needed to change up classes on form to resize properly - adjustment was needed because originally coded to size down from desktop rather than size up from mobile.
+  
