@@ -1,0 +1,14 @@
+User Personas
+	The user base is going to be person who is interested in adopting a dog for various reasons.  The devices that they might be using can range from an old device to a very new device, and so does the browser type and systems.
+
+	Example User Persona:
+		Name: Alex Smith
+		Age: 40 years old
+		Occupation: Nurse
+		Demographics: He is currently looking for a dog to accompany his 5 years-old son with disabilities.  He would like to start with relatively economic choices first before looking into trained emotional support dogs.
+		Devices:  He has a 3-year old MacBookAir with iOS Mountain Lion installed, his main browser is Google chrome and he also has the Firefox on his laptop as a backup browser.  He has Safari installed but never rarely uses it.  He has a google pixel 3a with him as a cellular device.
+
+Testing Steps:
+	Test the website on Google Chrome, FireFox, and Safari - The website works well when on Google Chrome and Firefox, but when it is opened with Safari, the CSS style is rough on the dog tiles of the index page.  Javascript is working as expected
+	Test the website on a PC and a Mac - The website was tested on a Mac Book Pro (Chrome, FireFox, Safari) and a Surface Pro (PC) (Chrome, Microsoft Edge), the CSS, Javascript are working as expected.
+	Test the website on a phone/tablet - The responsive layouts were working as expected on a phone and a tablet (as the surface pro)
