@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+  }
+
+  /* skeleton */
+  header {
+    clear: both;
+    margin-bottom: 0;
+  }
+
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  footer {
+    clear: both;
+    margin-bottom: 0;
+  }
+
+  /* header setting */
+  .header-banner {
+    background-image: linear-gradient(45deg, blue, grey);
+    background-image: url(../images/header-image.jpg);
+    padding-left: 7rem;
+    padding-top: 3rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    color: #81B741;
+    font-family: "Lucida Handwriting", "Brush Script M7", cursive;
+    font-size: 1.75rem;
+  }
+
+  .header-logo {
+    width: 40%;
+    height: auto;
+  }
+
+  .check-cart {
+    width: 13%;
+    height: auto;
+  }
+
+  .shopping-cart {
+    width: 1.5rem;
+    text-align: right;
+  }
+
+  .check-out {
+    background-color: #81B741;
+    color: white;
+    padding: 10px 4px;
+    text-align: center;
+  }
+
+  .headernavigation {
+    display: block;
+    text-align: left;
+    align-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    color: #083B60;
+    padding-left: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: lightgrey;
+    font-weight: bold;
+  }
+
+  .headernavigation a {
+    color: #083B60;
+    text-decoration: none;
+    padding: 5px;
+  }
+
+/* form setting */
+h2 {
+  color: #083B60;
+  font-family: Garamond, Georgia, Serif;
+  margin: 0%;
+  padding: 5% 5% 0% 5%;
+}
+
+form {
+  padding: 5%;
+}
+
+.formitem {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.formsections {
+  display: flex;
+  flex-direction: row;
+}
+
+.formsection {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.label {
+  color: #083B60;
+  font-size: 20px;
+  font-family: Garamond, Georgia, Serif;
+}
+
+input, select{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.FirstTime {
+  border: none;
+  padding-left: 0rem;
+}
+
+.radiooption {
+  padding: 0.1rem;
+}
+
+
+/*dog tiles at end*/
+.doglist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dogs {
+  width: 30rem;
+  height: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+
+.dog-image {
+  height: 100%;
+  width: auto;
+}
+
+.dogname {
+  margin: 0rem;
+}
+
+
+  /* footer setting */
+footer {
+  background-color: #083B60;
+  background-position: bottom;
+  background-size: cover;
+  position: static;
+  color: white;
+  font-size: 17px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.footerImage {
+  width: 20rem;
+  height: auto;
+}
+
+.footernavigation {
+  font-size: 20px;
+  list-style-type: none;
+  overflow: hidden;
+  color: white;
+}
+
+.footernavigation a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/*grid*/
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/*responsive layout  - Have the dog grid layout change from 3 columns to 1 on mobile devices */
+@media only screen and (max-width:576px) {
+  aside {
+    display: none !important;
+  }
+  .header-logo {
+    width: 60%;
+    height: auto;
+  }
+
+  .check-cart {
+    width: 15%;
+    height: auto;
+  }
+
+  .shopping-cart {
+    width: 1.5rem;
+    text-align: right;
+  }
+
+  .header-banner {
+    padding: 3rem;
+  }
+
+  .headernavigation {
+    padding-left: 2rem;
+  }
+
+  .col-8 {
+    width: 100%;
+  }
+
+  main {
+    margin: 0rem;
+  }
+
+  .maintext {
+    margin: 0rem;
+    padding: 3rem;
+  }
+
+  .description {
+    padding: 0rem;
+  }
+
+  .doglist {
+    padding: 0rem;
+    justify-content: center;
+  }
+
+  .dogs {
+    width: 25rem;
+    height: 27rem;
+  }
+
+  button {
+    width: 23rem;
+  }
+
+  .SeeMoreDogs {
+    width: auto;
+  }
+
+
+}
+
+/*responsive layout  - Have the dog grid layout change from 3 columns to 2 on tablet devices */
+@media only screen and (max-width:768px) and (orientation: landscape)  {
+  .header-logo {
+    width: 60%;
+    height: auto;
+  }
+
+  .check-cart {
+    width: 15%;
+    height: auto;
+  }
+
+  .shopping-cart {
+    width: 1.5rem;
+    text-align: right;
+  }
+
+  .header-banner {
+    padding: 3rem;
+  }
+
+  .headernavigation {
+    padding-left: 2rem;
+  }
+
+  .col-8 {
+    width: 100%;
+  }
+
+  .col-4 {
+    width: 100%;
+  }
+
+  main {
+    margin: 0rem;
+  }
+
+  .maintext {
+    margin: 0rem;
+    padding: 3rem;
+  }
+
+  .description {
+    padding: 0rem;
+  }
+
+  .doglist {
+    padding: 0rem;
+    justify-content: center;
+  }
+
+  .dogs {
+    width: 14.5rem;
+    height: 27rem;
+  }
+
+  button {
+    width: 12rem;
+  }
+
+  .SeeMoreDogs {
+    width: auto;
+  }
+
+  aside {
+    padding: 0rem 3rem;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .blog-title {
+    margin: 0rem;
+    padding: 2rem;
+  }
+
+  .blogitem {
+    display: flex;
+    margin: 1rem;
+    height: 14.5rem;
+  }
+
+  .blogimage {
+    height: 100%;
+    width: auto;
+  }
+
+  .blogpreview {
+    padding: 1rem;
+  }
+}

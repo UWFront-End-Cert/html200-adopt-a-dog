@@ -2,121 +2,139 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name = "viewport" content = "width=device-width, intial-scale=1" charset="utf-8">
-  <title>>Adopt A Dog</title>
+  <meta name="viewport" content="width=device-width, intial-scale=1" charset="utf-8">
+  <title>Adopt A Dog</title>
 
   <link rel="stylesheet" type="text/css" href="./styles/checkout.css">
+
 
 </head>
 
 <body>
-  <header>
-    <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
-    <h1>Seattle's Premiere dog adoption agency</h1>
-    <img src="./images/cart-icon.svg" alt="shopping cart icon">
-    <p>check out</p>
+  <header class="col-12">
+    <div class="header-banner">
+      <div class="header-logo">
+        <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <h1>Seattle's Premiere dog adoption agency</h1>
+      </div>
+      <div class="check-cart">
+        <img class="shopping-cart" src="./images/cart-icon.svg" alt="shopping cart icon">
+
+        <p class="check-out">check out</p>
+      </div>
+    </div>
+    <div class="headernavigation">
+      <nav>
+        <a class="headernavigationitem" href="./index.html">Home</a>
+        <span> / </span>
+        <a class="headernavigationitem" href="./doglist.html">Dogs</a>
+        <span> / </span>
+        <a class="headernavigationitem" href="./blog.html">Blog</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <nav class="col span_3_of_12">
-      <ul class="menunavigation">
-        <li class="menunavigationitem"><a href="./index.html">Home</a></li>
-        <li class="menunavigationitem"><a href="./doglist.html">Dogs</a></li>
-        <li class="menunavigationitem"><a href="./blog.html">Blog</a></li>
-      </ul>
-    </nav>
     <h2>Checkout</h2>
-    <form class="" method="get" name="check-out-cart">
-      <div class="row">
-        <label for="name" Autofocus>Name
-          <input type="text" name="name" value="name" id="name" required>
+    <form id="form" method="get" name="check-out-cart">
+      <div class="formitem">
+        <label class="col-12 label" for="name" Autofocus>Name</label>
+        <input class="col-12" type="text" name="name" value="" id="name" required>
+
+      </div>
+
+      <div class="formitem">
+        <label class="col-12  label" for="email">Email Address
+          <input class="col-12" type="email" name="email" value="" id="email" required>
         </label>
       </div>
 
-      <div class="row">
-        <label for="email">Email Address
-          <input type="email" name="email" value="email" id="email" required>
+      <div class="formitem">
+        <label class="col-12  label" for="address">Street Address
+          <input class="col-12" type="text" name="address" value="" id="address" required>
         </label>
       </div>
 
-      <div class="row">
-        <label for="address">Street Address
-          <input type="text" name="address" value="address" id="address" required>
-        </label>
+      <div class="formitem formsections">
+        <div>
+          <label class="col-12 formsection label" for="city">City</label>
+          <input class="col-10 formsection" type="text" name="city" value="" id="city" required>
+        </div>
+
+        <div>
+          <label class="col-12 formsection label" for="state">State </label>
+          <input class="col-10 formsection" type="text" name="state" value="" id="state" required>
+        </div>
+
+        <div>
+          <label class="col-12 formsection label" for="zipcode">Zip Code</label>
+          <input class="col-10 formsection" type="text" name="zipcode" value="" id="zipcode" pattern="[0-9]*" required>
+        </div>
+
       </div>
 
-      <div class="row">
-        <label for="city">City
-          <input type="text" name="city" value="city" id="city" required>
-        </label>
+      <div class="formitem">
+        <fieldset class="FirstTime">
+          <legend class="label">First Time Adopter?</legend>
+          <div class="radiooption">
+            <input type="radio" name="firsttimeadoper" value="Yes" id="yes">
+            <label for="yes" id="Yes">Yes</label>
+          </div>
 
-        <label for="state">State
-          <input type="text" name="state" value="state" id="state" required>
-        </label>
+          <div class="radiooption">
 
-        <label for="zipcode">Zip Code
-          <input type="number"
-          name="zipcode" id="zipcode" required>
-        </label>
-      </div>
-
-      <div class="row">
-        <fieldset>
-          <legend>First Time Adopter?</legend>
-
-          <input type="radio" name="firsttimeadoper" value="Yes" id="yes">
-          <label for="yes" id="Yes">Yes</label>
-
-          <input type="radio" name="firsttimeadoper" value="No" id="no">
-          <label for="no" id="No">No</label>
+            <input type="radio" name="firsttimeadoper" value="No" id="no">
+            <label for="no" id="No">No</label>
+          </div>
 
         </fieldset>
 
       </div>
 
 
-      <div class="row">
-        <label for="location">Pickup Location</label>
-        <select name="location" id="location">
+      <div class="formitem">
+        <label class="col-12 label" for="location">Pickup Location</label>
+        <select class="col-12" name="location" id="location">
           <option value="Location1">Location1</option>
           <option value="Location2">Location2</option>
           <option value="Location3">Location3</option>
         </select>
 
       </div>
-      <h3>Dogs Adopted</h3>
-      <img src="./images/lucas-card.jpg" alt="picture of dog named lucas">
 
-      <h4>Lucas</h4>
-      <p>Cost to Adopt: $123.45</p>
-      <img src="./images/duffy-card.jpg" alt="picture of dog named duffy">
-      <h4>Duffy</h4>
-      <p>Cost to Adopt: $123.45</p>
-      <h3>Total Adoption Cost</h3>
-      <p>$1234.56</p>
+      <div class="doglist">
+      <div class="dogs">
+        <img class="dog-image" src="./images/duffy-card.jpg" alt="picture of dog named duffy">
+        <div class="doginfo col-8">
+        <h3 class="dogname">Duffy</h3>
+        <p class="">Cost to Adopt: $123.45</p>
+      </div>
+      </div>
 
-
-      <div class="row">
-        <input type="submit" name="submit" value="submit">
+      <div class="dogs">
+        <img class="dog-image" src="./images/lucas-card.jpg" alt="picture of dog named lucas">
+        <div class="doginfo col-8">
+        <h3 class="dogname">Lucas</h3>
+        <p class="">Cost to Adopt: $123.45</p>
+      </div>
 
       </div>
+    </div>
     </form>
-
-
-
-
   </main>
-  <footer>
-    <img src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
+  <footer class="col-12">
+    <img class="footerImage" src="./images/adoptadog-logo.svg" alt="adopt a dog logo">
     <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
 
-    <nav>
+    <nav class="footernavigation">
       <a class="footernavigationitem" href="./index.html">Home</a>
       <span> / </span>
       <a class="footernavigationitem" href="./doglist.html">Dogs</a>
       <span> / </span>
       <a class="footernavigationitem">Contact</a>
     </nav>
-      <p>2018 Adoptadog, LLC | Seattle, WA</p>
+    <p>2018 Adoptadog, LLC | Seattle, WA</p>
 
   </footer>
+  <script src="javascript/checkout.js" charset="utf-8"></script>
+</body>

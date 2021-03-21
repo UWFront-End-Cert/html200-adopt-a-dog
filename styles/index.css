@@ -10,8 +10,8 @@ header {
 }
 
 main {
-  margin-left: 15rem;
-  margin-right: 15rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .maintext {
@@ -74,7 +74,7 @@ h1 {
   list-style-type: none;
   overflow: hidden;
   color: #083B60;
-  padding-left: 15rem;
+  padding-left: 10%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   background: lightgrey;
