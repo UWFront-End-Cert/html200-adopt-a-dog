@@ -130,6 +130,7 @@ li.header-nav-list-item {
     display:flex;
     flex-direction:column;
     margin-top:10%;
+    margin-left:5%;
 }
 .blog-aside-main-page {
     margin-top:17%;
