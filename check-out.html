@@ -11,7 +11,7 @@
       <p>Seattle's premier dog adoption agency</p>
       <img src="images/cart-icon.svg" alt="Shopping cart">
       <div class="checkout-button">
-        <a href="checkout.html">Checkout</a>
+        <a href="check-out.html">Checkout</a>
       </div>
       <nav>
         <ul>
@@ -29,7 +29,7 @@
       <label>Email Address: <input type="text" name="customerEmail" required></label>
       <label>Street Address: <input type="text" name="customerAddress" required></label>
       <label>City: <input type="text" name="customerCity" required></label>
-      <label>State: <select name="State" required>
+      <label>State: <select name="State" size="51" required>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
         <option value="AZ">Arizona</option>
@@ -83,28 +83,34 @@
         <option value="WY">Wyoming</option>
       </select></label>
       <label>Zip Code: <input type="number" name="zipCode" required></label>
-      <label>First Time Adopter?
-        <input type="radio" name="firstTimeAdopter" value="Yes">
-        <input type="radio" name="firstTimeAdopter" value="No">
-      </label>
-      <label>Pickup Location: <select name="State" required>
+      <fieldset>
+        <legend>First Time Adopter?</legend>
+        <label><input type="radio" name="firstTimeOrVet" value="firstTimer">Yes</label>
+        <label><input type="radio" name="firstTimeOrVet" value="proAtThis">No</label>
+      </fieldset>
+      <label>Pickup Location:<select name="pickUpLocation" size="2" required>
         <option value="thisPlace">This Place</option>
         <option value="thatPlace">That Place</option>
-        <label>Submit <input type="submit" name="submit" value="Submit"></label>
+      </select></label>
+      <label>Submit:<input class="submit" type="submit" name="Submit" value="Get at me!"></label>
     </form>
-    <h2>Dogs Adopted</h2>
-    <section>
-      <img src="images/lucas-checkout.jpg" alt="Lucas' thumbnail">
-      <p>Lucas</p>
-      <p>Cost to Adopt: $123.45</p>
-    </section>
-    <section>
-      <img src="images/duffy-checkout.jpg" alt="Duffy's thumbnail">
-      <p>Duffy</p>
-      <p>Cost to Adopt: 123.45</p>
-    </section>
-    <h2>Total Adoption Cost</h2>
-    <p>246.90</p>
+    <article>
+      <h2>Dogs Adopted</h2>
+      <section>
+        <img src="images/lucas-checkout.jpg" alt="Lucas' thumbnail">
+        <p>Lucas</p>
+        <p>Cost to Adopt: $123.45</p>
+      </section>
+      <section>
+        <img src="images/duffy-checkout.jpg" alt="Duffy's thumbnail">
+        <p>Duffy</p>
+        <p>Cost to Adopt: 123.45</p>
+      </section>
+      <section>
+        <h2>Total Adoption Cost</h2>
+        <p>246.90</p>
+      </section>
+    </article>
     <footer>
       <img src="images/adoptadog-logo.svg" alt="Site logo which says Adopt a Dog">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
