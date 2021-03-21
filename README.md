@@ -14,7 +14,7 @@
 
 ### Adopt A Dog agency is located in Seattle, Wa. Although, there are two store locations available: one in Tacoma, and the second in Everett area, where you can easily pick up your favorite puppy.
 
-### As an adoption agency, we are deeply concerned in animal walfare, especifically in our 'dogs'. So be aware, we accept purchases from all US territory but, unfortunely, we are not responsible to send by mail your selected item.
+### As an adoption agency, we are deeply concerned in animal walfare, specifically in our 'dogs'. So be aware, we accept purchases from all US territory but, unfortunely, we are not responsible to send by mail your selected item.
 
 ### Our personnel are absolutely supportive and proffessional, they are able to provide you as a client the best customer service have you ever experienced.
 
