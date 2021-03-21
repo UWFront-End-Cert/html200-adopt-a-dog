@@ -9,30 +9,42 @@ function adoptionTotal(fee) {
   alert('Total adoption fees: ' + '$' + feeTotal);
   }
 
+const obj = {}; //declaring empty object
+function adoptionConfirmation(event) {
+  alert('Thank you. The form information has been received');
+  event.preventDefault();
+  const formData = document.getElementById('checkoutForm');
+  console.log(formData.elements);
+  for (let i = 0; i < formData.elements.length - 1; i++) {
+    // console.log(formData.elements[i].value);
+    // console.log(formData.elements[i].id);
+    const key = formData[i].id
+    const value = formData[i].value
+    obj[key] = value;   
+  }
+  console.log(obj);
+}
 
-// function formDataProvider() {
-//       const nameData = document.getElementById('name').value;
-//       console.log('Your name is ' + nameData + '.');
-//       const emailAddress = document.getElementById('email').value;
-//       console.log('Your email address is ' + emailAddress + '.');
-//       const physicalAddress = document.getElementById('address').value;
-//       console.log('Your address is ' + physicalAddress);
-//       const cityLocation = document.getElementById('city').value;
-//       console.log('Your city is ' + cityLocation + '.');
-//       const stateLocation = document.getElementById('state').value;
-//       console.log('Your state is ' + stateLocation + '.');
-//       const zipCodeNumber = document.getElementById('zip').value;
-//       console.log('Your zipcode is ' + zipCodeNumber + '.');
-//       if (document.getElementById('adoption-option').checked) {
-//       console.log('This is your first time adopting.');
-//       }
-
-
-// function adoptionConfirmation() {
-//   alert('Thank you. The form information has been received');
-// }
-
-
+function formDataProvider() {
+      const nameData = document.getElementById('name').value;
+      console.log('Name: ' + nameData + '.');
+      const emailAddress = document.getElementById('email').value;
+      console.log('email: ' + emailAddress + '.');
+      const homeAddress = document.getElementById('address').value;
+      console.log('address: ' + homeAddress);
+      const cityLocation = document.getElementById('city').value;
+      console.log('city: ' + cityLocation + '.');
+      const stateLocation = document.getElementById('state').value;
+      console.log('state: ' + stateLocation + '.');
+      const zipCode = document.getElementById('zip').value;
+      console.log('zipcode: ' + zipCode + '.');
+      if (document.getElementById('no').checked) {
+      console.log('first time adopter.');
+      }
+      if (document.getElementById('yes').checked) {
+        console.log('Not first time adopter.');
+      }
+    }
 // console.log($('img'))
 $(function(){
   console.log('DOM is ready, javascript loading!')
@@ -85,15 +97,12 @@ $('.dogcardimg').hover(function(){
   });
 
   //things to do:
-  //On Click event
-  //form handler submission
-  //dynamic blog
   //cart running total
 
-let total = 0;
-function adopt(price){
-  total = price + total;
-  console.log("Total:", total);
+// let total = 0;
+// function adopt(price){
+//   total = price + total;
+//   console.log("Total:", total);
 
-  $("#cart-total").text(total.toFixed(2));
-}
+//   $("#cart-total").text(total.toFixed(2));
+// }

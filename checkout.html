@@ -32,7 +32,7 @@
 	<main>
         <h1>Checkout</h1>
         <div>
-            <form action="/action_page.php">
+            <form id="checkoutForm" onsubmit="adoptionConfirmation(event)">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name..">
           
@@ -55,7 +55,7 @@
               <label for="zip">Zip Code</label>
               <input type="text" id="zip" name="zip" placeholder="Your zip code..">
             
-            <fieldset>
+            <!-- <fieldset>
             <legend>First Time Adopter?</legend>
             <input type="radio" id="yes" name="yes" value="yes">
             <label for="Yes">Yes</label><br>
@@ -68,10 +68,11 @@
                 <option value="store">store</option>
                 <option value="home">home</option>
                 <option value="public">public setting</option>
-              </select>
+              </select> -->
             
-              <input type="submit" onclick="adoptionConfirmation()" value="Submit">
-              <button onclick="adoptionConfirmation()">Confirm</button>
+              <input type="submit" value="Submit" onsubmit="adoptionConfirmation()">
+              <!-- <button onclick="adoptionConfirmation()">Confirm</button> -->
+              <!-- <button onclick="formDataProvider()">Confirm</button> -->
             </form>
           </div>
 <h1>Dogs Adopted</h1>
