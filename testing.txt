@@ -1,0 +1,35 @@
+
+
+USER:
+
+Persona: Old Dog Lady
+
+Fictional Name: Allison Black
+
+Job Title: Retired, formerly Barnes and Noble Manager
+
+Demographics: 
+	Age: 71
+	Martial Status: Separated
+	Father of two adult children, one who moved to Hong Kong and the other to 
+	Singapore. 
+	Grandmother of twins.
+	Bachelors Degree in Business from UW.
+
+	She is outdoorsy and loves to work with people. Likes to explore new places, more so 			in her youth. She has a lot of free time but still has trouble with some technology. Her      
+	goal is to live life to the fullest.
+
+	She loves to read, but sticks to her tablet and paper books. She does not use the 			internet frequently. She heard about Adopt A Dog from a friend and wanted to try to use  	the service during the pandemic to avoid traveling. 
+
+	She previously used Internet Explorer but upgraded to Edge. Her internet is basic. She is a beginner internet 	user. She has old slow internet. She uses email about once a week to keep in touch 	with friends in other cities. She has a 5 year old phone she rarely uses. Her mostly uses her Microsoft Surface when using the internet which is 4 years old. 
+
+	
+Users likely come from a variety of backgrounds. We should have full mobile and tablet support in addition to desktop support on the primary browsers. The site does not take much memory so it should load easily on most internets. Most people in Seattle probably do not use dial up internet. If users from more rural areas show interest in the site, testing on dial up might make sense. Site is simple and easy to use and most users should have no trouble using it, as long as it loads. 
+
+TESTING:
+
+To ensure quality, tested on Safari, Chrome, and Firefox. Appears functional and no obvious differences between different browers. Should work on most desktops. Tested on tablet (iPad Air 2) and iPhone 6. On tablet, index was a little cramped so adjusted spacing. Everything else appears fine. On phone, blog page has bad sizing. Not entirely sure what to change - perhaps scale the image down and change the font size of the blog post. Tested on PC (using Chrome). Again no differences, appeared fully functional.
+
+STYLE:
+
+Site is simple without complex colors. Header image and slogan look good and declare the purpose of the site. White is used as the background color, a common theme in many sites. Green is used for the buttons, which creates an overall relaxing appearance. Main page offers quick access to blogs for curious users. Dogs page continues themes of main page. Blogs page is not significantly different. Overall, site is simple and easy on the eyes. 
