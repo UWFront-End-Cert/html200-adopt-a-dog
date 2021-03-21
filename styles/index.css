@@ -55,10 +55,16 @@ h1 {
   height: auto;
 }
 
+.totalamount {
+  color:white;
+}
+
 .shopping-cart {
   width: 1.5rem;
   text-align: right;
 }
+
+
 
 .check-out {
   background-color: #81B741;
@@ -98,8 +104,6 @@ h2 {
   padding: 2rem 2rem 2rem 0rem;
 }
 
-.description-text {}
-
 .description-image {
   width: 100%;
   height: auto;
@@ -134,6 +138,11 @@ h2 {
   height: auto;
 }
 
+.dog-image-big {
+  width: 150%;
+  height: auto;
+}
+
 .dogname {
   color: #083B60;
   font-family: "Georgia", Garamond, serif;
@@ -161,12 +170,21 @@ button {
   margin: 0rem 1rem;
 }
 
+.redbutton {
+  background-color: khaki;
+  color:black;
+}
+
 .SeeMoreDogs {
   background-color: lightgrey;
   color: #083B60;
   padding: 1rem;
   width: 15rem;
   text-align: center;
+}
+
+.hoverborder {
+  border: 3px solid green;
 }
 
 /* blog aside*/
