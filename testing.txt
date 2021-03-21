@@ -1,0 +1,109 @@
+User Persona:
+
+1st customer profile:
+Type of persona: Recent graduated and freelancer
+Name: Claire Carlson
+Age: 21
+Status: Single
+Environment:
+Living partially independent on the second floor of her parent's house
+Working outdoors in public city parks as a yoga teacher
+Occupation: Freelance yoga teacher
+Education: Recently graduated in Bachelor of Arts in UW
+Income: $60.000 per year
+Free time activities: Hiking, mountaineering, vegan cook lover, reading blog-posts and meditation books
+Devices: Owning a 1 year-old i-Phone SE and a 2 year-old MacBook Air Retina 
+Technical ability: High knowledge of the use of the latest technology on the market, mainly Apple.  She has experience with android and windows as well
+Scenario: 
+This user prefers to adopt a dog than buy one from a pet store 
+She loves animals, especially dogs, and nature
+Living on her own, upstairs at her parent's house, but interested in having a pet
+Expectations: 
+Provide a secure purchase transaction from our website
+A physical address or location to pick up the purchased item
+
+2nd customer profile:
+Client overview: Adult male and nature lover
+Name: Brandon Soltello
+Age: 42 years old
+Status: Divorced
+Education: Graduated in Mechanical Engineering in 2001 and Certificate in Green Energy Sustainability 2018
+Occupation: Working in his own business related in biology and organic compounds
+Environment:
+Workplace: An office, a second tiny house for workplace next to his home 
+Home: Currently, living off-grid  in a tiny house  in Whidbey Island
+Hobbies: Driving, rowing, fishing, hiking. In his twenties he was a tri athlete
+Income: $40.000 per year
+Technology: 
+Samsung Note Galaxy 20 and Samsung Galaxy S8
+Owned a MacBook, Lenovo and Dell laptops. And a old personal computer bought in 1999
+Technical knowledge: Extremely comfortable in Windows, Apple and Linux. His preference on Android is just because iPhones brought him a bad memoirs during the divorce process
+Why Adop A Dog: He is currently living on his own in the nature. He loves dogs since he was a child, and that was one of the reasons he got divorced, his ex-wife hated pets, nature
+Expectations:
+Become a member and colaborate with the agency
+Real testimonials available in the website
+
+-----------------------------------------------------------------
+
+Adopt A Dog Website Testing
+
+Introduction:
+
+Adopt A Dog is a website course project which consists in four pages total:
+
+- Three content pages called 'index.html', 'dogs.html', and 'blog.html'. Being 'index.html' the homepage where links to the rest of the pages.
+- Last one called 'checkout.html' that is only accessed by the green 'checkout' button located in the header, exactly, on the top right under the cart and the total counter.
+
+Language and technology:
+
+This project was initially coded in HTML and CSS3, then JavaScript to add more flexibility and functionality. In the last stage jQuery.
+
+TESTING 
+
+Tools for testing:
+- Browsers: Google Chrome, Mozilla Firefox, and Brave
+- External tool resource: https://www.screenfly.org
+
+The procedure will evaluate every page individually following these requirements: 
+
+Visibility and responsiveness. Behavior in different breakpoints and viewports, interactivity, font-sizing, colors, scrolling, buttons, links, and effects. 
+
+Evaluation:
+
+Pages will be tested in the following order: index.html, dogs.html, blog.html, checkout.html.The evaluation result will be presented as paragraph in "Results."
+
+Devices:
+MOBILE -> Models -> Moto G4, Pixel 2, Pixel 2 XL, , Samsung Galaxy S3-7 and LG3-5, Galaxy Fold, Apple iPhone 3/4, Apple iPhone 5/SE, Apple iPhone 6/7 Plus, Apple iPhone 6/7
+
+Results:
+
+The test was succesfully accomplished. All pages renders efficiently in all viewports. Breakpoints are responsive, no weird behaviours detected during the testing process. Layouts are very stable, both horizontal and vertical. Tasks such as clickable items and effects behave properly. Images and fonts are readable for all type of users. The page scrolls correctly. 
+ 
+TABLET -> Models -> Microsoft Surface Pro, Samsung Galaxy Tab, Samsung Galaxy Tab 7", Apple iPad, Apple iPad Pro, Kindle Fire HD 8.9", Kindle Fire, Kindle Fire HD 7", Asus Nexus 7
+
+Results:
+The test was succesfully accomplished. All pages renders efficiently in all viewports. Breakpoints are responsive, no weird behaviours detected during the testing process. Layouts are very stable, both horizontal and vertical. Tasks such as clickable items and effects behave properly. Images and fonts are readable for all type of users. The page scrolls correctly.  
+
+DESKTOP -> Non specific device. The test has been evaluated by screen resolution. 
+24" (1920 x 1200) - landscape and portrait mode
+23" (1920 x 1080) - landscape and portrait mode
+22" (1680 x 1050) - landscape and portrait mode
+20" (1600 x 900) - landscape and portrait mode
+19" (1440 x 900) - landscape and portrait mode
+
+Results:
+The test was succesfully accomplished. All pages renders efficiently in all viewports. Breakpoints are responsive, no weird behaviours detected during the testing process. Layouts are very stable, both horizontal and vertical. Tasks such as clickable items and effects behave properly. Images and fonts are readable for all type of users. The page scrolls correctly.  
+
+Extra:
+Device: NETBOOK. 
+List of screen sizes and viewport resolutions:
+15" (1366 x 768) - landscape and portrait mode
+13" (1280 x 800) - landscape and portrait mode
+12" (1024 x 768) - landscape and portrait mode
+10" (1024 x 600) - landscape and portrait mode
+
+Results:
+The test was succesfully accomplished. All pages renders efficiently in all viewports. Breakpoints are responsive, no weird behaviours detected during the testing process. Layouts are very stable, both horizontal and vertical. Tasks such as clickable items and effects behave properly. Images and fonts are readable for all type of users. The page scrolls correctly.  
+
+This evaluation has been succesfully accomplished by Juan Bermejo Gallego. Dated March 21, 2021.
+
