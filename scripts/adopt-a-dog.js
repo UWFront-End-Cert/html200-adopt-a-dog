@@ -2,6 +2,10 @@ function clickHandler(str) {
     alert(str);
 };
 
+function thankYou(str) {
+    alert('Thank you. The form information has been received');
+}
+
 //A Home effect that gives the tile an outline, or give it a box shadow
 $(function () {
     console.log('The page has loaded');
@@ -25,7 +29,7 @@ $(function () {
     $('img').mouseover(function () {
         $(this).animate({ width: '300px', height: '150px' }, 100);
     }); $('img').mouseout(function () {
-        $(this).animate({ width: '100%', height: '6rem' }, 100);
+        $(this).animate({ width: '100%', height: '15rem' }, 100);
     });
 });
 

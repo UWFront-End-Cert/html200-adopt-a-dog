@@ -34,14 +34,14 @@ h3 {
   display: flex;
   flex-direction: column;
   margin: 0 0 0 5rem;
+  padding-top: 3rem;
   width: 70%;
 }
 .dog-img-header {
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   /* padding-top: 14rem; */
 }
 .dog-img-header p {
@@ -57,20 +57,30 @@ h3 {
   margin: 1rem;
 }
 .svg-cart {
-  width: 15%;
+  width: 30%;
   height: auto;
   color: white;
 }
 .price {
+  color: white;
   font-size: 1rem;
+  padding: .5rem 0rem 1rem 1rem;
 }
 .cart-btn {
   color: #ffffff;
   background-color: #33cc33;
-  margin-left: 10rem;
+  width: 35%;
 }
-.price {
-  color: white;
+.cart-box {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2rem 0 0 20%;
+}
+  .cart-price {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
 }
 /*--End of Header--*/
 /*--Start Nav Menu Top Start--*/
@@ -108,8 +118,8 @@ h3 {
 .adopt-a-dog-intro {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  margin-left: 7rem;
+  width: 85%;
+  margin-left: 4rem;
   height: auto;
 }
 .index-image-top {
@@ -380,8 +390,8 @@ main {
 .blog-item {
   display: flex;
   flex-direction: row;
-  padding-bottom: 7rem;
-  width: 90%;
+  justify-content: left;
+  padding-bottom: 3rem;
 }
 .blog-content {
   display: flex;
@@ -521,12 +531,6 @@ select {
   height: 2rem;
   width: 50%;
 }
-.cart-box {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100%;
-  padding-top: 2rem;
-}
 .submit-button {
   width: 14%;
   height: 20%;
@@ -592,7 +596,6 @@ input {
   .cart-btn {
     color: #ffffff;
     background-color: #33cc33;
-    margin-left: 10rem;
     width: 25%;
   }
   .dog-img-header {
@@ -804,11 +807,6 @@ input {
     margin: 0 0 0 1rem;
     padding: 1rem 0 1rem 2rem;
   }
-  .blog-item {
-    flex-direction: column;
-    margin: 0;
-    padding-bottom: 1.5rem;
-  }
   .blog-image {
     width: 90%;
   }
@@ -824,6 +822,7 @@ input {
   .blog-topic {
     color: #2f4f4f;
     font-size: 1.2rem;
+    font-weight: bold;
     width: 30rem;
     margin-top: 1rem;
   }

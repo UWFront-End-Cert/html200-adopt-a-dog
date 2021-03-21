@@ -12,6 +12,7 @@ Environments tested:
 - MacBook Air
 - Windows 10 and Windows 7
 - Android 8 and newer
+- iPhone and iPad
 
 Testing Steps:
 - Ensure the page loads properly, even when the network has slow.

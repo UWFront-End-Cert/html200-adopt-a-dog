@@ -11,19 +11,17 @@
 
 <body>
   <header>
-    <div>
-      <div class="cart-box">
-        <div>
-          <img class="svg-cart" src="images/cart-icon.svg" alt="checkout cart icon">
-          <label class="price"> $1234.56</label>
-        </div>
-        <div>
-          <input class="cart-btn" type="submit" value="Checkout">
-        </div>
+    <div class="dog-img-header">
+      <img class="svg-dog-header" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
+      <p>Seattle's premiere dog adoption agency</p>
+    </div>
+    <div class="cart-box">
+      <div class='cart-price'>
+        <img class="svg-cart" src="images/cart-icon.svg" alt="checkout cart icon">
+        <span class="price"> $1234.56</span>
       </div>
-      <div class="dog-img-header">
-        <img class="svg-dog-header" src="images/adoptadog-logo.svg" alt="Adopt-a-dog logo">
-        <p>Seattle's premiere dog adoption agency</p>
+      <div>
+        <input class="cart-btn" type="submit" value="Checkout">
       </div>
     </div>
   </header>
@@ -103,7 +101,8 @@
       <div class="cost-container">
         <label class="cost">Total Adoption Cost</label>
         <p class="price-adopt">$1234.56</p>
-        <input class="last-button" type="submit" name="adoptionTotal">
+        <!--Form Submit for Thank you-->
+        <input class="last-button" onClick="thankYou()" type="submit" name="adoptionTotal">
       </div>
     </form>
   </main>
@@ -118,6 +117,7 @@
     </nav>
     <p>2018 Adoptadog, LLC | Seattle, WA</p>
   </footer>
+  <script src="./scripts/adopt-a-dog.js"></script>
 </body>
 
 </html>
