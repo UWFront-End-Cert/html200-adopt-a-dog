@@ -45,3 +45,6 @@ The user base is going to be person who is interested in adopting a dog for vari
   * HTML - works as expected on all browsers described above
   * CSS - the responsive design works as expected
   * Javascript (jQuery) - works as expected on all browsers described above
+
+## Overview of Changes Made ##
+The main changes made for this website in order to incoporate the resposive CSS for all devices (Which has been tested to perform as expected) is adding the media query to select a layout for each type of devices (laptop, tablet, or phone).  Anther change that has been made is the ensure having an Alternative text on all the images, as the slow internet may cause the image file to not load and displaying an alt text is critical.  A backup gradient background made will be visible if the background image of the header do not show.
