@@ -1,3 +1,10 @@
+User perosna
+Devin, a male, who is 20-year-old college sophomore, lived on campus. 
+He is studying at home during the covid lock down. Devin has a younger sister who is 12-year-old. And they are the only 2 childen of a married couple that live in Denver Colorado.
+
+Devin was very althletic in high school, but is not as active in college due to the heavy study load he has as a double major. He would like to have an safe activity that he can share with his sister while he is home. So they decide to adopt a dog to have a walking campanion for he and his sisiter.
+Devin is savvy with computer and latest technology. He owns a regular laptop computer, but has a latest Apple mobile device.
+
 Tested the site on
 - iPhone 5 with Safari
 - laptop with Firebox and Chrome
