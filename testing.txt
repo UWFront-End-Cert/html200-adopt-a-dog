@@ -28,7 +28,7 @@ Users likely come from a variety of backgrounds. We should have full mobile and 
 
 TESTING:
 
-To ensure quality, tested on Safari, Chrome, and Firefox. Appears functional and no obvious differences between different browers. Should work on most desktops. Tested on tablet (iPad Air 2) and iPhone 6. On tablet, index was a little cramped so adjusted spacing. Everything else appears fine. On phone, blog page has bad sizing. Not entirely sure what to change - perhaps scale the image down and change the font size of the blog post. Tested on PC (using Chrome). Again no differences, appeared fully functional.
+To ensure quality, tested on Safari, Chrome, and Firefox. Appears functional and no obvious differences between different browers. Should work on most desktops. Tested on tablet (iPad Air 2) and iPhone 6. On tablet, index was a little cramped so adjusted spacing. Everything else appears fine. On phone, blog page has bad sizing. Not entirely sure what to change - perhaps scale the image down and change the font size of the blog post (EDIT: Fixed). Tested on PC (using Chrome). Again no differences, appeared fully functional.
 
 STYLE:
 
