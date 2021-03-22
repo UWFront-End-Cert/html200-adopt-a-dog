@@ -1,0 +1,20 @@
+Tested the site on
+- iPhone 5 with Safari
+- laptop with Firebox and Chrome
+
+Overall the site performed well functionally on all three browsers.
+Firefox was the default browser I used when developing the site, thus it performed as expected.
+
+On iPhone
+The Checkout page performed poorly. The fields were too small for filling out the info so are problematic. This page did not employ flexbox feature and it showed. Partly due to the fact that the site was initially developed with the desktop layout first, instead of the mobile first strategy. Will change that process for the next project.
+
+On Chrome
+The browser adds additional content with dogcard’s altert box which was unexpected, but is not a major issue. I can live with that for now. But, like to investigate a fix with code.
+
+This issue affect all browsers
+- The Adopt and Checkout buttons failed the color contrast test on https://webaim.org/.
+- Would go back to the designers and suggest them to choose a darker color or change the button text from white to black to ensure the site meets the WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text.
+
+To Do
+- Need to add interaction behaviors with css on all buttons to improve the site’s usability. This simple fix will give users the sorely missed feedback when they are interacting with the site.
+- Need to add form error prevention and validation as well.
