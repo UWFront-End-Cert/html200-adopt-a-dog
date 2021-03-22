@@ -384,4 +384,8 @@ li {
     .see-more-dogs-button-holder {
         margin-left:33%;
     }
+    .blog-main-holder {
+        display:flex;
+        flex-direction:column;
+    }
 }
