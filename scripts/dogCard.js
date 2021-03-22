@@ -17,8 +17,7 @@ function clickHandler(str) {
 
 $('.card').mouseover(function() {
   $(this).addClass('dog-image');
-});
-
-$('.card').mouseout(function() {
-  $(this).removeClass('dog-image');
-});
+  $('.card').mouseout(function() {
+    $(this).removeClass('dog-image');
+  });
+})
