@@ -206,7 +206,7 @@ article > p {
 }
 .dogcard-focus {
     z-index: 1;
-    margin: .5rem;
+    margin: 0;
     padding: 1rem;
     transition: all .5s ease;
 }
