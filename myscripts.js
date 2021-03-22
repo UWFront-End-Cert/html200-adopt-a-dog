@@ -6,19 +6,22 @@ const dogBlogData =
     image: './images/blog-1.jpg',
     altText: 'Dog with Owner on a cliff',
     title:'How to Walk your Dog',
-    blogText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et mlesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odio eleifend dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.'
+    blogText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et mlesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odio eleifend dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.',
+    blogText2:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et mlesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odio eleifend dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.'
     },
     {
     image: './images/blog-2.jpg',
     altText: 'Multiple dogs on leashes',
     title: 'How to Walk Multiple Dogs',
-    blogText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odi eleifend dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.'
+    blogText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odi eleifend dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.',
+    blogText2:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et mlesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odio eleifend dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.'
     },
     {
     image: './images/blog-3.jpg',
     altText: 'Dog and owner with sunset',
     title: 'How to Teach Your Dog To Fetch',
-    blogText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odio eleifen dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.'
+    blogText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odio eleifen dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.',
+    blogText2:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit imperdiet urna, vitae dignissim enim iaculis eu. Interdum et mlesuada fames ac ante ipsum primis in faucibus. Ut a justo pellentesque, gravida lacus id, rhoncus lorem. Cras aliquam mauris lacus, lacinia posuere tellus blandit id. Morbi consectetur neque ac odio eleifend dictum. Vestibulum tempus velit eu nibh laoreet, vel eleifend nisi ornare. Nulla rhoncus suscipit velit ut suscipit. Maecenas quis consectetur sapien. Maecenas vel fringilla tellus. Cras fringilla nibh sed neque pellentesque accumsan.'
     }
 ];
 let total = 0.00;
@@ -63,7 +66,11 @@ function blogFieldsGenerator() {
             const blogSubPara = document.createElement('p');
             blogSubPara.className = 'blog-sub-paragraph';
             blogSubPara.textContent = dogBlogData[i].blogText;
-            blogTextHolder.appendChild(blogSubPara);    
+            blogTextHolder.appendChild(blogSubPara);  
+            const blogSubPara2 = document.createElement('p');
+            blogSubPara2.className = 'blog-sub-paragraph';
+            blogSubPara2.textContent = dogBlogData[i].blogText2;
+            blogTextHolder.appendChild(blogSubPara2);      
         }
 }
 
