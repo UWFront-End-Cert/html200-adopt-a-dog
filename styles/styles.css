@@ -33,6 +33,11 @@ header h2 {
   height: 3rem;
 }
 
+.total-cart {
+  display: grid;
+  margin: 6rem;
+  min-width: 7rem;
+}
 
 
 .header-images {
