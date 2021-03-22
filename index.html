@@ -11,14 +11,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
   <link rel="stylesheet" type= "text/css" href= "./styles/styles.css">
-  <script src="./script.js"></script>
+  
 </head>
 <body>
   <header>
 
     <div class= "checkout">
       <i class="fas fa-shopping-cart"></i>
-      <button type="button" onclick="alert('adoptCart')">Checkout</button>
+
+      <button class="checkout-btn" onClick="window.location.href='./form.html'">Checkout</button>
   </div>
 <div class= "logo">
     <img src="./images/adoptadog-logo.svg" alt="logo">
@@ -72,58 +73,58 @@
 
   <main>
     <article>
-      <img src="./images/murphy-card.jpg" onclick="dogInfo('Murphy','Boxer mix.  ',150.00)" alt="brown dog">
+      <img src="./images/murphy-card.jpg" onclick="dogInfo('Murphy, Breed: Boxer Mix, Cost: $150.00');" alt="brown dog">
       <h4>Murphy</h4>
       <h5>Cost to Adopt: $150.00</h5>
       <p>Murphy is a Boxer mix. She is 3 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
-        <button type="button" onclick="feeTotal(150.00)">Adopt</button>
+        <button name="adoptDog" onclick="total(150.00)">Adopt</button>
     </article>
     <article>
-      <img src="./images/poppy-card.jpg" onclick="dogInfo('Poppy','Shih Tzu ',150.00)" alt="white fluffy dog">
+      <img src="./images/poppy-card.jpg" onclick="dogInfo('Poppy', Breed: Shih Tzu , Cost: $150.00)" alt="white fluffy dog">
       <h4>Poppy</h4>
       <h5>Cost to Adopt: $150.00</h5>
       <p>Poppy is a Shih Tzu. She is 2 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
-        <button type="button" onclick="feeTotal(150.00)">Adopt</button>
+        <button name="adoptDog" onclick="total(150.00)">Adopt</button>
     </article>
     <article>
-      <img src="./images/jack-card.jpg" onclick="dogInfo('Jake','Beagle ',200.00)" alt="brown and white dog looking up">
+      <img src="./images/jack-card.jpg" onclick="dogInfo('Jack, Breed: Beagle, Cost: $123.45')" alt="brown and white dog looking up">
       <h4>Jack</h4>
       <h5>Cost to Adopt: $200.00</h5>
       <p>Jack is a Beagle puppy. She is 10 weeks old, neutered, microchipped, vaccinated, playful/happy and ready for a new forever home.
       </p>
-        <button type="button" onclick="feeTotal(200.00)">Adopt</button>
+        <button name="adoptDog" onclick="total(200.00)">Adopt</button>
     </article>
     <article>
-      <img src="./images/duffy-card.jpg" onclick="dogInfo('Duffy','Pitbull ',150.00)" alt="white and brown pitbull mix">
+      <img src="./images/duffy-card.jpg" onclick="dogInfo('Duffy', Breed: Pitbull, Cost: $150.00)" alt="white and brown pitbull mix">
       <h4>Duffy</h4>
       <h5>Cost to Adopt: $150.00</h5>
       <p>Duffy is a Pitbull. She is 6 months, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
-        <button type="button" onclick="feeTotal(150.00)">Adopt</button>
+        <button name="adoptDog" onclick="total(150.00)">Adopt</button>
     </article>
     <article>
-      <img src="./images/lucas-card.jpg" onclick="dogInfo('Lucas ','German Sheppard mix ',150.00)" alt="black German Shppard mix">
+      <img src="./images/lucas-card.jpg" onclick="dogInfo('Lucas ', Breed: German Sheppard mix, Cost: $150.00)" alt="black German Shppard mix">
       <h4>Lucas</h4>
       <h5>Cost to Adopt: $150.00</h5>
       <p>Lucas is a German Sheppard mix. He is 4 years old, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
-        <button type="button" onclick="feeTotal(150.00)">Adopt</button>
+        <button type="button" name="adoptDog" onclick="total(150.00)">Adopt</button>
     </article>
     <article>
-      <img src="./images/jake-card.jpg" onclick="dogInfo('Jake ','Labrador Retriever ',150.00)" alt="black dog looking up">
+      <img src="./images/jake-card.jpg" onclick="dogInfo('Jake ', Breed: Labrador Retriever, Cost: $150.00)" alt="black dog looking up">
       <h4>Jake</h4>
       <h5>Cost to Adopt: $150.00</h5>
       <p>Jake is a Labrador. He is 4 years old, neutered, microchipped, vaccinated, house/leash trained and ready for a new forever home.
       </p>
-        <button type="button" onclick="feeTotal(150.00)">Adopt</button>
+      <button name="adoptDog" onclick="total(150.00)">Adopt</button>
     </article>
 
   </main>
 
 
-  <div class="all-button"><button onclick="window.location.href='https://w3docs.com';">
+  <div class="all-button"><button onClick="window.location.href='./all-dogs.html'">
       See More Dogs
     </button></div>
 
@@ -142,6 +143,7 @@
       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
 
     </footer>
+    <script src="./scripts/script.js"></script>
 
 </body>
 </html>

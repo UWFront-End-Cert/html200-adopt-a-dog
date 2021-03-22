@@ -11,14 +11,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
   <link rel="stylesheet" type= "text/css" href= "./styles/styles.css">
-  <script src="./script.js"></script>
+  
 </head>
 <body>
   <header>
 
     <div class= "checkout">
       <i class="fas fa-shopping-cart"></i>
-      <button type="button" onclick="alert('adoptCart')">Checkout</button>
+      <small class="total">0.00;<span id="grand">0.00</span></small>
+      <button class="checkout-btn"type="button" value="Checkout" onClick="window.location.href='./form.html'">Checkout</button>
   </div>
 <div class= "logo">
     <img src="./images/adoptadog-logo.svg" alt="logo">
@@ -32,6 +33,12 @@
         <li><a href="./blog.html">Blog/</a></li>
       </ul>
   </nav>
+
+ <main class="main-blog" id="blogs-container">
+   <h1>Adoptadog Blog</h1>
+ </main>
+
+    <!-- Main content page
 <div class= "main-blog">
   <h2>Adoptadog Blog</h2>
 
@@ -55,12 +62,10 @@ Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que dolup
     <img src="./images/blog-2.jpg" alt="silhouette of woman and dog playing fetch in the sunset">
     <h3>
 Teach Your Dog To Fetch!</h3>
-    <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.
-  Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.
+    <p>Iduciendisite quo maut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.
     </p>
   </article>
-</div>
-
+  !-->
 <footer>
   <img src="./images/adoptadog-logo.svg" alt="logo" width= "300"/>
   <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
@@ -75,6 +80,7 @@ Teach Your Dog To Fetch!</h3>
   <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
 
 </footer>
+<script src="./scripts/blog.js"></script>
 
 </body>
 </html>

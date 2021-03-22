@@ -56,6 +56,7 @@ i {
   margin-bottom: 1em;
 }
 
+
 body {
   padding-left: 5%;
   padding-right: 5%;
@@ -349,7 +350,10 @@ input[type=submit] {
   flex-direction: row;
   width: 50%;
 }
-
+fieldset {
+  display:flex;
+  flex-direction: row;
+}
 label select {
   height: 3em;
 }
@@ -363,7 +367,11 @@ hr {
 .main-blog {
   display:flex;
   flex-direction: column;
-  padding: 5%;
+  align-self: center;
+  border-style: none;
+  justify-content: center;
+  width: 90%;
+
 }
 
 .blog-article img {
@@ -374,14 +382,15 @@ hr {
 
  .blog-article p {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  width: 70%;
 
  }
 .blog-article {
   display: flex;
   flex-flow: row wrap;
   margin:2em;
-
+ border-style: none;
 }
 
 .blog-article h3 {

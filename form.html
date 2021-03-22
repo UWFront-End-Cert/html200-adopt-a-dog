@@ -8,19 +8,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" type= "text/css" href= "./styles/styles.css">
-  <script src="./script.js"></script>
+
 </head>
 <body>
   <header>
 
     <div class= "checkout">
       <i class="fas fa-shopping-cart"></i>
-      <button type="button" onclick="alert('adoptCart')">Checkout</button>
-
+      <small class="total">0.00;</small>
+      <button class="checkout-btn"type="button" value="Checkout" onClick="window.location.href='./form.html'">Checkout</button>
   </div>
-
-    <img src="./images/adoptadog-logo.svg" alt="logo" width= "350"/>
+  <div class= "logo">
+    <img src="./images/adoptadog-logo.svg" alt="logo">
     <h1>Seattle’s premiere dog adoption agency</h1>
+</div>
   </header>
   <nav>
       <ul>
@@ -29,28 +30,32 @@
         <li><a href="./blog.html">Blog/</a></li>
       </ul>
   </nav>
+
+
   <div class= "dog-form">
     <h2>Checkout</h2>
-  <form action="/action.php" method="GET" name="checkout">
-    <label> Name
-      <input type="text" name="name">
+
+  <form id="form" class="form" method="GET" autocomplete="off">
+    <label for="name" class="name">Name
+      <input id="name" type="text" name="clientName" placeholder="Client's full name">
     </label>
     <hr>
     <label>Email Address
-        <input type="email" name="email" placeholder="you@domain.com">
+        <input id="email" type="email" name="clientEmail" placeholder="you@domain.com">
     </label>
     <hr>
-  <label> Address
-    <input type="text" name="address">
+  <label for="address"> Address
+    <input id="address" type="text" name="clientAddress" placeholder="Street Number, Street Name">
   </label>
   <hr>
   <div class="row">
-    <label> City
-      <input type="text" name="city">
+    <label for="city">City
+      <input id="city" type="text" name="clientCity" placeholder="Seattle">
     </label>
 
-    <label> State
-      <select name="state">
+    <label for="state">State
+      <select name="state" id="state">
+
         <option value="AL">Alabama</option>
 	      <option value="AK">Alaska</option>
     	  <option value="AZ">Arizona</option>
@@ -108,15 +113,22 @@
     <label>Zipcode
       <input id="zip" name="zip" type="text" pattern="[0-9]*">
     </label>
-
   </div>
-    <label>First Time Adopter?
-      <input type="radio" name="yes" value="yes"> Yes
-      <input type="radio" name="no" value="no"> No
-    </label>
+
+
+
+  <fieldset>
+             <legend>First Time Adopter?</legend>
+             <input type="radio" id="yes" name="adopt" value="yes">
+                 <label for="yes">Yes</label>
+             <input type="radio" id="no" name="adopt" value="no">
+                 <label for="no">No</label>
+         </fieldset>
+
     <hr>
+
     <label> Pickup Location
-      <select name="pickup-location">
+      <select name="location" id="location">
         <option value="seattle">Seattle, WA</option>
         <option value="los-angeles">Los Angeles, CA</option>
         <option value="new-york">New York, NY</option>
@@ -125,9 +137,36 @@
         <option value="miami">Miami, FL</option>
      </select>
   </label>
+
+
   <hr>
-  <input type="submit" value="Submit">
-</div>
+   <input type="submit" value="Submit" onsubmit="adoptionConfirmation()">
+
+<section class="dogs-adopted">
+            <h2>Dogs Adopted</h2>
+            <article class="lucas">
+                <img src="./images/lucas-checkout.jpg" alt="Lucas image">
+                <div class="lucas-cost">
+                    <h3>Lucas</h3>
+                    <p>Cost to adopt:$123.45 </p>
+                </div>
+            </article>
+            <article class="duffy">
+                <img src="./images/duffy-checkout.jpg" alt="Duffy image">
+                <div class="duffy-cost">
+                    <h3>Duffy</h3>
+                    <p>Cost to adopt: $123.45</p>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <label for="total">Total Adoption Cost</label>
+
+            <hr>
+            <input type="submit" name="submit" id="submit">
+
+    </form>
+    </div>
 <footer>
   <img src="./images/adoptadog-logo.svg" alt="logo" width= "300"/>
   <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
@@ -142,9 +181,6 @@
   <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
 
 </footer>
-
-</body>
-</html>
-
+<script src="./scripts/form.js"></script>
 </body>
 </html>
