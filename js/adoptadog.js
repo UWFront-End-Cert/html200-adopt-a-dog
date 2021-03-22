@@ -7,6 +7,7 @@ let feeTotal = 0;
 function adoptionTotal(fee) {
   feeTotal = fee + feeTotal;
   alert('Total adoption fees: ' + '$' + feeTotal);
+  $('#cart-total').text('$' + feeTotal); //leveraged jQuery to get the cart total working.
   }
 
 const obj = {}; //declaring empty object
