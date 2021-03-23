@@ -1,4 +1,3 @@
-const form = document.getElementById('form');
 
 
     const clientName = document.getElementById('name').value;
@@ -33,12 +32,12 @@ const form = document.getElementById('form');
     const storeLocation = document.getElementById('location').value;
         console.log('You have selected: ', storeLocation);
 
-    document.getElementById('submit');
-        console.log("Thank you. The form information has been received");
-        alert("Thank you. The form information has been received");
 
-form.addEventListener('submit', function (event) {
+    function formSubmit(event) {
+  $('form').submit(function(event) {
     event.preventDefault();
+    alert('Thank you. The form information has been received.');
+
 
     const formData = document.getElementById('form').elements;
 
@@ -51,3 +50,5 @@ form.addEventListener('submit', function (event) {
     console.log(formData)
 
 });
+
+}
