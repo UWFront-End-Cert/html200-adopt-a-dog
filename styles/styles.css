@@ -48,6 +48,13 @@ header button {
   display: flex;
 }
 
+.flex-price {
+  color: white;
+}
+
+.checkout-price {
+  color: black;
+}
 i {
   color: white;
   font-size: 1em;
@@ -180,6 +187,10 @@ main article p,h4,h5,button {
    font-size: 1em;
    font-weight: bold;
    padding: .75em;
+}
+
+.border {
+  border: 3px solid red;
 }
 
 footer {
