@@ -1,4 +1,7 @@
 # html200-adopt-a-dog
+
+AdoptADog is a website for a fictional pet rescue organization. Through this project, I learned JavaScript basics, jQuery, responsive design, and testing on a variety of platforms. I was introduced to the concept of user personas, and their role in website development.
+
 ## TESTING
 
 ### User persona: Gillian Anderson
@@ -39,12 +42,16 @@ ___
 </tr>
 <tr>
   <td><b>Appearance - other</b></td>
-  <td>Margin at right, shows scroll bar</td>
-  <td>Margin at right, shows scroll bar</td>
-  <td>Margin at right, shows scroll bar</td>
-  <td>Margin at right, shows scroll bar</td>
+  <td>Margin at right, shows scroll bar<br>
+    <b>FIXED</b></td>
+  <td>Margin at right, shows scroll bar<br>
+    <b>FIXED</b></td>
+  <td>Margin at right, shows scroll bar<br>
+    <b>FIXED</b></td>
+  <td>Margin at right, shows scroll bar<br>
+    <b>FIXED</b></td>
   <td><i>Landscape mode:</i> .dogcards seem to be very stretched, vertically</td>
-  <td></td>
+  <td><i>Landscape mode:</i> Not all text in dogcards resizes when changing orientation</td>
 </tr>
 <tr>
   <td><b>HTML/CSS</b></td>
