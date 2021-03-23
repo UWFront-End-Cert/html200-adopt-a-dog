@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>html200-adopt-a-dog</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
   </head>
   <body>
 
@@ -14,7 +14,10 @@
         <img class="logoHeader" src="./images/adoptadog-logo.svg" alt="Company Logo" id="adoptadog-logo">
         <h2 class="headertext">Seattle's premiere dog adoption agency</h2>
       </div>
+      <div class="total-cart">
         <a class="checkout" href="./Contact.html">Checkout</a>
+      </div>
+
 
     </header>
 
@@ -25,11 +28,31 @@
         <li><a href="./blog.html">Blog</a></li>
       </ul>
     </nav>
-    <main class="wrapper">
-      <section class="left, liability">
+    <main class="wrapper3">
+      <section class="liability checkoutForm">
         <h3>Checkout</h3>
-        <form action="/action_page.php">
-          <label for="fname">Name</label>
+        <form id="checkoutForm" name="checkoutForm" action="/action_page.php" method="GET">
+          <div class="form-grid-container">
+            <div class="form-grid-name">
+              <label class="form-span" for="fullName">Name</label>
+              <input type="text" id="fullName" name="fullName" required>
+            </div>
+          <div class="form-grid-email">
+            <label for="emailAddress">Email Address</label>
+            <input type="text" name="emailAddress" required id="emailAddress">
+          </div>
+          <div class="form-grid-street">
+            <label for="streetAddress">Street Address</label>
+            <input type="text" name="streetAddress" required id="streetAddress">
+          </div>
+          <div class="form-grid-city">
+              <label for="city">City</label>
+              <input type="text" name="city" required id="city">
+            </div>
+            <div class="form-grid-state">
+              <label for="state">State</label>
+              <select class="select" id="state" name="state">
+          <!-- <label for="fname">Name</label>
           <input type="text" id="firstName" name="firstname" placeholder="Enter Your First Name..">
 
           <label for="email">Email Address</label>
@@ -41,8 +64,9 @@
           <label for="city">City</label>
           <input type="text" id="city" name="city" placeholder="City..">
 
+          <div class="form-grid-state">
           <label for="state">State</label>
-          <select id="state" name="state">
+          <select class="select" id="state" name="state"> -->
             <option value="Placeholder">...</option>
             <option value="AL">Alabama</option>
           	<option value="AK">Alaska</option>
@@ -97,20 +121,42 @@
           	<option value="WY">Wyoming</option>
           </select>
 
-          <label for="zipcode">Zip Code</label>
-          <input type="text" id="zipcode" name="zipcode" placeholder="Zip Code..">
+        </div>
+            <div class="form-grid-zip">
+              <label for="zipCode">Zip Code</label>
+              <input type="text" name="zipCode" required id="zipCode">
+            </div>
 
-          <fieldset>
+          <fieldset id="firstAdopter" name="adopter">
             <legend>First Time Adopter?</legend>
             <label>Yes
-              <input type="radio" name="yes" value="yes">
+              <input id="yes" type="radio" name="adopter" value="yes">
             </label>
 
             <label>No
-              <input type="radio" name="no" value="no">
+              <input id="no" type="radio" name="adopter" value="no">
             </label>
           </fieldset>
-
+          <div class="form-grid-pickup">
+                      <label for="pickupLocation">Pickup Location</label>
+                      <select class="select" id="pickupLocation" name="pickupLocation">
+                        <option value="Portland">Portland</option>
+                        <option value="Seattle">Seattle</option>
+                      </select>
+                    </div>
+                    <div class="form-grid-adopted">
+                      <h3>Dogs Adopted</h3>
+                      <div class="flex-adopted-container">
+                        <div class="dogs-adopted">
+                          <img src="./images/lucas-checkout.jpg" alt="black dogs">
+                        </div>
+                        <div class="dogs-cost">
+                          <h3>Lucas</h3>
+                          <p><span class="p-bold">Cost to Adopt:</span> $123.45</p>
+                        </div>
+                        <div class="dogs-adopted">
+                          <img src="./images/duffy-checkout.jpg" alt="white and brown pit pull type dog looking at camera">
+                        </div>
           <label for="pul">Pickup Location</label>
           <select id="pul" name="pul">
             <option value="Placeholder">...</option>
@@ -121,13 +167,13 @@
           <input type="submit" value="Submit">
         </form>
       </section>
-
+<!--
       <a>
         <h3>Dogs Adopted</h3>
         <img src="./images/lucas-checkout.jpg" alt="lucas-checkout">
         <img src="./images/duffy-checkout.jpg" alt="duffy-checkout">
-      </a>
-
+      </a> -->
+  <script src="checkout.js"></script>
     </main>
 
     <footer class="footer">
