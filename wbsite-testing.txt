@@ -1,0 +1,40 @@
+Website testing log
+
+https://vmehring.github.io/html200-adopt-a-dog/
+
+Platforms tested: Firefox, Chrome, Edge, and Opera on Windows 10
+		  Safari on iPad and iPhone 12
+
+Summary:
+
+The issues that I encountered while testing this site were pretty much the same for all the browsers on Windows 10. 
+
+	1. On smaller screen sizes, the rightmost dogcard on the index page glitched on hover. 
+	   I fixed this my changing the size of the margins on .dogcard-hover.
+	2. The page overflowed the window on the right, creating a scroll bar at the bottom. 
+	   I fixed this by finding the element that was causing the overflow and changing the size of the padding on the right.
+
+The exception came from Microsoft Edge. It returned warnings that not all images had alt tags, such as the cart icon. It also seemed to "think" that I had omitted <ul></ul> tags in the footer nav. The tags are there. I don't know why Edge doesn't see it. The most perplexing warning was:
+
+	'-ms-filter' is not supported by Chrome, Chrome Android, Samsung Internet.
+	 Add 'filter' to support Chrome 53+, Chrome Android 53+, Samsung Internet 6.0+.   
+	.fa-rotate-90 {
+    		-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+		}
+
+I do not know what this means. None of the warnings issued by MS Edge affected the appearance or functionality of the site.
+
+When testing Safari on mobile devices, there was more variety of problems:
+
+	1. On the iPhone, switching between portrait and landscape orientation causes some irregularities in appearance.
+	   Specifically, not all text in the dogcards resizes appropriately.
+	2. Also on the iPhone, there are margins that I was not able to eliminate with tweaks to CSS settings.
+	   It looks less problematic in landscape orientation, where the margins appear on both sides of the page.
+	   In portrait orientation, it is just on the right, which is annoying.
+	3. On the iPad in portrait orientation, the .dogcard-focus transition made the dogcards move down a row on the index page.
+	   In landscape mode, this didn't happen, but you needed to scroll right to see the aside.
+	4. The site just didn't look as good on the iPad. Dogcards looked distorted.
+
+My theory is that some of these problems could be fixed by adding more breakpoints to the media queries. In addition, when using mobile devices, it doesn't make much sense to use a hover function to focus on an element, since there's no mouse. The effects performed by those JS scripts worked a bit differently on those platforms.
+
+All the JS worked consistently across platforms and produced no errors.

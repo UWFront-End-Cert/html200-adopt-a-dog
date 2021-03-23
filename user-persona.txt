@@ -1,0 +1,11 @@
+User Persona
+
+Gillian Anderson
+
+    Occupation: speech therapist employed by school district
+    Married: spouse is manager at local grocery store
+    Kids: ages 4 and 7
+    2-br apartment
+    Technologies: parents have newer smart phones, kids share a family laptop, which is about 5 years old but is able to run Windows 10
+
+Gillian is looking to add a dog to the family, one of an appropriate size and energy level for apartment living. Adopting a rescue is preferable from a cost standpoint, but it's challenging to find a rescue dog that is good with kids and doesn't have behavioral challenges. Gillian would like to use an adoption service that can help her navigate the process, which can feel overwhelming to a busy parent who is frequently distracted. It is important that the website be fully functional on mobile devices, since Gillian doesn't often get to use the family laptop.
