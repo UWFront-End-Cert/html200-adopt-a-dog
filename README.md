@@ -24,10 +24,14 @@ ___
 </tr>
 <tr>
   <td><b>Appearance - layout</b></td>
-  <td>On smaller screens, rightmost dogcard on index.html glitches on mouseover</td>
-  <td>On smaller screens, rightmost dogcard on index.html glitches on mouseover</td>
-  <td>On smaller screens, rightmost dogcard on index.html glitches on mouseover</td>
-  <td>On smaller screens, rightmost dogcard on index.html glitches on mouseover</td>
+  <td>On smaller screens, rightmost dogcard on index.html glitches on mouseover<br>
+    <b>FIXED</b></td>
+  <td>On smaller screens, rightmost dogcard on index.html glitches on mouseover<br>
+    <b>FIXED</b></td>
+  <td>On smaller screens, rightmost dogcard on index.html glitches on mouseover<br>
+    <b>FIXED</b></td>
+  <td>On smaller screens, rightmost dogcard on index.html glitches on mouseover<br>
+    <b>FIXED</b></td>
   <td><i>Portrait mode:</i> .dogcard-focus causes the dog cards to move down a row<br>
       <i>Landscape mode:</i> need to scroll right to see aside on index.html</td>
   <td><i>Portrait mode:</i> When zoomed out to fit page on screen, there is a noticeable white margin on the right<br>
