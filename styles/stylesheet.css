@@ -108,7 +108,7 @@ h2 {
   width: 100%;
   margin-right: 0;
   margin-left: auto;
-  padding: 2rem;
+  padding: 2rem 0 2rem 2rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end ;
@@ -309,7 +309,7 @@ article > p {
     line-height: 1.5rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 813px) {
   header {
     background: url("../images/header-image1000px.jpg");
     display: grid;
@@ -400,7 +400,7 @@ article > p {
   .dogcard, .dogcard-focus {
     width: 100%;
   }
-  .dogcard-focus p {
+  .dogcard-focus p, .dogcard-focus span {
     font-size: 1.2rem;
     line-height: 1.6rem;
   }
