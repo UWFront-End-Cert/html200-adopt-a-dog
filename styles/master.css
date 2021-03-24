@@ -198,7 +198,7 @@ li a {
   margin-left: 6rem;
   margin-right: 10rem;
   padding-top: 20px;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 input, select, textarea, label {
@@ -479,9 +479,11 @@ input[type="radio"] {
 	.card {
 		width: 100%;
 	}
+
   .card-sm {
     	width: 100%;
   }
+
   .content-right {
     display: none;
   }
@@ -492,6 +494,10 @@ input[type="radio"] {
 
   .blog {
     flex-direction: column;
+  }
+
+  .form-container {
+    width: 75%;
   }
 }
 
