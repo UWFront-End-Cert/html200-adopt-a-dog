@@ -9,3 +9,5 @@ Dog page: This page includes the information of all the dogs that are available 
 Blog: This page has articles about traveling with a dog, walking your dog, and playing fetch. There will be more articles added soon.
 
 Checkout: This page has a form that will be used to help you checkout and make your purchase.
+
+Please contact customer support at adoptadog@email.com for any questions or concerns. Thank you for service.
