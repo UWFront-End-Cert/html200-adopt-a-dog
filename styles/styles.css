@@ -225,7 +225,9 @@ nav li a:hover {
   margin: 5px 5px;
   padding: 1rem;
 }
-
+.blog-index-image{
+    min-width: 100%;
+  }
 .side {
   width: 52%;
   height: auto;
