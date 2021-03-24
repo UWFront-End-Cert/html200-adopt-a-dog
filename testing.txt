@@ -1,0 +1,36 @@
+The browsers listed below have been tested to:
+- Load pages in a timely manner with minimal delay times.
+- Have pages appear and perform similarly.
+- Have responsive design.
+- Have buttons function as they should.
+
+Testing was done on the following Browsers:
+- Chrome
+- Firefox
+- Safari
+
+Devices tested on:
+- Macbook Pro
+- Windows 10
+- Samsung Galaxy devices
+- Apple phones and tablets
+- Google phones and tablets
+
+
+
+
+USER PERSONA
+
+Persona: Recent College Gradute
+Name: Layla Brown
+Age: 22
+Occupation: Pediatric Nurse
+Degree: BS in Nursing and Minor in Computer Engineering Technology
+Relationship Status: Single
+Hobby: Enjoys gaming, hiking and traveling
+
+Owns multiple devices such as an iPad and iPhone. Layla is also very tech savvy.
+
+Scenerio:
+
+Layla is a recent gradute and just bought her own home. She has always wanted a dog but her parents never let her own one so she promised herself that as soon as she bought her first home she would also adopt a dog.
