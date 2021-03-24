@@ -9,3 +9,8 @@ $(function(){
     $(this).fadeTo('fast', 1)
   })
 })
+$('.dogimages').hover(function(){
+  $(this).addClass('imgzoom');
+  }, function(){
+  $(this).removeClass('imgzoom');
+  });
