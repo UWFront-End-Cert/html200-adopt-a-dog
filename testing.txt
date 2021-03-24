@@ -21,7 +21,7 @@ Devices tested on:
 
 USER PERSONA
 
-Persona: Recent College Gradute
+Persona: Recent College graduate
 Name: Layla Brown
 Age: 22
 Occupation: Pediatric Nurse
@@ -31,6 +31,6 @@ Hobby: Enjoys gaming, hiking and traveling
 
 Owns multiple devices such as an iPad and iPhone. Layla is also very tech savvy.
 
-Scenerio:
+Scenario:
 
-Layla is a recent gradute and just bought her own home. She has always wanted a dog but her parents never let her own one so she promised herself that as soon as she bought her first home she would also adopt a dog.
+Layla is a recent graduate and just bought her own home. She has always wanted a dog but her parents never let her own one so she promised herself that as soon as she bought her first home she would also adopt a dog.
