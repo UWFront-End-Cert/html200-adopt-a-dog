@@ -194,6 +194,9 @@ nav li a:hover {
   display: flex;
 }
 
+.dogcardbutton{
+
+}
 .wrapper2 {
   width: 80%;
   min-height: auto;
@@ -316,6 +319,21 @@ em {
   display: flex;
   justify-content: center;
 }
+button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .checkout {
   background-color: #4CAF50;
@@ -332,7 +350,7 @@ em {
 
 
 
-input[type=text], select, textarea {
+input[type=text], select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;

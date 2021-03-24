@@ -14,3 +14,13 @@ $('.dogimages').hover(function(){
   }, function(){
   $(this).removeClass('imgzoom');
   });
+
+  $('.dogcardbutton').mouseenter(function(){
+    console.log('mouse has entered')
+    $(this).fadeTo('slow', .75)
+    $(this).text('Woof!')
+  }).mouseleave(function(){
+    console.log('mouse has left')
+    $(this).fadeTo('fast', 1)
+    $(this).text('Adopt')
+  })
