@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/master.css">
-    <script src="./scripts/dogCard.js">
-    </script>
 
     <title>Adopt A Dog</title>
   </head>
@@ -15,7 +13,7 @@
       <div class="flex-container header-image">
 
         <div class="header-left">
-          <div class="image-logo"><img src="images/adoptadog-logo.svg"  alt="adoptadog-logo" />
+          <div class="image-logo"><a href="index.html"><img src="images/adoptadog-logo.svg"  alt="adoptadog-logo" /></a>
           </div>
           <div class="tagline">Seattle's premiere dog adoption agency
           </div>
@@ -25,7 +23,7 @@
           <div class="header-right">
             <div class="cart-icon"><img src="images/cart-icon.svg"  alt="shopping cart icon" />
             </div>
-            <div class="cart-total">$1234.56
+            <div class="cart-total">$0.00
             </div>
           </div>
 
@@ -35,7 +33,7 @@
     </div>
     </header>
 
-      <nav role="navigation">
+      <nav role="navigation" aria-label="Primary">
         <div>
           <ul>
             <li><a href="index.html">Home</a><span class="nav-slash">&#47;</span></li>
@@ -186,5 +184,7 @@
         </div>
           <p class="copyright">©  2020  Adoptadog, LLC   &nbsp;|&nbsp;   Seattle, WA</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./scripts/dogCard.js"></script>
   </body>
 </html>

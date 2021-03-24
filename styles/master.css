@@ -65,6 +65,10 @@ p {
   /* z-index: 1; */
 }
 
+.image-logo > a {
+
+}
+
 .tagline {
   font-size: 1.25rem;
   font-style: italic;
@@ -90,17 +94,27 @@ p {
 }
 
 .btn-checkout-header {
-  background-color: #90b52a;
+  background-color: #5F781C;
   font-size: .75rem;
   color: #fff;
   margin-top: .5rem;
   margin-right: 4rem;
   margin-left: 4rem;
-  padding: .3rem 2.5rem;
+  padding: .4rem 2.5rem;
   font-weight: bold;
   border: none;
-  border-radius: .1rem;
+  border-radius: .2rem;
 }
+
+.btn-checkout-header:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.btn-checkout-header:active {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: translateY(2px);
+  }
+
 
 .btn-checkout-header > a {
   text-decoration: none;
@@ -199,7 +213,7 @@ input, select, textarea, label {
 }
 
 .btn-submit {
-  background-color: #90b52a;
+  background-color: #5F781C;
   font-weight: bold;
   border: none;
   color: white;
@@ -210,6 +224,15 @@ input, select, textarea, label {
   width: 11rem;
   border-radius: .2rem;
 }
+
+.btn-submit:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-submit:active {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: translateY(2px);
+  }
 
 /************ form ***************/
 .container-state {
@@ -306,6 +329,7 @@ input[type="radio"] {
 
 .blogheader {
   margin-bottom: 0;
+  padding-left: 1rem;
 }
 
 .blog-image {
@@ -323,7 +347,7 @@ input[type="radio"] {
 
 .btn-adopt {
   width: 100%;
-  background-color: #90b52a;
+  background-color: #5F781C;
   border-radius: .2rem;
   padding: .5rem;
   color: #fff;
@@ -332,19 +356,36 @@ input[type="radio"] {
   border: none;
 }
 
+.btn-adopt:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-adopt:active {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: translateY(2px);
+}
+
 .btn-seemoredogs {
   background-color: #e5e5e5;
   border-radius: .2rem;
   padding: .5rem 2rem;
   font-weight: bold;
   margin: 2rem auto 4rem auto;
-  border: none;
+  border: 1px solid #eaeaea;
 }
 
 .btn-seemoredogs {
   color: #29465b;
 }
 
+.btn-seemoredogs:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.btn-seemoredogs:active {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: translateY(2px);
+  }
 
 /************ card ***************/
 .img {
@@ -374,8 +415,7 @@ input[type="radio"] {
 }
 
 .dog-image {
-	border: 1px solid gray;
-  background-color: #ccc;
+  background-color: #eaeaea;
 }
 
 .card > div {

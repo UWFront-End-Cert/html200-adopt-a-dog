@@ -13,11 +13,17 @@ function clickHandler(str) {
   });
 }
 
-//hover event
-
+//dogcard hover event
 $('.card').mouseover(function() {
   $(this).addClass('dog-image');
   $('.card').mouseout(function() {
+    $(this).removeClass('dog-image');
+  });
+})
+
+$('.card-sm').mouseover(function() {
+  $(this).addClass('dog-image');
+  $('.card-sm').mouseout(function() {
     $(this).removeClass('dog-image');
   });
 })
