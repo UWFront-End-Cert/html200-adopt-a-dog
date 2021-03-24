@@ -239,6 +239,7 @@ nav li a:hover {
 
 .imgzoom{
     transform:scale(1.5);
+    transform-style: preserve-3d;
   }
 
 .col {
