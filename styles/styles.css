@@ -141,6 +141,13 @@ nav li a:hover {
   font-family: sans-serif;
   display: flex;
 }
+.boxFrame{
+  margin: 2rem;
+  align-items: center;
+  width: 67%;
+  display: inline-block;
+  border-style: groove;
+}
 
 .flex-container {
   display: flex;
@@ -197,6 +204,28 @@ nav li a:hover {
 .dogcardbutton{
 
 }
+.ulnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ebebeb;
+    font-weight: bold;
+}
+.linav{
+    float: left;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.box{
+  width: 45%;
+  border-style: groove;
+}
 .wrapper2 {
   width: 80%;
   min-height: auto;
@@ -215,6 +244,19 @@ nav li a:hover {
   font-size: 1rem;
   font-family: sans-serif;
 }
+aside{
+    display: flex;
+    display:inline-block;
+    border-style: groove;
+    width: 23%;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    vertical-align: top;
+  }
+  /* aside{
+    display:none;
+  } */
+
 .dogs {
   width: 30%;
   min-width: 275px;

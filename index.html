@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>html200-adopt-a-dog</title>
     <link rel="stylesheet" href="./styles/styles.css">
+
     <!-- <script src="app.js"></script> -->
   </head>
   <body>
@@ -21,33 +22,32 @@
       </div>
     </header>
 
-    <nav><ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./dogs.html">Dogs</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-      </ul></nav>
+  <nav> <ul class="ulnav">
+        <li class="linav"> <a class="active" href="./index.html">Home</a></li>
+        <li class="linav"><a href="./dogs.html">Dogs</a></li>
+        <li class="linav"><a href="./blog.html">Blog</a></li>
+      </ul>  </nav>
 
-    <main class="wrapper">
-      <section class="flex-container">
-        <h2 class="hide">Section Header</h2>
-          <article class="div1">
+    <main class="boxFrame">
+      <section>
+        <!-- <h2 class="hide">Section Header</h2>
+          <article class="div1"> -->
             <img src="./images/home-intro.jpg" alt="A man with a dog">
-
             <h2 class="a1">Adopt A Dog</h2>
-
             <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
             am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate </p>
+      </section>
+          <!-- </article> -->
+<section class="container">
+  <article class="dogs">
+    <img class="dogimages" onclick="info(name = 'Murphy', breed = 'pitbull', price = '$123.45')" src="./images/murphy-card.jpg" alt="dog running">
+    <h3>Murphy</h3>
+    <h4>Cost to Adopt: $123.45</h4>
+    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+    <button class="dogcardbutton" onclick="dogprice(fee = 123.45)" type="submit">Adopt</button>
+  </article>
 
-          </article>
 
-          <article class="dogs">
-
-            <img class="dogimages" onclick="info(name = 'Murphy', breed = 'pitbull', price = '$123.45')" src="./images/murphy-card.jpg" alt="dog running">
-            <h3>Murphy</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="dogcardbutton" onclick="dogprice(fee = 123.45)" type="submit">Adopt</button>
-          </article>
 
           <article class="dogs">
             <img class="dogimages" onclick="info(name = 'Poppy', breed = 'Mix', price = '$110')" src="./images/poppy-card.jpg" alt="dog sitting">
@@ -99,59 +99,97 @@
             <button class="dogcardbutton" onclick="dogprice(fee = 123.45)" type="submit">Adopt</button>
           </article>
 
-      </section>
+          <article class="dogs">
 
-      <section class="flex-container3">
+<img class="dogimages" onclick="info(name = 'Angus', breed = 'Yellow Lab', price = '123.45')" src="./images/angus-card.jpg" alt="Brown and White dog with black bakcground lovingly looking at camera">
+    <h3>Angus</h3>
+    <h4>Cost to Adopt: $123.45</h4>
+    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+    <button class="dogcardbutton" onclick="dogprice(fee = 123.45)" type="submit">Adopt</button>
+   </article>
+
+<article class="dogs">
+    <img class="dogimages" src="./images/violet-card.jpg" alt="dark brown puppy named violet" onclick="dogInfo(name = 'Violet', breed = 'Unknown breed', fee = '123.45')">
+    <h3>Violet</h3>
+    <h4>Cost to Adopt: $123.45</h4>
+    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+    <button class="dogcardbutton" onclick="dogprice(fee = 123.45)" type="submit">Adopt</button>
+</article>
+</section>
+
+<button>See More Dogs</button>
+<button><a href="Contact.html">Checkout</a></button>
+</main>
+
+      <!-- <section class="flex-container3">
         <h2 class="hide">From Our blog</h2>
-          <article class="side">
 
-            <img class="dogimages" src="./images/blog-1.jpg" alt="Dow with owner looking at grand canyon">
 
-            <h3>Traveling With Your Dog</h3>
+          <a href="#"> Read More >></a> -->
+          <!-- </article> -->
+<aside>
+  <section>
+    <article>
 
-            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
-               quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
-               hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
-               faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat</p>
+      <img class="dogimages" src="./images/blog-1.jpg" alt="Dow with owner looking at grand canyon">
 
-          <a href="#"> Read More >></a>
-          </article>
+      <h2>Traveling With Your Dog</h2>
 
-          <article class="side">
+      <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+         quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
+         hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
+         faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat</p>
+      <p>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
+        et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
+        qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
+        voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
+        ulparume nonseca estorer spernam.</p>
 
-            <img class="dogimages" src="./images/blog-2.jpg" alt="Dogs looking at dog walker">
+    </article>
 
-            <h3>How To Walk Multiple Dogs</h3>
+    <article>
 
-            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
-               quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
-               hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
-               faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat</p>
+      <img class="dogimages" src="./images/blog-2.jpg" alt="Dogs looking at dog walker">
 
-            <a href="#"> Read More >></a>
+      <h2>How To Walk Multiple Dogs</h2>
 
-          </article>
+      <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+         quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
+         hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
+         faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat</p>
+      <p>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
+        et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
+        qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
+        voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
+        ulparume nonseca estorer spernam.</p>
+      </article>
 
-          <article class="side">
+      <article>
 
-            <img class="dogimages" src="./images/blog-3.jpg" alt="Owner with dog and ball during sunset">
+        <img class="dogimages" src="./images/blog-3.jpg" alt="Owner with dog and ball during sunset">
 
-            <h3>Teach Your Dog To Fetch!</h3>
+        <h2>Teach Your Dog To Fetch!</h2>
 
-            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
-               quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
-               hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
-               faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat</p>
+        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+           quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
+           hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
+           faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat</p>
+        <p>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
+          et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
+          qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
+          voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
+          ulparume nonseca estorer spernam.</p>
 
-              <a href="#"> Read More >></a>
-          </article>
-        </section>
+          <!-- <a href="#"> Read More >></a> -->
+      </article>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="adopteddog.js" charset="utf-8"></script>
-        <script src="app.js" charset="utf-8"></script>
+  </section>
+</aside>
 
-    </main>
+
+            <!-- <a href="#"> Read More >></a>
+
+          </article> -->
 
     <footer class="footer">
       <img class="ftrlogo" src="./images/adoptadog-logo.svg" alt="Company Logo">
@@ -167,7 +205,9 @@
       </nav>
       <p class="footer-p">©2018 Adoptadog, LLC   |   Seattle, WA</p>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="adopteddog.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
 
 </body>
 </html>
