@@ -1,0 +1,27 @@
+========== USER PERSONA ==========
+*** Personal ***
+Age: 20's and 30's
+Gender: Either
+Marital status: Married/In a relationship
+Education: Bachelor's Degree
+
+*** Professional ***
+Work: Full-time
+Intention: Adoption for shared interest
+Location: Access from home and at work
+
+*** Technology ***
+Internet: High-speed internet, 4G cellular network
+Device: Smartphone (up to three years old)
+
+
+
+========== TESTING ==========
+1. Windows, Firefox, full-screen --> PASS
+2. Windows, Firefox, small-screen --> PASS
+3. Windows, Chrome, full-screen --> PASS
+4. Windows, Chrome, small-screen --> PASS
+5. Windows, Edge, full-screen --> PASS
+6. Windows, Edge, small-screen --> PASS
+7. Android, Chrome, Portrait --> PASS
+7. Android, Chrome, Landscape --> PASS
