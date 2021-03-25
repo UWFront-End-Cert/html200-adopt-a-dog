@@ -1,0 +1,31 @@
+User persona:
+Persona: Adopted a dog website to allow all users to find their favorite pets.
+Name: John Johnson
+Age: 30
+Reason: Interested in adopting breeded dogs.
+Primary Device(s): Andoid and ioS experience users. Table and mobiles.
+
+General Persona:
+The purpose of this website to provide user friendly and be able to navigate the tool easily.
+
+Browsers tested as of 3/24/2021:
+* Google Chrome
+* Firefox
+* Edge
+* Safari (iOS)
+* Safari
+
+Devices Tested:
+Android: Samsung Galaxy Note 10
+iOS: iPhone 10
+Windows 10: desktop
+macOS: Catalina
+
+Passing variables:
+* All buttons must be visible and reachable on the screen.
+* The photos column scale is not align properly.
+* Some code on the site needs to be fixed
+
+
+Results:
+3/24/2021 - Pass,
