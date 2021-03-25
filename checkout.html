@@ -46,26 +46,27 @@
       <form name="" id="checkoutform" action="checkout.html" method="post">
         <div class="form-container">
           <h1>Checkout</h1>
+          <p class="required-text"><span class="required">*</span>Indicates a required field</p>
             <div>
-              <label for="name">Name</label>
-              <input id="name" type="text"  name="name">
+              <label for="name">Name<span class="required">*</span></label>
+              <input id="name" type="text"  name="name" class="font-normal-black" required>
 
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email">
+              <label for="email">Email Address<span class="required">*</span></label>
+              <input type="email" id="email" name="email" class="font-normal-black" required>
 
               <label for="street">Street Address</label>
-              <input type="text" id="street" name="street">
+              <input type="text" id="street" name="street" class="font-normal-black" required>
             </div>
 
             <div class="container-state">
               <div class="citystatezipinput">
                 <label for="city">City</label>
-                <input type="text" id="city" name="city">
+                <input type="text" id="city" name="city" class="font-normal-black" required>
               </div>
 
               <div class="citystatezipinput">
                 <label for="state">State</label>
-                <select id="state" name="state" class="font-normal-black">
+                <select id="state" name="state" class="font-normal-black select">
                   <option value="Washington">WA</option>
                   <option value="Alaska">AK</option>
                 </select>
@@ -73,7 +74,7 @@
 
               <div>
                 <label for="zip_code">Zip Code</label>
-                <input type="text" id="zip_code" name="zip_code">
+                <input type="text" id="zip_code" name="zip_code" class="font-normal-black">
               </div>
             </div>
 
@@ -90,9 +91,9 @@
 
             <div class="form-location">
               <h3>Pickup location</h3>
-              <select name="location" id="location" class="font-normal-black">
-                <option value="Select a location" selected>Select a location</option>
-                <option value="Seattle">Seattle</option>
+              <select name="location" id="location" class="font-normal-black select">
+                <option value="Porland">Porland</option>
+                <option value="Seattle" selected>Seattle</option>
                 <option value="Bellevue">Bellevue</option>
               </select>
             </div>

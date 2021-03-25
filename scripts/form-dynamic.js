@@ -1,17 +1,16 @@
 
 $('button').click(function () {
   $('form').submit(function() {
-    event.preventDefault();
     alert("Thank you. The form information has been received.");
+    console.log($(this).serializeArray());
+ event.preventDefault();
   });
 });
 
 
-for (var pair of checkoutform.entries()) {
-    console.log(pair[0]+ ', ' + pair[1]);
-}
 
-// console.log(document.getElementById('checkoutform').value);
+
+console.log(document.getElementById('checkoutform').value);
 
 // document.getElementById('checkoutform').addEventListener('input', function() {
 //     console.log(this.value);
