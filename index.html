@@ -3,21 +3,27 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- 2.4.21 now changing title to reflect in browser tab which lesson I'm working with  -->
-        <title>L6 Adopt A Dog</title>
+        <title>L9 Adopt A Dog</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous"></script>
+        <script src="./js-adoptadog/adopt-dogs.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/styles.css">
     </head>    
 <body>
-    <div> <!-- this div wraps the entire body, is it needed? -->
+    <div>
         <section class="img-container"> <!-- header section includes logo, slogan, cart icon, checkout button -->
             <div class="logo" ><img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
                 <h1><i>Seattle's premiere dog adoption agency</i></h1>
             </div>    
             <div class="chk-cart" style="padding-bottom: 25%"> 
-                <a href="adopt-checkout.html"><img src="images/cart-icon.svg" alt="Checkout-cart icon">
+                <a href="adopt-checkout.html">
+                    <img src="images/cart-icon.svg" alt="Checkout-cart icon">
                     <input type="submit" value="Checkout" class="btn">
+                    <span style="background-color: white; width: auto; margin-top: 1.5em; font-size: 1.5em;">
                 </a>
             </div>
         </section>
@@ -36,8 +42,6 @@
             <div class="indexpage1st-container">
                 <section class="main-section">
                     <div>
-                        <!-- <img src="images/home-intro.jpg" alt="Floppy ear dog facing us, human embracing dog facing away."> -->
-                        <!-- modified img element with L7 codealong example, replace line above -->
                         <img
                             alt="Floppy ear dog facing us, human embracing dog facing away."   
                             src="images/home-intro.jpg"
@@ -46,21 +50,6 @@
                             sizes="(max-width: 600px) 200px,
                                     500px"
                         />
-                    
-        <!-- <img
-            alt="placeholder image"
-            src="https://via.placeholder.com/300"
-            src="images/home-intro.jpg"
-            srcset="https://via.placeholder.com/600 600w,
-            https://via.placeholder.com/300 300w"
-            sizes="(max-width: 600px) 200px,
-                500px"
-        /> -->
-        <!-- <img
-            class="responsive-img"
-            src="./images/uw-umbrella.jpg"
-            alt="University of Washington umbrella"
-        /> -->
 
                     </div>    
                     <article>
@@ -112,30 +101,12 @@
                         <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
                         <p><a onclick="feeTotal(123.45)">Adopt</a></p>
                     </div>
-                    <!--  comment out last two dogs for new L6 layout/styling -->
-                    <!-- <div class="item">
-                        <img src="images/angus-card.jpg" onclick="dogInfo('Angus ','Dog ',123.45)" alt="Descripion of featured dog.">
-                        <h2>Angus</h2>
-                        <p><strong>Cost to Adopt: </strong>$123.45</p>
-                        <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-                        <p><a onclick="feeTotal(123.45)">Adopt</a></p>
-                    </div>
-                    <div class="item">
-                        <img src="images/violet-card.jpg" onclick="dogInfo('Violet ','Dog ',123.45)" alt="Descripion of featured dog.">
-                        <h2>Violet</h2>
-                        <p><strong>Cost to Adopt: </strong>$123.45</p>
-                        <p>Kilsie eitislissi zposesko cha. Abjlkseee jlkt isani stylesheet lked eialse. Lipsseis jkj eiso spiroot, lkjlke kjkeise. Kilsie eitislissi zposesko cha.</p>    
-                        <p><a onclick="feeTotal(123.45)">Adopt</a></p>
-                    </div> -->
                 </div>
 
                 <div>
                     <p><a id="more-dogs" href="adopt-dogs.html">See More Dogs</a></p>
                 </div>            
             </div>
-            <!-- used buttons to test onclick, worked, can remove -->
-            <!-- <button onclick="numberToSquare()">Click Here To Square!</button>
-            <button onclick="numbersToMultiply()">Click Here To Multiply!</button> -->
             <div class="blog-sidebar">
                 <!-- <div class="blog-container"> -->
                     <div>

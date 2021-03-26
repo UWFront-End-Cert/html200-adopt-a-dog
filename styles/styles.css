@@ -27,37 +27,10 @@
   }
   
   .img-container {
-    /* using the following 4 lines of code for testing purposes */
-    /* background: #eb01a5; */
-    /* background-image: url(../images/header-image.jpg); fallback */
-    /* background-image: url(../images/header-image.jpg), linear-gradient(#eb01a5, #d13531); */
-    /* background-image: linear-gradient(45deg, #eb017e, #d13631), url(../images/header-image.jpg); */
-    /* background-image: linear-gradient(240deg, rgba(255, 0, 0, 0.401), rgba(255, 255, 0, 0.462)); */
-    /* background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.401), rgba(255, 255, 0, 0.462)), url(../images/header-image.jpg); */
-    background-image: linear-gradient(240deg, rgba(255, 0, 0, 0.401), rgba(255, 255, 0, 0.462)), url(../images/header-image.jpg);
-    /* background-image: linear-gradient(rgba(230, 172, 119, 0.156), rgba(188, 191, 22, 0.918)), url(../images/header-image.jpg); */
-    /* background-image: url(../images/header-image.jpg); */
-    /* background-image: linear-gradient(45deg, red 0 40%, yellow 60% 100%), url(../images/header-image.jpg); */
-    /* height: 50%; */
-    /* width: 100%; */
-    /* background-position: center center; */
+      background-image: linear-gradient(240deg, rgba(255, 0, 0, 0.401), rgba(255, 255, 0, 0.462)), url(../images/header-image.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: blue; */
-    /* background-color: blue, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-    /* background: linear-gradient(
-      to right,
-      red, 
-      orange, 
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet
-  ); */
-
-    /* position: relative; */
   }
 
 .logo img {
@@ -65,17 +38,6 @@
       width: 30%;
       margin-top: 5%;
       margin-left: 8%;
-      /* background: linear-gradient(
-        to right,
-        red, 
-        orange, 
-        yellow,
-        green,
-        blue,
-        indigo,
-        violet
-    ); */
-  
     }
 
 .logo h1 {
@@ -85,7 +47,6 @@
     font-size: 20px;
     font-weight: 900;
 }
-
 
   .btn {
     background-color: yellowgreen;
@@ -378,6 +339,25 @@ border: 0;
 
 .dogs-adopted {
   display: flex;
+}
+
+/* next 3 elements for adopt-dogs.js */
+/* h2.test {
+  color: chartreuse;
+  text-align: center;
+} */
+
+.test:hover {
+  transform: scale(1.5);
+  color: red;
+  text-align: center;
+  transition: .5s;
+}
+
+/* disable if styling w jQuery */
+.zoom:hover {
+  transform: scale(1.5);
+  transition: 1.5s;
 }
 
 @media screen and (max-width: 650px) {

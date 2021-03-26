@@ -37,14 +37,27 @@ let dogAdoptRunningTotal = 0;
 const feeTotal = function(dogAdoptFee) {
 
   dogAdoptRunningTotal += dogAdoptFee;
-    alert(dogAdoptRunningTotal);
+    // 3.26.21 added to update total of checkout L9
+    $('span').text('$' + dogAdoptRunningTotal);
  }
 
 
-// console.log(feeTotal(200.22));
-// alert(feeTotal(200.22));
-// alert(feeTotal(100.33));
-// feeTotal(10.33);
-// feeTotal(1000.33);
-// feeTotal(109.3);
 
+// 3.26.21 code below works for alert of running total, mods above for L9 jq
+// let dogName;
+// let dogBreed;
+// let dogAdoptFee;
+
+// dogInfo = function(dogName,dogBreed,dogAdoptFee) {
+//   alert(dogName + 'is a ' + dogBreed + 'with an adoption fee of $' + dogAdoptFee);
+// }
+
+
+// let dogAdoptRunningTotal = 0;
+
+// const feeTotal = function(dogAdoptFee) {
+
+//   dogAdoptRunningTotal += dogAdoptFee;
+//     alert(dogAdoptRunningTotal);
+//     console.log(dogAdoptRunningTotal);
+//  }
