@@ -1,94 +1,101 @@
-.header {
-    grid-area: header;
-}
-
-.main {
-    grid-area: main;
-}
-
-.footer {
-    grid-area: footer;
-}
-
 html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
+
+
+/* Just add the universal selector (*) to your CSS, this will apply any rule to every element on the page. If any elements need them you can 
+then add margins or padding to those elements themselves. This helps get rid of spacing when you can't quite tell what is causing it. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
 
 body {
     font-family: 'Brygada 1918', serif;
     line-height: 1.6;
 }
 
-.grid-container {
+.grid_container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-areas: "header" "main" "main" "main" "footer";
-    grid-gap: 1rem;
+    grid-template-rows: repeat(5, 20%);
+    height: 200rem;
+    position: relative;
 }
 
-div.main img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+.header {
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .main {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    margin-top: 5rem;
+    grid-column: 1/2;
+    grid-row: 2/5;
 }
+
+.footer {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+
+/*header stufff ...............................................................................................................................................*/
 
 .header {
     margin-bottom: 10rem;
     background-color: black;
     background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
     height: 40rem;
-    width: 100%;
+    width: auto;
     position: relative;
-    background-color: black;
-    background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
     background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+}
+
+.logo {
+    height: 15rem;
 }
 
 .header h1 {
+    color: white;
+    font-size: 2.75rem;
     font-family: 'Courgette', cursive;
-    font-size: 2.5rem;
     color: rgb(155, 226, 11);
-    position: absolute;
-    left: 3.0%;
-    top: 43%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -2rem;
 }
 
 .cart {
-    position: absolute;
-    left: 75%;
-    top: 15%;
-    width: 10%;
-    height: 10%;
+    width: 4rem;
+    height: 4rem;
+    /* transform: scale(.25); */
 }
 
 span {
-    position: absolute;
-    z-index: 10000;
     color: white;
-    left: 82%;
-    top: 17%;
     width: 10%;
     height: 10%;
     font-size: 2rem;
     font-weight: 700;
+    transform: scale(.75);
 }
 
 .checkout {
-    position: absolute;
-    left: 78%;
-    top: 28%;
     width: 15rem;
     height: 3rem;
     font-size: 1.75rem;
@@ -102,12 +109,113 @@ span {
     background-color: rgb(170, 253, 2);
 }
 
-.logo {
-    height: 15rem;
+.header_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5rem;
+    margin-left: 6rem;
+}
+
+.header_bottom {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 10rem;
+    margin-right: 3rem;
+    margin-top: 6rem;
+    flex-direction: column;
+}
+
+
+/*dogs..............................................................................................................................................................*/
+
+h1 {
+    font-size: 3rem;
+    z-index: 10000;
+    margin-top: 10rem;
+    margin-left: 20rem;
+}
+
+.dogs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 1rem;
     position: relative;
-    display: block;
-    top: 15%;
-    left: 1%;
+    height: auto;
+    flex: 1;
+}
+
+.dogs div {
+    object-fit: cover;
+    box-shadow: 0px 0px 15px gray;
+    width: 23rem;
+    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin: 3rem 1rem 1rem 3rem;
+}
+
+
+/*this shit is fucked. trying to select the everything but the img inside each dog card always selects the img, should be a much easy solution something, how to select all but dog img
+  and apply styles to everything but the dog img;?????*/
+
+.dog_cards:not(img) {}
+
+.dog_cards h3,
+p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* border: 2px solid black; */
+}
+
+.dog_cards h3,
+p {
+    margin-bottom: 1rem;
+}
+
+.dog_cards h3 {
+    margin-top: 1.5rem;
+}
+
+.dog_cards button {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    height: 4rem;
+    background-color: rgb(155, 226, 11);
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 2%;
+    outline: none;
+}
+
+.dog_cards button:hover {
+    background-color: rgb(170, 253, 2);
+}
+
+#dog_img {
+    /* border: 3px solid black;
+    padding-left: none;
+    padding-right: none;
+    all: revert;
+    width: 23rem;
+    margin-left: -1.25rem; */
+}
+
+
+/*nav.......................................................................*/
+
+.primary a:first-child {
+    margin-left: 15rem;
 }
 
 .primary {
@@ -117,83 +225,33 @@ span {
     background-color: rgba(192, 192, 192, 0.3);
     padding: 1.3rem;
     position: relative;
-    padding-left: 15%;
-    top: 62%;
+    bottom: 160rem;
 }
 
 nav a {
     font-size: 2rem;
     /* padding-right: 5%; */
-    padding-left: 2.5%;
+    padding-left: 2.5rem;
     text-decoration: none;
     color: black;
 }
 
-.top {
-    font-size: 5rem;
-    color: black;
-    clear: none;
-    display: block;
-    z-index: 100000;
-    position: absolute;
-    left: 13%;
-    top: 63%;
-}
 
-.main div {
-    box-shadow: 0px 0px 15px gray;
-    position: relative;
-    top: 50%;
-    width: 23rem;
-    height: 38rem;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    align-items: left;
-    text-align: left;
-    margin: 10rem 2rem 0rem 2rem;
-}
-
-div h3,
-div p,
-div strong {
-    padding-left: 1rem;
-}
-
-div button {
-    height: 2.75rem;
-    justify-content: center;
-    width: 18rem;
-    position: relative;
-    top: 3%;
-    border-radius: 2%;
-    align-items: end;
-    align-self: center;
-    background-color: rgb(155, 226, 11);
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 700;
-    border-style: none;
-}
-
-div button:hover {
-    background-color: rgb(170, 253, 2);
-}
+/*.........................................................footer.........................................................*/
 
 .footer {
-    margin-top: 5%;
-    padding-top: 6rem;
+    background-color: rgb(12, 73, 122);
+    height: 35rem;
+    margin-top: 30rem;
+    padding-top: 15rem;
     clear: both;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(12, 73, 122);
-    bottom: 0;
-    top: 100%;
     text-align: center;
-    padding-bottom: 3.5%;
+    padding-bottom: 15rem;
 }
 
 .footer img {
@@ -213,10 +271,4 @@ div.footer_nav {
 
 div.footer_nav a {
     color: white;
-    padding: 5%;
-}
-
-strong {
-    position: relative;
-    left: -4%;
 }
