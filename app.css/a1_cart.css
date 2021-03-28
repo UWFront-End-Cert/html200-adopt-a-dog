@@ -222,6 +222,7 @@ nav+p {
         transform: scale(1.5);
         position: relative;
         top: 1.2rem;
+        margin-right: 2rem;
     }
     
     .adopted div {
