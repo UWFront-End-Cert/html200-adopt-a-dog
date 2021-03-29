@@ -303,6 +303,7 @@ article p {
 }
 .blogsubheads {
   color: #003366;
+  /* float: right; */
 }
 .container7 {
   width: 100%;
@@ -316,15 +317,15 @@ article p {
   /* margin-bottom: 1rem; */
 }
 .container8 {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  float: right;
+  float: right; */
   margin-left: 2rem;
   font-size: 1.2em;
   width: 65%;
   /* margin-right: 5rem; */
 }
-form {
+.form {
   margin-left: 5rem;
   color: #003366;
   font-weight: bold;
@@ -437,6 +438,15 @@ nav {
   display: flex;
   justify-content: center;
   /* clear: both; */
+}
+.blogheading {
+  color: #003366;
+}
+.blogimgs {
+  height: auto;
+  /* margin-right: 5rem; */
+  margin-left: 2rem;
+  max-width: 20rem;
 }
 
 /* @media screen and (min-width: 0px) {
@@ -680,6 +690,7 @@ nav {
 }
 
 
+
 @media screen and (min-width: 768px) {
   .item2 {
     display: block;
@@ -739,6 +750,7 @@ nav {
     margin-left: 2rem;
     /* position: relative; */
   }
+
 
 /* @media screen and (@min-width: 10%) {
   .float-right
