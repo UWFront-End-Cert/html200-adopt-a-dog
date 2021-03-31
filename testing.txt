@@ -1,0 +1,10 @@
+Adopt a Dog https://djr206.github.io/html200-adopt-a-dog/index.html
+
+Site Testing:
+
+Testing was conducted on the following systems and browsers. 
+Windows 7 and 10 - Chrome, Firefox, Edge
+Mac Book OS 10.10 - Chrome, Safari
+iPhone 7 - Safari, Chrome
+Viewport width, height and orientation were varied. 
+All functioned consistently and exhibited adequet responsivness.
