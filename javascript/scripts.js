@@ -111,21 +111,38 @@ const formValues = document.querySelectorAll('.form-entry');
 
 document.addEventListener('submit', function(event) {
   event.preventDefault();
-  alert('Thank you. The form information has been received.');
+
 
   for (i = 0; i < formValues.length; i+=1) {
     if (formValues[i].type == 'radio') {
-      let selection = formValues[i].checked;
-      //console.log(selection);
-      //console.log(formValues[i].value);
-      if (selection == true) {
+      let radioCheck = document.querySelectorAll('input[name="first-time-adopter"]');
+      if (radioCheck[0].checked == false && radioCheck[1].checked == false) {
+        alert('Please indicate if this is your first time adopting.');
+        console.log(`Loop broken because user did not complete ${formValues[i].name} field`);
+        return;
+      }
+      else {
+        let selection = formValues[i].checked;
+        //console.log(selection);
+        //console.log(formValues[i].value);
+        if (selection == true) {
+          let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
+          console.log(logOutput);
+        }
+      }
+    }
+    else {
+      if (formValues[i].value == "" || formValues[i].value == "{blank}") {
+        alert(`Please complete the ${formValues[i].name} field`);
+        console.log(`Loop broken because user did not complete ${formValues[i].name} field`);
+        return;
+      }
+      else {
         let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
         console.log(logOutput);
       }
     }
-    else {
-      let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
-      console.log(logOutput);
-    }
   }
+
+  alert('Thank you. The form information has been received.');
 });
