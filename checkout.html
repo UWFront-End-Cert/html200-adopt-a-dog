@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdoptaDog</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script language="javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- <script src="./jquery.js"></script> -->
   </head>
   <body>
     <header class="header-image">
@@ -15,7 +18,7 @@
       <div class="container10">
        <div class="container2">
         <img id=cart-size src="images/cart-icon.svg" alt="cart-icon">
-        <p>$1234.56</p>
+        <span>$0</span>
         </div>
         <div class="button-container">
         <button id="header-button" type="button">Checkout</button>
@@ -26,12 +29,16 @@
     </header>
     <nav>
       <ul class="navbar">
-        <li><a href="index.html">Home</a> / </li>
-        <li><a href="moredogs.html">Dogs</a> / </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="moredogs.html">Dogs</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="adoptablog.html">Blog</a></li>
       </ul>
     </nav>
-    <script src="./checkout.js"></script>
+
+    <!-- <div>
+      <p>HEll0</p>
+    </div> -->
     <!-- <h2 id="adoptdogheading1">Checkout</h2>
     <form action="/action.php" method="GET">
       <label for ="name">Name </label> <br>
@@ -70,6 +77,7 @@
       <p>Total Adoption Cost</p>
       <input type="submit" value="Submit">
       </form> -->
+      <script src="./checkout.js"></script>
       <footer>
         <p><img src="images/adoptadog-logo.svg" alt="adoptadog logo"></p>
         <p>Aborpos nisto inci tet aut que volupti be<br>ruptiberro to exesseque invenienihil imaximu scideru ptistiusam consequunt</p>
@@ -82,5 +90,16 @@
         </div>
         <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
       </footer>
+
+      <!-- <script> window.onload = function() {
+      if (window.jQuery) {
+          // jQuery is loaded
+          alert("Yeah!");
+      } else {
+          // jQuery is not loaded
+          alert("Doesn't Work");
+      }
+  }
+  </script>  -->
     </body>
   </html>

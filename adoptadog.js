@@ -16,4 +16,5 @@ let adoptFeeTotal = function(adoptFee) {
 
   adoptRunningTotal += adoptFee;
     alert(adoptRunningTotal);
+    $('span').text('$' + adoptRunningTotal);
 }

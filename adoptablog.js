@@ -27,13 +27,13 @@ const blogs = function() {
         const h3 = document.createElement('h3');
         h3.textContent = blogPost.h3;
         document.getElementsByTagName('blogContainer')[0].appendChild(h3);
-        h3.classList.add('blogsubheads')
+        h3.classList.add('blogsubheads');
 
         const p = document.createElement('p');
         p.textContent = blogPost.p;
         document.getElementsByTagName('blogContainer')[0].appendChild(p);
         console.log(blogPost);
-        p.classList.add('container8')
+        p.classList.add('container8');
     }};
 
     blogs(blogPosts);

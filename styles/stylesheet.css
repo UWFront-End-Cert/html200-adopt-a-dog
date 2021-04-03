@@ -282,7 +282,7 @@ footer p {
 #adoptdogheading1 {
   color: #003366;
   /* margin-left: 1rem; */
-  margin-right: 2rem;
+  margin-left: 2rem;
   margin-bottom: 1rem;
   /* margin-right: 1rem; */
   align-items: center;
@@ -303,6 +303,7 @@ article p {
 }
 .blogsubheads {
   color: #003366;
+  margin-left: 2rem;
   /* float: right; */
 }
 .container7 {
@@ -441,6 +442,7 @@ nav {
 }
 .blogheading {
   color: #003366;
+  margin-left: 2rem;
 }
 .blogimgs {
   height: auto;
