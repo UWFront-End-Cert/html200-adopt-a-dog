@@ -109,6 +109,11 @@ if (blogPageTitle == document.title) {
 
 const formValues = document.querySelectorAll('.form-entry');
 
+function validateEmail(email) {
+  const checkFormat = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+  return checkFormat.test(email);
+}
+
 document.addEventListener('submit', function(event) {
   event.preventDefault();
 
@@ -138,6 +143,15 @@ document.addEventListener('submit', function(event) {
         return;
       }
       else {
+        if (formValues[i].type == 'email') {
+          if (validateEmail(formValues[i].value) == true) {
+            console.log('**User entered a valid email address**');
+          }
+          else {
+            alert('The email address you entered is invalid. Please enter again.');
+            return;
+          }
+        }
         let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
         console.log(logOutput);
       }
