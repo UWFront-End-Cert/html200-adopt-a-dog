@@ -102,53 +102,30 @@ if (blogPageTitle == document.title) {
 // THE CHECKOUT PAGE
 // Pseudo-code plan:
 // specify a class for all form entries (including imputs, drop-down selections, and radio)
-// use querySelectorAll to create an object of all form entries
+// use querySelectorAll to create an object of all form entries (NodeList)
 // add event listener to generate alert when form submitted
 // use for loop to step through NodeList console logging value associated with each node
+// within loop, check whether input type is radio, and if so return whichever option is checked
 
-// const formInputs = document.getElementsByTagName('label');
-// console.log(formInputs);
-
-//const formIds = ['data1', 'data2', 'data3', 'data4'];
-//const userInput = document.getElementsByTagName('input');
-// let inputValues = userInput.textContent();
-//console.log(userInput);
-// for (i = 0; i < userInput.length; i+=1) {
-//   let input = userInput[i].getAttribute('name');
-//   let inputValue = userInput[i].getAttribute('value');
-//   console.log(`${input} input value is ${inputValue}`);
-// }
-//console.log(userInput.textContent);
-
-// function logInput() {
-//   console.log(userInput.name);
-// }
-
-const formElements = document.getElementsByTagName('label');
-//console.log(formElements[3].textContent);
 const formValues = document.querySelectorAll('.form-entry');
-//const formNames = document.querySelectorAll('.txt-entry');
-//console.log(formNames);
-
-//const formName = document.querySelector('input');
-//console.log(formName.value);
 
 document.addEventListener('submit', function(event) {
   event.preventDefault();
   alert('Thank you. The form information has been received.');
-  //logInput();
-
-  // for (i = 0; i < formIds.length; i+=1) {
-  //   let input = document.getElementById(formIds[i]);
-  //   //let inputValue = userInput[i].getAttribute('value');
-  //   //console.log(`${input} input value is ${inputValue}`);
-  //   console.log(input.value);
-  // }
 
   for (i = 0; i < formValues.length; i+=1) {
-    let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
-    console.log(logOutput);
-    //console.log(formValues[i].name);
-    //console.log(formValues[i].value);
+    if (formValues[i].type == 'radio') {
+      let selection = formValues[i].checked;
+      //console.log(selection);
+      //console.log(formValues[i].value);
+      if (selection == true) {
+        let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
+        console.log(logOutput);
+      }
+    }
+    else {
+      let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
+      console.log(logOutput);
+    }
   }
 });
