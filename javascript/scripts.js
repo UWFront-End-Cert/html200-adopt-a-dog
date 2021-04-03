@@ -101,71 +101,54 @@ if (blogPageTitle == document.title) {
 
 // THE CHECKOUT PAGE
 // Pseudo-code plan:
-// create object for form fields
-// create array of dogs in shopping cart and their info
-// step through a loop collecting input and console logging it
-// display dogs in cart
-// add event listener to alert when form is submitted
+// specify a class for all form entries (including imputs, drop-down selections, and radio)
+// use querySelectorAll to create an object of all form entries
+// add event listener to generate alert when form submitted
+// use for loop to step through NodeList console logging value associated with each node
 
-const fields = [
-  {
-    name: 'name',
-    label: 'Name'
-  },
-  {
-    name: 'email',
-    label: 'Email Address'
-  },
-  {
-    name: 'street-address',
-    label: 'Street Address'
-  },
-  {
-    name: 'city',
-    label: 'City'
-  },
-  {
-    name: 'state',
-    label: 'State'
-  },
-  {
-    name: 'zipcode',
-    label: 'Zip Code'
-  },
-  {
-    name: 'first-adopt',
-    value: 'yes',
-    label: 'Yes'
-  },
-  {
-    name: 'first-adopt',
-    value: 'no',
-    label: 'No'
-  },
-  {
-    name: 'location',
-    label: 'Pickup Location'
-  },
-];
+// const formInputs = document.getElementsByTagName('label');
+// console.log(formInputs);
 
-cartDogsArr = ['Lucas','Duffy'];
-const dogPrice = 123.45;
-totalAdoptionCost = 0;
+//const formIds = ['data1', 'data2', 'data3', 'data4'];
+//const userInput = document.getElementsByTagName('input');
+// let inputValues = userInput.textContent();
+//console.log(userInput);
+// for (i = 0; i < userInput.length; i+=1) {
+//   let input = userInput[i].getAttribute('name');
+//   let inputValue = userInput[i].getAttribute('value');
+//   console.log(`${input} input value is ${inputValue}`);
+// }
+//console.log(userInput.textContent);
 
-const checkoutForm = document.createElement('form');
-document.body.appendChild(checkoutForm);
+// function logInput() {
+//   console.log(userInput.name);
+// }
 
-for (let i = 0; i < fields.length; i+=1) {
-  let field = fields[i];
+const formElements = document.getElementsByTagName('label');
+//console.log(formElements[3].textContent);
+const formValues = document.querySelectorAll('.form-entry');
+//const formNames = document.querySelectorAll('.txt-entry');
+//console.log(formNames);
 
-  const label = document.createElement('label');
-  label.textContent = field.label;
-  label.setAttribute('for', field.name);
+//const formName = document.querySelector('input');
+//console.log(formName.value);
 
-  const input = document.createElement('input');
-  input.setAttribute('id', field.name);
+document.addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('Thank you. The form information has been received.');
+  //logInput();
 
-  checkoutForm.appendChild(label);
-  checkoutForm.appendChild(input);
-  console.log(input);
-}
+  // for (i = 0; i < formIds.length; i+=1) {
+  //   let input = document.getElementById(formIds[i]);
+  //   //let inputValue = userInput[i].getAttribute('value');
+  //   //console.log(`${input} input value is ${inputValue}`);
+  //   console.log(input.value);
+  // }
+
+  for (i = 0; i < formValues.length; i+=1) {
+    let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
+    console.log(logOutput);
+    //console.log(formValues[i].name);
+    //console.log(formValues[i].value);
+  }
+});

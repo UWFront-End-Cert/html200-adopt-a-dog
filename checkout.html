@@ -25,7 +25,7 @@
       </nav>
     </header>
 
-    <!-- Main Page Content
+    <!-- Main Page Content -->
     <div class="grid-top" id="main-content">
       <h2>Checkout</h2>
     </div>
@@ -33,24 +33,24 @@
     <div class="grid-middle">
       <form method="POST">
         <label class="vertical">Name
-          <input type="text" name="name" class="txt-entry">
+          <input type="text" name="name" class="txt-entry form-entry" id="data1">
         </label>
 
         <label class="vertical">Email Address
-          <input type="email" name="email" class="txt-entry">
+          <input type="email" name="email" class="txt-entry form-entry" id="data2">
         </label>
 
         <label class="vertical">Street Address
-          <input type="text" name="street-address" class="txt-entry">
+          <input type="text" name="street-address" class="txt-entry form-entry" id="data3">
         </label>
 
         <div class="horizontal address">
           <label class="vertical width-40">City
-            <input type="text" name="city" class="txt-entry">
+            <input type="text" name="city" class="txt-entry form-entry" id="data4">
           </label>
 
           <label class="vertical width-20">State
-            <select name="state" class="drop-select">
+            <select name="state" class="drop-select form-entry">
               <option value="{blank}">Select</option>
               <option value="AL">AL - Alabama</option>
               <option value="AK">AK - Alaska</option>
@@ -108,22 +108,22 @@
           </label>
 
           <label class="vertical width-35">Zip Code
-            <input type="number" name="zipcode" class="txt-entry">
+            <input type="number" name="zipcode" class="txt-entry form-entry">
           </label>
         </div>
 
         <fieldset>
           <legend>First Time Adopter?</legend>
           <label class="radio-style light-txt">
-            <input type="radio" name="first-adopt" value="yes">Yes
+            <input type="radio" name="first-adopt" class="form-entry" value="yes">Yes
           </label>
           <label class="radio-style light-txt">
-            <input type="radio" name="first-adopt" value="no">No
+            <input type="radio" name="first-adopt" class="form-entry" value="no">No
           </label>
         </fieldset>
 
         <label class="vertical">Pickup Location
-          <select name="location" class="drop-select width-40">
+          <select name="pickup-location" class="drop-select width-40 form-entry">
             <option value="{blank}">Select a location</option>
             <option value="seattle">Seattle</option>
             <option value="bellevue">Bellevue</option>
@@ -150,7 +150,7 @@
     </div>
 
     <div class="grid-bottom">
-    </div> -->
+    </div>
 
     <footer class="space-down">
       <img src="images/adoptadog-logo.svg" class="foot-img" alt="white silhouette of a sitting dog next to Adopt A Dog logotype">
