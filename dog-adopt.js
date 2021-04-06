@@ -4,7 +4,6 @@ function adoptAlert(name, breed, adoptionFee) {
     alert(result);
 }
 
-
 let total = 0;
 let fee = 123.45;
 
@@ -15,4 +14,10 @@ function feeCalc(fee) {
     console.log(total);
 }
 
+form.addEventListener('submit', function(event) {
+    alert('Thank you, the form information has been received');
+});
  
+
+
+
