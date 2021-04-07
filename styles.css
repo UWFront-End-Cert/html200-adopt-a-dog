@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  background-image: url(../images/header-image.jpg);
+  background-image: url(images/header-image.jpg);
   height: 450px;
   display: flex;
   justify-content: space-between;
