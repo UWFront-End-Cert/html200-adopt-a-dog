@@ -98,9 +98,10 @@ main {
   padding-top: 2rem;
 }
 
-h1 {
+h1, h2 {
   color: rgb(9,60,96);
 }
+
 
 main article.intro-blurb img {
   float: left;
@@ -192,4 +193,20 @@ footer p {
   color: white;
   margin-bottom: 3em;
   margin-top: 3em;
+}
+
+article.blog-post img {
+  float: left;
+  margin-right: 3rem;
+  margin-bottom: 5rem;
+}
+
+article.blog-post {
+  clear: both;
+  line-height: 1.8;
+}
+
+article.blog-post p {
+  position: relative;
+  bottom: 1rem;
 }
