@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited, nav a:hover, nav a:active {
+  color: rgb(9,60,96);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  background-color: white;
+}
+
+header {
+  background-image: url(../images/header-image.jpg);
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header div.logo-tagline {
+  margin-left: 3rem;
+  margin-top: 3rem;
+  color: rgb(129,183,65);
+  font-style: italic;
+}
+
+header div.logo-tagline h2 {
+  position: relative;
+  bottom: 2rem;
+}
+
+header div.cart {
+  color: white;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  text-align: right;
+  width: 10%;
+  font-size: .9rem;
+}
+
+header div.cart img {
+  width: 21%;
+}
+
+header div.cart p {
+  display: inline;
+}
+
+header div.cart a {
+  background-color: rgb(129,183,65);
+  width: 100%;
+  height: 2em;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: .7rem;
+}
+
+
+nav {
+  background-color: rgb(236,236,236);
+  padding-left: 3rem;
+}
+
+nav.ul {
+  display: flex;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-right: 1rem;
+  display: inline;
+  color: rgb(9,60,96);
+}
+
+main {
+  background-color: white;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+}
+
+h1 {
+  color: rgb(9,60,96);
+}
+
+main article.intro-blurb img {
+  float: left;
+  padding-bottom: 4rem;
+  padding-right: 2rem;
+}
+
+main article.intro-blurb p {
+  line-height: 1.8;
+  font-size: 1.2em;
+}
+
+ main article.dog-menu {
+   clear: both;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+
+section.dog-card {
+  border: 2px solid rgb(236,236,236);
+  width: 20%;
+  display: inline;
+  min-width: 15rem;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+}
+
+section.dog-card img {
+  width: 100%;
+}
+
+section.dog-card a {
+  background-color: rgb(129,183,65);
+  width: 90%;
+  height: 2em;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+a.see-more-dogs {
+  background-color: rgb(236,236,236);
+  color: rgb(9,60,96);
+  font-size: 1.1em;
+  width: 18%;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+footer {
+  background-color: rgb(9,60,96);
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-size: .8em;
+}
+
+footer img {
+  width: 50%;
+  margin-top: 3rem;
+}
+
+div.footer-nav {
+  text-align: center;
+  color: white;
+}
+
+div.footer-nav ul li {
+  display:inline;
+  color: white;
+}
+
+footer p {
+  color: white;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
