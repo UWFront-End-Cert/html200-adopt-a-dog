@@ -102,6 +102,9 @@ h1, h2 {
   color: rgb(9,60,96);
 }
 
+h2.header {
+  color: rgb(129,183,65);
+}
 
 main article.intro-blurb img {
   float: left;
@@ -195,6 +198,8 @@ footer p {
   margin-top: 3em;
 }
 
+/** Blog-specific formatting **/
+
 article.blog-post img {
   float: left;
   margin-right: 3rem;
@@ -209,4 +214,131 @@ article.blog-post {
 article.blog-post p {
   position: relative;
   bottom: 1rem;
+}
+
+/** Check-out Page specific formatting **/
+
+nav.check-out {
+  padding-left: 22%;
+}
+
+main.check-out {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+
+label, legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(9,60,96);
+  margin-bottom: 1rem;
+  display:block;
+}
+
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 3rem;
+}
+
+input[type=number], select {
+  height: 3rem;
+  margin-bottom: 3rem;
+}
+
+section.city-state-zip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.city {
+  width: 500px;
+  margin-right: 1rem;
+}
+
+.state {
+
+  margin-right: 1rem;
+}
+
+fieldset {
+  border: 0;
+  display: flex;
+  padding: 0;
+  margin-left: 0;
+  margin-bottom: 2rem;
+}
+
+fieldset label {
+  margin-right: 2rem;
+  font-weight: normal;
+  color: black;
+}
+
+pick-up-select {
+  width: 100%;
+}
+
+.pick-up-menu {
+  display: flex;
+}
+
+input.submit {
+  background-color: rgb(129,183,65);
+  border: none;
+  width: 35%;
+  height: 3em;
+  display: flex;
+  color: white;
+  font-weight: bolder;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+h2.check-out {
+  margin-left: 0;
+  padding-left: 0;
+}
+section.review-purchase {
+  display: flex;
+  width: 100%;
+}
+
+div.tiny-card img {
+  width: 20%;
+  float: left;
+}
+
+div.tiny-card {
+  width: 50%;
+}
+
+div.tiny-card p {
+  font-size: .8rem;
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  bottom: 2rem;
+}
+
+h4 {
+  font-size: .9rem;
+  color: rgb(9,60,96);
+  position: relative;
+  bottom: 1.4rem;
+}
+
+p.total-cost {
+  font-size: 1.1rem;
+  position: relative;
+  bottom: .5rem;
 }

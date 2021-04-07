@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Adopt-a-Dog | Checkout</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/stylesheet.css">
   </head>
 
   <body>
+
     <header>
       <div class="logo-tagline">
         <img class="logo" src="images/adoptadog-logo.svg" alt="company logo">
-        <h2>Seattle's premier dog adoption agency</h2>
+        <h2 class="header">Seattle's premier dog adoption agency</h2>
       </div>
       <div class="cart">
         <img class="cart" src="images/cart-icon.svg" alt="shopping cart">
@@ -19,7 +20,8 @@
         <a href="check-out.html">Checkout</a>
       </div>
     </header>
-    <nav>
+
+    <nav class="check-out">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li>/</li>
@@ -28,95 +30,113 @@
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
-    <main>
+
+    <main class="check-out">
       <h1>Checkout</h1>
+
       <form class="check-out" action="index.html" method="post">
-        <label>Name: <input type="text" name="customerName" required></label>
-        <label>Email Address: <input type="text" name="customerEmail" required></label>
-        <label>Street Address: <input type="text" name="customerAddress" required></label>
-        <label>City: <input type="text" name="customerCity" required></label>
-        <label>State: <select name="State" size="51" required>
-          <option value="AL">Alabama</option>
-          <option value="AK">Alaska</option>
-          <option value="AZ">Arizona</option>
-          <option value="AR">Arkansas</option>
-          <option value="CA">California</option>
-          <option value="CO">Colorado</option>
-          <option value="CT">Connecticut</option>
-          <option value="DE">Delaware</option>
-          <option value="DC">District Of Columbia</option>
-          <option value="FL">Florida</option>
-          <option value="GA">Georgia</option>
-          <option value="HI">Hawaii</option>
-          <option value="ID">Idaho</option>
-          <option value="IL">Illinois</option>
-          <option value="IN">Indiana</option>
-          <option value="IA">Iowa</option>
-          <option value="KS">Kansas</option>
-          <option value="KY">Kentucky</option>
-          <option value="LA">Louisiana</option>
-          <option value="ME">Maine</option>
-          <option value="MD">Maryland</option>
-          <option value="MA">Massachusetts</option>
-          <option value="MI">Michigan</option>
-          <option value="MN">Minnesota</option>
-          <option value="MS">Mississippi</option>
-          <option value="MO">Missouri</option>
-          <option value="MT">Montana</option>
-          <option value="NE">Nebraska</option>
-          <option value="NV">Nevada</option>
-          <option value="NH">New Hampshire</option>
-          <option value="NJ">New Jersey</option>
-          <option value="NM">New Mexico</option>
-          <option value="NY">New York</option>
-          <option value="NC">North Carolina</option>
-          <option value="ND">North Dakota</option>
-          <option value="OH">Ohio</option>
-          <option value="OK">Oklahoma</option>
-          <option value="OR">Oregon</option>
-          <option value="PA">Pennsylvania</option>
-          <option value="RI">Rhode Island</option>
-          <option value="SC">South Carolina</option>
-          <option value="SD">South Dakota</option>
-          <option value="TN">Tennessee</option>
-          <option value="TX">Texas</option>
-          <option value="UT">Utah</option>
-          <option value="VT">Vermont</option>
-          <option value="VA">Virginia</option>
-          <option value="WA">Washington</option>
-          <option value="WV">West Virginia</option>
-          <option value="WI">Wisconsin</option>
-          <option value="WY">Wyoming</option>
-        </select></label>
-        <label>Zip Code: <input type="number" name="zipCode" required></label>
+        <label>Name: <input type="text" name="name" required></label>
+        <label>Email Address: <input type="text" name="email" required></label>
+        <label>Street Address: <input type="text" name="address" required></label>
+        <section class="city-state-zip">
+          <div class="city"><label>City: <input type="text" name="city" required></label></div>
+          <div class="state"><label>State: <select name="State" required>
+            <option value="">Choose</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select></label></div>
+          <div class="zip"><label>Zip Code: <input type="text" name="zipCode" pattern="[0-9]+" required></label></div>
+        </section>
         <fieldset>
           <legend>First Time Adopter?</legend>
           <label><input type="radio" name="firstTimeOrVet" value="firstTimer">Yes</label>
           <label><input type="radio" name="firstTimeOrVet" value="proAtThis">No</label>
         </fieldset>
-        <label>Pickup Location:<select name="pickUpLocation" size="2" required>
+        <label class="pick-up-select">Pickup Location:<select class="pick-up-menu" name="pickUpLocation" required>
+          <option value="">Choose</option>
           <option value="thisPlace">This Place</option>
           <option value="thatPlace">That Place</option>
         </select></label>
-        <label>Submit:<input class="submit" type="submit" name="Submit" value="Get at me!"></label>
+        <h2 class="check-out">Dogs Adopted</h2>
+        <section class="review-purchase">
+
+
+          <div class="tiny-card">
+            <img src="images/lucas-checkout.jpg" alt="Lucas' thumbnail">
+            <h4>Lucas</h4>
+            <p><b>Cost to Adopt:</b> $123.45</p>
+          </div>
+
+          <div class="tiny-card">
+            <img src="images/duffy-checkout.jpg" alt="Duffy's thumbnail">
+            <h4>Duffy</h4>
+            <p><b>Cost to Adopt:</b> 123.45</p>
+          </div>
+        </section>
+
+        <h2 class="check-out">Total Adoption Cost</h2>
+        <p class="total-cost">246.90</p>
+
+        <input class="submit" type="submit" name="Submit" value="Submit">
+
       </form>
-      <article>
-        <h2>Dogs Adopted</h2>
+
+
+
         <section>
-          <img src="images/lucas-checkout.jpg" alt="Lucas' thumbnail">
-          <p>Lucas</p>
-          <p>Cost to Adopt: $123.45</p>
+
         </section>
-        <section>
-          <img src="images/duffy-checkout.jpg" alt="Duffy's thumbnail">
-          <p>Duffy</p>
-          <p>Cost to Adopt: 123.45</p>
-        </section>
-        <section>
-          <h2>Total Adoption Cost</h2>
-          <p>246.90</p>
-        </section>
-      </article>
+
+
     </main>
     <footer>
       <img src="images/adoptadog-logo.svg" alt="Site logo which says Adopt a Dog">
