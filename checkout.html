@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Seattle's premiere dog adoption agency</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+  <body>
+    <a href="#main-content" class="hidden">Skip to main content</a>
+    <header>
+      <img class="background" src="images/header-image.jpg" alt="the background, dog looking out the window with close up on the face" width="25%">
+      <img class="dog white logo" src="images/adoptadog-logo.svg" alt="dog white logo with text" width="10%">
+      <span class="head-line"><em>Seattle's premiere dog adoption agency</em></span>
+      <img class="cart checkout" src="images/cart-icon.svg" alt="checkout cart icon" width="5%">
+      <p>$1234.56</p>
+      <a href="checkout.html">Checkout</a>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+
+
+    <h3>Checkout</h3>
+    <form method="get">
+      <label>Name
+        <input type="text" name="applicantName">
+      </label>
+
+      <label>E-mail Address
+          <input type="email" name="applicantEmail">
+      </label>
+
+      <label>Street Address
+        <input type="text" name="applicantAddress">
+      </label>
+
+      <label>City
+        <input type="text" name="applicantCity">
+      </label>
+
+      <label>ZIP Code
+        <input type="text" name="applicantZipcode">
+      </label>
+
+
+      <form class="checkbox">
+        <legend>First Time Adopter?</legend>
+        <input type="radio" name="first-time-or-not" value="yes">
+        <label>Yes</label>
+          <input type="radio" name="first-time-or-not" value="no">
+        <label>No</label>
+      </form>
+
+
+        <form class="checkbox">
+          <legend>Pick Up Location</legend>
+          <label>Seattle area
+            <input type="checkbox" name="locations" value="seattle">
+          </label>
+          <label>Lynnwood
+            <input type="checkbox" name="locations" value="lynnwood">
+          </label>
+          <label>Bellevue
+            <input type="checkbox" name="locations" value="bellevue">
+          </label>
+        </form>
+
+        <label>Pick Up Locations
+          <select name="location" size="1">
+            <option value="Seattle">Seattle</option>
+            <option value="Bellevue">Bellevue</option>
+            <option value="Lynwood">Lynnwood</option>
+          </select>
+        </label>
+
+        <form>
+          <legend>Which Topic You Enjoyed The Most?</legend>
+          <label>Lucas Cost to Adopt $123.45
+          <img src="images/lucas-card.jpg" alt="Lucas the dog" width="10%">
+            <input type="checkbox" name="dog" value="lucas">
+          </label>
+          <label>Duffy Cost to Adopt $123.45
+          <img src="images/duffy-card.jpg" alt="Duffy the dog" width="10%">
+            <input type="checkbox" name="dog" value="duffy">
+          </label>
+
+          <p>Total Adoption Cost</p>
+          <p>$1234.56</p>
+
+        </form>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+      <img class="dog white logo" src="images/adoptadog-logo.svg" alt="dog white logo with text" width="50%">
+      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br> esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <a href="index.html">Home /</a>
+      <a href="dogs.html">Dogs /</a>
+      <a href="contact.html">Contact</a>
+      <p>© 2021 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
+  </body>
+</html>
