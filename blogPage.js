@@ -1,15 +1,23 @@
+const blogSection = document.createElement('section')
+  document.body.appendChild(blogSection)
+  function blogStyle() {
+    document.getElementByID('blogSection').classList.add('dog-blog');
+  }
+
+
+
 const h2Blog = {
   title: 'Adoptadog Blog',
+
 }
 
-const h2div = document.createElement('div')
-document.body.appendChild(h2div)
+    const h2div = document.createElement('div')
+      document.body.appendChild(h2div)
 
-const h2 = document.createElement('h2')
-h2.innerHTML = h2Blog.title
+    const h2 = document.createElement('h2')
+      h2.innerHTML = h2Blog.title
 
 h2div.appendChild(h2)
-
 
 
 
@@ -96,8 +104,3 @@ const imgThree = document.createElement('img')
 imgThree.src = 'images/blog-3.jpg'
 document.body.appendChild(imgThree)
 divThree.appendChild(imgThree)
-
-const blogSection = document.createElement('section')
-document.body.appendChild(blogSection)
-classList.add("#dog-blog");
-document.querySelector('#dog-blog').appendChild(divOne)
