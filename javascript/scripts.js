@@ -106,59 +106,59 @@ if (blogPageTitle == document.title) {
 // use for loop to step through NodeList console logging value associated with each node
 // within loop, check whether input type is radio, and if so return whichever option is checked
 
-const formValues = document.querySelectorAll('.form-entry');
-
-function validateEmail(email) {
-  const checkFormat = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-  return checkFormat.test(email);
-}
-
-document.addEventListener('submit', function(event) {
-  event.preventDefault();
-
-
-  for (i = 0; i < formValues.length; i+=1) {
-    if (formValues[i].type == 'radio') {
-      let radioCheck = document.querySelectorAll('input[name="first-time-adopter"]');
-      if (radioCheck[0].checked == false && radioCheck[1].checked == false) {
-        alert('Please indicate if this is your first time adopting.');
-        console.log(`Loop broken because user did not complete ${formValues[i].name} field`);
-        return;
-      }
-      else {
-        let selection = formValues[i].checked;
-        //console.log(selection);
-        //console.log(formValues[i].value);
-        if (selection == true) {
-          let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
-          console.log(logOutput);
-        }
-      }
-    }
-    else {
-      if (formValues[i].value == "" || formValues[i].value == "{blank}") {
-        alert(`Please complete the ${formValues[i].name} field`);
-        console.log(`Loop broken because user did not complete ${formValues[i].name} field`);
-        return;
-      }
-      else {
-        if (formValues[i].type == 'email') {
-          if (validateEmail(formValues[i].value) == true) {
-            console.log('**User entered a valid email address**');
-          }
-          else {
-            alert('The email address you entered is invalid. Please enter again.');
-            return;
-          }
-        }
-        let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
-        console.log(logOutput);
-      }
-    }
-  }
-
-  alert('Thank you. The form information has been received.');
-});
+// const formValues = document.querySelectorAll('.form-entry');
+//
+// function validateEmail(email) {
+//   const checkFormat = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+//   return checkFormat.test(email);
+// }
+//
+// document.addEventListener('submit', function(event) {
+//   event.preventDefault();
+//
+//
+//   for (i = 0; i < formValues.length; i+=1) {
+//     if (formValues[i].type == 'radio') {
+//       let radioCheck = document.querySelectorAll('input[name="first-time-adopter"]');
+//       if (radioCheck[0].checked == false && radioCheck[1].checked == false) {
+//         alert('Please indicate if this is your first time adopting.');
+//         console.log(`Loop broken because user did not complete ${formValues[i].name} field`);
+//         return;
+//       }
+//       else {
+//         let selection = formValues[i].checked;
+//         //console.log(selection);
+//         //console.log(formValues[i].value);
+//         if (selection == true) {
+//           let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
+//           console.log(logOutput);
+//         }
+//       }
+//     }
+//     else {
+//       if (formValues[i].value == "" || formValues[i].value == "{blank}") {
+//         alert(`Please complete the ${formValues[i].name} field`);
+//         console.log(`Loop broken because user did not complete ${formValues[i].name} field`);
+//         return;
+//       }
+//       else {
+//         if (formValues[i].type == 'email') {
+//           if (validateEmail(formValues[i].value) == true) {
+//             console.log('**User entered a valid email address**');
+//           }
+//           else {
+//             alert('The email address you entered is invalid. Please enter again.');
+//             return;
+//           }
+//         }
+//         let logOutput = `${formValues[i].name}: ${formValues[i].value}`;
+//         console.log(logOutput);
+//       }
+//     }
+//   }
+//
+//   alert('Thank you. The form information has been received.');
+// });
 
 // ~ASSIGNMENT 9 PLAN~
 // implement jquery on all pages using CDN
