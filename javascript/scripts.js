@@ -31,6 +31,7 @@ function cartSummary(name) {
   alert(result);
 }
 
+
 //~ASSIGNMENT 8 code~
 
 // THE BLOG PAGE
@@ -160,3 +161,11 @@ document.addEventListener('submit', function(event) {
 
   alert('Thank you. The form information has been received.');
 });
+=======
+// const blogComponents = [
+//   {
+//     title: 'blog-title',
+//     image: 'blog-pic',
+//     content: 'blog-text'
+//   }
+// ]
