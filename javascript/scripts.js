@@ -1,4 +1,6 @@
-//console.log('it is totally working');
+$(function(){
+  console.log('Javascript is locked and loaded')
+})
 
 function dogInfo(name,breed,price) {
   //info = name + breed + price;
@@ -161,11 +163,11 @@ document.addEventListener('submit', function(event) {
 
   alert('Thank you. The form information has been received.');
 });
-=======
-// const blogComponents = [
-//   {
-//     title: 'blog-title',
-//     image: 'blog-pic',
-//     content: 'blog-text'
-//   }
-// ]
+
+// ~ASSIGNMENT 9 PLAN~
+// implement jquery on all pages using CDN
+// shift vanilla javascript link to html head
+// search effect functions to make dog tiles fancier
+// refactor form and console logging using jquery selectors
+// create variable to store cart total
+// add up cart total based on number of adopt button clicks
