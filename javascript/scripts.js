@@ -1,7 +1,3 @@
-$(function(){
-  console.log('Javascript is locked and loaded')
-})
-
 function dogInfo(name,breed,price) {
   //info = name + breed + price;
   info = `You can adopt ${name}, a ${breed}, for ${price}`;
