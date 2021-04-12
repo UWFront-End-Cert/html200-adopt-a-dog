@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 768px) { /*set layout & styles for non-mobile devices*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+  }
+  .logo-container {
+    float: left;
+    width: 30%;
+    margin: 5% 8%;
+  }
+  .cart-container {
+    float: right;
+    text-align: right;
+    font-weight: lighter;
+    font-size: 100%;
+    height: 2rem;
+    margin-top: 5%;
+  }
+  .checkout-button {
+    position: relative;
+    top: 1rem;
+  }
+  .grid-top, .grid-middle, .grid-bottom {
+    grid-column: 2 / span 3;
+  }
+  .tile {
+    min-width: 23%;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .left-img {
+    float: left;
+    width: 16rem;
+    max-width: 40%;
+    padding: 1rem 2rem 1rem 0;
+  }
+  .cart-item {
+    float: left;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 767px) { /*set mobile-specific styles*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 12.5% 37.5% 37.5% 12.5%;
+  }
+  .logo-container {
+    width: 50%;
+    margin: 5% auto 2% auto;
+    background-color: #10101099; /*set background opacity to 60%*/
+    padding: 1rem;
+    border-radius: 15px;
+  }
+  .grid-aside-right {
+    display: none;
+    width: 0;
+  }
+  .grid-top, .grid-middle, .grid-bottom {
+    grid-column: 2 / span 2;
+  }
+  .tile {
+    min-width: 100%;
+  }
+  .left-img {
+    clear: both;
+    display: block;
+    width: 75%;
+    margin: auto;
+  }
+  .cart-item {
+    clear: both;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) { /*set styles for tablets*/
+  .tile {
+    min-width: 45%;
+  }
+}
+
+@media print {
+  body {
+    filter: grayscale(100%);
+  }
+  header {
+    display: none;
+  }
+  img:not(.tile-img) {
+    display: none;
+  }
+  p {
+    color: black;
+  }
+}
+
+/*Positioning and Page Sectioning Rules*/
+.hidden {
+  position: absolute;
+  left:-10000px;
+  top: auto;
+  color: white;
+}
+/*.grid-container {
+  display: grid;
+  grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+}*/
+
+header {
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 1;
+  background-image: url("../images/header-image.jpg"), linear-gradient(to top, #093c60, black);
+  background-color: #101010;
+  background-size: cover;
+  background-position: 50% 30%;
+  color: white;
+  height: 21rem;
+  margin-bottom: 1rem;
+}
+
+.grid-left-top {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.grid-left-middle {
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 1;
+}
+
+.grid-left-bottom {
+  grid-column: 2/ span 2;
+  grid-row: 4 / span 1;
+}
+
+.grid-aside-right {
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 2;
+  margin-left: 3rem;
+}
+
+.grid-top {
+  /*grid-column: 2 / span 3;*/
+  grid-row: 2 / span 1;
+}
+
+.grid-middle {
+  /*grid-column: 2 / span 3;*/
+  grid-row: 3 / span 1;
+}
+
+.grid-bottom {
+  /*grid-column: 2 / span 3;*/
+  grid-row: 4 / span 1;
+}
+
+footer {
+  grid-column: 1 / span 5;
+  grid-row: 6 / span 1;
+  background-color: #093c60;
+  color: white;
+  height: 100%;
+  text-align: center;
+}
+
+/*.left-img {
+  float: left;
+  width: 16rem;
+  max-width: 40%;
+  padding: 1rem 2rem 1rem 0;
+}*/
+
+.top-img {
+  width: 100%;
+  margin: 1rem auto 0 auto;
+  max-height: 15rem;
+  object-fit: cover;
+  object-position: 50% 75%;
+  padding: 0 0 2rem 0;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.clear-float {
+  clear: both;
+}
+
+/*Text Stylings: Universal --> More specific*/
+h1, h2, h3 {
+  font-family: 'Georgia', 'Garamond', serif;
+  color: #093C60;
+  margin: 0.5rem 0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5rem;
+  font-weight: lighter;
+  margin-top: 1em;
+}
+
+a, button {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.8em;
+  font-weight: bold;
+  border: none;
+}
+
+h4, h5 {
+  font-family: 'Georgia', 'Garamond', serif;
+  color: #093C60;
+  font-weight: bold;
+}
+
+.blurb-txt {
+  padding: 0.5rem;
+}
+
+.blog {
+  font-size: 0.9em;
+  margin: 1rem 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center-txt {
+  text-align: center;
+}
+
+.light-txt {
+  font-weight: lighter;
+}
+
+.teal-txt {
+  color: #239AB9;
+}
+
+.green-button {
+  position: relative;
+  top: 1rem;
+  background-color: #81B741;
+  color: white;
+  font-size: 0.8em;
+  margin: 5% 0;
+  width: 100%;
+  padding: 0.5em 3em;
+  border-radius: 1px;
+}
+
+.page-link {
+  background-color: #E6E6E6;
+  color: #093C60;
+  font-size: 0.8em;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 1% 5%;
+}
+
+/*.logo-container {
+  float: left;
+  width: 30%;
+  margin: 2rem 5rem;
+}*/
+
+#tag-line {
+  color: #81B741;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 100%;
+  margin: 0;
+}
+
+.cart-container {
+  float: right;
+  text-align: right;
+  font-weight: lighter;
+  font-size: 100%;
+  /*height: 2rem;*/
+  margin-right: 8%;
+}
+
+#icon {
+  position: static;
+  padding-right: 0.5rem;
+  width: 1.5rem;
+}
+
+nav.head {
+  clear: both;
+  position: absolute;
+  top: 18rem;
+  width: 100%;
+  background-color: #E6E6E6;
+  color: #093C60;
+  padding: 1rem 0;
+  text-indent: 15%;
+}
+
+/*Rules for Styling Dog Profile Cards*/
+.tile {
+  margin: 0.75rem 0;
+  width: 15rem;
+  max-width: 31%;
+  /*min-width: 21%;*/
+  font-size: 90%;
+  text-align: left;
+  box-shadow: 5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6;
+}
+
+.tile-img {
+  width: 100%;
+}
+
+.tile-txt {
+  margin: 0.5rem;
+}
+
+.bio-txt {
+  line-height: 150%;
+  margin: 5% 0 8% 0;
+}
+
+.tile-link {
+  display: block;
+  position: static;
+}
+
+/*Rules for Styling Blog Preview Sidebar*/
+.preview {
+  margin-bottom: 3rem;
+}
+
+.preview-img {
+  width: 100%;
+  max-height: 12rem;
+  object-fit: cover;
+  /*object-position: 50% 35%;*/
+}
+
+.preview-txt {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+/*Rules for Styling Form*/
+label, legend {
+  font-family: 'Georgia', 'Garamond', serif;
+  color: #093C60;
+  width: 60%;
+  font-size: 90%;
+  font-weight: bold;
+  margin: 1.5rem 0 0 0;
+}
+
+input {
+  margin: 0.5rem 0.75rem 0 0;
+  border: 1px solid #E6E6E6;
+}
+
+select {
+  border: 1px solid #E6E6E6;
+  margin: 0.5rem 0.75rem 0 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.txt-entry {
+  height: 1.5rem;
+}
+
+.drop-select {
+  height: 1.75rem;
+}
+
+.address {
+  width: 60%;
+  margin-bottom: 1.5rem;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.width-35 {
+  width: 35%;
+}
+
+.space-down {
+  margin-top: 5%;
+}
+
+.radio-style {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: black;
+  font-size: 75%;
+  padding-right: 2rem;
+}
+
+/*.cart-item {
+  float: left;
+  width: 35%;
+}*/
+
+.square {
+  float:left;
+  width: 4rem;
+  height: 4rem;
+  padding-right: 0.75rem;
+  margin-bottom: 2rem;
+  object-fit: cover;
+}
+
+.submit {
+  background-color: #81B741;
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  padding: 1% 10%;
+  margin-top: 3%;
+  border: none;
+  border-radius: 2px;
+}
+
+/*Rules for Styling the Footer*/
+.foot-img {
+  width: 30%;
+  margin-top: 2rem;
+}
+
+p.foot {
+  width: 40%;
+  margin: 2% auto;
+}
