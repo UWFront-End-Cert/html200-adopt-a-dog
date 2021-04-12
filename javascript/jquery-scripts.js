@@ -1,7 +1,7 @@
 // ~ASSIGNMENT 9 PLAN~
 // implement jquery on all pages using CDN
 // shift vanilla javascript link to html head
-// search effect functions to make dog tiles fancier
+// search hover/mouse-over effect functions to fancy up dog tiles
 // refactor form and console logging using jquery selectors
 // create variable to store cart total
 // add up cart total based on number of adopt button clicks
@@ -9,13 +9,13 @@
 $(function(){
   //console.log('jquery-scripts.js has loaded')
   $('.tile').mouseenter(function() {
-    console.log("mouse hovering over dog tile")
-    $(this).css("box-shadow", "5px 5px 5px -3px #093C60, 0px 5px 10px #093C60, -5px 5px 5px -3px #093C60")
-    $(this).find('h3').animate({'font-size': '160%'},'medium')
+    //console.log("mouse hovering over dog tile");
+    $(this).css("box-shadow", "5px 5px 5px -3px #093C60, 0px 5px 10px #093C60, -5px 5px 5px -3px #093C60");
+    $(this).find('h3').animate({'font-size': '160%'},'medium');
   }).mouseleave(function() {
-    console.log("mouse has left")
-    $(this).css("box-shadow", "5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6")
-    $(this).find('h3').animate({'font-size': '120%'},'medium')
+    //console.log("mouse has left");
+    $(this).css("box-shadow", "5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6");
+    $(this).find('h3').animate({'font-size': '120%'},'medium');
   })
 
   //refactor form submission
@@ -68,5 +68,22 @@ $(function(){
     }
     alert('Thank you. The form information has been received.');
     $('form')[0].reset();
+  })
+
+  //KEEPING A RUNNING TOTAL FOR SHOPPING CART
+  //set variables
+  let cartTotal = 0;
+  const dogPrice = 123.45;
+
+  //set cart total to $0 on page load
+  document.getElementById('cartDisplay').innerHTML = `$${cartTotal.toFixed(2)}`;
+
+  //click handler function runs when user clicks 'Adopt' button
+  $('button').on("click",function(){
+    event.preventDefault();
+
+    cartTotal += dogPrice;
+    document.getElementById('cartDisplay').innerHTML = `$${cartTotal.toFixed(2)}`;
+    console.log(`The current checkout total is: $${cartTotal.toFixed(2)}`);
   })
 })

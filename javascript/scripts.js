@@ -98,7 +98,7 @@ if (blogPageTitle == document.title) {
   }
 }
 
-// THE CHECKOUT PAGE
+// THE CHECKOUT PAGE - commented out because console logging of form entries handled with jquery
 // Pseudo-code plan:
 // specify a class for all form entries (including imputs, drop-down selections, and radio)
 // use querySelectorAll to create an object of all form entries (NodeList)
@@ -159,11 +159,3 @@ if (blogPageTitle == document.title) {
 //
 //   alert('Thank you. The form information has been received.');
 // });
-
-// ~ASSIGNMENT 9 PLAN~
-// implement jquery on all pages using CDN
-// shift vanilla javascript link to html head
-// search effect functions to make dog tiles fancier
-// refactor form and console logging using jquery selectors
-// create variable to store cart total
-// add up cart total based on number of adopt button clicks
