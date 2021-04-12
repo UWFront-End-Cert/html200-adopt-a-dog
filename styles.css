@@ -25,7 +25,10 @@ body {
 
 header {
   background-image: url(images/header-image.jpg);
-  height: 450px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
   display: flex;
   justify-content: space-between;
 }
@@ -35,11 +38,16 @@ header div.logo-tagline {
   margin-top: 3rem;
   color: rgb(129,183,65);
   font-style: italic;
+  width: 30%;
+  text-align: left;
 }
 
 header div.logo-tagline h2 {
   position: relative;
-  bottom: 2rem;
+  bottom: 2em;
+  width: 100%;
+  font-size: 1.5vw;
+  margin-top: 2vh;
 }
 
 header div.cart {
@@ -62,6 +70,7 @@ header div.cart p {
 header div.cart a {
   background-color: rgb(129,183,65);
   width: 100%;
+  min-width: 5em;
   height: 2em;
   display: flex;
   color: white;
@@ -187,8 +196,13 @@ div.footer-nav {
   color: white;
 }
 
+div.footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
 div.footer-nav ul li {
-  display:inline;
+  display: inline;
   color: white;
 }
 
@@ -200,15 +214,25 @@ footer p {
 
 /** Blog-specific formatting **/
 
+article.blog-post {
+  clear: both;
+  line-height: 1.6;
+  padding-bottom: 3rem;
+  text-align: justify;
+  max-width: 58rem;
+}
+
 article.blog-post img {
   float: left;
   margin-right: 3rem;
-  margin-bottom: 5rem;
+  width: 40%;
+  margin-bottom: 1rem;
 }
 
-article.blog-post {
-  clear: both;
-  line-height: 1.8;
+article.blog-post h2 {
+  text-align: left;
+  margin-left: 0;
+
 }
 
 article.blog-post p {
@@ -240,12 +264,15 @@ button, input, select, textarea {
 	font-family: inherit;
 	font-size: 100%;
 	box-sizing: border-box;
+  display: block;
 }
 
 input[type=text] {
   width: 100%;
+  max-width: 100vw;
   height: 3rem;
   margin-bottom: 3rem;
+  display: block;
 }
 
 input[type=number], select {
@@ -257,17 +284,20 @@ section.city-state-zip {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 
 .city {
-  width: 500px;
-  margin-right: 1rem;
+  max-width: 18rem;
 }
 
 .state {
+}
 
-  margin-right: 1rem;
+.zip {
+  max-width: 9rem;
 }
 
 fieldset {
@@ -314,12 +344,13 @@ section.review-purchase {
 }
 
 div.tiny-card img {
-  width: 20%;
+  min-width: 20%;
   float: left;
 }
 
 div.tiny-card {
   width: 50%;
+  display: flex;
 }
 
 div.tiny-card p {
