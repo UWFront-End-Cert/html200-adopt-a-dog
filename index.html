@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Adopt a Dog</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="cart">
+        <img class="cart-icon" src="./images/cart-icon.svg" alt="" width="18">
+        <p class="checkout-total">$0</p>
+        <a class="checkout-button" href="checkout.html">Checkout</a>
+      </div>
+      <div class="branding">
+        <a class="logo" href="index.html">
+        <img src="./images/adoptadog-logo.svg" alt="" width="256">
+        </a>
+        <p class="slogan">Seattle's premiere dog adoption agency</p>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <ul>
+        <li><a class="navigation-link" href="index.html">Home</a></li>
+        <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
+        <li><a class="navigation-link" href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-content">
+      <section class="intro">
+        <img class="intro-image" src="./images/home-intro.jpg" alt="">
+        <h2 class="intro-title">Adopt a Dog</h2>
+        <p class="intro-content">Cras pellentesque erat odio, nec congue ipsum tristique vel. Suspendisse sit amet ultricies neque, non tincidunt ex. Pellentesque velit enim, lacinia a placerat a, suscipit at quam. Pellentesque imperdiet velit sem, ut gravida mauris malesuada a. Sed venenatis consequat lectus et rhoncus. Nam vestibulum ipsum ut neque placerat euismod pellentesque non elit. Integer semper vulputate justo, eget posuere nibh imperdiet eu. Aliquam dictum dui vel mi blandit, quis scelerisque erat hendrerit. Donec dignissim eget felis non sagittis. Integer bibendum dui sit amet egestas posuere.</p>
+      </section>
+    </div>  
+      <div class="all-dogs-container">
+        <article class="dog-adoption-card">
+          <img class="dog-card-image" src="./images/murphy-card.jpg" alt="Featured dog: Murphy" onclick="alertDogInfo('Murphy', 'Boxer Mix', '$123.45')">
+          <h3 class="dog-name">Murphy</h3>
+          <p class="dog-adoption-cost"><b>Cost to adopt:</b> $123.45</p>
+          <p class="dog-description">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+          <a class="adopt-button" onclick="addToTotal(123.45)">Adopt</a>
+        </article>
+        <article class="dog-adoption-card">
+          <img class="dog-card-image" src="./images/poppy-card.jpg" alt="Featured dog: Poppy" onclick="alertDogInfo('Poppy', 'Shih Tzu', '$123.45')">
+          <h3 class="dog-name">Poppy</h3>
+          <p class="dog-adoption-cost"><b>Cost to adopt:</b> $123.45</p>
+          <p class="dog-description">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+          <a class="adopt-button" onclick="addToTotal(123.45)">Adopt</a>
+        </article>
+        <article class="dog-adoption-card">
+          <img class="dog-card-image" src="./images/jack-card.jpg" alt="Featured dog: Jack" onclick="alertDogInfo('Jack', 'Beagle Mix', '$123.45')">
+          <h3 class="dog-name">Jack</h3>
+          <p class="dog-adoption-cost"><b>Cost to adopt:</b> $123.45</p>
+          <p class="dog-description">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+          <a class="adopt-button" onclick="addToTotal(123.45)">Adopt</a>
+        </article>
+        <article class="dog-adoption-card">
+          <img class="dog-card-image" src="./images/duffy-card.jpg" alt="Featured dog: Duffy" onclick="alertDogInfo('Duffy', 'Pitbull', '$123.45')">
+          <h3 class="dog-name">Duffy</h3>
+          <p class="dog-adoption-cost"><b>Cost to adopt:</b> </p>
+          <p class="dog-description">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+          <a class="adopt-button" onclick="addToTotal(123.45)">Adopt</a>
+        </article>
+        <article class="dog-adoption-card">
+          <img class="dog-card-image" src="./images/lucas-card.jpg" alt="Featured dog: Lucas" onclick="alertDogInfo('Lucas', 'German Shepherd Mix', '$123.45')">
+          <h3 class="dog-name">Lucas</h3>
+          <p class="dog-adoption-cost"><b>Cost to adopt:</b> $123.45</p>
+          <p class="dog-description">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+          <a class="adopt-button" onclick="addToTotal(123.45)">Adopt</a>
+        </article>
+        <article class="dog-adoption-card">
+          <img class="dog-card-image" src="./images/jake-card.jpg" alt="Featured dog: Jake" onclick="alertDogInfo('Jake', 'Golden Lab', '$123.45')">
+          <h3 class="dog-name">Jake</h3>
+          <p class="dog-adoption-cost"><b>Cost to adopt:</b> $123.45</p>
+          <p class="dog-description">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+          <a class="adopt-button" onclick="addToTotal(123.45)">Adopt</a>
+        </article>
+        <article class="dog-adoption-card">
+          <img class="dog-card-image" src="./images/angus-card.jpg" alt="Featured dog: Angus" onclick="alertDogInfo('Angus', 'Boxer', '$123.45')">
+          <h3 class="dog-name">Angus</h3>
+          <p class="dog-adoption-cost"><b>Cost to adopt:</b> $123.45</p>
+          <p class="dog-description">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+          <a class="adopt-button" onclick="addToTotal(123.45)">Adopt</a>
+        </article>
+        <article class="dog-adoption-card">
+          <img class="dog-card-image" src="./images/violet-card.jpg" alt="Featured dog: Violet" onclick="alertDogInfo('Violet', 'Labrador', '$123.45')">
+          <h3 class="dog-name">Violet</h3>
+          <p class="dog-adoption-cost"><b>Cost to adopt:</b> $123.45</p>
+          <p class="dog-description">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+          <a class="adopt-button" onclick="addToTotal(123.45)">Adopt</a>
+        </article>
+        <article class="dog-adoption-card">
+          <img class="dog-card-image" src="./images/piper-card.jpg" alt="Featured dog: Piper" onclick="alertDogInfo('Piper', 'Lab Mix', '$123.45')">
+          <h3 class="dog-name">Piper</h3>
+          <p class="dog-adoption-cost"><b>Cost to adopt:</b> $123.45</p>
+          <p class="dog-description">Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
+          <a class="adopt-button" onclick="addToTotal(123.45)">Adopt</a>
+        </article>
+  </div>
+      <a class="show-more-button" href="dogs.html">Show more</a>
+  <footer>
+    <img src="./images/adoptadog-logo.svg" alt="" width="256">
+    <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a class="navigation-link" href="index.html">Home</a></li>
+          <li><a class="navigation-link" href="dogs.html">Dogs</a></li>
+          <li><a class="navigation-link" href="blog.html">Blog</a></li>
+          <li><a class="navigation-link" href="checkout.html">Checkout</a></li>
+        </ul>
+      </nav>
+      <p>&copy;2021 Adoptadog, LLC | Seattle, WA</p>
+  </footer>
+
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>
