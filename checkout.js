@@ -6,10 +6,17 @@ function drop() {
 const form = document.getElementById('form');
 form.addEventListener('submit',drop);
 
-jQuery(function($) {
 
-  $("form :input").change(function() {
-    console.log($(this).closest('form').serialize());
-  });
-
+document.getElementById('form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  let x = document.getElementById('form').elements;
+  console.log("Username: ", x['name'].value);
+  console.log("Email: ", x['email'].value);
+  console.log("Address: ", x['address'].value);
+  console.log("City: ", x['city'].value);
+  console.log("State: ", x['state'].value);
+  console.log("Zipcode: ", x['zipCode'].value);
+  console.log("First Time Adopter: ", x['firstTimeAdopter'].value);
+  console.log("Pickup Location: ", x['dropdown'].value);
+  console.log("Submit: ", x['submit'].value);
 });
