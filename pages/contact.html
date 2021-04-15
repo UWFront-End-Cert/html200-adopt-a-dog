@@ -2,23 +2,35 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Contact | ADOPTADOG</title>
+    <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <img src="images/adoptadog-logo.svg" alt="logo">
-      <p>Seattle’s premiere dog adoption agency</p>
-      <img src="images/cart-icon.svg" alt="checkout cart">
-      <p>Checkout</p>
+    <header class="header-box">
+      <div class="header-item">
+        <img class="logo" src="../images/adoptadog-logo.svg" alt="logo">
+        <p>Seattle’s premiere dog adoption agency</p>
+      </div>
+      <div class="head-item">
+        <img class="cart" src="../images/cart-icon.svg" alt="checkout cart"><br>
+        <p class="btn">Checkout</p>
+      </div>
     </header>
+
 
     <nav class="nav-container">
       <a class="nav-item" href="../index.html">Home</a>
+      <span class="nav-item">/</span>
       <a class="nav-item" href="dogs.html">Dogs</a>
+      <span class="nav-item">/</span>
       <a class="nav-item" href="blog.html">Blog</a>
     </nav>
 
-    <h1>Checkout test</h1>
+  <div class="main-content">
+    <h1>Checkout</h1>
 
     <form method="GET">
       <label>Name
@@ -29,30 +41,33 @@
         <input type="email" name="applicantEmail">
       </label>
 
-      <label>Street Address
-        <input type="text" name="applicantStreetAdd">
-      </label>
+      <fieldset>
+        <label>Street Address
+          <input type="text" name="applicantStreetAdd">
+        </label>
 
-      <label for="city">City</label>
-      <input id="city" type="text" name="applicantCity">
+        <label>City
+        <input type="text" name="applicantCity">
+        </label>
 
-      <label>State
-        <select name="state">
-          <option value="">Please select</option>
-          <option value="WA">Washington</option>
-          <option value="OR">Oregon</option>
-          <option value="ID">Idaho</option>
-        </select>
-      </label>
+        <label>State
+          <select name="applicantState">
+            <option>Please select</option>
+            <option value="WA">Washington</option>
+            <option value="OR">Oregon</option>
+            <option value="ID">Idaho</option>
+          </select>
+        </label>
 
-      <label>Zip Code
-        <input type="number" name="applicantZipCode">
-      </label>
+        <label>Zip Code
+          <input type="number" name="applicantZipCode">
+        </label>
+      </fieldset>
 
       <fieldset>
         <legend>First Time Adopter?</legend>
 
-        <label>
+        <label class="special">
           <input type="radio" name="special" value="yes">
           Yes
         </label>
@@ -64,16 +79,24 @@
 
       <label>Pickup Location
         <select name="location">
-          <option value="">Please select</option>
+          <option>Please select</option>
           <option value="Seattle shelter">Seattle shelter</option>
           <option value="Portland shelter">Portland shelter</option>
-          <option value="ID">Boise shelter</option>
+          <option value="Idaho shelter">Boise shelter</option>
         </select>
       </label>
 
-      <label>Dogs Adopted
-        <input type="text" name="dogsAdopted">
-      </label>
+      <fieldset>
+        <legend>Dog Adopted</legend>
+
+        <label>Lucas
+          <input type="text" name="dogsAdopted">
+        </label>
+
+        <label>Duffy
+          <input type="text" name="dogsAdopted">
+        </label>
+      </fieldset>
 
       <label>Total Adoption Cost
         <input type="number" name="totalAdoptionCost">
@@ -81,17 +104,21 @@
 
       <input type="submit" value="Submit">
     </form>
-
+  </div>
     <footer>
-      <img src="images/adoptadog-logo.svg" alt="logo">
-      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
-        esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-      <nav>
-        <a class="nav-item" href="../index.html">Home</a>
-        <a class="nav-item" href="dogs.html">Dogs</a>
-        <a class="nav-item" href="contact.html">Contact</a>
-      </nav>
-      <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      <div class="content-wrap">
+        <img class="logo" src="../images/adoptadog-logo.svg" alt="logo">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
+          esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+          <nav>
+            <a href="../index.html">Home</a>
+            <span class="divider">/</span>
+            <a href="dogs.html">Dogs</a>
+            <span class="divider">/</span>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      </div>
     </footer>
   </body>
 </html>
