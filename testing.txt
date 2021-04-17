@@ -1,0 +1,59 @@
+**User Personas for Adopt-A-Dog Website**
+
+PERSONA 1
+Name: Katie Austin
+Age: 34
+Occupation: Marketing Manager at Seattle-based Start-up
+Hobbies/Interests: Hiking/Outdoor Activities, Cooking, Promoting Diversity & Inclusion in her industry
+Other Information:
+- Uses PC's and Microsoft Office 365 for work
+- Owns 1-year-old iPhone and 3-year-old MacBook for personal use
+- Grew up with family pets and is looking for her own furry companion now that she has her own apartment
+
+PERSONA 2
+Name: James Daly
+Age: 44
+Occupation: Builder/Contractor
+Hobbies/Interests: Fishing, Cycling, Family Time
+Other Information:
+- Owns iPhone X
+- Uses desktop PC for some work applications, but mainly works remotely on job sites
+- Father of 2 children <10 years, looking for good family dog
+
+PERSONA 3
+Name: Judith Wright
+Age: 68
+Occupation: Retired, former nurse
+Hobbies/Interests: Gardening, Travel, Farmer's Markets/Organic Food
+Other Information:
+- Has 5+-year-old desktop PC at home
+- Owns iPhone 8
+- Reluctantly adopted smartphone use at insistence of her children
+- Lives in remote area of Puget Sound with unreliable high-speed internet
+- Looking for companionship of a pet for nature walks
+
+
+
+**Testing for Adopt-A-Dog Website**
+
+Site testing was conducted in 3 steps: 1) html validation using an HTML5 validator service, 2) browser and operating system compatibility research, and 3) device size compatibility research.
+
+HTML VALIDATION
+
+Each webpage's html was validated using the W3Schools online validator at https://validator.w3.org/nu/#textarea.
+
+
+BROWSER COMPATIBILITY RESEARCH
+
+User persona research revealed that primary users of the Adopt-A-Dog website are likely to use a combination of Mac and PC devices to access the site. Therefore, the desktop version of the website was tested on macOS using Chrome, Firefox, and Safari as well as on Windows 10 using Chrome and Microsoft Edge.
+
+Initial testing on all browsers showed that major main-page elements displayed correctly with adequate padding, color contrast, and clickable space around links. Animated changes associated with hover or click states behaved as expected. Furthermore, jquery functionality of checkout.html remained unchanged between browsers indicating compatibility with currently installed versions.
+
+One problem was identified on all browser types for screen widths 642-767px; When the primary website logo (defined by a div of class '.cart-container') shifted to center alignment on screens <767px, the Checkout button was pushed down-page and partially obscured by the nav bar. Adjustments were made to the padding and margin of this div within the media query for mobile devices so that the Checkout button remained fully visible at all screen widths.
+
+DEVICE SIZE COMPATIBILITY RESEARCH
+
+Due to age, lifestyle, and patterns of technology use, many potential users of the Adopt-A-Dog website will likely, at least initially, access the site from a mobile device. The site was physically tested on an iPhone 11 running iOS 14.4.2 using Chrome for Apple and Safari and an iPad Pro running iOS 12. Testing on Android devices was performed using the Chrome devtools device simulator.
+
+At the smaller screen size, object and text displays, link size and clickability, and page interactions such as pinch/zoom operated as expected in both portrait and landscape aspects.
+
