@@ -346,13 +346,15 @@ h3 {
 
 @media only screen and (max-width: 780px) {
 
-    .main-article {
-        font-size: small;
-        display: block;
+    .img-three {
+        width: 500px;
+        height: 500px;
     }
 
-    .img-three {
-        display: block;
+    .main-article {
+        font-size: x-large;
+        line-height: 35px;
+        width: 100%;
     }
 
     .container {
@@ -376,5 +378,13 @@ h3 {
         border: 2px solid lightgrey;
     }
 
-}
+    .dog-name {
+        font-size: xx-large;
+        color: #093C60;
+    }
 
+    p {
+        font-size: x-large;
+    }
+
+}
