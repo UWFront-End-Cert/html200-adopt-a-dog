@@ -1,4 +1,9 @@
 ﻿
+.top-2 {
+    display: flex;
+}
+
+
 .title {
     grid-area: main;
     width: 100%;
@@ -96,10 +101,6 @@ body {
     border-radius: 3px;
 }
 
-.grid-item {
-    width: 200px;
-    border: 2px solid lightgrey;
-}
 
 .dog-name {
     color: #093C60;
@@ -131,9 +132,6 @@ h1 {
     display: flex;
 }
 
-.top-2 {
-    display: flex;
-}
 
 .img-three {
     width: 250px;
@@ -165,8 +163,8 @@ h1 {
 }
 
 .blog-text p {
-    font-size: x-large;
-    width: 100%;
+        font-size: x-large;
+        width: 100%;
 }
 
 
@@ -340,3 +338,43 @@ h3 {
 .submit {
     width: 150px;
 }
+
+.grid-item {
+    width: 200px;
+    border: 2px solid lightgrey;
+}
+
+@media only screen and (max-width: 780px) {
+
+    .main-article {
+        font-size: small;
+        display: block;
+    }
+
+    .img-three {
+        display: block;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .top-2 {
+        display: block;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: main;
+        padding-top: 25px;
+        padding-bottom: 100px;
+    }
+
+    .grid-item {
+        width: 100%;
+        border: 2px solid lightgrey;
+    }
+
+}
+
