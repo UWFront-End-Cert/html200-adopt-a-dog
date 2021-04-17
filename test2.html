@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      header {
+        grid-column: 1 / span 5;
+        grid-row: 1 / span 1;
+        background-image: url("images/header-image.jpg");
+        background-color: #101010;
+        background-size: 85%;
+        background-position: right center;
+        background-repeat: no-repeat;
+        color: white;
+        height: 20rem;
+        margin-bottom: 1rem;
+      }
+
+      .logo-container {
+        background-color: white;
+        float: left;
+        width: 25%;
+        margin: 2rem 5rem;
+      }
+
+      nav.head {
+        position: relative;
+        top: 17rem;
+        background-color: #E6E6E6;
+        color: #093C60;
+        padding: 1rem;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+      }
+
+      .grid-main-top {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+        background-color: grey;
+      }
+
+      .grid-main-bottom {
+        grid-column: 2 / span 2;
+        grid-row: 3 / span 1;
+        background-color: pink;
+      }
+
+      .grid-aside-right {
+        grid-column: 4 / span 1;
+        grid-row: 2 / span 2;
+        background-color: green;
+        margin-left: 2rem;
+      }
+
+      .horizontal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*flex: 1 0 15%;*/
+        justify-content: space-between;
+      }
+
+      .tile {
+        margin: 0.75rem 0;
+        width: 15rem;
+        max-width: 31%;
+        /*min-width: 21%;*/
+        font-size: 90%;
+        text-align: left;
+        box-shadow: 5px 5px 5px -3px #E6E6E6, 0px 5px 10px #E6E6E6, -5px 5px 5px -3px #E6E6E6;
+      }
+
+      .tile-img {
+        width: 100%;
+      }
+
+      .tile-txt {
+        margin: 0.5rem;
+      }
+
+      .bio-txt {
+        line-height: 150%;
+        margin: 5% 0 8% 0;
+      }
+
+      .tile-link {
+        display: block;
+        position: static;
+      }
+
+      footer {
+        grid-column: 1 / span 5;
+        grid-row: 5 / span 1;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        height: 15rem;
+      }
+
+      .top-img {
+        width: 100%;
+        margin: auto;
+        max-height: 15rem;
+        object-fit: cover;
+        object-position: 50% 75%;
+        padding: 0 0 2rem 0;
+      }
+
+      .blog-teaser {
+        width: 100%;
+        max-height: 8rem;
+        object-fit: cover;
+      }
+
+      .blurb-txt {
+        padding: 0.5rem;
+        font-size: 40%;
+        font-weight: normal;
+      }
+
+      .dog-link {
+        background-color: grey;
+        color: blue;
+        padding: 1rem;
+      }
+
+      fieldset {
+        border: none;
+      }
+
+      input {
+        margin-right: 0.5rem;
+      }
+
+      .radio-style {
+        padding-right: 2rem;
+        color: pink;
+      }
+    </style>
+  </head>
+
+  <body class="grid-container">
+    <header>
+      <div class="logo-container">
+        <h1>Webpage Name</h1>
+        <h2>subtitle</h2>
+      </div>
+      <nav class="head">
+        <a href="#">Link 1</a> /
+        <a href="#">Link 2</a> /
+        <a href="#">Link 3</a> /
+      </nav>
+    </header>
+
+    <div class="grid-main-top">
+      <img src="images/home-intro.jpg" class="top-img">
+      <h1>Adopt A Dog<h1>
+      <p class="blurb-txt">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
+am aut amet ant fugiatum, utem non reptat ad magnienecto</p>
+    </div>
+
+    <div class="grid-main-bottom horizontal">
+      <article class="tile">
+        <img src="images/murphy-card.jpg" class="tile-img" onclick="dogInfo('Murphy','boxer','$123.45')" alt="the apprehensive face of a caramel and white boxer mix looking up and to the left">
+        <div class="tile-txt">
+          <h3>Murphy</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="tile-link green-button" onclick="cartSummary('Murphy')">Adopt</button>
+        </div>
+      </article>
+      <article class="tile">
+        <img src="images/poppy-card.jpg" class="tile-img" onclick="dogInfo('Poppy','Shih Tzu','$123.45')" alt="a smiling, cream and grey Shih Tzu mix trots toward the camera along a shaded road">
+        <div class="tile-txt">
+          <h3>Poppy</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="tile-link green-button" onclick="cartSummary('Poppy')">Adopt</button>
+        </div>
+      </article>
+      <article class="tile">
+        <img src="images/jack-card.jpg" class="tile-img" onclick="dogInfo('Jack','beagle','$123.45')" alt="a beagle puppy eagerly sits and looks up with a look of adoration">
+        <div class="tile-txt">
+          <h3>Jack</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="tile-link green-button" onclick="cartSummary('Jack')">Adopt</button>
+        </div>
+      </article>
+      <article class="tile">
+        <img src="images/duffy-card.jpg" class="tile-img" onclick="dogInfo('Duffy','hound-staffy mix','$123.45')" alt="a tan hound-staffy mix with a white face and blue eyes eagerly looks up at the camera">
+        <div class="tile-txt">
+          <h3>Duffy</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="tile-link green-button" onclick="cartSummary('Duffy')">Adopt</button>
+        </div>
+      </article>
+      <article class="tile">
+        <img src="images/lucas-card.jpg" class="tile-img" onclick="dogInfo('Lucas','shepherd mix','$123.45')" alt="a black shepherd mix with white markings on its snout grins upward at the camera">
+        <div class="tile-txt">
+          <h3>Lucas</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="tile-link green-button" onclick="cartSummary('Lucas')">Adopt</button>
+        </div>
+      </article>
+      <article class="tile">
+        <img src="images/jake-card.jpg" class="tile-img" onclick="dogInfo('Jake','yellow lab','$123.45')" alt="a very good boy a yellow labrador retriever sits and patiently waits for attention">
+        <div class="tile-txt">
+          <h3>Jake</h3>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+          <p class="bio-txt">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="tile-link green-button" onclick="cartSummary('Jake')">Adopt</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid-aside-right">
+      <h2>From Our Blog</h2>
+      <img src="images/blog-1.jpg" class="blog-teaser">
+      <h3>Traveling With Your Dog<h3>
+      <p class="blurb-txt">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
+am aut amet ant fugiatum, utem non reptat ad magnienecto</p>
+      <a>Read more >></a>
+      <img src="images/blog-2.jpg" class="blog-teaser">
+      <h3>Traveling With Your Dog<h3>
+      <p class="blurb-txt">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
+am aut amet ant fugiatum, utem non reptat ad magnienecto</p>
+      <a>Read more >></a>
+      <img src="images/blog-3.jpg" class="blog-teaser">
+      <h3>Traveling With Your Dog<h3>
+      <p class="blurb-txt">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
+am aut amet ant fugiatum, utem non reptat ad magnienecto</p>
+      <a>Read more >></a>
+    </div>
+
+    <footer>
+      <h2>Footer Text</h2>
+    </footer>
+
+    <!--<form method="POST" class="grid-page">
+      <fieldset>
+        <legend>First Time Adopter?</legend>
+        <label class="radio-style light-txt">
+          <input type="radio" name="first-adopt" value="yes">Yes
+        </label>
+        <label class="radio-style light-txt">
+          <input type="radio" name="first-adopt" value="no">No
+        </label>
+      </fieldset>
+    </form>
+
+    <div class="grid-page">
+      <a class="dog-link" href=#>See More Dogs</a>
+    </div>-->
+  </body>
+</html>

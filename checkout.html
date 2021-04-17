@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adopt a Dog: Checkout</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="javascript/jquery-scripts.js" charset="utf-8"></script>
+    <script src="javascript/scripts.js" charset="utf-8"></script>
+  </head>
+
+  <body class="grid-container">
+    <a href="#main-content" class="hidden">Skip to main content >></a>
+    <header>
+      <div class="logo-container">
+        <img id="header-logo" src="images/adoptadog-logo.svg" alt="white silhouette of a sitting dog next to Adopt A Dog logotype">
+        <h2 id="tag-line">Seattle's premier dog adoption agency</h2>
+      </div>
+      <div class="cart-container">
+        <p><img id="icon" src="images/cart-icon.svg" alt="cart icon"><span id="cartDisplay" class="bold"></span></p>
+        <a href="checkout.html" class="green-button checkout-button">Checkout</a>
+      </div>
+      <nav class="head">
+        <a href="index.html">Home</a> /
+        <a href="dogs.html">Dogs</a> /
+        <a href="blog.html">Blog</a>
+      </nav>
+    </header>
+
+    <!-- Main Page Content -->
+    <div class="grid-top" id="main-content">
+      <h2>Checkout</h2>
+    </div>
+
+    <div class="grid-middle">
+      <form method="POST">
+        <label class="vertical">Name
+          <input type="text" name="name" class="txt-entry form-entry" id="data1">
+        </label>
+
+        <label class="vertical">Email Address
+          <input type="email" name="email" class="txt-entry form-entry" id="data2">
+        </label>
+
+        <label class="vertical">Street Address
+          <input type="text" name="street-address" class="txt-entry form-entry" id="data3">
+        </label>
+
+        <div class="horizontal address">
+          <label class="vertical width-40">City
+            <input type="text" name="city" class="txt-entry form-entry" id="data4">
+          </label>
+
+          <label class="vertical width-20">State
+            <select name="state" class="drop-select form-entry">
+              <option value="{blank}">Select</option>
+              <option value="AL">AL - Alabama</option>
+              <option value="AK">AK - Alaska</option>
+              <option value="AZ">AZ - Arizona</option>
+              <option value="AR">AR - Arkansas</option>
+              <option value="CA">CA - California</option>
+              <option value="CO">CO - Colorado</option>
+              <option value="CT">CT - Connecticut</option>
+              <option value="DC">DC - District of Columbia</option>
+              <option value="DE">DE - Deleware</option>
+              <option value="FL">FL - Florida</option>
+              <option value="GA">GA - Georgia</option>
+              <option value="HI">HI - Hawaii</option>
+              <option value="ID">ID - Idaho</option>
+              <option value="IL">IL - Illinois</option>
+              <option value="IN">IN - Indiana</option>
+              <option value="IA">IA - Iowa</option>
+              <option value="KS">KS - Kansas</option>
+              <option value="KY">KY - Kentucky</option>
+              <option value="LA">LA - Louisiana</option>
+              <option value="ME">ME - Maine</option>
+              <option value="MD">MD - Maryland</option>
+              <option value="MA">MA - Massachusetts</option>
+              <option value="MI">MI - Michigan</option>
+              <option value="MN">MN - Minnesota</option>
+              <option value="MS">MS - Mississippi</option>
+              <option value="MO">MO - Missouri</option>
+              <option value="MT">MT - Montana</option>
+              <option value="NE">NE - Nebraska</option>
+              <option value="NV">NV - Nevada</option>
+              <option value="NH">NH - New Hampshire</option>
+              <option value="NJ">NJ - New Jersey</option>
+              <option value="NM">NM - New Mexico</option>
+              <option value="NY">NY - New York</option>
+              <option value="NC">NC - North Carolina</option>
+              <option value="ND">ND - North Dakota</option>
+              <option value="OH">OH - Ohio</option>
+              <option value="OK">OK - Oklahoma</option>
+              <option value="OR">OR - Oregon</option>
+              <option value="PA">PA - Pennsylvania</option>
+              <option value="PR">PR - Puerto Rico</option>
+              <option value="RI">RI - Rhode Island</option>
+              <option value="SC">SC - South Carolina</option>
+              <option value="SD">SD - South Dakota</option>
+              <option value="TN">TN - Tennessee</option>
+              <option value="TX">TX - Texas</option>
+              <option value="UT">UT - Utah</option>
+              <option value="VT">VT - Vermont</option>
+              <option value="VA">VA - Virginia</option>
+              <option value="WA">WA - Washington</option>
+              <option value="WV">WV - West Virginia</option>
+              <option value="WI">WI - Wisconsin</option>
+              <option value="WY">WY - Wyoming</option>
+            </select>
+          </label>
+
+          <label class="vertical width-35">Zip Code
+            <input type="number" name="zipcode" class="txt-entry form-entry">
+          </label>
+        </div>
+
+        <fieldset>
+          <legend>First Time Adopter?</legend>
+          <label class="radio-style light-txt">
+            <input type="radio" name="first-time-adopter" class="form-entry" value="yes">Yes
+          </label>
+          <label class="radio-style light-txt">
+            <input type="radio" name="first-time-adopter" class="form-entry" value="no">No
+          </label>
+        </fieldset>
+
+        <label class="vertical">Pickup Location
+          <select name="pickup-location" class="drop-select width-40 form-entry">
+            <option value="{blank}">Select a location</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Bellevue">Bellevue</option>
+            <option value="Tacoma">Tacoma</option>
+          </select>
+        </label>
+
+        <h4 class="space-down">Dogs Adopted</h4>
+        <article class="cart-item space-down">
+          <img src="images/lucas-card.jpg" class="square" alt="a black shepherd mix with white markings on its snout grins upward at the camera">
+          <h5>Lucas</h5>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+        </article>
+        <article class="cart-item space-down">
+          <img src="images/duffy-card.jpg" class="square" alt="a tan hound-staffy mix with a white face and blue eyes eagerly looks up at the camera">
+          <h5>Duffy</h5>
+          <p><span class="bold">Cost to Adopt:</span> $123.45</p>
+        </article>
+
+        <h4 class="clear-float space-down">Total Adoption Cost</h4>
+        <p class="light-txt">$1234.56</p>
+        <input type="submit" value="Submit" class="submit">
+      </form>
+    </div>
+
+    <div class="grid-bottom">
+    </div>
+
+    <footer class="space-down">
+      <img src="images/adoptadog-logo.svg" class="foot-img" alt="white silhouette of a sitting dog next to Adopt A Dog logotype">
+      <p class="foot">Aborpos nisto inci tet aut que volupti beruptiberro to ex  esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <nav>
+        <a href="index.html">Home</a> /
+        <a href="dogs.html">Dogs</a> /
+        <a href="#">Contact</a>
+      </nav>
+      <p class="foot">© 2018 Adoptadog, LLC   |   Seattle, WA</p>
+    </footer>
+
+  </body>
+</html>
