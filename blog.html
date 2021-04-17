@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopt a Dog: Blog</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="javascript/jquery-scripts.js" charset="utf-8"></script>
   </head>
 
   <body class="grid-container">
@@ -15,8 +17,8 @@
         <h2 id="tag-line">Seattle's premier dog adoption agency</h2>
       </div>
       <div class="cart-container">
-        <p><img id="icon" src="images/cart-icon.svg" alt="cart icon"><span class="bold">$1234.56</span></p>
-        <a href="checkout.html" class="green-button">Checkout</a>
+        <p><img id="icon" src="images/cart-icon.svg" alt="cart icon"><span id="cartDisplay" class="bold"></span></p>
+        <a href="checkout.html" class="green-button checkout-button">Checkout</a>
       </div>
       <nav class="head">
         <a href="index.html">Home</a> /
