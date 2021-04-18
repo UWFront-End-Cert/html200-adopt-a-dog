@@ -412,18 +412,19 @@ h3 {
     }
 
     .img-three {
-        width: 50rem;
+        width: 100%;
         height: auto;
     }
 
     .main-article {
-        font-size: x-large;
+        font-size: 5vw;
         line-height: 35px;
         width: 100%;
     }
 
     .container {
         display: block;
+        padding-left: 0px;
     }
 
     .top-2 {
@@ -445,12 +446,4 @@ h3 {
         border: 2px solid lightgrey;
     }
 
-    .dog-name {
-        font-size: xx-large;
-        color: #093C60;
-    }
-
-    p {
-        font-size: xx-large;
-    }
 }
