@@ -63,7 +63,7 @@ header div.cart img {
   width: 21%;
 }
 
-header div.cart p {
+header div.cart div {
   display: inline;
 }
 
@@ -150,7 +150,7 @@ section.dog-card img {
   width: 100%;
 }
 
-section.dog-card a {
+section.dog-card span {
   background-color: rgb(129,183,65);
   width: 90%;
   height: 2em;
@@ -160,6 +160,7 @@ section.dog-card a {
   justify-content: center;
   margin: auto;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 a.see-more-dogs {
