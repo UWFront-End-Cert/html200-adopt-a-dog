@@ -344,11 +344,18 @@ h3 {
     border: 2px solid lightgrey;
 }
 
-@media only screen and (max-width: 780px) {
+
+@media only screen and (min-width: 768px) {
+
+    .left {
+        grid-area: left;
+        padding-left: 150px;
+        padding-top: 50px;
+    }
 
     .img-three {
-        width: 500px;
-        height: 500px;
+        width: 200px;
+        height: auto;
     }
 
     .main-article {
@@ -375,6 +382,7 @@ h3 {
 
     .grid-item {
         width: 100%;
+        height: auto;
         border: 2px solid lightgrey;
     }
 
@@ -384,7 +392,65 @@ h3 {
     }
 
     p {
-        font-size: x-large;
+        font-size: xx-large;
+    }
+    body {
+        background-color: green;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        background-color: red;
     }
 
+    .left {
+        grid-area: left;
+        padding-left: 150px;
+        padding-top: 50px;
+    }
+
+    .img-three {
+        width: 50rem;
+        height: auto;
+    }
+
+    .main-article {
+        font-size: x-large;
+        line-height: 35px;
+        width: 100%;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .top-2 {
+        display: block;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: main;
+        padding-top: 25px;
+        padding-bottom: 100px;
+        width: 800px;
+    }
+
+    .grid-item {
+        width: 100%;
+        height: auto;
+        border: 2px solid lightgrey;
+    }
+
+    .dog-name {
+        font-size: xx-large;
+        color: #093C60;
+    }
+
+    p {
+        font-size: xx-large;
+    }
 }
