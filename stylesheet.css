@@ -38,6 +38,7 @@ body {
     border: none;
     border-radius: 3px;
     width: 100%;
+    font-size: 20px;
 }
 
 .grid-container {
@@ -102,11 +103,6 @@ body {
 }
 
 
-.dog-name {
-    color: #093C60;
-}
-
-
 h2 {
     color: #093C60;
     margin: 0;
@@ -125,6 +121,7 @@ h2 {
 h1 {
     color: #093C60;
     margin: 0;
+    font-size: 35px;
 }
 
 
@@ -345,6 +342,16 @@ h3 {
 }
 
 
+p {
+    font-size: 8vw;
+}
+
+
+.dog-name {
+    font-size: 35px;
+    color: #093C60;
+}
+
 @media only screen and (min-width: 768px) {
 
     .left {
@@ -386,13 +393,8 @@ h3 {
         border: 2px solid lightgrey;
     }
 
-    .dog-name {
-        font-size: xx-large;
-        color: #093C60;
-    }
-
     p {
-        font-size: xx-large;
+        font-size: 35px;
     }
     body {
         background-color: green;
@@ -417,7 +419,6 @@ h3 {
     }
 
     .main-article {
-        font-size: 5vw;
         line-height: 35px;
         width: 100%;
     }
