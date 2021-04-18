@@ -1,0 +1,411 @@
+* {
+  margin: 0 0 0 0;
+  font-family: "Lato", "Arial", sans-serif;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background-image: url("./images/header-image.jpg");
+  background-size: 100%;
+  width: 100%;
+}
+
+.header h3 {
+  font-family: "Neuton", "Times New Roman";
+  font-style: italic;
+  font-weight: lighter;
+  color: #8DB353;
+}
+
+#header-cart {
+  display: inline-block;
+}
+
+#header-cart img {
+  padding-right: .5rem;
+  height: 1.75em;
+  width: 1.75em;
+}
+
+#header-cart p {
+  font-family: "Work Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: .75em;
+  text-align: right;
+  color: #ffffff;
+}
+
+#header-cart button {
+  background-color: #8DB353;
+  font-family: "Work Sans", "Arial", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 1rem 0 0 0;
+  padding: .65rem 3.5rem .65rem 3.5rem;
+  width: 100%;
+  border: none;
+}
+
+.menu {
+  display: flex;
+}
+
+#primary-nav {
+  display: flex;
+  background-color: #ECECEC;
+  padding: 0 0 0 5rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+#primary-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-family: "Work Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: .95rem;
+  color: #003366;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+#primary-nav li:after {
+  content: "/";
+}
+
+#primary-nav li:last-child:after {
+  content: "";
+}
+
+#primary-nav li a {
+  font-family: "Work Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: .95rem;
+  color: #003366;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0 5rem 0 5rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5rem 0 5rem;
+  padding: 2rem 0rem 0 0rem;
+  width: 100%;
+}
+
+.intro-child {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1rem 2rem;
+  width: inherit;
+}
+
+.intro-child h2 {
+  font-family: "Neuton", "Times New Roman,";
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #003366;
+}
+
+.intro-child img {
+  width: 100%;
+  height: auto;
+}
+
+.intro-child p {
+  font-size: .95rem;
+  line-height: 1.5;
+  max-height: 370px;
+}
+
+.dogs-for-adoption {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 1rem 0 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.all-dogs {
+  margin-left: 5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.75rem 0 1.75rem 0;
+  border: 2px solid #E7E3E3;
+  width: 20%;
+}
+
+.bio {
+  padding: 1rem;
+  font-size: .85rem;
+}
+
+.bio h4 {
+  font-family: "Neuton", "Times New Roman";
+  color: #003366;
+  font-size: 1.25rem;
+}
+
+.cost-bio {
+  font-size: .75rem;
+  padding: .5rem 0 .5rem 0;
+}
+
+.bio button {
+  background-color: #8DB353;
+  font-family: "Work Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  margin: 1rem 0 0 0;
+  padding: .65rem 0 .65rem 0;
+}
+
+.more-dogs {
+  display: flex;
+}
+
+#more-dogs {
+  background-color: #ECECEC;
+  font-family: "Work Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: #003366;
+  border: none;
+  padding: .65rem 3.5rem .65rem 3.5rem;
+  margin: 0 0 5rem 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #003366;
+  align-items: center;
+}
+
+.footer-child {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.footer-child img {
+  max-width: 35%;
+  padding: 2rem 0 1rem 0;
+}
+
+.footer-child h6 {
+  font-family: "Lato";
+  font-size: .95rem;
+  text-align: center;
+  color: #ffffff;
+  max-width: 45%;
+  padding: 0 0 0 0;
+}
+
+.footer-child p {
+  color: #ffffff;
+  font-size: .95rem;
+  padding: 0 0 2rem 0;
+}
+
+#footer-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-family: "Work Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: .95rem;
+  color: #ffffff;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+#footer-nav li:after {
+  content: "/";
+}
+
+#footer-nav li:last-child:after {
+  content: "";
+}
+
+#footer-nav li a {
+  font-family: "Work Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: .75rem;
+  color: #ffffff;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 5rem 0 5rem;
+  width: 100%;
+}
+
+.title-child h2 {
+  font-family: "Neuton", "Times New Roman";
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #003366;
+  padding: 0 2rem 0 2rem;
+}
+
+.dogs-for-adoption {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem 1rem 1rem 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.all-dogs {
+  padding: 0 5rem 0 0;
+}
+
+.blog {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5rem 0 5rem;
+  padding: 2rem 0rem 3.5rem 0rem;
+  overflow: hidden;
+}
+
+.blog-child {
+  padding: 0 0 0 2rem;
+}
+
+.blog h2 {
+  padding: 0 0 1rem 1rem;
+  font-family: "Neuton", "Times New Roman";
+  color: #003366;
+  font-size: 1.25rem;
+}
+
+.blog p {
+  padding: 0 0 1rem 1rem;
+  font-size: .85rem;
+}
+
+.checkout {
+  border: 1px dotted blue;
+  display: flex;
+  flex-direction: column;
+  margin: 0 5rem 0 5rem;
+  padding: 2rem 0rem 0 0rem;
+}
+
+.checkout-child {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 0 2rem;
+}
+
+.checkout-child label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Neuton", "Times New Roman";
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #003366;
+}
+
+.checkout-child input {
+  padding: .25rem 0 .25rem 0;
+  border: 1px solid #C0C0C0;
+}
+
+.checkout-child h4 {
+  font-family: "Neuton", "Times New Roman";
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #003366;
+}
+
+.checkout-child button {
+  background-color: #8DB353;
+  font-family: "Work Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: .85rem;
+  color: #ffffff;
+  border: none;
+  max-width: 25%;
+  margin: 0 0 3rem 0;
+  padding: .65rem 0 .65rem 0;
+}
+
+.city-state-zip {
+  display: flex;
+  flex-direction: row;
+  padding: 0 2rem 0 2rem;
+  overflow: hidden;
+}
+
+.city-state-zip-child {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 0 0;
+}
+
+.city-state-zip-child label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Neuton", "Times New Roman";
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #003366;
+}
+
+.city-state-zip-child input {
+  width: 100%;
+  padding: .25rem 0 .25rem 0;
+  border: 1px solid #C0C0C0;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  padding: 0;
+  width: 25%;
+}
+
+.checkbox label {
+  display: inline-block;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lato", "Arial", sans-serif;
+  color: #000000;
+  font-size: .75rem;
+  line-height: 1.5;
+  padding: 0 .75rem 0 .5rem;
+}
