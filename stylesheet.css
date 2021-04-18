@@ -143,7 +143,7 @@ h1 {
 
 
 .main-article {
-    font-size: x-large;
+    font-size: 35px;
     line-height: 35px;
     width: 100%;
 }
@@ -343,7 +343,7 @@ h3 {
 
 
 p {
-    font-size: 8vw;
+    font-size: 35px;
 }
 
 
@@ -366,7 +366,7 @@ p {
     }
 
     .main-article {
-        font-size: x-large;
+        font-size: 35px;
         line-height: 35px;
         width: 100%;
     }
