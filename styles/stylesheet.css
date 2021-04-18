@@ -97,11 +97,17 @@ nav a{
 .article-box{
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 .article-item{
   padding: 2rem;
 }
 /* Dogs profiles...........*/
+.dog-profiles{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .doginfo-wrap{
   display: inline-block;
@@ -243,5 +249,5 @@ input[type="submit"]{
   font-weight: bolder;
 }
 input:invalid{
-  border: 2px solid red;
+  border: 0.2em solid red;
 }
