@@ -42,48 +42,6 @@
     		text: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
         onclick: 'puppyCard(5)'
     	},
-    	{
-    		name: 'Angus',
-    		image: 'https://anthonyjprater.github.io/html200-adopt-a-dog/images/angus-card.jpg',
-    		alt: 'angus\'s profile card',
-    		text: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
-        onclick: 'puppyCard(6)'
-    	},
-    	{
-    		name: 'Violet',
-    		image: 'https://anthonyjprater.github.io/html200-adopt-a-dog/images/violet-card.jpg',
-    		alt: 'violet\'s profile card',
-    		text: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
-        onclick: 'puppyCard(7)'
-    	},
-    	{
-    		name: 'Piper',
-    		image: 'https://anthonyjprater.github.io/html200-adopt-a-dog/images/piper-card.jpg',
-    		alt: 'piper\'s profile card',
-    		text: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
-        onclick: 'puppyCard(8)'
-    	},
-    	{
-    		name: 'Maximus',
-    		image: 'https://anthonyjprater.github.io/html200-adopt-a-dog/images/maximus-card.jpg',
-    		alt: 'maximus\'s profile card',
-    		text: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
-        onclick: 'puppyCard(9)'
-    	},
-    	{
-    		name: 'Luna',
-    		image: 'https://anthonyjprater.github.io/html200-adopt-a-dog/images/luna-card.jpg',
-    		alt: 'luna\'s profile card',
-    		text: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
-        onclick: 'puppyCard(10)'
-      },
-    	{
-    		name: 'Stella',
-    		image: 'https://anthonyjprater.github.io/html200-adopt-a-dog/images/stella-card.jpg',
-    		alt: 'stella\'s profile card',
-    		text: 'Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae',
-        onclick: 'puppyCard(11)'
-      },
     ];
 
     const pupsMain = document.getElementById('pups-main');

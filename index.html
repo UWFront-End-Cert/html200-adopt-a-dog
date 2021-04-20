@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ADOPT-A-DOG HOME</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/5398a5e1fc.js" crossorigin="anonymous"></script>
 </head>
+
+
 
 <body>
 <a href="#main-content" class="sr-only">Skip to main content</a>
@@ -42,7 +45,7 @@
 <section class="sr-only" id="main-content">
   <h2 class="skip-link">content</h2>
 </section>
-<section class="home-main-content" >
+<section class="home-main-content" id='pups-main' >
     <figure class="blog-intro-image">
       <img src="images/home-intro.jpg" alt="" width=536>
     </figure>
@@ -50,72 +53,7 @@
     <h2 class="blog-intro">Adopt A Dog</h2>
     <p class="blog-entry">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am</p>
   </article>
-  <article class="pup-profile">
-    <figure class="profile-pic">
-      <img src="images/murphy-card.jpg" alt="" width="215" onclick="puppyCard(0)">
-    </figure>
-    <div class="pup-style">
-    <h3>Murphy</h3>
-    <p><b>Cost to Adopt:</b> $123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
-    </div>
-  </article>
-  <article class="pup-profile">
-    <figure class="profile-pic">
-      <img src="images/poppy-card.jpg" alt="" width="215" onclick="puppyCard(1)">
-    </figure>
-    <div class="pup-style">
-    <h3>Poppy</h3>
-    <p><b>Cost to Adopt:</b> $123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
-    </div>
-  </article>
-  <article class="pup-profile">
-    <figure class="profile-pic">
-      <img src="images/jack-card.jpg" alt="" width="215" onclick="puppyCard(2)">
-    </figure>
-    <div class="pup-style">
-    <h3>Jack</h3>
-    <p><b>Cost to Adopt:</b> $123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
-    </div>
-  </article>
-  <article class="pup-profile">
-    <figure class="profile-pic">
-      <img src="images/duffy-card.jpg" alt="" width="215" onclick="puppyCard(3)">
-    </figure>
-    <div class="pup-style">
-    <h3>Duffy</h3>
-    <p><b>Cost to Adopt:</b> $123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
-    </div>
-  </article>
-  <article class="pup-profile">
-    <figure class="profile-pic">
-      <img src="images/lucas-card.jpg" alt="" width="215" onclick="puppyCard(4)">
-    </figure>
-    <div class="pup-style">
-    <h3>Lucas</h3>
-    <p><b>Cost to Adopt:</b> $123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
-    </div>
-  </article>
-  <article class="pup-profile">
-    <figure class="profile-pic">
-      <img src="images/jake-card.jpg" alt="" width="215" onclick="puppyCard(5)">
-    </figure>
-    <div class="pup-style">
-    <h3>Jake</h3>
-    <p><b>Cost to Adopt:</b> $123.45</p>
-    <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-    <button class="adopt-this-dog" onclick="adopt()">Adopt</button>
-    </div>
-  </article>
+
   <form class="full-adoption-list" action="adoption-list.html">
     <button type="submit" value="adoption-page">See More Dogs</button>
   </form>
@@ -166,7 +104,7 @@
 </div>
 </footer>
 </div>
+<script type="text/javascript" src="index.js"></script>
 
-<script type="text/javascript" src="adoptadog.js"></script>
 </body>
 </html>

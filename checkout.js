@@ -7,8 +7,8 @@ const form = document.getElementById('form');
 form.addEventListener('submit',drop);
 
 
-document.getElementById('form').addEventListener('submit', function(e) {
-  e.preventDefault();
+$("form").submit(function( event ) {
+  event.preventDefault();
   let x = document.getElementById('form').elements;
   console.log("Username: ", x['name'].value);
   console.log("Email: ", x['email'].value);
