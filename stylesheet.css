@@ -1,26 +1,17 @@
 ﻿.side-preview {
     width: 25%;
+    flex: 1;
 }
+
+.preview {
+    display: block;
+}
+
 
 .main-content {
-    margin-right:25%;
+    margin-right: 5%;
+    flex: 2;
 }
-
-.main {
-    flex-wrap: wrap;
-    grid-area: main;
-    padding-left: 240px;
-    padding-right: 240px;
-    padding-top: 25px;
-    padding-bottom: 100px;
-    grid-gap: 50px;
-}
-
-﻿
-.top-2 {
-    display: flex;
-}
-
 
 .title {
     grid-area: main;
@@ -82,6 +73,20 @@ body {
     height: auto;
 }
 
+
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: main;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 1.5rem;
+    padding-bottom: 6.25rem;
+    grid-gap: 3.12rem;
+}
+
+
 .see-dogs {
     display: block;
     text-align: center;
@@ -105,6 +110,10 @@ body {
     border-radius: 3px;
 }
 
+.grid-item {
+    width: 12.5rem;
+    border: 2px solid lightgrey;
+}
 
 .dog-name {
     color: #093C60;
@@ -122,8 +131,8 @@ h2 {
     background-color: #ECECEC;
     font-size: 25px;
     color: #093C60;
-    padding-left: 200px;
-    line-height: 50px;
+    padding-left: 12.5rem;
+    line-height: 3.12rem;
 }
 
 h1 {
@@ -136,10 +145,13 @@ h1 {
     display: flex;
 }
 
+.top-2 {
+    display: flex;
+}
 
 .img-three {
-    width: 250px;
-    height: 250px;
+    width: 15rem;
+    height: 15rem;
     padding-right: 20px;
 }
 
@@ -174,7 +186,7 @@ h1 {
 
 .nav-two {
     grid-area: nav;
-    line-height: 50px;
+    line-height: 3.12rem;
 }
 
 .header {
@@ -190,14 +202,14 @@ h1 {
 
 .left {
     grid-area: left;
-    padding-left: 150px;
-    padding-top: 50px;
+    padding-left: 9rem;
+    padding-top: 3.12rem;
 }
 
 .right {
     grid-area: right;
-    padding-right: 50px;
-    padding-top: 50px;
+    padding-right: 3.12rem;
+    padding-top: 3.12rem;
     justify-items: center;
 }
 
@@ -321,13 +333,13 @@ input {
 
 .adopted {
     display: flex;
-    height: 50px;
+    height: 3.12rem;
     width: auto;
 }
 
 
 .small-dog {
-    height: 50px;
+    height: 3.12rem;
     width: auto;
 }
 
@@ -340,122 +352,33 @@ h3 {
 }
 
 .submit {
-    width: 150px;
+    width: 9rem;
 }
 
-.grid-item {
-    width: 200px;
-    border: 2px solid lightgrey;
-}
 
 
 @media only screen and (min-width: 768px) {
 
-    .left {
-        grid-area: left;
-        padding-left: 150px;
-        padding-top: 50px;
-    }
-
-    .img-three {
-        width: 200px;
+    .img-four {
+        width: 300px;
         height: auto;
-    }
-
-    .main-article {
-        font-size: x-large;
-        line-height: 35px;
-        width: 100%;
-    }
-
-    .container {
-        display: block;
-    }
-
-    .main {
-        display: flex;
-        flex-wrap: wrap;
-        grid-area: main;
-        padding-top: 25px;
-        padding-bottom: 100px;
-    }
-
-    .grid-item {
-        width: 100%;
-        height: auto;
-        border: 2px solid lightgrey;
-    }
-
-    .dog-name {
-        font-size: xx-large;
-        color: #093C60;
-    }
-
-    p {
-        font-size: xx-large;
-    }
-
-    body {
-        background-color: green;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-
-    .top {
-        display: block;
-    }
-
-    body {
-        background-color: red;
-    }
-
-    .left {
-        grid-area: left;
-        padding-left: 150px;
-        padding-top: 50px;
-    }
-
-    .img-three {
-        width: 50rem;
-        height: auto;
-    }
-
-    .main-article {
-        font-size: x-large;
-        line-height: 35px;
-        width: 100%;
-    }
-
-    .container {
-        display: block;
     }
 
     .top-2 {
         display: block;
     }
 
-    .main {
+    .container {
+        padding-left: 0px;
+    }
+
+    .dogs {
         display: flex;
         flex-wrap: wrap;
-        grid-area: main;
-        padding-top: 25px;
-        padding-bottom: 100px;
-        width: 800px;
+        grid-gap: 50px;
     }
 
-    .grid-item {
+    .img-three {
         width: 100%;
-        height: auto;
-        border: 2px solid lightgrey;
-    }
-
-    .dog-name {
-        font-size: xx-large;
-        color: #093C60;
-    }
-
-    p {
-        font-size: xx-large;
     }
 }
