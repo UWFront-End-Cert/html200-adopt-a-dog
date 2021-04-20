@@ -33,27 +33,27 @@
                     <form method="GET">
 
                         <label>Name<br>
-                            <input type="text" name="applicantName" required="required">
+                            <input type="text" id="applicantName" name="applicantName" required="required" onkeyup="formInput()">
                         </label>
                         <br>
 
                         <label>Email<br>
-                            <input type="email" name="applicantEmail" required="required">
+                            <input type="email" id="applicantEmail" name="applicantEmail" required="required">
                         </label>
                         <br>
 
                         <label>Street Address<br>
-                            <input type="text" name="applicantAddress" required="required">
+                            <input type="text" id="applicantAddress" name="applicantAddress" required="required">
                         </label>
                         <br>
 
                         <div id="city-zip">
                         <label>City
-                            <input type="text" name="applicantCity" id="city" required="required">
+                            <input type="text" id="applicantCity" name="applicantCity" id="city" required="required">
                         </label>
 
                         <label>State<br>
-                            <select size="1" name="applicantState">
+                            <select size="1" id="applicantState" name="applicantState">
                             <option>Select State</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -110,7 +110,7 @@
                         </label>
 
                         <label>Zip Code
-                            <input type="text" name="applicantZip" id="zip" required="required">
+                            <input type="text" id="applicantZip" name="applicantZip" id="zip" required="required">
                         </label>
                         </div>
                         <br>
@@ -166,5 +166,6 @@
             <p>© 2018 Adoptadog, LLC | Seattle, WA
             </p>
         </footer>
+        <script src="./form.js" charset="utf-8"></script>
     </body>
 </html>

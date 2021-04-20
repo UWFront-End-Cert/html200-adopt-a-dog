@@ -250,21 +250,23 @@ h4 {
     font-size: 1.5em;
     margin: .5em;
 }
-#dog-blog {
+#dogBlog {
     display: flex;
     flex-flow: column;
     width: 100%;
     margin-bottom: 3em;
 }
-.blog-post img {
+#blogPost {
     float: left;
+    height: 100px;
+    width: 200px;
     padding-right: 4em;
     margin-top: 1em;
     margin-bottom: 2.5em;
+    font-size: 5em;
 }
-.blog-post p {
-    font-size: .7em;
-}
+
+
 /************************CHECKOUT PAGE*******************************/
 #form {
     margin-left: 15%;
