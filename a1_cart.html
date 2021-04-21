@@ -5,41 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="app.css/a1_cart.css">
-    <script src="https://kit.fontawesome.com/95e5c4f760.js" crossorigin="anonymous"></script>
+    <title>Cart</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918&family=Courgette&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;700&family=Courgette&display=swap" rel="stylesheet">
-    <title>Cart</title>
-    <style>
-        /* <!--this is just to make sure its working, not permante styling--> */
-        
-        * {
-            box-sizing: border-box;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="app.css/a1_cart.css">
 </head>
 
 <body>
     <div class="grid_container">
         <section class="header">
-
-            <h1>Seattle's Premier Dog Adoption Agency</h1>
-
-            <a href="a1_cart.html"><img class="cart" src="https://raw.githubusercontent.com/mjay88/html200-adopt-a-dog/41dab5423bd1111155d9d5bd7f6a44c57e8119e2/images/cart-icon.svg" alt="clickable cart icon"></a>
-            <img class="logo" src="https://raw.githubusercontent.com/mjay88/html200-adopt-a-dog/41dab5423bd1111155d9d5bd7f6a44c57e8119e2/images/adoptadog-logo.svg" alt="adoptadog logo">
-            <button class="checkout">Checkout</button>
-            <nav class="primary ">
-                <a href="a1.html ">Home</a>
-                <a>/</a>
-                <a href="a1_dogs.html ">Dogs</a>
-                <a>/</a>
-                <a href="a1_blog.html ">Blog</a>
-            </nav>
+            <div class="header_top">
+                <img class="logo" src="https://raw.githubusercontent.com/mjay88/html200-adopt-a-dog/41dab5423bd1111155d9d5bd7f6a44c57e8119e2/images/adoptadog-logo.svg" alt="adoptadog logo">
+                <h1>Seattle's Premier Dog Adoption Agency</h1>
+            </div>
+            <div class="header_bottom">
+                <div>
+                    <a href="dogs_cart_draft.html"><img class="cart" src="https://raw.githubusercontent.com/mjay88/html200-adopt-a-dog/41dab5423bd1111155d9d5bd7f6a44c57e8119e2/images/cart-icon.svg" alt="clickable cart icon"></a>
+                    <span>$1234.56</span>
+                </div>
+                <button class='checkout'>Checkout</button>
+            </div>
         </section>
+
+        <nav class="primary ">
+            <a href="index.html">Home</a>
+            <a>/</a>
+            <a href="a1_dogs.html">Dogs</a>
+            <a>/</a>
+            <a href="a1_blog.html">Blog</a>
+        </nav>
         <section class="main">
 
             <form action="/checkout">
@@ -129,23 +127,21 @@
                        <option value="UW">University District</option>
                        <option value="Ballard">Ballard</option>
                    </select>
+                <p class="tag1">Dogs Adopted</p>
                 <div class="adopted">
-                    <p class="tag1">Dogs Adopted</p>
-                    <div class="dog_container">
-
+                    <div class="float">
                         <img src="https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/duffy-card.jpg?raw=true " alt="a cute bitpull mix staring at camera with white face and blue eyes">
-                        <div class="float">
-                            <p>Duffy</p>
-                            <p><strong>Cost to Adopt</strong>: $123.45</p>
+                        <div class="contents">
+                            <h3 class="name">Duffy</h3>
+                            <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                         </div>
-
-
+                    </div>
+                    <div class="float right">
                         <img src="https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/lucas-card.jpg?raw=true " alt="a cute german shepard mix with an all black face and orange eyes on leash">
-                        <div class="float">
-                            <p>Lucas</p>
-                            <p><strong>Cost to Adopt</strong>: $123.45</p>
+                        <div class="contents">
+                            <h3 class="name">Lucas</h3>
+                            <p class='cost'><strong>Cost to Adopt</strong>: $123.45</p>
                         </div>
-
                     </div>
                 </div>
                 <div class="total">
@@ -159,22 +155,21 @@
         </section>
         <section class="footer ">
             <img src="https://raw.githubusercontent.com/mjay88/html200-adopt-a-dog/41dab5423bd1111155d9d5bd7f6a44c57e8119e2/images/adoptadog-logo.svg" alt="adoptadog logo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quisquam dolorem consequatur commodi exercitationem! Odit soluta voluptatibus fuga error, quae perferendis itaque quasi corrupti maxime debitis dolores, consequatur molestias
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quisquam dolorem consequatur commodi exercitationem!<br> Odit soluta voluptatibus fuga error, quae perferendis itaque quasi corrupti maxime debitis dolores, consequatur molestias
                 dicta?
             </p>
             <nav class="footer_nav ">
                 <div class="footer_nav ">
-                    <a href="a1.html ">Home</a>
+                    <a href="index.html">Home</a>
                     <a>/</a>
-                    <a href="a1_dogs.html ">Dogs</a>
+                    <a href="a1_dogs.html">Dogs</a>
                     <a>/</a>
-                    <a href="a1_blog.html ">Blog</a>
+                    <a href="a1_blog.html">Blog</a>
                 </div>
             </nav>
             <p>&#169; 2021 Adoptadog, LLC | Seattle, WA</p>
         </section>
     </div>
-
 
 </body>
 
