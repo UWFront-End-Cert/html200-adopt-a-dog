@@ -244,27 +244,34 @@ button {
     border: none;
 }
 /************************BLOG PAGE*******************************/
-h4 {
-    font-family: serif;
-    color: #093c60;
-    font-size: 1.5em;
-    margin: .5em;
-}
-#dogBlog {
+#dogBlog section {
     display: flex;
     flex-flow: column;
     width: 100%;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
-#blogPost {
-    float: left;
-    height: 100px;
-    width: 200px;
-    padding-right: 4em;
+#dogBlog h4 {
+    float: right;
+    font-family: serif;
+    color: #093c60;
+    font-size: 1.5em;
+    margin-right: 14em;
+    margin-left: 0;
+    
+}
+#dogBlog img {
+    height: 350px;
+    width: 350px;
+    margin-bottom: 2em;
     margin-top: 1em;
-    margin-bottom: 2.5em;
-    font-size: 5em;
 }
+#dogBlog p {
+    float: right;
+    width: 55%;
+    font-size: .9em;
+}
+
+
 
 
 /************************CHECKOUT PAGE*******************************/

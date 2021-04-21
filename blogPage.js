@@ -23,17 +23,18 @@ h4One.innerHTML = blogOne.title
 
 divOne.appendChild(h4One);
 
+const imgOne = document.createElement('img');
+imgOne.src = 'images/blog-1.jpg';
+document.body.appendChild(imgOne);
+divOne.appendChild(imgOne);
+
 const pOne = document.createElement('p');
 document.body.appendChild(pOne);
 
 pOne.innerHTML = blogOne.para
 divOne.appendChild(pOne);
 
-const imgOne = document.createElement('img');
-imgOne.src = 'images/blog-1.jpg'
-imgOne.setAttribute("style", "width: 300px");
-document.body.appendChild(imgOne);
-divOne.appendChild(imgOne);
+
 
 
 
@@ -56,17 +57,18 @@ h4Two.innerHTML = blogTwo.title
 
 divTwo.appendChild(h4Two);
 
+const imgTwo = document.createElement('img');
+imgTwo.src = 'images/blog-2.jpg';
+document.body.appendChild(imgTwo);
+divTwo.appendChild(imgTwo);
+
 const pTwo = document.createElement('p');
 document.body.appendChild(pTwo);
 
 pTwo.innerHTML = blogTwo.para
 divTwo.appendChild(pTwo);
 
-const imgTwo = document.createElement('img');
-imgTwo.src = 'images/blog-2.jpg'
-imgTwo.setAttribute("style", "width: 300px");
-document.body.appendChild(imgTwo);
-divTwo.appendChild(imgTwo);
+
 
 
 
@@ -86,17 +88,18 @@ h4Three.innerHTML = blogThree.title
 
 divThree.appendChild(h4Three);
 
+const imgThree = document.createElement('img');
+imgThree.src = 'images/blog-3.jpg';
+document.body.appendChild(imgThree);
+divThree.appendChild(imgThree);
+
 const pThree = document.createElement('p');
 document.body.appendChild(pThree);
 
 pThree.innerHTML = blogThree.para
 divThree.appendChild(pThree);
 
-const imgThree = document.createElement('img');
-imgThree.src = 'images/blog-3.jpg'
-imgThree.setAttribute("style", "width: 300px");
-document.body.appendChild(imgThree);
-divThree.appendChild(imgThree);
+
 
 
 document.getElementById('dogBlog').appendChild(h2);
