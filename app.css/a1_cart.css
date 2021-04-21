@@ -1,332 +1,619 @@
-    html {
-        box-sizing: border-box;
-        font-size: 62.5%;
-    }
-    
-    body {
-        font-family: 'Brygada 1918', serif;
-        line-height: 1.6;
-    }
-    
-    .header {
-        grid-area: header;
-    }
-    
-    .main {
-        grid-area: main;
-    }
-    
-    .footer {
-        grid-area: footer
-    }
-    
-    .grid-container {
-        grid-template-columns: 100%;
-        grid-template-rows: 25% 50% 25%;
-        grid-template-areas: 'header' 'main' 'footer';
-        grid-gap: 1rem;
-        display: flex;
-    }
-    /* .header {
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+/* Just add the universal selector (*) to your CSS, this will apply any rule to every element on the page. If any elements need them you can 
+then add margins or padding to those elements themselves. This helps get rid of spacing when you can't quite tell what is causing it. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+
+body {
+    font-family: 'Brygada 1918', serif;
+    line-height: 1.6;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 20%);
+    height: 210rem;
+    position: relative;
+}
+
+.header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.main {
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+.footer {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+
+/*header stufff ...............................................................................................................................................*/
+
+.header {
+    margin-bottom: 10rem;
     background-color: black;
     background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
-} */
-    
-    .header {
-        margin-bottom: 10rem;
-        background-color: black;
-        background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
-        height: 40rem;
-        width: 100%;
-        position: relative;
-        background-color: black;
-        background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
-        background-size: cover;
-    }
-    
-    .main {
-        display: flex;
-    }
-    
-    form {
-        margin-left: 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: left;
-        width: 50%;
-    }
-    
-    label,
-    input,
-    textarea {
-        display: flex;
-        font-size: 3rem;
-        font-family: inherit;
-    }
-    
-    button {
-        font-size: 3rem;
-        font-family: inherit;
-        border-radius: .5rem;
-    }
-    
-    .header h1 {
-        font-family: 'Courgette', cursive;
-        font-size: 2.5rem;
-        color: rgb(155, 226, 11);
-        position: absolute;
-        left: 3.0%;
-        top: 43%;
-    }
-    
-    .cart {
-        position: absolute;
-        left: 75%;
-        top: 15%;
-        width: 10%;
-        height: 10%;
-    }
-    
-    span {
-        position: absolute;
-        z-index: 10000;
-        color: white;
-        left: 82%;
-        top: 17%;
-        width: 10%;
-        height: 10%;
-        font-size: 2rem;
-        font-weight: 700;
-    }
-    
-    .checkout {
-        position: absolute;
-        left: 78%;
-        top: 28%;
-        width: 15rem;
-        height: 3rem;
-        font-size: 1.75rem;
-        background-color: rgb(155, 226, 11);
-        color: white;
-        font-weight: 700;
-        border-style: none;
-    }
-    
-    .checkout:hover {
-        background-color: rgb(170, 253, 2);
-    }
-    
-    input[name="zip"] {
-        width: 18rem;
-    }
-    
-    .float {
-        margin-top: -8%;
-    }
-    
-    .logo {
-        height: 15rem;
-        position: relative;
-        display: block;
-        top: 15%;
-        left: 1%;
-    }
-    
-    .primary {
-        position: relative;
-        z-index: 10000;
-        display: block;
-        background-color: rgba(192, 192, 192, 0.3);
-        padding: 1.3rem;
-        position: relative;
-        padding-left: 15%;
-        top: 62%;
-    }
-    
-    nav a {
-        font-size: 2rem;
-        /* padding-right: 5%; */
-        padding-left: 2.5%;
-        text-decoration: none;
-        color: black;
-    }
-    
-    h1 {
-        color: white;
-    }
-    /* .footer {
-    background-color: rgb(6, 6, 112);
+    height: 40rem;
+    width: auto;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+}
+
+.logo {
+    height: 15rem;
+}
+
+.header h1 {
+    color: white;
+    font-size: 2.75rem;
+    font-family: 'Courgette', cursive;
+    color: rgb(155, 226, 11);
+    display: flex;
+    justify-content: space-around;
+    margin-top: -2rem;
+}
+
+.cart {
+    width: 4rem;
+    height: 4rem;
+    /* transform: scale(.25); */
+}
+
+span {
+    color: white;
+    width: 10%;
+    height: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    transform: scale(.75);
+}
+
+.checkout {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.75rem;
+    background-color: rgb(155, 226, 11);
+    color: white;
+    font-weight: 700;
+    border-style: none;
+}
+
+.checkout:hover {
+    background-color: rgb(170, 253, 2);
+}
+
+.header_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5rem;
+    margin-left: 6rem;
+}
+
+.header_bottom {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 10rem;
+    margin-right: 3rem;
+    margin-top: 6rem;
+    flex-direction: column;
+}
+
+
+/*...............................................main.................................................................................................................*/
+
+.main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15rem;
+    margin-right: 40rem;
+    box-sizing: border-box;
+    margin-top: 10rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.total {
+    font-size: 3rem;
+}
+
+.adopted div {
+    width: 30rem;
+    height: 15rem;
+    object-fit: cover;
+    display: flex;
+    align-items: flex-start;
+}
+
+.adopted {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1rem;
+}
+
+label,
+input,
+textarea {
+    display: flex;
+    font-size: 3rem;
+    font-family: inherit;
+}
+
+button {
+    font-size: 3rem;
+    font-family: inherit;
+    border-radius: .5rem;
+    width: 35rem;
+    background-color: rgb(155, 226, 11);
+}
+
+button:hover {
+    background-color: rgb(170, 253, 2);
+}
+
+.citystate {
+    border: none;
+    display: flex;
+}
+
+.citystate input,
+select {
+    margin-right: 2rem;
+    position: relative;
+    right: 1rem;
+    text-align: left;
+}
+
+.citystate * {
+    text-align: left;
+    display: inline;
+}
+
+.citystate label {
+    text-align: left;
+}
+
+form h1 {
+    color: black;
+    font-size: 5rem;
+}
+
+.is_adopter {
+    /* position: relative; */
+    display: flex;
+    border: none;
+    width: 10rem;
+}
+
+select {
+    height: 4rem;
+}
+
+select[name="pickup"] {
+    margin-left: 1rem;
+}
+
+form * {
+    margin-bottom: 2rem;
+}
+
+fieldset label,
+input {
+    padding-right: 3rem;
+}
+
+fieldset input[type="radio"] {
+    transform: scale(1.5);
+    position: relative;
+    top: 1.2rem;
+}
+
+form p,
+legend {
+    font-size: 3rem;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.cost {
+    font-size: 1.5rem;
+}
+
+legend {
+    width: 30rem;
+}
+
+.adopted img {
+    object-fit: cover;
+    width: 15rem;
+}
+
+input[name="have_adopted_before"] {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+fieldset:nth-of-type(1) {
+    margin-left: 1rem;
+}
+
+
+/*nav.......................................................................*/
+
+.primary a:first-child {
+    margin-left: 9rem;
+}
+
+.primary {
+    position: relative;
+    z-index: 10000;
+    display: block;
+    background-color: rgba(192, 192, 192, 0.3);
+    padding: 1.3rem;
+    position: relative;
+    bottom: 170rem;
+}
+
+nav a {
+    font-size: 2rem;
+    /* padding-right: 5%; */
+    padding-left: 2.5%;
+    text-decoration: none;
+    color: black;
+}
+
+
+/*.........................................................footer.........................................................*/
+
+.footer {
+    background-color: rgb(12, 73, 122);
+    height: 35rem;
+    margin-top: 30rem;
+    padding-top: 15rem;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(12, 73, 122);
+    text-align: center;
+    padding-bottom: 15rem;
 }
 
 .footer img {
-    height: 10rem;
+    height: 15rem;
 }
 
-nav+p {
+.footer p {
     color: white;
-} */
-    
-    .cart {
-        height: 5rem;
+    font-size: 1.2rem;
+}
+
+div.footer_nav {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+div.footer_nav a {
+    color: white;
+}
+
+
+/*****************quireies********************/
+
+@media screen and (max-width: 1146px) {
+    .grid_container {
+        width: 137%;
     }
-    
-    .citystate {
-        border: none;
-        display: flex;
+}
+
+@media screen and (max-width: 838px) {
+    .grid_container {
+        width: 149%;
     }
-    
-    .citystate input,
+}
+
+@media screen and (max-width: 769px) {
+    .grid_container {
+        width: 159%;
+    }
+}
+
+@media screen and (max-width: 769px) and (orientation: portrait) {
+    .grid_container {
+        width: 154%;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+    .grid_container {
+        width: 133%;
+    }
+    #zip {
+        width: 20rem;
+    }
+}
+
+@media screen and(max-width: 730px) {
+    .grid_container {
+        width: 158%;
+    }
+    #zip {
+        width: 20rem;
+    }
+}
+
+@media screen and(max-width: 700px) {
+    .grid-container {
+        width: 164%;
+    }
+}
+
+
+/*ipad*/
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    input,
     select {
-        margin-right: 2rem;
-        position: relative;
-        right: 1rem;
-        text-align: left;
+        border: 1px solid black;
     }
-    
-    .citystate * {
-        text-align: left;
-        display: inline;
+    fieldset.citystate {
+        flex-flow: column;
     }
-    
-    .citystate label {
-        text-align: left;
+    input#address {
+        margin-bottom: 4rem;
     }
-    
-    form h1 {
-        color: black;
-        font-size: 5rem;
+    input#city {
+        width: 64rem;
     }
-    
-    .is_adopter {
-        /* position: relative; */
-        display: flex;
-        border: none;
-        width: 10rem;
+    .grid_container {
+        height: 326rem;
     }
-    
-    select {
-        height: 4rem;
+    .primary {
+        padding: 2.3rem;
+        bottom: 286rem;
     }
-    
-    form * {
-        margin-bottom: 2rem;
-    }
-    
-    fieldset label,
-    input {
-        padding-right: 3rem;
-    }
-    
-    fieldset input[type="radio"] {
-        transform: scale(1.5);
-        position: relative;
-        top: 1.2rem;
-    }
-    
-    .adopted div {
-        transform: scale(.75);
-        margin-bottom: none;
-        padding: none;
-        margin: none;
-    }
-    
-    .adopted img {
-        object-fit: cover;
-        display: inline;
-        height: 15rem;
-        width: 15rem;
-    }
-    
-    .adopted p {
-        /* display: block;*/
-    }
-    
-    .dog_container {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-    }
-    
-    .adopted {
-        /* display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -25%; */
-        text-align: left;
-    }
-    
-    .adopted * {
-        /* margin-left: -5%; */
-        /* padding: none; */
-    }
-    
-    form p,
-    legend {
+    nav a {
         font-size: 3rem;
     }
-    
-    legend {
-        width: 30rem;
+    .main {
+        margin-top: -14rem;
     }
-    
+    .footer * {
+        padding-bottom: 2rem;
+    }
     .footer {
-        margin-top: 5%;
-        padding-top: 6rem;
-        clear: both;
-        position: relative;
-        display: flex;
+        margin-top: -34rem;
+        height: 40rem;
+    }
+    label {
+        font-size: 4rem;
+    }
+    select {
+        font-size: 2rem;
+    }
+    fieldset input[type="radio"] {
+        transform: scale(2);
+        margin-right: 2rem;
+    }
+    input#zip {
+        width: 64rem;
+    }
+    legend {
+        font-size: 3.2rem;
+    }
+}
+
+
+/* ipad Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .grid_container {
+        height: 246rem;
+    }
+    input,
+    select {
+        border: 1px solid black;
+    }
+    .primary {
+        bottom: 206rem;
+    }
+    .main {
+        margin-top: 1rem;
+    }
+    nav a {
+        font-size: 3rem;
+    }
+    fieldset input[type="radio"] {
+        transform: scale(2);
+        margin-right: 2rem;
+    }
+    .footer {
+        margin-top: -1rem;
+    }
+}
+
+
+/*iphone 6/7/8*/
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .grid_container {
+        width: 304%;
+        height: 300rem;
+    }
+    .header {
+        height: 71rem;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgb(12, 73, 122);
-        bottom: 0;
-        top: 100%;
-        text-align: center;
-        padding-bottom: 3.5%;
     }
-    
+    .header_top {
+        margin-top: 13rem;
+        margin-left: 32rem;
+        transform: scale(2);
+    }
+    .header_bottom {
+        margin-top: 0rem;
+        margin-bottom: 10rem;
+        transform: scale(3);
+        margin-left: 47rem;
+    }
+    .primary a {
+        font-size: 7rem;
+    }
+    .primary {
+        bottom: 229rem;
+        padding-left: 8rem;
+    }
+    .main {
+        margin-top: 41rem;
+    }
+    form h1 {
+        font-size: 9rem;
+    }
+    label {
+        font-size: 7rem;
+    }
+    legend {
+        font-size: 7rem;
+    }
+    form p {
+        font-size: 7rem;
+    }
+    input {
+        font-size: 6rem;
+        border: 1px solid black;
+    }
+    .citystate {
+        flex-direction: column;
+    }
+    .adopted {
+        flex-flow: column;
+        transform: scale(3);
+        margin-left: 28rem;
+        margin-top: 42rem;
+    }
+    .footer {
+        height: 82rem;
+        margin-top: 278rem;
+        padding-bottom: 25rem;
+    }
     .footer img {
-        height: 15rem;
+        height: 29rem;
     }
-    
     .footer p {
-        color: white;
-        font-size: 1.2rem;
+        font-size: 3.2rem;
     }
-    
-    div.footer_nav {
-        display: flex;
-        justify-content: space-around;
-        color: white;
+    .footer a {
+        font-size: 5rem;
+        padding-right: 3rem;
     }
-    
-    div.footer_nav a {
-        color: white;
-        padding: 5%;
+    .total {
+        margin-top: 20rem;
     }
-    
-    select[name="pickup"] {
-        width: 35%;
+    button {
+        font-size: 7rem;
+        width: 75rem;
+        height: 12rem;
     }
-    
-    form button {
-        width: 40%;
-        text-align: center;
-        background-color: rgb(155, 226, 11);
-        border-radius: .5rem;
+    nav.primary a {
+        padding-left: 3rem;
     }
-    
-    form button:hover {
-        background-color: rgb(170, 253, 2);
+    fieldset input[type="radio"] {
+        transform: scale(3.5);
     }
-    
-    .adopted>p {
-        /* position: relative;
-        left: -38%; */
+    fieldset label {
+        padding-left: 4rem;
     }
-    
-    .dog_container {
-        position: relative;
-        left: -13%;
+    #pickup {
+        height: 7rem;
+        border: 1px solid black;
+        font-size: 4rem;
     }
+    input#city {
+        width: 60rem;
+    }
+    select#state {
+        width: 26rem;
+        height: 8rem;
+        border: 1px solid black;
+        font-size: 5rem;
+    }
+    input#zip {
+        width: 60rem;
+    }
+}
+
+
+/*iphone 6/7/8*/
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .citystate {
+        flex-direction: column;
+    }
+    input,
+    select {
+        border: 1px solid black;
+    }
+    input#city {
+        width: 34rem;
+    }
+    select#state {
+        width: 34rem;
+    }
+    .footer {
+        margin-top: 53rem;
+    }
+}

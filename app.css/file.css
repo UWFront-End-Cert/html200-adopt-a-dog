@@ -4,15 +4,17 @@ html {
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 
 /* * {
-    background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;
-} */
+        background: #000 !important;
+        color: #0f0 !important;
+        outline: solid #f00 1px !important;
+    } */
 
 body {
     font-family: 'Brygada 1918', serif;
@@ -22,21 +24,22 @@ body {
 
 /*not an optimal solution, seems there is a goddamn issue with the fucking padding somewhere god fucking dammint*/
 
-html,
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
+
+/* html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    } */
 
 .container {
+    position: relative;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 40% 20%;
-    height: fit-content;
-    height: 175rem;
+    grid-template-columns: 66.66% 33.33%;
+    grid-template-rows: 15% 20% 20% 20% 15%;
+    min-height: 241rem;
 }
 
 
@@ -44,26 +47,22 @@ body {
 
 .header {
     /* height: 45%; */
-    grid-area: 1/1/2/2;
+    grid-area: 1/1/2/3;
 }
 
-.main {
+.left {
     /* height: 20%; */
-    grid-area: 2/1/3/2;
+    grid-area: 2/1/5/2;
 }
 
-.dogs {
+.side {
     /* height: 40%; */
-    grid-area: 3/1/5/2;
+    grid-area: 2/2/5/3;
 }
 
 .footer {
     /* height: 20%; */
-    grid-area: 5/1/6/2;
-}
-
-.nav {
-    display: block;
+    grid-area: 5/1/6/3;
 }
 
 
@@ -100,8 +99,8 @@ body {
 
 .header_content {
     /* display: flex;
-justify-content: space-between;
-align-items: flex-end; */
+    justify-content: space-between;
+    align-items: flex-end; */
 }
 
 .header1 {
@@ -117,7 +116,7 @@ align-items: flex-end; */
     display: flex;
     align-self: flex-start;
     margin-top: 10rem;
-    margin-right: 3rem;
+    margin-right: 10rem;
     margin-top: 6rem;
     flex-direction: column;
 }
@@ -149,6 +148,7 @@ span {
 
 .checkout:hover {
     background-color: rgb(170, 253, 2);
+    transition: background-color 200ms ease-in-out;
 }
 
 
@@ -161,29 +161,101 @@ span {
     margin-left: 15rem;
 }
 
+
+/* .nav-bar {
+        position: absolute;
+        display: block;
+        z-index: 10000;
+        display: block;
+        background-color: rgba(192, 192, 192, 0.3);
+        padding: 1.3rem;
+    } */
+
 .primary {
     position: relative;
-    bottom: 90%;
     z-index: 10000;
+    top: -6.2rem;
     display: block;
     background-color: rgba(192, 192, 192, 0.3);
     padding: 1.3rem;
+    /*doing some wierd grid shit so width set to 150, did not inherit from container or something*/
+    width: 150%;
 }
 
 nav a {
     font-size: 2rem;
     /* padding-right: 5%; */
-    padding-left: 2.5rem;
+    padding-left: 2.5%;
     text-decoration: none;
     color: black;
 }
 
+.left {
+    margin-top: 10rem;
+    height: 150rem;
+    position: relative;
+    width: auto;
+}
+
+
+/***************side***********************************************************************/
+
+.side {
+    margin-top: 15rem;
+}
+
+.side img {
+    width: 60%;
+    margin-bottom: .5rem;
+}
+
+.side h1 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.side h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.side a {
+    text-decoration: none;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+}
+
+.content div {
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    margin-bottom: 2rem;
+}
+
+.content p {
+    /* width: 32rem; */
+    max-width: 61%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+/************************main***************************************************************/
+
 .main {
     position: relative;
-    margin: none;
-    margin-top: 5rem;
     height: 40rem;
     flex: 1;
+}
+
+.top img {
+    width: 100%;
+    max-width: 80rem;
+    height: 45rem;
+    margin-left: 10rem;
+    z-index: 0;
 }
 
 .main div:nth-of-type(2) {
@@ -201,15 +273,21 @@ nav a {
 
 .main_content h2 {
     font-size: 3rem;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .main_content p {
     font-size: 2rem;
+    width: auto;
+    /* width: 80rem; */
+    margin-left: 6rem;
 }
 
 .main {
     /* margin-left: 15rem;
-    margin-right: 15rem; */
+        margin-right: 15rem; */
 }
 
 
@@ -217,14 +295,14 @@ nav a {
 
 .dogs {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    margin-top: 22rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 32rem;
     position: relative;
-    height: 85rem;
+    height: 75rem;
     flex: 1;
 }
 
@@ -232,7 +310,7 @@ nav a {
     object-fit: cover;
     box-shadow: 0px 0px 15px gray;
     width: 23rem;
-    height: 38rem;
+    height: 32.5rem;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -242,7 +320,7 @@ nav a {
 
 
 /*this shit is fucked. trying to select the everything but the img inside each dog card always selects the img, should be a much easy solution something, how to select all but dog img
-  and apply styles to everything but the dog img;?????*/
+      and apply styles to everything but the dog img;?????*/
 
 .dog_cards:not(img) {}
 
@@ -256,6 +334,7 @@ p {
 .dog_cards button {
     margin-right: 1rem;
     margin-left: 1rem;
+    margin-top: 1rem;
     height: 4rem;
     background-color: rgb(155, 226, 11);
     font-size: 1.6rem;
@@ -263,7 +342,6 @@ p {
     font-weight: 700;
     border-style: none;
     border-radius: 2%;
-    outline: none;
 }
 
 .dog_cards button:hover {
@@ -272,11 +350,11 @@ p {
 
 #dog_img {
     /* border: 3px solid black;
-    padding-left: none;
-    padding-right: none;
-    all: revert;
-    width: 23rem;
-    margin-left: -1.25rem; */
+        padding-left: none;
+        padding-right: none;
+        all: revert;
+        width: 23rem;
+        margin-left: -1.25rem; */
 }
 
 
@@ -293,7 +371,7 @@ p {
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
-    width: 21rem;
+    width: 30rem;
     height: 5rem;
     justify-content: center;
     align-items: center;
@@ -301,9 +379,20 @@ p {
     position: relative;
     z-index: 10000;
     align-self: center;
-    bottom: 45rem;
+    top: 4rem;
+    right: 32rem;
     margin: 0 auto;
     margin-left: 65rem;
+}
+
+
+/************************************************************************************************************************************************************************************/
+
+.side {
+    display: flex;
+    flex-flow: column;
+    z-index: 0;
+    height: 150rem;
 }
 
 
@@ -311,11 +400,13 @@ p {
 
 .footer {
     background-color: rgb(12, 73, 122);
+    width: 100%;
     height: 35rem;
-    margin-top: 15rem;
+    margin-top: 13rem;
     padding-top: 15rem;
     clear: both;
-    position: relative;
+    position: absolute;
+    top: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -326,7 +417,7 @@ p {
 }
 
 .footer img {
-    height: 15rem;
+    height: 14rem;
 }
 
 .footer p {
@@ -344,6 +435,10 @@ div.footer_nav a {
     color: white;
 }
 
+.footer a {
+    padding-left: 10.5%;
+}
+
 
 /*queries..........................................................................................................................................................................*/
 
@@ -356,134 +451,336 @@ div.footer_nav a {
 
 /*for small laptop*/
 
-@media (min-width: 711px) and (max-width: 776px) {
-    .header {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
+@media screen and (max-width: 1201px) {
+    .side {
+        z-index: 0;
     }
-    .header1 {
-        align-self: center;
+    .top img {
+        z-index: 0;
     }
-    .header2 {
-        margin: none;
-        align-self: center;
+    .top {
+        width: 80%;
+    }
+    .dogs {
+        margin-left: 5rem;
+        margin-right: 3rem;
+        margin-top: 46rem;
+        height: 116rem;
+    }
+    .footer {
+        margin-top: 60rem;
+    }
+    .more {
+        right: 43rem;
+        top: 1rem;
     }
 }
 
 
-/*for tablet*/
+/*ipad*/
 
-@media (min-width: 479px) and (max-width:710px) {
+
+/* Portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .container {
-        width: fit-content;
+        height: 370rem;
     }
-    .header {
-        background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
-        background-color: green;
-        background-size: cover;
-        width: auto;
-        background-origin: border-box;
-        background-repeat: repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
+    .left {
+        margin-top: -9.5rem;
     }
-    .header1 {
-        margin-right: 5rem;
+    .top img {
+        max-width: 38rem;
+        max-height: 38rem;
+    }
+    .top {
+        margin-left: -5rem;
+    }
+    .side a {
+        margin-bottom: -1rem;
+    }
+    .side {
+        margin-left: -5rem;
+        margin-top: -8rem;
+    }
+    .dogs {
+        margin-top: 89rem;
+        margin-left: 10rem;
+        margin-top: 77rem;
+    }
+    .footer {
+        margin-top: -14rem;
+    }
+    .more {
+        top: 2.5rem;
+    }
+}
+
+
+/* ipad Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .container {
+        min-height: 315rem;
+    }
+    .left {
+        margin-top: -1rem;
+    }
+    .top {
+        margin-top: -3rem;
+    }
+    .dogs {
+        margin-top: 52rem;
+    }
+    .side {
+        margin-top: 0rem;
+    }
+    .footer {
+        margin-top: 3rem;
+    }
+    .more {
+        right: 46rem;
+    }
+}
+
+
+/*leaving this one in here, doesn't do much but doesnt mess with ipad or
+iphone media queries so thats fine i guess */
+
+@media screen and (max-width: 577px) {
+    .side {
+        display: none;
+        z-index: 10001;
+    }
+    body {
+        width: 122%;
+    }
+    .main {
+        margin-left: 3rem;
+    }
+    .top {
+        width: 143%;
+    }
+    .top img {
+        max-width: 53rem;
+    }
+    .main_content p {
+        font-size: 2.5rem;
+    }
+    .dogs {
+        margin-top: 65rem;
+        margin-left: 5rem;
+        height: 140rem;
+    }
+    .dogs div {
+        margin: 3rem 6rem 3rem 3rem;
+        transform: scale(1.2);
     }
     .header2 {
-        display: flex;
-        align-self: center;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center margin-bottom: 5rem;
+        margin-left: -5rem;
+        margin-top: 3rem;
     }
-    .header2 div {
-        display: none;
-        /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!centering content of this fucking div align-items: center; */
+    .header1 {
+        margin-top: 13rem;
+    }
+}
+
+
+/*average size phones ?*/
+
+@media screen and (min-width:377px) and (max-width: 415px) {
+    body {
+        width: 174.5%;
+    }
+    .primary a,
+    .footer a {
+        font-size: 3rem;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header1 {
+        margin-top: 3rem;
+        margin-left: 9rem;
+        transform: scale(1.2);
     }
     .cart {
-        height: 5rem;
-        width: 5rem;
+        margin-left: 4rem;
     }
-    .checkout {
-        width: 50rem;
-        align-self: center;
+    .header2 {
+        margin-left: 26rem;
+        margin-bottom: 5rem;
+        transform: scale(1.5);
+    }
+    .top img {
+        height: 41rem;
+        margin-left: 8.5rem;
+    }
+    .main_content h2 {
+        font-size: 3.5rem;
+    }
+    .main_content p {
+        font-size: 3rem;
+    }
+    .dogs {
+        margin-top: 100rem;
+        margin-left: 18.5rem;
+        height: 397rem;
+    }
+    .dogs div {
+        transform: scale(1.7);
+    }
+    .more {
+        top: 1.5rem;
+        right: 47rem;
+        transform: scale(1.5);
+    }
+    .footer {
+        margin-top: 407rem;
+        height: 59rem;
+        padding-bottom: 35rem;
+    }
+}
+
+
+/*iphone 6/7/8*/
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    body {
+        width: 174.5%;
+    }
+    .primary a,
+    .footer a {
+        font-size: 3rem;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header1 {
+        margin-top: 3rem;
+        margin-left: 9rem;
+        transform: scale(1.2);
+    }
+    .cart {
+        margin-left: 4rem;
+    }
+    .header2 {
+        margin-left: 26rem;
+        margin-bottom: 5rem;
+        transform: scale(1.5);
+    }
+    .top img {
+        height: 41rem;
+        margin-left: 4rem;
+    }
+    .main_content h2 {
+        font-size: 3.5rem;
+    }
+    .main_content p {
+        font-size: 3rem;
+    }
+    .dogs {
+        margin-top: 100rem;
+        margin-left: 18.5rem;
+        height: 397rem;
+    }
+    .dogs div {
+        transform: scale(1.7);
+    }
+    .more {
+        top: 1.5rem;
+        right: 47rem;
+        transform: scale(1.5);
+    }
+    .footer {
+        margin-top: 407rem;
+        height: 45rem;
+        padding-bottom: 24rem;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .header {
+        flex-direction: column;
+    }
+    .header1 {
+        margin-left: 8rem;
+    }
+    .header2 {
+        margin-right: 10rem;
+        margin-left: 26rem;
+        margin-top: 0rem;
+        margin-bottom: 5rem;
+    }
+    .side {
+        display: none;
+    }
+    .top img {
+        height: 38rem;
+        margin-left: 15rem;
+    }
+    .main_content p {
+        margin-left: 1rem;
+        width: 181%;
+    }
+    .main_content h2 {
+        margin-left: 2rem;
+    }
+    .primary a:first-child {
+        margin-left: 18rem;
+    }
+    .cart {
         margin-left: 4rem;
     }
 }
 
 
-/*phone*/
+/*Galaxy fold i guess*/
 
 
-/*add landscape later*/
-
-
-/* and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2)  */
-
-@media (max-width: 576px) {
-    /* html {
-    width: 100%;
-    margin: auto 0;
-} */
-    .header {
-        /* background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image/background-mobile.jpg?raw=true); */
-        background-image: none;
-        background-color: rgb(12, 73, 122);
-        width: fit-content;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
+/* @media screen and (max-width: 281px) {
+    body {
+        width: 147%;
     }
-    .header2 div {
-        /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; */
-        display: none;
+    .primary a,
+    .footer a {
+        font-size: 3rem;
+    }
+    .top img {
+        margin-left: 5rem;
+    }
+    .primary a:first-child {
+        margin-left: 2rem;
+    }
+    .header {
+        flex-direction: column;
     }
     .header1 {
-        display: flex;
-    }
-    .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-        width: auto;
-    }
-    .header1,
-    .header2 {
-        margin: auto 0;
+        margin-top: 2rem;
+        margin-left: -4rem;
+        transform: scale(.8);
     }
     .header2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-self: center;
-        width: auto;
+        margin-left: 14rem;
+        margin-bottom: 5rem;
+        transform: scale(1.5);
     }
-    .button {
-        text-align: center;
+    .dogs {
+        margin-top: 127rem;
+        margin-left: 6.5rem;
+        height: 283rem;
     }
-    .checkout {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 1;
-        width: 45rem;
-        height: 7rem;
-        font-size: 6rem;
+    .more {
+        top: -1.5rem;
+        right: 59rem;
     }
-    .checkout:hover {
-        background-color: rgb(170, 253, 2);
+    .footer {
+        margin-top: 307rem;
     }
-}
+} */
