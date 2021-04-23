@@ -10,7 +10,6 @@
 
 
 .main-content {
-    margin-right: 5%;
     flex: 2;
 }
 
@@ -367,6 +366,19 @@ h3 {
 
 @media only screen and (min-width: 1024px) {
 
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: main;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 6.25rem;
+        grid-gap: 3.12rem;
+    }
+
+
     .preview-dogs {
         width: 300px;
         height: auto;
@@ -395,16 +407,20 @@ h3 {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
+    .main-article {
+        line-height: 20px;
+    }
+
     .grid-item {
-        width: 8rem;
+        width: 11rem;
     }
 
     .main {
         display: flex;
         flex-wrap: wrap;
         grid-area: main;
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
         padding-top: 1.5rem;
         padding-bottom: 6.25rem;
         grid-gap: 3.12rem;
@@ -437,7 +453,8 @@ h3 {
     .dogs {
         display: flex;
         flex-wrap: wrap;
-        grid-gap: 50px;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
         padding-bottom: 50px;
     }
 
