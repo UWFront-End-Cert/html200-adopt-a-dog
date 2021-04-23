@@ -1,5 +1,5 @@
 ﻿.side-preview {
-    width: 25%;
+    width: 20%;
     flex: 1;
 }
 
@@ -357,8 +357,15 @@ h3 {
 }
 
 
+.side-links {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornflowerblue;
+    font-size: 20px;
+}
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 1024px) {
 
     .preview-dogs {
         width: 300px;
@@ -386,14 +393,67 @@ h3 {
 }
 
 
-.side-links {
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    color: cornflowerblue;
-    font-size: 20px;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .grid-item {
+        width: 8rem;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: main;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 6.25rem;
+        grid-gap: 3.12rem;
+    }
+
+
+    .side-preview {
+        width: 10%;
+        flex: 1;
+    }
+
+    .main-content {
+        margin-right: 5%;
+        flex: 2;
+    }
+
+    .preview-dogs {
+        width: 200px;
+        height: auto;
+    }
+
+    .top-2 {
+        display: block;
+    }
+
+    .container {
+        padding-left: 0px;
+    }
+
+    .dogs {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .img-three {
+        width: 100%;
+    }
 }
 
+
+
 @media only screen and (max-width: 767px) {
+
+    .main-content {
+        margin-right: 0%;
+        flex: 2;
+    }
 
     .side-preview {
         display: none;
@@ -430,7 +490,13 @@ h3 {
         grid-area: main;
         padding-top: 25px;
         padding-bottom: 100px;
+        padding-left: 35px;
+        padding-right: 35px;
         width: 800px;
+    }
+
+    .dogs {
+        padding-bottom: 100px;
     }
 
     .grid-item {
