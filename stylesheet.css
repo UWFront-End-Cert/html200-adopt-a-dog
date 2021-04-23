@@ -359,11 +359,7 @@ h3 {
 
 @media only screen and (min-width: 768px) {
 
-    .side-preview {
-        grid-gap: 50px;
-    }
-
-    .img-four {
+    .preview-dogs {
         width: 300px;
         height: auto;
     }
