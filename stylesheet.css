@@ -376,9 +376,62 @@ h3 {
         display: flex;
         flex-wrap: wrap;
         grid-gap: 50px;
+        padding-bottom: 50px;
     }
 
     .img-three {
         width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .side-preview {
+        display: none;
+    }
+
+    body {
+        background-color: red;
+    }
+
+    .left {
+        grid-area: left;
+        padding-left: 150px;
+        padding-top: 50px;
+    }
+
+    .img-three {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-article {
+        line-height: 35px;
+        width: 100%;
+    }
+
+    .container {
+        display: block;
+        padding-left: 0px;
+    }
+
+    .top-2 {
+        display: block;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: main;
+        padding-top: 25px;
+        padding-bottom: 100px;
+        width: 800px;
+    }
+
+    .grid-item {
+        width: 100%;
+        height: auto;
+        border: 2px solid lightgrey;
     }
 }
