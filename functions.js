@@ -8,4 +8,3 @@ let total = 0;
 function totalCalc(cost) {
     total = total + Number(cost);
     alert(total);
-}
