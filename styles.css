@@ -316,7 +316,6 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .checkout {
-  border: 1px dotted blue;
   display: flex;
   flex-direction: column;
   margin: 0 5rem 0 5rem;
