@@ -15,13 +15,88 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   text-decoration: none;
 }
 
+/* LARGE SCREEN SETTINGS */
 
-body {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  min-height: 100vh;
-  background-color: white;
+@media (min-width: 92em) {
+  body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 30em;
+    background-color: white;
+  }
+  header {
+    grid-column: span 2;
+  }
+  nav {
+    grid-column: span 2;
+  }
+  nav ul {
+    padding-left: 10em;
+  }
+  main {
+    padding-left: 12em;
+  }
+  aside {
+    padding-right: 12em;
+    padding-left: 3em;
+    text-align: left;
+  }
+  aside h2 {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  aside img {
+    width: 100%;
+  }
+  aside a.sidebar-a {
+    color: blue;
+  }
+  main article.intro-blurb img {
+    float: left;
+    padding-bottom: 4rem;
+    padding-right: 2rem;
+  }
+  footer {
+    grid-column: span 2;
+  }
 }
+
+/* MEDIUM SCREEN SETTINGS */
+
+@media (max-width: 91.999em) {
+  body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 30em;
+    background-color: white;
+  }
+  header {
+    grid-column: span 2;
+  }
+  nav {
+    grid-column: span 2;
+  }
+
+  main {
+    padding-top: 1em;
+    text-align: center;
+    grid-column: span 2;
+    width: 100%;
+  }
+  footer {
+    grid-column: span 2;
+  }
+  aside {
+    display: none;
+  }
+  .intro-blurb {
+    display: block;
+  }
+}
+
+
+/* HEADER HEADER HEADER HEADER HEADER */
+
 
 header {
   background-image: url(images/header-image.jpg);
@@ -31,6 +106,7 @@ header {
   height: 30vh;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 header div.logo-tagline {
@@ -44,7 +120,7 @@ header div.logo-tagline {
 
 header div.logo-tagline h2 {
   position: relative;
-  bottom: 2em;
+  bottom: 1em;
   width: 100%;
   font-size: 1.5vw;
   margin-top: 2vh;
@@ -80,6 +156,9 @@ header div.cart a {
 }
 
 
+/* NAV NAV NAV NAV NAV NAV NAV */
+
+
 nav {
   background-color: rgb(236,236,236);
   padding-left: 3rem;
@@ -100,12 +179,9 @@ ul li {
   color: rgb(9,60,96);
 }
 
-main {
-  background-color: white;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 2rem;
-}
+
+/* MAIN MAIN MAIN MAIN MAIN */
+
 
 h1, h2 {
   color: rgb(9,60,96);
@@ -115,23 +191,26 @@ h2.header {
   color: rgb(129,183,65);
 }
 
-main article.intro-blurb img {
-  float: left;
-  padding-bottom: 4rem;
-  padding-right: 2rem;
-}
+
+/* MAIN ARTICLE MAIN ARTICLE */
+
 
 main article.intro-blurb p {
   line-height: 1.8;
   font-size: 1.2em;
 }
 
- main article.dog-menu {
-   clear: both;
-   display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap;
- }
+
+
+
+/* DOG CARD MENU DOG CARD MENU DOG CARD MENU */
+
+main article.dog-menu {
+  clear: both;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 section.dog-card {
   border: 2px solid rgb(236,236,236);
