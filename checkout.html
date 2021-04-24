@@ -7,13 +7,13 @@
   </head>
   <body>
     <a href="#main-content" class="hidden">Skip to main content</a>
-    <header>
-      <img class="background" src="images/header-image.jpg" alt="the background, dog looking out the window with close up on the face" width="500">
-      <img class="dog white logo" src="images/adoptadog-logo.svg" alt="dog white logo with text" width="200">
+    <header class="header-container">
+      <img class="background-dog" src="images/header-image.jpg" alt="the background, dog looking out the window with close up on the face" width="500">
+      <img class="dog-white-logo" src="images/adoptadog-logo.svg" alt="dog white logo with text">
       <span class="head-line"><em>Seattle's premiere dog adoption agency</em></span>
-      <img class="cart checkout" src="images/cart-icon.svg" alt="checkout cart icon" width="80">
-      <p>$1234.56</p>
-      <a href="checkout.html">Checkout</a>
+      <img class="cart-checkout" src="images/cart-icon.svg" alt="checkout cart icon">
+      <p class="dollar-sign">$1234.56</p>
+      <a href="checkout.html" class="link-header green-clickable">Checkout</a>
     </header>
     <nav>
       <a href="index.html">Home</a>
@@ -21,40 +21,44 @@
       <a href="blog.html">Blog</a>
     </nav>
 
+    <section class="checkout-survey">
+      <h3>Checkout</h3>
+      <form method="get">
+        <label class="simple">Name
+          <input type="text" name="applicantName">
+        </label>
 
-    <h3>Checkout</h3>
-    <form method="get">
-      <label>Name
-        <input type="text" name="applicantName">
-      </label>
+        <label class="simple">E-mail Address
+            <input type="email" name="applicantEmail">
+          </label>
 
-      <label>E-mail Address
-          <input type="email" name="applicantEmail">
-      </label>
+          <label class="simple">Street Address
+            <input type="text" name="applicantAddress">
+          </label>
 
-      <label>Street Address
-        <input type="text" name="applicantAddress">
-      </label>
+          <label class="simple">City
+            <input type="text" name="applicantCity">
+          </label>
 
-      <label>City
-        <input type="text" name="applicantCity">
-      </label>
+          <label class="simple">State
+            <input type="text" name="applicantState">
+          </label>
 
-      <label>State
-        <input type="text" name="applicantState">
-      </label>
+          <label class="simple">ZIP Code
+            <input type="text" name="applicantZipcode">
+          </label>
 
-      <label>ZIP Code
-        <input type="text" name="applicantZipcode">
-      </label>
+          <div class="checkbox">
+            <p>First Time Adopter?</p>
+            <label>Yes
+              <input type="radio" name="first-time-or-not" value="yes">
+            </label>
+            <label>No
+              <input type="radio" name="first-time-or-not" value="no">
+            </label>
+          </div>
 
-
-        <p>First Time Adopter?</p>
-        <input type="radio" name="first-time-or-not" value="yes">
-        <label>Yes</label>
-          <input type="radio" name="first-time-or-not" value="no">
-        <label>No</label>
-
+      <div class="checkbox">
         <label>Pick Up Locations
           <select name="location" size="1">
             <option value="Seattle">Seattle</option>
@@ -62,26 +66,27 @@
             <option value="Lynwood">Lynnwood</option>
           </select>
         </label>
+      </div>
 
-          <p>Dog Adopted</p>
+        <div class="two-dogs">
+        <p>Dog Adopted</p>
           <label>Lucas Cost to Adopt $123.45
           <img src="images/lucas-card.jpg" alt="Lucas the dog" width="70">
-            <input type="checkbox" name="dog" value="lucas">
+            <input type="checkbox" name="dog" value="lucas"><br>
           </label>
           <label>Duffy Cost to Adopt $123.45
           <img src="images/duffy-card.jpg" alt="Duffy the dog" width="70">
             <input type="checkbox" name="dog" value="duffy">
           </label>
-
+        </div>
           <p>Total Adoption Cost</p>
           <p>$1234.56</p>
-
-
-      <input type="submit" value="Submit">
+      <input type="submit" class="submit" value="Submit">
     </form>
+</section>
 
     <footer>
-      <img class="dog white logo" src="images/adoptadog-logo.svg" alt="dog white logo with text" width="150">
+      <img class="dog-white-logo-2" src="images/adoptadog-logo.svg" alt="dog white logo with text">
       <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br> esseque invenienihil imaximu scideru ptistiusam consequunt</p>
       <a href="index.html">Home /</a>
       <a href="dogs.html">Dogs /</a>
