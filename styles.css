@@ -51,6 +51,9 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   aside a.sidebar-a {
     color: blue;
   }
+  .side-blog {
+    padding-bottom: 4em;
+  }
   main article.intro-blurb img {
     float: left;
     padding-bottom: 4rem;
@@ -79,6 +82,8 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
   main {
     padding-top: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
     text-align: center;
     grid-column: span 2;
     width: 100%;
