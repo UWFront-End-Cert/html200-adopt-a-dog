@@ -69,11 +69,11 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
 /* MEDIUM SCREEN SETTINGS */
 
-@media (max-width: 99.999em) {
+@media (min-width: 47em) and (max-width: 99.999em) {
   body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr 30em;
+    grid-template-columns: 1fr 16em;
   }
 
   header {
@@ -85,32 +85,47 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   }
 
   nav ul {
-    padding-left: 12em;
+    padding-left: 0;
   }
 
   main {
     padding-top: 1em;
     padding-left: 2em;
     padding-right: 2em;
-    grid-column: span 2;
     width: 100%;
   }
 
   .intro-blurb img {
     padding-top: 2rem;
     padding-right: 2rem;
-    width: auto;
-    height: 30em;
+    width: 30em;
+    height: 25em;
   }
   section.dog-card {
-    width: 14em;
+    width: 5em;
   }
-
+  aside {
+    margin-right: 2em;
+    padding-left: 3em;
+    text-align: left;
+  }
+  aside h2 {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  aside img {
+    width: 100%;
+  }
+  aside a.sidebar-a {
+    color: blue;
+  }
+  .side-blog {
+    padding-bottom: 4em;
+  }
   footer {
     grid-column: span 2;
   }
-  aside {
-    display: none;
+
   }
   .intro-blurb {
     display: block;
@@ -119,7 +134,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
 /* SMALL SCREEN SMALL SCREEN SMALL SCREEN */
 
-@media (max-width: 47em) {
+@media (max-width: 46.999em) {
   body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
@@ -144,7 +159,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   }
   .intro-blurb img {
     padding-right: 1rem;
-    padding-left: 1rem;
+    padding-left: 0;
     width: 20em;
     height: 20em;
   }
