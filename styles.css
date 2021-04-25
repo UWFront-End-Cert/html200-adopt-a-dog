@@ -17,12 +17,11 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
 /* LARGE SCREEN SETTINGS */
 
-@media (min-width: 92em) {
+@media (min-width: 100em) {
   body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr 30em;
-    background-color: white;
   }
   header {
     grid-column: span 2;
@@ -31,13 +30,16 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     grid-column: span 2;
   }
   nav ul {
-    padding-left: 10em;
-  }
-  main {
     padding-left: 12em;
   }
+  main {
+    padding-left: 14em;
+  }
+  section.dog-card {
+    width: 17em;
+  }
   aside {
-    padding-right: 12em;
+    padding-right: 14em;
     padding-left: 3em;
     text-align: left;
   }
@@ -54,10 +56,11 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   .side-blog {
     padding-bottom: 4em;
   }
-  main article.intro-blurb img {
-    float: left;
-    padding-bottom: 4rem;
+  .intro-blurb img {
+    padding-top: 2rem;
     padding-right: 2rem;
+    width: auto;
+    height: 30em;
   }
   footer {
     grid-column: span 2;
@@ -66,12 +69,61 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
 /* MEDIUM SCREEN SETTINGS */
 
-@media (max-width: 91.999em) {
+@media (max-width: 99.999em) {
   body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr 30em;
-    background-color: white;
+  }
+
+  header {
+    grid-column: span 2;
+  }
+
+  nav {
+    grid-column: span 2;
+  }
+
+  nav ul {
+    padding-left: 12em;
+  }
+
+  main {
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    grid-column: span 2;
+    width: 100%;
+  }
+
+  .intro-blurb img {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    width: auto;
+    height: 30em;
+  }
+  section.dog-card {
+    width: 14em;
+  }
+
+  footer {
+    grid-column: span 2;
+  }
+  aside {
+    display: none;
+  }
+  .intro-blurb {
+    display: block;
+  }
+}
+
+/* SMALL SCREEN SMALL SCREEN SMALL SCREEN */
+
+@media (max-width: 47em) {
+  body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
   }
   header {
     grid-column: span 2;
@@ -80,13 +132,24 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     grid-column: span 2;
   }
 
+  nav ul {
+    padding-left: 0;
+  }
   main {
     padding-top: 1em;
-    padding-left: 5em;
-    padding-right: 5em;
-    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
     grid-column: span 2;
-    width: 100%;
+    width: 90vw;
+  }
+  .intro-blurb img {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 20em;
+    height: 20em;
+  }
+  section.dog-card {
+    width: 20em;
   }
   footer {
     grid-column: span 2;
@@ -217,11 +280,14 @@ main article.dog-menu {
   flex-wrap: wrap;
 }
 
+
+section.dog-card {
+  min-width: 17em;
+}
+
 section.dog-card {
   border: 2px solid rgb(236,236,236);
-  width: 20%;
   display: inline;
-  min-width: 15rem;
   margin-right: 1rem;
   margin-bottom: 4rem;
 }
