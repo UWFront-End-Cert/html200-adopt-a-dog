@@ -71,6 +71,15 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   footer {
     grid-column: span 2;
   }
+  .all-dogs {
+    grid-column: span 2;
+    padding-right: 20em;
+  }
+  .blog-main {
+    grid-column: span 2;
+    padding-right: 12em;
+    padding-left: 12em;
+  }
 }
 
 /* MEDIUM SCREEN SETTINGS */
@@ -88,6 +97,10 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
   nav {
     grid-column: span 2;
+    padding-left: 1em;
+  }
+
+  nav.check-out {
     padding-left: 1em;
   }
 
@@ -135,6 +148,18 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   .intro-blurb {
     display: block;
   }
+  .blog-main {
+    grid-column: span 2;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0, auto;
+  }
+  .all-dogs {
+    grid-column: span 2;
+    margin: 0, auto;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 }
 
 /* SMALL SCREEN SMALL SCREEN SMALL SCREEN */
@@ -164,6 +189,9 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     padding-right: 1em;
     grid-column: span 2;
     width: 90vw;
+  }
+  .all-dogs {
+    margin: 0 auto;
   }
   .intro-blurb img {
     padding-right: 1rem;
@@ -411,9 +439,6 @@ article.blog-post p {
 
 /** Check-out Page specific formatting **/
 
-nav.check-out {
-  padding-left: 22%;
-}
 
 main.check-out {
   padding-left: 25%;
