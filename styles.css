@@ -80,6 +80,18 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     padding-right: 12em;
     padding-left: 12em;
   }
+  section.review-purchase {
+    display: flex;
+    width: 100%;
+  }
+  div.tiny-card img {
+    min-width: 20%;
+    float: left;
+  }
+  div.tiny-card {
+    width: 50%;
+    display: flex;
+  }
 }
 
 /* MEDIUM SCREEN SETTINGS */
@@ -105,7 +117,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   }
 
   nav ul {
-    padding-left: 0;
+    padding-left: 1em;
   }
 
   main {
@@ -160,6 +172,14 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     padding-left: 3em;
     padding-right: 3em;
   }
+  section.review-purchase {
+    display: flex;
+    width: 100%;
+  }
+  div.tiny-card {
+    width: 50%;
+    display: flex;
+  }
 }
 
 /* SMALL SCREEN SMALL SCREEN SMALL SCREEN */
@@ -181,7 +201,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   }
 
   nav ul {
-    padding-left: 0;
+    padding-left: 1;
   }
   main {
     padding-top: 1em;
@@ -211,8 +231,24 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   .intro-blurb {
     display: block;
   }
+  .review-purchase {
+    display: block;
+  }
+  .tiny-card {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .tiny-card img {
+    width: 50%;
+  }
+  div.tiny-card {
+    width: 100%;
+    display: flex;
+  }
+  .tiny-card-text {
+    margin-left: 1em;
+  }
 }
-
 
 /* HEADER HEADER HEADER HEADER HEADER */
 
@@ -532,20 +568,11 @@ h2.check-out {
   margin-left: 0;
   padding-left: 0;
 }
-section.review-purchase {
-  display: flex;
-  width: 100%;
-}
 
-div.tiny-card img {
-  min-width: 20%;
-  float: left;
-}
 
-div.tiny-card {
-  width: 50%;
-  display: flex;
-}
+
+
+
 
 div.tiny-card p {
   font-size: .8rem;
