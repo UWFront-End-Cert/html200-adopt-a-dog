@@ -464,7 +464,7 @@ h3 {
         padding-right: 2.5rem;
         padding-top: 1.5rem;
         padding-bottom: 6.25rem;
-        grid-gap: 3.12rem;
+        grid-gap: 2rem;
     }
 
     .main {
@@ -475,7 +475,7 @@ h3 {
         padding-right: 2.5rem;
         padding-top: 1.5rem;
         padding-bottom: 6.25rem;
-        grid-gap: 3.12rem;
+        grid-gap: 2rem;
     }
 
 
@@ -516,7 +516,7 @@ h3 {
 
 
     .dogs-grid-item {
-        width: 15rem;
+        width: 20rem;
         border: 2px solid lightgrey;
     }
 }
