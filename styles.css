@@ -14,6 +14,10 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
+a.sidebar-a {
+  color: rgb(35,154,185)
+}
+
 nav a:link, nav a:visited, nav a:hover, nav a:active {
   color: rgb(9,60,96);
   font-weight: bold;
@@ -56,9 +60,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   aside img {
     width: 100%;
   }
-  aside a.sidebar-a {
-    color: blue;
-  }
+
   .side-blog {
     padding-bottom: 4em;
   }
@@ -147,9 +149,6 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   }
   aside img {
     width: 100%;
-  }
-  aside a.sidebar-a {
-    color: blue;
   }
   .side-blog {
     padding-bottom: 4em;
@@ -355,8 +354,11 @@ main article.intro-blurb p {
   font-size: 1.2em;
 }
 
+/* SIDEBAR SIDEBAR SIDEBAR */
 
-
+.sidebar p {
+  line-height: 1.8;
+}
 
 /* DOG CARD MENU DOG CARD MENU DOG CARD MENU */
 
@@ -446,6 +448,8 @@ footer p {
 }
 
 /** Blog-specific formatting **/
+
+
 
 article.blog-post {
   clear: both;
