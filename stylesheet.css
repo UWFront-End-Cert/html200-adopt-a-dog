@@ -440,6 +440,7 @@ h3 {
 
     .dogs-grid-item {
         width: 15rem;
+        border: 2px solid lightgrey;
     }
 }
 
@@ -516,6 +517,7 @@ h3 {
 
     .dogs-grid-item {
         width: 15rem;
+        border: 2px solid lightgrey;
     }
 }
 
