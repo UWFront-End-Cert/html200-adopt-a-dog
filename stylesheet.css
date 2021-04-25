@@ -428,9 +428,10 @@ h3 {
     .dogs {
         display: flex;
         flex-wrap: wrap;
-        grid-column-gap: 15px;
+        grid-column-gap: 5px;
         grid-row-gap: 15px;
-        padding-bottom: 50px;
+        padding-bottom: 25px;
+        justify-content: space-around;
     }
 
     .img-three {
@@ -452,7 +453,7 @@ h3 {
     }
 
     .grid-item {
-        width: 11rem;
+        width: 12rem;
     }
 
     .main-dogs {
@@ -505,9 +506,9 @@ h3 {
     .dogs {
         display: flex;
         flex-wrap: wrap;
-        grid-column-gap: 15px;
+        grid-column-gap: 5px;
         grid-row-gap: 15px;
-        padding-bottom: 50px;
+        padding-bottom: 25px;
         justify-content: space-around;
     }
 
