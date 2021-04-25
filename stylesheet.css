@@ -508,6 +508,7 @@ h3 {
         grid-column-gap: 15px;
         grid-row-gap: 15px;
         padding-bottom: 50px;
+        justify-content: space-around;
     }
 
     .img-three {
