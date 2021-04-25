@@ -171,13 +171,22 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     padding-left: 3em;
     padding-right: 3em;
   }
-  section.review-purchase {
-    display: flex;
+  .review-purchase {
+    display: block;
+  }
+  .tiny-card {
     width: 100%;
+    margin-bottom: 1em;
+  }
+  .tiny-card img {
+    width: 50%;
   }
   div.tiny-card {
-    width: 50%;
+    width: 100%;
     display: flex;
+  }
+  .tiny-card-text {
+    margin-left: 1em;
   }
 }
 
