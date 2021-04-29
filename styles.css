@@ -262,10 +262,11 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
 
 header {
+  background: linear-gradient(to bottom, black, rgb(236,236,236));
   background-image: url(images/header-image.jpg);
-  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
   height: 30vh;
   display: flex;
   justify-content: space-between;
