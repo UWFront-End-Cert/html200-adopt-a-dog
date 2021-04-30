@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
-
-    <title>Home</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <title>Home</title>
 </head>
+
 <body>
   <header title="Adopt A Dog" class="adopt-a-dog">
     <div class="flex-container">
@@ -39,131 +39,115 @@
       </div>
     </section>
 
-    <div class="all-dogs">
-      <section title="Dogs For Adoption" class="dogs-for-adoption">
-        <div class="card">
-          <img src="./images/murphy-card.jpg" alt="Murphy, A Tan Dog With A White Nose">
-          <div class="bio">
-              <h4>Murphy</h4>
-              <div class="cost-bio">
-              <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-            </div>
+    <section title="Dogs for Adoption" class="all-dogs">
+      <article class="card">
+        <img src="./images/murphy-card.jpg" class="card-img" alt="Murphy, A Tan Boxer Mix With White Nose" onclick="dogInfo('Murphy', 'Boxer Mix', 123.45)">
+        <div class="card-text">
+          <h4>Murphy</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-        <div class="card">
-          <img src="./images/poppy-card.jpg" alt="Poppy, A Small White Shih Tzu">
-          <div class="bio">
-              <h4>Poppy</h4>
-              <div class="cost-bio">
-              <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-            </div>
+      </article>
+      <article class="card">
+        <img src="./images/poppy-card.jpg" class="card-img" alt="Poppy, A Small White Shih Tzu" onclick="dogInfo('Poppy', 'Shih Tzu', 123.45)" >
+        <div class="card-text">
+          <h4>Poppy</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-        <div class="card">
-          <img src="./images/jack-card.jpg" alt="Jack, A Brown And White Beagle Mix Dog">
-          <div class="bio">
-              <h4>Jack</h4>
-              <div class="cost-bio">
-              <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-            </div>
+      </article>
+      <article class="card">
+        <img src="./images/jack-card.jpg" class="card-img" alt="Jack, A Brown And White Beagle" onclick="dogInfo('Jack', 'Beagle', 123.45)" >
+        <div class="card-text">
+          <h4>Jack</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-        <div class="card">
-          <img src="./images/duffy-card.jpg" alt="Duffy, A Brown And White PitBull With Blue Eyes">
-          <div class="bio">
-              <h4>Duffy</h4>
-              <div class="cost-bio">
-              <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-            </div>
+      </article>
+      <article class="card">
+        <img src="./images/duffy-card.jpg" class="card-img" alt="Duffy, A Brown And White PitBull With Blue Eyes" onclick="dogInfo('Duffy', 'Pitbull', 123.45)" >
+        <div class="card-text">
+          <h4>Duffy</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-        <div class="card">
-          <img src="./images/lucas-card.jpg" alt="Lucas, A Black Shepherd Dog">
-          <div class="bio">
-              <h4>Lucas</h4>
-              <div class="cost-bio">
-              <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-            </div>
+      </article>
+      <article class="card">
+        <img src="./images/lucas-card.jpg" class="card-img" alt="Lucas, A Black Shepherd Dog" onclick="dogInfo('Lucas', 'Shepherd', 123.45)" >
+        <div class="card-text">
+          <h4>Lucas</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-        <div class="card">
-          <img src="./images/jake-card.jpg" alt="Jake, A Yellow Labrador">
-          <div class="bio">
-              <h4>Jake</h4>
-              <div class="cost-bio">
-              <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-            </div>
+      </article>
+      <article class="card">
+        <img src="./images/jake-card.jpg" class="card-img" alt="Jake, A Yellow Labrador" onclick="dogInfo('Jake', 'Yellow Lab', 123.45)" >
+        <div class="card-text">
+          <h4>Jake</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-        <div class="card">
-          <img src="./images/angus-card.jpg" alt="Angus, A Brown And White Boxer">
-          <div class="bio">
-              <h4>Angus</h4>
-              <div class="cost-bio">
-              <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-            </div>
+      </article>
+      <article class="card">
+        <img src="./images/angus-card.jpg" class="card-img" alt="Angus, A Brown And White Boxer" onclick="dogInfo('Angus', 'Boxer', 123.45)" >
+        <div class="card-text">
+          <h4>Angus</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-        <div class="card">
-          <img src="./images/violet-card.jpg" alt="Violet, A Very Cute Chocolate Brown Labrador Puppy">
-          <div class="bio">
-              <h4>Violet</h4>
-              <div class="cost-bio">
-              <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-            </div>
+      </article>
+      <article class="card">
+        <img src="./images/violet-card.jpg" class="card-img" alt="Violet, A Cute Chocolate Brown Labrador Puppy" onclick="dogInfo('Violet', 'Chocolate Lab', 123.45)" >
+        <div class="card-text">
+          <h4>Violet</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-        <div class="card">
-          <img src="./images/piper-card.jpg" alt="Piper, A Happy Brown Spaniel">
-          <div class="bio">
-            <h4>Piper</h4>
-            <div class="cost-bio">
-            <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-          </div>
+      </article>
+      <article class="card">
+        <img src="./images/piper-card.jpg" class="card-img" alt="Piper, A Happy Brown Spaniel" onclick="dogInfo('Piper', 'Spaniel', 123.45)">
+        <div class="card-text">
+          <h4>Murphy</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-        <div class="card">
-          <img src="./images/maximus-card.jpg" alt="Maximus, A Small Black Terrier With Floppy Ears, White Nose, Chest And Eyebrows">
-          <div class="bio">
-            <h4>Maximus</h4>
-            <div class="cost-bio">
-            <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-          </div>
+      </article>
+      <article class="card">
+        <img src="./images/maximus-card.jpg" class="card-img" alt="Maximus, A Black And White Mini Schnazuer With Floppy Ears, White Nose, Chest And Eyebrows" onclick="dogInfo('Maximus', 'Miniature Schnazuer', 123.45)">
+        <div class="card-text">
+          <h4>Poppy</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-        <div class="card">
-          <img src="./images/luna-card.jpg" alt="Luna, A Happy Yellow Lab">
-          <div class="bio">
-            <h4>Luna</h4>
-            <div class="cost-bio">
-            <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-          </div>
+      </article>
+      <article class="card">
+        <img src="./images/luna-card.jpg" class="card-img" alt="Luna, A Happy Yellow Lab" onclick="dogInfo('Luna', 'Yellow Lab', 123.45)" >
+        <div class="card-text">
+          <h4>Jack</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-        <div class="card">
-          <img src="./images/stella-card.jpg" alt="Stella, An Older Tan Chihuahua">
-          <div class="bio">
-            <h4>Stella</h4>
-            <div class="cost-bio">
-            <p><span style="font-family: 'Work Sans'; font-weight:bold;">Cost to Adopt:</span> $123.45</p></div>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
-          </div>
+      </article>
+      <article class="card">
+        <img src="./images/stella-card.jpg" class="card-img" alt="Stella, An Older Tan Chihuahua" onclick="dogInfo('Stella', 'Chihuahua', 123.45)" >
+        <div class="card-text">
+          <h4>Duffy</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
-      </section>
-    </div>
-
+      </article>
+    </section>
   </main>
 
   <footer title="Footer" class="footer">
@@ -183,5 +167,6 @@
       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
     </div>
   </footer>
+  <script src="./dogInfo.js"></script>
 </body>
 </html>
