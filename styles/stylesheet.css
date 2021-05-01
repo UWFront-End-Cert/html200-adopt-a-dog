@@ -1,0 +1,21 @@
+/* .....Global Style........*/
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+body{
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+h1{
+  font-style: italic;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  padding-left: 200px;
+  line-height: 1.2;
+  margin-top: 0;
+}
