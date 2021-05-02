@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Adopt a Dog</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+  <body>
+    <a href="#main-content" class="hidden">Skip to main content</a>
+    <header>
+      <section>
+        <h1><a href="index.html"><img src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <span class="meta">ADOPT A DOG</span></a></h1>
+        <p class="motto">Seattle's premiere dog adoption agency</p>
+      </section>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a> /</li>
+          <li><a href="dogs.html">Dogs</a> /</li>
+          <li><a href="#" class="this-page">Adopt</a> /</li>
+          <li><a href="blog.html">Blog</a> /</li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="main-content">
+      <h2>Checkout</h2>
+      <form method="GET">
+
+        <label>Name
+          <input type="text" name="applicantName">
+        </label>
+
+        <label>Email Address
+          <input type="email" name="applicantEmail">
+        </label>
+
+        <label>Street Address
+          <input type="text" name="applicantAddress">
+        </label>
+
+        <label>City
+          <input type="text" name="applicantCity">
+        </label>
+
+        <label>State
+          <select name="applicantState">
+            <option value="">Select state</option>
+            <option value="california">CA</option>
+            <option value="oregon">OR</option>
+            <option value="washington">WA</option>
+          </select>
+        </label>
+
+        <label>Zip Code
+          <input type="text" name="applicantZip">
+        </label>
+
+        <fieldset>
+          <legend>First Time Adopter?</legend>
+          <label>Yes
+            <input type="radio" name="firstTime" value="yes">
+          </label>
+          <label>No
+            <input type="radio" name="firstTime" value="no">
+          </label>
+        </fieldset>
+
+        <label>Pickup location
+          <select name="pickupLocation">
+            <option value="">Please select</option>
+            <option value="mukilteo">Mukilteo</option>
+            <option value="redmond">Redmond</option>
+            <option value="seattle">Seattle</option>
+          </select>
+        </label>
+
+        <input type="submit" value="Submit Application">
+      </form>
+    </section>
+    <footer>
+      <section class="footer-content">
+        <h2><img src="images/adoptadog-logo.svg" alt="adopt a dog logo"></h2>
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+        esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="adopt.html">Adopt</a> / <a href="blog.html">Blog</a> / <a href="contact.html">Contact</a></p>
+        <p>© 2021 Adoptadog, LLC   |   Seattle, WA</p>
+      </section>
+    </footer>
+  </body>
+</html>
