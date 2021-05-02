@@ -1,0 +1,53 @@
+header {
+  background-color: #093C60;
+}
+
+header img {
+  width: 25%;
+}
+
+.motto {
+  color: #90AE65;
+  font-size: 1.25rem;
+}
+
+.meta {
+  display: none;
+}
+
+nav {
+  height: 4rem;
+  background-color: #EBEBEB;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  float: left;
+  display: block;
+}
+
+nav a {
+  padding: 1rem;
+  margin: .5rem;
+}
+
+footer {
+  background-color: #191919;
+  color: #FDFBF5;
+  text-align: center;
+}
+
+footer img {
+  width: 25%;
+}
+
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem;
+}
