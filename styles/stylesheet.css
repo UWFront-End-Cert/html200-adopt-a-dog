@@ -1,42 +1,51 @@
 /* Global styles...........*/
-html{
+html {
   box-sizing: border-box;
 }
-*, *:before, *:after{
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-body{
-  background-color: #FBFCFC;
+body {
+  background-color: #fbfcfc;
   line-height: 1.5;
 }
-h1, h2, h3{
+h1,
+h2,
+h3 {
   color: #154360;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
 }
-h2{
+h2 {
   font-size: 1.1rem;
   padding: 1.5% 3%;
   line-height: inherit;
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
-p{
-  font-family: 'Source Sans Pro', sans-serif;
+p {
+  font-family: "Source Sans Pro", sans-serif;
 }
-.main-content{
-  padding-left: 10rem;
-  padding-right: 10rem;
+img {
+  width: 100%;
+  height: auto;
+}
+.main-content {
+  padding-left: 5rem;
+  padding-right: 3rem;
   padding-bottom: 3rem;
+  flex: 250rem;
 }
 
 /* Header...........*/
-header{
-  color: #33CC33;
+header {
+  color: #33cc33;
 }
-header{
+header {
   /*background: linear-gradient(#cc0099, #154360);*/
   background-image: url("../images/header-image.jpg");
   background-repeat: no-repeat;
@@ -46,91 +55,109 @@ header{
   width: 100%;
   height: 18rem;
 }
-header p{
-  font-family: 'PT Serif', serif;
+header p {
+  font-family: "PT Serif", serif;
   font-size: 1.1rem;
   font-style: italic;
   margin-top: 0;
 }
-header .btn{
+header .btn {
   font-style: normal;
   font-weight: bold;
   margin-left: inherit;
 }
-header img{
-  color: #FBFCFC;
+header img {
+  color: #fbfcfc;
 }
-header p{
+header p {
   color: #009933;
 }
-.logo{
+.logo {
   width: 20rem;
 }
-.cart{
+.cart {
   width: 1.5rem;
-}
-.header-box{
-  display: flex;
-  justify-content: space-between;
 }
 
 /* Navigation bar...........*/
 
-nav a{
+nav a {
   color: #154360;
   font-weight: bolder;
 }
-.nav-container{
-  background-color: #EBF5FB;
-  display: flex;
-  flex-wrap: wrap;
-}
-.nav-item{
-  padding: 2rem;
-  font-weight: bolder;
-}
-.divider{
-  padding: 1rem;
+.nav-container {
+  background-color: #ebf5fb;
 }
 
-/* Introduction article...........*/
-.article-box{
+.nav-item {
+  padding: 0.5rem;
+  font-weight: bolder;
+}
+.divider {
+  padding: 0.5rem;
+}
+/* Main page layout...........*/
+.main-page-layout {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
 }
-.article-item{
-  padding: 2rem;
-}
-/* Dogs profiles...........*/
-.dog-profiles{
-  display: flex;
+/* Introduction article...........*/
+.intro-article-box {
   justify-content: center;
-  flex-wrap: wrap;
+}
+.intro-article-item img {
+  padding-top: 2rem;
+}
+.intro-article-item p {
+  padding-bottom: 2rem;
+  padding-right: 2rem;
 }
 
-.doginfo-wrap{
-  display: inline-block;
-  background-color: #FBFCFC;
-  border: 0.1em solid #EBF5FB;
-  width: 12.6rem;
-  height: inherit;
+/* Aside blog main page............*/
+aside {
+  margin-left: 0rem;
+  flex: 150rem;
+  padding-right: 8rem;
 }
-.doginfo-wrap h3{
+aside h1 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+.aside-article-item {
+  padding-left: 2rem;
+  padding-right: 4rem;
+  padding-top: 0rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Dogs profiles...........*/
+
+.doginfo-wrap {
+  display: inline-block;
+  background-color: #fbfcfc;
+  border: 0.1em solid #ebf5fb;
+  width: 100%;
+  height: auto;
+}
+.doginfo-wrap h3 {
   margin: 0.2rem;
 }
-.doginfo-wrap p{
+.doginfo-wrap p {
   font-size: 0.8rem;
   padding: 1.5% 3%;
-  margin:0.2rem;
+  margin: 0.2rem;
 }
-.btn{
-  background-color: #00CC33;
-  color: #FBFCFC;
+
+.btn {
+  background-color: #00cc33;
+  color: #fbfcfc;
   border-radius: 0.2em;
   padding: 0.2em 4em;
   text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
   font-weight: bold;
   display: inline-block;
@@ -139,116 +166,251 @@ nav a{
   margin-bottom: 5%;
   cursor: pointer;
 }
-.bold{
-  font-weight: bold;
+.doginfo-wrap .btn {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
-.see-more{
-  display: inline-block;
-  background-color: #EBF5FB;
+.see-more {
+  background-color: #ebf5fb;
   color: #154360;
-  padding: 0.2em 3em;
   border-radius: 0.2em;
-  text-align: center;
   font-weight: bold;
   margin: 4% 40%;
+  text-align: center;
+  line-height: 2em;
 }
 
 /* Footer...........*/
-footer{
-  background-color: #1C2833;
-  color: #FBFCFC;
+footer {
+  background-color: #1c2833;
+  color: #fbfcfc;
 }
-footer nav a{
-  color: #FBFCFC;
+footer nav a {
+  color: #fbfcfc;
   padding: 1rem;
 }
-.content-wrap{
+.content-wrap {
   max-width: 25rem;
   width: 85%;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   padding-bottom: 2rem;
   text-align: center;
   font-size: 0.9rem;
 }
-.content-wrap img{
+.content-wrap img {
   width: 20rem;
   padding: 1%;
   padding-bottom: 0;
   margin-top: 10%;
   margin-bottom: 2%;
 }
+/* Dogs page...........*/
+.dog-page {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  justify-content: space-around;
+}
 
+/* Blog page article...........*/
+.blog-h1 {
+  margin-left: 3rem;
+}
+
+.article-item {
+  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  flex: 0.2rem;
+}
+.blog-page-image {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin-right: 0;
+}
 
 /* Contact page...........*/
-form{
+form {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 2em;
   margin-bottom: 2em;
 }
-fieldset{
+fieldset {
   border: none;
   margin-left: -0.2rem;
 }
-legend{
+legend {
   color: #154360;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 1.3rem;
   font-weight: bold;
   display: block;
   margin: 1.5rem 2rem;
   margin-left: -0.1rem;
 }
-label{
+label {
   color: #154360;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 1.3rem;
   font-weight: bold;
   display: inline;
   margin: 1.5rem 2rem;
   margin-left: -0.1rem;
 }
-input{
+input {
   color: #001a33;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 1rem;
   display: block;
   margin: 1rem;
   cursor: pointer;
 }
-button{
-  font-family: 'Source Sans Pro', sans-serif;
+button {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-input[type=radio]{
-  display:inline;
-  font-family: 'Source Sans Pro', sans-serif;
+input[type="radio"] {
+  display: inline;
+  font-family: "Source Sans Pro", sans-serif;
 }
-select{
+select {
   display: block;
-  width:25%;
+  width: 25%;
   height: 3em;
 }
-input[type=text], input[type=email]{
+input[type="text"],
+input[type="email"] {
   width: 65%;
   height: 3em;
   margin-left: -0.1rem;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
   opacity: 0;
   display: inline;
 }
-input[type="submit"]{
-  background-color: #00CC33;
-  color: #FBFCFC;
+input[type="submit"] {
+  background-color: #00cc33;
+  color: #fbfcfc;
   border-radius: 0.2em;
   padding: 0.4em 6em;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
   font-weight: bolder;
 }
-input:invalid{
+input:invalid {
   border: 0.2em solid red;
+}
+
+/* Responsive design...........*/
+@media screen and (min-width: 760px) {
+  aside {
+    padding-right: 1rem;
+  }
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .read-blog-page {
+    display: none;
+  }
+
+  .header-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dog-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .doginfo-wrap {
+    width: 30%;
+    height: auto;
+  }
+  .dog-page {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .dog-page .doginfo-wrap {
+    width: 25%;
+    height: auto;
+  }
+  .article-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+  .main-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1000px) {
+  .dog-page .doginfo-wrap {
+    width: 33%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 759px) {
+  aside {
+    display: none;
+  }
+  .main-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .dog-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .doginfo-wrap {
+    width: 50%;
+    height: auto;
+  }
+  .dog-page {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  aside {
+    display: none;
+  }
+  .main-content {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .doginfo-wrap {
+    width: 100%;
+    height: auto;
+  }
+  .dog-page {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .logo {
+    width: 15rem;
+  }
 }
