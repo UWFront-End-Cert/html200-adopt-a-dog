@@ -47,10 +47,12 @@ for (let i = 0; i < adoptMeButtons.length; i++) {
         let cost = parseFloat(adoptMeButtons[i].previousElementSibling.previousElementSibling.innerHTML.slice(-6));
 
 
-        console.log(cost);
-        total += cost;
-
-        totalDisplay.textContent = total;
+        // console.log(cost);
+        // console.log(cost.toFixed(2))
+        total += cost
+            // console.log(total)
+            // console.log(total.toFixed(2));
+        totalDisplay.textContent = total.toFixed(2);
         //convert back to string so you never have more than two decimal spaces.
         totalDisplay.textContent = totalDisplay.textContent.toString().slice(0, 6);
         alert(`Total cost to adopt: $${totalDisplay.textContent}`)
