@@ -54,7 +54,17 @@
 
         <section class="dog-profiles">
           <div class="doginfo-wrap">
-            <img onclick="murphy()" src="images/murphy-200.jpg" alt="Murphy" />
+            <img
+              onclick="murphy()"
+              src="images/murphy-card.jpg"
+              alt="Murphy"
+              srcset="
+                images/murphy-200.jpg 200w,
+                images/murphy-400.jpg 400w,
+                images/murphy-600.jpg 600w
+              "
+              sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+            />
             <h3>Murphy</h3>
             <p><b>Cost to Adopt</b>: $123.45</p>
             <p>
@@ -65,7 +75,17 @@
           </div>
 
           <div class="doginfo-wrap">
-            <img onclick="poppy()" src="images/poppy-200.jpg" alt="Poppy" />
+            <img
+              onclick="poppy()"
+              src="images/poppy-card.jpg"
+              alt="Poppy"
+              srcset="
+                images/poppy-200.jpg 200w,
+                images/poppy-400.jpg 400w,
+                images/poppy-600.jpg 600w
+              "
+              sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+            />
             <h3>Poppy</h3>
             <p><b>Cost to Adopt</b>: $123.45</p>
             <p>
@@ -76,7 +96,17 @@
           </div>
 
           <div class="doginfo-wrap">
-            <img onclick="jack()" src="images/jack-200.jpg" alt="Jack" />
+            <img
+              onclick="jack()"
+              src="images/jack-card.jpg"
+              alt="Jack"
+              srcset="
+                images/jack-200.jpg 200w,
+                images/jack-400.jpg 400w,
+                images/jack-600.jpg 600w
+              "
+              sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+            />
             <h3>Jack</h3>
             <p><b>Cost to Adopt</b>: $123.45</p>
             <p>
@@ -87,7 +117,17 @@
           </div>
 
           <div class="doginfo-wrap">
-            <img onclick="duffy()" src="images/duffy-200.jpg" alt="Duffy" />
+            <img
+              onclick="duffy()"
+              src="images/duffy-card.jpg"
+              alt="Duffy"
+              srcset="
+                images/duffy-200.jpg 200w,
+                images/duffy-400.jpg 400w,
+                images/duffy-600.jpg 600w
+              "
+              sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+            />
             <h3>Duffy</h3>
             <p><b>Cost to Adopt</b>: $123.45</p>
             <p>
@@ -98,7 +138,17 @@
           </div>
 
           <div class="doginfo-wrap">
-            <img onclick="lucas()" src="images/lucas-200.jpg" alt="Lucas" />
+            <img
+              onclick="lucas()"
+              src="images/lucas-card.jpg"
+              alt="Lucas"
+              srcset="
+                images/lucas-200.jpg 200w,
+                images/lucas-400.jpg 400w,
+                images/lucas-600.jpg 600w
+              "
+              sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+            />
             <h3>Lucas</h3>
             <p><b>Cost to Adopt</b>: $123.45</p>
             <p>
@@ -109,7 +159,17 @@
           </div>
 
           <div class="doginfo-wrap">
-            <img onclick="jake()" src="images/jake-200.jpg" alt="Jake" />
+            <img
+              onclick="jake()"
+              src="images/jake-card.jpg"
+              alt="Jake"
+              srcset="
+                images/jake-200.jpg 200w,
+                images/jake-400.jpg 400w,
+                images/jake-600.jpg 600w
+              "
+              sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+            />
             <h3>Jake</h3>
             <p><b>Cost to Adopt</b>: $123.45</p>
             <p>
@@ -120,12 +180,12 @@
           </div>
         </section>
 
-        <section class="see-more">
+        <div class="see-more">
           <a href="pages/dogs.html">See More Dogs</a>
-        </section>
-        <section class="see-more">
+        </div>
+        <div class="see-more">
           <a class="read-blog-page" href="pages/blog.html">Read Our Blog </a>
-        </section>
+        </div>
       </div>
       <aside class="aside-blog">
         <h1>From Our Blog</h1>
@@ -134,6 +194,11 @@
             <img
               src="images/blog-1-reg.jpg"
               alt="A man enjoying the canyan scenery with his dog"
+              srcset="
+                images/blog-1-reg-260.jpg 260w,
+                images/blog-1-reg-500.jpg 500w
+              "
+              sizes="(min-width: 501px) and (max-width: 759px) 260px, (min-width: 760px) 500px, 100vw"
             />
           </div>
           <div class="aside-article-item">
@@ -151,6 +216,11 @@
             <img
               src="images/blog-2-reg.jpg"
               alt="Four dogs looking at their dog walkers"
+              srcset="
+                images/blog-2-reg-260.jpg 260w,
+                images/blog-2-reg-500.jpg 500w
+              "
+              sizes="(min-width: 501px) and (max-width: 759px) 260px, (min-width: 760px) 500px, 100vw"
             />
           </div>
           <div class="aside-article-item">
@@ -168,6 +238,11 @@
             <img
               src="images/blog-3-reg.jpg"
               alt="A girl holding up a ball in front of a dog"
+              srcset="
+                images/blog-3-reg-260.jpg 260w,
+                images/blog-3-reg-500.jpg 500w
+              "
+              sizes="(min-width: 501px) and (max-width: 759px) 260px, (min-width: 760px) 500px, 100vw"
             />
           </div>
           <div class="aside-article-item">

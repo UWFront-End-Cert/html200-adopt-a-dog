@@ -46,7 +46,7 @@ header {
   color: #33cc33;
 }
 header {
-  /*background: linear-gradient(#cc0099, #154360);*/
+  background: linear-gradient(#cc0099, #154360);
   background-image: url("../images/header-image.jpg");
   background-repeat: no-repeat;
   background-position: top right;
@@ -412,5 +412,8 @@ input:invalid {
   }
   .logo {
     width: 15rem;
+  }
+  .content-wrap .logo {
+    width: 13rem;
   }
 }
