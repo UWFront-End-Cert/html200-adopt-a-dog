@@ -1,8 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    background-image: url(https://images.unsplash.com/photo-1548665543-a06c151cc844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
-    background-size: 200px 200px;
 }
 
 
@@ -33,8 +31,6 @@ body {
     grid-template-rows: repeat(5, 20%);
     height: 200rem;
     position: relative;
-    background-image: url(https://images.unsplash.com/photo-1548665543-a06c151cc844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
-    background-size: 200px 200px;
 }
 
 .header {
@@ -57,8 +53,8 @@ body {
 
 .header {
     margin-bottom: 10rem;
-    background: repeating-radial-gradient(ellipse at 50% 50%, #FF0055 99.46%, #0c497a 100%);
-    background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true), repeating-radial-gradient(ellipse at 50% 50%, #FF0055 99.46%, #0c497a 100%);
+    background-color: black;
+    background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
     height: 40rem;
     width: auto;
     position: relative;
@@ -164,12 +160,13 @@ h1 {
     align-items: left;
     text-align: left;
     margin: 3rem 1rem 1rem 3rem;
-    background-color: white;
 }
 
 
 /*this shit is fucked. trying to select the everything but the img inside each dog card always selects the img, should be a much easy solution something, how to select all but dog img
   and apply styles to everything but the dog img;?????*/
+
+.dog_cards:not(img) {}
 
 .dog_cards h3,
 p {
@@ -205,6 +202,15 @@ p {
     background-color: rgb(170, 253, 2);
 }
 
+#dog_img {
+    /* border: 3px solid black;
+    padding-left: none;
+    padding-right: none;
+    all: revert;
+    width: 23rem;
+    margin-left: -1.25rem; */
+}
+
 
 /*nav.......................................................................*/
 
@@ -220,7 +226,6 @@ p {
     padding: 1.3rem;
     position: relative;
     bottom: 160rem;
-    background-color: rgb(135, 136, 133);
 }
 
 nav a {
@@ -236,7 +241,6 @@ nav a {
 
 .footer {
     background-color: rgb(12, 73, 122);
-    width: 100%;
     height: 35rem;
     margin-top: 30rem;
     padding-top: 15rem;
@@ -251,7 +255,7 @@ nav a {
 }
 
 .footer img {
-    height: 14rem;
+    height: 15rem;
 }
 
 .footer p {
@@ -266,16 +270,6 @@ div.footer_nav {
 }
 
 div.footer_nav a {
-    color: white;
-}
-
-.footer a {
-    padding-left: 10.5%;
-}
-
-.main h1,
-.main h2,
-.primary a {
     color: white;
 }
 

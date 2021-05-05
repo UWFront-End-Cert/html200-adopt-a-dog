@@ -1,8 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    background-image: url(https://images.unsplash.com/photo-1548665543-a06c151cc844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
-    background-size: 200px 200px;
 }
 
 * {
@@ -42,8 +40,6 @@ body {
     grid-template-columns: 66.66% 33.33%;
     grid-template-rows: 15% 20% 20% 20% 15%;
     min-height: 241rem;
-    background-image: url(https://images.unsplash.com/photo-1548665543-a06c151cc844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
-    background-size: 200px 200px;
 }
 
 
@@ -73,7 +69,7 @@ body {
 /*header shit*/
 
 .header {
-    background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true), repeating-radial-gradient(ellipse at 50% 50%, #FF0055 99.46%, #0c497a 100%);
+    background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
     height: 40rem;
     width: auto;
     background-size: cover;
@@ -101,6 +97,12 @@ body {
     justify-content: space-around;
 }
 
+.header_content {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: flex-end; */
+}
+
 .header1 {
     display: flex;
     flex-direction: column;
@@ -113,11 +115,9 @@ body {
 .header2 {
     display: flex;
     align-self: flex-start;
-    margin-right: 0em;
-    margin-top: 4em;
-    margin-left: -5rem;
-    position: relative;
-    right: 3em;
+    margin-top: 10rem;
+    margin-right: 10rem;
+    margin-top: 6rem;
     flex-direction: column;
 }
 
@@ -174,9 +174,9 @@ span {
 .primary {
     position: relative;
     z-index: 10000;
-    top: -6.3rem;
+    top: -6.2rem;
     display: block;
-    background-color: rgb(135, 136, 133);
+    background-color: rgba(192, 192, 192, 0.3);
     padding: 1.3rem;
     /*doing some wierd grid shit so width set to 150, did not inherit from container or something*/
     width: 150%;
@@ -187,7 +187,7 @@ nav a {
     /* padding-right: 5%; */
     padding-left: 2.5%;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .left {
@@ -285,13 +285,9 @@ nav a {
     margin-left: 6rem;
 }
 
-.main_content h2,
-.main_content p,
-.side h1,
-.side h2,
-.content p,
-.side a {
-    color: white;
+.main {
+    /* margin-left: 15rem;
+        margin-right: 15rem; */
 }
 
 
@@ -326,9 +322,7 @@ nav a {
 /*this shit is fucked. trying to select the everything but the img inside each dog card always selects the img, should be a much easy solution something, how to select all but dog img
       and apply styles to everything but the dog img;?????*/
 
-.dogs div {
-    background-color: white;
-}
+.dog_cards:not(img) {}
 
 .dog_cards h3,
 p {
@@ -352,6 +346,15 @@ p {
 
 .dog_cards button:hover {
     background-color: rgb(170, 253, 2);
+}
+
+#dog_img {
+    /* border: 3px solid black;
+        padding-left: none;
+        padding-right: none;
+        all: revert;
+        width: 23rem;
+        margin-left: -1.25rem; */
 }
 
 
@@ -443,423 +446,73 @@ div.footer_nav a {
 /*when screen is very small header background will just be that blue ya heard*/
 
 
-/* first div inside header content */
-
-
-/*for smaller screen*/
-
-
-/*this was added after you submitted media quries project*/
-
-@media screen and (max-width: 1379px) {
-    .side {
-        margin-left: 11rem;
-    }
-}
-
-
-/*for small laptop*/
-
-@media screen and (max-width: 1100px) {
-    .container {
-        height: 271rem;
-    }
-    .primary {
-        top: -11.3rem;
-    }
-    .side {
-        z-index: 0;
-    }
-    .top img {
-        z-index: 0;
-    }
-    .top {
-        width: 80%;
-    }
-    .dogs {
-        margin-left: 5rem;
-        margin-right: 3rem;
-        margin-top: 48rem;
-        height: 116rem;
-    }
-    .footer {
-        margin-top: 60rem;
-        top: 19%;
-    }
-    .more {
-        right: 43rem;
-        top: 1rem;
-    }
-}
-
-
-/*this was added after you submitted media quries project*/
-
-@media only screen and (max-width: 1025px) {
-    .footer {
-        top: 87%;
-    }
-}
-
-
-/*this was added after you submitted media quries project*/
-
-
-/*only targeting main paragraph with this media qureis*/
-
-@media only screen and (max-width: 995px) {
-    .main_content p {
-        width: 24em;
-    }
-}
-
-
-/*ipad*/
-
-
-/* Portrait */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-    .container {
-        height: 370rem;
-    }
-    .left {
-        margin-top: -9.5rem;
-    }
-    .top img {
-        max-width: 38rem;
-        max-height: 38rem;
-    }
-    .top {
-        margin-left: -5rem;
-    }
-    .side a {
-        margin-bottom: -1rem;
-    }
-    .side {
-        margin-left: -5rem;
-        margin-top: -8rem;
-    }
-    .dogs {
-        margin-top: 89rem;
-        margin-left: 10rem;
-        margin-top: 77rem;
-    }
-    .footer {
-        margin-top: -14rem;
-    }
-    .more {
-        top: 2.5rem;
-    }
-}
-
-
-/*this was added after you submitted media quries project*/
-
-@media only screen and (max-width: 768px) {
-    .side {
-        display: none;
-    }
-    .footer {
-        top: 19%;
-    }
-}
-
-
-/* ipad Landscape */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-    .container {
-        min-height: 315rem;
-    }
-    .left {
-        margin-top: -1rem;
-    }
-    .top {
-        margin-top: -3rem;
-    }
-    .dogs {
-        margin-top: 52rem;
-    }
-    .side {
-        margin-top: 0rem;
-    }
-    .footer {
-        margin-top: 3rem;
-    }
-    .more {
-        right: 46rem;
-    }
-}
-
-
-/*leaving this one in here, doesn't do much but doesnt mess with ipad or
-iphone media queries so thats fine i guess */
-
-@media screen and (max-width: 577px) {
-    .side {
-        display: none;
-        z-index: 10001;
-    }
-    body {
-        width: 122%;
-    }
-    .main {
-        margin-left: 3rem;
-    }
-    .top {
-        width: 143%;
-    }
-    .top img {
-        max-width: 53rem;
-    }
-    .main_content p {
-        font-size: 2.5rem;
-    }
-    .dogs {
-        margin-top: 65rem;
-        margin-left: 5rem;
-        height: 140rem;
-    }
-    .dogs div {
-        margin: 3rem 6rem 3rem 3rem;
-        transform: scale(1.2);
-    }
-    .header2 {
-        margin-left: -5rem;
-        margin-top: 3rem;
-    }
-    .header1 {
-        margin-top: 13rem;
-    }
-}
-
-
-/*media quriey only targetting main content p */
-
-@media screen and (max-width:411px) {
-    .main_content p {
-        width: 17em;
-    }
-}
-
-
-/*average size phones ?*/
-
-@media screen and (min-width:377px) and (max-width: 415px) {
-    body {
-        width: 174.5%;
-    }
-    .primary a,
-    .footer a {
-        font-size: 3rem;
-    }
-    .header {
-        flex-direction: column;
-    }
-    .header1 {
-        margin-top: 3rem;
-        margin-left: 9rem;
-        transform: scale(1.2);
-    }
-    .cart {
-        margin-left: 4rem;
-    }
-    .header2 {
-        margin-left: 26rem;
-        margin-bottom: 5rem;
-        transform: scale(1.5);
-    }
-    .top img {
-        height: 41rem;
-        margin-left: 8.5rem;
-    }
-    .main_content h2 {
-        font-size: 3.5rem;
-    }
-    .main_content p {
-        font-size: 3rem;
-    }
-    .dogs {
-        margin-top: 100rem;
-        margin-left: 18.5rem;
-        height: 397rem;
-    }
-    .dogs div {
-        transform: scale(1.7);
-    }
-    .more {
-        top: 1.5rem;
-        right: 47rem;
-        transform: scale(1.5);
-    }
-    .footer {
-        margin-top: 407rem;
-        height: 59rem;
-        padding-bottom: 35rem;
-    }
-}
-
-
-/*iphone 6/7/8*/
-
-
-/* Portrait */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    body {
-        width: 174.5%;
-    }
-    .primary a,
-    .footer a {
-        font-size: 3rem;
-    }
-    .header {
-        flex-direction: column;
-    }
-    .header1 {
-        margin-top: 3rem;
-        margin-left: 9rem;
-        transform: scale(1.2);
-    }
-    .cart {
-        margin-left: 4rem;
-    }
-    .header2 {
-        margin-left: 26rem;
-        margin-bottom: 5rem;
-        transform: scale(1.5);
-    }
-    .top img {
-        height: 41rem;
-        margin-left: 4rem;
-    }
-    .main_content h2 {
-        font-size: 3.5rem;
-    }
-    .main_content p {
-        font-size: 3rem;
-        width: 20em;
-    }
-    .dogs {
-        margin-top: 100rem;
-        margin-left: 18.5rem;
-        height: 397rem;
-    }
-    .dogs div {
-        transform: scale(1.7);
-    }
-    .more {
-        top: 1.5rem;
-        right: 47rem;
-        transform: scale(1.5);
-    }
-    .footer {
-        margin-top: 407rem;
-        height: 45rem;
-        padding-bottom: 24rem;
-    }
-}
-
-
-/* Landscape */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .header {
-        flex-direction: column;
-    }
-    .header1 {
-        margin-left: 8rem;
-    }
-    .header2 {
-        margin-right: 10rem;
-        margin-left: 26rem;
-        margin-top: 0rem;
-        margin-bottom: 5rem;
-    }
-    .side {
-        display: none;
-    }
-    .top img {
-        height: 38rem;
-        margin-left: 15rem;
-    }
-    .main_content p {
-        margin-left: 1rem;
-        width: 181%;
-    }
-    .main_content h2 {
-        margin-left: 2rem;
-    }
-    .primary a:first-child {
-        margin-left: 18rem;
-    }
-    .cart {
-        margin-left: 4rem;
-    }
-}
-
-
 /*Galaxy fold i guess*/
 
 
-/*needs some work*/
-
-@media screen and (min-width: 279px) and (max-width: 374px) {
+/* @media screen and (max-width: 281px) {
     body {
-        width: 174.5%;
+        width: 147%;
     }
     .primary a,
     .footer a {
         font-size: 3rem;
     }
+    .top img {
+        margin-left: 5rem;
+    }
+    .primary a:first-child {
+        margin-left: 2rem;
+    }
     .header {
         flex-direction: column;
-        width: 130%;
     }
     .header1 {
-        margin-top: 3rem;
-        margin-left: 9rem;
-        transform: scale(1.2);
-    }
-    .primary {
-        width: 195%;
-    }
-    .cart {
-        margin-left: 4rem;
+        margin-top: 2rem;
+        margin-left: -4rem;
+        transform: scale(.8);
     }
     .header2 {
-        margin-left: 26rem;
+        margin-left: 14rem;
         margin-bottom: 5rem;
         transform: scale(1.5);
     }
-    .top img {
-        height: 41rem;
-        margin-left: 4rem;
-    }
-    .main_content h2 {
-        font-size: 3.5rem;
-    }
-    .main_content p {
-        font-size: 3rem;
-    }
     .dogs {
-        margin-top: 100rem;
-        margin-left: 18.5rem;
-        height: 397rem;
-    }
-    .dogs div {
-        transform: scale(1.7);
+        margin-top: 127rem;
+        margin-left: 6.5rem;
+        height: 283rem;
     }
     .more {
-        top: 1.5rem;
-        right: 47rem;
-        transform: scale(1.5);
+        top: -1.5rem;
+        right: 59rem;
     }
     .footer {
-        margin-top: 407rem;
-        height: 45rem;
-        padding-bottom: 24rem;
-        width: 130%;
+        margin-top: 307rem;
+    }
+} */
+
+@media (min-width:250px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    body {
+        width: 268%;
     }
 }
+
+@media (min-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width:1281px) {}
+
+@media (min-width: 1365px) {}

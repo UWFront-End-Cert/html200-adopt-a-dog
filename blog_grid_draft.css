@@ -1,8 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    background-image: url(https://images.unsplash.com/photo-1548665543-a06c151cc844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
-    background-size: 200px 200px;
 }
 
 
@@ -59,7 +57,7 @@ body {
 .header {
     margin-bottom: 10rem;
     background-color: black;
-    background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true), repeating-radial-gradient(ellipse at 50% 50%, #FF0055 99.46%, #0c497a 100%);
+    background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
     height: 40rem;
     width: auto;
     position: relative;
@@ -72,7 +70,7 @@ body {
 }
 
 .logo {
-    height: 14rem;
+    height: 15rem;
 }
 
 .header h1 {
@@ -174,7 +172,7 @@ span {
     position: relative;
     z-index: 10000;
     display: block;
-    background-color: rgb(135, 136, 133);
+    background-color: rgba(192, 192, 192, 0.3);
     padding: 1.3rem;
     position: relative;
     bottom: 160rem;
@@ -208,7 +206,7 @@ nav a {
 }
 
 .footer img {
-    height: 14rem;
+    height: 15rem;
 }
 
 .footer p {
@@ -225,13 +223,6 @@ div.footer_nav {
 div.footer_nav a {
     color: white;
     margin-right: 2rem;
-}
-
-.main h1,
-.main h2,
-.main p,
-.primary a {
-    color: white;
 }
 
 
@@ -261,17 +252,11 @@ div.footer_nav a {
     .footer {
         margin-top: 275rem;
     }
-    .main {
-        margin-left: 8rem;
-    }
 }
 
 @media screen and (max-width:875px) {
     .content img {
         height: 50rem;
-    }
-    .main {
-        margin-left: 4rem;
     }
     .footer {
         margin-top: 295rem;
@@ -312,15 +297,6 @@ div.footer_nav a {
     } */
 }
 
-@media only screen and (max-width: 560px) {
-    .header h1 {
-        font-size: 2.15rem;
-    }
-    .logo {
-        height: 12em;
-    }
-}
-
 
 /* ipad Landscape */
 
@@ -341,39 +317,6 @@ div.footer_nav a {
     }
     .footer a {
         padding-right: 2rem;
-    }
-}
-
-@media only screen and (max-width: 630px) {
-    .header h1 {
-        margin-left: -0.5em;
-        font-size: 1.95rem;
-    }
-    .logo {
-        height: 11.5rem;
-    }
-}
-
-@media screen and (max-width: 534px) {
-    img.logo {
-        height: 9em;
-    }
-    .header h1 {
-        font-size: 2rem;
-        margin-top: 1rem;
-        margin-left: -5rem;
-    }
-}
-
-@media screen and (max-widtth: 500px) {
-    .logo {
-        height: 9rem;
-        margin-left: -3rem;
-    }
-    .header h1 {
-        font-size: 1.75rem;
-        margin-left: -2rem;
-        margin-top: 2rem;
     }
 }
 
