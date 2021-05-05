@@ -509,7 +509,7 @@ div.footer_nav a {
 
 @media only screen and (max-width: 995px) {
     .main_content p {
-        width: 24em;
+        width: 20em;
     }
 }
 
@@ -557,11 +557,9 @@ div.footer_nav a {
 /*this was added after you submitted media quries project*/
 
 @media only screen and (max-width: 768px) {
-    .side {
-        display: none;
-    }
     .footer {
-        top: 19%;
+        /*top: 19%*/
+        top: 60%;
     }
 }
 
