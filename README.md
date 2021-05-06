@@ -12,13 +12,14 @@ The adoptadog site was created as a course project for the UW HTML200 Javascript
 * Hovering effect for each dog's info card.
 
 **Additional Notes**
+
 The site is responsive and able to be used on a wide variety of devices and browsers. Here is a link to the site test for more information .
 
 ## Testing
 
 Website has been tested on the following browsers:
-**Desktop Browsers**
 
+**Desktop Browsers**
 * Microsoft Edge Version 90.0.818.51
 * Google Chrome Version 90.0.4430.93
 * Opera Version 76.0.4017.94
@@ -26,7 +27,6 @@ Website has been tested on the following browsers:
 * Safari on macOS 14.1
 
 **Mobile Browsers**
-
 * Chrome Version 90.0.4430.91
 * Firefox Version 88.1.2
 * Safari on iOS 14.0
@@ -36,9 +36,13 @@ Website has been tested on the following browsers:
 ### User Persona
 
 **Name:** Jordan Jefferies
+
 **Age:** 26
+
 **Occupation:** Documentary Supply Chain Analyst
+
 **Technology:** 1 year old iPad/ 2 year old iPhone/3 year old PC
+
 **Additional Details:**
 
 *Goals*
