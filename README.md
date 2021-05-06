@@ -4,6 +4,7 @@
 # AdoptaDog
 ## Description
 The adoptadog site was created as a course project for the UW HTML200 Javascript and Responsive Design Course. The project was created using HTML, CSS, Javascript and Jquery library.
+
 **Features**
 * The blog page is dnamically created with Jquery
 * Users are given information on the dogs when clicking on the dog's image.
