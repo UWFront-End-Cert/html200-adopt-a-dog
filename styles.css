@@ -260,7 +260,6 @@ button {
     font-size: 1.5em;
     margin-right: 14em;
     margin-left: 0;
-
 }
 #dogBlog img {
     height: 350px;
@@ -436,14 +435,14 @@ footer a {
         display: flex;
         flex-direction: column;
     }
-    .blog-post p {
+    #dogBlog p {
         display: none;
     }
-    .blog-post img {
+    #dogBlog img {
         width: 200px;
         height: 150px;
     }
-    .blog-post h4 {
+    #dogBlog h4 {
         font-size: 1em;
         margin-right: auto;
     }
@@ -608,6 +607,17 @@ footer a {
     #dog-cart {
         display: flex;
         flex-direction: column;
+    }
+    #dogBlog p {
+        display: none;
+    }
+    #dogBlog img {
+        width: 200px;
+        height: 150px;
+    }
+    #dogBlog h4 {
+        font-size: 1em;
+        margin-right: auto;
     }
 }
 /*desktop*/

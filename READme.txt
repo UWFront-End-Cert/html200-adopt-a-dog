@@ -1,62 +1,58 @@
-Create a README me file that gives a synopsis of your site.
+ADOPT-A-DOG
+  Seattle's Premiere Dog Adoption Agency
 
-
-
+Description:
+  Adopt-A-Dog runs on HTML, CSS, Javascript, and Jquery. Adopt-A-Dog's
+  features bring the humane society to you as you are able to view and
+  adopt your future pet from the comfort of your own home.
+    + View all available dogs for adoption
+    + Read dog profiles
+    + Follow educational Blog posts
+    + Complete and Submit adoption application from any device
 
 
 
 *Testing*
 
 OS:
--Mac OS - website functions operate as expected with minor cosmetic changes needed.
--Windows OS - website functions operate as expected with minor cosmetic changes needed.
+-Mac OS - website functions operate as expected.
+-Windows OS - website functions operate as expected.
 
 Browsers on Mac OS:
-
--Google Chrome
+  -Google Chrome
     + Google Chrome displays site as expected with color scheme and functionality with minor cosmetic irregularities.
     + Text on Adopt buttons offset to right with viewport downsizing.
     + Dynamic jquery blog page does not size down properly for mobile view.
 
--Mozilla Firefox
+  -Mozilla Firefox
     + Mozilla displays site as expected with color scheme and functionality with minor cosmetic irregularities.
     + Text on Adopt buttons offset to right with viewport downsizing.
     + Dynamic jquery blog page does not size down properly for mobile view.
 
--Safari
+  -Safari
     + Safari displays site as expected with color scheme and functionality with minor cosmetic irregularities.
     + Text on Adopt buttons offset to right with viewport downsizing.
     + Dynamic jquery blog page does not size down properly for mobile view.
-    + Img on dog tiles offset by 1 px in galleries.
-
+    + Img on dog tiles offset by a few pixels.
 
 Device:
--Smartphone viewport-
+  -Smartphone viewport-
     + Dynamic jquery blog page does not size down properly for mobile view.
     + Text on Adopt buttons offset to right with viewport downsizing.
 
--Ipad viewport-
+  -Ipad viewport-
     + Dynamic jquery blog page does not size down properly for mobile view.
 
+Code Updates Needed:
+    Centered text on adopt buttons across viewport sizes.
+    Realign shopping cart icon placement on index.
+    Try to fix jquery Blog elements to size down properly.
+    Safari Browser images on dog tile offset.
 
-
-Change to be Made:
-
-Centered text on adopt buttons across viewport sizes.
-Realign shopping cart icon placement on Home page so it's not in corner of the page
-Fix the blog at all
-safari images on dog tile offset
-
-
-Changes Made:
-++ Fixed the shopping cart icon placement on Home page
-++ Centered text on adopt button across viewport sizes
-
-OTHER NEEDS;
-Testing section of README is updated on GitHub pages and link is included.
-Readability - Documentation is easy to read and understand. Minor errors may be present.AKA write the README.
-
-
+Code Updates Made:
+    ++ Fixed the shopping cart icon placement on index.
+    ++ Centered text on adopt button across viewport sizes.
+    ++ Adjusted formatting on blog page to better suit smaller viewports.
 
 
 
