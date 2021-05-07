@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script   src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          crossorigin="anonymous">
+        </script>
+        <title>Wentz-Adopt-A-Dog, Home</title>
+    </head>
+    <body>
+      <header>
+          <div id="cart-amount">
+            <p>
+              <img src="images/cart-icon.svg" alt="white icon of a shopping cart" height="30" width="30">
+              Cart Total: $
+                <span id="cartTotal">0</span>
+            </p>
+            <a href="checkout.html" id="checkout-button">Checkout</a>
+          </div>
+          <div id="logo-header">
+              <img src="images/adoptadog-logo.svg" alt="sillouhette of a dog with words
+              ADOPT A DOG next to it" height="150">
+            <h1>
+                Seattle's premiere dog adoption agency
+            </h1>
+          </div>
+        </header>
+        <nav>
+          <a href="index.html">Home</a>/
+          <a href="dogs.html">Dogs</a>/
+          <a href="blog.html">Blog</a>
+        </nav>
+        <main class="wrapper">
+            <section id="home-landing">
+                <img src="images/home-intro.jpg" alt="a happy golden dog being hugged by a nice
+                human in a red shirt" height="230" width="500">
+                <h2>Adopt a Dog</h2>
+                    <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
+                      tenderumet adis dolenem quidustrum fuga. Faceaquae estioriaderum recuptatur,
+                      cum volore, undipsa doloreium hillupta autes ut alitatuscit ommossum haritatur
+                      arum qui officae videbiticorporeium faccull oribus es quidignis ipietus
+                      explam sus am
+                    </p>
+            </section>
+            <section class="blog-aside">
+                <h2>From Our Blog</h2>
+                    <article class="blog-link">
+                        <img src="images/blog-1.jpg" alt="a young boy sitting with arm
+                        wrapped around black dog staring into vast canyonlands" height="150" width="250">
+                        <h3>Traveling With Your Dog</h3>
+                        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas
+                          doluptios dolupta tiandebis nem ut.</p>
+                        <a href="blog.html">Read more >></a>
+                    </article>
+
+                    <article class="blog-link">
+                        <img src="images/blog-2.jpg" alt="four well-behaved dogs on leash in sitting
+                        position in a park looking towards their handler" height="150" width="250">
+                        <h3>How To Walk Multiple Dogs</h3>
+                        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas
+                          doluptios dolupta tiandebis nem ut.</p>
+                        <a href="blog.html">Read more >></a>
+                    </article>
+
+                    <article class="blog-link">
+                        <img src="images/blog-3.jpg" alt="sunset sillouhette of a girl holding a
+                        ball above her sitting dog as it waits for her to throw" height="150" width="250">
+                        <h3>Teach Your Dog To Fetch!</h3>
+                        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas
+                          doluptios dolupta tiandebis nem ut.</p>
+                        <a href="blog.html">Read more >></a>
+                    </article>
+            </section>
+            <div id="home-dog-gallery">
+                <article class="dog-card">
+                    <button onclick="adoptAlert('Murphy', 'Boxer-mix', '$123.45')">
+                      <img src="images/murphy-card.jpg" alt="a long faced brown dog with a white
+                      nose that needs to be adopted and hugged immediately" height="120" width="190">
+                    </button>
+                    <h3>Murphy</h3>
+                    <p><strong>Cost to Adopt: </strong>$123.45<br><br>Corrum volorit iandae
+                      nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re
+                      ea erum, qui doluptae</p>
+                      <button onclick="feeCalc(fee)" class="adopt-button">Adopt</button>
+                </article>
+
+                <article class="dog-card">
+                    <button onclick="adoptAlert('Poppy', 'Lhasa Apso', '$123.45')">
+                      <img src="images/poppy-card.jpg" alt="a small and fluffy white dog
+                      happily walking down a path" height="120" width="190"></button>
+                    <h3>Poppy</h3>
+                    <p><strong>Cost to Adopt: </strong>$123.45<br><br>Corrum volorit iandae
+                      nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re
+                       ea erum, qui doluptae</p>
+                       <button onclick="feeCalc(fee)" class="adopt-button">Adopt</button>
+                </article>
+
+                <article class="dog-card">
+                    <button onclick="adoptAlert('Jack', 'Beagle', '$123.45')">
+                      <img src="images/jack-card.jpg" alt="a cute brown and white
+                      puppy with big ears sitting" height="120" width="190"></button>
+                    <h3>Jack</h3>
+                    <p><strong>Cost to Adopt: </strong>$123.45<br><br>Corrum volorit iandae
+                      nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+                      re ea erum, qui doluptae</p>
+                      <button onclick="feeCalc(fee)" class="adopt-button">Adopt</button>
+                </article>
+
+                <article class="dog-card">
+                    <button onclick="adoptAlert('Duffy', 'Staffordshire Terrier', '$123.45')">
+                      <img src="images/duffy-card.jpg" alt="a sweet white and brown dog
+                      with one blue eye sitting in the grass" height="120" width="190"></button>
+                    <h3>Duffy</h3>
+                    <p><strong>Cost to Adopt: </strong>$123.45<br><br>Corrum volorit iandae
+                      nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re
+                      ea erum, qui doluptae</p>
+                      <button onclick="feeCalc(fee)" class="adopt-button">Adopt</button>
+                </article>
+
+                <article class="dog-card">
+                    <button onclick="adoptAlert('Lucas', 'Shepherd-mix', '$123.45')">
+                      <img src="images/lucas-card.jpg" alt="a smart black dog who needs a
+                      treat" height="120" width="190">
+                    </button>
+                    <h3>Lucas</h3>
+                    <p><strong>Cost to Adopt: </strong>$123.45<br><br>Corrum volorit iandae nimaxim
+                      cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
+                      qui doluptae</p><button onclick="feeCalc(fee)" class="adopt-button">Adopt</button>
+                </article>
+
+                <article class="dog-card">
+                    <button onclick="adoptAlert('Jake', 'Yellow Labrador Retriever', '$123.45')">
+                      <img src="images/jake-card.jpg" alt="a good yellow labrador dog at the beach waiting
+                      for a fetch game to start" height="120" width="190">
+                    </button>
+                    <h3>Jake</h3>
+                    <p><strong>Cost to Adopt: </strong>$123.45<br><br>Corrum volorit iandae
+                      nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea
+                      erum, qui doluptae</p>
+                      <button onclick="feeCalc(fee)" class="adopt-button">Adopt</button>
+                </article>
+            </div>
+            <a href="dogs.html" id="more-dogs-button">See More Dogs</a>
+        </main>
+        <footer>
+            <img src="images/adoptadog-logo.svg" alt="a white sillouette of a sitting dog with
+            words Adopt A Dog" height="200" width="300">
+            <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+                esseque invenienihil imaximu scideru ptistiusam consequunt
+            </p>
+             <a href="index.html">Home</a>/
+             <a href="dogs.html">Dogs</a>/
+             <a href="blog.html">Blog</a>
+            <p>© 2018 Adoptadog, LLC | Seattle, WA
+            </p>
+        </footer>
+        <script src="./dog-adopt.js" charset="utf-8"></script>
+    </body>
+</html>

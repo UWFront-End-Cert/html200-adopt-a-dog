@@ -1,0 +1,69 @@
+*Testing*
+include your research on users and devices, and testing steps you took to ensure site quality.
+Site Tested on:
+
+OS:
+-Mac OS
+-Windows OS
+
+Browsers:
+-Mozilla Firefox
+    ++ Mozilla displays site as expected with color scheme and functionality with minor cosmetic irregularities.
+    ++ Text on Adopt buttons offset to right with viewport downsize.
+    ++ On Checkout page, form input areas need darker borders to contrast white background more efficiently.
+    ++ Dynamic jquery blog page does not size down properly for mobile view.
+-Google Chrome
+    ++ Google Chrome displays site as expected with color scheme and functionality with minor cosmetic irregularities.
+    ++ Text on Adopt buttons offset to right with viewport downsize.
+    ++ Dynamic jquery blog page does not size down properly for mobile view.
+-Safari
+    ++ Safari displays site as expected with color scheme and functionality with minor cosmetic irregularities.
+    ++ Img on dog tiles offset by 1 px in galleries.
+    ++ Text on Adopt buttons offset to right with viewport downsize.
+    ++ On Checkout page, form input areas need darker borders to contrast white background more efficiently.
+    ++ Dynamic jquery blog page does not size down properly for mobile view.
+
+
+Device:
+-Smartphone - blog page , dog photo tile on mac ios
+-Tablet
+
+*User Personas*
+
+-Persona 1, Young Adult
+  ++Amelia Yahtzee
+    +Permanently works from home as a software engineer, has steady self-sufficient income.
+    +Lives in the suburbs, enjoys running, trivia night, gardening, and small roadtrips.
+    +Is looking for a dog to accompany her in life journeys.
+    +Wants a user friendly website on their laptop that is constantly updated with new
+    available dogs while they search for "the one".
+
+
+-Persona 2, Newlyweds
+  ++Cybil & Sinjin Bellton
+    +Sinjin works in account management at a bank, Cybil works part-time managing a dog friendly cafe nearby.
+    +Both enjoy walking together in the evenings, attending farmers markets, and hosting dinners for friends.
+    +Both possess steady income and a nice new yard for their new furry friend.
+    +Recently purchased their first home, looking for an adult dog to rescue.
+    +Both have moderate computing skills, but enjoy the ease of online shopping as well as mobile usage of the website.
+
+-Persona 3, Family
+  ++Toulous Family
+    + 
+    +
+    +
+    +
+
+-Persona 4, Senior Adult
+  ++Edwin Galvan
+    +Recently retired from Boeing, looking for a dog to keep him company in retirement/travels.
+    +
+    +
+    +
+
+
+
+
+
+Create a README me file that gives a synopsis of your site.  You may also include licensing information
+and links to other relevant related sites. See for example this brief READ
