@@ -56,7 +56,7 @@ safari images on dog tile offset ?
 ipad viewport- bump down zip code input.
 
 Changes Made:
-++Fixed the shopping cart icon placement on Home page
+++ Fixed the shopping cart icon placement on Home page
 ++ Centered text on adpt button across viewport sizes
 
 OTHER NEEDS;
