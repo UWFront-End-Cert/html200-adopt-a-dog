@@ -22,13 +22,11 @@ Browsers on Mac OS:
     + Mozilla displays site as expected with color scheme and functionality with minor cosmetic irregularities.
     + Text on Adopt buttons offset to right with viewport downsizing.
     + Dynamic jquery blog page does not size down properly for mobile view.
-    + On Checkout page, form input areas need darker borders to contrast white background more efficiently.
 
 -Safari
     + Safari displays site as expected with color scheme and functionality with minor cosmetic irregularities.
     + Text on Adopt buttons offset to right with viewport downsizing.
     + Dynamic jquery blog page does not size down properly for mobile view.
-    + On Checkout page, form input areas need darker borders to contrast white background more efficiently.
     + Img on dog tiles offset by 1 px in galleries.
 
 
@@ -39,7 +37,6 @@ Device:
 
 -Ipad viewport-
     + Dynamic jquery blog page does not size down properly for mobile view.
-    + On checkout form, textarea for Zip needs to move below State selector.
 
 
 
@@ -47,17 +44,13 @@ Change to be Made:
 
 Centered text on adopt buttons across viewport sizes.
 Realign shopping cart icon placement on Home page so it's not in corner of the page
-
-
-Center whats in footer
 Fix the blog at all
-dark borders on textareas for form
-safari images on dog tile offset ?
-ipad viewport- bump down zip code input.
+safari images on dog tile offset
+
 
 Changes Made:
 ++ Fixed the shopping cart icon placement on Home page
-++ Centered text on adpt button across viewport sizes
+++ Centered text on adopt button across viewport sizes
 
 OTHER NEEDS;
 Testing section of README is updated on GitHub pages and link is included.
