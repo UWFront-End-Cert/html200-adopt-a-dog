@@ -47,6 +47,8 @@ Change to be Made:
 
 Centered text on adopt buttons across viewport sizes.
 Realign shopping cart icon placement on Home page so it's not in corner of the page
+
+
 Center whats in footer
 Fix the blog at all
 dark borders on textareas for form
@@ -55,7 +57,7 @@ ipad viewport- bump down zip code input.
 
 Changes Made:
 ++Fixed the shopping cart icon placement on Home page
-
+++ Centered text on adpt button across viewport sizes
 
 OTHER NEEDS;
 Testing section of README is updated on GitHub pages and link is included.
