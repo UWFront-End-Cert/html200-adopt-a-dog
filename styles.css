@@ -1,0 +1,547 @@
+header {
+    background-image: url(images/header-image.jpg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+#logo-header {
+    background-image: url(images/adoptadog-logo.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+    padding-left: 6em;
+    clear: right;
+    padding-bottom: 4em;
+}
+h1 {
+    color: #81b741;
+    font-family: serif;
+    font-size: 1.5em;
+    font-style: italic;
+    width: 150%;
+    padding-top: 7.5em;
+    margin-left: -3.5em;
+}
+#cart-amount {
+    float: right;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: .7em;
+    text-align: right;
+    padding-top: 3em;
+    padding-right: 6em;
+}
+#checkout-button {
+    float: right;
+    background-color: #81b741;
+    color: #FFF;
+    padding: 5px 25px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-right: 4em;
+}
+nav {
+    background-color: #ececec;
+    padding: 2em;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: .9em;
+    padding-left: 9em;
+}
+nav a {
+    text-decoration: none;
+    color: #093c60;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+.wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    font-family: "Helvetica", sans-serif;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+}
+.blog-aside {
+    float: right;
+    width: 30%;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 1em;
+}
+.blog-aside h2 {
+    padding-bottom: .5em;
+}
+.blog-link h3 {
+    font-size: 1.4em;
+    padding-left: 0;
+}
+.blog-link p {
+    width: 100%;
+}
+.blog-link {
+    margin-bottom: 4em;
+}
+.blog-link a {
+    text-decoration: none;
+    color: #093c60;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: .9em;
+}
+#home-landing {
+    clear: left;
+    padding-top: 2em;
+    font-size: .9em;
+    margin-bottom: 1em;
+}
+h2 {
+    font-family: serif;
+    color: #093c60;
+    font-size: 2em;
+}
+#home-landing p {
+    display: flex;
+    flex-flow: wrap;
+    width: 60%;
+    font-size: 1em;
+    clear: left;
+    line-height: 1.8em;
+    letter-spacing: 1.9px;
+}
+#dog-gallery {
+    clear: left;
+    display: flex;
+    flex-flow: row wrap; 
+    margin-bottom: 2em;
+   
+}
+.dog-card {
+    width: 190px;
+    display: flex;
+    flex-flow: row wrap; 
+    box-shadow: 0 0 20px -10px;
+    margin: 2em;
+    padding-bottom: 1em;
+    border: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+h3 {
+    font-family: serif;
+    color: #093c60;
+    font-size: 1.1em;
+    padding-left: 1em;
+    margin-bottom: 0;
+    margin-top: .5em;
+}
+.dog-card p {
+    font-size: .5em;
+    width: 100%;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    letter-spacing: 1px;
+}
+.adopt-button {
+    display: flex;
+    flex-flow: row wrap; 
+    padding: 8px 63px;
+    background-color: #81b741;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-left: .5em;
+    border: none;
+}
+#more-dogs-button {
+    background-color: #ececec;
+    font-family: sans-serif;
+    color: #093c60;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 10em;
+    margin-right: 30em;
+    margin-bottom: 4em;
+    display: block;
+    text-align: center;
+}
+h4 {
+    font-family: serif;
+    color: #093c60;
+    font-size: 1.5em;
+    margin: .5em;
+}
+#dog-blog {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin-bottom: 3em;
+}
+.blog-post img {
+    float: left;
+    padding-right: 4em;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+}
+.blog-post p {
+    font-size: .7em;
+}
+#form {
+    margin-left: 15%;
+    margin-right: 1%;
+}
+label {
+    font-family: serif;
+    color: #093c60;
+    font-size: 1.5em;
+}
+input, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin-top: .5em;
+    margin-bottom: 1rem; 
+    width: 20em;
+    height: 1.5em;
+}
+#city-zip {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#city-zip label {
+    padding-right: 3em;
+}
+#city {
+    width: 8em;
+}
+#zip {
+    width: 5em;
+}
+#radio input {
+    width: .8em;
+    display: inline;
+    margin-right: .5em;
+}
+#location {
+    margin-bottom: 3em;
+}
+#dog-cart {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3em;
+}
+#lucas img {
+    float: left;
+    padding-right: 1em;
+}
+#lucas h4, p {
+    clear: right;
+    margin-right: 5em;
+}
+#lucas h4 {
+    font-size: 1em;
+    display: inline;
+}
+#lucas p {
+    font-size: .4em; 
+}
+#duffy img {
+    float: left;
+    padding-right: 1em;
+}
+#duffy h4, p {
+    clear: right;
+    margin-right: 5em;
+}
+#duffy h4 {
+    font-size: 1em;
+    display: inline;
+}
+#duffy p {
+    font-size: .4em; 
+}
+#submit {
+    margin-top: 2em;
+    border: none;
+    background-color: #81b741;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 3px;
+    width: 11em;
+    height: 2em;
+    margin-bottom: 5em;
+}
+footer {
+    background-color: #093c60;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: .7em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+footer a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 1em;
+    font-size: 1.5em;
+}
+/*mobile*/
+@media screen and (max-width: 600px) {
+    #cart-amount {
+        font-size: 1.5em;
+        padding: 0;
+        margin: 0;
+    }
+    #checkout-button {
+        font-size: 1em;
+        padding: .6em;
+        margin-left: 0;
+        margin-right: 6em;
+    }
+    nav {
+        font-size: 2.5em;
+        padding-left: 1.5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: left;
+    }
+    #home-landing h2 {
+        display: block;
+        font-size: 6em;
+        padding: 0;
+        margin-top: auto;
+        text-align: left;
+        float: none;
+    }
+    #home-landing img {
+        display: none;
+    }
+    #home-landing p {
+        float: none;
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-size 3em;
+        width: 100%;
+        margin-bottom: 5em;
+    }
+    .wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #dog-gallery {
+        display: block;
+        width: 100%;
+    } 
+    .dog-card {
+        width: 770px;
+        display: block;
+        margin-bottom: 4em;
+        margin-left: 0;
+        padding-bottom: 2em;
+    }
+    .dog-card img {
+        height: 520px;
+        width: 770px;
+    }
+    .dog-card h3 {
+        display: block;
+        font-size: 4em;
+        margin-top: .2em;
+        margin-left: 0;
+        margin-bottom: .5em;
+        padding-left: .5em;
+    }
+    .dog-card p {
+        font-size: .9em;
+        display: block;
+    }
+    .adopt-button {
+        display: block;
+        padding: .5em;
+        margin: auto;
+        font-size: 3em;
+        width: 80%;
+    }
+    #more-dogs-button {
+        display: block;
+        margin: 0;
+        margin-bottom: 2em;
+        padding: 1em;
+        font-size: 2.5em;
+    }
+    #form {
+        font-size: .2em;
+    }
+    #city-zip {
+        display: flex;
+        flex-flow: column nowrap; 
+    }
+    select {
+        margin-bottom: 1.2em;
+    }
+    #dog-cart {
+        display: flex;
+        flex-direction: column;
+    }
+     .blog-aside {
+        display: none;
+    }
+    .blog-post p {
+        display: none;
+    }
+    .blog-post img {
+        width: 200px;
+        height: 150px;
+    }
+    .blog-post h4 {
+        font-size: 1em;
+        margin-right: auto;
+    }
+}
+/*tablet*/
+@media screen and (max-width: 992px) {
+    #cart-amount {
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+    }
+    #checkout-button {
+        font-size: 1.5em;
+        padding: .5em;
+        margin-left: 0;
+        margin-right: 2em;
+    }
+    nav {
+        font-size: 1em;
+        padding-left: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: left;
+    }
+    #home-landing h2 {
+        display: block;
+        float: none;
+        font-size: 2.5em;
+        text-align: left;
+    }
+    #home-landing img {
+        display: block;
+        float: none;
+        width: 210px;
+        height: 190px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    #home-landing p {
+        float: none;
+        display: block;
+        padding-top: 0;
+        font-size 1em;
+        width: 70%;
+        margin-bottom: 0;
+    }
+    #dog-gallery {
+        clear: both;
+        display: flex;
+        flex-flow: row wrap; 
+        margin-bottom: 2em;
+    }
+    .dog-card {
+        width: 100%;
+        display: block;
+        margin-right: 1em;
+        margin-left: 0;
+        margin-top: 0;
+        padding-bottom: 1em;
+    }
+    .dog-card img {
+        width: 175px;
+        height: 100px;
+    }
+    .dog-card h3 {
+        font-family: serif;
+        color: #093c60;
+        font-size: 1.5em;
+        padding-left: .5em;
+        margin-top: .5em;
+        margin-bottom: 0;
+    }
+    .dog-card p {
+        display: flex;
+        flex-flow: row wrap; 
+        font-size: .6em;
+        width: 85%;
+        padding-top: 0;
+        padding-left: 1em;
+        padding-bottom: 1em;
+    }
+    .adopt-button { 
+        font-size: 1.2em;
+        margin: auto;
+        width: 60%;
+    }
+    #more-dogs-button {
+        display: block;
+        margin: 0;
+        margin-bottom: 2em;
+        padding: 1em;
+        font-size: 1.5em;
+        width: 67%;
+    }
+    #form {
+        font-size: .6em;
+    }
+    #city-zip {
+        display: flex;
+        flex-flow: column nowrap;   
+    }
+    select {
+        margin-bottom: 1.2em;
+    }
+    #dog-cart {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*desktop*/
+@media screen and (max-width 1360px) {
+        #home-landing img {
+        width: 410px;
+        height: 390px;
+    }
+}
+@media print {
+    header {
+        display: none;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .blog-aside {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}
