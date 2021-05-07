@@ -213,7 +213,7 @@ h1 {
     background-size: cover;
     height: 300px;
     /* fallback to linear gradient if image doesn't load */
-    background-image: url("images/header-image.jpg"), linear-gradient(grey,black);
+    background-image: url("./images/header-image.jpg"), linear-gradient(grey,black);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -382,7 +382,7 @@ h3 {
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {    
 
     .main-article {
         line-height: 20px;
