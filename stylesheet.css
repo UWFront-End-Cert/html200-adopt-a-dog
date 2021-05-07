@@ -213,11 +213,7 @@ h1 {
     background-size: cover;
     height: 300px;
     /* fallback to linear gradient if image doesn't load */
-<<<<<<< HEAD
     background-image: url("images/header-image.jpg"), linear-gradient(grey,black);
-=======
-    background-image: url("./images/header-image.jpg"), linear-gradient(grey,black);
->>>>>>> 70b53b48b18516f9f45d91050fbc35a01ca11ea5
     background-repeat: no-repeat;
     background-position: center;
 }
