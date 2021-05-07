@@ -1,4 +1,5 @@
-﻿.blog-dogs {
+﻿
+.blog-dogs {
     padding-right: 20px;
     height: 400px;
 }
@@ -12,6 +13,8 @@
     display: block;
     padding-bottom: 50px;
 }
+
+
 
 
 .main-content {
@@ -52,6 +55,15 @@ body {
     border: none;
     border-radius: 3px;
     width: 100%;
+}
+
+.checkout-btn {
+    font-weight: bold;
+    background-color: #81B741;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
 }
 
 .grid-container {
@@ -197,13 +209,16 @@ h1 {
 .header {
     display: grid;
     grid-area: header;
-    grid-template-areas: 'left middle right';
+    grid-template-areas: 'left right';
+    background-size: cover;
+    height: 300px;
+    /* fallback to linear gradient if image doesn't load */
+    background-image: url("images/header-image.jpg"), linear-gradient(grey,black);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.middle {
-    grid-area: middle;
-    grid-column: 1/span 3;
-}
+
 
 .left {
     grid-area: left;
@@ -212,10 +227,9 @@ h1 {
 }
 
 .right {
-    grid-area: right;
-    padding-right: 3.12rem;
+    text-align: right;
+    padding-right: 4rem;
     padding-top: 3.12rem;
-    justify-items: center;
 }
 
 
