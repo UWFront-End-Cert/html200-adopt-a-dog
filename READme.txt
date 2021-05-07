@@ -46,19 +46,20 @@ Device:
 Change to be Made:
 
 Centered text on adopt buttons across viewport sizes.
-Fix the shopping cart on Home page
+Realign shopping cart icon placement on Home page so it's not in corner of the page
 Center whats in footer
 Fix the blog at all
 dark borders on textareas for form
 safari images on dog tile offset ?
 ipad viewport- bump down zip code input.
 
-
+Changes Made:
+++Fixed the shopping cart icon placement on Home page
 
 
 OTHER NEEDS;
 Testing section of README is updated on GitHub pages and link is included.
-Readability - Documentation is easy to read and understand. Minor errors may be present.AKA write the README. 
+Readability - Documentation is easy to read and understand. Minor errors may be present.AKA write the README.
 
 
 
