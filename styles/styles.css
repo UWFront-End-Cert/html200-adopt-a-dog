@@ -1,6 +1,4 @@
 
-
-
 * {
   box-sizing: border-box;
 }
@@ -33,7 +31,7 @@
 
 
 .background-dog {
-  width: 79em;
+  width: 100%;
   height: 25em;
   object-fit: cover;
   object-position: 10% 10%;
@@ -66,7 +64,7 @@
 .dog-white-logo {
   position: absolute;
   top: 5em;
-  width: 30%;
+  max-width: 30%;
   left: 5em;
 }
 
@@ -81,16 +79,19 @@
   position: absolute;
   top: 10em;
   right: 8em;
-}
+  background-color: #80b937;
+  padding: 1% 2%;
+  color: white;
+  text-decoration: none;}
 
 .green-clickable {
   background-color: #80b937;
-  padding: 0.5em 2.5em;
+  padding: 2% 10%;
   color: white;
   text-decoration: none;
 }
 
-nav{
+nav {
   font-size: 1.6em;
   border-width: 0.3em;
   text-align: left;
@@ -107,18 +108,12 @@ nav a {
   font-size: 0.6em;
 }
 
-.main-content-blog {
-  text-align: left;
-  padding: 1em 10em 1em 10em;
-  line-height: 2em;
-  font-size: 0.8em;
-}
-
 .main-content {
   text-align: left;
-  padding: 1em 10em 1em 10em;
-  line-height: 2em;
-  font-size: 1em;
+  padding: 1% 10% 1% 10%;
+  line-height: 2rem;
+  font-size: 1rem;
+
 }
 
 .main-image {
@@ -131,19 +126,36 @@ nav a {
   border: solid;
   border-color: #ececec;
   text-align: center;
-  padding: 0.5em 0.5em 1em 0.5em;
+  padding: 0.5% 0.5% 9% 1%;
+  margin: 2% 2% 2% 2%;
+  min-width: 100%;
 }
 
 .individual-dogs {
   display: grid;
-  grid-gap: 2em 2em;
+  grid-gap: 2% 2%;
   grid-template-columns: auto auto auto auto;
-  margin: 1em 1em 1em 1em;
+  margin: 1% 5% 5% 5%;
+
+}
+
+.individual-dogs img {
+  width: 100%;
+  height: auto;
+  min-width: 3rem;
+}
+
+.dog-1 {
+  text-align: center;
+}
+
+.list-of-dogs {
+  margin: 0% 0% 15% 0%;
 }
 
 .see-more-clickable {
   background-color: #ececec;
-  padding: 0.5em 3em;
+  padding: 0.5rem 3rem;
   color: #283e60;
   text-decoration: none;
   font-weight: bold;
@@ -151,9 +163,10 @@ nav a {
 }
 
 .intro-of-dogs {
-  font-size: 1.5em;
+  font-size: 2.5rem;
   text-align: center;
   color: #283e60;
+  padding: 2%;
 }
 
 .see-more {
@@ -165,23 +178,32 @@ nav a {
 }
 
 .blog-page-content div {
-  border: solid;
-  border-color: #ececec;
   text-align: center;
-  padding: 0.5em 0.5em 1em 0.5em;
+  padding: 1em 2em 1em 2em;
+  margin: 2em 2em 2em 2em;
 }
 
 .blog-page-content {
   display: grid;
   grid-gap: 2em 2em;
   grid-template-columns: auto;
-  margin: 1em 1em 1em 1em;
+  margin: 1em 1em 1em 5em;
+}
+
+.main-content-blog {
+  margin: 1em;
+  padding: 1em 1em 3em 1em;
 }
 
 .blog-head {
   font-size: 1.5em;
   text-align: center;
   color: #283e60;
+}
+
+.blog-post-one img {
+  width: 100%;
+  height:auto;
 }
 
 .contact-page {
@@ -196,21 +218,25 @@ footer {
   position: relative;
   background-color: #283e60;
   text-align: center;
-  padding: 8em 5em 3em 5em;
+  padding: 5% 1% 5% 1%;
   color: white;
-  line-height: 2em;
+  line-height: 1.5em;
+  font-size: 1em;
 }
+
 
 footer a {
   text-decoration: none;
-  color: white; 
+  color: white;
+  padding: 1.5%;
 }
 
 .dog-white-logo-2 {
-  position: absolute;
-  top: 2em;
-  right: 32em;
-  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:30%;
+
 }
 
 .checkout-survey {
@@ -220,21 +246,23 @@ footer a {
 }
 
 input[type=text] {
-  width: 100%;
-  border: 0.1em solid grey;
+  width: 60%;
+  border: 0.1rem solid grey;
   box-sizing: border-box;
-  padding: 1em;
-  margin: 1em;
+  padding: 1rem;
+  margin: 1rem;
   display: block;
+  min-width: 15rem;
 }
 
 input[type=email] {
-  width: 100%;
-  border: 0.1em solid grey;
+  width: 60%;
+  border: 0.1rem solid grey;
   box-sizing: border-box;
   padding: 1em;
   margin: 1em;
   display: block;
+  min-width: 15rem;
 }
 
 .checkbox {
