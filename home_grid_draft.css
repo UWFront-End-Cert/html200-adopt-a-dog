@@ -1,0 +1,518 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* * {
+        background: #000 !important;
+        color: #0f0 !important;
+        outline: solid #f00 1px !important;
+    } */
+
+body {
+    font-family: 'Brygada 1918', serif;
+    line-height: 1.6;
+}
+
+
+/*not an optimal solution, seems there is a goddamn issue with the fucking padding somewhere god fucking dammint*/
+
+
+/* html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    } */
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 66.66% 33.33%;
+    grid-template-rows: 15% 20% 20% 20% 15%;
+    min-height: 241rem;
+}
+
+
+/*what are the best practices for defining height*/
+
+.header {
+    /* height: 45%; */
+    grid-area: 1/1/2/3;
+}
+
+.left {
+    /* height: 20%; */
+    grid-area: 2/1/5/2;
+}
+
+.side {
+    /* height: 40%; */
+    grid-area: 2/2/5/3;
+}
+
+.footer {
+    /* height: 20%; */
+    grid-area: 5/1/6/3;
+}
+
+
+/*header shit*/
+
+.header {
+    background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
+    height: 40rem;
+    width: auto;
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    /* background-position: top; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+}
+
+.logo {
+    height: 15rem;
+}
+
+.header h1 {
+    color: white;
+    font-size: 2.75rem;
+    font-family: 'Courgette', cursive;
+    color: rgb(155, 226, 11);
+    margin-top: -2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_content {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: flex-end; */
+}
+
+.header1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5rem;
+    margin-left: 6rem;
+}
+
+.header2 {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 10rem;
+    margin-right: 10rem;
+    margin-top: 6rem;
+    flex-direction: column;
+}
+
+.cart {
+    width: 4rem;
+    height: 4rem;
+    /* transform: scale(.25); */
+}
+
+span {
+    color: white;
+    width: 10%;
+    height: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    transform: scale(.75);
+}
+
+.checkout {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.75rem;
+    background-color: rgb(155, 226, 11);
+    color: white;
+    font-weight: 700;
+    border-style: none;
+}
+
+.checkout:hover {
+    background-color: rgb(170, 253, 2);
+    transition: background-color 200ms ease-in-out;
+}
+
+
+/*main*/
+
+
+/*nav bar*/
+
+.primary a:first-child {
+    margin-left: 15rem;
+}
+
+
+/* .nav-bar {
+        position: absolute;
+        display: block;
+        z-index: 10000;
+        display: block;
+        background-color: rgba(192, 192, 192, 0.3);
+        padding: 1.3rem;
+    } */
+
+.primary {
+    position: relative;
+    z-index: 10000;
+    top: -6.2rem;
+    display: block;
+    background-color: rgba(192, 192, 192, 0.3);
+    padding: 1.3rem;
+    /*doing some wierd grid shit so width set to 150, did not inherit from container or something*/
+    width: 150%;
+}
+
+nav a {
+    font-size: 2rem;
+    /* padding-right: 5%; */
+    padding-left: 2.5%;
+    text-decoration: none;
+    color: black;
+}
+
+.left {
+    margin-top: 10rem;
+    height: 150rem;
+    position: relative;
+    width: auto;
+}
+
+
+/***************side***********************************************************************/
+
+.side {
+    margin-top: 15rem;
+}
+
+.side img {
+    width: 60%;
+    margin-bottom: .5rem;
+}
+
+.side h1 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.side h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.side a {
+    text-decoration: none;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+}
+
+.content div {
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    margin-bottom: 2rem;
+}
+
+.content p {
+    /* width: 32rem; */
+    max-width: 61%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+/************************main***************************************************************/
+
+.main {
+    position: relative;
+    height: 40rem;
+    flex: 1;
+}
+
+.top img {
+    width: 100%;
+    max-width: 80rem;
+    height: 45rem;
+    margin-left: 10rem;
+    z-index: 0;
+}
+
+.main div:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+    margin-left: 19rem;
+    margin-right: 18rem;
+    margin-bottom: 5rem;
+}
+
+.main_content {
+    margin-left: 2.5rem;
+}
+
+.main_content h2 {
+    font-size: 3rem;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.main_content p {
+    font-size: 2rem;
+    width: auto;
+    /* width: 80rem; */
+    margin-left: 6rem;
+}
+
+.main {
+    /* margin-left: 15rem;
+        margin-right: 15rem; */
+}
+
+
+/*dogs..................................................................................................................................................................................*/
+
+.dogs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 32rem;
+    position: relative;
+    height: 75rem;
+    flex: 1;
+}
+
+.dogs div {
+    object-fit: cover;
+    box-shadow: 0px 0px 15px gray;
+    width: 23rem;
+    height: 32.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin: 3rem 1rem 1rem 3rem;
+}
+
+
+/*this shit is fucked. trying to select the everything but the img inside each dog card always selects the img, should be a much easy solution something, how to select all but dog img
+      and apply styles to everything but the dog img;?????*/
+
+.dog_cards:not(img) {}
+
+.dog_cards h3,
+p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* border: 2px solid black; */
+}
+
+.dog_cards button {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    height: 4rem;
+    background-color: rgb(155, 226, 11);
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 2%;
+}
+
+.dog_cards button:hover {
+    background-color: rgb(170, 253, 2);
+}
+
+#dog_img {
+    /* border: 3px solid black;
+        padding-left: none;
+        padding-right: none;
+        all: revert;
+        width: 23rem;
+        margin-left: -1.25rem; */
+}
+
+
+/*more button is position relative and is not in dogs or footer flex container, keep in mind for quries as will have its own behavior...........................................*/
+
+.more {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(135, 136, 133);
+    font-weight: 700;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    width: 30rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+    z-index: 10000;
+    align-self: center;
+    top: 4rem;
+    right: 32rem;
+    margin: 0 auto;
+    margin-left: 65rem;
+}
+
+
+/************************************************************************************************************************************************************************************/
+
+.side {
+    display: flex;
+    flex-flow: column;
+    z-index: 0;
+    height: 150rem;
+}
+
+
+/*footer shit........................................................................................................................................................................*/
+
+.footer {
+    background-color: rgb(12, 73, 122);
+    width: 100%;
+    height: 35rem;
+    margin-top: 13rem;
+    padding-top: 15rem;
+    clear: both;
+    position: absolute;
+    top: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(12, 73, 122);
+    text-align: center;
+    padding-bottom: 15rem;
+}
+
+.footer img {
+    height: 14rem;
+}
+
+.footer p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+div.footer_nav {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+div.footer_nav a {
+    color: white;
+}
+
+.footer a {
+    padding-left: 10.5%;
+}
+
+
+/*queries..........................................................................................................................................................................*/
+
+
+/*when screen is very small header background will just be that blue ya heard*/
+
+
+/*Galaxy fold i guess*/
+
+
+/* @media screen and (max-width: 281px) {
+    body {
+        width: 147%;
+    }
+    .primary a,
+    .footer a {
+        font-size: 3rem;
+    }
+    .top img {
+        margin-left: 5rem;
+    }
+    .primary a:first-child {
+        margin-left: 2rem;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header1 {
+        margin-top: 2rem;
+        margin-left: -4rem;
+        transform: scale(.8);
+    }
+    .header2 {
+        margin-left: 14rem;
+        margin-bottom: 5rem;
+        transform: scale(1.5);
+    }
+    .dogs {
+        margin-top: 127rem;
+        margin-left: 6.5rem;
+        height: 283rem;
+    }
+    .more {
+        top: -1.5rem;
+        right: 59rem;
+    }
+    .footer {
+        margin-top: 307rem;
+    }
+} */
+
+@media (min-width:250px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    body {
+        width: 268%;
+    }
+}
+
+@media (min-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width:1281px) {}
+
+@media (min-width: 1365px) {}
