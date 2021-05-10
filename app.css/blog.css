@@ -1,8 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    background-image: url(https://images.unsplash.com/photo-1548665543-a06c151cc844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
-    background-size: 200px 200px;
 }
 
 
@@ -231,7 +229,7 @@ div.footer_nav a {
 .main h2,
 .main p,
 .primary a {
-    color: white;
+    color: black;
 }
 
 
