@@ -9,12 +9,109 @@
 
     <body>
         <header>
-
+            <img src="images/header-image.jpg"  
+                alt="a close-up of a beagles' face looking toward the left of the screen from the right">
+            <img src="images/adoptadog-logo.sv" 
+                alt="White dog silhoutte next to the company's title. (Image intentionally broken for alt text, aka white image on white background)" 
+                width="300" height="300">
+            <h1>Adopt a dog</h1>
+            <h2>Seattle's premier dog adoption agency</h2>
+            <img src="images/cart-icon.sv" 
+                alt="cart icon next to the current total price (Image intentionally broken for alt text, aka white image on white background)">
+            <a href="checkout.html">Checkout</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home / </a></li>
+                    <li><a href="dogs.html">Dogs / </a></li>
+                    <li><a href="blog.html">Blog / </a></li>
+                </ul>
+            </nav>
         </header>
-        
-        <form>
 
+        <form method="GET">
+            <h2>Checkout</h2>
+            <fieldset>
+                <label>Name<br>
+                    <input type="text"><br>
+                </label>
+                <label>Email<br>
+                    <input type="email"><br>
+                </label>
+                <label>Street Address<br>
+                    <input type="text"><br>
+                </label>
+                <label><br>City
+                    <input type="text">
+                </label>
+                <label>State
+                    <select name="state">
+                        <option value="">Please Select</option>
+                        <option value="State">State</option>
+                    </select>
+                </label>
+                <label>Zip Code
+                    <input type="number">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>First Time Adopter?</legend>
+                <label>
+                    <input type="radio" name="adopter" value="yes">Yes
+                </label>
+                <label>
+                    <input type="radio" name="adopter" value="no">No
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Pickup Location<br>
+                    <select name="location">
+                        <option value="">Please Select</option>
+                        <option value="here>">Here</option>
+                        <option value="there">There</option>
+                        <option value="anywhere">Anywhere</option>
+                    </select>
+                </label>
+            </fieldset>
         </form>
+
+        <section>
+            <h3>Dogs Adopted</h3>
+            <article>
+                <img src="images/lucas-card.jpg"
+                    alt="a black dog on a leash looking up excitedly at the camera"
+                    width="250">
+                <h3><b>Lucas</b><br></h3>
+                    <b>Cost to adopt: $123.45</b><br>
+                <img src="images/duffy-card.jpg"
+                    alt="a brown and white dog with two different colored eyes looking directly at the camera"
+                    width="250">
+                <p><b>Duffy</b><br>
+                    <b>Cost to adopt: $123.45</b>
+                </p>
+            </article>
+            <article>
+                <h3>Total Adoption Cost</h3>
+                <p>$1234.56</p>
+            </article>
+        </section>
+        <input type="submit">
+
+        <footer>
+            <img src="images/adoptadog-logo.sv" 
+                alt="White dog silhoutte next to the company's title. (Image intentionally broken for visibility, aka white image on white background)" 
+                width="300" height="300">
+            <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br> 
+                esseque invenienihil imaximu scideru ptistiusam consequunt
+            </p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home / </a></li>
+                    <li><a href="dogs.html">Dogs / </a></li>
+                    <li><a href="blog.html">Blog / </a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
+        </footer>
     </body>
 
 </html>
