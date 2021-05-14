@@ -33,7 +33,14 @@ a:hover, a:visited, a:link, a:active {
 .site-logo {
   display: flex;
   flex-direction: column;
-  /*font: italic lighter "Neuton" #8DB353;*/
+  padding: 2rem 5rem 2rem 5rem;
+}
+
+.site-logo h3 {
+  font-family: "Neuton", serif;
+  color: #8DB353;
+  font-weight: lighter;
+  font-style: italic;
 }
 
 .main-cart {
@@ -42,9 +49,10 @@ a:hover, a:visited, a:link, a:active {
   font: bold 0.75rem "Work Sans", "Arial", sans-serif;
   text-align: right;
   color: #ffffff;
+  padding: 2rem 5rem 2rem 5rem;
 }
 
-#checkout {
+#cart {
   background-color: #8DB353;
   font: .75rem "Work Sans", "Arial", sans-serif;
   color: #ffffff;
@@ -88,7 +96,7 @@ a:hover, a:visited, a:link, a:active {
   padding: 1rem 1rem 1rem 1rem;
 }
 
-/* Pages Layout */
+/* Main Content */
 
 .main-content {
   display: flex;
@@ -99,7 +107,7 @@ a:hover, a:visited, a:link, a:active {
   border: 1px dotted green;
 }
 
-/* Home Introduction */
+/* Home Page Introduction */
 
 .intro {
   display: flex;
@@ -134,9 +142,9 @@ a:hover, a:visited, a:link, a:active {
   max-height: 370px;
 }
 
-/* Dogs Preview */
+/* Dogs Grid */
 
-.dogs-for-adoption {
+.tile-grid {
   display: flex;
   flex-flow: row wrap;
   padding: 0 1rem 0 1rem;
@@ -152,7 +160,7 @@ a:hover, a:visited, a:link, a:active {
   justify-content: space-around;
 }
 
-.card {
+.tile {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -161,23 +169,23 @@ a:hover, a:visited, a:link, a:active {
   width: 20%;
 }
 
-.card-text {
+.tile-text {
   font-size: .75rem;
   padding: .5rem 0 .5rem 0;
 }
 
-.card-text {
+.tile-text {
   padding: 1rem;
   font-size: .85rem;
 }
 
-.card-text h4 {
+.tile-text h4 {
   font-family: "Neuton", "Times New Roman";
   color: #003366;
   font-size: 1.25rem;
 }
 
-.card-text button {
+.tile-text button {
   background-color: #8DB353;
   font-family: "Work Sans", "Arial", sans-serif;
   font-weight: bold;
