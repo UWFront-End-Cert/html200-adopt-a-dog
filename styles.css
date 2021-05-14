@@ -1,100 +1,94 @@
+/* A Long Stylesheet */
+
+/* Universal Styles (Won't Change) */
+
 * {
   margin: 0 0 0 0;
   font-family: "Lato", "Arial", sans-serif;
-}
-
-a:hover, a:visited, a:link, a:active {
-  text-decoration: none;
 }
 
 .flex-container {
   display: flex;
 }
 
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+/* Styling that will probably change */
+
+/* Page Headers */
+
 .header {
   display: flex;
-  flex-direction: row-reverse;
+  flex-flow: column wrap;
+  background-color: #003366;
+}
+
+.header-child {
+  display: flex;
   justify-content: space-between;
-  padding: 2.5rem;
-  background-image: url("./images/header-image.jpg");
-  background-size: 100%;
-  width: 100%;
 }
 
-.header h3 {
-  font-family: "Neuton", "Times New Roman";
-  font-style: italic;
-  font-weight: lighter;
-  color: #8DB353;
+.site-logo {
+  display: flex;
+  flex-direction: column;
+  /*font: italic lighter "Neuton" #8DB353;*/
 }
 
-#header-cart {
+.main-cart {
   display: inline-block;
-}
-
-#header-cart img {
-  padding-right: .5rem;
-  height: 1.75em;
-  width: 1.75em;
-}
-
-#header-cart p {
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: .75em;
+  padding: .5rem;
+  font: bold 0.75rem "Work Sans", "Arial", sans-serif;
   text-align: right;
   color: #ffffff;
 }
 
-#header-cart button {
+#checkout {
   background-color: #8DB353;
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-weight: bold;
+  font: .75rem "Work Sans", "Arial", sans-serif;
   color: #ffffff;
-  margin: 1rem 0 0 0;
-  padding: .65rem 3.5rem .65rem 3.5rem;
-  width: 100%;
+  font-weight: bold;
   border: none;
+  border-radius: .15rem;
+  padding: .25rem 2rem .25rem 2rem;
 }
 
-.menu {
-  display: flex;
-}
+/* Main Menu */
 
-#primary-nav {
-  display: flex;
+#main-menu {
   background-color: #ECECEC;
   padding: 0 0 0 5rem;
   font-weight: bold;
   width: 100%;
 }
 
-#primary-nav ul {
+#main-menu ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: .95rem;
+  font: bold 1rem "Work Sans", "Arial", sans-serif;
   color: #003366;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
-#primary-nav li:after {
+#main-menu li:after {
   content: "/";
 }
 
-#primary-nav li:last-child:after {
+#main-menu li:last-child:after {
   content: "";
 }
 
-#primary-nav li a {
+#main-menu a {
   font-family: "Work Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: .95rem;
   color: #003366;
   padding: 1rem 1rem 1rem 1rem;
 }
+
+/* Pages Layout */
 
 .main-content {
   display: flex;
@@ -102,7 +96,10 @@ a:hover, a:visited, a:link, a:active {
   align-items: center;
   margin: 0;
   padding: 0 5rem 0 5rem;
+  border: 1px dotted green;
 }
+
+/* Home Introduction */
 
 .intro {
   display: flex;
@@ -136,6 +133,8 @@ a:hover, a:visited, a:link, a:active {
   line-height: 1.5;
   max-height: 370px;
 }
+
+/* Dogs Preview */
 
 .dogs-for-adoption {
   display: flex;
@@ -204,6 +203,8 @@ a:hover, a:visited, a:link, a:active {
   padding: .65rem 3.5rem .65rem 3.5rem;
   margin: 0 0 5rem 0;
 }
+
+/* Pages Footer */
 
 .footer {
   display: flex;

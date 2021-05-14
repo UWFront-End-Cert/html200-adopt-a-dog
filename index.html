@@ -7,31 +7,92 @@
   <title>Home</title>
 </head>
 <body>
-  <header title="Adopt A Dog" class="adopt-a-dog">
-  <div class="flex-container">
-    <div class="header">
-      <div class="header-child" id="header-cart">
-        <p><span><img src="./images/cart-icon.svg" alt="Shopping Cart Icon">$1234.56</span></p>
-        <button type="button" name="checkout" id="checkout">Checkout</button>
-      </div>
-      <div class="header-child">
+  <header title="Adopt A Dog Website" class="header">
+    <section class="header-child">
+      <div class="site-logo">
         <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
         <h3>Seattle's premiere dog adoption agency</h3>
       </div>
-    </div>
-  </div>
-  <div class="menu">
-    <nav title="Main Navigation" id="primary-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dogs.html">Dogs</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </div>
+      <div class="main-cart">
+        <p><span><img src="./images/cart-icon.svg" alt="Shopping Cart Icon">$1234.56</span></p>
+        <button type="button" name="checkout" id="checkout">Checkout</button>
+      </div>
+    </section>
+    <section class="header-child">
+      <nav id="main-menu" title="Main Menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </section>
   </header>
 
-  <main class="main-content">
+  <main class="main-content" title="Main Content">
+    <section class="introduction">
+      <img src="./images/home-intro.jpg" alt="Man In A Red Shirt Hugging A Yellow Lab">
+      <h2>Adopt a Dog</h2>
+      <p>Iduciendisite quo magnatem iuntum quid quaest ea am,tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+    </section>
+
+<!-- Insert Blog previews here -->
+    <aside class="blog-previews">
+
+    </aside>
+
+    <section class="tile-grid">
+      <article class="tile"> <!--Murphy-->
+        <img src="./images/murphy-card.jpg" class="card-img" alt="Murphy, A Tan Boxer Mix With White Nose" onclick="dogInfo('Murphy', 'Boxer Mix', 123.45)">
+        <div class="tile-text">
+          <h4>Murphy</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
+        </div>
+      </article>
+      <article class="tile"> <!--Poppy-->
+        <img src="./images/poppy-card.jpg" class="card-img" alt="Poppy, A Small White Shih Tzu" onclick="dogInfo('Poppy', 'Shih Tzu', 123.45)">
+        <div class="tile-text">
+          <h4>Poppy</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
+        </div>
+      </article>
+      <article class="tile"> <!--Jack-->
+        <img src="./images/jack-card.jpg" class="card-img" alt="Jack, A Brown And White Beagle" onclick="dogInfo('Jack', 'Beagle', 123.45)">
+        <div class="tile-text">
+          <h4>Jack</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
+        </div>
+      </article>
+      <article class="tile"> <!--Duffy-->
+        <img src="./images/duffy-card.jpg" class="card-img" alt="Duffy, A Brown And White PitBull With Blue Eyes" onclick="dogInfo('Duffy', 'Pitbull', 123.45)">
+        <div class="tile-text">
+          <h4>Duffy</h4>
+          <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+          <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
+        </div>
+      </article>
+      <article class=""> <!--Lucas-->
+
+      </article>
+      <article class=""> <!--Jake-->
+
+      </article>
+      <article class=""> <!--Angus-->
+
+      </article>
+      <article class=""> <!--Violet-->
+
+      </article>
+
+    </section>
+
   <section title="Intro" class="intro">
     <div class="intro-child">
       <img src="./images/home-intro.jpg" alt="Man In A Red Shirt Hugging A Yellow Lab">

@@ -1,5 +1,5 @@
 function dogInfo(name, breed, fee) {
-  alert("Meet " + name + " the " + breed + "! Adoption Fee: $" + fee);
+  alert(name + " (" + breed + ")" + "\n\nAdoption Fee: $" + fee);
 }
 
 let totalCost = 0;
