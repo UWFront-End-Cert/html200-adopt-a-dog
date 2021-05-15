@@ -6,6 +6,51 @@
   <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
   <title>Home</title>
 </head>
+
+<body>
+  <header class="main-header">
+    <section class="main-header-child">
+      <p>Site logo</p>
+    </section>
+    <section class="main-menu">
+      <p>Main menu</p>
+    </section>
+  </header>
+
+  <main>
+    <section class="introduction">
+      <p>Introduction</p>
+      <!--Image-->
+      <!--Title-->
+      <!--Article-->
+    </section>
+    <section class="dog-grid">
+      <p>Dog Grid</p>
+
+    </section>
+    <aside class="blog-preview">
+      <p>Blog Preview</p>
+
+    </aside>
+  </main>
+
+  <footer class="flex-footer">
+    <!--Footer content-->
+    <p>Footer</p>
+  </footer>
+</body>
+</html>
+
+
+
+<!--
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <title>Home</title>
+</head>
 <body>
   <header title="Adopt A Dog Website" class="header">
     <section class="header-child">
@@ -13,9 +58,9 @@
         <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
         <h3>Seattle's premiere dog adoption agency</h3>
       </div>
-      <div class="main-cart">
+      <div class="cart-icon">
         <p><span><img src="./images/cart-icon.svg" alt="Shopping Cart Icon">$1234.56</span></p>
-        <button type="button" name="cart" id="cart">Checkout</button>
+        <button type="button" name="cart-button" id="cart-button">Checkout</button>
       </div>
     </section>
     <section class="header-child">
@@ -29,22 +74,22 @@
     </section>
   </header>
 
-<!--Introduction-->
-  <main class="main-content" title="Main Content">
+<!-Introduction->
+  <main class="main" title="Main Content">
     <section class="introduction">
       <img src="./images/home-intro.jpg" alt="Man In A Red Shirt Hugging A Yellow Lab">
       <h2>Adopt a Dog</h2>
       <p>Iduciendisite quo magnatem iuntum quid quaest ea am,tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
     </section>
 
-<!-- Blog previews here -->
+<!- Blog previews here ->
     <aside class="blog-previews">
 
     </aside>
 
-<!-- Dogs for Adoption -->
+<!- Dogs for Adoption ->
     <section class="tile-grid">
-      <!--Murphy-->
+      <!-Murphy->
       <article class="tile">
         <img src="./images/murphy-card.jpg" class="" alt="Murphy, A Tan Boxer Mix With White Nose" onclick="dogInfo('Murphy', 'Boxer Mix', 123.45)">
         <div class="tile-text">
@@ -54,7 +99,7 @@
           <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
       </article>
-      <!--Poppy-->
+      <!-Poppy->
       <article class="tile">
         <img src="./images/poppy-card.jpg" class="" alt="Poppy, A Small White Shih Tzu" onclick="dogInfo('Poppy', 'Shih Tzu', 123.45)">
         <div class="tile-text">
@@ -64,7 +109,7 @@
           <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
       </article>
-      <!--Jack-->
+      <!-Jack->
       <article class="tile">
         <img src="./images/jack-card.jpg" class="" alt="Jack, A Brown And White Beagle" onclick="dogInfo('Jack', 'Beagle', 123.45)">
         <div class="tile-text">
@@ -74,7 +119,7 @@
           <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
       </article>
-      <!--Duffy-->
+      <!-Duffy->
       <article class="tile">
         <img src="./images/duffy-card.jpg" class="" alt="Duffy, A Brown And White PitBull With Blue Eyes" onclick="dogInfo('Duffy', 'Pitbull', 123.45)">
         <div class="tile-text">
@@ -84,7 +129,7 @@
           <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
       </article>
-      <!--Lucas-->
+      <!-Lucas->
       <article class="tile">
         <img src="./images/lucas-card.jpg" class="" alt="Lucas, A Black Shepherd Dog" onclick="dogInfo('Lucas', 'Shepherd', 123.45)">
         <div class="tile-text">
@@ -94,7 +139,7 @@
           <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
       </article>
-      <!--Jake-->
+      <!-Jake->
       <article class="tile">
         <img src="./images/jake-card.jpg" class="" alt="Jake, A Yellow Labrador" onclick="dogInfo('Jake', 'Yellow Lab', 123.45)">
         <div class="tile-text">
@@ -104,7 +149,7 @@
           <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
       </article>
-      <!--Angus-->
+      <!-Angus->
       <article class="tile">
         <img src="./images/angus-card.jpg" class="" alt="Angus, A Brown And White Boxer" onclick="dogInfo('Angus', 'Boxer', 123.45)">
         <div class="tile-text">
@@ -114,7 +159,7 @@
           <button class="card-adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
         </div>
       </article>
-      <!--Violet-->
+      <!-Violet->
       <article class="tile">
         <img src="./images/violet-card.jpg" class="" alt="Violet, A Cute Chocolate Labrador Puppy" onclick="dogInfo('Violet', 'Chocolate Lab', 123.45)">
         <div class="tile-text">
