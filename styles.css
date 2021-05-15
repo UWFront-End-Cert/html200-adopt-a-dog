@@ -1,6 +1,122 @@
+/* I. Body Styles */
+
+  /* Grid Layout */
+  body {
+    display: grid;
+    grid-template-columns: auto[1] auto[2] auto[3] auto[4] auto[5] auto[6] auto[7] auto[8] auto[9] auto[10] auto[11] auto[12];
+    grid-template-rows: auto auto auto;
+    border: 1px solid blue;
+  }
+
+  /* Header for all pages */
+
+  .main-header {
+    grid-column: span 12;
+    display: grid;
+    grid-template-rows: auto auto;
+    border: 3px dotted red;
+
+  }
+
+  .main-header-child {
+    grid-column: span 14;
+  }
+
+  /* Main Menu */
+
+  .main-menu {
+    grid-column: span 14;
+    border: 1px dotted pink;
+
+  }
+
+  /* Main content */
+
+  main {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    border: 3px solid yellow;
+  }
+
+  /* Page Titles, except for home page */
+
+  .page-title {
+
+  }
+
+/* II. Home Page Styles */
+
+  /* Introduction */
+
+  .introduction {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  /* Dog Grid */
+
+  .dog-grid {
+    grid-column: span 5;
+    border: 3px dotted orange;
+  }
+
+  /* Blog Preview (Aside) */
+
+  .blog-preview {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 1px dotted green;
+  }
+
+/* III. Dogs for Adoption Page Styles */
+
+  .all-dogs-grid {
+    grid-column: span 8;
+    border: 3px dotted orange;
+  }
+
+/* IV. Adoptadog Blog Page Styles */
+
+  /* All blog posts container */
+
+  .blog-posts-container {
+    grid-column: span 8;
+    border: 2px dotted green;
+  }
+
+/* V. Checkout Page Styles */
+
+  /* Form Container */
+
+  .form-container {
+    grid-column: span 8;
+    border: 2px dotted green;
+  }
+
+/* VI. Footer */
+
+  .flex-footer {
+    grid-column: span 12;
+    border: 1px solid red;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 /* A Long Stylesheet */
 
-/* Universal Styles (Won't Change) */
+/* Universal Styles (Won't Change)
 
 * {
   margin: 0 0 0 0;
@@ -17,7 +133,7 @@ a:hover, a:visited, a:link, a:active {
 
 /* Styling that will probably change */
 
-/* Page Headers */
+/* Page Headers
 
 .header {
   display: flex;
@@ -43,7 +159,7 @@ a:hover, a:visited, a:link, a:active {
   font-style: italic;
 }
 
-.main-cart {
+.cart-icon {
   display: inline-block;
   padding: .5rem;
   font: bold 0.75rem "Work Sans", "Arial", sans-serif;
@@ -52,7 +168,7 @@ a:hover, a:visited, a:link, a:active {
   padding: 2rem 5rem 2rem 5rem;
 }
 
-#cart {
+#cart-button {
   background-color: #8DB353;
   font: .75rem "Work Sans", "Arial", sans-serif;
   color: #ffffff;
@@ -62,7 +178,7 @@ a:hover, a:visited, a:link, a:active {
   padding: .25rem 2rem .25rem 2rem;
 }
 
-/* Main Menu */
+/* Main Menu
 
 #main-menu {
   background-color: #ECECEC;
@@ -96,9 +212,9 @@ a:hover, a:visited, a:link, a:active {
   padding: 1rem 1rem 1rem 1rem;
 }
 
-/* Main Content */
+/* Main Content
 
-.main-content {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +223,7 @@ a:hover, a:visited, a:link, a:active {
   border: 1px dotted green;
 }
 
-/* Home Page Introduction */
+/* Home Page Introduction
 
 .intro {
   display: flex;
@@ -142,20 +258,12 @@ a:hover, a:visited, a:link, a:active {
   max-height: 370px;
 }
 
-/* Dogs Grid */
+/* Dogs Grid
 
 .tile-grid {
   display: flex;
   flex-flow: row wrap;
   padding: 0 1rem 0 1rem;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.all-dogs {
-  margin-left: 5rem;
-  display: flex;
-  flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
 }
@@ -167,11 +275,6 @@ a:hover, a:visited, a:link, a:active {
   margin: 1.75rem 0 1.75rem 0;
   border: 2px solid #E7E3E3;
   width: 20%;
-}
-
-.tile-text {
-  font-size: .75rem;
-  padding: .5rem 0 .5rem 0;
 }
 
 .tile-text {
@@ -212,7 +315,7 @@ a:hover, a:visited, a:link, a:active {
   margin: 0 0 5rem 0;
 }
 
-/* Pages Footer */
+/* Pages Footer
 
 .footer {
   display: flex;
