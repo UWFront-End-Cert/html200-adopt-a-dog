@@ -1,0 +1,150 @@
+body{
+    font-family: 'Syne Mono', monospace;
+    font-size: 16px;
+    background-color: #FAF9F6;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #00B4E6;
+    color: white;
+    background-color: orange;
+    height: 22rem;
+    text-indent: 10rem;
+    justify-content: flex-end;
+  }
+  .header-title {
+    width: 40%;
+    font-family: 'Syne Mono', monospace;
+    font-size: 40px;
+    height: 1rem;
+  }
+  
+  /* move skip-to-link off the page*/
+  .hidden {
+    position: relative;
+    left: -10000px;
+    top: auto;
+  }
+  
+  /* make skip-to-link visible when it has focus */
+  .hidden:focus {
+    left: 0;
+  }
+  .menu {
+    background-color: #00B4E6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: black;
+    font-family: 'Syne Mono', monospace;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .intro-container {
+      display: flex;
+      flex-direction: row;
+      padding-left: 5rem;
+      padding-right: 5rem;
+  }
+  .intro h1, p {
+      padding-left: 5rem;
+  }
+ 
+  .flex-footer {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #154c79;
+    color: #F5F5F5;
+    font-size: 14px;
+  }
+  .cat-logo {
+    width: 80%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  
+  
+  /* transitions, pseudo-selectors */
+  
+  a {
+    text-decoration: none;
+    color: #00546B;
+  }
+  .menu a:visited {
+    color: #808080;
+  }
+  .left-pane-box::first-letter {
+    font-size: 200%;
+    color: #4169E1;
+  }
+  .awesome-font i:nth-child(even) {
+    color: #FFFF00;
+  }
+  .story:hover {
+    font-size: 30px;
+  }
+  .story p:nth-child(2n) {
+    transition: font-size 15s ease-out 2s;
+  }
+
+
+
+
+  .cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+
+}
+.card {
+    box-shadow: 2px 1px #888888;
+}
+.card-image {
+    width: 100%;
+    display: block;
+}
+.card-content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    background: #fafafa;
+}
+.card-content > p:first-of-type {
+  margin-top: 0;
+}
+.card-content > p:last-of-type {
+  margin-bottom: 0;
+}
+.submit-button {
+  display: flex;
+  justify-content: space-around;
+  padding: .5rem;
+  background-color: yellowgreen;
+}
+input[type="button"] {
+  border: none;
+  background-color: yellowgreen;
+}
+a:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+.see-more-dogs {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+
+#button-link {
+  background-color: #d3d3d3;
+  color: #154c79;
+  font-size: 1.25rem;
+  font-weight: bold;
+  width: 20%;
+  padding: .5rem;
+}
+  

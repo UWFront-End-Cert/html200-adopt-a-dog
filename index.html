@@ -1,72 +1,293 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Adopt A Dog</title>
-    <style media="screen">
-      body {background-color:blue;}
-    </style>
+    <link rel="stylesheet" href="Styles/adopt-a-dog.css">
   </head>
-
   <body>
-    <div class="container">
-      <header>
-        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 505.766 153.879"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{font-size:62.641px;font-family:WorkSans-Black, Work Sans;letter-spacing:-0.009em;}.cls-3,.cls-7{fill:#fff;}.cls-4{letter-spacing:-0.03em;}.cls-5{letter-spacing:-0.098em;}.cls-6{letter-spacing:0em;}</style><clipPath id="clip-path" transform="translate(-1 -1.168)"><rect class="cls-1" x="1" y="1.168" width="502.59" height="135.832"/></clipPath></defs><title>adoptadog-logo</title><g class="cls-2"><text class="cls-3" transform="matrix(0.966, 0, -0.259, 0.966, 117.172, 133.124)">ADO<tspan class="cls-4" x="131.984" y="0">P</tspan><tspan class="cls-5" x="174.329" y="0">T</tspan><tspan x="211.162" y="0">ADO</tspan><tspan class="cls-6" x="343.146" y="0">G</tspan></text><path class="cls-7" d="M126.091,35.331c-1.677-.71-8.14-3.5-9.607-4.406s-3.959-2.266-3.847-3.395a5.082,5.082,0,0,0-2.6-4.976c-2.6-1.695-7.8-4.525-8.147-5.769s.8-3.731,1.021-5.315,1.923-4.636,1.923-6.332.112-4.864-2.146-3.731-2.6,4.07-4.3,6.444-5.429,7.354-6.1,8.934-5.542,5.881-7.012,7.349-7.577,10.633-8.368,13.8-7.914,16.06-11.872,19.905-14.254,15.719-15.95,18.1-11.2,16.4-12.1,19.112a128.846,128.846,0,0,0-3.505,13.23c-.228,2.038-1.244,11.875-1.244,13.117s-5.882,4.977-9.161,3.619-13.568-5.77-15.04-7.8-8.03-4.747-6.9-3.279,5.2,7.579,7.461,9.388,12.9,6,16.854,4.977,8.6-2.6,11.2-1.586,2.486,4.754,8.028,5.433,17.756,3.277,20.359,2.6,2.823-3.621,1.921-3.956,7.123-3.282,8.595-3.282,3.049-2.037,3.165-2.828-1.246-2.035-2.6-2.035a12.273,12.273,0,0,1-4.3-.679c-.9-.451-1.355-2.374-.223-3.619s4.293-5.2,4.637-7.349-1.132-2.828.447-4.186,3.395-3.73,3.847-2.484,3.507,10.173,4.523,12.664,2.379,10.858,2.379,12.1-.456,5.651.791,5.77,7.572.56,8.028,0,2.488-1.021,3.056-1.021,4.405,1.244,4.858-.114.9-3.956-.23-4.293-2.147-2.828-2.147-3.168-2.146-13.8-2.258-15.61-.567-10.172-.567-11.307.455-10.968.567-12.775.467-7.237,1.251-9.161,1.007-5.2,1.349-7.579-1.474-4.407-2.035-6.9-2.376-5.769-1.923-7.916,2.037-9.275,3.393-10.063,4.523-1.135,7.238-.8,6.672,1.128,7.916.8a20.385,20.385,0,0,0,4.861-2.036c1.132-.8,1.586-1.924,2.488-2.6s4.33-4.007,2.035-4.979" transform="translate(-1 -1.168)"/></g></svg>
-        <img src="images/header-image.jpg" alt="">
-        <p>Seattle's premiere dog adoption agency</p>
-        <svg id="Layer_2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28.592 26.168"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#fff;}</style><clipPath id="clip-path" transform="translate(-0.5 -0.5)"><rect class="cls-1" x="0.5" y="0.5" width="28.592" height="26.168"/></clipPath></defs><title>cart-icon</title><g class="cls-2"><path class="cls-3" d="M23.138,21.677A1.426,1.426,0,1,0,24.564,23.1a1.427,1.427,0,0,0-1.426-1.426m0,4.991A3.565,3.565,0,1,1,26.7,23.1a3.569,3.569,0,0,1-3.565,3.565" transform="translate(-0.5 -0.5)"/><path class="cls-3" d="M9.615,15.865H24.583l2.073-8.378H7.613ZM25.42,18H8.771a1.069,1.069,0,0,1-1.04-.821L4.255,2.639H1.569A1.07,1.07,0,0,1,1.569.5H5.1a1.069,1.069,0,0,1,1.04.821L7.1,5.348H28.023a1.07,1.07,0,0,1,1.038,1.327l-2.6,10.517A1.069,1.069,0,0,1,25.42,18" transform="translate(-0.5 -0.5)"/><path class="cls-3" d="M10.2,21.677A1.426,1.426,0,1,0,11.623,23.1,1.427,1.427,0,0,0,10.2,21.677m0,4.991A3.565,3.565,0,1,1,13.762,23.1,3.569,3.569,0,0,1,10.2,26.668" transform="translate(-0.5 -0.5)"/></g></svg>
-        <button type="button" name="checkout">checkout</button>
-          <nav>
-            <p>
-              Home / Dogs / Blog
-            </p>
-          </nav>
-        </header>
-
-        <div class="home-intro">
-          <p>
-            <img src="images/home-intro.jpg" alt="person wearing a burgundy shirt and hugging a dog">
-          </p>
-          <section>
-            <h2>Adopt A Dog</h2>
-            <p>
-              Iduciendisite quo magnatem iuntum quid quaest ea am,
-tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-derum recuptatur, cum volore, undipsa doloreium hillupta aut
-es ut alitatuscit ommossum haritatur arum qui officae videbiti
-corporeium faccull oribus es quidignis ipietus explam sus
-am aut amet ant fugiatum, utem non reptat ad magnienecto
-volorent fugia nonsedi gendand itatquos as magnimpor aut
-molor autatia ad est officimus accae et omnia cus, od qui ate
-            </p>
-          </section>
+    <a class="hidden" href="#main-content">Skip to content</a>
+    <div class="header-container">
+        <div>
+          <p class="header-title"><img src="images/adoptadog-logo.svg" alt="This is an image of a sitting white dog with pointy ears."></p>
+          <p class="header-description">Seattle's premier dog adoption agency</p>
         </div>
-        <div class="dog-cards">
-      <div class="photo">
-          <p><img class="dog-card" src="images/murphy-card.jpg" alt=""></p>
-      </div>
-      <div class="bio">
-        <div class="i-name">
-          <h1>Murphy</h1>
-        </div>
-        <div class="">
-          <h3>Cost to Adopt: $123.45</h3>
-        </div>
-        <div class="">
-          <p>
-            Corrum volorit iandae
-nimaxim cum restia volor
-reicid ut et etur sunt arum
-rendae pla endis re ea erum,
-qui doluptae
-          </p>
-        </div>
-        <div class="">
-          <button type="button" name="adopt-button">Adopt</button>
-        </div>
-      </div>
+        <div class="menu"><p>Home / Dogs / Blog</p></div>
     </div>
 
+
+    <!--div class="intro-container">
+        <div class="i-image">
+            <p>
+                <img src="images/home-intro.jpg" alt="">
+            </p>
+        </div>
+        <div class="intro">
+            <h1>Adopt A Dog</h1>
+            <p>
+                Iduciendisite quo magnatem iuntum quid quaest ea am,
+                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+                derum recuptatur, cum volore, undipsa doloreium hillupta aut
+                es ut alitatuscit ommossum haritatur arum qui officae videbiti
+                corporeium faccull oribus es quidignis ipietus explam sus
+                am aut amet ant fugiatum, utem non reptat ad magnienecto
+                volorent fugia nonsedi gendand itatquos as magnimpor aut
+                molor autatia ad est officimus accae et omnia cus, od qui ate
+            </p>
+        </div>
+    </div-->
+    <div class="intro">
+      <div class="intro-image">
+        <img src="images/home-intro.jpg" alt="">
+      </div>
+      <div>
+        <p>Adopt A Dog</p>
+        <p>
+          Iduciendisite quo magnatem iuntum quid quaest ea am,
+          tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+          derum recuptatur, cum volore, undipsa doloreium hillupta aut
+          es ut alitatuscit ommossum haritatur arum qui officae videbiti
+          corporeium faccull oribus es quidignis ipietus explam sus
+          am aut amet ant fugiatum, utem non reptat ad magnienecto
+          volorent fugia nonsedi gendand itatquos as magnimpor aut
+          molor autatia ad est officimus accae et omnia cus, od qui ate 
+        </p>
+      </div>
+
+    </div>
+    <div class="cards">
+        <div class="card">
+            <img class="card-image" src="images\murphy-card.jpg" alt="">
+            <div class="card-content">
+                <h3>
+                    Murphy
+                </h3>
+                <p>
+                    Cost to Adopt: $123.45
+                </p>
+                <p>
+                    Corrum volorit iandae
+                    nimaxim cum restia volor
+                    reicid ut et etur sunt arum
+                    rendae pla endis re ea erum,
+                    qui doluptae
+                </p>
+            </div>
+            <div class="submit-button">
+                <div>
+                    <button type="button">
+                        <a href="">Adopt</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images\poppy-card.jpg" alt="">
+            <div class="card-content">
+                <h3>
+                    Poppy
+                </h3>
+                <p>
+                    Cost to Adopt: $123.45
+                </p>
+                <p>
+                    Corrum volorit iandae
+                    nimaxim cum restia volor
+                    reicid ut et etur sunt arum
+                    rendae pla endis re ea erum,
+                    qui doluptae
+                </p>
+            </div>
+            <div class="submit-button">
+                <div>
+                    <button type="submit">
+                        <a href="">Adopt</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images\jack-card.jpg" alt="">
+            <div class="card-content">
+                <h3>
+                    Jack
+                </h3>
+                <p>
+                    Cost to Adopt: $123.45
+                </p>
+                <p>
+                    Corrum volorit iandae
+                    nimaxim cum restia volor
+                    reicid ut et etur sunt arum
+                    rendae pla endis re ea erum,
+                    qui doluptae
+                </p>
+            </div>
+            <div class="submit-button">
+                <div>
+                    <button type="submit">
+                        <a href="">Adopt</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images\duffy-card.jpg" alt="">
+            <div class="card-content">
+                <h3>
+                    Duffy
+                </h3>
+                <p>
+                    Cost to Adopt: $123.45
+                </p>
+                <p>
+                    Corrum volorit iandae
+                    nimaxim cum restia volor
+                    reicid ut et etur sunt arum
+                    rendae pla endis re ea erum,
+                    qui doluptae
+                </p>
+            </div>
+            <div class="submit-button">
+                <div>
+                    <button type="submit">
+                        <a href="">Adopt</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images\lucas-card.jpg" alt="">
+            <div class="card-content">
+                <h3>
+                    Lucas
+                </h3>
+                <p>
+                    Cost to Adopt: $123.45
+                </p>
+                <p>
+                    Corrum volorit iandae
+                    nimaxim cum restia volor
+                    reicid ut et etur sunt arum
+                    rendae pla endis re ea erum,
+                    qui doluptae
+                </p>
+            </div>
+            <div class="submit-button">
+                <div>
+                    <button type="submit">
+                        <a href="">Adopt</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images\jake-card.jpg" alt="">
+            <div class="card-content">
+                <h3>
+                    Jake
+                </h3>
+                <p>
+                    Cost to Adopt: $123.45
+                </p>
+                <p>
+                    Corrum volorit iandae
+                    nimaxim cum restia volor
+                    reicid ut et etur sunt arum
+                    rendae pla endis re ea erum,
+                    qui doluptae
+                </p>
+            </div>
+            <div class="submit-button">
+                <div>
+                    <button type="submit">
+                        <a href="">Adopt</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images\angus-card.jpg" alt="">
+            <div class="card-content">
+                <h3>
+                    Angus
+                </h3>
+                <p>
+                    Cost to Adopt: $123.45
+                </p>
+                <p>
+                    Corrum volorit iandae
+                    nimaxim cum restia volor
+                    reicid ut et etur sunt arum
+                    rendae pla endis re ea erum,
+                    qui doluptae
+                </p>
+            </div>
+            <div class="submit-button">
+                <div>
+                    <button type="submit">
+                        <a href="">Adopt</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images\violet-card.jpg" alt="">
+            <div class="card-content">
+                <h3>
+                    Violet
+                </h3>
+                <p>
+                    Cost to Adopt: $123.45
+                </p>
+                <p>
+                    Corrum volorit iandae
+                    nimaxim cum restia volor
+                    reicid ut et etur sunt arum
+                    rendae pla endis re ea erum,
+                    qui doluptae
+                </p>
+            </div>
+            <div class="submit-button">
+                <div>
+                    <button type="submit">
+                        <a href="">Adopt</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="see-more-dogs">
+        <button type="button" id="button-link">
+            <a class="more-dogs-link" href="">See More Dogs</a>
+        </button>
+    </div>
+
+
+
+    <div class="flex-footer">
+      <div class="footer">
+        <p>
+          <img class="cat-logo" src="images/adoptadog-logo.svg" alt="This is an image of a sitting white dog with pointy ears.">
+        </p>
+      </div>
+      <div class="footer">
+        <p>
+            Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+            esseque invenienihil imaximu scideru ptistiusam consequunt
+        </p>
+      </div>
+      <div class="footer">
+        <p>
+          Home / Dogs / Contact
+        </p>
+      </div>
+      <div class="footer">
+        <p>
+          ©2018 Adoptadog, LLC | Seattle, WA
+        </p>
+      </div>
     </div>
   </body>
 </html>
