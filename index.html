@@ -2,28 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Adopt A Dog</title>
+    <title>Adopt A Dog Home Page</title>
     <link rel="stylesheet" href="Styles/adopt-a-dog.css">
   </head>
   <body>
     <a class="hidden" href="#main-content">Skip to content</a>
     <div class="header-container">
-        <div>
-          <p class="header-title"><img src="images/adoptadog-logo.svg" alt="This is an image of a sitting white dog with pointy ears."></p>
-          <p class="header-description">Seattle's premier dog adoption agency</p>
+        <div class="header-logo">
+            <img src="images/adoptadog-logo.svg" alt="This is an image of a sitting white dog with pointy ears."></p>
+            <p class="header-description">Seattle's premier dog adoption agency</p>
         </div>
-        <div class="menu"><p>Home / Dogs / Blog</p></div>
-    </div>
-
-
-    <!--div class="intro-container">
-        <div class="i-image">
+        <div class="checkout">
+            <img class="header-image" src="images\header-image.jpg" alt="">
+            <!--div class="checkout-contents"-->
+                <div>
+                    <img class="cart-image" src="images\cart-icon.svg" alt="">
+                </div>
+                <div>
+                    <p class="cart-total">$1234.56</p>
+                </div>
+            </div>
+            <div class="checkout-button">
+                <button type="button">
+                    <a href="form.html">Checkout</a>
+                </button>
+            <!--/div-->
+        </div>
+        <div class="menu">
             <p>
-                <img src="images/home-intro.jpg" alt="">
+                <a href="index.html">Home</a> / 
+                <a href="dogs.html">Dogs</a> / 
+                <a href="blog.html">Blog</a>
             </p>
         </div>
-        <div class="intro">
-            <h1>Adopt A Dog</h1>
+    </div>
+
+    
+    <div class="intro">
+        <div class="intro-image">
+            <img src="images/home-intro.jpg" alt="">
+        </div>
+        <div class="intro-details">
+            <p>Adopt A Dog</p>
             <p>
                 Iduciendisite quo magnatem iuntum quid quaest ea am,
                 tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
@@ -34,27 +54,11 @@
                 volorent fugia nonsedi gendand itatquos as magnimpor aut
                 molor autatia ad est officimus accae et omnia cus, od qui ate
             </p>
+
         </div>
-    </div-->
-    <div class="intro">
-      <div class="intro-image">
-        <img src="images/home-intro.jpg" alt="">
-      </div>
-      <div>
-        <p>Adopt A Dog</p>
-        <p>
-          Iduciendisite quo magnatem iuntum quid quaest ea am,
-          tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-          derum recuptatur, cum volore, undipsa doloreium hillupta aut
-          es ut alitatuscit ommossum haritatur arum qui officae videbiti
-          corporeium faccull oribus es quidignis ipietus explam sus
-          am aut amet ant fugiatum, utem non reptat ad magnienecto
-          volorent fugia nonsedi gendand itatquos as magnimpor aut
-          molor autatia ad est officimus accae et omnia cus, od qui ate 
-        </p>
-      </div>
 
     </div>
+
     <div class="cards">
         <div class="card">
             <img class="card-image" src="images\murphy-card.jpg" alt="">
@@ -260,7 +264,7 @@
     
     <div class="see-more-dogs">
         <button type="button" id="button-link">
-            <a class="more-dogs-link" href="">See More Dogs</a>
+            <a class="more-dogs-link" href="dogs.html">See More Dogs</a>
         </button>
     </div>
 

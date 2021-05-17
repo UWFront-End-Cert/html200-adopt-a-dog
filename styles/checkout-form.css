@@ -1,0 +1,135 @@
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 1rem;
+  }
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+  }
+  a, h1, h2, h3 {
+    color: #102073;
+  }
+  
+  h1{
+    text-align: center;
+    border-bottom: .5rem solid #A9A9A9;
+  }
+  h2 {
+    height: 3rem;
+    font-style: italic;
+  }
+  input {
+    border-radius: 0px;
+  }
+  /* hide arrows for Chrome and Edge browsers */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* hide arrows for Firefox browser*/
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  legend {
+    font-size: 1.5rem;
+  }
+  input[type="submit"] {
+    background-color: #A9A9A9;
+    color: rgb(0,255,255);
+    width: 100%;
+  }
+  fieldset {
+    border: none;
+  }
+  fieldset input {
+    display: inline;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+
+  }
+  .header-logo {
+    width: 60%;
+    align-self: center;
+    margin-left: 5rem;
+    margin-bottom: 0;
+  }
+  .header-description {
+    color: #437915;
+    font-size: 1.5rem;
+    margin-top: 0;
+
+  }
+  .header-image {
+    width: 85%;
+
+  }
+  .checkout {
+    display: flex;
+    border: 1px solid green;
+    flex-direction: column;
+    align-items: flex-end;
+
+  }
+  .checkout-contents {
+    
+  }
+  .cart-image {
+    width: 20%;
+  }
+  .cart-total {
+    color: white;
+    align-self: center;
+    
+  }
+  .checkout-button {
+  }
+  .menu {
+    align-self: flex-end;
+
+  }
+  
+  /* move skip-to-link off the page*/
+  .hidden {
+    position: relative;
+    left: -10000px;
+    top: auto;
+  }
+  
+  /* make skip-to-link visible when it has focus */
+  .hidden:focus {
+    left: 0;
+  }
+  .menu {
+    background-color: #e0dfda;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    color: #102073;
+    font-family: 'Syne Mono', monospace;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .flex-footer {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #154c79;
+    color: #F5F5F5;
+    font-size: 14px;
+  }
+  .cat-logo {
+    width: 80%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  

@@ -1,14 +1,15 @@
 body{
-    font-family: 'Syne Mono', monospace;
-    font-size: 16px;
-    background-color: #FAF9F6;
+
+  } 
+  a, h1, h2, h3 {
+    color: #102073;
   }
+  /*
   .header-container {
     display: flex;
     flex-direction: column;
-    background-color: #00B4E6;
+    background-color: black;
     color: white;
-    background-color: orange;
     height: 22rem;
     text-indent: 10rem;
     justify-content: flex-end;
@@ -18,6 +19,53 @@ body{
     font-family: 'Syne Mono', monospace;
     font-size: 40px;
     height: 1rem;
+  }
+  */
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+
+  }
+  .header-logo {
+    width: 60%;
+    align-self: center;
+    margin-left: 5rem;
+    margin-bottom: 0;
+  }
+  .header-description {
+    color: #437915;
+    font-size: 1.5rem;
+    margin-top: 0;
+
+  }
+  .header-image {
+    width: 85%;
+
+  }
+  .checkout {
+    display: flex;
+    border: 1px solid green;
+    flex-direction: column;
+    align-items: flex-end;
+
+  }
+  .checkout-contents {
+    
+  }
+  .cart-image {
+    width: 20%;
+  }
+  .cart-total {
+    color: white;
+    align-self: center;
+    
+  }
+  .checkout-button {
+  }
+  .menu {
+    align-self: flex-end;
+
   }
   
   /* move skip-to-link off the page*/
@@ -32,66 +80,38 @@ body{
     left: 0;
   }
   .menu {
-    background-color: #00B4E6;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: black;
+    background-color: #e0dfda;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    color: #102073;
     font-family: 'Syne Mono', monospace;
     font-size: 18px;
     font-weight: bold;
   }
-  .intro-container {
-      display: flex;
-      flex-direction: row;
-      padding-left: 5rem;
-      padding-right: 5rem;
-  }
-  .intro h1, p {
-      padding-left: 5rem;
-  }
  
-  .flex-footer {
-    display: flex;
-    height: 400px;
-    flex-direction: column;
-    align-items: center;
-    background-color: #154c79;
-    color: #F5F5F5;
-    font-size: 14px;
+  /* intro */
+  .intro {
+    display: grid;
+    margin-left: 6rem;
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+ 
   }
-  .cat-logo {
-    width: 80%;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+  .intro-image { 
+    width: 100%;
   }
+  .intro-details >p:first-of-type {
+    font-size: 1.5rem;
+    color: #102073;
+    font-weight: bold; 
+  }
+
   
+  /* dog cards */
   
-  /* transitions, pseudo-selectors */
-  
-  a {
-    text-decoration: none;
-    color: #00546B;
-  }
-  .menu a:visited {
-    color: #808080;
-  }
-  .left-pane-box::first-letter {
-    font-size: 200%;
-    color: #4169E1;
-  }
-  .awesome-font i:nth-child(even) {
-    color: #FFFF00;
-  }
-  .story:hover {
-    font-size: 30px;
-  }
-  .story p:nth-child(2n) {
-    transition: font-size 15s ease-out 2s;
-  }
-
-
-
-
   .cards {
     margin: 0 auto;
     max-width: 1000px;
@@ -141,10 +161,82 @@ a:hover{
 
 #button-link {
   background-color: #d3d3d3;
-  color: #154c79;
+  color: #102073;
   font-size: 1.25rem;
   font-weight: bold;
   width: 20%;
   padding: .5rem;
 }
+  .flex-footer {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #154c79;
+    color: #F5F5F5;
+    font-size: 14px;
+  }
+  .cat-logo {
+    width: 80%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  
+  
+  /* transitions, pseudo-selectors */
+  
+  a {
+    text-decoration: none;
+    color: #00546B;
+  }
+  .menu a:visited {
+    color: #808080;
+  }
+  .left-pane-box::first-letter {
+    font-size: 200%;
+    color: #4169E1;
+  }
+  .awesome-font i:nth-child(even) {
+    color: #FFFF00;
+  }
+  .story:hover {
+    font-size: 30px;
+  }
+  .story p:nth-child(2n) {
+    transition: font-size 15s ease-out 2s;
+  }
+
+.title {
+  padding-left: 8rem;
+  padding-top: 1rem;
+}
+.title h1 {
+  color: #102073;
+}
+h3 {
+  color: #102073;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+
+}
+.blog {
+  display: flex;
+  column-gap: 5rem;
+  padding-left: 8rem;
+}
+.blog-image {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+}
+.blog-content {
+  line-height: 1.5;
+  font-size: 1em;
+
+}
+
+
   
