@@ -10,8 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body onload="runRefactor()">
     <header class="header-box">
       <div class="header-item">
         <img class="logo" src="../images/adoptadog-logo.svg" alt="logo" />
@@ -20,7 +25,7 @@
       <div class="head-item">
         <img class="cart" src="../images/cart-icon.svg" alt="checkout cart" />
         <span><output id="total"></output></span>
-        <p class="btn">Checkout</p>
+        <p class="checkoutbtn">Checkout</p>
       </div>
     </header>
 
@@ -32,40 +37,26 @@
       <a class="nav-item" href="blog.html">Blog</a>
     </nav>
 
-    <section class="main-content">
+    <section class="blog-main-content">
       <h1 class="blog-h1">Adoptadog Blog</h1>
       <div class="article-box">
         <div class="article-item">
           <img
             class="blog-page-image"
-            src="../images/blog-1.jpg"
-            alt="A man enjoying the canyan scenery with his dog"
+            src="image"
+            alt="Image Substitute"
             srcset="
               ../images/blog-1-square-400.jpg 400w,
               ../images/blog-1-square-600.jpg 600w,
               ../images/blog-1-square-800.jpg 800w
             "
-            sizes="(max-width: 500px) 400px, (min-width: 501px) and (max-width: 759px) 600px, (min-width: 760px) 800px, 100vw"
+            sizes="Size Values"
           />
         </div>
         <div class="article-item">
-          <h2>Traveling With Your Dog</h2>
-          <p>
-            Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis
-            dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum
-            volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum
-            haritatur arum qui officae videbiti corporeium faccull oribus es
-            quidignis ipietus explam sus am aut amet ant fugiatum, utem non
-            reptat.
-          </p>
-          <p>
-            Uptiusd andesci qui nem aut vendion ectur? Debis que explaut
-            laborenia que doluptur, con et labor abor sant poreperum dio quat
-            que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus
-            esere dolut hicto teni solutenis alit ulparume nonseca estorer
-            spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut
-            hicto teni solutenis alit ulparume nonseca estorer spernam.
-          </p>
+          <h2>Title</h2>
+          <p>Text goes here</p>
+          <p>Second Paragraph</p>
         </div>
       </div>
 
@@ -73,34 +64,20 @@
         <div class="article-item">
           <img
             class="blog-page-image"
-            src="../images/blog-2.jpg"
-            alt="Four dogs looking at their dog walkers"
+            src="image"
+            alt="Image Substitute"
             srcset="
               ../images/blog-2-square-400.jpg 400w,
               ../images/blog-2-square-600.jpg 600w,
               ../images/blog-2-square-800.jpg 800w
             "
-            sizes="(max-width: 500px) 400px, (min-width: 501px) and (max-width: 759px) 600px, (min-width: 760px) 800px, 100vw"
+            sizes="Size Values"
           />
         </div>
         <div class="article-item">
-          <h2>How To Walk Multiple Dogs</h2>
-          <p>
-            Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis
-            dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum
-            volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum
-            haritatur arum qui officae videbiti corporeium faccull oribus es
-            quidignis ipietus explam sus am aut amet ant fugiatum, utem non
-            reptat.
-          </p>
-          <p>
-            Uptiusd andesci qui nem aut vendion ectur? Debis que explaut
-            laborenia que doluptur, con et labor abor sant poreperum dio quat
-            que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus
-            esere dolut hicto teni solutenis alit ulparume nonseca estorer
-            spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut
-            hicto teni solutenis alit ulparume nonseca estorer spernam.
-          </p>
+          <h2>Title</h2>
+          <p>Text</p>
+          <p>Text</p>
         </div>
       </div>
 
@@ -108,34 +85,20 @@
         <div class="article-item">
           <img
             class="blog-page-image"
-            src="../images/blog-3.jpg"
-            alt="A girl holding up a ball in front of a dog"
+            src="image"
+            alt="Image Substitute"
             srcset="
               ../images/blog-3-square-400.jpg 400w,
               ../images/blog-3-square-600.jpg 600w,
               ../images/blog-3-square-800.jpg 800w
             "
-            sizes="(max-width: 500px) 400px, (min-width: 501px) and (max-width: 759px) 600px, (min-width: 760px) 800px, 100vw"
+            sizes="Size Values"
           />
         </div>
         <div class="article-item">
-          <h2>Teach Your Dog To Fetch!</h2>
-          <p>
-            Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis
-            dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum
-            volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum
-            haritatur arum qui officae videbiti corporeium faccull oribus es
-            quidignis ipietus explam sus am aut amet ant fugiatum, utem non
-            reptat.
-          </p>
-          <p>
-            Uptiusd andesci qui nem aut vendion ectur? Debis que explaut
-            laborenia que doluptur, con et labor abor sant poreperum dio quat
-            que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus
-            esere dolut hicto teni solutenis alit ulparume nonseca estorer
-            spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut
-            hicto teni solutenis alit ulparume nonseca estorer spernam.
-          </p>
+          <h2>Title</h2>
+          <p>Text</p>
+          <p>Text</p>
         </div>
       </div>
     </section>

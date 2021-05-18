@@ -34,12 +34,6 @@ img {
   width: 100%;
   height: auto;
 }
-.main-content {
-  padding-left: 5rem;
-  padding-right: 3rem;
-  padding-bottom: 3rem;
-  flex: 250rem;
-}
 
 /* Header...........*/
 header {
@@ -65,6 +59,24 @@ header .btn {
   font-style: normal;
   font-weight: bold;
   margin-left: inherit;
+}
+.checkoutbtn {
+  font-style: normal;
+  font-weight: bold;
+  margin-left: inherit;
+  background-color: #00cc33;
+  color: #fbfcfc;
+  border-radius: 0.2em;
+  padding: 0.2em 4em;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+
+  display: inline-block;
+
+  margin-right: 5%;
+  margin-bottom: 5%;
+  cursor: pointer;
 }
 header img {
   color: #fbfcfc;
@@ -103,6 +115,12 @@ nav a {
   flex-wrap: nowrap;
 }
 /* Introduction article...........*/
+.intro-main-content {
+  padding-left: 5rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  flex: 250rem;
+}
 .intro-article-box {
   justify-content: center;
 }
@@ -219,6 +237,12 @@ footer nav a {
 }
 
 /* Blog page article...........*/
+.blog-main-content {
+  padding-left: 5rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  flex: 250rem;
+}
 .blog-h1 {
   margin-left: 3rem;
 }
