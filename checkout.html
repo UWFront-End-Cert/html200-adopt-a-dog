@@ -3,34 +3,204 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <title>Checkout</title>
 </head>
 
 <body>
   <header class="main-header">
-    <section class="main-header-child">
-      <p>Site logo</p>
-    </section>
+    <div class="main-header-grid-container">
+      <section class="logo">
+        <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+        <h3>Seattle's premiere dog adoption agency</h3>
+      </section>
+      <section class="cart">
+        <p><span><img src="./images/cart-icon.svg" alt="Shopping Cart Icon">$1234.56</span></p>
+        <button type="button" name="cart-button" id="cart-button">Checkout</button>
+      </section>
+    </div>
     <section class="main-menu">
-      <p>Main menu</p>
+      <nav id="main-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
     </section>
   </header>
 
   <main>
-    <section class="page-title">
-      <p>Page Title</p>
-    </section>
-    <section class="form-container">
-      <p>Checkout Form</p>
-    </section>
+    <div class="main-content-grid-container">
+      <h1 class="page-title">Checkout</h1>
+      <form class="checkout-form" method="GET">
+        <!--Adopter Name-->
+        <section class="form-section">
+          <h2 class="form-section-titles">Name</h2>
+          <label for="adopterName">
+            <input type="text" name="adopterName" value="" id="adopterName">
+          </label>
+        </section>
+        <!--Adopter Email-->
+        <section class="form-section">
+          <h2 class="form-section-titles">Email</h2>
+          <label for="adopterEmail">
+            <input type="text" name="adopterEmail" value="" id="adopterEmail">
+          </label>
+        </section>
+        <!--Adopter Street Address-->
+        <section class="form-section">
+          <h2 class="form-section-titles">Street Address</h2>
+          <label for="adopterStreet">
+            <input type="text" name="adopterStreet" value="" id="adopterStreet">
+          </label>
+        </section>
+        <!--Adopter City, State, Zip-->
+        <section class="form-section">
+          <div class="cityStateZip">
+            <!--City-->
+            <article class="cityStateZip-child">
+              <h2 class="form-section-titles">City</h2>
+              <label for="adopterCity">
+                <input type="text" name="adopterCity" value="" id="adopterCity">
+              </label>
+            </article>
+            <!--State-->
+            <article class="cityStateZip-child">
+              <h2 class="form-section-titles">State</h2>
+              <label for="adopterState">
+                <select name="adopterState" id="adopterState">
+                  <option value="AL">AL</option>
+                  <option value="AK">AK</option>
+                  <option value="AZ">AZ</option>
+                  <option value="AR">AR</option>
+                  <option value="CA">CA</option>
+                  <option value="CO">CO</option>
+                  <option value="CT">CT</option>
+                  <option value="DE">DE</option>
+                  <option value="DC">DC</option>
+                  <option value="FL">FL</option>
+                  <option value="GA">GA</option>
+                  <option value="HI">HI</option>
+                  <option value="ID">ID</option>
+                  <option value="IL">IL</option>
+                  <option value="IN">IN</option>
+                  <option value="IA">IA</option>
+                  <option value="KS">KS</option>
+                  <option value="KY">KY</option>
+                  <option value="LA">LA</option>
+                  <option value="ME">ME</option>
+                  <option value="MD">MD</option>
+                  <option value="MA">MA</option>
+                  <option value="MI">MI</option>
+                  <option value="MN">MA</option>
+                  <option value="MS">MI</option>
+                  <option value="MO">MO</option>
+                  <option value="MT">MT</option>
+                  <option value="NE">NE</option>
+                  <option value="NV">NV</option>
+                  <option value="NH">NH</option>
+                  <option value="NJ">NJ</option>
+                  <option value="NM">NM</option>
+                  <option value="NY">NY</option>
+                  <option value="NC">NC</option>
+                  <option value="ND">ND</option>
+                  <option value="OH">OH</option>
+                  <option value="OK">OK</option>
+                  <option value="OR">OR</option>
+                  <option value="PA">PA</option>
+                  <option value="RI">RI</option>
+                  <option value="SC">SC</option>
+                  <option value="SD">SD</option>
+                  <option value="TN">TN</option>
+                  <option value="TX">TX</option>
+                  <option value="UT">UT</option>
+                  <option value="VT">VT</option>
+                  <option value="VA">VA</option>
+                  <option value="WA">WA</option>
+                  <option value="WV">WV</option>
+                  <option value="WI">WI</option>
+                  <option value="WY">WY</option>
+                </select>
+              </label>
+            </article>
+            <!--Zip-->
+            <article class="cityStateZip-child">
+              <h2 class="form-section-titles">Zip Code</h2>
+              <label for="adopterZip">
+                <input type="text" name="adopterZip" value="" id="adopterZip">
+              </label>
+            </article>
+          </div>
+        </section>
+        <!--First Time Adopter-->
+        <section class="form-section">
+          <h2 class="form-section-titles">First Time Adopter?</h2>
+          <fieldset class="firstAdoption">
+            <section id="yesFirstAdoption">
+              <input type="radio" name="yesFirst" value="yes">
+              <label for="yesFirst" id="yesFirst" name="yesFirst">Yes</label>
+            </section>
+            <section id="notFirstAdoption">
+              <input type="radio" name="notFirst" value="no">
+              <label for="notFirst" id="notFirst" name="notFirst">No</label>
+            </section>
+          </fieldset>
+        </section>
+        <!--Pickup Location-->
+        <section class="form-section">
+          <h2 class="form-section-titles">Pickup Location</h2>
+          <label for="pickupLocation">
+            <select name="pickup" id="pickupLocation">
+                <option value="Seattle">Seattle</option>
+                <option value="Tacoma">Tacoma</option>
+            </select>
+          </label>
+        </section>
+        <!--Dogs Adopted-->
+        <section class="form-section">
+          <h2 class="form-section-titles">Dogs Adopted</h2>
+          <!--Display Dogs Adopted-->
+
+
+        </section>
+        <!--Total Adoption Cost-->
+        <section class="form-section">
+          <h2 class="form-section-titles">Total Adoption Cost</h2>
+          <!--Display Total Adoption Cost-->
+
+
+        </section>
+
+        <section class="form-section">
+          <button type="button" name="submit" id="submit">Submit</button>
+        </section>
+
+      </form>
+    </div>
   </main>
 
-  <footer class="flex-footer">
-    <!--Footer content-->
-    <p>Footer</p>
+  <footer class="main-footer">
+    <section class="main-footer-flex-container">
+      <article class="footer-logo">
+        <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+        <h6>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</h6>
+      </article>
+      <article class="footer-menu">
+        <nav id="footer-navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </article>
+      <article class="copyright">
+        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      </article>
+    </section>
   </footer>
-
 </body>
 </html>
 
