@@ -1,105 +1,409 @@
 /* I. Body Styles */
 
-  /* Grid Layout */
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 10px;
+
+  margin: 0;
+  height: 100vh;
+}
+
+/* II. Header Styles */
+
+.main-header {
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto;
+
+}
+
+.main-header-grid-container {
+  grid-column: 1 / 13;
+  grid-row: 1 / 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: #003366;
+
+}
+
+.logo {
+  border: 1px dotted blue;
+}
+
+.cart {
+  border: 1px dotted blue;
+}
+
+.main-menu {
+  grid-column: 1 / 13;
+  grid-row: 2 / 2;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 10px;
+  border: 1px dotted blue;
+  background-color: #ECECEC;
+}
+
+#main-navigation {
+  grid-column: 2 / 11;
+
+}
+
+#main-navigation ul, li, a {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+
+  color: #003366;
+  padding: 0 1rem 0 0;
+
+}
+
+#main-navigation li:not(:last-child):after {
+  content: "/";
+
+}
+
+/* III. Main Content Styles */
+
+main {
+  grid-row: 2 / 2;
+  grid-column: 2 / 12;
+  border: 1px solid yellow;
+}
+
+.main-content-grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 10px;
+  grid-template-rows: auto auto;
+  grid-row-gap: 10px;
+
+}
+
+.page-title {
+  grid-column: 1 / 11;
+  border: 1px dotted green;
+  font: 2.5rem "Neuton";
+  color: #003366;
+}
+
+.introduction {
+  grid-column: 1 / 8;
+  grid-row: 1 / 1;
+
+}
+
+.dog-grid {
+  grid-column: 1 / 8;
+  grid-row: 2 / 2;
+
+  border: 1px dotted green;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.blog-preview {
+  grid-column: 8 / 11;
+  grid-row: 1 / 2;
+
+}
+
+/* IV. Main Footer Styles */
+
+.main-footer {
+  grid-column: 1 / 13;
+  grid-row: 3 / 3;
+
+  background-color: #003366;
+  color: #ffffff;
+}
+
+.main-footer-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#footer-navigation ul, li, a {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+#footer-navigation a {
+  color: #ffffff;
+
+}
+
+#footer-navigation li:not(:last-child):after {
+  content: "/";
+  padding: 0 .025rem 0 .025rem;
+
+  color: #ffffff;
+}
+
+/* SPECIFIC PAGE STYLES START HERE */
+
+/* I. Whole Dog Grid & Dog Tile Styles */
+
+.dog-grid-all-dogs {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+/* Dog Tiles */
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.75rem 0 1.75rem 0;
+  padding: 1.5rem;
+  border: 2px solid #E7E3E3;
+  font-size: 1rem;
+  font-family: "Work Sans";
+  font-weight: lighter;
+
+}
+
+.tile h4 {
+  font: 1.5rem "Neuton";
+  color: #003366;
+}
+
+.adopt-button {
+  background-color: #8DB353;
+  font: 1rem "Work Sans";
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: .75rem 0 .75rem 0;
+
+}
+
+/* II. Blog */
+
+/* Container for Blogs Posts */
+
+.blog-post {
+  grid-column: 1 / 11;
+  display: flex;
+  font: .85rem "Work Sans";
+  font-weight: lighter;
+  line-height: 1.75;
+
+  border: 1px dotted red;
+}
+
+/* Blog Text Styles */
+
+.blog-title {
+  font: 1.5rem "Neuton";
+  color: #003366;
+}
+
+.blog-text {
+  padding: 0 0 0 2rem;
+  overflow: scroll;
+}
+
+/* III. Checkout */
+
+.checkout-form {
+  grid-column: 1 / 8;
+
+  border: 1px dotted pink;
+
+}
+
+.form-section input {
+
+  border: 1px dotted blue;
+}
+
+.form-section-titles {
+  font: 1.5rem "Neuton";
+  color: #003366;
+
+}
+
+.cityStateZip {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.cityStateZip-child {
+
+}
+
+.firstAdoption {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+
+
+
+
+
+
+
+/* ----- Iteration 2
+/* I. Body Styles
+
+  /* Grid Layout
   body {
     display: grid;
-    grid-template-columns: auto[1] auto[2] auto[3] auto[4] auto[5] auto[6] auto[7] auto[8] auto[9] auto[10] auto[11] auto[12];
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 10px;
+    grid-template-rows: auto auto auto auto;
     border: 1px solid blue;
   }
 
-  /* Header for all pages */
+  /* Stop image blowing out grid
+
+  img {
+
+  }
+
+  /* Header for all pages
 
   .main-header {
-    grid-column: span 12;
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 10px;
+    grid-row: 1 / 1;
+    /*display: grid;
+    grid-column: 1 / 13;
     grid-template-rows: auto auto;
+    background: pink;
     border: 3px dotted red;
 
   }
 
-  .main-header-child {
-    grid-column: span 14;
+  .main-header-grid-container {
+    grid-column: 1 / 13;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 10px;
+    border: 1px solid blue;
   }
 
-  /* Main Menu */
+  .logo {
+    font: italic 16px "Lato";
+    border: 1px dotted orange;
+  }
+
+  /* Main Menu
 
   .main-menu {
-    grid-column: span 14;
+    grid-column: 1 / 12;
     border: 1px dotted pink;
 
   }
 
-  /* Main content */
+  /* Main content
 
   main {
     display: grid;
-    grid-column-start: 2;
-    grid-column-end: 12;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 10px;
+    grid-row: 2 / 2;
     border: 3px solid yellow;
   }
 
-  /* Page Titles, except for home page */
-
-  .page-title {
+  .main-container {
+    grid-row: 3 / 3;
 
   }
 
-/* II. Home Page Styles */
+/* II. Main Page Styles */
 
-  /* Introduction */
+  /* Introduction
 
   .introduction {
-    grid-column-start: 1;
-    grid-column-end: 6;
+
+    border: 1px dotted blue;
   }
 
-  /* Dog Grid */
+  /* Dog Grid
 
   .dog-grid {
-    grid-column: span 5;
+
     border: 3px dotted orange;
   }
 
-  /* Blog Preview (Aside) */
+  /* Blog Preview (Aside)
 
   .blog-preview {
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row: 1 / 3;
     border: 1px dotted green;
   }
 
-/* III. Dogs for Adoption Page Styles */
+  /* Page Titles, except for home page
+
+  .page-title {
+    grid-column: 1 / 8;
+    border: 1px solid green;
+  }
+
+/* III. Dogs for Adoption Page Styles
 
   .all-dogs-grid {
-    grid-column: span 8;
+    grid-column: 1 / 12;
     border: 3px dotted orange;
   }
 
 /* IV. Adoptadog Blog Page Styles */
 
-  /* All blog posts container */
+  /* All blog posts container
 
   .blog-posts-container {
-    grid-column: span 8;
+    grid-column: 1 / 8;
     border: 2px dotted green;
   }
 
 /* V. Checkout Page Styles */
 
-  /* Form Container */
+  /* Form Container
 
   .form-container {
-    grid-column: span 8;
+    grid-column: 1 / 8;
     border: 2px dotted green;
   }
 
-/* VI. Footer */
+/* VI. Footer
 
   .flex-footer {
-    grid-column: span 12;
+    grid-column: 1 / 13;
+    grid-row: 4 / 4;
     border: 1px solid red;
   }
 
@@ -107,7 +411,7 @@
 
 
 
-
+----- Iteration 1 below
 
 
 
