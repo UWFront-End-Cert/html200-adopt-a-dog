@@ -1,3 +1,10 @@
+/* WHAT NEEDS FIXING for LESSON 07:
+Fix the header images.  Logo, Tagline, Checkout Button, and Cart.  Different settings for each Media Query.
+Fix the footer image.  Logo.  Different settings for each Media Query.
+Fix the images in the 'review purchase' section for Large Screens. */
+
+
+
 * {
   box-sizing: border-box;
   font-family: arial;
@@ -259,7 +266,6 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 }
 
 /* HEADER HEADER HEADER HEADER HEADER */
-
 
 header {
   background: linear-gradient(to bottom, black, rgb(236,236,236));
