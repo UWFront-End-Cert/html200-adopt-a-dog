@@ -52,6 +52,7 @@
   right: 12em;
   width: 4%;
 }
+/*can do flow: right as well*/
 
 .dollar-sign {
   position: absolute;
@@ -91,6 +92,8 @@
   text-decoration: none;
 }
 
+
+
 nav {
   font-size: 1.6em;
   border-width: 0.3em;
@@ -120,6 +123,11 @@ nav a {
   float:left;
   padding: 2em;
   text-align: center;
+}
+
+
+figure {
+  margin: inherit;
 }
 
 .individual-dogs div {
