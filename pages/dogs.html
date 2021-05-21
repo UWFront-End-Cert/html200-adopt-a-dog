@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dogs | ADOPTADOG</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header-box">
+      <div class="header-item">
+        <img class="logo" src="../images/adoptadog-logo.svg" alt="logo" />
+        <p>Seattle’s premiere dog adoption agency</p>
+      </div>
+      <div class="head-item">
+        <img class="cart" src="../images/cart-icon.svg" alt="checkout cart" />
+        <span><output id="total"></output></span>
+        <p class="checkoutbtn">Checkout</p>
+      </div>
+    </header>
+
+    <nav class="nav-container">
+      <a class="nav-item" href="../index.html">Home</a>
+      <span class="nav-item">/</span>
+      <a class="nav-item" href="dogs.html">Dogs</a>
+      <span class="nav-item">/</span>
+      <a class="nav-item" href="blog.html">Blog</a>
+    </nav>
+
+    <section class="dog-page">
+      <h1>Here are all of our Dogs!</h1>
+      <div class="dog-profiles">
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="murphy()"
+            src="../images/murphy-card.jpg"
+            alt="Murphy"
+            srcset="
+              ../images/murphy-200.jpg 200w,
+              ../images/murphy-400.jpg 400w,
+              ../images/murphy-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Murphy</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="murphyAdd()" class="btn">Adopt</button>
+        </div>
+
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="poppy()"
+            src="../images/poppy-card.jpg"
+            alt="Poppy"
+            srcset="
+              ../images/poppy-200.jpg 200w,
+              ../images/poppy-400.jpg 400w,
+              ../images/poppy-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Poppy</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="poppyAdd()" class="btn">Adopt</button>
+        </div>
+
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="jack()"
+            src="../images/jack-card.jpg"
+            alt="Jack"
+            srcset="
+              ../images/jack-200.jpg 200w,
+              ../images/jack-400.jpg 400w,
+              ../images/jack-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Jack</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="jackAdd()" class="btn">Adopt</button>
+        </div>
+
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="duffy()"
+            src="../images/duffy-card.jpg"
+            alt="Duffy"
+            srcset="
+              ../images/duffy-200.jpg 200w,
+              ../images/duffy-400.jpg 400w,
+              ../images/duffy-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Duffy</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="duffyAdd()" class="btn">Adopt</button>
+        </div>
+
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="lucas()"
+            src="../images/lucas-card.jpg"
+            alt="Lucas"
+            srcset="
+              ../images/lucas-200.jpg 200w,
+              ../images/lucas-400.jpg 400w,
+              ../images/lucas-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Lucas</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="lucasAdd()" class="btn">Adopt</button>
+        </div>
+
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="jake()"
+            src="../images/jake-card.jpg"
+            alt="Jake"
+            srcset="
+              ../images/jake-200.jpg 200w,
+              ../images/jake-400.jpg 400w,
+              ../images/jake-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Jake</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="jakeAdd()" class="btn">Adopt</button>
+        </div>
+
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="angus()"
+            src="../images/angus-card.jpg"
+            alt="Angus"
+            srcset="
+              ../images/angus-200.jpg 200w,
+              ../images/angus-400.jpg 400w,
+              ../images/angus-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Angus</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="angusAdd()" class="btn">Adopt</button>
+        </div>
+
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="violet()"
+            src="../images/violet-card.jpg"
+            alt="Violet"
+            srcset="
+              ../images/violet-200.jpg 200w,
+              ../images/violet-400.jpg 400w,
+              ../images/violet-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Violet</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="violetAdd()" class="btn">Adopt</button>
+        </div>
+
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="piper()"
+            src="../images/piper-card.jpg"
+            alt="Piper"
+            srcset="
+              ../images/piper-200.jpg 200w,
+              ../images/piper-400.jpg 400w,
+              ../images/piper-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Piper</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="piperAdd()" class="btn">Adopt</button>
+        </div>
+
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="maximus()"
+            src="../images/maximus-card.jpg"
+            alt="Maximus"
+            srcset="
+              ../images/maximus-200.jpg 200w,
+              ../images/maximus-400.jpg 400w,
+              ../images/maximus-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Maximus</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="maximusAdd()" class="btn">Adopt</button>
+        </div>
+
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="luna()"
+            src="../images/luna-card.jpg"
+            alt="Luna"
+            srcset="
+              ../images/luna-200.jpg 200w,
+              ../images/luna-400.jpg 400w,
+              ../images/luna-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Luna</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="lunaAdd()" class="btn">Adopt</button>
+        </div>
+
+        <div class="doginfo-wrap">
+          <img
+            class="dog-pic"
+            onclick="stella()"
+            src="../images/stella-card.jpg"
+            alt="Stella"
+            srcset="
+              ../images/stella-200.jpg 200w,
+              ../images/stella-400.jpg 400w,
+              ../images/stella-600.jpg 600w
+            "
+            sizes="(max-width: 500px) 600px, (min-width: 501px) and (max-width: 759px) 400px, (min-width: 760px) 200px, 100vw"
+          />
+          <h3>Stella</h3>
+          <p><b>Cost to Adopt</b>: $123.45</p>
+          <p>
+            Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+            sunt arum rendae pla endis re ea erum, qui doluptae
+          </p>
+          <button onclick="stellaAdd()" class="btn">Adopt</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="content-wrap">
+        <img class="logo" src="../images/adoptadog-logo.svg" alt="logo" />
+        <p>
+          Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque
+          invenienihil imaximu scideru ptistiusam consequunt
+        </p>
+        <nav>
+          <a href="../index.html">Home</a>
+          <span class="divider">/</span>
+          <a href="dogs.html">Dogs</a>
+          <span class="divider">/</span>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      </div>
+    </footer>
+    <script src="../script/script.js"></script>
+  </body>
+</html>

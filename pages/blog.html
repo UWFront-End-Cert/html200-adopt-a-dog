@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Blog | ADOPTADOG</title>
+    <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="runRefactor()">
+    <header class="header-box">
+      <div class="header-item">
+        <img class="logo" src="../images/adoptadog-logo.svg" alt="logo" />
+        <p>Seattle’s premiere dog adoption agency</p>
+      </div>
+      <div class="head-item">
+        <img class="cart" src="../images/cart-icon.svg" alt="checkout cart" />
+        <span><output id="total"></output></span>
+        <p class="checkoutbtn">Checkout</p>
+      </div>
+    </header>
+
+    <nav class="nav-container">
+      <a class="nav-item" href="../index.html">Home</a>
+      <span class="nav-item">/</span>
+      <a class="nav-item" href="dogs.html">Dogs</a>
+      <span class="nav-item">/</span>
+      <a class="nav-item" href="blog.html">Blog</a>
+    </nav>
+
+    <section class="blog-main-content">
+      <h1 class="blog-h1">Adoptadog Blog</h1>
+      <div class="article-box">
+        <div class="article-item">
+          <img
+            class="blog-page-image"
+            src="image"
+            alt="Image Substitute"
+            srcset="
+              ../images/blog-1-square-400.jpg 400w,
+              ../images/blog-1-square-600.jpg 600w,
+              ../images/blog-1-square-800.jpg 800w
+            "
+            sizes="Size Values"
+          />
+        </div>
+        <div class="article-item">
+          <h2>Title</h2>
+          <p>Text goes here</p>
+          <p>Second Paragraph</p>
+        </div>
+      </div>
+
+      <div class="article-box">
+        <div class="article-item">
+          <img
+            class="blog-page-image"
+            src="image"
+            alt="Image Substitute"
+            srcset="
+              ../images/blog-2-square-400.jpg 400w,
+              ../images/blog-2-square-600.jpg 600w,
+              ../images/blog-2-square-800.jpg 800w
+            "
+            sizes="Size Values"
+          />
+        </div>
+        <div class="article-item">
+          <h2>Title</h2>
+          <p>Text</p>
+          <p>Text</p>
+        </div>
+      </div>
+
+      <div class="article-box">
+        <div class="article-item">
+          <img
+            class="blog-page-image"
+            src="image"
+            alt="Image Substitute"
+            srcset="
+              ../images/blog-3-square-400.jpg 400w,
+              ../images/blog-3-square-600.jpg 600w,
+              ../images/blog-3-square-800.jpg 800w
+            "
+            sizes="Size Values"
+          />
+        </div>
+        <div class="article-item">
+          <h2>Title</h2>
+          <p>Text</p>
+          <p>Text</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="content-wrap">
+        <img class="logo" src="../images/adoptadog-logo.svg" alt="logo" />
+        <p>
+          Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque
+          invenienihil imaximu scideru ptistiusam consequunt
+        </p>
+        <nav>
+          <a href="../index.html">Home</a>
+          <span class="divider">/</span>
+          <a href="dogs.html">Dogs</a>
+          <span class="divider">/</span>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      </div>
+    </footer>
+    <script src="../script/script.js"></script>
+  </body>
+</html>
