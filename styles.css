@@ -1,6 +1,4 @@
 /* WHAT NEEDS FIXING for LESSON 07:
-Fix the header images.  Logo, Tagline, Checkout Button, and Cart.  Different settings for each Media Query.
-Fix the footer image.  Logo.  Different settings for each Media Query.
 Fix the images in the 'review purchase' section for Large Screens. */
 
 
@@ -37,28 +35,48 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr 40em;
+    grid-template-columns: 1fr 20em;
   }
   header {
     grid-column: span 2;
+  }
+
+  header div.logo-tagline {
+    margin-left: 1rem;
+    margin-top: 3rem;
+    color: rgb(129,183,65);
+    font-style: italic;
+    width: 35%;
+    text-align: left;
+  }
+
+  header div.logo-tagline h2 {
+    position: relative;
+    bottom: 1em;
+    width: 100%;
+    font-size: 1.75vw;
+    margin-top: 2vh;
+  }
+  header div.cart img {
+    width: 21%;
   }
   nav {
     grid-column: span 2;
   }
   nav ul {
-    padding-left: 12em;
+    padding-left: 2em;
   }
   main {
-    padding-left: 20em;
-    padding-right: 1.5em;
+    margin-left: 1rem;
   }
   section.dog-card {
     width: 17em;
   }
   aside {
     padding-left: 1.5em;
+    padding-right: 1rem;
     text-align: left;
-    width: 50%
+    width: 90%
   }
   aside h2 {
     padding-left: 0;
@@ -101,6 +119,10 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     width: 50%;
     display: flex;
   }
+  footer img {
+    width: 50%;
+    margin-top: 3rem;
+  }
 }
 
 /* MEDIUM SCREEN SETTINGS */
@@ -116,6 +138,30 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     grid-column: span 2;
   }
 
+  header div.logo-tagline {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    color: rgb(129,183,65);
+    font-style: italic;
+    width: 44%;
+    text-align: left;
+  }
+
+  img.logo {
+    width: 90%;
+    min-width: 265px;
+  }
+
+  header div.logo-tagline h2 {
+    position: relative;
+    bottom: 1em;
+    width: 100%;
+    font-size: 1.97vw;
+    margin-top: 2vh;
+  }
+  header div.cart img {
+    width: 28%;
+  }
   nav {
     grid-column: span 2;
     padding-left: 1em;
@@ -195,6 +241,11 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   .tiny-card-text {
     margin-left: 1em;
   }
+  footer img {
+    width: 80%;
+    margin-top: 3rem;
+  }
+
 }
 
 /* SMALL SCREEN SMALL SCREEN SMALL SCREEN */
@@ -208,8 +259,34 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   header {
     grid-column: span 2;
   }
-  .cart {
+  header div.logo-tagline {
+    margin-left: 1rem;
+    margin-top: 3rem;
+    color: rgb(129,183,65);
+    font-style: italic;
+    width: 50%;
+    text-align: left;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  div.cart {
     padding-right: 5em;
+  }
+
+  header div.logo-tagline h2 {
+    position: relative;
+    bottom: 1em;
+    width: 100%;
+    font-size: 2.5vw;
+    margin-top: 2vh;
+  }
+  header div.cart img {
+    width: 4vw;
+    float: left;
+    margin-right: 1em;
   }
   nav {
     grid-column: span 2;
@@ -263,6 +340,10 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   .tiny-card-text {
     margin-left: 1em;
   }
+  footer img {
+    width: 100%;
+    margin-top: 2rem;
+  }
 }
 
 /* HEADER HEADER HEADER HEADER HEADER */
@@ -279,23 +360,6 @@ header {
   width: 100vw;
 }
 
-header div.logo-tagline {
-  margin-left: 3rem;
-  margin-top: 3rem;
-  color: rgb(129,183,65);
-  font-style: italic;
-  width: 30%;
-  text-align: left;
-}
-
-header div.logo-tagline h2 {
-  position: relative;
-  bottom: 1em;
-  width: 100%;
-  font-size: 1.5vw;
-  margin-top: 2vh;
-}
-
 header div.cart {
   color: white;
   margin-top: 3rem;
@@ -303,10 +367,6 @@ header div.cart {
   text-align: right;
   width: 10%;
   font-size: .9rem;
-}
-
-header div.cart img {
-  width: 21%;
 }
 
 header div.cart div {
@@ -435,11 +495,6 @@ footer {
   padding-left: 30%;
   padding-right: 30%;
   font-size: .8em;
-}
-
-footer img {
-  width: 50%;
-  margin-top: 3rem;
 }
 
 div.footer-nav {
