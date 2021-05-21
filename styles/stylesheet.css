@@ -157,6 +157,7 @@ aside h1 {
   display: inline-block;
   background-color: #fbfcfc;
   border: 0.1em solid #ebf5fb;
+
   width: 100%;
   height: auto;
 }
@@ -308,7 +309,7 @@ input[type="radio"] {
 }
 select {
   display: block;
-  width: 25%;
+  width: 50%;
   height: 3em;
 }
 input[type="text"],

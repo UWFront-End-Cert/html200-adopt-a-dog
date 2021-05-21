@@ -1,0 +1,27 @@
+USER PERSONAS
+
+Name: Jane Jones
+Age: 38
+Occupation: Accountant
+Activity: Yoga, swimming, watch TV dramas
+Other details: Owns a one-year-old iPhone and a two-years-old laptop. Lives by herself, looking for a pet to be her companion more eagerly since the beginning of the pandemic.
+
+Name: Carrie Cohen
+Age: 45
+Occupation: freelance writer, housewife
+Activity: volunteer in PTSA at her child’s school, gardening
+Other details: Owns a two-year-old Android phone and a three-years-old laptop. Spends lots of her time with her 3rd grader, looking for a pet for her child and the family. 
+
+TESTING
+
+For browsers: I used my laptops to test on Chrome, Firefox, and Edge. I used an Android phone to test on Chrome, and an iPhone to test on iOS Safari.
+
+For operating systems: I tested on Windows, Ubuntu Linux, and iOS.
+
+For devices: I tested on laptops, an android phone, and an iPhone.
+
+My research results on users and devices are from my conversation and observation with my co-workers, friends, and my child’s friends’ families, as well as reading from news articles.
+
+When I conducted the test, I started with checking the responsiveness of the layout and design. I checked the text and images to see if they were aligned properly in different screen sizes, if anything ran into the edges. Then, I checked the functionality. I checked to see if the hover and click functions worked properly, I filled the form to check if the alert worked etc. I also tried to have an idea if I found it easy to click or easy to fill in the form.
+
+I made two adjustments after testing. First, the checkout button on my form page was halfway out of the header area when I used the android phone, though it appears fine on the iPhone and within the header area on the other three pages. Since it was a mistake due to oversight, I just made it consistent with the other pages, then it looks fine on the android phone as well. Second, I increased the width of the select option areas for the ‘State’ and ‘Pickup Location’, so we now can see the full spelling and the whole word of the choice, it surely makes the experience more pleasant.
