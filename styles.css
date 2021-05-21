@@ -123,7 +123,13 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     width: 50%;
     margin-top: 3rem;
   }
+  main.check-out {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
+
+
 
 /* MEDIUM SCREEN SETTINGS */
 
@@ -245,7 +251,10 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     width: 80%;
     margin-top: 3rem;
   }
-
+  main.check-out {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
 
 /* SMALL SCREEN SMALL SCREEN SMALL SCREEN */
@@ -551,10 +560,7 @@ article.blog-post p {
 /** Check-out Page specific formatting **/
 
 
-main.check-out {
-  padding-left: 25%;
-  padding-right: 25%;
-}
+
 
 
 label, legend {
