@@ -51,53 +51,7 @@ button, input, select, textarea {
   fieldset input {
     display: inline;
   }
-  .header-container {
-    display: flex;
-    flex-direction: row;
-    background-color: #000000;
-
-  }
-  .header-logo {
-    width: 60%;
-    align-self: center;
-    margin-left: 5rem;
-    margin-bottom: 0;
-  }
-  .header-description {
-    color: #437915;
-    font-size: 1.5rem;
-    margin-top: 0;
-
-  }
-  .header-image {
-    width: 85%;
-
-  }
-  .checkout {
-    display: flex;
-    border: 1px solid green;
-    flex-direction: column;
-    align-items: flex-end;
-
-  }
-  .checkout-contents {
-    
-  }
-  .cart-image {
-    width: 20%;
-  }
-  .cart-total {
-    color: white;
-    align-self: center;
-    
-  }
-  .checkout-button {
-  }
-  .menu {
-    align-self: flex-end;
-
-  }
-  
+ 
   /* move skip-to-link off the page*/
   .hidden {
     position: relative;

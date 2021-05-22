@@ -1,7 +1,7 @@
 body{
 
   } 
-  a, h1, h2, h3 {
+  h1, h2, h3 {
     color: #102073;
   }
 
@@ -10,15 +10,15 @@ body{
 
   }
   .header-logo {
-    margin-left: 5rem;
     width: 40%;
     padding-top: 3rem;
+    margin-left: 5rem;
 
   }
-  .title {
+  .title-description {
     color: green;
-    font-size: 1.5rem;
-    padding-bottom: 3rem;
+    font-size: 2rem;
+    margin-top: 0;
   }
   .checkout div{
    color: white;
@@ -35,16 +35,15 @@ body{
     
   }
   .checkout-button {
-    background-color: greenyellow;
-    width: 8rem;
   }
 
   .menu p {
 padding-left: 5rem;
 
   }
-
+  .checkout {
   
+  }
 
   /* move skip-to-link off the page*/
   .hidden {
@@ -70,10 +69,10 @@ padding-left: 5rem;
   /* intro */
   .intro {
     display: grid;
-    margin-left: 6rem;
+    margin-left: 5rem;
     max-width: 1000px;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    /* justify-items: center; */
     padding-top: 1.5rem;
     padding-bottom: 3rem;
  
@@ -116,11 +115,16 @@ padding-left: 5rem;
 .card-content > p:last-of-type {
   margin-bottom: 0;
 }
+
 .submit-button {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: .5rem;
   background-color: yellowgreen;
+  width: 8rem;
+  height: .75rem;
+  font-size: 1rem;
+  align-items: center;
 }
 input[type="button"] {
   border: none;
@@ -128,7 +132,7 @@ input[type="button"] {
 }
 a:hover{
   text-decoration: underline;
-  color: white;
+  color: blue;
 }
 
 .see-more-dogs {
