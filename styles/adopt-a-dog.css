@@ -1,14 +1,19 @@
-body{
 
-  } 
   h1, h2, h3 {
     color: #102073;
   }
 
   header {
-    background-image: url('../images/header-image.jpg');
-
+    background-image: url('/images/header-image.jpg');
+    background-size: cover;
+    background-color: grey;
   }
+
+  mark {
+    background-color: #fafafa;
+    font-weight: bold;
+  }
+
   .header-logo {
     width: 40%;
     padding-top: 3rem;
@@ -16,9 +21,11 @@ body{
 
   }
   .title-description {
-    color: green;
-    font-size: 2rem;
+    color: #99c416;
+    font-size: 1.5rem;
     margin-top: 0;
+    margin-bottom: 4rem;
+    font-style: italic;
   }
   .checkout div{
    color: white;
@@ -26,24 +33,19 @@ body{
    margin-right: 2rem;
    margin-top: 3rem;
   }
+  .checkout-button {
+  float: right;
+  margin-right: -6rem;
+  }
+ 
   .cart {
     width: 1.5rem;
-    
   }
-  .total {
-    /* font-size: .8rem; */
-    
-  }
-  .checkout-button {
-  }
-
+ 
   .menu p {
 padding-left: 5rem;
+  }
 
-  }
-  .checkout {
-  
-  }
 
   /* move skip-to-link off the page*/
   .hidden {
@@ -60,8 +62,7 @@ padding-left: 5rem;
     background-color: #e0dfda;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    color: #102073;
-    font-family: 'Syne Mono', monospace;
+    /* color: #102073; */
     font-size: 18px;
     font-weight: bold;
   }
@@ -69,10 +70,9 @@ padding-left: 5rem;
   /* intro */
   .intro {
     display: grid;
-    margin-left: 5rem;
+    margin: 0 auto;
     max-width: 1000px;
     grid-template-columns: 1fr 1fr;
-    /* justify-items: center; */
     padding-top: 1.5rem;
     padding-bottom: 3rem;
  
@@ -95,6 +95,7 @@ padding-left: 5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px;
+    margin-bottom: 2rem;
 
 }
 .card {
@@ -116,23 +117,23 @@ padding-left: 5rem;
   margin-bottom: 0;
 }
 
-.submit-button {
-  display: flex;
-  justify-content: center;
-  padding: .5rem;
-  background-color: yellowgreen;
-  width: 8rem;
-  height: .75rem;
+  button {
+  background-color: #99c416;
+  width: 10rem;
+  height: 2rem;
   font-size: 1rem;
-  align-items: center;
-}
-input[type="button"] {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
   border: none;
-  background-color: yellowgreen;
 }
+
 a:hover{
-  text-decoration: underline;
-  color: blue;
+  text-decoration: none; 
+  color: orange;
 }
 
 .see-more-dogs {
@@ -141,14 +142,6 @@ a:hover{
   padding: 5rem;
 }
 
-#button-link {
-  background-color: #d3d3d3;
-  color: #102073;
-  font-size: 1.25rem;
-  font-weight: bold;
-  width: 20%;
-  padding: .5rem;
-}
   .flex-footer {
     display: flex;
     height: 400px;
@@ -164,39 +157,17 @@ a:hover{
     padding-bottom: 1rem;
   }
   
-  
-  /* transitions, pseudo-selectors */
-  
-  a {
-    text-decoration: none;
-    color: #00546B;
-  }
-  .menu a:visited {
-    color: #808080;
-  }
-  .left-pane-box::first-letter {
-    font-size: 200%;
-    color: #4169E1;
-  }
-  .awesome-font i:nth-child(even) {
-    color: #FFFF00;
-  }
-  .story:hover {
-    font-size: 30px;
-  }
-  .story p:nth-child(2n) {
-    transition: font-size 15s ease-out 2s;
-  }
-
-.title {
+.dogs-title {
+  color: #102073;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.blog-title {
+  color: #102073;
+  margin: 0 auto;
   padding-left: 8rem;
-  padding-top: 1rem;
-}
-.title h1 {
-  color: #102073;
-}
-h3 {
-  color: #102073;
 }
 
 .blogs {

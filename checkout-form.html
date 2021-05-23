@@ -39,82 +39,104 @@
   </header>
 
     
-    <div>
         <form class="Checkout-form" method="GET">
-          <h1>Checkout</h1>
-          <div>
-          <label>Name
-            <input type="text" name="contactName">
-          </label>
-          <label>Email Address
-            <input type="email" name="contactEmail">
-          </label>
-          <label>Street Address
-            <input type="text" name="streetAddress">
-          </label>
-          </div>
-          <div class="">
-            <fieldset class="area">
-              <label>City
-                <input type="text" name="city">
-              </label>
-              <label>State</label>
-              <select name="state" id="state">
-                <option value="arizona">Arizona</option>
-                <option value="california">California</option>
-                <option value="colorado">Colorado</option>
-                <option value="idaho">Idaho</option>
-                <option value="nevada">Nevada</option>
-              </select>
-              <input type="" name="state">
-              <label>Zip Code</label>
-              <input type="text" name="zip">
-            </fieldset>
-          </div>
-          <div>
-            <fieldset class="adopter">
-              <label>First Time Adopter?</label>
-                <label>
+            <p class="form-title">
+              Checkout
+            </p>
+          
+            <label>Name
+              <input type="text" name="contactName">
+            </label>
+            <label>Email Address
+              <input type="email" name="contactEmail">
+            </label>
+            <label>Street Address
+              <input type="text" name="streetAddress">
+            </label>
+            
+            
+              <fieldset class="area">
+                <div>
+                  <label>
+                    City
+                    <div>
+                      <input type="text" id="city">
+                    </div>
+                    
+                  </label>
+                </div>
+
+                <div>
+                  <label>
+                    State
+                    <select name="state" id="state"></select>
+                  </label>
+                </div>
+
+                <div>
+                  <label>
+                    Zip Code
+                    <div>
+                      <input type="text" id="city">
+                    </div>
+                    
+                  </label>
+                </div>
+              </fieldset>
+          
+            <fieldset>
+
+
+              <fieldset class="adopter">
+                <label>First Time Adopted?</label>
+                <div>
                   <input type="radio" value="yes">
-                  Yes
-                </label>
-                <label>
-                  <input type="radio" value="no">
-                  No
-                </label>
-            </fieldset>
-          </div>
-          <div>
+                  <label>Yes</label>
+                <!-- </div> -->
+                <!-- <div> -->
+                  <input type="radio" value="yes">
+                  <label>No</label>
+                </div>
+              </fieldset>
+          
             <label>
               Pickup Location
             </label>
             <select name="state" id="state">
-              <option value="arizona">Arizona</option>
-              <option value="california">California</option>
-              <option value="colorado">Colorado</option>
-              <option value="idaho">Idaho</option>
-              <option value="nevada">Nevada</option>
-            </select>
-          </div>
-          <div>
-            <fieldset class="dogsAdopted">
+             </select>
+             <fieldset>
               <label>Dogs Adopted</label>
-              <input type="image" src="images/lucas-checkout.jpg" alt="Submit" width="48" height="48">
-              <input type="image" src="images\duffy-checkout.jpg" alt="Submit" width="48" height="48">
+              <div class="adoptions">
+                  <div>
+                    <input type="image" src="images/lucas-checkout.jpg" alt="Submit" width="48" height="48">
+                  </div>
+                  <div>
+                    <label class="adoptee">Lucas</label>
+                    <p class="cost">Cost to Adopt: $123.45</p>
+                  </div>
+                  <div>
+                    <input type="image" src="images/duffy-checkout.jpg" alt="Submit" width="48" height="48">
+                  </div>
+                <div>
+                    <label class="adoptee">Duffy</label>
+                    <p class="cost">Cost to Adopt: $123.45</p>
+                </div>
+              </div>
+             </fieldset>
 
+
+            <fieldset>
+              <div>
+                <label>Total Adoption Cost</label>
+              </div>
+              <div  class="cost">
+                <label>$1234.56</label>               
+              </div>
             </fieldset>
-          </div>
-          <div>
-            <fieldset class="cost">
-              <label>Total Adoption Cost</label>
-              <label>$1234.56</label>
-            </fieldset>
-          </div>
-          <div>
+          
             <input type="submit" value="Submit">
-          </div>
+          
         </form>
-        </div>
 
 
 

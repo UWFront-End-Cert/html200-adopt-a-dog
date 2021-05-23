@@ -1,49 +1,84 @@
-button, input, select, textarea {
+button, input, select {
     font-family: inherit;
     font-size: 100%;
     box-sizing: border-box;
     display: block;
-    margin: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    height: 2.5rem;
   }
   .checkout-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5rem;
+    /* padding: 5rem; */
+    
   }
   a, h1, h2, h3 {
     color: #102073;
   }
-  
-  h1{
-    text-align: center;
-    border-bottom: .5rem solid #A9A9A9;
+  .form-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #102073;
+    margin-left: 5rem;
   }
-  h2 {
-    height: 3rem;
-    font-style: italic;
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 5rem;
   }
-  input {
-    border-radius: 0px;
+  .area input:first-child{
+     display: inline-block; 
+    }
+    .area {
+
+      display: flex;
+    }
+  #city {
+    width: 12rem;
+
   }
-  /* hide arrows for Chrome and Edge browsers */
-  input[type="number"]::-webkit-outer-spin-button,
-  input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  #state {
+    width: 8rem;
   }
-  
-  /* hide arrows for Firefox browser*/
-  input[type="number"] {
-    -moz-appearance: textfield;
+  #zip {
+    width: 10rem;
   }
-  legend {
-    font-size: 1.5rem;
+  .adopter {
+    margin-left: -1rem;
+
   }
+  .radio {
+    font-size: 1rem;
+    /* float: left; */
+  }
+  .adopt {
+    font-size: 1rem;
+  }
+
+ .adoptee {
+  font-size: .75rem;
+  margin-left: .25rem;
+  font-weight: bold;
+
+ }
+ .cost {
+   font-size: .75rem;
+   margin-top: .5rem;
+ }
+
+ .adoptions {
+display: flex;
+margin-top: 1rem;
+ }
+ 
+
   input[type="submit"] {
-    background-color: #A9A9A9;
-    color: rgb(0,255,255);
-    width: 100%;
+    background-color: green;
+    color: white;
+    width: 15rem;
+    height: 2rem;
   }
   fieldset {
     border: none;
@@ -62,15 +97,6 @@ button, input, select, textarea {
   /* make skip-to-link visible when it has focus */
   .hidden:focus {
     left: 0;
-  }
-  .menu {
-    background-color: #e0dfda;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    color: #102073;
-    font-family: 'Syne Mono', monospace;
-    font-size: 18px;
-    font-weight: bold;
   }
   .flex-footer {
     display: flex;
