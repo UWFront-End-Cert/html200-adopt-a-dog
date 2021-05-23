@@ -15,21 +15,36 @@
     grid-area: 1 / 1 / 2 / span 12;
 }
 .header-img {
-    grid-area: 1 / 1 / 2 / span 12;
+    grid-area: 1 / 1 / span 12 / span 12;
 }
 .header-logo {
     display: grid;
-    grid-area: 1 / 2 / auto / auto;
+    grid-area: 1 / 2 / 4 / 5;
 }
-h2 {
+.h2 {
+    grid-area: 3 / 2 / 3 / 5;
     color: rgb(141, 181, 83);
+    font-size: 2rem;
+}
+
+/*Main content*/
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-area: 2 / 3 / 10 / 11;
 }
 .menu {
     display: flex;
     grid-area: 12 / 1 / 12 / span 12;
     list-style: none; 
+    background-color: rgb(236, 236, 236);
 }
-/**/
+
+/*Footer*/
+.footer-container {
+    display: grid;
+    grid-area: 11 / 1 / 13 / span 12;
+}
 
 
 /*Column widths*/
