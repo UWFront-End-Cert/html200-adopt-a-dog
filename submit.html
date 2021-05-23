@@ -35,7 +35,7 @@
             <div class="title">
                 <h1>Checkout</h1>
             </div>
-            <form>
+            <form name="submitForm">
                 <label class="spread" for="fname">Name</label>
                 <input class="spread" type="text" id="fname" name="fname" />
                 <label class="spread" for="eaddress">Email Address</label>
@@ -59,8 +59,8 @@
                 <label class="spread">First Time Adopter?</label>
 
                 <div class="check">
-                    <input class="check" type="checkbox" value="1" /> <span>Yes</span>
-                    <input class="check" type="checkbox" value="1" /> <span>No</span>
+                    <input class="check" id="yes" type="checkbox" value="1" /> <span>Yes</span>
+                    <input class="check" id="no" type="checkbox" value="0" /> <span>No</span>
                 </div>
 
                 <label class="spread" for="loc">Pickup Location</label>
@@ -85,7 +85,7 @@
                 <p>$1234.56</p>
 
                 <label>
-                    <input type="submit" value="Submit" class="btn submit" />
+                    <input id="submit" type="submit" value="Submit" class="btn submit" />
                 </label>
 
             </form>
