@@ -8,7 +8,7 @@
     grid-template-columns: repeat(12, 1fr);
 }
 
-/*Header display*/
+/*Header layout*/
 .header-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -19,12 +19,21 @@
 }
 .header-logo {
     display: grid;
-    grid-area: 1 / 2 / 4 / 5;
+    grid-area: 2 / 2 / 4 / 5;
 }
 .h2 {
-    grid-area: 3 / 2 / 3 / 5;
+    grid-area: 4 / 2 / 4 / 5;
     color: rgb(141, 181, 83);
     font-size: 2rem;
+}
+.cart {
+    grid-area: 2 / 10;
+    justify-self: end;
+}
+.checkout {
+    text-decoration: none;
+    color: white;
+    grid-area: 3 / 11;
 }
 
 /*Main content*/
@@ -44,8 +53,8 @@
 .footer-container {
     display: grid;
     grid-area: 11 / 1 / 13 / span 12;
+    background-color: rgb(25, 60, 93);
 }
-
 
 /*Column widths*/
 .col-1 { width: 8.33%; }
