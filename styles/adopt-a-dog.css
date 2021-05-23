@@ -1,6 +1,15 @@
 
+
   h1, h2, h3 {
-    color: #102073;
+    color: #004677;
+  }
+  a:hover{
+    text-decoration: none; 
+    color: orange;
+  }
+  a:link {
+    text-decoration: none;
+    color: #004677;
   }
 
   header {
@@ -43,30 +52,16 @@
   }
  
   .menu p {
-padding-left: 5rem;
-  }
-
-
-  /* move skip-to-link off the page*/
-  .hidden {
-    position: relative;
-    left: -10000px;
-    top: auto;
-  }
-  
-  /* make skip-to-link visible when it has focus */
-  .hidden:focus {
-    left: 0;
+padding-left: 7.5rem;
   }
   .menu {
-    background-color: #e0dfda;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    /* color: #102073; */
-    font-size: 18px;
+    background-color: #e5e4e2;
     font-weight: bold;
+    height: 3rem;
+    padding-top: .5rem;
   }
- 
+  
+
   /* intro */
   .intro {
     display: grid;
@@ -82,13 +77,12 @@ padding-left: 5rem;
   }
   .intro-details >p:first-of-type {
     font-size: 1.5rem;
-    color: #102073;
+    color: #004677;
     font-weight: bold; 
   }
 
   
   /* dog cards */
-  
   .cards {
     margin: 0 auto;
     max-width: 1000px;
@@ -119,6 +113,7 @@ padding-left: 5rem;
 
   button {
   background-color: #99c416;
+  color: white;
   width: 10rem;
   height: 2rem;
   font-size: 1rem;
@@ -131,15 +126,18 @@ padding-left: 5rem;
   border: none;
 }
 
-a:hover{
-  text-decoration: none; 
-  color: orange;
-}
-
 .see-more-dogs {
   display: flex;
   justify-content: center;
   padding: 5rem;
+}
+.more-dogs-button {
+  color: #004677;
+  font-weight: bold;
+  background-color: #e5e4e2;
+  width: 15rem;
+  height: 3rem;
+    
 }
 
   .flex-footer {
@@ -147,7 +145,7 @@ a:hover{
     height: 400px;
     flex-direction: column;
     align-items: center;
-    background-color: #154c79;
+    background-color: #004677;
     color: #F5F5F5;
     font-size: 14px;
   }
@@ -158,14 +156,14 @@ a:hover{
   }
   
 .dogs-title {
-  color: #102073;
+  color: #004677;
   font-size: 3rem;
   font-weight: bold;
   margin: 0 auto;
   max-width: 1000px;
 }
 .blog-title {
-  color: #102073;
+  color: #004677;
   margin: 0 auto;
   padding-left: 8rem;
 }

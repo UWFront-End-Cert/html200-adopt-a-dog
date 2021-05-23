@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="utf-8">
     <title>Checkout Form</title>
-    <link rel="stylesheet" href="styles\checkout-form.css">
-    <link rel="stylesheet" href="styles\adopt-a-dog.css">
+    <link rel="stylesheet" href="styles/checkout-form.css">
+    <link rel="stylesheet" href="styles/adopt-a-dog.css">
   </head>
   <body>
     <a class="hidden" href="#main-content">Skip to content</a>
@@ -15,13 +15,8 @@
           </div>
           <div class="cart">
               <img src="images/cart-icon.svg" alt="">
-              <div class="submit-button">
-                  <button type="submit">
-                      <a class="checkout" href="checkout-form.html">Checkout</a>
-  
-                  </button>
-              </div>
-          </div>
+              <button class="checkout-button" type="submit" value="Checkout">Checkout</button>
+            </div>
       </div>
       <div class="header-logo">
           <img src="images/adoptadog-logo.svg" alt="This is an image of a sitting white dog with pointy ears.">
@@ -36,110 +31,84 @@
               <a href="blog.html">Blog</a>
           </p>
       </div>
-  </header>
+    </header>
+    <form class="Checkout-form" method="GET">
+        <p class="form-title">
+          Checkout
+        </p>       
+        <label>Name
+          <input type="text" name="contactName">
+        </label>
+        <label>Email Address
+          <input type="email" name="contactEmail">
+        </label>
+        <label>Street Address
+          <input type="text" name="streetAddress">
+        </label>           
+          <div class="area">
+            <div>
+              <label>
+                City
+                  <input type="text" id="city">                   
+              </label>
+            </div>
 
-    
-        <form class="Checkout-form" method="GET">
-            <p class="form-title">
-              Checkout
-            </p>
-          
-            <label>Name
-              <input type="text" name="contactName">
-            </label>
-            <label>Email Address
-              <input type="email" name="contactEmail">
-            </label>
-            <label>Street Address
-              <input type="text" name="streetAddress">
-            </label>
-            
-            
-              <fieldset class="area">
-                <div>
-                  <label>
-                    City
-                    <div>
-                      <input type="text" id="city">
-                    </div>
-                    
-                  </label>
-                </div>
-
-                <div>
-                  <label>
-                    State
-                    <select name="state" id="state"></select>
-                  </label>
-                </div>
-
-                <div>
-                  <label>
-                    Zip Code
-                    <div>
-                      <input type="text" id="city">
-                    </div>
-                    
-                  </label>
-                </div>
-              </fieldset>
-          
-            <fieldset>
-
-
-              <fieldset class="adopter">
-                <label>First Time Adopted?</label>
-                <div>
-                  <input type="radio" value="yes">
-                  <label>Yes</label>
-                <!-- </div> -->
-                <!-- <div> -->
-                  <input type="radio" value="yes">
-                  <label>No</label>
-                </div>
-              </fieldset>
-          
-            <label>
-              Pickup Location
-            </label>
-            <select name="state" id="state">
-             </select>
-             <fieldset>
-              <label>Dogs Adopted</label>
-              <div class="adoptions">
-                  <div>
-                    <input type="image" src="images/lucas-checkout.jpg" alt="Submit" width="48" height="48">
-                  </div>
-                  <div>
-                    <label class="adoptee">Lucas</label>
-                    <p class="cost">Cost to Adopt: $123.45</p>
-                  </div>
-                  <div>
-                    <input type="image" src="images/duffy-checkout.jpg" alt="Submit" width="48" height="48">
-                  </div>
-                <div>
-                    <label class="adoptee">Duffy</label>
-                    <p class="cost">Cost to Adopt: $123.45</p>
-                </div>
-              </div>
-             </fieldset>
-
-
-            <fieldset>
+            <div>
+              <label>
+                State
+                <select name="state" id="state"></select>
+              </label>
+            </div>
+            <div>
+              <label>
+                Zip Code
+                  <input type="text" id="zip">                    
+              </label>
+            </div>
+          </div>
+          <fieldset class="adopter">
+            <label>First Time Adopter?</label>
+            <div class="radio">
+                <input type="radio" value="Yes">
+                <label class="radio-label">Yes</label>
+                <input type="radio" value="No">
+                <label class="radio-label">No</label>
+            </div>
+          </fieldset>
+        <label>
+          Pickup Location
+        </label>
+        <select name="state" id="location">
+          </select>
+          <fieldset>
+          <label>Dogs Adopted</label>
+          <div class="adoptions">
               <div>
-                <label>Total Adoption Cost</label>
+                <input type="image" src="images/lucas-checkout.jpg" alt="Submit" width="48" height="48">
               </div>
-              <div  class="cost">
-                <label>$1234.56</label>               
+              <div>
+                <label class="adoptee">Lucas</label>
+                <p class="cost"><mark>Cost to Adopt:</mark> $123.45</p>
               </div>
-            </fieldset>
-          
-            <input type="submit" value="Submit">
-          
-        </form>
-
-
-
+              <div>
+                <input type="image" src="images/duffy-checkout.jpg" alt="Submit" width="48" height="48">
+              </div>
+            <div>
+                <label class="adoptee">Duffy</label>
+                <p class="cost"><mark>Cost to Adopt:</mark> $123.45</p>
+            </div>
+          </div>
+          </fieldset>
+        <fieldset>
+          <div>
+            <label>Total Adoption Cost</label>
+          </div>
+          <div  class="cost">
+            <label>$1234.56</label>               
+          </div>
+        </fieldset>          
+        <input type="submit" value="Submit">
+    </form>
     <div class="flex-footer">
       <div class="footer">
         <p>
