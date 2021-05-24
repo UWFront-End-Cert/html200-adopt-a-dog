@@ -8,23 +8,26 @@
     </head>
 
     <body>
-        <header>
-            <img src="images/header-image.jpg"  
+        <div class="grid-container">
+
+        <header class="header-container"> 
+            <img class="header-img col-12" src="images/header-image.jpg"  
                 alt="a close-up of a beagles' face looking toward the left of the screen from the right"
-                width="1780" height="600">
-            <img src="images/adoptadog-logo.sv" 
-                alt="White dog silhoutte next to the company's title. (Image intentionally broken for alt text, aka white image on white background)" 
-                width="300" height="300">
-            <h1>Adopt a dog</h1>
-            <h2>Seattle's premier dog adoption agency</h2>
-            <img src="images/cart-icon.sv" 
-                alt="cart icon next to the current total price (Image intentionally broken for alt text, aka white image on white background)">
-            <a href="checkout.html">Checkout</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home / </a></li>
-                    <li><a href="dogs.html">Dogs / </a></li>
-                    <li><a href="blog.html">Blog / </a></li>
+                height="600">
+            <img class="header-logo" src="images/adoptadog-logo.svg" 
+                alt="White dog silhoutte next to the company's title.">
+            <h2 class="h2">Seattle's premier dog adoption agency</h2>
+            <img class="cart" src="images/cart-icon.svg" 
+                alt="cart icon next to the current total price"
+                height="30">
+            <a class="checkout-container" href="checkout.html">Checkout</a>
+            <nav class="nav">
+                <ul class="menu col-9">
+                    <li><a class="a" href="index.html">Home</a></li>
+                    <li>/</li>
+                    <li><a class="a" href="dogs.html">Dogs</a></li>
+                    <li>/</li>
+                    <li><a class="a" href="blog.html">Blog</a></li>
                 </ul>
             </nav>
         </header>
@@ -224,9 +227,9 @@
             </article>
         </section>
 
-        <footer>
-            <img src="images/adoptadog-logo.sv" 
-                alt="White dog silhoutte next to the company's title. (Image intentionally broken for visibility, aka white image on white background)" 
+        <footer class="footer-container">
+            <img src="images/adoptadog-logo.svg" 
+                alt="White dog silhoutte next to the company's title." 
                 width="300" height="300">
             <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br> 
                 esseque invenienihil imaximu scideru ptistiusam consequunt
@@ -240,5 +243,7 @@
             </nav>
             <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
         </footer>
+        </div>
+
     </body>
 </html>
