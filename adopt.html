@@ -8,23 +8,29 @@
   <body>
     <a href="#main-content" class="hidden">Skip to main content</a>
     <header>
-      <section>
-        <h1><a href="index.html"><img src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+      <div class="grid-header">
+      <article class="logo-motto">
+        <h1><a href="index.html"><img src="images/adoptadog-logo.svg" alt="adopt a dog logo" class="logo">
         <span class="meta">ADOPT A DOG</span></a></h1>
-        <p class="motto">Seattle's premiere dog adoption agency</p>
-      </section>
+        <p class="motto"><em>Seattle's premiere dog adoption agency</em></p>
+      </article>
+      <div class="checkout">
+        <p class="subtotal"><img src="images/cart-icon.svg" alt="checkout cart" class="cart">$1234.56</p>
+        <p><a href="adopt.html" class="button">Checkout</a></p>
+      </div>
+    </div>
       <nav class="navigation">
         <ul>
-          <li><a href="index.html">Home</a> /</li>
-          <li><a href="dogs.html">Dogs</a> /</li>
-          <li><a href="#" class="this-page">Adopt</a> /</li>
-          <li><a href="blog.html">Blog</a> /</li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="nav-item">Home</a> /</li>
+          <li><a href="dogs.html" class="nav-item">Dogs</a> /</li>
+          <li><a href="#" class="nav-item">Adopt</a> /</li>
+          <li><a href="blog.html" class="nav-item">Blog</a> /</li>
+          <li><a href="contact.html" class="nav-item">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section id="main-content">
-      <h2>Checkout</h2>
+    <section>
+      <h2 class="adopt-header">Checkout</h2>
       <form method="GET">
 
         <label>Name
@@ -39,11 +45,12 @@
           <input type="text" name="applicantAddress">
         </label>
 
-        <label>City
+        <div class="grid-form">
+        <label class="city">City
           <input type="text" name="applicantCity">
         </label>
 
-        <label>State
+        <label class="state">State
           <select name="applicantState">
             <option value="">Select state</option>
             <option value="california">CA</option>
@@ -52,21 +59,24 @@
           </select>
         </label>
 
-        <label>Zip Code
+        <label class="zip">Zip Code
           <input type="text" name="applicantZip">
         </label>
+      </div>
 
-        <fieldset>
+        <fieldset class="first-time">
           <legend>First Time Adopter?</legend>
-          <label>Yes
+          <label>
             <input type="radio" name="firstTime" value="yes">
+            Yes
           </label>
-          <label>No
+          <label>
             <input type="radio" name="firstTime" value="no">
+            No
           </label>
         </fieldset>
 
-        <label>Pickup location
+        <label>Pickup Location
           <select name="pickupLocation">
             <option value="">Please select</option>
             <option value="mukilteo">Mukilteo</option>
@@ -75,15 +85,15 @@
           </select>
         </label>
 
-        <input type="submit" value="Submit Application">
+        <input type="submit" value="Submit" class="button">
       </form>
     </section>
     <footer>
       <section class="footer-content">
-        <h2><img src="images/adoptadog-logo.svg" alt="adopt a dog logo"></h2>
+        <h2><img src="images/adoptadog-logo.svg" alt="adopt a dog logo" class="logo"></h2>
         <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
         esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-        <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="adopt.html">Adopt</a> / <a href="blog.html">Blog</a> / <a href="contact.html">Contact</a></p>
+        <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="#">Adopt</a> / <a href="blog.html">Blog</a> / <a href="contact.html">Contact</a></p>
         <p>© 2021 Adoptadog, LLC   |   Seattle, WA</p>
       </section>
     </footer>
