@@ -36,6 +36,7 @@ function validate() {
         alert("Please make sure all fields are valid.")
         return false;
     } else {
+        alert("Thank you, your form has been submitted")
         return true;
     }
 
