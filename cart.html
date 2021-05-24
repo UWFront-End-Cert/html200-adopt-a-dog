@@ -40,7 +40,7 @@
         </nav>
         <section class="main">
 
-            <form action="/checkout">
+            <form action="/checkout" onsubmit="return validateEmail(), validate()">
                 <h1>Checkout</h1>
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name">
@@ -170,7 +170,7 @@
             <p>&#169; 2021 Adoptadog, LLC | Seattle, WA</p>
         </section>
     </div>
-
+    <script src="app.js/js-for-cart.js"></script>
 </body>
 
 </html>
