@@ -13,8 +13,8 @@
   }
 
   header {
-    /* background-image: url('../images/header-image.jpg');
-    background-size: cover; */
+    background-image: url('../images/header-image.jpg');
+    background-size: cover;
     background-color: grey;
   }
 
