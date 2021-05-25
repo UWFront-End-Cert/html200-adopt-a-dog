@@ -31,8 +31,19 @@ function validate() {
     const zip = document.querySelector("[name='zip']");
     const have_adopted_before = document.querySelector("[name='have_adopted_before']");
     const pickup = document.querySelector("[name='pickup']");
+    const checkedRadio = document.querySelectorAll("[type='radio']");
+    //create array from htmlcollection of radio buttons
+    const radioArray = Array.from(checkedRadio);
+    // let is checked be a boolean value
+    let isChecked = radioArray.some(e => e.checked);
+    //at least one radio button needs to be checked
+    if (isChecked !== true) {
+        //or else alert user and return false
+        alert('Please tell us whether you have adopted before');
+        return false;
+    }
     //if any fields are empty, alert user
-    if (name.value.trim() === "" || address.value.trim() === "" || city.value.trim() === "" || state.value.trim() === "" || zip.value.trim() === "" || have_adopted_before.value.trim() === "" || pickup.value.trim() === "") {
+    if (name.value.trim() === "" || address.value.trim() === "" || city.value.trim() === "" || state.value.trim() === "" || zip.value.trim() === "" || have_adopted_before.value.trim() !== 'yes' || pickup.value.trim() === "") {
         alert("Please make sure all fields are valid.")
         return false;
     } else {
@@ -42,6 +53,15 @@ function validate() {
 
 }
 
+
+
+
+// function validateRadio() {
+//     let checkedRadio = document.querySelectorAll("[type='radio']");
+//     let radioArray = Array.from(checkedRadio);
+//     let isChecked = radioArray.some(e => e.checked);
+//     return isChecked === true ? console.log('true') : alert('Please select tell us whether you have adopted before');
+// }
 
 
 //closer but maybe want to add some css pointing to invalid input? also need to know
