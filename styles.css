@@ -1,122 +1,204 @@
 /* I. Body Styles */
 
 body {
+  position: absolute;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto auto;
   grid-column-gap: 10px;
-
   margin: 0;
   height: 100vh;
 }
 
 /* II. Header Styles */
 
-.main-header {
+header {
   grid-column: 1 / 13;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto;
+  grid-column-gap: 10px;
 
 }
 
-.main-header-grid-container {
+.header-content {
   grid-column: 1 / 13;
   grid-row: 1 / 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
+  padding: 2rem 0 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-column-gap: 10px;
   background-color: #003366;
+}
+
+.header-logo {
+  grid-column: 2 / 13;
+  font: 1rem "Neuton";
+  line-height: 1;
+  color: #8DB353;
+  font-style: italic;
+  font-weight: 400;
 
 }
 
-.logo {
-  border: 1px dotted blue;
+.header-logo img {
+  max-width: 50%;
 }
 
-.cart {
-  border: 1px dotted blue;
+.header-cart {
+  grid-column: 14 / 16;
+  text-align: right;
+  font: .75rem "Work Sans";
+  color: #ffffff;
+  font-weight: 500;
+  color: #ffffff;
+
 }
 
-.main-menu {
+.header-cart img {
+  height: 3ex;
+  padding: 0 .5rem 0 0;
+}
+
+#checkout {
+  padding: .5rem 2.25rem .5rem 2.25rem;
+  background-color: #8DB353;
+  font: .75rem "Work Sans";
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+
+}
+
+.header-menu {
   grid-column: 1 / 13;
   grid-row: 2 / 2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 10px;
-  border: 1px dotted blue;
   background-color: #ECECEC;
 }
 
-#main-navigation {
+#header-nav {
   grid-column: 2 / 11;
 
 }
 
-#main-navigation ul, li, a {
+#header-nav ul, li, a {
   display: flex;
   flex-direction: row;
   list-style: none;
   text-decoration: none;
-
+  font: 1rem "Work Sans";
+  font-weight: 700;
   color: #003366;
   padding: 0 1rem 0 0;
 
 }
 
-#main-navigation li:not(:last-child):after {
+#header-nav li:not(:last-child):after {
   content: "/";
+  font-weight: 300;
 
 }
 
 /* III. Main Content Styles */
 
 main {
-  grid-row: 2 / 2;
   grid-column: 2 / 12;
-  border: 1px solid yellow;
 }
 
 .main-content-grid-container {
+  grid-column: 2 / 12;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-row: auto auto;
   grid-column-gap: 10px;
-  grid-template-rows: auto auto;
-  grid-row-gap: 10px;
 
 }
 
 .page-title {
-  grid-column: 1 / 11;
-  border: 1px dotted green;
-  font: 2.5rem "Neuton";
+  width: 100%;
+  font: 1.5rem "Neuton";
   color: #003366;
+  border: 1px dotted green;
 }
 
 .introduction {
-  grid-column: 1 / 8;
+  grid-column: 1 / 9;
   grid-row: 1 / 1;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2rem 0 0 0;
+  font: 1rem "Work Sans";
+  font-weight: 300;
 
 }
 
+.introduction img {
+  width: 100%;
+}
+
 .dog-grid {
-  grid-column: 1 / 8;
+  grid-column: 1 / 9;
   grid-row: 2 / 2;
-
-  border: 1px dotted green;
-
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
+}
+
+.dog-grid .tile {
+  width: 30%;
+  margin: 0 0 1rem 0;
+
+}
+
+.tile img {
+  width: 100%;
+  border: 1px solid pink;
+}
+
+/* Blog Preview */
+
+.blogs {
+  grid-column: 9 / 13;
+  grid-row: 1 / 3;
+  padding: 0 0 2rem 2rem;
+
+}
+
+.blog-preview img {
+  /* Add something about height here */
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 }
 
 .blog-preview {
   grid-column: 8 / 11;
-  grid-row: 1 / 2;
+  padding: 0 0 4rem 0;
+  font: .75rem "Work Sans";
+  font-weight: 300;
 
+}
+
+.blog-preview h4 {
+  grid-column: 8 / 11;
+  font: 1rem "Neuton";
+  color: #003366;
+
+}
+
+.blog-preview a {
+  font-weight: 400;
+  font-size: .75rem;
+  color: #229CCB;
 }
 
 /* IV. Main Footer Styles */
@@ -124,7 +206,6 @@ main {
 .main-footer {
   grid-column: 1 / 13;
   grid-row: 3 / 3;
-
   background-color: #003366;
   color: #ffffff;
 }
@@ -133,6 +214,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.footer-logo h6 {
+  font: .75rem "Work Sans";
+  text-align: center;
+  font-weight: lighter;
 }
 
 .footer-menu {
@@ -141,7 +229,7 @@ main {
 
 }
 
-#footer-navigation ul, li, a {
+#footer-navigation ul, li {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -151,15 +239,23 @@ main {
 }
 
 #footer-navigation a {
+  font: .75rem "Work Sans";
+  font-weight: 500;
   color: #ffffff;
 
 }
 
 #footer-navigation li:not(:last-child):after {
   content: "/";
-  padding: 0 .025rem 0 .025rem;
-
+  font-size: .75rem;
+  font-weight: 400;
   color: #ffffff;
+}
+
+.copyright {
+  font: .75rem "Work Sans";
+  font-weight: normal;
+  text-align: center;
 }
 
 /* SPECIFIC PAGE STYLES START HERE */
@@ -167,28 +263,36 @@ main {
 /* I. Whole Dog Grid & Dog Tile Styles */
 
 .dog-grid-all-dogs {
+  grid-column: 1 / 13;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 1rem 2rem 1rem;
 
 }
 
 /* Dog Tiles */
 
 .tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 1.75rem 0 1.75rem 0;
-  padding: 1.5rem;
   border: 2px solid #E7E3E3;
-  font-size: 1rem;
+  font-size: .75rem;
   font-family: "Work Sans";
   font-weight: lighter;
+  background-color: orange;
+  width: 20%;
+  margin: 0 0 1rem 0;
 
 }
 
-.tile h4 {
-  font: 1.5rem "Neuton";
+.tile-text {
+  margin: 0;
+  padding: 1rem;
+}
+
+.tile-text h4 {
+  margin: 0;
+  padding: 0 0 0 0;
+  font: 1.25rem "Neuton";
   color: #003366;
 }
 
@@ -199,7 +303,7 @@ main {
   color: #ffffff;
   border: none;
   width: 100%;
-  padding: .75rem 0 .75rem 0;
+  padding: .5rem 0 .5rem 0;
 
 }
 
@@ -213,8 +317,6 @@ main {
   font: .85rem "Work Sans";
   font-weight: lighter;
   line-height: 1.75;
-
-  border: 1px dotted red;
 }
 
 /* Blog Text Styles */
@@ -233,14 +335,16 @@ main {
 
 .checkout-form {
   grid-column: 1 / 8;
-
-  border: 1px dotted pink;
-
+  font: 1rem "Work Sans";
 }
 
-.form-section input {
+.checkout-form input {
+  margin: -2rem 0 0 0;
+  padding: .75rem 0 .75rem .5rem;
+  width: 100%;
 
-  border: 1px dotted blue;
+  font: 1rem "Work Sans";
+  border: 1px solid #E7E3E3;
 }
 
 .form-section-titles {
@@ -249,599 +353,152 @@ main {
 
 }
 
+/* City, State, Zip Code */
+
 .cityStateZip {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.city-child {
+  grid-column: 1 / 5;
 
 }
 
-.cityStateZip-child {
+.state-child {
+  grid-column: 5 / 6;
+  padding: 0 0 0 1rem;
+
+}
+
+#adopterState {
+  margin: -1rem 1rem .5rem 0;
+  padding: .7rem 1rem .65rem .5rem;
+  font: 1rem "Work Sans";
+  border: 1px solid #E7E3E3;
+}
+
+.zip-child {
+  grid-column: 6 / 9;
+
+}
+
+/* First Time Adopter */
+
+.firstAdoption {
+  grid-column: 1 / 8;
+  display: flex;
+  flex-direction: row;
 
 }
 
 .firstAdoption {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  align-items: baseline;
+  border: none;
+
 }
 
+.firstAdoption label {
+  font: 1rem "Work Sans";
+  text-align: left;
 
+}
 
+/* Pickup Location */
 
+.pickup-location {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
 
+}
 
+.pickup-location select {
+  grid-column: 1 / 5;
+  padding: .75rem 1rem .7rem .5rem;
+  font: 1rem "Work Sans";
+  border: 1px solid #E7E3E3;
+}
 
+/* Submit Form Button */
 
+#submit {
+  padding: .75rem 5rem .75rem 5rem;
+  background-color: #8DB353;
+  font: 1rem "Work Sans";
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+}
 
-/* ----- Iteration 2
-/* I. Body Styles
+/* IV. Responsive */
 
-  /* Grid Layout
-  body {
-    display: grid;
+/* -- Mobile -- */
+@media screen and (max-width: 576px) {
+  .header-content {
     grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 10px;
-    grid-template-rows: auto auto auto auto;
-    border: 1px solid blue;
-  }
-
-  /* Stop image blowing out grid
-
-  img {
-
-  }
-
-  /* Header for all pages
-
-  .main-header {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 10px;
-    grid-row: 1 / 1;
-    /*display: grid;
-    grid-column: 1 / 13;
     grid-template-rows: auto auto;
-    background: pink;
-    border: 3px dotted red;
-
   }
-
-  .main-header-grid-container {
+  .header-logo {
     grid-column: 1 / 13;
+    grid-row: 1 / 1;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 10px;
-    border: 1px solid blue;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .logo {
-    font: italic 16px "Lato";
-    border: 1px dotted orange;
+  .header-logo h2 {
+    display: none;
   }
-
-  /* Main Menu
-
-  .main-menu {
-    grid-column: 1 / 12;
-    border: 1px dotted pink;
-
-  }
-
-  /* Main content
-
-  main {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 10px;
+  .header-cart {
+    grid-column: 5 / 9;
     grid-row: 2 / 2;
-    border: 3px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem 0 1rem 0;
   }
-
-  .main-container {
-    grid-row: 3 / 3;
-
+  .blogs {
+    display: none;
   }
-
-/* II. Main Page Styles */
-
-  /* Introduction
-
   .introduction {
-
-    border: 1px dotted blue;
-  }
-
-  /* Dog Grid
-
-  .dog-grid {
-
-    border: 3px dotted orange;
-  }
-
-  /* Blog Preview (Aside)
-
-  .blog-preview {
-    grid-row: 1 / 3;
-    border: 1px dotted green;
-  }
-
-  /* Page Titles, except for home page
-
-  .page-title {
-    grid-column: 1 / 8;
-    border: 1px solid green;
-  }
-
-/* III. Dogs for Adoption Page Styles
-
-  .all-dogs-grid {
-    grid-column: 1 / 12;
-    border: 3px dotted orange;
-  }
-
-/* IV. Adoptadog Blog Page Styles */
-
-  /* All blog posts container
-
-  .blog-posts-container {
-    grid-column: 1 / 8;
-    border: 2px dotted green;
-  }
-
-/* V. Checkout Page Styles */
-
-  /* Form Container
-
-  .form-container {
-    grid-column: 1 / 8;
-    border: 2px dotted green;
-  }
-
-/* VI. Footer
-
-  .flex-footer {
     grid-column: 1 / 13;
-    grid-row: 4 / 4;
-    border: 1px solid red;
   }
-
-
-
-
-
------ Iteration 1 below
-
-
-
-
-
-
-/* A Long Stylesheet */
-
-/* Universal Styles (Won't Change)
-
-* {
-  margin: 0 0 0 0;
-  font-family: "Lato", "Arial", sans-serif;
+  .dog-grid {
+    grid-column: 1 / 13;
+  }
+  .dog-grid .tile {
+    margin: 0 0 1rem 0;
+    border: 1px dotted pink;
+    width: 100%;
+  }
+  .dog-grid-all-dogs {
+    grid-column: 1 / 13;
+  }
+  .dog-grid-all-dogs .tile {
+    margin: 0 0 1rem 0;
+    border: 1px dotted pink;
+    width: 100%;
+  }
 }
 
-.flex-container {
-  display: flex;
+/* -- Tablets up to 768px -- */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .blogs {
+    display: none;
+  }
+  .introduction {
+    grid-column: 1 / 13;
+  }
+  .dog-grid {
+    grid-column: 1 / 13;
+  }
+  .tile {
+    width: 45%;
+  }
+  .dog-grid .tile {
+    width: 45%;
+  }
 }
 
-a:hover, a:visited, a:link, a:active {
-  text-decoration: none;
-}
-
-/* Styling that will probably change */
-
-/* Page Headers
-
-.header {
-  display: flex;
-  flex-flow: column wrap;
-  background-color: #003366;
-}
-
-.header-child {
-  display: flex;
-  justify-content: space-between;
-}
-
-.site-logo {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 5rem 2rem 5rem;
-}
-
-.site-logo h3 {
-  font-family: "Neuton", serif;
-  color: #8DB353;
-  font-weight: lighter;
-  font-style: italic;
-}
-
-.cart-icon {
-  display: inline-block;
-  padding: .5rem;
-  font: bold 0.75rem "Work Sans", "Arial", sans-serif;
-  text-align: right;
-  color: #ffffff;
-  padding: 2rem 5rem 2rem 5rem;
-}
-
-#cart-button {
-  background-color: #8DB353;
-  font: .75rem "Work Sans", "Arial", sans-serif;
-  color: #ffffff;
-  font-weight: bold;
-  border: none;
-  border-radius: .15rem;
-  padding: .25rem 2rem .25rem 2rem;
-}
-
-/* Main Menu
-
-#main-menu {
-  background-color: #ECECEC;
-  padding: 0 0 0 5rem;
-  font-weight: bold;
-  width: 100%;
-}
-
-#main-menu ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  font: bold 1rem "Work Sans", "Arial", sans-serif;
-  color: #003366;
-  padding: 1rem;
-}
-
-#main-menu li:after {
-  content: "/";
-}
-
-#main-menu li:last-child:after {
-  content: "";
-}
-
-#main-menu a {
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: .95rem;
-  color: #003366;
-  padding: 1rem 1rem 1rem 1rem;
-}
-
-/* Main Content
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0 5rem 0 5rem;
-  border: 1px dotted green;
-}
-
-/* Home Page Introduction
-
-.intro {
-  display: flex;
-  flex-direction: row;
-  margin: 0 5rem 0 5rem;
-  padding: 2rem 0rem 0 0rem;
-  width: 100%;
-}
-
-.intro-child {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 1rem 1rem 2rem;
-  width: inherit;
-}
-
-.intro-child h2 {
-  font-family: "Neuton", "Times New Roman,";
-  font-size: 1.5rem;
-  line-height: 2;
-  color: #003366;
-}
-
-.intro-child img {
-  width: 100%;
-  height: auto;
-}
-
-.intro-child p {
-  font-size: .95rem;
-  line-height: 1.5;
-  max-height: 370px;
-}
-
-/* Dogs Grid
-
-.tile-grid {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 0 1rem 0 1rem;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 1.75rem 0 1.75rem 0;
-  border: 2px solid #E7E3E3;
-  width: 20%;
-}
-
-.tile-text {
-  padding: 1rem;
-  font-size: .85rem;
-}
-
-.tile-text h4 {
-  font-family: "Neuton", "Times New Roman";
-  color: #003366;
-  font-size: 1.25rem;
-}
-
-.tile-text button {
-  background-color: #8DB353;
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  color: #ffffff;
-  border: none;
-  width: 100%;
-  margin: 1rem 0 0 0;
-  padding: .65rem 0 .65rem 0;
-}
-
-.more-dogs {
-  display: flex;
-}
-
-#more-dogs {
-  background-color: #ECECEC;
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 1.15rem;
-  color: #003366;
-  border: none;
-  padding: .65rem 3.5rem .65rem 3.5rem;
-  margin: 0 0 5rem 0;
-}
-
-/* Pages Footer
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #003366;
-  align-items: center;
-}
-
-.footer-child {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  padding: 1rem 0 1rem 0;
-}
-
-.footer-child img {
-  max-width: 35%;
-  padding: 2rem 0 1rem 0;
-}
-
-.footer-child h6 {
-  font-family: "Lato";
-  font-size: .95rem;
-  text-align: center;
-  color: #ffffff;
-  max-width: 45%;
-  padding: 0 0 0 0;
-}
-
-.footer-child p {
-  color: #ffffff;
-  font-size: .95rem;
-  padding: 0 0 2rem 0;
-}
-
-#footer-nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: .95rem;
-  color: #ffffff;
-  padding: 2rem 1rem 2rem 1rem;
-}
-
-#footer-nav li:after {
-  content: "/";
-}
-
-#footer-nav li:last-child:after {
-  content: "";
-}
-
-#footer-nav li a {
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: .75rem;
-  color: #ffffff;
-  padding: 1rem 1rem 1rem 1rem;
-}
-
-.page-title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 2rem 5rem 0 5rem;
-  width: 100%;
-}
-
-.title-child h2 {
-  font-family: "Neuton", "Times New Roman";
-  font-size: 1.5rem;
-  line-height: 2;
-  color: #003366;
-  padding: 0 2rem 0 2rem;
-}
-
-.dogs-for-adoption {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 1rem 1rem 1rem 1rem;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.all-dogs {
-  padding: 0 5rem 0 0;
-}
-
-.blog {
-  display: flex;
-  flex-direction: row;
-  margin: 0 5rem 0 5rem;
-  padding: 2rem 0rem 3.5rem 0rem;
-  overflow: hidden;
-}
-
-.blog-child {
-  padding: 0 0 0 2rem;
-}
-
-.blog h2 {
-  padding: 0 0 1rem 1rem;
-  font-family: "Neuton", "Times New Roman";
-  color: #003366;
-  font-size: 1.25rem;
-}
-
-.blog p {
-  padding: 0 0 1rem 1rem;
-  font-size: .85rem;
-}
-
-.checkout {
-  display: flex;
-  flex-direction: column;
-  margin: 0 5rem 0 5rem;
-  padding: 2rem 0rem 0 0rem;
-}
-
-.checkout-child {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem 0 2rem;
-}
-
-.checkout-child label {
-  display: flex;
-  flex-direction: column;
-  font-family: "Neuton", "Times New Roman";
-  font-size: 1.1rem;
-  line-height: 2;
-  color: #003366;
-}
-
-.checkout-child input {
-  padding: .5rem 0 .5rem 0;
-  border: 1px solid #C0C0C0;
-}
-
-.checkout-child h4 {
-  font-family: "Neuton", "Times New Roman";
-  font-size: 1.1em;
-  line-height: 2;
-  color: #003366;
-}
-
-.checkout-child button {
-  background-color: #8DB353;
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: .85rem;
-  color: #ffffff;
-  border: none;
-  max-width: 25%;
-  margin: 0 0 3rem 0;
-  padding: .65rem 0 .65rem 0;
-}
-
-.city-state-zip {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem 2rem 0 2rem;
-  overflow: hidden;
-}
-
-.city-state-zip-child {
-  display: flex;
-  flex-direction: column;
-  padding: 0 1rem 0 0;
-}
-
-.city-state-zip-child label {
-  display: flex;
-  flex-direction: column;
-  font-family: "Neuton", "Times New Roman";
-  font-size: 1.1rem;
-  line-height: 2;
-  color: #003366;
-}
-
-.city-state-zip-child input {
-  width: 100%;
-  padding: 0.5rem 0 0.5rem 0;
-  border: 1px solid #C0C0C0;
-}
-
-#applicantState {
-  position: relative;
-  border: 1px solid #C0C0C0;
-  padding: .5rem 0 .5rem 0;
-}
-
-.first-adoption {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  border: none;
-  padding: 0;
-  width: 25%;
-}
-
-.first-adoption label {
-  font-size: .75rem;
-  font-family: 'Lato', 'sans-serif';
-  color: #000000;
-  padding: 0 2rem 0 .35rem;
-}
-
-.pickupLocation label {
-  font-size: .75rem;
-  font-family: 'Lato', 'sans-serif';
-  color: #000000;
-  padding: 0 2rem 0 .35rem;
-}
-
-#pickupLocation {
-  position: relative;
-  border: 1px solid #C0C0C0;
-  padding: .75rem 0 .75rem 0;
-  font-family: 'Lato', 'sans-serif';
-  font-size: .75rem;
-}
+/* -- Large screens -- */
