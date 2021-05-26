@@ -112,7 +112,7 @@ main {
   grid-column: 2 / 12;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-row: auto auto;
+  grid-template-rows: auto auto;
   grid-column-gap: 10px;
 
 }
@@ -121,7 +121,6 @@ main {
   width: 100%;
   font: 1.5rem "Neuton";
   color: #003366;
-  border: 1px dotted green;
 }
 
 .introduction {
@@ -159,7 +158,6 @@ main {
 
 .tile img {
   width: 100%;
-  border: 1px solid pink;
 }
 
 /* Blog Preview */
@@ -278,7 +276,6 @@ main {
   font-size: .75rem;
   font-family: "Work Sans";
   font-weight: lighter;
-  background-color: orange;
   width: 20%;
   margin: 0 0 1rem 0;
 
@@ -311,12 +308,34 @@ main {
 
 /* Container for Blogs Posts */
 
-.blog-post {
-  grid-column: 1 / 11;
+.blog-all-posts {
+  grid-column: 1 / 13;
   display: flex;
+  padding: 0 0 5rem 0;
+  flex-direction: column;
   font: .85rem "Work Sans";
   font-weight: lighter;
   line-height: 1.75;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  padding: 0;
+  padding: 1rem 0 1rem 0;
+}
+
+.blog-post img {
+  max-width: 275px;
+  max-height: 275px;
+}
+
+.main-blog-title {
+  grid-column: 1 / 13;
+  font: 2rem "Neuton";
+  color: #003366;
+
 }
 
 /* Blog Text Styles */
@@ -326,8 +345,18 @@ main {
   color: #003366;
 }
 
+.blog-post {
+  max-height: 275px;
+}
+
 .blog-text {
   padding: 0 0 0 2rem;
+}
+.blog-title {
+  position: sticky;
+}
+
+.blog-text {
   overflow: scroll;
 }
 
@@ -461,6 +490,16 @@ main {
   .blogs {
     display: none;
   }
+  .blog-post img {
+    display: none;
+  }
+  .blog-post {
+    padding: 0 0 1rem 0;
+  }
+  .blog-text {
+    margin: 0;
+    padding: 0;
+  }
   .introduction {
     grid-column: 1 / 13;
   }
@@ -469,7 +508,6 @@ main {
   }
   .dog-grid .tile {
     margin: 0 0 1rem 0;
-    border: 1px dotted pink;
     width: 100%;
   }
   .dog-grid-all-dogs {
@@ -477,7 +515,6 @@ main {
   }
   .dog-grid-all-dogs .tile {
     margin: 0 0 1rem 0;
-    border: 1px dotted pink;
     width: 100%;
   }
 }
@@ -499,6 +536,8 @@ main {
   .dog-grid .tile {
     width: 45%;
   }
+  .blog-post {
+    max-height: 275px;
+    overflow: scroll;
+  }
 }
-
-/* -- Large screens -- */
