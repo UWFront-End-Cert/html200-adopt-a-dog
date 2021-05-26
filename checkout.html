@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -9,19 +10,19 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="main-header-grid-container">
-      <section class="logo">
+  <header>
+    <section class="header-content">
+      <article class="header-logo">
         <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
-        <h3>Seattle's premiere dog adoption agency</h3>
-      </section>
-      <section class="cart">
+        <h2>Seattle's premiere dog adoption agency</h2>
+      </article>
+      <article class="header-cart">
         <p><span><img src="./images/cart-icon.svg" alt="Shopping Cart Icon">$1234.56</span></p>
-        <button type="button" name="cart-button" id="cart-button">Checkout</button>
-      </section>
-    </div>
-    <section class="main-menu">
-      <nav id="main-navigation">
+        <button type="button" name="checkout" id="checkout">Checkout</button>
+      </article>
+    </section>
+    <section class="header-menu">
+      <nav id="header-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="dogs.html">Dogs</a></li>
@@ -60,14 +61,14 @@
         <section class="form-section">
           <div class="cityStateZip">
             <!--City-->
-            <article class="cityStateZip-child">
+            <article class="city-child">
               <h2 class="form-section-titles">City</h2>
               <label for="adopterCity">
                 <input type="text" name="adopterCity" value="" id="adopterCity">
               </label>
             </article>
             <!--State-->
-            <article class="cityStateZip-child">
+            <article class="state-child">
               <h2 class="form-section-titles">State</h2>
               <label for="adopterState">
                 <select name="adopterState" id="adopterState">
@@ -126,7 +127,7 @@
               </label>
             </article>
             <!--Zip-->
-            <article class="cityStateZip-child">
+            <article class="zip-child">
               <h2 class="form-section-titles">Zip Code</h2>
               <label for="adopterZip">
                 <input type="text" name="adopterZip" value="" id="adopterZip">
@@ -138,25 +139,23 @@
         <section class="form-section">
           <h2 class="form-section-titles">First Time Adopter?</h2>
           <fieldset class="firstAdoption">
-            <section id="yesFirstAdoption">
-              <input type="radio" name="yesFirst" value="yes">
-              <label for="yesFirst" id="yesFirst" name="yesFirst">Yes</label>
-            </section>
-            <section id="notFirstAdoption">
-              <input type="radio" name="notFirst" value="no">
-              <label for="notFirst" id="notFirst" name="notFirst">No</label>
-            </section>
+            <input type="radio" name="adoptionType" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="adoptionType" value="no">
+            <label for="no">No</label>
           </fieldset>
         </section>
         <!--Pickup Location-->
         <section class="form-section">
           <h2 class="form-section-titles">Pickup Location</h2>
-          <label for="pickupLocation">
-            <select name="pickup" id="pickupLocation">
-                <option value="Seattle">Seattle</option>
-                <option value="Tacoma">Tacoma</option>
-            </select>
-          </label>
+          <div class="pickup-location">
+            <label for="pickupLocation">
+              <select name="pickup" class="location">
+                <option value="Seattle" id="pickup-option">Seattle</option>
+                <option value="Tacoma" id="pickup-option">Tacoma</option>
+              </select>
+            </label>
+          </div>
         </section>
         <!--Dogs Adopted-->
         <section class="form-section">
@@ -203,184 +202,3 @@
   </footer>
 </body>
 </html>
-
-
-
-<!--
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
-
-    <title>Home</title>
-</head>
-<body>
-  <header title="Adopt A Dog" class="adopt-a-dog">
-    <div class="flex-container">
-      <div class="header">
-        <div class="header-child" id="header-cart">
-          <p><span><img src="./images/cart-icon.svg" alt="Shopping Cart Icon">$1234.56</span></p>
-          <button type="button" name="checkout" id="checkout">Checkout</button>
-        </div>
-        <div class="header-child">
-          <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
-          <h3>Seattle's premiere dog adoption agency</h3>
-        </div>
-      </div>
-    </div>
-    <div class="menu">
-      <nav title="Main Navigation" id="primary-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="dogs.html">Dogs</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section title="Page Title" class="page-title">
-      <div class="title-child">
-        <h2>Checkout</h2>
-      </div>
-    </section>
-
-    <section title="Checkout" class="checkout">
-      <form method="GET">
-
-      <div class="checkout-child">
-        <label for="name">Name
-          <input type="text" name="customerName" value="" id="name">
-        </label>
-      </div>
-
-      <div class="checkout-child">
-        <label for="email">Email Address
-          <input type="text" name="customerEmail" value="" id="email">
-        </label>
-      </div>
-
-      <div class="checkout-child">
-        <label for="address">Street Address
-          <input type="text" name="customerAddress" value="" id="address">
-        </label>
-      </div>
-
-      <div class="city-state-zip">
-        <div class="city-state-zip-child">
-          <label for="applicantCity">City
-            <input type="text" name="applicantCity" value="" id="applicantCity">
-          </label>
-        </div>
-        <div class="city-state-zip-child">
-          <label for="applicantState">State
-            <select name="state" id="applicantState">
-              <option value="AL">AL</option>
-              <option value="AK">AK</option>
-              <option value="AZ">AZ</option>
-              <option value="AR">AR</option>
-              <option value="CA">CA</option>
-              <option value="CO">CO</option>
-              <option value="CT">CT</option>
-              <option value="DE">DE</option>
-              <option value="DC">DC</option>
-              <option value="FL">FL</option>
-              <option value="GA">GA</option>
-              <option value="HI">HI</option>
-              <option value="ID">ID</option>
-              <option value="IL">IL</option>
-              <option value="IN">IN</option>
-              <option value="IA">IA</option>
-              <option value="KS">KS</option>
-              <option value="KY">KY</option>
-              <option value="LA">LA</option>
-              <option value="ME">ME</option>
-              <option value="MD">MD</option>
-              <option value="MA">MA</option>
-              <option value="MI">MI</option>
-              <option value="MN">MA</option>
-              <option value="MS">MI</option>
-              <option value="MO">MO</option>
-              <option value="MT">MT</option>
-              <option value="NE">NE</option>
-              <option value="NV">NV</option>
-              <option value="NH">NH</option>
-              <option value="NJ">NJ</option>
-              <option value="NM">NM</option>
-              <option value="NY">NY</option>
-              <option value="NC">NC</option>
-              <option value="ND">ND</option>
-              <option value="OH">OH</option>
-              <option value="OK">OK</option>
-              <option value="OR">OR</option>
-              <option value="PA">PA</option>
-              <option value="RI">RI</option>
-              <option value="SC">SC</option>
-              <option value="SD">SD</option>
-              <option value="TN">TN</option>
-              <option value="TX">TX</option>
-              <option value="UT">UT</option>
-              <option value="VT">VT</option>
-              <option value="VA">VA</option>
-              <option value="WA">WA</option>
-              <option value="WV">WV</option>
-              <option value="WI">WI</option>
-              <option value="WY">WY</option>
-            </select>
-          </label>
-        </div>
-        <div class="city-state-zip-child">
-          <label for="applicantZip">Zip Code</label>
-          <input type="text" name="applicantZip" value="" id="applicantZip">
-        </div>
-      </div>
-
-      <div class="checkout-child">
-        <h4>First Time Adopter?</h4>
-        <fieldset class="first-adoption">
-          <input type="radio" name="firstAdoption" value="yes">
-          <label for="yesFirst" id="yesFirst" name="yesFirst">Yes</label>
-          <input type="radio" name="firstAdoption" value="no">
-          <label for="notFirst" id="notFirst" name="notFirst">No</label>
-        </fieldset>
-      </div>
-
-      <div class="checkout-child">
-        <label for="pickupLocation">Pickup Location</label>
-        <select name="pickup" id="pickupLocation">
-            <option value="Seattle">Seattle</option>
-            <option value="Tacoma">Tacoma</option>
-        </select>
-      </div>
-      <div class="checkout-child">
-        <h4>Dogs Adopted</h4>
-        <h4>Total Adoption Cost</h4>
-        <button type="button" name="submit" id="submit">Submit</button>
-      </div>
-      </form>
-    </section>
-  </main>
-
-  <footer title="Footer" class="footer">
-    <div class="footer-child">
-      <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
-      <h6>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</h6>
-    </div>
-    <div id="footer-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dogs.html">Dogs</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="checkout.html">Checkout</a></li>
-      </ul>
-    </div>
-    <div class="footer-child">
-      <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
-    </div>
-  </footer>
-</body>
-</html>
--->
