@@ -28,15 +28,15 @@ header {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-column-gap: 10px;
+  /* Basic background color */
+  background-color: #003366;
+  /* Gradient background */
+  background-image: linear-gradient(#003366, #001e3d);
   /* Dog image background */
   background-image: url("./images/header-image.jpg");
   background-position: 50% 15%;
   background-repeat: no-repeat;
   background-size: cover;
-  /* Gradient background */
-  background-image: linear-gradient(#003366, #001e3d);
-  /* Basic background color */
-  background-color: #003366;
 }
 
 .header-logo {
