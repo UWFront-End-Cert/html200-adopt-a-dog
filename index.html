@@ -5,6 +5,7 @@
     <title>Adopt-a-Dog | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -15,7 +16,7 @@
       </div>
       <div class="cart">
         <img class="cart" src="images/cart-icon.svg" alt="shopping cart">
-        <div class="total"></div>
+        <div id="total"></div>
         <a href="check-out.html">Checkout</a>
       </div>
     </header>
@@ -40,35 +41,35 @@
       <article class="dog-menu">
 
         <section class="dog-card">
-          <img onclick="dogInfo(Murphy)" src="images/murphy-card.jpg" alt="A brown mutt with a white nose.">
+          <img src="images/murphy-card.jpg" alt="A brown mutt with a white nose.">
           <h2>Murphy</h2>
           <p>Cost to adopt: 123.45</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <span onclick="addTotal(Murphy)">Adopt</span>
+          <span>Adopt</span>
         </section>
 
         <section class="dog-card">
-          <img onclick="dogInfo(Poppy)" src="images/poppy-card.jpg" alt="Little white fluffy dog.">
+          <img src="images/poppy-card.jpg" alt="Little white fluffy dog.">
           <h2>Poppy</h2>
           <p>Cost to adopt: 123.45</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <span onclick="addTotal(Poppy)">Adopt</span>
+          <span>Adopt</span>
         </section>
 
         <section class="dog-card">
-          <img onclick="dogInfo(Jack)" src="images/jack-card.jpg" alt="A cute beagle.">
+          <img src="images/jack-card.jpg" alt="A cute beagle.">
           <h2>Jack</h2>
           <p>Cost to adopt: 123.45</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <span onclick="addTotal(Jack)">Adopt</span>
+          <span>Adopt</span>
         </section>
 
         <section class="dog-card">
-          <img onclick="dogInfo(Duffy)" src="images/duffy-card.jpg" alt="A English bulldog.">
+          <img src="images/duffy-card.jpg" alt="A English bulldog.">
           <h2>Duffy</h2>
           <p>Cost to adopt: 123.45</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <span onclick="addTotal(Duffy)">Adopt</span>
+          <span>Adopt</span>
         </section>
 
         <section class="dog-card">
@@ -76,31 +77,31 @@
           <h2>Lucas</h2>
           <p>Cost to adopt: 123.45</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <span onclick="addTotal(Lucas)">Adopt</span>
+          <span>Adopt</span>
         </section>
 
         <section class="dog-card">
-          <img onclick="dogInfo(Jake)" src="images/jake-card.jpg" alt="A yellow lab.">
+          <img src="images/jake-card.jpg" alt="A yellow lab.">
           <h2>Jake</h2>
           <p>Cost to adopt: 123.45</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <span onclick="addTotal(Jake)">Adopt</span>
+          <span>Adopt</span>
         </section>
 
         <section class="dog-card">
-          <img onclick="dogInfo(Angus)" src="images/angus-card.jpg" alt="A boxer mix">
+          <img src="images/angus-card.jpg" alt="A boxer mix">
           <h2>Angus</h2>
           <p>Cost to adopt: 123.45</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <span onclick="addTotal(Angus)">Adopt</span>
+          <span>Adopt</span>
         </section>
 
         <section class="dog-card">
-          <img onclick="dogInfo(Violet)" src="images/violet-card.jpg" alt="A chocolate lab puppy">
+          <img src="images/violet-card.jpg" alt="A chocolate lab puppy">
           <h2>Violet</h2>
           <p>Cost to adopt: 123.45</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <span onclick="addTotal(Violet)">Adopt</span>
+          <span>Adopt</span>
         </section>
 
       </article>

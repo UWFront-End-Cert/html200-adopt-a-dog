@@ -1,3 +1,16 @@
+$(document).ready(function(){
+  $('.dog-card img').mouseenter(function(){
+    $(this).fadeTo('slow', .75)
+  }).mouseleave(function(){
+    $(this).fadeTo('fast', 1)
+  }).click(function(){
+    dogInfo(eval($(this).siblings('h2').text()))
+  })
+  $('.dog-card span').click(function(){
+    addTotal(eval($(this).siblings('h2').text()))
+  })
+})
+
 const Murphy = ["Murphy", "Hound", "123.45"]
 const Poppy = ["Poppy", "Bichon", "123.45"]
 const Jack = ["Jack", "Terrier", "123.45"]
@@ -11,19 +24,19 @@ const Maximus = ["Maximus", "Terrier", "123.45"]
 const Luna = ["Luna", "Lab", "123.45", "123.45"]
 const Stella = ["Stella", "Chihuahua", "123.45"]
 
-let Total = 0
+// For initially setting the cart total:
 
-// For updating the number next to the cart:
-    document.querySelector('.total').innerHTML = "$" + Total.toFixed(2);
+let Total = 0;
+document.getElementById('total').innerHTML = "$" + Total.toFixed(2);
 
 // For the dog info alerts:
 function dogInfo(dog) {
-  alert("This is " + dog[0] + ", a " + dog[1] + " that can be yours for only $" + dog[2] + "!");
+alert("This is " + dog[0] + ", a " + dog[1] + " that can be yours for only $" + dog[2] + "!");
 }
 
-// For modifying and alerting the customer's current cost:
+// For modifying and alerting the customer's current Total:
 function addTotal(dog) {
-    Total = Total + Number(dog[2]);
-    document.querySelector('.total').innerHTML = "$" + Total.toFixed(2);
-    alert("Thank you!  Your total is $" + Total.toFixed(2) + ".");
+  Total = Total + Number(dog[2]);
+  document.getElementById('total').innerHTML = "$" + Total.toFixed(2);
+  alert("Thank you!  Your total is $" + Total.toFixed(2) + ".");
 }
