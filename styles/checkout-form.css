@@ -1,0 +1,117 @@
+button, input, select {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 3rem;
+    margin-left: 7rem;
+    height: 2.5rem;
+  }
+  
+  form {
+    color: #004677;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  .form-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 7rem;
+  }
+  label {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 7rem;
+  }
+  input[type="text"]
+  {
+    width: 45rem;
+  }
+  input[type="email"]
+  {
+    width: 45rem;
+  }
+    .area {
+      display: flex;
+      
+    }
+  #city {
+    width: 14rem;
+  }
+  #state {
+    width: 7rem;
+  }
+  #zip {
+    width: 10rem;
+  }
+  #location {
+    width: 14rem;
+  }
+
+ .adoptee {
+  font-size: .75rem;
+  margin-left: .25rem;
+  font-weight: bold;
+ }
+ .cost {
+   font-size: .75rem;
+   margin-top: .25rem;
+   margin-bottom: .25rem;
+   margin-left: .25rem;
+ }
+
+ .adoptions {
+    display: flex;
+    margin-top: 1rem;
+ }
+
+  input[type="submit"] {
+    background-color: #99c416;
+    color: white;
+    width: 15rem;
+    height: 2rem;
+  }
+  .radio-label {
+    float: left;
+    margin: 0;
+    padding-top: .5rem;
+    font-size: 1rem;
+  }
+  input[type="radio"] {
+    float: left;
+    height: 1.5rem;
+    margin-right: .5rem;
+  }
+  .radio {
+    margin-top: .5rem;
+  }
+  fieldset {
+    border: none;
+    margin-left: -1rem;
+  }
+  fieldset input{
+    display: inline;
+  }
+
+  mark {
+    font-weight: bold;
+    background-color: white;
+  }
+ 
+  .flex-footer {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004677;
+    color: #e5e4e2;
+    font-size: 14px;
+  }
+  .cat-logo {
+    width: 80%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  

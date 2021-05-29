@@ -1,0 +1,193 @@
+
+
+  h1, h2, h3 {
+    color: #004677;
+  }
+  a:hover{
+    text-decoration: none; 
+    color: orange;
+  }
+  a:link {
+    text-decoration: none;
+    color: #004677;
+  }
+
+  header {
+    background-image: url('../images/header-image.jpg');
+    background-size: cover;
+    background-color: grey;
+  }
+
+  mark {
+    background-color: #fafafa;
+    font-weight: bold;
+  }
+
+  .header-logo {
+    width: 40%;
+    padding-top: 3rem;
+    margin-left: 5rem;
+
+  }
+  .title-description {
+    color: #99c416;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    font-style: italic;
+  }
+  .checkout div{
+   color: white;
+   float: right;
+   margin-right: 2rem;
+   margin-top: 3rem;
+  }
+  .checkout-button {
+  float: right;
+  margin-right: -6rem;
+  }
+ 
+  .cart {
+    width: 1.5rem;
+  }
+ 
+  .menu p {
+padding-left: 7.5rem;
+  }
+  .menu {
+    background-color: #e5e4e2;
+    font-weight: bold;
+    height: 3rem;
+    padding-top: .5rem;
+  }
+  
+
+  /* intro */
+  .intro {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+ 
+  }
+  .intro-image { 
+    width: 100%;
+  }
+  .intro-details >p:first-of-type {
+    font-size: 1.5rem;
+    color: #004677;
+    font-weight: bold; 
+  }
+
+  
+  /* dog cards */
+  .cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-bottom: 2rem;
+
+}
+.card {
+    box-shadow: 2px 1px #888888;
+}
+.card-image {
+    width: 100%;
+    display: block;
+}
+.card-content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    background: #fafafa;
+}
+.card-content > p:first-of-type {
+  margin-top: 0;
+}
+.card-content > p:last-of-type {
+  margin-bottom: 0;
+}
+
+  button {
+  background-color: #99c416;
+  color: white;
+  width: 10rem;
+  height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.see-more-dogs {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+.more-dogs-button {
+  color: #004677;
+  font-weight: bold;
+  background-color: #e5e4e2;
+  width: 15rem;
+  height: 3rem;
+    
+}
+
+  .flex-footer {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004677;
+    color: #F5F5F5;
+    font-size: 14px;
+  }
+  .cat-logo {
+    width: 80%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  
+.dogs-title {
+  color: #004677;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.blog-title {
+  color: #004677;
+  margin: 0 auto;
+  padding-left: 8rem;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+
+}
+.blog {
+  display: flex;
+  column-gap: 5rem;
+  padding-left: 8rem;
+}
+.blog-image {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+}
+.blog-content {
+  line-height: 1.5;
+  font-size: 1em;
+
+}
+
+
+  
