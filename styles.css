@@ -133,7 +133,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
 /* MEDIUM SCREEN SETTINGS */
 
-@media (min-width: 539px) and (max-width: 1024px) {
+@media (min-width: 735px) and (max-width: 1024px) {
   body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
@@ -259,7 +259,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
 /* SMALL SCREEN SMALL SCREEN SMALL SCREEN */
 
-@media (max-width: 538px) {
+@media (max-width: 735px) {
   body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
