@@ -3,19 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles.css">
     <title>All Dogs</title>
 </head>
 <body>
+<div class="grid-container">
+  <div class="header">
   <header>
-    <div>
+    <div class="left">
       <img src="./images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
       <h1>Seattle's premiere dog adoption agency</h1>
     </div>
-    <div>
-      <img src="./images/cart-icon.svg" alt="Shopping Cart">
-      <a href="checkout.html"><button type="button">Checkout</button></a>
+    <div class="right">
+      <img src="./images/cart-icon.svg" alt="Shopping Cart" class="shopping-cart"> <span class="white">$1234.45</span>
+      <form action="checkout.html" method="GET">
+          <label>
+            <button class="checkout-btn" type="submit">Checkout</button>
+          </label>
+      </form>
     </div>
   </header>
+</div>
+<div class="nav">
   <nav>
     <ul>
       <li><a href="index.html">Home</a> /</li>
@@ -23,9 +32,13 @@
       <li><a href="blog.html">Blog</a></li>
     </ul>
   </nav>
+</div>
+<div class="main">
   <section>
     <h2>Here are all of our Dogs!</h2>
-    <div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
       <img src="./images/murphy-card.jpg" alt="Murphy">
       <h3>Murphy</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -36,9 +49,11 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
     </div>
-    <div>
+    </div>
+    <div class="column">
+      <div class="card">
       <img src="./images/poppy-card.jpg" alt="Poppy">
       <h3>Poppy</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -49,9 +64,11 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
     </div>
-    <div>
+  </div>
+  <div class="column">
+    <div class="card">
       <img src="./images/jack-card.jpg" alt="Jack">
       <h3>Jack</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -62,9 +79,11 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
     </div>
-    <div>
+  </div>
+    <div class="column">
+      <div class="card">
       <img src="./images/duffy-card.jpg" alt="Duffy">
       <h3>Duffy</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -75,9 +94,11 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
     </div>
-    <div>
+    </div>
+    <div class="column">
+      <div class="card">
       <img src="./images/lucas-card.jpg" alt="Lucas">
       <h3>Lucas</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -88,9 +109,11 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
     </div>
-    <div>
+    </div>
+    <div class="column">
+      <div class="card">
       <img src="./images/jake-card.jpg" alt="Jake">
       <h3>Jake</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -101,9 +124,11 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
     </div>
-    <div>
+    </div>
+    <div class="column">
+      <div class="card">
       <img src="./images/angus-card.jpg" alt="Angus">
       <h3>Angus</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -114,9 +139,11 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
+      </div>
     </div>
-    <div>
+    <div class="column">
+      <div class="card">
       <img src="./images/violet-card.jpg" alt="Violet">
       <h3>Violet</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -127,9 +154,11 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
     </div>
-    <div>
+    </div>
+    <div class="column">
+      <div class="card">
       <img src="./images/piper-card.jpg" alt="Piper">
       <h3>Piper</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -140,9 +169,11 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
     </div>
-    <div>
+    </div>
+    <div class="column">
+      <div class="card">
       <img src="./images/maximus-card.jpg" alt="Maximus">
       <h3>Maximus</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -153,9 +184,11 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
     </div>
-    <div>
+    </div>
+    <div class="column">
+      <div class="card">
       <img src="./images/luna-card.jpg" alt="Luna">
       <h3>Luna</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -166,9 +199,11 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
     </div>
-    <div>
+    </div>
+    <div class="column">
+      <div class="card">
       <img src="./images/stella-card.jpg" alt="Stella">
       <h3>Stella</h3>
       <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -179,9 +214,13 @@
         rendae pla endis re ea erum,<br>
         qui doluptae
       </p>
-      <button type="button">Adopt</button>
+      <button type="button" class="btn">Adopt</button>
     </div>
+    </div>
+  </div>
   </section>
+</div>
+  <div class="footer">
   <footer>
     <img src="./images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
     <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
@@ -193,5 +232,7 @@
       </ul>
       <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
   </footer>
+  </div>
+</divwa>
 </body>
 </html>
