@@ -255,12 +255,6 @@ label {
     display: block;
 }
 
-.radio {
-  color: black;
-  font-weight: none;
-  font-size: normal;
-}
-
 input {
     width: 600px;
 }
