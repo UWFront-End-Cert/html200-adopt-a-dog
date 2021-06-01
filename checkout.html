@@ -50,35 +50,37 @@
         <input type="text" id="address" name="address">
       </div>
       <div class="address">
-        <label for="city">City</label><br>
-        <input type="text" id="city" name="city"><br>
-        <label for="state">State</label><br>
-        <select name="state" id="state"></select><br>
-        <label for="zip">Zip Code</label><br>
-        <input type="text" id="zip" name="zip">
+        <label class="city" for="city">City  </label>
+        <label class="state" for="state">State  </label>
+        <label class="zip" for="zcode">Zip Code</label>
       </div>
-      <div>
-        <label for="yes no">First Time Adopter?</label><br>
-        <input type="radio" id="yes" name="first-time" value="1">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="first-time" value="0">
-        <label for="no">No</label>
+      <div class="address spread">
+        <input class="city" id="city" type="text" name="city">
+        <select class="state" id="state" name="state"></select>
+        <input class="zip" id="zcode" type="text" name="zcode" />
+      </div>
+        <label>First Time Adopter?</label><br>
+        <div class="radio">
+        <input class="radio" type="radio" id="yes" name="first-time" value="yes" />
+        <span>Yes</span>
+        <input class="radio" type="radio" id="no" name="first-time" value="no"/>
+        <span>No</span>
       </div>
       <div>
         <label for="location">Pickup Location</label><br>
-        <select name="location" id="location">
+        <select name="location" id="location" class="pickup">
         </select>
       </div>
       <div>
         <label>Dogs Adopted</label>
          <div class="adopted spread">
          <img src="images/lucas-card.jpg" class="small-dog" alt="lucas dog" />
-          <div class="test">
+          <div>
            <h4>Lucas</h4>
            <p class="small-text"><b>Cost to Adopt:</b> 123.45</p>
           </div>
           <img src="images/duffy-card.jpg" class="small-dog" alt="duffy dog" />
-           <div class="test">
+           <div>
             <h4>Duffy</h4>
             <p class="small-text"><b>Cost to Adopt:</b> 123.45</p>
             </div>
