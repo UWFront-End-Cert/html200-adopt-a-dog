@@ -23,3 +23,16 @@ function onHoverOutEffect() {
   // when they hover away remove the highlight
 	$(this).removeClass("highlight")
 }
+
+
+let count = 0
+
+function onClickIncrementCount() {
+	// increment the count and set the text of the span to that value 
+  count += 123.45
+  // set text content using .text() method
+	$(".count").text("$" + count)
+}
+
+// set handler for counter button
+$(".btn2").click(onClickIncrementCount)
