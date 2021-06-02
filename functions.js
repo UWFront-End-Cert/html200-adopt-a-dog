@@ -25,42 +25,14 @@ function onHoverOutEffect() {
 }
 
 
-let count = 0
+let totalCost = 0
 
 function onClickIncrementCount() {
 	// increment the count and set the text of the span to that value 
-  count += 123.45
+  totalCost += 123.45
   // set text content using .text() method
-	$(".count").text("$" + Math.round(count*100)/100 )
+	$(".cost").text("$" + Math.round(totalCost*100)/100 )
 }
 
 // set handler for counter button
 $(".btn2").click(onClickIncrementCount)
-
-function handleFormSubmit() {
-    // get text for first and last name inputs then console.log the output
-    // note - have to use .val() to get text content of input fields
-      let firstName = $('#fname').val()
-      let eaddress = $('#eaddress').val()
-      let address = $('#address').val()
-      let city = $('#city').val()
-      let state = $('#state').val()
-      let zip = $('#zcode').val()
-      let firstTimeAdopterYes = $("#yes").prop("checked")
-      let firstTimeAdopterNo = $("#no").prop("checked")
-      let pickUpLoc = $('#loc').val()
-
-      console.log('firstName = ' + firstName)
-      console.log('email address = ' + eaddress)
-      console.log('Street address = ' + address)
-      console.log('city = ' + city)
-      console.log('state = ' + state)
-      console.log('zip = ' + zip)
-      console.log('firstTimeAdopterYes = ' + firstTimeAdopterYes)
-      console.log('firstTimeAdopterNo = ' + firstTimeAdopterNo)
-      console.log('Pickup Location = ' + pickUpLoc)
-  }
-  
-  // set handler for form data
-  $('#submit').click(handleFormSubmit)
-  
