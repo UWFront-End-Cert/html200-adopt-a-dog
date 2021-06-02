@@ -31,7 +31,7 @@ function onClickIncrementCount() {
 	// increment the count and set the text of the span to that value 
   count += 123.45
   // set text content using .text() method
-	$(".count").text("$" + count)
+	$(".count").text("$" + Math.round(count*100)/100 )
 }
 
 // set handler for counter button
