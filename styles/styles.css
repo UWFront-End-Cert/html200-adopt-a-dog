@@ -111,17 +111,32 @@ nav a {
   font-size: 0.6em;
 }
 
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+
+.left-side {
+  flex: 60%;
+}
+
 .main-content {
   text-align: left;
   padding: 1% 10% 1% 10%;
   line-height: 2rem;
   font-size: 1rem;
-
 }
 
-.main-image {
-  float:left;
-  padding: 2em;
+.main-image-index img{
+  padding: 1em;
+  margin: auto;
+  width: 35em;
+  height: 20em;
+  object-fit: cover;
   text-align: center;
 }
 
@@ -129,6 +144,30 @@ nav a {
 figure {
   margin: inherit;
 }
+
+
+.individual-dogs-index div {
+  border: solid;
+  border-color: #ececec;
+  text-align: center;
+  padding: 0.5% 0.5% 9% 1%;
+  margin: 2% 2% 2% 2%;
+  min-width: 100%;
+}
+
+.individual-dogs-index {
+  display: grid;
+  grid-gap: 2% 2%;
+  grid-template-columns: auto auto auto;
+  margin: 1% 5% 5% 5%;
+}
+
+.individual-dogs-index img {
+  width: 100%;
+  height: auto;
+  min-width: 3rem;
+}
+
 
 .individual-dogs div {
   border: solid;
@@ -144,7 +183,6 @@ figure {
   grid-gap: 2% 2%;
   grid-template-columns: auto auto auto auto;
   margin: 1% 5% 5% 5%;
-
 }
 
 .individual-dogs img {
@@ -161,6 +199,10 @@ figure {
   margin: 0% 0% 15% 0%;
 }
 
+.list-of-dogs-page {
+  margin: 0% 0% 15% 0%;
+}
+
 .see-more-clickable {
   background-color: #ececec;
   padding: 0.5rem 3rem;
@@ -168,6 +210,36 @@ figure {
   text-decoration: none;
   font-weight: bold;
   text-align: center;
+}
+
+
+.right-side {
+  flex: 35%;
+  text-align: left;
+  font-size: 0.9em;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+a, a:visited {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.right-title {
+  font-size: 1.2em;
+}
+
+.main-image-right img{
+  padding: 1em 0em 0.2em 0em;
+  width: 20em;
+  height: 12em;
+  object-fit: cover;
+  text-align: left;
+}
+
+.right-link {
+  color: #283e60;
 }
 
 .intro-of-dogs {
@@ -209,9 +281,10 @@ figure {
   color: #283e60;
 }
 
-.blog-post-one img {
-  width: 100%;
-  height:auto;
+.main-image {
+  float:left;
+  padding: 2em;
+  text-align: center;
 }
 
 .contact-page {
@@ -286,4 +359,67 @@ input[type=email] {
   font-size: 1em;
   font-weight: bold;
   margin: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .right-side {
+  display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .individual-dogs-index {
+    display: grid;
+    grid-gap: 2% 2%;
+    grid-template-columns: auto auto;
+    margin: 1% 5% 5% 5%;
+  }
+
+  .individual-dogs {
+    display: grid;
+    grid-gap: 2% 2%;
+    grid-template-columns: auto auto;
+    margin: 1% 5% 5% 5%;
+  }
+
+  .list-of-dogs-page {
+    margin: 0% 0% 45% 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-image-index img {
+    width: 25em;
+    height: 15em;
+    object-fit: cover;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .individual-dogs-index {
+    display: block;
+    width: 85%;
+  }
+
+  .individual-dogs {
+    display: block;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .see-more {
+    text-align: center;
+  }
+}
+
+@media print {
+  header {
+    display: none;
+  }
+  body img {
+    display: none;
+  }
 }
