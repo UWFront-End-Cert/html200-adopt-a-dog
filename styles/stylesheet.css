@@ -199,11 +199,21 @@ a {
     font-weight: 700;
     color: rgb(25, 60, 93); 
 }
+input[type="radio"] {
+    border: solid rgb(192, 192, 192) 2px;
+    height: 1rem;
+}
 input, select {
     border: solid rgb(192, 192, 192) 2px;
     height: 4rem;
+    width: 100%;
 }
 .h3-checkout {
+    font-size: 2.5rem;
+    padding: 0;
+}
+.h3-adopted {
+    grid-area: 2 / 1 / 2 / 3;
     font-size: 2.5rem;
     padding: 0;
 }
@@ -213,14 +223,14 @@ input, select {
     grid-template-columns: repeat(12, 1fr);
     align-items: end;
     row-gap: 4rem;
-    column-gap: 2.5rem;
+    column-gap: 2rem;
 }
 .label-1 { grid-area: 2 / 1 / 2 / span 10; }
 .label-2 { grid-area: 3 / 1 / 3 / span 10; }
 .label-3 { grid-area: 4 / 1 / 4 / span 10; }
 .label-4 { grid-area: 5 / 1 / 5 / 4; }
-.label-5 { grid-area: 5 / 4 / 5 / 6; }
-.label-6 { grid-area: 5 / 6 / 5 / span 5; }
+.label-5 { grid-area: 5 / 4 / 5 / 7; }
+.label-6 { grid-area: 5 / 7 / 5 / span 4; }
 .label-7 {
     grid-area: 6 / 1 / 6 / 4;
     margin: 0;
@@ -232,6 +242,19 @@ input, select {
     margin: 0;
     border: 0;
     padding: 0;
+}
+.radio-font {
+    font-size: 1rem;
+}
+.lucas {
+    grid-area: 3 / 1 / 3 / 2;
+}
+.duffy {}
+input[type="submit"] {
+    background-color: rgb(141, 181, 83);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 
