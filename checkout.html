@@ -34,32 +34,37 @@
             </nav>
         </header>
 
-        <form method="GET">
-            <h2>Checkout</h2>
-            <fieldset>
-                <label>Name<br>
-                    <input type="text"><br>
-                </label>
-                <label>Email<br>
-                    <input type="email"><br>
-                </label>
-                <label>Street Address<br>
-                    <input type="text"><br>
-                </label>
-                <label><br>City
-                    <input type="text">
-                </label>
-                <label>State
-                    <select name="state">
-                        <option value="">Please Select</option>
-                        <option value="State">State</option>
-                    </select>
-                </label>
-                <label>Zip Code
-                    <input type="number">
-                </label>
-            </fieldset>
-            <fieldset>
+        <section class="content-container">
+        <form class="form-container"  method="GET">
+            <h3 class="h3-checkout">Checkout</h3>
+            <label class="label-1">Name<br>
+                <input type="text"><br>
+            </label>
+
+            <label class="label-2">Email<br>
+                <input type="email"><br>
+            </label>
+
+            <label class="label-3">Street Address<br>
+                <input type="text"><br>
+            </label>
+
+            <label class="label-4">City<br>
+                <input type="text">
+            </label>
+
+            <label class="label-5">State
+                <select name="state">
+                    <option value="">Please Select</option>
+                    <option value="State">State</option>
+                </select>
+            </label>
+
+            <label class="label-6">Zip Code
+                <input type="number">
+            </label>
+
+            <fieldset class="label-7">
                 <legend>First Time Adopter?</legend>
                 <label>
                     <input type="radio" name="adopter" value="yes">Yes
@@ -68,7 +73,8 @@
                     <input type="radio" name="adopter" value="no">No
                 </label>
             </fieldset>
-            <fieldset>
+
+            <fieldset class="label-8">
                 <label>Pickup Location<br>
                     <select name="location">
                         <option value="">Please Select</option>
@@ -80,9 +86,7 @@
             </fieldset>
         </form>
 
-        <section>
-            <h3>Dogs Adopted</h3>
-            
+            <h3 class="h3-checkout">Dogs Adopted</h3>
                 <img src="images/lucas-card.jpg"
                     alt="a black dog on a leash looking up excitedly at the camera"
                     width="250"><br>
@@ -94,11 +98,10 @@
                 <p><b>Duffy</b><br>
                     <b>Cost to adopt: $123.45</b>
                 </p>
-                <h3>Total Adoption Cost</h3>
+                <h3 class="h3-checkout">Total Adoption Cost</h3>
                 <p>$1234.56</p>
-            
+            <input type="submit" value="Submit">
         </section>
-        <input type="submit">
 
         <footer class="footer-container">
             <img src="images/adoptadog-logo.svg" 
@@ -108,7 +111,7 @@
                 esseque invenienihil imaximu scideru ptistiusam consequunt
             </p>
             <nav>
-                <ul class="footer-a">
+                <ul class="footer-a footer-nav">
                     <li><a class="footer-a" href="index.html">Home</a></li>
                     <li>/</li>
                     <li><a class="footer-a" href="dogs.html">Dogs</a></li>
