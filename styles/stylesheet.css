@@ -212,11 +212,6 @@ input, select {
     font-size: 2.5rem;
     padding: 0;
 }
-.h3-adopted {
-    grid-area: 2 / 1 / 2 / 3;
-    font-size: 2.5rem;
-    padding: 0;
-}
 .form-container {
     display: grid;
     grid-area: 1 / 1 / 1 / 5;
@@ -246,13 +241,36 @@ input, select {
 .radio-font {
     font-size: 1rem;
 }
-.lucas {
-    grid-area: 3 / 1 / 3 / 2;
+
+.adopt-container {
+    display: grid;
+    grid-area: 8 / 1 / 8 / span 12;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
 }
-.duffy {}
+.label-9 {
+    grid-area: 1 / 1 / 1 / span 12;
+}
+.label-10 {
+    grid-area: 10 / 1 / 10 / span 12;
+}
+.lucas-image {
+    grid-area: 2 / 1 / 4 / 2;
+}
+.lucas-info {
+    grid-area: 2 / 2 / 2 / 5;
+}
+.duffy-image {
+    grid-area: 2 / 5 / 2 / 6;
+}
+.duffy-info {
+    grid-area: 2 / 6 / 2 / 9;
+}
 input[type="submit"] {
+    grid-area: 12 / 1 / 12 / 4;
     background-color: rgb(141, 181, 83);
     color: white;
+    border-radius: 3px;
     font-size: 1.25rem;
     font-weight: 700;
 }
