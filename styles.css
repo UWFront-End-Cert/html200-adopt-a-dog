@@ -33,33 +33,27 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 /* LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS  */
 /* LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS  */
 
-@media (min-width: 1500px) {
+@media (min-width: 1350px) {
   body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   header {
+    width: 1350px;
+    margin-left: 3000px;
+    padding-left: 1919px;
+    margin-right: 3000px;
+    padding-right: 1919px;
+    box-sizing: content-box;
     background-color: black;
     background-image: url(images/header-image.jpg);
     background-repeat: no-repeat;
-    background-size: 1500px;
     background-position: center top;
-    height: 30vh;
+    height: 26rem;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-  }
-
-  #content-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 25rem;
-    max-width: 1500px;
-    margin: auto;
-  }
-  header {
-    grid-column: span 2;
   }
 
   header div.logo-tagline {
@@ -75,7 +69,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     position: relative;
     bottom: 1em;
     width: 100%;
-    font-size: 1.75vw;
+    font-size: 1.5rem;
     margin-top: 2vh;
   }
   header div.cart img {
@@ -87,7 +81,14 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     padding-bottom: 1rem;
   }
   nav ul {
-    width: 1500px;
+    width: 1300px;
+    margin: auto;
+  }
+
+  #content-wrapper {
+    display: grid;
+    grid-template-columns: 1000px 300px;
+    max-width: 1300px;
     margin: auto;
   }
 
@@ -148,7 +149,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     display: flex;
   }
   footer img {
-    width: 50%;
+    width: 25rem;
     margin-top: 3rem;
   }
   main.check-out {
