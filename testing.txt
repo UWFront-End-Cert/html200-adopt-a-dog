@@ -1,0 +1,42 @@
+TESTING
+
+Testing steps taken to ensure site quality:
+
+1. HTML Validation via W3Schools
+
+2. Tested on multiple browsers:
+	Chrome, Firefox, iOS Safari
+	Chrome for Android emuluated in Chrome DevTools
+
+3. Tested on multiple devices based on user-persona research using a live server on a LAN:
+	Desktop PC running Windows 10 on 2k monitor (Chrome, Firefox, Chrome for Android emulation)
+	iPad 
+	iPhone 8
+
+
+Changes made in response to performance using:
+
+	DEVICE / OS / BROWSER / SCREEN RESOLUTION
+
+	PC / Windows 10 / Chrome v 91.0.4472.77 / 2560 x 1440
+
+		1. Main Content and Sidebar placed into Content wrapper to keep content from splaying outward to the edges of the wide screen.  
+		2. All content restricted to 1350px in width, with colored padding extended outward for consistency as the browser window expands.
+
+	PC / Windows 10 / Firefox v 89 / 2560 x 1440
+	
+		1. Same as Chrome above
+
+	Galaxy S5 / Emulated in Chrome / 360 x 640
+
+		1.
+
+	iPhone 8 / iOS 14.4.2 / Mobile Safari 14.0.3 / 1334 x 750
+
+		1. 
+
+	iPad Air 2 / iOS 14.4.1 / Mobile Safari 14 / 1024 x 665
+
+		1.
+
+	
