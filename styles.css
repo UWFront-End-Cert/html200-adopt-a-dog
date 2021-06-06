@@ -185,7 +185,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
             margin-top: .5rem;
           }
 
-      #dog-yard {
+      .dog-yard {
         grid-area: dog-yard;
         clear: both;
         display: flex;
@@ -193,23 +193,33 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
         flex-wrap: wrap;
       }
 
-        .dog-card {
-          background-color: white;
-          width: 250px;
-          height: 350px;
-          border: 2px solid rgb(236,236,236);
-          display: inline;
-          margin-right: 1rem;
-          margin-bottom: 4rem;
-        }
+          .dog-card {
+            background-color: white;
+            width: 250px;
+            height: 350px;
+            border: 2px solid rgb(236,236,236);
+            display: inline;
+            margin-right: 1rem;
+            margin-bottom: 4rem;
+          }
 
-            .dog-card img {
-              width: 100%;
-            }
+              .dog-card img {
+                width: 100%;
+              }
 
-            .dog-card h2, p {
-              margin-left: .5em;
-            }
+              .dog-card h2, p {
+                margin-left: .5em;
+              }
+
+      #all-dogs {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+          #all-dogs .dog-card {
+            width: 300px;
+            height: 385px;
+          }
 
       section.dog-card span {
         background-color: rgb(129,183,65);
@@ -240,18 +250,18 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
         margin-bottom: 4rem;
       }
 
-  #sidebar {
-    grid-area: sidebar;
-  }
-
-      #sidebar img {
-        width: 100%;
-        height: auto;
+      #sidebar {
+        grid-area: sidebar;
       }
 
-      #sidebar p {
-        line-height: 1.8;
-      }
+          #sidebar img {
+            width: 100%;
+            height: auto;
+          }
+
+          #sidebar p {
+            line-height: 1.8;
+          }
 
   footer {
     grid-area: footer;
