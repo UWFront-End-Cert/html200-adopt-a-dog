@@ -481,7 +481,7 @@ footer {
 /* HORIZONTAL TABLETS - HORIZONTAL TABLETS - HORIZONTAL TABLETS - */
 /* HORIZONTAL TABLETS - HORIZONTAL TABLETS - HORIZONTAL TABLETS - */
 
-@media (min-width: 960px) and (max-width: 1499px) {
+@media (min-width: 960px) and (max-width: 1499.99px) {
 
   header {
     width: 100vw;
@@ -834,14 +834,14 @@ footer {
 }
 
 
-@media (min-width: 960px) and (max-width: 1499px) {
+@media (min-width: 768px) and (max-width: 959.99px) {
 
   header {
     width: 100vw;
   }
 
       #logo-tagline {
-        width: 38%;
+        width: 51%;
         padding-left: 2rem;
         margin-top: 3rem;
       }
@@ -855,7 +855,7 @@ footer {
 
       #check-out {
         text-align: left;
-        margin-top: 5rem;
+        margin-top: 6rem;
         margin-right: 3rem;
         width: 20%;
         font-size: .9rem;
@@ -897,12 +897,12 @@ footer {
 
   #home-page-main {
     display: grid;
-    grid-template-columns: 1fr 240px;
+    grid-template-columns: 1fr 200px;
     grid-template-rows: 1fr auto;
     grid-template-areas:
       "intro sidebar"
       "dog-yard sidebar";
-    grid-column-gap: 4rem;
+    grid-column-gap: 3rem;
   }
 
       #intro {
@@ -919,6 +919,7 @@ footer {
 
           #intro h1 {
             margin-top: .5rem;
+            margin-left: .4rem;
           }
 
           #intro p {
@@ -1065,7 +1066,7 @@ footer {
           }
 
   #check-out-form {
-    width: 800px;
+    width: 95.5vw;
   }
 
       label, legend {
