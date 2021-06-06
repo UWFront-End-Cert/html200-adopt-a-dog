@@ -1,4 +1,8 @@
 
+/* Global - Global - Global - Global - Global - Global - Global - Global - Global - Global - Global - Global - Global */
+/* Global - Global - Global - Global - Global - Global - Global - Global - Global - Global - Global - Global - Global */
+/* Global - Global - Global - Global - Global - Global - Global - Global - Global - Global - Global - Global - Global */
+
 * {
   box-sizing: border-box;
   font-family: arial;
@@ -11,7 +15,7 @@ body {
 
 body {
   display: grid;
-  grid-template-rows: 25em 2em auto 20em;
+  grid-template-rows: 28em 3em auto 20em;
   grid-template-areas:
     "header"
     "nav"
@@ -20,12 +24,8 @@ body {
   justify-content: center;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
   color: rgb(9,60,96);
-}
-
-h2.header {
-  color: rgb(129,183,65);
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -34,19 +34,16 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-a.sidebar-a {
-  color: rgb(35,154,185)
-}
-
 nav a:link, nav a:visited, nav a:hover, nav a:active {
   color: rgb(9,60,96);
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 }
 
-/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
-/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
-/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
+/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
+/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
+/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
 
 @media (min-width: 1500px) {
 
@@ -82,7 +79,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
             #logo-tagline h2 {
               position: relative;
               bottom: 2.2rem;
-
+              color: rgb(129,183,65);
               width: 100%;
               font-size: 1.5em;
             }
@@ -187,6 +184,10 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
             margin-top: .5rem;
           }
 
+  #check-out-main {
+    width: 700px;
+  }
+
       .dog-yard {
         grid-area: dog-yard;
         clear: both;
@@ -198,7 +199,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
           .dog-card {
             background-color: white;
             width: 250px;
-            height: 350px;
+            height: 330px;
             border: 2px solid rgb(236,236,236);
             display: inline;
             margin-right: 1rem;
@@ -215,7 +216,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
           #all-dogs .dog-card {
             width: 300px;
-            height: 385px;
+            height: 360px;
           }
 
       section.dog-card span {
@@ -228,6 +229,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
         justify-content: center;
 
         margin: auto;
+        margin-top: 1rem;
         margin-bottom: 1rem;
 
         cursor: pointer;
@@ -251,6 +253,10 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
         grid-area: sidebar;
       }
 
+          .side-blog {
+            margin-bottom: 4rem;
+          }
+
           #sidebar img {
             width: 100%;
             height: auto;
@@ -258,6 +264,10 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
           #sidebar p {
             line-height: 1.8;
+          }
+
+          .sidebar-a {
+            color: rgb(35,154,185) !important;
           }
 
   footer {
@@ -292,7 +302,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   }
 
   #blog-main h1 {
-    text-align: center;
+    text-align: left;
     margin-top: 2em;
     margin-bottom: 2em;
   }
@@ -301,15 +311,16 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
         clear: both;
         line-height: 1.6;
         padding-bottom: 3rem;
-        text-align: justify;
-        max-width: 58rem;
+        text-align: left;
+        width: 1440px;
         margin: auto;
       }
 
           article.blog-post img {
             float: left;
             margin-right: 3rem;
-            width: 40%;
+            width: 18.5%;
+            height: auto;
             margin-bottom: 1rem;
           }
 
@@ -324,52 +335,133 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
           }
 
   }
+
+  #check-out-form {
+    width: 800px;
+  }
+
+      label, legend {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(9,60,96);
+        margin-bottom: 1rem;
+        display:block;
+      }
+
+      button, input, select, textarea {
+      	font-family: inherit;
+      	font-size: 100%;
+      	box-sizing: border-box;
+        display: block;
+      }
+
+      input[type=text], input[type=email] {
+        width: 100%;
+        max-width: 100vw;
+        height: 3rem;
+        margin-bottom: 3rem;
+        display: block;
+      }
+
+      input[type=number], select {
+        height: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      section.city-state-zip {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          width: 100%;
+      }
+
+      .city {
+        max-width: 18rem;
+      }
+
+      .zip {
+        max-width: 9rem;
+      }
+
+      fieldset {
+        border: 0;
+        display: flex;
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 2rem;
+      }
+
+      fieldset label {
+        margin-right: 2rem;
+        font-weight: normal;
+        color: black;
+      }
+
+      pick-up-select {
+        width: 100%;
+      }
+
+      .pick-up-menu {
+        display: flex;
+      }
+
+      input.submit {
+        background-color: rgb(129,183,65);
+        border: none;
+        width: 35%;
+        height: 3em;
+        display: flex;
+        color: white;
+        font-weight: bolder;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+
+      input.submit:hover {
+        cursor: pointer;
+      }
+
+      h2.check-out {
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      section.review-purchase {
+        display: flex;
+        width: 100%;
+      }
+
+          .tiny-card {
+            display: flex;
+            margin-right: 2rem;
+          }
+
+              .tiny-card img {
+                float: left;
+              }
+
+              .tiny-card-text {
+                display: block;
+              }
+
+                  .tiny-card-text h4, p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: .4em;
+                    font-size: .9rem;
+                  }
+
+          p.total-cost {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+  }
+
 }
 
 
 
 
-
-/* LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS  */
-/* LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS  */
-/* LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS  */
-
-/*
-
-@media (min-width: 1350px) {
-
-
-
-  .all-dogs {
-    grid-column: span 2;
-    padding-right: 20em;
-  }
-  #blog-main {
-    grid-column: span 2;
-    padding-right: 12em;
-    padding-left: 12em;
-  }
-  section.review-purchase {
-    display: flex;
-    width: 100%;
-  }
-  div.tiny-card img {
-    min-width: 20%;
-    float: left;
-  }
-  div.tiny-card {
-    width: 50%;
-    display: flex;
-  }
-  footer img {
-    width: 25rem;
-    margin-top: 3rem;
-  }
-  main.check-out {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-}
 
 /* MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS*/
 /* MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS*/
@@ -596,16 +688,9 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 /* HEADER HEADER HEADER HEADER HEADER */
 /* HEADER HEADER HEADER HEADER HEADER */
 
-/*
-
-
-
-
-
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
-
 
 /* MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE */
 /* MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE */
@@ -615,144 +700,14 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 /* SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR*/
 /* SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR*/
 
-
 /* DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU */
 /* DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU */
 /* DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU */
-
-/*
-
-
-
-
-
-
 
 /** Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog  **/
 /** Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog  **/
 /** Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog  **/
 
-/*
-
-
-
 /** Check-out Check-Out Check-out Check-Out Check-out Check-Out Check-out Check-Out */
 /** Check-out Check-Out Check-out Check-Out Check-out Check-Out Check-out Check-Out */
 /** Check-out Check-Out Check-out Check-Out Check-out Check-Out Check-out Check-Out */
-
-/*
-
-label, legend {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: rgb(9,60,96);
-  margin-bottom: 1rem;
-  display:block;
-}
-
-button, input, select, textarea {
-	font-family: inherit;
-	font-size: 100%;
-	box-sizing: border-box;
-  display: block;
-}
-
-input[type=text], input[type=email] {
-  width: 100%;
-  max-width: 100vw;
-  height: 3rem;
-  margin-bottom: 3rem;
-  display: block;
-}
-
-input[type=number], select {
-  height: 3rem;
-  margin-bottom: 3rem;
-}
-
-section.city-state-zip {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-
-.city {
-  max-width: 18rem;
-}
-
-.state {
-}
-
-.zip {
-  max-width: 9rem;
-}
-
-fieldset {
-  border: 0;
-  display: flex;
-  padding: 0;
-  margin-left: 0;
-  margin-bottom: 2rem;
-}
-
-fieldset label {
-  margin-right: 2rem;
-  font-weight: normal;
-  color: black;
-}
-
-pick-up-select {
-  width: 100%;
-}
-
-.pick-up-menu {
-  display: flex;
-}
-
-input.submit {
-  background-color: rgb(129,183,65);
-  border: none;
-  width: 35%;
-  height: 3em;
-  display: flex;
-  color: white;
-  font-weight: bolder;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-h2.check-out {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-
-
-
-
-
-div.tiny-card p {
-  font-size: .8rem;
-  margin-top: 0;
-  padding-top: 0;
-  position: relative;
-  bottom: 2rem;
-}
-
-h4 {
-  font-size: .9rem;
-  color: rgb(9,60,96);
-  position: relative;
-  bottom: 1.4rem;
-}
-
-p.total-cost {
-  font-size: 1.1rem;
-  position: relative;
-  bottom: .5rem;
-}
-
-*/
