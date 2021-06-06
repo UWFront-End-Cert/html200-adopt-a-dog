@@ -1,10 +1,13 @@
 $(document).ready(function(){
   $('.dog-card img').mouseenter(function(){
     $(this).fadeTo('slow', .75)
+
   }).mouseleave(function(){
     $(this).fadeTo('fast', 1)
+
   }).click(function(){
     dogInfo(eval($(this).siblings('h2').text()))
+    
   })
   $('.dog-card span').click(function(){
     addTotal(eval($(this).siblings('h2').text()))

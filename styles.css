@@ -299,7 +299,6 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
       .footer-nav ul li {
         color: white;
       }
-  }
 
   #blog-main h1 {
     text-align: left;
@@ -333,8 +332,6 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
             position: relative;
             bottom: 1rem;
           }
-
-  }
 
   #check-out-form {
     width: 800px;
@@ -455,8 +452,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
           p.total-cost {
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
-  }
-
+          }
 }
 
 
