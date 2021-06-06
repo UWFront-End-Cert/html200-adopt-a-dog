@@ -1,7 +1,3 @@
-/* WHAT NEEDS FIXING for LESSON 07:
-Fix the images in the 'review purchase' section for Large Screens. */
-
-
 
 * {
   box-sizing: border-box;
@@ -11,6 +7,25 @@ Fix the images in the 'review purchase' section for Large Screens. */
 html,
 body {
   overflow-x: hidden;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 25em 2em auto 20em;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  justify-content: center;
+}
+
+h1, h2 {
+  color: rgb(9,60,96);
+}
+
+h2.header {
+  color: rgb(129,183,65);
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -29,104 +44,261 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   text-decoration: none;
 }
 
-/* LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS  */
-/* LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS  */
-/* LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS  */
+/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
+/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
+/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
 
-@media (min-width: 1350px) {
-  body {
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    justify-content: center;
-  }
+@media (min-width: 1500px) {
 
   header {
-    width: 1350px;
+    width: 1440px;
+    box-sizing: content-box;
     margin-left: 3000px;
     padding-left: 1919px;
     margin-right: 3000px;
     padding-right: 1919px;
-    box-sizing: content-box;
+
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+
     background-color: black;
     background-image: url(images/header-image.jpg);
     background-repeat: no-repeat;
     background-position: center top;
-    height: 26rem;
-    display: flex;
-    justify-content: space-between;
   }
 
-  header div.logo-tagline {
-    margin-left: 1rem;
-    margin-top: 3rem;
-    color: rgb(129,183,65);
-    font-style: italic;
-    width: 35%;
-    text-align: left;
-  }
+      #logo-tagline {
+        width: 32%;
+        margin-left: 1rem;
+        margin-top: 3rem;
 
-  header div.logo-tagline h2 {
-    position: relative;
-    bottom: 1em;
-    width: 100%;
-    font-size: 1.5rem;
-    margin-top: 2vh;
-  }
-  header div.cart img {
-    width: 21%;
-  }
+        height: 100%;
+        color: rgb(129,183,65);
+        font-style: italic;
+        text-align: left;
+      }
+
+            #logo-tagline h2 {
+              position: relative;
+              bottom: 2.2rem;
+
+              width: 100%;
+              font-size: 1.5em;
+            }
+
+      #check-out {
+        margin-top: 3rem;
+        margin-right: 3rem;
+        width: 10%;
+        font-size: .9rem;
+
+        color: white;
+        text-align: right;
+        height: 100%;
+      }
+
+          #check-out img {
+            width: 21%;
+          }
+
+          #total {
+            display: inline;
+          }
+
+          #check-out a {
+            width: 100%;
+            height: 2em;
+            margin-top: .7rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+            background-color: rgb(129,183,65);
+          }
+
   nav {
-    grid-column: span 2;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  nav ul {
-    width: 1300px;
-    margin: auto;
+    grid-area: nav;
+    width: 1440px;
+    box-sizing: content-box;
+    margin-left: 3000px;
+    padding-left: 1919px;
+    margin-right: 3000px;
+    padding-right: 1919px;
+
+    background-color: rgb(236,236,236);
+    display: flex;
+    align-items: center;
   }
 
-  #content-wrapper {
+      nav.ul {
+        display: flex;
+        list-style-type: none;
+      }
+
+          ul li {
+            margin-right: 1rem;
+            display: inline;
+
+            color: rgb(9,60,96);
+          }
+
+              ul li:first-child {
+                margin-left: -2em;
+              }
+
+  main {
+    grid-area: main;
+
+    width: 1440px;
+    box-sizing: content-box;
+    margin-left: 3000px;
+    padding-left: 1919px;
+    margin-right: 3000px;
+    padding-right: 1919px;
+
     display: grid;
-    grid-template-columns: 1000px 300px;
-    max-width: 1300px;
-    margin: auto;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "intro sidebar"
+      "dog-yard sidebar";
+    grid-column-gap: 4rem;
   }
 
-  .dog-menu {
-    clear: both;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+      #intro {
+        grid-area: intro;
+        padding-top: 1.5rem;
+        line-height: 1.8;
+        font-size: 1.5em;
+        text-align: justify;
+      }
+
+          #intro img {
+            float: left;
+            margin-right: 1.5rem;
+          }
+
+          #intro h1 {
+            margin-top: .5rem;
+          }
+
+      #dog-yard {
+        grid-area: dog-yard;
+        clear: both;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+        .dog-card {
+          background-color: white;
+          width: 250px;
+          height: 350px;
+          border: 2px solid rgb(236,236,236);
+          display: inline;
+          margin-right: 1rem;
+          margin-bottom: 4rem;
+        }
+
+            .dog-card img {
+              width: 100%;
+            }
+
+            .dog-card h2, p {
+              margin-left: .5em;
+            }
+
+      section.dog-card span {
+        background-color: rgb(129,183,65);
+        width: 90%;
+        height: 2em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: auto;
+        margin-bottom: 1rem;
+
+        cursor: pointer;
+        color: white;
+      }
+
+      #see-more-dogs {
+        background-color: rgb(236,236,236);
+        color: rgb(9,60,96);
+        font-size: 1.1em;
+        width: 10rem;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 4rem;
+      }
+
+  #sidebar {
+    grid-area: sidebar;
   }
 
-  section.dog-card {
-    width: 17em;
-  }
-  aside {
-    padding-left: 1.5em;
-    padding-right: 1rem;
-    text-align: left;
-    width: 90%
-  }
-  aside h2 {
-    padding-left: 0;
-    margin-left: 0;
-  }
-  aside img {
-    width: 100%;
-  }
+      #sidebar img {
+        width: 100%;
+        height: auto;
+      }
 
-  .side-blog {
-    padding-bottom: 4em;
-  }
-  .intro-blurb img {
-    padding-top: 2rem;
-    padding-right: 2rem;
-    width: auto;
-    height: 30em;
-  }
+      #sidebar p {
+        line-height: 1.8;
+      }
+
   footer {
-    grid-column: span 2;
+    grid-area: footer;
+
+    width: 1440px;
+    box-sizing: content-box;
+    margin-left: 3000px;
+    padding-left: 1919px;
+    margin-right: 3000px;
+    padding-right: 1919px;
+
+    text-align: center;
+    color: white;
+    background-color: rgb(9,60,96);
   }
+
+      footer img {
+        width: 25rem;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      footer p {
+        width: 25rem;
+        margin: auto;
+      }
+
+      .footer-nav ul li {
+        color: white;
+      }
+}
+
+
+/*
+
+
+
+/* LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS  */
+/* LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS  */
+/* LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS LARGE SCREEN SETTINGS  */
+
+/*
+
+@media (min-width: 1350px) {
+
+
+
   .all-dogs {
     grid-column: span 2;
     padding-right: 20em;
@@ -158,19 +330,20 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   }
 }
 
+/* MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS*/
+/* MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS*/
+/* MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS MEDIUM SCREENS*/
 
+/*
 
-/* MEDIUM SCREEN SETTINGS */
-
-@media max-width: 1024px {
+@media max-width: 1349.9999px {
   body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr 14em;
   }
 
   header {
-    grid-column: span 2;
+
   }
 
   header div.logo-tagline {
@@ -197,18 +370,13 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   header div.cart img {
     width: 28%;
   }
-  nav {
-    grid-column: span 2;
-    padding-left: 1em;
-  }
+
 
   nav.check-out {
     padding-left: 1em;
   }
 
-  nav ul {
-    padding-left: 1em;
-  }
+
 
   main {
     padding-top: 1em;
@@ -286,8 +454,11 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
   }
 }
 
-/* SMALL SCREEN SMALL SCREEN SMALL SCREEN */
+/* SMALL SCREEN SMALL SCREEN SMALL SCREEN SMALL SCREEN SMALL SCREEN SMALL SCREEN */
+/* SMALL SCREEN SMALL SCREEN SMALL SCREEN SMALL SCREEN SMALL SCREEN SMALL SCREEN */
+/* SMALL SCREEN SMALL SCREEN SMALL SCREEN SMALL SCREEN SMALL SCREEN SMALL SCREEN */
 
+/*
 @media (max-width: 735px) {
   body {
     display: grid;
@@ -326,13 +497,9 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     float: left;
     margin-right: 1em;
   }
-  nav {
-    grid-column: span 2;
-  }
 
-  nav ul {
-    padding-left: 1;
-  }
+
+
   main {
     padding-top: 1em;
     padding-left: 1em;
@@ -385,170 +552,46 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 }
 
 /* HEADER HEADER HEADER HEADER HEADER */
+/* HEADER HEADER HEADER HEADER HEADER */
+/* HEADER HEADER HEADER HEADER HEADER */
+
+/*
 
 
 
-header div.cart {
-  color: white;
-  margin-top: 3rem;
-  margin-right: 3rem;
-  text-align: right;
-  width: 10%;
-  font-size: .9rem;
-}
-
-header div.cart div {
-  display: inline;
-}
-
-header div.cart a {
-  background-color: rgb(129,183,65);
-  width: 100%;
-  min-width: 5em;
-  height: 2em;
-  display: flex;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  margin-top: .7rem;
-}
 
 
-/* NAV NAV NAV NAV NAV NAV NAV */
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 
 
-nav {
-  background-color: rgb(236,236,236);
-  width: 100vw;
-}
+/* MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE */
+/* MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE */
+/* MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE MAIN ARTICLE */
 
-nav.ul {
-  display: flex;
-
-}
-
-ul {
-  list-style-type: none;
-}
-
-ul li {
-  margin-right: 1rem;
-  display: inline;
-  color: rgb(9,60,96);
-}
+/* SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR*/
+/* SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR*/
+/* SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR*/
 
 
-/* MAIN MAIN MAIN MAIN MAIN */
+/* DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU */
+/* DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU */
+/* DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU DOG CARD MENU */
+
+/*
 
 
-h1, h2 {
-  color: rgb(9,60,96);
-}
-
-h2.header {
-  color: rgb(129,183,65);
-}
 
 
-/* MAIN ARTICLE MAIN ARTICLE */
 
 
-main article.intro-blurb p {
-  line-height: 1.8;
-  font-size: 1.2em;
-}
 
-/* SIDEBAR SIDEBAR SIDEBAR */
+/** Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog  **/
+/** Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog  **/
+/** Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog  **/
 
-.sidebar p {
-  line-height: 1.8;
-}
-
-/* DOG CARD MENU DOG CARD MENU DOG CARD MENU */
-
-main article.dog-menu {
-  clear: both;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-section.dog-card {
-  border: 2px solid rgb(236,236,236);
-  display: inline;
-  margin-right: 1rem;
-  margin-bottom: 4rem;
-}
-
-section.dog-card p, h2 {
-  margin-left: 1rem;
-}
-
-section.dog-card img {
-  width: 100%;
-}
-
-section.dog-card span {
-  background-color: rgb(129,183,65);
-  width: 90%;
-  height: 2em;
-  display: flex;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-
-a.see-more-dogs {
-  background-color: rgb(236,236,236);
-  color: rgb(9,60,96);
-  font-size: 1.1em;
-  width: 10rem;
-  height: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 4rem;
-}
-
-footer {
-  background-color: rgb(9,60,96);
-  display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-left: 30%;
-  padding-right: 30%;
-  font-size: .8em;
-}
-
-div.footer-nav {
-  text-align: center;
-  color: white;
-}
-
-div.footer-nav ul {
-  display: flex;
-  justify-content: center;
-}
-
-div.footer-nav ul li {
-  display: inline;
-  color: white;
-}
-
-footer p {
-  color: white;
-  margin-bottom: 3em;
-  margin-top: 3em;
-}
-
-/** Blog-specific formatting **/
-
-
+/*
 
 article.blog-post {
   clear: both;
@@ -576,11 +619,11 @@ article.blog-post p {
   bottom: 1rem;
 }
 
-/** Check-out Page specific formatting **/
+/** Check-out Check-Out Check-out Check-Out Check-out Check-Out Check-out Check-Out */
+/** Check-out Check-Out Check-out Check-Out Check-out Check-Out Check-out Check-Out */
+/** Check-out Check-Out Check-out Check-Out Check-out Check-Out Check-out Check-Out */
 
-
-
-
+/*
 
 label, legend {
   font-size: 1.2rem;
@@ -694,3 +737,5 @@ p.total-cost {
   position: relative;
   bottom: .5rem;
 }
+
+*/
