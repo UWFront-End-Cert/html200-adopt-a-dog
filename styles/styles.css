@@ -18,7 +18,7 @@ header {
 .grid-header {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 5px;
+  grid-gap: 1rem;
 }
 
 .logo-motto {
@@ -84,10 +84,10 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.grid-container {
+.grid-container-dogs-index {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 5px;
+  grid-gap: 1rem;
 }
 
 .home-header {
@@ -236,7 +236,7 @@ legend {
 .grid-form {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  grid-gap: 5px;
+  grid-gap: .5rem;
 }
 
 .city {
