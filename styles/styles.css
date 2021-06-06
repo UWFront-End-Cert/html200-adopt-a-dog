@@ -18,7 +18,7 @@ header {
 .grid-header {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 1rem;
+  grid-gap: .5rem;
 }
 
 .logo-motto {
