@@ -1,5 +1,5 @@
 //5+ words string
-const todayForecast = 'The forecast for today is RAIN';
+const todayForecast = 'The forecast for today is RAIN.';
 
 //put todayForecast string into todayForecastArr array
 let todayForecastArr = todayForecast.split(' ');
