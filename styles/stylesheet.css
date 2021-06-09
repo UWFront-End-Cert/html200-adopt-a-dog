@@ -255,7 +255,8 @@ select {
 .lucas-info { grid-area: 2 / 2 / 2 / 5; }
 .duffy-image { grid-area: 2 / 5 / 2 / 6; }
 .duffy-info { grid-area: 2 / 6 / 2 / 9; }
-.p-adopt {
+.total {
+    grid-area: 5 / 1 / 5 / span 12;
     font-size: 1.5rem;
     font-weight: 400;
     margin: 12px 0 0;
