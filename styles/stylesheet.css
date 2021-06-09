@@ -186,11 +186,12 @@ a {
     font-weight: 700;
     color: rgb(25, 60, 93); 
 }
-input[type="radio"] {
+.input {
     border: solid rgb(192, 192, 192) 2px;
-    height: 1rem;
+    height: 4rem;
+    width: 100%;
 }
-input, select {
+select {
     border: solid rgb(192, 192, 192) 2px;
     height: 4rem;
     width: 100%;
@@ -199,6 +200,7 @@ input, select {
     font-size: 2.5rem;
     padding: 0;
 }
+
 .form-container {
     display: grid;
     grid-area: 1 / 1 / 1 / 5;
@@ -225,10 +227,15 @@ input, select {
     border: 0;
     padding: 0;
 }
+.radio-input {
+    height: 1.5rem;
+    width: 10%;
+}
 .radio-font {
-    display: inline-flex;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: rgb(61, 61, 61);
+    font-weight: 400;
+    margin-right: 45px;
 }
 
 .adopt-container {
@@ -264,25 +271,44 @@ input[type="submit"] {
 
 
 /*Footer*/
-.footer-container {
-    display: flex;
-    flex-direction: column;
+.bottom-container {
+    display: grid;
     grid-area: 11 / 1 / 13 / span 12;
-    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
     background-color: rgb(25, 60, 93);
+    font-size: 1.25rem;
+    gap: 35px;
 }
-.footer-img { grid-area: 1 / 5 / 1 / 7; }
-.footer-nav {
+[class*="footer-"] {
     display: flex;
-    flex-direction: row;
+    margin: 0;
+}
+.footer-img { grid-area: 2 / 5 / 2 / 9; }
+.footer-nav-1 {
+    grid-area: 4 / 5 / 4 / 9;
+    justify-content: center;
+}
+.footer-nav-2 {
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+    padding: 0;
 }
 .footer-a {
     list-style: none;
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-.footer-p { color: rgb(255, 255, 255); }
-
+.footer-p { 
+    color: rgb(255, 255, 255); 
+    grid-area: 3 / 5 / 3 / 9;
+    justify-content: center;
+}
+.footer-copyright {
+    grid-area: 5 / 5 / 5 / 9;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    padding-bottom: 60px;
+}
 
 /*Column widths*/
 .col-1 { width: 8.33%; }
