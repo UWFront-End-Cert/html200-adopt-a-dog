@@ -21,7 +21,7 @@ while(getInput)
     {
         case 'W': 
         {
-            debit = prompt('Please enter amount to withdraw.');
+            debit = prompt('Please enter the amount you wish to withdraw.');
         
             if(balance - Number(debit) < 0)
             {
