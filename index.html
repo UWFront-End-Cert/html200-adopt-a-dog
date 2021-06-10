@@ -42,13 +42,13 @@
             <p>Adopt A Dog</p>
             <p>
                 Iduciendisite quo magnatem iuntum quid quaest ea am,
-                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-                derum recuptatur, cum volore, undipsa doloreium hillupta aut
-                es ut alitatuscit ommossum haritatur arum qui officae videbiti
-                corporeium faccull oribus es quidignis ipietus explam sus
-                am aut amet ant fugiatum, utem non reptat ad magnienecto
-                volorent fugia nonsedi gendand itatquos as magnimpor aut
-                molor autatia ad est officimus accae et omnia cus, od qui ate
+tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+derum recuptatur, cum volore, undipsa doloreium hillupta aut
+es ut alitatuscit ommossum haritatur arum qui officae videbiti
+corporeium faccull oribus es quidignis ipietus explam sus
+am aut amet ant fugiatum, utem non reptat ad magnienecto
+volorent fugia nonsedi gendand itatquos as magnimpor aut
+molor autatia ad est officimus accae et omnia cus, od qui ate
             </p>
 
         </div>
@@ -57,7 +57,7 @@
 
     <div class="cards">
         <div class="card">
-            <img class="card-image" src="images/murphy-card.jpg" alt="">
+            <img onclick="murphyInfo('Murphy', 'Retriever/Mix', '$123.45')" class="card-image" src="images/murphy-card.jpg" alt="">
             <div class="card-content">
                 <h3>
                     Murphy
@@ -73,14 +73,14 @@
                     qui doluptae
                 </p>
             </div>
-            <div class="submit-button">
-                <button type="button" value="Adopt">
+            <div class="adopt-button">
+                <button class="btnAdopt" onclick="runningTotal()" type="button" value="Adopt">
                     Adopt
                 </button>
             </div>
         </div>
         <div class="card">
-            <img class="card-image" src="images/poppy-card.jpg" alt="">
+            <img onclick="murphyInfo('Poppy', 'Bichon', '$123.45')" class="card-image" src="images/poppy-card.jpg" alt="">
             <div class="card-content">
                 <h3>
                     Poppy
@@ -97,13 +97,13 @@
                 </p>
             </div>
             <div class="adopt-button">
-                    <button type="button" value="Adopt">
+                    <button class="btnAdopt" onclick="runningTotal()" type="button" value="Adopt">
                         Adopt
                     </button>
             </div>
         </div>
         <div class="card">
-            <img class="card-image" src="images/jack-card.jpg" alt="">
+            <img onclick="murphyInfo('Jack', 'Beagle', '$123.45')" class="card-image" src="images/jack-card.jpg" alt="">
             <div class="card-content">
                 <h3>
                     Jack
@@ -121,14 +121,14 @@
             </div>
             <div class="adopt-button">
 
-                <button type="button" value="Adopt">
+                <button class="btnAdopt" onclick="runningTotal()" type="button" value="Adopt">
                     Adopt
                 </button>
 
             </div>
         </div>
         <div class="card">
-            <img class="card-image" src="images/duffy-card.jpg" alt="">
+            <img onclick="murphyInfo('Duffy', 'American Terrier', '$123.45')" class="card-image" src="images/duffy-card.jpg" alt="">
             <div class="card-content">
                 <h3>
                     Duffy
@@ -146,14 +146,14 @@
             </div>
             <div class="submit-button">
 
-                <button type="button" value="Adopt">
+                <button class="btnAdopt" onclick="runningTotal()" type="button" value="Adopt">
                     Adopt
                 </button>
 
             </div>
         </div>
         <div class="card">
-            <img class="card-image" src="images/lucas-card.jpg" alt="">
+            <img onclick="murphyInfo('Lucas', 'Shepard', '$123.45')" class="card-image" src="images/lucas-card.jpg" alt="">
             <div class="card-content">
                 <h3>
                     Lucas
@@ -170,13 +170,13 @@
                 </p>
             </div>
             <div class="submit-button">
-                <button type="button" value="Adopt">
+                <button class="btnAdopt" onclick="runningTotal()" type="button" value="Adopt">
                     Adopt
                 </button>
             </div>
         </div>
         <div class="card">
-            <img class="card-image" src="images/jake-card.jpg" alt="">
+            <img onclick="murphyInfo('Jake', 'Labrador', '$123.45')" class="card-image" src="images/jake-card.jpg" alt="">
             <div class="card-content">
                 <h3>
                     Jake
@@ -193,13 +193,13 @@
                 </p>
             </div>
             <div class="submit-button">
-                <button type="button" value="Adopt">
+                <button class="btnAdopt" onclick="runningTotal()" type="button" value="Adopt">
                     Adopt
                 </button>
             </div>
         </div>
         <div class="card">
-            <img class="card-image" src="images/angus-card.jpg" alt="">
+            <img onclick="murphyInfo('Angus', 'Boxer', '$123.45')" class="card-image" src="images/angus-card.jpg" alt="">
             <div class="card-content">
                 <h3>
                     Angus
@@ -216,13 +216,13 @@
                 </p>
             </div>
             <div class="submit-button">
-                <button type="button" value="Adopt">
+                <button class="btnAdopt" onclick="runningTotal()" type="button" value="Adopt">
                     Adopt
                 </button>
             </div>
         </div>
         <div class="card">
-            <img class="card-image" src="images/violet-card.jpg" alt="">
+            <img onclick="murphyInfo('Violet', 'Labrador', '$123.45')" class="card-image" src="images/violet-card.jpg" alt="">
             <div class="card-content">
                 <h3>
                     Violet
@@ -239,7 +239,7 @@
                 </p>
             </div>
             <div class="submit-button">
-                <button type="button" value="Adopt">
+                <button class="btnAdopt" onclick="runningTotal()" type="button" value="Adopt">
                     Adopt
                 </button>
             </div>
@@ -277,5 +277,7 @@
         </p>
       </div>
     </div>
+    <script src="scripts/dog-info.js" ></script>
+    <script src="scripts/total.js" ></script>
   </body>
 </html>
