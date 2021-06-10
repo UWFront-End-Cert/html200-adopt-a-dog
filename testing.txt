@@ -1,0 +1,31 @@
+User Research
+
+
+Testing Devices / Browsers - 
+Testing was done on a Windows desktop and an Iphone 12. On the desktop, I tested Google Chrome, Microsoft Edge, and Firefox. 
+On the iphone I tested Google chrome and Safari.
+
+Windows Desktop Tests - Using each browser’s mobile viewer, I resized the website from the largest to smallest devices. I 
+checked that images and text were all presented reasonably on the screen as it was resized. In particular, I focused on verifying
+that dog image sizes and spacing between dog images were adequate.
+
+Findings - The web pages didn’t have significant differences between browsers. Images and text had resized similarly between browsers.
+The text under “Adopt A Dog” in index.html should have line spacing to improve readability. On monitors with greater than 1440p width,
+the dog images in dogs.html will have a layout of 2 rows of 5 dogs and 1 row of 2 dogs which looks strange. It would be better to limit
+the max number of dogs per row to 4 so that there is always an equal number of dogs on each row. When the submit.html page is resized
+to 320p width or below, there is white space below the footer. That is undesirable because there is no more content past the footer so 
+it is confusing to the user.
+
+Iphone 12 Tests - On Chrome and Safari I viewed all pages of the website (with standard 100% zoom) to see the content was well sized 
+(text was easy to read, links and buttons were easy to click, images were large enough). I tested the hover shadow effect on the dog 
+images as well as the dynamic cart updating from pressing the adopt buttons.
+
+Findings - The green adopt buttons are small and the button text is small as well. The website loads focused in on the top left of 
+the page. It’s necessary to pan out (not zoom out) of the page so that the entire web page is viewable. It is undesirable behavior 
+because it is confusing when first navigating to the website. Most of the content is readable and it is possible to navigate between 
+links on mobile, however, the website would benefit from having larger icons and article text. The shadow effect on dog images is 
+not obvious in the webpage. If you weren’t looking for it, it wouldn’t be noticeable. The cart updated its total value without issue 
+when selecting multiple dogs. I didn’t observe any significant differences in viewing the website between safari and chrome.
+
+Fixes - I did not incorporate fixes to my findings due to limited time. One issue that I found interesting was the submit page’s white
+space past the footer. The footer is not different between that page and others so I could not determine what was causing that issue.
