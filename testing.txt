@@ -1,7 +1,6 @@
 User Research - The targeted users are individuals in their mid 20s who have recently started working and do not have pets. 
 
 Name: Diana Prince
-
 Age: 23
 Occupation: Software Developer
 Other details: Owns an Iphone 12 and browses mostly with Safari. Also owns a 2 year old Mac laptop and browses with Google Chrome.
