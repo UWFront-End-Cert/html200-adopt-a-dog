@@ -1,5 +1,19 @@
-User Research
+User Research - The targeted users are individuals in their mid 20s who have recently started working and do not have pets. 
 
+Name: Diana Prince
+
+Age: 23
+Occupation: Software Developer
+Other details: Owns an Iphone 12 and browses mostly with Safari. Also owns a 2 year old Mac laptop and browses with Google Chrome.
+		Looking for details and history of the dogs at the adopt-a-dog shelter.
+		Wants to know helpful information about raising dogs.
+
+Name: Mike Wazowski
+Age: 24
+Occupation: Project Manager
+Other details: Owns a Galaxy 12 and browses mostly with Google Chrome. Also own a 1 year old Lenovo with Windows 10.
+		Looking to complete the dog checkout process via online form.
+		Wants to know up to date information about all pets that are available.
 
 Testing Devices / Browsers - 
 Testing was done on a Windows desktop and an Iphone 12. On the desktop, I tested Google Chrome, Microsoft Edge, and Firefox. 
