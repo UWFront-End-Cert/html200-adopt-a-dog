@@ -1,0 +1,54 @@
+TESTING
+
+Testing steps taken to ensure site quality:
+
+1. HTML Validation via W3Schools
+
+2. Tested on multiple browsers:
+	Chrome, Firefox, iOS Safari
+	Chrome for Android emuluated in Chrome DevTools
+
+3. Tested on multiple devices based on user-persona research using a live server on a LAN:
+	Desktop PC running Windows 10 on 2k monitor (Chrome, Firefox, Chrome for Android emulation)
+	iPad 
+	iPhone 8
+
+
+Changes made in response to performance using:
+
+
+	DEVICE / OS / BROWSER / SCREEN RESOLUTION
+
+
+	PC / Windows 10 / Chrome v 91.0.4472.77 / 2560 x 1440
+
+		1. Main Content and Sidebar placed into Content wrapper to keep content from splaying outward to the edges of the wide screen.  
+		2. All content restricted to 1440px in width, with colored padding extended outward for consistency as the browser window expands.
+
+	PC / Windows 10 / Firefox v 89 / 2560 x 1440
+	
+		1. Same as Chrome above
+
+	iPad Air 2 / iOS 14.4.1 / Mobile Safari 14 / 1024 x 768
+
+		1. Set up Media Query for Horizontal tablets w/ widths ranging 960 - 1499px.  Increased margins and adjusted font sizes for readability.
+		2. Adjusted all section widths to 100vw for a cleaner presentation.
+		3. Adjusted blog articles so they don't run off the screen, and increased font size for readability.
+		4. Set up Media Query for Vertical tablets w/ widths ranging 768 - 959px.  Adjusted margins, text, columns, font sizes for readability.
+
+
+	iPhone 8 / iOS 14.4.2 / Mobile Safari 14.0.3 / 1334 x 750
+
+		1. Set up Media Query for maximum width of 767px
+		2. Reconfigured header for a vertical presentation above and below the dog's eye.
+		3. Ensured a clickable checkout button.
+		4. Ensured clickable adoption buttons.
+		5. Resized and centered all images to fill their viewport widths.
+
+	Galaxy S5 / Emulated in Chrome / 360 x 640
+
+		1. Same as iPhone above.
+
+
+
+	

@@ -1,0 +1,1550 @@
+
+/* Global - Global - Global - Global - Global - Global - Global - Global */
+/* Global - Global - Global - Global - Global - Global - Global - Global */
+/* Global - Global - Global - Global - Global - Global - Global - Global */
+
+* {
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 28em 3em auto 20em;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  justify-content: center;
+}
+
+h1, h2, h3, h4 {
+  color: rgb(9,60,96);
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited, nav a:hover, nav a:active {
+  color: rgb(9,60,96);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  background-color: black;
+  background-image: url(images/header-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  grid-area: header;
+
+}
+
+    #logo-tagline {
+      height: 100%;
+      font-style: italic;
+      text-align: left;
+    }
+
+        #logo-tagline h2 {
+          color: rgb(129,183,65);
+        }
+
+    #check-out {
+      color: white;
+      text-align: right;
+      height: 100%;
+    }
+
+        #check-out a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          background-color: rgb(129,183,65);
+        }
+
+nav {
+  background-color: rgb(236,236,236);
+  display: flex;
+  align-items: center;
+}
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+        ul li {
+          display: inline;
+          color: rgb(9,60,96);
+        }
+
+footer {
+  padding-top: 2rem;
+  text-align: center;
+  color: white;
+  background-color: rgb(9,60,96);
+}
+
+.footer-nav ul li {
+  color: white;
+}
+
+/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
+/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
+/* WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS - WIDE SCREENS */
+
+@media (min-width: 1500px) {
+
+  header {
+    width: 1440px;
+    box-sizing: content-box;
+    margin-left: 3000px;
+    padding-left: 1919px;
+    margin-right: 3000px;
+    padding-right: 1919px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+      #logo-tagline {
+        width: 32%;
+        margin-left: 1rem;
+        margin-top: 3rem;
+      }
+
+            #logo-tagline h2 {
+              position: relative;
+              bottom: 2.2rem;
+              width: 100%;
+              font-size: 1.5em;
+            }
+
+      #check-out {
+        margin-top: 3rem;
+        margin-right: 3rem;
+        width: 10%;
+        font-size: .9rem;
+
+
+      }
+
+          #check-out img {
+            width: 21%;
+          }
+
+          #total {
+            display: inline;
+          }
+
+          #check-out a {
+            width: 100%;
+            height: 2em;
+            margin-top: .7rem;
+          }
+
+  nav {
+    grid-area: nav;
+    width: 1440px;
+    box-sizing: content-box;
+    margin-left: 3000px;
+    padding-left: 1919px;
+    margin-right: 3000px;
+    padding-right: 1919px;
+  }
+
+      ul li {
+        margin-right: 1rem;
+      }
+
+          ul li:first-child {
+            margin-left: -2em;
+          }
+
+  main {
+    grid-area: main;
+
+    width: 1440px;
+    box-sizing: content-box;
+    margin-left: 3000px;
+    padding-left: 1919px;
+    margin-right: 3000px;
+    padding-right: 1919px;
+  }
+
+  #home-page-main {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "intro sidebar"
+      "dog-yard sidebar";
+    grid-column-gap: 4rem;
+  }
+
+      #intro {
+        grid-area: intro;
+        padding-top: 1.5rem;
+        line-height: 1.8;
+        text-align: justify;
+      }
+
+          #intro img {
+            float: left;
+            margin-right: 1.5rem;
+          }
+
+          #intro h1 {
+            margin-top: .5rem;
+          }
+
+          #intro p {
+            font-size: 1.5em;
+          }
+
+  #check-out-main {
+    width: 700px;
+  }
+
+      .dog-yard {
+        grid-area: dog-yard;
+        clear: both;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+          .dog-card {
+            background-color: white;
+            width: 250px;
+            height: 330px;
+            border: 2px solid rgb(236,236,236);
+            display: inline;
+            margin-right: 1rem;
+            margin-bottom: 4rem;
+          }
+
+              .dog-card img {
+                width: 100%;
+              }
+
+              .dog-card h2, p {
+                margin-left: .5em;
+              }
+
+          #all-dogs .dog-card {
+            width: 300px;
+            height: 360px;
+          }
+
+      section.dog-card span {
+        background-color: rgb(129,183,65);
+        width: 90%;
+        height: 2em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        cursor: pointer;
+        color: white;
+      }
+
+      #see-more-dogs {
+        background-color: rgb(236,236,236);
+        color: rgb(9,60,96);
+        font-size: 1.1em;
+        width: 10rem;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 4rem;
+      }
+
+      #sidebar {
+        grid-area: sidebar;
+      }
+
+          .side-blog {
+            margin-bottom: 4rem;
+          }
+
+          #sidebar img {
+            width: 100%;
+            height: auto;
+          }
+
+          #sidebar p {
+            line-height: 1.8;
+          }
+
+          .sidebar-a {
+            color: rgb(35,154,185) !important;
+          }
+
+  footer {
+    grid-area: footer;
+
+    width: 1440px;
+    box-sizing: content-box;
+    margin-left: 3000px;
+    padding-left: 1919px;
+    margin-right: 3000px;
+    padding-right: 1919px;
+  }
+
+      footer img {
+        width: 25rem;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      footer p {
+        width: 25rem;
+        margin: auto;
+      }
+
+  #blog-main h1 {
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+      article.blog-post {
+        clear: both;
+        line-height: 1.6;
+        padding-bottom: 3rem;
+        text-align: left;
+        width: 1440px;
+        margin: auto;
+      }
+
+          article.blog-post img {
+            float: left;
+            margin-right: 3rem;
+            width: 18.5%;
+            height: auto;
+            margin-bottom: 1rem;
+          }
+
+          article.blog-post h2 {
+            text-align: left;
+            margin-left: 0;
+          }
+
+          article.blog-post p {
+            position: relative;
+            bottom: 1rem;
+          }
+
+  #check-out-form {
+    width: 800px;
+  }
+
+      label, legend {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(9,60,96);
+        margin-bottom: 1rem;
+        display:block;
+      }
+
+      button, input, select, textarea {
+      	font-family: inherit;
+      	font-size: 100%;
+      	box-sizing: border-box;
+        display: block;
+      }
+
+      input[type=text], input[type=email] {
+        width: 100%;
+        max-width: 100vw;
+        height: 3rem;
+        margin-bottom: 3rem;
+        display: block;
+      }
+
+      input[type=number], select {
+        height: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      section.city-state-zip {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          width: 100%;
+      }
+
+      .city {
+        max-width: 18rem;
+      }
+
+      .zip {
+        max-width: 9rem;
+      }
+
+      fieldset {
+        border: 0;
+        display: flex;
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 2rem;
+      }
+
+      fieldset label {
+        margin-right: 2rem;
+        font-weight: normal;
+        color: black;
+      }
+
+      pick-up-select {
+        width: 100%;
+      }
+
+      .pick-up-menu {
+        display: flex;
+      }
+
+      input.submit {
+        background-color: rgb(129,183,65);
+        border: none;
+        width: 35%;
+        height: 3em;
+        display: flex;
+        color: white;
+        font-weight: bolder;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+
+      input.submit:hover {
+        cursor: pointer;
+      }
+
+      h2.check-out {
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      section.review-purchase {
+        display: flex;
+        width: 100%;
+      }
+
+          .tiny-card {
+            display: flex;
+            margin-right: 2rem;
+          }
+
+              .tiny-card img {
+                float: left;
+              }
+
+              .tiny-card-text {
+                display: block;
+              }
+
+                  .tiny-card-text h4, p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: .4em;
+                    font-size: .9rem;
+                  }
+
+          p.total-cost {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+          }
+
+}
+
+/* HORIZONTAL TABLETS - HORIZONTAL TABLETS - HORIZONTAL TABLETS - */
+/* HORIZONTAL TABLETS - HORIZONTAL TABLETS - HORIZONTAL TABLETS - */
+/* HORIZONTAL TABLETS - HORIZONTAL TABLETS - HORIZONTAL TABLETS - */
+
+@media (min-width: 960px) and (max-width: 1499.99px) {
+
+  header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+      #logo-tagline {
+        width: 38%;
+        padding-left: 2rem;
+        margin-top: 3rem;
+      }
+
+            #logo-tagline h2 {
+              position: relative;
+              bottom: 1.5rem;
+              width: 100%;
+              font-size: 1.2em;
+            }
+
+      #check-out {
+        text-align: left;
+        margin-top: 5rem;
+        margin-right: 3rem;
+        width: 20%;
+        font-size: .9rem;
+      }
+
+          #check-out img {
+            width: 21%;
+          }
+
+          #total {
+            display: inline;
+          }
+
+          #check-out a {
+            width: 100%;
+            height: 2em;
+            margin-top: .7rem;
+          }
+
+  nav {
+    grid-area: nav;
+    width: 100vw;
+  }
+
+      ul li {
+        margin-right: 1rem;
+      }
+
+          ul li:first-child {
+            margin-left: -1em;
+          }
+
+  main {
+    grid-area: main;
+    width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #home-page-main {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "intro sidebar"
+      "dog-yard sidebar";
+    grid-column-gap: 4rem;
+  }
+
+      #intro {
+        grid-area: intro;
+        padding-top: 1.5rem;
+        line-height: 1.8;
+        text-align: justify;
+      }
+
+          #intro img {
+            float: left;
+            margin-right: 1.5rem;
+          }
+
+          #intro h1 {
+            margin-top: .5rem;
+          }
+
+          #intro p {
+            font-size: 1.2em;
+          }
+
+  #check-out-main {
+    width: 700px;
+  }
+
+      .dog-yard {
+        grid-area: dog-yard;
+        margin-top: 2rem;
+        clear: both;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+          .dog-card {
+            background-color: white;
+            width: 213px;
+            height: 310px;
+            border: 2px solid rgb(236,236,236);
+            display: inline;
+            margin-right: 1rem;
+            margin-bottom: 4rem;
+          }
+
+              .dog-card img {
+                width: 100%;
+              }
+
+              .dog-card h2, p {
+                margin-left: .5em;
+              }
+
+          #all-dogs .dog-card {
+            width: 300px;
+            height: 360px;
+          }
+
+      section.dog-card span {
+        background-color: rgb(129,183,65);
+        width: 90%;
+        height: 2em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        cursor: pointer;
+        color: white;
+      }
+
+      #see-more-dogs {
+        background-color: rgb(236,236,236);
+        color: rgb(9,60,96);
+        font-size: 1.1em;
+        width: 10rem;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 4rem;
+      }
+
+      #sidebar {
+        grid-area: sidebar;
+      }
+
+          .side-blog {
+            margin-bottom: 4rem;
+          }
+
+          #sidebar img {
+            width: 100%;
+            height: auto;
+          }
+
+          #sidebar p {
+            line-height: 1.8;
+          }
+
+          .sidebar-a {
+            color: rgb(35,154,185) !important;
+          }
+
+  footer {
+    grid-area: footer;
+
+    width: 100vw;
+  }
+
+      footer img {
+        width: 25rem;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      footer p {
+        width: 25rem;
+        margin: auto;
+      }
+
+  #blog-main h1 {
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+      article.blog-post {
+        clear: both;
+        line-height: 1.6;
+        padding-bottom: 3rem;
+        text-align: justify;
+        width: 96vw;
+        margin: auto;
+      }
+
+          article.blog-post img {
+            float: left;
+            margin-right: 3rem;
+            padding-bottom: 1rem;
+            width: 30%;
+            height: auto;
+            margin-bottom: 1rem;
+          }
+
+          article.blog-post h2 {
+            text-align: left;
+            margin-left: 0;
+          }
+
+          article.blog-post p {
+            position: relative;
+            font-size: 1em;
+            bottom: 1rem;
+          }
+
+  #check-out-form {
+    width: 800px;
+  }
+
+      label, legend {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(9,60,96);
+        margin-bottom: 1rem;
+        display:block;
+      }
+
+      button, input, select, textarea {
+      	font-family: inherit;
+      	font-size: 100%;
+      	box-sizing: border-box;
+        display: block;
+      }
+
+      input[type=text], input[type=email] {
+        width: 100%;
+        max-width: 100vw;
+        height: 3rem;
+        margin-bottom: 3rem;
+        display: block;
+      }
+
+      input[type=number], select {
+        height: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      section.city-state-zip {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          width: 100%;
+      }
+
+      .city {
+        max-width: 18rem;
+      }
+
+      .zip {
+        max-width: 9rem;
+      }
+
+      fieldset {
+        border: 0;
+        display: flex;
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 2rem;
+      }
+
+      fieldset label {
+        margin-right: 2rem;
+        font-weight: normal;
+        color: black;
+      }
+
+      pick-up-select {
+        width: 100%;
+      }
+
+      .pick-up-menu {
+        display: flex;
+      }
+
+      input.submit {
+        background-color: rgb(129,183,65);
+        border: none;
+        width: 35%;
+        height: 3em;
+        display: flex;
+        color: white;
+        font-weight: bolder;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+
+      input.submit:hover {
+        cursor: pointer;
+      }
+
+      h2.check-out {
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      section.review-purchase {
+        display: flex;
+        width: 100%;
+      }
+
+          .tiny-card {
+            display: flex;
+            margin-right: 2rem;
+          }
+
+              .tiny-card img {
+                float: left;
+              }
+
+              .tiny-card-text {
+                display: block;
+              }
+
+                  .tiny-card-text h4, p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: .4em;
+                    font-size: .9rem;
+                  }
+
+          p.total-cost {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+          }
+}
+
+/* VERTICAL TABLETS - VERTICAL TABLETS - VERTICAL TABLETS - VERTICAL TABLETS */
+/* VERTICAL TABLETS - VERTICAL TABLETS - VERTICAL TABLETS - VERTICAL TABLETS */
+/* VERTICAL TABLETS - VERTICAL TABLETS - VERTICAL TABLETS - VERTICAL TABLETS */
+
+@media (min-width: 768px) and (max-width: 959.99px) {
+
+  header {
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+      #logo-tagline {
+        width: 51%;
+        padding-left: 2rem;
+        margin-top: 3rem;
+      }
+
+            #logo-tagline h2 {
+              position: relative;
+              bottom: 1.5rem;
+              width: 100%;
+              font-size: 1.2em;
+            }
+
+      #check-out {
+        text-align: left;
+        margin-top: 6rem;
+        margin-right: 3rem;
+        width: 20%;
+        font-size: .9rem;
+      }
+
+          #check-out img {
+            width: 21%;
+          }
+
+          #total {
+            display: inline;
+          }
+
+          #check-out a {
+            width: 100%;
+            height: 2em;
+            margin-top: .7rem;
+          }
+
+  nav {
+    grid-area: nav;
+    width: 100vw;
+  }
+
+      ul li {
+        margin-right: 1rem;
+      }
+
+          ul li:first-child {
+            margin-left: -1em;
+          }
+
+  main {
+    grid-area: main;
+    width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #home-page-main {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "intro sidebar"
+      "dog-yard sidebar";
+    grid-column-gap: 3rem;
+  }
+
+      #intro {
+        grid-area: intro;
+        padding-top: 1.5rem;
+        line-height: 1.8;
+        text-align: justify;
+      }
+
+          #intro img {
+            float: left;
+            margin-right: 1.5rem;
+          }
+
+          #intro h1 {
+            margin-top: .5rem;
+            margin-left: .4rem;
+          }
+
+          #intro p {
+            font-size: 1.2em;
+          }
+
+  #check-out-main {
+    width: 700px;
+  }
+
+      .dog-yard {
+        grid-area: dog-yard;
+        margin-top: 2rem;
+        clear: both;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+          .dog-card {
+            background-color: white;
+            width: 213px;
+            height: 310px;
+            border: 2px solid rgb(236,236,236);
+            display: inline;
+            margin-right: 1rem;
+            margin-bottom: 4rem;
+          }
+
+              .dog-card img {
+                width: 100%;
+              }
+
+              .dog-card h2, p {
+                margin-left: .5em;
+              }
+
+          #all-dogs .dog-card {
+            width: 300px;
+            height: 360px;
+          }
+
+      section.dog-card span {
+        background-color: rgb(129,183,65);
+        width: 90%;
+        height: 2em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        cursor: pointer;
+        color: white;
+      }
+
+      #see-more-dogs {
+        background-color: rgb(236,236,236);
+        color: rgb(9,60,96);
+        font-size: 1.1em;
+        width: 10rem;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 4rem;
+      }
+
+      #sidebar {
+        grid-area: sidebar;
+      }
+
+          .side-blog {
+            margin-bottom: 4rem;
+          }
+
+          #sidebar img {
+            width: 100%;
+            height: auto;
+          }
+
+          #sidebar p {
+            line-height: 1.8;
+          }
+
+          .sidebar-a {
+            color: rgb(35,154,185) !important;
+          }
+
+  footer {
+    grid-area: footer;
+
+    width: 100vw;
+  }
+
+      footer img {
+        width: 25rem;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      footer p {
+        width: 25rem;
+        margin: auto;
+      }
+
+  #blog-main h1 {
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+      article.blog-post {
+        clear: both;
+        line-height: 1.6;
+        padding-bottom: 3rem;
+        text-align: justify;
+        width: 96vw;
+        margin: auto;
+      }
+
+          article.blog-post img {
+            float: left;
+            margin-right: 3rem;
+            padding-bottom: 1rem;
+            width: 30%;
+            height: auto;
+            margin-bottom: 1rem;
+          }
+
+          article.blog-post h2 {
+            text-align: left;
+            margin-left: 0;
+          }
+
+          article.blog-post p {
+            position: relative;
+            font-size: 1em;
+            bottom: 1rem;
+          }
+
+  #check-out-form {
+    width: 95.5vw;
+  }
+
+      label, legend {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(9,60,96);
+        margin-bottom: 1rem;
+        display:block;
+      }
+
+      button, input, select, textarea {
+      	font-family: inherit;
+      	font-size: 100%;
+      	box-sizing: border-box;
+        display: block;
+      }
+
+      input[type=text], input[type=email] {
+        width: 100%;
+        max-width: 100vw;
+        height: 3rem;
+        margin-bottom: 3rem;
+        display: block;
+      }
+
+      input[type=number], select {
+        height: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      section.city-state-zip {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          width: 100%;
+      }
+
+      .city {
+        max-width: 18rem;
+      }
+
+      .zip {
+        max-width: 9rem;
+      }
+
+      fieldset {
+        border: 0;
+        display: flex;
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 2rem;
+      }
+
+      fieldset label {
+        margin-right: 2rem;
+        font-weight: normal;
+        color: black;
+      }
+
+      pick-up-select {
+        width: 100%;
+      }
+
+      .pick-up-menu {
+        display: flex;
+      }
+
+      input.submit {
+        background-color: rgb(129,183,65);
+        border: none;
+        width: 35%;
+        height: 3em;
+        display: flex;
+        color: white;
+        font-weight: bolder;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+
+      input.submit:hover {
+        cursor: pointer;
+      }
+
+      h2.check-out {
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      section.review-purchase {
+        display: flex;
+        width: 100%;
+      }
+
+          .tiny-card {
+            display: flex;
+            margin-right: 2rem;
+          }
+
+              .tiny-card img {
+                float: left;
+              }
+
+              .tiny-card-text {
+                display: block;
+              }
+
+                  .tiny-card-text h4, p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: .4em;
+                    font-size: .9rem;
+                  }
+
+          p.total-cost {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+          }
+}
+
+/* PHONES - PHONES - PHONES - PHONES - PHONES - PHONES - PHONES - PHONES */
+/* PHONES - PHONES - PHONES - PHONES - PHONES - PHONES - PHONES - PHONES */
+/* PHONES - PHONES - PHONES - PHONES - PHONES - PHONES - PHONES - PHONES */
+
+@media (max-width: 767.99px) {
+
+  header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+      #logo-tagline {
+        width: 96vw;
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+      }
+
+            #logo-tagline h2 {
+              position: relative;
+              bottom: .5rem;
+              width: 100%;
+              font-size: 1.05em;
+              margin: auto;
+            }
+
+      #check-out {
+        text-align: center;
+        margin-top: 6rem;
+        width: 50%;
+        height: 25%;
+        font-size: 1.1rem;
+        margin: auto;
+      }
+
+          #check-out img {
+            width: 10%;
+          }
+
+          #total {
+            display: inline;
+          }
+
+          #check-out a {
+            width: 100%;
+            height: 2em;
+            margin-top: .7rem;
+          }
+
+  nav {
+    grid-area: nav;
+    width: 100vw;
+  }
+
+      ul {
+        margin: auto;
+      }
+
+      ul li {
+        margin-right: 1rem;
+      }
+
+          ul li:first-child {
+            margin-left: -1em;
+          }
+
+  main {
+    grid-area: main;
+    justify-content: center;
+    width: 100%;
+  }
+
+      #intro {
+        padding-top: 1.5rem;
+        width: 100vw;
+        line-height: 1.8;
+        text-align: justify;
+      }
+
+          #intro img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+          }
+
+          #intro h1 {
+            margin-top: .5rem;
+            text-align: center;
+          }
+
+          #intro p {
+            font-size: 1.2em;
+            padding-left: 1em;
+            padding-right: 1.1em;
+          }
+
+      .dog-yard {
+        grid-area: dog-yard;
+        margin-top: 2rem;
+        clear: both;
+        display: block;
+
+      }
+
+          .dog-card {
+            background-color: white;
+            width: 100%;
+            height: auto;
+            border: 2px solid rgb(236,236,236);
+            margin: auto;
+            margin-bottom: 4rem;
+          }
+
+              .dog-card img {
+                width: 100%;
+              }
+
+              .dog-card h2, p {
+                margin-left: .5rem;
+                padding-left: .5rem;
+                padding-right: .5rem;
+              }
+
+        #all-dogs-heading {
+          font-size: 1.7rem;
+          text-align: center;
+
+        }
+
+      section.dog-card span {
+        background-color: rgb(129,183,65);
+        width: 90%;
+        height: 4em;
+        font-size: 1em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        cursor: pointer;
+        color: white;
+      }
+
+      #see-more-dogs {
+        background-color: rgb(236,236,236);
+        color: rgb(9,60,96);
+        font-size: 1.1em;
+        width: 10rem;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 4rem;
+      }
+
+      #sidebar {
+        display: none;
+          }
+
+  footer {
+    grid-area: footer;
+
+    width: 100vw;
+  }
+
+      footer img {
+        width: 18rem;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      footer p {
+        width: 18rem;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+  #check-out-main {
+    width: 100vw;
+  }
+      #check-out-main h1 {
+        text-align: center;
+      }
+
+  #blog-main h1 {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+      article.blog-post {
+        clear: both;
+        line-height: 1.6;
+        padding-bottom: 3rem;
+        text-align: justify;
+        width: 96vw;
+        margin: auto;
+      }
+
+          article.blog-post img {
+            margin-right: 3rem;
+            width: 100%;
+            height: auto;
+          }
+
+          article.blog-post h2 {
+            text-align: left;
+            margin-left: .5em;;
+            margin-top: 0;
+          }
+
+          article.blog-post p {
+            position: relative;
+            font-size: 1em;
+            bottom: 1rem;
+          }
+
+  #check-out-form {
+    width: 90%;
+    margin: auto;
+  }
+
+      label, legend {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(9,60,96);
+        margin-bottom: 1rem;
+        display:block;
+      }
+
+      button, input, select, textarea {
+      	font-family: inherit;
+      	font-size: 100%;
+      	box-sizing: border-box;
+        display: block;
+      }
+
+      input[type=text], input[type=email] {
+        width: 100%;
+        max-width: 100vw;
+        height: 3rem;
+        margin-bottom: 3rem;
+        display: block;
+      }
+
+      input[type=number], select {
+        height: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      section.city-state-zip {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          width: 100%;
+      }
+
+      .city {
+        max-width: 18rem;
+      }
+
+      .zip {
+        max-width: 9rem;
+      }
+
+      fieldset {
+        border: 0;
+        display: flex;
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 2rem;
+      }
+
+      fieldset label {
+        margin-right: 2rem;
+        font-weight: normal;
+        color: black;
+      }
+
+      pick-up-select {
+        width: 100%;
+      }
+
+      .pick-up-menu {
+        display: flex;
+      }
+
+      input.submit {
+        background-color: rgb(129,183,65);
+        border: none;
+        width: 35%;
+        height: 3em;
+        display: flex;
+        color: white;
+        font-weight: bolder;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+
+      input.submit:hover {
+        cursor: pointer;
+      }
+
+      h2.check-out {
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      section.review-purchase {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+          .tiny-card {
+            width: 100%;
+            display: flex;
+            margin-right: 2rem;
+            margin-bottom: 1rem;
+          }
+
+              .tiny-card img {
+                float: left;
+              }
+
+              .tiny-card-text {
+                display: block;
+              }
+
+                  .tiny-card-text h4, p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: .4em;
+                    font-size: 1em;
+                  }
+
+          p.total-cost {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+          }
+}

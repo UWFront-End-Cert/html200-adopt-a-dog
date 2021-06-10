@@ -1,0 +1,21 @@
+Personas 
+
+Person #1: David Jones
+Age 33
+Occupation: Software Developer
+Hobbies / Interests: Plays games on Steam, is an avid runner.  Wants a dog to run with.
+Equipment: Has two mounted 2k monitors and runs Windows on his custom-built gaming rig.
+
+
+Person #2: Helen Troy
+Age 58
+Occupation: Healthcare Administrator
+Hobbies / Interests: Gardening, spending time with her new granddaughter.  Empty nesting and wants a furry companion.
+Equipment: Has an aging iPad as her primary device.
+
+
+Person #3: Jessica Silver
+Age 20
+Occupation: University Student
+Hobbies / Interests: Free-hand drawing and painting, Civil War reenactments, renaissance fairs.  Just moved into a new college house, her and her roommates want a dog.
+Equipment: Has a very basic laptop for school, but does almost everything on her iPhone 8.
