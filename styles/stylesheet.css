@@ -27,8 +27,12 @@ p {
 }
 .header-img { 
     grid-area: 1 / 1 / span 12 / span 12; 
+    height: 37.5rem;
 }
-.header-logo { grid-area: 2 / 2 / 5 / 5; }
+.header-logo { 
+    grid-area: 2 / 2 / 5 / 5; 
+    width: 134%;
+}
 .h2 {
     grid-area: 5 / 2 / 5 / 6;
     margin: 0;
