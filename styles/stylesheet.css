@@ -31,7 +31,7 @@ p {
 }
 .header-logo { 
     grid-area: 2 / 2 / 5 / 5; 
-    width: 134%;
+    width: 37.5rem;
 }
 .h2 {
     grid-area: 5 / 2 / 5 / 6;
@@ -42,6 +42,7 @@ p {
 .cart {
     grid-area: 3 / 10;
     justify-self: center;
+    height: 1.875rem;
 }
 .cart-p {
     display: flex;
@@ -121,6 +122,8 @@ a {
     border:rgb(235, 235, 235) solid 0.187rem;
     border-top: none;
 }
+
+.dog-specs { width: 15.625rem; }
 
 /*First row of images*/
 .article-1 { grid-area: 2 / 1 / 2 / 2; }
@@ -252,14 +255,22 @@ select {
 }
 .label-9 { grid-area: 1 / 1 / 1 / span 12; }
 .label-10 { grid-area: 4 / 1 / 4 / span 12; }
-.lucas-image { grid-area: 2 / 1 / 4 / 2; }
 .dog {
     color: rgb(25, 60, 93); 
     font-size: 1.4rem;
     font-weight: 700;
 }
+.lucas-image { 
+    grid-area: 2 / 1 / 4 / 2; 
+    width: 6.25rem;
+    height: 6.25rem;
+}
 .lucas-info { grid-area: 2 / 2 / 2 / 5; }
-.duffy-image { grid-area: 2 / 5 / 2 / 6; }
+.duffy-image { 
+    grid-area: 2 / 5 / 2 / 6; 
+    width: 6.25rem;
+    height: 6.25rem;
+}
 .duffy-info { grid-area: 2 / 6 / 2 / 9; }
 .total {
     grid-area: 5 / 1 / 5 / span 12;
@@ -271,7 +282,7 @@ input[type="submit"] {
     grid-area:9 / 1 / 9 / 4;
     background-color: rgb(141, 181, 83);
     color: white;
-    border-radius: 0.187;
+    border-radius: 0.187rem;
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -290,7 +301,10 @@ input[type="submit"] {
     display: flex;
     margin: 0;
 }
-.footer-img { grid-area: 2 / 5 / 2 / 9; }
+.footer-img { 
+    grid-area: 2 / 5 / 2 / 9; 
+    height: 7.812rem;
+}
 .footer-nav-1 {
     grid-area: 4 / 5 / 4 / 9;
     justify-content: center;
@@ -331,3 +345,4 @@ input[type="submit"] {
 .col-10 { width: 83.33%; }
 .col-11 { width: 91.66%; }
 .col-12 { width: 100%; }
+
