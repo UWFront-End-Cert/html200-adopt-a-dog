@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Checkout</title>
         <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+        <title>Checkout</title>
     </head>
 
     <body>
@@ -15,12 +15,14 @@
                 alt="a close-up of a beagles' face looking toward the left of the screen from the right"
                 height="600">
             <img class="header-logo" src="images/adoptadog-logo.svg" 
-                alt="White dog silhoutte next to the company's title.">
-            <h2 class="h2">Seattle's premier dog adoption agency</h2>
+                alt="White dog silhoutte next to the company's title."
+                width="600">
+            <h2 class="h2"><i>Seattle's premier dog adoption agency</i></h2>
             <img class="cart" src="images/cart-icon.svg" 
                 alt="cart icon next to the current total price"
                 height="30">
-            <a class="checkout-container" href="checkout.html">Checkout</a>
+            <p class="cart-p">$1234.56</p>
+            <a class="checkout-container col-8" href="checkout.html">Checkout</a>
             <nav class="nav">
                 <ul class="menu col-9">
                     <li><a class="a" href="index.html">Home</a></li>
@@ -32,41 +34,49 @@
             </nav>
         </header>
 
-        <form method="GET">
-            <h2>Checkout</h2>
-            <fieldset>
-                <label>Name<br>
-                    <input type="text"><br>
-                </label>
-                <label>Email<br>
-                    <input type="email"><br>
-                </label>
-                <label>Street Address<br>
-                    <input type="text"><br>
-                </label>
-                <label><br>City
-                    <input type="text">
-                </label>
-                <label>State
-                    <select name="state">
-                        <option value="">Please Select</option>
-                        <option value="State">State</option>
-                    </select>
-                </label>
-                <label>Zip Code
-                    <input type="number">
-                </label>
-            </fieldset>
-            <fieldset>
+        <section class="content-container">
+        <form class="form-container"  method="GET">
+            <h3 class="h3-checkout">Checkout</h3>
+            <label class="label-1">Name<br>
+                <input class="input" type="text"><br>
+            </label>
+
+            <label class="label-2">Email<br>
+                <input class="input" type="email"><br>
+            </label>
+
+            <label class="label-3">Street Address<br>
+                <input class="input" type="text"><br>
+            </label>
+
+            <label class="label-4">City<br>
+                <input class="input" type="text">
+            </label>
+
+            <label class="label-5">State
+                <select name="state">
+                    <option value="">Please Select</option>
+                    <option value="State">State</option>
+                </select>
+            </label>
+
+            <label class="label-6">Zip Code
+                <input class="input" type="number">
+            </label>
+
+            <fieldset class="label-7">
                 <legend>First Time Adopter?</legend>
-                <label>
-                    <input type="radio" name="adopter" value="yes">Yes
+                <label class="radio-font">
+                    <input class="radio-input" type="radio" name="adopter" value="yes">
+                    Yes
                 </label>
-                <label>
-                    <input type="radio" name="adopter" value="no">No
+                <label class="radio-font">
+                    <input class="radio-input" type="radio" name="adopter" value="no">
+                    No
                 </label>
             </fieldset>
-            <fieldset>
+
+            <fieldset class="label-8">
                 <label>Pickup Location<br>
                     <select name="location">
                         <option value="">Please Select</option>
@@ -76,46 +86,46 @@
                     </select>
                 </label>
             </fieldset>
-        </form>
 
-        <section>
-            <h3>Dogs Adopted</h3>
-            
-                <img src="images/lucas-card.jpg"
+            <div class="adopt-container">
+            <label class="label-9">Dogs Adopted</label>
+                <img class="lucas-image" src="images/lucas-card.jpg"
                     alt="a black dog on a leash looking up excitedly at the camera"
-                    width="250"><br>
-                <b>Lucas</b><br>
-                    <b>Cost to adopt: $123.45</b><br>
-                <img src="images/duffy-card.jpg"
+                    width="100" height="100"><br>
+                <p class="lucas-info"><span class="dog">Lucas</span><br>
+                    <b>Cost to adopt:</b> $123.45</p>
+                <img class="duffy-image" src="images/duffy-card.jpg"
                     alt="a brown and white dog with two different colored eyes looking directly at the camera"
-                    width="250"><br>
-                <p><b>Duffy</b><br>
-                    <b>Cost to adopt: $123.45</b>
-                </p>
-                <h3>Total Adoption Cost</h3>
-                <p>$1234.56</p>
-            
-        </section>
-        <input type="submit">
+                    width="100" height="100"><br>
+                <p class="duffy-info"><span class="dog">Duffy</span><br>
+                    <b>Cost to adopt:</b> $123.45</p>
+            <label class="label-10">Total Adoption Cost</label>
+                <p class="total">$1234.56</p>
+            </div>
 
-        <footer class="footer-container">
-            <img src="images/adoptadog-logo.svg" 
-                alt="White dog silhoutte next to the company's title." 
-                width="300" height="300">
-            <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br> 
+            <input class="input col-11" type="submit" value="Submit">
+        </form>
+        </section>
+
+        <footer class="bottom-container">
+            <img class="footer-img col-12" src="images/adoptadog-logo.svg" 
+                alt="White dog silhoutte next to the company's title."
+                height="125">
+            <p class="footer-p">Aborpos nisto inci tet aut que volupti beruptiberro to ex<br> 
                 esseque invenienihil imaximu scideru ptistiusam consequunt
             </p>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home / </a></li>
-                    <li><a href="dogs.html">Dogs / </a></li>
-                    <li><a href="#">Contact / </a></li>
+            <nav class="footer-nav-1">
+                <ul class="footer-a footer-nav-2 col-5">
+                    <li><a class="footer-a" href="index.html">Home</a></li>
+                    <li>/</li>
+                    <li><a class="footer-a" href="dogs.html">Dogs</a></li>
+                    <li>/</li>
+                    <li><a class="footer-a" href="blog.html">Blog</a></li>
                 </ul>
             </nav>
-            <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
+            <p class="footer-copyright">&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
         </footer>
-        </div>
-        
-    </body>
 
+        </div>
+    </body>
 </html>
