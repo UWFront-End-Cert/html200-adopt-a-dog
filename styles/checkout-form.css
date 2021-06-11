@@ -4,7 +4,7 @@ button, input, select {
   box-sizing: border-box;
   display: block;
   margin-bottom: 3rem;
-  margin-left: 7rem;
+  margin-left: 10rem;
   height: 2.5rem;
 }
 
@@ -16,14 +16,14 @@ a:link {
   text-decoration: none;
 }
 .form-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-left: 7rem;
+  margin-left: 10rem;
 }
 label {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-left: 7rem;
+  margin-left: 10rem;
 }
 input[type="text"]
 {
@@ -40,11 +40,20 @@ input[type="email"]
 #city {
   width: 14rem;
 }
+#state-dropdown {
+  width: 8rem;
+  margin-left: 6.5rem;
+}
 #state {
-  width: 7rem;
+  margin-left: 6.5rem;
+}
+#zip-dropdown {
+  width: 10rem;
+  margin-left: 6.5rem;
 }
 #zip {
   width: 10rem;
+  margin-left: 6.5rem;
 }
 #location {
   width: 14rem;
@@ -73,6 +82,7 @@ input[type="submit"] {
   width: 15rem;
   height: 2rem;
 }
+
 .radio-label {
   float: left;
   margin: 0;

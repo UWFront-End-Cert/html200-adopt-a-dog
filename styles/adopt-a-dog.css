@@ -1,8 +1,15 @@
+.left {
+  width: 60%;
+}
+.right {
+  width: 40%;
+  float: right;
+}
 
-
-  h1, h2, h3 {
+  h1, h2, h3{
     color: #004677;
   }
+
   a:hover{
     text-decoration: none; 
     color: orange;
@@ -24,9 +31,12 @@
   }
 
   .header-logo {
-    width: 40%;
+    /* width: 40%; */
+    width: 100%;
     padding-top: 3rem;
     margin-left: 5rem;
+    max-width: 35%;
+    min-width: 20%;
 
   }
   .title-description {
@@ -45,6 +55,7 @@
   .checkout-button {
   float: right;
   margin-right: -6rem;
+  width: 10rem;
   }
  
   .cart {
@@ -52,8 +63,9 @@
   }
  
   .menu p {
-padding-left: 12rem;
+    margin-left: 10rem;
   }
+
   .menu {
     background-color: #e5e4e2;
     font-weight: bold;
@@ -61,19 +73,21 @@ padding-left: 12rem;
     padding-top: .5rem;
   }
   
-
   /* intro */
   .intro {
-    display: grid;
-    margin: 0 auto;
-    max-width: 1000px;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid; */
+    /* margin: 0 auto; */
+    margin-left: 10rem;
+    max-width: 700px;
+    /* grid-template-columns: 1fr 1fr; */
     padding-top: 1.5rem;
     padding-bottom: 3rem;
  
   }
   .intro-image { 
     width: 100%;
+    max-height: 20em;
+    min-width: 15em;   
   }
   .intro-details >p:first-of-type {
     font-size: 1.5rem;
@@ -82,31 +96,34 @@ padding-left: 12rem;
   }
 
   .intro-details {
-    padding-left: 2rem;
+    padding-top: 2.5rem;
+    /* padding-left: 2rem; */
   }
 
-  
-  /* dog cards */
+    /* dog cards */
   .cards {
-    margin: 0 auto;
-    max-width: 1000px;
+    margin-left: 10rem;
+    /* max-width: 1000px; */
+    /* max-width: 700px; */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 2rem;
-
 }
 .card {
     box-shadow: 2px 1px #888888;
 }
 .card-image {
     width: 100%;
+    /* max-width: 30em; */
+    min-width: 2em;
     display: block;
 }
 .card-content {
     line-height: 1.5;
     font-size: 0.9em;
     background: #fafafa;
+    padding: .75rem;
 }
 .card-content > p:first-of-type {
   margin-top: 0;
@@ -118,22 +135,24 @@ padding-left: 12rem;
   button {
   background-color: #99c416;
   color: white;
-  width: 10rem;
+  /* width: 10rem; */
+  width: 100%;
   height: 2rem;
   font-size: 1rem;
   text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin-top: .5rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: rem; */
   border: none;
 }
 
 .see-more-dogs {
   display: flex;
   justify-content: center;
-  padding: 5rem;
+  padding: 2rem;
+  
 }
 .more-dogs-button {
   color: #004677;
@@ -146,7 +165,7 @@ padding-left: 12rem;
 
   .flex-footer {
     display: flex;
-    height: 35vh;
+    /* height: 35vh; */
     flex-direction: column;
     align-items: center;
     background-color: #004677;
@@ -169,7 +188,7 @@ padding-left: 12rem;
 .blog-title {
   color: #004677;
   margin: 0 auto;
-  padding-left: 8rem;
+
 }
 
 .blogs {
@@ -178,17 +197,75 @@ padding-left: 12rem;
 
 }
 .blog {
-  display: flex;
-  column-gap: 5rem;
   padding-left: 8rem;
+
+}
+.blog-header {
+  margin-bottom: -.75rem;
+
 }
 .blog-image {
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-top: .5rem;
+  max-height: 15em;
+  min-width: 20em;
+
 
 }
 .blog-content {
   line-height: 1.5;
   font-size: 1em;
+  max-width: 20em;
 
 }
+.read-more {
+  margin-bottom: 2.5rem;
+}
+
+
+/*small devices */
+ @media only screen and (max-device-width: 455px) {
+  .cards {
+    display: block;
+    margin-inline: auto;
+    
+  }
+  .left {
+    width: 100%;
+  }
+} 
+
+/* medium size devices */
+@media only screen and (min-device-width: 456px) and (max-device-width: 1023px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* large size devices */
+@media only screen and (min-device-width: 1024px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* only show blogs if iPad or bigger */
+@media only screen and (max-device-width: 1024px){
+  .right {
+    display: none;
+  }
+}
+
+/* print page w/o header or footer */
+@media print {
+  header, .flex-footer {
+    display: none;
+  }
+}
+@page {
+  margin-right: 2cm;
+  margin-left: -2cm;
+}
+
+
