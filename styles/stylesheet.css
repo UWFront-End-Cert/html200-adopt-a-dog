@@ -5,7 +5,7 @@ h3 {
     color: rgb(25, 60, 93); 
     font-size: 1.5rem;
     margin: 0;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
 }
 p { 
     line-height: 1.5rem; 
@@ -25,7 +25,9 @@ p {
     grid-template-columns: repeat(12, 1fr);
     grid-area: 1 / 1 / 2 / span 12;
 }
-.header-img { grid-area: 1 / 1 / span 12 / span 12; }
+.header-img { 
+    grid-area: 1 / 1 / span 12 / span 12; 
+}
 .header-logo { grid-area: 2 / 2 / 5 / 5; }
 .h2 {
     grid-area: 5 / 2 / 5 / 6;
@@ -52,7 +54,7 @@ p {
     text-decoration: none;
     color: white;
     background-color: rgb(141, 181, 83);
-    padding: 8px 0;
+    padding: 0.5rem 0;
     font-weight: 700;
 }
 .nav {
@@ -64,7 +66,7 @@ p {
 .menu {
     display: flex;
     grid-area: 12 / 3 / 12 / 5;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     justify-content: space-between;
     list-style: none;
     color: rgb(0, 0, 0);
@@ -88,7 +90,7 @@ a {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-area: 1 / 1 / 1 / 6;
-    column-gap: 50px;
+    column-gap: 3.125rem;
 }
 .image-1 { grid-area: 1 / 1 / 4 / 2; }
 .h3 { 
@@ -112,7 +114,7 @@ a {
 
 /*'index.html' and 'dogs.html' article images*/
 [class*="article-"] { 
-    border:rgb(235, 235, 235) solid 3px;
+    border:rgb(235, 235, 235) solid 0.187rem;
     border-top: none;
 }
 
@@ -135,7 +137,7 @@ a {
 .article-12 { grid-area: 4 / 4 / 4 / 5; }
 
 .art-p {
-    padding: 0 20px 10px;
+    padding: 0 1.25rem 0.625rem;
     margin: 0;
 }
 .adopt {
@@ -143,9 +145,9 @@ a {
     justify-content: center;
     color: rgb(255, 255, 255);
     background-color: rgb(141, 181, 83);
-    padding: 10px 0;
-    margin: 0 20px;
-    border-radius: 3px;
+    padding: 0.625rem 0;
+    margin: 0 1.25rem;
+    border-radius: 0.187rem;
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -157,7 +159,7 @@ a {
     font-size: 1.6rem;
     color: rgb(25, 60, 93);
     background-color: rgb(236, 236, 236);
-    padding: 15px;
+    padding: 0.937rem;
 }
 
 
@@ -187,12 +189,12 @@ a {
     color: rgb(25, 60, 93); 
 }
 .input {
-    border: solid rgb(192, 192, 192) 2px;
+    border: solid rgb(192, 192, 192) 0.125rem;
     height: 4rem;
     width: 100%;
 }
 select {
-    border: solid rgb(192, 192, 192) 2px;
+    border: solid rgb(192, 192, 192) 0.125rem;
     height: 4rem;
     width: 100%;
 }
@@ -235,14 +237,14 @@ select {
     font-size: 1.5rem;
     color: rgb(61, 61, 61);
     font-weight: 400;
-    margin-right: 45px;
+    margin-right: 2.812rem;
 }
 
 .adopt-container {
     display: grid;
     grid-area: 8 / 1 / 8 / span 12;
     grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+    gap: 1.25rem;
 }
 .label-9 { grid-area: 1 / 1 / 1 / span 12; }
 .label-10 { grid-area: 4 / 1 / 4 / span 12; }
@@ -259,13 +261,13 @@ select {
     grid-area: 5 / 1 / 5 / span 12;
     font-size: 1.5rem;
     font-weight: 400;
-    margin: 12px 0 0;
+    margin: 0.75rem 0 0;
 }
 input[type="submit"] {
     grid-area:9 / 1 / 9 / 4;
     background-color: rgb(141, 181, 83);
     color: white;
-    border-radius: 3px;
+    border-radius: 0.187;
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -278,7 +280,7 @@ input[type="submit"] {
     grid-template-columns: repeat(12, 1fr);
     background-color: rgb(25, 60, 93);
     font-size: 1.25rem;
-    gap: 35px;
+    gap: 2.187rem;
 }
 [class*="footer-"] {
     display: flex;
@@ -308,8 +310,9 @@ input[type="submit"] {
     grid-area: 5 / 5 / 5 / 9;
     color: rgb(255, 255, 255);
     justify-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
 }
+
 
 /*Column widths*/
 .col-1 { width: 8.33%; }
