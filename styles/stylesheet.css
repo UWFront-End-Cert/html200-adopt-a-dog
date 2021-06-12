@@ -11,6 +11,10 @@ p {
     line-height: 1.5rem; 
     color: rgb(61, 61, 61);
 }
+button {
+    border: none;
+    padding: 0;
+}
 
 .grid-container {
     display: grid;
