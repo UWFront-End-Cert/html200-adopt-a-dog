@@ -31,7 +31,6 @@
   }
 
   .header-logo {
-    /* width: 40%; */
     width: 100%;
     padding-top: 3rem;
     margin-left: 5rem;
@@ -75,11 +74,9 @@
   
   /* intro */
   .intro {
-    /* display: grid; */
-    /* margin: 0 auto; */
+
     margin-left: 10rem;
     max-width: 700px;
-    /* grid-template-columns: 1fr 1fr; */
     padding-top: 1.5rem;
     padding-bottom: 3rem;
  
@@ -97,14 +94,11 @@
 
   .intro-details {
     padding-top: 2.5rem;
-    /* padding-left: 2rem; */
   }
 
     /* dog cards */
   .cards {
     margin-left: 10rem;
-    /* max-width: 1000px; */
-    /* max-width: 700px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -115,7 +109,6 @@
 }
 .card-image {
     width: 100%;
-    /* max-width: 30em; */
     min-width: 2em;
     display: block;
 }
@@ -135,16 +128,12 @@
   button {
   background-color: #99c416;
   color: white;
-  /* width: 10rem; */
   width: 100%;
   height: 2rem;
   font-size: 1rem;
   text-align: center;
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
   margin-top: .5rem;
-  /* margin-bottom: rem; */
   border: none;
 }
 
@@ -165,7 +154,6 @@
 
   .flex-footer {
     display: flex;
-    /* height: 35vh; */
     flex-direction: column;
     align-items: center;
     background-color: #004677;
@@ -222,7 +210,7 @@
 }
 
 
-/*small devices */
+/* cell phones*/
  @media only screen and (max-device-width: 455px) {
   .cards {
     display: block;
@@ -251,7 +239,7 @@
 }
 
 /* only show blogs if iPad or bigger */
-@media only screen and (max-device-width: 1025px){
+@media only screen and (max-device-width: 767px){
   .right {
     display: none;
   }
@@ -262,7 +250,7 @@
   header, .flex-footer {
     display: none;
   }
-}
+} 
 @page {
   margin-right: 2cm;
   margin-left: -2cm;
