@@ -251,7 +251,7 @@
 }
 
 /* only show blogs if iPad or bigger */
-@media only screen and (max-device-width: 1024px){
+@media only screen and (max-device-width: 1025px){
   .right {
     display: none;
   }
