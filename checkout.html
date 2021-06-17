@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-        <title>Checkout</title>
-    </head>
 
-    <body>
-        <div class="grid-container">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <title>Checkout</title>
+</head>
 
-        <header class="header-container"> 
-            <img class="header-img col-12" src="images/header-image.jpg"  
-                alt="a close-up of a beagles' face looking toward the left of the screen from the right">
-            <img class="header-logo" src="images/adoptadog-logo.svg" 
-                alt="White dog silhoutte next to the company's title.">
-            <h2 class="h2"><i>Seattle's premier dog adoption agency</i></h2>
-            <img class="cart" src="images/cart-icon.svg" 
-                alt="cart icon next to the current total price">
-            <p class="cart-p">$1234.56</p>
-            <a class="checkout-container col-8" href="checkout.html">Checkout</a>
-            <nav class="nav">
-                <ul class="menu col-9">
-                    <li><a class="a" href="index.html">Home</a></li>
-                    <li>/</li>
-                    <li><a class="a" href="dogs.html">Dogs</a></li>
-                    <li>/</li>
-                    <li><a class="a" href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
-        </header>
+<body>
+    <header class="header-container">
+        <img class="header-img col-12" src="images/header-image.jpg"
+            alt="a close-up of a beagles' face looking toward the left of the screen from the right">
+        <img class="header-logo col-8" src="images/adoptadog-logo.svg"
+            alt="White dog silhoutte next to the company's title.">
+        <h2 class="h2"><i>Seattle's premier dog adoption agency</i></h2>
+        <img class="cart" src="images/cart-icon.svg" alt="cart icon next to the current total price">
+        <p class="cart-p">$1234.56</p>
+        <a class="checkout-container col-8" href="checkout.html">Checkout</a>
+        <nav class="nav">
+            <ul class="menu col-9">
+                <li><a href="index.html">Home</a></li>
+                <li>/</li>
+                <li><a href="dogs.html">Dogs</a></li>
+                <li>/</li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section class="content-container">
-        <form class="form-container"  method="GET">
+    <section>
+        <form class="form-container" method="GET">
             <h3 class="h3-checkout">Checkout</h3>
+            
             <label class="label-1">Name<br>
                 <input class="input" type="text"><br>
             </label>
@@ -85,27 +84,30 @@
             </fieldset>
 
             <div class="adopt-container">
-            <label class="label-9">Dogs Adopted</label>
-                <img class="lucas-image" src="images/lucas-card.jpg"
+                <label class="label-9">Dogs Adopted</label>
+                <img class="lucas-image col-12" src="images/lucas-card.jpg"
                     alt="a black dog on a leash looking up excitedly at the camera"><br>
                 <p class="lucas-info"><span class="dog">Lucas</span><br>
-                    <b>Cost to adopt:</b> $123.45</p>
-                <img class="duffy-image" src="images/duffy-card.jpg"
+                    <b>Cost to adopt:</b> $123.45
+                </p>
+                <img class="duffy-image col-12" src="images/duffy-card.jpg"
                     alt="a brown and white dog with two different colored eyes looking directly at the camera"><br>
                 <p class="duffy-info"><span class="dog">Duffy</span><br>
-                    <b>Cost to adopt:</b> $123.45</p>
-            <label class="label-10">Total Adoption Cost</label>
+                    <b>Cost to adopt:</b> $123.45
+                </p>
+                <label class="label-10">Total Adoption Cost</label>
                 <p class="total">$1234.56</p>
             </div>
 
             <input class="input col-11" type="submit" value="Submit">
         </form>
-        </section>
+    </section>
 
-        <footer class="bottom-container">
-            <img class="footer-img col-12" src="images/adoptadog-logo.svg" 
+    <footer class="bottom-grid">
+        <div class="flex-container">
+            <img class="footer-img col-12" src="images/adoptadog-logo.svg"
                 alt="White dog silhoutte next to the company's title.">
-            <p class="footer-p">Aborpos nisto inci tet aut que volupti beruptiberro to ex<br> 
+            <p class="footer-p">Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
                 esseque invenienihil imaximu scideru ptistiusam consequunt
             </p>
             <nav class="footer-nav-1">
@@ -118,8 +120,9 @@
                 </ul>
             </nav>
             <p class="footer-copyright">&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
-        </footer>
-
         </div>
-    </body>
+    </footer>
+
+</body>
+
 </html>
