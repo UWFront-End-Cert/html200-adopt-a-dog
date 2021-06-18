@@ -140,6 +140,7 @@ footer {
     color: white;
     background-color: #093C60;
     text-align: center;
+    width:100%
 }
 
 footer a {
@@ -277,4 +278,75 @@ input {
 
 .pickup {
   width: 300px;
+}
+
+@media (max-width:768px) {
+  .title {
+      margin-bottom: 0px;
+  }
+
+  .see-dogs {
+      padding-top: 20px;
+  }
+
+  .dogs {
+      display: grid;
+      grid-row-gap: 50px;
+  }
+
+  .blog-img {
+      width: 100%;
+      height: auto;
+  }
+
+  .main-article {
+      line-height: 35px;
+      width: 100%;
+  }
+
+  .container {
+      display: block;
+      padding-left: 0px;
+  }
+
+  .guide {
+      display: block;
+      grid-row-gap: 50px;
+  }
+
+  .blog-guide {
+    display: block;
+  }
+
+  .blog-guide .container {
+    width: 80%;
+  }
+
+  .main-dogs {
+      grid-area: main;
+      padding-top: 25px;
+      padding-bottom: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
+      width: 800px;
+  }
+
+  .main {
+      grid-area: main;
+      padding-top: 25px;
+      padding-bottom: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
+      width: 800px;
+  }
+
+  .card {
+      width: 100%;
+      height: auto;
+      border: 2px solid lightgrey;
+  }
+
+  .column {
+    width: 80%;
+  }
 }
