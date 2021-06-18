@@ -283,6 +283,8 @@ input {
 @media (max-width:768px) {
   .title {
       margin-bottom: 0px;
+      font-size: 30px;
+      text-align: center;
   }
 
   .see-dogs {
@@ -316,6 +318,7 @@ input {
 
   .blog-guide {
     display: block;
+    font-size: 15px;
   }
 
   .blog-guide .container {
