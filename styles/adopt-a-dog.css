@@ -23,6 +23,7 @@
     background-image: url('../images/header-image.jpg');
     background-size: cover;
     background-color: grey;
+    background-position: center;
   }
 
   mark {
@@ -210,20 +211,23 @@
 }
 
 
-/* cell phones*/
- @media only screen and (max-device-width: 455px) {
+/* small size devices */
+ @media only screen and (max-width: 455px) {
   .cards {
     display: block;
     margin-inline: auto;
-    
+    width: 100%;
   }
   .left {
     width: 100%;
   }
+  /* .background-image {
+      background-size: cover;
+  } */
 } 
 
 /* medium size devices */
-@media only screen and (min-device-width: 456px) and (max-device-width: 1023px) {
+@media only screen and (min-width: 456px) and (max-width: 1023px) {
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -231,7 +235,7 @@
 }
 
 /* large size devices */
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -239,7 +243,7 @@
 }
 
 /* only show blogs if iPad or bigger */
-@media only screen and (max-device-width: 767px){
+@media only screen and (max-width: 767px){
   .right {
     display: none;
   }
