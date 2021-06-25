@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header class="background-image">
+    <header class="header">
         <div class="checkout">
             <div class="total">
                 $1234.56
             </div>
             <div class="cart">
-                <img src="images/cart-icon.svg" alt="">
-                <button class="checkout-button" type="submit" value="Checkout">
-                    <a href="checkout-form.html">Checkout</a>
-                    </button>
+                <img src="images/cart-icon.svg" alt="This is an image of a shopping cart.">
+                <form action="checkout-form.html" method="GET">
+                    <button class="checkout-button" type="submit" value="Checkout">Checkout</button>
+                </form>
             </div>
         </div>
         <div class="header-logo">
@@ -88,10 +88,16 @@ doluptios dolupta tiandebis nem ut.
 
     </aside>
 
-    <aside class="left">
+<aside class="left">
     <div class="intro">
         <div class="intro-image">
-            <img src="images/home-intro.jpg" alt="Image of a man hugging a brown grown dog.">
+            <img src="images/home-intro.jpg" 
+                 alt="Image of a man hugging a brown grown dog."
+                 srcset = "images/home-intro.jpg 410w,
+                    images/home-intro.jpg 510w,
+                    images/home-intro.jpg 610w"
+                sizes="(min-width: 375px) 300px, (min-width: 456px) 400px, (min-width: 1024px) 510px"
+            >
         </div>
         <div class="intro-details">
             <p>Adopt A Dog</p>
@@ -253,9 +259,10 @@ doluptios dolupta tiandebis nem ut.
         </div>
     </div>
     <div class="see-more-dogs">
-        <button class="more-dogs-button" type="button" value="See More Dogs">
-            <a href="blog.html"> See More Dogs</a>
-        </button>
+        <form action="blog.html" method="GET">
+            <button class="more-dogs-button" type="button" value="See More Dogs">Checkout</button>
+        </form>
+        
     </div>
 </aside>
 

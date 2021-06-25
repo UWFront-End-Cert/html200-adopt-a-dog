@@ -20,11 +20,12 @@
   }
 
   header {
-    background-image: url('../images/header-image.jpg');
+    background: linear-gradient(45deg, #DB7093, #191970 30%);
+    background-image: url('../images/header-image.jpg'); 
     background-size: cover;
-    background-color: grey;
     background-position: center;
   }
+
 
   mark {
     background-color: #fafafa;
@@ -32,13 +33,13 @@
   }
 
   .header-logo {
-    width: 100%;
+    width: 100%; 
     padding-top: 3rem;
     margin-left: 5rem;
     max-width: 35%;
-    min-width: 20%;
-
+    height: auto;
   }
+  
   .title-description {
     color: #99c416;
     font-size: 1.5rem;
@@ -46,6 +47,7 @@
     margin-bottom: 4rem;
     font-style: italic;
   }
+
   .checkout div{
    color: white;
    float: right;
@@ -57,11 +59,13 @@
   margin-right: -6rem;
   width: 10rem;
   }
- 
+  
   .cart {
-    width: 1.5rem;
+    max-width: 2rem;
+    width: 100%;
+    height: auto;
   }
- 
+
   .menu p {
     margin-left: 10rem;
   }
@@ -73,20 +77,24 @@
     padding-top: .5rem;
   }
   
-  /* intro */
   .intro {
-
     margin-left: 10rem;
-    max-width: 700px;
+    /* max-width: 700px; */
+    /* max-width: 60%; */
     padding-top: 1.5rem;
     padding-bottom: 3rem;
  
   }
   .intro-image { 
     width: 100%;
-    max-height: 20em;
-    min-width: 15em;   
+    /* max-height: 20em; */
   }
+
+  /* @media (min-width: 300px) {
+    .intro-image {
+      width: 300px;
+    }
+  } */
   .intro-details >p:first-of-type {
     font-size: 1.5rem;
     color: #004677;
@@ -197,14 +205,12 @@
   padding-top: .5rem;
   max-height: 15em;
   min-width: 20em;
-
-
 }
+
 .blog-content {
   line-height: 1.5;
   font-size: 1em;
   max-width: 20em;
-
 }
 .read-more {
   margin-bottom: 2.5rem;
@@ -212,18 +218,18 @@
 
 
 /* small size devices */
- @media only screen and (max-width: 455px) {
+ @media only screen and (min-width: 375px) and (max-width: 455px) {
   .cards {
     display: block;
-    margin-inline: auto;
+    margin-left: 0;
     width: 100%;
   }
-  .left {
+  .intro {
+    margin-left: 0px;
+  }
+  .flex-footer {
     width: 100%;
   }
-  /* .background-image {
-      background-size: cover;
-  } */
 } 
 
 /* medium size devices */
@@ -231,6 +237,9 @@
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .flex-footer {
+    width: 100%;
   }
 }
 
@@ -240,12 +249,26 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  .checkout {
+    float: none;
+  }
+  .flex-footer {
+    width: 100%;
+  }
 }
 
 /* only show blogs if iPad or bigger */
 @media only screen and (max-width: 767px){
   .right {
     display: none;
+  }
+  .cart {
+    display: inline-block;
+  }
+}
+@media(min-width: 375px) {
+  .intro-image {
+    width: 100%;
   }
 }
 
