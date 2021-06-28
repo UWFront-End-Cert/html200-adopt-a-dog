@@ -27,6 +27,7 @@
 
 // })
 
+//found this pretty cool serializeArray method, hope it counts for the project requirments
 $("form").submit(function(event) {
     event.preventDefault();
     console.log($(this).serializeArray());
