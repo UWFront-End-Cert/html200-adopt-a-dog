@@ -1,0 +1,486 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-image: url(https://images.unsplash.com/photo-1548665543-a06c151cc844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
+    background-size: 200px 200px;
+}
+
+
+/* Just add the universal selector (*) to your CSS, this will apply any rule to every element on the page. If any elements need them you can 
+then add margins or padding to those elements themselves. This helps get rid of spacing when you can't quite tell what is causing it. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+
+body {
+    font-family: 'Brygada 1918', serif;
+    line-height: 1.6;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 20%);
+    height: 200rem;
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1548665543-a06c151cc844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
+    background-size: 200px 200px;
+}
+
+.header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.main {
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+.footer {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+
+/*header stufff ...............................................................................................................................................*/
+
+.header {
+    margin-bottom: 10rem;
+    background: repeating-radial-gradient(ellipse at 50% 50%, #FF0055 99.46%, #0c497a 100%);
+    background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true), repeating-radial-gradient(ellipse at 50% 50%, #FF0055 99.46%, #0c497a 100%);
+    height: 40rem;
+    width: auto;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+}
+
+.logo {
+    height: 15rem;
+}
+
+.header h1 {
+    color: white;
+    font-size: 2.75rem;
+    font-family: 'Courgette', cursive;
+    color: rgb(155, 226, 11);
+    display: flex;
+    justify-content: space-around;
+    margin-top: -2rem;
+}
+
+.cart {
+    width: 4rem;
+    height: 4rem;
+    /* transform: scale(.25); */
+}
+
+span {
+    color: white;
+    width: 10%;
+    height: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    transform: scale(.75);
+}
+
+.checkout {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.75rem;
+    background-color: rgb(155, 226, 11);
+    color: white;
+    font-weight: 700;
+    border-style: none;
+}
+
+.checkout:hover {
+    background-color: rgb(170, 253, 2);
+}
+
+.header_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5rem;
+    margin-left: 6rem;
+}
+
+.header_bottom {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 10rem;
+    margin-right: 3rem;
+    margin-top: 6rem;
+    flex-direction: column;
+}
+
+
+/*dogs..............................................................................................................................................................*/
+
+h1 {
+    font-size: 3rem;
+    z-index: 10000;
+    margin-top: 10rem;
+    margin-left: 20rem;
+}
+
+.dogs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 1rem;
+    position: relative;
+    height: auto;
+    flex: 1;
+}
+
+.dogs div {
+    object-fit: cover;
+    box-shadow: 0px 0px 15px gray;
+    width: 23rem;
+    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin: 3rem 1rem 1rem 3rem;
+    background-color: white;
+}
+
+
+/*this shit is fucked. trying to select the everything but the img inside each dog card always selects the img, should be a much easy solution something, how to select all but dog img
+  and apply styles to everything but the dog img;?????*/
+
+.dog_cards h3,
+p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* border: 2px solid black; */
+}
+
+.dog_cards h3,
+p {
+    margin-bottom: 1rem;
+}
+
+.dog_cards h3 {
+    margin-top: 1.5rem;
+}
+
+.dog_cards button {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    height: 4rem;
+    background-color: rgb(155, 226, 11);
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 2%;
+    outline: none;
+}
+
+.dog_cards button:hover {
+    background-color: rgb(170, 253, 2);
+}
+
+
+/*nav.......................................................................*/
+
+.primary a:first-child {
+    margin-left: 15rem;
+}
+
+.primary {
+    position: relative;
+    z-index: 10000;
+    display: block;
+    background-color: rgba(192, 192, 192, 0.3);
+    padding: 1.3rem;
+    position: relative;
+    bottom: 160rem;
+    background-color: rgb(135, 136, 133);
+}
+
+nav a {
+    font-size: 2rem;
+    /* padding-right: 5%; */
+    padding-left: 2.5%;
+    text-decoration: none;
+    color: black;
+}
+
+
+/*.........................................................footer.........................................................*/
+
+.footer {
+    background-color: rgb(12, 73, 122);
+    width: 100%;
+    height: 35rem;
+    margin-top: 30rem;
+    padding-top: 15rem;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(12, 73, 122);
+    text-align: center;
+    padding-bottom: 15rem;
+}
+
+.footer img {
+    height: 14rem;
+}
+
+.footer p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+div.footer_nav {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+div.footer_nav a {
+    color: white;
+}
+
+.footer a {
+    padding-left: 10.5%;
+}
+
+.main h1,
+.main h2,
+.primary a {
+    color: white;
+}
+
+
+/**********QUiriEs****************************/
+
+
+/*very medium sized screen ******************************************/
+
+@media screen and (max-width: 840px) {
+    .dogs {
+        margin-left: 9rem;
+        margin-right: 9rem;
+    }
+}
+
+
+/*ipad*/
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .grid_container {
+        height: 379rem;
+    }
+    .primary {
+        bottom: 339rem;
+    }
+    .primary a:first-child {
+        margin-left: 23rem;
+    }
+    .main {
+        position: relative;
+        top: -38rem;
+    }
+    .main h1 {
+        margin-left: 22rem;
+    }
+    .dogs {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .footer {
+        margin-top: 5rem;
+    }
+}
+
+
+/* ipad Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    /* For landscape layouts only */
+    .grid_container {
+        height: 275rem;
+    }
+    .primary {
+        bottom: 235rem;
+    }
+    .main {
+        position: relative;
+        top: -15rem;
+    }
+    .dogs {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    div.footer_nav a {
+        margin-right: 2rem;
+    }
+    .footer {
+        margin-top: 7rem;
+    }
+}
+
+
+/*iphone 6/7/8*/
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .grid_container {
+        width: 191%;
+        height: 330rem;
+    }
+    .main {
+        position: relative;
+        top: -26rem;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header_top {
+        margin-left: 9rem;
+        transform: scale(1.3);
+    }
+    .header h1 {
+        margin-left: 1rem;
+    }
+    .header_bottom {
+        margin-left: 28rem;
+        margin-bottom: 5rem;
+        transform: scale(1.5);
+    }
+    a[href="dogs_cart_draft.html"] {
+        margin-left: 4rem;
+    }
+    .primary {
+        bottom: 290rem;
+    }
+    h1 {
+        font-size: 5rem;
+        margin-left: 9rem;
+    }
+    .dogs div {
+        width: 50rem;
+        height: 78rem;
+    }
+    .dog_cards h3 {
+        font-size: 3.5rem;
+    }
+    p.cost {
+        font-size: 2.5rem;
+    }
+    p.bio {
+        font-size: 2.5rem;
+    }
+    .dog_cards button {
+        margin-top: 0rem;
+        height: 9rem;
+        font-size: 3rem;
+    }
+    .violet {
+        width: 47rem;
+    }
+    nav a {
+        font-size: 3.6rem;
+    }
+    .footer {
+        position: relative;
+        top: 762rem;
+        height: 53rem;
+        padding-bottom: 22rem;
+    }
+    div.footer_nav a {
+        margin-right: 2rem;
+    }
+}
+
+
+/*iphone 6/7/8*/
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .grid_container {
+        height: 330rem;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header_top {
+        margin-left: 9rem;
+        transform: scale(1.3);
+    }
+    .header h1 {
+        margin-left: 1rem;
+    }
+    .header_bottom {
+        margin-left: 28rem;
+        margin-bottom: 5rem;
+        transform: scale(1.5);
+    }
+    a[href="dogs_cart_draft.html"] {
+        margin-left: 4rem;
+    }
+    .primary {
+        bottom: 290rem;
+    }
+    .main {
+        position: relative;
+        top: -26rem;
+    }
+    .dogs {
+        width: 55rem;
+        margin-left: 5rem;
+    }
+    .dogs div {
+        height: 43rem;
+    }
+    h1.top {
+        margin-left: 16rem;
+    }
+    .primary a:first-child {
+        margin-left: 17rem;
+    }
+    .dog_cards h3 {
+        font-size: 1.5rem;
+    }
+    .dog_cards p {
+        font-size: 1.2rem;
+    }
+    .footer {
+        margin-top: 104rem;
+    }
+}
