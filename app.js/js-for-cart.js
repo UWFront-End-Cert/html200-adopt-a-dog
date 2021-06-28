@@ -1,13 +1,43 @@
-const form = document.querySelector('form');
-//add an eventListener to form element
-form.addEventListener('submit', (e) => {
-    //prevent default form action from happening
-    e.preventDefault();
-    //build a string of all user inputs and log to console
-    console.log(`Name: ${form.elements.name.value}, Email: ${form.elements.email.value}, 
-    Address: ${form.elements.address.value}, City: ${form.elements.city.value}, State: ${form.elements.state.value},
-    Zip: ${form.elements.zip.value}, First time Adopter?: ${form.elements.have_adopted_before.value}, Pickup: ${form.elements.pickup.value}`)
-})
+// const form = document.querySelector('form');
+// //add an eventListener to form element
+// form.addEventListener('submit', (e) => {
+//     //prevent default form action from happening
+//     e.preventDefault();
+//     //build a string of all user inputs and log to console
+//     console.log(`Name: ${form.elements.name.value}, Email: ${form.elements.email.value}, 
+//     Address: ${form.elements.address.value}, City: ${form.elements.city.value}, State: ${form.elements.state.value},
+//     Zip: ${form.elements.zip.value}, First time Adopter?: ${form.elements.have_adopted_before.value}, Pickup: ${form.elements.pickup.value}`)
+// })
+
+
+
+
+
+
+// j query***********************************************
+//select form element using jquery
+// $('form').submit(function(e) {
+//     e.preventDefault();
+//     let $inputs = $('form :input');
+//     let values = {}
+//     $inputs.each(function() {
+//         values[this.name] = $(this).val;
+//     })
+//     console.log(values[0]);
+
+// })
+
+$("form").submit(function(event) {
+    event.preventDefault();
+    console.log($(this).serializeArray());
+
+});
+
+
+
+
+
+
 
 //validate email funciton
 function validateEmail() {
