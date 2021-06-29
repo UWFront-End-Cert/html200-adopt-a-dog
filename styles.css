@@ -321,23 +321,32 @@ main {
 
 .blog-all-posts {
   grid-column: 1 / 13;
+
   display: flex;
-  padding: 0 0 5rem 0;
+  padding: 0;
   flex-direction: column;
+
   font: .85rem "Work Sans";
   font-weight: lighter;
   line-height: 1.75;
+  border: 1px solid pink;
 }
+
+/* Individual Blog Containers */
 
 .blog-post {
   display: flex;
   flex-direction: row;
   align-content: flex-start;
   padding: 0;
-  padding: 1rem 0 1rem 0;
+  border: 1px solid green;
+  max-height: 275px;
+  overflow: scroll;
 }
 
-.blog-post img {
+/* Blog Contents */
+
+.blog-img {
   max-width: 275px;
   max-height: 275px;
 }
@@ -346,24 +355,19 @@ main {
   grid-column: 1 / 13;
   font: 2rem "Neuton";
   color: #003366;
-
+  padding: 2px;
 }
-
-/* Blog Text Styles */
 
 .blog-title {
   font: 1.5rem "Neuton";
   color: #003366;
 }
 
-.blog-post {
-  max-height: 275px;
-}
-
 .blog-text {
+  font: .85rem "Work Sans";
+  font-weight: lighter;
+  line-height: 1.75;
   padding: 0 0 0 2rem;
-}
-.blog-text {
   overflow: scroll;
 }
 
