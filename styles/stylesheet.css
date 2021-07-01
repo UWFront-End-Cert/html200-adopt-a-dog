@@ -12,17 +12,23 @@ p {
     color: rgb(61, 61, 61);
 }
 
-/* .grid-container {
+.grid-container {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+}
+
+/*Header layout*/
+/* .header-container {
   --auto-grid-min-size: 16rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
 } */
-
-/*Header layout*/
-.header-container {
+.header-container-index-page {
   --auto-grid-min-size: 16rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-area: 1 / 1 / 1 / 12;
 }
 .header-img {
   grid-area: 1 / 1 / span 12 / span 12;
@@ -83,7 +89,7 @@ a {
 
 
 /*Main content*/
-.home-intro-grid {
+/* .home-intro-grid {
   display: grid;
   grid-template-rows: auto;
   gap: 3.5rem;
@@ -93,17 +99,42 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   gap: 3.5rem;
+} */
+.home-intro-grid-index {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 3.5rem;
+  grid-area: 2 / 3 / 3 / 8;
+}
+.section-grid-index {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  gap: 3.5rem;
+  grid-area: 3 / 3 / 10 / 8;
 }
 
-/*secondary grid*/
+/* secondary grid
 .h3-column-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: .25rem;
   align-items: center;  
 }
-/*second, secondary grid*/
+second, secondary grid
 .blog-aside-grid {
+  display: grid;
+  grid-template-rows: auto;
+} */
+/*secondary grid*/
+.h3-column-grid-index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: .25rem;
+  align-items: center;  
+}
+/*second, secondary grid*/
+.blog-aside-grid-index {
   display: grid;
   grid-template-rows: auto;
 }
@@ -259,10 +290,20 @@ input[type="submit"] {
 
 
 /*Footer*/
-.bottom-grid {
+/* .bottom-grid {
   --auto-grid-min-size: 16rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  background-color: rgb(25, 60, 93);
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: center;
+} */
+.bottom-grid-index-page {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-area: 11 / 1 / 12 / 12;
   background-color: rgb(25, 60, 93);
   font-size: 1.25rem;
   align-items: center;
