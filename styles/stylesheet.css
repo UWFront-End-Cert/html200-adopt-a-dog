@@ -96,6 +96,19 @@ a {
   grid-gap: 3.5rem;
 }
 
+/*secondary grid*/
+.h3-column-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: .25rem;
+  align-items: center;  
+}
+/*second, secondary grid*/
+.blog-aside-grid {
+  display: grid;
+  grid-template-rows: auto;
+}
+
 .adopt {
   display: flex;
   justify-content: center;
