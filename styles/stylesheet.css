@@ -265,7 +265,7 @@ select {
 }
 .lucas-image {
     grid-area: 2 / 1 / 4 / 2;
-    width: 6.25rem;
+    width: 6.25rem; 
     height: 6.25rem;
 }
 .lucas-info { grid-area: 2 / 2 / 2 / 5; }
