@@ -13,8 +13,9 @@ p {
 }
 
 /* .grid-container {
+  --auto-grid-min-size: 16rem;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
 } */
 
 /*Header layout*/
