@@ -13,27 +13,34 @@ let post1 = () => {
   //Insert the container
   container.appendChild(post);
 
-  //Add the title
-  let title = document.createElement("h2");
-  title.innerHTML = "Traveling with your dog";
-  title.setAttribute("class", "blog-title");
-  //Insert the title
-  post.appendChild(title);
+  let postImage = document.createElement("img");
+  postImage.setAttribute("src", "./images/blog-1.jpg");
+  postImage.setAttribute("alt", "Silhouette Of A Girl And Dog Playing Fetch At Twilight");
+  postImage.setAttribute("class", "post-img");
+  post.appendChild(postImage);
 
-  //Add an image
-  let img = document.createElement("img");
-  img.setAttribute("src", "./images/blog-1.jpg");
-  img.setAttribute("class", "blog-img");
-  img.setAttribute("alt", "Woman And Dog Sitting Together Enjoying A Canyon View")
-  //Insert the image
-  title.appendChild(img);
+  const contentBox = document.createElement("div");
+  post.setAttribute("class", "content-box");
+  //insert the content box
+  post.appendChild(contentBox);
 
-  //Add the text
+  //const innerBox = document.createElement("div");
+  //post.setAttribute("class", "inner-box");
+  //contentBox.appendChild(innerBox);
+
+  const textBox = document.createElement("div");
+  textBox.setAttribute("class", "text-box")
+  contentBox.appendChild(textBox);
+
+  let header = document.createElement("h2");
+  header.innerHTML = "Traveling with your dog";
+  textBox.appendChild(header);
+
   let text = document.createElement("p");
   text.innerHTML = p1;
-  text.setAttribute("class", "blog-text")
-  //Insert the text
-  title.appendChild(text);
+  text.setAttribute("id", "blog-text");
+  header.appendChild(text);
+
 }
 
 post1();
@@ -45,27 +52,34 @@ let post2 = () => {
   //Insert the container
   container.appendChild(post);
 
-  //Add the title
-  let title = document.createElement("h2");
-  title.innerHTML = "Traveling with your dog";
-  title.setAttribute("class", "blog-title");
-  //Insert the title
-  post.appendChild(title);
+  let postImage = document.createElement("img");
+  postImage.setAttribute("src", "./images/blog-2.jpg");
+  postImage.setAttribute("alt", "Silhouette Of A Girl And Dog Playing Fetch At Twilight");
+  postImage.setAttribute("class", "post-img");
+  post.appendChild(postImage);
 
-  //Add an image
-  let img = document.createElement("img");
-  img.setAttribute("src", "./images/blog-2.jpg");
-  img.setAttribute("class", "blog-img");
-  img.setAttribute("alt", "Dog Pack On Leashes Doing Good Sit In City Park");
-  //Insert the image
-  title.appendChild(img);
+  const contentBox = document.createElement("div");
+  post.setAttribute("class", "content-box");
+  //insert the content box
+  post.appendChild(contentBox);
 
-  //Add the text
+  //const innerBox = document.createElement("div");
+  //post.setAttribute("class", "inner-box");
+  //contentBox.appendChild(innerBox);
+
+  const textBox = document.createElement("div");
+  textBox.setAttribute("class", "text-box")
+  contentBox.appendChild(textBox);
+
+  let header = document.createElement("h2");
+  header.innerHTML = "Traveling with your dog";
+  textBox.appendChild(header);
+
   let text = document.createElement("p");
   text.innerHTML = p1;
-  text.setAttribute("class", "blog-text")
-  //Insert the text
-  title.appendChild(text);
+  text.setAttribute("id", "blog-text");
+  header.appendChild(text);
+
 }
 
 post2();
@@ -77,27 +91,34 @@ let post3 = () => {
   //Insert the container
   container.appendChild(post);
 
-  //Add the title
-  let title = document.createElement("h2");
-  title.innerHTML = "Traveling with your dog";
-  title.setAttribute("class", "blog-title");
-  //Insert the title
-  post.appendChild(title);
+  let postImage = document.createElement("img");
+  postImage.setAttribute("src", "./images/blog-3.jpg");
+  postImage.setAttribute("alt", "Silhouette Of A Girl And Dog Playing Fetch At Twilight");
+  postImage.setAttribute("class", "post-img");
+  post.appendChild(postImage);
 
-  //Add an image
-  let img = document.createElement("img");
-  img.setAttribute("src", "./images/blog-3.jpg");
-  img.setAttribute("class", "blog-img");
-  img.setAttribute("alt", "Silhouette Of A Girl And Dog Playing Fetch At Twilight");
-  //Insert the image
-  title.appendChild(img);
+  const contentBox = document.createElement("div");
+  post.setAttribute("class", "content-box");
+  //insert the content box
+  post.appendChild(contentBox);
 
-  //Add the text
+  //const innerBox = document.createElement("div");
+  //post.setAttribute("class", "inner-box");
+  //contentBox.appendChild(innerBox);
+
+  const textBox = document.createElement("div");
+  textBox.setAttribute("class", "text-box")
+  contentBox.appendChild(textBox);
+
+  let header = document.createElement("h2");
+  header.innerHTML = "Traveling with your dog";
+  textBox.appendChild(header);
+
   let text = document.createElement("p");
   text.innerHTML = p1;
-  text.setAttribute("class", "blog-text")
-  //Insert the text
-  title.appendChild(text);
+  text.setAttribute("id", "blog-text");
+  header.appendChild(text);
+
 }
 
 post3();
