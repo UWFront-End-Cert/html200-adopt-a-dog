@@ -110,7 +110,8 @@ a {
   --auto-grid-min-size: 16rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 2rem;
   grid-area: 3 / 2 / 10 / 6;
 }
 
@@ -131,10 +132,17 @@ second, secondary grid
   --auto-grid-min-size: 16rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  grid-area: 2 / 6 / 10 / 8;
+  grid-area: 2 / 6 / 7 / 8;
   gap: 2rem;
 }
+.aside-img {
+  width: ;
+}
 
+.p {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
 .adopt {
   display: flex;
   justify-content: center;
