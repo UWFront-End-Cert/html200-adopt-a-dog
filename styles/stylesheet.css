@@ -3,9 +3,8 @@
 body { margin: 0; }
 h3 {
     color: rgb(25, 60, 93);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin: 0;
-    padding: 0.625rem 1.25rem;
 }
 p {
     line-height: 1.5rem;
@@ -19,11 +18,7 @@ p {
 }
 
 /*Header layout*/
-/* .header-container {
-  --auto-grid-min-size: 16rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-} */
+
 .header-container-index-page {
   --auto-grid-min-size: 16rem;
   display: grid;
@@ -31,14 +26,14 @@ p {
   grid-area: 1 / 1 / 1 / 12;
 }
 .header-img {
-  grid-area: 1 / 1 / span 12 / span 12;
+  grid-area: 1 / 1 / 12 / 12;
   height: 37.5rem;
 }
 .header-logo {
-  grid-area: 2 / 1 / 5 / 4;
+  grid-area: 2 / 2 / 5 / 4;
 }
 .h2 {
-  grid-area: 5 / 1 / 5 / 5;
+  grid-area: 5 / 2 / 5 / 5;
   margin: 0;
   color: rgb(141, 181, 83);
   font-size: 2rem;
@@ -89,17 +84,6 @@ a {
 
 
 /*Main content*/
-/* .home-intro-grid {
-  display: grid;
-  grid-template-rows: auto;
-  gap: 3.5rem;
-}
-.section-grid {
-  --auto-grid-min-size: 16rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  gap: 3.5rem;
-} */
 .home-intro-grid-index {
   display: grid;
   grid-template-rows: auto;
@@ -114,20 +98,6 @@ a {
   row-gap: 2rem;
   grid-area: 3 / 2 / 10 / 6;
 }
-
-/* secondary grid
-.h3-column-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: .25rem;
-  align-items: center;  
-}
-second, secondary grid
-.blog-aside-grid {
-  display: grid;
-  grid-template-rows: auto;
-} */
-/*secondary grid*/
 .aside-grid {
   --auto-grid-min-size: 16rem;
   display: grid;
@@ -137,7 +107,7 @@ second, secondary grid
 }
 
 .p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 2.25rem;
 }
 .adopt {
@@ -151,19 +121,23 @@ second, secondary grid
   font-size: 1.25rem;
   font-weight: 700;
 }
+.h3 {
+  padding-left: 1.25rem;
+}
 .art-p {
   padding: 0 1.25rem 0.625rem;
   margin: 0;
 }
 .a-more-dogs {
   display: flex;
-  grid-area: 10 / 6 / 10 / 8;
+  grid-area: 10 / 3 / 11 / 5;
   justify-content: center;
-  align-content: center;
   font-size: 1.6rem;
   color: rgb(25, 60, 93);
   background-color: rgb(236, 236, 236);
   padding: 0.937rem;
+  border-radius: 0.187rem;
+  margin: 3rem;
 }
 [class*="article-"] {
   border:rgb(235, 235, 235) solid 0.187rem;
