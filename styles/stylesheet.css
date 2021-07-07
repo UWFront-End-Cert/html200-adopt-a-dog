@@ -144,12 +144,6 @@ a {
   border-top: none;
 }
 
-/*Dogs page*/
-.h3-dogs-page {
-  
-}
-
-
 /*Blog page*/
 .h4-blog {
   color: rgb(25, 60, 93);
@@ -319,6 +313,24 @@ input[type="submit"] {
 }
 .footer-links {
   color: white;
+}
+
+@media print {
+  body img {
+    display: none;
+  }
+}
+
+@media screen (max-width: 760px) {
+  section > article > img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  aside > article > p {
+    display: none;
+  }
 }
 
 /*Column widths*/
