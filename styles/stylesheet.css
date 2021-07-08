@@ -103,7 +103,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-area: 2 / 6 / 7 / 8;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .p {
@@ -138,6 +138,10 @@ a {
   padding: 0.937rem;
   border-radius: 0.187rem;
   margin: 3rem;
+}
+.a-aside {
+  text-decoration: rgb(74, 152, 181);
+  font-size: 1.25rem;
 }
 [class*="article-"] {
   border:rgb(235, 235, 235) solid 0.187rem;
@@ -315,20 +319,20 @@ input[type="submit"] {
   color: white;
 }
 
-@media print {
-  body img {
-    display: none;
+/*@media screen and (min-width: 768px) {
+  section > article {
+    background-color: blue;
+    width: 50%;
   }
-}
-
-@media screen (max-width: 760px) {
-  section > article > img {
-    display: block;
-  }
-}
+}*/
 
 @media screen and (max-width: 760px) {
   aside > article > p {
+    display: none;
+  }
+}
+@media print {
+  body img {
     display: none;
   }
 }
