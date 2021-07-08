@@ -1,18 +1,19 @@
+
+
+
+
 /* index page for dog description and total price */
+
 
 function dogImagesDetails (dogInfo) {
   alert('My name is ' + dogInfo +  '; Dog Breed: Golden Retriever; $123.45');
 }
 
 let cartTotal = 0;
-
 function dogTotal (dogPrice) {
   cartTotal = cartTotal + dogPrice;
   alert (cartTotal);
 }
-
-
-
 
 
 /* blog page */
@@ -23,30 +24,6 @@ if (blogPage) {
   document.getElementById('blog-head').innerHTML='Adopt A Dog';
   document.getElementById('blog-head').style.backgroundColor="pink";
   document.getElementById('blog-head').style.fontWeight="bold";
-
-
-
-
-/*
-const blog = {
-    title: 'How to walk with multiple dog',
-    paragraph: 'whatever this is the paragraph ',
-}
-
-const div = document.createElement('div')
-
-document.body.appendChild(div)
-
-const h2 = document.createElement('h2')
-h2.innerHTML = blog.title
-
-const p = document.createElement('p')
-p.innerHTML = blog.paragraph
-
-div.appendChild(h2)
-div.appendChild(p)
-
-*/
 
   const footerTag = document.querySelector('footer');
 
@@ -131,81 +108,30 @@ div.appendChild(p)
   document.body.insertBefore(paragraph3, footerTag);
 }
 
-/* form page */
 
-/*
-form.getElementsById('submit');
 
-form.addEventListener('submit', function(event) {
+const formCheck = document.getElementById('submitPop');
+if (formCheck) {
+  formCheck.addEventListener('click', function() {
   event.preventDefault();
-  alert('form submitted');
-});
-
-
-
-
-
-
-/*
-
-form.getElementsById('alertPop');
-
-form.addEventListener('alertPop', function(event) {
-  event.preventDefault();
-  alert('form submitted');
-});
-
-*/
-
-
-
-/* this is for console log all the answers*/
-/*
-const submitButton = document.getElementsById('submitPop');
-submitButton.addEventListener('submit', function(event) {
-  event.preventDefault();
-  const answers = document.getElementById('applicantName');
-  console.log(answers.value);
-});
-*/
-
-
-/*
-const form = document.getElementsByTagName('form');
-
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  alert('form submitted');
-});
-
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  const answers = document.getElementById('full-name');
-  const ans = document.getElementById('email');
-  console.log(answers.value + ans.value);
-});
-*/
-
-
-
-/*
-  const next = document.getElementById('submitPop');
-    next.addEventListener('click', function() {
-     console.log('Name: ' + document.getElementById('applicantName').value);
-     console.log('Email: ' + document.getElementById('applicantEmail').value);
-     console.log('Address: ' + document.getElementById('applicantAddress').value);
-     console.log('City: ' + document.getElementById('applicantCity').value);
-     console.log('State: ' + document.getElementById('applicantState').value);
-     console.log('Zip Code: ' + document.getElementById('applicantZipcode').value);
-     let checkbox = document.querySelector('radio').value;
-     console.log('Yes or No: ' + checkbox.value);
+  const allAnswers = [['Name: ' + document.getElementById('applicantName').value], ['Email: ' + document.getElementById('applicantEmail').value], ['Address: ' + document.getElementById('applicantAddress').value],['City: ' + document.getElementById('applicantCity').value], ['State: ' + document.getElementById('applicantState').value], ['Zip Code: ' + document.getElementById('applicantZipcode').value], ['Yes or No: ' + document.getElementById('checkboxYes').checked],  ['Pick Up Location: ' + document.getElementById('checkboxLocation').value], ['True is to buy Lucas: ' + document.getElementById('lucas').checked], ['True is to buy Duffy: ' + document.getElementById('duffy').checked]];
+  console.log (allAnswers);
   });
-*/
 
 
+const submit = document.getElementById('submitPop');
+  submit.addEventListener('click', function() {
+    event.preventDefault();
+    alert('Thank you. The form information has been received.');
+  });
+}
+
+
+
+/*
 
 const next =  document.getElementById('submitPop');
-  next.addEventListener('click', function() {
+next.addEventListener('click', function() {
 const allAnswers = [['Name: ' + document.getElementById('applicantName').value], ['Email: ' + document.getElementById('applicantEmail').value], ['Address: ' + document.getElementById('applicantAddress').value],['City: ' + document.getElementById('applicantCity').value], ['State: ' + document.getElementById('applicantState').value], ['Zip Code: ' + document.getElementById('applicantZipcode').value], ['Yes or No: ' + document.getElementById('checkboxYes').checked],  ['Pick Up Location: ' + document.getElementById('checkboxLocation').value], ['True is to buy Lucas: ' + document.getElementById('lucas').checked], ['True is to buy Duffy: ' + document.getElementById('duffy').checked]];
 console.log (allAnswers);
 });
@@ -216,4 +142,11 @@ const submit = document.getElementById('submitPop');
 submit.addEventListener('click', function() {
   event.preventDefault();
   alert('Thank you. The form information has been received.');
+});
+*/
+
+
+$(function () {
+  console.log("DOM is ready!")
+  $('nav').hide().delay(500).show('slow')
 });
