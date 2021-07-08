@@ -19,7 +19,7 @@ p {
 
 /*Header layout*/
 
-.header-container-index-page {
+.header-container {
   --auto-grid-min-size: 16rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
@@ -98,6 +98,13 @@ a {
   row-gap: 2rem;
   grid-area: 3 / 2 / 10 / 6;
 }
+.section-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  gap: 4rem;
+  grid-area: 3 / 2 / 10 / 7;
+}
 .aside-grid {
   --auto-grid-min-size: 16rem;
   display: grid;
@@ -148,17 +155,42 @@ a {
   border-top: none;
 }
 
+
+/*Dogs page*/
+.h3-dogs-page {
+  grid-area: 1 / 1 / 1 / 5;
+}
+
 /*Blog page*/
 .h4-blog {
   color: rgb(25, 60, 93);
   margin: 0;
   font-size: 1.75rem;
 }
-.blog-grid {
+
+.blog-grid-1 {
   --auto-grid-min-size: 16rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  grid-gap: 3.5rem;
+  gap: 3.5rem;
+  grid-area: 2 / 1 / 3 / 5;
+}
+.blog-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.blog-grid-2 {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  gap: 3.5rem;
+  grid-area: 3 / 1 / 4 / 5;
+}
+.blog-grid-3 {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  gap: 3.5rem;
+  grid-area: 4 / 1 / 5 / 5;
 }
 
 
@@ -263,16 +295,7 @@ input[type="submit"] {
 
 
 /*Footer*/
-/* .bottom-grid {
-  --auto-grid-min-size: 16rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  background-color: rgb(25, 60, 93);
-  font-size: 1.25rem;
-  align-items: center;
-  justify-content: center;
-} */
-.bottom-grid-index-page {
+.bottom-grid {
   --auto-grid-min-size: 16rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
@@ -318,13 +341,6 @@ input[type="submit"] {
 .footer-links {
   color: white;
 }
-
-/*@media screen and (min-width: 768px) {
-  section > article {
-    background-color: blue;
-    width: 50%;
-  }
-}*/
 
 @media screen and (max-width: 760px) {
   aside > article > p {
