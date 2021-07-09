@@ -32,37 +32,44 @@
           </p>
       </div>
     </header>
-    <form class="Checkout-form" method="GET">
+    <form id="checkout-form" class="Checkout-form" method="GET" onsubmit="formInfo(event)">
         <p class="form-title">
           Checkout
         </p>       
         <label>Name
-          <input type="text" name="contactName">
+          <input class="field" id="name" type="text" name="contactName">
         </label>
         <label>Email Address
-          <input type="email" name="contactEmail">
+          <input class="field" id="email" type="email" name="contactEmail">
         </label>
         <label>Street Address
-          <input type="text" name="streetAddress">
+          <input class="field" id="address" type="text" name="streetAddress">
         </label>           
           <div class="area">
             <div>
               <label>
                 City
-                  <input type="text" id="city">                   
+                  <input class="field" id = "city" type="text" id="city">                   
               </label>
             </div>
 
             <div>
-              <label id="state">
+              <label class="field" id="state">
                 State
-                <select name="state" id="state-dropdown"></select>
+                <select name="state" id="state-dropdown">
+                  <option value = "Alabama">Alabama</option>
+                  <option value = "California">California</option>
+                  <option value = "Denver">Denver</option>
+                  <option value = "Hawaii">Hawaii</option>
+                  <option value = "Nevada">Nevada</option>
+                  <option value = "Oregon">Oregon</option>
+                </select>
               </label>
             </div>
             <div>
               <label id="zip">
                 Zip Code
-                  <input type="text" id="zip-dropdown">                    
+                  <input class="field" type="text" id="zip-dropdown">                    
               </label>
             </div>
           </div>
@@ -79,7 +86,13 @@
           Pickup Location
         </label>
         <select name="state" id="location">
-          </select>
+          <option value = "Alabama">Alabama</option>
+          <option value = "California">California</option>
+          <option value = "Denver">Denver</option>
+          <option value = "Hawaii">Hawaii</option>
+          <option value = "Nevada">Nevada</option>
+          <option value = "Oregon">Oregon</option>
+        </select>
           <fieldset>
           <label>Dogs Adopted</label>
           <div class="adoptions">
@@ -107,7 +120,6 @@
             <label>$1234.56</label>               
           </div>
         </fieldset>          
-        <input type="submit" value="Submit">
     </form>
     <div class="flex-footer">
       <div class="footer">
@@ -132,5 +144,6 @@
         </p>
       </div>
     </div>
+    <script src="scripts/form.js"></script>
   </body>
 </html>
