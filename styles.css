@@ -7,6 +7,10 @@
     grid-template-areas: 'header' 'nav' 'main' 'footer';
 }
 
+.highlight {
+    box-shadow: 1px 5px #888888;
+  }
+
 .header {
   grid-area: header;
 }
@@ -140,7 +144,7 @@ footer {
     color: white;
     background-color: #093C60;
     text-align: center;
-    width:100%
+    width: 100%;
 }
 
 footer a {
@@ -167,7 +171,7 @@ footer img {
 
 .column {
   float: left;
-  width: 200px;
+  width: 22%;
   padding: 0 10px;
   padding-left: 30px;
   margin: 10px;
@@ -283,7 +287,7 @@ input {
 @media (max-width:768px) {
   .title {
       margin-bottom: 0px;
-      font-size: 30px;
+      font-size: 2rem;
       text-align: center;
   }
 
@@ -308,7 +312,6 @@ input {
 
   .container {
       display: block;
-      padding-left: 0px;
   }
 
   .guide {
