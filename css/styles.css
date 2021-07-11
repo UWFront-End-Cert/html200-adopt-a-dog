@@ -111,7 +111,7 @@ body {
   height: 100vh;
   min-height: 200px;
   max-height: 400px;
-  background-image: url("./images/header/header-image.jpg");
+  background-image: url("../../images/header/header-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -149,6 +149,16 @@ footer {
   color: white;
   text-align: center;
   background: #093c60;
+}
+ul.breadcrumbs.footer li {
+  float: left;
+  margin-right: 20px;
+}
+ul.breadcrumbs.footer li a {
+  color: white;
+}
+.justify-center {
+  justify-content: center;
 }
 .footer-logo {
   max-width: 300px;
