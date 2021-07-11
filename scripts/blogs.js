@@ -1,7 +1,13 @@
-const container = document.getElementById('headline');
+
+const header = document.getElementsByTagName('header')[0];
+const title = document.createElement('div');
+title.classList.add('title');
+document.body.appendChild(title);
+header.insertAdjacentElement("afterend", title);
+
 const headline = document.createElement('h1');
 headline.textContent = 'Adoptadog Blog';
-container.appendChild(headline);
+title.appendChild(headline);
 
 const images = {
     image1: 'images/blog-1.jpg',
@@ -30,75 +36,93 @@ const blogs = {
 }
 
 
-const blogContainer1 = document.getElementById('blog-container1');
+const section1 = document.createElement('section');
+document.body.appendChild(section1);
+title.after(section1);
+
+section1.classList.add('container');
 const imageDiv1 = document.createElement('div');
 imageDiv1.classList.add("b-image");
-blogContainer1.appendChild(imageDiv1);
+
+section1.appendChild(imageDiv1);
 const image1 = document.createElement('img');
 image1.src = images.image1;
 imageDiv1.appendChild(image1);
 
-const blogContents1 = document.createElement('div');
-blogContents1.classList.add("contents");
-blogContainer1.appendChild(blogContents1);
+const blogContents = document.createElement('div');
+blogContents.classList.add("contents");
+section1.appendChild(blogContents);
 const blogTitle1 = document.createElement('h2');
 blogTitle1.textContent = headlines.h1;
-blogContents1.appendChild(blogTitle1);
+blogContents.appendChild(blogTitle1);
 
-const parOne = document.createElement('p');
-parOne.textContent = blogs.blog1;
-blogContents1.appendChild(parOne);
+const parOneA = document.createElement('p');
+parOneA.textContent = blogs.blog1;
+blogContents.appendChild(parOneA);
 
-const parTwo = document.createElement('p');
-parTwo.textContent = blogs.blog2;
-blogContents1.appendChild(parTwo);
+const parTwoA = document.createElement('p');
+parTwoA.textContent = blogs.blog2;
+blogContents.appendChild(parTwoA);
 
 
 //*********2nd blog */
-const blogContainer2 = document.getElementById('blog-container2');
+const section2 = document.createElement('section');
+document.body.appendChild(section2);
+section1.after(section2);
+
+section2.classList.add('container');
 const imageDiv2 = document.createElement('div');
 imageDiv2.classList.add("b-image");
-blogContainer2.appendChild(imageDiv2);
+
+section2.appendChild(imageDiv2);
 const image2 = document.createElement('img');
 image2.src = images.image2;
 imageDiv2.appendChild(image2);
 
 const blogContents2 = document.createElement('div');
 blogContents2.classList.add("contents");
-blogContainer2.appendChild(blogContents2);
+section2.appendChild(blogContents2);
 const blogTitle2 = document.createElement('h2');
 blogTitle2.textContent = headlines.h2;
 blogContents2.appendChild(blogTitle2);
 
-const blog2ParOne = document.createElement('p');
-blog2ParOne.textContent = blogs.blog1;
-blogContents2.appendChild(blog2ParOne);
+let parOneB = document.createElement('p');
+parOneB.textContent = blogs.blog1;
+section2.appendChild(parOneB);
+blogTitle2.insertAdjacentElement("afterend", parOneB);
 
-const blog2ParTwo = document.createElement('p');
-blog2ParTwo.textContent = blogs.blog2;
-blogContents2.appendChild(blog2ParTwo);
+const parTwoB = document.createElement('p');
+parTwoB.textContent = blogs.blog2;
+blogContents2.appendChild(parTwoB);
 
 
 //*********3rd blog */
-const blogContainer3 = document.getElementById('blog-container3');
+const section3 = document.createElement('section');
+document.body.appendChild(section3);
+section2.insertAdjacentElement("afterend", section3);
+
+section3.classList.add('container');
 const imageDiv3 = document.createElement('div');
 imageDiv3.classList.add("b-image");
-blogContainer3.appendChild(imageDiv3);
+
+section3.appendChild(imageDiv3);
 const image3 = document.createElement('img');
 image3.src = images.image3;
 imageDiv3.appendChild(image3);
 
 const blogContents3 = document.createElement('div');
 blogContents3.classList.add("contents");
-blogContainer3.appendChild(blogContents3);
+section3.appendChild(blogContents3);
 const blogTitle3 = document.createElement('h2');
 blogTitle3.textContent = headlines.h3;
 blogContents3.appendChild(blogTitle3);
 
-const blog3ParOne = document.createElement('p');
-blog3ParOne.textContent = blogs.blog1;
-blogContents3.appendChild(blog3ParOne);
+const parOneC = document.createElement('p');
+parOneC.textContent = blogs.blog1;
+blogContents3.appendChild(parOneC);
+blogTitle3.insertAdjacentElement("afterend", parOneC);
 
-const blog3ParTwo = document.createElement('p');
-blog3ParTwo.textContent = blogs.blog2;
-blogContents3.appendChild(blog3ParTwo);
+const parTwoC = document.createElement('p');
+parTwoC.textContent = blogs.blog2;
+blogContents3.appendChild(parTwoC);
+
