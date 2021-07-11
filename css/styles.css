@@ -111,7 +111,7 @@ body {
   height: 100vh;
   min-height: 200px;
   max-height: 400px;
-  background-image: url("../images/header/header-image.jpg");
+  background-image: url("./images/header/header-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
