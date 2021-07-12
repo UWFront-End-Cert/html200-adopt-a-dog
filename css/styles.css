@@ -111,10 +111,15 @@ body {
   height: 100vh;
   min-height: 200px;
   max-height: 400px;
-  background-image: url("../../images/header/header-image.jpg");
+}
+.header-bg.bg {
+  background-image: url("../images/header-footer/header-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+}
+.header-bg.no-bg {
+  background-color: purple;
 }
 .header-logo {
   max-width: 300px;
