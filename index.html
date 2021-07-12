@@ -11,6 +11,24 @@
     <script src="../js/include-script.js"></script>
   </head>
   <body id="bg">
+    <script>
+      function addBodyClass() {
+        var element = document.getElementById("bg");
+        element.classList.add("mockNoBg");
+      }
+      function removeBodyClass() {
+        var element = document.getElementById("bg");
+        element.classList.remove("mockNoBg");
+      }
+    </script>
+    <div class="mocks-nav">
+      <div class="main-container flex-container">
+        <div class="col-1-1">
+          <button onclick="removeBodyClass()">View Mock v1</button> &nbsp;|&nbsp;
+          <button onclick="addBodyClass()">View Mock v2</button>
+        </div>
+      </div>
+    </div>
     <div data-include="../inc/header.html"></div>
     <main class="main-container">
       <div class="flex-container">

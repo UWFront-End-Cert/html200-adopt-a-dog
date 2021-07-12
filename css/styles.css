@@ -19,6 +19,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.flex-container .justify-center {
+  justify-content: center;
+}
+.flex-container .flex-end {
+  justify-content: flex-end;
+}
 .flex-container > .col-1-4 {
   width: 22.5%;
 }
@@ -111,15 +117,10 @@ body {
   height: 100vh;
   min-height: 200px;
   max-height: 400px;
-}
-.header-bg.bg {
   background-image: url("../images/header-footer/header-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-}
-.header-bg.no-bg {
-  background-color: purple;
 }
 .header-logo {
   max-width: 300px;
@@ -162,9 +163,15 @@ ul.breadcrumbs.footer li {
 ul.breadcrumbs.footer li a {
   color: white;
 }
-.justify-center {
-  justify-content: center;
-}
 .footer-logo {
   max-width: 300px;
+}
+
+/* navigation for mocks */
+
+.mockNoBg header {
+  background: #093c60;
+}
+.mockNoBg footer {
+  background: #3d3d3d;
 }
