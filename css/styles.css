@@ -4,6 +4,7 @@
 body {
   font-family: arial, helvetica, sans-serif;
   font-size: 16px;
+  line-height: 140%;
   margin: 0;
 }
 p,
@@ -174,8 +175,10 @@ ul.breadcrumbs.footer li a {
 }
 
 /* forms */
-.form-checkout input {
-  padding: 5px 10px;
+.form-checkout input,
+.form-checkout select {
+  padding: 10px 20px;
+  margin-bottom: 40px;
   background: white;
 }
 
@@ -207,6 +210,7 @@ body .mocks-nav button {
   border-bottom-width: 5px;
   border-bottom-color: transparent;
 }
+
 /* mock v2 state */
 body .mocks-nav button:first-child {
   border-bottom-color: #fff;
