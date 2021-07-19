@@ -86,7 +86,7 @@ img { width: 100%; }
 }
 
 
-/*------Main content------*/
+/*------Intro container------*/
 .home-intro {
   --auto-grid-min-size: 16rem;
   display: grid;
@@ -107,6 +107,8 @@ img { width: 100%; }
   line-height: 1.7;
   margin: 0;
 }
+
+
 /*------Secondary container------*/
 .section-grid-index {
   --auto-grid-min-size: 16rem;
@@ -235,6 +237,13 @@ select {
   width: 100%;
 }
 
+.section-grid-checkout {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  gap: 3.5rem;
+  grid-area: 5 / 3 / 5 / 11;
+}
 .form-container {
   display: grid;
   grid-area: 1 / 1 / 1 / 5;
@@ -318,7 +327,7 @@ input[type="submit"] {
 }
 
 
-/*Footer*/
+/*------Footer------*/
 .bottom-container {
   display: grid;
   grid-area: 11 / 1 / 13 / span 12;
@@ -361,65 +370,36 @@ input[type="submit"] {
   padding-bottom: 3.75rem;
 }
 
-/* .bottom-grid {
-  --auto-grid-min-size: 16rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  grid-area: 11 / 1 / 12 / span 12;
-  background-color: rgb(25, 60, 93);
-  font-size: 1.25rem;
-  align-items: center;
-  justify-content: center;
-}
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  grid-area: 1 / 1 / span 12 / span 12;
-  align-items: center; 
-  justify-content: center;
-}
-.footer-img {
-  height: 7.812rem;
-}
-.footer-nav-1 {
-  justify-content: center;
-}
-.footer-nav-2 {
-  justify-content: space-evenly;
-  font-size: 1.25rem;
-  padding: 0;
-}
-.footer-a {
-  list-style: none;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-.footer-p {
-  color: rgb(255, 255, 255);
-  justify-content: center;
-}
-.footer-copyright {
-  color: rgb(255, 255, 255);
-  justify-content: center;
-  padding-bottom: 3.75rem;
-}
-.footer-links {
-  color: white;
-} */
 
-@media screen and (min-width:768px) and (max-width: 1024px) {
+/*------Developing queries------*/
+@media screen and (min-width: 1px) and (max-width: 767px) {
   section > article {
-    width: 50%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section > article {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+  }
+}
+@media screen and (min-width: 1024px) {
+  section > article {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
 
 /*------Working media query------*/
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 767px) {
   .aside-p {
     display: none;
   }
 }
+
 /*------Overlap issue on print preview------*/
 @media print {
   body img {
