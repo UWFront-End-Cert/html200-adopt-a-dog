@@ -14,7 +14,10 @@ p {
     line-height: 1.5rem;
     color: rgb(61, 61, 61);
 }
-img { width: 100%; }
+img { 
+  width: 100%; 
+  display: block;
+}
 
 
 /*------Primary container------*/
@@ -327,7 +330,15 @@ input[type="submit"] {
 }
 
 
-/*------Footer------*/
+/*------Primary container------*/
+/* .grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3rem;
+} */
+
+
+/*------Footer container------*/
 .bottom-container {
   display: grid;
   grid-area: 11 / 1 / 13 / span 12;
