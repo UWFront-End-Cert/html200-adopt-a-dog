@@ -1,0 +1,12 @@
+This was is my very first website and it looks like someones first website, but I like it. I've been working on this for a couple months now so it's nice to be on the home stretch.
+The hardest part debugging my site had to do with responsiveness which I tried to achieved using modern CSS concepts like the grid layout,  flex-box, and media queries, 
+especially the later. The debugging process with media queries started out really bad. It took a long time to find out that my Live Server pluggin for vsCode wasn't necesarily
+rendering the break-points correctly or at all. It wasn't until a lot of trials and tribulations that I noticed the difference when viewing a local file in the browser, showing my
+media queries working. Also, a similar revelation came to me while using chrome dev tools to test for responsiveness. Mostly on the media queries targeting ipads, the page is
+cut short at the bottom, which through perusing stack overflow threads I found out is a common and known bug in chrome dev tools. I tested my site for responsiveness
+by resizing the literal chrome browser window and by using the the chrome dev-tools for responsiveness. I use windows 10 operating system at home, and tested my site on the ipads
+(big and small) at the bar I work in. I also viewed my site on my iphone 6s and it seems to be rendering how I want it to. 
+
+I think the most helpful part of going back and refactoring my entire sight was solidifying the concept of responsiveness, and how it mostly depends on: setting up your grid 
+intuitively, using flex-box to position things instead of relying on margins and <position> properties to do most the work, allowing the contents to define the parameters of
+your elements, and using max-width and min-width to define sizes instead of a static value. 

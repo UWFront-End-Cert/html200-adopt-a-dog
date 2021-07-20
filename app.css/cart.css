@@ -1,0 +1,476 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+/* Just add the universal selector (*) to your CSS, this will apply any rule to every element on the page. If any elements need them you can 
+then add margins or padding to those elements themselves. This helps get rid of spacing when you can't quite tell what is causing it. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+
+body {
+    font-family: 'Brygada 1918', serif;
+    line-height: 1.6;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: .25fr .5fr .25fr;
+    position: relative;
+    grid-template-areas: "header" "main" "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+/*header stufff ...............................................................................................................................................*/
+
+.header {
+    background-image: url(https://github.com/UWFront-End-Cert/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true), repeating-radial-gradient(ellipse at 50% 50%, #FF0055 99.46%, #0c497a 100%);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+    padding: 4rem;
+}
+
+.logo {
+    height: 15rem;
+}
+
+.header h1 {
+    color: white;
+    font-size: 2.75rem;
+    font-family: 'Courgette', cursive;
+    color: rgb(155, 226, 11);
+    margin-top: -2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart {
+    width: 11rem;
+    /* transform: scale(.25); */
+}
+
+span {
+    color: white;
+    width: 10%;
+    height: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    transform: scale(.75);
+}
+
+.checkout {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.75rem;
+    background-color: rgb(155, 226, 11);
+    color: white;
+    font-weight: 700;
+    border-style: none;
+    border-radius: .5rem;
+}
+
+.checkout:hover {
+    background-color: rgb(170, 253, 2);
+    transition: background-color 200ms ease-in-out;
+}
+
+.header_top {
+    position: relative;
+    right: 15rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    /* flex-basis: 50%; */
+}
+
+.header_bottom {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    /* flex-basis: 50%; */
+    position: relative;
+    left: 15rem;
+}
+
+
+/*nav.......................................................................*/
+
+.primary {
+    position: absolute;
+    display: inline-block;
+    background-color: rgb(135, 136, 133);
+    display: flex;
+    align-self: flex-end;
+    padding: 1.3rem;
+    width: 100%;
+    top: 91%;
+}
+
+.primary a {
+    position: relative;
+    font-size: 2rem;
+    /* padding-right: 5%; */
+    padding-left: 20.5%;
+    text-decoration: none;
+    color: white;
+}
+
+.inner-nav {
+    display: flex;
+    position: relative;
+    left: 15%;
+}
+
+
+/*...............................................main.................................................................................................................*/
+
+.main {
+    margin: 5rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main,
+.main h1 {
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.total {
+    font-size: 3rem;
+}
+
+.adopted div {
+    object-fit: cover;
+    display: flex;
+    align-items: flex-start;
+}
+
+.is_adopter legend {
+    align-self: flex-start;
+    justify-content: start;
+}
+
+.adopted {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.adopted div {
+    display: flex;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label,
+input,
+textarea {
+    display: flex;
+    font-size: 3rem;
+    font-family: inherit;
+}
+
+button {
+    font-size: 3rem;
+    font-family: inherit;
+    border-radius: .5rem;
+    /* width: 35rem; */
+    max-width: 35rem;
+    background-color: rgb(155, 226, 11);
+}
+
+button:hover {
+    background-color: rgb(170, 253, 2);
+}
+
+.citystate {
+    border: none;
+    display: flex;
+}
+
+.citystate input,
+select {
+    margin-right: 2rem;
+    position: relative;
+    right: 1rem;
+    text-align: left;
+}
+
+.citystate * {
+    text-align: left;
+    display: inline;
+}
+
+.citystate label {
+    text-align: left;
+}
+
+form h1 {
+    color: black;
+    font-size: 5rem;
+}
+
+.is_adopter {
+    /* position: relative; */
+    display: flex;
+    border: none;
+    width: 10rem;
+}
+
+select {
+    height: 4rem;
+}
+
+select[name="pickup"] {
+    margin-left: 1rem;
+}
+
+form * {
+    margin: 2rem;
+}
+
+fieldset label,
+input {
+    padding-right: 3rem;
+}
+
+fieldset input[type="radio"] {
+    transform: scale(1.5);
+    position: relative;
+    top: 1.2rem;
+}
+
+form p,
+legend {
+    font-size: 3rem;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.cost {
+    font-size: 1.5rem;
+    word-break: normal;
+    margin: 0;
+}
+
+legend {
+    max-width: 30rem;
+}
+
+.adopted img {
+    object-fit: cover;
+    width: 15rem;
+}
+
+input[name="have_adopted_before"] {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+fieldset:nth-of-type(1) {
+    margin-left: 1rem;
+}
+
+
+/*.........................................................footer.........................................................*/
+
+.footer {
+    background-color: rgb(12, 73, 122);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 73, 122);
+    text-align: center;
+}
+
+.footer * {
+    padding: 1rem;
+}
+
+.footer img {
+    height: 14rem;
+}
+
+.footer p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+div.footer_nav {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+div.footer_nav a {
+    color: white;
+    font-size: 2rem;
+}
+
+
+/*****************quireies********************/
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+    .footer img {
+        height: 11rem;
+    }
+    legend {
+        margin: 0;
+    }
+    fieldset:nth-of-type(1) {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .grid_container {
+        grid-template-rows: .1fr .5fr .1fr;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_top {
+        right: 0rem;
+        margin-top: 0;
+        left: 0rem;
+    }
+    .header_bottom {
+        left: 0rem;
+        bottom: 0rem;
+    }
+    .logo {
+        height: 13rem;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    .primary {
+        left: 0rem;
+        top: 92%;
+    }
+    .adopted {
+        flex-direction: column;
+    }
+    .header_top h1 {
+        font-size: 2rem;
+    }
+    .logo {
+        height: 11rem;
+    }
+    .cart {
+        width: 8rem;
+    }
+    .adopted div {
+        flex-direction: column;
+    }
+    .contents {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .header_top,
+    .header_bottom {
+        left: 0;
+        right: 0;
+    }
+    .header_bottom {
+        bottom: 5rem;
+    }
+    .primary {
+        justify-content: center;
+        position: sticky;
+        top: 91%;
+    }
+    .inner-nav {
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .adopted {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .header {
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .header_top,
+    .header_bottom {
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and(max-width: 1026px) {
+    .header_top {
+        right: 0rem;
+        left: 0rem;
+    }
+}
+
+@media screen and (max-width: 1207px) {
+    .header_bottom {
+        position: relative;
+        left: 0;
+        bottom: 8rem;
+    }
+}
