@@ -39,6 +39,24 @@ img {
   grid-area: 1 / 1 / span 12 / span 12;
   height: 37.5rem;
 }
+.header-flex {
+  display: flex;
+  grid-area: 2 / 2 / 5 / 7;
+  justify-content: space-between;
+}
+.logo-flex {
+  display: flex;
+  flex-direction: column;
+}
+.cart-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.price-flex {
+  display: flex;
+  padding: 0.5rem 0;
+}
 .header-logo {
   grid-area: 2 / 2 / 5 / 4;
 }
@@ -49,26 +67,21 @@ img {
   font-size: 2rem;
 }
 .cart {
-  grid-area: 3 / 6;
-  justify-self: center;
-  height: 1.875rem;
+  height: 1.5rem;
 }
 .cart-p {
-  display: flex;
-  grid-area: 3 / 6 / 3 / 8;
-  justify-content: center;
   color: rgb(255, 255, 255);
   font-weight: 700;
+  margin: 0;
 }
 .checkout-container {
   display:flex;
-  grid-area: 4 / 6 / 4 / 6;
   justify-content: center;
   align-content: center;
   text-decoration: none;
   color: white;
   background-color: rgb(141, 181, 83);
-  padding: 0.5rem 0;
+  padding: 0.5rem 3rem;
   font-weight: 700;
 }
 .nav {

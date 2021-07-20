@@ -13,12 +13,21 @@
       <header class="header-container linear-gradient">
         <img class="header-img" src="images/header-image.jpg"
             alt="a close-up of a beagles' face looking toward the left of the screen from the right">
-        <img class="header-logo col-8" src="images/adoptadog-logo.svg"
-            alt="White dog silhoutte next to the company's title.">
-        <h2 class="h2"><i>Seattle's premier dog adoption agency</i></h2>
-        <img class="cart" src="images/cart-icon.svg" alt="cart icon next to the current total price">
-        <p class="cart-p">$1234.56</p>
-        <a class="checkout-container col-8" href="checkout.html">Checkout</a>
+        <div class="header-flex">
+            <div class="logo-flex">
+              <img class="col-8" src="images/adoptadog-logo.svg"
+                  alt="White dog silhoutte next to the company's title.">
+              <h2 class="h2"><i>Seattle's premier dog adoption agency</i></h2>
+            </div>
+            <div class="cart-flex">
+              <div class="price-flex">
+                  <img class="cart" src="images/cart-icon.svg" alt="cart icon next to the current total price">
+                  <p class="cart-p">$1234.56</p>
+              </div>
+            <a class="checkout-container" href="checkout.html">Checkout</a>
+            </div>
+        </div>
+
         <nav class="nav">
             <ul class="menu col-9">
                 <li><a href="index.html">Home</a></li>
@@ -28,7 +37,7 @@
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
-    </header>    
+    </header>   
 
       <article class="home-intro">
         <img class="image-1" src="images/home-intro.jpg" 
