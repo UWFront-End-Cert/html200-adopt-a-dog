@@ -71,7 +71,6 @@ body {
 /*header shit*/
 
 .header {
-    /* 7:21 */
     background-image: url(https://github.com/mjay88/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
     height: 40rem;
     width: auto;
@@ -383,7 +382,7 @@ p {
     z-index: 10000;
     align-self: center;
     top: 4rem;
-    right: 32rem;
+    right: 31rem;
     margin: 0 auto;
     margin-left: 65rem;
 }
@@ -474,7 +473,7 @@ div.footer_nav a {
         margin-top: 60rem;
     }
     .more {
-        right: 43rem;
+        right: 48rem;
         top: 1rem;
     }
 }
@@ -487,7 +486,7 @@ div.footer_nav a {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .container {
-        height: 370rem;
+        height: 100vh;
     }
     .left {
         margin-top: -9.5rem;
@@ -585,6 +584,29 @@ iphone media queries so thats fine i guess */
     }
     .header1 {
         margin-top: 13rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        position: relative;
+        display: grid;
+        grid-template-areas: "header""side""left""footer";
+    }
+    /*what are the best practices for defining height*/
+    .header {
+        grid-area: header;
+    }
+    .left {
+        grid-area: left;
+    }
+    .side {
+        grid-area: side;
+    }
+    .footer {
+        grid-area: footer;
+        position: absolute;
+        bottom: 0;
     }
 }
 

@@ -28,42 +28,35 @@ body {
 .grid_container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(5, 20%);
-    height: 210rem;
+    grid-template-rows: .25fr .5fr .25fr;
     position: relative;
+    grid-template-areas: "header" "main" "footer";
 }
 
 .header {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-area: header;
 }
 
 .main {
-    grid-column: 1/2;
-    grid-row: 2/5;
+    grid-area: main;
 }
 
 .footer {
-    grid-column: 1/2;
-    grid-row: 5/6;
+    grid-area: footer;
 }
 
 
 /*header stufff ...............................................................................................................................................*/
 
 .header {
-    margin-bottom: 10rem;
-    background-color: black;
     background-image: url(https://github.com/UWFront-End-Cert/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true), repeating-radial-gradient(ellipse at 50% 50%, #FF0055 99.46%, #0c497a 100%);
-    height: 40rem;
-    width: auto;
-    position: relative;
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     position: relative;
-    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+    padding: 4rem;
 }
 
 .logo {
@@ -75,14 +68,13 @@ body {
     font-size: 2.75rem;
     font-family: 'Courgette', cursive;
     color: rgb(155, 226, 11);
+    margin-top: -2rem;
     display: flex;
     justify-content: space-around;
-    margin-top: -2rem;
 }
 
 .cart {
-    width: 4rem;
-    height: 4rem;
+    width: 11rem;
     /* transform: scale(.25); */
 }
 
@@ -103,41 +95,68 @@ span {
     color: white;
     font-weight: 700;
     border-style: none;
+    border-radius: .5rem;
 }
 
 .checkout:hover {
     background-color: rgb(170, 253, 2);
+    transition: background-color 200ms ease-in-out;
 }
 
 .header_top {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    position: relative;
+    right: 15rem;
     margin-top: 5rem;
-    margin-left: 6rem;
+    margin-bottom: 10rem;
+    /* flex-basis: 50%; */
 }
 
 .header_bottom {
     display: flex;
-    align-self: flex-start;
-    margin-top: 10rem;
-    margin-right: 3rem;
-    margin-top: 6rem;
+    align-self: center;
     flex-direction: column;
+    /* flex-basis: 50%; */
+    position: relative;
+    left: 15rem;
+}
+
+
+/*nav.......................................................................*/
+
+.primary {
+    position: absolute;
+    display: inline-block;
+    background-color: rgb(135, 136, 133);
+    display: flex;
+    align-self: flex-end;
+    padding: 1.3rem;
+    width: 100%;
+    top: 91%;
+}
+
+.primary a {
+    position: relative;
+    font-size: 2rem;
+    /* padding-right: 5%; */
+    padding-left: 20.5%;
+    text-decoration: none;
+    color: white;
+}
+
+.inner-nav {
+    display: flex;
+    position: relative;
+    left: 15%;
 }
 
 
 /*...............................................main.................................................................................................................*/
 
 .main {
-    height: auto;
+    margin: 5rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
-    margin-left: 15rem;
-    margin-right: 40rem;
-    box-sizing: border-box;
-    margin-top: 10rem;
 }
 
 .main,
@@ -157,24 +176,30 @@ form {
 }
 
 .adopted div {
-    width: 30rem;
-    height: 15rem;
     object-fit: cover;
     display: flex;
     align-items: flex-start;
 }
 
+.is_adopter legend {
+    align-self: flex-start;
+    justify-content: start;
+}
+
 .adopted {
     display: flex;
-    flex-flow: row;
-    align-items: flex-start
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.adopted div {
+    display: flex;
 }
 
 .contents {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 1rem;
+    justify-content: space-between;
 }
 
 label,
@@ -189,7 +214,8 @@ button {
     font-size: 3rem;
     font-family: inherit;
     border-radius: .5rem;
-    width: 35rem;
+    /* width: 35rem; */
+    max-width: 35rem;
     background-color: rgb(155, 226, 11);
 }
 
@@ -240,7 +266,7 @@ select[name="pickup"] {
 }
 
 form * {
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 
 fieldset label,
@@ -265,10 +291,12 @@ legend {
 
 .cost {
     font-size: 1.5rem;
+    word-break: normal;
+    margin: 0;
 }
 
 legend {
-    width: 30rem;
+    max-width: 30rem;
 }
 
 .adopted img {
@@ -286,47 +314,20 @@ fieldset:nth-of-type(1) {
 }
 
 
-/*nav.......................................................................*/
-
-.primary a:first-child {
-    margin-left: 9rem;
-}
-
-.primary {
-    position: relative;
-    z-index: 10000;
-    display: block;
-    background-color: rgb(135, 136, 133);
-    padding: 1.3rem;
-    position: relative;
-    bottom: 170rem;
-}
-
-nav a {
-    font-size: 2rem;
-    /* padding-right: 5%; */
-    padding-left: 2.5%;
-    text-decoration: none;
-    color: white;
-    padding-left: 2rem;
-}
-
-
 /*.........................................................footer.........................................................*/
 
 .footer {
     background-color: rgb(12, 73, 122);
-    height: 35rem;
-    margin-top: 30rem;
-    padding-top: 15rem;
-    clear: both;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: rgb(12, 73, 122);
     text-align: center;
-    padding-bottom: 15rem;
+}
+
+.footer * {
+    padding: 1rem;
 }
 
 .footer img {
@@ -346,280 +347,130 @@ div.footer_nav {
 
 div.footer_nav a {
     color: white;
+    font-size: 2rem;
 }
 
 
 /*****************quireies********************/
 
-@media screen and (max-width: 1146px) {
-    .grid_container {
-        width: 137%;
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+    .footer img {
+        height: 11rem;
+    }
+    legend {
+        margin: 0;
+    }
+    fieldset:nth-of-type(1) {
+        margin: 0;
     }
 }
 
-@media screen and (max-width: 838px) {
+@media screen and (max-width: 551px) {
     .grid_container {
-        width: 149%;
+        grid-template-rows: .1fr .5fr .1fr;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_top {
+        right: 0rem;
+        margin-top: 0;
+        left: 0rem;
+    }
+    .header_bottom {
+        left: 0rem;
+        bottom: 0rem;
+    }
+    .logo {
+        height: 13rem;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    .primary {
+        left: 0rem;
+        top: 92%;
+    }
+    .adopted {
+        flex-direction: column;
+    }
+    .header_top h1 {
+        font-size: 2rem;
+    }
+    .logo {
+        height: 11rem;
+    }
+    .cart {
+        width: 8rem;
+    }
+    .adopted div {
+        flex-direction: column;
+    }
+    .contents {
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 769px) {
-    .grid_container {
-        width: 159%;
-    }
-}
-
-@media screen and (max-width: 769px) and (orientation: portrait) {
-    .grid_container {
-        width: 154%;
-    }
-}
-
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    /* For landscape layouts only */
-    .grid_container {
-        width: 133%;
-    }
-    #zip {
-        width: 20rem;
-    }
-}
-
-@media screen and(max-width: 730px) {
-    .grid_container {
-        width: 158%;
-    }
-    #zip {
-        width: 20rem;
-    }
-}
-
-@media screen and(max-width: 700px) {
-    .grid-container {
-        width: 164%;
-    }
-}
-
-
-/*ipad*/
-
-
-/* Portrait */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-    input,
-    select {
-        border: 1px solid black;
-    }
-    fieldset.citystate {
-        flex-flow: column;
-    }
-    input#address {
-        margin-bottom: 4rem;
-    }
-    input#city {
-        width: 64rem;
-    }
-    .grid_container {
-        height: 326rem;
-    }
-    .primary {
-        padding: 2.3rem;
-        bottom: 286rem;
-    }
-    nav a {
-        font-size: 3rem;
-    }
-    .main {
-        margin-top: -14rem;
-    }
-    .footer * {
-        padding-bottom: 2rem;
-    }
-    .footer {
-        margin-top: -34rem;
-        height: 40rem;
-    }
-    label {
-        font-size: 4rem;
-    }
-    select {
-        font-size: 2rem;
-    }
-    fieldset input[type="radio"] {
-        transform: scale(2);
-        margin-right: 2rem;
-    }
-    input#zip {
-        width: 64rem;
-    }
-    legend {
-        font-size: 3.2rem;
-    }
-}
-
-
-/* ipad Landscape */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-    .grid_container {
-        height: 246rem;
-    }
-    input,
-    select {
-        border: 1px solid black;
-    }
-    .primary {
-        bottom: 206rem;
-    }
-    .main {
-        margin-top: 1rem;
-    }
-    nav a {
-        font-size: 3rem;
-    }
-    fieldset input[type="radio"] {
-        transform: scale(2);
-        margin-right: 2rem;
-    }
-    .footer {
-        margin-top: -1rem;
-    }
-}
-
-
-/*iphone 6/7/8*/
-
-
-/* Portrait */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    .grid_container {
-        width: 304%;
-        height: 300rem;
-    }
     .header {
-        height: 71rem;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
-    .header_top {
-        margin-top: 13rem;
-        margin-left: 32rem;
-        transform: scale(2);
+    .header_top,
+    .header_bottom {
+        left: 0;
+        right: 0;
     }
     .header_bottom {
-        margin-top: 0rem;
-        margin-bottom: 10rem;
-        transform: scale(3);
-        margin-left: 47rem;
-    }
-    .primary a {
-        font-size: 7rem;
+        bottom: 5rem;
     }
     .primary {
-        bottom: 229rem;
-        padding-left: 8rem;
+        justify-content: center;
+        position: sticky;
+        top: 91%;
     }
-    .main {
-        margin-top: 41rem;
-    }
-    form h1 {
-        font-size: 9rem;
-    }
-    label {
-        font-size: 7rem;
-    }
-    legend {
-        font-size: 7rem;
-    }
-    form p {
-        font-size: 7rem;
-    }
-    input {
-        font-size: 6rem;
-        border: 1px solid black;
-    }
-    .citystate {
-        flex-direction: column;
+    .inner-nav {
+        left: 0;
+        justify-content: center;
+        align-items: center;
     }
     .adopted {
-        flex-flow: column;
-        transform: scale(3);
-        margin-left: 28rem;
-        margin-top: 42rem;
-    }
-    .footer {
-        height: 82rem;
-        margin-top: 278rem;
-        padding-bottom: 25rem;
-    }
-    .footer img {
-        height: 29rem;
-    }
-    .footer p {
-        font-size: 3.2rem;
-    }
-    .footer a {
-        font-size: 5rem;
-        padding-right: 3rem;
-    }
-    .total {
-        margin-top: 20rem;
-    }
-    button {
-        font-size: 7rem;
-        width: 75rem;
-        height: 12rem;
-    }
-    nav.primary a {
-        padding-left: 3rem;
-    }
-    fieldset input[type="radio"] {
-        transform: scale(3.5);
-    }
-    fieldset label {
-        padding-left: 4rem;
-    }
-    #pickup {
-        height: 7rem;
-        border: 1px solid black;
-        font-size: 4rem;
-    }
-    input#city {
-        width: 60rem;
-    }
-    select#state {
-        width: 26rem;
-        height: 8rem;
-        border: 1px solid black;
-        font-size: 5rem;
-    }
-    input#zip {
-        width: 60rem;
+        flex-direction: column;
     }
 }
 
-
-/*iphone 6/7/8*/
-
-
-/* Landscape */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .citystate {
+@media screen and (max-width: 996px) {
+    .header {
         flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
-    input,
-    select {
-        border: 1px solid black;
+    .header_top,
+    .header_bottom {
+        left: 0;
+        right: 0;
     }
-    input#city {
-        width: 34rem;
+}
+
+@media screen and(max-width: 1026px) {
+    .header_top {
+        right: 0rem;
+        left: 0rem;
     }
-    select#state {
-        width: 34rem;
-    }
-    .footer {
-        margin-top: 53rem;
+}
+
+@media screen and (max-width: 1207px) {
+    .header_bottom {
+        position: relative;
+        left: 0;
+        bottom: 8rem;
     }
 }
