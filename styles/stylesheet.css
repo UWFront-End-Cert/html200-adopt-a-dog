@@ -186,7 +186,6 @@ img {
   grid-area: 3 / 3 / 11 / 11;
 }
 .h3-dogs-page {
-  display: grid;
   grid-area: 2 / 3 / 3 / 11;
   font-weight: 700;
 }
