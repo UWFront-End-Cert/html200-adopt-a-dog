@@ -30,9 +30,8 @@ img {
 
 /*------Header container------*/
 .header-container {
-  --auto-grid-min-size: 16rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-area: 1 / 1 / 1 / span 12;
 }
 .header-img {
@@ -41,7 +40,7 @@ img {
 }
 .header-flex {
   display: flex;
-  grid-area: 2 / 2 / 5 / 7;
+  grid-area: 2 / 2 / 5 / 11;
   justify-content: space-between;
 }
 .logo-flex {
@@ -51,7 +50,7 @@ img {
 .cart-flex {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .price-flex {
   display: flex;
