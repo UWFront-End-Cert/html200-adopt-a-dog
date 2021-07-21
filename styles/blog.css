@@ -1,0 +1,28 @@
+.title {
+    color: #004677;
+    margin-left: 10rem;
+    padding-top: 2rem;
+  }
+ 
+  .container {
+      display: flex;
+      margin-left: 10rem;
+      padding-bottom: 5rem;
+      padding-top: 1rem;
+  }
+  .contents {
+      margin-left: 3rem;
+      margin-right: 12rem;
+      margin-top: -1rem;
+  }
+ 
+  .b-image {
+    padding-top: .5rem;
+    max-height: 15em;
+    min-width: 20em;
+  }
+  .b-content {
+    line-height: 1.5;
+    font-size: 1em;
+    max-width: 20em;
+  }
