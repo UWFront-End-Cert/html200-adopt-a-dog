@@ -1,27 +1,37 @@
 
-function formInfo(event)
-{
-    event.preventDefault();
+//print input values to console
+$('form').submit(function(event){
+    console.log($(this).serializeArray())
+    event.preventDefault()
+})
 
-    const textFields = document.getElementsByTagName('input')
 
-    const userInput = '';
-    const inputString = '';
+//*************************************************************/
+//***********Intentionally leaving this commented code************/
+//***********************************************************/
+// function formInfo(event)
+// {
+//     event.preventDefault();
 
-    for(let i=0; i<textFields.length; i++)
-    {
+//     const textFields = document.getElementsByTagName('input')
 
-    const textField = textFields[i]; 
-        if(textField.type == 'radio')
-        {
-            return false;
-        }
-        else
-        {
-            console.log('You entered ' + textField.value);
-        }
-    }
-}
+//     const userInput = '';
+//     const inputString = '';
+
+//     for(let i=0; i<textFields.length; i++)
+//     {
+
+//     const textField = textFields[i]; 
+//         if(textField.type == 'radio')
+//         {
+//             return false;
+//         }
+//         else
+//         {
+//             console.log('You entered ' + textField.value);
+//         }
+//     }
+// }
 
 function submitForm()
 {   
@@ -37,6 +47,7 @@ submitButton.textContent = 'Submit';
 submitButton.style.width = '15rem';
 submitButton.style.height = '2rem';
 submitButton.color = 'white';
+submitButton.style.marginLeft = '10rem'
 
 form.appendChild(submitButton);
 

@@ -6,17 +6,24 @@
     <link rel="stylesheet" href="styles/checkout-form.css">
     <link rel="stylesheet" href="styles/adopt-a-dog.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="checkout">
-          <div class="total">
-              $1234.56
+          <div>
+              <img class="cart" src="images/cart-icon.svg" alt="This is an image of a shopping cart.">
+              <div class="total">
+
+                  $00.00
+              </div>
+              <form action="checkout-form.html" method="GET">
+                  <button class="checkout-button" type="submit" value="Checkout">Checkout</button>
+              </form>
           </div>
-          <div class="cart">
-              <img src="images/cart-icon.svg" alt="">
-              <button class="checkout-button" type="submit" value="Checkout">Checkout</button>
-            </div>
       </div>
       <div class="header-logo">
           <img src="images/adoptadog-logo.svg" alt="This is an image of a sitting white dog with pointy ears.">
@@ -26,13 +33,14 @@
       </div>
       <div class="menu">
           <p>
-              <a href="index.html">Home</a> / 
+              <a href="index.html">Home</a> /
               <a href="dogs.html">Dogs</a> / 
               <a href="blog.html">Blog</a>
           </p>
       </div>
-    </header>
-    <form id="checkout-form" class="Checkout-form" method="GET" onsubmit="formInfo(event)">
+  </header>
+    <!--form id="checkout-form" class="Checkout-form" method="GET" onsubmit="formInfo(event)"-->
+    <form id="checkout-form" class="Checkout-form" method="GET" >
         <p class="form-title">
           Checkout
         </p>       
@@ -85,7 +93,7 @@
         <label>
           Pickup Location
         </label>
-        <select name="state" id="location">
+        <select name="pickup-location" id="location">
           <option value = "Alabama">Alabama</option>
           <option value = "California">California</option>
           <option value = "Denver">Denver</option>

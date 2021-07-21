@@ -6,15 +6,23 @@
     <link rel="stylesheet" href="styles/adopt-a-dog.css">
     <link rel="stylesheet" href="styles/more-dogs.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+  <script src="./scripts/dog-tiles.js"></script>
+  <script src="./scripts/dog-info.js"></script>
+  <script src="./scripts/total.js" ></script>
   </head>
   <body>
     <header>
         <div class="checkout">
-            <div class="total">
-                $1234.56
-            </div>
-            <div class="cart">
-                <img src="images/cart-icon.svg" alt="">
+            <div>
+                <img class="cart" src="images/cart-icon.svg" alt="This is an image of a shopping cart.">
+                <div class="total">
+
+                    $00.00
+                </div>
                 <form action="checkout-form.html" method="GET">
                     <button class="checkout-button" type="submit" value="Checkout">Checkout</button>
                 </form>
@@ -367,7 +375,6 @@
         </p>
       </div>
     </div>
-    <script src="scripts/dog-info.js"></script>
-    <script src="scripts/total.js" ></script>
+
   </body>
 </html>

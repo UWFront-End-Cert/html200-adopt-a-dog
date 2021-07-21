@@ -4,8 +4,12 @@ button, input, select {
   box-sizing: border-box;
   display: block;
   margin-bottom: 3rem;
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   height: 2.5rem;
+}
+
+input, select{
+  margin-left: 10rem;
 }
 
 form {
@@ -33,10 +37,9 @@ input[type="email"]
 {
   width: 45rem;
 }
-  .area {
-    display: flex;
-    
-  }
+.area {
+  display: flex;  
+}
 #city {
   width: 14rem;
 }

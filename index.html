@@ -5,15 +5,20 @@
     <title>Adopt A Dog Home Page</title>
     <link rel="stylesheet" href="styles/adopt-a-dog.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header">
         <div class="checkout">
-            <div class="total">
-                $1234.56
-            </div>
-            <div class="cart">
-                <img src="images/cart-icon.svg" alt="This is an image of a shopping cart.">
+            <div>
+                <img class="cart" src="images/cart-icon.svg" alt="This is an image of a shopping cart.">
+                <div class="total">
+
+                    $00.00
+                </div>
                 <form action="checkout-form.html" method="GET">
                     <button class="checkout-button" type="submit" value="Checkout">Checkout</button>
                 </form>
@@ -252,7 +257,9 @@ doluptios dolupta tiandebis nem ut.
                 </p>
             </div>
             <div class="submit-button">
-                <button class="btnAdopt" onclick="runningTotal()" type="button" value="Adopt">
+                <!--for use with JavaScript-->
+                <!--button class="btnAdopt" onclick="runningTotal()" type="button" value="Adopt"-->
+                <button class="btnAdopt" type="button" value="Adopt">
                     Adopt
                 </button>
             </div>
