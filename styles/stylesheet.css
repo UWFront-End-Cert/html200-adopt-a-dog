@@ -355,7 +355,7 @@ input[type="submit"] {
 
 
 /*------Footer container------*/
-.bottom-container {
+/* .bottom-container {
   display: grid;
   grid-area: 11 / 1 / 13 / span 12;
   grid-template-columns: repeat(12, 1fr);
@@ -395,6 +395,51 @@ input[type="submit"] {
   color: rgb(255, 255, 255);
   justify-content: center;
   padding-bottom: 3.75rem;
+} */
+.bottom-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-area: 11 / 1 / 12 / span 12;
+  background-color: rgb(25, 60, 93);
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: center;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  grid-area: 1 / 1 / span 12 / span 12;
+  align-items: center;
+  justify-content: center;
+}
+.footer-img {
+  height: 7.812rem;
+}
+.footer-nav-1 {
+  justify-content: center;
+}
+.footer-nav-2 {
+  justify-content: space-evenly;
+  font-size: 1.25rem;
+  padding: 0;
+}
+.footer-a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.footer-p {
+  color: rgb(255, 255, 255);
+  justify-content: center;
+}
+.footer-copyright {
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  padding-bottom: 3.75rem;
+}
+.footer-links {
+  color: white;
 }
 
 
