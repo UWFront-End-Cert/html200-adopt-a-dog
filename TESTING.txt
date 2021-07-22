@@ -2,10 +2,54 @@ This was is my very first website and it looks like someones first website, but 
 
 The hardest part debugging my site had to do with responsiveness which I tried to achieved using modern CSS concepts like the grid layout,  flex-box, and media queries, 
 especially the later. The debugging process with media queries started out really bad. It took a long time to find out that my Live Server pluggin for vsCode wasn't necesarily
-rendering the break-points correctly or at all. It wasn't until a lot of trials and tribulations that I noticed the difference when viewing a local file in the browser, showing my
-media queries working. Also, a similar revelation came to me while using chrome dev tools to test for responsiveness. Mostly on the media queries targeting ipads, the page is
+rendering the break-points correctly or at all. It wasn't until a lot of trials and tribulations that I noticed the difference when viewing a local file in the browser, showing my media queries working. Also, a similar revelation came to me while using chrome dev tools to test for responsiveness. Mostly on the media queries targeting ipads, the page is
 cut short at the bottom, which through perusing stack overflow threads I found out is a common and known bug in chrome dev tools. I tested my site for responsiveness
-by resizing the literal chrome browser window (a lot) and by using the the chrome dev-tools (a lot) for responsiveness. I use windows 10 operating system at home, and tested my site on the ipads(big and small) at the bar I work in. I also viewed my site on my iphone 6s and it seems to be rendering how I want it to. 
+by resizing the literal chrome browser window (a lot) and by using the the chrome dev-tools (a lot) for responsiveness. 
+
+I included media queries for iphones 
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+and for ipads
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+and tested my site on the ipads I use at the bar I work in, ipad mini and ipad pro 9.7inch and they appeared to be rendering pretty well. 
+I got these media query breakpoints from css.tricks.com which has been a great resource. 
+
+Using chrome devtools repsonsiveness setting I tested the responsiveness of each page and have cleaned up must of the layout issues that I was having early on. I did this by 
+using the grid layout and flex-box as much as possible and letting the contained elements define the size of there parents. 
 
 I think the most helpful part of going back and refactoring my entire sight was solidifying the concept of responsiveness, and how it mostly depends on: setting up your grid 
 intuitively, using flex-box to position things instead of relying on margins and <position> properties to do most the work, allowing the contents to define the parameters of
