@@ -19,6 +19,7 @@ function dogTotal (dogPrice) {
 /* blog page */
 
 
+
 const blogPage = document.getElementById('blog-head');
 if (blogPage) {
   document.getElementById('blog-head').innerHTML='Adopt A Dog';
@@ -110,6 +111,8 @@ if (blogPage) {
 
 
 
+/*
+
 const formCheck = document.getElementById('submitPop');
 if (formCheck) {
   formCheck.addEventListener('click', function() {
@@ -127,26 +130,59 @@ const submit = document.getElementById('submitPop');
 }
 
 
-
-/*
-
-const next =  document.getElementById('submitPop');
-next.addEventListener('click', function() {
-const allAnswers = [['Name: ' + document.getElementById('applicantName').value], ['Email: ' + document.getElementById('applicantEmail').value], ['Address: ' + document.getElementById('applicantAddress').value],['City: ' + document.getElementById('applicantCity').value], ['State: ' + document.getElementById('applicantState').value], ['Zip Code: ' + document.getElementById('applicantZipcode').value], ['Yes or No: ' + document.getElementById('checkboxYes').checked],  ['Pick Up Location: ' + document.getElementById('checkboxLocation').value], ['True is to buy Lucas: ' + document.getElementById('lucas').checked], ['True is to buy Duffy: ' + document.getElementById('duffy').checked]];
-console.log (allAnswers);
-});
-
-
-
-const submit = document.getElementById('submitPop');
-submit.addEventListener('click', function() {
-  event.preventDefault();
-  alert('Thank you. The form information has been received.');
-});
 */
+
+
+
+
 
 
 $(function () {
   console.log("DOM is ready!")
   $('nav').hide().delay(500).show('slow')
-});
+
+
+  $('img').mouseenter(function(){
+    console.log('mouse has entered')
+    $(this).css( "border-radius", "5em 5em 5em 5em" ).fadeTo('slow', .85)
+  }).mouseleave(function(){
+    console.log('mouse had left')
+    $(this).css("border-radius", "0em").fadeTo('fast', 1)
+  })
+
+
+  $('a').mouseenter(function(){
+    $(this).css("border-radius", "5em")
+  }).mouseleave(function(){
+    $(this).css("border-radius", "0em")
+  })
+
+  $('a').click(function(){
+    $(this).css("background", "#1f1e2c")
+  })
+
+  $('#submitPop').click(function(){
+    event.preventDefault();
+    alert('Thank you. The form information has been received.')
+
+    const name = $('#applicantName').val();
+    const email = $('#applicantEmail').val();
+    const address= $('#applicantAddress').val();
+    const city = $('#applicantCity').val();
+    const state = $('#applicantState').val();
+    const zipcode= $('#applicantZipcode').val();
+    const yesOrNo = $('input:radio[name=first-time-or-not]:checked').val();
+    const location= $('#checkboxLocation').val();
+    const adoptLucas = $('#lucas:checked').val();
+    const adoptDuffy= $('#duffy:checked').val();
+    console.log("Name: " + name + "; E-mail Address: " + email + "; Street Name: " + address + "; City: " + city + "; State: " + state + "; ZIP Code: " + zipcode + "; Yes or No: " + yesOrNo + "; Pick Up: " + location + "; Adopt: " + adoptLucas + "; Adopt: " + adoptDuffy);
+  })
+
+$(function(){
+  $('.green-clickable').click(function(){
+      event.preventDefault();
+  $('#totalcost').html('Total: $' + cartTotal);
+})})
+
+
+})

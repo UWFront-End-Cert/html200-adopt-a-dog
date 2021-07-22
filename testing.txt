@@ -1,0 +1,54 @@
+User Personas
+The targeted demographic for the site are people who likes animals, have a stable job and a fairly good living environment.
+
+The User Persona below is conducted for the discussion assignment.
+Name: Lisa Moore
+Age: 21
+Occupation: Student/Part-Time Barista
+Hobbies: Hiking;
+Living Situation: Alone;
+Descriptions:
+Recently moved out of the dorm
+Rented her first apartment in a friendly neighborhood
+Wanting to get a pet
+Technology:
+Owned a Macbook and an iPhone 11, most likely to browse websites in free time via phone; Use computer for research on interesting subjects/school works.
+User Motivation:
+Wants to adopt a pet instead of buying because of a recent article regarding animal adoption;
+Likes to discuss with friends/online community before making decisions;
+Value:
+The breed and characteristic of the dog; how much it cost; experience of others;
+
+The user is more likely to view the basic information on her phone, and view the details on her Macbook. In which, it suggest that the main focus on the development should be on the smaller screen (~667px) and also a bigger screen (~1400px).
+
+
+Testing
+For the below testing, the guidelines are below:
+
+
+The website works accordingly with each browsers, operation systems, and screen sizes.
+
+
+1. Chrome
+
+
+
+2. iOS Safari
+
+
+
+
+3.Firefox
+
+
+
+Operation System: PC
+
+
+
+
+Tablet (iPad 2017)
+
+
+
+iPhone 7
