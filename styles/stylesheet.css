@@ -213,15 +213,17 @@ img {
   margin: 0;
   font-size: 1.75rem;
 }
+.blog {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+}
 .blog-grid-1 {
   --auto-grid-min-size: 16rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   gap: 3.5rem;
   grid-area: 3 / 3 / 3 / 11;
-}
-.blog-img {
-  grid-area: 1 / 1 / 2 / 2;
 }
 .blog-grid-2 {
   --auto-grid-min-size: 16rem;
@@ -356,7 +358,7 @@ input[type="submit"] {
 
 /*------Footer container------*/
 .bottom-container {
-  grid-area: 11 / 1 / 12 / span 12;
+  grid-area: auto / 1 / auto / span 12;
   background-color: rgb(25, 60, 93);
   font-size: 1.25rem;
 }
