@@ -1,0 +1,46 @@
+.d-title {
+    color: #004677;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10rem;
+    max-width: 1000px;
+  }
+.d-cards {
+    margin-inline: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 7rem;
+}
+.d-card {
+    box-shadow: 2px 1px #888888;
+}
+.card-image {
+    width: 100%;
+    min-width: 2em;
+    display: block;
+}
+.d-card-content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    background: #fafafa;
+    padding: .75rem;
+}
+.d-card-content > p:first-of-type {
+  margin-top: 0;
+}
+.d-card-content > p:last-of-type {
+  margin-bottom: 0;
+}
+
+  button {
+  background-color: #99c416;
+  color: white;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-top: .5rem;
+  border: none;
+}

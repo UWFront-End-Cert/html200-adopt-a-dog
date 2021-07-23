@@ -1,0 +1,282 @@
+
+
+.left {
+  width: 60%;
+}
+.right {
+  width: 40%;
+  float: right;
+}
+
+  h1, h2, h3{
+    color: #004677;
+  }
+
+  a:hover{
+    text-decoration: none; 
+    color: orange;
+  }
+  a:link {
+    text-decoration: none;
+    color: #004677;
+  }
+
+  header {
+    background: linear-gradient(45deg, #DB7093, #191970 30%);
+    background-image: url('../images/header-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  mark {
+    background-color: #fafafa;
+    font-weight: bold;
+  }
+
+  .header-logo {
+    width: 100%; 
+    padding-top: 3rem;
+    margin-left: 5rem;
+    max-width: 35%;
+    height: auto;
+  }
+  
+  .title-description {
+    color: #99c416;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    font-style: italic;
+  }
+
+ .checkout div {
+   float: right;
+   color: white;
+   margin-top: 3rem;
+   margin-right: 3rem;
+ }
+
+  .checkout-button {
+    width: 10rem;
+  }
+  
+  .cart {
+    max-width: 2rem;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+  }
+  
+  .menu p {
+    margin-left: 10rem;
+  }
+
+  .menu {
+    background-color: #e5e4e2;
+    font-weight: bold;
+    height: 3rem;
+    padding-top: .5rem;
+  }
+  
+  .intro {
+    margin-left: 10rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+ 
+  }
+  .intro-image { 
+    width: 100%;
+  }
+
+  .intro-details >p:first-of-type {
+    font-size: 1.5rem;
+    color: #004677;
+    font-weight: bold; 
+  }
+
+  .intro-details {
+    padding-top: 2.5rem;
+  }
+
+    /* dog cards */
+  .cards {
+    margin-left: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.card {
+    box-shadow: 2px 1px #888888;
+}
+.card-image {
+    width: 100%;
+    min-width: 2em;
+    display: block;
+}
+.card-content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    background: #fafafa;
+    padding: .75rem;
+}
+.card-content > p:first-of-type {
+  margin-top: 0;
+}
+.card-content > p:last-of-type {
+  margin-bottom: 0;
+}
+
+  button {
+  background-color: #99c416;
+  color: white;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-top: .5rem;
+  border: none;
+}
+
+.see-more-dogs {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  
+}
+.more-dogs-button {
+  color: #004677;
+  font-weight: bold;
+  background-color: #e5e4e2;
+  width: 15rem;
+  height: 3rem;
+    
+}
+
+  .flex-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004677;
+    color: #F5F5F5;
+    font-size: 1rem;
+  }
+  .cat-logo {
+    min-width: 15%;
+    max-width: 30%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+  }
+  
+.dogs-title {
+  color: #004677;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.blog-title {
+  color: #004677;
+  margin: 0 auto;
+
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+
+}
+.blog {
+  padding-left: 8rem;
+
+}
+.blog-header {
+  margin-bottom: -.75rem;
+
+}
+.blog-image {
+  padding-top: .5rem;
+  max-height: 15em;
+  min-width: 20em;
+}
+
+.blog-content {
+  line-height: 1.5;
+  font-size: 1em;
+  max-width: 20em;
+}
+.read-more {
+  margin-bottom: 2.5rem;
+}
+
+
+/* small size devices */
+ @media only screen and (min-width: 375px) and (max-width: 455px) {
+  .cards {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+  }
+  .intro {
+    margin-left: 0px;
+  }
+  .flex-footer {
+    width: 100%;
+  }
+} 
+
+/* medium size devices */
+@media only screen and (min-width: 456px) and (max-width: 1023px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flex-footer {
+    width: 100%;
+  }
+}
+
+/* large size devices */
+@media only screen and (min-width: 1024px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .checkout {
+    float: none;
+  }
+  .flex-footer {
+    width: 100%;
+  }
+}
+
+/* only show blogs if iPad or bigger */
+@media only screen and (max-width: 767px){
+  .right {
+    display: none;
+  }
+  .cart {
+    display: inline-block;
+  }
+}
+@media(min-width: 375px) {
+  .intro-image {
+    width: 100%;
+  }
+}
+
+/* print page w/o header or footer */
+@media print {
+  header, .flex-footer {
+    display: none;
+  }
+} 
+@page {
+  margin-right: 2cm;
+  margin-left: -2cm;
+}
+
+
