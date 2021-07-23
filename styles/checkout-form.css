@@ -4,7 +4,6 @@ button, input, select {
   box-sizing: border-box;
   display: block;
   margin-bottom: 3rem;
-  /* margin-left: 10rem; */
   height: 2.5rem;
 }
 

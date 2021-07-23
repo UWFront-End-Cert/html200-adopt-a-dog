@@ -5,10 +5,13 @@
     <title>Adopt A Dog Home Page</title>
     <link rel="stylesheet" href="styles/adopt-a-dog.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
+        <script src="scripts/dog-info.js" ></script>
+    <script src="scripts/total.js" ></script>
   </head>
   <body>
     <header class="header">
@@ -121,7 +124,7 @@ doluptios dolupta tiandebis nem ut.
 
     <div class="cards">
         <div class="card">
-            <img onclick="murphyInfo('Murphy', 'Retriever/Mix', '$123.45')" class="card-image" src="images/murphy-card.jpg" alt="">
+            <img onclick="dogInfo('Murphy', 'Retriever/Mix', '$123.45')" class="card-image" src="images/murphy-card.jpg" alt="Image of a golden retriever adult dog">
             <div class="card-content">
                 <h3>
                     Murphy
@@ -144,7 +147,7 @@ doluptios dolupta tiandebis nem ut.
             </div>
         </div>
         <div class="card">
-            <img onclick="murphyInfo('Poppy', 'Bichon', '$123.45')" class="card-image" src="images/poppy-card.jpg" alt="">
+            <img onclick="dogInfo('Poppy', 'Bichon', '$123.45')" class="card-image" src="images/poppy-card.jpg" alt="Image of a white long haired Bichon dog">
             <div class="card-content">
                 <h3>
                     Poppy
@@ -167,7 +170,7 @@ doluptios dolupta tiandebis nem ut.
             </div>
         </div>
         <div class="card">
-            <img onclick="murphyInfo('Jack', 'Beagle', '$123.45')" class="card-image" src="images/jack-card.jpg" alt="">
+            <img onclick="dogInfo('Jack', 'Beagle', '$123.45')" class="card-image" src="images/jack-card.jpg" alt="Image of a brown and white medium size beagle">
             <div class="card-content">
                 <h3>
                     Jack
@@ -192,7 +195,7 @@ doluptios dolupta tiandebis nem ut.
             </div>
         </div>
         <div class="card">
-            <img onclick="murphyInfo('Duffy', 'American Terrier', '$123.45')" class="card-image" src="images/duffy-card.jpg" alt="">
+            <img onclick="dogInfo('Duffy', 'American Terrier', '$123.45')" class="card-image" src="images/duffy-card.jpg" alt="Image of a golden and white haired adult American Terrier">
             <div class="card-content">
                 <h3>
                     Duffy
@@ -217,7 +220,7 @@ doluptios dolupta tiandebis nem ut.
             </div>
         </div>
         <div class="card">
-            <img onclick="murphyInfo('Lucas', 'Shepard', '$123.45')" class="card-image" src="images/lucas-card.jpg" alt="">
+            <img onclick="dogInfo('Lucas', 'Shepard', '$123.45')" class="card-image" src="images/lucas-card.jpg" alt="Image of a black Shepard adult dog">
             <div class="card-content">
                 <h3>
                     Lucas
@@ -240,7 +243,7 @@ doluptios dolupta tiandebis nem ut.
             </div>
         </div>
         <div class="card">
-            <img onclick="murphyInfo('Jake', 'Labrador', '$123.45')" class="card-image" src="images/jake-card.jpg" alt="">
+            <img onclick="dogInfo('Jake', 'Labrador', '$123.45')" class="card-image" src="images/jake-card.jpg" alt="Image of a tan medium size Labrador">
             <div class="card-content">
                 <h3>
                     Jake
@@ -266,19 +269,15 @@ doluptios dolupta tiandebis nem ut.
         </div>
     </div>
     <div class="see-more-dogs">
-        <form action="blog.html" method="GET">
-            <button class="more-dogs-button" type="button" value="See More Dogs">Checkout</button>
+        <form action="dogs.html" method="GET">
+            <button class="more-dogs-button" type="submit" value="See More Dogs">See More Dogs</button>
         </form>
         
     </div>
 </aside>
 
     <footer class="flex-footer">
-      <div>
-        <p>
-          <img class="cat-logo" src="images/adoptadog-logo.svg" alt="This is an image of a sitting white dog with pointy ears.">
-        </p>
-      </div>
+          <img class="cat-logo" src="images/adoptadog-logo.png" alt="This is an image of a sitting white dog with pointy ears.">
       <div>
         <p>
             Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
@@ -296,7 +295,5 @@ doluptios dolupta tiandebis nem ut.
         </p>
       </div>
     </footer>
-    <script src="scripts/dog-info.js" ></script>
-    <script src="scripts/total.js" ></script>
   </body>
 </html>

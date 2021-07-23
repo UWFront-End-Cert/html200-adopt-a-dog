@@ -1,3 +1,5 @@
+
+
 .left {
   width: 60%;
 }
@@ -162,9 +164,11 @@
     font-size: 1rem;
   }
   .cat-logo {
-    width: 80%;
+    min-width: 15%;
+    max-width: 30%;
     padding-top: 3rem;
     padding-bottom: 1rem;
+    justify-content: center;
   }
   
 .dogs-title {

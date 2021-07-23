@@ -33,6 +33,7 @@ $('form').submit(function(event){
 //     }
 // }
 
+
 function submitForm()
 {   
     alert("Thank you.  The form information has been received.");

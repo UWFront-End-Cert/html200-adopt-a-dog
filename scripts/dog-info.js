@@ -1,4 +1,4 @@
-function murphyInfo(name, breed, adoptionFee)
+function dogInfo(name, breed, adoptionFee)
 {
     alert('Name: ' + name + '\n' +
     'Breed: ' + breed + '\n' +
