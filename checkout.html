@@ -23,88 +23,101 @@
     </script>
     <div data-include="./inc/nav-mocks.html"></div>
     <div data-include="./inc/header.html"></div>
-    <main class="main-container padding">
-      <form action="post" method="get" class="form-checkout">
-        <div class="flex-container justify-center">
-          <div class="col-2-3">
-            <div class="flex-container">
-              <div class="col-1-1"><label for="name">Name: </label></div>
-              <div class="col-1-1"><input type="text" name="name" id="name" required /></div>
-              <!--  -->
-              <div class="col-1-1"><label for="email">Email address: </label></div>
-              <div class="col-1-1"><input type="email" name="email" id="email" required /></div>
-              <!--  -->
-              <div class="col-1-1"><label for="streetAdd">Street address: </label></div>
-              <div class="col-1-1"><input type="text" name="streetAdd" id="streetAdd" required /></div>
-              <!--  -->
-              <div class="col-1-1"><label for="city">City: </label></div>
-              <div class="col-1-1"><input type="text" name="city" id="city" required /></div>
-              <!--  -->
-              <div class="col-1-1"><label for="state">State: </label></div>
-              <div class="col-1-1"><input type="text" name="state" id="state" required /></div>
-              <!--  -->
-              <div class="col-1-1"><label for="zip">ZIP Code: </label></div>
-              <div class="col-1-1"><input type="text" name="zip" id="zip" required /></div>
-              <!--  -->
-              <div class="col-1-1">First time adopter?</div>
-              <div class="col-1-1">
-                <input type="radio" id="yes" name="first_time_adopter" value="Yes" />
-                <label for="yes">HTML</label>
-                <input type="radio" id="no" name="first_time_adopter" value="No" />
-                <label for="no">CSS</label>
-                <!-- <label for="firstTime"> <input type="radio" name="first_time_adopt" for="yes" id="firstTime" required /> Yes </label> -->
-                <!-- <label for="firstTime"> <input type="radio" name="first_time_adopt" for="no" id="firstTime" /> No </label> -->
-              </div>
-              <!--  -->
-              <div class="col-1-1">
-                <label for="location">Pickup Location: </label>
-              </div>
-              <div class="col-1-1">
-                <select id="location" name="location">
-                  <option value="opt1">Option 1</option>
-                  <option value="opt2">Option 2</option>
-                  <option value="opt3">Option 3</option>
-                </select>
-              </div>
-              <!--  -->
-              <div class="col-1-1">Dogs adopted:</div>
-              <div class="col-1-4">
-                <div class="flex-container">
-                  <div class="col-1-2"><img src="images/shop/lucas-checkout.jpg" alt="Lucas" class="full-width" /></div>
-                  <div class="col-1-2">
-                    <p>
-                      Lucas<br />
-                      Cost to Adopt: $123.45
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-1-4">
-                <div class="flex-container">
-                  <div class="col-1-2"><img src="images/shop/duffy-checkout.jpg" alt="Duffy" class="full-width" /></div>
-                  <div class="col-1-2">
-                    <p>
-                      Duffy<br />
-                      Cost to Adopt: $123.45
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-1-4"></div>
-              <div class="col-1-4"></div>
-              <!--  -->
-              <div class="col-1-1">
-                <p>
-                  Total Adoption Cost<br />
-                  $1234.56
-                </p>
-              </div>
-              <!--  -->
-              <div class="col-1-1"><input type="submit" value="Submit" /></div>
+    <main class="main-container">
+      <h2>Checkout</h2>
+      <form action="post" method="get" class="flex-container form-checkout">
+        <div class="col-2-3">
+          <div class="flex-container">
+            <!--  -->
+            <div class="col-1-1">
+              <label for="name">Name: </label>
+              <input type="text" name="name" id="name" required />
             </div>
+            <!--  -->
+            <div class="col-1-1">
+              <label for="email">Email address: </label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <!--  -->
+            <div class="col-1-1">
+              <label for="streetAdd">Street address: </label>
+              <input type="text" name="streetAdd" id="streetAdd" required />
+            </div>
+            <div class="col-2-5 padding-right">
+              <label for="city">City: </label>
+              <input type="text" name="city" id="city" required />
+            </div>
+            <div class="col-1-5 padding-right">
+              <label for="state">State: </label>
+              <input type="text" name="state" id="state" required />
+            </div>
+            <div class="col-2-5">
+              <label for="zip">ZIP Code: </label>
+              <input type="text" name="zip" id="zip" required />
+            </div>
+            <div class="col-1-1">
+              First time adopter?
+              <div class="flex-container flex-start">
+                <div class="col-1-5">
+                  <label for="firstTime"><input type="radio" name="first_time_adopter" for="yes" id="firstTime" required /> Yes</label>
+                </div>
+                <div class="col-1-5">
+                  <label for="firstTime"><input type="radio" name="first_time_adopter" for="no" id="firstTime" /> No</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-1-1"></div>
+            <div class="col-1-1"></div>
+            <div class="col-1-1"></div>
+            <!--  -->
+            <div class="col-1-1">
+              <label for="location">Pickup Location: </label>
+            </div>
+            <div class="col-1-1">
+              <select id="location" name="location">
+                <option value="opt1">Option 1</option>
+                <option value="opt2">Option 2</option>
+                <option value="opt3">Option 3</option>
+              </select>
+            </div>
+            <!--  -->
+            <div class="col-1-1">Dogs adopted:</div>
+            <div class="col-1-4">
+              <div class="flex-container">
+                <div class="col-1-2"><img src="images/shop/lucas-checkout.jpg" alt="Lucas" class="full-width" /></div>
+                <div class="col-1-2">
+                  <p>
+                    Lucas<br />
+                    Cost to Adopt: $123.45
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-1-4">
+              <div class="flex-container">
+                <div class="col-1-2"><img src="images/shop/duffy-checkout.jpg" alt="Duffy" class="full-width" /></div>
+                <div class="col-1-2">
+                  <p>
+                    Duffy<br />
+                    Cost to Adopt: $123.45
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-1-4"></div>
+            <div class="col-1-4"></div>
+            <!--  -->
+            <div class="col-1-1">
+              <p>
+                Total Adoption Cost<br />
+                $1234.56
+              </p>
+            </div>
+            <!--  -->
+            <div class="col-1-1"><input type="submit" value="Submit" /></div>
           </div>
-          <div class="col-1-3"></div>
         </div>
+        <div class="col-1-3"></div>
       </form>
     </main>
     <div data-include="./inc/footer.html"></div>

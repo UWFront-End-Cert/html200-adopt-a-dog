@@ -1,15 +1,19 @@
 <header class="header-bg bg">
   <div class="main-container flex-container">
     <div class="col-5-6">
-      <a href="./" title="Seattle's premier adoption agency"><img class="header-logo" src="./images/header-footer/adoptadog-logo.svg" alt="Adopt-a-Dog" /></a>
-      <h1 class="logo"><a href="./" title="Seattle's premier adoption agency">Seattle&rsquo;s premiere dog adoption agency</a></h1>
+      <div class="flex-container">
+        <div class="col-1-1">
+          <a href="./" title="Seattle's premier adoption agency" class="header-logo-image"><img src="./images/header-footer/adoptadog-logo.svg" alt="Adopt-a-Dog" /></a>
+        </div>
+        <div class="col-1-1"><h1 class="header-logo-text">Seattle&rsquo;s premiere dog adoption agency</h1></div>
+      </div>
     </div>
     <div class="col-1-6">
-      <div class="flex-container flex-end" style="text-align: right">
-        <div class="col-1-2"><img src="./images/shop/cart-icon.svg" alt="Shopping cart" class="cart-icon" /></div>
-        <div class="col-1-2"><p>$1234.56</p></div>
-        <div class="col-1-1">
-          <button href="./checkout.html" type="button" title="Checkout online" style="min-width: 150px">Checkout</button>
+      <div class="flex-container flex-end checkout-grid">
+        <div class="col-1-2 position-relative"><img src="./images/shop/cart-icon.svg" alt="Shopping cart" class="cart-icon position-absolute" style="bottom: 4px; right: 8px" /></div>
+        <div class="col-1-2 position-relative"><span class="position-absolute" style="bottom: 0">$1234.56</span></div>
+        <div class="col-1-1 position-relative">
+          <a href="./checkout.html" title="Checkout online" class="button green text-center position-absolute" style="max-width: 160px; right: 24px">Checkout</a>
         </div>
       </div>
     </div>
