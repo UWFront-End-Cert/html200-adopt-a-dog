@@ -60,19 +60,24 @@ a {
 }
 
 /* buttons */
-button {
+button,
+a.button {
+  display: inline-block;
   color: var(--color-white);
   font-size: 1em;
   font-weight: 700;
+  text-decoration: none;
   padding: calc(var(--grid-space) / 4);
   border: none 0 transparent;
   background-color: var(--color-green);
 }
-button.large {
+button.large,
+a.button.large {
   font-size: 1.25em;
   padding: calc(var(--grid-space) / 3) var(--grid-space);
 }
-button.gray {
+button.gray,
+a.button.gray {
   color: var(--color-blue);
   background-color: var(--color-lightgray);
 }
