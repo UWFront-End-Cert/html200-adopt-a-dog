@@ -1,25 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,400;0,700;1,400");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;&display=swap");
+
+/* We must declare variables as --variable-name: value we don’t have to write the properties name, just value. */
+/* When using the variable, we use property: var(--variable-name). */
+
+/* variables */
+:root {
+  /*  */
+  --color-green: rgb(129, 183, 65);
+  /* #093c60 */
+  --color-blue: rgb(9, 60, 96);
+  /* #ececec */
+  --color-lightgray: rgb(236, 236, 236);
+  /* #333 */
+  --color-darkgray: rgb(51, 51, 51);
+  /* #090909 */
+  --color-black: rgb(9, 9, 9);
+  /* #fff */
+  --color-white: #fff;
+  --grid-space: 64px;
+}
+
+/* resets */
 * {
   box-sizing: border-box;
 }
+html,
 body {
-  font-family: arial, helvetica, sans-serif;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 140%;
   margin: 0;
 }
-p,
-ul,
-ol {
-  line-height: 140%;
+body {
+  background: var(--color-white);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-blue);
+  font-family: "Neuton", Georgia, serif;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 24px;
+}
+a {
+  color: var(--color-blue);
+}
+
+/* buttons */
+button {
+  color: var(--color-white);
+  font-size: 1em;
+  font-weight: 700;
+  padding: calc(var(--grid-space) / 4);
+  border: none 0 transparent;
+  background-color: var(--color-green);
+}
+button.large {
+  font-size: 1.25em;
+  padding: calc(var(--grid-space) / 3) var(--grid-space);
+}
+button.gray {
+  color: var(--color-blue);
+  background-color: var(--color-lightgray);
 }
 
 /* - - - - - - - - - - */
 /*         GRID        */
 /* - - - - - - - - - - */
+.breadcrumbs-container {
+  padding: calc(var(--grid-space) / 2);
+  background: var(--color-lightgray);
+}
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
-  /* padding: 40px; */
 }
 .flex-container {
   display: flex;
@@ -61,9 +128,6 @@ ol {
 .min-height-small {
   min-height: 100px;
 }
-.full-width {
-  width: 100%;
-}
 
 /* - - - - - - - - - - */
 /*      UTILITIES      */
@@ -71,46 +135,59 @@ ol {
 .full-width {
   width: 100%;
 }
+.borders-rounded {
+  border-radius: 2px;
+}
 /* padding */
 .padding {
-  padding: 40px;
+  padding: var(--grid-space);
 }
 .padding-top {
-  padding-top: 40px;
+  padding-top: var(--grid-space);
 }
 .padding-right {
-  padding-right: 40px;
+  padding-right: var(--grid-space);
 }
 .padding-bottom {
-  padding-bottom: 40px;
+  padding-bottom: var(--grid-space);
 }
 .padding-left {
-  padding-left: 40px;
+  padding-left: var(--grid-space);
 }
 /* margin */
 .margin {
-  margin: 40px;
+  margin: var(--grid-space);
 }
 .margin-top {
-  margin-bottom: 40px;
+  margin-bottom: var(--grid-space);
 }
 .margin-right {
-  margin-bottom: 40px;
+  margin-bottom: var(--grid-space);
 }
 .margin-bottom {
-  margin-bottom: 40px;
+  margin-bottom: var(--grid-space);
 }
 .margin-left {
-  margin-bottom: 40px;
+  margin-bottom: var(--grid-space);
 }
 
 /* - - - - - - - - - - */
 /*    CUSTOM STYLES    */
 /* - - - - - - - - - - */
+/* text */
+.text-lead {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 140%;
+}
+h1.logo {
+  margin: 0;
+}
+
 /* blog cards */
 .card {
-  border: solid 1px gray;
-  margin-bottom: 40px;
+  border: solid 1px var(--color-lightgray);
+  margin-bottom: var(--grid-space);
 }
 .card img {
   width: 100%;
@@ -118,102 +195,98 @@ ol {
 .card .text {
   margin: 20px;
 }
+
 /* header */
 .header-bg {
   color: white;
   height: 100vh;
   min-height: 200px;
   max-height: 400px;
+  padding-top: var(--grid-space);
   background-image: url("../images/header-footer/header-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
 .header-logo {
-  max-width: 300px;
+  max-width: 500px;
+}
+.header-bg a {
+  color: var(--color-green);
+  text-decoration: none;
 }
 .cart-icon {
-  width: 40px;
+  width: var(--grid-space);
 }
+
+/* breadcrumbs */
 ul.breadcrumbs {
   position: relative;
+  font-weight: 400;
   list-style: none;
+  padding: 0;
 }
 ul.breadcrumbs li {
   position: relative;
+  float: left;
+  margin-right: var(--grid-space);
   list-style: none;
 }
-ul.breadcrumbs.header li {
-  float: left;
-  margin-right: 20px;
+ul.breadcrumbs li a {
+  font-weight: 700;
+  text-decoration: none;
 }
 ul.breadcrumbs li:after {
   content: "/";
   display: inline-block;
   position: absolute;
   top: 0;
-  right: -10px;
+  right: calc(var(--grid-space) / -2);
 }
 ul.breadcrumbs li:last-child:after {
   visibility: hidden;
 }
+
 /* footer */
 footer {
   color: white;
   text-align: center;
-  background: #093c60;
-}
-ul.breadcrumbs.footer li {
-  float: left;
-  margin-right: 20px;
-}
-ul.breadcrumbs.footer li a {
-  color: white;
+  background: var(--color-blue);
 }
 .footer-logo {
   max-width: 300px;
+}
+ul.breadcrumbs.footer {
+  margin-right: calc(var(--grid-space) / -1);
+}
+
+ul.breadcrumbs.footer li a {
+  color: #fff;
+  font-weight: 400;
 }
 
 /* forms */
 .form-checkout input,
 .form-checkout select {
   padding: 10px 20px;
-  margin-bottom: 40px;
-  background: white;
-}
-
-/* navigation for mocks */
-.mocks-nav {
-  text-align: center;
-  line-height: 40px;
-  height: 40px;
-  background: #d3d3d3;
-  border-bottom: solid 1px #000;
-}
-.mocks-nav button {
-  line-height: 40px;
-  height: 40px;
-  border: none 0 transparent;
-  background-color: transparent;
+  margin-bottom: var(--grid-space);
+  background: var(--color-white);
 }
 
 /* mock v2 */
 .mockNoBg header {
-  background: #093c60;
+  background: var(--color-blue);
 }
 .mockNoBg footer {
-  background: #3d3d3d;
+  background: var(--color-darkgray);
 }
 body .mocks-nav button {
-  color: black;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: transparent;
+  color: var(--color-white);
 }
 
 /* mock v2 state */
 body .mocks-nav button:first-child {
-  border-bottom-color: #fff;
+  border-bottom-color: var(--color-white);
 }
 body.mockNoBg .mocks-nav button:nth-child(2) {
   border-bottom-color: transparent;
@@ -222,5 +295,29 @@ body.mockNoBg .mocks-nav button:first-child {
   border-bottom-color: transparent;
 }
 body.mockNoBg .mocks-nav button:nth-child(2) {
-  border-bottom-color: #fff;
+  border-bottom-color: var(--color-white);
+}
+
+/* navigation for mocks */
+.mocks-nav {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: auto;
+  height: 36px;
+  line-height: 36px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.mocks-nav button {
+  color: rgba(255, 255, 255, 0.06);
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  border: none 0 transparent;
+  background-color: transparent;
 }
