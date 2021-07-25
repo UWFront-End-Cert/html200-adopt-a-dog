@@ -1,26 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,400;0,700;1,400");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 /* We must declare variables as --variable-name: value we don’t have to write the properties name, just value. */
 /* When using the variable, we use property: var(--variable-name). */
 
 /* variables */
 :root {
-  /*  */
-  --color-green: rgb(129, 183, 65);
-  /* #093c60 */
-  --color-blue: rgb(9, 60, 96);
-  /* #ececec */
-  --color-lightgray: rgb(236, 236, 236);
-  /* #333 */
-  --color-darkgray: rgb(51, 51, 51);
-  /* #090909 */
-  --color-black: rgb(9, 9, 9);
-  /* #fff */
+  /* colors */
+  --color-green: rgb(129, 183, 65); /* #093c60 */
+  --color-blue: rgb(9, 60, 96); /* #ececec */
+  --color-lightgray: rgb(236, 236, 236); /* #333 */
+  --color-darkgray: rgb(51, 51, 51); /* #090909 */
+  --color-black: rgb(9, 9, 9); /* #fff */
   --color-white: #fff;
-  /* sizes */
+  /* grid */
   --grid-base: 16px;
   --grid-spacer: calc(var(--grid-base) * 3);
+  /* fonts */
+  --font-serif: "Neuton", Georgia, serif;
+  --font-sans-serif: "Work Sans", Arial, Helvetica, sans-serif;
 }
 
 /* resets */
@@ -28,7 +26,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans-serif);
   font-size: 16px;
   line-height: 140%;
   margin: 0;
@@ -41,7 +39,7 @@ h4,
 h5,
 h6 {
   color: var(--color-blue);
-  font-family: "Neuton", Georgia, serif;
+  font-family: var(--font-serif);
   margin-bottom: 1em;
 }
 h1 {
@@ -315,19 +313,45 @@ ul.breadcrumbs.footer li a {
 /* forms */
 .form-checkout input,
 .form-checkout select {
-  padding-top: calc(var(--grid-base) / 1);
-  padding-right: calc(var(--grid-base) / 1);
-  padding-bottom: calc(var(--grid-base) / 1);
-  padding-left: calc(var(--grid-base) / 1);
-  margin-bottom: var(--grid-base);
+  font-size: 1em;
+  height: 2em;
+  line-height: 1.5em;
+  padding: calc(var(--grid-base) * 1.5);
+  margin-bottom: calc(var(--grid-base) * 2);
   border: solid 1px var(--color-darkgray);
   background: var(--color-white);
+}
+.form-checkout select {
+  margin-bottom: calc(var(--grid-base) / 3);
+}
+.form-checkout .label {
+  display: block;
+  color: var(--color-blue);
+  font-family: var(--font-serif);
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: calc(var(--grid-base) / 2);
 }
 .form-checkout input {
   width: 100%;
 }
 .form-checkout input[type="radio"] {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: calc(var(--grid-base) / 3);
+}
+.form-checkout input[type="radio"],
+.form-checkout label span {
+  float: left;
+  font-size: 1em;
+  height: 2em;
+  line-height: 1.5em;
   width: auto;
+  margin-top: var(--grid-base);
+}
+.form-checkout label span {
+  margin-top: var(--grid-base);
+  margin-left: calc(var(--grid-base) / 2);
 }
 
 /* mock v2 */
@@ -388,4 +412,26 @@ body#bg.mockNoBg .mocks-nav button.button-1 {
 }
 body#bg.mockNoBg .mocks-nav button.button-2 {
   border: solid 1px rgba(255, 255, 255, 0.6);
+}
+
+/* checkout */
+.checkout-dogs .dog-name,
+.checkout-dogs .dog-cost {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: calc(var(--grid-base) * 1);
+}
+.checkout-dogs img.dog-image {
+  width: 100px;
+}
+.checkout-dogs p.dog-name {
+  color: var(--color-blue);
+  font-family: var(--font-serif);
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.checkout-dogs p.dog-cost {
+  font-family: var(--font-sans-serif);
+  font-size: 0.875em;
 }
