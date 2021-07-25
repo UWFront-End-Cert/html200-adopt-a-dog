@@ -10,6 +10,7 @@
   --color-green: rgb(129, 183, 65); /* #093c60 */
   --color-blue: rgb(9, 60, 96); /* #ececec */
   --color-lightgray: rgb(236, 236, 236); /* #333 */
+  --color-gray: rgb(180, 180, 180); /* #333 */
   --color-darkgray: rgb(51, 51, 51); /* #090909 */
   --color-black: rgb(9, 9, 9); /* #fff */
   --color-white: #fff;
@@ -225,7 +226,7 @@ a.button.gray {
 
 /* blog cards */
 .card {
-  border: solid 1px var(--color-lightgray);
+  border: solid 1px var(--color-gray);
   margin-bottom: var(--grid-spacer);
 }
 .card img {
@@ -247,13 +248,16 @@ a.button.gray {
   background-size: cover;
   background-position: top center;
 }
-a.header-logo-image img {
+a.header-logo {
+  text-decoration: none;
+}
+a.header-logo img {
   max-width: 500px;
 }
-h1.header-logo-text {
+a.header-logo h1 {
   display: block;
   color: var(--color-green);
-  font-family: "Neuton", Georgia, serif;
+  font-family: var(--font-serif);
   font-weight: 400;
   font-style: italic;
   text-decoration: none;
@@ -382,6 +386,7 @@ body.mockNoBg .mocks-nav button:nth-child(2) {
 /* navigation for mocks */
 body#bg .mocks-nav {
   position: absolute;
+  top: 0;
   right: 0;
   text-align: center;
   width: auto;
@@ -398,6 +403,7 @@ body#bg .mocks-nav button.button-2 {
   letter-spacing: 0.1em;
   height: 36px;
   line-height: 36px;
+  margin: 0;
   padding: 0 16px;
   background: rgba(0, 0, 0, 0.5);
 }
