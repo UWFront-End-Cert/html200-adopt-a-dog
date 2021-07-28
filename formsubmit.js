@@ -1,24 +1,30 @@
-document.getElementById("submit").onclick = function() {myFunction()};
-let name = "Name: " + document.getElementById("adopterName").value;
-let email = "Email: " + document.getElementById("adopterEmail").value;
-let address =
-  "Address: " + document.getElementById("adopterStreet").value + " " + document.getElementById("adopterCity").value + ", " + document.getElementById("adopterState").value + " " + document.getElementById("adopterZip").value;
-let adoption = document.getElementsByName("adoptionType");
-let pickupLocation = document.getElementById("pickup").value;
+function myFunction() {
+  let name = $("#name").val()
+  let email = $("#email").val()
+  let address = $("#address").val() + ", " + $("#city").val() + ", " + $("#state").val()
++ " " + $("#zip").val()
 
-function firstAdoption () {
-  if(adoption[0].checked == true) {
-    console.log("First Adoption? Yes");
-  } else {
-    console.log("First Adoption? No");
-  }
+  let pickup = $("#location").val()
+
+  console.log("Name: " + name);
+  console.log("Email: " + email);
+  console.log("Address: " + address);
+  console.log("Pickup At: " + pickup);
+
 }
 
-function myFunction () {
-  window.alert("Thank you. The form information has been received.");
-  console.log(name);
-  console.log(email);
-  console.log(address);
-  firstAdoption();
-  console.log("Pickup Location: " + pickupLocation);
-}
+$("button").click(myFunction)
+$(document).ready(function(){
+    $('input[id="yes"]').click(function(){
+        if($(this).prop("checked") == true){
+            console.log("This is a first Adoption.");
+        }
+    });
+});
+$(document).ready(function(){
+    $('input[id="no"]').click(function(){
+        if($(this).prop("checked") == true){
+            console.log("This is not a first adoption.");
+        }
+    });
+});
