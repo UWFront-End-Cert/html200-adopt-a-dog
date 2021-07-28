@@ -376,60 +376,57 @@ main {
 
 .citystatezip {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.citystatezip section {
-  width: 100%;
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.citystatezip select {
-  padding: .65rem;
-  margin: .25rem 0 1rem 0;
+.cszContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.cszContainer #state {
+  font: 1rem "Work Sans";
+  padding: 0.65rem;
   border: 1px solid #E7E3E3;
-}
-
-.citystatezip #city {
-  width: 55%;
-}
-
-.citystatezip #state {
-  width: 15%;
-}
-
-.citystatezip #zip {
-  width: 15%;
 }
 
 /* First Time Adopter */
 
-.fAdoption {
+.firstAdoption {
   display: flex;
   flex-direction: row;
   border: none;
+  justify-content: flex-start;
+}
+
+.adoptContainer {
+  margin: 0;
+  padding: 0 2rem 0 0;
+}
+
+.firstAdoption label {
+  font: 1rem "Work Sans";
+  color: #000000;
 }
 
 /* Pickup Location */
 
-.pickup-location {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
+.locationContainer {
+  padding: 1rem 0 1rem 0;
 }
 
-.pickup-location select {
-  grid-column: 1 / 5;
-  padding: .75rem 1rem .7rem .5rem;
+.locationContainer select {
   font: 1rem "Work Sans";
+  padding: .65rem .75rem .65rem .65rem;
   border: 1px solid #E7E3E3;
 }
-
 /* Adopted Dogs */
+
 .adoptedDogs {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .adoptedTile {
@@ -437,6 +434,16 @@ main {
   flex-direction: row;
 }
 
+.adoptedTile img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.adoptedTile p {
+  font-size: .75rem;
+}
 /* Submit Form Button */
 
 #submit {
