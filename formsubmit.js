@@ -17,14 +17,14 @@ $("button").click(myFunction)
 $(document).ready(function(){
     $('input[id="yes"]').click(function(){
         if($(this).prop("checked") == true){
-            console.log("This is a first Adoption.");
+            console.log("This is a first-time Adoption.");
         }
     });
 });
 $(document).ready(function(){
     $('input[id="no"]').click(function(){
         if($(this).prop("checked") == true){
-            console.log("This is not a first adoption.");
+            console.log("This is not a first-time adoption.");
         }
     });
 });
