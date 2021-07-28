@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <title>Dogs for Adoption</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,8 +18,8 @@
         <h2>Seattle's premiere dog adoption agency</h2>
       </article>
       <article class="header-cart">
-        <p><span><img src="./images/cart-icon.svg" alt="Shopping Cart Icon">$1234.56</span></p>
-        <button type="button" name="checkout" id="checkout">Checkout</button>
+        <p><span><img src="./images/cart-icon.svg" alt="Shopping Cart Icon"><div id="cartCost"></div></span></p>
+        <button type="button" name="checkout" id="checkout" onclick="location.href='checkout.html'">Checkout</button>
       </article>
     </section>
     <section class="header-menu">
