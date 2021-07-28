@@ -63,6 +63,7 @@ header {
   padding: 0 .5rem 0 0;
 }
 
+/*checkout button in header*/
 #checkout {
   padding: .5rem 2.25rem .5rem 2.25rem;
   background-color: #8DB353;
@@ -316,7 +317,7 @@ main {
 
 .blog-post {
   max-height: 275px;
-  overflow: scroll;
+  /*overflow: scroll;*/
 }
 
 /* Blog Contents */
@@ -350,75 +351,65 @@ main {
   line-height: 1.75;
 }
 
-/* III. Checkout */
+/* III. Checkout Page */
 
-.checkout-form {
+.checkout {
   grid-column: 1 / 8;
+  display: flex;
+  flex-direction: column;
   font: 1rem "Work Sans";
 }
 
-.checkout-form input {
-  margin: -2rem 0 0 0;
-  padding: .75rem 0 .75rem .5rem;
-  width: 100%;
-
-  font: 1rem "Work Sans";
-  border: 1px solid #E7E3E3;
-}
-
-.form-section-titles {
-  font: 1.5rem "Neuton";
+.checkout label {
+  font: 1.25rem "Neuton";
   color: #003366;
-
+  width: 100%
 }
 
-/* City, State, Zip Code */
-
-.cityStateZip {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-}
-
-.city-child {
-  grid-column: 1 / 5;
-
-}
-
-.state-child {
-  grid-column: 5 / 6;
-  padding: 0 0 0 1rem;
-
-}
-
-#adopterState {
-  margin: -1rem 1rem .5rem 0;
-  padding: .7rem 1rem .65rem .5rem;
+.checkout input {
+  padding: .65rem;
+  margin: .25rem 0 1rem 0;
   font: 1rem "Work Sans";
+  border: 1px solid #E7E3E3;
+  width: 100%;
+}
+
+.citystatezip {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.citystatezip section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.citystatezip select {
+  padding: .65rem;
+  margin: .25rem 0 1rem 0;
   border: 1px solid #E7E3E3;
 }
 
-.zip-child {
-  grid-column: 6 / 9;
+.citystatezip #city {
+  width: 55%;
+}
+
+.citystatezip #state {
+  width: 15%;
+}
+
+.citystatezip #zip {
+  width: 15%;
 }
 
 /* First Time Adopter */
 
-.firstAdoption {
-  grid-column: 1 / 8;
+.fAdoption {
   display: flex;
   flex-direction: row;
-}
-
-.firstAdoption {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
   border: none;
-}
-
-.firstAdoption label {
-  font: 1rem "Work Sans";
-  text-align: left;
 }
 
 /* Pickup Location */
@@ -433,6 +424,17 @@ main {
   padding: .75rem 1rem .7rem .5rem;
   font: 1rem "Work Sans";
   border: 1px solid #E7E3E3;
+}
+
+/* Adopted Dogs */
+.adoptedDogs {
+  display: flex;
+  flex-direction: row;
+}
+
+.adoptedTile {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Submit Form Button */
