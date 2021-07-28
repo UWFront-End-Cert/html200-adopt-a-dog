@@ -48,83 +48,94 @@
         <input type="text" id="address" name="address">
 
         <div class="citystatezip">
-          <section>
+          <div class="cszContainer">
             <label for="city">City</label>
-            <label for="state">State</label>
-            <label for="zip">Zip</label>
-          </section>
-          <section>
             <input type="text" name="city" id="city">
-            <select name="state" id="state">
-            <option value="AL">AL</option>
-            <option value="AK">AK</option>
-            <option value="AZ">AZ</option>
-            <option value="AR">AR</option>
-            <option value="CA">CA</option>
-            <option value="CO">CO</option>
-            <option value="CT">CT</option>
-            <option value="DE">DE</option>
-            <option value="DC">DC</option>
-            <option value="FL">FL</option>
-            <option value="GA">GA</option>
-            <option value="HI">HI</option>
-            <option value="ID">ID</option>
-            <option value="IL">IL</option>
-            <option value="IN">IN</option>
-            <option value="IA">IA</option>
-            <option value="KS">KS</option>
-            <option value="KY">KY</option>
-            <option value="LA">LA</option>
-            <option value="ME">ME</option>
-            <option value="MD">MD</option>
-            <option value="MA">MA</option>
-            <option value="MI">MI</option>
-            <option value="MN">MA</option>
-            <option value="MS">MI</option>
-            <option value="MO">MO</option>
-            <option value="MT">MT</option>
-            <option value="NE">NE</option>
-            <option value="NV">NV</option>
-            <option value="NH">NH</option>
-            <option value="NJ">NJ</option>
-            <option value="NM">NM</option>
-            <option value="NY">NY</option>
-            <option value="NC">NC</option>
-            <option value="ND">ND</option>
-            <option value="OH">OH</option>
-            <option value="OK">OK</option>
-            <option value="OR">OR</option>
-            <option value="PA">PA</option>
-            <option value="RI">RI</option>
-            <option value="SC">SC</option>
-            <option value="SD">SD</option>
-            <option value="TN">TN</option>
-            <option value="TX">TX</option>
-            <option value="UT">UT</option>
-            <option value="VT">VT</option>
-            <option value="VA">VA</option>
-            <option value="WA">WA</option>
-            <option value="WV">WV</option>
-            <option value="WI">WI</option>
-            <option value="WY">WY</option>
-          </select>
+          </div>
+          <div class="cszContainer">
+              <label for="state">State</label>
+              <section>
+                <select name="state" id="state">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MA</option>
+                <option value="MS">MI</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+              </select>
+            </div>
+          <div class="cszContainer">
+            <label for="zip">Zip</label>
             <input type="text" name="zip" id="zip">
-          </section>
+          </div>
         </div>
 
         <label for="firstAdoption">First Time Adopter?</label>
         <fieldset class="firstAdoption">
-          <input type="radio" name="firstAdoption" value="yes" id="yes">
-          <label for="yes">Yes</label>
-          <input type="radio" name="firstAdoption" value="no" id="no">
-          <label for="No">No</label>
+          <div class="adoptContainer">
+            <label for="yes">Yes
+            <input type="radio" name="firstAdoption" value="yes" id="yes">
+            </label>
+          </div>
+          <div class="adoptContainer">
+            <label for="No">No
+            <input type="radio" name="firstAdoption" value="no" id="no">
+            </label>
+          </div>
         </fieldset>
 
-        <label for="location">Pickup Location</label>
-        <select name="location">
-          <option id="location" value="Seattle">Seattle</option>
-          <option id="location" value="Tacoma">Tacoma</option>
-        </select>
+        <label for="location" class="location">Pickup Location</label>
+        <div class="locationContainer">
+          <select name="location" id="location">
+            <option id="location" value="Seattle">Seattle</option>
+            <option id="location" value="Tacoma">Tacoma</option>
+          </select>
+        </div>
 
         <label for="Adopted">Dogs Adopted</label>
         <div class="adoptedDogs">
