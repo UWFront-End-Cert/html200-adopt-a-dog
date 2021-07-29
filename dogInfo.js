@@ -5,6 +5,8 @@ function dogInfo(name, breed, fee) {
 }
 
 function adoptTotal(fee) {
-  alert('Your Adoption Total is: $' + (totalCost += fee));
-  $("#cartCost").html("$ " + totalCost);
+  let newTotal = (totalCost += fee);
+  cartCost.innerHTML = ("$" + newTotal);
+  alert( 'Your Adoption Total is: $' + newTotal );
+
 }
