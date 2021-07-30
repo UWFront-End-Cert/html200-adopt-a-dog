@@ -51,22 +51,24 @@
                 <input class="input" type="text"><br>
             </label>
 
-            <label class="label-4">City<br>
-                <input class="input" type="text">
-            </label>
+            <div class="city-flex">
+              <label class="label-4 col-6">City<br>
+                  <input class="input" type="text">
+              </label>
 
-            <label class="label-5">State
-                <select name="state">
-                    <option value="">Please Select</option>
-                    <option value="State">State</option>
-                </select>
-            </label>
+              <label class="label-5">State
+                  <select name="state">
+                      <option value="">Please Select</option>
+                      <option value="State">State</option>
+                  </select>
+              </label>
 
-            <label class="label-6">Zip Code
-                <input class="input" type="number">
-            </label>
+              <label class="label-6 col-4">Zip Code
+                  <input class="input" type="number">
+              </label>
+            </div>
 
-            <fieldset class="label-7">
+            <fieldset class="label-7 col-5">
                 <legend>First Time Adopter?</legend>
                 <label class="radio-font">
                     <input class="radio-input" type="radio" name="adopter" value="yes">
@@ -78,7 +80,7 @@
                 </label>
             </fieldset>
 
-            <fieldset class="label-8">
+            <fieldset class="label-8 col-5">
                 <label>Pickup Location<br>
                     <select name="location">
                         <option value="">Please Select</option>
@@ -92,22 +94,22 @@
             <div class="adopt-flex">
                 <label class="label-9">Dogs Adopted</label>
                 <div class="lucas-duffy-flex">
-                    <img class="lucas-image" src="images/lucas-card.jpg"
-                        alt="a black dog on a leash looking up excitedly at the camera"><br>
-                    <p><span class="dog">Lucas</span><br>
-                        <b>Cost to adopt:</b> $123.45
-                    </p>
-                    <img class="duffy-image" src="images/duffy-card.jpg"
-                        alt="a brown and white dog with two different colored eyes looking directly at the camera"><br>
-                    <p><span class="dog">Duffy</span><br>
-                        <b>Cost to adopt:</b> $123.45
-                    </p>
+                  <img class="lucas-image" src="images/lucas-card.jpg"
+                      alt="a black dog on a leash looking up excitedly at the camera"><br>
+                  <p class="dog-p"><span class="dog">Lucas</span><br>
+                      <b>Cost to adopt:</b> $123.45
+                  </p>
+                  <img class="duffy-image" src="images/duffy-card.jpg"
+                      alt="a brown and white dog with two different colored eyes looking directly at the camera"><br>
+                  <p><span class="dog">Duffy</span><br>
+                      <b>Cost to adopt:</b> $123.45
+                  </p>
                 </div>
                 <label class="label-10">Total Adoption Cost</label>
                 <p class="total">$1234.56</p>
             </div>
 
-            <input class="input col-11" type="submit" value="Submit">
+            <input class="input col-5" type="submit" value="Submit">
         </form>
 
         <footer class="bottom-container">

@@ -272,6 +272,10 @@ select {
   font-size: 2.5rem;
   padding: 0;
 }
+.city-flex {
+  display: flex;
+  gap: 2rem;
+}
 .label-7 {
   margin: 0;
   border: 0;
@@ -290,7 +294,7 @@ select {
   font-size: 1.5rem;
   color: rgb(61, 61, 61);
   font-weight: 400;
-  margin-right: 2.812rem;
+  margin-right: 2.5rem;
 }
 .adopt-flex {
   display: flex;
@@ -302,6 +306,7 @@ select {
   margin: 1rem;
   margin-left: 0;
   padding-bottom: 1rem;
+  flex-wrap: wrap;
 }
 .dog {
   color: rgb(25, 60, 93);
@@ -318,6 +323,10 @@ select {
   width: 6.25rem;
   height: 6.25rem;
   margin: 1rem;
+  margin-left: 0;
+}
+.dog-p {
+  margin-right: 3rem;
 }
 .total {
   grid-area: 5 / 3 / 5 / 5;
@@ -326,7 +335,6 @@ select {
   margin: 0.75rem 0 0;
 }
 input[type="submit"] {
-  grid-area:9 / 3 / 9 / 6;
   background-color: rgb(141, 181, 83);
   color: white;
   border-radius: 0.187rem;
