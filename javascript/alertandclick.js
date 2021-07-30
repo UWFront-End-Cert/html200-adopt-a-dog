@@ -32,7 +32,7 @@ if (blogPage) {
   image.setAttribute('src', 'images/blog-1.jpg');
   image.style.cssFloat = 'left';
   image.style.margin = '1rem 1rem 1rem 1rem';
-  image.style.padding = '1rem 2rem 1rem 5rem';
+  image.style.padding = '1rem 1rem 1rem 1rem';
 
   const title = document.createElement('h2');
   title.textContent = 'Traveling with your dog';
@@ -59,7 +59,7 @@ if (blogPage) {
   image2.setAttribute('src', 'images/blog-2.jpg');
   image2.style.cssFloat = 'left';
   image2.style.margin = '1rem 1rem 1rem 1rem';
-  image2.style.padding = '1rem 2rem 1rem 5rem';
+  image2.style.padding = '1rem 1rem 1rem 1rem';
 
   const title2 = document.createElement('h2');
   title2.textContent = 'How to Walk Multiple Dogs';
@@ -85,7 +85,7 @@ if (blogPage) {
   image3.setAttribute('src', 'images/blog-3.jpg');
   image3.style.cssFloat = 'left';
   image3.style.margin = '1rem 1rem 1rem 1rem';
-  image3.style.padding = '1rem 2rem 1rem 5rem';
+  image3.style.padding = '1rem 1rem 1rem 1rem';
 
   const title3 = document.createElement('h2');
   title3.textContent = 'Traveling with your dog';

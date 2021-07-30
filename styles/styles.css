@@ -397,7 +397,7 @@ input[type=email] {
 
 @media screen and (max-width: 768px) {
   .main-image-index img {
-    width: 25em;
+    width: 20em;
     height: 15em;
     object-fit: cover;
     text-align: center;

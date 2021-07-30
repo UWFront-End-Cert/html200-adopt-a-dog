@@ -1,5 +1,6 @@
 User Personas
-The targeted demographic for the site are people who likes animals, have a stable job and a fairly good living environment.
+The targeted demographic for the site are people who likes animals, have a stable job and a fairly
+good living environment.
 
 The User Persona below is conducted for the discussion assignment.
 Name: Lisa Moore
@@ -12,33 +13,35 @@ Recently moved out of the dorm
 Rented her first apartment in a friendly neighborhood
 Wanting to get a pet
 Technology:
-Owned a Macbook and an iPhone 11, most likely to browse websites in free time via phone; Use computer for research on interesting subjects/school works.
+Owned a Macbook and an iPhone 11, most likely to browse websites in free time via phone;
+Use computer for research on interesting subjects/school works.
 User Motivation:
 Wants to adopt a pet instead of buying because of a recent article regarding animal adoption;
 Likes to discuss with friends/online community before making decisions;
 Value:
 The breed and characteristic of the dog; how much it cost; experience of others;
 
-The user is more likely to view the basic information on her phone, and view the details on her Macbook. In which, it suggest that the main focus on the development should be on the smaller screen (~667px) and also a bigger screen (~1400px).
+The user is more likely to view the basic information on her phone, and view the details on her
+Macbook. In which, it suggest that the main focus on the development should be on the smaller
+screen (~667px) and also a bigger screen (~1400px).
 
 
 Testing
-For the below testing, the guidelines are below:
+The website is tested on both a MacBook and PC, and also tested on multiple browsers,
+screen sizes with the guidelines below:
+
+All dog tiles are shown
+  -all dog tiles are showing accordingly in response to different screen sizes, showing 1 tiles
+  at smaller screen, 2 tiles on medium screen, 3 tiles on larger screen, and also only include
+  the blog paragraph on larger screen.
 
 
+
+Conclusion:
 The website works accordingly with each browsers, operation systems, and screen sizes.
 
 
-1. Chrome
-
-
-
-2. iOS Safari
-
-
-
-
-3.Firefox
+I tested on Chrome, iOS Safari and Firefox
 
 
 
