@@ -8,3 +8,5 @@ function runningTotal(fee) {
     currentTotal = currentTotal + fee;
     alert(`Your current total is $${currentTotal}`);
 } 
+
+
