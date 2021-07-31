@@ -36,7 +36,7 @@ All dog tiles are shown
   - all dog tiles are showing accordingly in response to different screen sizes, showing 1 tiles
   at smaller screen, 2 tiles on medium screen, 3 tiles on larger screen, and also only include
   the blog paragraph on larger screen.
-  - the font are
+  - the font size, styles and color are matched in between different systems.
 
 Alignment
   - On smaller screen (smaller than 576px), on the index page, the image and the intro paragraph
