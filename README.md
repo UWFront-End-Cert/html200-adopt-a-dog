@@ -20,7 +20,7 @@ The website with 3 main focus:
 ## Support
 For best performances:
 * System: iOS or PC
-* Browsers: Google Chrome, Safari, and Firefox;
+* Browsers: Google Chrome, Safari, and Firefox
 * Support mobile devices and tablets
 
 Not required installation.

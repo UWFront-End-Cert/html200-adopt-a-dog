@@ -1,4 +1,4 @@
-User Personas
+User Persona
 The targeted demographic for the site are people who likes animals, have a stable job and a fairly
 good living environment.
 
@@ -66,7 +66,6 @@ PC
   - everything is functional
   - PC is a larger screen in compares to MacBook, so it has more white space in between each
   section
-  -
 
 Conclusion:
 The website works accordingly with each browsers, operation systems, and screen sizes with a
