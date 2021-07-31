@@ -430,6 +430,12 @@ input[type=email] {
 }
 
 
+@media screen and (max-width: 576px) {
+.contact-page {
+  text-align: left;
+  padding: 0em;
+
+
 @media print {
   header {
     display: none;
