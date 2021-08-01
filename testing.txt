@@ -1,0 +1,72 @@
+User Persona
+The targeted demographic for the site are people who likes animals, have a stable job and a fairly
+good living environment.
+
+The User Persona below is conducted for the discussion assignment.
+Name: Lisa Moore
+Age: 21
+Occupation: Student/Part-Time Barista
+Hobbies: Hiking;
+Living Situation: Alone;
+Descriptions:
+Recently moved out of the dorm
+Rented her first apartment in a friendly neighborhood
+Wanting to get a pet
+Technology:
+Owned a Macbook and an iPhone 11, most likely to browse websites in free time via phone;
+Use computer for research on interesting subjects/school works.
+User Motivation:
+Wants to adopt a pet instead of buying because of a recent article regarding animal adoption;
+Likes to discuss with friends/online community before making decisions;
+Value:
+The breed and characteristic of the dog; how much it cost; experience of others;
+
+The user is more likely to view the basic information on her phone, and view the details on her
+Macbook. In which, it suggest that the main focus on the development should be on the smaller
+screen (~667px) and also a bigger screen (~1400px).
+
+
+Testing
+The website is tested on:
+Both a MacBook and PC;
+Multiple browsers, including safari, Firefox, and Google Chrome;
+iPhone 7 and iPad 2018 screen sizes with the testing outcome below:
+
+All dog tiles are shown
+  - all dog tiles are showing accordingly in response to different screen sizes, showing 1 tiles
+  at smaller screen, 2 tiles on medium screen, 3 tiles on larger screen, and also only include
+  the blog paragraph on larger screen.
+  - the font size, styles and color are matched in between different systems.
+
+Alignment
+  - On smaller screen (smaller than 576px), on the index page, the image and the intro paragraph
+  on top is not align with the header and the footer, it exceeded to the right side. The solution
+  is to change the left side and right side padding in css, and also make sure use media query
+  on smaller screen (max-width: 768px), so the right side blog paragraph does not show up on
+  smaller screen.
+  - on the blog page and form page, again the image exceeded to the right side in compares to the
+  header and footer, use css padding to adjust the left and right side.
+
+Hover, Alert, Clickable
+  - all the alert, hover and click are working on all browsers, devices and screens.
+
+Font size, styles, colors
+  - on the contact page, the address and phone number are align vertically on smaller screen
+  (max-width 576px), added a media query with no padding, so the paragraph is showing horizontally.
+
+Others
+  - the form data is console.log
+  - use media query for printing without header image
+  - gradient behind the header is working
+
+Graceful Degradation
+  - the site is built on a MacBook first, and use media query to make adjustment on mobile device.
+
+PC
+  - everything is functional
+  - PC is a larger screen in compares to MacBook, so it has more white space in between each
+  section
+
+Conclusion:
+The website works accordingly with each browsers, operation systems, and screen sizes with a
+typical breakpoints.

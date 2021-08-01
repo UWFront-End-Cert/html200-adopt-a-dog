@@ -1,0 +1,446 @@
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Georgia, serif;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.hidden {
+  position: relative;
+  left: -100000px;
+  top: auto;
+}
+
+.hidden:focus {
+  left: 0px;
+}
+
+.header-container {
+  position: relative;
+  text-align: center;
+  color: rgb(68, 68, 68);
+}
+
+
+.background-dog {
+  width: 100%;
+  height: 20em;
+  background-color: #283e60;
+  background-image: url('../images/header-image.jpg'), linear-gradient(180deg,#ececec,#283e60);
+  background-position: 10% 10%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+
+.head-line {
+  position: absolute;
+  left: 20em;
+  bottom: 20em;
+  font-size: 2em;
+  color: #80b930;
+}
+
+.cart-checkout {
+  position: absolute;
+  top: 5em;
+  right: 12em;
+  width: 4%;
+}
+/*can do flow: right as well*/
+
+
+.dollar-sign {
+  position: absolute;
+  top: 5em;
+  right: 8em;
+  width: 4%;
+  color: white;
+}
+
+
+
+.dog-white-logo {
+  position: absolute;
+  top: 5em;
+  max-width: 30%;
+  left: 5em;
+}
+
+
+
+.head-line {
+  position: absolute;
+  top: 8em;
+  left: 3em;
+  font-size: 1.5em;
+}
+
+.link-header {
+  position: absolute;
+  top: 10em;
+  right: 8em;
+  background-color: #80b937;
+  padding: 1% 2%;
+  color: white;
+  text-decoration: none;}
+
+.green-clickable {
+  background-color: #80b937;
+  padding: 2% 10%;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+nav {
+  font-size: 1.6em;
+  border-width: 0.3em;
+  text-align: left;
+  color: black;
+  color: #053b61;
+  background-color: #ececec;
+  padding: 0.5em;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 1em;
+  margin: 1em;
+  font-size: 0.6em;
+}
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+
+.left-side {
+  flex: 60%;
+}
+
+.main-content {
+  text-align: left;
+  padding: 1% 10% 1% 10%;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.main-image-index img{
+  padding: 1em;
+  margin: auto;
+  width: 35em;
+  height: 20em;
+  object-fit: cover;
+  text-align: center;
+}
+
+
+figure {
+  margin: inherit;
+}
+
+
+.individual-dogs-index div {
+  border: solid;
+  border-color: #ececec;
+  text-align: center;
+  padding: 0.5% 0.5% 9% 1%;
+  margin: 2% 2% 2% 2%;
+  min-width: 100%;
+}
+
+.individual-dogs-index {
+  display: grid;
+  grid-gap: 2% 2%;
+  grid-template-columns: auto auto auto;
+  margin: 1% 5% 5% 5%;
+}
+
+.individual-dogs-index img {
+  width: 100%;
+  height: auto;
+  min-width: 3rem;
+}
+
+
+.individual-dogs div {
+  border: solid;
+  border-color: #ececec;
+  text-align: center;
+  padding: 0.5% 0.5% 9% 1%;
+  margin: 2% 2% 2% 2%;
+  min-width: 100%;
+}
+
+.individual-dogs {
+  display: grid;
+  grid-gap: 2% 2%;
+  grid-template-columns: auto auto auto auto;
+  margin: 1% 5% 5% 5%;
+}
+
+.individual-dogs img {
+  width: 100%;
+  height: auto;
+  min-width: 3rem;
+}
+
+.dog-1 {
+  text-align: center;
+}
+
+.list-of-dogs {
+  margin: 0% 0% 15% 0%;
+}
+
+.list-of-dogs-page {
+  margin: 0% 0% 15% 0%;
+}
+
+.see-more-clickable {
+  background-color: #ececec;
+  padding: 0.5rem 3rem;
+  color: #283e60;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.right-side {
+  flex: 35%;
+  text-align: left;
+  font-size: 0.9em;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+a, a:visited {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.right-title {
+  font-size: 1.2em;
+}
+
+.main-image-right img{
+  padding: 1em 0em 0.2em 0em;
+  width: 20em;
+  height: 12em;
+  object-fit: cover;
+  text-align: left;
+}
+
+.right-link {
+  color: #283e60;
+}
+
+.intro-of-dogs {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #283e60;
+  padding: 2%;
+}
+
+.see-more {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2em;
+}
+
+.blog-page-content div {
+  text-align: center;
+  padding: 1em 2em 1em 2em;
+  margin: 2em 2em 2em 2em;
+}
+
+.blog-page-content {
+  display: grid;
+  grid-gap: 2em 2em;
+  grid-template-columns: auto;
+  margin: 1em 1em 1em 5em;
+}
+
+.main-content-blog {
+  margin: 1em;
+  padding: 1em 1em 5em 1em;
+}
+
+#blog-head {
+  font-size: 1.5em;
+  text-align: center;
+  color: #283e60;
+}
+
+.main-image {
+  float:left;
+  padding: 2em;
+  text-align: center;
+}
+
+.contact-page {
+  text-align: left;
+  padding: 1em 10em 1em 10em;
+  line-height: 2em;
+  font-size: 1em;
+  color: #283e60;
+}
+
+footer {
+  position: relative;
+  background-color: #283e60;
+  text-align: center;
+  padding: 5% 1% 5% 1%;
+  color: white;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 1.5%;
+}
+
+.dog-white-logo-2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:30%;
+
+}
+
+.checkout-survey {
+  color: #283e60;
+  font-weight: bold;
+  margin: 1em 10em 1em 10em;
+}
+
+input[type=text] {
+  width: 60%;
+  border: 0.1rem solid grey;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem;
+  display: block;
+  min-width: 15rem;
+}
+
+input[type=email] {
+  width: 60%;
+  border: 0.1rem solid grey;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 1em;
+  display: block;
+  min-width: 15rem;
+}
+
+.checkbox {
+  padding: 0em 0em 2em 0em;
+}
+
+.submit {
+  background-color: #80b937;
+  padding: 0.5em 4em;
+  color: white;
+  text-decoration: none;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .right-side {
+  display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .individual-dogs-index {
+    display: grid;
+    grid-gap: 2% 2%;
+    grid-template-columns: auto auto;
+    margin: 1% 5% 5% 5%;
+  }
+
+  .individual-dogs {
+    display: grid;
+    grid-gap: 2% 2%;
+    grid-template-columns: auto auto;
+    margin: 1% 5% 5% 5%;
+  }
+
+  .list-of-dogs-page {
+    margin: 0% 0% 45% 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-image-index img {
+    width: 20em;
+    height: 15em;
+    object-fit: cover;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .individual-dogs-index {
+    display: block;
+    width: 85%;
+  }
+
+  .individual-dogs {
+    display: block;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .see-more {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .checkout-survey {
+    margin: 5em;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+.contact-page {
+  text-align: left;
+  padding: 0em;
+}
+
+@media print {
+  header {
+    display: none;
+  }
+  body img {
+    display: none;
+  }
+}
