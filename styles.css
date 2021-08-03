@@ -339,9 +339,18 @@ input {
       height: auto;
   }
 
+  .main-title {
+    padding-left: 20%;
+  }
+
+  .main-image {
+    padding-left: 20%;
+  }
+
   .main-article {
       line-height: 35px;
-      width: 90%;
+      width: 100%;
+      padding-left: 20%;
   }
 
   .container {
