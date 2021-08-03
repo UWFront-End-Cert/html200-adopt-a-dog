@@ -318,7 +318,7 @@ input {
     text-decoration: none;
 }
 
-@media (max-width:768px) {
+@media only screen and (max-width:768px) {
   .title {
       margin-bottom: 0px;
       font-size: 2rem;
@@ -399,7 +399,7 @@ input {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
       .main-article {
           padding-left: 40%;
