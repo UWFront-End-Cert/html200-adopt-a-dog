@@ -6,7 +6,10 @@ let currentTotal = 0;
 
 function runningTotal(fee) {
   currentTotal = currentTotal + fee;
-  alert(`Your current total is $${currentTotal}`);
+
+  let carts = currentTotal.toFixed(2);
+  document.getElementById("cartAmount").innerHTML = `$${carts}`;
+  console.log(carts);
 }
 
 

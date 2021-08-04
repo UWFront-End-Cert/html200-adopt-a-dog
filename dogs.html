@@ -4,6 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+        <script
+        			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+        			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        			  crossorigin="anonymous"></script>
+        <script src="script/adoptADog.js" charset="utf-8"></script>
+
         <title>Dogs</title>
     </head>
 
@@ -22,7 +28,7 @@
                 <div class="cart-flex">
                 <div class="price-flex">
                     <img class="cart" src="images/cart-icon.svg" alt="cart icon next to the current total price">
-                    <p class="cart-p">$1234.56</p>
+                    <p id="cartAmount" class="cart-p">$0</p>
                 </div>
                 <a class="checkout-container" href="checkout.html">Checkout</a>
                 </div>
