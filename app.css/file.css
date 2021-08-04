@@ -28,7 +28,7 @@ grid-template-rows: auto auto auto;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: .25fr .25fr .5fr .5fr .25fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     /* redine grid-template-areas when doing media quereis; */
     grid-template-areas: "header header" "main side" "left side" "left side" "footer footer";
 }
@@ -76,6 +76,7 @@ let the contents define the dimensions of the containers */
     flex-wrap: wrap;
     /* align-items: flex-start; */
     padding: 4rem;
+    /* max-height: 408.8px; */
 }
 
 .logo {
@@ -110,24 +111,6 @@ let the contents define the dimensions of the containers */
     /* flex-basis: 50%; */
     position: relative;
     left: 15rem;
-}
-
-@media screen and (max-width: 1166px) {
-    .header1 {
-        right: 10rem;
-    }
-    .header2 {
-        left: 10rem;
-    }
-}
-
-@media screen and (max-width: 976px) {
-    .header1 {
-        right: 5rem;
-    }
-    .header2 {
-        left: 5rem;
-    }
 }
 
 .header2 {
@@ -192,12 +175,11 @@ let the contents define the dimensions of the containers */
 .main {
     display: flex;
     flex-direction: row;
-    margin: 5rem;
-    margin-right: none;
+    margin: 0;
 }
 
 .main img {
-    height: 40em;
+    max-height: 40em;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
@@ -208,7 +190,6 @@ let the contents define the dimensions of the containers */
 
 .main_content p {
     margin: 2rem;
-    margin-right: none;
     font-size: 1.6rem;
 }
 
@@ -264,6 +245,7 @@ p {
     /* color: rgb(155, 226, 11); */
     transition: 0.5s;
     overflow: hidden;
+    min-height: 36.8px;
 }
 
 .dog_cards button:hover {
@@ -465,267 +447,329 @@ div.footer_nav,
 }
 
 
-/*for media queries: consider margins at each break point...*/
+/*for media queries: consider reseting margins and positioning values at each break point...*/
 
 
-/*  this is above
-.header1 {
-margin-left: -25rem;
-} */
+/*need to define min and max value for each media query, don't leave it open ended
 
+/* iphone S Portrait */
 
-/*iphone 6/7/8*/
-
-
-/* Portrait */
-
-@media only screen and (min-device-width: 376px) and (max-device-width: 668px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    /* .logo {
-        height: 30rem;
-    } */
-    .header1 {
-        margin: 2rem;
-    }
-}
-
-
-/* Landscape */
-
-@media only screen and (min-device-width: 376px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    /* .logo {
-        height: 15rem;
-    }
-    .logo {
-        height: 30rem;
-    } */
-}
-
-
-/*this shit aint firing how cum?*/
-
-
-/*     
-@media screen and (max-width: 550px) {
-.container {
-    grid-template-columns: 100%;
-    grid-template-rows: .25fr .25fr .50fr .40fr .25fr;
-    grid-template-areas: "header" "main" "side" "left" "footer";
-} */
-
-@media screen and (max-width: 551px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     .container {
+        display: grid;
+        grid-gap: 20px;
         grid-template-columns: 100%;
-        /*when browser is below 551 media quriey at 1026 is firing for the grid instead of this one how cum?*/
-        grid-template-rows: .25fr .25fr .50fr .40fr .25fr;
-        grid-template-areas: "header" "main" "side" "left" "footer";
-    }
-    .dogs {
-        flex-flow: column wrap;
-        margin: 0;
-        justify-content: center;
-        align-items: center;
-    }
-    .primary {
-        top: 92.5%;
-    }
-    .header {
-        justify-content: space-around;
-        align-items: center;
-    }
-    .header1 {
-        right: 0%;
-    }
-    .main img {
-        margin: 0;
-    }
-    .dogs div {
-        width: 34em;
-        height: 45.5em;
-        margin: 0;
-    }
-    .dogs div p,
-    .dogs div h3 {
-        font-size: 1.4rem;
-    }
-    .side {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .content {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-    }
-    .content h2,
-    .content a {
-        align-self: center;
-    }
-    .main1 {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-    }
-    .main_content p,
-    .side p,
-    .side a {
-        font-size: 2rem;
-    }
-    .side a {
-        text-decoration: underline;
-    }
-    .inner-nav {
-        left: 0;
-    }
-    .logo {
-        height: 14.5rem;
-    }
-    .footer img,
-    .footer p,
-    div.footer_nav,
-    .footer a {
-        padding: .3rem;
-    }
-}
-
-
-/*hey you stupid fuck i dont think this is working because its max-device-width...it only 
-works if its max-width....*/
-
-@media screen and (max-device-width: 768px) {
-    /*this is working except for when dev tools is set to ipad, it cuts off the footer,
-https://stackoverflow.com/questions/60458848/content-gets-cut-off-on-mobile-view-iphone-x-ipad-ipad-pro*/
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: .25fr .25fr .50fr .40fr .25fr;
-        grid-template-areas: "header" "main" "side" "left" "footer";
-    }
-    .header {
-        /* justify-content: center;
-align-items: center; */
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
-    .primary {
-        align-self: baseline;
-        top: 91%;
-    }
-    .header1 {
-        left: 0;
-        right: 0;
-    }
-    .header2 {
-        left: 0;
-        right: 0;
-    }
-    .side img {
-        width: 50rem;
-        align-self: center;
-    }
-    .side {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 4rem;
-    }
-    .content div {
-        justify-content: center;
-        align-items: center;
-    }
-    .content h2,
-    .content p {
-        margin: 1rem;
-    }
-    .dogs {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 1rem;
-    }
-    .dogs div {
-        margin: 4rem;
-    }
-    .more {
-        justify-content: center;
-        align-self: center;
-        right: 0;
-    }
-    .primary {
-        justify-content: center;
-        position: sticky;
-        top: 91%;
-    }
-    .inner-nav {
-        left: 0;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-/*ipad*/
-
-
-/* Portrait */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {}
-
-@media screen and (max-width: 1021px) {
-    .dogs div {
-        margin: 2rem;
-    }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-    .header2 {
-        left: 1rem;
-    }
-}
-
-@media screen and (max-width: 1026px) {
-    .container {
-        grid-template-rows: .1fr .25fr .50fr .50fr .1fr;
-    }
-    .side {
-        padding-right: 2rem;
-    }
-}
-
-@media screen and (max-width: 1262px) {
-    .contianer {
-        grid-template-rows: .25fr .1fr .1fr .1fr .25fr;
-        grid-template-areas: "header header" "main side" "left side" "left side" "footer footer";
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        /* redine grid-template-areas when doing media quereis; */
+        grid-template-areas: "header" "main " "side" "left" " footer";
     }
     .main {
-        /*when this fires, it adds as fuck ton space to the bottom of .dogs and .side how cum?*/
-        flex-direction: column;
+        flex-flow: column wrap;
+        object-fit: contain;
     }
     .main img {
-        width: 443.25px;
-        height: 400px;
-        align-self: center;
+        height: 34rem;
+        width: 34rem;
+        margin: 1.5rem;
+    }
+    .primary a {
+        padding-left: 14.5%;
+    }
+    .footer img {
+        height: 11rem;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header1 {
+        margin: 0;
+        right: 0;
+        left: 0;
+    }
+    .header2 {
+        left: 0;
+        top: 10%;
+    }
+    .header h1 {
+        font-size: 1.75rem;
+    }
+    .logo {
+        height: 10rem;
+    }
+    .primary {
+        right: 0rem;
+        left: 0rem;
+    }
+}
+
+@media only screen and (min-width: 499px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        /* redine grid-template-areas when doing media quereis; */
+        grid-template-areas: "header" "main " "side" "left" " footer";
+    }
+    .main {
+        flex-flow: column wrap;
+        object-fit: contain;
+        justify-content: center;
+        align-items: center;
+    }
+    .main img {
+        height: 34rem;
+        width: 34rem;
+        margin: 1.5rem;
+    }
+    .main_content p {
+        padding: 0 5.5rem;
     }
     .main_content {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .main_content h2 {
-        align-self: center;
+    .primary a {
+        padding-left: 14.5%;
+    }
+    .content p {
+        padding: 0 10rem;
+    }
+    .footer img {
+        height: 11rem;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header1 {
+        margin: 0;
+        right: 0;
+        left: 0;
+    }
+    .header2 {
+        left: 0;
+        top: 10%;
+    }
+    .header h1 {
+        font-size: 1.75rem;
+    }
+    .logo {
+        height: 10rem;
+    }
+    .primary {
+        right: 0rem;
+        left: 0rem;
+    }
+}
+
+
+/*ipad portrait*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: Portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        /* redine grid-template-areas when doing media quereis; */
+        grid-template-areas: "header header" "main side" "main side" "left left" " footer";
+    }
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header1,
+    .header2,
+    .side,
+    .left,
+    .main {
         margin: 2rem;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .primary {
+        right: 0rem;
+        left: 0rem;
     }
     .side {
         justify-content: start;
+    }
+}
+
+
+/*ipad landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: Landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .header1,
+    .header2,
+    .side,
+    .left,
+    .main {
+        margin: 2rem;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        /* redine grid-template-areas when doing media quereis; */
+        grid-template-areas: "header header" "main side" "main side" "left left" " footer";
+    }
+    .header1,
+    .header2 {
+        margin-bottom: 10rem;
+    }
+    .main {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .primary {
+        right: 0rem;
+        left: 0rem;
+    }
+    .side {
+        justify-content: start;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        /* redine grid-template-areas when doing media quereis; */
+        grid-template-areas: "header" "main " "side" "left" " footer";
+    }
+    .main {
+        flex-flow: column wrap;
+        object-fit: contain;
+        justify-content: center;
+        align-items: center;
+    }
+    .main img {
+        height: 34rem;
+        width: 34rem;
+        margin: 1.5rem;
+    }
+    .main_content p {
+        padding: 0 5.5rem;
+    }
+    .content p {
+        padding: 0 15rem;
+    }
+    .main_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .primary a {
+        padding-left: 14.5%;
+    }
+    .content p {
+        padding: 0 10rem;
+    }
+    .footer img {
+        height: 11rem;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header1 {
+        margin: 0;
+        right: 0;
+        left: 0;
+    }
+    .header2 {
+        left: 0;
+        top: 10%;
+    }
+    .header h1 {
+        font-size: 1.75rem;
+    }
+    .logo {
+        height: 10rem;
+    }
+    .primary {
+        right: 0rem;
+        left: 0rem;
+    }
+    .header1,
+    .header2 {
+        margin: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin-bottom: 10rem;
+    }
+    .content p {
+        padding: 0 15rem;
+    }
+    .side {
+        justify-content: start;
+    }
+    .side,
+    .main {
+        margin: 2rem;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main img {
+        max-width: 34rem;
+        max-height: 34rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1519px) and (-webkit-min-device-pixel-ratio: 2) {
+    .main,
+    .main_content {
+        margin: 4rem;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .header1 {
+        left: 1rem;
+    }
+    .header2 {
+        left: 1rem;
+    }
+    .side {
+        justify-content: start;
+        margin: 2rem;
+    }
+    /* .main {
+        flex-direction: column;
+    } */
+}
+
+@media only screen and (min-width: 1520px) {
+    .main {
+        margin: 3rem;
     }
 }
