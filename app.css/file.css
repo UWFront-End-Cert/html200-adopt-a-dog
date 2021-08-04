@@ -212,8 +212,8 @@ let the contents define the dimensions of the containers */
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
     /* width: 23rem; */
     /* width: 23%; */
-    width: 22em;
-    min-height: 32.5em;
+    width: 22rem;
+    min-height: 32.5rem;
     /* height: 32.5rem; */
     /* height: 30%; */
     display: flex;
@@ -452,70 +452,6 @@ div.footer_nav,
 
 /*need to define min and max value for each media query, don't leave it open ended*/
 
-@media only screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
-    .container {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-        /* redine grid-template-areas when doing media quereis; */
-        grid-template-areas: "header" "main " "side" "left" " footer";
-    }
-    .main {
-        flex-flow: column wrap;
-        object-fit: contain;
-        justify-content: center;
-        align-items: center;
-    }
-    .main img {
-        height: 34rem;
-        width: 34rem;
-        margin: 1.5rem;
-    }
-    .main_content p {
-        padding: 0 5.5rem;
-    }
-    .main_content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .primary a {
-        padding-left: 14.5%;
-    }
-    .content p {
-        padding: 0 10rem;
-    }
-    .footer img {
-        height: 11rem;
-    }
-    .header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .header1 {
-        margin: 0;
-        right: 0;
-        left: 0;
-    }
-    .header2 {
-        left: 0;
-        top: 10%;
-    }
-    .header h1 {
-        font-size: 1.75rem;
-    }
-    .logo {
-        height: 10rem;
-    }
-    .primary {
-        right: 0rem;
-        left: 0rem;
-    }
-}
-
 
 /* iphone S Portrait */
 
@@ -566,6 +502,10 @@ div.footer_nav,
     .primary {
         right: 0rem;
         left: 0rem;
+    }
+    .dogs div {
+        min-width: 22rem;
+        min-height: 32.5rem;
     }
 }
 
