@@ -6,13 +6,14 @@ let currentTotal = 0;
 
 function runningTotal(fee) {
   currentTotal = currentTotal + fee;
-
   let carts = currentTotal.toFixed(2);
+
   document.getElementById("cartAmount").innerHTML = `$${carts}`;
   console.log(carts);
+  alert(`Your current total is $${carts}`);
 }
 
-
+/*--------------Blogs---------------*/
 let blogsArray = [
 {
   image: 'images/blog-1.jpg',
@@ -33,9 +34,7 @@ let blogsArray = [
   p1: 'Blah dee blah blah blah'
 }
 ];
-
-const footer = document.body.getElementsByTagName('footer');
-
+  
 /*------------First blog post----------*/
 function blogBlog0(blogginOut) {
 const blog0 = blogsArray[0];
@@ -145,21 +144,20 @@ div2.appendChild(p12);
 }
 
 /*--------------Checkout--------------*/
-
 function thankYou(thanks) {
-const adopter = {
-  name: document.getElementById('name').value,
-  email: document.getElementById('email').value,
-  street: document.getElementById('street').value,
-  city: document.getElementById('city').value,
-  state: document.getElementById('state').value,
-  // firstAdopt: document.getElementById('firstAdoptYes').value,
-  zipcode: document.getElementById('zipCode').value,
-  pickupLocation: document.getElementById('pickup').value
-};
-console.log(adopter);
+  const adopter = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    street: document.getElementById('street').value,
+    city: document.getElementById('city').value,
+    state: document.getElementById('state').value,
+    firstAdopt: document.querySelector("input[name=adopter]:checked").value,
+    zipcode: document.getElementById('zipCode').value,
+    pickupLocation: document.getElementById('pickup').value
+  };
+  console.log(adopter);
 
-alert(`Thank you. ${adopter.name} \nThe form information has been received`);
+  alert(`Thank you. ${adopter.name} \nThe form information has been received`);
 }
 
 
