@@ -40,43 +40,43 @@
                   <a href="blog.html">Blog</a>
                 </ul>
             </nav>
-        </header> 
+        </header>
 
         <form class="form-flex" method="GET">
             <h3 class="h3-checkout">Checkout</h3>
 
             <label class="label-1">Name<br>
-                <input class="input" type="text"><br>
+                <input id="name" class="input" type="text"><br>
             </label>
 
             <label class="label-2">Email<br>
-                <input class="input" type="email"><br>
+                <input id="email" class="input" type="email"><br>
             </label>
 
             <label class="label-3">Street Address<br>
-                <input class="input" type="text"><br>
+                <input id="street" class="input" type="text"><br>
             </label>
 
             <div class="city-flex">
-                <label class="label-4 col-6">City<br>
-                    <input class="input" type="text">
+              <label class="label-4 col-6">City<br>
+                  <input id="city" class="input" type="text">
               </label>
 
-            <label class="label-5">State
-                <select id="state" name="state">
-                    <option value="">Please Select</option>
-                    <option value="University">University</option>
-                    <option value="of">of</option>
-                    <option value="Washington">Washington</option>
-                </select>
-            </label>
+              <label class="label-5">State
+                  <select id="state" name="state">
+                      <option value="">Please Select</option>
+                      <option value="University">University</option>
+                      <option value="of">of</option>
+                      <option value="Washington">Washington</option>
+                  </select>
+              </label>
 
               <label class="label-6 col-4">Zip Code
-                  <input class="input" type="number">
+                  <input id="zipCode" class="input" type="number">
               </label>
             </div>
 
-            <fieldset class="label-7 col-5">
+            <fieldset id="firstAdopt" class="label-7 col-5">
                 <legend>First Time Adopter?</legend>
                 <label class="radio-font">
                     <input class="radio-input" type="radio" name="adopter" value="yes">
@@ -90,9 +90,9 @@
 
             <fieldset class="label-8 col-5">
                 <label>Pickup Location<br>
-                    <select name="location">
+                    <select id="pickup" name="location">
                         <option value="">Please Select</option>
-                        <option value="here>">Here</option>
+                        <option value="here">Here</option>
                         <option value="there">There</option>
                         <option value="anywhere">Anywhere</option>
                     </select>
@@ -117,7 +117,7 @@
                 <p class="total">$1234.56</p>
             </div>
 
-            <input onclick="thankYou()" class="input col-5" type="submit" value="Submit">
+            <input id="submit" onclick="thankYou()" class="input col-5" type="submit" value="Submit">
         </form>
 
         <footer class="bottom-container">
@@ -129,8 +129,8 @@
                 </p>
                 <nav>
                     <p class="footer-links">
-                    <a class="footer-a" href="index.html">Home</a> / 
-                    <a class="footer-a" href="dogs.html">Dogs</a> / 
+                    <a class="footer-a" href="index.html">Home</a> /
+                    <a class="footer-a" href="dogs.html">Dogs</a> /
                     <a class="footer-a" href="blog.html">Blog</a>
                     </p>
                 </nav>
