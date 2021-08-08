@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Seattle’s premiere dog adoption agency | Adopt-A-Dog</title>
+    <meta name="description" content="Meta description" />
+    <meta name="keywords" content="Meta keywords" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="./js/include-script.js"></script>
+  </head>
+  <body id="bg">
+    <script>
+      function addBodyClass() {
+        var element = document.getElementById("bg");
+        element.classList.add("mockNoBg");
+      }
+      function removeBodyClass() {
+        var element = document.getElementById("bg");
+        element.classList.remove("mockNoBg");
+      }
+    </script>
+    <div data-include="./inc/nav-mocks.html"></div>
+    <div data-include="./inc/header.html"></div>
+    <main class="main-container flex-container flex-start padding">
+      <div class="col-1-1 margin-bottom">
+        <div class="flex-container flex-start">
+          <div class="col-1-3 padding-right"><img src="./images/home-intro.jpg" alt="Adopt a dog" class="photo" /></div>
+          <div class="col-2-3">
+            <div>
+              <h2>Adopt A Dog</h2>
+              <p class="text-lead">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-include="./inc/dogs-home.html"></div>
+      <div class="col-1-1" style="text-align: center">
+        <a href="./dogs.html" class="button large gray margin-bottom">See more dogs</a>
+      </div>
+    </main>
+    <div data-include="./inc/footer.html"></div>
+    <!-- needed for include files -->
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>
