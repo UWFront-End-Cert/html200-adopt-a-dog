@@ -16,7 +16,7 @@
   --color-white: #fff;
   /* grid */
   --grid-base: 16px;
-  --grid-spacer: calc(var(--grid-base) * 3);
+  --grid-spacer: calc(var(--grid-base) * 2);
   /* fonts */
   --font-serif: "Neuton", Georgia, serif;
   --font-sans-serif: "Work Sans", Arial, Helvetica, sans-serif;
@@ -29,7 +29,7 @@
 body {
   font-family: var(--font-sans-serif);
   font-size: 16px;
-  line-height: 140%;
+  line-height: 1.4em;
   margin: 0;
   background: var(--color-white);
 }
@@ -41,6 +41,7 @@ h5,
 h6 {
   color: var(--color-blue);
   font-family: var(--font-serif);
+  line-height: 1.2em;
   margin-bottom: 1em;
 }
 h1 {
@@ -48,12 +49,20 @@ h1 {
 }
 h2 {
   font-size: 2.2em;
+  margin-top: 0;
 }
 h3 {
   font-size: 1.8em;
+  margin-top: 0;
 }
 a {
   color: var(--color-blue);
+}
+
+/* images */
+img.photo {
+  width: 100%;
+  margin-bottom: 2em;
 }
 
 /* buttons */
@@ -65,9 +74,9 @@ a.button {
   font-weight: 700;
   text-decoration: none;
   padding-top: calc(var(--grid-spacer) / 6);
-  padding-right: calc(var(--grid-spacer) / 4);
+  padding-right: calc(var(--grid-spacer) / 2);
   padding-bottom: calc(var(--grid-spacer) / 6);
-  padding-left: calc(var(--grid-spacer) / 4);
+  padding-left: calc(var(--grid-spacer) / 2);
   border: none 0 transparent;
   background-color: var(--color-green);
 }
@@ -85,12 +94,8 @@ a.button.gray {
 /* - - - - - - - - - - */
 /*         GRID        */
 /* - - - - - - - - - - */
-.breadcrumbs-container {
-  padding: calc(var(--grid-spacer) / 2);
-  background: var(--color-lightgray);
-}
 .main-container {
-  max-width: calc(var(--grid-base) * 75);
+  max-width: calc(var(--grid-base) * 80);
   margin: 0 auto;
 }
 .flex-container {
@@ -114,10 +119,10 @@ a.button.gray {
   width: 22.5%;
 }
 .flex-container > .col-1-2 {
-  width: 50%;
+  width: 47.5%;
 }
 .flex-container > .col-3-4 {
-  width: 75%;
+  width: 72.5%;
 }
 .flex-container > .col-1-1 {
   width: 100%;
@@ -220,7 +225,7 @@ a.button.gray {
   font-weight: 300;
   line-height: 140%;
 }
-.checkout-grid div {
+.checkout-grid {
   padding: calc(var(--grid-base) / 2);
 }
 
@@ -242,38 +247,52 @@ a.button.gray {
   height: 100vh;
   min-height: 200px;
   max-height: 400px;
-  padding-top: var(--grid-spacer);
   background-image: url("../images/header-footer/header-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
+.header-bg > .checkout {
+  text-align: right;
+}
 a.header-logo {
   text-decoration: none;
 }
 a.header-logo img {
+  position: relative;
   max-width: 500px;
+  min-width: 200px;
 }
 a.header-logo h1 {
-  display: block;
+  position: relative;
   color: var(--color-green);
   font-family: var(--font-serif);
   font-weight: 400;
   font-style: italic;
   text-decoration: none;
   text-align: left;
-  margin: 0;
+  line-height: 1em;
+  margin: 0 0 1em;
 }
 .header-bg .cart-icon {
   width: calc(var(--grid-spacer) / 1.5);
 }
 
 /* breadcrumbs */
+.breadcrumbs-container {
+  height: calc(var(--grid-spacer) * 1.5);
+  margin: 0;
+  padding: 0;
+  background: var(--color-lightgray);
+}
 ul.breadcrumbs {
-  position: relative;
+  max-width: calc(var(--grid-base) * 80);
+  height: calc(var(--grid-spacer) * 1.5);
   font-weight: 400;
   list-style: none;
-  padding: 0;
+  line-height: calc(var(--grid-spacer) * 1.5);
+  margin: 0 auto;
+  padding: 0 var(--grid-spacer);
 }
 ul.breadcrumbs li {
   position: relative;
@@ -284,6 +303,7 @@ ul.breadcrumbs li {
 ul.breadcrumbs li a {
   font-weight: 700;
   text-decoration: none;
+  line-height: 40px;
 }
 ul.breadcrumbs li:after {
   content: "/";
@@ -300,13 +320,14 @@ ul.breadcrumbs li:last-child:after {
 footer {
   color: white;
   text-align: center;
+  padding: var(--grid-base);
   background: var(--color-blue);
 }
 .footer-logo {
   max-width: 300px;
 }
 ul.breadcrumbs.footer {
-  margin-right: calc(var(--grid-spacer) / -1);
+  /* margin-right: calc(var(--grid-spacer) / -1); */
 }
 
 ul.breadcrumbs.footer li a {
@@ -423,10 +444,10 @@ body#bg.mockNoBg .mocks-nav button.button-2 {
 /* checkout */
 .checkout-dogs .dog-name,
 .checkout-dogs .dog-cost {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: calc(var(--grid-base) * 1);
+  margin: 0;
+}
+.checkout-dogs .dog-cost {
+  margin-bottom: 1em;
 }
 .checkout-dogs img.dog-image {
   width: 100px;
@@ -440,4 +461,25 @@ body#bg.mockNoBg .mocks-nav button.button-2 {
 .checkout-dogs p.dog-cost {
   font-family: var(--font-sans-serif);
   font-size: 0.875em;
+}
+
+/* media queries */
+@media only screen and (max-width: 1024px) {
+  .flex-container [class="col-1-4"] {
+    width: 47.5% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-bg {
+    height: auto;
+    max-height: none;
+  }
+  .flex-container [class^="col-"] {
+    width: 100% !important;
+  }
+}
+.main-container {
+  max-width: calc(var(--grid-base) * 80);
+  margin: 0 auto;
 }
