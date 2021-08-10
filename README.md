@@ -1,0 +1,1 @@
+Adopt A Dog website connects potential dog adopters with eligible dogs. On Adopt A Dog, users can find dog biographies, see photos, read dog-related blog posts, and apply to adopt their perfect pet. The website is built on HTML, CSS, and JavaScript. The website is responsive for mobile devices, tablets, and desktops. 

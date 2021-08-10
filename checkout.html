@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Checkout</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <section class="header-content">
+      <article class="header-logo">
+        <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+        <h2>Seattle's premiere dog adoption agency</h2>
+      </article>
+      <article class="header-cart">
+        <p><span><img src="./images/cart-icon.svg" alt="Shopping Cart Icon">$1234.56</span></p>
+        <button type="button" name="checkout" id="checkout" onclick="location.href='checkout.html'">Checkout</button>
+      </article>
+    </section>
+    <section class="header-menu">
+      <nav id="header-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <div class="main-content-grid-container">
+      <h1 class="page-title">Checkout</h1>
+
+      <form class="checkout" name="checkout">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+
+        <label for="address">Street Address</label>
+        <input type="text" id="address" name="address">
+
+        <div class="citystatezip">
+          <div class="cszContainer">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+          </div>
+          <div class="cszContainer">
+              <label for="state">State</label>
+              <section>
+                <select name="state" id="state">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MA</option>
+                <option value="MS">MI</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+              </select>
+            </div>
+          <div class="cszContainer">
+            <label for="zip">Zip</label>
+            <input type="text" name="zip" id="zip">
+          </div>
+        </div>
+
+        <label for="firstAdoption">First Time Adopter?</label>
+        <fieldset class="firstAdoption">
+          <div class="adoptContainer">
+            <label for="yes">Yes
+            <input type="radio" name="firstAdoption" value="yes" id="yes">
+            </label>
+          </div>
+          <div class="adoptContainer">
+            <label for="No">No
+            <input type="radio" name="firstAdoption" value="no" id="no">
+            </label>
+          </div>
+        </fieldset>
+
+        <label for="location" class="location">Pickup Location</label>
+        <div class="locationContainer">
+          <select name="location" id="location">
+            <option id="location" value="Seattle">Seattle</option>
+            <option id="location" value="Tacoma">Tacoma</option>
+          </select>
+        </div>
+
+        <label for="Adopted">Dogs Adopted</label>
+        <div class="adoptedDogs">
+          <article class="adoptedTile">
+            <img src="./images/lucas-card.jpg" class="" alt="Lucas, A Black Shepherd Dog" onclick="dogInfo('Lucas', 'Shepherd', 123.45)">
+            <div class="tile-text">
+              <h4>Lucas</h4>
+              <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+            </div>
+          </article>
+          <article class="adoptedTile">
+            <img src="./images/duffy-card.jpg" class="" alt="Duffy, A Brown And White PitBull With Blue Eyes" onclick="dogInfo('Duffy', 'Pitbull', 123.45)">
+            <div class="tile-text">
+              <h4>Duffy</h4>
+              <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+            </div>
+          </article>
+        </div>
+
+        <label for="total">Total Adoption Cost</label>
+        <p>$1234.56</p>
+
+        <button type="button" name="submit" id="submit">Submit</button>
+
+      </form>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <section class="main-footer-flex-container">
+      <article class="footer-logo">
+        <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+        <h6>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</h6>
+      </article>
+      <article class="footer-menu">
+        <nav id="footer-navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </article>
+      <article class="copyright">
+        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      </article>
+    </section>
+  </footer>
+  <script src="./formsubmit.js"></script>
+</body>
+</html>

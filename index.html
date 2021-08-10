@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Home</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <section class="header-content">
+      <article class="header-logo">
+        <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+        <h2>Seattle's premiere dog adoption agency</h2>
+      </article>
+      <article class="header-cart">
+        <span><img src="./images/cart-icon.svg" alt="Shopping Cart Icon"><div id="cartCost"><p>Your Cart is Empty.</p></div></span>
+        <button type="button" name="checkout" id="checkout" onclick="location.href='checkout.html'">Checkout</button>
+      </article>
+    </section>
+    <section class="header-menu">
+      <nav id="header-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <div class="main-content-grid-container">
+      <section class="introduction">
+        <img src="./images/home-intro.jpg" alt="Man In Red Shirt Hugging Yellow Labrador">
+        <article class="home-page-intro">
+          <h1 class="page-title">Adopt a Dog</h1>
+          <p>Iduciendisite quo magnatem iuntum quid quaest ea am,tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+        </article>
+      </section>
+      <section class="dog-grid">
+        <!--Murphy-->
+        <article class="tile">
+          <img src="./images/murphy-card.jpg" class="" alt="Murphy, A Tan Boxer Mix With White Nose" onclick="dogInfo('Murphy', 'Boxer Mix', 123.45)">
+          <div class="tile-text">
+            <h4>Murphy</h4>
+            <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
+          </div>
+        </article>
+        <!--Poppy-->
+        <article class="tile">
+          <img src="./images/poppy-card.jpg" class="" alt="Poppy, A Small White Shih Tzu" onclick="dogInfo('Poppy', 'Shih Tzu', 123.45)">
+          <div class="tile-text">
+            <h4>Poppy</h4>
+            <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
+          </div>
+        </article>
+        <!--Jack-->
+        <article class="tile">
+          <img src="./images/jack-card.jpg" class="" alt="Jack, A Brown And White Beagle" onclick="dogInfo('Jack', 'Beagle', 123.45)">
+          <div class="tile-text">
+            <h4>Jack</h4>
+            <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
+          </div>
+        </article>
+        <!--Duffy-->
+        <article class="tile">
+          <img src="./images/duffy-card.jpg" class="" alt="Duffy, A Brown And White PitBull With Blue Eyes" onclick="dogInfo('Duffy', 'Pitbull', 123.45)">
+          <div class="tile-text">
+            <h4>Duffy</h4>
+            <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
+          </div>
+        </article>
+        <!--Lucas-->
+        <article class="tile">
+          <img src="./images/lucas-card.jpg" class="" alt="Lucas, A Black Shepherd Dog" onclick="dogInfo('Lucas', 'Shepherd', 123.45)">
+          <div class="tile-text">
+            <h4>Lucas</h4>
+            <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
+          </div>
+        </article>
+        <!--Jake-->
+        <article class="tile">
+          <img src="./images/jake-card.jpg" class="" alt="Jake, A Yellow Labrador" onclick="dogInfo('Jake', 'Yellow Lab', 123.45)">
+          <div class="tile-text">
+            <h4>Jake</h4>
+            <p><span style="font-family: 'Work Sans'; font-weight: bold;">Cost to Adopt</span> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button class="adopt-button" onclick="adoptTotal(123.45)">Adopt</button>
+          </div>
+        </article>
+      </section>
+      <section class="blogs">
+        <h1 class="page-title">From Our Blog</h1>
+        <article class="blog-preview">
+          <img src="./images/blog-1.jpg" alt="Woman And Dog Looking Out Over Canyon">
+          <h4>Traveling With Your Dog</h4>
+          <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+          <a href="blog.html">Read more >></a>
+        </article>
+        <article class="blog-preview">
+            <img src="./images/blog-2.jpg" alt="Dog Pack On Leashes Doing Good Sit In City Park">
+            <h4>Traveling With Your Dog</h4>
+            <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+            <a href="blog.html">Read more >></a>
+          </article>
+        <article class="blog-preview">
+          <img src="./images/blog-3.jpg" alt="Silhouette Of Dog And Girl Holding Dog Ball Aloft">
+          <h4>Traveling With Your Dog</h4>
+          <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+          <a href="blog.html">Read more >></a>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <section class="main-footer-flex-container">
+      <article class="footer-logo">
+        <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+        <h6>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</h6>
+      </article>
+      <article class="footer-menu">
+        <nav id="footer-navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </article>
+      <article class="copyright">
+        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      </article>
+    </section>
+  </footer>
+  <script src="./dogInfo.js"></script>
+</body>
+</html>
