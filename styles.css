@@ -383,10 +383,13 @@ main {
 .cszContainer {
   display: flex;
   flex-direction: column;
+  padding: 0 1rem 0 0;
+  margin: 0 1rem 0 0;
 }
 
 .cszContainer #state {
   font: 1rem "Work Sans";
+  margin-top: .25rem;
   padding: 0.65rem;
   border: 1px solid #E7E3E3;
 }
@@ -519,6 +522,25 @@ main {
     margin: 0 0 1rem 0;
     width: 100%;
   }
+  .citystatezip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cszContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 0 0;
+    margin: 0 1rem 0 0;
+
+  }
+  .cszContainer #state {
+    font: 1rem "Work Sans";
+    margin-top: 0.25rem;
+    padding: .65rem;
+    border: 1px solid #E7E3E3;
+  }
+
 }
 
 /* -- Tablets up to 768px -- */
@@ -545,5 +567,23 @@ main {
   .blog-post {
     max-height: 275px;
     overflow: scroll;
+  }
+  .citystatezip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cszContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 0 0;
+    margin: 0 1rem 0 0;
+
+  }
+  .cszContainer #state {
+    font: 1rem "Work Sans";
+    margin-top: .25rem;
+    padding: .65rem;
+    border: 1px solid #E7E3E3;
   }
 }
