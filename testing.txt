@@ -1,12 +1,57 @@
+-------------
+PERSONAS
 
+Three personas used for this site, developed with the idea that a relatively diverse set of people would be searching for and using this information.
+-------------
 
-Testing
+USER 1
+Name: John Castle
+Age: 31
+Occupation: Military
+Activities: Biking, running, swimming
+Environment: He is comfortable using a computer for work, but uses his phone when he's off the clock. He doesn't like to waste time browsing the internet and prefers to 'get in and get out.' Finding what he's looking for right away is very important to him. He also wants a pet to match his active lifestyle and wants to be able to see their detailed biographies. 
+Other details: 
+   - Competitive triathlete
+   - Travels frequently for work
+   - Recently broke his computer, only owns a Samsung Galaxy S21 but likes new technology so he always has 'the latest model'
+   - Single with no children
+   - Owns townhome
+Quote: "That triathlon isn't going to train for itself."
 
-Chrome
-Firefox
-Safari
+USER 2
+Name: Michelle Brantley
+Age: 38
+Occupation: Adult Learner/Stay-at-home mom
+Environment: She is comfortable using a computer and describes herself as an intermediate Internet user. However, she's not sure exactly what device or systems she happens to own and/or use. She uses cable internet at home, usually when her kids are connecting to school through remote learning. She likes online shopping, and wants to find a family pet from the safety of her home. 
+Other details:
+   - 3 children, girls, 2/3 in middle school
+   - Has an older desktop computer (Windows), newer model Samsung phone
+   - Not married, has a life partner
+   - Owns single-family home on large plat of land
+   - Leads a sedentary lifestyle
+Quote: "Family makes a house a home."
 
-PC System
+USER 3
+Name: Samantha Brown
+Age: 19
+Occupation: Full-Time College Student/Part-time pizza delivery driver
+Environment: She is very comfortable using a computer, but prefers to use her smartphone because she's always on the go. She mostly uses the internet to access social media, so looks are everything and she needs a pet to match her personal brand. 
+Other details:
+  - Pursuing a degree in social work
+  - Has live-in boyfriend and own apartment with balcony
+  - No children
+  - Uses Chromebook for school and iPhone X
+  - Is also considering cats or a rodent of some sort
+Quote: "We've been thinking about taking the next step in our relationship."
 
-Tablet (iPad ___)
-iPhone X
+--------
+TESTING
+--------
+
+BROWSERS
+
+Browser testing for this site was done on a 15" MacBook Pro using Firefox, Chrome, and Safari. I primarily tested for responsiveness and good execution of the JavaScript functions added last iteration. Going from largest to smallest scale I checked for object padding, appropriate image resizing, and font legibility. When reducing the size of the Checkout page, I noticed that the City/State/Zip inputs overlapped under widths of 1024px. To fix this, I specified margin and padding for the relevant areas in my responsive styling sections for mobile and tablets. Otherwise, there seemed to be no significant differences between browsers.
+
+DEVICES
+
+Device testing for this site was done on an iPhone:
