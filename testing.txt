@@ -50,8 +50,8 @@ TESTING
 
 BROWSERS
 
-Browser testing for this site was done on a 15" MacBook Pro using Firefox, Chrome, and Safari. I primarily tested for responsiveness and good execution of the JavaScript functions added last iteration. Going from largest to smallest scale I checked for object padding, appropriate image resizing, and font legibility. When reducing the size of the Checkout page, I noticed that the City/State/Zip inputs overlapped under widths of 1024px. To fix this, I specified margin and padding for the relevant areas in my responsive styling sections for mobile and tablets. Otherwise, there seemed to be no significant differences between browsers.
+Browser testing for this site was done on a 15" MacBook Pro using Firefox, Chrome, and Safari. I primarily tested for responsiveness and good execution of the JavaScript functions added last iteration. Going from largest to smallest scale I checked for object padding, appropriate image resizing, and font legibility. When reducing the size of the Checkout page, I noticed that the City/State/Zip inputs overlapped under widths of 1024px. To fix this, I specified margin and padding for the relevant areas in my responsive styling sections for mobile and tablets. When this was done I ran Safari's User Agent to confirm that the changes would also render in Microsoft Edge, Firefox on Windows and Chrome on Windows. Otherwise, there seemed to be no significant differences between browsers. 
 
 DEVICES
 
-Device testing for this site was done on an iPhone:
+Device testing for this site was done on an iPhone X using DuckDuckGo and Safari. While there were some cosmetic points (such as the slightly off-center alignment of the blog posts), I did not implement changes to the mobile version as the site was still entirely usable. I also did not implement changes to prompt an alert for the cost of each dog when pressing "Adopt" on a more secure browser like DuckDuckGo because the alert still triggered on Safari.
