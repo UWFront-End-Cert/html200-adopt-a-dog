@@ -61,18 +61,19 @@ img {
 .price-flex {
   display: flex;
   padding: 0.5rem 0;
+  justify-content: space-evenly;
 }
 .header-logo {
   grid-area: 2 / 2 / 5 / 4;
 }
 .h2 {
-  grid-area: 5 / 2 / 5 / 5;
   margin: 0;
   color: rgb(141, 181, 83);
   font-size: 2rem;
 }
 .cart {
   height: 1.5rem;
+  width: 50%
 }
 .cart-p {
   color: rgb(255, 255, 255);
@@ -303,6 +304,7 @@ select {
 }
 .city-flex {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 .label-7 {

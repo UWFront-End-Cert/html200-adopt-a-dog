@@ -13,6 +13,116 @@ function runningTotal(fee) {
   alert(`Your current total is $${carts}`);
 }
 
+/*-------------Index----------------*/
+// let dogCards = [
+//   { image: 'murphy' },
+//   { image: 'poppy' },
+//   { image: 'jack' },
+//   { image: 'duffy' },
+//   { image: 'lucas' },
+//   { image: 'jake' },
+// ]
+//
+// $.each(dogCards, function(index, val){
+//   console.log(index, val.image);
+// });
+
+$(function(){
+  $('#murphy').mouseenter(function(){
+    $('#poppy').delay(50).fadeTo('slow', .5)
+    $('#jack').delay(100).fadeTo('slow', .5)
+    $('#duffy').delay(150).fadeTo('slow', .5)
+    $('#lucas').delay(200).fadeTo('slow', .5)
+    $('#jake').delay(250).fadeTo('slow', .5)
+  }).mouseleave(function(){
+    $('#poppy').delay(250).fadeTo('fast', 1)
+    $('#jack').delay(200).fadeTo('fast', 1)
+    $('#duffy').delay(150).fadeTo('fast', 1)
+    $('#lucas').delay(100).fadeTo('fast', 1)
+    $('#jake').delay(50).fadeTo('fast', 1)
+  })
+})
+
+$(function(){
+  $('#poppy').mouseenter(function(){
+    $('#murphy').delay(50).fadeTo('slow', .5)
+    $('#jack').delay(100).fadeTo('slow', .5)
+    $('#duffy').delay(150).fadeTo('slow', .5)
+    $('#lucas').delay(200).fadeTo('slow', .5)
+    $('#jake').delay(250).fadeTo('slow', .5)
+  }).mouseleave(function(){
+    $('#murphy').delay(250).fadeTo('fast', 1)
+    $('#jack').delay(200).fadeTo('fast', 1)
+    $('#duffy').delay(150).fadeTo('fast', 1)
+    $('#lucas').delay(100).fadeTo('fast', 1)
+    $('#jake').delay(50).fadeTo('fast', 1)
+  })
+})
+
+$(function(){
+  $('#jack').mouseenter(function(){
+    $('#murphy').delay(50).fadeTo('slow', .5)
+    $('#poppy').delay(100).fadeTo('slow', .5)
+    $('#duffy').delay(150).fadeTo('slow', .5)
+    $('#lucas').delay(200).fadeTo('slow', .5)
+    $('#jake').delay(250).fadeTo('slow', .5)
+  }).mouseleave(function(){
+    $('#murphy').delay(250).fadeTo('fast', 1)
+    $('#poppy').delay(200).fadeTo('fast', 1)
+    $('#duffy').delay(150).fadeTo('fast', 1)
+    $('#lucas').delay(100).fadeTo('fast', 1)
+    $('#jake').delay(50).fadeTo('fast', 1)
+  })
+})
+
+$(function(){
+  $('#duffy').mouseenter(function(){
+    $('#murphy').delay(50).fadeTo('slow', .5)
+    $('#poppy').delay(100).fadeTo('slow', .5)
+    $('#jack').delay(150).fadeTo('slow', .5)
+    $('#lucas').delay(200).fadeTo('slow', .5)
+    $('#jake').delay(250).fadeTo('slow', .5)
+  }).mouseleave(function(){
+    $('#murphy').delay(250).fadeTo('fast', 1)
+    $('#poppy').delay(200).fadeTo('fast', 1)
+    $('#jack').delay(150).fadeTo('fast', 1)
+    $('#lucas').delay(100).fadeTo('fast', 1)
+    $('#jake').delay(50).fadeTo('fast', 1)
+  })
+})
+
+$(function(){
+  $('#lucas').mouseenter(function(){
+    $('#murphy').delay(50).fadeTo('slow', .5)
+    $('#poppy').delay(100).fadeTo('slow', .5)
+    $('#jack').delay(150).fadeTo('slow', .5)
+    $('#duffy').delay(200).fadeTo('slow', .5)
+    $('#jake').delay(250).fadeTo('slow', .5)
+  }).mouseleave(function(){
+    $('#murphy').delay(250).fadeTo('fast', 1)
+    $('#poppy').delay(200).fadeTo('fast', 1)
+    $('#jack').delay(150).fadeTo('fast', 1)
+    $('#duffy').delay(100).fadeTo('fast', 1)
+    $('#jake').delay(50).fadeTo('fast', 1)
+  })
+})
+
+$(function(){
+  $('#jake').mouseenter(function(){
+    $('#murphy').delay(50).fadeTo('slow', .5)
+    $('#poppy').delay(100).fadeTo('slow', .5)
+    $('#jack').delay(150).fadeTo('slow', .5)
+    $('#duffy').delay(200).fadeTo('slow', .5)
+    $('#lucas').delay(250).fadeTo('slow', .5)
+  }).mouseleave(function(){
+    $('#murphy').delay(250).fadeTo('fast', 1)
+    $('#poppy').delay(200).fadeTo('fast', 1)
+    $('#jack').delay(150).fadeTo('fast', 1)
+    $('#duffy').delay(100).fadeTo('fast', 1)
+    $('#lucas').delay(50).fadeTo('fast', 1)
+  })
+})
+
 /*--------------Blogs---------------*/
 let blogsArray = [
   {
@@ -198,3 +308,4 @@ function thankYou(thanks) {
 
 
 
+//
