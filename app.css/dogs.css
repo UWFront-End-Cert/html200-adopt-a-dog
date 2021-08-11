@@ -220,7 +220,7 @@ let the contents define the dimensions of the containers */
     /* width: 23rem; */
     /* width: 23%; */
     width: 22em;
-    height: 32.5em;
+    min-height: 32.5rem;
     /* height: 32.5rem; */
     /* height: 30%; */
     display: flex;
@@ -252,6 +252,7 @@ p {
     /* color: rgb(155, 226, 11); */
     transition: 0.5s;
     overflow: hidden;
+    min-height: 36.8px;
 }
 
 .dog_cards button:hover {
