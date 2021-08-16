@@ -14,18 +14,51 @@ function runningTotal(fee) {
 }
 
 /*-------------Index----------------*/
+
 // let dogCards = [
-//   { image: 'murphy' },
-//   { image: 'poppy' },
-//   { image: 'jack' },
-//   { image: 'duffy' },
-//   { image: 'lucas' },
-//   { image: 'jake' },
+//   'murphy',
+//   'poppy',
+//   'jack',
+//   'duffy',
+//   'lucas',
+//   'jake',
+//   'angus',
+//   'violet',
+//   'piper',
+//   'maximus',
+//   'luna',
+//   'stella',
 // ]
 //
-// $.each(dogCards, function(index, val){
-//   console.log(index, val.image);
-// });
+// dogCards.forEach(function(learning) {
+//   let practice = dogCards.indexOf(learning);
+//   let more = `${practice}, ${learning}`;
+//   console.log(more);
+// })
+
+
+let dogCards = [
+  { image: 'murphy' },
+  { image: 'poppy' },
+  { image: 'jack' },
+  { image: 'duffy' },
+  { image: 'lucas' },
+  { image: 'jake' },
+  { image: 'angus' },
+  { image: 'violet' },
+  { image: 'piper' },
+  { image: 'maximus' },
+  { image: 'luna' },
+  { image: 'stella' },
+]
+
+$(function(){
+  $.each(dogCards, function(index, val){
+    console.log(index, val.image);
+  })
+})
+
+
 
 $(function(){
   $('#murphy').mouseenter(function(){
@@ -266,25 +299,7 @@ function blogBlog2(blogginOut) {
 }
 
 /*--------------Checkout--------------*/
-function thankYou(thanks) {
-  const adopter = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    street: document.getElementById('street').value,
-    city: document.getElementById('city').value,
-    state: document.getElementById('state').value,
-    firstAdopt: document.querySelector("input[name=adopter]:checked").value,
-    zipcode: document.getElementById('zipCode').value,
-    pickupLocation: document.getElementById('pickup').value
-  };
-  console.log(adopter);
-
-  alert(`Thank you. ${adopter.name} \nThe form information has been received`);
-};
-
-// $(function () {
-//   $('form').on("submit", function(event) {
-//
+// function thankYou(thanks) {
 //   const adopter = {
 //     name: document.getElementById('name').value,
 //     email: document.getElementById('email').value,
@@ -298,8 +313,26 @@ function thankYou(thanks) {
 //   console.log(adopter);
 //
 //   alert(`Thank you. ${adopter.name} \nThe form information has been received`);
-//   });
-// });
+// };
+
+$(function () {
+  $('form').on("submit", function(event) {
+
+  const adopter = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    street: document.getElementById('street').value,
+    city: document.getElementById('city').value,
+    state: document.getElementById('state').value,
+    firstAdopt: document.querySelector("input[name=adopter]:checked").value,
+    zipcode: document.getElementById('zipCode').value,
+    pickupLocation: document.getElementById('pickup').value
+  };
+  console.log(adopter);
+
+  alert(`Thank you. ${adopter.name} \nThe form information has been received`);
+  });
+});
 
 
 
