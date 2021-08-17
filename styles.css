@@ -20,12 +20,14 @@ header {
   grid-template-areas: 'left right';
   height: 350px;
   background-image: url(./images/header-image.jpg), linear-gradient(grey,black);
+  background-color: linear-gradient(green, brown);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 header img {
   width: 400px;
+  height: auto;
 }
 
 h1 {
@@ -109,6 +111,7 @@ li {
 
 .main-image {
   width: 100%;
+  height: auto;
 }
 
 .main-article {
@@ -126,6 +129,7 @@ li {
   width: 250px;
   float: left;
   padding: 10px;
+  height: auto;
 }
 
 .guide {
@@ -318,7 +322,7 @@ input {
     text-decoration: none;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
   .title {
       margin-bottom: 0px;
       font-size: 2rem;
@@ -345,6 +349,7 @@ input {
 
   .main-image {
     padding-left: 20%;
+    height: auto;
   }
 
   .main-article {
@@ -390,7 +395,7 @@ input {
   }
 
   .card {
-      width: 100%;
+      width: 80%;
       height: auto;
       border: 2px solid lightgrey;
   }
@@ -419,6 +424,7 @@ input {
       .main-image{
         padding-left: 40%;
         width: 100%;
+        height: auto;
       }
 
     .preview-title {
