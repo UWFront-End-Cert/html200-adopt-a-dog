@@ -19,8 +19,7 @@ header {
   display: grid;
   grid-template-areas: 'left right';
   height: 350px;
-  background-image: url(./images/header-image.jpg);
-  background: linear-gradient(grey, black);
+  background-image: url('./images/header-image.jpg'), linear-gradient(grey, black);
   background-repeat: no-repeat;
   background-position: top;
 }
