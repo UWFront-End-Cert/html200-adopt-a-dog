@@ -19,10 +19,10 @@ header {
   display: grid;
   grid-template-areas: 'left right';
   height: 350px;
-  background-image: url(./images/header-image.jpg), linear-gradient(grey,black);
-  background-color: linear-gradient(green, brown);
+  background-image: url(./images/header-image.jpg);
+  background: linear-gradient(grey, black);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 header img {
@@ -34,6 +34,11 @@ h1 {
   font-style: italic;
   font-size: x-large;
   color: rgb(129, 183, 65);
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .left {
@@ -126,7 +131,8 @@ li {
 }
 
 .blog-image {
-  width: 250px;
+  min-width: 250px;
+  width: 40%;
   float: left;
   padding: 10px;
   height: auto;
@@ -350,6 +356,8 @@ input {
   .main-image {
     padding-left: 20%;
     height: auto;
+    width: 100%;
+    max-width: 700px;
   }
 
   .main-article {
