@@ -1,3 +1,4 @@
+/*global styles*/
 p {
   font-family: Verdana, Tahoma, sans-serif;
 }
@@ -11,14 +12,24 @@ h3 {
   color: #093C60;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
   background-color: #093C60;
+  background: linear-gradient(to top, #093C60, black 99%);
+  background-image: url('../images/header-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .grid-header {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 1rem;
+  height: 25rem;
 }
 
 .logo-motto {
@@ -49,7 +60,7 @@ header {
   font-weight: bold;
 }
 
-.subtotal {
+.subtotal-display {
   color: white;
 }
 
@@ -63,8 +74,9 @@ nav {
   height: 4rem;
   background-color: #EBEBEB;
   font-size: 1.25rem;
-  display: flex;
   align-items: center;
+  display: grid;
+  grid-template-columns: auto;
 }
 
 nav li {
@@ -84,38 +96,67 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/*home and dogs page*/
 .grid-container-dogs-index {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 1rem;
+  justify-items: center;
 }
 
 .home-header {
-  padding-left: 1rem;
+  display: none;
 }
 
 .mission {
   padding: 1rem;
-  grid-column: 1 / 5;
+  grid-column: 1 / 4;
   line-height: 1.5rem;
 }
 
  .mission-img {
    float: left;
-   margin-right: 1rem;
    width: 100%;
-   max-width: 400px;
+   max-width: 500px;
  }
 
+ .blog-img-home {
+   padding-top: 1rem;
+   max-height: 200px;
+ }
+
+/*blog section on home*/
+ .blog-home {
+   padding: 1rem;
+   grid-column: 4 / 5;
+   grid-row: 1 / span 3;
+ }
+
+/*blog article preview on home*/
+ .blog-preview-home {
+   padding-bottom: 3rem;
+   margin: 1rem;
+   max-width: 500px;
+ }
+
+/*dogs section on home*/
+.all-dogs-home {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column: 1 / 4;
+}
+
+/*individual dog cards on home and dogs page*/
 .dog-info {
   border: .1rem solid #757575;
-  max-width: 400px;
+  max-width: 500px;
   margin: 1rem;
 }
 
 .dog-info-img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
+  cursor: pointer;
 }
 
 .dog-info-header {
@@ -134,17 +175,18 @@ nav a:hover {
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 1rem 3rem;
+  padding: .5rem 1.5rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .more-dogs {
-  grid-column: 1 / 5;
+  grid-column: 1 / 4;
   text-align: center;
 }
 
@@ -161,15 +203,12 @@ nav a:hover {
   border-radius: 5px;
 }
 
+/*dogs page heading*/
 .dogs-header {
-  padding-left: 1rem;
   grid-column: 1 / 5;
 }
 
-.adopt-header {
-  padding-left: 1rem;
-}
-
+/*blog page*/
 .blog-grid {
   display: grid;
   grid-template-columns: auto;
@@ -177,8 +216,14 @@ nav a:hover {
   grid-gap: 1rem;
 }
 
+/*blog page heading*/
+.blogs-header {
+  padding-left: 1rem;
+}
+
+/*blog article on blog page*/
 .blog {
-  padding: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .blog p {
@@ -189,13 +234,10 @@ nav a:hover {
   float: left;
   padding-right: 1rem;
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
 }
 
-.blogs-header {
-  padding-left: 1rem;
-}
-
+/*global footer CSS*/
 footer {
   background-color: #093C60;
   color: #FDFBF5;
@@ -212,6 +254,8 @@ footer a:hover {
   text-decoration: underline;
 }
 
+
+/*forms page CSS*/
 input, select, textarea {
   display: block;
   font-family: inherit;
@@ -233,10 +277,26 @@ legend {
   font-weight: bold;
 }
 
-.grid-form {
+.form-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: .5rem;
+}
+
+/*adopt page heading*/
+.adopt-header {
+  padding-left: 1rem;
+  grid-column: 1 / 2;
+}
+
+.form-section {
+  display: grid;
+  grid-template-columns: 30% 15% 30%;
+  grid-column: 1 / 4;
+}
+
+.form-info {
+  grid-column: 1 / 2;
 }
 
 .city {
@@ -251,10 +311,325 @@ legend {
   grid-column: 3 / 4;
 }
 
+.first-time {
+  grid-column: 1 / 2;
+}
+.pickup-location {
+  grid-column: 1 / 2;
+}
+
 fieldset {
   border: none;
 }
 
 fieldset input{
   display: inline;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: .5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  grid-column: 1 / 2;
+  width: 30%;
+}
+
+/*contact page*/
+.contact-form {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column: 1 / 4;
+}
+
+.contact-form-info {
+  grid-column: 1 / 2;
+}
+
+.submit-button-contact {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: .5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  grid-column: 1 / 2;
+  width: 30%;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 575px) {
+  .grid-header {
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+  .logo {
+    width: 70%;
+    padding-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-left: 0rem;
+  }
+  .logo-motto {
+    grid-column: 1 / 2;
+  }
+  .motto {
+    color: #90AE65;
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+  }
+  .checkout {
+    grid-column: 1 / 2;
+    text-align: center;
+  }
+  nav a {
+    padding: .5rem;
+  }
+  .grid-container-dogs-index {
+    grid-template-columns: auto;
+  }
+  .mission {
+    padding: 1rem;
+    grid-column: 1 / 2;
+    line-height: 1.5rem;
+  }
+  .mission-img {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blog-header-home {
+  }
+  .blog-home {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .blog-preview-home {
+    display: none;
+  }
+  .all-dogs-home {
+    grid-template-columns: auto;
+    grid-column: 1 / 2;
+  }
+  .dogs-header {
+    grid-column: 1 / 2;
+  }
+  .blog {
+    grid-column: 1 / 2;
+  }
+  .blog-img {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+  }
+  .form-section {
+    grid-template-columns: auto;
+    grid-column: 1 / 2;
+  }
+  .state {
+    grid-column: 1 / 2;
+  }
+
+  .zip {
+    grid-column: 1 / 2;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .grid-header {
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+  .logo {
+    width: 70%;
+    padding-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-left: 0rem;
+  }
+  .logo-motto {
+    grid-column: 1 / 2;
+  }
+  .motto {
+    color: #90AE65;
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+  }
+  .checkout {
+    grid-column: 1 / 2;
+    text-align: center;
+  }
+  nav a {
+    padding: .5rem;
+  }
+  .grid-container-dogs-index {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .mission {
+    grid-column: 1 / 2;
+    line-height: 1.5rem;
+  }
+  .mission-img {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blog-home {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .blog-preview-home {
+    display: none;
+  }
+
+  .all-dogs-home {
+    grid-template-columns: auto;
+    grid-column: 1 / 2;
+  }
+  .dogs-header {
+    grid-column: 1 / 2;
+  }
+  .blog {
+    grid-column: 1 / 2;
+  }
+  .blog-img {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+  }
+  .form-section {
+    grid-template-columns: auto;
+    grid-column: 1 / 2;
+  }
+  .state {
+    grid-column: 1 / 2;
+  }
+
+  .zip {
+    grid-column: 1 / 2;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .grid-header {
+    grid-template-columns: auto auto;
+    justify-items: center;
+  }
+  .logo {
+    width: 70%;
+    padding-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-left: 0rem;
+  }
+  .logo-motto {
+    grid-column: 1 / 2;
+  }
+  .motto {
+    color: #90AE65;
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+  }
+  .checkout {
+    grid-column: 2 / 3;
+    text-align: center;
+  }
+  .grid-container-dogs-index {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .mission {
+    padding: 1rem;
+    grid-column: 1 / 3;
+    line-height: 1.5rem;
+  }
+  .mission-img {
+    display: block;
+    float: none;
+  }
+  .blog-home {
+    padding: 1rem;
+    grid-column: 3 / 4;
+    line-height: 1.5rem;
+    grid-row: 1 / span 3;
+  }
+  .all-dogs-home {
+    grid-template-columns: auto auto;
+    grid-column: 1 / 3;
+  }
+  .more-dogs {
+    grid-column: 1 / 3;
+  }
+  .dogs-header-home {
+    display: none;
+  }
+  #blog-link-home-mb {
+    display: none;
+  }
+  .dogs-header {
+    grid-column: 1 / 4;
+  }
+  .form-section {
+    grid-template-columns: auto;
+    grid-column: 1 / 2;
+  }
+  .state {
+    grid-column: 1 / 2;
+  }
+
+  .zip {
+    grid-column: 1 / 2;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mission-img {
+    padding-right: 2rem;
+  }
+  .dogs-header-home {
+    display: none;
+  }
+  #blog-link-home-mb {
+    display: none;
+  }
+}
+
+@media print {
+  img {
+    display: none;
+  }
 }

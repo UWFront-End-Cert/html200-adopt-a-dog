@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adopt a Dog</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
@@ -15,37 +17,36 @@
         <p class="motto"><em>Seattle's premiere dog adoption agency</em></p>
       </article>
       <div class="checkout">
-        <p class="subtotal"><img src="images/cart-icon.svg" alt="checkout cart" class="cart">$1234.56</p>
+        <p class="subtotal-display"><img src="images/cart-icon.svg" alt="checkout cart" class="cart"><span id="subtotal"></span></p>
         <p><a href="adopt.html" class="button">Checkout</a></p>
       </div>
     </div>
       <nav class="navigation">
         <ul>
-          <li><a href="index.html" class="nav-item">Home</a> /</li>
-          <li><a href="dogs.html" class="nav-item">Dogs</a> /</li>
-          <li><a href="#" class="nav-item">Adopt</a> /</li>
-          <li><a href="blog.html" class="nav-item">Blog</a> /</li>
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="dogs.html" class="nav-item">Dogs</a></li>
+          <li><a href="#" class="nav-item">Adopt</a></li>
+          <li><a href="blog.html" class="nav-item">Blog</a></li>
           <li><a href="contact.html" class="nav-item">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section>
+    <section class="form-grid">
       <h2 class="adopt-header">Checkout</h2>
-      <form method="GET">
+      <form method="GET" class="form-section">
 
-        <label>Name
+        <label class="form-info">Name
           <input type="text" name="applicantName">
         </label>
 
-        <label>Email Address
+        <label class="form-info">Email Address
           <input type="email" name="applicantEmail">
         </label>
 
-        <label>Street Address
+        <label class="form-info">Street Address
           <input type="text" name="applicantAddress">
         </label>
 
-        <div class="grid-form">
         <label class="city">City
           <input type="text" name="applicantCity">
         </label>
@@ -62,7 +63,6 @@
         <label class="zip">Zip Code
           <input type="text" name="applicantZip">
         </label>
-      </div>
 
         <fieldset class="first-time">
           <legend>First Time Adopter?</legend>
@@ -76,7 +76,7 @@
           </label>
         </fieldset>
 
-        <label>Pickup Location
+        <label class="pickup-location">Pickup Location
           <select name="pickupLocation">
             <option value="">Please select</option>
             <option value="mukilteo">Mukilteo</option>
@@ -85,7 +85,7 @@
           </select>
         </label>
 
-        <input type="submit" value="Submit" class="button">
+        <input type="submit" value="Submit" class="submit-button">
       </form>
     </section>
     <footer>
@@ -97,5 +97,6 @@
         <p>© 2021 Adoptadog, LLC   |   Seattle, WA</p>
       </section>
     </footer>
+    <script src="./dogs.js"></script>
   </body>
 </html>
