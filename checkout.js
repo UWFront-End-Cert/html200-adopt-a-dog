@@ -3,7 +3,6 @@ document.getElementById("submit").addEventListener("click", submit);
 var formVals = [];
 
  function submit() {
-     alert("Thank you. The form information has been received");
      formVals.push(document.getElementById("name").value);
      formVals.push(document.getElementById("email").value);
      formVals.push(document.getElementById("address").value);
@@ -14,4 +13,5 @@ var formVals = [];
      formVals.push(document.getElementById("no").value);
      formVals.push(document.getElementById("location").value);
      console.log("Javascript garthered this info -> " + formVals);
+     alert("Thank you. The form information has been received");
  }
