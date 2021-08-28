@@ -316,6 +316,11 @@ ul.breadcrumbs li:last-child:after {
   visibility: hidden;
 }
 
+/* dogs */
+img.dog-photo {
+  cursor: pointer;
+}
+
 /* footer */
 footer {
   color: white;
@@ -326,10 +331,6 @@ footer {
 .footer-logo {
   max-width: 300px;
 }
-ul.breadcrumbs.footer {
-  /* margin-right: calc(var(--grid-spacer) / -1); */
-}
-
 ul.breadcrumbs.footer li a {
   color: #fff;
   font-weight: 400;
