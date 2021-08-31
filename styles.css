@@ -72,6 +72,10 @@ img {
     width: 100%;
 }
 
+.btn2 {
+    display: block;
+}
+
 .checkout-btn {
     font-weight: bold;
     background-color: #81B741;
@@ -251,6 +255,10 @@ footer img {
   border: none;
   border-radius: 3px;
   width: 200px;
+}
+
+#submit {
+    width: 9rem;
 }
 
 input[type=text], select {
