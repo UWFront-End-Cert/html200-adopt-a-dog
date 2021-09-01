@@ -303,7 +303,7 @@ function blogBlog2(blogginOut) {
 //   const adopter = {
 //     name: document.getElementById('name').value,
 //     email: document.getElementById('email').value,
-//     street: document.getElementById('street').value,
+//     street: document.getElementById('street').value,x
 //     city: document.getElementById('city').value,
 //     state: document.getElementById('state').value,
 //     firstAdopt: document.querySelector("input[name=adopter]:checked").value,

@@ -57,7 +57,6 @@ img {
 .cart-flex {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .price-flex {
   display: flex;
@@ -441,66 +440,16 @@ input[type="submit"] {
 }
 
 
-/*------Developing queries------*/
+/*------Media Queries-------*/
 @media screen and (min-width: 1px) and (max-width: 767px) {
-  .article {
-    grid-template-columns: 1fr;
+  .grid-container {
+    gap: 0;
   }
-  .nav > .menu > li > a {
-    padding: 0 .5rem;
-  }
-  .blog-grid-1-js {
-    column-gap: 0;
-  }
-  .blog-grid-2-js {
-    column-gap: 0;
-  }
-  .blog-grid-3-js {
-    column-gap: 0;
-  }
-  .city-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .label-4 {
-    width: 100%;
-  }
-  .label-5 {
-    width: 100%;
-  }
-  .label-6 {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .article {
-    grid-template-columns: 1fr 1fr;
-  }
-  .nav > .menu > li > a {
-    padding: 0 .5rem;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1919px) {
-  .article {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .nav > .menu > li > a {
-    padding: 0 .5rem;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .article {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/*------Working media query------*/
-@media screen and (max-width: 767px) {
   .header-flex {
     display: flex;
     flex-direction: column-reverse;
     grid-area: 2 / 1 / 5 / 13;
+    padding-right: 0;
   }
   .logo-flex {
     padding: 2rem;
@@ -521,6 +470,84 @@ input[type="submit"] {
   .footer-p {
   display: none;
   }
+  .home-intro {
+    padding: 2rem 0;
+    row-gap: 1rem;
+  }
+  .article {
+    grid-template-columns: 1fr;
+  }
+  .menu > li > a {
+    padding: 0 .5rem;
+  }
+  .blog-grid-1-js {
+    column-gap: 0;
+  }
+  .blog-grid-2-js {
+    column-gap: 0;
+  }
+  .blog-grid-3-js {
+    column-gap: 0;
+  }
+  .city-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .a-more-dogs {
+    grid-area: 10 / 3 / 11 / 11;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+  .label-4 {
+    width: 100%;
+  }
+  .label-5 {
+    width: 100%;
+  }
+  .label-6 {
+    width: 100%;
+  }
+  .footer-a {
+    padding: 0 .5rem;
+  }
+  #submit {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .article {
+    grid-template-columns: 1fr 1fr;
+  }
+  .menu > li > a {
+    padding: 0 .5rem;
+  }
+  .footer-a {
+    padding: 0 .5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .article {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .menu > li > a {
+    padding: 0 .5rem;
+  }
+  .footer-a {
+    padding: 0 .5rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .article {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+
 }
 
 /*------Overlap issue on print preview------*/
