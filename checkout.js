@@ -42,6 +42,7 @@ function handleFormSubmit() {
       console.log('firstTimeAdopterYes = ' + firstTimeAdopterYes)
       console.log('firstTimeAdopterNo = ' + firstTimeAdopterNo)
       console.log('Pickup Location = ' + pickUpLoc)
+      alert("Thank you. The form information has been received");
   }
 
   // set handler for form data
