@@ -56,3 +56,17 @@ function lunaInfo() {
 function stellaInfo() {
   alert("Stella\nDog Breed\n$123.45");
 }
+
+$('.dog-info-img').mouseenter(function(){
+  console.log("it's working!")
+  $(this).animate({
+    opacity: '0.85'
+  });
+});
+
+$('.dog-info-img').mouseleave(function(){
+    console.log("mouse leaving")
+    $(this).animate({
+      opacity: '1'
+    });
+});

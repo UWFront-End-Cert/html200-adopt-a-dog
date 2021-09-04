@@ -353,22 +353,6 @@ fieldset input{
   grid-column: 1 / 2;
 }
 
-.submit-button-contact {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: .5rem 1.5rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  grid-column: 1 / 2;
-  width: 30%;
-}
-
 /*media queries*/
 
 @media screen and (max-width: 575px) {
