@@ -1,12 +1,24 @@
-// math equation to add adoption fee to stored total
-function adoptTotal() {
-  alert("$123.45");
-}
+//click adopt button, add to total
+var theTotal = 0;
+var adoptTotal = 123.45;
 
+$('.button').click(function() {
+   theTotal = Number(theTotal) + Number(adoptTotal);
+   $('#subtotal').text("Total: $" + theTotal);
+});
 
-// display subtotal in top right corner
-document.getElementById("subtotal").innerHTML = "Total: $";
+//hover effect on dog tiles
+$('.dog-info-img').mouseenter(function(){
+  $(this).animate({
+    opacity: '0.85'
+  });
+});
 
+$('.dog-info-img').mouseleave(function(){
+    $(this).animate({
+      opacity: '1'
+    });
+});
 
 // click dog image and display name, breed, and fee
 function murphyInfo() {
@@ -56,17 +68,3 @@ function lunaInfo() {
 function stellaInfo() {
   alert("Stella\nDog Breed\n$123.45");
 }
-
-$('.dog-info-img').mouseenter(function(){
-  console.log("it's working!")
-  $(this).animate({
-    opacity: '0.85'
-  });
-});
-
-$('.dog-info-img').mouseleave(function(){
-    console.log("mouse leaving")
-    $(this).animate({
-      opacity: '1'
-    });
-});

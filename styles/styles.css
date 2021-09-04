@@ -171,6 +171,34 @@ nav a:hover {
   padding-right: .5rem;
 }
 
+.checkout-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: .5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blog-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: .5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .button {
   background-color: #4CAF50;
   border: none;
