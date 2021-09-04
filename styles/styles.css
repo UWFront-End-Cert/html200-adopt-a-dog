@@ -123,6 +123,7 @@ nav a:hover {
  .blog-img-home {
    padding-top: 1rem;
    max-height: 200px;
+
  }
 
 /*blog section on home*/
@@ -132,6 +133,17 @@ nav a:hover {
    grid-row: 1 / span 3;
  }
 
+
+ }
+
+/*blog section on home*/
+ .blog-home {
+   padding: 1rem;
+   grid-column: 4 / 5;
+   grid-row: 1 / span 3;
+ }
+
+
 /*blog article preview on home*/
  .blog-preview-home {
    padding-bottom: 3rem;
@@ -140,6 +152,7 @@ nav a:hover {
  }
 
 /*dogs section on home*/
+
 .all-dogs-home {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -208,7 +221,28 @@ nav a:hover {
   grid-column: 1 / 5;
 }
 
+
 /*blog page*/
+
+
+/*blog page*/
+.adopt-header {
+  padding-left: 1rem;
+}
+
+
+.blog-home {
+  padding: 1rem;
+  grid-column: 4 / 5;
+  grid-row: 1 / span 3;
+}
+
+.blog-preview-home {
+  padding-bottom: 3rem;
+  margin: 1rem;
+  max-width: 500px;
+}
+
 .blog-grid {
   display: grid;
   grid-template-columns: auto;
@@ -456,6 +490,12 @@ fieldset input{
   }
 }
 
+.dogs-header {
+  grid-column: 1 / 2;
+}
+}
+
+
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .grid-header {
     grid-template-columns: auto;
@@ -517,6 +557,7 @@ fieldset input{
   .dogs-header {
     grid-column: 1 / 2;
   }
+
   .blog {
     grid-column: 1 / 2;
   }
