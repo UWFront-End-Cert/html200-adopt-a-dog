@@ -1,4 +1,4 @@
-// math equation to add adoption fee to stored total
+//alert for submitting form and console log form results
 function submitAdopt() {
   alert("Thank you. The form information has been received.");
 
