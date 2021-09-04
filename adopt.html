@@ -36,6 +36,17 @@
       <form method="GET" class="form-section">
 
         <label class="form-info">Name
+
+          <input type="text" id="form-name" name="applicantName">
+        </label>
+
+        <label class="form-info">Email Address
+          <input type="email" id="form-email" name="applicantEmail">
+        </label>
+
+        <label class="form-info">Street Address
+          <input type="text" id="form-address" name="applicantAddress">
+
           <input type="text" name="applicantName">
         </label>
 
@@ -45,14 +56,15 @@
 
         <label class="form-info">Street Address
           <input type="text" name="applicantAddress">
+
         </label>
 
         <label class="city">City
-          <input type="text" name="applicantCity">
+          <input type="text" id="form-city" name="applicantCity">
         </label>
 
         <label class="state">State
-          <select name="applicantState">
+          <select id="form-state" name="applicantState">
             <option value="">Select state</option>
             <option value="california">CA</option>
             <option value="oregon">OR</option>
@@ -61,10 +73,10 @@
         </label>
 
         <label class="zip">Zip Code
-          <input type="text" name="applicantZip">
+          <input id="form-zip" type="text" name="applicantZip">
         </label>
 
-        <fieldset class="first-time">
+        <fieldset id="form-first-time" class="first-time">
           <legend>First Time Adopter?</legend>
           <label>
             <input type="radio" name="firstTime" value="yes">
@@ -77,7 +89,11 @@
         </fieldset>
 
         <label class="pickup-location">Pickup Location
+
+          <select id="form-pickup" name="pickupLocation">
+
           <select name="pickupLocation">
+
             <option value="">Please select</option>
             <option value="mukilteo">Mukilteo</option>
             <option value="redmond">Redmond</option>
@@ -85,7 +101,11 @@
           </select>
         </label>
 
+
+        <input onclick="submitAdopt()" type="submit" value="Submit" class="submit-button">
+
         <input type="submit" value="Submit" class="submit-button">
+
       </form>
     </section>
     <footer>
@@ -97,6 +117,10 @@
         <p>© 2021 Adoptadog, LLC   |   Seattle, WA</p>
       </section>
     </footer>
+
+    <script src="./adopt.js"></script>
+
     <script src="./dogs.js"></script>
+
   </body>
 </html>

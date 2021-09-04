@@ -123,6 +123,7 @@ nav a:hover {
  .blog-img-home {
    padding-top: 1rem;
    max-height: 200px;
+
  }
 
 /*blog section on home*/
@@ -131,6 +132,17 @@ nav a:hover {
    grid-column: 4 / 5;
    grid-row: 1 / span 3;
  }
+
+
+ }
+
+/*blog section on home*/
+ .blog-home {
+   padding: 1rem;
+   grid-column: 4 / 5;
+   grid-row: 1 / span 3;
+ }
+
 
 /*blog article preview on home*/
  .blog-preview-home {
@@ -208,6 +220,9 @@ nav a:hover {
 .dogs-header {
   grid-column: 1 / 5;
 }
+
+
+/*blog page*/
 
 
 /*blog page*/
@@ -389,6 +404,7 @@ fieldset input{
 }
 
 /*media queries*/
+
 @media screen and (max-width: 575px) {
   .grid-header {
     grid-template-columns: auto;
@@ -473,10 +489,12 @@ fieldset input{
     grid-column: 1 / 2;
   }
 }
+
 .dogs-header {
   grid-column: 1 / 2;
 }
 }
+
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .grid-header {
