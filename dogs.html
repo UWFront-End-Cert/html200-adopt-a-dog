@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adopt a Dog</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>Adopt a Dog</title>
   </head>
   <body>
     <a href="#main-content" class="hidden">Skip to main content</a>
@@ -18,7 +19,7 @@
       </article>
       <div class="checkout">
         <p class="subtotal-display"><img src="images/cart-icon.svg" alt="checkout cart" class="cart"><span id="subtotal"></span></p>
-        <p><a href="adopt.html" class="button">Checkout</a></p>
+        <p><a href="adopt.html" class="checkout-button">Checkout</a></p>
       </div>
     </div>
       <nav class="navigation">
@@ -36,86 +37,86 @@
       <article class="dog-info">
         <img onclick="murphyInfo()" src="images/murphy-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Murphy</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p><strong>Cost to Adopt:</strong> $<span id="adoptAmount">123.45</span></p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button class="button">Adopt</button></p>
       </article>
       <article class="dog-info">
         <img onclick="poppyInfo()" src="images/poppy-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Poppy</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button   class="button">Adopt</button></p>
       </article>
       <article class="dog-info">
         <img onclick="jackInfo()" src="images/jack-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Jack</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button class="button">Adopt</button></p>
       </article>
       <article class="dog-info">
         <img onclick="duffyInfo()" src="images/duffy-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Duffy</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button   class="button">Adopt</button></p>
       </article>
       <article class="dog-info">
         <img onclick="lucasInfo()" src="images/lucas-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Lucas</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button   class="button">Adopt</button></p>
       </article>
       <article class="dog-info">
         <img onclick="jakeInfo()" src="images/jake-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Jake</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button class="button">Adopt</button></p>
       </article>
       <article class="dog-info">
         <img onclick="angusInfo()" src="images/angus-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Angus</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button   class="button">Adopt</button></p>
       </article>
       <article class="dog-info">
         <img onclick="violetInfo()" src="images/violet-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Violet</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button   class="button">Adopt</button></p>
       </article>
       <article class="dog-info">
         <img onclick="piperInfo()" src="images/piper-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Piper</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button   class="button">Adopt</button></p>
       </article>
       <article class="dog-info">
         <img onclick="maxInfo()" src="images/maximus-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Maximus</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button   class="button">Adopt</button></p>
       </article>
       <article  class="dog-info">
         <img onclick="lunaInfo()" src="images/luna-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Luna</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button   class="button">Adopt</button></p>
       </article>
       <article  class="dog-info">
         <img onclick="stellaInfo()" src="images/stella-card.jpg" alt="" class="dog-info-img">
         <h3 class="dog-info-header">Stella</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        <p><button onclick="adoptTotal()" class="button">Adopt</button></p>
+        <p><button   class="button">Adopt</button></p>
       </article>
     </section>
     <footer>
