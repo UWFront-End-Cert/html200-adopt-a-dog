@@ -1,9 +1,9 @@
-User Research - Targeting Individuals looking to start a career as a web developer.
+User Research - Targeting Individuals looking to start a career as a web developer and adopting dogs.
 
 Name: Omin Dran
 Age: 38
 Occupation: Project Manager
-Other details: - Owns an Iphone 12 and browses with mostly Safari, has a 1 year old Dell laptop and browses with Google Chrome.
+Other details: - Owns an iPhone 12 and browses with mostly Safari, has a 1 year old Dell laptop and browses with Google Chrome.
                - Wants to have a dog companion to catch cheaters.
                - Looking for the right breed to train.
 
@@ -19,7 +19,7 @@ Testing was done on a Windows Laptop and an Android Smartphone. On the laptop, I
 On the Android Smartphone, I tested on Google Chrome.
 
 Windows Laptop Testing - I tried testing the webpages on all three of the browsers. I resized them to every device from laptop to smartphone.
-o it looked like the writing did not matter for the three browsers I tested on. The Google Chrome was my default browser, so I had to change my default
+It looked like the writing did not matter for the three browsers I tested on. The Google Chrome was my default browser, so I had to change my default
 browser to a different one every time I wanted to test a different browser. I was not able to test Safari, since Apple no longer publicly offers it to
 other operating systems. Overall, the testing results on the different browsers did not have me see differences.
 
