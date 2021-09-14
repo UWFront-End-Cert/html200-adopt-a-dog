@@ -1,0 +1,34 @@
+User Research - Targeting Individuals looking to start a career as a web developer and adopting dogs.
+
+Name: Omin Dran
+Age: 38
+Occupation: Project Manager
+Other details: - Owns an iPhone 12 and browses with mostly Safari, has a 1 year old Dell laptop and browses with Google Chrome.
+               - Wants to have a dog companion to catch cheaters.
+               - Looking for the right breed to train.
+
+Name: Jim Darkmagic
+Age: 42
+Occupation: Web Designer
+Other details: - Owns a Galaxy Z and browses mostly Google Chrome, has a 2 year old MSI laptop and browses with Edge.
+               - Looking for a vicious and loyal dog friend.
+               - Wants to have a dog companion to make jobs easier.
+
+Testing Devices and Browsers -
+Testing was done on a Windows Laptop and an Android Smartphone. On the laptop, I tested Google Chrome, Microsoft Edge, and Firefox.
+On the Android Smartphone, I tested on Google Chrome.
+
+Windows Laptop Testing - I tried testing the webpages on all three of the browsers. I resized them to every device from laptop to smartphone.
+It looked like the writing did not matter for the three browsers I tested on. The Google Chrome was my default browser, so I had to change my default
+browser to a different one every time I wanted to test a different browser. I was not able to test Safari, since Apple no longer publicly offers it to
+other operating systems. Overall, the testing results on the different browsers did not have me see differences.
+
+Android Smartphone Testing - When I tested my pages on the smartphone with Chrome on an Android OS. The pages load zoomed in at start, but I can zoom back out. Overall the pages were
+not difficult for me to browse with. Some of the words were pretty small, but I can zoom in to make them bigger. The blog pictures were still the same percentage
+width on the smartphone. The cards were still only one card per row. The entire card layout was a column. So, the smartphone testing seemed very like when I resized
+for the smartphone on my laptop. The smartphone test results did not make a huge difference in the smartphone resize on laptop.
+
+Findings - I found that you are already very prepared for other browsers and devices once you write the code out for your page with the set width. The other browsers
+did not look any different for me. They all yielded a very identical result for me. However, I do not have an apple device, so I cannot be sure if my web pages worked
+on Safari, since Safari is no longer officially available for non iOS devices. Only Apple products could access the iOS. But overall, I thought the browsers results were
+pretty much the same.
