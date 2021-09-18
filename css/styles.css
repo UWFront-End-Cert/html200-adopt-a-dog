@@ -154,6 +154,9 @@ a.button.gray {
 .flex-container > .col-5-6 {
   width: 83.33%;
 }
+.flex-container .column {
+  width: 31.33%;
+}
 /*  */
 .min-height-small {
   min-height: 100px;
@@ -469,6 +472,9 @@ body#bg.mockNoBg .mocks-nav button.button-2 {
   .flex-container [class="col-1-4"] {
     width: 47.5% !important;
   }
+  .flex-container .column {
+    width: 47.5%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -478,6 +484,9 @@ body#bg.mockNoBg .mocks-nav button.button-2 {
   }
   .flex-container [class^="col-"] {
     width: 100% !important;
+  }
+  .flex-container .column {
+    width: 100%;
   }
 }
 .main-container {
