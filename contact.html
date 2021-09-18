@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>Adopt a Dog</title>
+  </head>
+  <body>
+    <a href="#main-content" class="hidden">Skip to main content</a>
+    <header>
+      <div class="grid-header">
+      <article class="logo-motto">
+        <h1><a href="index.html"><img src="images/adoptadog-logo.svg" alt="adopt a dog logo" class="logo">
+        <span class="meta">ADOPT A DOG</span></a></h1>
+        <p class="motto"><em>Seattle's premiere dog adoption agency</em></p>
+      </article>
+      <div class="checkout">
+        <p class="subtotal-display"><img src="images/cart-icon.svg" alt="checkout cart" class="cart"><span id="subtotal"></span></p>
+        <p><a href="adopt.html" class="button">Checkout</a></p>
+      </div>
+    </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="dogs.html" class="nav-item">Dogs</a></li>
+          <li><a href="adopt.html" class="nav-item">Adopt</a></li>
+          <li><a href="blog.html" class="nav-item">Blog</a></li>
+          <li><a href="#" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="main-content">
+      <h2>Checkout</h2>
+      <form method="GET" class="contact-form">
+
+        <label class="contact-form-info">Name
+          <input type="text" id="contact-name" name="customerName">
+        </label>
+
+        <label class="contact-form-info">Email Address
+          <input type="email" id="contact-email" name="customerEmail">
+        </label>
+
+        <label class="contact-form-info">Message to Adoptadog
+          <textarea id="contact-message" name="message" rows="4" cols="25"></textarea>
+        </label>
+
+        <input type="submit" value="Send Message" class="submit-button">
+      </form>
+    </section>
+    <footer>
+      <section class="footer-content">
+        <h2><img src="images/adoptadog-logo.svg" alt="adopt a dog logo" class="logo"></h2>
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+        esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="adopt.html">Adopt</a> / <a href="blog.html">Blog</a> / <a href="#">Contact</a></p>
+        <p>© 2021 Adoptadog, LLC   |   Seattle, WA</p>
+      </section>
+    </footer>
+    <script src="./adopt.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>Adopt a Dog</title>
+  </head>
+  <body>
+    <a href="#main-content" class="hidden">Skip to main content</a>
+    <header>
+      <div class="grid-header">
+      <article class="logo-motto">
+        <h1><a href="index.html"><img src="images/adoptadog-logo.svg" alt="adopt a dog logo" class="logo">
+        <span class="meta">ADOPT A DOG</span></a></h1>
+        <p class="motto"><em>Seattle's premiere dog adoption agency</em></p>
+      </article>
+      <div class="checkout">
+        <p class="subtotal-display"><img src="images/cart-icon.svg" alt="checkout cart" class="cart"><span id="subtotal"></span></p>
+        <p><a href="adopt.html" class="checkout-button">Checkout</a></p>
+      </div>
+    </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="#" class="nav-item">Dogs</a></li>
+          <li><a href="adopt.html" class="nav-item">Adopt</a></li>
+          <li><a href="blog.html" class="nav-item">Blog</a></li>
+          <li><a href="contact.html" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="grid-container-dogs-index">
+      <h2 class="dogs-header">Meet the Dogs!</h2>
+      <article class="dog-info">
+        <img onclick="murphyInfo()" src="images/murphy-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Murphy</h3>
+        <p><strong>Cost to Adopt:</strong> $<span id="adoptAmount">123.45</span></p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button class="button">Adopt</button></p>
+      </article>
+      <article class="dog-info">
+        <img onclick="poppyInfo()" src="images/poppy-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Poppy</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button   class="button">Adopt</button></p>
+      </article>
+      <article class="dog-info">
+        <img onclick="jackInfo()" src="images/jack-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Jack</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button class="button">Adopt</button></p>
+      </article>
+      <article class="dog-info">
+        <img onclick="duffyInfo()" src="images/duffy-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Duffy</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button   class="button">Adopt</button></p>
+      </article>
+      <article class="dog-info">
+        <img onclick="lucasInfo()" src="images/lucas-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Lucas</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button   class="button">Adopt</button></p>
+      </article>
+      <article class="dog-info">
+        <img onclick="jakeInfo()" src="images/jake-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Jake</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button class="button">Adopt</button></p>
+      </article>
+      <article class="dog-info">
+        <img onclick="angusInfo()" src="images/angus-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Angus</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button   class="button">Adopt</button></p>
+      </article>
+      <article class="dog-info">
+        <img onclick="violetInfo()" src="images/violet-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Violet</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button   class="button">Adopt</button></p>
+      </article>
+      <article class="dog-info">
+        <img onclick="piperInfo()" src="images/piper-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Piper</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button   class="button">Adopt</button></p>
+      </article>
+      <article class="dog-info">
+        <img onclick="maxInfo()" src="images/maximus-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Maximus</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button   class="button">Adopt</button></p>
+      </article>
+      <article  class="dog-info">
+        <img onclick="lunaInfo()" src="images/luna-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Luna</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button   class="button">Adopt</button></p>
+      </article>
+      <article  class="dog-info">
+        <img onclick="stellaInfo()" src="images/stella-card.jpg" alt="" class="dog-info-img">
+        <h3 class="dog-info-header">Stella</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+        <p><button   class="button">Adopt</button></p>
+      </article>
+    </section>
+    <footer>
+      <section class="footer-content">
+        <h2><img src="images/adoptadog-logo.svg" alt="adopt a dog logo" class="logo"></h2>
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+        esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <p><a href="index.html">Home</a> / <a href="#">Dogs</a> / <a href="adopt.html">Adopt</a> / <a href="blog.html">Blog</a> / <a href="contact.html">Contact</a></p>
+        <p>© 2021 Adoptadog, LLC   |   Seattle, WA</p>
+      </section>
+    </footer>
+    <script src="./dogs.js"></script>
+  </body>
+</html>
