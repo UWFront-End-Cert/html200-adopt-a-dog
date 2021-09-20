@@ -6,14 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     </head>
-    <body>
+    <body class="outer-grid">
         <header>
             <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo" width="500">
             <h1>Seattle's premiere dog adoption agency</h1>
             <aside class="checkout">
-                 <img src="images/cart-icon.svg" alt="Checkout logo shown as a shopping cart" width="25">
-                 $1234.56
-                 <a href="checkout.html">Checkout</a>
+                <div class= "price">
+                    <img src="images/cart-icon.svg" alt="Checkout logo shown as a shopping cart" width="25">
+                    <p>$1234.56</p>
+                </div>
+                <a href="checkout.html">Checkout</a>
              </aside>
         </header>
         <nav>
@@ -21,79 +23,83 @@
             <a href="dogs.html">Dogs</a> /
             <a href="blog.html">Blog</a>
         </nav>
-        <section>
+        <section class="checkout-form">
             <h2>Checkout</h2>
             <form method="GET">
                 <label>Name
-                    <input type="text" name="userName">
+                    <input id="userName" type="text" name="userName">
                 </label>
                 <label>Email Address
-                    <input type="email" name="userEmail">
+                    <input id="userEmail" type="email" name="userEmail">
                 </label>
                 <label>Street Address
-                    <input type="text" name="userAddress">
+                    <input id="userAddress" type="text" name="userAddress">
                 </label>
-                <label>City
-                    <input type="text" name="City">
-                </label>
-                <label for="state">State
-                    <select id="state" name="state">
-                        <option value="AK">AK</option>
-                        <option value="AL">AL</option>
-                        <option value="AR">AR</option>
-                        <option value="AZ">AZ</option>
-                        <option value="CA">CA</option>
-                        <option value="CO">CO</option>
-                        <option value="CT">CT</option>
-                        <option value="DE">DE</option>
-                        <option value="FL">FL</option>
-                        <option value="GA">GA</option>
-                        <option value="HI">HI</option>
-                        <option value="IA">IA</option>
-                        <option value="ID">ID</option>
-                        <option value="IL">IL</option>
-                        <option value="IN">IN</option>
-                        <option value="KS">KS</option>
-                        <option value="KY">KY</option>
-                        <option value="LA">LA</option>
-                        <option value="MA">MA</option>
-                        <option value="MD">MD</option>
-                        <option value="ME">ME</option>
-                        <option value="MI">MI</option>
-                        <option value="MN">MN</option>
-                        <option value="MO">MO</option>
-                        <option value="MS">MS</option>
-                        <option value="MT">MT</option>
-                        <option value="NC">NC</option>
-                        <option value="ND">ND</option>
-                        <option value="NE">NE</option>
-                        <option value="NH">NH</option>
-                        <option value="NJ">NJ</option>
-                        <option value="NM">NM</option>
-                        <option value="NV">NV</option>
-                        <option value="NY">NY</option>
-                        <option value="OH">OH</option>
-                        <option value="OK">OK</option>
-                        <option value="OR">OR</option>
-                        <option value="PA">PA</option>
-                        <option value="RI">RI</option>
-                        <option value="SC">SC</option>
-                        <option value="SD">SD</option>
-                        <option value="TN">TN</option>
-                        <option value="TX">TX</option>
-                        <option value="UT">UT</option>
-                        <option value="VA">VA</option>
-                        <option value="VT">VT</option>
-                        <option value="WA">WA</option>
-                        <option value="WI">WI</option>
-                        <option value="WV">WV</option>
-                        <option value="WY">WY</option>
-                    </select>
-                </label>
-                <label>
-                    Zip Code
-                    <input type="text" name="zipCode">
-                </label>
+                <div class="city-state-zip">
+                    <label class="citystate">
+                        City
+                        <input id="city" type="text" name="City">
+                    </label>
+                    <label class="citystate">
+                        State
+                        <select id="state" name="state">
+                            <option value="AK">AK</option>
+                            <option value="AL">AL</option>
+                            <option value="AR">AR</option>
+                            <option value="AZ">AZ</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="IA">IA</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="MA">MA</option>
+                            <option value="MD">MD</option>
+                            <option value="ME">ME</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MO">MO</option>
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="NE">NE</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NV">NV</option>
+                            <option value="NY">NY</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VA">VA</option>
+                            <option value="VT">VT</option>
+                            <option value="WA">WA</option>
+                            <option value="WI">WI</option>
+                            <option value="WV">WV</option>
+                            <option value="WY">WY</option>
+                        </select>
+                    </label>
+                    <label>
+                        Zip Code
+                        <input id="zipCode" type="text" name="zipCode">
+                    </label>
+                </div>
                 <fieldset>
                     <legend>First Time adopter?</legend>
                     <label>
@@ -101,34 +107,44 @@
                         Yes
                     </label>
                     <label>
-                        <input type="radio" name="firstAdopt" value="No">
+                        <input id="no" type="radio" name="firstAdopt" value="No">
                         No
                     </label>
                 </fieldset>
-                <label for="pickupLoc">Pickup Location
-                <select id="pickupLoc" name="pickupLoc">
-
+                <label for="location">Pickup Location
+                </label>
+                <select id="location" name="location">
+                    <option value="Seattle">Seattle</option>
                 </select>
-            </label>
             </form>
 
-            <h2>Dogs Adopted</h2>
-            <img src="images/lucas-checkout.jpg" alt="checkout image of Lucas the dog">
-            <h3>Lucas</h3>
-            <p><strong>Cost to Adopt:</strong> $123.45</p>
-            <img src="images/duffy-checkout.jpg" alt="checkout image of Duffy the dog">
-            <h3>Duffy</h3>
-            <p><strong>Cost to Adopt:</strong> $123.45</p>
-            <h2>Total Adoption Cost</h2>
-            <p>$1234.56</p>
+            <p id="adopted">Dogs Adopted<p>
+            <div class="adoption-cart">
+                <img src="images/lucas-checkout.jpg" alt="checkout image of Lucas the dog">
+                <div class="cart-dog">
+                    <h3>Lucas</h3>
+                    <p><strong>Cost to Adopt:</strong> $123.45</p>
+                </div>
+                <img src="images/duffy-checkout.jpg" alt="checkout image of Duffy the dog">
+                <div class="cart-dog">
+                    <h3>Duffy</h3>
+                    <p><strong>Cost to Adopt:</strong> $123.45</p>
+                </div>
+
+            </div>
+            <p id="total">Total Adoption Cost</p>
+            <p id="total-cost">$1234.56</p>
+            <input type="submit" value="Submit">
         </section>
         <footer>
+            <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo" width="500">
+
             <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
 esseque invenienihil imaximu scideru ptistiusam consequunt</p>
 
-            <a href="index.html">Home</a> /
+            <p><a href="index.html">Home</a> /
             <a href="dogs.html">Dogs</a> /
-            <a href="blog.html">Blog</a>
+            <a href="blog.html">Blog</a></p>
 
             <p>&copy; Adoptadog, LLC | Seattle, WA</p>
         </footer>
