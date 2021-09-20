@@ -4,14 +4,18 @@
         <meta charset="utf-8">
         <title>Adopt-A-Dog | Dog Adoption Agency</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     </head>
-    <body>
+    <body class="outer-grid">
         <header>
-             <h1>ADOPT A DOG</h1>
-             <h2>Seattle's premiere dog adoption agency</h2>
-             <aside class="checkout">
-                 cart icon $1234.56
-                 <a href="checkout.html">Checkout</a>
+            <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo" width="500">
+            <h1>Seattle's premiere dog adoption agency</h1>
+            <aside class="checkout">
+                <div class= "price">
+                    <img src="images/cart-icon.svg" alt="Checkout logo shown as a shopping cart" width="25">
+                    <p>$1234.56</p>
+                </div>
+                <a href="checkout.html">Checkout</a>
              </aside>
         </header>
         <nav>
@@ -19,64 +23,103 @@
             <a href="dogs.html">Dogs</a> /
             <a href="blog.html">Blog</a>
         </nav>
-        <h1>Here are all of our Dogs!</h1>
-        <article class="dog1">
-            <img src="images/murphy-card.jpg" alt="A photo of a brown dog named Murphy">
-            <h3>Murphy</h3>
-            <strong>Cost to Adopt</strong>: $123.45
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        </article>
-        <article class="dog2">
-            <img src="images/poppy-card.jpg" alt="A photo of a white dog named Poppy">
-            <h3>Poppy</h3>
-            <strong>Cost to Adopt</strong>: $123.45
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        </article>
-        <article class="dog3">
-            <img src="images/jack-card.jpg" alt="A photo of a brown and white dog named Jack">
-            <h3>Jack</h3>
-            <strong>Cost to Adopt</strong>: $123.45
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        </article>
-        <article class="dog4">
-            <img src="images/duffy-card.jpg" alt="A photo of a white and brown dog named Duffy">
-            <h3>Duffy</h3>
-            <strong>Cost to Adopt</strong>: $123.45
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        </article>
-        <article class="dog5">
-            <img src="images/lucas-card.jpg" alt="A photo of a black dog named Lucas">
-            <h3>Lucas</h3>
-            <strong>Cost to Adopt</strong>: $123.45
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        </article>
-        <article class="dog6">
-            <img src="images/jake-card.jpg" alt="A photo of a white dog named Jake">
-            <h3>Jake</h3>
-            <strong>Cost to Adopt</strong>: $123.45
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        </article>
-        <article class="dog7">
-            <img src="images/angus-card.jpg" alt="A photo of a brown dog named Angus">
-            <h3>Angus</h3>
-            <strong>Cost to Adopt</strong>: $123.45
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        </article>
-        <article class="dog8">
-            <img src="images/violet-card.jpg" alt="A photo of a brown dog named Violet">
-            <h3>Violet</h3>
-            <strong>Cost to Adopt</strong>: $123.45
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-        </article>
-        <a href="dogs.html">See More Dogs</a>
+        <div class="welcome">
+            <h1>Here are all of our Dogs!</h1>
+        </div>
+        <div class="adoptable">
+            <article class="dog">
+                <img src="images/murphy-card.jpg" alt="A photo of a brown dog named Murphy">
+                <h3>Murphy</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+            <article class="dog">
+                <img src="images/poppy-card.jpg" alt="A photo of a white dog named Poppy">
+                <h3>Poppy</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+            <article class="dog">
+                <img src="images/jack-card.jpg" alt="A photo of a brown and white dog named Jack">
+                <h3>Jack</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+            <article class="dog">
+                <img src="images/duffy-card.jpg" alt="A photo of a white and brown dog named Duffy">
+                <h3>Duffy</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+            <article class="dog">
+                <img src="images/lucas-card.jpg" alt="A photo of a black dog named Lucas">
+                <h3>Lucas</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+            <article class="dog">
+                <img src="images/jake-card.jpg" alt="A photo of a white dog named Jake">
+                <h3>Jake</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+            <article class="dog">
+                <img src="images/angus-card.jpg" alt="A photo of a brown dog named Angus">
+                <h3>Angus</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+            <article class="dog">
+                <img src="images/violet-card.jpg" alt="A photo of a brown dog named Violet">
+                <h3>Violet</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+            <article class="dog">
+                <img src="images/piper-card.jpg" alt="A photo of a brown dog named Piper">
+                <h3>Violet</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+            <article class="dog">
+                <img src="images/maximus-card.jpg" alt="A photo of a black dog named Maximus">
+                <h3>Violet</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+            <article class="dog">
+                <img src="images/luna-card.jpg" alt="A photo of a yellow dog named Luna">
+                <h3>Violet</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+            <article class="dog">
+                <img src="images/stella-card.jpg" alt="A photo of a brown dog named Stella">
+                <h3>Violet</h3>
+                <p><strong>Cost to Adopt</strong>: $123.45</p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <input type="submit" value="Adopt">
+            </article>
+        </div>
         <footer>
+            <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo" width="500">
+
             <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
 esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-
-            <a href="index.html">Home</a> /
+            <p><a href="index.html">Home</a> /
             <a href="dogs.html">Dogs</a> /
-            <a href="blog.html">Blog</a>
-
+            <a href="blog.html">Blog</a></p>
             <p>&copy; Adoptadog, LLC | Seattle, WA</p>
         </footer>
     </body>
