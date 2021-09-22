@@ -6,6 +6,7 @@
   ],
   "settings": {
     "editor.wordWrapColumn": 120,
-    "editor.wrappingIndent": "indent"
+    "editor.wrappingIndent": "indent",
+    "editor.wordWrap": "wordWrapColumn"
   }
 }

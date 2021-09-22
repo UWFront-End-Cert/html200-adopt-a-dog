@@ -574,7 +574,7 @@ ul.breadcrumbs.footer li a {
 
 /* mock v2 */
 .mockNoBg header {
-  background: var(--color-blue);
+  background-image: linear-gradient(to top right, var(--color-blue), var(--color-green));
 }
 .mockNoBg footer {
   background: var(--color-darkgray);
