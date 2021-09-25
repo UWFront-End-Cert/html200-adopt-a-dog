@@ -99,28 +99,20 @@ section > p {
 
 
 .description > img {
+    float: left;
     min-width: 35%;
     height: auto;
-    padding: 0 0 2% 0;
+    padding: 0 3rem 2% 3rem;
 }
 
 .description {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.content {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-end;
     line-height: 2rem;
-    margin: 0 2rem 4rem 2rem;
 }
 
-.content > h2 {
-    margin-bottom: 2rem;
+.description > h2 {
+    margin: 2rem 0;
 }
 
 .adoptable {
