@@ -4,150 +4,156 @@
 <head>
   <meta charset="utf-8">
   <title>Our Dogs</title>
-  <script src="https://kit.fontawesome.com/9ab8b20a93.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 </head>
 
 <body>
   <header>
-    <img src="images/adoptadog-logo.svg" width="400" height="300" alt="Logo">
-    <p>Seattle's premiere dog adoption agency</p>
-    <i class="fas fa-shopping-cart"></i>
-    <p>$1234.56</p>
-    <a href="checkout.html">Checkout</a>
+    <figure class="logo">
+      <img src="images/adoptadog-logo.svg" class="image" width="300" height="200" alt="Logo">
+      <figcaption>Seattle's premiere dog adoption agency</figcaption>
+    </figure>
+    <div class="cart">
+      <img src="images/cart-icon.svg" width="20" height="30" alt="Shopping Cart Icon">
+      <p class="cost">$1234.56</p>
+      <a href="checkout.html" class="checkout">Checkout</a>
+    </div>
   </header>
   <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>/</li>
-        <li><a href="dogs.html">Dogs</a></li>
-        <li>/</li>
-        <li><a href="blog.html">Blog</a></li>
+      <ul class="topNav">
+        <li class="navBar home"><a href="index.html">Home</a></li>
+        <li class="navBar">/</li>
+        <li class="navBar"><a href="dogs.html">Dogs</a></li>
+        <li class="navBar">/</li>
+        <li class="navBar"><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
 
     <section>
       <h2>Here are all of our Dogs!</h2>
-      <section>
-        <img src="images/murphy-card.jpg" width="150" height="100" alt="Photo of Murphy.">
-        <h6>Murphy</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+      <div class="flex-container2">
+        <section class="card">
+          <img src="images/murphy-card.jpg" width="190" height="115" alt="Photo of Murphy.">
+          <h6>Murphy</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
 
-      <section>
-        <img src="images/poppy-card.jpg" width="150" height="100" alt="Photo of Poppy.">
-        <h6>Poppy</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+        <section class="card">
+          <img src="images/poppy-card.jpg" width="190" height="115" alt="Photo of Poppy.">
+          <h6>Poppy</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
 
-      <section>
-        <img src="images/jack-card.jpg" width="150" height="100" alt="Photo of Jack.">
-        <h6>Jack</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+        <section class="card">
+          <img src="images/jack-card.jpg" width="190" height="115" alt="Photo of Jack.">
+          <h6>Jack</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
 
-      <section>
-        <img src="images/duffy-card.jpg" width="150" height="100" alt="Photo of Jack.">
-        <h6>Duffy</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+        <section class="card">
+          <img src="images/duffy-card.jpg" width="190" height="115" alt="Photo of Jack.">
+          <h6>Duffy</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
 
-      <section>
-        <img src="images/lucas-card.jpg" width="150" height="100" alt="Photo of Jack.">
-        <h6>Lucas</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+        <section class="card">
+          <img src="images/lucas-card.jpg" width="190" height="115" alt="Photo of Jack.">
+          <h6>Lucas</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
 
-      <section>
-        <img src="images/jake-card.jpg" width="150" height="100" alt="Photo of Jack.">
-        <h6>Jake</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+        <section class="card">
+          <img src="images/jake-card.jpg" width="190" height="115" alt="Photo of Jack.">
+          <h6>Jake</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
 
-      <section>
-        <img src="images/angus-card.jpg" width="150" height="100" alt="Photo of Jack.">
-        <h6>Angus</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+        <section class="card">
+          <img src="images/angus-card.jpg" width="190" height="115" alt="Photo of Jack.">
+          <h6>Angus</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
 
-      <section>
-        <img src="images/violet-card.jpg" width="150" height="100" alt="Photo of Jack.">
-        <h6>Violet</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+        <section class="card">
+          <img src="images/violet-card.jpg" width="190" height="115" alt="Photo of Jack.">
+          <h6>Violet</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
 
-      <section>
-        <img src="images/piper-card.jpg" width="150" height="100" alt="Photo of Jack.">
-        <h6>Piper</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+        <section class="card">
+          <img src="images/piper-card.jpg" width="190" height="115" alt="Photo of Jack.">
+          <h6>Piper</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
 
-      <section>
-        <img src="images/maximus-card.jpg" width="150" height="100" alt="Photo of Jack.">
-        <h6>Maximus</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+        <section class="card">
+          <img src="images/maximus-card.jpg" width="190" height="115" alt="Photo of Jack.">
+          <h6>Maximus</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
 
-      <section>
-        <img src="images/luna-card.jpg" width="150" height="100" alt="Photo of Jack.">
-        <h6>Luna</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+        <section class="card">
+          <img src="images/luna-card.jpg" width="190" height="115" alt="Photo of Jack.">
+          <h6>Luna</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
 
-      <section>
-        <img src="images/stella-card.jpg" width="150" height="100" alt="Photo of Jack.">
-        <h6>Stella</h6>
-        <p>Cost to Adopt: $123.45</p>
-        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
-        re ea erum, qui doluptae</p>
-        <a href="checkout.html">Adopt</a>
-      </section>
+        <section class="card">
+          <img src="images/stella-card.jpg" width="190" height="115" alt="Photo of Jack.">
+          <h6>Stella</h6>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
+          re ea erum, qui doluptae</p>
+          <a href="checkout.html" class="adopt">Adopt</a>
+        </section>
+      </div>
 
     </section>
 
     <footer>
-      <img src="images/adoptadog-logo.svg" width="400" height="300" alt="Logo">
+      <img src="images/adoptadog-logo.svg" width="200" height="100" alt="Logo">
       <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam
       consequunt</p>
       <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>/</li>
-            <li><a href="dogs.html">Dogs</a></li>
-            <li>/</li>
-            <li><a href="#">Contact</a></li>
+            <li class="footer"><a href="index.html">Home</a></li>
+            <li class="footer">/</li>
+            <li class="footer"><a href="dogs.html">Dogs</a></li>
+            <li class="footer">/</li>
+            <li class="footer"><a href="#">Contact</a></li>
           </ul>
         </nav>
         <h6>&copy; 2018 Adoptadog, LLC | Seattle, WA</h6>
