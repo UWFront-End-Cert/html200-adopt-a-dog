@@ -13,8 +13,9 @@
   --color-lightgray: rgb(236, 236, 236); /* #333 */
   --color-gray: rgb(180, 180, 180); /* #333 */
   --color-darkgray: rgb(51, 51, 51); /* #090909 */
-  --color-black: rgb(9, 9, 9); /* #fff */
-  --color-white: #fff;
+  --color-black: rgb(9, 9, 9);
+  --color-white: rgb(255, 255, 255); /* #fff */
+  --color-magenta: rgb(213, 10, 74); /* d50a4a */
   /* grid */
   --grid-base: 16px;
   --grid-spacer: calc(var(--grid-base) * 2);
@@ -530,12 +531,22 @@ ul.breadcrumbs.footer li a {
 }
 
 /* forms */
+.form-checkout input:invalid {
+  border-color: var(--color-gray);
+}
+.form-checkout input:invalid:required {
+  border-color: var(--color-magenta);
+}
+.form-checkout input:valid {
+  border-color: var(--color-blue);
+}
+
 .form-checkout input,
 .form-checkout select {
   font-size: 1em;
-  height: 2em;
-  line-height: 1.5em;
-  padding: calc(var(--grid-base) * 1.5);
+  height: 3em;
+  line-height: 3em;
+  padding: calc(var(--grid-base));
   margin-bottom: calc(var(--grid-base) * 2);
   border: solid 1px var(--color-darkgray);
   background: var(--color-white);

@@ -4,7 +4,8 @@ const fields = [
     label: "Full Name",
     formInput: "input",
     type: "text",
-    name: "full-name",
+    name: "name",
+    required: true,
   },
   {
     column: "col-1-1-l",
@@ -12,6 +13,7 @@ const fields = [
     formInput: "input",
     type: "email",
     name: "email",
+    required: true,
   },
   {
     column: "col-1-1-l",
@@ -19,13 +21,15 @@ const fields = [
     formInput: "input",
     type: "text",
     name: "street-address",
+    required: true,
   },
   {
     column: "col-3-5-l",
     label: "City",
     formInput: "input",
-    name: "city",
     type: "text",
+    name: "city",
+    required: true,
   },
   {
     column: "col-1-5-l",
@@ -33,6 +37,7 @@ const fields = [
     formInput: "input",
     name: "state",
     type: "text",
+    required: true,
   },
   {
     column: "col-1-5-l",
@@ -40,18 +45,30 @@ const fields = [
     formInput: "input",
     name: "zip-code",
     type: "text",
+    required: true,
   },
+  /* TEMPORARILY DISABLED */
+  // {
+  //   column: "col-3-5-l",
+  //   label: "First-time Adopter",
+  //   formInput: "input",
+  //   name: ["first-time"],
+  //   type: "radio",
+  // },
+  // {
+  //   column: "col-3-5-l",
+  //   label: "Pick-up Location",
+  //   formInput: "select",
+  //   name: "pickup-location",
+  //   type: "dropdown",
+  // },
   {
-    label: "First-time Adopter",
+    column: "col-3-5-l",
+    label: "Dogs Adopted",
     formInput: "input",
-    name: "first-time",
-    type: "radio",
-  },
-  {
-    label: "Pick-up Location",
-    formInput: "select",
-    name: "pickup-location",
-    type: "dropdown",
+    name: "dogs-adopted",
+    type: "text",
+    required: true,
   },
 ];
 
@@ -79,3 +96,15 @@ for (let i = 0; i < fields.length; i += 1) {
   column.appendChild(label);
   column.appendChild(inputType);
 }
+
+const submitButton = document.createElement("button");
+submitButton.setAttribute("type", "submit");
+submitButton.textContent = "Submit";
+submitButton.classList.add("large");
+
+form.appendChild(submitButton);
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  alert("Form submitted!");
+});
