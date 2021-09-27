@@ -1,0 +1,355 @@
+*{
+  font-family: georgia;
+}
+
+/*Format Header*/
+header{
+  background-image: url('../images/header-image.jpg');
+  position: relative;
+  height: 20rem;
+}
+
+header figcaption{
+  color: rgb(119, 179, 0);
+  font-size: 1.5rem;
+}
+
+.logo figcaption{
+  position: absolute;
+  top: 9rem;
+  left: 5rem;
+}
+
+.image{
+  position: absolute;
+  left: 5rem;
+  top: 0;
+}
+
+.cart{
+  position: absolute;
+  top: 3rem;
+  right: 6rem;
+}
+
+.cart img{
+  float: left;
+  margin-right: 0.4rem;
+}
+
+.cost{
+  color: rgb(232,232,232);
+  font-size: 0.5rem;
+  font-weight: bolder;
+}
+
+.checkout{
+  text-decoration: none;
+  background-color: rgb(119, 179, 0);
+  color: rgb(232,232,232);
+  padding: 0.25rem 1.75rem;
+  font-size: 0.50rem;
+  font-weight: bolder;
+  margin-right: 1rem;
+}
+
+/* Format Top Navigation Bar*/
+.topNav{
+  list-style-type: none;
+  background-color: rgb(232,232,232);
+  padding: 1.5rem;
+  margin-top: 0;
+}
+
+.navBar{
+  display: inline;
+}
+
+.navBar a{
+  text-decoration: none;
+  color: rgb(0, 51, 102);
+  font-weight: bolder;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.home{
+  margin-left: 6.5rem;
+}
+
+/*Format Adopt A Dog*/
+.section1 img{
+  float: left;
+  padding: 0 3rem 5rem 8rem;
+}
+
+.section1 h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(0, 51, 102);
+  padding-top: 2rem;
+}
+
+.section1 p{
+  width: 85%;
+}
+
+/*Format List of Dog Header*/
+h2{
+  color: rgb(0, 51, 102);
+  margin-left: 8rem;
+}
+
+/*Format Dog Cards*/
+.flex-container, .flex-container2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container{
+  margin-top: 10rem;
+}
+
+.card{
+  box-shadow: 0 0 0.1rem 0;
+  width: 11.9rem;
+  height: 18rem;
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.card h6{
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin: 0 0.4rem;
+  text-align: left;
+  color: rgb(0, 51, 102);
+}
+
+.card p{
+  font-size: 0.8rem;
+  text-align: left;
+  margin-left: 0.4rem;
+}
+
+.adopt{
+  background-color: rgb(119, 179, 0);
+  text-decoration: none;
+  color: rgb(255,255,255);
+  padding: 0.4rem 4rem;
+  font-weight: bolder;
+}
+
+/*Format More Dogs*/
+.more{
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.moreDogs{
+  text-decoration: none;
+  background: rgb(232,232,232);
+  color: rgb(0, 51, 102);
+  padding: 0.5rem 1.75rem;
+}
+
+/*Format Blog Entries*/
+.blog{
+  margin: 8rem;
+}
+
+.blog1{
+  margin-top: 0;
+}
+
+.blog img{
+  float: left;
+  margin-right: 2rem;
+}
+
+.blog h4{
+  color: rgb(0, 51, 102);
+  font-weight: bolder;
+}
+
+.blog p{
+  margin-right: 3rem;
+}
+
+.blogheader{
+  color: rgb(0, 51, 102);
+  margin-left: 8rem;
+  font-weight: bolder;
+}
+
+/*Format Checkout*/
+.checkoutform{
+  margin-left: 8rem;
+}
+.checkoutform h1{
+  color: rgb(0, 51, 102);
+}
+
+label{
+  color: rgb(0, 51, 102);
+  font-weight: bolder;
+}
+
+input{
+  margin-bottom: 2rem;
+  width: 40%;
+  padding: 0.75rem;
+  display: block;
+}
+
+.address{
+  display: flex;
+  flex-direction: row;
+}
+
+.city{
+  width: 12rem;
+  margin-right: 2rem;
+}
+
+.state{
+  width: 4rem;
+  margin-right: 2rem;
+}
+
+.zip{
+  width: 7rem;
+  margin-right: 2rem;
+}
+
+.checkbox{
+  border: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+fieldset input{
+  display: inline;
+}
+
+.checkbox input{
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border: 0.1rem solid rgb(232,232,232);
+  border-radius: 50%;
+}
+
+.checkbox label{
+  color: rgb(0,0,0);
+  margin-left: 2rem;
+  padding-right: 3rem;
+}
+
+legend{
+  color: rgb(0, 51, 102);
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.pickupheader{
+  color: rgb(0, 51, 102);
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+.pickup select{
+  width: 10rem;
+  display: block;
+}
+
+.adoptedDogs h3{
+  color: rgb(0, 51, 102);
+  margin-top: 3rem;
+}
+
+.dogs{
+  display: flex;
+  flex-direction: row;
+}
+
+.dogs img{
+  margin-right: 0.5rem;
+}
+
+.duffy{
+  margin-left: 3rem;
+}
+
+.dog1 h6, .dog2 h6{
+  color: rgb(0, 51, 102);
+  font-weight: bolder;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dog1 p, .dog2 p{
+  font-size: 0.75rem;
+}
+
+.total{
+  margin-top: 3rem;
+}
+
+.total h6{
+  color: rgb(0, 51, 102);
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.submit{
+  width: 12rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  background-color: rgb(119, 179, 0);
+  color: white;
+  font-weight: bolder;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+/*Format Footer*/
+footer{
+  background-color: rgb(0, 51, 102);
+  color: rgb(255,255,255);
+  text-align: center;
+  height: 20rem;
+}
+
+footer p{
+  font-size: 0.75rem;
+  width: 28%;
+  margin: auto;
+}
+
+footer img{
+  margin-top: 2rem;
+}
+
+.footer{
+  display: inline;
+}
+
+.footer a{
+  text-decoration: none;
+  color: rgb(255,255,255);
+  font-size: 0.75rem;
+  font-weight: bolder;
+}
