@@ -37,7 +37,3 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
   alert("Form submitted!");
 });
-
-function myFunction() {
-  document.getElementById("myForm").submit();
-}

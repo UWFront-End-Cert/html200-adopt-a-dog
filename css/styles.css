@@ -532,10 +532,10 @@ ul.breadcrumbs.footer li a {
 
 /* forms */
 .form-checkout input:invalid {
-  border-color: var(--color-gray);
+  border-color: var(--color-magenta);
 }
 .form-checkout input:invalid:required {
-  border-color: var(--color-magenta);
+  border-color: var(--color-gray);
 }
 .form-checkout input:valid {
   border-color: var(--color-blue);
