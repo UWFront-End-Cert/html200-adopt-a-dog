@@ -24,99 +24,12 @@
     <div data-include="./inc/nav-mocks.html"></div>
     <div data-include="./inc/header.html"></div>
     <main class="main-container flex-container flex-start padding">
-      <h2>Checkout</h2>
-      <script>
-        function submitForm() {
-          document.getElementById("myForm").submit();
-        }
-      </script>
-      <form method="get" class="flex-container form-checkout" id="myForm">
-        <div class="col-2-3-l">
-          <div class="flex-container">
-            <div class="col-1-1-s">
-              <label for="name" class="label">Name: </label>
-              <input type="text" name="name" id="name" required />
-            </div>
-            <div class="col-1-1-s">
-              <label for="email" class="label">Email address: </label>
-              <input type="email" name="email" id="email" required />
-            </div>
-            <div class="col-1-1-s">
-              <label for="streetAdd" class="label">Street address: </label>
-              <input type="text" name="streetAdd" id="streetAdd" required />
-            </div>
-            <div class="col-2-5-m col-1-1-s">
-              <label for="city" class="label">City: </label>
-              <input type="text" name="city" id="city" required />
-            </div>
-            <div class="col-1-5-m col-1-1-s">
-              <label for="state" class="label">State: </label>
-              <input type="text" name="state" id="state" required />
-            </div>
-            <div class="col-2-5-m col-1-1-s">
-              <label for="zip" class="label">ZIP Code: </label>
-              <input type="text" name="zip" id="zip" required />
-            </div>
-            <div class="col-1-1-s">
-              <p class="label">First time adopter?</p>
-              <div class="flex-container flex-start">
-                <div class="col-1-3-l">
-                  <label for="firstTime"><input type="radio" name="first_time_adopter" for="yes" id="firstTime" required /> <span>Yes</span></label>
-                </div>
-                <div class="col-1-3-l">
-                  <label for="firstTime"><input type="radio" name="first_time_adopter" for="no" id="firstTime" /> <span>No</span></label>
-                </div>
-              </div>
-            </div>
-            <div class="col-1-1-s">
-              <p class="label col-1-1-s">Pickup Location:</p>
-              <br />
-              <select class="col-1-1-s" id="location" name="location">
-                <option value="opt1">Option 1</option>
-                <option value="opt2">Option 2</option>
-                <option value="opt3">Option 3</option>
-              </select>
-            </div>
-            <div class="col-1-1">
-              <p class="label margin-bottom">Dogs adopted:</p>
-              <br />
-              <div class="flex-container flex-start checkout-dogs">
-                <div class="col-auto"><img src="images/shop/lucas-checkout.jpg" alt="Lucas" class="dog-image" /></div>
-                <div class="col-auto" style="padding: 20px">
-                  <p class="dog-name">Lucas</p>
-                  <p class="dog-cost"><strong>Cost to Adopt:</strong> $123.45</p>
-                </div>
-                <div class="col-auto"><img src="images/shop/duffy-checkout.jpg" alt="Duffy" class="dog-image" /></div>
-                <div class="col-auto" style="padding: 20px">
-                  <p class="dog-name">Duffy</p>
-                  <p class="dog-cost"><strong>Cost to Adopt:</strong> $123.45</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-1-1-l">
-              <p class="label">Total Adoption Cost</p>
-              <p>$1234.56</p>
-              <button type="submit" value="Submit" onclick="alert('Form submitted successfully!')" class="button large">Submit</button>
-            </div>
-            <!--  -->
-            <div class="col-1-1-l"></div>
-          </div>
-        </div>
-        <div class="col-1-3-l"></div>
-      </form>
-      <form id="myForm" action="/action_page.php">
-        First name: <input type="text" name="fname" /><br />
-        Last name: <input type="text" name="lname" /><br /><br />
-        <input type="button" onclick="myFunction()" value="Submit form" />
-      </form>
-
-      <script>
-        function myFunction() {
-          document.getElementById("myForm").submit();
-        }
-      </script>
+      <div class="col-1-1"><h2>Checkout</h2></div>
+      <!-- js generated form -->
+      <div class="col-2-3-l form-checkout" id="checkoutForm"></div>
+      <div class="col-1-3-l"></div>
     </main>
-    <!-- <script src="./js/checkout.js"></script> -->
+    <script src="./js/checkout.js"></script>
     <div data-include="./inc/footer.html"></div>
     <!-- needed for include files -->
     <script>

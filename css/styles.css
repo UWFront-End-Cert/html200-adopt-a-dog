@@ -546,7 +546,8 @@ ul.breadcrumbs.footer li a {
   font-size: 1em;
   height: 3em;
   line-height: 3em;
-  padding: calc(var(--grid-base));
+  width: 100%;
+  padding: calc(var(--grid-base) * 0.5);
   margin-bottom: calc(var(--grid-base) * 2);
   border: solid 1px var(--color-darkgray);
   background: var(--color-white);
@@ -554,7 +555,7 @@ ul.breadcrumbs.footer li a {
 .form-checkout select {
   margin-bottom: calc(var(--grid-base) / 3);
 }
-.form-checkout .label {
+.form-checkout label {
   display: block;
   color: var(--color-blue);
   font-family: var(--font-serif);
