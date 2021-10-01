@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adoptadog Blog | Adopt-A-Dog</title>
+    <meta name="description" content="Meta description" />
+    <meta name="keywords" content="Meta keywords" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="./js/include-script.js"></script>
+  </head>
+  <body id="bg">
+    <script>
+      function addBodyClass() {
+        var element = document.getElementById("bg");
+        element.classList.add("mockNoBg");
+      }
+      function removeBodyClass() {
+        var element = document.getElementById("bg");
+        element.classList.remove("mockNoBg");
+      }
+    </script>
+    <div data-include="./inc/nav-mocks.html"></div>
+    <div data-include="./inc/header.html"></div>
+    <main id="blogArticles">
+      <div class="col-1-1"><h2 class="margin-bottom">Adoptadog Blog</h2></div>
+    </main>
+    <div data-include="./inc/footer.html"></div>
+    <script src="js/posts.js"></script>
+    <!-- needed for include files -->
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>
