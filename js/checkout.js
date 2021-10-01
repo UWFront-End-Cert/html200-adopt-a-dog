@@ -7,6 +7,7 @@ const fields = [
     name: "name",
     required: true,
     value: "Misty Fields",
+    photo: "",
   },
   {
     column: "col-1-1-l",
@@ -16,6 +17,7 @@ const fields = [
     name: "email",
     required: true,
     value: "misty@rainydays.com",
+    photo: "",
   },
   {
     column: "col-1-1-l",
@@ -25,6 +27,7 @@ const fields = [
     name: "street-address",
     required: true,
     value: "Main Street",
+    photo: "",
   },
   {
     column: "col-3-5-l",
@@ -34,6 +37,7 @@ const fields = [
     name: "city",
     required: true,
     value: "Seattle",
+    photo: "",
   },
   {
     column: "col-1-5-l",
@@ -43,6 +47,7 @@ const fields = [
     type: "text",
     required: true,
     value: "WA",
+    photo: "",
   },
   {
     column: "col-1-5-l",
@@ -52,6 +57,7 @@ const fields = [
     type: "text",
     required: true,
     value: "55555",
+    photo: "",
   },
   {
     column: "col-3-5-l",
@@ -61,6 +67,7 @@ const fields = [
     type: "radio",
     required: false,
     value: "no",
+    photo: "",
   },
   {
     column: "col-3-5-l",
@@ -71,6 +78,7 @@ const fields = [
     required: false,
     class: "col-1-1",
     value: "Foster Home",
+    photo: "",
   },
   {
     column: "col-3-5-l",
@@ -79,7 +87,8 @@ const fields = [
     name: "dogs-adopted",
     type: "select",
     required: false,
-    value: "",
+    value: "123.45",
+    photo: "./images/shop/lucas-checkout.jpg",
   },
 ];
 
@@ -103,12 +112,16 @@ for (let i = 0; i < fields.length; i += 1) {
   inputType.setAttribute("type", field.type);
   inputType.setAttribute("name", field.name);
 
+  const dogPhoto = document.createElement("img");
+  dogPhoto.setAttribute("src", field.photo);
+
   formContainer.appendChild(form);
   form.appendChild(column);
   column.appendChild(label);
   column.appendChild(inputType);
+  column.appendChild(dogPhoto);
 
-  // console log name of inputs
+  // console log value of inputs
   console.log(field.value);
 }
 
