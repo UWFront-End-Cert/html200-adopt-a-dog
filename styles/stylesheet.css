@@ -16,14 +16,17 @@ header figcaption{
 
 .logo figcaption{
   position: absolute;
-  top: 9rem;
+  top: 8.5rem;
   left: 5rem;
+  font-size: 1.3rem;
 }
 
 .image{
   position: absolute;
   left: 5rem;
-  top: 0;
+  top: 2.5rem;
+  width: 25%;
+  height: 35%;
 }
 
 .cart{
@@ -35,6 +38,8 @@ header figcaption{
 .cart img{
   float: left;
   margin-right: 0.4rem;
+  width: 18%;
+  height: 28%;
 }
 
 .cost{
@@ -81,6 +86,8 @@ header figcaption{
 .section1 img{
   float: left;
   padding: 0 3rem 5rem 8rem;
+  width: 25%;
+  height: 15%;
 }
 
 .section1 h3{
@@ -91,7 +98,7 @@ header figcaption{
 }
 
 .section1 p{
-  width: 85%;
+  width: 75%;
 }
 
 /*Format List of Dog Header*/
@@ -107,15 +114,17 @@ h2{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  min-width: 50%;
+  max-width: 100%;
 }
 
 .flex-container{
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 .card{
   box-shadow: 0 0 0.1rem 0;
-  width: 11.9rem;
+  width: 16%;
   height: 18rem;
   margin: 1.5rem;
   text-align: center;
@@ -133,6 +142,11 @@ h2{
   font-size: 0.8rem;
   text-align: left;
   margin-left: 0.4rem;
+}
+
+.card img{
+  width: 100%;
+  height: 40%;
 }
 
 .adopt{
@@ -169,15 +183,21 @@ h2{
 .blog img{
   float: left;
   margin-right: 2rem;
+  width: 25%;
+  height: 25%;
 }
 
 .blog h4{
   color: rgb(0, 51, 102);
   font-weight: bolder;
+  margin-bottom: 0;
+  font-size: 1.2rem;
 }
 
 .blog p{
-  margin-right: 3rem;
+  font-size: 0.80rem;
+  line-height: 1.2rem;
+  width: 85%;
 }
 
 .blogheader{
@@ -291,6 +311,13 @@ legend{
 
 .duffy{
   margin-left: 3rem;
+  width: 7%;
+  height: 7%;
+}
+
+.lucas{
+  width:7%;
+  height: 7%;
 }
 
 .dog1 h6, .dog2 h6{
@@ -341,6 +368,8 @@ footer p{
 
 footer img{
   margin-top: 2rem;
+  width: 35%;
+  height: 25%;
 }
 
 .footer{
