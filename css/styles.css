@@ -427,8 +427,11 @@ a.button.gray {
 
 /* blog cards */
 .card {
-  border: solid 1px var(--color-gray);
+  border: solid 3px var(--color-lightgray);
   margin-bottom: var(--grid-spacer);
+}
+.card.hover-state {
+  border: solid 3px var(--color-green);
 }
 .card img {
   width: 100%;
