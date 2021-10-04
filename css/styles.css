@@ -593,7 +593,8 @@ ul.breadcrumbs.footer li a {
   transition: transform 0.2s; /* Animation */
 }
 .dog-photo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  border: solid 3px var(--color-green);
 }
 
 /* mock v2 */
