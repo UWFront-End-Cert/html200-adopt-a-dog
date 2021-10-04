@@ -588,6 +588,14 @@ ul.breadcrumbs.footer li a {
   margin-left: calc(var(--grid-base) / 2);
 }
 
+/* image zoom */
+.dog-photo {
+  transition: transform 0.2s; /* Animation */
+}
+.dog-photo:hover {
+  transform: scale(1.2);
+}
+
 /* mock v2 */
 .mockNoBg header {
   background-image: linear-gradient(to top right, var(--color-blue), var(--color-green));

@@ -8,4 +8,10 @@ $(document).ready(function () {
     .mouseleave(function () {
       $(this).removeClass("hover-state");
     });
+
+  $("button").ripples({
+    resolution: 500,
+    dropRadius: 10,
+    perturbance: 0.02,
+  });
 });
