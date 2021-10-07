@@ -83,22 +83,50 @@ header figcaption{
 }
 
 /*Format Adopt A Dog*/
+aside{
+  float: right;
+  width: 28%;
+}
+
+aside p{
+  font-size: 0.75rem;
+  width: 65%;
+}
+
+aside h3{
+  font-size: 2rem;
+  color: rgb(0, 51, 102);
+}
+
+aside h4{
+  color: rgb(0, 51, 102);
+}
+
+aside a{
+  text-decoration: none;
+  color: rgb(0, 184, 230);
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+aside img{
+  margin-top: 1rem;
+}
+
 .section1 img{
-  float: left;
-  padding: 0 3rem 5rem 8rem;
-  width: 25%;
-  height: 15%;
+  padding: 0 3rem 0 8rem;
 }
 
 .section1 h3{
   font-size: 1.5rem;
   font-weight: bold;
   color: rgb(0, 51, 102);
-  padding-top: 2rem;
+  padding: 0 3rem 0 8rem;
 }
 
 .section1 p{
-  width: 75%;
+  width: 50%;
+  padding: 0 3rem 0 8rem;
 }
 
 /*Format List of Dog Header*/
@@ -114,17 +142,34 @@ h2{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-width: 50%;
-  max-width: 100%;
 }
 
 .flex-container{
   margin-top: 6rem;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex-container, .flex-container2{
+    display: block;
+    margin-left: 35%;
+  }
+
+  aside img, aside p{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+  .flex-container, .flex-container2{
+    width: 50%;
+    margin-left: 15%;
+  }
 }
 
 .card{
   box-shadow: 0 0 0.1rem 0;
-  width: 16%;
+  width: 11.9rem;
   height: 18rem;
   margin: 1.5rem;
   text-align: center;
@@ -159,7 +204,7 @@ h2{
 
 /*Format More Dogs*/
 .more{
-  text-align: center;
+  margin-left: 31%;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
