@@ -1,156 +1,76 @@
-// prettier-ignore
-// const fields = [
-//   {
-//     column: "col-1-1-l",
-//     label: "Full Name",
-//     formInput: "input",
-//     type: "text",
-//     name: "name",
-//     required: true,
-//     value: "Misty Fields",
-//   },
-//   {
-//     column: "col-1-1-l",
-//     label: "Email Address",
-//     formInput: "input",
-//     type: "email",
-//     name: "email",
-//     required: true,
-//     value: "misty@rainydays.com",
-//   },
-//   {
-//     column: "col-1-1-l",
-//     label: "Street Address",
-//     formInput: "input",
-//     type: "text",
-//     name: "street-address",
-//     required: true,
-//     value: "Main Street",
-//   },
-//   {
-//     column: "col-3-5-l",
-//     label: "City",
-//     formInput: "input",
-//     type: "text",
-//     name: "city",
-//     required: true,
-//     value: "Seattle",
-//   },
-//   {
-//     column: "col-1-5-l",
-//     label: "State",
-//     formInput: "input",
-//     name: "state",
-//     type: "text",
-//     required: true,
-//     value: "WA",
-//   },
-//   {
-//     column: "col-1-5-l",
-//     label: "ZIP Code",
-//     formInput: "input",
-//     name: "zip-code",
-//     type: "text",
-//     required: true,
-//     value: "55555",
-//   },
-//   {
-//     column: "col-3-5-l",
-//     label: "First-time Adopter",
-//     formInput: "input",
-//     name: ["first-time"],
-//     type: "radio",
-//     required: false,
-//     value: "no",
-//   },
-//   {
-//     column: "col-3-5-l",
-//     label: "Pick-up Location",
-//     formInput: "select",
-//     name: "pickup-location",
-//     type: "dropdown",
-//     required: false,
-//     class: "col-1-1",
-//     value: "Foster Home",
-//   },
-// ];
-
-// $(document).ready(function () {
-//   $("#checkoutForm").addClass("form-checkout").append("<form></form>");
-//   $("form").addClass("flex-container");
-
-//   $.each(fields, function (key, value) {
-//     $("form").append("<div></div>");
-//     console.log(key + ": " + value);
-//   });
-// });
-
-var fields = [
+const fields = [
   {
-    colWidth: "col-1-1-l",
+    colWidth: "col-1-1",
     inputId: "fullName",
     inputLabel: "Full Name",
-    inputField: "<input></input>",
-    inputType: "text"
+    inputField: "<input type='text'>",
   },
   {
-    colWidth: "col-1-1-l",
+    colWidth: "col-1-1",
     inputId: "emailAddress",
     inputLabel: "Email Address",
-    inputField: "<input></input>",
-    inputType: "email"
+    inputField: "<input type='email'>",
   },
   {
-    colWidth: "col-1-1-l",
+    colWidth: "col-1-1",
     inputId: "streetAddress",
     inputLabel: "Street Address",
     inputField: "<select></select>",
-    inputType: "option"
   },
   {
-    colWidth: "col-3-5-l",
+    colWidth: "col-3-5",
     inputId: "city",
     inputLabel: "City",
-    inputField: "<input></input>",
-    inputType: "text"
+    inputField: "<input>",
+    inputType: "text",
   },
   {
-    colWidth: "col-1-5-l",
+    colWidth: "col-1-5",
     inputId: "state",
     inputLabel: "State",
-    inputField: "<input></input>",
-    inputType: "text"
+    inputField: "<input type='text'>",
+    inputType: "text",
   },
   {
-    colWidth: "col-1-5-l",
+    colWidth: "col-1-5",
     inputId: "zipCode",
     inputLabel: "ZIP Code",
     inputField: "<input></input>",
-    inputType: "text"
+    inputType: "text",
   },
   {
-    colWidth: "col-3-5-l",
+    colWidth: "col-3-5",
     inputId: "firsttimeAdopt",
     inputLabel: "First-time Adopter",
+    // multiple choices
     inputField: "<select></select>",
-    inputType: ""
+    inputType: "",
   },
   {
-    colWidth: "col-3-5-l",
+    colWidth: "col-3-5",
     inputId: "pickupLoc",
     inputLabel: "Pick-up Location",
     inputField: "<input></input>",
-    inputType: "radio"
-  }
+    // multiple choices
+    inputType: "radio",
+  },
 ];
 
 $(document).ready(function () {
-  $("#checkoutForm").addClass("form-checkout").append("<form></form>");
+  $("#checkoutForm").append("<form></form>").addClass("form-checkout");
+  const form = $("form").addClass("flex-container");
 
-  $.each(fields, function (i, item) {
-    $("form").addClass("flex-container").append("<div class='form-row'></div>");
-    $(".form-row").append(item.inputId + "<br />");
+  $.each(fields, function (index, value) {
+    const form_row = $("<div class='form-row'></div>");
+    const col_width = value.colWidth;
+    const input_label = value.inputLabel;
+    const input_field = value.inputField;
+    // const input_id = value.inputId;
 
-    console.log(item.colWidth + ", " + item.inputLabel + ", " + item.inputField + ", " + item.inputType + ", " + item.inputId);
+    $(form).append(form_row);
+    $(form_row).addClass(col_width);
+    $(form_row).append(input_label);
+    $(form_row).append(input_field);
+    // $(input_field).append("id=" + input_id);
   });
 });
