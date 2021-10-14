@@ -4,9 +4,22 @@
 
 /*Format Header*/
 header{
+  background: linear-gradient(45deg,rgb(0, 51, 102),rgb(0, 0, 0),rgb(0, 51, 102));
   background-image: url('../images/header-image.jpg');
   position: relative;
   height: 20rem;
+}
+
+@media screen and (max-width: 1000px) {
+  header{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+  header{
+    width: 100%;
+  }
 }
 
 header figcaption{
