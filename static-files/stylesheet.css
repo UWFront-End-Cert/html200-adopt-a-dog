@@ -1,0 +1,101 @@
+:root {
+    --lime: #87BD42;
+    --light-gray: #ECECEC;
+    --dark-blue: #294F68;
+}
+
+header, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER ELEMENT
+ * 
+*/
+header {
+    background-color: blue;
+    background-image: url("../images/header-image.jpg");
+    background-size: cover;
+
+    width: 100%;
+    height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#header-logo-caption-box {
+    width: 30%;
+    display: inline-block;
+    
+    /* Distance will need to adapt based on screen size */
+    padding-left: 5rem;
+}
+
+#header-dog-logo {
+    width: 100%;
+}
+
+#header-caption {
+    margin: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+
+    color: var(--lime);
+}
+
+#cart-box {
+    align-self: flex-end;
+    align-content: flex-start;
+}
+
+#cart-and-total-box {
+    width: 100%;
+
+    display: flex;
+
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#cart-logo {
+    height: 2rem;
+}
+
+#cart-total {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+#cart-total::before {
+    content: "$";
+}
+
+#cart-box button {
+    border: none;
+    margin-top:.5rem;
+    padding: .5rem 3rem;
+    background-color: var(--lime);
+    color: #FFF;
+}
+
+/* NAVBAR ELEMENT
+ *
+*/
+
+nav {
+    margin: 0;
+
+    background-color: var(--light-gray);
+}
+
+nav ul {
+    
+}
