@@ -1,138 +1,95 @@
+// prettier-ignore
 const fields = [
   {
-    column: "col-1-1-l",
-    label: "Full Name",
-    formInput: "input",
-    type: "text",
-    name: "name",
-    required: true,
-    value: "Misty Fields",
-    photo: "",
+    colWidth: "col-1-1",
+    inputId: "fullName",
+    inputLabel: "Full Name",
+    inputField: "<input type='text'>",
   },
   {
-    column: "col-1-1-l",
-    label: "Email Address",
-    formInput: "input",
-    type: "email",
-    name: "email",
-    required: true,
-    value: "misty@rainydays.com",
-    photo: "",
+    colWidth: "col-1-1",
+    inputId: "emailAddress",
+    inputLabel: "Email Address",
+    inputField: "<input type='email'>",
   },
   {
-    column: "col-1-1-l",
-    label: "Street Address",
-    formInput: "input",
-    type: "text",
-    name: "street-address",
-    required: true,
-    value: "Main Street",
-    photo: "",
+    colWidth: "col-1-1",
+    inputId: "streetAddress",
+    inputLabel: "Street Address",
+    inputField: "<input type='text'>",
   },
   {
-    column: "col-3-5-l",
-    label: "City",
-    formInput: "input",
-    type: "text",
-    name: "city",
-    required: true,
-    value: "Seattle",
-    photo: "",
+    colWidth: "col-3-5-m col-1-1-s",
+    inputId: "city",
+    inputLabel: "City",
+    inputField: "<input type='text'>",
   },
   {
-    column: "col-1-5-l",
-    label: "State",
-    formInput: "input",
-    name: "state",
-    type: "text",
-    required: true,
-    value: "WA",
-    photo: "",
+    colWidth: "col-1-5-m col-1-1-s",
+    inputId: "state",
+    inputLabel: "State",
+    inputField: "<input type='text'>",
   },
   {
-    column: "col-1-5-l",
-    label: "ZIP Code",
-    formInput: "input",
-    name: "zip-code",
-    type: "text",
-    required: true,
-    value: "55555",
-    photo: "",
+    colWidth: "col-1-5-m col-1-1-s",
+    inputId: "zipCode",
+    inputLabel: "ZIP Code",
+    inputField: "<input type='text'>",
   },
   {
-    column: "col-3-5-l",
-    label: "First-time Adopter",
-    formInput: "input",
-    name: ["first-time"],
-    type: "radio",
-    required: false,
-    value: "no",
-    photo: "",
+    colWidth: "col-3-5-m col-1-1-s",
+    inputId: "firsttimeAdopt",
+    inputLabel: "First-time Adopter",
+    inputField: "<input type='radio'>",
   },
   {
-    column: "col-3-5-l",
-    label: "Pick-up Location",
-    formInput: "select",
-    name: "pickup-location",
-    type: "dropdown",
-    required: false,
-    class: "col-1-1",
-    value: "Foster Home",
-    photo: "",
-  },
-  {
-    column: "col-3-5-l",
-    label: "Dogs Adopted",
-    formInput: "select",
-    name: "dogs-adopted",
-    type: "select",
-    required: false,
-    value: "123.45",
-    photo: "./images/shop/lucas-checkout.jpg",
+    colWidth: "col-3-5-m col-1-1-s",
+    inputId: "pickupLoc",
+    inputLabel: "Pick-up Location",
+    inputField: "<select>",
   },
 ];
 
-const formContainer = document.getElementById("checkoutForm");
-const form = document.createElement("form");
-form.setAttribute("name", "form-checkout");
-form.classList.add("flex-container", "checkoutForm");
+$(document).ready(function () {
+  // build form
+  $("#checkoutForm").append("<form></form>").addClass("form-checkout");
+  const form = $("form").addClass("flex-container").attr("id", "checkout");
 
-for (let i = 0; i < fields.length; i += 1) {
-  const field = fields[i];
+  $.each(fields, function (i, value) {
+    const form_row = $("<div class='form-row'></div>");
+    const input_radio = $("<input type='radio'>");
 
-  const column = document.createElement("div");
-  column.classList.add(field.column);
+    $(form).append(form_row);
+    $(form_row).addClass(value.colWidth + " col-1-1-s");
+    $(form_row).append("<label>" + value.inputLabel + "</label>");
+    $("label").attr("for", value.inputId);
+    $(form_row).append(value.inputField);
+    $("input").attr("name", value.inputId);
+    $("input").attr("id", value.inputId);
+    $("input").attr("type", value.inputType);
+  });
 
-  const label = document.createElement("label");
-  label.textContent = field.label;
-  label.setAttribute("for", field.name);
+  // radio buttons
+  // const locations = ["Location 1", "Location 2", "Location 3"];
+  // const pickupLoc = $("#test");
 
-  const inputType = document.createElement(field.formInput);
-  inputType.setAttribute("id", field.name);
-  inputType.setAttribute("type", field.type);
-  inputType.setAttribute("name", field.name);
+  // $.each(locations, function (i, value) {
+  //   const option = $(pickupLoc).append(value);
+  //   option.value = locations.value;
+  //   option.text = locations.text;
+  // });
 
-  const dogPhoto = document.createElement("img");
-  dogPhoto.setAttribute("src", field.photo);
+  // $(function () {
+  //   $("#reg").click(function () {
+  //     if ($(form).is("type", "button"));
+  //     else console.log("test");
+  //   });
+  // });
 
-  formContainer.appendChild(form);
-  form.appendChild(column);
-  column.appendChild(label);
-  column.appendChild(inputType);
-  column.appendChild(dogPhoto);
-
-  // console log value of inputs
-  console.log(field.value);
-}
-
-const submitButton = document.createElement("button");
-submitButton.setAttribute("type", "submit");
-submitButton.textContent = "Submit";
-submitButton.classList.add("large");
-
-form.appendChild(submitButton);
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  alert("Thank you. The form information has been received.");
+  // submit button
+  $("form").submit(function (e) {
+    e.preventDefault();
+    alert("Submitted");
+  });
+  form.append("<button type='submit' form='checkout' value='Submit' class='col-1-2'>Submit</button>");
 });
