@@ -68,10 +68,11 @@ $(document).ready(function () {
     $("input").attr("type", value.inputType);
   });
 
+  $(form).append("<div class='form-row col-1-1'><button type='submit' form='checkout' value='Submit' class='large col-1-2'>Submit</button></div>");
+
   // submit button
   $("form").submit(function (e) {
     e.preventDefault();
     alert("Submitted");
   });
-  form.append("<button type='submit' form='checkout' value='Submit' class='col-1-2'>Submit</button>");
 });
