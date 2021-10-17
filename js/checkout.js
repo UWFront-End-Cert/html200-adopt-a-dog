@@ -57,7 +57,6 @@ $(document).ready(function () {
 
   $.each(fields, function (i, value) {
     const form_row = $("<div class='form-row'></div>");
-    const input_radio = $("<input type='radio'>");
 
     $(form).append(form_row);
     $(form_row).addClass(value.colWidth + " col-1-1-s");
@@ -68,23 +67,6 @@ $(document).ready(function () {
     $("input").attr("id", value.inputId);
     $("input").attr("type", value.inputType);
   });
-
-  // radio buttons
-  // const locations = ["Location 1", "Location 2", "Location 3"];
-  // const pickupLoc = $("#test");
-
-  // $.each(locations, function (i, value) {
-  //   const option = $(pickupLoc).append(value);
-  //   option.value = locations.value;
-  //   option.text = locations.text;
-  // });
-
-  // $(function () {
-  //   $("#reg").click(function () {
-  //     if ($(form).is("type", "button"));
-  //     else console.log("test");
-  //   });
-  // });
 
   // submit button
   $("form").submit(function (e) {
