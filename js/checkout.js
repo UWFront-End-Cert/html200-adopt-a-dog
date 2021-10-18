@@ -51,7 +51,6 @@ const fields = [
 ];
 
 $(document).ready(function () {
-  // build form
   $("#checkoutForm").append("<form></form>").addClass("form-checkout");
   const form = $("form").addClass("flex-container").attr("id", "checkout");
 
@@ -66,13 +65,13 @@ $(document).ready(function () {
     $("input").attr("name", value.inputId);
     $("input").attr("id", value.inputId);
     $("input").attr("type", value.inputType);
+
+    console.log(value.inputLabel + " " + value.inputId);
   });
 
   $(form).append("<div class='form-row col-1-1'><button type='submit' form='checkout' value='Submit' class='large col-1-2'>Submit</button></div>");
 
-  // submit button
-  $("form").submit(function (e) {
+  $("#checkout").submit(function (e) {
     e.preventDefault();
-    alert("Submitted");
   });
 });
