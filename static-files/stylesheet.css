@@ -97,5 +97,29 @@ nav {
 }
 
 nav ul {
-    
+    margin: 0;
+    padding: 1em;
+    padding-left: 5em;
+}
+
+nav li {
+    display: inline;
+}
+
+/* MAIN ELEMENT STYLING */
+
+/* section element*/
+.blog-entry {
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.blog-entry h1 {
+    color: var(--dark-blue);
+}
+
+.blog-entry p {
+    width: 30em;
 }
