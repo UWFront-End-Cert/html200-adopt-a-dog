@@ -245,7 +245,22 @@ h2{
   height: 25%;
 }
 
+.blogimage{
+  float: left;
+  margin-right: 5rem;
+  margin-left: 8rem;
+  width: 15%;
+  height: 15%;
+}
+
 .blog h4{
+  color: rgb(0, 51, 102);
+  font-weight: bolder;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+.bloglabel{
   color: rgb(0, 51, 102);
   font-weight: bolder;
   margin-bottom: 0;
@@ -256,6 +271,19 @@ h2{
   font-size: 0.80rem;
   line-height: 1.2rem;
   width: 85%;
+}
+
+.blogparagraph{
+  font-size: 0.80rem;
+  line-height: 1.2rem;
+  width: 85%;
+}
+
+.blogparagraph1{
+  font-size: 0.80rem;
+  line-height: 1.2rem;
+  width: 85%;
+  margin-bottom: 5rem;
 }
 
 .blogheader{

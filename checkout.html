@@ -37,28 +37,28 @@
 
       <form method="GET">
         <label>Name
-          <input type="text" name="name">
+          <input type="text" name="name" id="formName">
         </label>
 
         <label>Email Address
-          <input type="email" name="email">
+          <input type="email" name="email" id="formEmail">
         </label>
 
         <label>Street Address
-          <input type="text" name="streetAddress">
+          <input type="text" name="streetAddress" id="formAddress">
         </label>
 
         <div class="address">
           <label>City
-            <input type="text" name="city" class="city">
+            <input type="text" name="city" class="city" id="formCity">
           </label>
 
           <label>State
-            <input type="text" name="state" class="state">
+            <input type="text" name="state" class="state" id="formState">
           </label>
 
           <label>Zip Code
-            <input type="text" name="zipCode" class="zip">
+            <input type="text" name="zipCode" class="zip" id="formZip">
           </label>
         </div>
 
@@ -103,7 +103,7 @@
           <p>$1234.56</p>
         </section>
 
-        <input type="submit" value="Submit" class="submit">
+        <input type="submit" onclick="submitAlert()" value="Submit" class="submit">
 
       </form>
     </section>
@@ -124,5 +124,6 @@
         </nav>
         <h6>&copy; 2018 Adoptadog, LLC | Seattle, WA</h6>
     </footer>
+    <script src="./javascript.js"></script>
   </body>
 </html>
