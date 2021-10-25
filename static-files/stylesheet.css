@@ -108,7 +108,9 @@ nav li {
 
 /* MAIN ELEMENT STYLING */
 
-/* section element*/
+/* section element
+ * BLOG ENTRY
+ */
 .blog-entry {
     display: flex;
 
@@ -122,4 +124,47 @@ nav li {
 
 .blog-entry p {
     width: 30em;
+}
+
+/* section element 
+ * DOG PARADE (dog selection)
+ */
+.dog-parade {
+    /* width: 800px; */
+    
+    /* margin-right: auto;
+    margin-left: auto; */
+
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.dog-entry {
+    width:200px;
+}
+
+.dog-entry:nth-child(4n) {
+    /* I have no idea how this works. 
+    https://stackoverflow.com/questions/19574851/how-to-specify-an-element-after-which-to-wrap-in-css-flexbox
+    */
+
+    page-break-after: always;
+    break-after: always;
+}
+
+.portrait-card {
+    width: 200px;
+}
+
+/* section element
+ * SEE MORE DOGS
+*/
+.see-more-dogs {
+    margin-top: 35px;;
+    border: 0;
+
+    margin-left: auto;
+    margin-right: auto;
 }
