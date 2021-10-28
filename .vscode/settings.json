@@ -1,0 +1,6 @@
+{
+  "editor.wordWrapColumn": 120,
+  "editor.wrappingIndent": "indent",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn"
+}
