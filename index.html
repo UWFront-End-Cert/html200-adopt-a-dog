@@ -5,6 +5,11 @@
   <meta charset="utf-8">
   <title>Adopt A Dog</title>
   <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
   <meta name="viewpoint" content="width=device-width, initial-scale=1">
 </head>
 
@@ -70,57 +75,57 @@
 
     <div class="flex-container">
       <section class="card card1">
-        <img onclick="doginfo('Murphy','Great','Dane','123.45')" src="images/murphy-card.jpg" alt="Photo of Murphy.">
+        <img class="img" onclick="doginfo('Murphy','Great','Dane','123.45')" src="images/murphy-card.jpg" alt="Photo of Murphy.">
         <h6>Murphy</h6>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
         re ea erum, qui doluptae</p>
-        <a onclick="total(123.45)" class="adopt">Adopt</a>
+        <a class="adopt">Adopt</a>
       </section>
 
       <section class="card card2">
-        <img onclick="doginfo('Poppy','Havanese','','$123.45')" src="images/poppy-card.jpg" alt="Photo of Poppy.">
+        <img class="img" onclick="doginfo('Poppy','Havanese','','$123.45')" src="images/poppy-card.jpg" alt="Photo of Poppy.">
         <h6>Poppy</h6>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
         re ea erum, qui doluptae</p>
-        <a onclick="total(123.45)" class="adopt">Adopt</a>
+        <a class="adopt">Adopt</a>
       </section>
 
       <section class="card card3">
-        <img onclick="doginfo('Jack','Beagle','','$123.45')" src="images/jack-card.jpg" alt="Photo of Jack.">
+        <img class="img" onclick="doginfo('Jack','Beagle','','$123.45')" src="images/jack-card.jpg" alt="Photo of Jack.">
         <h6>Jack</h6>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
         re ea erum, qui doluptae</p>
-        <a onclick="total(123.45)" class="adopt">Adopt</a>
+        <a class="adopt">Adopt</a>
       </section>
 
       <section class="card card4">
-        <img onclick="doginfo('Duffy','Bull','Terrior','$123.45')" src="images/duffy-card.jpg" alt="Photo of Jack.">
+        <img class="img" onclick="doginfo('Duffy','Bull','Terrior','$123.45')" src="images/duffy-card.jpg" alt="Photo of Jack.">
         <h6>Duffy</h6>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
         re ea erum, qui doluptae</p>
-        <a onclick="total(123.45)" class="adopt">Adopt</a>
+        <a class="adopt">Adopt</a>
       </section>
 
       <section class="card card5">
-        <img onclick="doginfo('Lucas','Unknown','Breed','$123.45')" src="images/lucas-card.jpg" alt="Photo of Jack.">
+        <img class="img" onclick="doginfo('Lucas','Unknown','Breed','$123.45')" src="images/lucas-card.jpg" alt="Photo of Jack.">
         <h6>Lucas</h6>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
         re ea erum, qui doluptae</p>
-        <a onclick="total(123.45)" class="adopt">Adopt</a>
+        <a class="adopt">Adopt</a>
       </section>
 
       <section class="card card6">
-        <img onclick="doginfo('Jake','Lab','','$123.45')" src="images/jake-card.jpg" alt="Photo of Jack.">
+        <img class="img" onclick="doginfo('Jake','Lab','','$123.45')" src="images/jake-card.jpg" alt="Photo of Jack.">
         <h6>Jake</h6>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis
         re ea erum, qui doluptae</p>
-        <a onclick="total(123.45)" class="adopt">Adopt</a>
+        <a class="adopt">Adopt</a>
       </section>
 
 <!--Take out last 2 cards
@@ -163,7 +168,6 @@
         </nav>
         <h6>&copy; 2018 Adoptadog, LLC | Seattle, WA</h6>
     </footer>
-    <script src="./javascript.js"></script>
 </body>
 
 </html>
