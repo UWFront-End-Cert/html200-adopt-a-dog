@@ -1,0 +1,40 @@
+Tested using LamdaTest.com (https://lambatest.com/)
+
+
+---
+DESKTOP:
+
+- Windows 10
+  - Chrome 94
+  - Edge 93
+  - Firefox 92
+  - IE 11
+
+- macOS Big Sur
+  - Chrome 94
+  - Firefox 92
+  - Safari 14
+
+
+---
+MOBILE:
+
+- iPhone X
+- Galaxy J7 max
+- iPad Pro
+
+
+---
+RESULTS:
+
+- Content stacks as expected on mobile devices
+- Logo font renders incorrectly on all browsers 
+  and devices
+- Windows 10, IE 11 is of course terrible and 
+  no one should ever view the website in IE11
+
+
+---
+BUG FIX:
+- Converted logo as an SVG from and Illustrator 
+  file after converting type to paths
