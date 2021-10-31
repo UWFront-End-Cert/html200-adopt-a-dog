@@ -6,48 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="styles/style.css">
 
     <title>Adopt a Dog</title>
     
 </head>
 <body>
-<!-- header -->
-    <header>
-        <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text">
-        <h1> Seattle's premiere dog adoption agency</h1>
-        <img src="cart-icon.svg" alt="shopping cart icon">
-        <button>Checkout</button>
-        <img src="images/header-images/header-large.jpg" alt="Dog face header image">
+    <div class="container33">
 
-    </header>
-
-    <!-- navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="dogs.html">Dogs</a></li>
+        <!-- header -->
+        <header>  
+            <div>
+          <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text" class="logo">
+                <h1>Seattle's premiere dog adoption agency</h1>
+           <!-- </div>
+           <div> -->
+              <img src="cart-icon.svg" alt="shopping cart icon" class="cart">
+              <p>$1234.56 </p>
+             <button class="button">Checkout</button>
+             </div>
+         </header>
+             
+        <!-- navigation -->
+        <nav>
+         <ul>
+            <li><a href="index.html">Home </a>/</li>
+            <li><a href="dogs.html">Dogs </a>/</li>
             <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </nav>
-
-   <main>
-
-    <h2> Checkout</h2>
+        </ul> </nav>
+    
+        <!-- sidebar  (these are basically place holders)-->
+    
+        <div id="sidebar1"></div>     
+        <div id="sidebar2"></div> 
+    
+     <!-- <div id="content1"> <h1 >Checkout</h1> </div> -->
+        </div>
+        
+        <div class="container22">
+          <div id="content23"> 
+            <h1 >Checkout</h1>
 
         <form method="GET">
             <label>Name:
                <input type="text" name="applicantName">
             </label>
+
             <label>Email Address:
                 <input type="email" name="applicantEmail">
             </label>
+
             <label for="street">Street Address</label>
                  <input id="street" type="text" name="applicantStreet">
+
             <label for="city">City</label>
-                <input id="city" type="text" name="applicantCity">
+<br>
+                <input id="city" type="text" name="applicantCity" class="city">
+
             <label for="state">State</label>
-                <select id="state">
+            <br>
+                <select id="state" class="state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -100,21 +118,22 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                 </select>	
-                <label for="zip">Zip</label>
-                <input id="zip" type="text" name="applicantZip">	
-                <br>		
+   
+                 <label>ZIP Code</label>
+                 <input type="text" class="zip" pattern="[0-9]{5}" title="Five digit zip code" />
 
-                <label>First time adopter?
-                    <input type="radio" name="special" value="yes">
-                    Yes
-                </label>
-                 <label>
-                    <input type="radio" name="special" value="no">
-                    No
-                </label>
+                 <br><br><br>
 
-            <label>Pickup Location
-                <select name="location">
+                <p>First time adopter?</p>
+                  <input class="radio" type="radio" id="yes" name="yes" value="yes">
+                  <label for="yes">Yes</label>
+                  <input class="radio" type="radio" id="no" name="no" value="no">
+                  <label for="no">No</label>
+                <br> <br>
+                 
+
+            <label class="pickup">Pickup Location<br><br>
+                <select name="location" class="location">
                     <option value="">Please select</option>
                     <option value="east">east</option>
                     <option value="west">west</option>
@@ -122,28 +141,50 @@
 
                 </select>
 
-            </label>          
-          
-            <h4> Dogs adopted</h4>
+            </label>  
+        
+       
+      
+            <h4> Dogs Adopted</h4>  
+       
+          <div class="divide">
+              
+        
+            <div class="lside">
             <img src="images/tucker-good-589776-unsplash.jpg" alt="black dog">
-            <p>Lucus</p>
-            <p>Cost to Adopt: $123.45</p>
+            </div>
+            <div class="rside">
+            <p style="padding-left:1rem; font-size:0.6em;margin-top:-2rem;">Lucus<br>
+            Cost to Adopt: $123.45</p>
+
+            </div>
+
+            <div class="lside2">
             <img src="images/duffy-brook-350225-unsplash.jpg" alt="bulldog">
-            <p>Lucus</p>
-            <p>Cost to Adopt: $123.45</p>
-    
-            <h4>
-                Total Adoption Cost $1234.56
-            </h4>
+            </div>
+            <div class="rside2">
+            <p style="padding-left:1rem; font-size:0.6em;margin-top:-2rem;">Lucus<br>
+           Cost to Adopt: $123.45</p>
+        </div>
+        </div>
+        <div>
+            <h4>Total Adoption Cost </h4>
+            <span style="font-size:.8em; margin-left:4rem;">$1234.56</span>
+
+            </div>
+         
 
                       
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="submit">
             
         </form>
 
+        </div>
+  </div>
+
    
 
-    </main>
+
 
 
  
@@ -155,8 +196,10 @@
             <h5>Aborpos nisto inci tet aut que volupti beruptiberro to ex 
                 esseque invenienihil imaximu scideru ptistiusam consequunt</h5>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="index.html">Home</a> </li>
+                <li> /</li>
+                <li><a href="dogs.html">Dogs </a> </li>
+                <li> /</li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <p> &#169;2018 Adoptadog, LLC | Seattle, WA</p>

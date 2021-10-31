@@ -1,154 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
-
-    <title>Adopt a Dog</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Adopt a Dog</title>
+	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico">
     
+    <link href="styles/style.css" rel="stylesheet">
+
+    
+    <script>
+        let adoptFee = 0;
+       
+
+        function runningTotal(current) {
+        adoptFee = Math.round((adoptFee+current+ Number.EPSILON) * 100) / 100;        
+        alert('Your total adoption fees are currently '+adoptFee);
+        }
+    
+        
+        function doginfo(name, breed, fee){
+            alert('Hi my name is ' +name+ ', I am a ' +breed+ ' and I cost '+fee+' to adopt.');
+        }
+    </script>   
+
+       
 </head>
 <body>
-<!-- header -->
-    <header>
-        <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text">
-        <h1> Seattle's premiere dog adoption agency</h1>
-        <img src="cart-icon.svg" alt="shopping cart icon">
-        <button>Checkout</button>
-        <img src="images/header-images/header-large.jpg" alt="Dog face header image">
 
-    </header>
+    <div class="container">
 
-    <!-- navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="dogs.html">Dogs</a></li>
+        <!-- header -->
+        <header>  
+            <div>
+          <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text" class="logo">
+                <h1>Seattle's premiere dog adoption agency</h1>
+           <!-- </div>
+           <div> -->
+              <img src="cart-icon.svg" alt="shopping cart icon" class="cart">
+              <p>$1234.56 </p>
+             <button class="button">Checkout</button>
+             </div>
+         </header>
+             
+        <!-- navigation -->
+        <nav>
+         <ul>
+            <li><a href="index.html">Home </a>/</li>
+            <li><a href="dogs.html">Dogs </a>/</li>
             <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </nav>
+        </ul> </nav>
+    
+        <!-- sidebar  (these are basically place holders)-->
+    
+        <div id="sidebar1"></div>     
+        <div id="sidebar2"></div> 
 
-    <article>
-        <img src="images/eric-ward-610868-unsplash.jpg" alt="boy hugging a golden dog">
-        <h2> Adopt a dog</h2>
-        <h4>Iduciendisite quo magnatem iuntum quid quaest ea am, 
-            tenderumet adis dolenem quidustrum fuga. Faceaquae estioria 
-            derum recuptatur, cum volore, undipsa doloreium hillupta aut 
-            es ut alitatuscit ommossum haritatur arum qui officae videbiti 
-            corporeium faccull oribus es quidignis ipietus explam sus 
-            am aut amet ant fugiatum, utem non reptat ad magnienecto 
-            volorent fugia nonsedi gendand itatquos as magnimpor aut 
-            molor autatia ad est officimus accae et omnia cus, od qui ate</h4>
-    </article>
-    <main>
-        <div>
-          <img src="images/alex-lacayo-756508-unsplash.jpg" alt="image brown dog">
-            <h2> Murphy</h2>
-              <h5><strong>Cost to Adopt:</strong>$123.45</h5>
-                <h4>Corrum volorit iandae 
-                    nimaxim cum restia volor 
-                    reicid ut et etur sunt arum 
-                    rendae pla endis re ea erum, 
-                    qui doluptae</h4>
-                   <button>Adopt</button>
+    <!-- title picture and description -->
+    <div id="content1"><img src="images/home-intro.jpg"></div>
+        
+    <div id="content3"><h1>Adopt a Dog</h1>
+       <p>Iduciendisite quo magnatem iuntum quid quaest ea am, 
+        tenderumet adis dolenem quidustrum fuga. Faceaquae estioria 
+        derum recuptatur, cum volore, undipsa doloreium hillupta aut 
+        es ut alitatuscit ommossum haritatur arum qui officae videbiti 
+        corporeium faccull oribus es quidignis ipietus explam sus 
+        am aut amet ant fugiatum, utem non reptat ad magnienecto 
+        volorent fugia nonsedi gendand itatquos as magnimpor aut 
+        molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+     </div>  
+     <!-- container1 close -->
+     </div>
+  
+        
+       <!-- container2 open -->   
+
+  <div class="container2">
+
+    <div id="content4">
+        <img onclick="doginfo('Murphy','Great Dane','$123.45')" style="cursor: pointer;" src="images/murphy-card.jpg" alt="Photo of Murphy.">
+        <h2 >Murphy</h2> 
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+        <p>Corrum volorit iandae
+        nimaxim cum restia volor
+        reicid ut et etur sunt arum
+        rendae pla endis re ea erum,
+        qui doluptae</p>
+        <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
+    </div>
+
+    <div id="content5">
+           <img onclick="doginfo('Poppy','Terrier','$123.45')" style="cursor: pointer;" src="images/poppy-card.jpg" alt="Photo of Murphy.">
+           <h2>Poppy</h2> 
+           <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
+           <p>Corrum volorit iandae
+            nimaxim cum restia volor
+            reicid ut et etur sunt arum
+            rendae pla endis re ea erum,
+            qui doluptae</p>
+            <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
+    </div>
+
+    <div id="content6">
+            <img onclick="doginfo('Jack','Begal','$123.45')" style="cursor: pointer;" src="images/jack-card.jpg" alt="Photo of Murphy.">
+            <h2>Jack</h2> 
+            <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+                <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
+     </div>
+
+    <div id="content7">
+            <img onclick="doginfo('Duffy','Pit Bull','$123.45')" style="cursor: pointer;" src="images/duffy-card.jpg" alt="Photo of Murphy.">
+            <h2>Duffy</h2> 
+            <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+                <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
+     </div>
+
+     <div id="content8">
+            <img onclick="doginfo('Jake','Golden Labrator','$123.45')" style="cursor: pointer;" src="images/jake-card.jpg" alt="Photo of Murphy.">
+            <h2>Jake</h2> 
+            <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+                <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
+     </div>
+
+     <div id="content9">
+            <img onclick="doginfo('Lucas','Labrator','$123.45')" style="cursor: pointer;" src="images/lucas-card.jpg" alt="Photo of Murphy.">
+            <h2>Lucas</h2> 
+            <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+                <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
+     </div>
+
+     <div id="content10">
+            <img onclick="doginfo('Angus','Bull Dog','$123.45')" style="cursor: pointer;" src="images/angus-card.jpg" alt="Photo of Murphy.">
+            <h2>Angus</h2> 
+            <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+                <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
         </div>
-          <div>
-            <img src="images/nikolay-tchaouchev-785309-unsplash.jpg" alt="cute gray dog running">
-              <h2> Poppy</h2>
-                <h5><strong>Cost to Adopt:</strong>$123.45</h5>
-                  <h4>Corrum volorit iandae 
-                      nimaxim cum restia volor 
-                      reicid ut et etur sunt arum 
-                      rendae pla endis re ea erum, 
-                      qui doluptae</h4>
-                     <button>Adopt</button>
-                  </div>
-          <div>
-            <img src="images/marcus-wallis-471438-unsplash.jpg" alt="brown begal">
-              <h2> Jack</h2>
-                <h5><strong>Cost to Adopt:</strong>$123.45</h5>
-                  <h4>Corrum volorit iandae 
-                      nimaxim cum restia volor 
-                      reicid ut et etur sunt arum 
-                      rendae pla endis re ea erum, 
-                      qui doluptae</h4>
-                     <button>Adopt</button>
-                  </div>
-          <div>
-            <img src="images/duffy-brook-350225-unsplash.jpg" alt="brown and white bulldog">
-              <h2> Duffy</h2>
-                <h5><strong>Cost to Adopt:</strong>$123.45</h5>
-                  <h4>Corrum volorit iandae 
-                      nimaxim cum restia volor 
-                      reicid ut et etur sunt arum 
-                      rendae pla endis re ea erum, 
-                      qui doluptae</h4>
-                     <button>Adopt</button>
-                  </div>
-          <div>
-            <img src="images/tucker-good-589776-unsplash.jpg" alt="black dog on a leash">
-                <h5><strong>Cost to Adopt:</strong>$123.45</h5>
-                  <h4>Corrum volorit iandae 
-                      nimaxim cum restia volor 
-                      reicid ut et etur sunt arum 
-                      rendae pla endis re ea erum, 
-                      qui doluptae</h4>
-                     <button>Adopt</button>
-                  </div>
-            <div>
-              <img src="images/mitchell-orr-237216-unsplash.jpg" alt="golden lab">
-                <h2> Jake</h2>
-                  <h5><strong>Cost to Adopt:</strong>$123.45</h5>
-                    <h4>Corrum volorit iandae 
-                        nimaxim cum restia volor 
-                        reicid ut et etur sunt arum 
-                        rendae pla endis re ea erum, 
-                        qui doluptae</h4>
-                       <button>Adopt</button>
-                    </div>
-            <div>
-              <img src="images/jamie-street-562280-unsplash.jpg" alt="brown begal">
-                <h2>Angus</h2>
-                  <h5><strong>Cost to Adopt:</strong>$123.45</h5>
-                    <h4>Corrum volorit iandae 
-                        nimaxim cum restia volor 
-                        reicid ut et etur sunt arum 
-                        rendae pla endis re ea erum, 
-                        qui doluptae</h4>
-                       <button>Adopt</button>
-                    </div>
-            <div>
-              <img src="images/kenan-kitchen-1136827-unsplash.jpg" alt="brown and white bulldog">
-                <h2> Violet</h2>
-                  <h5><strong>Cost to Adopt:</strong>$123.45</h5>
-                    <h4>Corrum volorit iandae 
-                        nimaxim cum restia volor 
-                        reicid ut et etur sunt arum 
-                        rendae pla endis re ea erum, 
-                        qui doluptae</h4>
-                       <button>Adopt</button>
-                    </div>
 
-            <div>
-                <button>See more dogs</button>
-            </div>
-     </main>
-         <!-- footer -->
-            
-         <footer>
-            <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text">
-            <h5>Aborpos nisto inci tet aut que volupti beruptiberro to ex 
-                esseque invenienihil imaximu scideru ptistiusam consequunt</h5>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dogs.html">Dogs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <p> &#169;2018 Adoptadog, LLC | Seattle, WA</p>
+    <div id="content11">
+            <img onclick="doginfo('Violet','Black Lab Puppy','$123.45')" style="cursor: pointer;" src="images/violet-card.jpg" alt="Photo of Murphy.">
+            <h2>Violet</h2> 
+            <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
+            <p>Corrum volorit iandae
+                nimaxim cum restia volor
+                reicid ut et etur sunt arum
+                rendae pla endis re ea erum,
+                qui doluptae</p>
+                <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>            
+    
+    </div>
 
-        </footer>
+
+    <div id="content12">
+       
+        <button><a href="dogs.html">See More Dogs </a></button>
+
+</div>
+     <!-- container2 close -->
+  
+
+
+
+  <footer>
+    <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text">
+    <h5>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
+        esseque invenienihil imaximu scideru ptistiusam consequunt</h5>
+    <ul>
+        <li><a href="index.html">Home</a> </li>
+        <li> /</li>
+        <li><a href="dogs.html">Dogs </a> </li>
+        <li> /</li>
+        <li><a href="contact.html">Contact</a></li>
+      
+    </ul>
+    <p> &#169;2018 Adoptadog, LLC | Seattle, WA</p>
+
+</footer>
+</div>
+
+   
+
+
 </body>
 </html>
