@@ -2,6 +2,7 @@
     --lime: #87BD42;
     --light-gray: #ECECEC;
     --dark-blue: #294F68;
+    --gray: #3D3D3D;
 }
 
 header, body {
@@ -165,6 +166,46 @@ nav li {
     margin-top: 35px;;
     border: 0;
 
+    display: flex;
+    justify-content: center;
+}
+
+.see-more-dogs button {
     margin-left: auto;
     margin-right: auto;
+}
+
+footer {
+    background-color: var(--gray);
+    color:var(--light-gray);
+
+    width: 100%;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+footer img {
+    padding-top: 5vh;
+    height: 15vh;
+}
+
+footer p {
+    display: flex;
+
+    justify-content: center;
+}
+
+footer ul {
+    padding: 0;
+    background-color: none;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+footer li {
+    display: inline;
 }
