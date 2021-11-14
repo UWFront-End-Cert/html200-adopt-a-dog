@@ -1,0 +1,44 @@
+header.header-background {
+  width: 100%;
+  background-image: url(images/header-image.jpg);
+}
+
+header h4 {
+  color:  #33cc00;
+}
+
+header p {
+  color: white;
+}
+
+header a{
+  color: white;
+}
+
+img.logo {
+  height: 100px;
+}
+
+.cart-icon {
+  height: 20px;
+}
+
+input {
+  display: block;
+}
+
+input.inline {
+  display: inline;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  display: inline;
+}
+
+body footer {
+  background-color:steelblue;
+}
