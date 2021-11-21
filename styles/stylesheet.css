@@ -9,6 +9,10 @@
     grid-template-columns: 1fr 3fr 1fr;
 }
 
+.outer-grid-home {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+}
 
 header {
     background-color: rgb(9, 60, 96);
@@ -22,7 +26,8 @@ header {
     align-items: flex-end;
     color: white;
     font-weight: bold;
-    margin: 0 16rem 2rem 0;
+    margin-top: 2rem;
+    margin-right: 12rem;
 }
 
 .checkout {
@@ -34,20 +39,47 @@ header {
 .checkout > a {
     text-decoration: none;
     background: #81B741;
-    padding: .25rem 4rem .25rem 4rem;
+    padding: .25rem 2rem .25rem 2rem;
     border-radius: 2px;
     color: white;
     font-weight: bold;
-    margin: 0 16rem 2rem 0;
+    margin-top: 1rem;
+    margin-right: 10rem;
 }
 
-aside {
-    position: relative;
-    bottom: 12rem;
+
+.blog-preview {
+  grid-column: 3/4;
+  grid-row: 3/ span 3;
+  margin-left: 3em;
+  margin-bottom: 3rem;
+  width: 75%;
+}
+
+.entry-preview > img {
+  width: 100%;
+}
+
+.blog-preview > article > h3, a {
+  margin: 0;
+  text-decoration: none;
+  color: rgb(35, 154, 185);
+}
+
+@media screen and (max-width:768px) {
+  .blog-preview {
+    display: none;
+  }
+}
+
+article > a:visited {
+  text-decoration: none;
+  color: rgb(35, 154, 185);
 }
 
 header > img {
     min-width: 29%;
+    width: 40%;
     height: auto;
     padding: 2rem 0 0 20%;
     font-size: min(3.5vw, 40px);
@@ -125,8 +157,8 @@ section > p {
 }
 
 .dog {
-    margin: 1rem 1rem 1.5rem;
-    width: 20%;
+    margin: 1rem 0.25rem 1.5rem;
+    width: 30%;
     display: flex;
     flex-flow: column wrap;
     border-style: solid;
@@ -134,15 +166,42 @@ section > p {
     border-color: lightgrey;
 }
 
+@media screen and (max-width:576px) {
+  .adoptable {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2 / 3;
+  }
+  .dog {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .adoptable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-column: 1 / 5;
+  }
+
+  .adoptable > article {
+    width: 50%;
+  }
+}
+
 .more-dogs {
     grid-column: 2 / 3;
     justify-self: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    padding: 1rem 4rem 1rem 4rem;
+    margin: 0;
+    padding: 1rem .75rem 1.5rem 1.75rem;
     background: lightgray;
     border-radius: 2px;
     font-weight: bolder;
+    width: 25%;
+    height: 10%;
     text-decoration: none;
 }
 
@@ -166,12 +225,17 @@ article > p {
     font-size: 0.75rem;
 }
 
+.entry-preview > p {
+  margin: .2rem 0;
+}
+
 footer {
     background-color: rgb(61, 61, 61);
     grid-column: 1 / 4;
     display: flex;
     flex-flow: column;
     align-items: center;
+    text-align: center;
     color: white;
 }
 

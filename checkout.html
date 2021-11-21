@@ -1,153 +1,158 @@
 <!DOCTYPE html>
 <html lang="zxx" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Adopt-A-Dog | Dog Adoption Agency</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-        <script src="scripts/adoptadog.js"></script>
-    </head>
-    <body class="outer-grid">
-        <header>
-            <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo" width="500">
-            <h1>Seattle's premiere dog adoption agency</h1>
-            <aside class="checkout">
-                <div class= "price">
-                    <img src="images/cart-icon.svg" alt="Checkout logo shown as a shopping cart" width="25">
-                    <p>$1234.56</p>
-                </div>
-                <a href="checkout.html">Checkout</a>
-             </aside>
-        </header>
-        <nav>
-            <a href="index.html">Home</a> /
-            <a href="dogs.html">Dogs</a> /
-            <a href="blog.html">Blog</a>
-        </nav>
-        <section class="checkout-form">
-            <h2>Checkout</h2>
-            <form method="GET">
-                <label>Name
-                    <input id="userName" type="text" name="userName">
-                </label>
-                <label>Email Address
-                    <input id="userEmail" type="email" name="userEmail">
-                </label>
-                <label>Street Address
-                    <input id="userAddress" type="text" name="userAddress">
-                </label>
-                <div class="city-state-zip">
-                    <label class="citystate">
-                        City
-                        <input id="city" type="text" name="City">
-                    </label>
-                    <label class="citystate">
-                        State
-                        <select id="state" name="state">
-                            <option value="AK">AK</option>
-                            <option value="AL">AL</option>
-                            <option value="AR">AR</option>
-                            <option value="AZ">AZ</option>
-                            <option value="CA">CA</option>
-                            <option value="CO">CO</option>
-                            <option value="CT">CT</option>
-                            <option value="DE">DE</option>
-                            <option value="FL">FL</option>
-                            <option value="GA">GA</option>
-                            <option value="HI">HI</option>
-                            <option value="IA">IA</option>
-                            <option value="ID">ID</option>
-                            <option value="IL">IL</option>
-                            <option value="IN">IN</option>
-                            <option value="KS">KS</option>
-                            <option value="KY">KY</option>
-                            <option value="LA">LA</option>
-                            <option value="MA">MA</option>
-                            <option value="MD">MD</option>
-                            <option value="ME">ME</option>
-                            <option value="MI">MI</option>
-                            <option value="MN">MN</option>
-                            <option value="MO">MO</option>
-                            <option value="MS">MS</option>
-                            <option value="MT">MT</option>
-                            <option value="NC">NC</option>
-                            <option value="ND">ND</option>
-                            <option value="NE">NE</option>
-                            <option value="NH">NH</option>
-                            <option value="NJ">NJ</option>
-                            <option value="NM">NM</option>
-                            <option value="NV">NV</option>
-                            <option value="NY">NY</option>
-                            <option value="OH">OH</option>
-                            <option value="OK">OK</option>
-                            <option value="OR">OR</option>
-                            <option value="PA">PA</option>
-                            <option value="RI">RI</option>
-                            <option value="SC">SC</option>
-                            <option value="SD">SD</option>
-                            <option value="TN">TN</option>
-                            <option value="TX">TX</option>
-                            <option value="UT">UT</option>
-                            <option value="VA">VA</option>
-                            <option value="VT">VT</option>
-                            <option value="WA">WA</option>
-                            <option value="WI">WI</option>
-                            <option value="WV">WV</option>
-                            <option value="WY">WY</option>
-                        </select>
-                    </label>
-                    <label>
-                        Zip Code
-                        <input id="zipCode" type="text" name="zipCode">
-                    </label>
-                </div>
-                <fieldset>
-                    <legend>First Time adopter?</legend>
-                    <label>
-                        <input type="radio" name="firstAdopt" value="Yes">
-                        Yes
-                    </label>
-                    <label>
-                        <input id="no" type="radio" name="firstAdopt" value="No">
-                        No
-                    </label>
-                </fieldset>
-                <label for="location">Pickup Location
-                </label>
-                <select id="location" name="location">
-                    <option value="Seattle">Seattle</option>
-                </select>
-            </form>
 
-            <p id="adopted">Dogs Adopted<p>
-            <div class="adoption-cart">
-                <img src="images/lucas-checkout.jpg" alt="checkout image of Lucas the dog">
-                <div class="cart-dog">
-                    <h3>Lucas</h3>
-                    <p><strong>Cost to Adopt:</strong> $123.45</p>
-                </div>
-                <img src="images/duffy-checkout.jpg" alt="checkout image of Duffy the dog">
-                <div class="cart-dog">
-                    <h3>Duffy</h3>
-                    <p><strong>Cost to Adopt:</strong> $123.45</p>
-                </div>
+<head>
+  <meta charset="utf-8">
+  <title>Adopt-A-Dog | Dog Adoption Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  <script src="scripts/adoptadog.js"></script>
+</head>
 
-            </div>
-            <p id="total">Total Adoption Cost</p>
-            <p id="total-cost">$1234.56</p>
-            <input type="submit" value="Submit">
-        </section>
-        <footer>
-            <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo" width="500">
+<body class="outer-grid">
+  <header>
+    <aside class="checkout">
+      <div class="price">
+        <img src="images/cart-icon.svg" alt="Checkout logo shown as a shopping cart" width="25">
+        <p>$1234.56</p>
+      </div>
+      <a href="checkout.html">Checkout</a>
+    </aside>
+    <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo">
+    <h1>Seattle's premiere dog adoption agency</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a> /
+    <a href="dogs.html">Dogs</a> /
+    <a href="blog.html">Blog</a>
+  </nav>
+  <section class="checkout-form">
+    <h2>Checkout</h2>
+    <form method="GET">
+      <label>Name
+        <input id="userName" type="text" name="userName">
+      </label>
+      <label>Email Address
+        <input id="userEmail" type="email" name="userEmail">
+      </label>
+      <label>Street Address
+        <input id="userAddress" type="text" name="userAddress">
+      </label>
+      <div class="city-state-zip">
+        <label class="citystate">
+          City
+          <input id="city" type="text" name="City">
+        </label>
+        <label class="citystate">
+          State
+          <select id="state" name="state">
+            <option value="AK">AK</option>
+            <option value="AL">AL</option>
+            <option value="AR">AR</option>
+            <option value="AZ">AZ</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DE">DE</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="IA">IA</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="MA">MA</option>
+            <option value="MD">MD</option>
+            <option value="ME">ME</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MO">MO</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="NE">NE</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NV">NV</option>
+            <option value="NY">NY</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VA">VA</option>
+            <option value="VT">VT</option>
+            <option value="WA">WA</option>
+            <option value="WI">WI</option>
+            <option value="WV">WV</option>
+            <option value="WY">WY</option>
+          </select>
+        </label>
+        <label>
+          Zip Code
+          <input id="zipCode" type="text" name="zipCode">
+        </label>
+      </div>
+      <fieldset>
+        <legend>First Time adopter?</legend>
+        <label>
+          <input type="radio" name="firstAdopt" value="Yes">
+          Yes
+        </label>
+        <label>
+          <input id="no" type="radio" name="firstAdopt" value="No">
+          No
+        </label>
+      </fieldset>
+      <label for="location">Pickup Location
+      </label>
+      <select id="location" name="location">
+        <option value="Seattle">Seattle</option>
+      </select>
+    </form>
 
-            <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
-esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+    <p id="adopted">Dogs Adopted
+    <p>
+    <div class="adoption-cart">
+      <img src="images/lucas-checkout.jpg" alt="checkout image of Lucas the dog">
+      <div class="cart-dog">
+        <h3>Lucas</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+      </div>
+      <img src="images/duffy-checkout.jpg" alt="checkout image of Duffy the dog">
+      <div class="cart-dog">
+        <h3>Duffy</h3>
+        <p><strong>Cost to Adopt:</strong> $123.45</p>
+      </div>
 
-            <p><a href="index.html">Home</a> /
-            <a href="dogs.html">Dogs</a> /
-            <a href="blog.html">Blog</a></p>
+    </div>
+    <p id="total">Total Adoption Cost</p>
+    <p id="total-cost">$1234.56</p>
+    <input type="submit" value="Submit">
+  </section>
+  <footer>
+    <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo" width="500">
 
-            <p>&copy; Adoptadog, LLC | Seattle, WA</p>
-        </footer>
-    </body>
+    <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
+      esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+
+    <p><a href="index.html">Home</a> /
+      <a href="dogs.html">Dogs</a> /
+      <a href="blog.html">Blog</a>
+    </p>
+
+    <p>&copy; Adoptadog, LLC | Seattle, WA</p>
+  </footer>
+</body>
+
 </html>

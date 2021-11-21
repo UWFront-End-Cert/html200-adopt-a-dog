@@ -1,111 +1,128 @@
 <!DOCTYPE html>
 <html lang="zxx" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Adopt-A-Dog | Dog Adoption Agency</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-        <script src="scripts/adoptadog.js"></script>
-    </head>
-    <body class="outer-grid">
-        <header>
-            <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo" width="500">
-            <h1>Seattle's premiere dog adoption agency</h1>
-            <aside class="checkout">
-                <div class= "price">
-                    <img src="images/cart-icon.svg" alt="Checkout logo shown as a shopping cart" width="25">
-                    <p>$1234.56</p>
-                </div>
-                <a href="checkout.html">Checkout</a>
-             </aside>
-        </header>
-        <nav>
-            <a href="index.html">Home</a> /
-            <a href="dogs.html">Dogs</a> /
-            <a href="blog.html">Blog</a>
-        </nav>
-        <section class="description">
-            <img src="images/home-intro.jpg" alt="image of a man with a smiling dog">
-            <h2>Adopt A Dog</h2>
-            <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
-tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-derum recuptatur, cum volore, undipsa doloreium hillupta aut
-es ut alitatuscit ommossum haritatur arum qui officae videbiti
-corporeium faccull oribus es quidignis ipietus explam sus
-am aut amet ant fugiatum, utem non reptat ad magnienecto
-volorent fugia nonsedi gendand itatquos as magnimpor aut
-molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-        </section>
-        <div class="adoptable">
-            <article class="dog">
-                <img onclick="dogInfo('Murphy', 'Dog', 123.45)" src="images/murphy-card.jpg" alt="A photo of a brown dog named Murphy">
-                <h3>Murphy</h3>
-                <p><strong>Cost to Adopt</strong>: $123.45</p>
-                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                <input onclick="addToCart('Murphy', 123.45)" type="submit" value="Adopt">
-            </article>
-            <article class="dog">
-                <img onclick="dogInfo('Poppy', 'Dog', 123.45)" src="images/poppy-card.jpg" alt="A photo of a white dog named Poppy">
-                <h3>Poppy</h3>
-                <p><strong>Cost to Adopt</strong>: $123.45</p>
-                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                <input onclick="addToCart('Poppy', 123.45)" type="submit" value="Adopt">
-            </article>
-            <article class="dog">
-                <img onclick="dogInfo('Jack', 'Dog', 123.45)" src="images/jack-card.jpg" alt="A photo of a brown and white dog named Jack">
-                <h3>Jack</h3>
-                <p><strong>Cost to Adopt</strong>: $123.45</p>
-                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                <input onclick="addToCart('Jack', 123.45)" type="submit" value="Adopt">
-            </article>
-            <article class="dog">
-                <img onclick="dogInfo('Duffy', 'Dog', 123.45)" src="images/duffy-card.jpg" alt="A photo of a white and brown dog named Duffy">
-                <h3>Duffy</h3>
-                <p><strong>Cost to Adopt</strong>: $123.45</p>
-                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                <input onclick="addToCart('Duffy', 123.45)" type="submit" value="Adopt">
-            </article>
-            <article class="dog">
-                <img onclick="dogInfo('Lucas', 'Dog', 123.45)" src="images/lucas-card.jpg" alt="A photo of a black dog named Lucas">
-                <h3>Lucas</h3>
-                <p><strong>Cost to Adopt</strong>: $123.45</p>
-                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                <input onclick="addToCart('Lucas', 123.45)" type="submit" value="Adopt">
-            </article>
-            <article class="dog">
-                <img onclick="dogInfo('Jake', 'Dog', 123.45)" src="images/jake-card.jpg" alt="A photo of a white dog named Jake">
-                <h3>Jake</h3>
-                <p><strong>Cost to Adopt</strong>: $123.45</p>
-                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                <input onclick="addToCart('Jake', 123.45)" type="submit" value="Adopt">
-            </article>
-            <article class="dog">
-                <img onclick="dogInfo('Angus', 'Dog', 123.45)" src="images/angus-card.jpg" alt="A photo of a brown dog named Angus">
-                <h3>Angus</h3>
-                <p><strong>Cost to Adopt</strong>: $123.45</p>
-                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                <input onclick="addToCart('Angus', 123.45)" type="submit" value="Adopt">
-            </article>
-            <article class="dog">
-                <img onclick="dogInfo('Violet', 'Dog', 123.45)" src="images/violet-card.jpg" alt="A photo of a brown dog named Violet">
-                <h3>Violet</h3>
-                <p><strong>Cost to Adopt</strong>: $123.45</p>
-                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                <input onclick="addToCart('Violet', 123.45)" type="submit" value="Adopt">
-            </article>
-        </div>
-        <a class="more-dogs" href="dogs.html">See More Dogs</a>
-        <footer>
-            <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo" width="500">
 
-            <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
-esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+<head>
+  <meta charset="utf-8">
+  <title>Adopt-A-Dog | Dog Adoption Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  <script src="scripts/adoptadog.js"></script>
+</head>
 
-            <p><a href="index.html">Home</a> /
-            <a href="dogs.html">Dogs</a> /
-            <a href="blog.html">Blog</a></p>
+<body class="outer-grid-home">
+  <header>
+    <aside class="checkout">
+      <div class="price">
+        <img src="images/cart-icon.svg" alt="Checkout logo shown as a shopping cart" width="25">
+        <p>$1234.56</p>
+      </div>
+      <a href="checkout.html">Checkout</a>
+    </aside>
+    <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo">
+    <h1>Seattle's premiere dog adoption agency</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a> /
+    <a href="dogs.html">Dogs</a> /
+    <a href="blog.html">Blog</a>
+  </nav>
+  <section class="description">
+    <img src="images/home-intro.jpg" alt="image of a man with a smiling dog">
+    <h2>Adopt A Dog</h2>
+    <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
+      tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+      derum recuptatur, cum volore, undipsa doloreium hillupta aut
+      es ut alitatuscit ommossum haritatur arum qui officae videbiti
+      corporeium faccull oribus es quidignis ipietus explam sus
+      am aut amet ant fugiatum, utem non reptat ad magnienecto
+      volorent fugia nonsedi gendand itatquos as magnimpor aut
+      molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+  </section>
+  <div class="adoptable">
+    <article class="dog">
+      <img onclick="dogInfo('Murphy', 'Dog', 123.45)" src="images/murphy-card.jpg" alt="A photo of a brown dog named Murphy">
+      <h3>Murphy</h3>
+      <p><strong>Cost to Adopt</strong>: $123.45</p>
+      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+      <input onclick="addToCart('Murphy', 123.45)" type="submit" value="Adopt">
+    </article>
+    <article class="dog">
+      <img onclick="dogInfo('Poppy', 'Dog', 123.45)" src="images/poppy-card.jpg" alt="A photo of a white dog named Poppy">
+      <h3>Poppy</h3>
+      <p><strong>Cost to Adopt</strong>: $123.45</p>
+      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+      <input onclick="addToCart('Poppy', 123.45)" type="submit" value="Adopt">
+    </article>
+    <article class="dog">
+      <img onclick="dogInfo('Jack', 'Dog', 123.45)" src="images/jack-card.jpg" alt="A photo of a brown and white dog named Jack">
+      <h3>Jack</h3>
+      <p><strong>Cost to Adopt</strong>: $123.45</p>
+      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+      <input onclick="addToCart('Jack', 123.45)" type="submit" value="Adopt">
+    </article>
+    <article class="dog">
+      <img onclick="dogInfo('Duffy', 'Dog', 123.45)" src="images/duffy-card.jpg" alt="A photo of a white and brown dog named Duffy">
+      <h3>Duffy</h3>
+      <p><strong>Cost to Adopt</strong>: $123.45</p>
+      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+      <input onclick="addToCart('Duffy', 123.45)" type="submit" value="Adopt">
+    </article>
+    <article class="dog">
+      <img onclick="dogInfo('Lucas', 'Dog', 123.45)" src="images/lucas-card.jpg" alt="A photo of a black dog named Lucas">
+      <h3>Lucas</h3>
+      <p><strong>Cost to Adopt</strong>: $123.45</p>
+      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+      <input onclick="addToCart('Lucas', 123.45)" type="submit" value="Adopt">
+    </article>
+    <article class="dog">
+      <img onclick="dogInfo('Jake', 'Dog', 123.45)" src="images/jake-card.jpg" alt="A photo of a white dog named Jake">
+      <h3>Jake</h3>
+      <p><strong>Cost to Adopt</strong>: $123.45</p>
+      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et eter sunt arum rendae pla endis re ea erum, qui doluptae</p>
+      <input onclick="addToCart('Jake', 123.45)" type="submit" value="Adopt">
+    </article>
+  </div>
+  <div class="blog-preview">
+    <h2>From Our Blog</h2>
+    <article class="entry-preview">
+      <img src="images/blog-1.jpg" alt="A woman enjoying the view of the mountains with her dog">
+      <h3>Traveling With Your Dog</h3>
+      <p>Iciustiam, et ad quiaes cum que
+        excea sinciendi qui offic temquas
+        doluptios dolupta tiandebis nem ut.</p>
+      <a href="blog.html"> Read More >></a>
+    </article>
+    <article class="entry-preview">
+      <img src="images/blog-2.jpg" alt="Multiple sitting dogs on leashes getting ready for a walk">
+      <h3>How To Walk Multiple Dogs</h3>
+      <p>Iciustiam, et ad quiaes cum que
+        excea sinciendi qui offic temquas
+        doluptios dolupta tiandebis nem ut.</p>
+      <a href="blog.html"> Read More >></a>
+    </article>
+    <article class="entry-preview">
+      <img src="images/blog-3.jpg" alt="A silhouette woman preparing to throw a ball for her dog to fetch">
+      <h3>Teach Your Dog To Fetch!</h3>
+      <p>Iciustiam, et ad quiaes cum que
+        excea sinciendi qui offic temquas
+        doluptios dolupta tiandebis nem ut.</p>
+      <a href="blog.html"> Read More >></a>
+    </article>
+  </div>
+  <a class="more-dogs" href="dogs.html">See More Dogs</a>
+  <footer>
+    <img src="images/adoptadog-logo.svg" alt="AdoptaDog logo" width="500">
 
-            <p>&copy; Adoptadog, LLC | Seattle, WA</p>
-        </footer>
-    </body>
+    <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
+      esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+
+    <p><a href="index.html">Home</a> /
+      <a href="dogs.html">Dogs</a> /
+      <a href="blog.html">Blog</a>
+    </p>
+
+    <p>&copy; Adoptadog, LLC | Seattle, WA</p>
+  </footer>
+</body>
+
 </html>
