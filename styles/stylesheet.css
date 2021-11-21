@@ -53,7 +53,7 @@ header {
   grid-row: 3/ span 3;
   margin-left: 3em;
   margin-bottom: 3rem;
-  width: 75%;
+  width: 50%;
 }
 
 .entry-preview > img {
@@ -184,12 +184,13 @@ section > p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    grid-column: 1 / 5;
+    grid-column: 2 / 3;
   }
 
   .adoptable > article {
-    width: 50%;
+    width: 40%;
   }
+
 }
 
 .more-dogs {
