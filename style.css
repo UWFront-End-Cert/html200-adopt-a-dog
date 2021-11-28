@@ -1,18 +1,132 @@
-header.header-background {
-  width: 100%;
-  background-image: url(images/header-image.jpg);
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", sans-serif;
 }
 
-header h4 {
-  color:  #33cc00;
+h1, h2, h3, h4, h5, form label, form fieldset legend {
+  font-family: 'Courier New', Courier, monospace;
+  color: #093C60;
+}
+
+p {
+  letter-spacing: .6px;
+  word-spacing: 1.2px;
+}
+
+nav a, nav ul li, a.gray-button {
+  color: #093C60;
+}
+
+a, a.green-button {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.green-button:link, a.green-button:visited, input[type=submit] {
+  background-color: #81B741;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: .1em;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+a.green-button:hover, a.green-button:active,
+a.gray-button:hover, a.gray-button:active,
+input[type=submit]:hover, input[type=submit]:active {
+  background-color: green;
+}
+
+
+a.gray-button {
+  background-color: #ececec;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: .1em;
+}
+
+.body-header {
+  background: url(images/header-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  padding: 3% 6% 0 6%;
+  display: flex;
+}
+
+.body-header h3{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.body-header div:nth-child(1) {
+  width: 85%;
+}
+
+.body-header div:nth-child(2) {
+  text-align: right;
+}
+
+header h3 {
+  margin-top: 0;
+  color: #81AF34;
+  font-style: italic;
 }
 
 header p {
   color: white;
+  font-weight: bold;
+  font-size: 10px;
 }
 
 header a{
   color: white;
+  font-size: 10px;
+}
+
+nav {
+  background-color: #ececec;
+  padding: .6rem 0;
+}
+
+nav ul, main {
+  margin: auto;
+  padding-left: 0;
+  width: 72%;
+}
+
+nav ul {
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+}
+
+nav ul li, footer ul li {
+  display: inline-block;
+  padding-right: .8rem;
+}
+
+
+nav ul li:after, footer ul li:after {
+  content: " / ";
+  font-weight: bolder;
+  padding-left: .8rem;
+}
+
+nav ul li:last-child:after, footer ul li:last-child:after {
+  content: none;
+}
+
+nav li a {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+nav li a:hover {
+  color: #81AF34;
 }
 
 img.logo {
@@ -23,12 +137,78 @@ img.logo {
   height: 20px;
 }
 
-input {
-  display: block;
+main {
+  margin: 0 10rem 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
 }
 
-input.inline {
-  display: inline;
+.article-with-img {
+  display: flex;
+  grid-gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.article-with-img img {
+  max-width: 25%;
+}
+
+.article-with-img p {
+  line-height: 1.7rem;
+}
+
+.article-with-img h2 {
+  margin-top: 0;
+}
+
+.article-with-img section {
+  width: 70%;
+  padding-right: 10rem;
+}
+
+.dog-list {
+  display: flex;
+  flex-wrap: wrap;
+  grid-row-gap: 2.6rem;
+  justify-content: space-between;
+}
+
+.dog-list section {
+  flex-basis: 22%;
+  font-size: .8rem;
+}
+
+.dog-list section div {
+  border: 2px solid #e6e6e6;
+  margin-top: -.7rem;
+  padding: 0 .4rem .6rem .4rem;
+  max-width: 90%;
+}
+
+.dog-list section img {
+  max-width: 90%;
+}
+
+.dog-list p span {
+  content: "Cost to Adopt";
+}
+
+p.price::before{
+  content: "Cost to Adopt: ";
+  font-weight: bolder;
+}
+
+.dog-list .green-button {
+  width: 100%;
+  text-align: center;
+}
+
+.input-city {
+  display: flex;
 }
 
 fieldset {
@@ -40,5 +220,80 @@ fieldset input {
 }
 
 body footer {
-  background-color:steelblue;
+  background-color:#093c60;
+  margin-top: 4rem;
+  color: white;
+  text-align: center;
+  font-size: .6rem;
+  font-weight: bold;
 }
+
+body footer div {
+  width: 22%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+body footer a{
+  color: white;
+}
+
+body footer a:hover, body footer a:active {
+  color: #81AF34;
+}
+
+form label, form legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+input[type=text], select {
+  display: block;
+  margin: .2rem 1rem 1rem 0;
+  border: 1px solid #c8c8c8;
+  padding-top: .8rem;
+  padding-bottom: .6rem;
+  font-size: 1rem;
+  color: #737373;
+}
+
+input[type=submit] {
+  border: none;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+label.radio {
+  font-size: 1rem;
+  color: #737373;
+  font-weight: lighter;
+  padding-right: 1rem;
+}
+
+form fieldset {
+  padding-left: 0;
+  padding-bottom: 1rem;
+}
+
+
+.dogs-adopted {
+  display: flex;
+}
+
+.dogs-adopted section {
+  display: flex;
+}
+
+.dogs-adopted section img {
+  max-width: 30%;
+}
+
+.dogs-adopted section div {
+  padding-left: 1rem;
+}
+
+
+.dogs-adopted section div p {
+  font-size: .8rem;
+}
+

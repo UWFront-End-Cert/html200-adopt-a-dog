@@ -6,14 +6,24 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+      .article-with-img {
+        margin-bottom: 2rem;
+      }
+    </style>
   </head>
 
   <body>
-    <header class="header-background">
-      <img class="logo" src="images/adoptadog-logo.svg" alt="AdoptADog logo">
-      <h4>Seattle's Premiere dog adoption agency</h4>
-      <p><img class="cart-icon" src="images/cart-icon.svg" alt="cart icon"> $1234.56</p>
-      <a href="checkout.html">Checkout</a>
+    <header class="body-header">
+      <div>
+        <img class="logo" src="images/adoptadog-logo.svg" alt="AdoptADog logo">
+        <h3>Seattle's Premiere dog adoption agency</h3>
+      </div>
+      <div>
+        <p><img class="cart-icon" src="images/cart-icon.svg" alt="cart icon"> $1234.56</p>
+        <a class="green-button" href="checkout.html">Checkout</a>
+      </div>
     </header>
 
     <nav>
@@ -24,72 +34,75 @@
     </ul>
     </nav>
 
-    <article>
-      <header>
-        <h2>Adoptadog Blog</h2>
-      </header>
-
-      <section>
+    <main>
+      <h2>Adoptadog Blog</h2>
+      <article class="article-with-img" style="margin-top: 0;">
         <img src="images/blog-1.jpg" alt="man at canyon with a dog">
-        <h3>Traveling With Your Dog</h3>
 
-        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
-          quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
-          hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
-          faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.</p>
+        <section>
+          <h2>Traveling With Your Dog</h2>
 
-        <p>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
-          et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
-          qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
-          voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
-          ulparume nonseca estorer spernam.</p>
-      </section>
+          <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
+            tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+            derum recuptatur, cum volore, undipsa doloreium hillupta aut
+            es ut alitatuscit ommossum haritatur arum qui officae videbiti
+            corporeium faccull oribus es quidignis ipietus explam sus
+            am aut amet ant fugiatum, utem non reptat ad magnienecto
+            volorent fugia nonsedi gendand itatquos as magnimpor aut
+            molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+        </section>
+      </article>
 
-      <section>
+      <article class="article-with-img">
         <img src="images/blog-2.jpg" alt="several dogs on leashes on the street">
-        <h3>How To Walk Multiple Dogs</h3>
 
-        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
-          quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
-          hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
-          faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.</p>
+        <section>
+          <h2>How To Walk Multiple Dogs</h2>
 
-        <p>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
-          et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
-          qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
-          voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
-          ulparume nonseca estorer spernam.</p>
-      </section>
+          <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
+            tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+            derum recuptatur, cum volore, undipsa doloreium hillupta aut
+            es ut alitatuscit ommossum haritatur arum qui officae videbiti
+            corporeium faccull oribus es quidignis ipietus explam sus
+            am aut amet ant fugiatum, utem non reptat ad magnienecto
+            volorent fugia nonsedi gendand itatquos as magnimpor aut
+            molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+        </section>
+      </article>
 
-      <section>
+      <article class="article-with-img" style="margin-bottom: 0">
         <img src="images/blog-3.jpg" alt="woman and dog in sunset">
-        <h3>Teach Your Dog To Fetch!</h3>
 
-        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
-          quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
-          hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
-          faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.</p>
+        <section>
+          <h2>Teach Your Dog To Fetch!</h2>
 
-        <p>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
-          et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
-          qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
-          voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
-          ulparume nonseca estorer spernam.</p>
-      </section>
-    </article>
+          <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
+            tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+            derum recuptatur, cum volore, undipsa doloreium hillupta aut
+            es ut alitatuscit ommossum haritatur arum qui officae videbiti
+            corporeium faccull oribus es quidignis ipietus explam sus
+            am aut amet ant fugiatum, utem non reptat ad magnienecto
+            volorent fugia nonsedi gendand itatquos as magnimpor aut
+            molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+        </section>
+      </article>
+    </main>
 
     <footer>
-      <img class="logo" src="images/adoptadog-logo.svg" alt="AdoptADog logo">
+      <div>
+        <img class="logo" src="images/adoptadog-logo.svg" alt="AdoptADog logo">
 
-      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
 
-      <p>
-        <a href="index.html">Home</a> /
-        <a href="dogs.html">Dogs</a> /
-        <a href="checkout.html">Contact</a>
-      </p>
+        <p>
+          <a href="index.html">Home</a> /
+          <a href="dogs.html">Dogs</a> /
+          <a href="checkout.html">Contact</a>
+        </p>
 
-      <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      </div>
+
     </footer>
   </body>
 </html>

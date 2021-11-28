@@ -9,11 +9,15 @@
   </head>
 
   <body>
-    <header class="header-background">
-      <img class="logo" src="images/adoptadog-logo.svg" alt="AdoptADog logo">
-      <h4>Seattle's Premiere dog adoption agency</h4>
-      <p><img class="cart-icon" src="images/cart-icon.svg" alt="cart icon"> $1234.56</p>
-      <a href="checkout.html">Checkout</a>
+    <header class="body-header">
+      <div>
+        <img class="logo" src="images/adoptadog-logo.svg" alt="AdoptADog logo">
+        <h3>Seattle's Premiere dog adoption agency</h3>
+      </div>
+      <div>
+        <p><img class="cart-icon" src="images/cart-icon.svg" alt="cart icon"> $1234.56</p>
+        <a class="green-button" href="checkout.html">Checkout</a>
+      </div>
     </header>
 
     <nav>
@@ -24,104 +28,116 @@
       </ul>
     </nav>
 
-    <article>
-      <header>
-        <h2>Checkout</h2>
-      </header>
+    <main>
+      <article>
+        <header>
+          <h2>Checkout</h2>
+        </header>
 
-      <form method="GET">
-        <section>
-          <label>Name
-            <input type="text" name="name">
-          </label>
-
-          <label>Email Address
-            <input type="text" name="email">
-          </label>
-
-          <label>Street Address
-            <input type="text" name="street">
-          </label>
-
-          <label>City
-            <input class="inline" type="text" name="city">
-          </label>
-
-          <label>State
-            <select name="state">
-              <option style="display: none;">&nbsp;</option>
-              <option value="ca">CA</option>
-              <option value="id">ID</option>
-              <option value="or">OR</option>
-              <option value="wa">WA</option>
-            </select>
-          </label>
-
-          <label>Zip Code
-            <input class="inline" type="text" name="zip">
-          </label>
-
-          <fieldset>
-            <legend>First Time Adopter?</legend>
-            <label>
-              <input type="radio" name="first-time" value="Yes">Yes
-            </label>
-            <label>
-              <input type="radio" name="first-time" value="No">No
-            </label>
-          </fieldset>
-
-          <label>Pickup Location
-            <select name="pickup">
-              <option style="display: none;">&nbsp;</option>
-              <option value="ca">CA</option>
-              <option value="id">ID</option>
-              <option value="or">OR</option>
-              <option value="wa">WA</option>
-            </select>
-          </label>
-        </section>
-
-        <section>
-          <header><h5>Dogs Adopted</h5></header>
-
+        <form method="GET">
           <section>
-            <img src="images/lucas-card.jpg" alt="a dog named Lucas">
-            <h4>Murphy</h4>
-            <h5>Cost to Adopt:</h5>
-            <p>$123.45</p>
+            <label>Name
+              <input type="text" name="name" size="60">
+            </label>
+
+            <label>Email Address
+              <input type="text" name="email" size="60">
+            </label>
+
+            <label>Street Address
+              <input type="text" name="street" size="60">
+            </label>
+
+            <div class="input-city">
+              <label>City
+                <input type="text" name="city">
+              </label>
+
+              <label>State
+                <select name="state" style="padding-right: 4rem;">
+                  <option style="display: none;">&nbsp;</option>
+                  <option value="ca">CA</option>
+                  <option value="id">ID</option>
+                  <option value="or">OR</option>
+                  <option value="wa">WA</option>
+                </select>
+              </label>
+
+              <label>Zip Code
+                <input type="text" name="zip" size="15">
+              </label>
+            </div>
+
+            <fieldset>
+              <legend>First Time Adopter?</legend>
+              <label class="radio">
+                <input type="radio" name="first-time" value="Yes">Yes
+              </label>
+              <label class="radio">
+                <input type="radio" name="first-time" value="No">No
+              </label>
+            </fieldset>
+
+            <label>Pickup Location
+              <select name="pickup" style="padding-right: 8rem;">
+                <option style="display: none;">&nbsp;</option>
+                <option value="ca">California</option>
+                <option value="id">Idaho</option>
+                <option value="or">Oregon</option>
+                <option value="wa">Washington</option>
+              </select>
+            </label>
           </section>
-        </section>
 
-        <section>
-          <img src="images/duffy-card.jpg" alt="a dog named Duffy">
-          <h4>Duffy</h4>
-          <h5>Cost to Adopt:</h5>
-          <p>$123.45</p>
-        </section>
+          <section style="margin-top: 2rem;">
+            <h3>Dogs Adopted</h3>
 
-        <section>
-          <header><h5>Total Adoption Cost</h5></header>
-          <p>$1234.56</p>
-        </section>
+            <div class="dogs-adopted">
+              <section>
+                <img src="images/lucas-checkout.jpg" alt="a dog named Lucas">
+                <div>
+                  <h3>Murphy</h3>
+                  <p class="price">$123.45</p>
+                </div>
+              </section>
 
-        <input type="submit" value="Submit">
-      </form>
+              <section>
+                <img src="images/duffy-checkout.jpg" alt="a dog named Duffy">
+                <div>
+                  <h3>Duffy</h3>
+                  <p class="price">$123.45</p>
+                </div>
+              </section>
+            </div>
+          </section>
 
-    </article>
+          <section style="margin-top: 2rem;">
+            <h3 style="margin: 0;">Total Adoption Cost</h3>
+            <p>$1234.56</p>
+          </section>
+
+          <input type="submit" value="Submit">
+        </form>
+
+      </article>
+    </main>
+
+
 
     <footer>
-      <img class="logo" src="images/adoptadog-logo.svg" alt="AdoptADog logo">
+      <div>
+        <img class="logo" src="images/adoptadog-logo.svg" alt="AdoptADog logo">
 
-      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
 
-      <p>
-        <a href="index.html">Home</a> /
-        <a href="dogs.html">Dogs</a> /
-        <a href="checkout.html">Contact</a>
-      </p>
+        <p>
+          <a href="index.html">Home</a> /
+          <a href="dogs.html">Dogs</a> /
+          <a href="checkout.html">Contact</a>
+        </p>
 
-      <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      </div>
     </footer>
   </body>
 </html>
