@@ -7,44 +7,25 @@
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
 	<title>Adopt a Dog</title>
-	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico">
+    <script src="js/script.js"></script>
     
     <link href="styles/style.css" rel="stylesheet">
-
     
-    <script>
-        let adoptFee = 0;
-       
-
-        function runningTotal(current) {
-        adoptFee = Math.round((adoptFee+current+ Number.EPSILON) * 100) / 100;        
-        alert('Your total adoption fees are currently '+adoptFee);
-        }
-    
-        
-        function doginfo(name, breed, fee){
-            alert('Hi my name is ' +name+ ', I am a ' +breed+ ' and I cost '+fee+' to adopt.');
-        }
-    </script>   
-
-       
 </head>
 <body>
 
-    <div class="container">
+    <div class="parent">
 
         <!-- header -->
-        <header>  
+      <header>  
             <div>
-          <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text" class="logo">
+             <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text" class="logo">
                 <h1>Seattle's premiere dog adoption agency</h1>
-           <!-- </div>
-           <div> -->
-              <img src="cart-icon.svg" alt="shopping cart icon" class="cart">
-              <p>$1234.56 </p>
-             <button class="button">Checkout</button>
-             </div>
-         </header>
+                  <img src="cart-icon.svg" alt="shopping cart icon" class="cart">
+                     <p>$1234.56 </p>
+                      <button class="button">Checkout</button>
+            </div>
+      </header>
              
         <!-- navigation -->
         <nav>
@@ -52,35 +33,46 @@
             <li><a href="index.html">Home </a>/</li>
             <li><a href="dogs.html">Dogs </a>/</li>
             <li><a href="blog.html">Blog</a></li>
-        </ul> </nav>
+        </ul> 
+    </nav>
     
         <!-- sidebar  (these are basically place holders)-->
     
-        <div id="sidebar1"></div>     
-        <div id="sidebar2"></div> 
+        <!-- <div id="sidebar1"></div>      -->
+        <aside>
+            <h1>From Our Blog</h1>
+        <img src="images/patrick-hendry-221863-unsplash.jpg" alt="boy with a dog in a grand canyon like setting">
+        <h4>Traveling With Your Dog</h4>
+        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas  doluptios dolupta tiandebis nem ut. </p>
+        <a href="blog.html">Read more >></a>
+        <img src="images/wyatt-ryan-367017-unsplash.jpg" alt="boy with a dog in a grand canyon like setting">
+        <h4>How To Walk Multiple Dogs  </h4>
+        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas  doluptios dolupta tiandebis nem ut. </p>
+        <a href="blog.html">Read more >></a>
+        <img src="images/matt-nelson-259365-unsplash.jpg" alt="boy with a dog in a grand canyon like setting">
+        <h4>Teach Your Dog To Fetch!</h4>
+        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas  doluptios dolupta tiandebis nem ut. </p>
+        <a href="blog.html">Read more >></a>
+    
+        </aside> 
 
     <!-- title picture and description -->
-    <div id="content1"><img src="images/home-intro.jpg"></div>
-        
-    <div id="content3"><h1>Adopt a Dog</h1>
-       <p>Iduciendisite quo magnatem iuntum quid quaest ea am, 
-        tenderumet adis dolenem quidustrum fuga. Faceaquae estioria 
-        derum recuptatur, cum volore, undipsa doloreium hillupta aut 
-        es ut alitatuscit ommossum haritatur arum qui officae videbiti 
-        corporeium faccull oribus es quidignis ipietus explam sus 
-        am aut amet ant fugiatum, utem non reptat ad magnienecto 
-        volorent fugia nonsedi gendand itatquos as magnimpor aut 
-        molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-     </div>  
-     <!-- container1 close -->
+    <article>
+       <div class="content1"><img src="images/eric-ward-610868-unsplash.jpg" alt="boy hugging his dog" ></div>
+       <div class="content3">
+           <h1>Adopt A Dog</h1>
+            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, 
+                tenderumet adis dolenem quidustrum fuga. Faceaquae estioria 
+                derum recuptatur, cum volore, undipsa doloreium hillupta aut 
+                es ut alitatuscit ommossum haritatur arum qui officae videbiti 
+                corporeium faccull oribus es quidignis ipietus explam sus 
+                am aut amet ant fugiatum, utem non reptat ad magnienecto 
+                volorent fugia nonsedi gendand itatquos as magnimpor aut 
+                molor autatia ad est officimus accae et omnia cus, od qui ate</p>
      </div>
-  
-        
-       <!-- container2 open -->   
-
-  <div class="container2">
-
-    <div id="content4">
+ 
+    
+    <div class="content4" >
         <img onclick="doginfo('Murphy','Great Dane','$123.45')" style="cursor: pointer;" src="images/murphy-card.jpg" alt="Photo of Murphy.">
         <h2 >Murphy</h2> 
         <p><strong>Cost to Adopt:</strong> $123.45</p>
@@ -92,7 +84,7 @@
         <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
     </div>
 
-    <div id="content5">
+    <div class="content5">
            <img onclick="doginfo('Poppy','Terrier','$123.45')" style="cursor: pointer;" src="images/poppy-card.jpg" alt="Photo of Murphy.">
            <h2>Poppy</h2> 
            <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
@@ -104,7 +96,7 @@
             <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
     </div>
 
-    <div id="content6">
+    <div class="content6">
             <img onclick="doginfo('Jack','Begal','$123.45')" style="cursor: pointer;" src="images/jack-card.jpg" alt="Photo of Murphy.">
             <h2>Jack</h2> 
             <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
@@ -113,10 +105,13 @@
                 reicid ut et etur sunt arum
                 rendae pla endis re ea erum,
                 qui doluptae</p>
-                <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
-     </div>
+            <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
+     </div> 
+   
 
-    <div id="content7">
+
+
+    <div class="content7">
             <img onclick="doginfo('Duffy','Pit Bull','$123.45')" style="cursor: pointer;" src="images/duffy-card.jpg" alt="Photo of Murphy.">
             <h2>Duffy</h2> 
             <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
@@ -125,10 +120,10 @@
                 reicid ut et etur sunt arum
                 rendae pla endis re ea erum,
                 qui doluptae</p>
-                <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
+            <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
      </div>
 
-     <div id="content8">
+     <div class="content8">
             <img onclick="doginfo('Jake','Golden Labrator','$123.45')" style="cursor: pointer;" src="images/jake-card.jpg" alt="Photo of Murphy.">
             <h2>Jake</h2> 
             <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
@@ -138,9 +133,9 @@
                 rendae pla endis re ea erum,
                 qui doluptae</p>
                 <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
-     </div>
+     </div> 
 
-     <div id="content9">
+     <div class="content9">
             <img onclick="doginfo('Lucas','Labrator','$123.45')" style="cursor: pointer;" src="images/lucas-card.jpg" alt="Photo of Murphy.">
             <h2>Lucas</h2> 
             <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
@@ -152,38 +147,12 @@
                 <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
      </div>
 
-     <div id="content10">
-            <img onclick="doginfo('Angus','Bull Dog','$123.45')" style="cursor: pointer;" src="images/angus-card.jpg" alt="Photo of Murphy.">
-            <h2>Angus</h2> 
-            <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
-            <p>Corrum volorit iandae
-                nimaxim cum restia volor
-                reicid ut et etur sunt arum
-                rendae pla endis re ea erum,
-                qui doluptae</p>
-                <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
-        </div>
-
-    <div id="content11">
-            <img onclick="doginfo('Violet','Black Lab Puppy','$123.45')" style="cursor: pointer;" src="images/violet-card.jpg" alt="Photo of Murphy.">
-            <h2>Violet</h2> 
-            <p onclick="alert('Click event triggered')" onmouseover="" style="cursor: pointer;"><strong>Cost to Adopt:</strong> $123.45</p>
-            <p>Corrum volorit iandae
-                nimaxim cum restia volor
-                reicid ut et etur sunt arum
-                rendae pla endis re ea erum,
-                qui doluptae</p>
-                <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>            
-    
-    </div>
-
-
-    <div id="content12">
+    <div class="content10">
        
-        <button><a href="dogs.html">See More Dogs </a></button>
+      <p> <a href="dogs.html" class="fcc-btn2">See More Dogs </a></p>
 
 </div>
-     <!-- container2 close -->
+</article>
   
 
 
