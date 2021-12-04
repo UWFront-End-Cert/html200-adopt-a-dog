@@ -152,7 +152,7 @@ nav li {
     */
 
     page-break-after: always;
-    break-after: always;
+    /* break-after: always; */
 }
 
 .portrait-card {
@@ -220,7 +220,7 @@ footer p {
 
 footer ul {
     padding: 0;
-    background-color: none;
+    background-color: transparent;
 
     display: flex;
 

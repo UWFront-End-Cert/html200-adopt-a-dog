@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
+<!-- <html lang="en"> because HTML5 W3.org complains if it's 'en'-->
 <head>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="static-files/stylesheet.css">
@@ -18,7 +19,7 @@
         </div>
 
         <div id="header-logo-caption-box">
-            <img id="header-dog-logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+            <img class="header-dog-logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
             <h1 id="header-caption">Seattle’s premiere dog adoption agency</h1>
         </div>
     </header>
@@ -34,62 +35,71 @@
     </nav>
 
     <main>
-        <section class="introduction">
-            <h1>Checkout</h1>
-        </section>
+        <h1>Checkout</h1>
 
         <section class="checkout-form">
+            <h2 style="display: none">Hide this for HTML5 W3 validator</h2>
             <form>
-                <label>Name
+                <p>Name
+                    <br>
                     <input type="text" name="adopter-name">
-                </label>
+                </p>
 
-                <label>Email Address
+                <p>Email Address
+                    <br>
                     <input type="email" name="adopter-email"> 
-                </label>
+                </p>
 
-                <label>Street Address
+                <p>Street Address
+                    <br>
                     <input type="text" name="adopter-street-address">
-                </label>
+                </p>
 
-                <label>City
+                <p>City
+                    <br>
                     <input type="Text" name="adopter-city">
-                </label>
+                </p>
                 
-                <label>State
+                <p>State
+                    <br>
                     <select name="adopter-state">
                         <option value="CA">CA</option>
                         <option value="OR">OR</option>
                         <option value="WA">WA</option>
                     </select>
-                </label>
+                </p>
 
-                <label>Zip Code
+                <p>Zip Code
+                    <br>
                     <input type="text" name="adopter-zip">
-                </label>
+                </p>
 
-                <label>First Time Adopter
+                <p>First Time Adopter
+                    <br>
                     <label>Yes<input type="radio" name="first-time-adopter" value="yes"></label>
                     <label>No<input type="radio" name="first-time-adopter" value="no"></label>
-                </label>
+                </p>
 
-                <label>Pickup Location
-                    <select name="">
-                        <option type="Seattle">Seattle</option>
-                        <option type="Bellevue">Bellevue</option>
-                        <option type="Kirkland">Kirkland</option>
+                <p>Pickup Location
+                    <br>
+                    <select name="pickup-location">
+                        <option value="Seattle">Seattle</option>
+                        <option value="Bellevue">Bellevue</option>
+                        <option value="Kirkland">Kirkland</option>
                     </select>
-                </label>
+                </p>
 
-                <label>Dogs Adopted
+                <p>Dogs Adopted
+                    <br>
                     <!-- Don't know how to add a dynamic list here, placeholder -->
                     
-                </label>
+                </p>
 
-                <label>Total Adoption Cost
+                <p>Total Adoption Cost
+                    <br>
                     <!-- Don't know how to add a calculated value here, placeholder -->
                     
-                </label>
+                </p>
 
                 <button>Submit</button>
             </form>
@@ -97,7 +107,7 @@
     </main>
 
     <footer>
-        <img id="header-dog-logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <img class="header-dog-logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
         <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>  
             esseque invenienihil imaximu scideru ptistiusam consequunt</p>
 
@@ -107,6 +117,8 @@
             <li><a href="dogs.html">Blog</a></li>
             <li>&nbsp;&nbsp;</li>
             <li><a href="contact.html">Contact</a></li>
+            <li>&nbsp;&nbsp;</li>
+            <li><a href="checkout.html">Checkout</a></li>
         </ul>
 
         <p>© 2018 Adoptadog, LLC &nbsp; | &nbsp; Seattle, WA</p>
