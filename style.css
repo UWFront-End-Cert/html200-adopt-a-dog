@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, form label, form fieldset legend {
   color: #093C60;
 }
 
+h2 {
+  margin-top: 0;
+}
+
 p {
   letter-spacing: .6px;
   word-spacing: 1.2px;
@@ -50,40 +54,41 @@ a.gray-button {
   border-radius: .1em;
 }
 
-.body-header {
+body header {
   background: url(images/header-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
-  padding: 3% 6% 0 6%;
-  display: flex;
+  padding: 2rem 5rem;
+  height: 280px;
 }
 
-.body-header h3{
-  font-family: 'Times New Roman', Times, serif;
+body header div:first-child {
+  float: left;
 }
 
-.body-header div:nth-child(1) {
-  width: 85%;
-}
-
-.body-header div:nth-child(2) {
+body header div:nth-of-type(2) {
   text-align: right;
+  float: right;
 }
 
-header h3 {
-  margin-top: 0;
+body header img {
+  max-width: 90%;
+}
+
+body header h3 {
+  font-family: 'Times New Roman', Times, serif;
   color: #81AF34;
   font-style: italic;
+  margin-top: 0;
 }
 
-header p {
+body header p {
   color: white;
   font-weight: bold;
   font-size: 10px;
 }
 
-header a{
+body header a{
   color: white;
   font-size: 10px;
 }
@@ -91,6 +96,7 @@ header a{
 nav {
   background-color: #ececec;
   padding: .6rem 0;
+  margin-bottom: 1.5rem;
 }
 
 nav ul, main {
@@ -108,7 +114,6 @@ nav ul li, footer ul li {
   display: inline-block;
   padding-right: .8rem;
 }
-
 
 nav ul li:after, footer ul li:after {
   content: " / ";
@@ -129,8 +134,8 @@ nav li a:hover {
   color: #81AF34;
 }
 
-img.logo {
-  height: 100px;
+img.responsive {
+  max-width: 100%;
 }
 
 .cart-icon {
@@ -145,46 +150,31 @@ main {
   margin: auto;
 }
 
-.article-with-img {
-  display: flex;
-  grid-gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 1.5rem;
+.head-article p {
+  line-height: 1.5rem;
 }
 
-.article-with-img img {
-  max-width: 25%;
-}
-
-.article-with-img p {
-  line-height: 1.7rem;
-}
-
-.article-with-img h2 {
-  margin-top: 0;
-}
-
-.article-with-img section {
-  width: 70%;
-  padding-right: 10rem;
+.head-article img {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .dog-list {
   display: flex;
   flex-wrap: wrap;
-  grid-row-gap: 2.6rem;
   justify-content: space-between;
 }
 
 .dog-list section {
   flex-basis: 22%;
   font-size: .8rem;
+  margin-bottom: 2rem;
 }
 
 .dog-list section div {
   border: 2px solid #e6e6e6;
-  margin-top: -.7rem;
+  margin-top: -.3rem;
   padding: 0 .4rem .6rem .4rem;
   max-width: 90%;
 }
@@ -226,12 +216,17 @@ body footer {
   text-align: center;
   font-size: .6rem;
   font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+body footer img {
+  max-width: 30%;
 }
 
 body footer div {
   width: 22%;
   margin: auto;
-  padding: 2rem 0;
 }
 
 body footer a{
@@ -255,6 +250,10 @@ input[type=text], select {
   padding-bottom: .6rem;
   font-size: 1rem;
   color: #737373;
+}
+
+.input-responsive {
+  width: 47%;
 }
 
 input[type=submit] {
@@ -286,6 +285,7 @@ form fieldset {
 
 .dogs-adopted section img {
   max-width: 30%;
+  margin-bottom: 1rem;
 }
 
 .dogs-adopted section div {
@@ -297,3 +297,24 @@ form fieldset {
   font-size: .8rem;
 }
 
+@media screen and (max-width: 767px) {
+  body header {
+    padding: 2rem;
+  }
+
+  body footer div {
+    width: 70%;
+  }
+
+  .dog-list, .dogs-adopted {
+    display: table;
+  }
+
+  .input-responsive {
+    width: 100%;
+  }
+
+  .input-city {
+    display: table;
+  }
+}
