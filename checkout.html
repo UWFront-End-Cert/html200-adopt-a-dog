@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Page</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="images/adoptadog-logo.svg" alt="Adopt a Dog Logo" />
+        <p>Seattle's premiere dog adoption agency</p>
+      </div>
+      <div>
+        <img src="images/cart-icon.svg" alt="Shopping cart icon" />
+        <p>$1234.56</p>
+        <button type="button">Checkout</button>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li>Home /</li>
+        <li>Dogs /</li>
+        <li>Blog</li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Checkout</h1>
+
+      <form class="" action="index.html" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="email">Email Address</label>
+        <input type="text" name="email" id="email" />
+
+        <label for="street">Street Address</label>
+        <input type="text" name="street" id="street" />
+
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" />
+
+        <label for="state">State</label>
+        <select name="state" id="state">
+          <option value="washington">WA</option>
+          <option value="oregon">OR</option>
+          <option value="california">CA</option>
+        </select>
+
+        <label for="zip">Zip Code</label>
+        <input type="text" name="zip" id="zip" />
+
+        <p>First Time Adopter?</p>
+        <p>
+          <input type="radio" name="returning" id="yes" value="no" />
+          <label for="yes">Yes</label>
+
+          <input type="radio" name="returning" id="no" value="no" />
+          <label for="no">No</label>
+
+          <label for="location">Pickup Location</label>
+          <select name="location" id="location">
+            <option value="Seattle">Seattle</option>
+            <option value="Bellevue">Bellevue</option>
+            <option value="Redmond">Redmond</option>
+          </select>
+        </p>
+
+        <p>Dogs Adopted</p>
+        <div class="adopted">
+          <img src="images/lucas-checkout.jpg" alt="portrait of Lucas" />
+          <p>Lucas</p>
+          <p>Cost to Adopt: $123.45</p>
+        </div>
+        <div class="adopted">
+          <img src="images/duffy-checkout.jpg" alt="portrait of duffy" />
+          <p>Duffy</p>
+          <p>Cost to Adopt: $123.45</p>
+        </div>
+
+        <p>Total Adoption Costs</p>
+        <p>$1234.56</p>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+
+    <footer>
+      <img src="images/adoptadog-logo.svg" alt="Adopt a Dog Logo" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        nesciunt fuga totam voluptates!
+      </p>
+
+      <ul>
+        <li>Home /</li>
+        <li>Dogs /</li>
+        <li>Contact</li>
+      </ul>
+
+      <small>&copy; 2018 Adoptadog, LLC | Seattle, WA</small>
+    </footer>
+  </body>
+</html>
