@@ -9,9 +9,9 @@
   </head>
 
   <body>
-    <header class="body-header">
+    <header>
       <div>
-        <img class="logo" src="images/adoptadog-logo.svg" alt="AdoptADog logo">
+        <img src="images/adoptadog-logo.svg" alt="AdoptADog logo">
         <h3>Seattle's Premiere dog adoption agency</h3>
       </div>
       <div>
@@ -29,23 +29,20 @@
     </nav>
 
     <main>
+      <h2>Checkout</h2>
       <article>
-        <header>
-          <h2>Checkout</h2>
-        </header>
-
         <form method="GET">
           <section>
             <label>Name
-              <input type="text" name="name" size="60">
+              <input type="text" class="input-responsive" name="name">
             </label>
 
             <label>Email Address
-              <input type="text" name="email" size="60">
+              <input type="text" class="input-responsive" name="email">
             </label>
 
             <label>Street Address
-              <input type="text" name="street" size="60">
+              <input type="text" class="input-responsive" name="street">
             </label>
 
             <div class="input-city">
@@ -64,7 +61,7 @@
               </label>
 
               <label>Zip Code
-                <input type="text" name="zip" size="15">
+                <input type="text" name="zip">
               </label>
             </div>
 
@@ -79,7 +76,7 @@
             </fieldset>
 
             <label>Pickup Location
-              <select name="pickup" style="padding-right: 8rem;">
+              <select name="pickup" style="width: 10rem;">
                 <option style="display: none;">&nbsp;</option>
                 <option value="ca">California</option>
                 <option value="id">Idaho</option>
@@ -111,7 +108,7 @@
             </div>
           </section>
 
-          <section style="margin-top: 2rem;">
+          <section style="margin-top: 1rem;">
             <h3 style="margin: 0;">Total Adoption Cost</h3>
             <p>$1234.56</p>
           </section>
@@ -123,11 +120,9 @@
     </main>
 
 
-
     <footer>
+      <img src="images/adoptadog-logo.svg" style="margin: auto;" alt="AdoptADog logo">
       <div>
-        <img class="logo" src="images/adoptadog-logo.svg" alt="AdoptADog logo">
-
         <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
 
         <p>
