@@ -1,5 +1,6 @@
 let name = 'dog';
 let breed = 'breed';
+let cart = [];
 let price = 0;
 let total = 0;
 const filler = 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.'
@@ -38,10 +39,15 @@ function updateTotal(price) {
 }
 
 function addToCart(name, price) {
-  updateTotal(price);
-  alert('Added ' + name + ' to cart!' + '\nTotal fees: $' + total.toFixed(2));
+  if (cart.includes(name)) {
+    alert(name + ' is already in cart!')
+  } else {
+    updateTotal(price);
+    cart.push(name);
+    $('.total').text(`$${total.toFixed(2)}`);
+    alert('Total fees: $' + total.toFixed(2));
+  }
 }
-
 
 function createBlogs() {
   let container = document.getElementById('blog-entries');
@@ -74,28 +80,64 @@ function createBlogs() {
   }
 }
 
+// function submitButton() {
+//   try {
+//     let form = {
+//       name: document.getElementById('userName').value,
+//       email: document.getElementById('userEmail').value,
+//       address: document.getElementById('userAddress').value,
+//       city: document.getElementById('city').value,
+//       state: document.getElementById('state').value,
+//       zip: document.getElementById('zipCode').value,
+//       first: document.querySelector('input[name="firstAdopt"]:checked').value,
+//       pickup: document.getElementById('location').value,
+//     };
+//     console.log(form);
+//     if (form.name == '' || form.email == '' || form.address == '' ||
+//       form.city == '' || form.state == '' || form.zip == '' ||
+//       form.pickup == '') {
+//       alert('Please fill out all fields.');
+//     } else {
+//       alert('Thank you. The form information has been received. ');
+//     }
+//   } catch (TypeError) {
+//     console.log('Radio button not selected');
+//     alert('First time adopter? Please select Yes or No.');
+//   }
+// }
+
 function submitButton() {
-  try {
-    let form = {
-      name: document.getElementById('userName').value,
-      email: document.getElementById('userEmail').value,
-      address: document.getElementById('userAddress').value,
-      city: document.getElementById('city').value,
-      state: document.getElementById('state').value,
-      zip: document.getElementById('zipCode').value,
-      first: document.querySelector('input[name="firstAdopt"]:checked').value,
-      pickup: document.getElementById('location').value,
-    };
-    console.log(form);
-    if (form.name == '' || form.email == '' || form.address == '' ||
-      form.city == '' || form.state == '' || form.zip == '' ||
-      form.pickup == '') {
-      alert('Please fill out all fields.');
-    } else {
-      alert('Thank you. The form information has been received. ');
-    }
-  } catch (TypeError) {
-    console.log('Radio button not selected');
-    alert('First time adopter? Please select Yes or No.');
+  let form = {
+    name: $('#userName').val(),
+    email: $('#userEmail').val(),
+    address: $('#userAddress').val(),
+    city: $('#city').val(),
+    state: $('#state').val(),
+    zip: $('#zipCode').val(),
+    first: $('input[name="firstAdopt"]:checked').val(),
+    pickup: $('#location').val(),
+  };
+  console.log(form);
+  if (form.name == '' || form.email == '' || form.address == '' ||
+    form.city == '' || form.state == '' || form.zip == '' ||
+    form.pickup == '' || form.first == undefined) {
+    alert('Please fill out all fields.');
+  } else {
+    alert('Thank you. The form information has been received. ');
   }
 }
+
+$(function() {
+  $('.dog').hover(function(e) {
+      $('img', this).css({
+        'transform': 'scale(1.25)',
+        'transition': '.5s'
+      });
+    },
+    function(e) {
+      $('img', this).css({
+        'transform': 'scale(1)',
+        'transition': '.5s'
+      });
+    });
+});
