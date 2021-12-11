@@ -1092,15 +1092,16 @@ button a:hover {
 
 /* Blog Page */
 
-.container5 {
+.container5{
   display: grid;
-  grid-template-columns: 0.5fr minmax(0, 1fr) minmax(0, 1fr) 0.5fr;
+  height: 100vh;
+  grid-template-columns:  minmax(0, 1fr) minmax(0, 1fr);
   grid-template-rows: minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(
-      0,
-      25rem
-    );
+    0,
+    25rem
+  );
   grid-template-areas:
-    'sidebar1 content17 content18 sidebar2'
+    
     'sidebar1 content19 content20 sidebar2'
     'sidebar1 content21 content22 sidebar2'
     'footer footer footer footer  ';
@@ -1108,9 +1109,12 @@ button a:hover {
   margin-left: 2rem;
 }
 
+
+ 
 #content17 {
   display: grid;
   grid-area: content17;
+  border: red solid 1px;
 }
 
 #content17 img {
@@ -1118,7 +1122,7 @@ button a:hover {
   height: auto;
 }
 
-/* content 18 BLOG */
+  
 #content18 {
   display: grid;
   grid-area: content18;
@@ -1128,12 +1132,32 @@ button a:hover {
   color: #093c60;
 }
 
+#content18 h2 {
+  color: #093c60;
+}
+
 #content18 h4 {
   color: black;
   margin-top: 0.5rem;
   padding-top: 1rem;
   font-weight: 200;
 }
+
+#content18 h3 {
+  color: #093c60;
+}
+
+#content18 p {
+  color: black;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  font-weight: 200;
+}
+
+
+
+
+
 
 /* content19 BLOG */
 #content19 {
@@ -1189,6 +1213,223 @@ button a:hover {
   margin-top: 0.5rem;
   padding-top: 1rem;
   font-weight: 200;
+}
+
+/* dynamic blog page */
+
+main {
+  display:grid;
+  grid-template-columns:  minmax(0, 1fr) minmax(0, 2fr);
+  grid-template-areas:"blogimage bloglabel";
+  margin-left: 20rem;
+  margin-right: 10rem;
+
+}
+
+.blogimage {
+  max-width: 100%;
+  height: auto;
+  padding-bottom:1rem;
+  padding-top:1rem;
+}
+
+.bloglabel {
+  margin-bottom:1rem;
+  margin-top:1rem;
+  margin-right: 5rem;
+  margin-left:1rem;
+}
+
+.bloglabel h3{
+  color: #093c60;
+  font-size: 2em;
+}
+
+.bloglabel p {
+  color: black;
+  padding-top: 1rem;
+  font-size:1.2em;
+  font-weight: 200;
+}
+
+.bloglabel2 p {
+  color: black;
+  padding-top: 2rem;
+  font-weight: 200;
+}
+
+/* Contact page  */
+
+.container22 {
+  display: grid;
+  height: 200vh;
+  grid-template-columns: 0.3fr minmax(0, 1.5fr) 1fr;
+  grid-template-rows: minmax(0, 10rem);
+  grid-template-areas: 'sidebar1 content23 sidebar2';
+  gap: 1rem;
+  padding-left: 3.8rem;
+  margin-right: 10rem;
+}
+
+#content23 {
+  display: grid;
+  grid-area: content23;
+}
+
+#content23 h1 {
+  padding-left: 4rem;
+  color: #093c60;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+#content23 h4 {
+  padding-left: 4rem;
+  padding-top: 3rem;
+  color: #093c60;
+  padding-bottom: 1rem;
+}
+
+#content23 p {
+  padding-left: 4rem;
+  padding-top: 3rem;
+  color: #093c60;
+  padding-bottom: 1rem;
+}
+
+.divide {
+  display: grid;
+  grid-template-columns:
+    minmax(9.5rem, 9.8rem) minmax(5rem, 5.5rem) minmax(5.2rem, 5.8rem)
+    minmax(5rem, 5.5rem);
+  grid-template-areas: 'img1 content1 img2 content2';
+}
+
+.form {
+margin-left:4rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  margin-left: 4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#state {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  margin-left: 4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  margin-left: 4rem;
+}
+
+.button-form {
+  background-color: #81b741;
+  width: 25%;
+  height: 5%;
+  margin-left: 4rem;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 2px;
+  border: none;
+  text-align: center;
+}
+
+.radio {
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+}
+
+.radio p {
+  padding-left: 4rem;
+  padding-top: 3rem;
+  color: #093c60;
+  padding-bottom: 1rem;
+}
+
+.pickup {
+  margin-left: 3.5rem;
+}
+
+.location {
+  padding: 0.8rem 1.2rem;
+  margin-left: 4rem;
+  width: 50%;
+}
+
+/* .city {
+  width: 25%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  float: left;
+}
+
+.state {
+  margin-left: 1rem;
+  width: 25%;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-right: 3rem;
+  padding: 0.8rem 0.5rem;
+}
+
+.zip {
+  margin-left: 4rem;
+  width: 36%;
+  margin-top: 0;
+  padding: 0.8rem 0.5rem;
+} */
+
+
+
+.lside {
+  display: inline;
+  grid-area: img1;
+  margin-left: 4rem;
+  justify-items: end;
+}
+
+.lside img {
+  width: 100%;
+}
+
+.lside p {
+  display: inline;
+}
+
+.rside {
+  display: grid;
+  grid-area: content1;
+}
+
+.lside2 {
+  display: grid;
+  grid-area: img2;
+  justify-items: end;
+}
+
+.lside2 img {
+  width: 100%;
+}
+
+.rside2 {
+  display: grid;
+  grid-area: content2;
+  margin-left: 0;
+}
+
+.rside2 p {
+  margin: 0;
+  padding-top: 0.5rem;
+  font-size: 0.6em;
 }
 
 /* ************************************************ */
@@ -1440,3 +1681,108 @@ footer p {
     margin-right: 2rem;
   }
 }
+
+/* blog media query */
+
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  main {
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      'blogimage'
+      'bloglabel'
+      'bloglabel2';
+      /* margin-left: 20rem; */
+      /* margin-right: 5rem; */
+
+}
+#blogArticles {
+  display:grid;
+  background:green;
+  /* margin-left:8rem; */
+  margin-right:22rem;
+}
+
+.blogimage {
+background-color: coral;
+margin-right:2rem;
+}
+
+.photo {
+  margin-right:2rem;
+  max-width: 100%;
+  height: auto;
+}
+.bloglabel h3 {
+background-color: blue;
+}
+.bloglabel p {
+  width:100%;
+  background-color: yellow;
+  margin-right:3rem;
+  margin-left: 2rem;
+}
+.bloglabel2 p {
+  background-color: red;
+  margin-right:3rem;
+}
+}
+
+/* contact media query */
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .container33 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 0.05fr 1fr auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    grid-template-areas:
+      'header'
+      'nav'
+      'aside'
+      'article'
+      'footer';
+  }
+
+  aside {
+    display: none;
+  }
+}
+
+@media screen and (min-width:300px) and (max-width: 767px) {
+  .container22{
+  display: grid;
+  height: 180vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-areas:
+  'sidebar1'
+  'content23'
+  'sidebar2';
+  gap: 1rem;
+
+}
+
+
+#content23 h4 {
+  padding-left:1rem;
+}
+
+input {
+  width: 50%;
+  padding: 0.8rem 1.2rem;
+  margin-left:0.5rem;
+  margin-right:0.5rem;
+  /* margin-top: 1.5rem;
+  margin-bottom: 1.5rem; */
+}
+
+.label .button-form .radio .pickup .location .city .state .zip {
+  margin-left:0.5rem;
+}
+}
+
