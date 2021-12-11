@@ -8,6 +8,11 @@
 </head>
 <body>
     <header>
+        <div id="header-logo-caption-box">
+            <img class="header-dog-logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+            <h1 id="header-caption">Seattle’s premiere dog adoption agency</h1>
+        </div>
+
         <div id="cart-box">
             <div id="cart-and-total-box">
                 <img id="cart-logo" src="../html200-adopt-a-dog/images/cart-icon.svg" alt="cart representation">
@@ -16,11 +21,6 @@
             <form action="checkout.html">
                 <button>Checkout</button>
             </form>
-        </div>
-
-        <div id="header-logo-caption-box">
-            <img class="header-dog-logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
-            <h1 id="header-caption">Seattle’s premiere dog adoption agency</h1>
         </div>
     </header>
 
@@ -40,47 +40,49 @@
         <section class="checkout-form">
             <h2 style="display: none">Hide this for HTML5 W3 validator</h2>
             <form>
-                <p>Name
+                <p class="checkout-caption">Name
                     <br>
                     <input type="text" name="adopter-name">
                 </p>
 
-                <p>Email Address
+                <p class="checkout-caption">Email Address
                     <br>
                     <input type="email" name="adopter-email"> 
                 </p>
 
-                <p>Street Address
+                <p class="checkout-caption">Street Address
                     <br>
                     <input type="text" name="adopter-street-address">
                 </p>
 
-                <p>City
-                    <br>
-                    <input type="Text" name="adopter-city">
-                </p>
-                
-                <p>State
-                    <br>
-                    <select name="adopter-state">
-                        <option value="CA">CA</option>
-                        <option value="OR">OR</option>
-                        <option value="WA">WA</option>
-                    </select>
-                </p>
-
-                <p>Zip Code
-                    <br>
-                    <input type="text" name="adopter-zip">
-                </p>
-
-                <p>First Time Adopter
+                <section class="checkout-macro-location">
+                    <p class="checkout-caption">City
+                        <br>
+                        <input type="Text" name="adopter-city">
+                    </p>
+                    
+                    <p class="checkout-caption">State
+                        <br>
+                        <select name="adopter-state">
+                            <option value="CA">CA</option>
+                            <option value="OR">OR</option>
+                            <option value="WA">WA</option>
+                        </select>
+                    </p>
+                    
+                    <p class="checkout-caption">Zip Code
+                        <br>
+                        <input type="text" name="adopter-zip">
+                    </p>
+                </section>
+                    
+                <p class="checkout-caption">First Time Adopter
                     <br>
                     <label>Yes<input type="radio" name="first-time-adopter" value="yes"></label>
                     <label>No<input type="radio" name="first-time-adopter" value="no"></label>
                 </p>
 
-                <p>Pickup Location
+                <p class="checkout-caption">Pickup Location
                     <br>
                     <select name="pickup-location">
                         <option value="Seattle">Seattle</option>
@@ -89,19 +91,36 @@
                     </select>
                 </p>
 
-                <p>Dogs Adopted
+                <p class="checkout-caption">Dogs Adopted
                     <br>
-                    <!-- Don't know how to add a dynamic list here, placeholder -->
-                    
+
+                    <section class="dogs-to-be-adopted">
+                        <div class="checkout-profile">
+                            <img src="images/lucas-checkout.jpg">
+                            <div class="details">
+                                <h2>Duffy</h2>
+                                <p><strong>Cost to adopt:</strong> $123.45</p>
+                            </div>
+                        </div>
+
+                        <div class="checkout-profile">
+                            <img src="images/duffy-checkout.jpg">
+                            <div class="details">
+                                <h2>Duffy</h2>
+                                <p><strong>Cost to adopt:</strong> $123.45</p>
+                            </div>
+                        </div>
+                    </section>
                 </p>
 
-                <p>Total Adoption Cost
+                <p class="checkout-caption">Total Adoption Cost
                     <br>
-                    <!-- Don't know how to add a calculated value here, placeholder -->
+                    <p>$ 1234.56</p>
                     
                 </p>
-
-                <button>Submit</button>
+                <form class="adopt-form-button">
+                    <button class="add-to-cart">Submit</button>
+                </form>
             </form>
         </section>
     </main>
@@ -112,9 +131,9 @@
             esseque invenienihil imaximu scideru ptistiusam consequunt</p>
 
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li>&nbsp;&nbsp;</li>
-            <li><a href="dogs.html">Blog</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li>&nbsp;&nbsp;</li>
             <li><a href="contact.html">Contact</a></li>
             <li>&nbsp;&nbsp;</li>

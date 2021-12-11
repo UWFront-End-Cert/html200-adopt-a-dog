@@ -1,16 +1,24 @@
-/** Adding note to satisfy Lesson 2, assignment 3
+/** Optimized for 1920x1080 screens.
 **/
 
 :root {
     --lime: #87BD42;
     --light-gray: #ECECEC;
     --dark-blue: #294F68;
+    --deep-blue: #05395D;
     --gray: #3D3D3D;
 }
 
-header, body {
+
+
+
+body {
+    max-width: 1920px;
+
     margin: 0;
-    padding: 0;
+
+    padding-left: auto;
+    padding-right: auto;
 }
 
 /* HEADER ELEMENT
@@ -24,35 +32,35 @@ header {
     width: 100%;
     height: 20rem;
 
+    padding-top: 2rem;
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-content: center;
 }
 
 #header-logo-caption-box {
     width: 30%;
     display: inline-block;
-    
-    /* Distance will need to adapt based on screen size */
-    padding-left: 5rem;
 }
 
-#header-dog-logo {
+.header-dog-logo {
     width: 100%;
 }
 
 #header-caption {
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     font-style: italic;
 
     color: var(--lime);
 }
 
-#cart-box {
-    align-self: flex-end;
-    align-content: flex-start;
-}
+/* #cart-box {
+   Empty and commented out until needed. 
+} */
 
 #cart-and-total-box {
     width: 100%;
@@ -90,6 +98,7 @@ header {
     color: #FFF;
 }
 
+
 /* NAVBAR ELEMENT
  *
 */
@@ -103,31 +112,78 @@ nav {
 nav ul {
     margin: 0;
     padding: 1em;
-    padding-left: 5em;
+    padding-left: 10em;
+    padding-right: 10rem;
+
+    color: var(--deep-blue);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: bolder;
 }
 
 nav li {
     display: inline;
+
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+nav li:first-child {
+    padding-left: 0;
+}
+
+nav a {
+    color: var(--deep-blue);
+    text-decoration: none;
 }
 
 /* MAIN ELEMENT STYLING */
+main {
+    padding-top: 2rem;;
+    padding-left: 11.5em;
+    padding-right: 11.5rem;
+}
+
+main h1 {
+    color: var(--dark-blue);
+    font-size: 24pt;
+}
 
 /* section element
  * BLOG ENTRY
  */
+
 .blog-entry {
+    margin-bottom: 2rem;
+
     display: flex;
 
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: row nowrap;
 }
 
-.blog-entry h1 {
+.blog-entry img {
+    object-fit: scale-down;
+}
+
+.content-intro {
+    padding-left: 3rem;
+}
+
+.content-intro h2 {
+    font-size: 24pt;
+}
+
+.content-intro p {
+    font-size: 18pt;
+}
+
+.blog-entry h2 {
     color: var(--dark-blue);
 }
 
 .blog-entry p {
-    width: 30em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* section element 
@@ -142,33 +198,88 @@ nav li {
     display: flex;
 
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .dog-entry {
-    width:200px;
+    margin-bottom: 2rem;
+    
+    width:13rem;
+    
+    border: solid .15rem;
+    border-color: var(--light-gray);
 }
 
 .dog-entry:nth-child(4n) {
     /* I have no idea how this works. 
     https://stackoverflow.com/questions/19574851/how-to-specify-an-element-after-which-to-wrap-in-css-flexbox
     */
-
+    
     page-break-after: always;
     /* break-after: always; */
 }
 
 .portrait-card {
-    width: 200px;
+    width: 13rem;
+}
+
+.dog-entry h2 {
+    padding-left: 1rem;
+    
+    color: var(--dark-blue);
+}
+
+.dog-entry p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+
+.adopt-form-button {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 1rem;
+}
+
+.add-to-cart {
+    width: 85%;
+    
+    font-size: 18pt;
+
+    border: none;
+    border-radius: .25rem;
+    background-color: var(--lime);
+    color: #FFF;
+}
+
+.see-more-dogs-section {
+    padding-bottom: 2rem;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.see-more-dogs {
+    padding: .75rem .75rem;
+
+    font-size: 18pt;
+
+    border: none;
+    border-radius: .25rem;
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
 }
 
 /* section element
- * SEE MORE DOGS
+* SEE MORE DOGS
 */
 .see-more-dogs {
     margin-top: 35px;;
     border: 0;
-
+    
     display: flex;
     justify-content: center;
 }
@@ -184,6 +295,9 @@ nav li {
 .checkout-form {
     margin-left: auto;
     margin-right: auto;
+
+    padding-bottom: 3rem;
+
     width: 75%;
 
     display: flex;
@@ -195,6 +309,41 @@ nav li {
     flex-direction: column;
 }
 
+.checkout-caption {
+    font-size: 18pt;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+.checkout-macro-location {
+    display: flex;
+    flex-flow: row;
+}
+
+.checkout-macro-location > p {
+    margin-right: 2rem;
+}
+
+.dogs-to-be-adopted {
+    display: flex;
+
+    justify-content: flex-start;
+}
+
+.checkout-profile {
+    display: flex;
+
+    flex-direction: row;
+    padding-right: 2rem;
+}
+
+.details {
+    padding-left: 1rem;
+}
+
+details h2 {
+    color: var(--dark-blue);
+}
 
 /* FOOTER
  *
