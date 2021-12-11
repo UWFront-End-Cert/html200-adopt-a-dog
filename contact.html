@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="styles/style.css">
 
     <title>Adopt a Dog</title>
+
+    <script>
+        function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+        alert("Name must be filled out");
+        return false;
+        } else {
+            return true;
+            alert("Thank you");
+        }
+    }
+    </script>
+    <script src="js/alert.js"></script>
+
+
     
 </head>
 <body>
@@ -46,25 +62,25 @@
         <div class="container22">
           <div id="content23"> 
             <h1 >Checkout</h1>
-
-        <form method="GET">
+            <!-- action="/action_page.php" -->
+            <form  method="post" onsubmit="return validateForm()" class="form">
             <label>Name:
-               <input type="text" name="applicantName">
+               <input type="text" id="Name" required name="applicantName">
             </label>
 
             <label>Email Address:
-                <input type="email" name="applicantEmail">
+                <input type="email"  id="email" name="applicantEmail">
             </label>
 
-            <label for="street">Street Address</label>
+            <label for="street">Street Address
                  <input id="street" type="text" name="applicantStreet">
-
-            <label for="city">City</label>
+                </label>
+            <label for="city">City
 <br>
                 <input id="city" type="text" name="applicantCity" class="city">
-
-            <label for="state">State</label>
-            <br>
+            </label>
+            <label for="state">State
+          
                 <select id="state" class="state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -118,10 +134,11 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                 </select>	
-   
-                 <label>ZIP Code</label>
-                 <input type="text" class="zip" pattern="[0-9]{5}" title="Five digit zip code" />
-
+            </label>
+   <br>
+                 <label>ZIP Code
+                 <input id="zip" type="text" class="zip" pattern="[0-9]{5}" title="Five digit zip code" />
+                </label>
                  <!-- <br><br><br> -->
 
                 <p>First time adopter?</p>
@@ -173,20 +190,15 @@
 
             </div>
          
-
-                      
-            <input type="submit" value="Submit" class="submit">
-            
+            <!-- <input onclick="submitAlert()" type="submit" value="submit" class="button-form"> -->
+            <!-- <input type="submit" onclick="submitAlert()" value="Submit" class="submit"> -->
+      
+            <input type="submit" onclick="alert('Thank you, your form has been successfully submitted')"value="Submit" class="submit">
         </form>
+        <!-- onclick="alert('Thank you, your form has been successfully submitted')" -->
 
         </div>
   </div>
-
-   
-
-
-
-
  
 
          <!-- footer -->
@@ -205,5 +217,7 @@
             <p> &#169;2018 Adoptadog, LLC | Seattle, WA</p>
 
         </footer>
+
+       <script src="js/alert.js"></script>
 </body>
 </html>
