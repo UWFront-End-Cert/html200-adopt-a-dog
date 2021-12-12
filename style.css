@@ -17,16 +17,26 @@ p {
   word-spacing: 1.2px;
 }
 
-nav a, nav ul li, a.gray-button {
+nav a, nav ul li, a.gray-button-link {
   color: #093C60;
 }
 
-a, a.green-button {
+nav a, a.checkout-button-link, a.gray-button-link, button {
   text-decoration: none;
   font-weight: bold;
 }
 
-a.green-button:link, a.green-button:visited, input[type=submit] {
+a.gray-button-link {
+  background-color: #ececec;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: .1em;
+}
+
+a.checkout-button-link:link, a.checkout-button-link:visited,
+input[type=submit], button {
   background-color: #81B741;
   color: white;
   padding: 8px 30px;
@@ -36,23 +46,23 @@ a.green-button:link, a.green-button:visited, input[type=submit] {
   border-radius: .1em;
   font-weight: bold;
   font-size: 1rem;
+  border: none;
 }
 
-a.green-button:hover, a.green-button:active,
-a.gray-button:hover, a.gray-button:active,
-input[type=submit]:hover, input[type=submit]:active {
+button {
+  width: 100%;
+}
+
+a.checkout-button-link:hover, a.checkout-button-link:active,
+a.gray-button-link:hover, a.gray-button-link:active,
+input[type=submit]:hover, input[type=submit]:active, button:hover {
   background-color: green;
 }
 
-
-a.gray-button {
-  background-color: #ececec;
-  padding: 10px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: .1em;
+a.gray-button-link:hover {
+  color: white;
 }
+
 
 body header {
   background: url(images/header-image.jpg);
@@ -192,7 +202,7 @@ p.price::before{
   font-weight: bolder;
 }
 
-.dog-list .green-button {
+.dog-list .checkout-button-link {
   width: 100%;
   text-align: center;
 }
