@@ -7,6 +7,8 @@
     --dark-blue: #294F68;
     --deep-blue: #05395D;
     --gray: #3D3D3D;
+
+    --max-screen-size: 1920px;
 }
 
 html {
@@ -195,11 +197,8 @@ main h1 {
  * DOG PARADE (dog selection)
  */
 .dog-parade {
-    /* width: 800px; */
+    max-width: var(--max-screen-size);
     
-    /* margin-right: auto;
-    margin-left: auto; */
-
     display: flex;
 
     flex-flow: row wrap;
@@ -209,23 +208,14 @@ main h1 {
 .dog-entry {
     margin-bottom: 2rem;
     
-    width:13rem;
+    max-width: 20%;
     
     border: solid .15rem;
     border-color: var(--light-gray);
 }
 
-.dog-entry:nth-child(4n) {
-    /* I have no idea how this works. 
-    https://stackoverflow.com/questions/19574851/how-to-specify-an-element-after-which-to-wrap-in-css-flexbox
-    */
-    
-    page-break-after: always;
-    /* break-after: always; */
-}
-
 .portrait-card {
-    width: 13rem;
+    width: 100%;
 }
 
 .dog-entry h2 {
