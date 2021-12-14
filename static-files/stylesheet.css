@@ -147,9 +147,14 @@ nav a {
 
 /* MAIN ELEMENT STYLING */
 main {
+    margin-left: auto;
+    margin-right: auto;
+
     padding-top: 2rem;;
     padding-left: 11.5em;
     padding-right: 11.5rem;
+
+    max-width: 1920px;
 }
 
 main h1 {
@@ -191,6 +196,14 @@ main h1 {
 
 .blog-entry p {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1440px) {
+    .blog-entry {
+        display: flex;
+
+        flex-flow: column wrap;
+    }
 }
 
 /* section element 
@@ -266,6 +279,22 @@ main h1 {
     border-radius: .25rem;
     background-color: var(--light-gray);
     color: var(--dark-blue);
+}
+
+@media (max-width: 1440px) {
+    .dog-parade {
+        display: flex;
+
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .dog-entry {
+        margin-left: auto;
+        margin-right: auto;
+
+        max-width: 75%;
+    }
 }
 
 /* section element
