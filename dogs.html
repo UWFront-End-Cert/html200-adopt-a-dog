@@ -12,6 +12,19 @@
     <script src="js/script.js"></script>
 
     <link href="styles/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+      $(document).ready(function() {
+          $("p").hover(function() {
+              $(this).css("color", "blue");
+          }, function() {
+              $(this).css("color", "black");
+          });
+      });
+  </script>
+
 </head>
 <body>
 
