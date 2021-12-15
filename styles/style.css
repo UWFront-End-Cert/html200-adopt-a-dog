@@ -1246,16 +1246,20 @@ main {
 .container22 {
   display: grid;
   height: 200vh;
-  /* grid-template-columns: 0.3fr minmax(0, 1.5fr) 1fr;
+  grid-template-columns: 0.3fr minmax(0, 1.5fr) 1fr;
   grid-template-rows: minmax(0, 10rem);
-  grid-template-areas: 'sidebar1 content23 sidebar2'; */
-  grid-template-columns:  1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 'content23';
+  grid-template-areas: 'sidebar1 content23 sidebar2';
+  /* grid-template-columns:  1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 'content23'
+  'lside2'
+  'lside2'; */
   gap: 1rem;
   padding-left: 3.8rem;
   margin-right: 10rem;
 }
+
+
 
 #content23 {
   display: grid;
@@ -1281,14 +1285,6 @@ main {
   padding-top: 3rem;
   color: #093c60;
   padding-bottom: 1rem;
-}
-
-.divide {
-  display: grid;
-  grid-template-columns:
-    minmax(9.5rem, 9.8rem) minmax(5rem, 5.5rem) minmax(5.2rem, 5.8rem)
-    minmax(5rem, 5.5rem);
-  grid-template-areas: 'img1 content1 img2 content2';
 }
 
 form{
@@ -1318,6 +1314,23 @@ label {
 select {
   margin-left: 4rem;
 }
+
+.submit {
+  background-color: #81b741;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: #093c60;
+  font-size: 1.5em;
+  line-height: 3rem;
+  padding: 0.5rem 4rem;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: 10%;
+}
+
 
 .button-form {
   background-color: #81b741;
@@ -1354,6 +1367,15 @@ select {
   width: 50%;
 }
 
+.divide {
+  display: grid;
+  grid-template-columns:
+    minmax(9.5rem, 9.8rem) minmax(5rem, 5.5rem) minmax(5.2rem, 5.8rem)
+    minmax(5rem, 5.5rem);
+  grid-template-areas: 'img1 content1 img2 content2';
+  margin-left:4rem;
+}
+
 .lside {
   display: inline;
   grid-area: img1;
@@ -1363,6 +1385,7 @@ select {
 
 .lside img {
   width: 100%;
+  height:auto;
 }
 
 .lside p {
@@ -1372,6 +1395,14 @@ select {
 .rside {
   display: grid;
   grid-area: content1;
+  margin-left: 0;
+ 
+}
+
+.rside p {
+  margin: 0;
+  padding-top: 0.5rem;
+  font-size: 1em;
 }
 
 .lside2 {
@@ -1382,6 +1413,7 @@ select {
 
 .lside2 img {
   width: 100%;
+  height:auto;
 }
 
 .rside2 {
@@ -1393,8 +1425,11 @@ select {
 .rside2 p {
   margin: 0;
   padding-top: 0.5rem;
-  font-size: 0.6em;
+  font-size: 1em;
+  /* padding-left:1rem; font-size:0.6em;margin-top:-2rem */
 }
+
+
 
 /* ************************************************ */
 /* footer */
@@ -1679,7 +1714,6 @@ footer p {
     max-width: 100%;
     height: auto;
     margin-left:1rem;
-    /* margin-right:2rem;  */
   } 
 
   .bloglabel h3 {
@@ -1696,34 +1730,29 @@ footer p {
 /* contact media query */
 
 @media screen and (min-width:300px) and (max-width: 767px) {
-  /* .container22 {
-    display: grid;
-    height: 200vh;
-    grid-template-columns:  1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 'content23';
-    gap: 1rem;
-    /* padding-left: 3.8rem; */
-    /* margin-right: 10rem; */
-  /* }  */
-  #content23 {
-     margin-left: 0.5rem;
-     margin-right: 0.5rem;
+
+   .container22 {
+     display: grid;
+     height: 275vh;
+  }
+    #content23 {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
   }
     #content23 h1 {
-      /* padding-left: 4rem; */
+      padding-left: 0.5rem;
       color: #093c60;
       padding-bottom: 1rem;
       padding-top: 1rem;
    }
     #content23 h4 {
-      /* padding-left: 4rem; */
+      padding-left: 0.5rem;
       padding-top: 3rem;
       color: #093c60;
       padding-bottom: 1rem;
    }
    #content23 p {
-    /* padding-left: 4rem; */
+    padding-left: 0.5rem;
     padding-top: 3rem;
     color: #093c60;
     padding-bottom: 1rem;
@@ -1731,15 +1760,59 @@ footer p {
 
   input {
     width: 100%;
-    padding: 0.8rem 1.2rem;
-    margin-left:0;
-    margin-right:0;
-    /* margin-top: 1.5rem;
-    margin-bottom: 1.5rem; */
+    padding: 0.8rem 2rem;
+    margin-left:1rem;
+    /* margin-right:2rem; */
+    margin-bottom:2rem;
+  
   }
-  form, label, select, .button-form, .radio, .pickup, .location {
-    margin-left:0.5rem;
-    margin-right:0.5rem;
-  }
-}
 
+  label {
+    width: 100%;
+    margin-left:2rem;
+    margin-right:2rem;
+    margin-bottom:2rem;
+  
+  }
+
+ 
+  .divide {
+    display:inline;
+    margin-left:0px;
+    margin-right:0px;
+    height: auto;
+  }
+
+  .lside {
+    display:grid;
+    margin-left:2rem;
+  }
+
+  .lside2 {
+    display:grid;
+    margin-left:2rem;
+  }
+
+
+  .location {
+    padding: 0.5rem 0.5rem;
+    margin-top:1rem;
+  }
+  
+  .radio p {
+    padding-left: 4rem;
+    padding-top: 1rem;
+    color: #093c60;
+    padding-bottom: 4rem;
+  }
+
+form, label, select, .button-form,.radio,  .pickup, .location {
+    width:100%;
+    margin-left:0px;
+ 
+  }
+
+
+
+  
+}
