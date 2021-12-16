@@ -163,9 +163,11 @@ main h1 {
 }
 
 .side-bar {
-    float:right;
+    float: right;
 
     display: flex;
+
+    width: 20%;
 
     flex-flow: column wrap;
 }
@@ -178,6 +180,8 @@ main h1 {
 
     flex-direction: column;
     justify-content: center;
+
+    
 }
 
 .side-blog-entry > .content-intro {
@@ -185,7 +189,12 @@ main h1 {
 }
 
 .side-blog-entry img {
+    width: 100%;
     object-fit: scale-down;
+}
+
+.side-blog-entry .content-intro h2 {
+    font-size: 1.5em;
 }
 
 /* section element
@@ -251,6 +260,10 @@ main h1 {
 
         flex-flow: column wrap;
     }
+
+    .side-bar {
+        display: none;
+    }
 }
 
 /* Mobile Phone  Optimization
@@ -264,6 +277,10 @@ main h1 {
         display: flex;
 
         flex-flow: column wrap;
+    }
+
+    .side-bar {
+        display: none;
     }
 }
 
@@ -364,6 +381,8 @@ main h1 {
     and (min-device-width: 1025px)
     and (max-device-width: 1290px) {
     .dog-parade {
+        margin: 1em;
+
         display: flex;
 
         flex-flow: row wrap;
@@ -372,6 +391,30 @@ main h1 {
 
     .dog-entry-index {
         max-width: 45%;
+    }
+ 
+    .side-bar {
+        display: none;
+    }
+}
+
+/* Smaller Screen Optimization
+ *
+*/
+@media only screen
+    and (min-device-width: 1025px)
+    and (max-device-width: 1290px) {
+    .dog-parade {
+        display: flex;
+
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .dog-entry-index {
+        margin: 1em;
+
+        max-width: 40%;
     }
 }
 
@@ -389,7 +432,13 @@ main h1 {
     }
 
     .dog-entry-index {
-        max-width: 45%;
+        margin: 1em;
+
+        max-width: 40%;
+    }
+
+    .side-bar {
+        display: none;
     }
 }
 
@@ -409,6 +458,10 @@ main h1 {
 
     .dog-entry-index {
         max-width: 90%;
+    }
+
+    .side-bar {
+        display: none;
     }
 }
 
