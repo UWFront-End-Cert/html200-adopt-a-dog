@@ -236,9 +236,7 @@ main h1 {
 /* Smaller Screen
  *
 */
-@media screen
-    and (min-device-width: 1025px)
-    and (max-device-width: 1290px)
+@media screen and (max-width: 1290px)
 {
     .blog-entry {
         display: flex;
@@ -252,8 +250,8 @@ main h1 {
  *
 */
 @media screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
+    and (min-width: 813px)
+    and (max-width: 1024px)
 {
     .blog-entry {
         display: flex;
@@ -269,9 +267,7 @@ main h1 {
 /* Mobile Phone  Optimization
  *
 */
-@media only screen
-    and (min-device-width: 0px)
-    and (max-device-width: 812px)
+@media only screen and (max-width: 812px)
 {
     .blog-entry {
         display: flex;
@@ -377,34 +373,10 @@ main h1 {
 /* Smaller Screen
  *
 */
-@media screen
-    and (min-device-width: 1025px)
-    and (max-device-width: 1290px) {
+@media screen and (max-width: 1290px) {
     .dog-parade {
         margin: 1em;
 
-        display: flex;
-
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-
-    .dog-entry-index {
-        max-width: 45%;
-    }
- 
-    .side-bar {
-        display: none;
-    }
-}
-
-/* Smaller Screen Optimization
- *
-*/
-@media only screen
-    and (min-device-width: 1025px)
-    and (max-device-width: 1290px) {
-    .dog-parade {
         display: flex;
 
         flex-flow: row wrap;
@@ -416,14 +388,18 @@ main h1 {
 
         max-width: 40%;
     }
+ 
+    .side-bar {
+        display: none;
+    }
 }
 
 /* Tablet Optimization
  *
 */
-@media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px) {
+@media screen 
+    and (min-width: 813px)
+    and (max-width: 1024px) {
     .dog-parade {
         display: flex;
 
@@ -445,9 +421,7 @@ main h1 {
 /* Mobile Phone Optimization
  *
 */
-@media only screen
-    and (min-device-width: 0px)
-    and (max-device-width: 812px)
+@media screen and (max-width: 812px)
 {
     .dog-parade {
         display: flex;
