@@ -1,19 +1,46 @@
 /** Optimized for 1920x1080 screens.
 **/
 
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,700;1,400&display=swap');
+
 :root {
     --lime: #87BD42;
     --light-gray: #ECECEC;
     --dark-blue: #294F68;
-    --deep-blue: #05395D;
+    --deep-blue: rgb(5, 57, 93);
     --gray: #3D3D3D;
 
     --max-screen-size: 1920px;
 }
 
+/* === ELEMENT FORMATTING ===
+*/
 html {
     margin: 0;
     padding: 0;
+}
+
+/* === TYPOGRAPHY ===
+*/
+
+/* for div id #header-caption, slugline beneath header logo
+*/
+#header-caption {
+    margin: 0;
+    font-family: 'Neuton', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: italic;
+
+    color: var(--lime);
+}
+
+/* for div class .content-intro, for blog entries
+*/
+.content-intro h2 {
+    font-family: 'Neuton', serif;
+    font-weight: 700;
+    font-size: 24pt;
 }
 
 body {
@@ -26,10 +53,9 @@ body {
 }
 
 /* HEADER ELEMENT
- * 
 */
 header {
-    background-color: blue;
+    background-color: var(--deep-blue);
     background-image: url("../images/header-image.jpg");
     background-size: cover;
 
@@ -54,15 +80,6 @@ header {
 
 .header-dog-logo {
     width: 100%;
-}
-
-#header-caption {
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    font-style: italic;
-
-    color: var(--lime);
 }
 
 /* #cart-box {
@@ -107,7 +124,6 @@ header {
 
 
 /* NAVBAR ELEMENT
- *
 */
 
 nav {
@@ -145,7 +161,8 @@ nav a {
     text-decoration: none;
 }
 
-/* MAIN ELEMENT STYLING */
+/* === MAIN ELEMENT STYLING ==
+*/
 main {
     margin-left: auto;
     margin-right: auto;
@@ -217,9 +234,7 @@ main h1 {
     padding-left: 3rem;
 }
 
-.content-intro h2 {
-    font-size: 24pt;
-}
+
 
 .content-intro p {
     font-size: 18pt;
