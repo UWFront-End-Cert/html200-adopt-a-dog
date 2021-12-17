@@ -97,6 +97,7 @@ header p {
   width: 13%;
   height: 2.4rem;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .fcc-btn2 {
@@ -1204,7 +1205,7 @@ main {
   display:grid;
   grid-template-columns:  minmax(0, 1fr) minmax(0, 2fr);
   grid-template-areas:"blogimage bloglabel";
-  margin-left: 20rem;
+  margin-left: 15rem;
   margin-right: 10rem;
 
 }
@@ -1226,6 +1227,7 @@ main {
 .bloglabel h3{
   color: #093c60;
   font-size: 2em;
+  margin-left:2rem;
 }
 
 .bloglabel p {
@@ -1233,12 +1235,14 @@ main {
   padding-top: 1rem;
   font-size:1.2em;
   font-weight: 200;
+  margin-left:2rem;
 }
 
 .bloglabel2 p {
   color: black;
   padding-top: 2rem;
   font-weight: 200;
+  margin-left:2rem;
 }
 
 /* Contact page  */
@@ -1249,11 +1253,6 @@ main {
   grid-template-columns: 0.3fr minmax(0, 1.5fr) 1fr;
   grid-template-rows: minmax(0, 10rem);
   grid-template-areas: 'sidebar1 content23 sidebar2';
-  /* grid-template-columns:  1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 'content23'
-  'lside2'
-  'lside2'; */
   gap: 1rem;
   padding-left: 3.8rem;
   margin-right: 10rem;
@@ -1690,7 +1689,7 @@ footer p {
 /* blog media query */
 
 
-@media screen and (min-width: 300px) and (max-width: 767px) {
+@media screen and (min-width: 300px) and (max-width: 1250px) {
   main {
       display:grid;
       grid-template-columns: 1fr;
@@ -1713,7 +1712,8 @@ footer p {
   .photo {
     max-width: 100%;
     height: auto;
-    margin-left:1rem;
+    margin-right:3rem;
+    margin-left: 3rem;
   } 
 
   .bloglabel h3 {
@@ -1723,7 +1723,7 @@ footer p {
   .bloglabel p {
     width:100%;
     margin-right:3rem;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
   }
 }
 
@@ -1733,7 +1733,17 @@ footer p {
 
    .container22 {
      display: grid;
-     height: 275vh;
+     height: 300vh;
+     grid-template-columns:  1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-areas:
+     'sidebar1'
+     'content23'
+     'sidebar2';
+     padding-left: 0.8rem;
+     margin-right:8rem;
+
+
   }
     #content23 {
       margin-left: 0.5rem;
