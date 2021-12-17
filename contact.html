@@ -10,19 +10,8 @@
 
     <title>Adopt a Dog</title>
 
-    <script>
-        function validateForm() {
-        let x = document.forms["myForm"]["fname"].value;
-        if (x == "") {
-        alert("Name must be filled out");
-        return false;
-        } else {
-            return true;
-            alert("Thank you");
-        }
-    }
-    </script>
-    <script src="js/alert.js"></script>
+
+    <!-- <script src="js/alert.js"></script> -->
 
 
     
@@ -178,14 +167,13 @@
           </div>
 
           <div>
-             <h4>Total Adoption Cost </h4>
-                <span style="font-size:.8em; margin-left:4rem;">$1234.56</span>
+             <h4>Total Adoption Cost <br>$1234.56 </h4>
           </div>
          
             <!-- <input onclick="submitAlert()" type="submit" value="submit" class="button-form"> -->
             <!-- <input type="submit" onclick="submitAlert()" value="Submit" class="submit"> -->
       
-            <input type="submit" onclick="alert('Thank you, your form has been successfully submitted')"value="Submit" class="submit">
+            <input type="submit" onclick="submitAlert()" value="Submit" class="submit">
         </form>
         <!-- onclick="alert('Thank you, your form has been successfully submitted')" -->
 
