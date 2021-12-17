@@ -74,4 +74,5 @@ function displayPosts() {
   var textnode = document.createElement("h3");
   main.appendChild(textnode);
   document.getElementById("dogBlog").appendChild(main);
+  console.log()
 }
