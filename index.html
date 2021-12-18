@@ -1,97 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home</title>
   <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header style="background-color: blue;">
-    <img src="images/adoptadog-logo.svg" alt="White logo of adopt a dog.">
-    <h1>Seattle's premier dog adoption agency</h1>
-    <a href="checkout.html">Checkout</a>
-    <nav style="background-color: grey;">
-      <a href="index.html">Home</a>
-      <a href="dogs.html">Dogs</a>
-      <a href="blog.html">Blog</a>
-    </nav>
+  <header class="top-header">
+    <div class="header-one">
+      <img src="images/adoptadog-logo.svg" alt="White logo of adopt a dog." title="White logo of adopt a dog.">
+      <h1>Seattle's premier dog adoption agency</h1>
+    </div>
+    <div class = "header-two">
+      <div class="cart">
+        <img src="images/cart-icon.svg" alt="White shopping cart icon." title="White shopping cart icon.">
+        <p id="checkout-total">Total</p>
+      </div>
+      <button id="checkout">Checkout</button>
+    </div>
   </header>
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">/</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="#">/</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </nav>
 
-  <article>
-    <img src="images/home-intro.jpg" alt="Guy in a red shirt hugging golden retriever.">
-    <h2>Adopt A Dog</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <article class="front-page-article">
+    <div>
+      <img src="images/home-intro.jpg" alt="Guy in a red shirt hugging golden retriever." title="Guy in a red shirt hugging golden retriever.">
+    </div>
+    <div class="article-text">
+      <h2>Adopt A Dog</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
   </article>
 
-  <section>
-    <figure>
-      <img src="images/murphy-card.jpg" alt="Dog">
+  <div class="container">
+    <article>
+      <img src="images/murphy-card.jpg" alt="Boxer with redish gold spots and a white nose." title="Boxer with redish gold spots and a white nose.">
       <h4>Murphy</h4>
-      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
-    </figure>
-    <a href="#">Adopt</a>
+      <p>Cost to adopt: $123.45</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>Adopt</button>
+    </article>
 
-    <figure>
-      <img src="images/poppy-card.jpg" alt="Dog">
+    <article>
+      <img src="images/poppy-card.jpg" alt="Grey and white shih tzu dog walking along a an asphalt road." title="Grey and white shih tzu dog walking along an asphalt road">
       <h4>Poppy</h4>
-      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
-    </figure>
-    <a href="#">Adopt</a>
+      <p>Cost to adopt: $123.45</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>Adopt</button>
+    </article>
 
-    <figure>
-      <img src="images/jack-card.jpg" alt="Dog">
+    <article>
+      <img src="images/jack-card.jpg" alt="Brownish gold and white beagle looking up from the floor." title="Brownish gold and white beagle looking up from the floor.">
       <h4>Jack</h4>
-      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
-    </figure>
-    <a href="#">Adopt</a>
+      <p>Cost to adopt: $123.45</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>Adopt</button>
+    </article>
 
-    <figure>
-      <img src="images/duffy-card.jpg" alt="Dog">
+    <article>
+      <img src="images/duffy-card.jpg" alt="Pit bull with a white face, gold spots, and black splotched nose sitting in grass." title="Pit bull with a white face, gold spots, and black splotched nose sitting in grass.">
       <h4>Duffy</h4>
-      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
-    </figure>
-    <a href="#">Adopt</a>
+      <p>Cost to adopt: $123.45</p>
+      <a>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+      <button>Adopt</button>
+    </article>
 
-    <figure>
-      <img src="images/lucas-card.jpg" alt="Dog">
+    <article>
+      <img src="images/lucas-card.jpg" alt="Black retriever with white around nose and chained to a leash looking directly upward." title="Black retriever with white around nose and chained to a leash looking directly upward.">
       <h4>Lucas</h4>
-      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
-    </figure>
-    <a href="#">Adopt</a>
+      <p>Cost to adopt: $123.45</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>Adopt</button>
+    </article>
 
-    <figure>
-      <img src="images/jake-card.jpg" alt="Dog">
+    <article>
+      <img src="images/jake-card.jpg" alt="A golden retriever on a beach looking off into the distance." title="A golden retriever on a beach looking off into the distance.">
       <h4>Jake</h4>
-      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
-    </figure>
-    <a href="#">Adopt</a>
+      <p>Cost to adopt: $123.45</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>Adopt</button>
+    </article>
 
-    <figure>
-      <img src="images/angus-card.jpg" alt="Dog">
+    <article>
+      <img src="images/angus-card.jpg" alt="Goldish red boxer panting in a field of grass." title="Goldish red boxer panting in a field of grass.">
       <h4>Angus</h4>
-      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
-    </figure>
-    <a href="#">Adopt</a>
+      <p>Cost to adopt: $123.45</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>Adopt</button>
+    </article>
 
-    <figure>
-      <img src="images/violet-card.jpg" alt="Dog">
+    <article>
+      <img src="images/violet-card.jpg" alt="Little brown retriever puppy looking up from a grey tiled floor." title="Little brown retriever puppy looking up from a grey tiled floor">
       <h4>Violet</h4>
-      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
-    </figure>
-    <a href="#">Adopt</a>
+      <p>Cost to adopt: $123.45</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>Adopt</button>
+    </article>
+  </div>
 
-    <a href="#">See More Dogs</a>
-  </section>
+  <button class="bottom-button">See More Dogs</button>
 
-  <footer style="background-color: grey;">
-    <img src="images/adoptadog-logo.svg" alt="White logo of adopt a dog.">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <nav>
+
+  <footer>
+    <img src="images/adoptadog-logo.svg" alt="White logo of adopt a dog." title="White logo of adopt a dog.">
+    <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+    <div class="footer-links">
       <a href="#">Home</a>
+      <a href="#">/</a>
       <a href="#">Dogs</a>
+      <a href="#">/</a>
       <a href="#">Contact</a>
-    </nav>
-    <p>&copy; 2018 Adoptadog, LLC  |  Seattle, WA</p>
+    </div>
+    <p class="copyright">&copy; 2018 Adoptadog, LLC  |  Seattle, WA</p>
   </footer>
 
 </body>

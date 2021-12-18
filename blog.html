@@ -3,49 +3,78 @@
 <head>
   <title>Blog</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header style="background-color: blue;">
-    <img src="images/adoptadog-logo.svg" alt="White logo of adopt a dog.">
-    <h1>Seattle's premier dog adoption agency</h1>
-    <a href="checkout.html">Checkout</a>
-    <nav style="background-color: grey;">
-      <a href="index.html">Home</a>
-      <a href="dogs.html">Dogs</a>
-      <a href="blog.html">Blog</a>
-    </nav>
+  <header class="top-header">
+    <div class="header-one">
+      <img src="images/adoptadog-logo.svg" alt="White logo of adopt a dog." title="White logo of adopt a dog.">
+      <h1>Seattle's premier dog adoption agency</h1>
+    </div>
+    <div class = "header-two">
+      <div class="cart">
+        <img src="images/cart-icon.svg" alt="White shopping cart icon." title="White shopping cart icon.">
+        <p id="checkout-total">Total</p>
+      </div>
+      <button>Checkout</button>
+    </div>
   </header>
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">/</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="#">/</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </nav>
 
-  <h2>Adoptadog Blog</h2>
+  <h2 class="blog-header">Adoptadog Blog</h2>
 
-  <article>
-    <img src="images/blog-1.jpg" alt="Girl at a canyon with dog.">
-    <h3>Traveling With Your Dog</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </article>
+  <div class="blog-container">
+    <article>
+      <img src="images/blog-1.jpg" alt="Girl at a canyon with dark brown dog." title="Girl at a canyon with dark brown dog." class="blog-img">
+      <div class="blog-text">
+        <h3>Traveling With Your Dog</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </article>
 
-  <article>
-    <img src="images/blog-2.jpg" alt="Girl at a canyon with dog.">
-    <h3>How To Walk Multiple Dogs</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </article>
+    <article>
+      <img src="images/blog-2.jpg" alt="Dogs on leashes lined up for a walk." title="Dogs on leashes lined up for a walk." class="blog-img">
+      <div class="blog-text">
+        <h3>How To Walk Multiple Dogs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </article>
 
-  <article>
-    <img src="images/blog-3.jpg" alt="Girl at a canyon with dog.">
-    <h3>Teach Your Dog To Fetch!</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </article>
+    <article>
+      <img src="images/blog-3.jpg" alt="Shadows of a girl holding a ball and a dog waiting for her to throw it." title="Shadows of a girl holding a ball and a dog waiting for her to throw it." class="blog-img">
+      <div class="blog-text">
+        <h3>Teach Your Dog To Fetch!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </article>
+  </div>
 
-  <footer style="background-color: grey;">
-    <img src="images/adoptadog-logo.svg" alt="White logo of adopt a dog.">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <nav>
+  <footer>
+    <img src="images/adoptadog-logo.svg" alt="White logo of adopt a dog." title="White logo of adopt a dog.">
+    <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+    <div class="footer-links">
       <a href="#">Home</a>
+      <a href="#">/</a>
       <a href="#">Dogs</a>
+      <a href="#">/</a>
       <a href="#">Contact</a>
-    </nav>
-    <p>&copy; 2018 Adoptadog, LLC  |  Seattle, WA</p>
+    </div>
+    <p class="copyright">&copy; 2018 Adoptadog, LLC  |  Seattle, WA</p>
   </footer>
 </body>
 </html>
