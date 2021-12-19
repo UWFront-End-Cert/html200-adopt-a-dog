@@ -20,6 +20,8 @@ html {
     padding: 0;
 }
 
+
+
 /* === TYPOGRAPHY ===
 */
 
@@ -38,11 +40,23 @@ html {
 /* for div class .content-intro, for blog entries
 */
 .content-intro h2 {
+    color: var(--dark-blue);
     font-family: 'Neuton', serif;
     font-weight: 700;
     font-size: 24pt;
 }
 
+/* for div class .dog-entry, for name of dogs
+*/
+.dog-entry h2, .dog-entry-index h2 {
+    color: var(--dark-blue);
+    font-family: 'Neuton', serif;
+
+    padding-left: 1rem;
+}
+
+/* === TO BE DETERMINED ===
+*/
 body {
     margin: 0;
        
@@ -52,22 +66,27 @@ body {
     justify-content: center;
 }
 
-/* HEADER ELEMENT
+/* === HEADER ELEMENT ===
 */
 header {
-    background-color: var(--deep-blue);
+    background-image: linear-gradient(67deg, var(--dark-blue), var(--light-gray));
     background-image: url("../images/header-image.jpg");
     background-size: cover;
-
+    
     object-fit: cover;
-
+    
     max-width: 100%;
     height: 20rem;
-
-    padding-top: 2rem;
     
-    display: flex;
+    padding-top: 2rem;
+}
 
+/* === HEADER ELEMENT ===
+- Flexbox organization
+*/
+header {
+    display: flex;
+    
     flex-flow: row nowrap;
     justify-content: space-around;
     align-content: center;
@@ -79,18 +98,18 @@ header {
 }
 
 .header-dog-logo {
-    width: 100%;
+    max-width: 70%;
 }
 
 /* #cart-box {
-   Empty and commented out until needed. 
+    Empty and commented out until needed. 
 } */
 
 #cart-and-total-box {
     width: 100%;
-
+    
     display: flex;
-
+    
     flex-flow: row nowrap;
     justify-content: center;
 }
@@ -102,7 +121,7 @@ header {
 #cart-total {
     margin: 0;
     padding: 0;
-
+    
     display: flex;
     justify-content: flex-end;
     align-content: center;
@@ -128,7 +147,7 @@ header {
 
 nav {
     margin: 0;
-
+    
     background-color: var(--light-gray);
 }
 
@@ -137,9 +156,9 @@ nav ul {
     padding: 1em;
     padding-left: 10em;
     padding-right: 10rem;
-
+    
     color: var(--deep-blue);
-
+    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14pt;
     font-weight: bolder;
@@ -309,6 +328,10 @@ main h1 {
     border-color: var(--light-gray);
 }
 
+.dog-entry-index p{
+    margin-right: 1em;
+    margin-left: 1em;
+}
 
 /* section element 
  * DOG PARADE (dog selection)
@@ -333,12 +356,6 @@ main h1 {
 
 .portrait-card {
     width: 100%;
-}
-
-.dog-entry h2 {
-    padding-left: 1rem;
-    
-    color: var(--dark-blue);
 }
 
 .dog-entry p {
