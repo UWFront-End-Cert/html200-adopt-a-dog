@@ -9,15 +9,10 @@
     <link rel="stylesheet" href="styles/style.css">
 
     <title>Adopt a Dog</title>
-
-
-    <!-- <script src="js/alert.js"></script> -->
-
-
     
 </head>
 <body>
-    <div class="parent">
+    <div class="container33">
 
         <!-- header -->
         <header>  
@@ -51,25 +46,25 @@
         <div class="container22">
           <div id="content23"> 
             <h1 >Checkout</h1>
-            <!-- action="/action_page.php" -->
-            <form  method="post" onsubmit="return validateForm()" class="form">
+
+        <form method="GET">
             <label>Name:
-               <input type="text" id="Name" required name="applicantName">
+               <input type="text" name="applicantName">
             </label>
 
             <label>Email Address:
-                <input type="email"  id="email" name="applicantEmail">
+                <input type="email" name="applicantEmail">
             </label>
 
-            <label for="street">Street Address
+            <label for="street">Street Address</label>
                  <input id="street" type="text" name="applicantStreet">
-                </label>
-            <label for="city">City
 
+            <label for="city">City</label>
+<br>
                 <input id="city" type="text" name="applicantCity" class="city">
-            </label>
-            <label for="state">State
-          
+
+            <label for="state">State</label>
+            <br>
                 <select id="state" class="state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -123,11 +118,10 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                 </select>	
-            </label>
-  
-                 <label>ZIP Code
-                 <input id="zip" type="text" class="zip" pattern="[0-9]{5}" title="Five digit zip code" />
-                </label>
+   
+                 <label>ZIP Code</label>
+                 <input type="text" class="zip" pattern="[0-9]{5}" title="Five digit zip code" />
+
                  <!-- <br><br><br> -->
 
                 <p>First time adopter?</p>
@@ -144,41 +138,55 @@
                     <option value="east">east</option>
                     <option value="west">west</option>
                     <option value="north">north</option>
+
                 </select>
 
             </label>  
+        
        
+      
             <h4> Dogs Adopted</h4>  
        
           <div class="divide">
+              
+        
             <div class="lside">
-                <img src="images/tucker-good-589776-unsplash.jpg" alt="black dog" >
+            <img src="images/tucker-good-589776-unsplash.jpg" alt="black dog">
             </div>
             <div class="rside">
-                <p style="padding-left:1rem; font-size:0.6em;margin-top:-2rem;" >Lucus<br>Cost to Adopt: $123.45</p>
+            <p style="padding-left:1rem; font-size:0.6em;margin-top:-2rem;">Lucus<br>
+            Cost to Adopt: $123.45</p>
+
             </div>
 
             <div class="lside2">
-                <img src="images/duffy-brook-350225-unsplash.jpg" alt="bulldog" >
+            <img src="images/duffy-brook-350225-unsplash.jpg" alt="bulldog">
             </div>
             <div class="rside2">
-               <p style="padding-left:1rem; font-size:0.6em;margin-top:-2rem;">Duffy<br> Cost to Adopt: $123.45</p>
-            </div>
-          </div>
+            <p style="padding-left:1rem; font-size:0.6em;margin-top:-2rem;">Lucus<br>
+           Cost to Adopt: $123.45</p>
+        </div>
+        </div>
+        <div>
+            <h4>Total Adoption Cost </h4>
+            <span style="font-size:.8em; margin-left:4rem;">$1234.56</span>
 
-          <div>
-             <h4>Total Adoption Cost <br>$1234.56 </h4>
-          </div>
+            </div>
          
-            <!-- <input onclick="submitAlert()" type="submit" value="submit" class="button-form"> -->
-            <!-- <input type="submit" onclick="submitAlert()" value="Submit" class="submit"> -->
-      
-            <input type="submit" onclick="submitAlert()" value="Submit" class="submit">
+
+                      
+            <input type="submit" value="Submit" class="submit">
+            
         </form>
-        <!-- onclick="alert('Thank you, your form has been successfully submitted')" -->
 
         </div>
   </div>
+
+   
+
+
+
+
  
 
          <!-- footer -->
@@ -197,7 +205,5 @@
             <p> &#169;2018 Adoptadog, LLC | Seattle, WA</p>
 
         </footer>
-
-       <script src="js/alert.js"></script>
 </body>
 </html>
