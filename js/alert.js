@@ -1,12 +1,11 @@
-
-function submitAlert(){
-  
-    let nameValue = document.getElementById('Name').value;
-    let emailValue = document.getElementById('email').value;
-    let addressValue = document.getElementById('street').value;
-    let cityValue = document.getElementById('city').value;
-    let stateValue = document.getElementById('state').value;
-    let zipValue = document.getElementById('zip').value;
+    
+   submitAlert = function($submitAlert) {
+      let nameValue = $('#Name').val(); 
+      let emailValue = $('#email').val();
+      let addressValue = $('#street').val();
+      let cityValue = $('#city').val();
+      let stateValue = $('#state').val();
+      let zipValue = $('#zip').val();
 
     alert('Thank you.  Your information has been submitted.');
     event.preventDefault();
@@ -15,4 +14,5 @@ function submitAlert(){
   }
 
 
-  
+ 
+ 
