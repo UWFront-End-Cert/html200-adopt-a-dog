@@ -15,6 +15,7 @@ h2 {
 p {
   letter-spacing: .6px;
   word-spacing: 1.2px;
+  line-height: 1.5rem;
 }
 
 nav a, nav ul li, a.gray-button-link {
@@ -170,30 +171,34 @@ main {
   margin-bottom: 30px;
 }
 
-.dog-list {
+.dog-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.dog-list section {
-  flex-basis: 22%;
+.dog-grid section {
+  flex-basis: 30%;
   font-size: .8rem;
   margin-bottom: 2rem;
 }
 
-.dog-list section div {
+.dog-grid section img {
+  max-width: 100%;
+}
+
+.dog-grid section div {
   border: 2px solid #e6e6e6;
   margin-top: -.3rem;
-  padding: 0 .4rem .6rem .4rem;
-  max-width: 90%;
+  padding: 0 .5rem 1rem;
+  /* padding: 0 .4rem .6rem .4rem; */
+  /* max-width: 90%; */
 }
 
-.dog-list section img {
-  max-width: 90%;
-}
 
-.dog-list p span {
+
+
+.dog-grid p span {
   content: "Cost to Adopt";
 }
 
@@ -202,7 +207,7 @@ p.price::before{
   font-weight: bolder;
 }
 
-.dog-list .checkout-button-link {
+.dog-grid .checkout-button-link {
   width: 100%;
   text-align: center;
 }
@@ -307,6 +312,7 @@ form fieldset {
   font-size: .8rem;
 }
 
+/* Mobile/Phone*/
 @media screen and (max-width: 767px) {
   body header {
     padding: 2rem;
@@ -316,7 +322,7 @@ form fieldset {
     width: 70%;
   }
 
-  .dog-list, .dogs-adopted {
+  .dog-grid, .dogs-adopted {
     display: table;
   }
 
@@ -326,5 +332,17 @@ form fieldset {
 
   .input-city {
     display: table;
+  }
+
+  aside {
+    display: none;
+  }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .dog-grid section {
+    flex-basis: 45%;
   }
 }
