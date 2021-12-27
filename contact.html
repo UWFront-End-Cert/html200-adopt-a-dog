@@ -7,25 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="styles/style.css">
+    <script src="js/checkout.js"></script>
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>Adopt a Dog</title>
+
+
     
 </head>
 <body>
-    <div class="container33">
+    <div class="parent">
 
         <!-- header -->
         <header>  
             <div>
-          <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text" class="logo">
+             <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text" class="logo">
                 <h1>Seattle's premiere dog adoption agency</h1>
-           <!-- </div>
-           <div> -->
-              <img src="cart-icon.svg" alt="shopping cart icon" class="cart">
-              <p>$1234.56 </p>
-             <button class="button">Checkout</button>
-             </div>
-         </header>
+                  <img src="cart-icon.svg" alt="shopping cart icon" class="cart">
+                     <p id="finalAmount">$0 </p>
+                      <button class="button" onclick="runningTotal(0)" style="cursor: pointer;">  Checkout </button>
+  
+                    </div>
+      </header>
              
         <!-- navigation -->
         <nav>
@@ -46,25 +50,25 @@
         <div class="container22">
           <div id="content23"> 
             <h1 >Checkout</h1>
-
-        <form method="GET">
+            <!-- action="/action_page.php" -->
+            <form  method="post" onsubmit="return validateForm()" class="form">
             <label>Name:
-               <input type="text" name="applicantName">
+               <input type="text" id="Name" required name="applicantName">
             </label>
 
             <label>Email Address:
-                <input type="email" name="applicantEmail">
+                <input type="email"  id="email" name="applicantEmail">
             </label>
 
-            <label for="street">Street Address</label>
+            <label for="street">Street Address
                  <input id="street" type="text" name="applicantStreet">
+                </label>
+            <label for="city">City
 
-            <label for="city">City</label>
-<br>
                 <input id="city" type="text" name="applicantCity" class="city">
-
-            <label for="state">State</label>
-            <br>
+            </label>
+            <label for="state">State
+          
                 <select id="state" class="state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -118,19 +122,20 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                 </select>	
-   
-                 <label>ZIP Code</label>
-                 <input type="text" class="zip" pattern="[0-9]{5}" title="Five digit zip code" />
-
+            </label>
+  
+                 <label>ZIP Code
+                 <input id="zip" type="text" class="zip" pattern="[0-9]{5}" title="Five digit zip code" />
+                </label>
                  <!-- <br><br><br> -->
 
                 <p>First time adopter?</p>
-                  <input class="radio" type="radio" id="yes" name="yes" value="yes">
-                  <label for="yes">Yes</label>
-                  <input class="radio" type="radio" id="no" name="no" value="no">
-                  <label for="no">No</label>
+                  <input class="radio" type="radio" id="yes" name="yes" value="yes">
+                  <label for="yes">Yes</label>
+                  <input class="radio" type="radio" id="no" name="no" value="no">
+                  <label for="no">No</label>
                 <br> <br>
-                 
+                 
 
             <label class="pickup">Pickup Location<br><br>
                 <select name="location" class="location">
@@ -138,55 +143,42 @@
                     <option value="east">east</option>
                     <option value="west">west</option>
                     <option value="north">north</option>
-
                 </select>
 
             </label>  
-        
        
-      
             <h4> Dogs Adopted</h4>  
        
           <div class="divide">
-              
-        
             <div class="lside">
-            <img src="images/tucker-good-589776-unsplash.jpg" alt="black dog">
+                <img src="images/tucker-good-589776-unsplash.jpg" alt="black dog" >
             </div>
             <div class="rside">
-            <p style="padding-left:1rem; font-size:0.6em;margin-top:-2rem;">Lucus<br>
-            Cost to Adopt: $123.45</p>
-
+                <!-- <p style="padding-left:1rem; font-size:0.6em;margin-top:-2rem;" >Lucus<br>Cost to Adopt: $123.45</p> -->
+                <p onclick="runningTotal(123.45)" style="cursor: pointer;">  <strong>Lucas:</strong> <br>Cost to Adopt: $123.45 </p>
             </div>
 
             <div class="lside2">
-            <img src="images/duffy-brook-350225-unsplash.jpg" alt="bulldog">
+                <img src="images/duffy-brook-350225-unsplash.jpg" alt="bulldog" >
             </div>
             <div class="rside2">
-            <p style="padding-left:1rem; font-size:0.6em;margin-top:-2rem;">Lucus<br>
-           Cost to Adopt: $123.45</p>
-        </div>
-        </div>
-        <div>
-            <h4>Total Adoption Cost </h4>
-            <span style="font-size:.8em; margin-left:4rem;">$1234.56</span>
+               <!-- <p style="padding-left:1rem; font-size:0.6em;margin-top:-2rem;">Duffy<br> Cost to Adopt: $123.45</p> -->
+               <p onclick="runningTotal(123.45)" style="cursor: pointer;">  <strong>Duffy:</strong> <br>Cost to Adopt: $123.45 </p>
 
             </div>
-         
+          </div>
 
-                      
-            <input type="submit" value="Submit" class="submit">
-            
+          <div>
+             <h4>Total Adoption Cost <span id="finalAmount">$0</span> </h4>
+
+           
+          </div>
+         
+            <input type="submit" onclick="submitAlert()" value="Submit" class="submit" style="cursor: pointer;">
         </form>
 
         </div>
   </div>
-
-   
-
-
-
-
  
 
          <!-- footer -->
@@ -205,5 +197,8 @@
             <p> &#169;2018 Adoptadog, LLC | Seattle, WA</p>
 
         </footer>
+
+       <script src="js/alert.js"></script>
 </body>
 </html>
+

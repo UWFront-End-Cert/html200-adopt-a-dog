@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -9,26 +10,39 @@
 	<title>Here are our dogs</title>
 	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico">
 
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/checkout.js"></script>
 
     <link href="styles/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+      $(document).ready(function() {
+          $('#content4 p, #content5 p, #content6 p, #content7 p, #content8 p, #content9 p, #content10 p, #content11 p, #content13 p, #content14 p, #content15 p, #content16 p').hover(function() {
+              $(this).css("color", "blue");
+          }, function() {
+              $(this).css("color", "black");
+          });
+      });
+  </script>
+
 </head>
 <body>
 
-    <div class="container3">
+    <div class="parent">
 
         <!-- header -->
         <header>  
-            <div>
-          <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text" class="logo">
-                <h1>Seattle's premiere dog adoption agency</h1>
-           <!-- </div>
-           <div> -->
-              <img src="cart-icon.svg" alt="shopping cart icon" class="cart">
-              <p>$1234.56 </p>
-             <button class="button">Checkout</button>
-             </div>
-         </header>
+          <div>
+           <img src="images/adoptadog-logo.svg" alt="adopt a dog log, in white with a silhouette of a dog and text" class="logo">
+              <h1>Seattle's premiere dog adoption agency</h1>
+                <img src="cart-icon.svg" alt="shopping cart icon" class="cart">
+                   <p id="finalAmount">$0 </p>
+                    <button class="button" onclick="runningTotal(0)" style="cursor: pointer;">  Checkout </button>
+
+                  </div>
+    </header>
              
         <!-- navigation -->
         <nav>
@@ -48,7 +62,7 @@
     <div id="content1" ><h1>Here are all of our dogs!</h1>
       
      </div>  
-     <!-- container3 close -->
+    
  </div>
          <!-- container4 open -->   
          
@@ -186,6 +200,7 @@
                 rendae pla endis re ea erum,
                 qui doluptae</p>
                 <button onclick="runningTotal(123.45)" style="cursor: pointer;">  Adopt </button>
+            </div>
             </div>
 
 
