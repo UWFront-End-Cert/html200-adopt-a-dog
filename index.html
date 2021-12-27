@@ -4,6 +4,35 @@
     <meta charset="utf-8">
     <title>Adopt-A-Dog | Dog Adoption</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      main {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      article.left {
+        flex: 3;
+        margin-right: 3rem;
+      }
+
+      aside {
+        flex: 1;
+      }
+
+      aside div {
+        margin-bottom: 3rem;
+      }
+
+      a.link-readmore {
+        text-decoration: none;
+        color: #5ac7e3;
+        font-weight: bold;
+      }
+
+      a.link-readmore:hover {
+        color: #093C60;
+      }
+    </style>
   </head>
 
   <body>
@@ -27,11 +56,10 @@
     </nav>
 
     <main>
-      <article class="head-article">
-        <img src="images/home-intro.jpg" class="responsive" alt="man cuddling a dog">
-
+      <article class="left">
         <div>
-          <h2>Adopt A Dog</h2>
+          <img src="images/home-intro.jpg" class="responsive" alt="man cuddling a dog">
+          <h2 style="margin-top: 1rem;">Adopt A Dog</h2>
           <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
             tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
             derum recuptatur, cum volore, undipsa doloreium hillupta aut
@@ -41,93 +69,114 @@
             volorent fugia nonsedi gendand itatquos as magnimpor aut
             molor autatia ad est officimus accae et omnia cus, od qui ate</p>
         </div>
-      </article>
 
-      <article class="dog-list">
-        <section>
-          <img src="images/murphy-card.jpg" alt="a dog named Murphy" onclick="dogInfo('Murphy', 'Great Dane', '$123.45')">
-          <div style="clear: left;">
-            <h3>Murphy</h3>
-            <p class="price">$123.45</p>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button onclick="addToTotal(123.45)">Adopt</button>
-          </div>
+        <section class="dog-grid">
+          <section>
+            <img src="images/murphy-card.jpg" alt="a dog named Murphy" onclick="dogInfo('Murphy', 'Great Dane', '$123.45')">
+            <div style="clear: left;">
+              <h3>Murphy</h3>
+              <p class="price">$123.45</p>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+              <button onclick="addToTotal(123.45)">Adopt</button>
+            </div>
+          </section>
+
+          <section>
+            <img src="images/poppy-card.jpg" alt="a dog named Poppy" onclick="dogInfo('Poppy', 'Shih Tzu', '$123.45')">
+            <div>
+              <h3>Poppy</h3>
+              <p class="price">$123.45</p>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+              <button onclick="addToTotal(123.45)">Adopt</button>
+            </div>
+          </section>
+
+          <section>
+            <img src="images/jack-card.jpg" alt="a dog named Jack" onclick="dogInfo('Jack', 'Beagle', '$123.45')">
+            <div>
+              <h3>Jack</h3>
+              <p class="price">$123.45</p>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+              <button onclick="addToTotal(123.45)">Adopt</button>
+            </div>
+          </section>
+
+          <section>
+            <img src="images/duffy-card.jpg" alt="a dog named Duffy" onclick="dogInfo('Duffy', 'Boxer', '$123.45')">
+            <div>
+              <h3>Duffy</h3>
+              <p class="price">$123.45</p>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+              <button onclick="addToTotal(123.45)">Adopt</button>
+            </div>
+          </section>
+
+          <section>
+            <img src="images/lucas-card.jpg" alt="a dog named Lucas" onclick="dogInfo('Lucas', 'Heeler', '$123.45')">
+            <div>
+              <h3>Lucas</h3>
+              <p class="price">$123.45</p>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+              <button onclick="addToTotal(123.45)">Adopt</button>
+            </div>
+          </section>
+
+          <section>
+            <img src="images/jake-card.jpg" alt="a dog named Jake" onclick="dogInfo('Jake', 'Yellow Lab', '$123.45')">
+            <div>
+              <h3>Jake</h3>
+              <p class="price">$123.45</p>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+              <button onclick="addToTotal(123.45)">Adopt</button>
+            </div>
+          </section>
         </section>
 
-        <section>
-          <img src="images/poppy-card.jpg" alt="a dog named Poppy" onclick="dogInfo('Poppy', 'Shih Tzu', '$123.45')">
-          <div>
-            <h3>Poppy</h3>
-            <p class="price">$123.45</p>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button onclick="addToTotal(123.45)">Adopt</button>
-          </div>
-        </section>
-
-        <section>
-          <img src="images/jack-card.jpg" alt="a dog named Jack" onclick="dogInfo('Jack', 'Beagle', '$123.45')">
-          <div>
-            <h3>Jack</h3>
-            <p class="price">$123.45</p>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button onclick="addToTotal(123.45)">Adopt</button>
-          </div>
-        </section>
-
-        <section>
-          <img src="images/duffy-card.jpg" alt="a dog named Duffy" onclick="dogInfo('Duffy', 'Boxer', '$123.45')">
-          <div>
-            <h3>Duffy</h3>
-            <p class="price">$123.45</p>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button onclick="addToTotal(123.45)">Adopt</button>
-          </div>
-        </section>
-
-        <section>
-          <img src="images/lucas-card.jpg" alt="a dog named Lucas" onclick="dogInfo('Lucas', 'Heeler', '$123.45')">
-          <div>
-            <h3>Lucas</h3>
-            <p class="price">$123.45</p>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button onclick="addToTotal(123.45)">Adopt</button>
-          </div>
-        </section>
-
-        <section>
-          <img src="images/jake-card.jpg" alt="a dog named Jake" onclick="dogInfo('Jake', 'Yellow Lab', '$123.45')">
-          <div>
-            <h3>Jake</h3>
-            <p class="price">$123.45</p>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button onclick="addToTotal(123.45)">Adopt</button>
-          </div>
-        </section>
-
-        <section>
-          <img src="images/angus-card.jpg" alt="a dog named Angus" onclick="dogInfo('Angus', 'Boxer', '$123.45')">
-          <div>
-            <h3>Angus</h3>
-            <p class="price">$123.45</p>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button onclick="addToTotal(123.45)">Adopt</button>
-          </div>
-        </section>
-
-        <section>
-          <img src="images/violet-card.jpg" alt="a dog named Violet" onclick="dogInfo('Violet', 'Chocolate Lab', '$123.45')">
-          <div>
-            <h3>Violet</h3>
-            <p class="price">$123.45</p>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button onclick="addToTotal(123.45)">Adopt</button>
-          </div>
+        <section style="text-align: center; margin-top: 2rem;">
+          <a class="gray-button-link" href="dogs.html" style="padding: 10px 60px;">See More Dogs</a>
         </section>
       </article>
 
-      <article style="width: 98%; text-align: center; margin-top: 2rem;">
-        <a class="gray-button-link" href="dogs.html">See More Dogs</a>
-      </article>
+      <aside>
+        <h2>From Out Blog</h2>
+
+        <div>
+          <img src="images/home-blog-1.jpg" class="responsive" alt="man at canyon with a dog">
+          <h3>Traveling With Your Dog</h3>
+
+          <p>Iciustiam, et ad quiaes cum que
+            excea sinciendi qui offic temquas
+            doluptios dolupta tiandebis nem ut.
+          </p>
+
+          <a class="link-readmore" href="blog.html">Read more >></a>
+        </div>
+
+        <div>
+          <img src="images/home-blog-2.jpg" class="responsive" alt="several dogs on leashes on the street">
+
+          <div>
+            <h3>How To Walk Multiple Dogs</h3>
+
+            <p>Iciustiam, et ad quiaes cum que
+              excea sinciendi qui offic temquas
+              doluptios dolupta tiandebis nem ut.
+            </p>
+            <a class="link-readmore" href="blog.html">Read more >></a>
+        </div>
+
+        <div>
+          <img src="images/home-blog-3.jpg" class="responsive" alt="woman and dog in sunset">
+          <h3>Teach Your Dog To Fetch!</h3>
+
+          <p>Iciustiam, et ad quiaes cum que
+            excea sinciendi qui offic temquas
+            doluptios dolupta tiandebis nem ut.
+          </p>
+          <a class="link-readmore" href="blog.html">Read more >></a>
+          </div>
+
+      </aside>
     </main>
 
     <footer>
