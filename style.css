@@ -67,7 +67,7 @@ a.gray-button-link:hover {
 
 body header {
   width: 100%;
-  height: 500px;
+  height: 350px;
 
   background-image: linear-gradient(to right, greenyellow, white);
   background-image: url('./images/header-image.jpg');
