@@ -71,8 +71,6 @@ body header {
 
   background-image: linear-gradient(to right, greenyellow, white);
   background-image: url('./images/header-image.jpg');
-  background-color: brown;
-  background-repeat: tile;
   background-size: cover;
   background-position: center 20%;
   padding: 2rem 5rem;
