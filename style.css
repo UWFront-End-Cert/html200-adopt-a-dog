@@ -300,12 +300,13 @@ form fieldset {
 }
 
 .dogs-adopted section img {
-  max-width: 30%;
+  max-width: 100%;
   margin-bottom: 1rem;
 }
 
 .dogs-adopted section div {
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 
