@@ -48,9 +48,10 @@ input[type=submit], button {
   font-weight: bold;
   font-size: 1rem;
   border: none;
+  white-space: nowrap;
 }
 
-button {
+.dog-grid button {
   width: 100%;
 }
 
@@ -58,6 +59,7 @@ a.checkout-button-link:hover, a.checkout-button-link:active,
 a.gray-button-link:hover, a.gray-button-link:active,
 input[type=submit]:hover, input[type=submit]:active, button:hover {
   background-color: green;
+  cursor: pointer;
 }
 
 a.gray-button-link:hover {
@@ -66,11 +68,14 @@ a.gray-button-link:hover {
 
 
 body header {
-  background: url(images/header-image.jpg);
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+
+  background-image: linear-gradient(to right, greenyellow, white);
+  background-image: url('./images/header-image.jpg');
   background-size: cover;
+  background-position: center 20%;
   padding: 2rem 5rem;
-  height: 280px;
 }
 
 body header div:first-child {
@@ -145,7 +150,7 @@ nav li a:hover {
   color: #81AF34;
 }
 
-img.responsive {
+.responsive-image {
   max-width: 100%;
 }
 
@@ -161,14 +166,14 @@ main {
   margin: auto;
 }
 
-.head-article p {
-  line-height: 1.5rem;
-}
-
-.head-article img {
+.blog-post img {
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.blog-post p {
+  line-height: 1.5rem;
 }
 
 .dog-grid {
@@ -191,11 +196,7 @@ main {
   border: 2px solid #e6e6e6;
   margin-top: -.3rem;
   padding: 0 .5rem 1rem;
-  /* padding: 0 .4rem .6rem .4rem; */
-  /* max-width: 90%; */
 }
-
-
 
 
 .dog-grid p span {
@@ -257,7 +258,7 @@ form label, form legend {
   font-size: 1.1rem;
 }
 
-input[type=text], select {
+input[type=text], input[type=textarea], select {
   display: block;
   margin: .2rem 1rem 1rem 0;
   border: 1px solid #c8c8c8;
@@ -299,12 +300,13 @@ form fieldset {
 }
 
 .dogs-adopted section img {
-  max-width: 30%;
+  max-width: 100%;
   margin-bottom: 1rem;
 }
 
 .dogs-adopted section div {
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 
@@ -337,8 +339,11 @@ form fieldset {
   aside {
     display: none;
   }
-}
 
+  body header {
+    height: 250px;
+  }
+}
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
