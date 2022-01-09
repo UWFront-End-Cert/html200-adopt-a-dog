@@ -1,109 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Adopt a Dog</title>
-    <link href="style.css" rel="stylesheet">
-  </head>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Adopt a Dog - Homepage</title>
+</head>
 
 <body>
-  <div> <!-- Header section -->
-    <h1>ADOPTADOG</h1>
-    <h2>Seattle's premier dog adoption agency</h2>
-    <a href="checkout.html">Checkout</a>
+  <header>
+    <div class="flex"> <!-- use this class to seperate the header into two sections -->
+      <div class="checkout-header">
+        <div class="shopping-cart">
+          <p><img src="./images/cart-icon.svg" alt="Shopping Cart">$1234.56</p>
+          <button onclick="location.href='checkout.html'">Checkout</button>
+        </div>
+        <div class="logo-header">
+          <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+          <h3>Seattle's premiere dog adoption agency</h3>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>/</li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li>/</li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="primary-content">
+    <section class="main-article"> <!-- Section above the dog cards -->
+      <div class="article-organizer">
+        <img src="./images/home-intro.jpg" alt="Man In Red Shirt Hugging Yellow Lab">
+      </div>
+      <div class="article-organizer">
+        <h2>Adopt a Dog</h2>
+        <p>Iduciendisite quo magnatem iuntum quid quaest ea am,tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+      </div>
+    </section>
+
+    <div class="dog-card-grid"> <!-- This section is for listing a small amount of dogs available -->
+      <div class="dog-card">
+          <img src="./images/murphy-card.jpg" alt="Tan dog staring up">
+          <div class="dog-info">
+            <h4>Murphy</h4>
+            <h5>Cost to Adopt:<span> $123.45</span></h5>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
+          </div>
+        </div>
+
+        <div class="dog-card">
+          <img src="./images/poppy-card.jpg" alt="White dog running with tongue out">
+          <div class="dog-info">
+            <h4>Poppy</h4>
+            <h5>Cost to Adopt:<span> $123.45</span></h5>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
+          </div>
+        </div>
+
+        <div class="dog-card">
+          <img src="./images/jack-card.jpg" alt="White and brown dog starting up">
+          <div class="dog-info">
+            <h4>Jack</h4>
+            <h5>Cost to Adopt:<span> $123.45</span></h5>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
+          </div>
+        </div>
+
+        <div class="dog-card">
+          <img src="./images/duffy-card.jpg" alt="White and brown dog staring at camera">
+          <div class="dog-info">
+            <h4>Duffy</h4>
+            <h5>Cost to Adopt:<span> $123.45</span></h5>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
+          </div>
+        </div>
+
+        <div class="dog-card">
+          <img src="./images/lucas-card.jpg" alt="Black dog panting and staring at camera">
+          <div class="dog-info">
+            <h4>Lucas</h4>
+            <h5>Cost to Adopt:<span> $123.45</span></h5>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
+          </div>
+        </div>
+
+        <div class="dog-card">
+          <img src="./images/jake-card.jpg" alt="White dog on beach">
+          <div class="dog-info">
+            <h4>Jake</h4>
+            <h5>Cost to Adopt:<span> $123.45</span></h5>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
+          </div>
+        </div>
+
+        <div class="dog-card">
+          <img src="./images/angus-card.jpg" alt="Brown dog panting in grass">
+          <div class="dog-info">
+            <h4>Angus</h4>
+            <h5>Cost to Adopt:<span> $123.45</span></h5>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
+          </div>
+        </div>
+
+        <div class="dog-card">
+          <img src="./images/violet-card.jpg" alt="Brown puppy looking up">
+          <div class="dog-info">
+            <h4>Violet</h4>
+            <h5>Cost to Adopt:<span> $123.45</span></h5>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button type="button" name="adopt-dog" class="adopt">Adopt</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="flex">
+        <button type="button" class ='dogs-button'>See More Dogs</button>
+    </div>
   </div>
-  
-  <div> <!-- Navigation under header -->
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="dogs.html">Dogs</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
-  </div>
-  
-  <div> <!-- Main article section -->
-  <img src="images/home-intro.jpg" alt="Man hugging his dog">
-  <h3>Adopt A Dog</h3>
-  <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
-     tenderumet adis dolenem quidustrum fuga. Faceaquae
-     estioria derum recuptatur, cum volore, undipsa doloreium
-     hillupta aut es ut alitatuscit ommossum haritatur arum qui
-     officae videbiti corporeium faccull oribus es quidignis
-     ipietus explam sus am aut amet ant fugiatum, utem non reptat
-     ad magnienecto volorent fugia nonsedi gendand itatquos as
-     magnimpor aut molor autatia ad est officimus accae et omnia
-     cus, od qui ate</p>
-  </div>
-  
-  <div> <!-- Dog card section -->
-    <div>
-      <img src="images/murphy-card.jpg" alt="Tan dog staring up">
-      <h2>Murphy</h2>
-      <h3>Cost to Adopt: $123.45</h3>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button>Adopt</button>
-    </div>
-    <div>
-      <img src="images/poppy-card.jpg" alt="White dog running with tongue out">
-      <h2>Poppy</h2>
-      <h3>Cost to Adopt: $123.45</h3>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button>Adopt</button>
-    </div>
-    <div>
-      <img src="images/jack-card.jpg" alt="White and brown dog starting up">
-      <h2>Jack</h2>
-      <h3>Cost to Adopt: $123.45</h3>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button>Adopt</button>
-    </div>
-    <div>
-      <img src="images/duffy-card.jpg" alt="White and brown dog staring at camera">
-      <h2>Duffy</h2>
-      <h3>Cost to Adopt: $123.45</h3>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button>Adopt</button>
-    </div>
-    <div>
-      <img src="images/lucas-checkout.jpg" alt="Black dog panting and staring at camera">
-      <h2>Lucas</h2>
-      <h3>Cost to Adopt: $123.45</h3>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button>Adopt</button>
-    </div>
-    <div>
-      <img src="images/jake-card.jpg" alt="White dog on beach">
-      <h2>Jake</h2>
-      <h3>Cost to Adopt: $123.45</h3>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button>Adopt</button>
-    </div>
-    <div>
-      <img src="images/angus-card.jpg" alt="Brown dog panting in grass">
-      <h2>Angus</h2>
-      <h3>Cost to Adopt: $123.45</h3>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button>Adopt</button>
-    </div>
-    <div>
-      <img src="images/violet-card.jpg" alt="Brown puppy looking up">
-      <h2>Violet</h2>
-      <h3>Cost to Adopt: $123.45</h3>
-      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button>Adopt</button>
-    </div>
-  </div>
-  
+
   <footer>
-      <h3>ADOPTADOG</h3>
-      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br> esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+    <div class="footer-main">
+      <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+      <h6>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</h6>
+    </div>
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
+        <li>/</li>
         <li><a href="dogs.html">Dogs</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li>/</li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
+    </nav>
+    <div class="footer-main">
       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
-    </footer>
-    
-  </body>
+    </div>
+  </footer>
+</body>
 </html>

@@ -1,63 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title>Adopt a Dog - Checkout</title>
-    <link href="style.css" rel="stylesheet">
-  </head>
+</head>
+<body>
+  <header>
+    <div class="flex"> <!-- use this class to seperate the header into two sections -->
+      <div class="checkout-header">
+        <div class="shopping-cart">
+          <p><img src="./images/cart-icon.svg" alt="Shopping Cart">$1234.56</p>
+          <button onclick="location.href='checkout.html'">Checkout</button>
+        </div>
+        <div class="logo-header">
+          <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+          <h3>Seattle's premiere dog adoption agency</h3>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>/</li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li>/</li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <body>
-    <header> <!-- Header section -->
-      <h1>ADOPTADOG</h1>
-      <h2>Seattle's premier dog adoption agency</h2>
-      <a href="checkout.html">Checkout</a>
-    </header>
-    
-    <div> <!-- Navigation under header -->
+    <h2 class="page-title">Checkout</h2>
+
+    <section title="Checkout" class="checkout">
+      <form method="GET">
+      <div class="checkout-form-style">
+        <label for="name">Name
+          <input type="text" name="customerName" value="" id="name">
+        </label>
+      </div>
+
+      <div class="checkout-form-style">
+        <label for="email">Email Address
+          <input type="text" name="customerEmail" value="" id="email">
+        </label>
+      </div>
+
+      <div class="checkout-form-style">
+        <label for="address">Street Address
+          <input type="text" name="customerAddress" value="" id="address">
+        </label>
+      </div>
+
+      <div class="address-csz">
+        <div class="csz-input">
+          <label for="City">City
+            <input type="text" name="customerCity" value="" id="applicantCity">
+          </label>
+        </div>
+        <div class="csz-input">
+          <label for="State">State
+            <select name="state" id="customerState">
+              <option disabled selected value>&nbsp;</option>
+              <option value="CA">CA</option>
+              <option value="OR">OR</option>
+              <option value="WA">WA</option>
+            </select>
+          </label>
+        </div>
+        <div class="csz-input">
+          <label for="Zip">Zip Code</label>
+          <input type="text" name="customerZip" value="" id="applicantZip">
+        </div>
+      </div>
+
+      <div class="checkout-form-style">
+        <h4>First Time Adopter?</h4>
+        <fieldset class="checkbox">
+          <input type="radio" name="firstAdopter" value="yes">
+            <label>Yes</label>
+          <input type="radio" name="firstAdopter" value="no">
+            <label>No</label>
+        </fieldset>
+      </div>
+
+      <div class="checkout-form-style">
+        <label for="pickLocation">Pickup Location</label>
+        <select name="pickup" id="pickupLocation">
+          <option value="Seattle">Seattle</option>
+          <option value="Tacoma">Tacoma</option>
+        </select>
+      </div>
+      <div class="checkout-form-style">
+        <h4>Dogs Adopted:</h4>
+        <!-- input code here to add dogs when the adopt button is clicked on the other pages -->
+        <h4>Total Adoption Cost:</h4>
+        <!-- add code here that adds the price of the dogs adopted together -->
+        <button type="button" name="submit" id="submit">Submit</button>
+      </div>
+      </form>
+    </section>
+
+   <footer>
+    <div class="footer-main">
+      <img src="./images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
+      <h6>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</h6>
+    </div>
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
+        <li>/</li>
         <li><a href="dogs.html">Dogs</a></li>
+        <li>/</li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
-    </div>
-    
-    <div> <!-- Checkout Form -->
-      <h2>Checkout</h2>
-      <form>
-        <p>Name:</p>
-        <input type="text" name="Name" size="15" maxlength="50" />
-        <p>Email Address:</p>
-        <input type="text" name="E-Mail" size="15" maxlength="50" />
-        <p>Street Address:</p>
-        <input type="text" name="Address" size="15" maxlength="50" />
-        <p>City:</p>
-        <input type="text" name="City" size="15" maxlength="50" />
-        <p>State:</p>
-        <select>
-          <option disabled selected value>&nbsp;</option>
-          <option value="Washington">Washington</option>
-          <option value="Oregon">Oregon</option>
-          <option value="Idaho">Idaho</option>
-        </select>
-        <p>Zip Code:</p>
-        <input type="text" name="Zip" size="15" maxlength="50" />
-        <p>First Time Adopter?
-        <input type="radio" name="options" value="Yes" /> Yes
-        <input type="radio" name="options" value="No" /> No
-        </p>
-        <button>Submit</button>
-      </form>
-    </div>
-    
-     <footer>
-      <h3>ADOPTADOG</h3>
-      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br> esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dogs.html">Dogs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    </nav>
+    <div class="footer-main">
       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
 </html>
