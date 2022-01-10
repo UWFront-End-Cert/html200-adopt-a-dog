@@ -197,7 +197,6 @@ footer nav li a {
   justify-content: space-between;
   padding-left: 2rem;
   grid-column: 1 / 9;
-  grid-rows: 2 / 2;
 }
 
 .dog-card { /* This will be used in the index page and the dogs page */
@@ -489,7 +488,6 @@ footer nav li a {
   .primary-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 0% 15%;
     column-gap: 2em;
   }
 
