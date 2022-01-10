@@ -489,7 +489,7 @@ footer nav li a {
   .primary-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 0% 15%
+    padding: 0% 15%;
     column-gap: 2em;
   }
 
