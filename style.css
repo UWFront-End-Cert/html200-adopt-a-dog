@@ -1,58 +1,86 @@
 /* General Section -- This styling should go over most if not all pages */
 * {
   margin: 0 0 0 0;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .flex {
   display: flex;
 }
 
-.checkout-header { /* Seperate from the header code, work on this to fix up the checkout section of the header banner */
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  padding: 2.5rem;
-  background-image: url("./images/header-image.jpg");
-  background-size: 100%;
-  width: 100%;
+header {
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto;
+  grid-column-gap: 10px;
+
 }
 
-.checkout-header h3 {
-  font-family: "Times New Roman";
-  font-style: italic;
-  font-weight: lighter;
+.header-items {
+  background-image: linear-gradient(90deg, rgba(172,162,162,1) 0%, rgba(186,186,186,1) 47%, rgba(154,154,154,1) 100%);
+  background-image: url("./images/header-image.jpg");
+  background-position: 50% 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-column-gap: 10px;
+  grid-column: 1 / 13;
+  grid-row: 1 / 1;
+}
+
+.header-logo {
+  grid-column: 2 / 13;
+  line-height: 1;
   color: #8DB353;
 }
 
-.shopping-cart {
-  display: inline-block;
+.header-logo img {
+  max-width: 50%;
 }
 
-.shopping-cart img {
-  padding-right: .5rem;
-  height: 1.75em;
-  width: 1.75em;
+.header-logo h2 {
+  font-style: italic;
+  font-weight: 400;
+  font-family: "Times New Roman";
 }
 
-.shopping-cart p {
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: .75em;
-  text-align: right;
+.header-checkout {
+  grid-column: 14 / 16;
+  text-align: center;
+  font: .75rem "Work Sans";
   color: #ffffff;
+  font-weight: 500;
+  color: #ffffff;
+
 }
 
-.shopping-cart button {
+.header-checkout img {
+  height: 3ex;
+  padding: 0 .5rem 0 0;
+}
+
+.header-checkout button {
   background-color: #8DB353;
+  display: inline-block;
   border-radius: 3px;
   font-family: "Work Sans", "Arial", sans-serif;
   font-weight: bold;
   color: #ffffff;
-  margin: 1rem 0 0 0;
-  padding: .65rem 3.5rem .65rem 3.5rem;
+  padding: .5rem 1rem .5rem 1rem;
   width: 100%;
   border: none;
+}
+
+.header-menu {
+  grid-column: 1 / 13;
+  grid-row: 2 / 2;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 10px;
+  background-color: #ECECEC;
 }
 
 header nav {
@@ -77,8 +105,6 @@ header nav li a {
   padding: 1rem 1rem 1rem 1rem;
   text-decoration: none;
 }
-
-
 
 footer {
   display: flex;
@@ -428,9 +454,30 @@ footer nav li a {
 
 /* Mobile styling */
 @media screen and (max-width: 480px) {
-  .primary-content {
+  .header-items {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  .header-logo {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    grid-column: 1 / 13;
+    grid-row: 1 / 1;
+  }
+
+  .header-logo img, h2 {
+    display: none;
+  }
+
+  .header-checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1 / 13;
+    grid-row: 1 / 1;
+    padding: .5rem 0 .5rem 0;
   }
 
   .blog-small img {
@@ -448,8 +495,18 @@ footer nav li a {
     display: none;
   }
 
+
+  .blog-card {
+    padding-bottom: 1rem;
+  }
+
+  .blog-article {
+    padding: 0;
+    margin: 0;
+  }
+
   .all-dogs-cards-grid {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
   }
 
   .all-dogs-cards-grid .dog-card {
@@ -469,6 +526,11 @@ footer nav li a {
 @media screen and (min-width: 481px) and (max-width: 900px) {
   .all-dogs-cards-grid {
     grid-template-columns: 2fr;
+  }
+
+  .blog-card {
+    max-height: 250px;
+    overflow: scroll;
   }
 
   .all-dogs-cards-grid .dog-card {
