@@ -1,0 +1,495 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+/* Just add the universal selector (*) to your CSS, this will apply any rule to every element on the page. If any elements need them you can 
+then add margins or padding to those elements themselves. This helps get rid of spacing when you can't quite tell what is causing it. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Brygada 1918', serif;
+    line-height: 1.6;
+}
+
+
+/* do i need to set position relative on container? */
+
+
+/* .contianer {
+display: grid;
+grid-template-columns: 66.66% 33.33%;
+grid-template-rows: auto auto auto;
+} */
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    /* redine grid-template-areas when doing media quereis; */
+    grid-template-areas: "header" "main" "footer";
+}
+
+.main {
+    grid-area: main;
+}
+
+.header {
+    /* grid-area: 1/1/2/3; */
+    grid-area: header;
+}
+
+.footer {
+    /* grid-area: 3/1/4/3; */
+    grid-area: footer;
+}
+
+
+/* header shit *****************************************
+let the contents define the dimensions of the containers */
+
+
+/* flex-wrap here fixes your right margin when browser is small */
+
+.header {
+    background-image: url(https://github.com/UWFront-End-Cert/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true), repeating-radial-gradient(ellipse at 50% 50%, #FF0055 99.46%, #0c497a 100%);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+    padding: 4rem;
+}
+
+.logo {
+    height: 15rem;
+}
+
+.header h1 {
+    color: white;
+    font-size: 2.75rem;
+    font-family: 'Courgette', cursive;
+    color: rgb(155, 226, 11);
+    margin-top: -2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* header height is defined by these fucking margins ya heard */
+
+.header1 {
+    position: relative;
+    /* flex-basis: 50%; */
+    flex: 3;
+    left: 5%;
+}
+
+.header2 {
+    /*using position instead of margin here pay attention*/
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    /* flex-basis: 50%; */
+    position: relative;
+    flex: 1;
+}
+
+.header2 {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+.cart {
+    width: 11rem;
+}
+
+.header2 span {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.checkout {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.75rem;
+    background-color: rgb(155, 226, 11);
+    color: white;
+    font-weight: 700;
+    border-style: none;
+    border-radius: .5rem;
+}
+
+.checkout:hover {
+    background-color: rgb(170, 253, 2);
+    transition: background-color 200ms ease-in-out;
+}
+
+.primary {
+    position: absolute;
+    display: block;
+    background-color: rgb(135, 136, 133);
+    display: flex;
+    align-self: flex-end;
+    padding: 1.3rem;
+    width: 100%;
+    top: 92%;
+}
+
+.primary a {
+    position: relative;
+    font-size: 2rem;
+    /* padding-right: 5%; */
+    padding-left: 16.5%;
+    text-decoration: none;
+    color: white;
+}
+
+.inner-nav {
+    display: flex;
+    position: relative;
+    left: 15%;
+}
+
+@media screen and (max-width: 840px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .primary {
+        align-self: center;
+    }
+    .header1 {
+        left: 0;
+        flex: 0;
+    }
+    .header2 {
+        flex: 0;
+    }
+}
+
+
+/*main*********************************************************/
+
+.dogs {
+    margin: 0rem;
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.main h1 {
+    font-size: 3.5rem;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.dogs div {
+    object-fit: cover;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    /* width: 23rem; */
+    /* width: 23%; */
+    width: 22em;
+    min-height: 32.5rem;
+    /* height: 32.5rem; */
+    /* height: 30%; */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin: 4rem;
+}
+
+.dog_cards h3,
+p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* border: 2px solid black; */
+}
+
+.dog_cards button {
+    position: relative;
+    border: 1.2px solid black;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .75rem;
+    font-size: 3rem;
+    font-weight: 500;
+    color: black;
+    /* color: rgb(155, 226, 11); */
+    transition: 0.5s;
+    overflow: hidden;
+    min-height: 36.8px;
+}
+
+.dog_cards button:hover {
+    color: white;
+    background-color: rgb(155, 226, 11);
+}
+
+.all_but_nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    position: relative;
+    border: 1.2px solid black;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    /* text-transform: uppercase; */
+    letter-spacing: .75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    /* color: rgb(155, 226, 11); */
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(155, 226, 11);
+}
+
+.btn span {
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    /* background: #41f321; */
+    background: rgb(155, 226, 11);
+    transition: width 0.5s, height 05.s;
+    z-index: 1;
+}
+
+.btn:hover span {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*Dogs**************************************************************/
+
+
+/*  */
+
+
+/*Side**************************************************************/
+
+.side {
+    /* margin: 5rem; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.side img {
+    /*width set to % is working great here because the pictures shrink then we hide them,
+but looks like the margin set on .side will take away from %
+maybe UX consideration, should images shrink or is it better practice to keep them same size?*/
+    /* width: 90%; */
+    width: 27rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.side h1 {
+    font-size: 3rem;
+}
+
+.side h2 {
+    font-size: 2rem;
+}
+
+.side a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.content div {
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+}
+
+.content p {
+    /* width: 32rem; */
+    font-size: 1.2rem;
+}
+
+
+/*footer********************************************************/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(12, 73, 122);
+    text-align: center;
+    padding: 6rem;
+}
+
+.footer img {
+    height: 14rem;
+    padding: 1.5rem;
+}
+
+.footer p {
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+
+div.footer_nav {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 1.5rem;
+}
+
+.footer a {
+    padding-left: 10.5%;
+    padding: 1.5rem;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.footer img,
+.footer p,
+div.footer_nav,
+.footer a {
+    padding: .6rem;
+}
+
+
+/*media quries*/
+
+@media screen and (max-width: 551px) {
+    .container {
+        grid-template-rows: .1fr .3fr .1fr;
+    }
+    .primary {
+        top: 92.5%;
+    }
+    .header1 {
+        margin: 0;
+        right: 0%;
+    }
+    .header2 {
+        left: 0%;
+    }
+    .header {
+        align-items: start;
+        justify-content: start;
+    }
+    .logo {
+        height: 14rem;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 617px) {
+    .contianer {
+        grid-template-rows: .1fr .3fr .1fr;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .container {
+        grid-template-columns: 125%;
+        grid-template-rows: .1fr .3fr .1fr;
+        grid-template-areas: "header" "main" "footer";
+    }
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .primary {
+        align-self: baseline;
+        top: 91%;
+    }
+    .header1 {
+        margin-top: 2rem;
+        left: 0;
+        right: 0;
+    }
+    .header2 {
+        left: 0;
+        right: 0;
+    }
+}
