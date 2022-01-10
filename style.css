@@ -78,6 +78,8 @@ header nav li a {
   text-decoration: none;
 }
 
+
+
 footer {
   display: flex;
   flex-direction: column;
@@ -143,20 +145,24 @@ footer nav li a {
 }
 
 /* Index/Homepage styling */
+.page-layout {
+  grid-column: 2 / 12;
+}
+
 .primary-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0 5rem 0 5rem;
+  display: grid;
+  grid-column: 1/12;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 10px;
 }
 
 .main-article {
   display: flex;
-  flex-direction: row;
-  margin: 0 5rem 0 5rem;
-  padding: 2rem 0rem 0 0rem;
-  width: 100%;
+  flex-flow: row wrap;
+  grid-column: 1fr;
+  grid-row: 1/1;
+
 }
 
 .article-organizer {
@@ -168,17 +174,17 @@ footer nav li a {
 
 .article-organizer h2 {
   font-family: "Times New Roman,";
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 2;
   color: #093c60;
 }
 
 .article-organizer img {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
-.article-organizerp {
+.article-organizer p {
   font-size: .95rem;
   line-height: 1.5;
   max-height: 370px;
@@ -187,18 +193,16 @@ footer nav li a {
 .dog-card-grid {
   display: flex;
   flex-flow: row wrap;
-  padding: 0 1rem 0 1rem;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 2rem;
+  grid-column: 1 / 9;
+  grid-rows: 2 / 2;
 }
 
 .dog-card { /* This will be used in the index page and the dogs page */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 1.75rem 0 1.75rem 0;
-  border: 2px solid #E7E3E3;
-  width: 20%;
+  border: 2px solid transparent; /* Use transparent to keep spacing */
+  width: 30%;
 }
 
 .dog-card img {
@@ -209,6 +213,7 @@ footer nav li a {
 .dog-info {
   padding: 1rem;
   font-size: .85rem;
+  text-align: left;
 }
 
 .dog-info h4 {
@@ -237,6 +242,10 @@ footer nav li a {
   font-weight: bold;
   width: 100%;
 }
+.button-align {
+  display: grid;
+  grid-column: auto;
+}
 
 .dogs-button {
   background-color: #FFFFFF;
@@ -262,6 +271,19 @@ footer nav li a {
 
 .all-dogs {
   padding: 0 5rem 0 5rem;
+}
+
+.all-dogs-cards-grid {
+  display: flex;
+  grid-column: 1 / 13;
+  padding: 0 1rem 2rem 1rem;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.all-dogs-cards-grid .dog-card { /* This will be used in the index page and the dogs page */
+  border: 2px solid transparent; /* Use transparent to keep spacing */
+  width: 20%;
 }
 
 /* Blog page styling */
@@ -403,4 +425,116 @@ footer nav li a {
   font-family: "Arial", sans-serif;
   color: #000000;
   align-items: center;
+}
+
+/* Mobile styling */
+@media screen and (max-width: 480px) {
+  .primary-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-small img {
+    display: none;
+  }
+
+  .blog-small h4 {
+    grid-column: 8 / 11;
+    font-family: "Times New Roman";
+    font-size: 1.5rem;
+    color: #093c60;
+  }
+
+  .blog-small p {
+    display: none;
+  }
+
+  .all-dogs-cards-grid {
+    grid-template-columns: 2fr;
+  }
+
+  .all-dogs-cards-grid .dog-card {
+    width: 100%;
+  }
+
+  .dog-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dog-card {
+    width: 100%;
+  }
+}
+
+/* Tablet styling */
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  .all-dogs-cards-grid {
+    grid-template-columns: 2fr;
+  }
+
+  .all-dogs-cards-grid .dog-card {
+    width: 40%;
+  }
+
+  .dog-card-grid {
+    grid-template-columns: 2fr;
+  }
+
+  .dog-card-grid .dog-card {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .primary-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0% 15%
+    column-gap: 2em;
+  }
+
+/* Index page -- blog styling */
+.blog-index {
+    grid-column: 9/13;
+    grid-row: 1/3;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.blog-index h2 { /* Use this instead of page-title for the blog on the index page */
+  width: 100%;
+  font-family: "Times New Roman";
+  font-size: 2rem;
+  line-height: 2;
+  color: #093c60;
+}
+
+.blog-small img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-small {
+  grid-column: 8 / 11;
+  padding: 0 0 4rem 0;
+}
+
+.blog-small h4 {
+  grid-column: 8 / 11;
+  font-family: "Times New Roman";
+  font-size: 1.5rem;
+  color: #093c60;
+}
+
+.blog-small p {
+  font: .75rem "Arial";
+  font-weight: 300;
+}
+
+.blog-small a {
+  font-weight: 400;
+  font-size: .75rem;
+  color: #229CCB;
 }
