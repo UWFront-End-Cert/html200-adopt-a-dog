@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="static-files/stylesheet.css">
+    <script defer src="static-files/form-completion.js"></script>
     <title>Adopt-a-Dog ||  Checkout</title>
 </head>
 <body>
@@ -39,57 +40,64 @@
 
         <section class="checkout-form">
             <h2 style="display: none">Hide this for HTML5 W3 validator</h2>
+            
             <form>
-                <p class="checkout-caption">Name
-                    <br>
-                    <input type="text" name="adopter-name">
-                </p>
+                <label class="checkout-caption">Name</label>
+                <br>
+                <input type="text" name="adopter-name">
 
-                <p class="checkout-caption">Email Address
-                    <br>
-                    <input type="email" name="adopter-email"> 
-                </p>
+                <label class="checkout-caption">Email Address</label>
+                <br>
+                <input type="email" name="adopter-email"> 
 
-                <p class="checkout-caption">Street Address
-                    <br>
-                    <input type="text" name="adopter-street-address">
-                </p>
+                <label class="checkout-caption">Street Address</label>
+                <br>
+                <input type="text" name="adopter-street-address">
 
                 <div class="checkout-macro-location">
-                    <p class="checkout-caption">City
+
+                    <div class="container-city">
+                        <label class="checkout-caption">City</label>
                         <br>
                         <input type="Text" name="adopter-city">
-                    </p>
-                    
-                    <p class="checkout-caption">State
+                    </div>
+
+                    <div class="container-state">
+                        <labek class="checkout-caption">State</label>
                         <br>
                         <select name="adopter-state">
                             <option value="CA">CA</option>
                             <option value="OR">OR</option>
                             <option value="WA">WA</option>
                         </select>
-                    </p>
+                    </div>
                     
-                    <p class="checkout-caption">Zip Code
+                    <div class="container-zip">
+                        <label class="checkout-caption">Zip Code</label>
                         <br>
                         <input type="text" name="adopter-zip">
-                    </p>
+                    </div>
                 </div>
                     
-                <p class="checkout-caption">First Time Adopter
+                <label class="checkout-caption">First Time Adopter</label>
                     <br>
-                    <label>Yes<input type="radio" name="first-time-adopter" value="yes"></label>
-                    <label>No<input type="radio" name="first-time-adopter" value="no"></label>
-                </p>
 
-                <p class="checkout-caption">Pickup Location
+                    <div class="radio-container">
+                        <label>Yes</label><input type="radio" name="first-time-adopter" value="yes">
+                    </div>
+                    
+                    <div class="radio-container">
+                        <label>No</label><input type="radio" name="first-time-adopter" value="no">
+                    </div>
+
+                <label class="checkout-caption">Pickup Location
                     <br>
                     <select name="pickup-location">
                         <option value="Seattle">Seattle</option>
                         <option value="Bellevue">Bellevue</option>
                         <option value="Kirkland">Kirkland</option>
                     </select>
-                </p>
+                </label>
 
                 <p class="checkout-caption">Dogs Adopted</p>
                     <br>
@@ -117,7 +125,7 @@
                     <br>
                     <p>$ 1234.56</p>
                     
-                    <button class="add-to-cart">Submit</button>
+                    <button class="add-to-cart" onclick="get_form_info()" onclick="acknowledge_submission()">Submit</button>
             </form>
         </section>
     </main>
