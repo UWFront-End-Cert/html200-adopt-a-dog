@@ -18,7 +18,7 @@
     <div class = "header-two">
       <div class="cart">
         <img src="images/cart-icon.svg" alt="White shopping cart icon." title="White shopping cart icon.">
-        <p id="checkout-total">Total</p>
+        <p id="checkout-total"></p>
       </div>
       <button>Checkout</button>
     </div>
@@ -37,99 +37,99 @@
 
   <div class="container">
     <article>
-      <img src="images/murphy-card.jpg" alt="Boxer with redish gold spots and a white nose." title="Boxer with redish gold spots and a white nose.">
+      <img src="images/murphy-card.jpg" alt="Boxer with redish gold spots and a white nose." title="Boxer with redish gold spots and a white nose." onclick="murphy();">
       <h4>Murphy</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
     <article>
-      <img src="images/poppy-card.jpg" alt="Grey and white shih tzu dog walking along a an asphalt road." title="Grey and white shih tzu dog walking along an asphalt road">
+      <img src="images/poppy-card.jpg" alt="Grey and white shih tzu dog walking along a an asphalt road." title="Grey and white shih tzu dog walking along an asphalt road" onclick="poppy();">
       <h4>Poppy</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
     <article>
-      <img src="images/jack-card.jpg" alt="Brownish gold and white beagle looking up from the floor." title="Brownish gold and white beagle looking up from the floor.">
+      <img src="images/jack-card.jpg" alt="Brownish gold and white beagle looking up from the floor." title="Brownish gold and white beagle looking up from the floor." onclick="jack();">
       <h4>Jack</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
     <article>
-      <img src="images/duffy-card.jpg" alt="Pit bull with a white face, gold spots, and black splotched nose sitting in grass." title="Pit bull with a white face, gold spots, and black splotched nose sitting in grass.">
+      <img src="images/duffy-card.jpg" alt="Pit bull with a white face, gold spots, and black splotched nose sitting in grass." title="Pit bull with a white face, gold spots, and black splotched nose sitting in grass." onclick="duffy();">
       <h4>Duffy</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <a>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
     <article>
-      <img src="images/lucas-card.jpg" alt="Black retriever with white around nose and chained to a leash looking directly upward." title="Black retriever with white around nose and chained to a leash looking directly upward.">
+      <img src="images/lucas-card.jpg" alt="Black retriever with white around nose and chained to a leash looking directly upward." title="Black retriever with white around nose and chained to a leash looking directly upward." onclick="lucas();">
       <h4>Lucas</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
     <article>
-      <img src="images/jake-card.jpg" alt="A golden retriever on a beach looking off into the distance." title="A golden retriever on a beach looking off into the distance.">
+      <img src="images/jake-card.jpg" alt="A golden retriever on a beach looking off into the distance." title="A golden retriever on a beach looking off into the distance." onclick="jake();">
       <h4>Jake</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
     <article>
-      <img src="images/angus-card.jpg" alt="Goldish red boxer panting in a field of grass." title="Goldish red boxer panting in a field of grass.">
+      <img src="images/angus-card.jpg" alt="Goldish red boxer panting in a field of grass." title="Goldish red boxer panting in a field of grass." onclick="angus();">
       <h4>Angus</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
     <article>
-      <img src="images/violet-card.jpg" alt="Little brown retriever puppy looking up from a grey tiled floor." title="Little brown retriever puppy looking up from a grey tiled floor">
+      <img src="images/violet-card.jpg" alt="Little brown retriever puppy looking up from a grey tiled floor." title="Little brown retriever puppy looking up from a grey tiled floor" onclick="violet();">
       <h4>Violet</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
     <article>
-      <img src="images/piper-card.jpg" alt="Golden-red retriever playing in the grass." title="Golden-red retriever playing in the grass.">
+      <img src="images/piper-card.jpg" alt="Golden-red retriever playing in the grass." title="Golden-red retriever playing in the grass." onclick="piper();">
       <h4>Piper</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
     <article>
-      <img src="images/maximus-card.jpg" alt="Black dog with white eyebrows and nose looking up from red-tiled floor." title="Black dog with white eyebrows and nose looking up from red-tiled floor.">
+      <img src="images/maximus-card.jpg" alt="Black dog with white eyebrows and nose looking up from red-tiled floor." title="Black dog with white eyebrows and nose looking up from red-tiled floor." onclick="maximus();">
       <h4>Maximus</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
     <article>
-      <img src="images/luna-card.jpg" alt="Golden retriever smiling." title="Golden retriever smiling.">
+      <img src="images/luna-card.jpg" alt="Golden retriever smiling." title="Golden retriever smiling." onclick="luna();">
       <h4>Luna</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
     <article>
-      <img src="images/stella-card.jpg" alt="Gold chihuahua curled on a bed." title="Gold chihuahua curled on a bed.">
+      <img src="images/stella-card.jpg" alt="Gold chihuahua curled on a bed." title="Gold chihuahua curled on a bed." onclick="stella();">
       <h4>Stella</h4>
-      <p>Cost to adopt: $123.45</p>
+      <p>Cost to adopt: $<span id="cost">123.45</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Adopt</button>
+      <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
   </div>
 
@@ -145,5 +145,7 @@
     </div>
     <p class="copyright">&copy; 2018 Adoptadog, LLC  |  Seattle, WA</p>
   </footer>
+
+<script src="scripts/script.js" charset="utf-8"></script>
 </body>
 </html>
