@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- <html lang="en"> because HTML5 W3.org complains if it's 'en'-->
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="static-files/stylesheet.css">
+    <script defer src="static-files/form-completion.js"></script>
+    <title>Adopt-a-Dog ||  Checkout</title>
+</head>
+<body>
+    <header>
+        <div id="header-logo-caption-box">
+            <img class="header-dog-logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+            <h1 id="header-caption">Seattle’s premiere dog adoption agency</h1>
+        </div>
+
+        <div id="cart-box">
+            <div id="cart-and-total-box">
+                <img id="cart-logo" src="../html200-adopt-a-dog/images/cart-icon.svg" alt="cart representation">
+                <p id="cart-total">1234.56</p>
+            </div>
+            <form action="checkout.html">
+                <button>Checkout</button>
+            </form>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>/</li>
+            <li><a href="profiles.html">Dogs</a></li>
+            <li>/</li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Checkout</h1>
+
+        <section class="checkout-form">
+            <h2 style="display: none">Hide this for HTML5 W3 validator</h2>
+            
+            <form>
+                <label class="checkout-caption">Name</label>
+                <br>
+                <input type="text" name="adopter-name">
+
+                <label class="checkout-caption">Email Address</label>
+                <br>
+                <input type="email" name="adopter-email"> 
+
+                <label class="checkout-caption">Street Address</label>
+                <br>
+                <input type="text" name="adopter-street-address">
+
+                <div class="checkout-macro-location">
+
+                    <div class="container-city">
+                        <label class="checkout-caption">City</label>
+                        <br>
+                        <input type="Text" name="adopter-city">
+                    </div>
+
+                    <div class="container-state">
+                        <labek class="checkout-caption">State</label>
+                        <br>
+                        <select name="adopter-state">
+                            <option value="CA">CA</option>
+                            <option value="OR">OR</option>
+                            <option value="WA">WA</option>
+                        </select>
+                    </div>
+                    
+                    <div class="container-zip">
+                        <label class="checkout-caption">Zip Code</label>
+                        <br>
+                        <input type="text" name="adopter-zip">
+                    </div>
+                </div>
+                    
+                <label class="checkout-caption">First Time Adopter</label>
+                    <br>
+
+                    <div class="radio-container">
+                        <label>Yes</label><input type="radio" name="first-time-adopter" value="yes">
+                    </div>
+                    
+                    <div class="radio-container">
+                        <label>No</label><input type="radio" name="first-time-adopter" value="no">
+                    </div>
+
+                <label class="checkout-caption">Pickup Location
+                    <br>
+                    <select name="pickup-location">
+                        <option value="Seattle">Seattle</option>
+                        <option value="Bellevue">Bellevue</option>
+                        <option value="Kirkland">Kirkland</option>
+                    </select>
+                </label>
+
+                <p class="checkout-caption">Dogs Adopted</p>
+                    <br>
+
+                    <section class="dogs-to-be-adopted">
+                        <div class="checkout-profile">
+                            <img src="images/lucas-checkout.jpg" alt="picture of dog named lucas">
+                            <div class="details">
+                                <h2>Duffy</h2>
+                                <p><strong>Cost to adopt:</strong> $123.45</p>
+                            </div>
+                        </div>
+
+                        <div class="checkout-profile">
+                            <img src="images/duffy-checkout.jpg" alt="picture of dog named duffy">
+                            <div class="details">
+                                <h2>Duffy</h2>
+                                <p><strong>Cost to adopt:</strong> $123.45</p>
+                            </div>
+                        </div>
+                    </section>
+                
+
+                <p class="checkout-caption">Total Adoption Cost</p>
+                    <br>
+                    <p>$ 1234.56</p>
+                    
+                    <button class="add-to-cart" onclick="acknowledge_submission()">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img class="header-dog-logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>  
+            esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>&nbsp;&nbsp;</li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>&nbsp;&nbsp;</li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>&nbsp;&nbsp;</li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+
+        <p>© 2018 Adoptadog, LLC &nbsp; | &nbsp; Seattle, WA</p>
+    </footer>
+</body>
+</html>

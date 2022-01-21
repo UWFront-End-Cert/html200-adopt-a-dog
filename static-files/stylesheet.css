@@ -1,0 +1,599 @@
+/** Optimized for 1920x1080 screens.
+**/
+
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,700;1,400&display=swap');
+
+:root {
+    --lime: #87BD42;
+    --light-gray: #ECECEC;
+    --dark-blue: #294F68;
+    --deep-blue: rgb(5, 57, 93);
+    --gray: #3D3D3D;
+
+    --max-screen-size: 1920px;
+}
+
+/* === ELEMENT FORMATTING ===
+*/
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* === TYPOGRAPHY SECTION ===
+*/
+
+/* for div id #header-caption, slugline beneath header logo
+*/
+#header-caption {
+    margin: 0;
+    font-family: 'Neuton', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: italic;
+
+    color: var(--lime);
+}
+
+/* for div class .content-intro, for blog entries
+*/
+.content-intro h2 {
+    color: var(--dark-blue);
+    font-family: 'Neuton', serif;
+    font-weight: 700;
+    font-size: 24pt;
+}
+
+/* for div class .dog-entry, for name of dogs
+*/
+.dog-entry h2, .dog-entry-index h2 {
+    color: var(--dark-blue);
+    font-family: 'Neuton', serif;
+
+    padding-left: 1rem;
+}
+
+/* === END OF TYPOGRAPHY ===
+*/
+
+/* === SECTION TO BE DETERMINED ===
+*/
+body {
+    margin: 0;
+       
+    display: flex;
+    
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+/* === END OF SECTION TO BE DETERMINED ===
+*/
+
+/* === HEADER ELEMENT SECTION ===
+*/
+header {
+    background-image: linear-gradient(67deg, var(--dark-blue), var(--light-gray));
+    background-image: url("../images/header-image.jpg");
+    background-size: cover;
+    
+    object-fit: cover;
+    
+    max-width: 100%;
+    height: 20rem;
+    
+    padding-top: 2rem;
+}
+
+/* --- Flexbox organization ---
+*/
+header {
+    display: flex;
+    
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#header-logo-caption-box {
+    width: 30%;
+    display: inline-block;
+}
+
+.header-dog-logo {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 70%;
+}
+
+/* #cart-box {
+    Empty and commented out until needed. 
+} */
+
+#cart-and-total-box {
+    width: 100%;
+    
+    display: flex;
+    
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#cart-logo {
+    height: 2rem;
+}
+
+#cart-total {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+#cart-total::before {
+    content: "$";
+}
+
+#cart-box button {
+    border: none;
+    margin-top:.5rem;
+    padding: .5rem 3rem;
+    background-color: var(--lime);
+    color: #FFF;
+}
+
+/* === END OF HEADER ELEMENT SECTION ===
+*/
+
+
+/* === NAVBAR ELEMENT ===
+*/
+
+nav {
+    margin: 0;
+    
+    background-color: var(--light-gray);
+}
+
+nav ul {
+    margin: 0;
+    padding: 1em;
+    padding-left: 10em;
+    padding-right: 10rem;
+    
+    color: var(--deep-blue);
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: bolder;
+}
+
+nav li {
+    display: inline;
+
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+nav li:first-child {
+    padding-left: 0;
+}
+
+nav a {
+    color: var(--deep-blue);
+    text-decoration: none;
+}
+
+/* === MAIN ELEMENT STYLING ==
+*/
+main {
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 2rem;;
+    padding-left: 11.5em;
+    padding-right: 11.5rem;
+
+    max-width: 1920px;
+}
+
+main h1 {
+    color: var(--dark-blue);
+    font-size: 24pt;
+}
+
+.side-bar {
+    float: right;
+
+    display: flex;
+
+    width: 20%;
+
+    flex-flow: column wrap;
+}
+
+.side-bar {
+    margin-left: 3rem;
+    max-width: 30%;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+.side-blog-entry > .content-intro {
+    padding: 0;
+}
+
+.side-blog-entry img {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.side-blog-entry .content-intro h2 {
+    font-size: 1.5em;
+}
+
+/* section element
+ * BLOG ENTRY
+ */
+
+.blog-entry {
+    margin-bottom: 2rem;
+
+    display: flex;
+
+    flex-flow: row nowrap;
+}
+
+.blog-entry img {
+    object-fit: scale-down;
+}
+
+.content-intro {
+    padding-left: 3rem;
+}
+
+
+
+.content-intro p {
+    font-size: 18pt;
+}
+
+.blog-entry h2 {
+    color: var(--dark-blue);
+}
+
+.blog-entry p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Smaller Screen
+ *
+*/
+@media screen and (max-width: 1290px)
+{
+    .blog-entry {
+        display: flex;
+
+        flex-flow: column wrap;
+    }
+}
+
+
+/* Tablet Optimization
+ *
+*/
+@media screen
+    and (min-width: 813px)
+    and (max-width: 1024px)
+{
+    .blog-entry {
+        display: flex;
+
+        flex-flow: column wrap;
+    }
+
+    .side-bar {
+        display: none;
+    }
+}
+
+/* Mobile Phone  Optimization
+ *
+*/
+@media only screen and (max-width: 812px)
+{
+    .blog-entry {
+        display: flex;
+
+        flex-flow: column wrap;
+    }
+
+    .side-bar {
+        display: none;
+    }
+}
+
+/* section element
+ * DOG PARADE (dog selection)
+ * FRONT PAGE ONLY
+ */
+
+ .dog-entry-index {
+    margin: .25rem;
+    margin-bottom: 2rem;
+    
+    max-width: 32%;
+    
+    border: solid .15rem;
+    border-color: var(--light-gray);
+}
+
+.dog-entry-index p{
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+/* section element 
+ * DOG PARADE (dog selection)
+ */
+.dog-parade {
+    max-width: var(--max-screen-size);
+    
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.dog-entry {
+    margin: .25rem;
+    margin-bottom: 2rem;
+    
+    
+    max-width: 24%;
+    
+    border: solid .15rem;
+    border-color: var(--light-gray);
+}
+
+.portrait-card {
+    width: 100%;
+}
+
+.dog-entry p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+
+.adopt-form-button {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 1rem;
+}
+
+.add-to-cart {
+    width: 85%;
+    
+    font-size: 18pt;
+
+    border: none;
+    border-radius: .25rem;
+    background-color: var(--lime);
+    color: #FFF;
+}
+
+.see-more-dogs-section {
+    padding-bottom: 2rem;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.see-more-dogs {
+    padding: .75rem .75rem;
+
+    font-size: 18pt;
+
+    border: none;
+    border-radius: .25rem;
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+}
+
+/* Smaller Screen
+ *
+*/
+@media screen and (max-width: 1290px) {
+    .dog-parade {
+        margin: 1em;
+
+        display: flex;
+
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .dog-entry-index {
+        margin: 1em;
+
+        max-width: 40%;
+    }
+ 
+    .side-bar {
+        display: none;
+    }
+}
+
+/* Tablet Optimization
+ *
+*/
+@media screen 
+    and (min-width: 813px)
+    and (max-width: 1024px) {
+    .dog-parade {
+        display: flex;
+
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .dog-entry-index {
+        margin: 1em;
+
+        max-width: 40%;
+    }
+
+    .side-bar {
+        display: none;
+    }
+}
+
+/* Mobile Phone Optimization
+ *
+*/
+@media screen and (max-width: 812px)
+{
+    .dog-parade {
+        display: flex;
+
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .dog-entry-index {
+        max-width: 90%;
+    }
+
+    .side-bar {
+        display: none;
+    }
+}
+
+/* section element
+* SEE MORE DOGS
+*/
+.see-more-dogs {
+    margin-top: 35px;;
+    border: 0;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.see-more-dogs button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* section element
+ * CHECKOUT FORM
+*/
+.checkout-form {
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 3rem;
+
+    width: 75%;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.checkout-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-caption {
+    margin-bottom: 0.5rem;
+
+    font-size: 18pt;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+.checkout-macro-location {
+    display: flex;
+
+    flex-flow: row nowrap;
+
+    justify-content:space-between;
+}
+
+.checkout-macro-location > label {
+    margin-right: 2rem;
+}
+
+.dogs-to-be-adopted {
+    display: flex;
+
+    justify-content: flex-start;
+}
+
+.checkout-profile {
+    display: flex;
+
+    flex-direction: row;
+    padding-right: 2rem;
+}
+
+.details {
+    padding-left: 1rem;
+}
+
+.details h2 {
+    color: var(--dark-blue);
+}
+
+/* FOOTER
+ *
+*/
+footer {
+    background-color: var(--gray);
+    color:var(--light-gray);
+
+    width: 100%;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+footer img {
+    padding-top: 5vh;
+    height: 15vh;
+}
+
+footer p {
+    display: flex;
+
+    justify-content: center;
+}
+
+footer ul {
+    padding: 0;
+    background-color: transparent;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+footer li {
+    display: inline;
+}
