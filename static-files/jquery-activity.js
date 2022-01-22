@@ -33,7 +33,7 @@ function calc_total(operation) {
 $(".add-to-cart").on("click", function(e){
         e.preventDefault();
 
-        $(this).toggleClass("added-to-cart");
+        $(".added-to-cart").css("background-color", "blue");
 
         if($(this).text() == "Adopt"){
             $(this).text("In Cart");
