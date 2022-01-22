@@ -396,6 +396,10 @@ main h1 {
     color: #FFF;
 }
 
+.added-to-cart {
+    background-color: blue;
+}
+
 .see-more-dogs-section {
     padding-bottom: 2rem;
     

@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="static-files/stylesheet.css">
+    
+    <!-- === JQUERY Things -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
     <script defer src="static-files/form-completion.js"></script>
+
     <title>Adopt-a-Dog ||  Checkout</title>
 </head>
 <body>
@@ -65,7 +70,7 @@
                     <div class="container-state">
                         <labek class="checkout-caption">State</label>
                         <br>
-                        <select name="adopter-state">
+                        <select id="adopter-state" name="adopter-state">
                             <option value="CA">CA</option>
                             <option value="OR">OR</option>
                             <option value="WA">WA</option>
@@ -92,7 +97,7 @@
 
                 <label class="checkout-caption">Pickup Location
                     <br>
-                    <select name="pickup-location">
+                    <select id="pickup-location" name="pickup-location">
                         <option value="Seattle">Seattle</option>
                         <option value="Bellevue">Bellevue</option>
                         <option value="Kirkland">Kirkland</option>
@@ -125,7 +130,7 @@
                     <br>
                     <p>$ 1234.56</p>
                     
-                    <button class="add-to-cart" onclick="acknowledge_submission()">Submit</button>
+                    <button class="add-to-cart">Submit</button>
             </form>
         </section>
     </main>
