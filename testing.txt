@@ -1,0 +1,64 @@
+=== TESTING ===
+
+- Firefox
+Website functions as intended in Firefox. Rendering of a few buttons are not
+what it is desired. No changes made as it maintains functionality.
+
+- Chrome
+Website functions as intended in Chrome. It was developed with it in mind.
+
+- Edge
+Website functions with odd behaviors. Padding and margins do not behave as
+intended. Home page shows dog selection to be showing in a row 2 cards wide -
+it should be 3 cards wide. Similar with dog profiles page, what was supposed
+to be 4 cards wide is only 3 cards wide. Cards' "Adopt" button does not
+turn blue as intended. No changes intended as fixes conflict with those optimized
+for Chrome. 64% of the market is dominated by Chrome vs 4% of Edge. Not
+top priority.
+
+CORRECTION: was using laptop - developed in widescreen PC. Card width row issue
+is no longer applicable. Still having issue with "Adopt" color change.
+
+- Mobile Safari
+Website exhibits uninted behavior. Website does not collapse into single column
+on landing page. Similar behavior on other changes. Tweaks to media breakpoints
+needed immediately.
+
+=== USER RESEARCH ===
+
+- Karen
+Karen is a middle aged woman who owns an iPhone, an iPad, and spends lots of time
+on Facebook sharing dog memes. She lives in Bellevue and works at a local health
+clinic. Besides dogs, getting frappuccinos as Starbucks with her friends is her 
+passion. 
+
+The website would benefit to add social media buttons and have automatic
+location identification (where permitted and allowed) to automatically fill in
+the pickup location. Making sure that there is a strong social media presence
+with keywords referencing dogs and coffee, we would see stronger traffic and
+higher chance of adoptions for dogs. Developing for the MacOs and Safari is a
+must.
+
+- Chad
+Chad is a former government employee working for the Seattle school district. 
+He is a middle aged man who values his privacy a lot and even installed Linux 
+to limit data trail. He uses IceWeasel as his browser. His only known social
+media presence is Reddit where he complains about Game of Thrones after season 6.
+He references his dog a lot in his posts and calls him The Hound.
+
+Users like Brad would not benefit from a strong social media presence, but donate
+a lot to charitable causes like animal rescue though they may not adopt. Having a
+donate button as an alternative to adoption would strongly help the financial
+position of the shelter. Users like Chad gravitate to Firefox and Chrome engine.
+
+- Kyle
+Kyle is a young college student currently looking for a long term relationship.
+Accesses the website almost exclusively through his cell phone. As a way to pursue
+his passion, dogs, he volunteers at the shelter and brings dates to get to know
+the dogs better. Though he is not a current prospective owner, he may adopt in 
+the long term and is able to take dogs on outings.
+
+Expanding the website to include non-committal walks and exercises, we would be able
+to further expand the pool of adopters. Recommend to add page "Walk Me" will aid
+in our mission. A schedule for internal purposes will need to be created and
+for client side selection.
