@@ -48,9 +48,10 @@ input[type=submit], button {
   font-weight: bold;
   font-size: 1rem;
   border: none;
+  white-space: nowrap;
 }
 
-button {
+.dog-grid button {
   width: 100%;
 }
 
@@ -58,6 +59,7 @@ a.checkout-button-link:hover, a.checkout-button-link:active,
 a.gray-button-link:hover, a.gray-button-link:active,
 input[type=submit]:hover, input[type=submit]:active, button:hover {
   background-color: green;
+  cursor: pointer;
 }
 
 a.gray-button-link:hover {
@@ -148,7 +150,7 @@ nav li a:hover {
   color: #81AF34;
 }
 
-img.responsive {
+.responsive-image {
   max-width: 100%;
 }
 
@@ -164,14 +166,14 @@ main {
   margin: auto;
 }
 
-.head-article p {
-  line-height: 1.5rem;
-}
-
-.head-article img {
+.blog-post img {
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.blog-post p {
+  line-height: 1.5rem;
 }
 
 .dog-grid {
@@ -195,8 +197,6 @@ main {
   margin-top: -.3rem;
   padding: 0 .5rem 1rem;
 }
-
-
 
 
 .dog-grid p span {
@@ -258,7 +258,7 @@ form label, form legend {
   font-size: 1.1rem;
 }
 
-input[type=text], select {
+input[type=text], input[type=textarea], select {
   display: block;
   margin: .2rem 1rem 1rem 0;
   border: 1px solid #c8c8c8;

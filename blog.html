@@ -6,6 +6,28 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <style>
+      main {
+        display: block;
+      }
+
+      #div-display-blog {
+        display: flex;
+        flex-direction: column;
+      }
+
+      h3 {
+        margin-top: 0;
+      }
+
+      select {
+        width: 24rem;
+      }
+      
+      #divForm button:nth-of-type(2n)  {
+        margin-left: 10px;
+      }
+    </style>
   </head>
 
   <body>
@@ -30,56 +52,7 @@
 
     <main>
       <h2>Adoptadog Blog</h2>
-      <article class="head-article">
-        <img src="images/blog-1.jpg" class="responsive" alt="man at canyon with a dog">
-
-        <div>
-          <h2>Traveling With Your Dog</h2>
-
-          <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
-            tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-            derum recuptatur, cum volore, undipsa doloreium hillupta aut
-            es ut alitatuscit ommossum haritatur arum qui officae videbiti
-            corporeium faccull oribus es quidignis ipietus explam sus
-            am aut amet ant fugiatum, utem non reptat ad magnienecto
-            volorent fugia nonsedi gendand itatquos as magnimpor aut
-            molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-          </div>
-      </article>
-
-      <article class="head-article">
-        <img src="images/blog-2.jpg" class="responsive" alt="several dogs on leashes on the street">
-
-        <div>
-          <h2>How To Walk Multiple Dogs</h2>
-
-          <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
-            tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-            derum recuptatur, cum volore, undipsa doloreium hillupta aut
-            es ut alitatuscit ommossum haritatur arum qui officae videbiti
-            corporeium faccull oribus es quidignis ipietus explam sus
-            am aut amet ant fugiatum, utem non reptat ad magnienecto
-            volorent fugia nonsedi gendand itatquos as magnimpor aut
-            molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-          </div>
-      </article>
-
-      <div class="head-article">
-        <img src="images/blog-3.jpg" class="responsive" alt="woman and dog in sunset">
-
-        <div>
-          <h2>Teach Your Dog To Fetch!</h2>
-
-          <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
-            tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
-            derum recuptatur, cum volore, undipsa doloreium hillupta aut
-            es ut alitatuscit ommossum haritatur arum qui officae videbiti
-            corporeium faccull oribus es quidignis ipietus explam sus
-            am aut amet ant fugiatum, utem non reptat ad magnienecto
-            volorent fugia nonsedi gendand itatquos as magnimpor aut
-            molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-          </div>
-      </article>
+      <div id='div-display-blog'></div>
     </main>
 
     <footer>
@@ -96,5 +69,6 @@
         <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
       </div>
     </footer>
+    <script src="./blog.js"></script>
   </body>
 </html>
