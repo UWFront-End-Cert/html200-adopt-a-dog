@@ -22,7 +22,7 @@ nav a, nav ul li, a.gray-button-link {
   color: #093C60;
 }
 
-nav a, a.checkout-button-link, a.gray-button-link, button {
+nav a, a.checkout, a.gray-button-link, button {
   text-decoration: none;
   font-weight: bold;
 }
@@ -36,7 +36,7 @@ a.gray-button-link {
   border-radius: .1em;
 }
 
-a.checkout-button-link:link, a.checkout-button-link:visited,
+a.checkout:link, a.checkout:visited,
 input[type=submit], button {
   background-color: #81B741;
   color: white;
@@ -51,11 +51,7 @@ input[type=submit], button {
   white-space: nowrap;
 }
 
-.dog-grid button {
-  width: 100%;
-}
-
-a.checkout-button-link:hover, a.checkout-button-link:active,
+a.checkout:hover, a.checkout:active,
 a.gray-button-link:hover, a.gray-button-link:active,
 input[type=submit]:hover, input[type=submit]:active, button:hover {
   background-color: green;
@@ -182,35 +178,29 @@ main {
   justify-content: space-between;
 }
 
-.dog-grid section {
+.tile {
   flex-basis: 30%;
   font-size: .8rem;
   margin-bottom: 2rem;
 }
 
-.dog-grid section img {
+.tile img {
   max-width: 100%;
 }
 
-.dog-grid section div {
+.tile div {
   border: 2px solid #e6e6e6;
   margin-top: -.3rem;
   padding: 0 .5rem 1rem;
 }
 
-
-.dog-grid p span {
-  content: "Cost to Adopt";
+.tile button {
+  width: 100%;
 }
 
 p.price::before{
   content: "Cost to Adopt: ";
   font-weight: bolder;
-}
-
-.dog-grid .checkout-button-link {
-  width: 100%;
-  text-align: center;
 }
 
 .input-city {
@@ -314,6 +304,11 @@ form fieldset {
   font-size: .8rem;
 }
 
+.img-transition {
+  transform: scaleX(-1);
+  transition-duration: 1.5s;
+}
+
 /* Mobile/Phone*/
 @media screen and (max-width: 767px) {
   body header {
@@ -347,7 +342,7 @@ form fieldset {
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .dog-grid section {
+  .tile {
     flex-basis: 45%;
   }
 }

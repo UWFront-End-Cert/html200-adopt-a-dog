@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Adopt-A-Dog | Dog Adoption</title>
     <link rel="stylesheet" href="style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
     <style>
       main {
         flex-direction: row;
@@ -42,8 +46,9 @@
         <h3>Seattle's Premiere dog adoption agency</h3>
       </div>
       <div>
-        <p><img class="cart-icon" src="images/cart-icon.svg" alt="cart icon"> $1234.56</p>
-        <a class="checkout-button-link" href="checkout.html">Checkout</a>
+        <img class="cart-icon" src="images/cart-icon.svg" alt="cart icon">
+        <p id='cart-value'>$0</p>
+        <a class="checkout" href="checkout.html">Checkout</a>
       </div>
     </header>
 
@@ -71,63 +76,63 @@
         </div>
 
         <section class="dog-grid">
-          <section>
+          <section class="tile">
             <img src="images/murphy-card.jpg" alt="a dog named Murphy" onclick="dogInfo('Murphy', 'Great Dane', '$123.45')">
             <div style="clear: left;">
               <h3>Murphy</h3>
               <p class="price">$123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button onclick="addToTotal(123.45)">Adopt</button>
+              <button>Adopt</button>
             </div>
           </section>
 
-          <section>
+          <section class="tile">
             <img src="images/poppy-card.jpg" alt="a dog named Poppy" onclick="dogInfo('Poppy', 'Shih Tzu', '$123.45')">
             <div>
               <h3>Poppy</h3>
               <p class="price">$123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button onclick="addToTotal(123.45)">Adopt</button>
+              <button>Adopt</button>
             </div>
           </section>
 
-          <section>
+          <section class="tile">
             <img src="images/jack-card.jpg" alt="a dog named Jack" onclick="dogInfo('Jack', 'Beagle', '$123.45')">
             <div>
               <h3>Jack</h3>
               <p class="price">$123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button onclick="addToTotal(123.45)">Adopt</button>
+              <button>Adopt</button>
             </div>
           </section>
 
-          <section>
+          <section class="tile">
             <img src="images/duffy-card.jpg" alt="a dog named Duffy" onclick="dogInfo('Duffy', 'Boxer', '$123.45')">
             <div>
               <h3>Duffy</h3>
               <p class="price">$123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button onclick="addToTotal(123.45)">Adopt</button>
+              <button>Adopt</button>
             </div>
           </section>
 
-          <section>
+          <section class="tile">
             <img src="images/lucas-card.jpg" alt="a dog named Lucas" onclick="dogInfo('Lucas', 'Heeler', '$123.45')">
             <div>
               <h3>Lucas</h3>
               <p class="price">$123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button onclick="addToTotal(123.45)">Adopt</button>
+              <button>Adopt</button>
             </div>
           </section>
 
-          <section>
+          <section class="tile">
             <img src="images/jake-card.jpg" alt="a dog named Jake" onclick="dogInfo('Jake', 'Yellow Lab', '$123.45')">
             <div>
               <h3>Jake</h3>
               <p class="price">$123.45</p>
               <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-              <button onclick="addToTotal(123.45)">Adopt</button>
+              <button>Adopt</button>
             </div>
           </section>
         </section>

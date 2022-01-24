@@ -1,3 +1,4 @@
+// Lesson 8 (DOM Interaction with JavaScript) Assignment:  Refactor the blog page to generate the blog posts dynamically from JavaScript
 let numOfPost = 0;
 
 let post = {
