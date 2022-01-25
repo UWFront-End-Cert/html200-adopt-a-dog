@@ -29,7 +29,7 @@ function runningTotal(fee) {
 //   'luna',
 //   'stella',
 // ]
-//
+
 // dogCards.forEach(function(learning) {
 //   let practice = dogCards.indexOf(learning);
 //   let more = `${practice}, ${learning}`;
@@ -297,6 +297,46 @@ function blogBlog2(blogginOut) {
   div2.appendChild(p02);
   div2.appendChild(p12);
 }
+
+// all blogs loop
+// function blogBlog2(blogginOut) {
+//   const blog2 = blogsArray[2];
+
+//   const gridContainer[i] = document.createElement('div');
+//   const section[i] = document.createElement('section');
+//   const image[i] = document.createElement('img');
+//   const div[i] = document.createElement('div');
+//   const heading[i] = document.createElement('h4');
+//   const p[i] = document.createElement('p');
+//   const p[i] = document.createElement('p');
+
+//   gridContainer[i].setAttribute('id', 'grid-container');
+//   section[i].setAttribute('id', 'blogPost2');
+//   heading[i].setAttribute('id', 'heading2');
+//   p[i].setAttribute('id', 'p[i]');
+//   p[i+1].setAttribute('id', 'p[i+1]');
+
+//   image[i].src = blog[i].image;
+
+//   heading[i].textContent = blog2.heading;
+//   p[i].textContent = blog2.p0;
+//   p[i+1].textContent = blog2.p1;
+
+//   gridContainer2.classList.add('grid-container')
+//   section2.classList.add('blog-grid-3-js');
+//   div2.classList.add('blog');
+//   heading2.classList.add('h4-blog');
+//   p02.classList.add('blog-p');
+//   p12.classList.add('blog-p');
+
+//   document.body.appendChild(gridContainer2);
+//   gridContainer2.appendChild(section2);
+//   section2.appendChild(image2);
+//   section2.appendChild(div2);
+//   div2.appendChild(heading2);
+//   div2.appendChild(p02);
+//   div2.appendChild(p12);
+// }
 
 /*--------------Checkout--------------*/
 // function thankYou(thanks) {
