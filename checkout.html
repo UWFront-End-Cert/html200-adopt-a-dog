@@ -86,7 +86,7 @@
 
       <div class="checkout-form-style">
         <label for="Location" id="pickupLocation">Pickup Location</label>
-        <select name="pickup" id="Location">
+        <select name="pickup" id="location">
           <option value="Seattle">Seattle</option>
           <option value="Tacoma">Tacoma</option>
         </select>
@@ -96,7 +96,7 @@
         <!-- input code here to add dogs when the adopt button is clicked on the other pages -->
         <h4>Total Adoption Cost:</h4>
         <!-- add code here that adds the price of the dogs adopted together -->
-        <button type="button" name="submit" id="submit">Submit</button>
+        <button type="button" name="submit" id="submit" onclick="formLog();">Submit</button>
       </div>
       </form>
     </section>
@@ -119,5 +119,6 @@
       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
     </div>
   </footer>
+  <script src="./checkout.js"></script>
 </body>
 </html>
