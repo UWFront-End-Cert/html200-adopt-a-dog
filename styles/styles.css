@@ -1,0 +1,32 @@
+.checkout {
+  background-color: #9ACD32;
+  color: #FFFFFF;
+  text-decoration: none;
+
+  }
+
+  .parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid #000000;
+}
+
+.image2 {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  border: none;
+}
+.image3 {
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  border: 1px solid #000000;
+}
