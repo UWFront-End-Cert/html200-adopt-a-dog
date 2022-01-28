@@ -2,6 +2,7 @@ let checkoutTotal = document.getElementById("checkout-total");
 let cost = document.getElementById("cost").textContent;
 let total = 0;
 
+// Function to add total dollars to check out. Figure out how to truncate the decimals to 2 places.
 function addToCheckOutTotal(){
   total = total + Number(cost);
   checkoutTotal.textContent = "$" + total;
