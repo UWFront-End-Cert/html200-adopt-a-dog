@@ -1,32 +1,25 @@
 .checkout {
-  background-color: #9ACD32;
+  padding: 7px 30px 7px 30px;
+  background-color: #32CD32;
   color: #FFFFFF;
-  text-decoration: none;
-
-  }
-
-  .parent {
-  position: relative;
-  top: 0;
-  left: 0;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
 }
 
-.image1 {
-  position: relative;
-  top: 0;
-  left: 0;
-  border: 1px solid #000000;
+.header-text {
+  color: #32CD32;
+  font-size: 13px;
 }
 
-.image2 {
-  position: absolute;
-  top: 80px;
-  left: 50px;
-  border: none;
+.logo-and-text {
+  width: 100%;
+  height: auto;
 }
-.image3 {
-  position: absolute;
-  top: 30px;
-  right: 70px;
-  border: 1px solid #000000;
+
+.background {
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/header-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
