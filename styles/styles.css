@@ -1,3 +1,58 @@
+
+.grid-item-4 {
+  grid-column-start: 11;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end:2;
+}
+.grid-item-3 {
+  text-align: start;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end:3;
+}
+.grid-item-2 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end:2;
+}
+
+.header-text {
+  color: #32CD32;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.grid-container-header {
+  display: grid;
+  grid-template-columns: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#footer {
+  text-align: center;
+}
+
+.grid-item-1 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.grid-container-footer{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.footer-background {
+  width: 100%;
+  height: auto;
+  background-color: #005580;
+}
+
 .copyright-border {
   border-left: 2px solid white;
   padding-left: 10px;
@@ -20,57 +75,42 @@
 
 .footer-text {
   font-family: Arial, sans-serif;
-
   font-size: 1vw;
   color: #FFFFFF;
-}
-
-.footer {
-  background-color: #005580;
 }
 
 .link {
   text-decoration: none;
   color: #191970;
   font-family: Arial, sans-serif;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 .nav {
   background-color: #F5F5F5;
-  padding: 30px 30px 30px 30px;
   color: #191970;
-}
-.header-text {
-  color: #32CD32;
-  width: 10%;
-  height: auto;
-  font-size: 2vw;
-}
-
-.logo {
-  width: 30%;
-  height: auto;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-left: 8vw;
 }
 
 .checkout {
-  width: 5%;
-  padding: 7px 30px 7px 30px;
+  width: 1vw;
+  padding: .5vw 2vw .5vw 2vw;
   background-color: #32CD32;
   color: #FFFFFF;
   font-family: Arial, sans-serif;
-  font-size: 1.5vw;
+  font-size: 1vw;
   text-decoration: none;
 }
 
 .total {
   color: #FFFFFF;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 .background {
   width: 100%;
-  height: auto;
   background-image: url(../assets/header-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
