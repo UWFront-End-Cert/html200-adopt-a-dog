@@ -1,19 +1,40 @@
+.link {
+  text-decoration: none;
+  color: #191970;
+  font-family: Arial, sans-serif;
+  font-size: 2vw;
+}
+
+.nav {
+  background-color: #F5F5F5;
+  padding: 30px 30px 30px 30px;
+  color: #191970;
+}
+.header-text {
+  color: #32CD32;
+  width: 10%;
+  height: auto;
+  font-size: 2vw;
+}
+
+.logo {
+  width: 30%;
+  height: auto;
+}
+
 .checkout {
+  width: 5%;
   padding: 7px 30px 7px 30px;
   background-color: #32CD32;
   color: #FFFFFF;
   font-family: Arial, sans-serif;
-  font-size: 10px;
+  font-size: 1.5vw;
+  text-decoration: none;
 }
 
-.header-text {
-  color: #32CD32;
-  font-size: 13px;
-}
-
-.logo-and-text {
-  width: 100%;
-  height: auto;
+.total {
+  color: #FFFFFF;
+  font-size: 2vw;
 }
 
 .background {
