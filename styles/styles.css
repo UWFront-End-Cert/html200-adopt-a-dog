@@ -40,16 +40,15 @@
   grid-column-end: 2;
 }
 
-.grid-container-footer{
-  padding-top: 30px;
-  padding-bottom: 30px;
+.grid-container-footer {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
 
 .footer-background {
-  width: 100%;
-  height: auto;
+  background-size: 100%;
   background-color: #005580;
 }
 
@@ -110,8 +109,7 @@
 }
 
 .background {
-  width: 100%;
   background-image: url(../assets/header-image.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
