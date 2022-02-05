@@ -15,6 +15,15 @@
   height: 22rem;
 }
 
+@media screen (max-width: 500px) {
+  .top-header {
+    display: block;
+  }
+  .header-two {
+    margin-top: 2rem;
+  }
+}
+
 .header-one {
   color: #81B741;
   width: 27rem;
@@ -140,6 +149,12 @@ nav {
 .front-page-article p {
   letter-spacing: 1px;
   line-height: 2rem;
+}
+
+@media screen (max-width: 500px) {
+  .container {
+    display: block;
+  }
 }
 
 .container {
