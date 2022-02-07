@@ -3,7 +3,8 @@ User Group
 Name: Don Waters
 Age: 65
 Occupation: Owner of a Local Hardware Store
-Tech Habits: Uses his computer at work and home. Prefers websites that have information up front and readily available.
+Tech Habits: Uses his computer at work and home. Prefers websites that have information up front and readily 
+	available.
 Device Preference: Comfortable with using a computer, doesn't like tablets or mobile devices.
 Extra Information:
 	-Older desktop computer, older mobile phone, no tablet.
@@ -14,7 +15,8 @@ Extra Information:
 Name: Jodie Roberts
 Age: 20
 Occupation: Full Time College Student
-Tech Habits: Uses laptop and tablet for school work and entertainment. On phone consistantly for social media and web surfing.
+Tech Habits: Uses laptop and tablet for school work and entertainment. On phone consistantly for social media 
+	and web surfing.
 Device Preference: Comfortable with all forms of devices. Prefers mobile and tablet for ease of access.
 Extra Information:
 	-Likes dogs, prefers cats
@@ -38,11 +40,15 @@ Extra Information:
 Testing
 ------------------------------------------------------------
 DEVICE TESTING
-Device testing for this site was done using developer tools on Firefox. To be accurate with the testing, it was also loaded on an iPhone X, iPhone 7, and Samsung Galaxy A32.
+Device testing for this site was done using developer tools on Firefox. To be accurate with the testing, 
+it was also loaded on an iPhone X, iPhone 7, and Samsung Galaxy A32.
 Tablet testing was done using an iPad mini as well as an iPad 4th gen.
 
 WEB BROWSER/OPERATING SYSTEM TESTING
 The website was tested using Microsoft Edge, Firefox, and Google Chrome. 
 Testing was done on Windows 10 and macOS Monterey.
 
-I verified that images and text were aligned on multiple different sizes of screens as well as working properly on different operating systems. Confirmed that everything was readable and scaled properly. There were some issues with the grid layout during testing but should have been fixed. Also made sure that the hover effects on the dog information cards did not effect readability.
+I verified that images and text were aligned on multiple different sizes of screens as well as working properly 
+on different operating systems. Confirmed that everything was readable and scaled properly. There were some issues 
+with the grid layout during testing but should have been fixed. Also made sure that the hover effects on the dog 
+information cards did not effect readability.
