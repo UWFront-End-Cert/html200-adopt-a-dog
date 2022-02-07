@@ -1,13 +1,13 @@
 function formLog() {
-  let name = document.getElementsByName('customerName')[0].value;
-  let email = document.getElementsByName('customerEmail')[0].value;
-  let address = document.getElementsByName('customerAddress')[0].value;
-  let city = document.getElementsByName('customerCity')[0].value;
-  let state = document.getElementsByName('state')[0].value;
-  let zip = document.getElementsByName('Zip')[0].value;
-  let firstTime = document.querySelector('input[name="firstAdopter"]:checked').value;
+  let name = $("#name").val();
+  let email = $("#email").val();
+  let address = $("#address").val();
+  let city = $("#City").val();
+  let state = $("#State").val();
+  let zip = $("#Zip").val();
+  let firstTime = $('input[name="firstAdopter"]:checked').val();
 
-  let pickupLocation = document.getElementsByName('pickup')[0].value;
+  let pickupLocation = $("#location").val();
 
   console.log("Name: " + name);
   console.log("Email: " + email);

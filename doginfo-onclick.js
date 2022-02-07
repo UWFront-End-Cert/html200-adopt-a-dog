@@ -7,4 +7,5 @@ function info(name, breed, adoptionFee) {
 function cost(fee){
   adoptionCost += fee;
   alert(`Total adoption fee is ${adoptionCost}`);
+  $('#adoptionFeeCart').html(adoptionCost);
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <title>Adopt a Dog - Homepage</title>
+    <script src="jquery-3.6.0.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,8 @@
         <h2>Seattle's premiere dog adoption agency</h2>
       </article>
       <article class="header-checkout">
-        <p><img src="./images/cart-icon.svg" alt="Shopping Cart">$1234.56</p>
+        <img src="./images/cart-icon.svg" alt="Shopping Cart">
+        <p id='adoptionFeeCart'></p>
         <button onclick="location.href='checkout.html'">Checkout</button>
       </article>
     </section>

@@ -230,6 +230,11 @@ footer nav li a {
   width: 30%;
 }
 
+.dog-card:hover {
+  transform: scale(1.1);
+  border: solid;
+}
+
 .dog-card img {
   height: auto;
   width: 100%;
@@ -521,6 +526,10 @@ footer nav li a {
     width: 100%;
   }
 }
+  .dog-card:hover {
+    transform: none;
+    border: solid;
+  }
 
 /* Tablet styling */
 @media screen and (min-width: 481px) and (max-width: 900px) {
@@ -544,7 +553,13 @@ footer nav li a {
   .dog-card-grid .dog-card {
     width: 40%;
   }
+
+  .dog-card:hover {
+    transform: scale(1.1);
+    border: solid;
+  }
 }
+
 
 @media screen and (min-width: 481px) {
   .primary-content {
