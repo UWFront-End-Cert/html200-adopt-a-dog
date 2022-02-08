@@ -7,6 +7,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+  <style media="screen">
+    @media screen (max-width: 500px) {
+      .small-blog {
+        float: none;
+        display: none;
+      }
+      .container {
+        margin: 0.5rem 0.5rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -33,6 +44,42 @@
     </div>
   </nav>
 
+
+  <aside class="small-blog">
+    <h2 class="blog-header">From Our Blog</h2>
+
+    <article>
+      <img src="images/blog-1.jpg" alt="Girl at a canyon with dark brown dog." title="Girl at a canyon with dark brown dog." class="blog-img">
+      <div class="blog-text">
+        <h3>Traveling With Your Dog</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <a href="blog.html">Read more >></a>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/blog-2.jpg" alt="Dogs on leashes lined up for a walk." title="Dogs on leashes lined up for a walk." class="blog-img">
+      <div class="blog-text">
+        <h3>How To Walk Multiple Dogs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <a href="blog.html">Read more >></a>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/blog-3.jpg" alt="Shadows of a girl holding a ball and a dog waiting for her to throw it." title="Shadows of a girl holding a ball and a dog waiting for her to throw it." class="blog-img">
+      <div class="blog-text">
+        <h3>Teach Your Dog To Fetch!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <a href="blog.html">Read more >></a>
+    </article>
+  </aside>
+
+
+
   <article class="front-page-article">
     <div>
       <img src="images/home-intro.jpg" alt="Guy in a red shirt hugging golden retriever." title="Guy in a red shirt hugging golden retriever.">
@@ -42,6 +89,8 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </article>
+
+
 
   <div class="container">
     <article>
@@ -92,24 +141,9 @@
       <button onclick="addToCheckOutTotal();">Adopt</button>
     </article>
 
-    <article>
-      <img src="images/angus-card.jpg" alt="Goldish red boxer panting in a field of grass." title="Goldish red boxer panting in a field of grass." onclick="angus();">
-      <h4 id="name">Angus</h4>
-      <p>Cost to adopt: $<span id="cost">123.45</span></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button onclick="addToCheckOutTotal();">Adopt</button>
-    </article>
-
-    <article>
-      <img src="images/violet-card.jpg" alt="Little brown retriever puppy looking up from a grey tiled floor." title="Little brown retriever puppy looking up from a grey tiled floor" onclick="violet();">
-      <h4 id="name">Violet</h4>
-      <p>Cost to adopt: $<span id="cost">123.45</span></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button onclick="addToCheckOutTotal();">Adopt</button>
-    </article>
+    <button class="bottom-button" onclick="location.href='dogs.html'">See More Dogs</button>
   </div>
 
-  <button class="bottom-button" onclick="location.href='dogs.html'">See More Dogs</button>
 
 
   <footer>

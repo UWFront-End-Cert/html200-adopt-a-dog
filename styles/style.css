@@ -15,15 +15,6 @@
   height: 22rem;
 }
 
-@media screen (max-width: 500px) {
-  .top-header {
-    display: block;
-  }
-  .header-two {
-    margin-top: 2rem;
-  }
-}
-
 .header-one {
   color: #81B741;
   width: 27rem;
@@ -84,7 +75,6 @@ nav {
 
 .nav-links {
   padding-top: 1.3rem;
-  /* margin-left: 18%; */
   margin-left: 7rem;
 }
 
@@ -127,34 +117,33 @@ nav {
 
 .front-page-article {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   justify-content: space-between;
   margin: 4rem 6rem;
 }
 
-.front-page-article > img {
-  width: 275px;
-  height: 275px;
+.front-page-article img {
+  width: 35rem;
+  height: 18rem;
 }
 
 .front-page-article > .article-text {
-  width: 55%;
+  width: 85%;
 }
 
 .front-page-article h2 {
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
   color: #093C60;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 .front-page-article p {
   letter-spacing: 1px;
   line-height: 2rem;
-}
-
-@media screen (max-width: 500px) {
-  .container {
-    display: block;
-  }
+  font-weight: 100;
+  font-size: 0.8rem;
 }
 
 .container {
@@ -163,7 +152,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   align-content: space-around;
-  margin: 4rem 6rem;
+  margin: 4rem 4rem;
 }
 
 .container img {
@@ -180,7 +169,7 @@ nav {
   width: 195px;
   height: 340px;
   font-size: 0.8rem;
-  margin: 2rem;
+  margin: 1rem;
   color: #3D3D3D;
 }
 
@@ -208,14 +197,52 @@ article > button {
 }
 
 .bottom-button {
+  margin-top: 1rem;
   position: relative;
   text-align: center;
-  left: 39vw;
+  left: 17vw;
   padding: 0.8rem 4rem;
   border: none;
   font-size: 1.2rem;
   color: #093C60;
   cursor: pointer;
+}
+
+.small-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: right;
+  width: 34%;
+  margin-left: 3rem;
+  margin-right: 1rem;
+}
+
+.small-blog .blog-header {
+  margin-left: 0;
+}
+
+.small-blog .blog-img {
+  width: 18rem;
+  height: 10rem;
+  margin-top: 3rem;
+}
+
+.small-blog h3 {
+  margin-top: 1rem;
+  margin-left: 0;
+}
+
+.small-blog p {
+  margin-top: -1.5rem;
+  margin-bottom: 0.8rem;
+  margin-left: 0;
+}
+
+.small-blog a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #4BBBDC;
 }
 
 .blog-container {
@@ -405,3 +432,13 @@ footer p {
 .copyright {
   margin-top: 2rem;
 }
+
+/* @media screen (max-width: 500px) {
+  .small-blog {
+    float: none;
+    display: none;
+  }
+  .container {
+    margin: 0.5rem 0.5rem;
+  }
+} */
