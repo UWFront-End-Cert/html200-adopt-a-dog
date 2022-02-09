@@ -1,3 +1,9 @@
+User Personas
+-----------------------------------------------------------
+This website is meant for users who are looking for a quick and efficient way to adopt a dog, and that are looking for the information to be up front
+and easily accessible.
+The website is usable on desktop computers, mobile devices, and tablets.
+
 User Group
 -----------------------------------------------------------
 Name: Don Waters
