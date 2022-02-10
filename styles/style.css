@@ -123,8 +123,8 @@ nav {
 }
 
 .front-page-article img {
-  width: 35rem;
-  height: 18rem;
+  width: 90%;
+  height: 20rem;
 }
 
 .front-page-article > .article-text {
@@ -215,7 +215,6 @@ article > button {
   float: right;
   width: 34%;
   margin-left: 3rem;
-  margin-right: 1rem;
 }
 
 .small-blog .blog-header {
@@ -433,12 +432,16 @@ footer p {
   margin-top: 2rem;
 }
 
-/* @media screen (max-width: 500px) {
-  .small-blog {
-    float: none;
+
+@media screen and (max-width: 600px) {
+  aside {
+    /* float: none; */
     display: none;
   }
-  .container {
-    margin: 0.5rem 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .front-page-article {
+    margin: 1rem;
   }
-} */
+}
