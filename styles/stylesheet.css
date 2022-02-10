@@ -1,0 +1,143 @@
+* a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  background-image: url("html200-adopt-a-dog/images/header-image.jpg");
+  background-color: #130d06;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.logo {
+  padding: 3rem 0rem 10rem 3rem;
+}
+header aside {
+  justify-content: flex-end;
+  padding: 3rem;
+  font-family: sans-serif;
+}
+header h1 {
+  color: #66cc00;
+  font-style: italic;
+}
+header a {
+  color: white;
+  background-color: #66cc00;
+  padding: .5rem 1.5rem;
+}
+header p {
+  color: white;
+}
+.navbar {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background-color: #f2f2f2;
+  font-size: 150%;
+  justify-content: flex-start;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #002266;
+  padding-left: 20rem;
+}
+.navbar * {
+  padding: 1rem .35rem;
+}
+.intro {
+  padding: 1rem 20rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+.intro * {
+  padding: 1rem;
+}
+.intro h2 {
+  color: #002266;
+  font-weight: bold;
+  font-size: 200%;
+}
+.intro p {
+  font-family: sans-serif;
+  color: #595959;
+  font-size: 150%;
+}
+.cards {
+	clear: both;
+	padding: 0px;
+	margin: 0 20rem 0 20rem;
+}
+.col {
+	display: block;
+	float: left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child, .col:nth-child(5) {
+  margin-left: 0;
+}
+.group:before, .group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.dog-card4 {
+	width: 100%;
+  grid-column: 4/4;
+  grid-row: 1/1;
+}
+.dog-card3 {
+	width: 74.6%;
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+.dog-card2 {
+	width: 49.2%;
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+.dog-card1 {
+	width: 23.8%;
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+.dog-card8 {
+	width: 100%;
+  grid-column: 3/span 4;
+  grid-row: 2/span 3;
+}
+.dog-card7 {
+	width: 74.6%;
+  grid-column: 2/span 3;
+  grid-row: 2/span 3;
+}
+.dog-card6 {
+	width: 49.2%;
+  grid-column: 1/span 2;
+  grid-row: 2/span 3;
+}
+.dog-card5 {
+	width: 23.8%;
+  grid-column: 0/span 1;
+  grid-row: 2/span 3;
+}
+[class*="dog"] {
+  border: solid 3px #f2f2f2;
+  width: 20%;
+  margin: 1rem .5rem;
+}
+/*Flex
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: auto;
+  justify-content: space-around;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+*/
