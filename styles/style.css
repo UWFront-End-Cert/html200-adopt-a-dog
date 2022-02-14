@@ -6,6 +6,7 @@
 
 .top-header {
   background-image: url("../images/header-image.jpg");
+  background-color: linear-gradient(to left, purple, darkblue, lightblue, lightgreen, white);
   background-size: cover;
   display: flex;
   flex-direction: row;
