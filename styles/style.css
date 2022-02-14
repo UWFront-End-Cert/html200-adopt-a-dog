@@ -5,14 +5,15 @@
 }
 
 .top-header {
-  background-image: url("../images/header-image.jpg");
   background-color: linear-gradient(to left, purple, darkblue, lightblue, lightgreen, white);
+  background-image: url("../images/header-image.jpg");
   background-size: cover;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100%;
   height: 22rem;
 }
 
