@@ -5,9 +5,9 @@
 }
 
 .top-header {
-  background-color: linear-gradient(to left, purple, darkblue, lightblue, lightgreen, white);
   background-image: url("../images/header-image.jpg");
-  background-size: cover;
+  /* background-color: linear-gradient(to left, blue, grey, white); */
+  background-color: #093C60;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -125,8 +125,8 @@ nav {
 }
 
 .front-page-article img {
-  width: 90%;
-  height: 20rem;
+  width: 75%;
+  height: 400px;
 }
 
 .front-page-article > .article-text {
@@ -142,6 +142,7 @@ nav {
 }
 
 .front-page-article p {
+  width: 89%;
   letter-spacing: 1px;
   line-height: 2rem;
   font-weight: 100;
@@ -450,6 +451,7 @@ footer p {
 
 @media screen and (max-width: 600px) {
   .container {
+    display: block;
     margin: 1rem;
   }
 }
