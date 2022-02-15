@@ -69,18 +69,16 @@
           </div>
         </section>
 
-        <fieldset>
+        <fieldset class="button">
           <legend>First Time Adopter?</legend>
           <label>
             <input type="radio" name="firstTime" value="yes">
-            <span></span>
-            Yes
+            <span>Yes</span>
           </label>
 
           <label>
             <input type="radio" name="firstTime" value="no">
-            <span></span>
-            No
+            <span>No</span>
           </label>
         </fieldset>
 
@@ -96,21 +94,26 @@
 
         <section>
           <h3>Dogs Adopted</h3>
-          <div class="adopted">
-            <img src="images/lucas-checkout.jpg" alt="Lucas">
+        </section>
+
+        <section class="adopted">
+          <div id="adopted1">
+            <img src="images/lucas-checkout.jpg" width="100px" height="auto" alt="Lucas">
             <p>Lucas</p>
             <p>Cost to Adopt: $123.45</p>
           </div>
 
-          <div class="adopted">
-            <img src="images/duffy-checkout.jpg" alt="Duffy">
+          <div id="adopted2">
+            <img src="images/duffy-checkout.jpg" width="100px" height="auto" alt="Duffy">
             <p>Duffy</p>
             <p>Cost to Adopt: $123.45</p>
           </div>
         </section>
 
-        <h3>Total Adoption Cost</h3>
-        <p>$1234.56</p>
+        <section id="total">
+          <h3>Total Adoption Cost</h3>
+          <p>$1234.56</p>
+        </section>
 
         <input type="submit" value="Submit">
       </form>
