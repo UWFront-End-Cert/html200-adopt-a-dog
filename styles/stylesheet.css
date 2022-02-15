@@ -101,7 +101,7 @@ header p {
   font-weight: bold;
   font-size: 150%;
 }
-#adopt {
+.adopt {
   color: white;
   background-color: #59b300;
   padding: .5rem;
