@@ -7,12 +7,14 @@
 .top-header {
   background-color: linear-gradient(to left, purple, darkblue, lightblue, lightgreen, white);
   background-image: url("../images/header-image.jpg");
-  background-size: cover;
+  /* background-color: linear-gradient(to left, blue, grey, white); */
+  background-color: #093C60;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100%;
   height: 22rem;
 }
 
@@ -124,8 +126,8 @@ nav {
 }
 
 .front-page-article img {
-  width: 90%;
-  height: 20rem;
+  width: 75%;
+  height: 400px;
 }
 
 .front-page-article > .article-text {
@@ -141,6 +143,7 @@ nav {
 }
 
 .front-page-article p {
+  width: 89%;
   letter-spacing: 1px;
   line-height: 2rem;
   font-weight: 100;
@@ -434,9 +437,9 @@ footer p {
 }
 
 
+/* Screen change for mobile devices. */
 @media screen and (max-width: 600px) {
-  aside {
-    /* float: none; */
+  .small-blog {
     display: none;
   }
 }
@@ -444,5 +447,54 @@ footer p {
 @media screen and (max-width: 600px) {
   .front-page-article {
     margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: block;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container article {
+    width: 90%;
+    margin: 1rem 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container img {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+
+/* Screen change for tablets. */
+@media screen and (max-width: 900px) {
+  .front-page-article {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container article {
+    width: 45%;
+    margin: 1rem 5px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container img {
+    width: 100%;
+    height: 50%;
   }
 }
