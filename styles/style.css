@@ -5,7 +5,6 @@
 }
 
 .top-header {
-  background-color: linear-gradient(to left, purple, darkblue, lightblue, lightgreen, white);
   background-image: url("../images/header-image.jpg");
   /* background-color: linear-gradient(to left, blue, grey, white); */
   background-color: #093C60;
