@@ -5,6 +5,9 @@
 body {
   margin: 0;
 }
+body p {
+  color: #595959;
+}
 header {
   background-image: url("html200-adopt-a-dog/images/header-image.jpg");
   background-color: #130d06;
@@ -211,11 +214,25 @@ input[type=submit]:hover, .button label:hover, .button input:hover {
   display: flex;
   flex-direction: row;
 }
-#adopted1 {
-  justify-content: space-around;
+.adopted-card {
+  float: right;
+  padding: 0 2rem 0 1rem;
 }
-#adopted2 {
-
+.adopted-card h4 {
+  font-weight: bold;
+  color: #002266;
+  font-size: 125%;
+  margin-top: 1rem;
+  margin-bottom: .4rem;
+}
+.adopted-card p {
+  color: #4d4d4d;
+  font-family: sans-serif;
+  font-size: 85%;
+  margin-top: .4rem;
+}
+strong {
+  color: #4d4d4d;
 }
 #total {
   font-family: sans-serif;
@@ -241,6 +258,9 @@ footer {
   padding: 3rem;
   font-family: sans-serif;
   margin-top: 3rem;
+}
+footer p {
+  color: white;
 }
 footer img {
   max-width: 50%;
