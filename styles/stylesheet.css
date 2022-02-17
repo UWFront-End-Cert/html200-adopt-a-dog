@@ -2,13 +2,213 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  background-color: black;
+  font-family: sans-serif;
+}
+li {
+  list-style-type: none;
+}
+div.cart {
+  float: right;
+  position: fixed, absolute;
+  padding-top: 2rem;
+  right: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: .5rem;
+}
+span.b {
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  padding: 1px;
+  border: 0;
+}
+span.c {
+  display: block;
+  width: 100px;
+  height: 10px;
+  padding: 5px;
+  border: 0;
+}
+button.cart {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 5px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: .5rem;
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+}
+.flexbox-container {
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  z-index: -1;
+}
 
+div.header-logo {
+  padding-top: 4rem;
+  padding-left: 3rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  z-index: 999;
+}
+h1.heading {
+  display: block;
+  font-size: 2em;
+  margin-top: 0em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: 'Gabriola', sans-serif;
+  color: #4CAF50; /* Green */
+}
 
-
-
+/* Navigation Bar */
+.global-nav {
+  width: 100%;
+  background-color: #E5E7E9;
+  position: sticky;
+  margin-top: 150px;
+  padding-left: 100px;
+  overflow: auto;
+}
+/* Global-nav links */
+.global-nav a {
+  float: left;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  color: #16426b;
+  text-decoration: none;
+  font-weight: bolder;
+}
+/* Global-nav links on mouse-over */
+.global-nav a:hover {
+  background-color: #E5E7E9;
+  /*For now color same as bar */
+}
+/* Global-nav font */
+.global-nav {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+}
+/* Current/active Global-nav link
+.active {
+  background-color: #25b4d2;
+}
+.global-nav i:hover {
+  font-size: 150%;
+}
+*/
+main {
+  overflow: hidden;
+  position:absolute;
+  background-color: #ffffff;
+  z-index: 990;
+}
+h1 {
+  font-family: 'Alegreya', serif;
+  font-weight: 500;
+  color: #054270;
+}
+h1.main {
+  display: block;
+  font-size: 2em;
+  margin-top: 0em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: 'Alegreya', serif;
+  color: #06426b; /* Blue */
+}
+div.clearfix {
+  border: 3px solid #4CAF50;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+.img1 {
+  float: left;
+  padding-right: 50px;
+}
+.clearfix::after {
+  content: "";
+  clear:both;
+  display:table;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width:180px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align:left;
+}
+button.adopt {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 5px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: .5rem;
+  font-weight: 700;
+  width: 90%;
+}
+button.adopt {
+  font-family: 'Work Sans', sans-serif;
+}
+h4.name {
+  display: block;
+  font-size: 1em;
+  margin-top: .33em;
+  margin-bottom: .33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.name {
+  color: #003a66;
+  font-family: 'Vollkorn', serif;
+}
+.cost {
+  font-family: 'Work Sans', sans-serif;
+}
+h5.cost {
+  display: block;
+  font-size: .83em;
+  margin-top: .33em;
+  margin-bottom: .33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
-  .navbar a {
+  .global-nav a {
     float: none;
     display: block;
   }
