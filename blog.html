@@ -18,9 +18,9 @@
     <div class = "header-two">
       <div class="cart">
         <img src="images/cart-icon.svg" alt="White shopping cart icon." title="White shopping cart icon.">
-        <p id="checkout-total">Total</p>
+        <p id="checkout-total"></p>
       </div>
-      <button>Checkout</button>
+      <button onclick="window.location.href ='checkout.html';">Checkout</button>
     </div>
   </header>
   <nav>
@@ -35,7 +35,7 @@
 
   <h2 class="blog-header">Adoptadog Blog</h2>
 
-  <div class="blog-container">
+  <div class="blog-container" id="blog-posts-container">
     <article>
       <img src="images/blog-1.jpg" alt="Girl at a canyon with dark brown dog." title="Girl at a canyon with dark brown dog." class="blog-img">
       <div class="blog-text">
@@ -64,6 +64,15 @@
     </article>
   </div>
 
+
+    <form class="blog-form" id="new-post-form">
+      <h2>Make a post!</h2>
+      <input type="text" name="blog-title" placeholder="Post title" id="blog-title">
+      <textarea id="blog-words" name="blog-words" cols="20" rows="5" placeholder="Write something here..."></textarea>
+      <input type="submit" id="blog-submit">
+    </form>
+
+
   <footer>
     <img src="images/adoptadog-logo.svg" alt="White logo of adopt a dog." title="White logo of adopt a dog.">
     <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
@@ -76,5 +85,7 @@
     </div>
     <p class="copyright">&copy; 2018 Adoptadog, LLC  |  Seattle, WA</p>
   </footer>
+
+  <script src="../scripts/script.js"></script>
 </body>
 </html>
