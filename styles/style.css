@@ -6,8 +6,6 @@
 
 .top-header {
   background-image: url("../images/header-image.jpg"), linear-gradient(to left, blue, grey, white);
-  /* background-color: linear-gradient(to left, blue, grey, white); */
-  /* background-color: #093C60; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
