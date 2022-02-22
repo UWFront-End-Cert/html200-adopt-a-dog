@@ -10,9 +10,10 @@ body {
 li {
   list-style-type: none;
 }
+/* Cart */
 div.cart {
   float: right;
-  position: fixed, absolute;
+  position: fixed;
   padding-top: 2rem;
   right: 1rem;
   color: #ffffff;
@@ -34,17 +35,19 @@ span.c {
   border: 0;
 }
 button.cart {
-  background-color: #4CAF50; /* Green */
+  background-color: #70a329; /* Green */
   border: none;
   border-radius: 2px;
   color: white;
   padding: 5px 24px;
   text-align: center;
   text-decoration: none;
+  display: inline-block;
   font-size: .5rem;
   font-weight: 400;
   font-family: 'Work Sans', sans-serif;
 }
+/* Header Area */
 .flexbox-container {
   overflow: hidden;
   position: absolute;
@@ -53,21 +56,24 @@ button.cart {
 }
 
 div.header-logo {
+  border: 0;
   padding-top: 4rem;
   padding-left: 3rem;
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin: 0;
   z-index: 999;
 }
 h1.heading {
   display: block;
-  font-size: 2em;
+  font-size: 1.5em;
+  padding: 0;
   margin-top: 0em;
   margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
+  font-stretch: ultra-expanded;
   font-family: 'Gabriola', sans-serif;
-  color: #4CAF50; /* Green */
+  color: #70a329; /* Green */
 }
 
 /* Navigation Bar */
@@ -109,29 +115,17 @@ h1.heading {
   font-size: 150%;
 }
 */
+
+/* Main */
 main {
   overflow: hidden;
   position:absolute;
   background-color: #ffffff;
   z-index: 990;
 }
-h1 {
-  font-family: 'Alegreya', serif;
-  font-weight: 500;
-  color: #054270;
-}
-h1.main {
-  display: block;
-  font-size: 2em;
-  margin-top: 0em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-family: 'Alegreya', serif;
-  color: #06426b; /* Blue */
-}
+/* About A Dog Intro */
 div.clearfix {
-  border: 3px solid #4CAF50;
+  border: 0;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-left: 100px;
@@ -142,51 +136,56 @@ div.clearfix {
 }
 .img1 {
   float: left;
-  padding-right: 50px;
+  padding-right: 40px;
 }
 .clearfix::after {
   content: "";
   clear:both;
   display:table;
 }
+h1.main {
+  display: block;
+  font-size: 2em;
+  margin-top: .5em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: 'Alegreya', serif;
+  color: #06426b; /* Blue */
+}
+
+/* Gallery of Dogs */
+div.adoptGallery {
+  margin-left: 80px;
+  margin-right: 50px;
+  padding: 0;
+}
 div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
+  border: 1.5px solid #ebebeb;
+  margin: 15px;
   float: left;
-  width:180px;
+  width: 180px;
 }
+/*
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1.5px solid #777;
 }
+*/
 div.gallery img {
-  width: 100%;
+  width:100%;
   height: auto;
 }
 div.desc {
-  padding: 15px;
-  text-align:left;
+  padding: 5px;
+  padding-bottom: 10px;
+  text-align: left;
 }
-button.adopt {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  border-radius: 2px;
-  color: white;
-  padding: 5px 24px;
-  text-align: center;
-  text-decoration: none;
-  font-size: .5rem;
-  font-weight: 700;
-  width: 90%;
-}
-button.adopt {
-  font-family: 'Work Sans', sans-serif;
-}
-h4.name {
+h2.name {
   display: block;
-  font-size: 1em;
-  margin-top: .33em;
-  margin-bottom: .33em;
-  margin-left: 0;
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: .6em;
   margin-right: 0;
   font-weight: bold;
 }
@@ -194,18 +193,50 @@ h4.name {
   color: #003a66;
   font-family: 'Vollkorn', serif;
 }
-.cost {
+span.costAmt {
+  font-size: .8em;
+  margin-left: .8em;
   font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
 }
-h5.cost {
-  display: block;
-  font-size: .83em;
+/*span.dogPb {
+  display: inline-block;
+  border: 0;
+  padding: .33em;
+}*/
+span.dogPc {
+  display:inline-block;
+  width: 100%;
+  padding: .5em;
+  border: 0;
+}
+p.dogPc {
+  font-size: .75em;
   margin-top: .33em;
   margin-bottom: .33em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
+  margin-left: .3em;
+  margin-right: .3em;
+  font-stretch:ultra-expanded;
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+  color: #464849;
 }
+button.adopt {
+  background-color: #70a329; /* Green */
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 8px 50px;
+  text-align: center;
+  text-decoration: none;
+  /*display: inline-block;*/
+  font-size: 1rem;
+  font-weight: 700;
+}
+button.adopt {
+  font-family: 'Work Sans', sans-serif;
+}
+
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
   .global-nav a {
