@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: black;
   font-family: sans-serif;
+  z-index: -3;
 }
 li {
   list-style-type: none;
@@ -237,6 +238,59 @@ button.adopt {
   font-family: 'Work Sans', sans-serif;
 }
 
+/* See More Dogs */
+.center {
+  display: inline-block;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  text-align: center;
+}
+button.moreDogs {
+  background-color: #ebebeb; /* light gray */
+  border: none;
+  border-radius: 2px;
+  color: #003a66;
+  padding: 7px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+}
+button.moreDogs {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Footer */
+footer {
+  display: block;
+  text-align: center;
+  padding: 3px;
+  background-color: #003a66;
+  color: #ffffff;
+  z-index: 989;
+}
+.footer-logo{
+  border: 0;
+  padding-top: 4rem;
+  padding-left: 3rem;
+  padding-bottom: 0;
+  margin: 0;
+  color: #ffffff;
+  z-index: 995;
+}
+p.footer {
+  font-size: .75em;
+  margin-top: .33em;
+  margin-bottom: .33em;
+  margin-left: .3em;
+  margin-right: .3em;
+  font-stretch:ultra-expanded;
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+  color: #ffffff;
+}
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
   .global-nav a {
