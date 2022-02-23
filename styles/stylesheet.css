@@ -8,10 +8,8 @@ body {
   font-family: sans-serif;
   z-index: -3;
 }
-li {
-  list-style-type: none;
-}
-/* Cart */
+
+/* Header Cart */
 div.cart {
   float: right;
   position: fixed;
@@ -119,9 +117,12 @@ h1.heading {
 
 /* Main */
 main {
+  background-color: #ffffff;
+}
+section.section {
   overflow: hidden;
   position:absolute;
-  background-color: #ffffff;
+
   z-index: 990;
 }
 /* About A Dog Intro */
@@ -166,6 +167,7 @@ div.gallery {
   margin: 15px;
   float: left;
   width: 180px;
+  background-color: #ffffff;
 }
 /*
 div.gallery:hover {
@@ -200,11 +202,6 @@ span.costAmt {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
 }
-/*span.dogPb {
-  display: inline-block;
-  border: 0;
-  padding: .33em;
-}*/
 span.dogPc {
   display:inline-block;
   width: 100%;
@@ -261,36 +258,68 @@ button.moreDogs {
 button.moreDogs {
   font-family: 'Work Sans', sans-serif;
 }
-
 /* Footer */
 footer {
-  display: block;
-  text-align: center;
-  padding: 3px;
+  overflow: hidden;
+  position: absolute;
   background-color: #003a66;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
   color: #ffffff;
-  z-index: 989;
 }
 .footer-logo{
   border: 0;
-  padding-top: 4rem;
-  padding-left: 3rem;
+  padding-top: 0;
   padding-bottom: 0;
   margin: 0;
   color: #ffffff;
   z-index: 995;
 }
-p.footer {
-  font-size: .75em;
-  margin-top: .33em;
-  margin-bottom: .33em;
+p, div.footer {
+  font-size: .7em;
   margin-left: .3em;
   margin-right: .3em;
-  font-stretch:ultra-expanded;
   font-weight: 400;
   font-family: 'Work Sans', sans-serif;
   color: #ffffff;
 }
+/* Footer Navigation */
+div.footer-nav {
+  width: 100%;
+  background-color: #003a66;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  overflow: auto;
+}
+/* Footer-nav links */
+a.footer-nav {
+  padding-left: .1rem;
+  padding-right: .1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* Footer-nav links on mouse-over */
+.footer-nav a:hover {
+  background-color: #70a329;
+}
+/* Footer-nav font */
+.footer-nav {
+  font-family: 'Work Sans', sans-serif;
+  font-size: .6rem;
+}
+/* Current/active Global-nav link
+.active {
+  background-color: #25b4d2;
+}
+.global-nav i:hover {
+  font-size: 150%;
+}
+*/
+
+
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
   .global-nav a {
