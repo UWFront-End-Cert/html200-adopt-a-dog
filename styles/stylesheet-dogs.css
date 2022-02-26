@@ -4,7 +4,7 @@
 }
 body {
   margin: 0;
-  background-color: black;
+  background-color: #ffffff;
   font-family: sans-serif;
   z-index: -3;
 }
@@ -60,7 +60,7 @@ div.header-logo {
   padding-left: 3rem;
   padding-bottom: 0;
   margin: 0;
-  z-index: 999;
+  z-index: 50;
 }
 h1.heading {
   display: block;
@@ -118,13 +118,7 @@ h1.heading {
 /* Main */
 main {
   background-color: #ffffff;
-  z-index: 992;
-}
-section.section {
-  overflow: hidden;
-  position:absolute;
 
-  z-index: 990;
 }
 /* About A Dog Intro */
 div.clearfix {
@@ -149,18 +143,24 @@ div.clearfix {
 h1.main {
   display: block;
   font-size: 2em;
-  margin-top: .5em;
+  margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
   font-family: 'Alegreya', serif;
   color: #06426b; /* Blue */
 }
-
+main.flex-container-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  z-index: 999;
+}
 /* Gallery of Dogs */
 div.adoptGallery {
   margin-left: 80px;
   margin-right: 50px;
+
   padding: 0;
 }
 div.gallery {

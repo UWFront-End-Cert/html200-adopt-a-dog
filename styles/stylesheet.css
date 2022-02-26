@@ -119,12 +119,7 @@ h1.heading {
 main {
   background-color: #ffffff;
 }
-section.section {
-  overflow: hidden;
-  position:absolute;
 
-  z-index: 990;
-}
 /* About A Dog Intro */
 div.clearfix {
   border: 0;
@@ -165,7 +160,12 @@ h1.main {
   font-family: 'Alegreya', serif;
   color: #06426b; /* Blue */
 }
-
+main.flex-container-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  z-index: 999;
+}
 /* Gallery of Dogs */
 div.adoptGallery {
   margin-left: 80px;
