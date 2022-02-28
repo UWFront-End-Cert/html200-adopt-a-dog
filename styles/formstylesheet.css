@@ -1,120 +1,100 @@
-/* CSS for html200-adopt-a-dog */
-* {
+button,  select, textarea {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 100%;
   box-sizing: border-box;
-}
-body {
-  margin: 0;
-  background-color: black;
-  font-family: sans-serif;
-  z-index: -3;
+  display: block;
+  margin: 1rem;
+
 }
 
-/* Header Cart */
-div.cart {
-  float: right;
-  position: fixed;
-  padding-top: 2rem;
-  right: 1rem;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: .5rem;
-}
-span.b {
+div.form-group1 {
   display: inline-block;
-  width: 20px;
-  height: 10px;
-  padding: 1px;
-  border: 0;
+  float: left;
+  padding: 15px;
 }
-span.c {
+div.form-group2 {
+  display: block;
+  float: left;
+  padding: 15px;
+}
+div.form-group3 {
+  display: block;
+  float: left;
+}
+span.formB {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+span.formC {
   display: block;
   width: 100px;
-  height: 10px;
-  padding: 5px;
-  border: 0;
+  height: 100px;
+  padding 5px;
+  border: 1px solid blue;
+  background-color: yellow;
 }
-button.cart {
-  background-color: #70a329; /* Green */
-  border: none;
-  border-radius: 2px;
-  color: white;
-  padding: 5px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: .5rem;
-  font-weight: 400;
+input {
+  border: 2px solid #b5b5b5;
+  padding: 12px 20px;
+  margin: 8px 0 30px;
+  box-sizing: border-box;
+  float left;
+  width: 500px;
   font-family: 'Work Sans', sans-serif;
+  font-size: 100%
+  font-weight: 400;
+  color: black;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
 }
-/* Header Area */
-.flexbox-container {
-  overflow: hidden;
-  position: absolute;
-  right: 0px;
-  z-index: -1;
+input[type=text]:focus {
+  border: 2px solid #06426b; /* Blue */
 }
 
-div.header-logo {
-  border: 0;
-  padding-top: 4rem;
-  padding-left: 3rem;
-  padding-bottom: 0;
-  margin: 0;
-  z-index: 999;
+label {
+  font-family: 'Alegreya', serif;
+  font-weight: 600;
+  color: #06426b; /* Blue */
 }
-h1.heading {
+
+h1  {
   display: block;
-  font-size: 1.5em;
-  padding: 0;
-  margin-top: 0em;
-  margin-bottom: 0.67em;
+  font-size: 2em;
+  margin-top: .5em;
+  margin-bottom: 30px;
   margin-left: 0;
   margin-right: 0;
-  font-stretch: ultra-expanded;
-  font-family: 'Gabriola', sans-serif;
-  color: #70a329; /* Green */
+  font-family: 'Alegreya', serif;
+  font-weight: 600;
+  color: #06426b; /* Blue */
+}
+/*consistent sizing - use box-sizing */
+input[type=submit] {
+  width: 20%;
+  background-color: #1b447f;
+  color: #ffffff;
 }
 
-/* Navigation Bar */
-.global-nav {
-  width: 100%;
-  background-color: #E5E7E9;
-  position: sticky;
-  margin-top: 150px;
-  padding-left: 100px;
-  overflow: auto;
+input[type=password]:focus {
+  background-color: #03a3df;
+  outline: none; /*most browsers default to blue line*/
 }
-/* Global-nav links */
-.global-nav a {
-  float: left;
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
-  color: #16426b;
-  text-decoration: none;
-  font-weight: bolder;
-}
-/* Global-nav links on mouse-over */
-.global-nav a:hover {
-  background-color: #E5E7E9;
-  /*For now color same as bar */
-}
-/* Global-nav font */
-.global-nav {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1rem;
-}
-/* Current/active Global-nav link
-.active {
-  background-color: #25b4d2;
-}
-.global-nav i:hover {
-  font-size: 150%;
-}
-*/
 
+
+
+
+
+
+
+
+
+/* stylesheet */
 /* Main */
 main {
   background-color: #ffffff;
@@ -178,6 +158,7 @@ main.flex-container-gallery {
   background-color: #ffffff;
   z-index: 999;
 }
+
 /* Gallery of Dogs */
 div.adoptGallery {
   margin-left: 95px;
@@ -257,36 +238,13 @@ button.adopt {
   font-family: 'Work Sans', sans-serif;
 }
 
-/* See More Dogs */
-.center {
-  display: inline-block;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  text-align: center;
-}
-button.moreDogs {
-  background-color: #ebebeb; /* light gray */
-  border: none;
-  border-radius: 2px;
-  color: #003a66;
-  padding: 7px 35px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 700;
-}
-button.moreDogs {
-  font-family: 'Work Sans', sans-serif;
-}
 
 /* Adoptadog Blog */
 div.flex-container-gallery {
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
-padding-bottom: 30px;
+  padding-bottom: 30px;
   z-index: 999;
 }
 div.clearfix-blog {
