@@ -1,55 +1,45 @@
+/* CSS for html200-adopt-a-dog Form */
+* {
+  box-sizing: border-box;
+}
+
 /* Main */
 main {
   background-color: #ffffff;
 }
-main.flex-container-gallery {
+main.flex-container {
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
   z-index: 999;
 }
-/* flex column portion of the form */
-div.clearfix {
+
+div.clearfix-form {
+  display: block;
   max-width: 800px;
   border: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 60px;
   margin-left: 110px;
   margin-right: 100px;
-  font-size: 1rem;
-  font-family: 'Work Sans', sans-serif;
-  color: black;
-  font-weight: 300;
 }
-.clearfix::after {
+.clearfix-form::after {
   content: "";
   clear:both;
   display:table;
 }
-.flex-container {
+
+div.flex-container {
+  margin: 0;
+  padding: 0;
+}
+/* flex container for column */
+.flex-container-column {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
 }
-.flex-container > div {
-  margin: 0;
-  padding: 0;
-}
-.flex-
 
-/* flex row devision of the form */
-div.clearfix-row {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 108px;
-  margin-right: 100px;
-}
-.clearfix-row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .imgAdopt {
   float: left;
   padding-top: 10px;
@@ -57,15 +47,27 @@ div.clearfix-row {
 }
 label {
   font-family: 'Alegreya', serif;
-  font-weight: 600;
+  font-weight: 700;
   font-stretch:ultra-expanded;
   color: #06426b; /* Blue */
+  font-size: 1.5em;
+}
+label.radio {
+  position: relative;
+  display:flex;
+  padding-bottom: .5em;
+}
+label.heading {
+  position: relative;
+  display:flex;
+  padding-top: 1em;
+  padding-bottom: .5em;
 }
 input {
-  border: 1px solid #b5b5b5;
-  padding: 12px ;
-  margin: 8px 0 25px;
-  width: 500px;
+  border: 1.5px solid #b5b5b5;
+  padding: 1.3em;
+  margin: 4px 0 20px;
+  width: 685px;
   font-family: 'Work Sans', sans-serif;
   font-size: 100%
   font-weight: 400;
@@ -78,28 +80,39 @@ input {
 input[type=text]:focus {
   border: 1px solid #06426b; /* Blue */
 }
-
 input.city {
-  width: 200px;
-}
-select.state {
-  border: 1px solid #b5b5b5;
-  padding: 12px 30px;
-  margin: 8px 5px 25px;
+  width: 300px;
 }
 input.zip {
-  width: 100px;
+  width: 185px;
+}
+select.state {
+  border: 1.5px solid #b5b5b5;
+  position: relative;
+  display: block;
+  padding: 12px 12px 20px;
+  margin: 0 0 20px;
+  width: 145px;
+}
+select.location {
+  width: 300px;
+  border: 1.5px solid #b5b5b5;
+  position: relative;
+  display: block;
+  padding: 12px 12px 20px;
+  margin: 0 0 20px;
 }
 
 h1  {
   display: block;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-top: .5em;
   margin-bottom: 30px;
   margin-left: 0;
   margin-right: 0;
   font-family: 'Alegreya', serif;
-  font-weight: 600;
+  font-weight: 700;
+  font-stretch:ultra-expanded;
   color: #06426b; /* Blue */
 }
 h2 {
@@ -111,37 +124,33 @@ h2 {
   margin-right: 0;
   font-family: 'Alegreya', serif;
   color: #06426b; /* Blue */
-  font-weight: bold;
-}
-p {
-  display: block;
-  font-size: 1rem;
-  padding: 0;
-  margin: 0;
-  font-family: 'Alegreya', serif;
   font-weight: 600;
-  color: #06426b; /* Blue */
 }
+
 
 /* Radio Buttons */
 /* The container */
 .container {
   display: inline;
   position:relative;
-  padding-top: 12px;
-  padding-left: 35px;
+  padding-left: 25px;
+  margin-right: 50px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 1rem;
-  font-family: 'Work Sans', sans-serif;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
+label.container {
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #000;
+}
 
 /* Hide browser's default radio button */
-.container input {
+.container input  {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -156,9 +165,83 @@ p {
   width: 20px;
   background-color: #eee;
   border-radius: 50%;
+
 }
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #06426b;
+}
+
+/* Dogs Adopted */
+.imgAdopt1 {
+  float: left;
+}
+.imgAdopt2 {
+  float: left;
+}
+.clearfix-adopt::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h2.dogName {
+  display: block;
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.dogName {
+  color: #003a66;
+  font-family: 'Vollkorn', serif;
+}
+span.costAdopt {
+  font-size: .7em;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  padding-right: 50px;
+}
+.flex-container-adopted {
+  display: flex;
+  flex-direction: row;
+}
+.flex-container-adopted > div {
+  text-align: left;
+  padding-right: 1em;
+  margin-top: 0;
+  margin-bottom: 1.2em;
+}
+
+/* Total Adoption Cost */
+p.totalCost{
+  display: block;
+  font-size: 1.2rem;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 2em;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+/* Submit Button */
+button.submit {
+  width: 275px;
+  padding: .7em;
+  margin: 4px 0 17px;
+  background-color: #70a329; /* Green */
+  border: none;
+  border-radius: 2px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  /*display: inline-block;*/
+  font-size: 1rem;
+  font-weight: 700;
+}
+button.submit {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
