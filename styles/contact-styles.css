@@ -1,0 +1,143 @@
+.grid-container{
+  display: grid;
+  grid-template-rows: 125px 125px 125px 125px 125px;
+  grid-template-columns: 250px 250px 250px 250px 250px 250px;
+  line-height: 7px;
+}
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  margin-top: -5rem;
+  margin-left: 200px;
+}
+.grid-item-2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  padding-left: 200px;
+}
+.grid-item-3 {
+  grid-column-start: 5;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+.header-text {
+  font-family: Arial, sans-serif;
+  color: #32CD32;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  font-size: 20px;
+}
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-background {
+  background-size: 1500px 500px;
+  background-color: #005580;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.copyright-border {
+  border-left: 2px solid white;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-width: thin;
+}
+.copyright {
+  font-family: Arial, sans-serif;
+  font-size: 1vw;
+  color: #FFFFFF;
+}
+.footer-link {
+  font-family: Arial, sans-serif;
+  font-size: 1vw;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer-text {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #FFFFFF;
+  line-height: 1px;
+}
+.link {
+  text-decoration: none;
+  color: #191970;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+.nav {
+  background-color: #F5F5F5;
+  color: #191970;
+  font-family: Arial, sans-serif;
+  margin-top: -16rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 17rem;
+}
+
+#total {
+  color: #FFFFFF;
+  font-size: 11px;
+  padding-left: 103px;
+}
+
+#checkout {
+  background-color: #32CD32;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 20px 5px 20px;
+  margin-left: 100px;
+}
+.background {
+  background-image: url(../assets/header-image.jpg);
+  background-repeat: no-repeat;
+  background-size: 1500px 375px;
+}
+h1 {
+  color: #005580;
+  margin-left: 270px;
+
+}
+form {
+  margin-left: 270px;
+}
+input {
+  display: block;
+  border-style: solid;
+  border-width: thin;
+  border-color: #a9a9a9;
+  height: 40px;
+  width: 430px;
+  margin-bottom: 20px;
+}
+label {
+  color: #005580;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+.submit {
+  background-color: #32CD32;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 20px 5px 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-style: none;
+  width: 150px;
+}
