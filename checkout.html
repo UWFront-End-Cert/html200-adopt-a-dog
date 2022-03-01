@@ -3,89 +3,137 @@
   <head>
     <meta charset="utf-8">
     <title>Checkout</title>
+    <link rel="stylesheet" href="styles/checkout-styles.css">
   </head>
-
   <body>
     <header>
-      <img src="assets/adoptadog-logo.svg" width="200" height="50" alt="silhouette of a dog">
-      <p><em>Seattle's premiere dog adoption agency</em></p>
-      <p><img src="assets/cart-icon.svg" width="20" height="20" alt="shopping cart"><strong>$1234.56</strong></p>
-      <a href="checkout.html"><strong>Checkout</strong></a>
+
+      <div class="background">
+
+      <div class="grid-container">
+
+      <div class="grid-item-1">
+      <img src="assets/adoptadog-logo.svg" width="300" height="100" alt="silhouette of a dog">
+      </div>
+
+      <div class="grid-item-2">
+      <p class="header-text" ><em>Seattle's premiere dog adoption agency</em></p>
+      </div>
+
+      <div class="grid-item-3">
+      <p id="total" ><img src="assets/cart-icon.svg" width="20" height="20" alt="shopping cart"><strong>$1234.56</strong></p>
+      <a id="checkout" href="checkout.html"><strong>Checkout</strong></a>
+      </div>
+
+      </div>
+      </div>
 
    <nav class="nav">
-      <a href="index.html"><strong>Home /</strong></a>
-      <a href="dogs.html"><strong>Dogs /</strong></a>
-      <a href="blog.html"><strong>Blog</strong></a>
+      <a class="link" href="index.html"><strong>Home /</strong></a>
+      <a class="link" href="dogs.html"><strong>Dogs /</strong></a>
+      <a class="link" href="blog.html"><strong>Blog</strong></a>
    </nav>
    </header>
 
   <h1>Checkout</h1>
+
   <form method="GET">
+
     <label>Name
       <input type="text" name="applicantName">
     </label>
 
     <label>Email Address
-      <input type="email" name="applicantEmail">
+      <input type="email" name="email">
     </label>
 
     <label>Street Address
-     <input type="text" name="?">
+     <input type="text" name="applicantAddress">
     </label>
+
+
 
     <label>City
-      <input type="text" name="?">
+      <textarea name="city"></textarea>
     </label>
 
-    <label>State
-      <input type="text" name="?">
+    <label class="state">State
+      <select name="state">
+       <option value="WA">WA</option>
+       <option value="CA">CA</option>
+      </select>
     </label>
 
-    <label>Zip Code
-    <input type="text" name="?">
+    <label class="zip">Zip Code
+     <input type="text" name="zip">
     </label>
+
 
     <fieldset>
     <legend>First Time Adopter?</legend>
     <label>
-    <input type="radio" name="special" value="yes">
-    Yes
+    <input type="radio" name="special" value="yes">Yes
     </label>
+
     <label>
-    <input type="radio" name="special" value="no">
-    No
+    <input type="radio" name="special" value="no">No
     </label>
     </fieldset>
 
+
     <label>Pickup Location
-      <input type="text" name="?">
+    <select name="location">
+      <option value="onsite">On-Site</option>
+      <option value="satellite location">Satellite Location</option>
+      <option value="other">Other</option>
+    </select>
     </label>
 
-    <h4>Dogs Adopted</h4>
-    <img src="assets/lucas-card.jpg" width="100" height="100" alt="black german shepherd">
-    <p>Lucas</p>
-    <p>Cost to Adopt: $123.45</p>
+    <div class="grid-container">
 
-    <img src="assets/duffy-card.jpg" width="100" height="100" alt="pitbull with white face and brown fur">
-    <p>Duffy</p>
-    <p>Cost to Adopt: $123.45</p>
+    <h3>Dogs Adopted</h3>
 
-    <p>Total Adoption Cost</p>
+    <div class="grid-item-4">
+    <img src="assets/lucas-card.jpg" width="75" height="50" alt="black german shepherd looking at camera while sticking tongue out.">
+    </div>
+
+    <div class="grid-item-5">
+    <h4>Lucas</h4>
+    <p><strong>Cost to Adopt:</strong> $123.45</p>
+    </div>
+
+    <div class="grid-item-6">
+    <img src="assets/duffy-card.jpg" width="75" height="50" alt="pitbull with white face and brown fur looking at camera sweetly.">
+    </div>
+
+    <div class="grid-item-7">
+    <h4>Duffy</h4>
+    <p><strong>Cost to Adopt:</strong> $123.45</p>
+    </div>
+
+    <div class="grid-item-8">
+    <h3>Total Adoption Cost</h3>
     <p>$1234.56</p>
+    </div>
 
-    <input type="submit" value="Submit">
+    </div>
+
+    <input class="submit" type="submit" value="Submit">
   </form>
 
-  <footer>
-    <img src="assets/adoptadog-logo.svg" width="200" height="160" alt="silhouette of a dog sitting at attention with the words adopt a dog.">
-    <p>Aborpos nistro inci tet aut que volupti beurptiberro to ex</p>
-    <p>esseque invenienihil imaximu scideru ptistiusam consequeent</p>
-    <nav>
-      <a href="index.html"><strong>Home /</strong></a>
-      <a href="dogs.html"><strong>Dogs /</strong></a>
-      <a href="contact.html"><strong>Contact</strong></a>
-    </nav>
-    <p>© 2018 Adoptadog, LLC Seattle, WA</p>
-  </footer>
-  </body>
-  </html>
+    <footer class="footer-background">
+      <div class="flex-container">
+      <img src="assets/adoptadog-logo.svg" width="250" height="100" alt="silhouette of a dog sitting at attention with the words adopt a dog.">
+      <p class="footer-text" >Aborpos nistro inci tet aut que volupti beurptiberro to ex</p>
+      <p class="footer-text" >esseque invenienihil imaximu scideru ptistiusam consequeent</p>
+      <nav>
+        <a class="footer-link" href="index.html"><strong>Home /</strong></a>
+        <a class="footer-link" href="dogs.html"><strong>Dogs /</strong></a>
+        <a class="footer-link" href="contact.html"><strong>Contact</strong></a>
+      </nav>
+      <p class="copyright"> © 2018 Adoptadog, LLC <span class="copyright-border">Seattle, WA</span></p>
+      </div>
+
+    </footer>
+    </body>
+    </html>
