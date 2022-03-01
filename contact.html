@@ -4,24 +4,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Contact</title>
+    <link rel="stylesheet" href="styles/contact-styles.css">
   </head>
   <body>
+    <header class="background">
 
-  <header>
-   <img src="assets/header-image.jpg" width="500" height="300" alt="close up image of dog's face with brown fur and brown eyes">
-   <img src="assets/adoptadog-logo.svg" width="200" height="50" alt="silhouette of a dog">
-   <p><em>Seattle's premiere dog adoption agency</em></p>
-   <p><img src="assets/cart-icon.svg" width="20" height="20" alt="shopping cart"><strong>$1234.56</strong></p>
-   <a href="checkout.html"><strong>Checkout</strong></a>
+      <div class="grid-container">
 
-   <nav>
-      <a href="index.html"><strong>Home /</strong></a>
-      <a href="dogs.html"><strong>Dogs /</strong></a>
-      <a href="blog.html"><strong>Blog</strong></a>
+      <div class="grid-item-1">
+      <img src="assets/adoptadog-logo.svg" width="320" height="100" alt="silhouette of a dog">
+      </div>
+
+      <div class="grid-item-2">
+      <p class="header-text" ><em>Seattle's premiere dog adoption agency</em></p>
+      </div>
+
+      <div class="grid-item-3">
+      <p id="total" ><img src="assets/cart-icon.svg" width="20" height="20" alt="shopping cart"><strong>$1234.56</strong></p>
+      <a id="checkout" href="checkout.html"><strong>Checkout</strong></a>
+      </div>
+
+      </div>
+
+   <nav class="nav">
+      <a class="link" href="index.html"><strong>Home /</strong></a>
+      <a class="link" href="dogs.html"><strong>Dogs /</strong></a>
+      <a class="link" href="blog.html"><strong>Blog</strong></a>
    </nav>
    </header>
 
-  <h1>Contact Us!</h1>
+  <h1>Contact Us</h1>
+
   <form method="GET">
     <label>Name
       <input type="text" name="applicantName">
@@ -35,19 +48,22 @@
       <input type="email" name="applicantEmail">
     </label>
 
-    <input type="submit" value="Submit">
+    <input class="submit" type="submit" value="Submit">
   </form>
 
-  <footer>
-    <img src="assets/adoptadog-logo.svg" width="200" height="160" alt="silhouette of a dog sitting at attention with the words adopt a dog.">
-    <p>Aborpos nistro inci tet aut que volupti beurptiberro to ex</p>
-    <p>esseque invenienihil imaximu scideru ptistiusam consequeent</p>
-    <nav>
-      <a href="index.html"><strong>Home /</strong></a>
-      <a href="dogs.html"><strong>Dogs /</strong></a>
-      <a href="contact.html"><strong>Contact</strong></a>
-    </nav>
-    <p>© 2018 Adoptadog, LLC Seattle, WA</p>
-  </footer>
+    <footer class="footer-background">
+      <div class="flex-container">
+
+      <img src="assets/adoptadog-logo.svg" width="250" height="100" alt="silhouette of a dog sitting at attention with the words adopt a dog.">
+      <p class="footer-text" >Aborpos nistro inci tet aut que volupti beurptiberro to ex</p>
+      <p class="footer-text" >esseque invenienihil imaximu scideru ptistiusam consequeent</p>
+      <nav>
+        <a class="footer-link" href="index.html"><strong>Home /</strong></a>
+        <a class="footer-link" href="dogs.html"><strong>Dogs /</strong></a>
+        <a class="footer-link" href="contact.html"><strong>Contact</strong></a>
+      </nav>
+      <p class="copyright"> © 2018 Adoptadog, LLC <span class="copyright-border">Seattle, WA</span></p>
+      </div>
+    </footer>
   </body>
   </html>
