@@ -65,20 +65,18 @@ label.heading {
 }
 input {
   border: 1.5px solid #b5b5b5;
-  padding: 1.3em;
-  margin: 4px 0 20px;
+  padding: .5em;
+  margin: 4px 0 30px;
   width: 685px;
   font-family: 'Work Sans', sans-serif;
-  font-size: 100%
+  font-size: 100%;
   font-weight: 400;
   color: black;
   display: block;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   outline: none;
 }
 input[type=text]:focus {
-  border: 1px solid #06426b; /* Blue */
+  border: 2px solid #06426b; /* Blue */
 }
 input.city {
   width: 300px;
@@ -119,7 +117,7 @@ h2 {
   display: block;
   font-size: 1.5em;
   margin-top: 0.83em;
-  margin-bottom: 0..67em;
+  margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
   font-family: 'Alegreya', serif;
@@ -137,10 +135,7 @@ h2 {
   margin-right: 50px;
   margin-bottom: 12px;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+
 }
 label.container {
   font-size: 1rem;
@@ -159,7 +154,7 @@ label.container {
 /* Create a custom radio button */
 .checkmark {
   position: absolute;
-  top: 12;
+  top: 0;
   left: 0;
   height: 20px;
   width: 20px;

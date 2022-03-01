@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <title>Adopt-a-dog Adoption Checkout Form</title>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet-form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,13 +50,13 @@
                 <input type="text" name="applicantEmailAddress">
               </label>
               <label>Street Address
-                <input type="address" name="applicantAddress">
+                <input type="text" name="applicantAddress">
               </label>
               <label>City
-                <input class="city" type="city" name="applicantCity">
+                <input class="city" type="text" name="applicantCity">
               </label>
               <label>State
-                <select type="text" class="state" name="state">
+                <select class="state" name="state">
                   <option value="#"></option>
                   <option value="al">Alabama</option>
                   <option value="ak">Alaska</option>
@@ -64,7 +64,7 @@
                 </select>
               </label>
               <label>Zip Code
-                <input class="zip" type="zip" name="applicantZipcode">
+                <input class="zip" type="number" name="applicantZipcode">
               </label>
               <label class="radio">First Time Adopter?</label>
                 <label class="container">Yes
@@ -76,7 +76,7 @@
                   <span class="checkmark"></span>
                 </label>
                 <label class="heading">Pickup Location</label>
-                  <select type="text" class="location" name="location">
+                  <select class="location" name="location">
                   <option value="#"></option>
                   </select>
 
@@ -84,7 +84,7 @@
                 <div class="clearfix-adopt">
                   <div class="flex-container-adopted">
                     <div>
-                      <img class="imgAdopt1" src="images/lucas-checkout.jpg" alt="Lucas" width="80px">
+                      <img class="imgAdopt1" src="images/lucas-checkout.jpg" alt="Lucas" width="80">
                     </div>
                     <div>
                       <h2 class="dogName" style="clear:right">Lucas</h2>
@@ -93,7 +93,7 @@
                       </span>
                     </div>
                     <div>
-                      <img class="imgAdopt2" src="images/duffy-checkout.jpg" alt="Duffy" width="80px">
+                      <img class="imgAdopt2" src="images/duffy-checkout.jpg" alt="Duffy" width="80">
                     </div>
                     <div>
                       <h2 class="dogName">Duffy</h2>
@@ -107,6 +107,7 @@
                   <p class="totalCost">$1234.56</p>
                 <button class="submit" type="button" name="button">Submit</button>
           </form>
+      </div>
     </main>
     <footer>
       <div class="footer">

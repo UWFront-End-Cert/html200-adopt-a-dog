@@ -78,7 +78,7 @@ h1.heading {
 /* Navigation Bar */
 .global-nav {
   width: 100%;
-  background-color: #E5E7E9;
+  background-color: #E5E7E9; /* light gray */
   position: sticky;
   margin-top: 150px;
   padding-left: 100px;
@@ -94,13 +94,14 @@ h1.heading {
   padding-right: .5rem;
   color: #16426b;
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: 700;
 }
-/* Global-nav links on mouse-over */
+/* Global-nav links on mouse-over
 .global-nav a:hover {
-  background-color: #E5E7E9;
+  background-color: #a9a9a9;
   /*For now color same as bar */
 }
+
 /* Global-nav font */
 .global-nav {
   font-family: 'Work Sans', sans-serif;
@@ -108,12 +109,8 @@ h1.heading {
 }
 /* Current/active Global-nav link */
 .active {
-  background-color: #25b4d2;
+  font-weight: 800;
 }
-.global-nav i:hover {
-  font-size: 150%;
-}
-
 
 /* Main */
 main {
@@ -123,8 +120,8 @@ main {
 /* About A Dog Intro */
 div.clearfix-intro {
   border: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: 110px;
   margin-right: 100px;
   font-size: 1rem;
@@ -175,6 +172,7 @@ h2.main {
 main.flex-container {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 30px;
   background-color: #ffffff;
   z-index: 999;
 }
@@ -205,7 +203,7 @@ div.desc {
   padding-bottom: 10px;
   text-align: left;
 }
-h2.name {
+h2.dogsName {
   display: block;
   font-size: 1.2em;
   margin-top: 0;
@@ -214,7 +212,7 @@ h2.name {
   margin-right: 0;
   font-weight: bold;
 }
-.name {
+.dogsName {
   color: #003a66;
   font-family: 'Vollkorn', serif;
 }
@@ -229,8 +227,6 @@ span.dogPc {
   width: 100%;
   padding: .5em;
   border: 0;
-}
-p.dogPc {
   font-size: .75em;
   margin-top: .33em;
   margin-bottom: .33em;
@@ -241,6 +237,18 @@ p.dogPc {
   font-family: 'Work Sans', sans-serif;
   color: #464849;
 }
+/*
+p.dogPc {
+  font-size: .75em;
+  margin-top: .33em;
+  margin-bottom: .33em;
+  margin-left: .3em;
+  margin-right: .3em;
+  font-stretch:ultra-expanded;
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+  color: #464849;
+}*/
 button.adopt {
   background-color: #70a329; /* Green */
   border: none;
