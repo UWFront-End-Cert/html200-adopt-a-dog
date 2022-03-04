@@ -42,7 +42,7 @@
 
 .price {
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   float: right;
   margin-right: 0.8rem;
   line-height: 2rem;
@@ -53,7 +53,7 @@
 .cart {
   float: right;
   margin-right: 4rem;
-  margin-top:5.7rem;
+  margin-top:5.9rem;
 }
 
 
@@ -103,24 +103,16 @@ nav {
 a:hover {
   color: #45D33D;
 }
-
-
-
 ul li:hover{
   color:green !important;
 }
 
 .flex-container {
 float: right;
-width: 15%;
-margin-right:10%;
-margin-top:3%;
-display: inline-flex;
-flex-wrap: nowrap;
-flex-direction: row;
-justify-content: flex-start;
-align-content:stretch;
-align-items: flex-start;
+width: 20%;
+margin-top:2%;
+margin-right:3rem;
+display:inline-flex;
 }
 
 .blog-aside {
@@ -175,11 +167,6 @@ align-items: flex-start;
   width:50%;
   position:relative;
 }
-/* @media only screen and (max-width: 480px) {
-  .dog-hug {
-    width:100%;
-  }
-} */
 
 .adopt-dog {
   font-family: 'Alegreya', serif;
@@ -224,91 +211,6 @@ align-items: flex-start;
   -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
 }
-
-
-/* @media screen and (max-width: 767px) {
-  .container {
-    display: grid;
-    grid-template-columns: (1, 1fr);
-    grid-row-gap: 40px;
-    grid-template-areas:
-      "dog1"
-      "dog2"
-      "dog3"
-      "dog4"
-      "dog5"
-      "dog6";
-  }
-
-}
-
-
-@media screen and (min-width: 768px) {
-  .container {
-    margin-top:50px;
-    margin-left: 200px;
-    margin-right: 200px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 40px;
-    grid-template-areas:
-      "dog1 dog3"
-      "dog2 dog4"
-      "dog5 dog6"
-      "dog7 dog8"
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .container {
-    margin-top:50px;
-    margin-left: 200px;
-    margin-right: 200px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    align-items: center;
-    grid-template-areas:
-      "dog1 dog3"
-      "dog2 dog4"
-      "dog5 dog6"
-      "dog7 dog8"
-  }
-} */
-
- /* @media screen and (min-width: 992px) {
-  .container {
-    margin-top:480px;
-    margin-left: 200px;
-    margin-right: 200px;
-    transform: translate(0px, -820px);
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    align-items: center;
-    grid-template-areas:
-      "dog1 dog2 dog3"
-      "dog4 dog5 dog6";
-  }
-}
- @media screen and (min-width: 1500px) { */
-  /* .container {
-    margin-top:480px;
-    margin-left: 200px;
-    margin-right: 200px;
-    transform: translate(0px, -820px);
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    align-items: center;
-    grid-template-areas:
-      "dog1 dog2 dog3"
-      "dog4 dog5 dog6";
-  }
-}  */
 
 .boxtext {
   width: 90%;
@@ -653,13 +555,13 @@ label[for=pickup] {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
   .flex-container {
     display: none;
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .container {
     flex-direction:column;
   }
@@ -670,31 +572,4 @@ label[for=pickup] {
     background:red;
 
   }
-}
-
-/* @media only screen and (min-width: 768px) {
-  .container {
-    margin-right:1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 40px;
-    grid-template-areas:
-      "dog1 dog3"
-      "dog2 dog4"
-      "dog5 dog6"
-      "dog7 dog8";
-  }
-}
-
-@media only screen and (min-width: 992px) {
-   .container {
-     margin-right:1rem;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 1fr 1fr;
-     grid-column-gap: 15px;
-     grid-row-gap: 15px;
-     grid-template-areas:
-       "dog1 dog2 dog3"
-       "dog4 dog5 dog6";
-   }
 } */
