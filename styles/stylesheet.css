@@ -18,7 +18,7 @@ html, body {
   width: 100%;
   height: 25.5rem;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .first-header, .another-div {
@@ -30,12 +30,12 @@ html, body {
 }
 
 .another-div {
-  margin-right: 50px
+  margin-right: 50px;
 }
 
 .img-cart {
   display: flex;
-  width: 140px
+  width: 140px;
 }
 
 .header-name {
@@ -194,7 +194,7 @@ ul li:hover {
   color: black;
   text-align: justify;
   line-height: 1.3;
-  margin-top: 6%;
+  margin-top: 1%;
   margin-bottom: 2%;
   width: 80%
 }
@@ -205,6 +205,7 @@ ul li:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 80%;
+  margin-top: 3%;
 }
 
 .dog1, .dog2, .dog3, .dog4, .dog5, .dog6, .dog7, .dog8, .dog9, .dog10, .dog11, .dog12 {
@@ -258,6 +259,7 @@ ul li:hover {
   color: white;
   font-weight: bold;
   font-size: 15px;
+  cursor:pointer;
 }
 
 .button {
@@ -276,66 +278,58 @@ ul li:hover {
   font-size: 20px;
 }
 
+.footerflex {
+  line-height: 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  /* margin-left:16%; */
+  margin-top: 5%;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
 .footer {
-  background: #0A3B60;
-  height: 400px;
+  background-size: 100%;
   width: 100%;
+  height: 25.5rem;
+  justify-content: space-between;
+  background: #0A3B60;
+  /* height: 400px;
+  width: 100%; */
   max-width: 100vw;
   position: relative;
   bottom: 0;
+  display: inline-block;
 }
 
 .logofooter {
-  margin-left: 515px;
-  margin-top: 50px;
+  margin-bottom: 4%;
 }
 
-.footertext {
-  color: white;
-  text-align: center;
-  width: 420px;
-  line-height: 30px;
-  font-family: sans-serif;
-  margin-left: 460px;
-  margin-top: 30px;
-  font-weight: lighter;
-  font-size: 14px;
-}
-
-.footertext2 {
-  color: white;
-  text-align: center;
-  width: 420px;
-  line-height: 30px;
-  font-family: sans-serif;
-  margin-left: 460px;
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.footertext3 {
-  color: white;
-  text-align: center;
-  width: 420px;
-  line-height: 30px;
-  font-family: sans-serif;
-  margin-left: 460px;
-  margin-top: 30px;
-  font-size: 14px;
-}
-
-.here-dogs {
+.here-dog {
   font-family: 'Alegreya', serif;
   font-size: 35px;
   color: #102D66;
   text-align: left;
-  margin-left: 200px;
+  margin-left: 7.5%;
   margin-top: 30px;
 }
 
 .container2 {
-  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 3%;
+  margin-left: 7.5%;
+  /* margin-top: 30px;
   margin-left: 10rem;
   margin-right: 10rem;
   display: grid;
@@ -343,7 +337,7 @@ ul li:hover {
   grid-template-rows: auto auto auto auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 40px;
-  align-items: center;
+  align-items: center; */
 }
 
 .pic-blog-1, .pic-blog-2, .pic-blog-3 {
