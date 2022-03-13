@@ -12,7 +12,7 @@ body {
 /* Header Cart */
 div.cart {
   float: right;
-  position: fixed;
+  position: sticky; /* changed from fixed to sticky */
   padding-top: 2rem;
   right: 1rem;
   color: #ffffff;
@@ -21,14 +21,14 @@ div.cart {
 }
 span.b-cart {
   display: inline-block;
-  width: 20px;
+  width: 10%; /* changed to % from 20px */
   height: 10px;
   padding: 1px;
   border: 0;
 }
 span.c-cart {
   display: block;
-  width: 100px;
+  width: 100%; /* changed to % from 100px */
   height: 10px;
   padding: 5px;
   border: 0;
@@ -186,7 +186,7 @@ div.gallery {
   border: 1.5px solid #ebebeb;
   margin: 15px;
   float: left;
-  width: 180px;
+  width: 20%; /* changed from 180px to 100% */
   background-color: #ffffff;
 }
 /*
@@ -254,12 +254,13 @@ button.adopt {
   border: none;
   border-radius: 2px;
   color: white;
-  padding: 8px 50px;
+  padding: 2% 16% ; /* changed to % */
   text-align: center;
   text-decoration: none;
-  /*display: inline-block;*/
-  font-size: 1rem;
+  display: inline-block;
+  font-size: 1em;
   font-weight: 700;
+
 }
 button.adopt {
   font-family: 'Work Sans', sans-serif;
