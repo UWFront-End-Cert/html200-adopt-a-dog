@@ -1,0 +1,54 @@
+User Persona (separate file with a picture and design attached in submission):
+
+“There is nothing better than owning a dog”
+
+Kate Osman,23
+WORK: Freelancer
+FAMILY: Married, 1 dog
+LOCATION: Seattle, WA
+
+TECHNOLOGIES:
+Very knowledgable in Google
+Very knowledgable in other social media
+Spends most of her time online
+
+BIO:
+Kate is a 23 years old woman who lives with her husband and her dog Duke.
+She realized that Duke needs a friend, so she is looking for adoption opportunities.
+She is a lover and always helps animals and people in need, so adoption would be her only option.
+As a freelancer, Kate has a lot of time to care for the dog.
+
+GOALS:
+Find an easy to navigate website, where she can get her new furry friend
+Find a dog for an affordable price
+Get a dog quickly and effectively
+
+DEVICES:
+Owns 2 years old iPad Pro
+Owns a 2 years old iPhone 12 Pro
+Owns a 27” Windows computer
+
+FAVORITE BRANDS:
+Apple, Google Chrome and Safari
+
+TESTING
+
+I started my testing process by checking my website on different web platforms,
+such as Google Chrome, Safari and Firefox, as well as on Mac and Windows.
+Unfortunately, I was not able to test it on a tablet or a phone, since the page would not load.
+However, I tested different sizes on my browser in inspect.
+
+I did come with some issues that needed to be fixed:
+
+- Header on the index page was not working properly. I found that the issue was in media queries,
+I had a fixed width in there. Once I completely removed it, it worked as expected.
+
+- Button on an index page did not look properly on mobile screen size.
+It was fixed and now looks consistent throughout different sizes.
+
+- Checkout page was not mobile friendly at all,
+media queries and some work in css made it look consistent on all device sizes and now is mobile friendly.
+
+- Blog page was not mobile friendly as well. I reorganized my css and media queries and now it works as expected on all sizes.
+
+The rest of the stuff works as expected and no additional changes are needed.
