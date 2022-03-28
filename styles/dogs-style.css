@@ -27,7 +27,7 @@ body {
   font-size: 170%;
   font-style: italic;
   left: 5%;
-  margin-top: -320px;
+  top:20%;
   position: absolute;
 }
 
@@ -39,7 +39,7 @@ body {
 
 .cart {
   width: 25%;
-  margin-bottom: 5px;
+  margin-bottom: 1%;
 }
 
 button {
@@ -48,12 +48,12 @@ button {
   background-color: yellowgreen;
   font-weight: bold;
   font-family: sans-serif;
-  padding: 5px;
+  padding: 5%;
   }
 
   .checkout-button {
     height: 20%;
-    margin-top: 5px;
+    margin-top: 2%;
   }
 
 .menu {
@@ -64,7 +64,7 @@ button {
   font-family: sans-serif;
   text-indent: 10%;
   position: relative;
-  top: 250px;
+  top: 15em;
   width: 100%;
 }
 
@@ -80,30 +80,34 @@ a {
   padding: 10%;
 }
 
+.see-more {
+  text-align: center
+}
+
 .dogs-html {
   background-color: lightgrey;
   color: #08457e;
+
 }
 
 .dog-list {
   display: flex;
   flex-direction: row;
-  justify content: start;
+  justify-content: start;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 5%;
 }
 
 .box {
-  display: ;
+  display: flex;
   flex-direction: column;
   border-style: solid;
   border-color: lightgrey;
   flex-grow: 1;
   width: 15%;
   height: auto;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  padding: 10px;
+  margin-right: 5%;
+  margin-bottom: 10%;
   text-align: center;
 }
 
@@ -123,6 +127,6 @@ a {
 .blurb {
   color: #08457e;
   font-family: serif;
-  margin-top: 300px;
+  margin-top: 25%;
   margin-left: 10%;
 }

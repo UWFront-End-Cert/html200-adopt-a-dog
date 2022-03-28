@@ -43,14 +43,14 @@
         <input type="email" name="applicantEmail">
       </label>
       <label>Street Address
-        <input type="street" name="streetAddress">
+        <input type="text" name="streetAddress">
       </label>
       <label>City
-        <input type="city" name="applicantCity">
+        <input type="text" name="applicantCity">
       </label>
       <label>State
         <select name="state">
-          <option value=""> </option>
+          <option disabled selected value> --select-- </option>
           <option value="alabama">Alabama</option>
           <option value="alaska">Alaska</option>
           <option value="arkansas">Arkansas</option>
@@ -61,9 +61,9 @@
         </select>
       </label>
       <label>
-        <input type="zipcode" name="applicantZipcode">
+        <input type="text" name="applicantZipcode">
       </label>
-      <legend>First Time Adopter?</legend>
+      <h2>First Time Adopter?</h2>
         <label>
           <input type="radio" name="choice" value="yes">
           Yes
@@ -74,9 +74,9 @@
           No
         </label>
 
-      <legend>Pickup Location</legend>
+      <h3>Pickup Location</h3>
         <select name="location">
-          <option value=""> </option>
+          <option disabled selected value> --select-- </option>
           <option value="seattle">Seattle</option>
           <option value="tokyo">Tokyo</option>
           <option value="seoul">Seoul</option>

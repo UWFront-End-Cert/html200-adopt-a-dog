@@ -27,7 +27,7 @@ body {
   font-size: 170%;
   font-style: italic;
   left: 5%;
-  margin-top: -320px;
+  top:20%;
   position: absolute;
 }
 
@@ -39,7 +39,7 @@ body {
 
 .cart {
   width: 25%;
-  margin-bottom: 5px;
+  margin-bottom: 1%;
 }
 
 button {
@@ -48,12 +48,12 @@ button {
   background-color: yellowgreen;
   font-weight: bold;
   font-family: sans-serif;
-  padding: 5px;
+  padding: 5%;
   }
 
   .checkout-button {
     height: 20%;
-    margin-top: 5px;
+    margin-top: 2%;
   }
 
 .menu {
@@ -64,7 +64,7 @@ button {
   font-family: sans-serif;
   text-indent: 10%;
   position: relative;
-  top: 250px;
+  top: 15em;
   width: 100%;
 }
 
@@ -90,8 +90,8 @@ a {
   flex-direction: column;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 250px;
-  margin-bottom: 10px;
+  margin-top: 25%;
+  margin-bottom: 10%;
 }
 
 .post {
@@ -105,5 +105,5 @@ h1, h2 {
 }
 
 .post-content {
-  margin-left: 50px;
+  margin-left: 5%;
 }
