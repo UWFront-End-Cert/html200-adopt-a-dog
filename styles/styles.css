@@ -2,23 +2,18 @@
   display: grid;
   grid-template-rows: 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67%;
   grid-template-columns: 14.29% 14.29% 14.29% 14.29% 14.29% 14.29% 14.29%;
-  background-color: #006490;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: url('../assets/header-image.jpg') !important;
   background-image: linear-gradient(white, blue);
+
 }
 #grid-container {
   display: grid;
   grid-template-rows: 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67% 6.67%;
   grid-template-columns: 14.29% 14.29% 14.29% 14.29% 14.29% 14.29% 14.29%;
-  background-image: url('../assets/header-image.jpg');
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: auto;
 }
-
 .grid-item-1 {
   width: 100%;
   margin-left: 6vw;
