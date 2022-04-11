@@ -17,6 +17,13 @@ console.log(breed);
 const fee = [123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45];
 console.log(fee);
 
+let dogInfo = [["Murphy", "Poppy", "Jack"], ["Bulldog", "Bichon Frise", "Beagle"]];
+
+for (let i = 0; i < dogInfo.length; i++) {
+  for (let j = 0; j < dogInfo[i].length; j++)
+  console.log(dogInfo[i],[j])
+}
+
 for (let i=0; i < dogName.length; i++) {
   console.log(dogName[i]);
 }
@@ -31,6 +38,11 @@ zoo.forEach(function(animal) {
   }
 })
 
+dogName.forEach(function(dogInfo) {
+  for (let i = 0; i < dogName.length; i++)
+  console.log(dogName[i]);
+})
+
 const dogPark = (dogName, breed, fee)
 
 dogPark.forEach(function(animal)  {
@@ -38,15 +50,24 @@ dogPark.forEach(function(animal)  {
     console.log(animal);
   }
 })
+dogName.forEach(function(dogInfo) {
 
+  for (let i = 0; i < dogName.length; i++)
+  console.log(dogName.indexOf(dogInfo), (dogInfo)[i]);
 
-function dogBark(name = "Murphy") {
-  return `Woof ${name}`;
+})
+
+function dogBark(dogName = "", breed = "", fee = "") {
+  return `Woof ${dogName}, ${breed}, ${fee}`;
 }
-console.log(dogBark("Murphy"));
+console.log(dogBark("", "", ""));
 console.log(dogBark());
 
-
+function dogBark(dogName = "Murphy", breed = "Bulldog", fee = "123.45") {
+  return `Woof ${dogName}, ${breed}, ${fee}`;
+}
+console.log(dogBark("Murphy", "Bulldog", "123.45"));
+console.log(dogBark());
 
 </script>
 </body>

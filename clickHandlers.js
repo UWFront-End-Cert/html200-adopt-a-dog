@@ -1,4 +1,23 @@
 /* Lesson 4 Assignment 2 */
+const dogName = ["Murphy", "Poppy", "Jack", "Duffy", "Lucas", "Jake", "Angus", "Violet", "Piper", "Maximus", "Luna", "Stella"];
+//console.log(dogName);
+
+const breed = ["Bulldog", "Bichon Frise", "Beagle", "Terrier Mix", "Lab Mix", "Labrador Retriever", "Boxer", "Chocolate Lab", "Golden Retriever", "Irish Terrier", "Yellow Lab", "Chihuahua"];
+//console.log(breed);
+
+const fee = [123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45];
+//console.log(fee);
+
+let dogProfile = 0;
+let dogProfileFunction = dogBark();
+
+function dogBark(dogName = "Murphy", breed = "Bulldog", fee = "123.45") {
+  dogProfile = `Dog profile: ${dogName}, Breed: ${breed}, Adoption fee: $${fee}`;
+}
+alert(dogProfile);
+console.log(dogProfile);
+
+/*
 let result = 0;
 
 function murphyInfo() {
@@ -156,30 +175,21 @@ function stellaInfo() {
   alert(result);
   console.log(result);
 }
-
-//This works but not sure if this is right?
-/*
-console.log("Dog name:", dogname());
-console.log( "Dog breed:", breed());
-console.log("Adoption fee:", fee());
-
-function dogname() {
-  return "Murphy";
-}
-function breed() {
-  return "bulldog";
-}
-function fee() {
-  return "$123.45";
-}
 */
 
+
 /* Click Handlers on each dog's button that will add to the total. */
+// Adopt button
+const aFee = 123.45;
+const desc = "Adoption fee is: $"
+let total = desc + aFee;
+let result = 0;
+let myFunction = btnAdder();
+
 
 function btnAdder() {
-  const fee = 123.45;
-  const desc = "Adoption fee is: $"
-  let total = desc + fee;
+  result = total;
 
-  alert(total);
 }
+alert(result);
+  console.log(result);
