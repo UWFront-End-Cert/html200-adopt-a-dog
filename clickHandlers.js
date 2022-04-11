@@ -1,7 +1,4 @@
 /* Lesson 4 Assignment 2 */
-
-/* Click Handlers that alert the dog's info. when clicking on the dog's photo. */
-//addEventListener
 let result = 0;
 
 function murphyInfo() {

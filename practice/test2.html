@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+<script>
+
+const dogName = ["Murphy", "Poppy", "Jack", "Duffy", "Lucas", "Jake", "Angus", "Violet", "Piper", "Maximus", "Luna", "Stella"];
+console.log(dogName);
+
+const breed = ["Bulldog", "Bichon Frise", "Beagle", "Terrier Mix", "Lab Mix", "Labrador Retriever", "Boxer", "Chocolate Lab", "Golden Retriever", "Irish Terrier", "Yellow Lab", "Chihuahua"];
+console.log(breed);
+
+const fee = [123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45, 123.45];
+console.log(fee);
+
+for (let i=0; i < dogName.length; i++) {
+  console.log(dogName[i]);
+}
+console.log(dogName);
+console.log(dogName.length);
+
+let zoo = ['giraffe', 'elephant', 'zebra', 'hippo', 'antelope'];
+
+zoo.forEach(function(animal) {
+  for (let i = 0; i < zoo.length; i++ ) {
+    console.log(zoo[i]);
+  }
+})
+
+const dogPark = (dogName, breed, fee)
+
+dogPark.forEach(function(animal)  {
+  for (let i = 0; i < dogPark.length; i++) {
+    console.log(animal);
+  }
+})
+
+
+function dogBark(name = "Murphy") {
+  return `Woof ${name}`;
+}
+console.log(dogBark("Murphy"));
+console.log(dogBark());
+
+
+
+</script>
+</body>
+</html>
