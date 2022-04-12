@@ -113,17 +113,22 @@ h1.heading {
 }
 
 /* Main */
+div.w3-container {
+  width:66.66%
+}
 main {
   background-color: #ffffff;
 }
 
+
+
 /* About A Dog Intro */
 div.clearfix-intro {
   border: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 110px;
-  margin-right: 100px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-left: 7rem;
+  margin-right: 10rem;
   font-size: 1rem;
   font-family: 'Work Sans', sans-serif;
   color: black;
@@ -131,8 +136,9 @@ div.clearfix-intro {
 }
 .img1 {
   float: left;
-  padding-right: 40px;
+  padding-right: 4rem;
 }
+
 
 .clearfix-intro::after {
   content: "";
@@ -142,7 +148,7 @@ div.clearfix-intro {
 p.main {
   display: block;
   font-size: 1em;
-  margin-top: .5em;
+  margin-top: .1em;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   font-stretch: ultra-expanded;
@@ -151,7 +157,7 @@ p.main {
 h1.main {
   display: block;
   font-size: 2em;
-  margin-top: .5em;
+  margin-top: .1em;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
@@ -290,7 +296,79 @@ button.moreDogs {
   font-family: 'Work Sans', sans-serif;
 }
 
-/* Adoptadog Blog */
+/* From Our Blog - Aside */
+div.w3-third {
+  width:33.33%
+  align: right;
+}
+div.flex-container-asideBlog {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+  z-index: 999;
+}
+div.clearfix-asideBlog {
+  display: inline-block;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+a.asideBlog {
+  display: block;
+  font-size: .5rem;
+  margin-top: .4em;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #1fc1de;
+}
+h2.asideBlog {
+  display: block;
+  font-size: 1.5em;
+  padding: 0;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: 'Alegreya', serif;
+  color: #06426b; /* Blue */
+  font-weight: 600;
+}
+h3.asideBlog {
+  display: block;
+  font-size: 1em;
+  padding: 0;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: 'Alegreya', serif;
+  color: #06426b; /* Blue */
+  font-weight: 600;
+}
+p.asideBlog {
+  display: block;
+  font-size: .5rem;
+  margin-top: .4em;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: black;
+  max-width: 10rem;
+}
+.imgAsideBlog {
+  padding-top: 10px;
+  padding-right: 30px;
+}
+.clearfix-asideBlog::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Adoptadog Blog page */
 div.flex-container-blog {
   display: flex;
   flex-wrap: wrap;
@@ -408,11 +486,37 @@ a.footer-nav {
 }
 */
 
-
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
   .global-nav a {
     float: none;
     display: block;
+  }
+}
+
+/* Adding media queries - Lesson 6
+--dog grid layout change from 3 columns to 1 on mobile devices
+--dog grid layout change from 3 columns to 2 on tablet devices
+--home page - only show blog article previews only on iPad size and above.
+--links can either link to blog page or blog post
+--on mobile blog post should not display
+--Make page printable
+*/
+@media screen and (max-width: 600px) {
+  .img1 {
+    display: block;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .img1 {
+    width: 600px;
+  }
+}
+
+@media print {
+  body img {
+    display: none;
   }
 }
