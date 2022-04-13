@@ -3,8 +3,8 @@
   box-sizing: border-box;
 }
 body {
+  padding: 0;
   margin: 0;
-  background-color: black;
   font-family: sans-serif;
   z-index: -3;
 }
@@ -46,6 +46,7 @@ button.cart {
   font-weight: 400;
   font-family: 'Work Sans', sans-serif;
 }
+
 /* Header Area */
 .flexbox-container {
   overflow: hidden;
@@ -53,7 +54,15 @@ button.cart {
   right: 0px;
   z-index: -1;
 }
+.main-header {
+  width: 100%;
+  background-image: linear-gradient(black, white),
+                    image(url('./images/header-image.jpg'));
+  background-color: transparent;
+  background-size: cover;
+  background-position: top right;
 
+}
 div.header-logo {
   border: 0;
   padding-top: 4rem;
@@ -113,11 +122,24 @@ h1.heading {
 }
 
 /* Main */
-div.w3-container {
-  width:66.66%
-}
 main {
   background-color: #ffffff;
+}
+.w3-container {
+  width: 100%;
+}
+p.w3-large {
+
+}
+.w3-row {}
+.w3-border {}
+
+div.w3-twothird {
+  width:66.66%;
+  max-width: 601px;
+}
+.w3-half {
+  width:50%;
 }
 
 
@@ -134,11 +156,18 @@ div.clearfix-intro {
   color: black;
   font-weight: 300;
 }
-.img1 {
+/* Main body image */
+.responsive-img1 {
+  max-width: 50%;
+  height: auto;
   float: left;
   padding-right: 4rem;
 }
-
+@media (min-width: 600px) {
+  .responsive-img1 {
+    width: 600px;
+  }
+}
 
 .clearfix-intro::after {
   content: "";
@@ -179,7 +208,7 @@ main.flex-container {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 30px;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
   z-index: 999;
 }
 /* Gallery of Dogs */
@@ -315,6 +344,11 @@ div.clearfix-asideBlog {
   margin-left: 5rem;
   margin-right: 5rem;
 }
+.clearfix-asideBlog::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 a.asideBlog {
   display: block;
   font-size: .5rem;
@@ -362,11 +396,7 @@ p.asideBlog {
   padding-top: 10px;
   padding-right: 30px;
 }
-.clearfix-asideBlog::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 
 /* Adoptadog Blog page */
 div.flex-container-blog {
@@ -503,7 +533,7 @@ a.footer-nav {
 --Make page printable
 */
 @media screen and (max-width: 600px) {
-  .img1 {
+  .responsive-img1 {
     display: block;
     float: none;
   }
