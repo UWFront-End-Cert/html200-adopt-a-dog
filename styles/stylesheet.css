@@ -89,18 +89,17 @@ header p {
 }
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-left: 15%;
   padding-right: 15%;
 }
 .dog-card {
+  flex: 1 0 25%;
   border: solid 3px #f2f2f2;
   margin: 2rem;
   padding: .5rem;
   font-family: sans-serif;
-}
-.dog-card:first-child {
-  margin-left: 0;
 }
 .dog-card img {
   align-content: center;
@@ -161,6 +160,9 @@ article h2 {
   font-family: sans-serif;
   font-size: 125%;
   color: #595959;
+}
+.blog-previews {
+  float: right;
 }
 .checkout {
   display: flex;
