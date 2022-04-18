@@ -1,4 +1,4 @@
-
+body
 .blog-container{
   display: inline-block;
   box-sizing: border-box;
@@ -8,7 +8,6 @@
   align: left;
 }
 
-body
 .grid-container div {
 border: 1px solid black;
 }
