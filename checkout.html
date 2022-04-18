@@ -3,11 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>ADOPTADOG</title>
+  <link rel="stylesheet" type="text/css" href="styles.css/styles.css">
+<script src="https://kit.fontawesome.com/015d63ce65.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Courgette%7CPT+Sans:700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <img src="images/adoptadog-logo.svg" alt="Adoptadog logo">
+  <header>
+    <div class="grid-containter">
+      <div class="grid-item-1">
+        <img src="images/adoptadog-logo.svg" alt="Adoptadog logo">
       <img src="images/cart-icon.svg" alt="Checkout cart" width="28" height="26">
-      <nav>
+    </div>
+  </header>
+      <nav class="nav-header">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="dogs.html">Dogs</a></li>
@@ -20,19 +28,23 @@
           <label>Name
             <input type="text" name="name" required>
           </label>
+          <br>
 
           <label>Email Address
             <input type="email" name="email" required>
           </label>
+          <br>
 
           <label>Street Address
             <input type="text" name="streetAddress" required>
           </label>
+          <br>
 
           <div>
             <label>City
               <input type="text" name="city" required>
             </label>
+            <br>
 
             <label>State
               <select name="state" required>
@@ -43,10 +55,12 @@
                 <option value="Montana">Montana</option>
               </select>
             </label>
+            <br>
 
             <label>Zip Code
               <input type="text" name="zipCode" required>
             </label>
+            <br>
           </div>
 
           <fieldset>
@@ -60,6 +74,7 @@
                 <input type="radio" name="firstTimeAdopter" value="no">
                 No
               </label>
+              <br>
             </div>
           </fieldset>
 
@@ -70,6 +85,7 @@
               <option value="Shelter2">Shelter2</option>
               <option value="Shelter3">Shelter3</option>
             </select>
+            <br>
           </label>
 
           <h3>Dogs Adopted</h3>
