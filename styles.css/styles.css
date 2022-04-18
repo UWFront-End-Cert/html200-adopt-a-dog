@@ -1,0 +1,53 @@
+
+.blog-container{
+  display: inline-block;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.blog-image{
+  align: left;
+}
+
+body
+.grid-container div {
+border: 1px solid black;
+}
+.grid-container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+.grid-item-1{
+
+}
+.grid-item-2{
+
+}
+.grid-item-3{
+
+}
+.grid-item-4{
+
+}
+.grid-item-5{
+
+}.grid-item-6{
+
+}
+.grid-item-7{
+
+}
+.grid-item-8{
+
+}.grid-item-9{
+
+}
+.grid-item-10{
+
+}
+.grid-item-11{
+
+}
+.grid-item-12{
+
+}
