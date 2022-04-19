@@ -4,103 +4,108 @@
   <meta charset="utf-8">
   <title>ADOPTADOG</title>
   <link rel="stylesheet" type="text/css" href="styles.css/styles.css">
-<script src="https://kit.fontawesome.com/015d63ce65.js" crossorigin="anonymous"></script>
-<style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap');
-body {font-family: 'Lato', sans-serif;}
-</style>
+  <script src="https://kit.fontawesome.com/015d63ce65.js" crossorigin="anonymous"></script>
+  <style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap');
+  body {font-family: 'Lato', sans-serif;}
+  </style>
 </head>
+<body>
 <header>
-    <img src="images/adoptadog-logo.svg" alt="Adoptadog logo">
-      <img src="images/cart-icon.svg" alt="Checkout cart" width="28" height="26">
-        <nav>
-                <a href="index.html">Home /</a>
-                <a href="dogs.html">Dogs /</a>
-                <a href="blog.html">Blog</a>
-        </nav>
-    </header>
-    <body>
-        <img src="images/home-intro.jpg" alt="Person hugging a golden retriever">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>Checkout</button>
+          <img class="float-cart" src="images/cart-icon.svg" alt="Checkout cart" width="28" height="26">
+          <img src="images/adoptadog-logo.svg" alt="Adoptadog logo">
+          <h1>Seattle's premiere dog adoption agency</h1>
+</header>
+          <nav class="header-nav">
+            <a href="index.html">Home / </a>
+            <a href="dogs.html">Dogs / </a>
+            <a href="blog.html">Blog</a>
+          </nav>
+      <div>
+        <img class="intro-img" src="images/home-intro.jpg" alt="Person hugging a golden retriever">
+        <h3 class="intro-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+        </div>
 
-                <div class="grid-container">
-                  <div class="grid-item-1">
-                    <p><img src="images/murphy-card.jpg" alt="Featured dog: Murphy" width="225" height="135"></p>
-                      <h3>Murphy</h3>
-                      <p>Cost to Adopt: $123.45</p>
-                      <p> Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                      <button>Adopt</button>
-                    </div>
+        <div class="dog-card-display-full">
+   <article class="dog-card"><img class="dog-card-image" src="images/murphy-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Murphy</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+       <a class="button">Adopt</a>
+   </article>
 
-                    <div class="grid-item-2">
-                    <img src="images/poppy-card.jpg" alt="Featured dog: Poppy" width="225" height="135">
-                    <h3>Poppy</h3>
-                      <p>Cost to Adopt: $123.45</p>
-                      <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                      <button>Adopt</button>
-                    </div>
+   <article class="dog-card"><img class="dog-card-image" src="images/poppy-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Poppy</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+       <a class="button">Adopt</a>
+   </article>
 
-                    <div class="grid-item-3">
-                    <img src="images/jack-card.jpg" alt="Featured dog: Jack" width="225" height="135">
-                      <h3>Jack</h3>
-                      <p>Cost to Adopt: $123.45</p>
-                      <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                      <button>Adopt</button>
-                    </div>
+   <article class="dog-card"><img class="dog-card-image" src="images/jack-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Jack</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+       <a class="button">Adopt</a>
+   </article>
 
-                    <div class="grid-item-4">
-                    <img src="images/duffy-card.jpg" alt="Featured dog: Duffy" width="225" height="135">
-                      <h3>Duffy</h3>
-                      <p>Cost to Adopt: $123.45</p>
-                      <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                      <button>Adopt</button>
-                    </div>
+   <article class="dog-card"><img class="dog-card-image" src="images/duffy-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Duffy</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+       <a class="button">Adopt</a>
+   </article>
 
-                    <div class="grid-item-5">
-                    <img src="images/lucas-card.jpg" alt="Featured dog: Lucas" width="225" height="135">
-                      <h3>Lucas</h3>
-                      <p>Cost to Adopt: $123.45</p>
-                      <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                      <button>Adopt</button>
-                    </div>
+   <article class="dog-card"><img class="dog-card-image" src="images/lucas-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Lucas</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+       <a class="button">Adopt</a>
+   </article>
 
-                  <div class="grid-item-6">
-                    <img src="images/jake-card.jpg" alt="Featured dog: Jake" width="225" height="135">
-                      <h3>Jake</h3>
-                      <p>Cost to Adopt: $123.45</p>
-                      <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                      <button>Adopt</button>
-                    </div>
+   <article class="dog-card"><img class="dog-card-image" src="images/jake-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Jake</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+       <a class="button">Adopt</a>
+   </article>
 
-                    <div class="grid-item-7">
-                    <img src="images/angus-card.jpg" alt="Featured dog: Angus" width="225" height="135">
-                      <h3>Angus</h3>
-                      <p>Cost to Adopt: $123.45</p>
-                      <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                      <button>Adopt</button>
-                    </div>
+   <article class="dog-card"><img class="dog-card-image" src="images/angus-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Angus</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+       <a class="button">Adopt</a>
+   </article>
 
-                    <div class="grid-item-8">
-                    <img src="images/violet-card.jpg" alt="Featured dog: Violet" width="225" height="135">
-                    <h3>Violet</h3>
-                      <p>Cost to Adopt: $123.45</p>
-                      <p>Donec imperdiet diam dolor, sit amet venenatis eros suscipit quis. Cras non ipsum vitae neque congue elementum in in libero.</p>
-                      <button>Adopt</button>
-                    </div>
-
-                  <div>
-                  <button>See More Dogs</button>
-                  </div>
-
-<footer>
-    <img src="images/adoptadog-logo.svg" alt="Logo">
-<p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-<nav>
-  <a href="index.html">Home /</a>
-  <a href="blog.html">Blog /</a>
-  <a href="#">Contact</a>
-</nav>
-<p><small>© 2022 Adoptadog LLC | Seattle, WA</small></p>
-</footer>
-</body>
-</html>
-
+   <article class="dog-card"><img class="dog-card-image" src="images/violet-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Violet</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+       <a class="button">Adopt</a>
+   </article>
+ </div>
+ <div>
+   <br>
+ <a class="see-more-button" href="dogs.html">See More Dogs</a>
+</div>
+                  <footer>
+                      <img class="footer img" src="images/adoptadog-logo.svg" alt="Logo">
+                  <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+                  <nav>
+                   <span>
+                    <a  class="bottom-nav" href="index.html">Home / </a>
+                    <a  class="bottom-nav" href="blog.html">Blog / </a>
+                    <a  class="bottom-nav" href="#">Contact</a>
+                  </span>
+                  </nav>
+                  <p><small>© 2022 Adoptadog LLC | Seattle, WA</small></p>
+                  </footer>
+                  </body>
+                  </html>
