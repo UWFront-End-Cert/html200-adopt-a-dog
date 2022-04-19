@@ -111,7 +111,7 @@ fieldset {
 .dog-card-display-full {
       display: grid;
       grid-template-columns: 200px 200px 200px 200px;
-      margin-top: 200px;
+      margin-top: 250px;
       margin-left: 300px;
       }
 
