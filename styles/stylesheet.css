@@ -308,7 +308,7 @@ footer img {
   padding: .5rem;
 }
 /*tablet size*/
-@media screen and (min-width: 768px), (max-width: 992px;) {
+@media screen and (min-width: 768px;), (max-width: 992px;) {
   .navbar, .intro, .container {
     padding-left: 10%;
   }
@@ -335,7 +335,7 @@ footer img {
   }
 }
 /*phone size*/
-@media screen and (min-width: 100px; ), (max-width: 768px;) {
+@media screen and (min-width: 100px;), (max-width: 768px;) {
   .navbar, .intro, .container {
     padding-left: 5%;
   }
