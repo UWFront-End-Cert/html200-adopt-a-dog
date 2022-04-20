@@ -333,19 +333,32 @@ footer img {
   .dog-card:nth-child(5), .dog-card:nth-child(6) {
     display: none;
   }
+  footer img {
+    width: 50%;
+  }
 }
 /*phone size*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .navbar, .intro, .container {
     padding-left: 5%;
   }
   .intro, .container {
     padding-right: 5%;
   }
+  .dog-card {
+    flex: 1 0 100%;
+    margin: 1rem 0;
+  }
+  .dog-card:nth-child(3), .dog-card:nth-child(4) {
+    margin: 1rem 0;
+  }
   .blog-previews {
     display: none;
   }
   .more {
     margin: 0;
+  }
+  footer img {
+    width: 50%;
   }
 }
