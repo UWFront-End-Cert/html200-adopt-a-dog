@@ -109,7 +109,7 @@ header p {
   padding-right: 0;
 }
 .dog-card {
-  flex: 1 0 25%;
+  flex: 1 0 21%;
   border: solid 3px #f2f2f2;
   margin: 1rem;
   padding: .5rem;
@@ -308,7 +308,7 @@ footer img {
   padding: .5rem;
 }
 /*tablet size*/
-@media screen and (min-width: 768px;), (max-width: 992px;) {
+@media screen and (max-width: 992px) {
   .navbar, .intro, .container {
     padding-left: 10%;
   }
@@ -335,11 +335,17 @@ footer img {
   }
 }
 /*phone size*/
-@media screen and (min-width: 100px;), (max-width: 768px;) {
+@media screen and (max-width: 767px) {
   .navbar, .intro, .container {
     padding-left: 5%;
   }
+  .intro, .container {
+    padding-right: 5%;
+  }
   .blog-previews {
     display: none;
+  }
+  .more {
+    margin: 0;
   }
 }
