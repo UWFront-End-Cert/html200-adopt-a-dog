@@ -309,11 +309,34 @@ footer img {
 }
 /*tablet size*/
 @media screen and (min-width: 768px), (max-width: 992px;) {
-
+  .navbar, .intro, .container {
+    padding-left: 10%;
+  }
+  .blog-previews {
+    padding-right: 10%;
+    padding-left: 5%;
+  }
+  .dog-card {
+    flex: 1 0 40%;
+  }
+  .dog-card:nth-child(2) {
+    margin-right: 0;
+  }
+  .dog-card:nth-child(3) {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+  .dog-card:nth-child(4) {
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+  .dog-card:nth-child(5), .dog-card:nth-child(6) {
+    display: none;
+  }
 }
 /*phone size*/
-@media screen and (max-width: 768px;) {
-  .navbar {
+@media screen and (min-width: 100px; ), (max-width: 768px;) {
+  .navbar, .intro, .container {
     padding-left: 5%;
   }
   .blog-previews {
