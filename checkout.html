@@ -34,52 +34,48 @@
 
   <h1>Checkout</h1>
 
-  <form method="GET">
+  <form id="myForm" onsubmit="return validateForm()" method="GET">
 
-    <label>Name
-      <input type="text" name="applicantName">
+    <label for="applicantName">Name
+      <input type="text" id="applicantName" name="applicantName" value="allison">
     </label>
 
-    <label>Email Address
-      <input type="email" name="email">
+    <label for="email">Email Address
+      <input type="email" id="email" name="email" value="bondy.allison@gmail.com">
     </label>
 
-    <label>Street Address
-     <input type="text" name="applicantAddress">
+    <label for="address">Street Address
+     <input type="text" id="address" name="applicantAddress" value="8828 Pershing">
     </label>
 
-
-
-    <label>City
-      <textarea name="city"></textarea>
+    <label for="city">City
+      <input type="text" name="city" id="city" value="Playa del Rey">
     </label>
 
-    <label class="state">State
-      <select name="state">
-       <option value="WA">WA</option>
-       <option value="CA">CA</option>
+    <label for="state" class="state">State
+      <select id="state" name="state">
+       <option value="WA" id="WA" >WA</option>
+       <option value="CA" id="CA" >CA</option>
       </select>
     </label>
 
-    <label class="zip">Zip Code
-     <input type="text" name="zip">
+    <label class="zip" for="zip">Zip Code
+     <input type="number" name="zip">
     </label>
-
 
     <fieldset>
     <legend>First Time Adopter?</legend>
     <label>
-    <input type="radio" name="special" value="yes">Yes
+    <input type="radio" name="special" id="yes" value="yes">Yes
     </label>
 
     <label>
-    <input type="radio" name="special" value="no">No
+    <input type="radio" name="special" id="no" value="no">No
     </label>
     </fieldset>
 
-
-    <label>Pickup Location
-    <select name="location">
+    <label for="location">Pickup Location
+    <select id="location" name="location">
       <option value="onsite">On-Site</option>
       <option value="satellite location">Satellite Location</option>
       <option value="other">Other</option>
@@ -112,10 +108,8 @@
     <h3>Total Adoption Cost</h3>
     <p>$1234.56</p>
     </div>
-
     </div>
-
-    <input class="submit" type="submit" value="Submit">
+    <input id="submit" class="submit" type="submit" value="Submit">
   </form>
 
     <footer class="footer-background">
@@ -132,6 +126,6 @@
       </div>
 
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/form.js"></script>
     </body>
     </html>

@@ -1,4 +1,4 @@
-.grid-container{
+.gridContainer{
   display: grid;
   grid-template-rows: 20% 20% 20% 20% 20%;
   grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
