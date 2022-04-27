@@ -10,9 +10,8 @@ a {text-decoration: none;}
   padding-left: 60px;
 }
 
-.align-right{
-  ;
-}
+
+img{max-width: 100% !important;}
 
 header {
   background: linear-gradient(to right, #636FA4, #E8CBC0);
@@ -21,7 +20,7 @@ header {
   background-size: auto;
   max-width: 100%;
   height: auto;
-  padding: 7em;
+  padding: 112px;
   color: #55C632;
 }
 
@@ -47,6 +46,10 @@ header {
     height: 60px;
     padding-left: 35px;
     padding-top: 20px;
+    margin: 8px;
+  }
+  nav a {
+    padding: 8px;
   }
 
 body
@@ -78,7 +81,7 @@ body
   padding-top: 40px;
   padding-right: 300px;
   position: relative;
-  line-height: 2rem;
+  line-height: 32px;
 }
 
 .grid-container div {
@@ -99,19 +102,19 @@ fieldset {
 }
 
 .adopted-box {
-  width: 20rem;
-  margin: 0rem 2rem 0rem 0rem;
+  width: 320px;
+  margin: 0px 32px 0px 0px;
 }
 .adopted-box img {
-  width: 5rem;
-  height: 5rem;
-  margin: 0rem 1rem 0rem 0rem;
+  width: 80px;
+  height: 80px;
+  margin: 0px 16px 0px 0px;
   align-content: center;
 }
 .dog-card-display-full {
       display: grid;
       grid-template-columns: 200px 200px 200px 200px;
-      margin-top: 250px;
+      margin-top: 200px;
       margin-left: 300px;
       }
 
@@ -122,7 +125,7 @@ fieldset {
             }
 .dog-card {
     max-width: 100%;
-    margin: 1em;
+    margin: 16px;
     border-style: solid;
     border-color: #dad8d2;
     border-width: 1px;
@@ -132,18 +135,18 @@ fieldset {
 
 
 .dog-card > h2{
-    margin: 0rem 1.5rem;
+    margin: 0px 24px;
 }
 
 .dog-card > p {
-    margin: 0.2rem 0.5rem;
+    margin: 3.2px 8px;
 }
 
 .dog-card a {
     display: block;
     text-align: center;
-    margin: 1rem;
-    padding: .5em;
+    margin: 16px;
+    padding: 8px;
     border-radius: 3px;
     text-decoration: none;
     font-weight: bold;
@@ -162,7 +165,7 @@ fieldset {
     color: #113c60;
     font-weight: bold;
     font-size: large;
-    padding: 1rem 4rem;
+    padding: 16px 64px;
     border-radius: 3px;
     margin-left: 600px;
 }
@@ -171,21 +174,21 @@ footer {
   color: white;
   text-align: center;
   margin: 0 auto;
-  line-height: 1rem;
-  padding: 2.5em;
-  margin-top: 2.5em;
+  line-height: 8px;
+  padding: 40px;
+  margin-top: 40px;
   clear: both;
 }
 
 footer p {
-  width: 25rem;
-  margin: 1em auto;
-  line-height: 1.5em;
+  width: 400px;
+  margin: 8px auto;
+  line-height: 24px;
 }
 
 .bottom-nav {
   color: white;
   text-decoration: none;
   background-color: #154360;
-  margin-bottom: 0.5em;
+  margin-bottom: 8px;
 }
