@@ -3,10 +3,13 @@
   box-sizing: border-box;
 }
 body {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   min-height: 100vh;
+=======
+>>>>>>> c1f3f87ae7960660c64af107a9fb82388c433d3f
   padding: 0;
   margin: 0;
   font-family: sans-serif;
@@ -50,7 +53,26 @@ button.cart {
   font-weight: 400;
   font-family: 'Work Sans', sans-serif;
 }
+
 /* Header Area */
+<<<<<<< HEAD
+=======
+.flexbox-container {
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  z-index: -1;
+}
+.main-header {
+  width: 100%;
+  background-image: linear-gradient(black, white),
+                    image(url('./images/header-image.jpg'));
+  background-color: transparent;
+  background-size: cover;
+  background-position: top right;
+
+}
+>>>>>>> c1f3f87ae7960660c64af107a9fb82388c433d3f
 div.header-logo {
   border: 0;
   padding-top: 4rem;
@@ -143,6 +165,28 @@ aside {
   vertical-align: top;
   width: 40%;
 }
+<<<<<<< HEAD
+=======
+.w3-container {
+  width: 100%;
+}
+p.w3-large {
+
+}
+.w3-row {}
+.w3-border {}
+
+div.w3-twothird {
+  width:66.66%;
+  max-width: 601px;
+}
+.w3-half {
+  width:50%;
+}
+
+
+
+>>>>>>> c1f3f87ae7960660c64af107a9fb82388c433d3f
 /* About A Dog Intro */
 div.clearfix-intro {
   float: left;
@@ -153,8 +197,30 @@ div.clearfix-intro {
   padding-left: 0;
   padding-right: 1rem;
   margin-left: 7rem;
+<<<<<<< HEAD
   margin-right: 0;
 }
+=======
+  margin-right: 10rem;
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+  font-weight: 300;
+}
+/* Main body image */
+.responsive-img1 {
+  max-width: 50%;
+  height: auto;
+  float: left;
+  padding-right: 4rem;
+}
+@media (min-width: 600px) {
+  .responsive-img1 {
+    width: 600px;
+  }
+}
+
+>>>>>>> c1f3f87ae7960660c64af107a9fb82388c433d3f
 .clearfix-intro::after {
   content: "";
   clear:both;
@@ -204,7 +270,7 @@ main.flex-container {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 30px;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
   z-index: 999;
 }
 
@@ -382,17 +448,25 @@ div.clearfix-side {
   width: 100%;
   margin: 0;
 }
+<<<<<<< HEAD
 div.clearfix-side::before {
+=======
+.clearfix-asideBlog::after {
+>>>>>>> c1f3f87ae7960660c64af107a9fb82388c433d3f
   content: "";
   clear: both;
   display: table;
 }
+<<<<<<< HEAD
 div.clearfix-side::after {
   content: "";
   clear: both;
   display: table;
 }
 a.sideBlog {
+=======
+a.asideBlog {
+>>>>>>> c1f3f87ae7960660c64af107a9fb82388c433d3f
   display: block;
   font-size: .7em;
   margin: 0;
@@ -432,10 +506,17 @@ p.sideBlog {
   color: black;
 }
 .imgAsideBlog {
+<<<<<<< HEAD
   padding-top: 0;
   padding-right: 0;
   float: right;
 }
+=======
+  padding-top: 10px;
+  padding-right: 30px;
+}
+
+>>>>>>> c1f3f87ae7960660c64af107a9fb82388c433d3f
 
 /* Adoptadog Blog page */
 div.flex-container-blog {
@@ -568,9 +649,14 @@ a.footer-nav {
 --Make page printable
 */
 @media screen and (max-width: 600px) {
+<<<<<<< HEAD
   .responsive-img1, article {
     width: 50%;
     height: auto;
+=======
+  .responsive-img1 {
+    display: block;
+>>>>>>> c1f3f87ae7960660c64af107a9fb82388c433d3f
     float: none;
   }
 }
