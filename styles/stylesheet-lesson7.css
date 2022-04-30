@@ -3,24 +3,18 @@
   box-sizing: border-box;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 100vh;
   padding: 0;
   margin: 0;
+  background-color: black;
   font-family: sans-serif;
-  /* z-index: -3; */
+  z-index: -3;
 }
 
 /* Header Cart */
 div.cart {
-  display: inline-block;
   float: right;
   position: sticky; /* changed from fixed to sticky */
   padding-top: 2rem;
-  margin: 0;
-  width: 20%;
   /* right: 1rem; */
   color: #ffffff;
   font-weight: bold;
@@ -35,8 +29,7 @@ span.b-cart {
 }
 span.c-cart {
   display:flex;
-  margin: 0;
-  width: 30%;
+  width: 100%;
 }
 button.cart {
   background-color: #70a329; /* Green */
@@ -51,6 +44,20 @@ button.cart {
   font-family: 'Work Sans', sans-serif;
 }
 /* Header Area */
+.flexbox-container {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  z-index: -1;
+}
+.main-header {
+  width: 100%;
+  background-image: linear-gradient(black, white);
+  background-image: image(url('./images/header-image.jpg'));
+  background-position: top right;
+}
+
 div.header-logo {
   border: 0;
   padding-top: 4rem;
@@ -60,53 +67,22 @@ div.header-logo {
   z-index: 999;
 }
 h1.heading {
-  display: flex;
+  display: block;
   font-size: 1.5em;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.67em;
   font-stretch: ultra-expanded;
   font-family: 'Gabriola', sans-serif;
   color: #70a329; /* Green */
 }
-.heading::after {
-  content: "";
-  clear:both;
-  display:table;
-}
-.flexbox-container {
-  display: inline-block;
-  position: absolute;
-  padding: 0;
-  border: 0;
-  margin: 0;
-  right: 0px;
-  z-index: -1;
-}
-/* Gradient for header when image is not available */
-.mainHeader {
-  width: 100%;
-  background-image: linear-gradient(black, white);
-  background-image: image(url('./images/header-image.jpg'));
-  background-position: top right;
-}
-
 
 /* Navigation Bar */
 .global-nav {
-  display: inline-block;
   width: 100%;
   background-color: #E5E7E9; /* light gray */
-  position:relative;
-  margin: 0;
-  padding-left: 6.5rem;
-
-}
-
-/* Global-nav font */
-.global-nav {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1rem;
+  position: sticky;
+  margin-top: 150px;
+  padding-left: 100px;
+  overflow: auto;
 }
 /* Global-nav links */
 .global-nav a {
@@ -125,70 +101,72 @@ h1.heading {
   background-color: #a9a9a9;
   /*For now color same as bar */
 }
+
+/* Global-nav font */
+.global-nav {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+}
 /* Current/active Global-nav link */
 .active {
   font-weight: 800;
 }
+
 /* Main */
 main {
   background-color: #ffffff;
-  background-position: top;
 }
-article {
-  display: inline-block;
-  width: 60%;
+
+/* Containers */
+.w3-container {
+  width: 100%;
 }
-aside {
-  display: inline-block;
-  vertical-align: top;
-  width: 40%;
-}
+
+
 /* About A Dog Intro */
 div.clearfix-intro {
-  float: left;
-  width: 83%;
   border: 0;
   padding-top: 2rem;
   padding-bottom: 1rem;
   padding-left: 0;
-  padding-right: 1rem;
+  padding-right: 0;
   margin-left: 7rem;
   margin-right: 0;
 }
+/*
 .clearfix-intro::after {
   content: "";
   clear:both;
   display:table;
 }
-
+*/
 /* Main body image */
 .responsive-img1 {
   max-width: 100%;
   height: auto;
   float: left;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
 }
 
-p.clearfix-intro {
-  display: inline-block;
-  margin: 0;
-  font-size: .8em;
+p.main {
+  display: flex;
+  font-size: 1em;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   line-height: 150%;
-  font-stretch:normal;
+  font-stretch: expanded;
   color: black;
 }
 h1.main {
   display: inline-flex;
-  font-size: 1.5em;
+  font-size: 2.2em;
   margin: 0;
   padding-bottom: .2em;
   font-stretch: extra-expanded;
   font-family: 'Alegreya', serif;
   color: #06426b; /* Blue */
-}
+/* align-items: flex-start; *//* align-content: flex-start; *//* flex-direction: column; */}
 h2.main {
   display: flex;
   font-size: 1.5em;
@@ -200,26 +178,22 @@ h2.main {
   color: #06426b; /* Blue */
   font-weight: bold;
 }
-main.flex-container {
+.flex-container > main {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 30px;
   background-color: #ffffff;
   z-index: 999;
 }
-
 /* Gallery of Dogs */
 div.adoptGallery {
-  display: flex;
-  float: left;
-  width: 80%;
-  margin-left: 6rem;
+  margin-left: 95px;
   margin-right: 0;
-  padding-right: 1rem;
+  padding: 0;
 }
 div.gallery {
   border: 1.5px solid #ebebeb;
-  margin: .2em;
+  margin: .5em;
   float: left;
   width: 30%; /* changed from 180px to 100% */
   background-color: #ffffff;
@@ -230,53 +204,29 @@ div.gallery:hover {
 }
 */
 div.gallery img {
-  max-width: 100%;
+  width:100%;
   height: auto;
-  z-index: 980;
 }
-
-div.clearfix-Gallery {
-  float: left;
-  width: 83%;
-  border: 0;
-  padding-top: 0;
-  padding-bottom: 1rem;
-  padding-left: 0;
-  padding-right: 0rem;
-  margin-left: 6.5rem;
-  margin-right: 0;
-}
-.clearfix-Gallery::after {
-  content: "";
-  clear:both;
-  display:table;
-}
-
 div.desc {
   padding: 0;
-  margin: 0;
   text-align: left;
 }
 h2.dogsName {
   display: block;
   font-size: 1.2em;
-  margin-top: .3em;
+  margin-top: .5em;
+  margin-bottom: 0;
   margin-left: .5em;
-  margin-bottom: .3em;
   font-weight: bold;
-  font-stretch: expanded;
 }
 .dogsName {
   color: #003a66;
   font-family: 'Vollkorn', serif;
 }
 p.costAmt {
-  font-size: .8em;
+  font-size: .7em;
   word-wrap: break-word;
   padding-left: .7em;
-  padding-right: .7em;
-  margin-top: .5em;
-  margin-bottom: .5em;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
 }
@@ -287,35 +237,28 @@ span.dogPc {
   min-width: 50%;
   padding-left: .7em;
   padding-right: .7em;
-  margin-top: .3em;
-  margin-bottom: .7em;
   border: 0;
-  font-size: .75em;
-  line-height: 140%;
+  font-size: .7em;
   font-stretch:ultra-expanded;
   font-weight: 400;
   font-family: 'Work Sans', sans-serif;
   color: #464849;
 }
-/*
 span.dogPcBtn {
   display:inline-block;
-  align: center;
-  max-width: 100%;
+  width: 100%;
   padding: .6em;
   border: 0;
 }
-*/
 button.adopt {
-  align-self: center;
   background-color: #70a329; /* Green */
   border: none;
   border-radius: 2px;
   color: #ffffff;
-  padding: 5% 28%; /* changed to % */
-  margin: 6%;
+  padding: 5% 34%; /* changed to % */
   text-align: center;
   text-decoration: none;
+  display: inline-block;
   font-family: 'Work Sans', sans-serif;
   font-stretch:ultra-expanded;
   font-size: 1em;
@@ -325,13 +268,9 @@ button.adopt {
 /* See More Dogs Button */
 .center {
   display: inline-block;
-  float:inherit;
   width: 100%;
-  padding-left: 7rem;
   border: 0;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
   text-align: center;
 }
 button.moreDogs {
@@ -340,7 +279,7 @@ button.moreDogs {
   border-radius: 2px;
   color: #003a66;
   padding: 7px 35px;
-  /* text-align: center; */
+  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
@@ -350,91 +289,110 @@ button.moreDogs {
   font-family: 'Work Sans', sans-serif;
 }
 
-/* From Our Blog - Main - Side */
-div.side {
+/* From Our Blog - Main - Aside */
+aside.side {
   border: 0;
-  width: 15rem;
-  padding-top: 2rem;
+  width: 150px;
+  padding-left: 50px 50px;
   background-color: #ffffff;
+  float: right;
   z-index: 999;
-}
 
-section.flex-container {
-  float: left;
+}
+/* -side in css and -aside in html works the way intended */
+/* Not sure why? */
+section.flex-container-side {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   background-color: #ffffff;
-  padding-top: 1.5rem;
-  padding-left: 1em;
-  padding-right: 7rem;
-  padding-bottom: 1em;
+  padding-bottom: 1rem;
   z-index: 990;
 }
-section.clearfix {
-  content: "";
-  clear: both;
-  display: table;
-}
-div.clearfix-side {
+section.clearfix-side {
   display: inline-block;
-  padding: 0rem;
-  width: 100%;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  width: 50%;
   margin: 0;
+
 }
-div.clearfix-side::before {
-  content: "";
-  clear: both;
-  display: table;
-}
-div.clearfix-side::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-a.sideBlog {
+a.asideBlog {
   display: block;
-  font-size: .7em;
-  margin: 0;
-  padding-bottom: 3rem;
+  font-size: .5rem;
+  margin-top: .4em;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   line-height: 1.4em;
   color: #1fc1de;
-  text-decoration: none;
 }
-h2.sideBlog {
+h2.asideBlog {
   display: block;
-  font-size: 1.8em;
-  padding-top: 0;
-  padding-bottom: 1rem;
-  margin: 0;
+  font-size: 1.5em;
+  padding: 0;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 0;
+  margin-right: 0;
   font-family: 'Alegreya', serif;
   color: #06426b; /* Blue */
   font-weight: 600;
 }
-h3.sideBlog {
-  display: inline-block;
-  font-size: 1.3em;
-  padding-top: .5em;
-  margin: 0;
+h3.asideBlog {
+  display: block;
+  font-size: 1em;
+  padding: 0;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
   font-family: 'Alegreya', serif;
   color: #06426b; /* Blue */
   font-weight: 600;
 }
-p.sideBlog {
+p.asideBlog {
   display: block;
-  font-size: .8rem;
+  font-size: .5rem;
   margin-top: .4em;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4em;
   color: black;
+}
+figure {
+  border: 0;
+  padding: 0;
+  margin: inherit;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 .imgAsideBlog {
   padding-top: 0;
   padding-right: 0;
   float: right;
+}
+.clearfix-side::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clearfix-side::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.sidenav {
+  background-color: #ffffff;
+  overflow: hidden;
+  color: #25b4d2;
+}
+.sidenav a {
+  color: #25b4d2;
+  text-align: left;
+  text-decoration: none;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
 }
 
 /* Adoptadog Blog page */
@@ -555,7 +513,7 @@ a.footer-nav {
 @media screen and (max-width: 500px) {
   .global-nav a {
     float: none;
-    display: flex;
+    display: block;
   }
 }
 
@@ -568,17 +526,21 @@ a.footer-nav {
 --Make page printable
 */
 @media screen and (max-width: 600px) {
-  .responsive-img1, article, aside {
-    width: 50%;
-    height: auto;
+  .img1 {
+    display: block;
     float: none;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .responsive-img1, article, aside {
+  .responsive-img1 {
     width: 600px;
-    flex: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .w3-third, .w3-twothird
+  {
+    flex: 50%
   }
 }
 
