@@ -568,7 +568,7 @@ a.footer-nav {
 --Make page printable
 */
 @media screen and (max-width: 600px) {
-  .responsive-img1, article, aside {
+  .responsive-img1, article {
     width: 50%;
     height: auto;
     float: none;
