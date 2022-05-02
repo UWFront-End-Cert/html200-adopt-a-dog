@@ -1,0 +1,77 @@
+
+.page-header {
+  margin-left: 0rem;
+  font-family: arial;
+  color: rgb(9, 60, 96);
+  width: 100%;
+}
+
+.post {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 80%;
+  margin: 2rem 10% 0% 10%;
+}
+
+.post img {
+  margin-right: 2rem;
+  max-width: 30%;
+  min-width: 15rem;
+  height: auto;
+}
+
+
+.post div {
+  min-width: 500px;
+  flex: 5;
+}
+
+.dogs-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  max-width: 80%;
+  margin: 2rem 10% 2rem 10%;
+  font-family: arial;
+}
+
+.adopt-card {
+  border-style: solid;
+  border-color: rgb(236, 236, 236);
+  max-width: 15rem;
+  margin: 1rem;
+}
+
+.adopt-card img {
+  max-width: 100%;
+}
+
+.adopt-card div {
+  padding: 2rem;
+}
+
+button {
+  background-color: rgb(129, 183, 65);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 2px;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: rgb(236, 183, 34);
+  color: black;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.see-more {
+  background-color: rgb(236, 236, 236);
+  color: rgb(9, 60, 96);
+}

@@ -1,0 +1,45 @@
+form {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  max-width: 80%;
+  margin: 2rem 10% 2rem 10%;
+  font-family: arial;
+}
+
+.full-input {
+  border-style: solid;
+  border-color: rgb(236, 236, 236);
+  margin: 1rem;
+}
+
+button {
+  background-color: rgb(129, 183, 65);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 2px;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: rgb(236, 183, 34);
+  color: black;
+}
+
+.adopted-dogs {
+  display: flex;
+
+}
+
+.adopt-dogs-card {
+  display: flex;
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row;
+  /* max-width: 80%;
+  margin: 2rem 10% 0% 10%; */
+}
+
+/* .adopt-dogs-card img{
+  max-width: 10%;
+} */
