@@ -27,7 +27,7 @@ div.cart {
 }
 span.b-cart {
   display: inline-block;
-  width: 10%; /* changed to % from 20px */
+  width: 25%; /* changed to % from 20px */
   height: 10px;
   padding: 1px;
   border: 0;
@@ -161,7 +161,7 @@ div.clearfix-intro {
   max-width: 100%;
   height: auto;
   float: left;
-  padding-right: 1.5rem;
+  padding-right: 3rem;
   padding-bottom: 1rem;
 }
 
@@ -564,7 +564,7 @@ a.footer-nav {
 }
 @media screen and (max-width: 600px) {
   .responsive-img1, article {
-    display: inline-flex;
+    display: inline-block;
     height: auto;
     float: none;
   }
