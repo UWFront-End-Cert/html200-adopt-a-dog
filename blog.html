@@ -3,6 +3,7 @@
   <head>
     <title>Adopt-a-dog Blog Page</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,33 +14,35 @@
     <header>
       <div class="cart">
         <span class="b-cart">
-          <img src="images/cart-icon.svg" alt="Image shopping cart." width=50%>
+          <img src="images/cart-icon.svg" alt="Image shopping cart." width=40%>
         </span><span class="b-cart">$1234.56</span>
         <span class="c-cart">
           <button class="cart" type="button" name="checkout">Checkout</button>
         </span>
       </div>
       <div class="flexbox-container">
-        <img src="images/header-image.jpg" alt="AdoptADog header image. Side image of a dark brown Labrador Retriever, just the left eye and ear showing. Set against a dark background, looking toward the logo." width=100%>
-      </div>
+        <img
+        src="./images/header-image.jpg" alt="AdoptADog header image. Side image of a dark brown Labrador Retriever, just the left eye and ear showing. Set against a dark background, looking toward the logo." width=100%>
         <div class="header-logo">
           <img src="images/adoptadog-logo.svg" alt="White logo of a large dog sitting sideways to the right with the words ADOPTADOG to the right of it." width=30%>
           <h1 class="heading">Seattle's premiere dog adoption agency</h1>
         </div>
-
-        <div class="global-nav">
-          <nav>
-            <a href="index.html">Home</a>
-            <a href="#">/</a>
-            <a href="dogs.html">Dogs</a>
-            <a href="#">/</a>
-            <a class="active" href="blog.html">Blog</a>
-          </nav>
-        </div>
-    </header>
+      </div>
+  </header>
+    <nav class="global-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="#">/</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="#">/</a>
+      <a href="blog.html">Blog</a>
+    </nav>
     <main>
       <div class="clearfix-blog">
         <h1 class="main">Adoptadog Blog</h1>
+      </div>
+      <div class="container">
+        <img src="./blog-1.jpg">
+        <h2></h2>
       </div>
       <div class="flex-container-blog">
         <div class="clearfix-blog">
@@ -81,5 +84,6 @@
         </div>
       </div>
     </footer>
+    <script src="./clickHandlers.js"></script>
   </body>
 </html>
