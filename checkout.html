@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" type="text/stylesheet" href="styles/stylesheet.css">
+    <title>Checkout - ADOPTADOG</title>
+  </head>
+  <body>
+    <section>
+      <img src="images/header-image.jpg" alt="the profile of a brown dog with brown eyes, with light
+      washing across its face in diagonal lines">
+      <img src="images/adoptadog-logo.svg" alt="ADOPTADOG logo">
+      <h1>Seattle’s premiere dog adoption agency</h1>
+      <img src="images/cart-icon.svg" alt="shopping cart icon">
+      <p>$1234.56</p>
+      <a href="checkout.html">Checkout</a>
+    </section>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>/</li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li>/</li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section>
+      <h2>Checkout</h2>
+      <form class="" method="GET">
+        <label>
+          Name
+          <input type="text" name=requesterName>
+        </label>
+        <label>
+          Email Address
+          <input type="email" name=requesterEmail>
+        </label>
+        <label>
+          Street Address
+          <input type="text" name=requesterStreet>
+        </label>
+        <label>
+          City
+          <input type="text" name=requesterCity>
+        </label>
+        <label>
+          State
+          <select name=state>
+            <option value="Washington">WA</option>
+            <option value="Oregon">OR</option>
+            <option value="Idaho">ID</option>
+            <option value="California">CA</option>
+          </select>
+        </label>
+        <label>
+          Zip Code
+          <input type="text" name=requesterZip>
+        </label>
+        <fieldset>
+          <legend>First Time Adopter?</legend>
+          <label>
+            <input type="radio" name=firstTime value="yes">
+            Yes
+          </label>
+          <label>
+            <input type="radio" name=firstTime value="no">
+            No
+          </label>
+        </fieldset>
+        <label>
+          Pickup Location
+          <select name=pickupSite>
+            <option value="Seattle">Seattle</option>
+            <option value="Bellevue">Bellevue</option>
+            <option value="Everett">Everett</option>
+            <option value="Tacoma">Tacoma</option>
+          </select>
+        </label>
+        <section>
+          <h2>Dogs Adopted</h2>
+          <div>
+            <img src="images/lucas-checkout.jpg" alt="A black dog with brown eyes looking toward the camera with an excited face">
+            <h3>Lucas</h3>
+            <h4>Cost to Adopt: $123.45</h4>
+            <img src="images/duffy-checkout.jpg" alt="A large dog with blue eyes, a white face, and brown ears, looking toward
+            the camera on a grassy background">
+            <h3>Duffy</h3>
+            <h4>Cost to Adopt: $123.45</h4>
+          </div>
+          <h2>Total Adoption Cost</h2>
+          <p>$1234.56</p>
+        </section>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <footer>
+      <img src="images/adoptadog-logo.svg" alt="ADOPTADOG logo">
+      <p>
+        Aborpos nisto inci tet aut que volupti beruptiberro to ex
+        esseque invenienihil imaximu scideru ptistiusam consequunt
+      </p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>/</li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li>/</li>
+          <li><a href="mailto:adoptadog@adoptadog.dog">Contact</a></li>
+        </ul>
+      </nav>
+      <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
+  </body>
+</html>
