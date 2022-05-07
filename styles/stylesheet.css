@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  /* z-index: -3; */
+  z-index: -5;
 }
 
 /* Header Cart */
@@ -56,45 +56,45 @@ div.header-logo {
   padding-left: 3rem;
   padding-bottom: 0;
   margin: 0;
-  z-index: 999;
+  z-index: 10;
 }
 h1.heading {
   display: flex;
   font-size: 1.5em;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 1em;
+  padding-bottom: 3em;
+  margin: 0;
   font-stretch: ultra-expanded;
   font-family: 'Gabriola', sans-serif;
   color: #70a329; /* Green */
+  z-index: 15;
+}
+div.flexbox-container > img {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  background-image: linear-gradient(black, white); /* Gradient for header when image is not available */
+  background-image: image(url('./images/header-image.jpg'));
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  z-index: -1;
 }
 .heading::after {
   content: "";
   clear:both;
   display:table;
 }
-.flexbox-container > img {
-  width: 100vw;
-  position: absolute;
-  background-image: linear-gradient(black, white); /* Gradient for header when image is not available */
-  background-image: image(url('./images/header-image.jpg'));
-  background-position: center center;
-  padding: 0;
-  border: 0;
-  margin: 0;
-  z-index: -1;
-}
 
 /* Navigation Bar */
 .global-nav {
-  display: flex;
-  justify-content:flex-start;
-  position: sticky;
-  z-index: 10;
   width: 100%;
   background-color: #E5E7E9; /* light gray */
   margin: 0;
   padding-left: 6.5rem;
+  z-index: 10;
 }
 
 /* Global-nav font */
@@ -146,7 +146,7 @@ div.clearfix-intro {
   padding-top: 2rem;
   padding-bottom: 1rem;
   padding-left: 0;
-  padding-right: 1rem;
+  padding-right: 3rem;
   margin-left: 4rem;
   margin-right: 0;
 }
@@ -167,8 +167,9 @@ div.clearfix-intro {
 
 p.clearfix-intro {
   display: inline-block;
+  max-width: 93%;
   margin: 0;
-  font-size: .8em;
+  font-size: .9em;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   line-height: 150%;
@@ -343,7 +344,9 @@ button.moreDogs {
 aside {
   border: 0;
   width: 15rem;
-  padding-top: 2rem;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-top: 1.5rem;
   background-color: #ffffff;
   float: left;
   z-index: 999;
@@ -353,10 +356,10 @@ section.flex-container {
   float: left;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
   background-color: #ffffff;
   padding-top: 1.5rem;
-  padding-left: 1em;
+  padding-left: 2em;
   padding-right: 5rem;
   padding-bottom: 1em;
   z-index: 990;
@@ -535,45 +538,28 @@ a.footer-nav {
   font-size: 150%;
 }
 */
-@media screen and (max-width: 500px) {
-  .global-nav a {
-    float: none;
-    display: inline-block;
-  }
-}
-
 
 /* Adding media queries - Lesson 6
 --dog grid layout change from 3 columns to 1 on mobile devices
 --dog grid layout change from 3 columns to 2 on tablet devices
---home page - only show blog article previews only on iPad size and above.
---links can either link to blog page or blog post
---on mobile blog post should not display
---Make page printable
+--home page - only show blog article previews only on iPad size and above. DONE
+--links can either link to blog page or blog post DONE
+--on mobile blog post should not display DONE
+--Make page printable DONE
 */
+@media screen and (min-width: 700px) {
+  header, .responsive-img1, article,  .global-nav a {
+    display: block;
+  }
+}
 
-
-@media screen and (max-width: 390px) {
-  header, .responsive-img1, article {
+@media screen and (max-width: 400px) {
+  header, .responsive-img1 {
+    display: block;
     float: none;
-    width: 100%;
   }
   aside {
     display: none;
-  }
-}
-@media screen and (max-width: 600px) {
-  .responsive-img1, article {
-    display: inline-block;
-    height: auto;
-    float: none;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .responsive-img1, article, aside {
-    width: 600px;
-    flex: 50%;
   }
 }
 
