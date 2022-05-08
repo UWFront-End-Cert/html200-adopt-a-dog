@@ -62,3 +62,16 @@ input[type=submit] {
   color: white;
   transition-duration: 0.4s;
 }
+
+button {
+  background-color: rgb(129, 183, 65);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 2px;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: rgb(236, 183, 34);
+  color: black;
+}
