@@ -1,3 +1,5 @@
+//document ready function
+
 $(document).ready(function() {
   let total = 0;
   $('.cost').click(function() {
@@ -7,6 +9,6 @@ $(document).ready(function() {
     alert('Added to cart');
     event.preventDefault()
     return
-    
+
   });
 })

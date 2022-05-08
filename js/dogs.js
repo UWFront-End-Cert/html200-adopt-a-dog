@@ -1,3 +1,5 @@
+//document ready function
+
 $(document).ready(function() {
   $('img').mouseenter(function() {
   alert("Mouse has entered")
