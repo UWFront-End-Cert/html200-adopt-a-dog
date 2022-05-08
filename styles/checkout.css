@@ -5,41 +5,45 @@ form {
   max-width: 80%;
   margin: 2rem 10% 2rem 10%;
   font-family: arial;
+  gap: 30px;
 }
 
-.full-input {
+input {
+  margin-top: 10px;
   border-style: solid;
   border-color: rgb(236, 236, 236);
-  margin: 1rem;
 }
 
-button {
-  background-color: rgb(129, 183, 65);
-  padding: 1rem 2rem 1rem 2rem;
-  border-radius: 2px;
-  color: white;
-  transition-duration: 0.4s;
+.full-width {
+  width: 100%;
 }
 
-button:hover {
-  background-color: rgb(236, 183, 34);
-  color: black;
+select {
+  width: fit-content;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
 }
 
 .adopted-dogs {
   display: flex;
-
+  gap: 30px;
 }
 
 .adopt-dogs-card {
   display: flex;
-  margin-top: 2rem;
-  display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   /* max-width: 80%;
   margin: 2rem 10% 0% 10%; */
 }
 
 /* .adopt-dogs-card img{
-  max-width: 10%;
+  width: 10%;
 } */
+
+input[type=submit] {
+  width: 10rem;
+}
