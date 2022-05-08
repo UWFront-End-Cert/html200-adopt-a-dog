@@ -49,6 +49,7 @@ select {
 
 .adopt-dogs-card img{
   width: 5rem;
+  height: auto;
   /* min-width: 15%; */
 }
 
