@@ -21,7 +21,7 @@
 
        <div class="grid-item-3">
         <img src="assets/cart-icon.svg" alt="shopping cart">
-        <p id="total"><strong>$1234.56</strong></p>
+        <p id="total"><strong>$0</strong></p>
         <a id="checkout" href="checkout.html"><strong>Checkout</strong></a>
        </div>
      </div>
@@ -50,13 +50,13 @@
       <div class="grid-item-6">
        <img onclick="showDogInfo('Murphy', 'Boxer', 123.45)" class="murphy" src="assets/murphy-card.jpg" alt="dog with brown and white fur.">
        <h4>Murphy</h4>
-       <p><strong>Cost to Adopt:</strong>$123.45</p>
+       <p><strong>Cost to Adopt:</strong></p><p class="cost">123.45</p>
        <p>Corrum volorit landae</p>
        <p>nimaxim cum restia volor</p>
        <p>ereicid ut et etur sunt arum</p>
        <p> pla endis re ea erum,</p>
        <p>qui doluptae</p>
-       <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+       <a class="cost" href="checkout.html" >Adopt</a>
       </div>
 
       <div class="grid-item-7">
@@ -68,7 +68,7 @@
        <p>ereicid ut et etur sunt arum</p>
        <p> pla endis re ea erum,</p>
        <p>qui doluptae</p>
-       <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+       <a class="cost" href="checkout.html">Adopt</a>
       </div>
 
       <div class="grid-item-8">
@@ -80,7 +80,7 @@
        <p>ereicid ut et etur sunt arum</p>
        <p> pla endis re ea erum,</p>
        <p>qui doluptae</p>
-       <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+       <a class="cost" href="checkout.html">Adopt</a>
       </div>
 
       <div class="grid-item-9">
@@ -92,7 +92,7 @@
        <p>ereicid ut et etur sunt arum</p>
        <p> pla endis re ea erum,</p>
        <p>qui doluptae</p>
-       <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+       <a class="cost" href="checkout.html">Adopt</a>
       </div>
 
       <div class="grid-item-10">
@@ -104,7 +104,7 @@
        <p>ereicid ut et etur sunt arum</p>
        <p> pla endis re ea erum,</p>
        <p>qui doluptae</p>
-       <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+       <a class="cost" href="checkout.html">Adopt</a>
       </div>
 
       <div class="grid-item-11">
@@ -116,7 +116,7 @@
        <p>eicid ut et etur sunt arum</p>
        <p> pla endis re ea erum,</p>
        <p>qui doluptae</p>
-       <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+       <a class="cost" href="checkout.html">Adopt</a>
       </div>
 
       <div class="grid-item-15">
@@ -165,6 +165,7 @@
        <p class="copyright"> © 2018 Adoptadog, LLC <span class="copyright-border">Seattle, WA</span></p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
   <script src="js/index.js" charset="utf-8"></script>
   </body>
   </html>

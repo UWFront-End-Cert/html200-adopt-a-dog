@@ -1,16 +1,12 @@
-function totalCost(x, y) {
-  let numberOne = 123.45;
-  let numberTwo = 1234.56;
-  let result = 0;
-  result = numberOne + numberTwo;
-  alert(result);
-}
+$(document).ready(function() {
+  let total = 0;
+  $('.cost').click(function() {
 
-function showDogInfo(x,y,z) {
-  let dogName = x;
-  let dogBreed = y;
-  let adoptionFee = Number(z);
-  let result = 0;
-  result = dogName + " " + dogBreed + " " + adoptionFee;
-  alert(result);
-}
+    total += 123.45;
+    $('#total').text('$' + total);
+    alert('Added to cart');
+    event.preventDefault()
+    return
+    
+  });
+})
