@@ -3,11 +3,11 @@
 h1 {color: #33cc33;}
 h2 {color: #154360;}
 h3 {color: #154360;}
-p {padding-left: 20px;}
+p {padding-left: 1.25rem;}
 a {text-decoration: none;}
 
 .padding {
-  padding-left: 60px;
+  padding-left: 3.75rem;
 }
 
 
@@ -20,10 +20,9 @@ header {
   background-size: auto;
   max-width: 100%;
   height: auto;
-  padding: 112px;
+  padding: 7rem;
   color: #55C632;
 }
-
 
   header.logo {
     clear: both;
@@ -43,13 +42,13 @@ header {
     color: #154360;
     text-decoration: none;
     background-color: #ebebeb;
-    height: 60px;
-    padding-left: 35px;
-    padding-top: 20px;
-    margin: 8px;
+    height: 3.75rem;
+    padding-left: 2.188rem;
+    padding-top: 1.25rem;
+    margin: 0.5rem;
   }
   nav a {
-    padding: 8px;
+    padding: 0.5rem;
   }
 
 body
@@ -59,38 +58,42 @@ body
   font-weight: bolder;
 }
 .blog-container {
-  float: right;
-  padding-right: 60px;
+display: inline-flex;
+
+
 }
-.blog-image {
-  float: left;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  padding-left: 60px;
-  padding-right: 20px;
+.blog-text {
+position: relative;
 }
 
+
 .intro-img {
-  float: left;
-  margin-left: 200px;
-  position: relative;
+float: left;
+margin-left: 12.5rem;
+position: relative;
 }
 
 .intro-text {
-  padding-left: 60px;
-  padding-top: 40px;
-  padding-right: 300px;
+  padding-left: 3.75rem;
+  padding-top: 2.5rem;
+  padding-right: 18.75rem;
   position: relative;
-  line-height: 32px;
+  line-height: 2rem;
 }
 
 .grid-container div {
 border: 1px solid black;
 }
+
 .grid-container {
   display: grid;
-  grid-column-gap: 20px;
-  grid-row-gap: 30px;
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  padding: 1rem 10%;
 }
 
 fieldset {
@@ -102,30 +105,76 @@ fieldset {
 }
 
 .adopted-box {
-  width: 320px;
-  margin: 0px 32px 0px 0px;
+  width: 20rem;
+  margin: 0rem 2rem 0rem 0rem;
 }
 .adopted-box img {
-  width: 80px;
-  height: 80px;
-  margin: 0px 16px 0px 0px;
-  align-content: center;
-}
-.dog-card-display-full {
-      display: grid;
-      grid-template-columns: 200px 200px 200px 200px;
-      margin-top: 200px;
-      margin-left: 300px;
-      }
+  width: 5rem;
+  height: 5rem;
+  margin: 0rem 1rem 0rem 0rem;
 
-.dog-card-display-full2 {
-              display: grid;
-              grid-template-columns: 200px 200px 200px 200px;
-              margin: 0% 0%;
-            }
+}
+
+@media screen and (min-width: 576px){
+.dog-card-display-full {grid-template-columns: repeat(1, 1fr);}
+}
+
+@media screen and (min-width: 768px){
+.dog-card-display-full {grid-template-columns: repeat(2, 1fr);}
+}
+
+@media screen and (min-width: 900px){
+  .dog-card-display-full {grid-template-columns: repeat(3, 1fr);}
+}
+
+  .dog-card-display-full {
+      display: grid;
+      float: left;
+      height: auto;
+      width: 70%;
+      margin: auto;
+  }
+
+
+
+  @media screen and (min-width: 576px){
+  .dog-card-display-full2 {grid-template-columns: repeat(1, 1fr);}
+  }
+
+  @media screen and (min-width: 768px){
+  .dog-card-display-full2 {grid-template-columns: repeat(2, 1fr);}
+  }
+
+  @media screen and (min-width: 900px){
+    .dog-card-display-full2 {grid-template-columns: repeat(4, 1fr);}
+  }
+
+    .dog-card-display-full2 {
+        display: grid;
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+
+@media screen and (max-width: 767px){
+  .aside-grid {
+    width: 0!important;
+    height: 0!important;
+  display: none!important;
+}
+}
+
+.aside-grid {
+    display: grid;
+    float: right;
+    width: 30%;
+}
+
+
+
 .dog-card {
     max-width: 100%;
-    margin: 16px;
+    margin: 1rem;
     border-style: solid;
     border-color: #dad8d2;
     border-width: 1px;
@@ -145,8 +194,8 @@ fieldset {
 .dog-card a {
     display: block;
     text-align: center;
-    margin: 16px;
-    padding: 8px;
+    margin: 1rem;
+    padding: 0.5rem;
     border-radius: 3px;
     text-decoration: none;
     font-weight: bold;
@@ -165,30 +214,31 @@ fieldset {
     color: #113c60;
     font-weight: bold;
     font-size: large;
-    padding: 16px 64px;
+    padding: 1rem 4rem;
     border-radius: 3px;
-    margin-left: 600px;
+
 }
 footer {
   background-color: #154360;
   color: white;
   text-align: center;
   margin: 0 auto;
-  line-height: 8px;
-  padding: 40px;
-  margin-top: 40px;
+  line-height: 0.5rem;
+  padding: 2.5rem;
+  margin-top: 2.5rem;
   clear: both;
 }
 
 footer p {
-  width: 400px;
+  width: 100%;
   margin: 8px auto;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .bottom-nav {
   color: white;
   text-decoration: none;
   background-color: #154360;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
+
