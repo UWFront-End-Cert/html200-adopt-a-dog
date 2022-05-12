@@ -1,6 +1,6 @@
 h1 {
   font-family: 'Neuton', 'Times New Roman', serif;
-  color: #5cd65c;
+  color: #73b82e;
   font-style: italic;
   font-weight: lighter;
   font-size: 2em;
@@ -20,12 +20,10 @@ h3 {
 h4 {
   font-family: 'Cabin', 'Trebuchet', sans-serif;
   font-weight: 700;
-
 }
 
 h5 {
   font-family: 'Neuton', 'Times New Roman', serif;
-
 }
 
 p {
@@ -43,11 +41,23 @@ ul {
 a {
   font-family: 'Cabin', 'Trebuchet', sans-serif;
   font-weight: 700;
+  text-decoration: none;
+}
+
+h3 a {
+  background-color: #73b82e;
+  padding: .5em 4.75em .5em 4.75em;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: .75em;
+  font-weight: 700;
+  border-radius: 2px;
 }
 
 article {
-  box-shadow:0px 0px 4px 0px #999999;
+  box-shadow:0px 0px 4px 0px #a6a6a6;
   width: 238px;
+  height: 425px;
 }
 
 article img {
@@ -82,18 +92,17 @@ footer img {
   height: 15%
 }
 
-flexbox-rows {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-around;
-}
+.container-dogs {
+  display: grid;
+  max-width: 75vw;
+  grid-template-columns:  25% 25% 25% 25%;
+  grid-column-gap: auto;
+  padding: 1em 1em 1em 1em;}
 
 .container {
   display: grid;
   max-width: 100vw;
-  grid-template-rows: 1fr, 9fr, 2fr 33fr, 10fr;
+  grid-template-rows: 8fr, 2fr 33fr, 6fr;
   grid-template-columns:  3fr, 2fr, 24fr, 2fr, 3fr;
   align-content: space-around;}
 
