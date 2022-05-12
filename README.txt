@@ -4,6 +4,6 @@ Adopt-a-dog is a website for a Seattle-based dog adoption company.  Customers ma
 
 Adopt-a-dog is licensed under the GNU Public License v3. (Example text.)
 
-Documentation:
+Documentation/Links:
 
 GitHug Pages site:  https://allisonann007.github.io/html200-adopt-a-dog/
