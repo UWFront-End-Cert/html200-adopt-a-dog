@@ -71,7 +71,7 @@ h1.heading {
 }
 div.flexbox-container > img {
   width: 100vw;
-  position: fixed;
+  position: absolute;
   display: flex;
   background-image: linear-gradient(black, white); /* Gradient for header when image is not available */
   background-image: image(url('./images/header-image.jpg'));

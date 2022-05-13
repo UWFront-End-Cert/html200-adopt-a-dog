@@ -13,3 +13,78 @@ function btnAdder(fee) {
   balance += parseInt(fee);
   alert(balance);
 }
+
+/* Checkout submitButton - checkout.html
+function submitAlert(submit) {
+  alert("Thank you. Form information has been received.");
+}
+*/
+
+/* Checkout form - console log values */
+const fields = [
+  {
+    name: 'full-name',
+    label: 'Full Name'
+  },
+  {
+    name: 'email',
+    label: 'Email Address'
+  },
+  {
+    name: 'address',
+    label: 'Street Address'
+  },
+  {
+    name:  'city',
+    label: 'City'
+  },
+  {
+    name: 'state',
+    label: 'ST'
+  },
+  {
+    name: 'zip',
+    label: 'Zip Code'
+  },
+  {
+    name: 'radio',
+    label: 'First Time Adopter?'
+  },
+  {
+    name: 'location',
+    label: 'Pickup Location'
+  }
+];
+
+const form = document.createElement('form');
+document.body.appendChild(form);
+
+
+for (let f = 0; f < fields.length; f += 1) {
+
+  const field = fields[f];
+
+  const label = document.createElement('label');
+  label.textContent = field.label;
+  label.setAttribute('for', field.name);
+
+  const input = document.createElement('input');
+  input.setAttribute('id', field.name);
+
+  form.appendChild(label);
+  form.appendChild(input);
+}
+
+const submitButton = document.createElement('button');
+submitButton.setAttribute('type', 'submit');
+submitButton.textContent = 'Submit';
+
+form.appendChild(submitButton);
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('Thank you. Form information has been received.');
+
+console.log(form);
+
+});
