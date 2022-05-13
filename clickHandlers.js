@@ -84,7 +84,26 @@ form.appendChild(submitButton);
 form.addEventListener('submit', function(event) {
   event.preventDefault();
   alert('Thank you. Form information has been received.');
+  /* jQuery for checkout.html form page */
+  $(function() {
+    console.log($('input'))
+  })
+});
 
-console.log(form);
 
+/* jQuery for dog.html page */
+$(function() {
+  console.log("Document ready; javascript running")
+  $('nav').hide().delay(300).show("slow")
+  $('#hide').click(function(){
+    $('img').hide()
+  })
+  $('#show').click(function(){
+    $('img').show(300)
+  })
+  $('img').mouseenter(function(){
+    $(this).fadeTo("slow", .75)
+  }).mouseleave(function(){
+    $(this).fadeTo("fast", 1)
+  })
 });

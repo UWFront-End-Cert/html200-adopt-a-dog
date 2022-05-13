@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson 9 jQuery</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800&family=Vollkorn:wght@400;500&family=Work+Sans:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./lesson9.js"></script>
+  </head>
+  <body>
+    <nav>
+      <button type="button" name="button" id="hide">Event 1</button>
+        <button type="button" name="button" id="show">Event 2</button>
+    </nav>
+    <div class="gallery">
+        <img id="card" onclick="dogBark('Murphy', 'Bulldog', 123.45)" src="images/murphy-card.jpg" alt="Murphy's dog profile image">
+        <div id="clickme" class="desc">
+          <h2 id="name" class="dogsName">Murphy</h2>
+          <p class="costAmt"><strong>Cost to Adopt:</strong> $123.45</p>
+          <span class="dogPc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</span>
+          <span class="dogPcBtn">
+            <button onclick="btnAdder(123.45)" class="adopt">Adopt</button>
+          </span>
+        </div>
+      </div>
+  </body>
+</html>

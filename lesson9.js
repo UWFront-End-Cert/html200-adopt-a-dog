@@ -13,6 +13,9 @@ function btnAdder(fee) {
   balance += parseInt(fee);
   alert(balance);
 }
+$('button').click(function(e) {
+  $('img').toggleClass('image-border')
+});
 
 /* jQuery for dog.html page */
 $(function() {
