@@ -5,12 +5,62 @@ form {
   max-width: 80%;
   margin: 2rem 10% 2rem 10%;
   font-family: arial;
+  gap: 30px;
 }
 
-.full-input {
+label {
+  color: rgb(9, 60, 96);
+  font-weight: bold;
+}
+
+input {
+  margin-top: 10px;
   border-style: solid;
   border-color: rgb(236, 236, 236);
-  margin: 1rem;
+  height: 2rem;
+  
+}
+
+.full-width {
+  width: 100%;
+}
+
+select {
+  width: fit-content;
+  margin-top: 10px;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+}
+
+.adopted-dogs {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.adopt-dogs-card {
+  display: contents;
+  flex-flow: row wrap;
+}
+
+.adopt-dogs-card img{
+  width: 5rem;
+  height: fit-content;
+  /* min-width: 15%; */
+}
+
+input[type=submit] {
+  margin-top: 0;
+  width: 10rem;
+  background-color: rgb(129, 183, 65);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 2px;
+  color: white;
+  transition-duration: 0.4s;
 }
 
 button {
@@ -25,21 +75,3 @@ button:hover {
   background-color: rgb(236, 183, 34);
   color: black;
 }
-
-.adopted-dogs {
-  display: flex;
-
-}
-
-.adopt-dogs-card {
-  display: flex;
-  margin-top: 2rem;
-  display: flex;
-  flex-flow: row;
-  /* max-width: 80%;
-  margin: 2rem 10% 0% 10%; */
-}
-
-/* .adopt-dogs-card img{
-  max-width: 10%;
-} */
