@@ -4,6 +4,10 @@ h1 {
   font-style: italic;
   font-weight: lighter;
   font-size: 2em;
+  position: relative;
+  top: -2em
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -32,11 +36,12 @@ p {
 
 nav {
   font-family: 'Cabin', 'Trebuchet', sans-serif;
-  font-weight: 700;}
+  font-weight: 700;
+  margin: 0;}
 
 ul {
   list-style-type: none;
-  margin-left: 3em;
+  padding-left: 4em;
 }
 
 li {
@@ -44,8 +49,7 @@ li {
   font-family: 'Neuton', 'Times New Roman', serif;
   color: #183a5e;
   font-size: .75em;
-  font-weight: 700;
-}
+  font-weight: bolder;}
 
 a {
   font-family: 'Cabin', 'Trebuchet', sans-serif;
@@ -90,7 +94,7 @@ footer {
   display: block;
   grid-area: 4 / 1 / 5 / 6;
   background-color: #183a5e;
-  padding: 3em 0em 3em 0em;
+  padding: 3em 0em 0em 0em;
   text-align: center;}
 
 footer p {
@@ -103,12 +107,11 @@ footer img {
   height: 15%
 }
 
-.container-dogs {
-  display: grid;
-  max-width: 75vw;
-  grid-template-columns:  25% 25% 25% 25%;
-  grid-column-gap: auto;
-  padding: 1em 1em 1em 1em;}
+footer a {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  font-size: 1.25em;
+}
 
 .container {
   display: grid;
@@ -145,11 +148,58 @@ footer img {
   padding: 2em 8em 4em 8em;
 }
 
+.blog {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.blog-column-img {
+  flex: 35%
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.blog-column-text {
+  padding-left: 1em;
+  font-size: 1.5em;
+}
+
+
+
+.container-dogs {
+  display: grid;
+  max-width: 75vw;
+  grid-template-columns:  25% 25% 25% 25%;
+  grid-column-gap: auto;
+  padding: 1em 0em 1em 0em;}
+
 .flex-container-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;}
 
-.blog {
-  display: inline;
+.header-left {
+  position: relative;
+  top: 1em;
+  left: 1.5em;
+}
+
+.header-right {
+  clear: both;
+  float: right;
+  position: relative;
+  bottom: 6em;
+}
+
+.bottom-button {
+  font-family: 'Neuton', 'Times New Roman', serif;
+  color: #ffffff;
+  font-size: 1.5em;
+  background-color: #a6a6a6;
+  padding: .5em .75em .5em .75em;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 2px;
+  text-align: center;
+  margin: 1em 20em 1em 20em;
 }
