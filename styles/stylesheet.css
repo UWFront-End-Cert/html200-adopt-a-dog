@@ -9,9 +9,8 @@ body p {
   color: #595959;
 }
 header {
-  background-image: url("../images/header-image.jpg");
+  background: url("../images/header-image.jpg"), linear-gradient(90deg, rgba(26,17,0,1) 15%, rgba(102,51,0,1) 100%);
   background-size: cover;
-  background-color: #130d06;
   box-sizing: border-box;
   margin: 0;
   padding: 1rem 1rem 5rem 1rem;
