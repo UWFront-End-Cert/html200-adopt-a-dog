@@ -70,20 +70,6 @@ header p {
   display: flex;
   flex-direction: column;
 }
-.blog-previews {
-  float: right;
-  padding: 2.5% 15% 2.5% 2.5%;
-  width: 20%;
-}
-.blog-previews img {
-  width: 100%;
-  aspect-ratio: 2 / 1;
-  object-fit: cover;
-  object-position: bottom;
-}
-.blog-previews article {
-  padding-bottom: 15%;
-}
 .intro img {
   width: 100%;
   height: auto;
@@ -100,6 +86,36 @@ header p {
   font-family: sans-serif;
   color: #595959;
   font-size: 150%;
+}
+.blog-previews {
+  float: right;
+  padding: 2.5% 15% 2.5% 2.5%;
+  width: 20%;
+}
+.blog-previews h2 {
+  color: #002266;
+  font-weight: bold;
+  font-size: 200%;
+  margin-top: 0;
+}
+.blog-previews img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  object-position: bottom;
+}
+.blog-previews article {
+  padding-bottom: 15%;
+}
+.blog-previews a {
+  color: #00a3cc;
+  font-family: sans-serif;
+  font-size: 125%;
+}
+.blog-previews p {
+  font-family: sans-serif;
+  color: #404040;
+  font-size: 125%;
 }
 .container {
   display: flex;
