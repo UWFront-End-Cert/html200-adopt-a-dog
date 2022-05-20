@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADOPTADOG</title>
+  <link rel="stylesheet" type="text/css" href="styles.css/styles.css">
+  <script src="https://kit.fontawesome.com/015d63ce65.js" crossorigin="anonymous"></script>
+  <style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap');
+  body {font-family: 'Lato', sans-serif;}
+  </style>
+</head>
+<body>
+<header>
+          <button type="button" onclick='location.href="checkout.html"'>Checkout</button>
+          <img class="float-cart" src="images/cart-icon.svg" alt="Checkout cart" width="28" height="26">
+          <img src="images/adoptadog-logo.svg" alt="Adoptadog logo">
+          <h1>Seattle's premiere dog adoption agency</h1>
+</header>
+          <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <a href="dogs.html">Dogs</a>
+            <a href="blog.html">Blog</a>
+          </nav>
+
+      <div>
+        <img class="intro-img" src="images/home-intro.jpg" alt="Person hugging a golden retriever">
+        <h3 class="intro-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+        </div>
+
+        <div class="dog-card-display-full">
+   <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Murphy', 'Hound', 123.45)" src="images/murphy-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Murphy</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+             <a class="button" onclick="dogButtonClick()">Adopt</a>
+   </article>
+
+   <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Poppy', 'Hound', 123.45)" src="images/poppy-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Poppy</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+       <a class="button" onclick="dogButtonClick()">Adopt</a>
+
+   </article>
+
+   <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Jack', 'Hound', 123.45)" src="images/jack-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Jack</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <a class="button" onclick="dogButtonClick()">Adopt</a>
+   </article>
+
+   <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Duffy', 'Hound', 123.45)" src="images/duffy-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Duffy</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <a class="button" onclick="dogButtonClick()">Adopt</a>
+   </article>
+
+   <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Lucas', 'Hound', 123.45)" src="images/lucas-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Lucas</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <a class="button" onclick="dogButtonClick()">Adopt</a>
+   </article>
+
+   <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Jake', 'Hound', 123.45)" src="images/jake-card.jpg" alt="dog">
+     <h2 class="dog-card-heading">Jake</h2><p class="dog-card-price-description">
+       <span class="dog-card-bold">Cost to Adopt:</span>
+       <span class="price-value">123.45</span></p>
+       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <a class="button" onclick="dogButtonClick()">Adopt</a>
+   </article>
+ </div>
+
+<aside class="aside-grid">
+       <article>
+         <h3>From Our Blog</h3>
+         <img
+           src="images/blog-1.jpg"
+           alt="a woman sitting with her black dog looking out towards a canyon"
+         />
+         <h4 class="h4-blog">Traveling with your dog</h4>
+         <p class="aside-p">
+           Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis
+           dolenem quidustrum fuga.
+         </p>
+
+         <a class="aside-a" href="blog.html">Read more >></a>
+       </article>
+
+       <article>
+         <img
+           src="images/blog-2.jpg"
+           alt="4 dogs sitting in a park on 4 different leashes"
+         />
+         <h4 class="h4-blog">How to walk multiple dogs</h4>
+         <p class="aside-p">
+           Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis
+           dolenem quidustrum fuga.
+         </p>
+
+         <a class="aside-a" href="blog.html">Read more >></a>
+       </article>
+
+       <article>
+         <img
+           src="images/blog-3.jpg"
+           alt="the silhouettes of a woman getting ready to throw a ball for her dog near sunset"
+         />
+         <h4 class="h4-blog">Teach your dog to fetch!</h4>
+         <p class="aside-p">
+           Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis
+           dolenem quidustrum fuga.
+         </p>
+
+         <a class="aside-a" href="blog.html">Read more >></a>
+       </article>
+     </aside>
+   
+
+
+                  <footer>
+                    <div>
+                  <a class="see-more-button" href="dogs.html">See More Dogs</a>
+                 </div>
+                      <img class="footer img" src="images/adoptadog-logo.svg" alt="Logo">
+                  <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+                  <nav>
+                   <span>
+                    <a  class="bottom-nav" href="index.html">Home</a>
+                    <a  class="bottom-nav" href="blog.html">Blog</a>
+                    <a  class="bottom-nav" href="#">Contact</a>
+                  </span>
+                  </nav>
+                  <p><small>© 2022 Adoptadog LLC | Seattle, WA</small></p>
+                  </footer>
+                  <script src="./Javascript/script.js">
+                  </script>
+                  </body>
+                  </html>
