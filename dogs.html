@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ADOPTADOG</title>
+  <link rel="stylesheet" type="text/css" href="styles.css/styles.css">
+  <script src="https://kit.fontawesome.com/015d63ce65.js" crossorigin="anonymous"></script>
+  <style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap');
+  body {font-family: 'Lato', sans-serif;}
+  </style>
+</head>
+<body>
+<header>
+          <button type="button" onclick='location.href="checkout.html"'>Checkout</button>
+          <img class="float-cart" src="images/cart-icon.svg" alt="Checkout cart" width="28" height="26">
+          <img src="images/adoptadog-logo.svg" alt="Adoptadog logo">
+          <h1>Seattle's premiere dog adoption agency</h1>
+
+</header>
+          <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <a href="dogs.html">Dogs</a>
+            <a href="blog.html">Blog</a>
+          </nav>
+              <h2> Here are all of our Dogs!</h2>
+                <div class="dog-card-display-full2">
+                  <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Murphy', 'Hound', 123.45)" src="images/murphy-card.jpg" alt="dog">
+                    <h2 class="dog-card-heading">Murphy</h2><p class="dog-card-price-description">
+                      <span class="dog-card-bold">Cost to Adopt:</span>
+                      <span class="price-value">123.45</span></p>
+                      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                            <a class="button" onclick="dogButtonClick()">Adopt</a>
+                  </article>
+
+                  <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Poppy', 'Hound', 123.45)" src="images/poppy-card.jpg" alt="dog">
+                    <h2 class="dog-card-heading">Poppy</h2><p class="dog-card-price-description">
+                      <span class="dog-card-bold">Cost to Adopt:</span>
+                      <span class="price-value">123.45</span></p>
+                      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                      <a class="button" onclick="dogButtonClick()">Adopt</a>
+
+                  </article>
+
+                  <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Jack', 'Hound', 123.45)" src="images/jack-card.jpg" alt="dog">
+                    <h2 class="dog-card-heading">Jack</h2><p class="dog-card-price-description">
+                      <span class="dog-card-bold">Cost to Adopt:</span>
+                      <span class="price-value">123.45</span></p>
+                      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                           <a class="button" onclick="dogButtonClick()">Adopt</a>
+                  </article>
+
+                  <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Duffy', 'Hound', 123.45)" src="images/duffy-card.jpg" alt="dog">
+                    <h2 class="dog-card-heading">Duffy</h2><p class="dog-card-price-description">
+                      <span class="dog-card-bold">Cost to Adopt:</span>
+                      <span class="price-value">123.45</span></p>
+                      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                           <a class="button" onclick="dogButtonClick()">Adopt</a>
+                  </article>
+
+                  <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Lucas', 'Hound', 123.45)" src="images/lucas-card.jpg" alt="dog">
+                    <h2 class="dog-card-heading">Lucas</h2><p class="dog-card-price-description">
+                      <span class="dog-card-bold">Cost to Adopt:</span>
+                      <span class="price-value">123.45</span></p>
+                      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                           <a class="button" onclick="dogButtonClick()">Adopt</a>
+                  </article>
+
+                  <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Jake', 'Hound', 123.45)" src="images/jake-card.jpg" alt="dog">
+                    <h2 class="dog-card-heading">Jake</h2><p class="dog-card-price-description">
+                      <span class="dog-card-bold">Cost to Adopt:</span>
+                      <span class="price-value">123.45</span></p>
+                      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                           <a class="button" onclick="dogButtonClick()">Adopt</a>
+                  </article>
+
+                  <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Angus', 'Hound', 123.45)" src="images/angus-card.jpg" alt="dog">
+                    <h2 class="dog-card-heading">Angus</h2><p class="dog-card-price-description">
+                      <span class="dog-card-bold">Cost to Adopt:</span>
+                      <span class="price-value">123.45</span></p>
+                      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                           <a class="button" onclick="dogButtonClick()">Adopt</a>
+                  </article>
+
+                  <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Violet', 'Hound', 123.45)" src="images/violet-card.jpg" alt="dog">
+                    <h2 class="dog-card-heading">Violet</h2><p class="dog-card-price-description">
+                      <span class="dog-card-bold">Cost to Adopt:</span>
+                      <span class="price-value">123.45</span></p>
+                      <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                           <a class="button" onclick="dogButtonClick()">Adopt</a>
+                    </article>
+
+         <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Piper', 'Hound', 123.45)" src="images/piper-card.jpg" alt="dog">
+           <h2 class="dog-card-heading">Piper</h2><p class="dog-card-price-description">
+             <span class="dog-card-bold">Cost to Adopt:</span>
+             <span class="price-value">123.45</span></p>
+             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+             <a class="button" onclick="dogButtonClick()">Adopt</a>
+         </article>
+
+         <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Maximus', 'Hound', 123.45)" src="images/maximus-card.jpg" alt="dog">
+           <h2 class="dog-card-heading">Maximus</h2><p class="dog-card-price-description">
+             <span class="dog-card-bold">Cost to Adopt:</span>
+             <span class="price-value">123.45</span></p>
+             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <a class="button" onclick="dogButtonClick()">Adopt</a>
+         </article>
+
+         <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Luna', 'Hound', 123.45)" src="images/luna-card.jpg" alt="dog">
+           <h2 class="dog-card-heading">Luna</h2><p class="dog-card-price-description">
+             <span class="dog-card-bold">Cost to Adopt:</span>
+             <span class="price-value">123.45</span></p>
+             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+             <a class="button" onclick="dogButtonClick()">Adopt</a>
+         </article>
+
+         <article class="dog-card"><img class="dog-card-image" onclick="dogPhotoClick('Stella', 'Hound', 123.45)" src="images/stella-card.jpg" alt="dog">
+           <h2 class="dog-card-heading">Stella</h2><p class="dog-card-price-description">
+             <span class="dog-card-bold">Cost to Adopt:</span>
+             <span class="price-value">123.45</span></p>
+             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+             <a class="button" onclick="dogButtonClick()">Adopt</a>
+         </article>
+       </div>
+  <footer>
+      <img class="footer img" src="images/adoptadog-logo.svg" alt="Logo">
+      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <nav>
+      <span>
+                    <a  class="bottom-nav" href="index.html">Home</a>
+                    <a  class="bottom-nav" href="blog.html">Blog</a>
+                    <a  class="bottom-nav" href="#">Contact</a>
+      </span>
+      </nav>
+     <p><small>© 2022 Adoptadog LLC | Seattle, WA</small></p>
+    </footer>
+    <script src="./Javascript/script.js">
+    </script>
+ </body>
+</html>
