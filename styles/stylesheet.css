@@ -312,31 +312,27 @@ input[type=submit] {
   margin-left: 0;
 }
 
-#state {
-  width: 6em;
-}
-
 #yes-input {
   margin-left: 0;
   padding-left: 0;
 }
 
-.city-zip {
-  width: 30%;
-  padding-right: 0;
-  margin-right: 0;
-  display: inline;
+#city {
+  width: 50%;
+  padding: 12px 0px;
+  margin: 8px 0;
 }
 
-.dog-tile {
-  display: inline;
-  width: 15%;
-  margin: 0;
-  padding: 0;
+#state {
+  width: 6em;
+  position: relative;
+  bottom: 4.6em;
+  left: 13em;
 }
 
-.dog-tile-text {
-  display: inline;
-  margin: 0;
-  padding: 0;
+ #zip {
+  width: 14.5em;
+  position: relative;
+  bottom: 8.6em;
+  left: 17em;
 }

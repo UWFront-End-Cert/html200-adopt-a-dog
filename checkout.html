@@ -44,25 +44,23 @@
           Street Address
           <input type="text" name=requesterStreet>
         </label>
-        <div>
-          <label>
-            City
-            <input class="city-zip" type="text" name=requesterCity>
-          </label>
-          <label id="state">
-            State
-            <select name=state>
-              <option value="Washington">WA</option>
-              <option value="Oregon">OR</option>
-              <option value="Idaho">ID</option>
-              <option value="California">CA</option>
-            </select>
-          </label>
-          <label>
-            Zip Code
-            <input type="text" name=requesterZip>
-          </label>
-        </div>
+        <label id="city">
+          City
+          <input type="text" name=requesterCity>
+        </label>
+        <label id="state">
+          State
+          <select name=state>
+            <option value="Washington">WA</option>
+            <option value="Oregon">OR</option>
+            <option value="Idaho">ID</option>
+            <option value="California">CA</option>
+          </select>
+        </label>
+        <label id="zip">
+          Zip Code
+          <input type="text" name=requesterZip>
+        </label>
         <fieldset>
           <legend>First Time Adopter?</legend>
           <label>
@@ -86,15 +84,15 @@
         <section>
           <h2>Dogs Adopted</h2>
             <div class="dog-tile">
-              <img src="images/lucas-checkout.jpg" alt="A black dog with brown eyes looking toward the camera with an excited face">
+              <img class=".dog-photo " src="images/lucas-checkout.jpg" alt="A black dog with brown eyes looking toward the camera with an excited face">
               <h3>Lucas</h3>
               <h4>Cost to Adopt: $123.45</h4>
             </div>
-            <div class="dog-tile">
-              <img src="images/duffy-checkout.jpg" alt="A large dog with blue eyes, a white face, and brown ears, looking toward
+            <div class="dog-card">
+              <img class="dog-card" src="images/duffy-checkout.jpg" alt="A large dog with blue eyes, a white face, and brown ears, looking toward
               the camera on a grassy background">
-              <h3>Duffy</h3>
-              <h4>Cost to Adopt: $123.45</h4>
+              <h3 class="dog-card">Duffy</h3>
+              <h4 class="dog-card">Cost to Adopt: $123.45</h4>
             </div>
             <h2>Total Adoption Cost</h2>
             <p>$1234.56</p>
