@@ -4,11 +4,9 @@ Adopt-a-Dog website is a Course Project for the HTML5200 JavaScript & Responsive
 
 Over the course of ten lessons, you learn to create the HTML, CSS, and the JavaScript functionality. The code I have hosted on my student GitHub page and pull requests made to the courses repository to compare my master branch against the course's repository.
 
-This Adopt-a-Dog website was created by Janene Smith, Winter quarter 2022 (
+This Adopt-a-Dog website was created by Janene Smith, Winter quarter 2022 (https://janene-smith.github.io/html200-adopt-a-dog/).
 
 # User Persona
-
-I used my youngest sister who is a Millennial to build this user persona. Back when she and her husband chose to get a dog before having kids.
 
 ## Name: Kimberly Power
 
@@ -26,7 +24,14 @@ https://www.valuepenguin.com/news/millennials-more-likely-to-adopt-pet-than-have
 
 ## Usage
 
-TODO: Write usage instructions
+Adopt-a-Dog, Seattle’s premiere dog adoption agency is a non-working website, it is to display design and responsive functionality. All dogs represented are not up for adoption. This is a fictitious website. 
+
+## Technologies used:
+  * Atom text Editor
+  * CodePen
+  * Internet Browsers: Edge, Chrome, Firefox, iOS Safari
+  * Git
+  * GitHub
 
 ## Contributing
 
@@ -36,9 +41,6 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
 
 ## Credits
 This website I built as a portfolio assignment of the JavaScript & Responsive Design course. The second course of the Certificate program in Front-End-Development with HTML, CSS & JavaScript from the University of Washington Professional & Continuing Education (https://www.pce.uw.edu/certificates/front-end-development-with-html-css-and-javascript).
@@ -52,11 +54,5 @@ Except as otherwise noted, the Alegreya, Vollkorn, and Work_Sans font files are 
 Except as otherwise noted, the rest of this project is in the worldwide public domain, released under the CC0 1.0 Universal public domain dedication.
 
 
-## Technologies used:
-  * Atom text Editor
-  * CodePen
-  * Internet Browsers: Edge, Chrome, Firefox, iOS Safari
-  * Git
-  * GitHub
-Special Gotchas of your projects (Problems you faced, unique elements of your project)
-Technical Description of your project like Installation, Setup, How to contribute.
+
+
