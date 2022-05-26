@@ -40,7 +40,7 @@ TODO: Write history
 
 ## Credits
 This website I built as a portfolio assignment of the JavaScript & Responsive Design course. The second course of the Certificate program in Front-End-Development with HTML, CSS & JavaScript from the University of Washington Professional & Continuing Education (https://www.pce.uw.edu/certificates/front-end-development-with-html-css-and-javascript).
-Assets (comps, images, and icons) used in the building of the Adopt-a-Dog website are from GitHub repository: https://github.com/UWFront-End-Cert/html200-adopt-a-dog.
+Assets (comps, images, and icons) used in the building of the Adopt-a-Dog website are from the UWFront-End-Cert GitHub repository: https://github.com/UWFront-End-Cert, https://github.com/UWFront-End-Cert/html200-adopt-a-dog.
 
 
 ## License
