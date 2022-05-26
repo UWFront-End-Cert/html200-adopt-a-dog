@@ -2,8 +2,7 @@
 
 Adopt-a-Dog website is a Course Project for the HTML5200 JavaScript & Responsive Design course from the University of Washington. The objective of the Course Project was to build a "functional, robust website from scratch" using the supplied adopt-a-dog-mockup comps, images, and logo.
 
-Over the course of 10 lessons, you learn to create the HTML, CSS and ultimately the JavaScript functionality. The code is hosted on my student GitHub page and pull requests made to the courses repository to compare my master branch against the course's repository.
-
+Over the course of ten lessons, you learn to create the HTML, CSS, and the JavaScript functionality. The code is hosted on my student GitHub page and pull requests made to the courses repository to compare my master branch against the course's repository.
 
 # User Persona
 
@@ -11,10 +10,10 @@ I used my youngest sister who is a Millennial to build this user persona. Back w
 
 ## Name: Kimberly Power
 
-## Age: 28
+## Age: twenty-eight
 ## Occupation: Dental Office Assistant
 ## Other details:
-* Married a few years. No kids.
+* Married three years. No kids.
 * Active lifestyle likes to run.
 * Owns an Apple laptop, Microsoft laptop, iPad, and iPhone.
 * Browses on Chrome, Firefox, and iOS Safari mostly.
@@ -40,8 +39,9 @@ TODO: Write usage instructions
 TODO: Write history
 
 ## Credits
+This website I built as a portfolio assignment of the JavaScript & Responsive Design course. The second course of the Certificate program in Front-End-Development with HTML, CSS & JavaScript from the University of Washington Professional & Continuing Education (https://www.pce.uw.edu/certificates/front-end-development-with-html-css-and-javascript).
+Assets (comps, images, and icons) used in the building of the Adopt-a-Dog website are from GitHub repository: https://github.com/UWFront-End-Cert/html200-adopt-a-dog.
 
-[Write credits](https://github.com/UWFront-End-Cert/html200-adopt-a-dog/security/advisories) The comps, images, and icons used in this site are from the html200-adopt-a-dog University of Washington
 
 ## License
 
