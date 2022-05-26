@@ -44,7 +44,7 @@ TODO: Write history
 TODO: Write credits
 
 ## License
-Except as otherwise noted, the Alegreya, Vollkorn, and Work_Sans font files in <link src='./styles'> are licensed under the Attribution 4.0 License.
+Except as otherwise noted, the Alegreya, Vollkorn, and Work_Sans font files in C:\Users\janen\OneDrive\Desktop\html200\codez\html200-adopt-a-dog\styles are licensed under the Attribution 4.0 License.
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License,
 <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
