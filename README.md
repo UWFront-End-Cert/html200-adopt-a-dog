@@ -44,7 +44,15 @@ TODO: Write history
 TODO: Write credits
 
 ## License
+Except as otherwise noted, the Alegreya, Vollkorn, and Work_Sans font files in <link src='./styles'> are licensed under the Attribution 4.0 License.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License,
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800&family=Vollkorn:wght@400;500&family=Work+Sans:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+A few parts of this project are not in the public domain. 
 
+The rest of this project is in the worldwide public domain, released under the CC0 1.0 Universal public domain dedication.
 TODO: Write license
 ## Technologies used:
   * Atom text Editor
