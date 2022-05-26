@@ -9,15 +9,15 @@ Over the course of 10 lessons, you learn to create the HTML, CSS and ultimately 
 
 I used my youngest sister who is a Millennial to build this user persona. Back when she and her husband chose to get a dog before having kids.
 
-## Name: Kimberly Power![image size=50%](https://user-images.githubusercontent.com/90989315/170393562-e6844d16-af6f-4339-a5c7-9efe3c3aa446.png)
+## Name: Kimberly Power![image](https://user-images.githubusercontent.com/90989315/170393562-e6844d16-af6f-4339-a5c7-9efe3c3aa446.png)
 
 ## Age: 28
 ## Occupation: Dental Office Assistant
 ## Other details:
-• Married a few years. No kids.
-• Active lifestyle likes to run.
-• Owns an Apple laptop, Microsoft laptop, iPad, and iPhone.
-• Browses on Chrome, Firefox, and iOS Safari mostly.
+* Married a few years. No kids.
+* Active lifestyle likes to run.
+* Owns an Apple laptop, Microsoft laptop, iPad, and iPhone.
+* Browses on Chrome, Firefox, and iOS Safari mostly.
 ## Current trends:
 “Millienials are 50% more likely to adopt a pet than to have a child in the next 12 months.”
 https://www.valuepenguin.com/news/millennials-more-likely-to-adopt-pet-than-have-child-next-12-months (accessed: 4/7/2022).
@@ -47,10 +47,10 @@ TODO: Write credits
 
 TODO: Write license
 ## Technologies used:
-  Atom text Editor
-  CodePen
-  Internet Browsers: Edge, Chrome, Firefox, iOS Safari
-  Git
-  GitHub
+  * Atom text Editor
+  * CodePen
+  * Internet Browsers: Edge, Chrome, Firefox, iOS Safari
+  * Git
+  * GitHub
 Special Gotchas of your projects (Problems you faced, unique elements of your project)
 Technical Description of your project like Installation, Setup, How to contribute.
