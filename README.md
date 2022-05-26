@@ -52,11 +52,3 @@ Assets (comps, images, and icons) used in the building of the Adopt-a-Dog websit
 Except as otherwise noted, the Alegreya, Vollkorn, and Work_Sans font files are licensed under the Creative Commons Attribution 4.0 License.
 
 Except as otherwise noted, the rest of this project is in the worldwide public domain, released under the CC0 1.0 Universal public domain dedication.
-
-Gitlab code coverage:	Gitlab code coverage badge	/gitlab/coverage/:user/:repo/:branch
-GitHub branch checks state:	GitHub branch checks state badge	/github/checks-status/:user/:repo/:ref
-GitHub commit checks state:	GitHub commit checks state badge	/github/checks-status/:user/:repo/:ref
-GitHub pull request check state:	GitHub pull request check state badge	/github/status/s/pulls/:user/:repo/:number
-W3C Validation:	W3C Validation badge	/w3c-validation/:parser?preset=HTML%2C%20SVG%201.1%2C%20MathML%203.0&targetUrl=https%3A%2F%2Fvalidator.nu%2F
-
-
