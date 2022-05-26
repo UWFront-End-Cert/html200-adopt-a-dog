@@ -130,3 +130,17 @@ a {
   margin-top: 25%;
   margin-left: 10%;
 }
+
+@media screen and (max-width: 576px) {
+  .dog-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dog-list {
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+}
