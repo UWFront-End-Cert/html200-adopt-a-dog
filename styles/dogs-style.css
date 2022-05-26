@@ -131,16 +131,11 @@ a {
   margin-left: 10%;
 }
 
-@media screen and (max-width: 576px) {
-  .dog-list {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .dog-list {
-    display: grid;
-    grid-template-columns: 2fr;
+@media screen and (max-width: 390px) {
+  .box {
+    display: flex;
+    grid-template-rows: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
   }
 }
