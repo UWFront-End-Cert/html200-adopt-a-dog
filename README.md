@@ -2,7 +2,9 @@
 
 Adopt-a-Dog website is a Course Project for the HTML5200 JavaScript & Responsive Design course from the University of Washington. The objective of the Course Project was to build a "functional, robust website from scratch" using the supplied adopt-a-dog-mockup comps, images, and logo.
 
-Over the course of ten lessons, you learn to create the HTML, CSS, and the JavaScript functionality. The code is hosted on my student GitHub page and pull requests made to the courses repository to compare my master branch against the course's repository.
+Over the course of ten lessons, you learn to create the HTML, CSS, and the JavaScript functionality. The code I have hosted on my student GitHub page and pull requests made to the courses repository to compare my master branch against the course's repository.
+
+This Adopt-a-Dog website was created by Janene Smith, Winter quarter 2022 (
 
 # User Persona
 
@@ -45,7 +47,7 @@ Assets (comps, images, and icons) used in the building of the Adopt-a-Dog websit
 
 ## License
 
-Except as otherwise noted, the Alegreya, Vollkorn, and Work_Sans font files in "./Styles" are licensed under the Creative Commons Attribution 4.0 License.
+Except as otherwise noted, the Alegreya, Vollkorn, and Work_Sans font files are licensed under the Creative Commons Attribution 4.0 License.
 
 Except as otherwise noted, the rest of this project is in the worldwide public domain, released under the CC0 1.0 Universal public domain dedication.
 
