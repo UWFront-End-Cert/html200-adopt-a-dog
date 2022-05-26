@@ -9,7 +9,7 @@ Over the course of 10 lessons, you learn to create the HTML, CSS and ultimately 
 
 I used my youngest sister who is a Millennial to build this user persona. Back when she and her husband chose to get a dog before having kids.
 
-## Name: Kimberly Power![image](https://user-images.githubusercontent.com/90989315/170393562-e6844d16-af6f-4339-a5c7-9efe3c3aa446.png)
+## Name: Kimberly Power
 
 ## Age: 28
 ## Occupation: Dental Office Assistant
@@ -41,7 +41,6 @@ TODO: Write history
 
 ## Credits
 
-TODO: https://github.com/UWFront-End-Cert
 [Write credits](https://github.com/UWFront-End-Cert/html200-adopt-a-dog/security/advisories) The comps, images, and icons used in this site are from the html200-adopt-a-dog University of Washington
 
 ## License
