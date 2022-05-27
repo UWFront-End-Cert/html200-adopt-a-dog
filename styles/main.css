@@ -1,6 +1,11 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 .page-header {
-  margin-left: 0rem;
+  margin-left: 10%;
   font-family: arial;
   color: rgb(9, 60, 96);
   width: 100%;
@@ -27,19 +32,44 @@
   flex: 5;
 }
 
-.dogs-flex {
+
+/* .dogs-flex {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   max-width: 80%;
   margin: 2rem 10% 2rem 10%;
   font-family: arial;
+} */
+
+.dogs-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-flow: row;
+  max-width: 80%;
+  margin: 0% 10% 0% 10%;
+  justify-content: left;
 }
+
+/* Handle smartphones */
+@media screen and (max-width: 576px) {
+  .dogs-grid {
+    grid-template-columns: auto;
+  }
+}
+
+/* Handle tablets */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .dogs-grid {
+    grid-template-columns: auto auto;
+  }
+}
+
 
 .adopt-card {
   border-style: solid;
   border-color: rgb(236, 236, 236);
-  max-width: 15rem;
+  /* max-width: 15rem; */
   margin: 1rem;
 }
 
