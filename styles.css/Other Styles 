@@ -1,0 +1,436 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(to right, #636FA4, #E8CBC0);
+  background-image: url("../images/header-image.jpg");
+  background-position: center top;
+  background-size: auto;
+  max-width: 100%;
+  height: auto;
+  padding: 7em;
+  color: #55C632;
+}
+
+.float-right {
+  float: right;
+  width: 5%;
+}
+
+header.logo {
+  clear: both;
+}
+
+header button {
+  background-color: #55C632;
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+
+nav {
+  background-color: #DCDCDC;
+  padding: 0.5em;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0.5em;
+  color: #154360;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.blog-post {
+  margin: 2em 6.5em 1em 6.5em;
+  display: inline-block;
+}
+
+.blog-post img {
+  float: left;
+  width: 30%;
+}
+
+.blog-post p, .blog-post h2{
+  margin: 1em 2em;
+  display: table;
+  position: relative;
+  left: 3em;
+  width: 60%;
+}
+
+.home-intro h1 {
+  color: #154360;
+  clear: both;
+}
+
+.home-intro p {
+  clear: both;
+  width: 100%;
+}
+
+.home-intro img {
+  width: 50%;
+}
+
+.home-intro, .flexbox-container {
+  float: left;
+  width: 60%;
+  margin: 1em 1em 1em 5em;
+}
+
+.flexbox-container {
+  margin-left: 0px;
+}
+
+aside {
+  float: right;
+  width: 20%;
+  margin: 1em 5em 1em 2.5em;
+}
+
+aside article {
+  margin: 1em 0.5em;
+}
+@media screen and (max-width: 767px) {
+  aside {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .home-intro {
+    float: none;
+  }
+  aside {
+    float: none;
+    width: auto;
+  }
+  aside img {
+    width: 100%;
+  }
+
+  aside img, aside h3, aside p {
+    margin: 0.5em auto;
+    text-align: center;
+  }
+  .flexbox-container {
+    float: none;
+    width: 100%;
+    margin: 1em;
+    margin-left: 0px;
+    justify-content: space-evenly;
+  }
+  .all-dogs .flex-dog {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    background-position: center top;
+    background-size: cover;
+    padding: 0;
+  }
+
+  .flexbox-container {
+    float: none;
+    width: 100%;
+    margin: 1em;
+    margin-left: 0px;
+    justify-content: space-evenly;
+  }
+  .all-dogs .flex-dog {
+    width: 100%;
+  }
+}
+
+aside a {
+  text-decoration: none;
+  color: #3EC9EB;
+}
+
+.above-flex {
+  width: 70%;
+  margin: 1em;
+  text-align: left;
+}
+
+.blog-title {
+  margin: 2em 3.5em 0 4.25em;
+}
+
+h2 {
+  color: #154360;
+  margin-top: 2em;
+}
+
+.no-float-h2 {
+  width: 100%;
+}
+
+.all-dogs {
+  float: none;
+  width: 100%;
+  margin: 1em;
+  justify-content: space-evenly;
+}
+
+.all-dogs .flex-dog {
+  width: 20%;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: flex-start;
+  clear: left;
+  margin-left: 0px;
+}
+
+.flex-dog {
+  width: 28%;
+  height: auto;
+  border: 0.25em solid #D3D3D3;
+  margin: 2em 1em;
+}
+
+.dog-border {
+  border: 7px double #26CE75;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 0.5em;
+  }
+  .logo, header h1 {
+    margin: 0.5em auto;
+    max-width: 100%;
+    height: auto;
+    font-size: 1.5em;
+  }
+  .logo {
+    margin-top: 2.5em;
+    margin-bottom: 0;
+  }
+  .float-right {
+    padding-right: 5em;
+    font-size: 1em;
+  }
+  .home-intro {
+    width: 100%;
+    margin: 0.5em auto;
+    text-align: center;
+  }
+  .flex-dog {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .all-dogs .flex-dog {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-position: right top;
+    background-size: cover;
+  }
+  .flex-dog {
+    width: 45%;
+  }
+  .all-dogs .flex-dog {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .flex-dog {
+    width: 25%;
+  }
+  .all-dogs .flex-dog {
+    width: ;
+  }
+}
+
+
+.flex-dog img {
+  width: 100%;
+  height: auto;
+}
+
+.flex-dog h2, .flex-dog h3, .flex-dog p {
+  margin: 0.5rem 1rem;
+}
+
+.flex-dog button, .checkout-submit {
+  background-color: #55C632;
+  color: #FFFFFF;
+  padding: 0.5em 3.5em;
+}
+
+.flex-dog button {
+  width: 90%;
+  margin: 0.5em 0.5em 0.5em 1em;
+}
+
+.not-flex {
+  display: block;
+  width: 30%;
+  margin: 1.5em 9em;
+  font-size: 1em;
+  color: #154360;
+  font-weight: bolder;
+  padding: 0.5em;
+}
+
+.checkout {
+  margin: 2em 6.5em 1em 4em;
+}
+
+.checkout label, legend {
+  font-size: 1.5em;
+  margin-left: 1.5em;
+  color: #154360;
+  font-weight: bold;
+}
+
+.cart-total {
+  color: #FFFFFF;
+}
+
+input, select {
+  position: relative;
+  left: 2em;
+  width: 70%;
+  height: 2.5em;
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+.inline-radio, .inline-radio input {
+  display: inline;
+  width: 5%;
+}
+
+fieldset {
+  border: 0;
+  position: relative;
+  right: 2em;
+}
+
+.inline-radio label {
+  font-size: 4rem;
+  color: #000000;
+}
+
+.city input {
+  width: 35%;
+}
+
+.state select, .location select{
+  width: 14%;
+}
+
+.zip input {
+  width: 21%;
+}
+
+.adopted-dog, .adopted-dog h3 {
+  display: inline-block;
+  padding: 0 1.5em;
+}
+
+.adopted-dog p {
+  display: inline;
+  position: relative;
+  right: 5em;
+  bottom: -2em;
+  margin-bottom: 3em;
+}
+
+form {
+  border: black solid 0.25em;
+}
+
+.checkout-submit {
+  font-weight: bolder;
+  width: 15%;
+}
+
+
+footer {
+  background-color: #154360;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1rem;
+  padding: 2.5em;
+}
+
+footer {
+  margin-top: 2.5em;
+  clear: both;
+}
+
+footer p {
+  width: 25rem;
+  margin: 1em auto;
+  line-height: 1.5em;
+}
+
+.bottom-nav ul li{
+  color: #FFFFFF;
+}
+
+.bottom-nav a:visited{
+  color: #FFFFFF;
+}
+
+.bottom-nav {
+  background-color: #154360;
+  margin-bottom: 0.5em;
+}
+
+footer h3 {
+  margin: 0;
+}
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
