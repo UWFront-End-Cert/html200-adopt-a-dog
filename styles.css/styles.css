@@ -59,11 +59,33 @@ body
   color: #FFFFFF;
   font-weight: bolder;
 }
+#submit_button {
+  background-color: #55C632;
+  color: #FFFFFF;
+  font-weight: bolder;
+}
 .blog-container {
   display: block;
 }
 .blog-text {
 position: relative;
+}
+.add-to-cart {
+    width: 85%;
+
+    font-size: 18pt;
+
+    border: none;
+    border-radius: .25rem;
+    background-color: var(--lime);
+    color: #FFF;
+}
+
+.total {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding-bottom: 0;
 }
 
 
@@ -241,3 +263,18 @@ footer p {
   background-color: #154360;
   margin-bottom: 0.5rem;
 }
+
+.hover {
+    background: #fc9;
+}
+
+.yellow-border {
+  border: 20px solid yellow;
+}
+
+.pink-border {
+  border: 20px solid pink;
+}
+
+.red-border {
+  border: 20px solid red;}
