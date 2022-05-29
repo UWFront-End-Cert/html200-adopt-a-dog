@@ -1,54 +1,60 @@
-body {
-  max-width: 100%;
-  /* overflow-x: hidden; */
+.single-layout {
+  margin: 0% 10% 2rem 10%;
 }
 
+.sidebar-layout{
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-auto-flow: row;
+  max-width: 80%;
+  margin: 0% 10% 0% 10%;
+  justify-content: left;
+  column-gap: 40px;
+}
+
+/* .blog-posts-vertical {
+  display: block;
+} */
 
 .page-header {
-  margin-left: 10%;
   font-family: arial;
   color: rgb(9, 60, 96);
   width: 100%;
 }
 
-.post {
+.post-horizontal {
   margin-top: 2rem;
   display: flex;
-  flex-flow: row wrap;
-  max-width: 80%;
-  margin: 2rem 10% 2rem 10%;
+  gap: 40px;
+}
+
+.post {
+  margin-top: 2rem;
+  display: block;
+}
+
+.post h2{
+  margin-left: 0%;
 }
 
 .post img {
-  margin-right: 2rem;
-  max-width: 30%;
-  min-width: 15rem;
-  height: auto;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 
 .post div {
-  min-width: 500px;
   flex: 5;
 }
 
 
-/* .dogs-flex {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  max-width: 80%;
-  margin: 2rem 10% 2rem 10%;
-  font-family: arial;
-} */
-
 .dogs-grid {
   display: grid;
   grid-template-columns: auto auto auto;
+  gap: 25px 15px;
   grid-auto-flow: row;
-  max-width: 80%;
-  margin: 0% 10% 0% 10%;
   justify-content: left;
+  max-width: 100%;
 }
 
 /* Handle smartphones */
@@ -56,10 +62,16 @@ body {
   .dogs-grid {
     grid-template-columns: auto;
   }
+  .sidebar-layout {
+    grid-template-columns: 100%;
+  }
+  .blog-posts-vertical {
+    display: none;
+  }
 }
 
 /* Handle tablets */
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 1100px) {
   .dogs-grid {
     grid-template-columns: auto auto;
   }
@@ -69,16 +81,18 @@ body {
 .adopt-card {
   border-style: solid;
   border-color: rgb(236, 236, 236);
-  /* max-width: 15rem; */
-  margin: 1rem;
+  /* max-width: 100%; */
+  min-width: 0;
+  /* margin: .5rem; */
 }
 
 .adopt-card img {
+  object-fit: cover;
   max-width: 100%;
 }
 
 .adopt-card div {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 button {
@@ -98,7 +112,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin: 2rem 0 2rem 0;
 }
 
 .see-more {
