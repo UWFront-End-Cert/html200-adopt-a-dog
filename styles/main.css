@@ -1,4 +1,5 @@
 .single-layout {
+  display: grid;
   margin: 0% 10% 2rem 10%;
 }
 
@@ -12,20 +13,10 @@
   column-gap: 40px;
 }
 
-/* .blog-posts-vertical {
-  display: block;
-} */
-
 .page-header {
   font-family: arial;
   color: rgb(9, 60, 96);
   width: 100%;
-}
-
-.post-horizontal {
-  margin-top: 2rem;
-  display: flex;
-  gap: 40px;
 }
 
 .post {
@@ -42,9 +33,10 @@
   max-width: 100%;
 }
 
-
-.post div {
-  flex: 5;
+.single-layout .post img {
+  padding-right: 40px;
+  max-width: 100%;
+  float: left;
 }
 
 
@@ -81,9 +73,7 @@
 .adopt-card {
   border-style: solid;
   border-color: rgb(236, 236, 236);
-  /* max-width: 100%; */
   min-width: 0;
-  /* margin: .5rem; */
 }
 
 .adopt-card img {
