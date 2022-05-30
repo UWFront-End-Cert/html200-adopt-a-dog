@@ -9,19 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Neuton:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
-  <body class="container">
-    <section class="header">
+  <body>
+    <section class="header header-grid">
       <div class="header-left">
         <img class="header-logo" src="images/adoptadog-logo.svg" alt="ADOPTADOG logo">
         <h1>Seattle’s premiere dog adoption agency</h1>
       </div>
       <div class="header-right">
-        <p><img class="header-cart" src="images/cart-icon.svg" alt="shopping cart icon">$1234.56</p>
-        <h3><a href="checkout.html">Checkout</a></h3>
+        <p class="header-total"><img class="header-cart" src="images/cart-icon.svg" alt="shopping cart icon">$1234.56</p>
+        <h3 class="header-total"><a href="checkout.html">Checkout</a></h3>
       </div>
     </section>
     <nav class="menu">
-      <ul>
+      <ul id="menu-list">
         <li><a href="index.html">Home</a></li>
         <li>/</li>
         <li><a href="dogs.html">Dogs</a></li>
@@ -29,10 +29,10 @@
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
-    <section class="body">
+    <section>
       <div class="blog">
         <img class="blog-column-img" src="images/home-intro.jpg" alt="A photo of a man in a red shirt hugging a smiling dog">
-        <div class="blog-column-text-home">
+        <div class="blog-column-text">
           <h2>Adopt A Dog</h2>
           <p>
             Iduciendisite quo magnatem iuntum quid quaest ea am,
@@ -90,9 +90,7 @@
           </p>
           <h3><a href="checkout.html">Adopt</a></h3>
         </article>
-      </div>
-      <div class="container-dogs">
-        <article class="">
+        <article>
           <img src="images/lucas-card.jpg" alt="A black dog with brown eyes looking toward the camera with an excited look">
           <h3>Lucas</h3>
           <h4>Cost to Adopt: $123.45</h4>
@@ -102,7 +100,7 @@
           </p>
           <h3><a href="checkout.html">Adopt</a></h3>
         </article>
-        <article class="">
+        <article>
           <img src="images/jake-card.jpg" alt="The head and shoulders of a yellow lab in three quarter view, wearing a brown collar,
           with a blurred beach background">
           <h3>Jake</h3>
@@ -113,7 +111,7 @@
           </p>
           <h3><a href="checkout.html">Adopt</a></h3>
         </article>
-        <article class="">
+        <article>
           <img src="images/angus-card.jpg" alt="A brown dog with a broad face and a white stripe between running vertically
           between its eyes, looking off into the the distance in the direction of the camera">
           <h3>Angus</h3>
@@ -124,7 +122,7 @@
           </p>
           <h3><a href="checkout.html">Adopt</a></h3>
         </article>
-        <article class="">
+        <article>
           <img src="images/violet-card.jpg" alt="A chocolate lab puppy with blue eyes sitting on a gray tiled floor and looking
           up at the camera">
           <h3>Violet</h3>
@@ -140,22 +138,24 @@
         <a href="dogs.html">See More Dogs</a>
       </div>
     </section>
-    <footer class="footer">
-      <img src="images/adoptadog-logo.svg" alt="ADOPTADOG logo">
-      <p>
+    <footer class=>
+      <div>
+        <img src="images/adoptadog-logo.svg" alt="ADOPTADOG logo">
+        <p>
         Aborpos nisto inci tet aut que volupti beruptiberro to ex
         esseque invenienihil imaximu scideru ptistiusam consequunt
-      </p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>/</li>
-          <li><a href="dogs.html">Dogs</a></li>
-          <li>/</li>
-          <li><a href="mailto:adoptadog@adoptadog.dog">Contact</a></li>
-        </ul>
-      </nav>
-      <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+        </p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>/</li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li>/</li>
+            <li><a href="mailto:adoptadog@adoptadog.dog">Contact</a></li>
+          </ul>
+        </nav>
+        <p>© 2018 Adoptadog, LLC   |   Seattle, WA</p>
+      </div>
     </footer>
   </body>
 </html>
