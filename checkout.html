@@ -3,32 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale-1">
-    <link rel="stylesheet" type="text/stylesheet" href="styles/stylesheet.css">
     <title>Checkout - ADOPTADOG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Neuton:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
-  <body>
-    <section>
-      <img src="images/header-image.jpg" alt="the profile of a brown dog with brown eyes, with light
-      washing across its face in diagonal lines">
-      <img src="images/adoptadog-logo.svg" alt="ADOPTADOG logo">
-      <h1>Seattle’s premiere dog adoption agency</h1>
-      <img src="images/cart-icon.svg" alt="shopping cart icon">
-      <p>$1234.56</p>
-      <a href="checkout.html">Checkout</a>
+  <body class="container">
+    <section class="header">
+      <div class="header-left">
+        <img class="header-logo" src="images/adoptadog-logo.svg" alt="ADOPTADOG logo">
+        <h1>Seattle’s premiere dog adoption agency</h1>
+      </div>
+      <div class="header-right">
+        <p><img class="header-cart" src="images/cart-icon.svg" alt="shopping cart icon">$1234.56</p>
+        <h3><a href="checkout.html">Checkout</a></h3>
+      </div>
     </section>
-    <div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>/</li>
-          <li><a href="dogs.html">Dogs</a></li>
-          <li>/</li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
-    <section>
-      <h2>Checkout</h2>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li>/</li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <section class="body">
+      <h2 class="page-heading">Checkout</h2>
       <form class="" method="GET">
         <label>
           Name
@@ -42,11 +44,11 @@
           Street Address
           <input type="text" name=requesterStreet>
         </label>
-        <label>
+        <label id="city">
           City
           <input type="text" name=requesterCity>
         </label>
-        <label>
+        <label id="state">
           State
           <select name=state>
             <option value="Washington">WA</option>
@@ -55,14 +57,14 @@
             <option value="California">CA</option>
           </select>
         </label>
-        <label>
+        <label id="zip">
           Zip Code
           <input type="text" name=requesterZip>
         </label>
         <fieldset>
           <legend>First Time Adopter?</legend>
           <label>
-            <input type="radio" name=firstTime value="yes">
+            <input id="yes-input" type="radio" name=firstTime value="yes">
             Yes
           </label>
           <label>
@@ -81,21 +83,23 @@
         </label>
         <section>
           <h2>Dogs Adopted</h2>
-          <div>
-            <img src="images/lucas-checkout.jpg" alt="A black dog with brown eyes looking toward the camera with an excited face">
-            <h3>Lucas</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-            <img src="images/duffy-checkout.jpg" alt="A large dog with blue eyes, a white face, and brown ears, looking toward
-            the camera on a grassy background">
-            <h3>Duffy</h3>
-            <h4>Cost to Adopt: $123.45</h4>
-          </div>
-          <h2>Total Adoption Cost</h2>
-          <p>$1234.56</p>
-        </section>
-        <input type="submit" value="Submit">
-      </form>
-    </section>
+            <div class="dog-tile">
+              <img class=".dog-photo " src="images/lucas-checkout.jpg" alt="A black dog with brown eyes looking toward the camera with an excited face">
+              <h3>Lucas</h3>
+              <h4>Cost to Adopt: $123.45</h4>
+            </div>
+            <div class="dog-card">
+              <img class="dog-card" src="images/duffy-checkout.jpg" alt="A large dog with blue eyes, a white face, and brown ears, looking toward
+              the camera on a grassy background">
+              <h3 class="dog-card">Duffy</h3>
+              <h4 class="dog-card">Cost to Adopt: $123.45</h4>
+            </div>
+            <h2>Total Adoption Cost</h2>
+            <p>$1234.56</p>
+          </section>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
     <footer>
       <img src="images/adoptadog-logo.svg" alt="ADOPTADOG logo">
       <p>

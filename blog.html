@@ -3,87 +3,93 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale-1">
-    <link rel="stylesheet" type="text/stylesheet" href="styles/stylesheet.css">
-    <title>Our dogs - ADOPTADOG</title>
+    <title>Blog - ADOPTADOG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Neuton:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
-  <body>
-    <section>
-      <img src="images/header-image.jpg" alt="the profile of a brown dog with brown eyes, with light
-      washing across its face in diagonal lines">
-      <img src="images/adoptadog-logo.svg" alt="ADOPTADOG logo">
-      <h1>Seattle’s premiere dog adoption agency</h1>
-      <img src="images/cart-icon.svg" alt="shopping cart icon">
-      <p>$1234.56</p>
-      <a href="checkout.html">Checkout</a>
+  <body class="container">
+    <section class="header">
+      <div class="header-left">
+        <img class="header-logo" src="images/adoptadog-logo.svg" alt="ADOPTADOG logo">
+        <h1>Seattle’s premiere dog adoption agency</h1>
+      </div>
+      <div class="header-right">
+        <p><img class="header-cart" src="images/cart-icon.svg" alt="shopping cart icon">$1234.56</p>
+        <h3><a href="checkout.html">Checkout</a></h3>
+      </div>
     </section>
-    <div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>/</li>
-          <li><a href="dogs.html">Dogs</a></li>
-          <li>/</li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
-    <section>
-      <h2>Adoptadog Blog</h2>
-      <article class="">
-        <img src="images/blog-1.jpg" alt="A person in a gray shirt with blonde hair, with their arm wrapped
-        around a black dog wearing a red collar, sitting at the edge of a dropoff with large rock formations
-        in the background">
-        <h3>Traveling With Your Dog</h3>
-        <p>
-        Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
-        quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
-        hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
-        faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.
-        </p>
-        <p>
-        Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
-        et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
-        qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
-        voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
-        ulparume nonseca estorer spernam.
-        </p>
-      </article>
-      <article class="">
-        <img src="images/blog-2.jpg" alt="A hand holding the end of four leashes, each with a dog tethered
-        to it. The dogs are sitting outside on a brick surfaceand one of them is yawning">
-        <h3>How To Walk Multiple Dogs</h3>
-        <p>
-        Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
-        quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
-        hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
-        faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.
-        </p>
-        <p>
-        Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
-        et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
-        qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
-        voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
-        ulparume nonseca estorer spernam.
-        </p>
-      </article>
-      <article class="">
-        <img src="images/blog-3.jpg" alt="The silhouette of a person and a dog against a dramatic sunset background. The person holding a
-        ball up in the air with their right hand">
-        <h3>Teach Your Dog To Fetch!</h3>
-        <p>
-        Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
-        quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
-        hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
-        faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.
-        </p>
-        <p>
-        Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
-        et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
-        qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
-        voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
-        ulparume nonseca estorer spernam.
-        </p>
-      </article>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li>/</li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <section class="body">
+      <h2 class="page-heading">Adoptadog Blog</h2>
+      <div class="blog-grid">
+        <div class="blog">
+          <img class="blog-column-img" src="images/blog-1.jpg" alt="A person in a gray shirt with blonde hair, with their arm wrapped
+          around a black dog wearing a red collar, sitting at the edge of a dropoff with large rock formations
+          in the background">
+          <div class="blog-column-text">
+            <h3>Traveling With Your Dog</h3>
+            <p>
+            Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+            quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
+            hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
+            faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.
+            </p>
+            <p>
+            Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
+            et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
+            qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
+            voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
+            ulparume nonseca estorer spernam.
+            </p>
+          </div>
+          <img class="blog-column-img" src="images/blog-2.jpg" alt="A hand holding the end of four leashes, each with a dog tethered
+          to it. The dogs are sitting outside on a brick surfaceand one of them is yawning">
+          <div class="blog-column-text">
+            <h3>How To Walk Multiple Dogs</h3>
+            <p>
+              Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+              quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
+              hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
+              faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.
+            </p>
+            <p>
+              Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
+              et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
+              qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
+              voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
+              ulparume nonseca estorer spernam.
+            </p>
+          </div>
+          <img class="blog-column-img" src="images/blog-3.jpg" alt="The silhouette of a person and a dog against a dramatic sunset background. The person holding a
+          ball up in the air with their right hand">
+          <div class="blog-column-text">
+            <h3>Teach Your Dog To Fetch!</h3>
+            <p>
+            Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem
+            quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium
+            hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium
+            faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.
+            </p>
+            <p>
+            Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con
+            et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad
+            qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam
+            voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit
+            ulparume nonseca estorer spernam.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
       <img src="images/adoptadog-logo.svg" alt="ADOPTADOG logo">
