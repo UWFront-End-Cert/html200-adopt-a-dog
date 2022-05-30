@@ -1,6 +1,7 @@
 header {
   background-image: url("../images/header-image.jpg");
   background-size: cover;
+  background: radial-gradient(rgb(129, 183, 65), black 30%);
   font-family: arial;
   display: grid;
   grid-template-columns: 10% 40% 40% 10%;
