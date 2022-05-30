@@ -293,7 +293,7 @@ option {
   font-family: 'Cabin', 'Trebuchet', sans-serif;
 }
 
-button, select, textarea, {
+button, select, textarea {
   font-family: inherit;
   font-size: 100%;
   font-weight: bold;
