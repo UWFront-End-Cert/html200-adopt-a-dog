@@ -24,14 +24,13 @@ Surface Pro 7 and Duo
 Galaxy Fold and Galaxy A51
 Nest Hub and Nest Max
 
-//////////////////////////////////////////////////////////////
+
 To test the responsive abilities of the website, I adjusted the zoom to 75% as well as all the way up to 200% to make sure it was still legible. I also made sure that the grid view adjusted to include only one or two photos across depending on the device. The photos also maintained a margin and padding around them when I resized the window on various devices. Navigation, headers, and footers also stayed fixed regardless of resolution or device, making navigation easier.
 
 A few items that I did adjust or edit included adding more descriptors to the alt text of some of the images for screen reader ease of use. I also tried to resize the Violet image on the second page to make it consistent with the others, but did not find a solution that did not impact the other images.
 
 
 
-/////////////////////////////////////////////////////////////////
 User Personas:
 
 Name: Katie Smith
