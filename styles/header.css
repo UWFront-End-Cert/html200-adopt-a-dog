@@ -1,4 +1,5 @@
 header {
+  background: radial-gradient(rgb(129, 183, 65), black 30%);
   background-image: url("../images/header-image.jpg");
   background-size: cover;
   font-family: arial;
