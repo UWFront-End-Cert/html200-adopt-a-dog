@@ -35,6 +35,11 @@ header nav {
   color: white;
 }
 
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
 .checkout img {
   max-width: 20%;
 }
