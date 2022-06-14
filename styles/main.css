@@ -71,6 +71,7 @@
 
 
 .adopt-card {
+  border-width: 4px;
   border-style: solid;
   border-color: rgb(236, 236, 236);
   min-width: 0;
