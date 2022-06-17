@@ -41,7 +41,7 @@ header h1 {
   color: #59b300;
   font-style: italic;
 }
-header a {
+#checkout {
   color: white;
   background-color: #59b300;
   padding: .5rem 2rem;

@@ -4,17 +4,24 @@
     <meta charset="utf-8">
     <title>Adoptadog</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="./javascripts/scripts.js"></script>
   </head>
   <body>
     <header>
       <div class="logo">
+        <a href="index.html">
         <img src="images/adoptadog-logo.png" alt="adoptadog logo">
+        </a>
         <h1>Seattle's premiere dog adoption agency</h1>
       </div>
       <aside>
         <img src="images/cart-icon.png" alt="shopping cart">
         <p>$1234.56</p>
-        <a href="checkout.html">Checkout</a>
+        <a href="checkout.html" id='checkout'>Checkout</a>
       </aside>
     </header>
 
@@ -56,7 +63,7 @@
 
     <div class="container">
       <article class="dog-card">
-        <img src="images/murphy-card.jpg" alt="a brown and white dog with a questioning look on his face" onclick="dogInfo('Murphy', 'Mix', '$123.45')">
+        <img src="images/murphy-card.jpg" alt="a brown and white dog with a questioning look on his face" class="dog-img" onclick="dogInfo('Murphy', 'Mix', '$123.45')">
         <h3>Murphy</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
@@ -64,7 +71,7 @@
       </article>
 
       <article class="dog-card">
-        <img src="images/poppy-card.jpg" alt="a scruffy white dog walking down a road with her tongue out" onclick="dogInfo('Poppy', 'Maltese', '$123.45')">
+        <img src="images/poppy-card.jpg" alt="a scruffy white dog walking down a road with her tongue out" class="dog-img" onclick="dogInfo('Poppy', 'Maltese', '$123.45')">
         <h3>Poppy</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
@@ -72,7 +79,7 @@
       </article>
 
       <article class="dog-card">
-        <img src="images/jack-card.jpg" alt="a brown and white puppy looking up innocently" onclick="dogInfo('Jack', 'Beagle', '$123.45')">
+        <img src="images/jack-card.jpg" alt="a brown and white puppy looking up innocently" class="dog-img" onclick="dogInfo('Jack', 'Beagle', '$123.45')">
         <h3>Jack</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
@@ -80,7 +87,7 @@
       </article>
 
       <article class="dog-card">
-        <img src="images/duffy-card.jpg" alt="a brown and white dog with blue eyes looking into the camera" onclick="dogInfo('Duffy', 'Pit Bull', '$123.45')">
+        <img src="images/duffy-card.jpg" alt="a brown and white dog with blue eyes looking into the camera" class="dog-img" onclick="dogInfo('Duffy', 'Pit Bull', '$123.45')">
         <h3>Duffy</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
@@ -88,7 +95,7 @@
       </article>
 
       <article class="dog-card">
-        <img src="images/lucas-card.jpg" alt="a black dog looking up into the camera and smiling" onclick="dogInfo('Lucas', 'Mix', '$123.45')">
+        <img src="images/lucas-card.jpg" alt="a black dog looking up into the camera and smiling" class="dog-img" onclick="dogInfo('Lucas', 'Mix', '$123.45')">
         <h3>Lucas</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
@@ -96,7 +103,7 @@
       </article>
 
       <article class="dog-card">
-        <img src="images/jake-card.jpg" alt="a blonde dog on a beach looking into the distance" onclick="dogInfo('Jake', 'Lab', '$123.45')">
+        <img src="images/jake-card.jpg" alt="a blonde dog on a beach looking into the distance" class="dog-img" onclick="dogInfo('Jake', 'Lab', '$123.45')">
         <h3>Jake</h3>
         <p><strong>Cost to Adopt:</strong> $123.45</p>
         <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
@@ -120,6 +127,5 @@
       </div>
       <p>© 2022 Adoptadog, LLC | Seattle, WA</p>
     </footer>
-    <script src="./javascripts/scripts.js"></script>
   </body>
 </html>
