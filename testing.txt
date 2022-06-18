@@ -1,0 +1,5 @@
+-Designed in Chrome
+Reviewed all pages and functionalities in the following browsers:
+-Displays and performs as expected in Firefox
+-Displays and performs as expected in Edge
+-Displays and performs as expected in Chrome for Android
