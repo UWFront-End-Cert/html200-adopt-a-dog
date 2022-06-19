@@ -11,3 +11,6 @@ The website is for a dog adoption group from Seattle.  The goal of the site is t
 - [Blog Posts](./blog.html): List of recent blogs posted
 - [Checkout](./checkout.html): Adoption Checkout form.
 
+## Licensing
+
+html200-adopt-a-dog is licensed under the GNU Public License v3.
