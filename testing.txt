@@ -1,0 +1,84 @@
+Testing Requirements
+-------------------------------------
+To ensure consistent user experiences across a variety of devices the following environments are considered:
+
+Browsers:
+- Microsoft Edge
+- Microsoft Internet Explorer (older users might not have upgraded)
+- Chrome
+- Safari
+
+Devices:
+- Android Phone (smaller screen)
+- iPad
+- Laptop (resolution 3000 x 2000)
+- 4K Monitor (resolution 3840 x 2160)
+
+The devices have been selected to meet general user needs and based on the personas defined in the User-Persona.doc (.pdf)
+
+Testing Procedures
+-------------------------------------
+To ensure a consistent experience there are several tests that should be performed.  The tests have been divided into two groups,
+the first set is to ensure the site renders correctly across all of the browsers, the second is device support with a focus on 
+responsive design based on the user device.
+
+1. Browser Compatability Testing
+
+        Browsers can have different levels of support for html5, css, and javascript support.  The purposes of these tests are to identify
+        that all of the browsers present the user with same website experience.  The following items need to be checked for each of the browsers:
+
+        Index.html
+        - Layout matches design renders
+        - Navigation bar directs to the correct pages.
+        - Selecting a dog image prompts an alert: provides name, breed, adoption cost for dog selected.
+        - Clicking the adopt button for a dog updates the cart total in the header
+        - If blog posts are in sidebar, then the link takes user to blog.html
+
+        dogs.html
+        - Layout matches design renders
+        - Navigation bar directs to the correct pages.
+        - Selecting a dog image prompts an alert: provides name, breed, adoption cost for dog selected.
+        - Clicking the adopt button for a dog updates the cart total in the header
+
+        blog.html
+        - Layout matches design renders
+        - Navigation bar directs to the correct pages.
+
+        checkout.html
+        - Layout matches design renders
+        - Navigation bar directs to the correct pages.
+        - Selecting submit alerts the user that the form data has been accepted.  Console logs the information.
+
+2. Device Compatability Testing
+
+        Users may interact with the site from a variety of devices.  The interaction can be performed with either a touchscreen or a mouse.
+        Devices also have different screen sizes and resolution which can drive different views of page.  The pages should be responsive and adapt
+        to the various sizes.
+
+        All devices
+        - Images should be properly scaled to view.
+        - Buttons and links should be easy to interact with.
+        - Text should be scalable for readability.
+        - Landscape view, Index page should have two columns of dogs with sidebar blog
+
+        Device Specific Tests
+        Android Phone
+        - Pages should present with single column view.  This applies to index, dogs, and blog pages.
+
+        iPad
+        - Dogs posting should be limited to two columns
+        - Index page should have two columns of dogs with sidebar blog
+
+        Laptop/Monitor
+        - Dogs posting should be three columns 
+        - Index page should have three columns of dogs with sidebar blog
+
+Testing Notes
+
+Current pages meet all of the testing and design requirements.
+
+Future Development Enhancements
+- Adopted dogs are not stored for the user session, moving to a new page does not retain the selections
+- The form is not validated prior to submiting.  Error need to be trapped to ensure proper information is gathered.
+
+

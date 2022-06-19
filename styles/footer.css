@@ -1,0 +1,31 @@
+footer {
+  background-color: rgb(9, 60, 96);
+  background-size: auto;
+  font-family: arial;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.footer-image {
+  /* padding-top: 4rem; */
+  padding-bottom: 1rem;
+  max-width: 30%;
+}
+
+footer nav {
+  padding: 2rem 0rem 2rem 0rem;
+}
+
+.nav-list-footer {
+  padding-left: 0rem;
+  list-style-type: none;
+}
+
+.nav-list-footer a{
+  color: white;
+}
+.no-left-pad {
+  padding-left: 0rem;
+}
