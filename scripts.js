@@ -1,8 +1,17 @@
 
 function dogDeets(dogName, dogBreed, dogPrice) {
-  alert(dogName + " " + dogBreed + " " + dogPrice)
+  alert(dogName + " - " + dogBreed + " - " + dogPrice)
 }
 
+
+let dogPrice = 123.45
+let clickCount = document.querySelector(".add-to-cart");
+let addToCartClicks = 0;
+
+function totalCost() {
+  addToCartClicks += 1;
+  alert(dogPrice * addToCartClicks)
+}
 
 
 
