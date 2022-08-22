@@ -1,0 +1,148 @@
+/*
+Colors:
+#8EBF45 Green Grass
+#ECECEC Light Gray
+#083A59 Navy Blue
+#29272A Almost Black
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+h1 {
+  color: #083A59;
+  font-weight: 700
+}
+h2 {color: #8EBF45;
+    font-style: italic;
+    }
+h3 {color: #083A59;
+  font-weight: 400;}
+p {
+  font-weight: 300;
+}
+
+
+a {
+  color: #083A59;
+}
+a:hover {
+  color: #8EBF45;
+  text-decoration: underline;
+}
+
+body {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+header {
+  background-image: url("../images/header-image.jpg");
+  background-size: cover;
+  height: 20rem;
+  margin-left: -16rem;
+  margin-right: -16rem;
+  padding-left: 14rem;
+  padding-top: 8rem;
+
+}
+.logo {
+  width: 25%;
+  margin-bottom: -1rem;
+}
+
+nav {
+  background-color: #ECECEC;
+  margin-left: -16rem;
+  margin-right: -16rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 14rem;
+  font-weight: bold;
+}
+
+.info-grid-container {
+display: flex;
+margin-top: 1rem;
+margin-bottom: 1rem;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.info-grid-container > div {
+  font-size: 1rem;
+  max-width: 50%;
+  min-width: 20%;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.info-grid-container > div > img {
+  max-height:250px;
+}
+/*
+.info-img {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.home-intro {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-intro {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+*/
+
+.dog-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: space-between;
+}
+.dog-flex-container > div {
+  border: 0.05rem solid #666;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  width: 22%;
+  min-width: 20%;
+  text-align: left;
+  font-size: 1rem;
+}
+.dog-flex-container > div > img {
+  max-width: 100%;
+  justify-content: center;
+}
+.dog-flex-container > div > p, .dog-flex-container > div > h3 {
+  margin: 0.5rem;
+}
+.about-dog {
+  font-size: 0.8rem;
+}
+.button {
+  background-color: #8EBF45;
+  color: white;
+  font-weight: 700;
+  width: 86%;
+  text-align: center;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+}
