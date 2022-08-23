@@ -47,6 +47,7 @@ body {
 }
 
 header {
+  background-color: #083A59;
   background-image: url("../images/header-image.jpg");
   background-size: cover;
   height: 20rem;
@@ -116,7 +117,7 @@ align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
   justify-content: space-between;
-  align-content: space-between; 
+  align-content: space-between;
 }
 .dog-flex-container > div {
   border: 0.05rem solid #666;
@@ -152,4 +153,37 @@ align-items: center;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
   border-radius: 4px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.more-dogs > p {
+  background-color: #ECECEC;
+  color: #083A59;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+footer {
+background-color: #083A59;
+font-family: 'Lato', sans-serif;
+height: 20rem;
+margin-left: -16rem;
+margin-right: -16rem;
+text-align: center;
+padding-top: 5rem;
+font-size: 0.9rem;
+color: #ffffff;
+}
+footer > p {
+  color: #FFFFFF;
+
+}
+footer > a {
+  color: #FFFFFF;
+  font-weight: bolder;
+  margin: 1rem;
 }
