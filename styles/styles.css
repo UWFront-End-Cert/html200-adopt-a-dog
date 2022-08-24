@@ -26,7 +26,9 @@ h2 {color: #8EBF45;
     }
 h3 {color: #083A59;
   font-family: 'Faustina', serif;
-  font-weight: 700;}
+  font-weight: 700;
+  line-height: 0rem;
+}
 
 p {
   font-weight: 300;
@@ -55,7 +57,25 @@ header {
   margin-right: -16rem;
   padding-left: 14rem;
   padding-top: 8rem;
+}
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.header{
+  width: 80%;
+  }
 
+.cart {
+  width: 10%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.cart > p > img {
+  width: 20%;
+  max-width: 100%;
 }
 .logo {
   width: 25%;
@@ -120,7 +140,7 @@ align-items: center;
   align-content: space-between;
 }
 .dog-flex-container > div {
-  border: 0.05rem solid #666;
+  border: 0.05rem solid #ECECEC;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 2rem;
@@ -158,13 +178,37 @@ align-items: center;
   display: flex;
   justify-content: center;
 }
-.more-dogs > p {
+.more-dogs > a {
   background-color: #ECECEC;
   color: #083A59;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   padding: 1rem;
   border-radius: 4px;
+}
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 1rem;
+  grid-template-rows: auto;
+  grid-row-gap: 2rem;
+  align-items: start;
+
+}
+.blog-img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.blog-img > img {
+  object-fit: contain;
+  padding-top: 1rem;
+  max-width: 100%;
+}
+
+.blog-content {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  padding: 0rem;
 }
 
 footer {
@@ -173,6 +217,7 @@ font-family: 'Lato', sans-serif;
 height: 20rem;
 margin-left: -16rem;
 margin-right: -16rem;
+margin-top: 8rem;
 text-align: center;
 padding-top: 5rem;
 font-size: 0.9rem;
