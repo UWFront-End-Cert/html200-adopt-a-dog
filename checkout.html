@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Adopt a Dog</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <img src="images/header-image.jpg" alt="a darkly lit image of a dog's eye">
+      <img src="images/adoptadog-logo.svg" alt="adoptadog site logo">
+      <h2>Seattle's premiere dog adoption agency</h2>
+
+      <img src="images/cart-icon.svg" alt="a shopping cart icon">
+      <input type="button" name="Checkout" value="checkout">
+
+      <nav>
+        <a href="index.html">Home</a>
+        <p> / </p>
+        <a href="dogs.html">Dogs</a>
+        <p> / </p>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </header>
+
+    <article class="">
+      <h3>Checkout</h3>
+
+      <form method="post">
+
+        <label>Name
+          <input type="text" name="contactName">
+        </label>
+
+        <label>Email Address
+          <input type="email" name="contactEmail">
+        </label>
+
+        <label>Street Address
+          <input type="text" name="contactAddress">
+        </label>
+
+        <label>City
+          <input type="text" name="contactCity">
+        </label>
+
+        <label for="state">State
+          <select name="state" id="state">
+            <option value="null">select state</option>
+            <option value="wa">WA</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+
+        <label>Zip Code
+          <input type="text" name="contactZip">
+        </label>
+
+        <fieldset class="checkbox">
+          <legend>First Time Adopter?</legend>
+          <label>
+            <input type="checkbox" name="type" value="yes">Yes
+            <span class="checkmark"></span>
+          </label>
+          <label>
+            <input type="checkbox" name="type" value="no">No
+            <span class="checkmark"></span>
+          </label>
+        </fieldset>
+
+        <label for="pickup">Pickup Location
+          <select name="pickup" id="pickup">
+            <option value="null">select location</option>
+            <option value="downtown">Downtown</option>
+            <option value="fremont">Fremont</option>
+            <option value="beaconhill">Beacon Hill</option>
+          </select>
+        </label>
+
+        <h4>Dogs Adopted</h4>
+
+        <h4>Total Adoption Cost</h4>
+
+        <input type="submit" value="Submit">
+      </form>
+    </article>
+
+    <footer class="footer-container">
+      <img src="images/adoptadog-logo.svg" alt="Arrows with a blue photo filter.">
+      <div class="footer-text">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <a href="index.html">Home</a>
+        <p> / </p>
+        <a href="dogs.html">Dogs</a>
+        <p> / </p>
+        <a href="blog.html">Blog</a>
+        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
