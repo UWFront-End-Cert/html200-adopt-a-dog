@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for html layout only - not for assignment grading */
+
+header {
+    background-color: #093c60;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 10rem;
+}
+
+.header-container p {
+    color: #81b741;
+}
+
+.cart-button {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+}
+
+.cart-button-box {
+    display: flex;
+    justify-content: right;
+}
+
+.cart-button span {
+    color: white;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.cart-button input {
+    background-color: #81b741;
+    border: none;
+    padding: 10px 50px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-container {
+    background-color: #ececec;
+    width: 100vw;
+    height: 5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 2rem 10rem;
+}
+
+nav li {
+    padding: 0px 3px;
+}
+
+nav a {
+    color: #093c60;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.main-section {
+    display: flex;
+    padding: 2rem 10rem;
+}
+
+.section-content {
+    padding: 4rem;
+}
+
+.section-content p {
+    padding-top: 1rem;
+}
+
+.dog-house-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0rem 10rem;
+}
+
+.dog-house {
+    width: 14rem;
+    height: 23rem;
+    border-style: solid;
+    border-color: #ececec;
+    margin: 24px 7px;
+}
+
+.dog-house img {
+    width: 100%;
+}
+
+.dog-house-details {
+    padding: 6px 10px;
+}
+
+.dog-house-details > * {
+    padding-top: 7px;
+}
+
+.dog-house-details button {
+    background-color: #81b741;
+    color: white;
+    margin: 8px 0px;
+    padding: 5% 40%;
+    border: none;
+    border-radius: 3%;
+    font-weight: bold;
+}
+
+.dog-house-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+.dog-house-button button {
+    background-color: #ececec;
+    color: #093c60;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: none;
+}
+
+.form-container {
+    margin: 3rem 50rem 3rem 10rem;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: #3d3d3d;
+}
+
+.footer-box {
+    align-items: center;
+    color: white;
+}
+
+.footer-box a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
