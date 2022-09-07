@@ -37,6 +37,7 @@ p {
 
 a {
   color: #083A59;
+  text-decoration: none;
 }
 a:hover {
   color: #8EBF45;
@@ -220,13 +221,76 @@ margin-right: -16rem;
 margin-top: 8rem;
 text-align: center;
 padding-top: 5rem;
+padding-left: 16rem;
+padding-right: 16rem;
 font-size: 0.9rem;
 color: #ffffff;
 }
-footer > p {
-  color: #FFFFFF;
+
+legend, label {
+  font-family: 'Faustina', serif;
+  font-size: 100%;
+  color: #083A59;
+  display: inline;
+  }
+
+button, input, select, textarea{
+  font-family: 'Faustina', serif;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem;
+  color: #083A59;
+}
+input[type=submit]{
+  background-color: #8EBF45;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.5rem;
+  justify-content: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+input[type=password]:focus {
+  background-color: seagreen;
+  outline: none;
+}
+input {
+  border-radius: 15px;
+}
+fieldset {
+  border:none;
+}
+fieldset input {
+  display: inline;
+}
+
+.adoptees-flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 1rem;
+  width: 70%;
 
 }
+.adoptees {
+  font-size: 0.5rem;
+  padding-right: 1rem;
+}
+
+.adoptees > img {
+  height: 50px;
+  padding-left: 1rem;
+}
+
+footer > p {
+  color: #FFFFFF;
+}
+
 footer > a {
   color: #FFFFFF;
   font-weight: bolder;
