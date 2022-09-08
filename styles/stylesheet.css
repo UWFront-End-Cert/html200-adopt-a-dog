@@ -4,22 +4,34 @@
     box-sizing: border-box;
 }
 
+/* all pages header */
+
 header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
     background-color: #093c60;
     padding: 3rem 10rem;
 }
 
 .header-container p {
     color: #81b741;
-    font-size: 31px;
+    font-size: 190%;
 }
+
+.header-container img {
+    max-width: 100%;
+    min-width: 15em;
+    height: auto;
+}
+
+/* all pages top right header cart */
 
 .cart-button {
     display: flex;
     flex-direction: column;
     width: 10rem;
+    padding-bottom: 10%;
 }
 
 .cart-button-box {
@@ -44,6 +56,8 @@ header {
     color: white;
     font-weight: bold;
 }
+
+/* all pages main nav bar */
 
 .nav-container {
     background-color: #ececec;
@@ -73,46 +87,73 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* both index and blog */
+
 .main-section {
     display: flex;
-    padding: 2rem 10rem;
+    flex-wrap: wrap;
+    margin: 2rem 10rem;
 }
 
-.dogs-header h1 {
-    padding: 3% 12% 1%;
-    color: #093c60;
-    font-size: 190%;
-}
-.section-content {
-    padding: 2rem 4rem 4rem 4rem;
+/* index main section */
+
+.section-image-box {
+    width: 48%;
 }
 
-.section-content2 {
-    padding: 0rem 4rem 4rem 4rem;
+.section-image-box img {
+    width: 90%;
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
 }
 
-.section-content h1 {
-    color: #093c60;
-    font-size: 200%;
+.section-content-box {
+    width: 450px;
+    padding: 4% 0% 4% 0%;
 }
 
-.section-content2 h1 {
-    color: #093c60;
-    font-size: 150%;
-}
-
-.section-content p {
+.section-content-box p {
     padding-top: 1rem;
     font-size: 120%;
     font-family: 'Noto Sans Buhid', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
 
-.section-content2 p {
+.section-content-box h1 {
+    color: #093c60;
+    font-size: 200%;
+}
+
+/* Blog page section */
+
+.blog-section-content {
+    width: 600px;
+    padding: 0% 0% 0% 4%;
+}
+
+.blog-section-content h1 {
+    color: #093c60;
+    font-size: 150%;
+    padding-bottom: 2%;
+}
+
+.blog-section-content p {
     font-size: 95%;
     font-weight: 100;
     line-height: 1.5;
 }
+
+
+/* all section header */
+
+.section-header h1 {
+    padding: 3% 12% 1%;
+    color: #093c60;
+    font-size: 190%;
+}
+
+/* all dog listings */
 
 .dog-house-container {
     display: flex;
@@ -186,12 +227,16 @@ nav a:hover {
     border: none;
 }
 
+/* checkout page form */
+
 form {
     padding-top: 0;
     margin-top: 0;
 }
 
 .form-container {
+    width: 40%;
+    min-width: 350px;
     margin: 3rem 50rem 3rem 10rem;
 }
 
@@ -342,6 +387,8 @@ fieldset label {
     font-weight: 100;
 }
 
+/* all pages footer */
+
 .footer-container {
     display: flex;
     justify-content: center;
@@ -373,6 +420,9 @@ fieldset label {
 .footer-box img {
     display: block;
     margin: auto;
+    max-width: 80%;
+    min-width: 12em;
+    height: auto;
 }
 
 .footer-box ul {
