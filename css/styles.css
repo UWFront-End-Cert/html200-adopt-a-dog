@@ -1,3 +1,6 @@
+/* @media screen and (max-width: 830px){
+    .dog-list {grid-template-columns: 17%, 17%, 17%, 17%;}
+} */
 .skipper {
     position: relative;
     left: -10000px;
@@ -40,8 +43,11 @@
     padding: unset;
     padding-top: 23px;
 }
-li{
+a{
     text-decoration: none;
+}
+.head-nav ul a {
+    color: #093C60;
 }
 .head-nav ul li{
     display: inline;
@@ -57,6 +63,7 @@ li{
     flex-direction: column;
     right: 5%;
     top: 5%;
+    width: 118px;
     align-items: flex-end;
 
 }
@@ -65,28 +72,36 @@ li{
     flex-direction: row;
     justify-content: flex-end;
 }
+#shopping-cart div p{
+    color: white;
+    font-size: larger;
+}
 #shopping-cart div img {
-    width: 10%;
+    width: 30px;
 }
 #shopping-cart button {
     background-color: #81B741;
+    color: white;
+    width: inherit;
 }
 .dog-list {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+    justify-content: center;
 
 }
 .dog-thumbnail {
     display: flex;
     flex-direction: column;
-    max-width: 20%;
-    height: auto;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+.dog-thumbnail button {
+    color: white;
+    background-color: #81B741;
+}
 footer{
-    height: 263px;
     background-color: #3A3A3A;
-
 }
 .foot-wrapper{
     width: 30rem;
@@ -103,6 +118,9 @@ footer{
     list-style: none;
     display: inline;
 
+}
+.foot-nav ul li a{
+    color: white;
 }
 .foot-nav ul li + li::before{
     content: " / ";
