@@ -37,6 +37,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* header/nav */
 header {
   min-height: 20em;
@@ -189,6 +193,7 @@ li input  {
 .container3 {
   display: flex;
   justify-content: center;
+  margin-bottom: 2.5em;
 }
 
 .dogs-button {
