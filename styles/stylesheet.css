@@ -4,23 +4,34 @@
     box-sizing: border-box;
 }
 
-/* Styling for html layout only - not for assignment grading */
+/* all pages header */
 
 header {
-    background-color: #093c60;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    background-color: #093c60;
     padding: 3rem 10rem;
 }
 
 .header-container p {
     color: #81b741;
+    font-size: 190%;
 }
+
+.header-container img {
+    max-width: 100%;
+    min-width: 15em;
+    height: auto;
+}
+
+/* all pages top right header cart */
 
 .cart-button {
     display: flex;
     flex-direction: column;
     width: 10rem;
+    padding-bottom: 10%;
 }
 
 .cart-button-box {
@@ -33,6 +44,8 @@ header {
     padding-left: 1rem;
     padding-top: 1rem;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 .cart-button input {
@@ -43,6 +56,8 @@ header {
     color: white;
     font-weight: bold;
 }
+
+/* all pages main nav bar */
 
 .nav-container {
     background-color: #ececec;
@@ -57,32 +72,88 @@ nav ul{
 }
 
 nav li {
-    padding: 0px 3px;
+    padding: 0px 8px;
 }
 
 nav a {
     color: #093c60;
     text-decoration: none;
     font-weight: bold;
-    font-size: larger;
+    font-size: 112%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
+/* both index and blog */
+
 .main-section {
     display: flex;
-    padding: 2rem 10rem;
+    flex-wrap: wrap;
+    margin: 2rem 10rem;
 }
 
-.section-content {
-    padding: 4rem;
+/* index main section */
+
+.section-image-box {
+    width: 48%;
 }
 
-.section-content p {
+.section-image-box img {
+    width: 90%;
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+}
+
+.section-content-box {
+    width: 450px;
+    padding: 4% 0% 4% 0%;
+}
+
+.section-content-box p {
     padding-top: 1rem;
+    font-size: 120%;
+    font-family: 'Noto Sans Buhid', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
+
+.section-content-box h1 {
+    color: #093c60;
+    font-size: 200%;
+}
+
+/* Blog page section */
+
+.blog-section-content {
+    width: 600px;
+    padding: 0% 0% 0% 4%;
+}
+
+.blog-section-content h1 {
+    color: #093c60;
+    font-size: 150%;
+    padding-bottom: 2%;
+}
+
+.blog-section-content p {
+    font-size: 95%;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+
+/* all section header */
+
+.section-header h1 {
+    padding: 3% 12% 1%;
+    color: #093c60;
+    font-size: 190%;
+}
+
+/* all dog listings */
 
 .dog-house-container {
     display: flex;
@@ -92,8 +163,8 @@ nav a:hover {
 }
 
 .dog-house {
-    width: 14rem;
-    height: 23rem;
+    width: 13rem;
+    height: 21rem;
     border-style: solid;
     border-color: #ececec;
     margin: 24px 7px;
@@ -107,6 +178,23 @@ nav a:hover {
     padding: 6px 10px;
 }
 
+.dog-house-details h2 {
+    color: #093c60;
+    font-weight: 700;
+}
+
+.dog-house-details p {
+    padding: 4% 0%;
+    font-size: 90%;
+}
+
+.dog-house-details p:nth-child(3){
+    font-family: 'Noto Sans Buhid', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 85%;
+    font-weight: 100;
+}
+
 .dog-house-details > * {
     padding-top: 7px;
 }
@@ -114,16 +202,18 @@ nav a:hover {
 .dog-house-details button {
     background-color: #81b741;
     color: white;
-    margin: 8px 0px;
-    padding: 5% 40%;
+    margin: 4px 0px;
+    padding: 5% 37%;
     border: none;
     border-radius: 3%;
     font-weight: bold;
+    font-size: 100%;
 }
 
 .dog-house-button {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 1rem;
     margin-bottom: 6rem;
 }
@@ -131,27 +221,185 @@ nav a:hover {
 .dog-house-button button {
     background-color: #ececec;
     color: #093c60;
-    font-weight: bold;
-    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 120%;
+    padding: 12px 46px;
     border: none;
 }
 
+/* checkout page form */
+
+form {
+    padding-top: 0;
+    margin-top: 0;
+}
+
 .form-container {
+    width: 40%;
+    min-width: 350px;
     margin: 3rem 50rem 3rem 10rem;
 }
+
 .form-container form{
     display: flex;
     flex-direction: column;
 }
 
+.form-address {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+}
+
+.form-address input {
+    border: 1px solid #d8d8d8;
+    padding: 3%;
+    margin-top: 2%;
+}
+
+.form-state {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    width: 20%;
+}
+
+#state {
+    border: 1px solid #d8d8d8;
+    padding: 12%;
+    margin-top: 4%;
+    margin-right: 10%;
+}
+
+.form-city {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#city {
+    margin-right: 10%;
+    padding: 6%;
+}
+
+.form-zip {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 2%;
+}
+
+#zip {
+    padding: 6%;
+}
+
+#select {
+    border: 1px solid #d8d8d8;
+    padding: 3%;
+    margin-top: 2%;
+    width: 60%;
+}
+
+.form-dog-container {
+    display: flex;
+    margin-top: 5%;
+}
+
+.form-dog {
+    display: flex;
+    width: 50%;
+}
+
+.form-dog-details {
+    margin-left: 5%;
+    width: 100%;
+}
+
+.form-dog-details h2 {
+    font-size: 120%;
+}
+
+.form-dog-details p {
+    font-size: 100%;
+}
+
+form label {
+    margin-top: 5%;
+    color: #093c60;
+    font-size: 150%;
+    font-weight: 550;
+}
+
+form input {
+    border: 1px solid #d8d8d8;
+    padding: 3%;
+    margin-top: 2%;
+}
+
+form h2 {
+    margin-top: 5%;
+    color: #093c60;
+    font-size: 150%;
+    font-weight: 550;
+}
+
+form #submit {
+    margin-top: 5%;
+    background-color: #81b741;
+    color: white;
+    font-size: 110%;
+    font-weight: 700;
+    border: none;
+    border-radius: 5%;
+    width: 50%;
+    padding: 3%;
+}
+
+fieldset {
+    margin-top: 5%;
+    padding: 1%;
+    border: none;
+}
+
+fieldset legend {
+    color: #093c60;
+    font-size: 150%;
+    font-weight: 550;
+}
+
+fieldset label {
+    color: black;
+    font-weight: lighter;
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 3%;
+}
+
+.dog-checkout-total {
+    margin-top: 5%; 
+}
+
+.dog-checkout-total p {
+    padding-top: 2%;
+    font-size: 120%;
+    font-family: 'Noto Sans Buhid', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+}
+
+/* all pages footer */
+
 .footer-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #3d3d3d;
+    padding: 3% 0% 5% 0%;
 }
 
 .footer-box {
     align-items: center;
+    width: 29%;
     color: white;
 }
 
@@ -160,3 +408,30 @@ nav a:hover {
     text-decoration: none;
     font-weight: 500;
 }
+
+.footer-box p {
+    text-align: center;
+    font-size: 90%;
+    font-family: 'Noto Sans Buhid', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 320;
+}
+
+.footer-box img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    min-width: 12em;
+    height: auto;
+}
+
+.footer-box ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-box > * {
+    padding-top: 3%;
+}
+

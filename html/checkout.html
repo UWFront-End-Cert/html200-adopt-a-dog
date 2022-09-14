@@ -36,7 +36,9 @@
                 </ul>
             </nav>
         </div>
-        <h1>Checkout</h1>
+        <div class="section-header">
+            <h1>Checkout</h1>
+        </div>
         <div class="form-container">
             <form id="checkout">
                 <label for="Name"> Name</label>
@@ -45,12 +47,21 @@
                 <input id="Email" type="email" name="email">
                 <label for="Street">Street Address</label>
                 <input id="Street" type="text" name="street">
-                <label for="city">City</label>
-                <input id="city" type="text" name="city">
-                <label for="state">State</label>
-                <input id="state" type="text" name="state">
-                <label for="zip">Zip Code</label>
-                <input id="zip" type="number" name="zip">
+                <div class="form-address">
+                    <div class="form-city">
+                        <label for="city">City</label>
+                        <input id="city" type="text" name="city">
+                    </div>
+                    <div class="form-state">
+                        <label for="state">State</label>
+                        <select id="state" name="state" form="checkout">
+                        </select>
+                    </div>
+                    <div class="form-zip">
+                        <label for="zip">Zip Code</label>
+                        <input id="zip" type="number" name="zip">
+                    </div>
+                </div>
                 <fieldset>
                     <legend>First Time Adopter?</legend>
                     <input id="yes" type="radio" name="adopter" value="yes">
@@ -60,28 +71,29 @@
                 </fieldset>
                 <label for="select">Pickup Location</label>
                 <select id="select" name="location" form="checkout">
-                    <option selected>Choose Location</option>
                 </select>
                 <h2>Dogs Adopted</h2>
-                <div class="form-dog">
-                    <img src="/html200-adopt-a-dog/images/lucas-card.jpg" alt="" width="80">
-                    <div class="form-dog-details">
-                        <h2>Lucas</h2>
-                        <p><strong>Cost to Adopt:</strong> $123.45</p>
+                <div class="form-dog-container">
+                    <div class="form-dog">
+                        <img src="/html200-adopt-a-dog/images/lucas-checkout.jpg" alt="" width="80">
+                        <div class="form-dog-details">
+                            <h2>Lucas</h2>
+                            <p><strong>Cost to Adopt:</strong> $123.45</p>
+                        </div>
+                    </div>
+                    <div class="form-dog">
+                        <img src="/html200-adopt-a-dog/images/duffy-checkout.jpg" alt="" width="80">
+                        <div class="form-dog-details">
+                            <h2>Duffy</h2>
+                            <p><strong>Cost to Adopt:</strong> $123.45</p>
+                        </div>
                     </div>
                 </div>
-                <div class="form-dog">
-                    <img src="/html200-adopt-a-dog/images/duffy-card.jpg" alt="" width="80">
-                    <div class="form-dog-details">
-                        <h2>Duffy</h2>
-                        <p><strong>Cost to Adopt:</strong> $123.45</p>
-                    </div>
-                </div>
-                <div>
+                <div class="dog-checkout-total">
                     <h2>Total Adoption Cost</h2>
                     <p>$1234.56</p>
                 </div>
-                <input type="submit" value="Submit">
+                <input id="submit" type="submit" value="Submit">
             </form>
         </div>
     </main>
