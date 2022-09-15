@@ -11,8 +11,7 @@ h2 {
   font-style: italic;
   font-weight: 600;
   font-family: serif;
-  padding: 0em;
-  margin: 0em;
+  padding: 0em .5em;
 }
 
 p {
@@ -43,7 +42,7 @@ a {
 
 /* header/nav */
 header {
-  min-height: 20em;
+  min-height: 25em;
   background-image: url("header-image.jpg");
   background-color: black;
   position: relative;
@@ -51,19 +50,21 @@ header {
 }
 
 header img {
-  width: 20em;
-  font-weight: bold;
+  min-width: 15em;
+  padding: 0em .5em;
 }
 
 .cart {
   align-content: center;
-  width: 1.5em;
+  min-width: 1.5em;
+  max-width: 2em;
 }
 
 .cart-pay {
   display: inline-block;
   font-size: .75em;
   font-weight: 700;
+  color: white;
 }
 
 .c-button {
@@ -77,7 +78,7 @@ header img {
 }
 
 nav a {
-  padding: .5em;
+  padding: 1em;
   color: #093c60;
   font-weight: bold;
   text-decoration: none;
@@ -86,29 +87,28 @@ nav a {
 
 nav {
   background-color: #ececec;
-  padding: 1em;
-  padding-left: 6em;
+  padding: 1em 4em;
   color: #093c60;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .hed-grid {
-  color: white;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  margin-left: 5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 1em;
+    margin: auto;
+    width: 100%;
 }
 
-.hed {
-  grid-area: 1 / 1 / 2 / 4;
-  padding: 1em 1em 0em 1em;
-}
+.hed-box {
+  height: 20%;
+  padding: 2em 0em 0em 0em;
+  margin: auto;
 
-.checkout {
-  grid-area: 1 / 5 / 2 / 6;
-  padding: 1em;
 }
 
 /* index pg body grid & styling */
@@ -117,11 +117,17 @@ section {
   margin-bottom: 4em;
 }
 
+.index-body {
+  margin: 2em 2em;
+}
+
 .work-container1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  margin: 1em 6em;
+  margin: auto;
+  padding-left: 3em;
+  max-width: 80em;
 }
 
 .work-container2 {
@@ -130,7 +136,8 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
   padding-right: 1em;
-  margin: 1em 3em;
+  margin: auto;
+  max-width: 80em;
 }
 
 .box2 {
@@ -140,7 +147,7 @@ section {
 }
 
 .box3 {
-  width: 10em;
+  width: 15em;
   border-style: solid;
   border-color: #C8C8C8;
   border-width: 2px;
@@ -148,7 +155,7 @@ section {
 }
 
 .h3alt {
-  margin: 1em 4.5em;
+  margin: 1em 1em 1em 3em;
 }
 
 .index-img {
@@ -179,8 +186,8 @@ li p {
   font-weight: bold;
   font-size: .5em;
   padding: .5em 2.5em;
-  width: 8em;
-  height: 2.5em;
+  width: 50%;
+
   background-color: #81b742;
   margin-bottom: 1em;
 }
@@ -207,7 +214,7 @@ li input  {
 
 /* blog pg */
 .blog {
-  margin: 1em 6em;
+  margin: 1em 4em;
 }
 
 .blog-grid {
@@ -279,7 +286,8 @@ select {
 }
 
 input {
-  width: 27em;
+  width: 100%;
+  max-width: 27em;
   height: 2.5em;
 }
 
@@ -300,10 +308,11 @@ input {
 .csz {
   display: inline-flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .chk {
-  margin: 1em 6em;
+  margin: 1em 4em;
 }
 
 .pu {
@@ -360,8 +369,8 @@ form h4 {
 .footer-container {
   height: 150%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-around;
   /* great way to center on website */
   align-items: center;
@@ -387,10 +396,11 @@ footer span {
 }
 
 footer p {
-  font-size: .6em;
-  padding: 1em 30em;
+  font-size: .7em;
+  padding: 1em 15em;
 }
 
 footer img {
-  width: 25%;
+  width: 15em;
+  min-width: 100px;
 }
