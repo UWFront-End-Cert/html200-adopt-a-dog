@@ -7,11 +7,10 @@ body {
 
 h2 {
   color: #81b742;
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 550;
   font-family: serif;
-  padding: 0em .5em;
 }
 
 p {
@@ -51,7 +50,6 @@ header {
 
 header img {
   min-width: 15em;
-  padding: 0em .5em;
 }
 
 .cart {
@@ -62,7 +60,7 @@ header img {
 
 .cart-pay {
   display: inline-block;
-  font-size: .75em;
+  font-size: .9em;
   font-weight: 700;
   color: white;
 }
@@ -106,9 +104,7 @@ nav {
 
 .hed-box {
   height: 20%;
-  padding: 2em 0em 0em 0em;
-  margin: auto;
-
+  margin: 2em 2em 2em 4em;
 }
 
 /* index pg body grid & styling */
@@ -175,7 +171,7 @@ li h5 {
 }
 
 li p {
-  font-size: .6em;
+  font-size: .75em;
   font-weight: 200;
   margin-left: .5em;
 }
