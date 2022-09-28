@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Adopt a Dog</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script src="./info.js" charset="utf-8"></script>
   </head>
 
   <body>
@@ -16,7 +17,7 @@
 
         <div class="hed-box">
           <img class="cart" src="images/cart-icon.svg" alt="a shopping cart icon">
-          <p class="cart-pay">$#.##</p> <br>
+          <p class="cart-pay" id="cart-total">$0.00</p> <br>
           <a href="checkout.html" class="c-button">Checkout</a>
         </div>
       </div>
@@ -45,70 +46,68 @@
 
       <ul class="work-container2">
         <li class="box3">
-          <img src="images/murphy-card.jpg" alt="a picture of a dog">
+          <img onclick="dogInfo('Murphy', '$123.45', 'Hound')" src="images/murphy-card.jpg" alt="a picture of a dog">
           <br>
           <h5>Murphy</h5>
           <p><b>Cost to Adopt:</b> $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <div class="center-button">
-              <input class="adopt-button" type="button" value="Adopt">
-          </div>
+          <input onclick="dogCost('123.45')" class="adopt-button" type="button" value="Adopt">
         </li>
         <li class="box3">
-          <img src="images/poppy-card.jpg" alt="a picture of a dog">
+          <img onclick="dogInfo('Poppy', '$123.45', 'terrier')" src="images/poppy-card.jpg" alt="a picture of a dog">
           <br>
           <h5>Poppy</h5>
           <p><b>Cost to Adopt:</b> $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <input class="adopt-button" type="button" value="Adopt">
+          <input onclick="dogCost('123.45')" class="adopt-button" type="button" value="Adopt">
         </li>
         <li class="box3">
-          <img src="images/jack-card.jpg" alt="a picture of a dog">
+          <img onclick="dogInfo('Jack', '$123.45', 'Beagle')" src="images/jack-card.jpg" alt="a picture of a dog">
           <br>
           <h5>Jack</h5>
           <p><b>Cost to Adopt:</b> $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <input class="adopt-button" type="button" value="Adopt">
+          <input onclick="dogCost('123.45')" class="adopt-button" type="button" value="Adopt">
         </li>
         <li class="box3">
-          <img src="images/duffy-card.jpg" alt="a picture of a dog">
+          <img onclick="dogInfo('Duffy', '$123.45', 'Terrier')" src="images/duffy-card.jpg" alt="a picture of a dog">
           <br>
           <h5>Duffy</h5>
           <p><b>Cost to Adopt:</b> $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <input class="adopt-button" type="button" value="Adopt">
+          <input onclick="dogCost('123.45')" class="adopt-button" type="button" value="Adopt">
         </li>
         <li class="box3">
-          <img src="images/lucas-card.jpg" alt="a picture of a dog">
+          <img onclick="dogInfo('Lucas', '$123.45', 'Shepherd dog')" src="images/lucas-card.jpg" alt="a picture of a dog">
           <br>
           <h5>Lucas</h5>
           <p><b>Cost to Adopt:</b> $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <input class="adopt-button" type="button" value="Adopt">
+          <input onclick="dogCost('123.45')" class="adopt-button" type="button" value="Adopt">
         </li>
         <li class="box3">
-          <img src="images/jake-card.jpg" alt="a picture of a dog">
+          <img onclick="dogInfo('Jake', '$123.45', 'golden lab')" src="images/jake-card.jpg" alt="a picture of a dog">
           <br>
           <h5>Jake</h5>
           <p><b>Cost to Adopt:</b> $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <input class="adopt-button" type="button" value="Adopt">
+          <input onclick="dogCost('123.45')" class="adopt-button" type="button" value="Adopt">
         </li>
         <li class="box3">
-          <img src="images/angus-card.jpg" alt="a picture of a dog">
+          <img onclick="dogInfo('Angus', '$123.45', 'Boxer')" src="images/angus-card.jpg" alt="a picture of a dog">
           <br>
           <h5>Angus</h5>
           <p><b>Cost to Adopt:</b> $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <input class="adopt-button" type="button" value="Adopt">
+          <input onclick="dogCost('123.45')" class="adopt-button" type="button" value="Adopt">
         </li>
         <li class="box3">
-          <img src="images/violet-card.jpg" alt="a picture of a dog">
+          <img onclick="dogInfo('Violet', '$123.45', 'Chocolate lab')" src="images/violet-card.jpg" alt="a picture of a dog">
           <br>
           <h5>Violet</h5>
           <p><b>Cost to Adopt:</b> $123.45</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <input class="adopt-button" type="button" value="Adopt">
+          <input onclick="dogCost('123.45')" class="adopt-button" type="button" value="Adopt">
         </li>
       </ul>
 
