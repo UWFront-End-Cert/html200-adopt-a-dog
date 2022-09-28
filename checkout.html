@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Adopt A Dog</title>
+    <script src="https://kit.fontawesome.com/4b01e0c907.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- line of code offering to skip links to main content for tab users -->
+   <header>
+    <div>
+        <img src="images/adoptadog-logo.svg" alt="Adoptadog logo">
+      <p>Seattle's's premier dog adoption agency</p>
+    </div>
+    <div>
+      <p><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;<span id="total">$1234.56</span></p>
+      <button onclick="window.location.href='checkout.html';">Checkout</button>
+    </div>
+    </header>
+    <nav>
+      <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
+    </nav>
+    <section id="main-content">
+    <article>
+      <h2>Checkout</h2>
+      <form>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <p> </p>
+        <label for="email address">Email Address</label><br>
+        <input type="text" id="email address" name="email address"><br>
+        <p> </p>
+        <label for="street address">Street Address</label><br>
+        <input type="text" id="street address" name="street address"><br>
+        <p> </p>
+        <label for="city">City<label>
+        <input type="text" id="city" name="city">
+        <label for="state">State<label>
+        <select id="State" name="state">
+          <option value = "WA">WA</option>
+          <option value = "OR">OR</option>
+          <option value = "ID">ID</option>
+          <option value = "MO">MO</option>
+        </select>
+        <label for="zip code">Zip Code</label>
+        <input type="text" id="zip code" name="zip code"><br>
+        <p> </p>
+        <label for="adopter experience">First Time Adopter?</label><br>
+        <input type="radio" id="yes" name="adopter experience" value="yes">
+        <label for="yes">Yes</label>
+
+        <input type="radio" id="no" name="adopter experience" value="no">
+        <label for="no">No</label>
+      </form>
+      <p> </p>
+      <h3>Dogs Adopted</h3>
+      <div class="flex-container">
+        <div>
+          <img src="images/lucas-card.jpg" alt="doggo 5">
+          <h4>Lucas</h4>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+        </div>
+        <p> </p>
+        <div>
+          <img src="images/duffy-card.jpg" alt="doggo 4">
+          <h4>Duffy</h4>
+          <p><strong>Cost to Adopt:</strong> $123.45</p>
+        </div>
+        <p> </p>
+      </div>
+      <h2>Total Adoption Cost</h2>
+      <p>$1234.56</p>
+      <button type="button" name="button">Submit</button>
+   </article>
+      <footer>
+        <img src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt
+        <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
+        <p>&copy; 2022 Adoptadog, LLC | Seattle, WA</p></footer>
+    </body>
+</html>
