@@ -21,7 +21,7 @@ p {
 h3 {
   color: #093c60;
   font-family: serif;
-  font-size: 1.4em;
+  font-size: 2em;
 }
 
 h4 {
@@ -80,12 +80,12 @@ nav a {
   color: #093c60;
   font-weight: bold;
   text-decoration: none;
-  font-size: .75em;
+  font-size: 1em;
 }
 
 nav {
   background-color: #ececec;
-  padding: 1em 4em;
+  padding: 1em 8em;
   color: #093c60;
   position: absolute;
   bottom: 0;
@@ -114,7 +114,20 @@ section {
 }
 
 .index-body {
-  margin: 2em 2em;
+  margin: 4em 6em;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.left-section {
+  width: 70%;
+}
+
+.right-section {
+  width: 30%;
+  padding-right: 1em;
 }
 
 .work-container1 {
@@ -139,23 +152,47 @@ section {
 .box2 {
   padding-top: 1em;
   padding-bottom: 1em;
-  width: 30em;
+  width: 80%;
 }
 
 .box3 {
-  width: 15em;
+  width: 12em;
   border-style: solid;
   border-color: #C8C8C8;
   border-width: 2px;
   margin: 1em;
 }
 
-.h3alt {
-  margin: 1em 1em 1em 3em;
+.box5 {
+  width: 12em;
+  font-size: 1em;
+  padding-bottom: 2em;
+}
+
+.box5 img {
+  width: 100%;
+}
+
+.box5 h4 {
+  font-size: 1.2em;
+}
+
+.box5 a {
+  color: #093c60;
+}
+
+.right-section .box5 {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.right-section h3 {
+  margin: 1em auto;
+  width: 80%;
 }
 
 .index-img {
-  width:75%;
+  width: 100%;
 }
 
 li img {
@@ -208,9 +245,14 @@ li input  {
   background-color: #F2F2F2;
 }
 
+/* dogs pg */
+.dogs-body {
+  margin: 2em 9em;
+}
+
 /* blog pg */
 .blog {
-  margin: 1em 4em;
+  margin: 2em 9em;
 }
 
 .blog-grid {
@@ -250,12 +292,12 @@ li input  {
 }
 
 .box4 {
-  max-width: 30em;
+  max-width: 40em;
   padding: 1em .5em;
 }
 
 .box4 p {
-  font-size: .7em;
+  font-size: .9em;
   line-height: 1.8;
 }
 .box1 {
@@ -399,4 +441,63 @@ footer p {
 footer img {
   width: 15em;
   min-width: 100px;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+  .logohed {
+    min-width: 10em;
+  }
+
+  nav {
+    padding: 1em 2.7em;
+  }
+  nav a {
+    display: block;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  header {
+    min-height: 35em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .index-body {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .left-section {
+    width: 100%;
+  }
+
+  .right-section {
+    display: none;
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .index-body {
+    margin: auto;
+    width: auto;
+  }
+  nav {
+    padding: 1em auto;
+  }
+
+  .left-section {
+    width: 80%;
+  }
+
+  .right-section {
+    width: 20%;
+  }
 }
