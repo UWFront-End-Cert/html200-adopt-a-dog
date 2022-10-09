@@ -87,17 +87,14 @@ h2 {
   font-size: 1.2rem;
   line-height: 2rem;
 }
-
-/* @media (max-width: 800px) { */
-  .flex-container {
-    padding: 2rem 3rem 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around;
-    align-items: flex-start; */
-    justify-content: space-between;
-  }
-/* } */
+.flex-container {
+  padding: 2rem 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around;
+  align-items: flex-start; */
+  justify-content: space-between;
+}
 .dog-tile {
   width: 100%;
   margin: 1rem 0rem 1rem;
@@ -124,18 +121,23 @@ h2 {
   background-color: #81b741;
   width: 80%;
   margin: 1rem 1rem 1rem;
-  /* width:100%; */
-  /* margin-left:0;
-  margin-right:0; */
-  /* padding-left:1rem;
-  padding-right:0; */
   display:block;
   text-align:center;
+  border-color: #fff;
+  border-style: solid;
 }
-/* .adopt-button a {
-  color: #fff;
-  text-decoration: none;
-} */
 .adopt-button:hover {
   background-color: #093c60;
+}
+.center-button{
+  /* margin: 0 40% 0 40%; */
+  background-color: #ececec;
+  color: #093c60;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .5rem 2rem .5rem 2rem;
+  display:block;
+  margin: auto;
+  border-color: #fff;
+  border-style: solid;
 }
