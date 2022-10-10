@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Seattle’s premiere dog adoption agency | Adopt-A-Dog</title>
+    <meta name="description" content="Meta description" />
+    <meta name="keywords" content="Meta keywords" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="./js/include-script.js"></script>
+  </head>
+  <body id="bg">
+    <script>
+      function addBodyClass() {
+        var element = document.getElementById("bg");
+        element.classList.add("mockNoBg");
+      }
+      function removeBodyClass() {
+        var element = document.getElementById("bg");
+        element.classList.remove("mockNoBg");
+      }
+    </script>
+    <div data-include="./inc/nav-mocks.html"></div>
+    <div data-include="./inc/header.html"></div>
+    <main class="main-container flex-container flex-start padding">
+      <div class="col-1-1-m col-3-4-l">
+        <div class="container-featured margin-bottom">
+          <!-- prettier-ignore -->
+          <img 
+            src="./images/home-hero-750"
+            srcset="./images/home-hero-750 750w, 
+                    ./images/home-hero-1500 1500w"
+            sizes="(max-width: 576px) 150px, 
+                   (min-width: 577px) 1500px"
+          />
+        </div>
+        <h2 class="margin-remove-bottom">Adopt A Dog</h2>
+        <p class="text-lead margin-bottom">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+        <br />
+        <div class="margin-top" data-include="./inc/dogs-home.html"></div>
+        <div style="text-align: center">
+          <a href="./dogs.html" class="button large gray margin-bottom" style="text-align: center">See more dogs</a>
+        </div>
+      </div>
+      <div class="col-1-1-m col-1-4-l hide-on-mobile">
+        <h2 class="margin-bottom">From Our Blog</h2>
+        <div class="container-featured">
+          <a href="/blog.html#traveling" title="Traveling With Your Dog"><img src="./images/blog/blog-1-th.jpg" alt="How To Walk Multiple Dogs" /></a>
+          <h3>
+            <a href="/blog.html#traveling" title="Traveling With Your Dog" class="title-link">Traveling With Your Dog</a>
+          </h3>
+          <p class="margin-remove-top">Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+          <p class="margin-bottom"><a href="/blog.html#traveling" title="Traveling With Your Dog" class="blog-link">Read more &raquo;</a></p>
+        </div>
+        <div class="container-featured">
+          <a href="/blog.html#walkalot" title="How To Walk Multiple Dogs" class="title-link">
+            <img src="./images/blog/blog-2-th.jpg" alt="How To Walk Multiple Dogs" />
+          </a>
+          <h3><a href="/blog.html#walkalot" title="How To Walk Multiple Dogs" class="title-link">How To Walk Multiple Dogs</a></h3>
+          <p class="margin-remove-top">Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+          <p class="margin-bottom"><a href="/blog.html#walkalot" title="How To Walk Multiple Dogs" class="blog-link">Read more &raquo;</a></p>
+        </div>
+        <div class="container-featured">
+          <a href="/blog.html#teach" title="Teach Your Dog To Fetch!">
+            <img src="./images/blog/blog-3-th.jpg" alt="Teach Your Dog To Fetch!" />
+          </a>
+          <h3><a href="/blog.html#teach" title="Teach Your Dog To Fetch!" class="title-link">Teach Your Dog To Fetch!</a></h3>
+          <p class="margin-remove-top">Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+          <p class="margin-bottom"><a href="/blog.html#teach" title="Teach Your Dog To Fetch!" class="blog-link">Read more &raquo;</a></p>
+        </div>
+      </div>
+    </main>
+    <div data-include="./inc/footer.html"></div>
+    <!-- needed for include files -->
+    <script>
+      includeHTML();
+    </script>
+    <script src="./js/dogs.js"></script>
+  </body>
+</html>
