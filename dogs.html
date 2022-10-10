@@ -9,24 +9,24 @@
   </head>
   <body>
     <!-- line of code offering to skip links to main content for tab users -->
-   <header>
-    <a href="index.html">Skip to main content</a>
-      <div>
-          <img src="images/adoptadog-logo.svg" alt="Adoptadog logo">
-        <p>Seattle's's premier dog adoption agency</p>
-      </div>
-      <div>
-        <p><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;<span id="total">$1234.56</span></p>
-        <button onclick="window.location.href='checkout.html';">Checkout</button>
-      </div>
-    </header>
-    <nav>
-      <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
-    </nav>
-    <section id="dog-list">
-      <h2>Here are all of our dogs!</h2>
-      <div class="flex-container">
-        <div>
+    <header>
+       <a "#main-content" class="skip-link">Skip to main content</a>
+       <div class = "alignleft">
+           <img class = "header-logo" src="images/adoptadog-logo.svg" alt="Adoptadog logo">
+         <p class = "header-text">Seattle's premier dog adoption agency</p>
+       </div>
+       <div class= "alignright">
+         <p><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;<span id="total">$1234.56</span></p>
+         <button class = "checkout-button" onclick="window.location.href='checkout.html';">Checkout</button>
+       </div>
+     </header>
+     <nav>
+       <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
+     </nav>
+     <article id="dog-list">
+      <h2>Here are all of our Dogs!</h2>
+      <div class = "flex-container">
+        <div class = "dog-tile">
           <img src="images/murphy-card.jpg" alt="doggo 1">
           <h2>
             Murphy
@@ -37,7 +37,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/poppy-card.jpg" alt="doggo 2">
           <h2>
             Poppy
@@ -48,7 +48,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/jack-card.jpg" alt="doggo 3">
           <h2>
             Jack
@@ -59,7 +59,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/duffy-card.jpg" alt="doggo 4">
           <h2>
             Duffy
@@ -70,7 +70,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/lucas-card.jpg" alt="doggo 5">
           <h2>
           Lucas
@@ -81,7 +81,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/jake-card.jpg" alt="doggo 6">
           <h2>
             Jake
@@ -92,7 +92,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/angus-card.jpg" alt="doggo 7">
           <h2>
             Angus
@@ -103,7 +103,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/violet-card.jpg" alt="doggo 8">
           <h2>
             Violet
@@ -114,7 +114,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
         <img src="images/piper-card.jpg" alt="doggo 9">
         <h2>
           Piper
@@ -125,7 +125,7 @@
         </p>
         <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
         <img src="images/maximus-card.jpg" alt="doggo 10">
         <h2>
           Maximus
@@ -136,7 +136,7 @@
         </p>
         <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
         <img src="images/luna-card.jpg" alt="doggo 11">
         <h2>
           Luna
@@ -147,7 +147,7 @@
         </p>
         <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/stella-card.jpg" alt="doggo 12">
           <h2>
             Stella
@@ -159,11 +159,16 @@
           <button type="button" name="button">Adopt</button>
         </div>
       </div>
-   </section>
-      <footer>
-        <img src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
-        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt
-        <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
-        <p>&copy; 2022 Adoptadog, LLC | Seattle, WA</p></footer>
+   </article>
+   <footer>
+     <img src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
+     <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
+       esseque invenienihil imaximu scideru ptistiusam consequunt
+     </p>
+     <br />
+     <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
+     <br />
+     <p>&copy; 2022 Adoptadog, LLC | Seattle, WA</p>
+   </footer>
  </body>
 </html>
