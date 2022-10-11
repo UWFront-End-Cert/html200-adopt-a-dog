@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Adopt a Dog</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  </head>
+
+  <body>
+      <header>
+        <div class="hed-grid">
+          <div class="hed-box">
+            <img class="logohed" src="images/adoptadog-logo.svg" alt="adoptadog site logo">
+            <h2>Seattle's premiere dog adoption agency</h2>
+          </div>
+
+          <div class="hed-box">
+            <img class="cart" src="images/cart-icon.svg" alt="a shopping cart icon">
+            <p class="cart-pay">$#.##</p> <br>
+            <a href="checkout.html" class="c-button">Checkout</a>
+          </div>
+        </div>
+
+        <nav>
+          <a href="index.html">Home</a>
+          <span> / </span>
+          <a href="dogs.html">Dogs</a>
+          <span> / </span>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </header>
+
+    <article class="chk">
+      <h3>Checkout</h3>
+
+      <form method="post">
+
+        <label>Name
+          <input type="text" name="contactName">
+        </label>
+
+        <label>Email Address
+          <input type="email" name="contactEmail">
+        </label>
+
+        <label>Street Address
+          <input type="text" name="contactAddress">
+        </label>
+
+        <div class="csz">
+          <label>City
+            <input class="city" type="text" name="contactCity">
+          </label>
+
+          <label for="state">State
+            <select class="state" name="state" id="state">
+              <option value="null">select state</option>
+              <option value="wa">WA</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+
+          <label>Zip Code
+            <input class="zip" type="text" name="contactZip">
+          </label>
+        </div>
+
+
+        <fieldset class="checkbox">
+          <legend>First Time Adopter?</legend>
+          <label>
+            <input type="radio" name="special" value="yes">Yes
+          </label>
+          <label>
+            <input type="radio" name="special" value="no">No
+          </label>
+        </fieldset>
+
+        <label for="pickup">Pickup Location
+          <select  class="pu" name="pickup" id="pickup">
+            <option value="null">select location</option>
+            <option value="downtown">Downtown</option>
+            <option value="fremont">Fremont</option>
+            <option value="beaconhill">Beacon Hill</option>
+          </select>
+        </label>
+
+        <h4>Dogs Adopted</h4>
+
+        <p>DOG IMGS ETC, TK</p>
+
+        <h4>Total Adoption Cost</h4>
+        <p>$###.##</p>
+
+        <input class="s-button" type="submit" value="Submit">
+      </form>
+    </article>
+
+    <footer class="footer-container">
+      <img src="images/adoptadog-logo.svg" alt="Arrows with a blue photo filter.">
+      <div class="footer-text">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <a href="index.html">Home</a>
+        <span> / </span>
+        <a href="dogs.html">Dogs</a>
+        <span> / </span>
+        <a href="mailto:info@adoptadog.com">Contact</a>
+        <p>© 2018 Adoptadog, LLC &nbsp; | &nbsp; Seattle, WA</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
