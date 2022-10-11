@@ -42,8 +42,8 @@ a {
 /* header/nav */
 header {
   min-height: 25em;
-  background-image: url("header-image.jpg");
-  background-color: black;
+  background-image: url("header-image.jpg"), linear-gradient(black 50%, white);
+  background-size: cover;
   position: relative;
   text-align: left;
 }
@@ -147,6 +147,12 @@ section {
   padding-right: 1em;
   margin: auto;
   max-width: 80em;
+}
+
+.box1 {
+  padding: 1em .5em 1em 0em;
+  min-width: 10em;
+  max-width: 25em;
 }
 
 .box2 {
@@ -300,9 +306,11 @@ li input  {
   font-size: .9em;
   line-height: 1.8;
 }
-.box1 {
+
+.b-box1 {
   padding: 1em .5em 1em 0em;
 }
+
 
 /* checkout pg */
 button, input, select, textarea {
@@ -423,7 +431,7 @@ footer {
 
 footer a {
   color: white;
-  font-size: .65em;
+  font-size: .9em;
   text-decoration: none;
   font-weight: 700;
 }
@@ -434,7 +442,7 @@ footer span {
 }
 
 footer p {
-  font-size: .7em;
+  font-size: .9em;
   padding: 1em 15em;
 }
 
@@ -444,6 +452,14 @@ footer img {
 }
 
 /* responsive */
+/*@media screen and (max-width 400px) {
+  header {
+    background-image: url("header-image.jpg"), linear-gradient(#093c60 15%, white);
+    background-size: 100%;
+    position: absolute;
+  }
+}*/
+
 @media screen and (max-width: 576px) {
   .logohed {
     min-width: 10em;
@@ -462,6 +478,9 @@ footer img {
 
   header {
     min-height: 35em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
