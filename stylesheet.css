@@ -157,5 +157,79 @@ footer img {
   margin: 0 15% 0;
 }
 article{
-  padding: 1rem 0 1rem 9rem;
+  padding: 2rem 0 1rem 9rem;
+}
+form{
+  margin: 3rem 0 3rem 0;
+
+}
+label{
+  font-size: 1.25rem;
+  color: #093c60;
+  margin-bottom: 2rem;
+  font-style: bold;
+}
+
+input {
+  width: 50%;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+.city {
+  width: 30%;
+}
+.zip {
+  width: 10%;
+}
+.radio {
+  width: 1rem;
+  margin-left: 2rem;
+}
+.pickup{
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+option{
+  font-size: 1rem;
+}
+.flex-container2{
+  padding: 2rem 0 2rem 0rem;
+  display: flex;
+  /* flex-wrap: wrap;
+  justify-content: flex-start; */
+  justify-content: flex-start;
+}
+.adopted-tile{
+  width: 100%;
+  margin: 1rem 0rem 1rem;
+  width: 25rem;
+}
+.adopted-tile img {
+  width: 25%;
+  margin: 0 1rem 1rem 0;
+  float: left;
+  position: relative;
+}
+.adopted-tile h4 {
+  color: #093c60;
+  margin-top: 0;
+}
+.adopted-tile p {
+  font-size: .75rem;
+}
+
+.submit {
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #81b741;
+  width: 25%;
+  /* margin: 1rem 1rem 1rem; */
+  display:block;
+  text-align:center;
+  border-color: #fff;
+  border-style: solid;
 }
