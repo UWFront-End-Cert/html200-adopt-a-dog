@@ -4,6 +4,7 @@ Colors:
 #ECECEC Light Gray
 #083A59 Navy Blue
 #29272A Almost Black
+#24b1c9 Blue Link
 */
 
 * {
@@ -55,15 +56,15 @@ header {
   background-image: url("../images/header-image.jpg");
   background-size: cover;
   height: 20rem;
-  margin-left: -16rem;
-  margin-right: -16rem;
-  padding-left: 14rem;
+  margin-left: -10rem;
+  margin-right: -10rem;
   padding-top: 8rem;
 }
 .header-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  padding-left: 8rem;
 }
 .header{
   width: 80%;
@@ -86,8 +87,8 @@ header {
 
 nav {
   background-color: #ECECEC;
-  margin-left: -16rem;
-  margin-right: -16rem;
+  margin-left: -10rem;
+  margin-right: -10rem;
   margin-top: 0rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
@@ -104,13 +105,13 @@ nav {
 }
 
 .left-side {
-  width: 70%;
+  width: 80%;
   padding-right: 1rem;
 }
 
 .right-side {
   padding-left: 1rem;
-  width: 30%;
+  width: 20%;
 }
 
 .right-side > p {
@@ -119,7 +120,7 @@ nav {
 }
 
 .right-side > article > img {
-  height: 120px;
+  height: 150px;
   width: 100%;
   object-position: center;
   object-fit: cover;
@@ -132,32 +133,40 @@ margin-bottom: 1rem;
 flex-wrap: wrap;
 flex-direction: row;
 justify-content: space-between;
-align-items: flex-start;
+align-items: stretch;
 }
+/*
+.info-grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}*/
 
 .info-grid-container > div {
   font-size: 1rem;
   margin: 0.5rem;
 }
 
-.info-grid-container > div > img {
-  max-height:250px;
-}
-/*
+/*.info-grid-container > div > img {
+  object-fit: fill;
+  overflow: hidden;
+}*/
+
 .info-img {
-  grid-column-start: 1;
-  grid-row-start: 1;
-}
-.home-intro {
-  max-width: 100%;
+  width: 30%;
   height: auto;
+  object-fit: contain;
 }
 
+.info-img > img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 250px;
+  }
+
 .info-intro {
-  grid-column-start: 2;
-  grid-row-start: 1;
+  width: 65%;
 }
-*/
 
 .dog-flex-container {
   display: flex;
@@ -190,15 +199,6 @@ align-items: flex-start;
   font-size: 1rem;
   box-shadow: 0px 15px 6px rgba(0, 0, 0, 0.01), 0px 8px 5px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.08), 0px 1px 2px rgba(0, 0, 0, 0.09), 0px 0px 0px rgba(0, 0, 0, 0.09);
 }
-@media only screen and (min-width: 750px) and (max-width: 1024px) {
-    .info-grid-container, .dog-flex-container {
-      justify-content: space-around;
-
-    }
-    .dog-flex-container > .homepage {
-      width: 45%;
-    }
-  }
 
 .dog-flex-container > div > img {
   max-width: 100%;
@@ -218,10 +218,15 @@ align-items: flex-start;
   text-align: center;
   padding: 0.5rem;
   justify-content: center;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  /*margin-left: 0.5rem;
+  margin-right: 0.5rem;*/
   margin-bottom: 1rem;
   border-radius: 4px;
+}
+
+.homepage > div, .profile-card > div {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .button-container {
   display: flex;
@@ -261,12 +266,22 @@ align-items: flex-start;
   padding: 0rem;
 }
 
+.blog-link {
+  color: #24b1c9;
+  font-weight: bolder;
+}
+
+article {
+  padding-bottom: 1rem;
+}
+
+
 footer {
 background-color: #083A59;
 font-family: 'Lato', sans-serif;
 min-height: 20rem;
-margin-left: -16rem;
-margin-right: -16rem;
+margin-left: -10rem;
+margin-right: -10rem;
 margin-top: 8rem;
 text-align: center;
 padding-top: 5rem;
@@ -346,6 +361,44 @@ footer > a {
   margin: 1rem;
 }
 
+/*QUERIES FOR TABLETS*/
+@media only screen and (min-width: 750px) and (max-width: 1154px) {
+    body {
+      margin-left: 8rem;
+      margin-right: 8rem;
+    }
+    .left-side {
+      width: 70%;
+    }
+
+    .right-side {
+      width: 30%;
+    }
+
+    header, footer, nav {
+      margin-left: -8rem;
+      margin-right: -8rem;
+    }
+
+
+    .info-grid-container, .dog-flex-container, .header-container {
+      justify-content: space-around;
+      align-content: space-around;
+      width: 100%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .info-intro, .info-img {
+      width: 75%;
+    }
+
+    .dog-flex-container > .homepage, .dog-flex-container > .profile-card {
+      width: 45%;
+    }
+  }
+
+
 @media (max-width: 767px) {
   .left-side {
     width: 100%;
@@ -357,23 +410,34 @@ footer > a {
   }
 }
 
+/*QUERIES FOR PHONE SIZE*/
 /* add code to increase logo size and decrease tagline size*/
 @media only screen and (max-width: 749px) and (min-width: 100px){
   body {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
-  header, footer {
-    margin-left: -4rem;
-    margin-right: -4rem;
+  header, footer, nav {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .header-container > .cart{
     width: 20%;
   }
-  .info-grid-container, .dog-flex-container {
+  .adopt-button > p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .info-grid-container, .dog-flex-container, .header-container {
     justify-content: space-around;
     align-content: space-around;
     width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .dog-flex-container > .homepage, .dog-flex-container > .profile-card {
     width: 90%;
@@ -381,6 +445,10 @@ footer > a {
   .cart > .adopt-button > p > a{
     font-size: 0.75rem;
   }
+  .info-intro, .info-img {
+    width: 90%;
+  }
+
   footer {
     padding-top: 1rem;
     padding-left: 4rem;
