@@ -1,13 +1,13 @@
 /*Form Submit*/
 function drop() {
-	alert('Thank you. The form information has been received');
+  alert('Thank you. The form information has been received');
 }
 
 const form = document.getElementById('form');
-form.addEventListener('submit',drop);
+form.addEventListener('submit', drop);
 
 
-$("form").submit(function( event ) {
+$("form").submit(function(event) {
   event.preventDefault();
   let x = document.getElementById('form').elements;
   console.log("Username: ", x['name'].value);
