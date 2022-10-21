@@ -151,7 +151,7 @@ $(document).ready(function () {
   }
 });
 
-/*Toggle Mobile Nav Menu*/
+/*---------- Toggle Mobile Nav Menu -----------*/
 
 const mobileMenu = document.getElementById("mobile-menu");
 const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
@@ -178,6 +178,8 @@ function mobileToggle() {
 
 mobileMenuToggle.addEventListener("click", mobileToggle);
 mobileMenuClose.addEventListener("click", mobileToggle);
+
+/*--------------- End Mobile Nav Menu -------------*/
 
 /*Adoption Button --Add to Cart Function--*/
 
