@@ -172,21 +172,6 @@ $(function () {
   });
 });
 
-/*Hover Effect on background for dog tiles*/
-$(function () {
-  $(".pup-profile").hover(
-    function () {
-      $(this).css("background-color", "gray");
-      $(this).css("color", "white");
-      $(".pup-style").css("border-color", "gray");
-    },
-    function () {
-      $(this).css("background-color", "white");
-      $(this).css("color", "#525252");
-    }
-  );
-});
-
 /*puppyCard() arrays*/
 const names = [
   "Murphy",

@@ -249,38 +249,33 @@ section.home-main-content {
 }
 
 .blog-entry {
-  line-height: 1.7rem;
   text-align: left;
   font-size: 1.2rem;
   padding-top: 1rem;
   color: #525252;
 }
 
-.pup-profile {
+article.pup-profile {
   width: 25%;
   margin: 0rem 1.3rem;
   padding-bottom: 0.5rem;
   text-align: center;
   overflow: hidden;
-  transition: all 0.5s ease-in;
-  border: 1px solid var(--f);
-  --f: white;
+  transition: all 0.1s ease-in;
+  text-shadow: 1px 1px 0px #fff;
 }
 
-.pup-profile:hover {
-  box-shadow: 5px 5px 10px 2px;
-  width: 31%;
-  color: #000000;
-  border-radius: 15px;
-  --f: white;
-  margin: 0.5rem;
+div.pup-style:hover {
+  background-color: gray;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
 }
 
-.pup-profile:hover>.pup-style {
-  border-color: var(--f);
+article.pup-profile h3 {
+  text-shadow: 1px 1px 20px #fff;
 }
 
-.profile-pic>img {
+.profile-pic > img {
   width: 100%;
 }
 
@@ -288,13 +283,8 @@ section.home-main-content {
 .pup-style {
   padding: 1rem;
   border-style: solid;
-  border-color: #e6e6e6;
   border-width: 0px 2px 2px 2px;
   transition: all 0.1s ease-in;
-}
-
-.pup-style:hover {
-  border-color: white;
 }
 
 button.adopt-this-dog {
@@ -622,7 +612,6 @@ fieldset {
 
   .latest-blog {
     width: 100%;
-    min-height: 50vh;
   }
 
   .blog-intro {
@@ -692,10 +681,6 @@ fieldset {
 
   .pup-profile {
     width: 38%
-  }
-
-  .pup-profile:hover {
-    width: 41%;
   }
 
   .full-adoption-list>button {
@@ -822,6 +807,8 @@ fieldset {
 
   article.latest-blog {
     padding: 0.5rem;
+    min-height: 50vh;
+    margin-bottom: 2.5rem;
   }
 
   article.latest-blog p {
@@ -861,6 +848,17 @@ fieldset {
 
   figure.blog-image {
     width: 100%;
+  }
+
+  article.blog-entry {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  article.blog-entry p {
+    text-align: center;
   }
 
   article h3 {
