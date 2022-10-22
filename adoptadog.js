@@ -162,7 +162,7 @@ function mobileToggle() {
   if (mobileMenu.style.display === "block") {
     mobileMenu.style.display = "none";
     mobileMenu.style.visibility = "hidden";
-    mobileMenuToggle.style.display = "block";
+    mobileMenuToggle.style.display = "flex";
     mobileMenuClose.style.display = "none";
     mobileMenuClose.style.visibility = "hidden";
     mainNav.style.justifyContent = "flex-end";
@@ -170,7 +170,7 @@ function mobileToggle() {
     mobileMenu.style.display = "block";
     mobileMenu.style.visibility = "visible";
     mobileMenuToggle.style.display = "none";
-    mobileMenuClose.style.display = "block";
+    mobileMenuClose.style.display = "flex";
     mobileMenuClose.style.visibility = "visible";
     mainNav.style.justifyContent = "space-between";
   }

@@ -241,7 +241,6 @@ section.home-main-content {
   width: 100%;
   background-color: #ffffff;
   text-align: center;
-  padding-bottom: 3rem;
 }
 
 .blog-intro-image>img {
@@ -332,12 +331,12 @@ div.full-adoption-list > a:hover {
   box-shadow: 2px 2px 5px #000;
 }
 
-.main-footer {
+footer.main-footer {
   grid-column: main;
   background-color: red;
   background-color: #403f3e;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer-wrapper {
@@ -360,10 +359,11 @@ div.full-adoption-list > a:hover {
 }
 
 
-.footer-info {
+.footer-info,
+.copyright {
   font-family: sans-serif;
   text-align: center;
-  line-height: 1.7rem;
+  font-size: 0.75rem;
 }
 
 .footer-nav a {
@@ -375,10 +375,10 @@ div.full-adoption-list > a:hover {
   padding: 0.5rem;
 }
 
-.copyright {
+/* .copyright {
   font-family: sans-serif;
   font-weight: 400;
-}
+} */
 
 .recent-blogs {
   grid-column: sidebar;
@@ -426,12 +426,13 @@ div.full-adoption-list > a:hover {
   grid-row: auto;
 }
 
-.all-our-dogs {
+h2.all-our-dogs {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   margin: auto;
   text-align: center;
   color: #003366;
+  
 }
 
 .blog-articles {
@@ -621,6 +622,7 @@ fieldset {
 
   .latest-blog {
     width: 100%;
+    min-height: 50vh;
   }
 
   .blog-intro {
@@ -736,7 +738,7 @@ fieldset {
   }
 
   header.main-header {
-    height: 35vh;
+    min-height: 50vh;
     margin-bottom: 5rem;
   }
   
@@ -748,12 +750,14 @@ fieldset {
   h1.slogan {
     font-size: 1.35rem;
     padding: 0.25rem;
+    min-width: max-content;
   }
 
   div.header-container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    min-height: 50vh;
   }
 
   nav.main-nav {
@@ -773,13 +777,18 @@ fieldset {
 
   #mobile-menu-toggle {
     visibility: visible;
-    display: block;
+    /* display: block; */
     font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #menu-close {
     display: none;
     font-size: 3rem;
+    justify-content: center;
+    align-items: center;
   }
 
   #mobile-menu > ul a {
@@ -820,13 +829,23 @@ fieldset {
     letter-spacing: 1px;
   }
 
+  div.full-adoption-list {
+    min-height: 10vh;
+    order: 11;
+  }
+
   div.full-adoption-list > a {
     padding: 1rem 2.5rem;
+  }
+
+  h2.all-our-dogs {
+    padding: 0 0 1rem 0;
   }
 
   article.pup-profile {
     width: 100%;
     padding: 1rem;
+    margin-bottom: 2.5rem;
   }
 
   section.main-content {
@@ -863,6 +882,16 @@ fieldset {
 
   div.footer-wrapper > * {
     padding: 0.5rem;
+  }
+
+  figure.footer-fig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figure.footer-fig img {
+    width: 75%;
   }
   
 }
