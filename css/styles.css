@@ -9,6 +9,10 @@
 .skipper:focus{
     left: 0;
 }
+.main-content{
+    width: 75%;
+    margin: auto;
+}
 #wrapper{
     width: 100%;
     background-color: #093C60;
@@ -20,11 +24,9 @@
     box-sizing: border-box;
 }
 #title-and-sub {
-
     color: #FFFFFF;
     width: 40%;
-
-
+    padding: 3rem;
 }
 #title-and-sub h1 {
     font-size: xxx-large;
@@ -92,19 +94,19 @@ a{
 }
 .dog-list {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    gap: 5%;
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     justify-content: center;
 
 }
+
 .dog-thumbnail {
     display: flex;
     flex-direction: column;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .thumbnail-content-wrap {
-    width: 100%;
-    height: 100%;
+    padding: 6%;
 }
 .dog-thumbnail button {
     color: white;
@@ -136,4 +138,16 @@ footer{
 .foot-nav ul li + li::before{
     content: " / ";
     padding: 0 10px;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+fieldset {
+    border: none;
+}
+fieldset input {
+    display: inline;
 }
