@@ -13,26 +13,25 @@ header {
   background-repeat: no-repeat;
   width: auto;
   max-height: 420px;
-  display: flex;
-  flex-direction: row;
+ }
+header div{
+  display: inline-block;
 }
-#checkout{
-  flex-direction: column;
+.checkout{
   position: relative;
-  justify-content: flex-end;
+margin-left:23rem;
 }
-#checkout img{
+.checkout img{
   position: absolute;
   top: 2rem;
   right: 2rem;
   width: 20px;
   height: auto;
 }
-#header-logo{
-  flex-direction: column;
-  justify-content: flex-start;
+.header-logo{
+  position: relative;
 }
-#header-logo img {
+.header-logo img {
   max-width: 400px;
   padding-left: 10rem;
   padding-top: 2rem;
