@@ -354,7 +354,7 @@ select {
 
 }
 
-#radio {
+.radio {
   all: unset;
   font-family: sans-serif;
   margin-right: 3rem;
