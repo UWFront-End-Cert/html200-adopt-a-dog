@@ -157,3 +157,18 @@ fieldset {
 fieldset input {
     display: inline;
 }
+.blog-article, .about-dog {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+.blog-article > *{
+    width: 100%;
+}
+
+.about-dog > *{
+    width: 100%;
+}
+.about-dog > div > p {
+    font-size: larger;
+}
