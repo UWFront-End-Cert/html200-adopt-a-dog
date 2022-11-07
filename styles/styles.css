@@ -52,7 +52,7 @@ body {
 }
 
 header {
-  background-color: #083A59;
+  background: linear-gradient(90deg, rgba(8,58,89,1) 20%, rgba(142,191,69,1) 50%, rgba(36,177,201,1) 80%);
   background-image: url("../images/header-image.jpg");
   background-size: cover;
   height: 20rem;
