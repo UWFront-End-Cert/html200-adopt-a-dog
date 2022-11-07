@@ -151,8 +151,15 @@ button, input, select, textarea {
     box-sizing: border-box;
     display: block;
 }
+input[type="text"], input[type="email"], select, textarea{
+    width: 100%;
+}
+form {
+    display: grid;
+}
 fieldset {
     border: none;
+    padding: 0%;
 }
 fieldset input {
     display: inline;
@@ -171,4 +178,24 @@ fieldset input {
 }
 .about-dog > div > p {
     font-size: larger;
+}
+.city-state-zip {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+}
+
+.cart-display {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+}
+.checkout-preview {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    align-items: center;
+    gap: 1rem;
+}
+.checkout-preview > img {
+    width: 100%;
 }

@@ -118,23 +118,29 @@
                 </label>
             </fieldset>
             <label>Pickup Location
-                <input type="text" name="checkoutLocation">
+                <select name="checkoutLocation" size="1">
+                    <option value=""></option>
+                    <option value="Office">Office</option>
+                </select>
             </label>
             <label>Dogs Adopted
-                <div class="checkoutpreview">
-                    <img src="images/lucas-checkout.jpg" alt="Image of Lucas">
-                    <div>
-                        <h3>Lucas</h3>
-                        <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
+                <div class="cart-display">                
+                    <div class="checkout-preview">
+                        <img src="images/lucas-checkout.jpg" alt="Image of Lucas">
+                        <div>
+                            <h3>Lucas</h3>
+                            <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
+                        </div>
+                    </div>
+                    <div class="checkout-preview">
+                        <img src="images/duffy-checkout.jpg" alt="Image of Lucas">
+                        <div>
+                            <h3>Duffy</h3>
+                            <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
+                        </div>
                     </div>
                 </div>
-                <div class="checkoutpreview">
-                    <img src="images/duffy-checkout.jpg" alt="Image of Lucas">
-                    <div>
-                        <h3>Duffy</h3>
-                        <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
-                    </div>
-                </div>
+
             </label>
             <label>Total Adoption Cost
                 <p class="checout-total-cost">$1234.56</p>
