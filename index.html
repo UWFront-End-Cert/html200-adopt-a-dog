@@ -10,46 +10,49 @@
   <body>
     <!-- line of code offering to skip links to main content for tab users -->
    <header>
-    <a href="index.html">Skip to main content</a>
-      <div>
-          <img src="images/adoptadog-logo.svg" alt="Adoptadog logo">
-        <p>Seattle's's premier dog adoption agency</p>
+      <a class="skip-link">Skip to main content</a>
+      <div class = "alignleft">
+          <img class = "header-logo" src="images/adoptadog-logo.svg" alt="Adoptadog logo">
+        <p class = "header-text">Seattle's premier dog adoption agency</p>
       </div>
-      <div>
+      <div class= "alignright">
         <p><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;<span id="total">$1234.56</span></p>
-        <button onclick="window.location.href='checkout.html';">Checkout</button>
+        <button class = "checkout-button" onclick="window.location.href='checkout.html';">Checkout</button>
       </div>
     </header>
     <nav>
       <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
     </nav>
-    <section id="main-content">
-      <img src="images/home-intro.jpg" alt="human hugging a dog">
-      <h2>Adopt A Dog</h2>
-      <p>
-        Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet
-        adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur,
-        cum volore, undipsa doloreium hillupta aut es ut alitatuscit
-        ommossum haritatur arum qui officae videbiti corporeium faccull
-        oribus es quidignis ipietus explam sus am aut amet ant fugiatum,
-        utem non reptat. Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet
-        adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur,
-        cum volore
-      </p>
+    <section class = "container"  id="main-content">
+      <img class = "section-pic" src="images/home-intro.jpg" alt="human hugging a dog">
+      <div>
+        <h1>Adopt A Dog</h1>
+        <p class = "section-text">
+          Iduciendisite quo magnatem iuntum quid quaest ea am,
+          tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+          derum recuptatur, cum volore, undipsa doloreium hillupta aut
+          es ut alitatuscit ommossum haritatur arum qui officae videbiti
+          corporeium faccull oribus es quidignis ipietus explam sus
+          am aut amet ant fugiatum, utem non reptat ad magnienecto
+          volorent fugia nonsedi gendand itatquos as magnimpor aut
+          molor autatia ad est officimus accae et omnia cus, od qui ate
+        </p>
+      </div>
     </section>
+    <article>
       <div class="flex-container">
-        <div>
+        <div class = "dog-tile">
           <img src="images/murphy-card.jpg" alt="doggo 1">
           <h2>
             Murphy
           </h2>
           <p><strong>Cost to Adopt:</strong> $123.45
-          <p>
+          <p class = "tile-text">
             Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae.
           </p>
-          <button type="button" name="button">Adopt</button>
+          <button class="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/poppy-card.jpg" alt="doggo 2">
           <h2>
             Poppy
@@ -60,7 +63,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/jack-card.jpg" alt="doggo 3">
           <h2>
             Jack
@@ -71,7 +74,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/duffy-card.jpg" alt="doggo 4">
           <h2>
             Duffy
@@ -82,7 +85,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/lucas-card.jpg" alt="doggo 5">
           <h2>
           Lucas
@@ -93,7 +96,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/jake-card.jpg" alt="doggo 6">
           <h2>
             Jake
@@ -104,7 +107,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/angus-card.jpg" alt="doggo 7">
           <h2>
             Angus
@@ -115,7 +118,7 @@
           </p>
           <button type="button" name="button">Adopt</button>
         </div>
-        <div>
+        <div class = "dog-tile">
           <img src="images/violet-card.jpg" alt="doggo 8">
           <h2>
             Violet
@@ -127,11 +130,17 @@
           <button type="button" name="button">Adopt</button>
         </div>
       </div>
-      <button type="button" name="button">See More Dogs</button>
-      <footer>
-        <img src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
-        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt
-        <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
-        <p>&copy; 2022 Adoptadog, LLC | Seattle, WA</p></footer>
+    </article>
+    <button class="center-button" name="button">See More Dogs</button>
+    <footer>
+      <img src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
+      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
+        esseque invenienihil imaximu scideru ptistiusam consequunt
+      </p>
+      <br />
+      <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
+      <br />
+      <p>&copy; 2022 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
  </body>
 </html>

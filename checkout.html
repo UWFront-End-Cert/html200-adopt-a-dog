@@ -9,21 +9,22 @@
   </head>
   <body>
     <!-- line of code offering to skip links to main content for tab users -->
-   <header>
-    <div>
-        <img src="images/adoptadog-logo.svg" alt="Adoptadog logo">
-      <p>Seattle's's premier dog adoption agency</p>
-    </div>
-    <div>
-      <p><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;<span id="total">$1234.56</span></p>
-      <button onclick="window.location.href='checkout.html';">Checkout</button>
-    </div>
+    <header>
+      <a class="skip-link">Skip to main content</a>
+      <div class = "alignleft">
+       <img class = "header-logo" src="images/adoptadog-logo.svg" alt="Adoptadog logo">
+         <p class = "header-text">Seattle's premier dog adoption agency</p>
+      </div>
+      <div class= "alignright">
+        <p><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;<span id="total">$1234.56</span></p>
+        <button class = "checkout-button" onclick="window.location.href='checkout.html';">Checkout</button>
+      </div>
     </header>
     <nav>
-      <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
+       <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
     </nav>
-    <section id="info-intake">
-      <h2>Checkout</h2>
+    <article id="info-intake">
+      <h1>Checkout</h1>
       <form>
         <label for="name">Name</label><br>
         <input type="text" id="name" name="name"><br>
@@ -35,7 +36,7 @@
         <input type="text" id="street" name="street address"><br>
         <p> </p>
         <label for="city">City</label>
-        <input type="text" id="city" name="city">
+        <input class = "city" type="text" id="city" name="city">
         <label for="state">State</label>
         <select id="state" name="state">
           <option value = "WA">WA</option>
@@ -44,39 +45,58 @@
           <option value = "MO">MO</option>
         </select>
         <label for="zip">Zip Code</label>
-        <input type="text" id="zip" name="zip code"><br>
+        <input class= "zip" type="text" id="zip" name="zip code"><br>
         <p> </p>
-        <label>First Time Adopter?</label><br>
-        <input type="radio" id="yes" name="adopter experience" value="yes">
-        <label for="yes">Yes</label>
+        <div class="container2">
+          <label>First Time Adopter?</label><br><p> </p>
+          <label class="radio-container">Yes
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="radio-container">No
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div><br><p> </p>
 
-        <input type="radio" id="no" name="adopter experience" value="no">
-        <label for="no">No</label>
+        <label>Pickup Location</label><br>
+        <p> </p>
+        <div class="pickip">
+          <select  name="adoptPickup" id="pickup">
+            <option value="Seattle">Seattle</option>
+            <option value="Bellevue">Bellevue</option>
+            <option value="Everett">Everett</option>
+          </select>
+        </div>
       </form>
-    </section>
-      <p> </p>
-      <h3>Dogs Adopted</h3>
-      <div class="flex-container">
-        <div>
+      <label>Dogs Adopted</label>
+      <div class="flex-container2">
+        <div class="adopted-tile">
           <img src="images/lucas-card.jpg" alt="doggo 5">
           <h4>Lucas</h4>
-          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Cost to Adopt: $123.45</p>
         </div>
-        <p> </p>
-        <div>
+
+        <div  class="adopted-tile">
           <img src="images/duffy-card.jpg" alt="doggo 4">
           <h4>Duffy</h4>
-          <p><strong>Cost to Adopt:</strong> $123.45</p>
+          <p>Cost to Adopt: $123.45</p>
         </div>
-        <p> </p>
+
       </div>
-      <h2>Total Adoption Cost</h2>
+      <label>Total Adoption Cost</label>
       <p>$1234.56</p>
-      <button type="button" name="button">Submit</button>
-      <footer>
-        <img src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
-        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt
-        <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
-        <p>&copy; 2022 Adoptadog, LLC | Seattle, WA</p></footer>
+      <button class="submit" type="button" name="button">Submit</button>
+    </article>
+    <footer>
+      <img src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
+      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
+        esseque invenienihil imaximu scideru ptistiusam consequunt
+      </p>
+      <br />
+      <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
+      <br />
+      <p>&copy; 2022 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
   </body>
 </html>
