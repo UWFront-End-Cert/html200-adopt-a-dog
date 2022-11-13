@@ -203,17 +203,18 @@ a:hover #see-more {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 3rem;
   width: 100%;
   height: auto;
-  margin-top: 2rem;
+  margin: 2rem 0 2rem 0;
 }
 
 .card {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 200px;
-  height: 300px;
-  margin-bottom: 3rem;
+  width: 100%;
+  height: auto;
+  padding-bottom: 24px;
 }
 
 .card:hover {
