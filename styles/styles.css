@@ -306,7 +306,7 @@ button, input, select, textarea{
   margin: 1rem;
   color: #083A59;
 }
-input[type=submit]{
+input[type=submit], .submit-button {
   background-color: #8EBF45;
   color: white;
   font-family: 'Lato', sans-serif;
