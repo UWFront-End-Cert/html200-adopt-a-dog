@@ -12,7 +12,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  max-height: 420px;
+  max-height: 26rem;
 }
 
 .header-container {
@@ -32,10 +32,11 @@ header h1 {
   font-size: 1.5rem;
   display: block;
   margin: 0;
+  white-space: nowrap;
 }
 
 .header-logo img {
-  max-width: 400px;
+  max-width: 25rem;
   display: block;
 }
 
@@ -161,7 +162,7 @@ a:hover #see-more {
 }
 
 .intro img {
-  max-width: 350px;
+  max-width: 22rem;
   padding-right: 3rem;
 }
 
@@ -175,7 +176,7 @@ a:hover #see-more {
 }
 
 .blog img {
-  max-width: 230px;
+  max-width: 14.5rem;
   padding-right: 2.5rem;
 }
 
@@ -214,7 +215,7 @@ a:hover #see-more {
   transition: 0.3s;
   width: 100%;
   height: auto;
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 
 .card:hover {
@@ -265,12 +266,12 @@ footer {
   Padding: 3rem 10rem 10rem 10rem;
   background-color: #173354;
   width: auto;
-  max-height: 200px;
+  max-height: 12.5rem;
   text-align: center;
 }
 
 #footer-logo {
-  max-width: 375px;
+  max-width: 24rem;
   display: block;
   margin: 0 auto;
 }
@@ -279,7 +280,7 @@ footer {
   padding: 2rem 0 2rem 0;
   font-family: sans-serif;
   color: white;
-  max-width: 400px;
+  max-width: 25rem;
   margin: 0 auto;
   line-height: 2rem;
   font-size: small;
@@ -298,14 +299,14 @@ footer {
   padding-left: 1rem;
 }
 
-
 .checkout-form {
-  max-width: 50%;
+  max-width:%;
 }
 
 form {
   display: block;
-  margin-left: 10rem;
+  margin: 0 10rem 0 10rem;
+  max-width: 60rem;
 }
 
 .long-inputs {
@@ -317,7 +318,7 @@ form {
 }
 
 .long-inputs input {
-  width: 100%
+  width: 100%;
 }
 
 .short-inputs {
@@ -367,6 +368,7 @@ label, legend {
   font-weight: bold;
   color: #173354;
   padding-inline: 0;
+  white-space: nowrap;
 }
 
 
