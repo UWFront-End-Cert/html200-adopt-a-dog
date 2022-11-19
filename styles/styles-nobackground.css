@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ;
+  font-size: 14px;
+  color: #000000;
+}
+
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hidden:focus {
+  left: 0;
+}
+
+.sr-only {
+Position: absolute;
+Left: -10000px;
+Top: auto;
+Width: 1px;
+Height: 1px;
+Overflow: hidden;
+}
+
+.headerwrapper {
+  margin: auto;
+  padding: 25px 50px 50px 50px;
+  width: 100%;
+  background-color: #204060;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.headerwrapper h1 {
+  float: left;
+  color: #86b300;
+  font-size: 21px;
+  width: 350px;
+}
+
+.headerwrapper p {
+  float: right;
+  color: white;
+  width: 20px;
+}
+
+.btn {
+  float: right;
+  background-color: #77b300;
+  color: white;
+  padding: 5px;
+  margin: 10px 0;
+  border: none;
+  width: 150px;
+}
