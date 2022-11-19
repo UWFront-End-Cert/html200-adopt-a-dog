@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: ;
+  font-family: 'Noto Serif';
   font-size: 14px;
   color: #000000;
 }
@@ -27,9 +27,10 @@ Height: 1px;
 Overflow: hidden;
 }
 
+/* ***Header*** */
 .headerwrapper {
   margin: auto;
-  padding: 25px 50px 50px 50px;
+  padding: 25px 100px 50px 100px;
   width: 100%;
   background-color: #204060;
   overflow: hidden;
@@ -50,7 +51,6 @@ Overflow: hidden;
 }
 
 .btn {
-  float: right;
   background-color: #77b300;
   color: white;
   padding: 5px;
@@ -58,3 +58,6 @@ Overflow: hidden;
   border: none;
   width: 150px;
 }
+
+
+/* ***Footer*** */
