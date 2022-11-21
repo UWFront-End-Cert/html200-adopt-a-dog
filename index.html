@@ -14,7 +14,7 @@
             <section id="shopping-cart">
                 <div>
                     <img src="images/cart-icon.svg" alt="image of a shopping cart">
-                    <p class="cart-total">$1234.56</p>
+                    <p class="cart-total">$0.00</p>
                 </div>
                 <button onclick="window.location='checkout.html';">Checkout</button>
             </section>
@@ -51,7 +51,7 @@
         </article>
         <section class="dog-list">
             <div class="dog-thumbnail">
-                <img src="images/murphy-card.jpg" alt="Image of Murphy">
+                <img onclick="getDogInfo('Mutt', 0);" src="images/murphy-card.jpg" alt="Image of Murphy">
                 <section class="thumbnail-content-wrap">
                     <h3>Murphy</h3>
                     <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
@@ -60,12 +60,12 @@
                         reicid ut et etur sunt arum 
                         rendae pla endis re ea erum, 
                         qui doluptae</p>
-                    <button>Adopt</button>
+                    <button onclick="updateTotal(0);">Adopt</button>
                 </section>
                 
             </div>
             <div class="dog-thumbnail">
-                <img src="images/poppy-card.jpg" alt="Image of Poppy">
+                <img onclick="getDogInfo('Mutt', 1);" src="images/poppy-card.jpg" alt="Image of Poppy">
                 <section class="thumbnail-content-wrap"><h3>Poppy</h3>
                     <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
                     <p>Corrum volorit iandae 
@@ -73,12 +73,12 @@
                         reicid ut et etur sunt arum 
                         rendae pla endis re ea erum, 
                         qui doluptae</p>
-                    <button>Adopt</button>
+                    <button onclick="updateTotal(1);">Adopt</button>
                 </section>
                 
             </div>
             <div class="dog-thumbnail">
-                <img src="images/jack-card.jpg" alt="Image of Jack">
+                <img onclick="getDogInfo('Mutt', 2);" src="images/jack-card.jpg" alt="Image of Jack">
                 <section class="thumbnail-content-wrap"><h3>Jack</h3>
                     <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
                     <p>Corrum volorit iandae 
@@ -86,12 +86,12 @@
                         reicid ut et etur sunt arum 
                         rendae pla endis re ea erum, 
                         qui doluptae</p>
-                    <button>Adopt</button>
+                    <button onclick="updateTotal(2);">Adopt</button>
                 </section>
                 
             </div>
             <div class="dog-thumbnail">
-                <img src="images/duffy-card.jpg" alt="Image of Duffy">
+                <img onclick="getDogInfo('Mutt', 3);" src="images/duffy-card.jpg" alt="Image of Duffy">
                 <section class="thumbnail-content-wrap"><h3>Duffy</h3>
                     <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
                     <p>Corrum volorit iandae 
@@ -99,12 +99,12 @@
                         reicid ut et etur sunt arum 
                         rendae pla endis re ea erum, 
                         qui doluptae</p>
-                    <button>Adopt</button>
+                    <button onclick="updateTotal(3);">Adopt</button>
                 </section>
                 
             </div>
             <div class="dog-thumbnail">
-                <img src="images/lucas-card.jpg" alt="Image of Lucas">
+                <img onclick="getDogInfo('Mutt', 4);" src="images/lucas-card.jpg" alt="Image of Lucas">
                 <section class="thumbnail-content-wrap"><h3>Lucas</h3>
                     <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
                     <p>Corrum volorit iandae 
@@ -112,12 +112,12 @@
                         reicid ut et etur sunt arum 
                         rendae pla endis re ea erum, 
                         qui doluptae</p>
-                    <button>Adopt</button>
+                    <button onclick="updateTotal(4);">Adopt</button>
                 </section>
                 
             </div>
             <div class="dog-thumbnail">
-                <img src="images/jake-card.jpg" alt="Image of Jake">
+                <img onclick="getDogInfo('Mutt', 5);" src="images/jake-card.jpg" alt="Image of Jake">
                 <section class="thumbnail-content-wrap"><h3>Jake</h3>
                     <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
                     <p>Corrum volorit iandae 
@@ -125,12 +125,12 @@
                         reicid ut et etur sunt arum 
                         rendae pla endis re ea erum, 
                         qui doluptae</p>
-                    <button>Adopt</button>
+                    <button onclick="updateTotal(5);">Adopt</button>
                 </section>
                 
             </div>
             <div class="dog-thumbnail">
-                <img src="images/angus-card.jpg" alt="Image of Angus">
+                <img onclick="getDogInfo('Mutt', 6);" src="images/angus-card.jpg" alt="Image of Angus">
                 <section class="thumbnail-content-wrap"><h3>Angus</h3>
                     <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
                     <p>Corrum volorit iandae 
@@ -138,12 +138,12 @@
                         reicid ut et etur sunt arum 
                         rendae pla endis re ea erum, 
                         qui doluptae</p>
-                    <button>Adopt</button>
+                    <button onclick="updateTotal(6);">Adopt</button>
                 </section>
                 
             </div>
             <div class="dog-thumbnail">
-                <img src="images/violet-card.jpg" alt="Image of Violet">
+                <img onclick="getDogInfo('Mutt', 7);" src="images/violet-card.jpg" alt="Image of Violet">
                 <section class="thumbnail-content-wrap"><h3>Violet</h3>
                     <p><b>Cost to Adopt:</b> <span class="cost-double">$123.45</span></p>
                     <p>Corrum volorit iandae 
@@ -151,17 +151,17 @@
                         reicid ut et etur sunt arum 
                         rendae pla endis re ea erum, 
                         qui doluptae</p>
-                    <button>Adopt</button>
+                    <button onclick="updateTotal(7);">Adopt</button>
                 </section>
                 
             </div>
             
         </section>
-        <button class="see-more-dogs">See More Dogs</button>
+        <button onclick="location.href='dogs.html'" class="see-more-dogs">See More Dogs</button>
     </section>
     <footer>
         <section class="foot-wrapper">
-            <img src="images/adoptadog-logo.svg" alt="Logo for Adopt a Dog website">
+            <img onclick="getDogInfo('Mutt', 8);" src="images/adoptadog-logo.svg" alt="Logo for Adopt a Dog website">
             <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex 
                 esseque invenienihil imaximu scideru ptistiusam consequunt </p>
             <nav class="foot-nav">
@@ -174,5 +174,6 @@
             <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
         </section>
     </footer>
+    <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
