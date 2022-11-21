@@ -31,7 +31,7 @@
 }
 #title-and-sub {
     color: #FFFFFF;
-    width: 40%;
+    width: 30rem;
     padding: 3rem;
 }
 #title-and-sub h1 {
@@ -101,7 +101,9 @@ a{
 .dog-list {
     display: grid;
     gap: 2rem;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: 
+        repeat(auto-fit, minmax(15rem, 1fr));
+        /* minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); */
     justify-content: center;
 
 }
@@ -166,8 +168,13 @@ fieldset input {
 }
 .blog-article, .about-dog {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: minmax(15rem, 1fr) minmax(15rem, 2fr);
     gap: 1rem;
+}
+@media screen and (max-width: 715px) {
+    .blog-article, .about-dog {
+        grid-template-columns: minmax(15rem, 1fr);
+    }
 }
 .blog-article > *{
     width: 100%;
