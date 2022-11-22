@@ -37,6 +37,7 @@ h3 {
   font-family: 'Times New Roman';
   font-size: 20px;
   color: #204060;
+  line-height: .2;
 }
 
 /****Header****/
@@ -61,13 +62,19 @@ h3 {
   width: 375px;
 }
 
-.headercarttext {
+.headercartwrapper {
   float: right;
   display: inline;
   white-space: nowrap;
   padding-right: 175px;
   color: white;
   width: 100px;
+  text-align: right;
+}
+
+.headercarttext {
+  font-size: 12px;
+  line-height: 0px;
 }
 
 .headercartresize {
@@ -142,6 +149,41 @@ content: '';
   line-height: 1.8;
 }
 
+.homegrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+  padding-bottom: 50px;
+  }
+
+.murphy { grid-area: 1 / 1 / 2 / 2; }
+.poppy { grid-area: 1 / 2 / 2 / 3; }
+.jack { grid-area: 1 / 3 / 2 / 4; }
+.duffy { grid-area: 1 / 4 / 2 / 5; }
+.lucas { grid-area: 2 / 1 / 3 / 2; }
+.jake { grid-area: 2 / 2 / 3 / 3; }
+.angus { grid-area: 2 / 3 / 3 / 4; }
+.violet { grid-area: 2 / 4 / 3 / 5; }
+
+.seemoredogsbuttonwrapper {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.seemoredogsbutton {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #204060;
+  background-color: #e6e6e6;
+  text-align: center;
+  cursor: pointer;
+  width: 180px;
+  font-size: 14px;
+}
 
 /****Dog Page Content****/
 .dogwrapper {
@@ -152,10 +194,65 @@ content: '';
   text-decoration: none;
 }
 
-.dogimgresize {
-  width: 180px;
+.dogprofilecard {
+  box-shadow: 1px 1px 3px 0px;
+  max-width: 185px;
+  max-height: 290px;
+  text-align: left;
 }
 
+.doginfowrapper {
+  padding: 0px 8px 20px 8px;
+  line-height: 1;
+}
+
+.dogimgresize {
+  text-align: left;
+  width: 100%;
+}
+
+.dogtext {
+  font-size: 11px;
+}
+
+.adoptbutton {
+  border: none;
+  outline: px;
+  display: inline-block;
+  padding: 10px 0px 10px 0px;
+  color: white;
+  background-color: #77b300;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.doggrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+  padding-bottom: 50px;
+  }
+
+.murphy { grid-area: 1 / 1 / 2 / 2; }
+.poppy { grid-area: 1 / 2 / 2 / 3; }
+.jack { grid-area: 1 / 3 / 2 / 4; }
+.duffy { grid-area: 1 / 4 / 2 / 5; }
+.lucas { grid-area: 2 / 1 / 3 / 2; }
+.jake { grid-area: 2 / 2 / 3 / 3; }
+.angus { grid-area: 2 / 3 / 3 / 4; }
+.violet { grid-area: 2 / 4 / 3 / 5; }
+.piper { grid-area: 3 / 1 / 4 / 2; }
+.maximus { grid-area: 3 / 2 / 4 / 3; }
+.luna { grid-area: 3 / 3 / 4 / 4; }
+.stella { grid-area: 3 / 4 / 4 / 5; } 
 
 /****Blog Page Content****/
 .blogwrapper {
