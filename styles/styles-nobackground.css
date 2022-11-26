@@ -40,6 +40,13 @@ h3 {
   line-height: .2;
 }
 
+h4 {
+  font-family: 'Times New Roman';
+  font-size: 16px;
+  color: #204060;
+  line-height: .2;
+}
+
 /****Header****/
 .headerwrapper {
   margin: auto;
@@ -69,12 +76,12 @@ h3 {
   padding-right: 175px;
   color: white;
   width: 100px;
-  text-align: right;
 }
 
 .headercarttext {
   font-size: 12px;
   line-height: 0px;
+  text-align: right;
 }
 
 .headercartresize {
@@ -85,7 +92,6 @@ h3 {
   background-color: #77b300;
   color: white;
   padding: 5px;
-  margin: 10px 0px;
   border: none;
   width: 150px;
 }
@@ -217,7 +223,7 @@ content: '';
 
 .adoptbutton {
   border: none;
-  outline: px;
+  outline: 0px;
   display: inline-block;
   padding: 10px 0px 10px 0px;
   color: white;
@@ -283,8 +289,119 @@ button:hover, a:hover {
 
 
 /****Checkout Page Content****/
+.checkoutwrapper {
+  margin: auto;
+  width: auto;
+  padding: 10px 180px 0px 180px;;
 
+}
 
+.checkoutinput {
+  width: 525px;
+  height: 45px;
+}
+
+.namewrapper {
+  padding-bottom: 20px;
+}
+
+.emailwrapper {
+  padding-bottom: 20px;
+}
+
+.streetaddresswrapper {
+  padding-bottom: 20px;
+}
+
+.citystatezipcodewrapper {
+  display: inline-flex;
+  padding-bottom: 20px;
+}
+
+.citywrapper {
+  padding-right: 20px;
+}
+
+.city {
+  width: 240px;
+  height: 45px;
+}
+
+.statewrapper {
+  padding-right: 20px;
+}
+.state {
+  width: 120px;
+  height: 45px;
+}
+
+.zipcode {
+  width: 125px;
+  height: 45px;
+}
+
+.firsttimeadopterwrapper {
+  padding-bottom: 20px;
+}
+
+.pickuplocationwrapper {
+  padding-bottom: 20px;
+}
+
+.pickuplocation {
+  width: 240px;
+  height: 45px;
+}
+
+.dogadoptedwrapper {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.checkoutimgresize {
+  width: 65px;
+  padding-bottom: 10px;
+}
+
+.dogadoptedprofilewrapper {
+  display: flex;
+  padding: 0px 25px 0px 0px;
+  line-height: .5;
+}
+
+.dogadoptedtextwrapper {
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+.dogadoptedtext {
+  font-size: 10px;
+}
+
+.totaladoptioncostwrapper {
+  padding-bottom: 20px;
+}
+
+.totaladoptioncosttext {
+  font-size: 16px;
+}
+
+.submitbuttonwrapper {
+  padding-bottom: 75px;
+}
+
+.submitbutton {
+  border: none;
+  outline: 0px;
+  display: inline-block;
+  padding: 10px 0px 10px 0px;
+  color: white;
+  background-color: #77b300;
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+  font-size: 14px;
+}
 
 /****Footer****/
 .footerwrapper {
