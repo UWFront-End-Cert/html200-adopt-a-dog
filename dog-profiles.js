@@ -9,7 +9,7 @@ $(function(){
     $(this).removeClass('profile-card-hover')
     $('.adopt-button-hover').addClass('adopt-button').removeClass('adopt-button-hover')
   })
-})
+
 
 //clicking Adopt button adds total to cart and alerts total
   let adoptButton = $('.adopt-button')
@@ -26,3 +26,6 @@ $(function(){
         $('.cart-total')[0].textContent = "$" + fees + ".00"
         alert("Cart Total is $" + fees + ".00")
     }
+
+//end bracket for loading
+})

@@ -1,6 +1,8 @@
 //const form = document.querySelector('form');
 
 //let formData = new FormData(form);
+$(function(){
+  console.log("DOM is READY, javascript a go")
 
 const fields = [
   {
@@ -32,7 +34,7 @@ const fields = [
 
 const footer = document.querySelector('footer');
 
-//later - add options for select drop downs and radio button options? 
+//later - add options for select drop downs and radio button options?
 
 const checkoutForm = document.createElement('form');
 document.body.insertBefore(checkoutForm, footer);
@@ -60,6 +62,8 @@ submit.classList.add('submit-button');
 
 //let formData = new FormData();
 
+//Refactored below with jq
+/*
 checkoutForm.addEventListener('submit', function(event){
   event.preventDefault();
   alert('Thank you. The form information has been received.');
@@ -69,3 +73,19 @@ checkoutForm.addEventListener('submit', function(event){
     console.log(answer.value)
   }
 });
+*/
+
+//Form submission with Jq
+$(checkoutForm).submit(function( event ){
+  event.preventDefault();
+  alert('Thank you. The form information has been received.');
+  for (let j = 0; j < fields.length; j +=1) {
+    const fieldName = fields[j];
+    let answer = document.getElementById(fieldName.name);
+    console.log(answer.value)
+  }
+});
+
+
+//final closing brackets
+})
