@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400;500;600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="./adopt-a-dog.js" charset="utf-8"></script>
+<!--    <script src="./adopt-a-dog.js" charset="utf-8"></script> -->
     <script src="./dog-profiles.js" charset="utf-8"></script>
   </head>
   <body>
@@ -21,8 +21,10 @@
           <h2>Seattle's premiere dog adoption agency.</h2>
         </div>
         <div class="cart">
-          <p>
-            <img src="images/cart-icon.svg" alt="shopping cart icon">$1234.56
+          <p id="cart-total">
+            <img src="images/cart-icon.svg" alt="shopping cart icon">
+          </p>
+          <p class ="cart-total">$0.00
           </p>
           <div class="adopt-button">
             <p><a href="checkout.html">Checkout</a></p>
@@ -55,7 +57,7 @@
         <h3>Poppy</h3>
         <p class="cost">Cost to adopt: $40.00</p>
         <p class="about-dog">Good girl park lazy dog walk kibble Scooby snacks.</p>
-        <div class="adopt-button" onclick="adoptionFees()"><p>adopt</p></div>
+        <div class="adopt-button" ><p>adopt</p></div>
       </div>
       <!--dog 3-->
       <div class="profile-card">
