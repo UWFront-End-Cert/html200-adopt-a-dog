@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Adopt a Dog</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400;500;600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+    <script src="./dog-checkout.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <a href="#main-content" class="hidden">Skip to main content</a>
+    <!--header-->
+    <header>
+      <div class="header-container">
+        <div class="header">
+          <img class="logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+          <h2>Seattle's premiere dog adoption agency.</h2>
+        </div>
+        <div class="cart">
+          <p>
+            <img src="images/cart-icon.svg" alt="shopping cart icon">$1234.56
+          </p>
+          <div class="adopt-button">
+          <p><a href="checkout.html">Checkout</a></p>
+          </div>
+        </div>
+      </div>
+    </header>
+<!--nav-->
+    <nav>
+      <p>
+        <a href="index.html">home</a> /
+        <a href="dog-profiles.html">dogs</a> /
+        <a href="blog.html">blog</a>
+      </p>
+    </nav>
+
+<!--form-->
+<h1>Checkout</h1>
+<!-- <form method="GET" id="checkout-form">
+  <label>Name:
+    <input type="text" name="customerName">
+  </label>
+
+  <label>Email Address:
+    <input type="email" name="customerEmail">
+  </label>
+
+  <label>Street Address:
+    <input type="text" name="customerAddress">
+  </label>
+
+  <label>City
+    <input type="text" name="customerCity">
+  </label>
+
+  <fieldset>
+    <legend>State:</legend>
+  <label>
+    <select name="state">
+      <option value="WA">Washington</option>
+      <option value="OR">Oregon</option>
+      <option value="CA">California</option>
+    </select>
+  </label>
+  </fieldset>
+
+  <label>Zip Code:
+    <input type="number" name="customerZip">
+  </label>
+
+    <fieldset>
+      <legend>First time adopter?</legend>
+      <label>
+        <input type="radio" name="firsttime" value="yes">
+        Yes
+      </label>
+      <label>
+        <input type="radio" name="firsttime" value="no">
+        No
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Pickup Location:</legend>
+    <label>
+      <select name="pickup">
+        <option value="Seattle">Seattle</option>
+        <option value="Kent">Kent</option>
+        <option value="Bellevue">Bellevue</option>
+      </select>
+    </label>
+    </fieldset> -->
+
+    <h3>Dogs Adopted</h3>
+    <div class="adoptees-flex">
+      <div class="adoptees">
+        <img src="images/lucas-checkout.jpg" alt="lucas dog">
+      </div>
+      <div class="adoptees">
+        <h3>Lucas</h3>
+        <p class="cost">Cost to adopt: $123.45</p>
+      </div>
+      <div class="adoptees">
+        <img src="images/duffy-checkout.jpg" alt="duffy dog">
+      </div>
+      <div class="adoptees">
+        <h3>Duffy</h3>
+        <p class="cost">Cost to adopt: $123.45</p>
+      </div>
+    </div>
+
+<h3>Total Adoption Cost</h3>
+<p>$1234.56</p>
+
+<!--<input type="submit" value="Submit">
+
+</form>-->
+<!--end of form-->
+<!--footer-->
+  <footer>
+    <img class="logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+    <p>Puppy kitty ipsum dolor sit good dog foot stick canary.</p>
+    <a href="#">Home  </a> /
+    <a href="#">Dogs   </a> /
+    <a href="#">Contact</a>
+    <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+  </footer>
+
+</body>
+</html>

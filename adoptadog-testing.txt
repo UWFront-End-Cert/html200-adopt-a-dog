@@ -1,0 +1,29 @@
+adoptadog
+
+User Persona -
+  “The PNW Transplant”
+
+  The PNW Transplant is an adult - single, in a relationship, or married - who lives in the Greater Seattle Area. They live an active lifestyle and definitely have every parks pass needed to get out on the weekends. They have a small group of close friends, a job that keeps them fairly busy (hybrid in office and remote), and are tech savvy. They make a decent salary, and want to add a new addition to their life, but aren’t quite ready mentally or financially for a child. Instead, they browse for new furry companions at work in their downtime, on their smartphone on the bus, and at home on the couch, and plan to adopt, not shop, for a pet.
+
+Testing -
+  Adoptadog website was tested on:
+    - Google Chrome, Firefox, and Safari desktop applications
+      - various browser widths tested for responsiveness
+    - Safari mobile app
+      - portrait and landscape views
+    - Mac and PC
+
+  Note - left and right margins on mobile could be downsized slightly to allow dog cards to be slightly larger
+
+  Adopt buttons and form submission were tested on all devices and browsers.
+
+Style Notes -
+  Brand Identity - Reliable, caring, playful
+  Brand Voice - Personal, nurturing, relatable, cheeky
+  Brand Colors -
+    - Hex codes and descriptions included at the top of the CSS stylesheet
+      #8EBF45 Green Grass (buttons, secondary color)
+      #ECECEC Light Gray - (Nav, secondary color)
+      #083A59 Navy Blue (Header, footer, primary color)
+      #29272A Almost Black (Text)
+      #24b1c9 Blue (Links)
