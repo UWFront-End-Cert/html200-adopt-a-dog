@@ -15,6 +15,7 @@
     gap: 1rem;
     width: 75%;
     margin: auto;
+    grid-template-columns: minmax(30rem,3fr) minmax(15rem,1fr);
 }
 /* .main-content >* {
     padding: 1rem;
@@ -28,6 +29,7 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     box-sizing: border-box;
+    grid-column: 1;
 }
 #title-and-sub {
     color: #FFFFFF;
@@ -105,7 +107,19 @@ a{
         repeat(auto-fit, minmax(15rem, 1fr));
         /* minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); */
     justify-content: center;
+    grid-column: 1;
 
+}
+.see-more-dogs {
+    grid-column: 1;
+}
+.article-previews {
+    display: block;
+    grid-column: 2;
+    grid-row: 1/3;
+}
+.preview > img {
+    width: 100%;
 }
 
 .dog-thumbnail {
@@ -174,6 +188,11 @@ fieldset input {
 @media screen and (max-width: 715px) {
     .blog-article, .about-dog {
         grid-template-columns: minmax(15rem, 1fr);
+    }
+}
+@media screen and (max-width: 875px) {
+    .article-previews {
+        display: none;
     }
 }
 .blog-article > *{
