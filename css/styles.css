@@ -16,14 +16,24 @@
     gap: 1rem;
     width: 75%;
     margin: auto;
+}
+.main-content-index{
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    width: 75%;
+    margin: auto;
     grid-template-columns: minmax(30rem,3fr) minmax(15rem,1fr);
 }
 /* .main-content >* {
     padding: 1rem;
 } */
-#wrapper{
+.header-wrapper{
     width: 100%;
-    background-color: #093C60;
+    background: linear-gradient(-10deg, #ECECEC, #093C60);
+    background-image: url('../images/header-image.jpg');
+    background-position: center top;
+    background-size: cover;
 }
 .about-dog{
     display: grid;
