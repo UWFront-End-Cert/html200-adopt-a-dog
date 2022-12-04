@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-size: .8rem;
+    color: #000000;
+  }
+  
+  .hidden {
+    position: relative;
+    left: -10000px;
+    top: auto;
+  }
+  
+  .hidden:focus {
+    left: 0;
+  }
+  
+  .sr-only {
+  Position: absolute;
+  Left: -10000px;
+  Top: auto;
+  Width: 1px;
+  Height: 1px;
+  Overflow: hidden;
+  }
+  
+  h2 {
+    font-family: 'Times New Roman';
+    font-size: 1.6rem;
+    color: #204060;
+  }
+  
+  h3 {
+    font-family: 'Times New Roman';
+    font-size: 1.2rem;
+    color: #204060;
+    line-height: .3;
+  }
+  
+  h4 {
+    font-family: 'Times New Roman';
+    font-size: .9rem;
+    color: #204060;
+    line-height: .2;
+  }
+  
+  /****Header****/
+  .headerwrapper {
+    margin: auto;
+    width: 100%;
+    height: 325px;
+    padding: 20px 100px 20px 100px;
+    background-image: url(../images/header-image.jpg);
+    background-size: 100%;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .headerlogotextwrapper {
+    float: left;
+    font-family: 'Times';
+    color: #86b300;
+    font-size: 1.5rem;
+    width: 400px;
+  }
+  
+  .headerlogoresize {
+    width: 95%;
+  }
+  
+  .headercartwrapper {
+    float: right;
+    display: inline;
+    white-space: nowrap;
+    padding-right: 175px;
+    color: white;
+    width: 100px;
+  }
+  
+  .headercarttext {
+    font-size: .7rem;
+    line-height: 0px;
+    text-align: right;
+  }
+  
+  .headercartresize {
+    width: 20px;
+  }
+  
+  .headerbutton {
+    background-color: #77b300;
+    color: white;
+    padding: 5px;
+    border: none;
+    width: 150px;
+  }
+  
+  /****Navigation Bar****/
+  .navwrapper {
+    margin: auto;
+    width: 100%;
+    padding: 25px 180px 25px 180px;
+    background-color: #e6e6e6;
+    overflow: hidden;
+  }
+  
+  .navlinks a {
+    color: #204060;
+    text-decoration: none;
+  }
+    
+  .navlinks:after {
+    content: '/';
+    padding: 5px;
+  }
+    
+  .navlinks:last-child::after {
+  content: '';
+  }
+  
+  .navlinks a:hover {
+    color: #204060;
+  }
+  
+  .navlinks a:visited {
+    color: #204060;
+  }
+  
+  /****Home Page Content****/
+  .homewrapper {
+    margin: auto;
+    width: 100%;
+    padding: 30px 180px 0px 180px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .homemainarticlewrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    vertical-align: top;
+    padding-bottom: 35px;
+  }
+  
+  .homeimgresize {
+    width: 175%;
+    margin-right: 40px;
+  }
+  
+  .homearticletext {
+    font-size: .9rem;
+    line-height: 1.8;
+  }
+  
+  .homegrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+    padding-bottom: 50px;
+    }
+  
+  .murphy { grid-area: 1 / 1 / 2 / 2; }
+  .poppy { grid-area: 1 / 2 / 2 / 3; }
+  .jack { grid-area: 1 / 3 / 2 / 4; }
+  .duffy { grid-area: 1 / 4 / 2 / 5; }
+  .lucas { grid-area: 2 / 1 / 3 / 2; }
+  .jake { grid-area: 2 / 2 / 3 / 3; }
+  .angus { grid-area: 2 / 3 / 3 / 4; }
+  .violet { grid-area: 2 / 4 / 3 / 5; }
+  
+  .seemoredogsbuttonwrapper {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+  .seemoredogsbutton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #204060;
+    background-color: #e6e6e6;
+    text-align: center;
+    cursor: pointer;
+    width: 180px;
+    font-size: .9rem;
+  }
+  
+  /****Dog Page Content****/
+  .dogwrapper {
+    margin: auto;
+    width: 100%;
+    padding: 10px 180px 0px 180px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .dogprofilecard {
+    box-shadow: 1px 1px 3px 0px;
+    max-width: 185px;
+    max-height: 290px;
+    text-align: left;
+  }
+  
+  .doginfowrapper {
+    padding: 0px 8px 20px 8px;
+    line-height: 1;
+  }
+  
+  .dogimgresize {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .dogtext {
+    font-size: .7rem;
+  }
+  
+  .adoptbutton {
+    border: none;
+    outline: 0px;
+    display: inline-block;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    background-color: #77b300;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: .8rem;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  
+  .doggrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+    padding-bottom: 50px;
+    }
+  
+  .murphy { grid-area: 1 / 1 / 2 / 2; }
+  .poppy { grid-area: 1 / 2 / 2 / 3; }
+  .jack { grid-area: 1 / 3 / 2 / 4; }
+  .duffy { grid-area: 1 / 4 / 2 / 5; }
+  .lucas { grid-area: 2 / 1 / 3 / 2; }
+  .jake { grid-area: 2 / 2 / 3 / 3; }
+  .angus { grid-area: 2 / 3 / 3 / 4; }
+  .violet { grid-area: 2 / 4 / 3 / 5; }
+  .piper { grid-area: 3 / 1 / 4 / 2; }
+  .maximus { grid-area: 3 / 2 / 4 / 3; }
+  .luna { grid-area: 3 / 3 / 4 / 4; }
+  .stella { grid-area: 3 / 4 / 4 / 5; } 
+  
+  /****Blog Page Content****/
+  .blogwrapper {
+    margin: auto;
+    width: 100%;
+    padding: 10px 180px 0px 180px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .blogarticlewrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    vertical-align: top;
+    padding-bottom: 60px;
+  }
+  
+  .blogimgresize {
+    width: 90%;
+    margin-right: 40px;
+  }
+  
+  .blogarticletext {
+    font-size: .75rem;
+    line-height: 1.8;
+  }
+  
+  
+  /****Checkout Page Content****/
+  .checkoutwrapper {
+    margin: auto;
+    width: auto;
+    padding: 10px 180px 0px 180px;;
+  
+  }
+  
+  .checkoutinput {
+    width: 525px;
+    height: 45px;
+  }
+  
+  .namewrapper {
+    padding-bottom: 20px;
+  }
+  
+  .emailwrapper {
+    padding-bottom: 20px;
+  }
+  
+  .streetaddresswrapper {
+    padding-bottom: 20px;
+  }
+  
+  .citystatezipcodewrapper {
+    display: inline-flex;
+    padding-bottom: 20px;
+  }
+  
+  .citywrapper {
+    padding-right: 20px;
+  }
+  
+  .city {
+    width: 240px;
+    height: 45px;
+  }
+  
+  .statewrapper {
+    padding-right: 20px;
+  }
+  .state {
+    width: 120px;
+    height: 45px;
+  }
+  
+  .zipcode {
+    width: 125px;
+    height: 45px;
+  }
+  
+  .firsttimeadopterwrapper {
+    padding-bottom: 20px;
+  }
+  
+  .pickuplocationwrapper {
+    padding-bottom: 20px;
+  }
+  
+  .pickuplocation {
+    width: 240px;
+    height: 45px;
+  }
+  
+  .dogadoptedwrapper {
+    display: flex;
+    padding-bottom: 20px;
+  }
+  
+  .checkoutimgresize {
+    width: 20%;
+    padding-bottom: 10px;
+  }
+  
+  .dogadoptedprofilewrapper {
+    display: flex;
+    padding: 0px 25px 0px 0px;
+    line-height: .5;
+  }
+  
+  .dogadoptedtextwrapper {
+    padding-left: 10px;
+    vertical-align: top;
+  }
+  
+  .dogadoptedtext {
+    font-size: .6rem;
+  }
+  
+  .totaladoptioncostwrapper {
+    padding-bottom: 20px;
+  }
+  
+  .totaladoptioncosttext {
+    font-size: .9rem;
+  }
+  
+  .submitbuttonwrapper {
+    padding-bottom: 75px;
+  }
+  
+  .submitbutton {
+    border: none;
+    outline: 0px;
+    display: inline-block;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    background-color: #77b300;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    font-size: .9rem;
+  }
+  
+  /****Footer****/
+  .footerwrapper {
+    margin: auto;
+    width: 100%;
+    padding: 50px 425px 50px 425px;
+    text-align: center;
+    background-color: #204060;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .footerimgresize {
+    width: 75%;
+    padding-bottom: 10px;
+  }
+  
+  .footernavbar {
+    padding-bottom: 20px;
+  }
+  
+  .footernavlinks a {
+    padding: 100px;
+    margin: .5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .footernavlinks:after {
+    content: '/';
+    padding: 5px;
+  }
+    
+  .footernavlinks:last-child:after {
+    content: ' ';
+  }
+  
+  .footernavlinks a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .footernavlinks a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .footertext {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
