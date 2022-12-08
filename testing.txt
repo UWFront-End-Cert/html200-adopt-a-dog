@@ -1,0 +1,42 @@
+Testing File
+
+Successfully tested on:
+
+Desktop:
+Chrome
+Safari
+Firefox
+Edge
+
+Mobile:
+Safari
+Chrome
+
+Text, controls & images are aligned.
+Hover & selection states highlight and color changes.
+Suitable clickable area.
+Color, shading, gradient are consistent.
+Correct padding around edges.
+Text and images do not run in to edge of screen.
+Font size and style are consistent.
+Readable on all resolutions.
+
+HTML Validator
+Different browsers with dev tools.
+Actual devices
+
+Resize window looking for things that go bad at different widths.
+
+Tested with Google Chrome Dev Tools device simulator:
+iPhone 6,7,8, and 12 Pro
+Samsung Galaxy S20 Ultra
+iPad and iPad mini
+Chrome Responsive Desktop
+
+One issue is extra margin space at bottom of page on Contact.html while using Chrome.  Working to troubleshoot this issue.
+
+Dogs.html hover state works when out of Dev tools mode.  When in Dev tools mode, it is necessary to click on dog photo for hover effect to activate.
+
+Alternative text added to index.html links to give more meaningful descriptions to links to improve screen reader experience.
+
+Working to troubleshoot screen reader narrating image alt text with use of JavaScript functions.

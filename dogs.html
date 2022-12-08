@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="styles/dogs-styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="js/dogs.js"></script>
+  </head>
+  <body>
+    <header class="background">
+       <div class="grid-container">
+
+        <div class="grid-item-1">
+        <img src="assets/adoptadog-logo.svg" alt="silhouette of a dog">
+        </div>
+        <div class="grid-item-2">
+         <p class="header-text" ><em>Seattle's premiere dog adoption agency!</em></p>
+        </div>
+        <div class="grid-item-3">
+         <p id="total"><img src="assets/cart-icon.svg" alt="shopping cart"><strong>$1234.56</strong></p>
+         <a id="checkout" href="checkout.html"><strong>Checkout</strong></a>
+        </div>
+
+       </div>
+
+     <nav class="nav">
+       <a class="link" href="index.html"><strong>Home /</strong></a>
+       <a class="link" href="dogs.html"><strong>Dogs /</strong></a>
+       <a class="link" href="blog.html"><strong>Blog</strong></a>
+     </nav>
+    </header>
+
+      <h1>Here are all of our Dogs!</h1>
+      <div class="grid-container">
+        <div class="grid-item-4">
+        <img onclick="showDogInfo('Poppy', 'Schnouzer', 123.45)" class="murphy" src="assets/murphy-card.jpg" alt="pouty expression on dog with brown and white fur.">
+        <h4>Murphy</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+        </div>
+
+        <div class="grid-item-5">
+        <img onclick="showDogInfo('Poppy', 'Schnouzer', 123.45)" class="poppy" src="assets/poppy-card.jpg" alt="small dog with white and grey fur happily trotting in street.">
+        <h4>Poppy</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+        </div>
+
+        <div class="grid-item-6">
+        <img onclick="showDogInfo('Jack', 'Spaniel', 123.45)" class="jack" src="assets/jack-card.jpg" alt="cocker spaniel puppy with brown and white fur looking up.">
+        <h4>Jack</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+        </div>
+
+        <div class="grid-item-7">
+        <img onclick="showDogInfo('Duffy', 'Pitbull', 123.45)" class="duffy" src="assets/duffy-card.jpg" alt="pitbull with white face and brown fur looking at camera sweetly.">
+        <h4>Duffy</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+        </div>
+
+        <div class="grid-item-8">
+        <img onclick="showDogInfo('Lucas', 'Sheperd', 123.45)" class="lucas" src="assets/lucas-card.jpg" alt="black german shepherd looking at camera while sticking tongue out.">
+        <h4>Lucas</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()"  >Adopt</a>
+        </div>
+
+        <div class="grid-item-9">
+        <img onclick="showDogInfo('Jake', 'Bulldog', 123.45)" class="jake" src="assets/jake-card.jpg" alt="golden lab looking up ready to play catch.">
+        <h4>Jake</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+        </div>
+
+        <div class="grid-item-10">
+        <img onclick="showDogInfo('Angus', 'Boxer', 123.45)" class="angus" src="assets/angus-card.jpg" alt="boxer dog sticking tongue out playfully.">
+        <h4>Angus</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+        </div>
+
+        <div class="grid-item-11">
+        <img onclick="showDogInfo('Violet', 'Lab', 123.45)" class="violet" src="assets/violet-card.jpg" alt="adorable chocolate lab puppy ready to pounce.">
+        <h4>Violet</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+        </div>
+
+        <div class="grid-item-12">
+        <img onclick="showDogInfo('Piper', 'spaniel', 123.45)" class="piper" src="assets/piper-card.jpg" alt="brown golden retriever puppy wagging tail in meadow">
+        <h4>Piper</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+        </div>
+
+        <div class="grid-item-13">
+        <img onclick="showDogInfo('Maximus', 'Scottydog', 123.45)" class="maximus" src="assets/maximus-card.jpg" alt="black scottie dog">
+        <h4>Maximus</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+        </div>
+
+        <div class="grid-item-14">
+        <img onclick="showDogInfo('Luna', 'Lab', 123.45)" class="luna" src="assets/luna-card.jpg" alt="golden lab tilting head at camera">
+        <h4>Luna</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+        </div>
+
+        <div class="grid-item-15">
+        <img onclick="showDogInfo('Stella', 'Chihuahua', 123.45)" class="stella" src="assets/stella-card.jpg" alt="golden chihuahua lounging">
+        <h4>Stella</h4>
+        <p><strong>Cost to Adopt:</strong>$123.45</p>
+        <p>Corrum volorit landae</p>
+        <p>nimaxim cum restia volor</p>
+        <p>ereicid ut et etur sunt arum</p>
+        <p>rendae pla endis re ea erum,</p>
+        <p>qui doluptae</p>
+        <a href="checkout.html" onclick="totalCost()" >Adopt</a>
+       </div>
+       </div>
+
+      <footer class="footer-background">
+       <div class="flex-container">
+       <img class="footer-logo" src="assets/adoptadog-logo.svg" alt="silhouette of a dog sitting at attention with the words adopt a dog.">
+        <p class="footer-text" >Aborpos nistro inci tet aut que volupti beurptiberro to ex</p>
+        <p class="footer-text" >esseque invenienihil imaximu scideru ptistiusam consequeent</p>
+       <nav>
+        <a class="footer-link" href="index.html"><strong>Home /</strong></a>
+        <a class="footer-link" href="dogs.html"><strong>Dogs /</strong></a>
+        <a class="footer-link" href="contact.html"><strong>Contact</strong></a>
+       </nav>
+        <p class="copyright"> © 2018 Adoptadog, LLC <span class="copyright-border">Seattle, WA</span></p>
+      </div>
+ </footer>
+ </body>
+ </html>
