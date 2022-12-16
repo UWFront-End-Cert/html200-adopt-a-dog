@@ -33,7 +33,7 @@
     </header>
     <section class="main-content">
         <h2>Checkout</h2>
-        <form method="GET">
+        <form id = "my-form" method="GET">
             <label>Name
                 <input type="text" name="checkoutName">
             </label>
@@ -121,6 +121,9 @@
                 <select name="checkoutLocation" size="1">
                     <option value=""></option>
                     <option value="Office">Office</option>
+                    <option value="Alley">Dark Alley</option>
+                    <option value="Garage">Parking Garage</option>
+                    <option value="Call">Call Me</option>
                 </select>
             </label>
             <label>Dogs Adopted
@@ -145,8 +148,9 @@
             <label>Total Adoption Cost
                 <p class="checout-total-cost">$0.00</p>
             </label>
-            <input type="submit" class="checkoutSubmit">
+            <input type="submit" class="checkoutSubmit" >
         </form>
+
     </section>
     <footer>
         <section class="foot-wrapper">
