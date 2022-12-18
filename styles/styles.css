@@ -130,25 +130,40 @@
   }
   
   /****Home Page Content****/
-  .homewrapper {
-    margin: auto;
-    width: 100%;
-    padding: 30px 180px 0px 180px;
-    overflow: hidden;
-    text-decoration: none;
-  }
+  .parent {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr .25fr;
+    grid-template-areas: 
+      "div1 div1 div1 div3"
+      "div2 div2 div2 div3"
+      "div2 div2 div2 div3";
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+    padding-top: 30px;
+    padding-left: 180px;
+    padding-right: 200px;
+    }
+    
+  .div1 { grid-area: div1; }
+  .div2 { grid-area: div2; }
+  .div3 { grid-area: div3; }
   
+  .homewrapper {
+    display: block;
+  }
+
   .homemainarticlewrapper {
     width: 100%;
     display: flex;
     align-items: center;
     vertical-align: top;
-    padding-bottom: 35px;
+    padding-bottom: 0px;
   }
   
   .homeimgresize {
-    width: 175%;
-    margin-right: 40px;
+    width: 100%;
   }
   
   .homearticletext {
@@ -158,21 +173,21 @@
   
   .homegrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    margin-top: 0px;
+    padding-top: 0;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 50px;
+    grid-row-gap: 20px;
     padding-bottom: 50px;
     }
   
-  .murphy { grid-area: 1 / 1 / 2 / 2; }
-  .poppy { grid-area: 1 / 2 / 2 / 3; }
-  .jack { grid-area: 1 / 3 / 2 / 4; }
-  .duffy { grid-area: 1 / 4 / 2 / 5; }
-  .lucas { grid-area: 2 / 1 / 3 / 2; }
-  .jake { grid-area: 2 / 2 / 3 / 3; }
-  .angus { grid-area: 2 / 3 / 3 / 4; }
-  .violet { grid-area: 2 / 4 / 3 / 5; }
+  .homemurphy { grid-area: 1 / 1 / 2 / 2; }
+  .homepoppy { grid-area: 1 / 2 / 2 / 3; }
+  .homejack { grid-area: 1 / 3 / 2 / 4; }
+  .homeduffy { grid-area: 2 / 1 / 3 / 2; }
+  .homelucas { grid-area: 2 / 2 / 3 / 3; }
+  .homejake { grid-area: 2 / 3 / 3 / 4; }
   
   .seemoredogsbuttonwrapper {
     text-align: center;
@@ -191,9 +206,14 @@
     width: 180px;
     font-size: .9rem;
   }
+
+  .homeblog {
+    padding-bottom: 40px;
+  }
   
   /****Dog Page Content****/
   .dogwrapper {
+    display: block;
     margin: auto;
     width: 100%;
     padding: 10px 180px 0px 180px;
@@ -202,6 +222,7 @@
   }
   
   .dogprofilecard {
+    display: block;
     box-shadow: 1px 1px 3px 0px;
     max-width: 185px;
     max-height: 290px;
@@ -247,7 +268,7 @@
     grid-row-gap: 50px;
     padding-bottom: 50px;
     }
-  
+
   .murphy { grid-area: 1 / 1 / 2 / 2; }
   .poppy { grid-area: 1 / 2 / 2 / 3; }
   .jack { grid-area: 1 / 3 / 2 / 4; }
@@ -455,3 +476,22 @@
     text-decoration: none;
   }
   
+  /*** dog grid layout change from 3 columns to 1 on mobile devices ***/
+  @media screen and (max-width: 576px) {
+    .doggrid {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 1em;
+      grid-row-gap: 100px;
+    }
+  }
+
+  /*** dog grid layout change from 3 columns to 2 on tablet devices ***/
+  @media screen and (max-width: 768px) {
+    .doggrid {
+      display: grid;
+      grid-template-columns: 2fr;
+      padding: 1em;
+      grid-row-gap: 100px;
+    }
+  }
