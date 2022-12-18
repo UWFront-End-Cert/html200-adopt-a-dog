@@ -44,8 +44,3 @@ function makeBlog(){
 }
 
 
-// $('.dog-thumbnail').mouseenter(function(){
-//     console.log("Entered")
-// }).mouseleave(function(){
-//     console.log("Exited")
-// });

@@ -157,6 +157,15 @@
                 </section>
                 
             </div>
+            <script>
+                $('.dog-thumbnail').mouseenter(function(){
+                    console.log("Entered")
+                    $(this).animate({opacity: '0.5'});
+                }).mouseleave(function(){
+                    console.log("Exited")
+                    $(this).animate({opacity: '1'});
+                });
+            </script>
             
         </section>
         <button onclick="location.href='dogs.html'" class="see-more-dogs">See More Dogs</button>
