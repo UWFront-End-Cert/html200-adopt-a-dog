@@ -16,7 +16,7 @@
             <section id="shopping-cart">
                 <div>
                     <img src="images/cart-icon.svg" alt="image of a shopping cart">
-                    <p class="cart-total">$0.00</p>
+                    <p id="cart-total">$0.00</p>
                 </div>
                 <button onclick="window.location='checkout.html';">Checkout</button>
             </section>
@@ -159,12 +159,16 @@
             </div>
             <script>
                 $('.dog-thumbnail').mouseenter(function(){
-                    console.log("Entered")
+                    // console.log("Entered")
                     $(this).animate({opacity: '0.5'});
                 }).mouseleave(function(){
-                    console.log("Exited")
+                    // console.log("Exited")
                     $(this).animate({opacity: '1'});
                 });
+
+                // function updateTotal(myIndex){
+                //     // console.log($($('.cost-double')[myIndex]).html());
+                // }
             </script>
             
         </section>
