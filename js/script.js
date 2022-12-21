@@ -6,24 +6,27 @@ function getDogInfo(myBreed, myIndex) {
     );
 }
 function updateTotal(myIndex) {
-    let myCost = stringToDouble(getDogCost(myIndex));
-    let runningTotal = document.getElementsByClassName("cart-total");
-    // alert("MyCost should update to " + myCost)
-    myCost = myCost + stringToDouble(runningTotal[0].textContent);
-    runningTotal[0].innerHTML = "$" + myCost;
+    console.log($('#cart-total').html());
+
+    let myCost = getDogCost(myIndex);
+    let runningTotal = $('#cart-total').html();
+    // // alert("MyCost should update to " + myCost);
+    myCost = stringToDouble(myCost) + stringToDouble(runningTotal);
+    $('#cart-total').text("$" + myCost);
 
     alert("You have added " + getDogName(myIndex)+ " to your cart.");
 
     alertTotal();
 }
 function alertTotal() {
-    alert("Shopping Cart Total: " + document.getElementsByClassName("cart-total")[0].textContent);
+    alert("Shopping Cart Total: " + $('#cart-total').html());
 }
 function getDogName(myIndex){
-    return document.getElementsByClassName("thumbnail-content-wrap")[myIndex].getElementsByTagName("h3")[0].textContent;
+    return $($('.thumbnail-content-wrap > h3')[myIndex]).html();
+    // return document.getElementsByClassName("thumbnail-content-wrap")[myIndex].getElementsByTagName("h3")[0].textContent;
 }
 function getDogCost(myIndex){
-    return document.getElementsByClassName("cost-double")[myIndex].textContent;
+    return $($('.cost-double')[myIndex]).html();
 }
 function stringToDouble(myString) {
     let text = myString.trim();
@@ -44,8 +47,3 @@ function makeBlog(){
 }
 
 
-// $('.dog-thumbnail').mouseenter(function(){
-//     console.log("Entered")
-// }).mouseleave(function(){
-//     console.log("Exited")
-// });
