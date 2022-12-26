@@ -1,0 +1,54 @@
+I tested the website on the following browsers:
+
+Desktop:
+Chrome
+Safari
+Firefox
+Edge
+
+Mobile:
+Safari
+Chrome
+
+Physical Devices Tested On:
+MacBook Pro
+HP PC
+iPhone 8
+
+Tested with Google Chrome Dev Tools Device Simulator:
+iPhone SE, XR, and 12 Pro
+Pixel 5
+Samsung Galaxy S8+ and S20 Ultra
+iPad Air and Mini
+Surface Pro 7 and Duo
+Galaxy Fold and Galaxy A51
+Nest Hub and Nest Max
+
+
+To test the responsive abilities of the website, I adjusted the zoom to 75% as well as all the way up to 200% to make sure it was still legible. I also made sure that the grid view adjusted to include only one or two photos across depending on the device. The photos also maintained a margin and padding around them when I resized the window on various devices. Navigation, headers, and footers also stayed fixed regardless of resolution or device, making navigation easier.
+
+A few items that I did adjust or edit included adding more descriptors to the alt text of some of the images for screen reader ease of use. I also tried to resize the Violet image on the second page to make it consistent with the others, but did not find a solution that did not impact the other images.
+
+
+
+User Personas:
+
+Name: Katie Smith
+Age: 30
+Location: Seattle
+Job: Works for a non-profit environmental organization in Seattle as a Marketing Manager
+Description: Katie grew up with dogs and is looking to finally adopt one of her own as an adult. She rents a townhome in Seattle and has a stable 9-5 work schedule perfect for having a dog. Although she has had dogs in the past, she is looking for a dog that is easy to manage, quiet, and does not require additional medical care since she is a first-time adopter. Being in the marketing field in Seattle, she is tech-savvy and can navigate websites with ease. She often uses her iPhone for browsing while taking public transit.
+
+
+Name: Jason Doe
+Age: 35
+Location: Boise, ID
+Job: Jason works as a lab technician in Boise.
+Description: Jason is looking for a dog to add to his family. He is married with two children under the age of 5. He would like to find a dog that is good with kids but still young so they can all grow up together. He is a first time dog owner and is unsure what he will need equipment-wise to care for his family's new dog. He owns his own home and has a yard for the dog. Jason is comfortable using a desktop and tablet and does most of his web browsing on these two devices. The blog and additional resources pages will be especially useful for this user.
+
+
+Name: Natalie and John Stock
+Age: 65
+Location: Portland, OR
+Job: Recently Retired
+Description: Natalie and John are looking for a new dog to travel with them on their cross country adventures. They recently had an elderly dog that passed away and are experienced pet owners. They don't mind having a dog that is older, as long as it is well trained and doesn't mind car rides. When not traveling, they live in a condo downtown. Natalie enjoys browsing on her laptop and tablet because it is easier to see and John is more tech-savvy and prefers his Android phone. Accessibility is very important for these users as well as easy online checkout.
