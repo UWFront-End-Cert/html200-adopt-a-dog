@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <script src="./scripts/script.js"></script>
     <a href="#main-content" class="hidden">Skip to main content</a>
 
     <header class="headerwrapper">
@@ -25,11 +26,28 @@
       </div>
     </header>
 
+<<<<<<< HEAD
     <nav class="navwrapper">
       <span class="sr-only">Footer nav link to the Home Page</span><a class="navlinks" href="index.html"><strong>Home </strong></a>
       <span class="sr-only">Footer nav link to the Dogs Page</span><a class="navlinks" href="dogs.html"><strong>Dogs </strong></a>
       <span class="sr-only">Footer nav link to the Blog Page</span><a class="navlinks" href="blog.html"><strong>Blog </strong></a>
     </nav>
+=======
+        <div class="headercartwrapper">
+          <p class="headercarttext"><img class="headercartresize" src="./images/cart-icon.svg" alt="white cart icon">&nbsp;&nbsp;&nbsp;<span id="total" value=""></span></p>
+          <form action="checkout.html">
+          <input class="headerbutton" type="submit" value="Checkout">
+          </form>
+        </div>
+
+      </header>
+
+      <nav class="navwrapper">
+        <span class="sr-only">Footer nav link to the Home Page</span><a class="navlinks" href="index.html"><strong>Home </strong></a>
+        <span class="sr-only">Footer nav link to the Dogs Page</span><a class="navlinks" href="dogs.html"><strong>Dogs </strong></a>
+        <span class="sr-only">Footer nav link to the Blog Page</span><a class="navlinks" href="blog.html"><strong>Blog </strong></a>
+      </nav>
+>>>>>>> master
  
     <div class="parent">
       <div class="div1">
@@ -131,8 +149,102 @@
           </div>
         </div>
       </div>
+<<<<<<< HEAD
     </div>
       
+=======
+
+      <div class="homegrid">
+
+        <article class="dogprofilecard murphy">
+          <img onclick="dogInfo('Murphy', 'Pitbull', '$123.45')" class="dogimgresize" src="images/murphy-card.jpg" alt="">
+          <div class="doginfowrapper">
+            <h4>Murphy</h4>
+            <p class="dogtext"><strong>Cost to adopt:</strong> $123.45 </p>
+            <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae </p>
+            <button onclick="adoptFees('123.45')" class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+          </div>
+        </article>
+        
+        <article class="dogprofilecard poppy">
+          <img onclick="dogInfo('Poppy', 'Lhasa Apso', '$123.45')" class="dogimgresize" src="images/poppy-card.jpg" alt="">
+          <div class="doginfowrapper">
+            <h4>Poppy</h4>
+            <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
+            <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button onclick="adoptFees('123.45')" class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+          </div>
+        </article>
+        
+        <article class="dogprofilecard jack">
+          <img onclick="dogInfo('Jack', 'Beagle', '$123.45')" class="dogimgresize" src="images/jack-card.jpg" alt="">
+          <div class="doginfowrapper">
+            <h4>Jack</h4>
+            <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
+            <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button onclick="adoptFees('123.45')" class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+          </div>
+        </article>
+        
+        <article class="dogprofilecard duffy">
+          <img onclick="dogInfo('Duffy', 'Pitbull', '$123.45')" class="dogimgresize" src="images/duffy-card.jpg" alt="">
+          <div class="doginfowrapper">
+            <h4>Duffy</h4>
+            <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
+            <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button onclick="adoptFees('123.45')" class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+          </div>
+        </article>
+        
+        <article class="dogprofilecard lucas">
+          <img onclick="dogInfo('Lucas', 'Lab Mix', '$123.45')" class="dogimgresize" src="images/lucas-card.jpg" alt="">
+          <div class="doginfowrapper">
+            <h4>Lucas</h4>
+            <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
+            <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button onclick="adoptFees('123.45')" class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+          </div>
+        </article>
+        
+        <article class="dogprofilecard jake">
+          <img onclick="dogInfo('Jake', 'Lab', '$123.45')" class="dogimgresize" src="images/jake-card.jpg" alt="">
+          <div class="doginfowrapper">
+            <h4>Jake</h4>
+            <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
+            <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button onclick="adoptFees('123.45')" class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+          </div>
+        </article>
+        
+        <article class="dogprofilecard angus">
+          <img onclick="dogInfo('Angus', 'Boxer', '$123.45')" class="dogimgresize" src="images/angus-card.jpg" alt="">
+          <div class="doginfowrapper">
+            <h4>Angus</h4>
+            <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
+            <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button onclick="adoptFees('123.45')" class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+          </div>
+        </article>
+      
+        <article class="dogprofilecard violet">
+          <img onclick="dogInfo('Violet', 'Chocolate Lab', '$123.45')" class="dogimgresize" src="images/violet-card.jpg" alt="">
+            <div class="doginfowrapper">
+            <h4>Violet</h4>
+            <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
+            <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+            <button onclick="adoptFees('123.45')" class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            </div>
+        </article>
+        
+      </div>
+
+      <div class="seemoredogsbuttonwrapper">
+        <button class="seemoredogsbutton" type="submit" name="button"><strong>See More Dogs</strong></button>
+      </div>
+
+    </section>
+
+>>>>>>> master
     <footer class="footerwrapper">
       <img class="footerimgresize" src="./images/adoptadog-logo.svg" alt="white adoptadog logo"><br>
       <p class="footertext">Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p><br>
