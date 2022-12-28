@@ -484,7 +484,6 @@
     text-decoration: none;
   }
   
-<<<<<<< HEAD
  /*** dog grid layout change from 3 columns to 1 on mobile devices ***/
  @media screen and (max-width: 576px) {
   .doggrid {
@@ -519,9 +518,3 @@
     margin: 0;
   }
 }
-=======
-
-
-
-  
->>>>>>> master
