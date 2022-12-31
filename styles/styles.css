@@ -129,13 +129,12 @@
   /****Home Page Content****/
   .parent {
     display: grid;
-    grid-auto-flow: column;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: .5fr 1fr .25fr;
     grid-template-areas: 
-      "div1 div1 div1 div3"
-      "div2 div2 div2 div3"
-      "div2 div2 div2 div3";
+      "div2 div2 div2 div1"
+      "div3 div3 div3 div1"
+      "div3 div3 div3 div1";
     grid-column-gap: 50px;
     grid-row-gap: 0px;
     padding-top: 30px;
@@ -227,21 +226,32 @@
   .asideimgresize {
     width: 100%;
   }
+
+   /* On the home page, only show the blog article previews only on iPad size and above. The links can either link to the blog page, or the blog post itself. On mobile, your blog previews should not be displayed. */
+   @media only screen and (max-width: 768px) {
+
+    .homeblogwrapper {
+      float: none;
+      position: static;
+      width: auto;
+    }
+
+    .parent {
+      border-left:0;
+      margin: 0;
+    }
+}
   
   /****Dog Page Content****/
   .dogwrapper {
-    display: flex;
-    flex-flow: row wrap;
-    position: relative;
-    margin: auto;
     width: 100%;
-    padding: 10px 180px 50px 180px;
-    overflow: hidden;
+    padding-left: 180px;
     text-decoration: none;
   }
 
   .doggrid {
     display: grid;
+    padding: 10px 180px 50px 180px;
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -265,6 +275,26 @@
   .maximus { grid-area: maximus; }
   .luna { grid-area: luna; }
   .stella { grid-area: stella; }
+
+   /*** dog grid layout change from 3 columns to 1 on mobile devices ***/
+   @media screen and (max-width: 576px) {
+    .doggrid {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 1em;
+      grid-row-gap: 100px;
+    }
+  }
+
+  /*** dog grid layout change from 3 columns to 2 on tablet devices ***/
+  @media screen and (max-width: 768px) {
+    .doggrid {
+      display: grid;
+      grid-template-columns: 2fr;
+      padding: 1em;
+      grid-row-gap: 100px;
+    }
+  }
 
   .dogprofilecard {
     display: flex;
@@ -509,38 +539,3 @@
     color: #FFFFFF;
     text-decoration: none;
   }
-  
-  /*** dog grid layout change from 3 columns to 1 on mobile devices ***/
-  @media screen and (max-width: 576px) {
-    .doggrid {
-      display: grid;
-      grid-template-columns: 1fr;
-      padding: 1em;
-      grid-row-gap: 100px;
-    }
-  }
-
-  /*** dog grid layout change from 3 columns to 2 on tablet devices ***/
-  @media screen and (max-width: 768px) {
-    .doggrid {
-      display: grid;
-      grid-template-columns: 2fr;
-      padding: 1em;
-      grid-row-gap: 100px;
-    }
-  }
-
-  /* On the home page, only show the blog article previews only on iPad size and above. The links can either link to the blog page, or the blog post itself. On mobile, your blog previews should not be displayed. */
-  @media only screen and (max-width: 500px) {
-
-    .homeblogwrapper {
-      float: none;
-      position: static;
-      width: auto;
-    }
-
-    .parent {
-      border-left:0;
-      margin: 0;
-    }
-}
