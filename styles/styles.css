@@ -40,23 +40,6 @@
     line-height: .3;
   }
   
-<<<<<<< HEAD
-  h4 {
-    font-family: 'Times New Roman';
-    font-size: .9rem;
-    color: #204060;
-    line-height: .2;
-  }
-  
-  /****Header****/
-  .headerwrapper {
-    margin: auto;
-    width: 100%;
-    height: 325px;
-    padding: 20px 100px 20px 100px;
-    background-image: url(../images/header-image.jpg);
-    background-size: 100%;
-=======
   /****Header****/
   .headerwrapper {
     margin: auto;
@@ -69,7 +52,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
     overflow: hidden;
     text-decoration: none;
   }
@@ -83,11 +65,7 @@
   }
   
   .headerlogoresize {
-<<<<<<< HEAD
-    width: 95%;
-=======
     width: 100%;
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
   }
   
   .headercartwrapper {
@@ -96,11 +74,7 @@
     white-space: nowrap;
     padding-right: 175px;
     color: white;
-<<<<<<< HEAD
-    width: 100px;
-=======
     width: 200px;
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
   }
   
   .headercarttext {
@@ -110,11 +84,7 @@
   }
   
   .headercartresize {
-<<<<<<< HEAD
-    width: 20px;
-=======
     width: 100%;
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
   }
   
   .headerbutton {
@@ -157,16 +127,6 @@
   }
   
   /****Home Page Content****/
-<<<<<<< HEAD
-  .homewrapper {
-    margin: auto;
-    width: 100%;
-    padding: 30px 180px 0px 180px;
-    overflow: hidden;
-    text-decoration: none;
-  }
-  
-=======
   .parent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -190,26 +150,16 @@
     display: block;
   }
 
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
   .homemainarticlewrapper {
     width: 100%;
     display: flex;
     align-items: center;
     vertical-align: top;
-<<<<<<< HEAD
-    padding-bottom: 35px;
-  }
-  
-  .homeimgresize {
-    width: 175%;
-    margin-right: 40px;
-=======
     padding-bottom: 0px;
   }
   
   .homeimgresize {
     width: 100%;
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
   }
   
   .homearticletext {
@@ -219,23 +169,6 @@
   
   .homegrid {
     display: grid;
-<<<<<<< HEAD
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 50px;
-    padding-bottom: 50px;
-    }
-  
-  .murphy { grid-area: 1 / 1 / 2 / 2; }
-  .poppy { grid-area: 1 / 2 / 2 / 3; }
-  .jack { grid-area: 1 / 3 / 2 / 4; }
-  .duffy { grid-area: 1 / 4 / 2 / 5; }
-  .lucas { grid-area: 2 / 1 / 3 / 2; }
-  .jake { grid-area: 2 / 2 / 3 / 3; }
-  .angus { grid-area: 2 / 3 / 3 / 4; }
-  .violet { grid-area: 2 / 4 / 3 / 5; }
-=======
     margin-top: 0px;
     padding-top: 0;
     grid-template-columns: repeat(3, 1fr);
@@ -266,7 +199,6 @@
     margin: 1rem 0rem 1rem;
     padding: 5px;
   }
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
   
   .seemoredogsbuttonwrapper {
     text-align: center;
@@ -285,28 +217,6 @@
     width: 180px;
     font-size: .9rem;
   }
-<<<<<<< HEAD
-  
-  /****Dog Page Content****/
-  .dogwrapper {
-    margin: auto;
-    width: 100%;
-    padding: 10px 180px 0px 180px;
-    overflow: hidden;
-    text-decoration: none;
-  }
-  
-  .dogprofilecard {
-    box-shadow: 1px 1px 3px 0px;
-    max-width: 185px;
-    max-height: 290px;
-    text-align: left;
-  }
-  
-  .doginfowrapper {
-    padding: 0px 8px 20px 8px;
-    line-height: 1;
-=======
 
   .homeblog {
     width: 250px;
@@ -399,18 +309,11 @@
     width: 100%;
     margin: 1rem 0rem 1rem;
     padding: 5px;
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
   }
   
   .dogimgresize {
     text-align: left;
     width: 100%;
-<<<<<<< HEAD
-  }
-  
-  .dogtext {
-    font-size: .7rem;
-=======
     margin: 0 0 1rem 0;
   }
 
@@ -423,7 +326,6 @@
   
   .dogtext {
     font-size: 1rem;
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
   }
   
   .adoptbutton {
@@ -437,41 +339,13 @@
     cursor: pointer;
     width: 100%;
     font-size: .8rem;
-<<<<<<< HEAD
-=======
     border-radius: .5rem;
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
   }
   
   button:hover, a:hover {
     opacity: 0.7;
   }
   
-<<<<<<< HEAD
-  .doggrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 50px;
-    padding-bottom: 50px;
-    }
-  
-  .murphy { grid-area: 1 / 1 / 2 / 2; }
-  .poppy { grid-area: 1 / 2 / 2 / 3; }
-  .jack { grid-area: 1 / 3 / 2 / 4; }
-  .duffy { grid-area: 1 / 4 / 2 / 5; }
-  .lucas { grid-area: 2 / 1 / 3 / 2; }
-  .jake { grid-area: 2 / 2 / 3 / 3; }
-  .angus { grid-area: 2 / 3 / 3 / 4; }
-  .violet { grid-area: 2 / 4 / 3 / 5; }
-  .piper { grid-area: 3 / 1 / 4 / 2; }
-  .maximus { grid-area: 3 / 2 / 4 / 3; }
-  .luna { grid-area: 3 / 3 / 4 / 4; }
-  .stella { grid-area: 3 / 4 / 4 / 5; } 
-  
-=======
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
   /****Blog Page Content****/
   .blogwrapper {
     margin: auto;
@@ -482,11 +356,7 @@
   }
   
   .blogarticlewrapper {
-<<<<<<< HEAD
-    width: 100%;
-=======
     width: 900px;
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
     display: flex;
     align-items: center;
     vertical-align: top;
@@ -494,11 +364,7 @@
   }
   
   .blogimgresize {
-<<<<<<< HEAD
-    width: 90%;
-=======
     width: 100%;
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
     margin-right: 40px;
   }
   
@@ -673,7 +539,3 @@
     color: #FFFFFF;
     text-decoration: none;
   }
-<<<<<<< HEAD
-  
-=======
->>>>>>> 2b31ab27607322a74b962d6b5354efe3978b2548
