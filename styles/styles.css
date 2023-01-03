@@ -347,44 +347,40 @@
   }
   
   /****Blog Page Content****/
-  .blogwrapper {
-    margin: auto;
+  #main-content {
+    padding-left: 180px;
+  }
+  
+  .blog-container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    padding: 10px 180px 60px 180px;
+  }
+  
+  .blog-box1 {
     width: 100%;
-    padding: 10px 180px 0px 180px;
-    overflow: hidden;
-    text-decoration: none;
   }
-  
-  .blogarticlewrapper {
-    width: 900px;
-    display: flex;
-    align-items: center;
-    vertical-align: top;
-    padding-bottom: 60px;
-  }
-  
-  .blogimgresize {
+
+  .blog-box1 img {
     width: 100%;
     margin-right: 40px;
   }
-  
-  .blogarticletext {
-    font-size: .75rem;
-    line-height: 1.8;
-  }
-  
   
   /****Checkout Page Content****/
   .checkoutwrapper {
     margin: auto;
     width: auto;
-    padding: 10px 180px 0px 180px;;
+    padding: 10px 180px 50px 180px;;
   
   }
   
   .checkoutinput {
-    width: 525px;
+    width: 700px;
     height: 45px;
+    border-radius: .5rem;
+    font-size: 1rem;
   }
   
   .namewrapper {
@@ -409,21 +405,27 @@
   }
   
   .city {
-    width: 240px;
+    width: 300px;
     height: 45px;
+    border-radius: .5rem;
+    font-size: 1rem;
   }
   
   .statewrapper {
     padding-right: 20px;
   }
   .state {
-    width: 120px;
+    width: 200px;
     height: 45px;
+    border-radius: .5rem;
+    font-size: 1rem;
   }
   
   .zipcode {
-    width: 125px;
+    width: 160px;
     height: 45px;
+    border-radius: .5rem;
+    font-size: 1rem;
   }
   
   .firsttimeadopterwrapper {
@@ -435,8 +437,10 @@
   }
   
   .pickuplocation {
-    width: 240px;
+    width: 300px;
     height: 45px;
+    border-radius: .5rem;
+    font-size: 1rem;
   }
   
   .dogadoptedwrapper {
@@ -472,21 +476,20 @@
     font-size: .9rem;
   }
   
-  .submitbuttonwrapper {
-    padding-bottom: 75px;
-  }
-  
-  .submitbutton {
-    border: none;
-    outline: 0px;
-    display: inline-block;
-    padding: 10px 0px 10px 0px;
-    color: white;
-    background-color: #77b300;
-    text-align: center;
-    cursor: pointer;
-    width: 200px;
-    font-size: .9rem;
+  #submit-checkout[type="submit"] {
+    width: 20rem;
+    height: 45px;
+    background-color: #81b741;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+    padding: .5rem;
+    box-sizing: border-box;
+    display: block;
+    border-radius: .5rem;
+    border: 1px solid;
+    appearance: none;
   }
   
   /****Footer****/
