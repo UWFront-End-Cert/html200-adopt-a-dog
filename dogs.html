@@ -9,7 +9,6 @@
   </head>
 
   <body>
-    <script src="./scripts/script.js"></script>
     <a href="#main-content" class="hidden">Skip to main content</a>
 
       <header class="headerwrapper">
@@ -20,7 +19,7 @@
         </div>
 
         <div class="headercartwrapper">
-          <p class="headercarttext"><img class="headercartresize" src="./images/cart-icon.svg" alt="white cart icon">&nbsp;&nbsp;&nbsp;<span id="total" value="">$0</span></p>
+          <p class="headercarttext"><img class="headercartresize" src="./images/cart-icon.svg" alt="white cart icon">&nbsp;&nbsp;&nbsp;<span id="total">$0</span></p>
           <form action="checkout.html">
           <input class="headerbutton" type="submit" value="Checkout">
           </form>
@@ -45,7 +44,7 @@
             <p class="profilename"><strong>Murphy</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45 </p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae </p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>
         </article>
         
@@ -55,7 +54,7 @@
             <p class="profilename"><strong>Poppy</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>
         </article>
         
@@ -65,7 +64,7 @@
             <p class="profilename"><strong>Jack</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>
         </article>
         
@@ -75,7 +74,7 @@
             <p class="profilename"><strong>Duffy</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>
         </article>
         
@@ -85,7 +84,7 @@
             <p class="profilename"><strong>Lucas</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>
         </article>
         
@@ -95,7 +94,7 @@
             <p class="profilename"><strong>Jake</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>
         </article>
         
@@ -105,7 +104,7 @@
             <p class="profilename"><strong>Angus</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>
         </article>
         
@@ -115,7 +114,7 @@
               <p class="profilename"><strong>Violet</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>
         </article>
 
@@ -125,7 +124,7 @@
             <p class="profilename"><strong>Piper</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>
         </article>
 
@@ -135,7 +134,7 @@
             <p class="profilename"><strong>Maximus</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>
         </article>
 
@@ -145,7 +144,7 @@
             <p class="profilename"><strong>Luna</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>
         </article>
 
@@ -155,7 +154,7 @@
             <p class="profilename"><strong>Stella</strong><p>
             <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
             <p class="dogtext">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adoptbutton" type="button" name="button"><strong>Adopt</strong></button>
+            <button class="adoptbutton" onclick="adoptFees(123.45)"><strong>Adopt</strong></button>
           </div>  
         </article>
       </div>
@@ -171,6 +170,9 @@
       <p class="footertext"> © 2022 Adoptadog, LLC | Seattle, WA </p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+  
   </body>
 
 </html>
