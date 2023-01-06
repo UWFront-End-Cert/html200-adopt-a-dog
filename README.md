@@ -21,7 +21,7 @@ Users for this website site are adults over the age of 18 in the Seattle area. B
 
 Testing methods and results are detailed in the testing.txt file in this directory.
 
-[]
+[https://github.com/Poipounder81/html200-adopt-a-dog/blob/master/testing.txt]
 
 ## Copyright
 
