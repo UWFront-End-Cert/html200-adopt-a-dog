@@ -1,0 +1,25 @@
+Adoptadog Website - Lesson10 Assignment Testing
+HTML200 Course Project - Ryan Mamuad
+
+I tested the site in the following browsers and devices.
+
+Desktop:
+- Chrome (Mac/PC)
+- Edge (PC)
+- Safari (Mac)
+- Firefox (Mac/PC)
+
+Mobile:
+- Safari iOS on iPhone 7, iPhone 14 Pro, and iPad Pro
+- Google Chrome for Android on Galaxy S7 Edge
+
+On most desktop browsers, for the most part, the website (with/without background) had loaded properly. The inital planned design layout, links, rendered forms and buttons had worked as expected.  
+However, In Edge, there was one issue on the home page (index.html file) where the dog grid profiles had spilled over to the blog previews area. I adjusted the padding-spacing for the div homegrid container so that dog profiles sit appropriatly. Also, I ensured on the larger div parent container had better balance of white space so that there is equaly spacing on both left and right sides of the page from the content.
+
+In Firefox on the PC, links inside the elements for "Checkout", "See more dogs", and "Visit the blog" did not work. I changed the tag on those elements from <button> to a more semantically appropriate <div> tag.
+
+In Firefox on Mac, <select> buttons are functional but not ideal looking. After some experimentation and no improvement, I decided to leave those buttons as-is, since they worked functionally and there are probably not a ton of users of this
+browser on Mac.
+
+The site was built using graceful degradation. There were issues on the smaller devices (mostly mobile) on the website layout, as containers, content and images had shifted or became obscured when the screen size had reduced in size.
+In future version releases, there will be plans to build better layouts support for various mobile devices, as well as for the different layout modes (portrait and landscape).

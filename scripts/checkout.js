@@ -10,8 +10,8 @@ $('#checkout-form').submit(function(event) {
     console.log("Street: " + $('#street').val());
     console.log("City: " + $('#city').val());
     console.log("State: " + $('#state').val());
-    console.log("First time? " + $('#first-time').prop('checked'));
-    console.log("First Time? " + $('#first-time-no').prop('checked'));
+    console.log("Yes? " + $('#first-time').prop('checked'));
+    console.log("No? " + $('#first-time-no').prop('checked'));
     console.log("Pickup location: " + $('#pickup').val());
     }
   });

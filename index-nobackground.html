@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <title>ADOPTADOG - Home</title>
     <link rel="stylesheet" type="text/css" href="styles/styles-nobackground.css">
   </head>
@@ -33,16 +34,16 @@
       </nav>
  
       <div class="parent">
-        <div class="div2">
+        <div class="div1">
           <img class="homeimgresize" src="images/home-intro-updated.jpg" alt="White male owner hugging golden retreiever">
           <h2>Adopt A Dog</h2>
           <p class="homearticletext">Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est officimus accae et omnia cus, od qui ate.</p>
         </div>
   
-        <div class="div3">
+        <div class="div2">
           <div class="homegrid">
             <article class="homedogprofilecard homemurphy">
-              <img class="dogimgresize" src="images/murphy-card.jpg" alt="">
+              <img onclick="dogInfo('Murphy', 'Pitbull', '$123.45')" class="dogimgresize" src="images/murphy-card.jpg" alt="">
               <div class="homedoginfowrapper">
                 <p class="profilename"><strong>Murphy</strong><p>
                 <p class="dogtext"><strong>Cost to adopt:</strong> $123.45 </p>
@@ -52,7 +53,7 @@
             </article>
             
             <article class="homedogprofilecard homepoppy">
-              <img class="dogimgresize" src="images/poppy-card.jpg" alt="">
+              <img onclick="dogInfo('Poppy', 'Lhasa Apso', '$123.45')" class="dogimgresize" src="images/poppy-card.jpg" alt="">
               <div class="homedoginfowrapper">
                 <p class="profilename"><strong>Poppy</strong><p>
                 <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
@@ -62,7 +63,7 @@
             </article>
             
             <article class="homedogprofilecard homejack">
-              <img class="dogimgresize" src="images/jack-card.jpg" alt="">
+              <img nclick="dogInfo('Jack', 'Beagle', '$123.45')" class="dogimgresize" src="images/jack-card.jpg" alt="">
               <div class="homedoginfowrapper">
                 <p class="profilename"><strong>Jack</strong><p>
                 <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
@@ -72,7 +73,7 @@
             </article>
             
             <article class="homedogprofilecard homeduffy">
-              <img class="dogimgresize" src="images/duffy-card.jpg" alt="">
+              <img onclick="dogInfo('Duffy', 'Pitbull', '$123.45')" class="dogimgresize" src="images/duffy-card.jpg" alt="">
               <div class="homedoginfowrapper">
                 <p class="profilename"><strong>Duffy</strong><p>
                 <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
@@ -82,7 +83,7 @@
             </article>
             
             <article class="homedogprofilecard homelucas">
-              <img class="dogimgresize" src="images/lucas-card.jpg" alt="">
+              <img nclick="dogInfo('Lucas', 'Lab Mix', '$123.45')" class="dogimgresize" src="images/lucas-card.jpg" alt="">
               <div class="homedoginfowrapper">
                 <p class="profilename"><strong>Lucas</strong><p>
                 <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
@@ -92,7 +93,7 @@
             </article>
             
             <article class="homedogprofilecard homejake">
-              <img class="dogimgresize" src="images/jake-card.jpg" alt="">
+              <img onclick="dogInfo('Jake', 'Lab', '$123.45')" class="dogimgresize" src="images/jake-card.jpg" alt="">
               <div class="homedoginfowrapper">
                 <p class="profilename"><strong>Jake</strong><p>
                 <p class="dogtext"><strong>Cost to adopt:</strong> $123.45</p>
@@ -107,7 +108,7 @@
           </div>
         </div> 
   
-        <div class="div1">
+        <div class="div3">
           <div class="homeblogwrapper">
             <h2>From Our Blog</h2>
             <div class="homeblog">
@@ -145,7 +146,6 @@
       <p class="footertext"> © 2022 Adoptadog, LLC | Seattle, WA </p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="./scripts/script.js"></script>
 
   </body>
