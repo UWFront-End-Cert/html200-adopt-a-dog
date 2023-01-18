@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8">
+    <title>Adopt A Dog</title>
+    <script src="https://kit.fontawesome.com/4b01e0c907.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- line of code offering to skip links to main content for tab users -->
+    <header>
+      <a class="skip-link">Skip to main content</a>
+      <div class = "alignleft">
+       <img class = "header-logo" src="images/adoptadog-logo.svg" alt="Adoptadog logo">
+         <p class = "header-text">Seattle's premier dog adoption agency</p>
+      </div>
+      <div class= "alignright">
+        <p><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;<span id="total">$1234.56</span></p>
+        <button class = "checkout-button" onclick="window.location.href='checkout.html';">Checkout</button>
+      </div>
+    </header>
+    <nav>
+       <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
+    </nav>
+    <article id="info-intake">
+      <h1>Checkout</h1>
+      <form>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <p> </p>
+        <label for="email">Email Address</label><br>
+        <input type="text" id="email" name="email address"><br>
+        <p> </p>
+        <label for="street">Street Address</label><br>
+        <input type="text" id="street" name="street address"><br>
+        <p> </p>
+        <label for="city">City</label>
+        <input class = "city" type="text" id="city" name="city">
+        <label for="state">State</label>
+        <select id="state" name="state">
+          <option value = "WA">WA</option>
+          <option value = "OR">OR</option>
+          <option value = "ID">ID</option>
+          <option value = "MO">MO</option>
+        </select>
+        <label for="zip">Zip Code</label>
+        <input class= "zip" type="text" id="zip" name="zip code"><br>
+        <p> </p>
+        <div class="container2">
+          <label>First Time Adopter?</label><br><p> </p>
+          <label class="radio-container">Yes
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="radio-container">No
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div><br><p> </p>
+
+        <label>Pickup Location</label><br>
+        <p> </p>
+        <div class="pickip">
+          <select  name="adoptPickup" id="pickup">
+            <option value="Seattle">Seattle</option>
+            <option value="Bellevue">Bellevue</option>
+            <option value="Everett">Everett</option>
+          </select>
+        </div>
+      </form>
+      <label>Dogs Adopted</label>
+      <div class="flex-container2">
+        <div class="adopted-tile">
+          <img src="images/lucas-card.jpg" alt="doggo 5">
+          <h4>Lucas</h4>
+          <p>Cost to Adopt: $123.45</p>
+        </div>
+
+        <div  class="adopted-tile">
+          <img src="images/duffy-card.jpg" alt="doggo 4">
+          <h4>Duffy</h4>
+          <p>Cost to Adopt: $123.45</p>
+        </div>
+
+      </div>
+      <label>Total Adoption Cost</label>
+      <p>$1234.56</p>
+      <button class="submit" type="button" name="button">Submit</button>
+    </article>
+    <footer>
+      <img src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
+      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
+        esseque invenienihil imaximu scideru ptistiusam consequunt
+      </p>
+      <br />
+      <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="blog.html">Blog</a></p>
+      <br />
+      <p>&copy; 2022 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
+    <script src="./click.js" charset="utf-8"></script>
+  </body>
+</html>
