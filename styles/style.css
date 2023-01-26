@@ -1,0 +1,570 @@
+
+*{
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+
+  }
+  .skip-link {
+    position: relative;
+    left: -10000px;
+    top: auto;
+    }
+
+
+  header {
+    background: linear-gradient(to bottom, #093c60, #000);
+    background-image: url("../images/header-image.jpg");
+    background-position: top left;
+    background-size: cover;
+    min-height: 400px;
+    padding: 0rem 3rem 2rem;
+    text-align: left;
+    color: #ffffff;
+  }
+  .logo-img {
+    width: 100%;
+  }
+  .name-agency {
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    color: #81b741;
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0;
+    line-height: inherit;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .checkout {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #81b741;
+    width: 200px;
+    text-align: center;
+  }
+  .checkout a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .adopt-btn {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #81b741;
+    width: 80%;
+    margin: 1rem 10% 1.5rem;
+  }
+  .adopt-btn a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .top-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .top-box {
+    min-width: 200px;
+    align-self: center;
+  }
+  nav {
+    padding: .5rem 3rem .5rem;
+    background-color: #ececec;
+    color: #093c60;
+    font-size: 2rem;
+    font-weight: bold;
+    word-spacing: .5rem;
+  }
+  nav a {
+    color: #093c60;
+    text-decoration: none;
+  }
+  article {
+    padding: 3rem 1rem 1rem 7rem;
+    3rem 1rem 1rem 6rem
+  }
+  .articles {
+    font-size: 2rem;
+    font-weight:500;
+    line-height: 3rem;
+    text-align: justify;
+    padding: 1rem 16rem 0 1rem;
+    color: rgb(170, 163, 163);
+  }
+  article img {
+    width: 100%;
+    display: block;
+  }
+
+  h1 {
+    font-family: 'Lucida Sans Regular', sans-serif;
+    font-weight: bolder;
+    color: #093c60;
+    font-size: 4rem;
+  }
+  h2 {
+    font-family: 'Lucida Sans Regular', sans-serif;
+    color: #093c60;
+    font-size: 3rem;
+  }
+  .main-content{
+    padding: 3rem 3rem 1rem 6rem;
+  }
+  .main-container {
+    display: flex ;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    image-rendering: auto;
+    position:relative;
+    align-items: center;
+
+  }
+  .catalogue-container {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: 100%;
+    justify-items: center;
+  }
+  .dog-container{
+    width: 100%;
+    margin: 1rem 1rem 2rem 6rem;
+    box-sizing: border-box ;
+    position: relative;
+    border: 1px solid #c5c7c2;
+
+    align-items: center;
+  }
+
+  .dog-border {
+    border: 3px solid #c5c7c2;
+    box-shadow: 3px 3px 6px #999;
+  }
+  .dog-container img {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .dog-container h3 {
+    padding: 0rem 2rem 0rem;
+  }
+  .dog-container p {
+    padding: 0rem 2rem 0rem;
+  }
+  .adopt {
+    background-color: #81b741;
+    color: #ffffff;
+    text-align: center;
+    padding: .5rem ;
+    margin: 2rem;
+    border-radius: .6rem;
+    font-weight: bold;
+  }
+  .adopt a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .large-btn {
+    text-align: center;
+    width: 70%;
+    margin: 2% 15% 0;
+    background-color: #f5eaea;
+    color: #093c60;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    padding: .5rem .5rem .75rem .5rem;
+  }
+  .large-btn a {
+    text-decoration: none;
+    color: #093c60;
+  }
+
+  .blog-btn {
+    text-align: center;
+    width: 70%;
+    margin: 2% 15% 0;
+    background-color: #f3eded;
+    color: #093c60;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    padding: .5rem .5rem .75rem .5rem;
+  }
+
+  footer {
+    background-color: #093c60;
+    padding: 3rem;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  footer a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  footer img {
+    width: 60%;
+    margin: 0 15% 0;
+  }
+  label {
+    font-family: 'Noto Serif', serif;
+    font-size: 2rem;
+    color: #093c60;
+  }
+  legend {
+    font-family: 'Noto Serif', serif;
+    font-size: 2rem;
+    color: #093c60;
+  }
+  input, textarea {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    color: rgb(90, 88, 88);
+    box-sizing: border-box;
+    display: block;
+    margin: 2rem 0rem 2rem;
+    padding: 1rem;
+  }
+  select {
+      min-width: 30rem;
+      display: block;
+      margin: 1rem 0rem 1rem;
+      font-family: Arial, sans-serif;
+      font-size: 2rem;
+      color: rgb(141, 102, 102);
+  }
+  input {
+    width: 40%;
+    border-radius: .5rem;
+    border: 1px
+    solid rgb(177, 175, 175);
+
+  }
+  input[type="submit"] {
+    width: 20rem;
+    background-color: #81b741;
+    color: #fff;
+  }
+  input:focus[type="submit"] {
+    width: 20rem;
+    background-color: #093c60;
+    color: #fff;
+  }
+  input:focus {
+    background-color: #ececec;
+    outline: none;
+  }
+  textarea {
+    color: rgb(172, 164, 164);
+    border: 1px solid #aaa;
+    border-radius: .5rem;
+    align-items: center;
+    width: 40%;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0rem 0rem 3rem;
+  }
+
+  .adopted-dog-container {
+    display: flex;
+  }
+
+  .blog-box1 {
+    width: 5rem;
+
+  }
+  .blog-box2 img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    float: left;
+  }
+
+  .adoptee {
+    margin: 0rem 0rem 0rem;
+    font-family: 'Noto Serif', serif;
+    color: #093b5e;
+    font-size: 1.5rem;
+  }
+  .blog-container {
+    display: block;
+    padding: 3rem 20rem 5rem 6rem;
+  }
+  .blog-box1 {
+      width: 100%;
+  }
+  .blog-article {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 3rem;
+    color: #736d6d;
+  }
+  .blog {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 3rem;
+    color: rgb(141, 102, 102);
+  }
+  .blog-header {
+    padding: 3rem 1rem 1rem 6rem;
+  }
+
+  @media screen and (min-width: 992px) {
+  * {
+      font-size: 1rem;
+    }
+  header {
+      padding: 0rem 6rem 4rem;
+    }
+  .logo-img {
+      width: 100%;
+    }
+  .name-agency {
+      font-size: 1.5rem;
+    }
+  .top-box {
+      min-width: 200px;
+    }
+  nav p {
+      font-size: 1.5rem;
+  }
+  nav p a {
+      font-size: 1.5rem;
+  }
+  .articles {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      text-align: justify;
+
+    }
+    article img {
+      width: 25%;
+      display: inline;
+      float: left;
+      margin:  3% 2% 1% 0;
+    }
+  h1 {
+      font-size: 2.5rem;
+    }
+  h2 {
+      font-size: 1.5rem;
+    }
+  .main-container {
+    clear: none;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 85%;
+  }
+  .dog-container {
+      width: 35%;
+      margin: 2rem 2rem  2rem ;
+  }
+  .dog-container img {
+    margin: 0 0 1rem 0;
+  }
+  .dog-container h2 {
+    padding: 0rem 1rem 0rem;
+  }
+  .dog-container p {
+    padding: 0rem 1rem 0rem;
+  }
+  footer {
+    padding: 3rem 20% 3rem;
+    line-height: 2rem;
+  }
+  footer img {
+    width: 60%;
+    margin: 0 20% 0;
+  }
+  form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5;
+    background: #f5f5f5;
+  }
+  .large-btn {
+    width: 30%;
+    margin: 4rem 35% 2rem;
+  }
+  .large-btn a {
+    font-size: 1.25rem;
+  }
+  .blog-btn {
+    display: none;
+  }
+  .blog-container {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+  .blog-box1 {
+    grid-column: 1 / 2;
+  }
+  .blog-box1 img {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .blog-box2 {
+    grid-column: 2 / 2;
+  }
+  .blog-article {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .blog {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  label {
+    font-size: 2rem;
+  }
+  legend {
+    margin-left: 0rem;
+    padding: 0.2em 0.5em;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+  input, textarea {
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+    padding: .5rem;
+    width: 40%;
+  }
+  select {
+      font-size: 1rem;
+  }
+  .rodeo {
+    top: 0;
+  }
+  .radio input {
+    top: 2rem;
+    margin-left: 15px;
+  }
+  }
+
+  @media screen and (min-width: 1200px) {
+  * {
+      font-size: 1rem;
+    }
+  header {
+      padding: 0rem 6rem 4rem;
+    }
+  .logo-img {
+      width: 100%;
+    }
+  .name-agency {
+      font-size: 1.5rem;
+    }
+  .top-box {
+      min-width: 200px;
+    }
+  nav {
+      padding: 1rem 6rem 1rem;
+    }
+  nav p {
+      font-size: 1.5rem;
+  }
+  nav p a {
+      font-size: 1.5rem;
+  }
+  article {
+      padding: 3rem 6rem 3rem;
+    }
+  .articles {
+      font-size: 1.5rem;
+      line-height: 2rem;
+
+    }
+  article img {
+      width: 30%;
+      display: inline;
+      float: left;
+      margin:  0 2% 0 0;
+    }
+  h1 {
+      font-size: 2.5rem;
+    }
+  h2 {
+      font-size: 1.5rem;
+    }
+
+  .dog-container{
+      width: 20%;
+      margin: 1rem 1% 2rem ;
+  }
+  .dog-container img {
+    margin: 0rem 0 1rem 0;
+  }
+  .dog-container h2 {
+    padding: 0rem 1rem 0rem;
+  }
+  .dog-container p {
+    padding: 0rem 1rem 0rem;
+  }
+  .blog-btn {
+    display: none;
+  }
+  footer {
+    padding: 3rem 35% 3rem;
+    line-height: 2rem;
+  }
+  footer img {
+    width: 50%;
+    margin: 0 25% 0;
+  }
+  .large-btn {
+    width: 25%;
+    margin: 4rem 37.5% 2rem;
+  }
+  .large-btn a {
+    font-size: 1.25rem;
+  }
+  .blog-container {
+    display: grid;
+    grid-template-columns: 350px auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+  .blg-box1 {
+    grid-column: 1 / 2;
+  }
+  .blg-box2 {
+    grid-column: 2 / 2;
+  }
+  .blg-box1 img {
+    width: 100%;
+  }
+  .blg-box3 img {
+    width: 100%;
+  }
+  .blogintro {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .blog {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  }
+  #checkout-form{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+  }
