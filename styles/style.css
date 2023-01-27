@@ -77,9 +77,9 @@
   }
   .large-btn a:hover {
     background-color: white;
-    color: Washington;
+    color: black;
     transition:2s;
-    font-size: bolder;
+
 }
 
 
@@ -163,15 +163,15 @@
   }
   article {
     padding: 3rem 1rem 1rem 7rem;
-    3rem 1rem 1rem 6rem
+
   }
   .articles {
     font-size: 2rem;
     font-weight:500;
     line-height: 3rem;
     text-align: justify;
-    padding: 1rem 16rem 0 1rem;
-    color: rgb(170, 163, 163);
+    padding: 1rem 16rem  1rem;
+    color: black;
   }
   article img {
     width: 100%;
