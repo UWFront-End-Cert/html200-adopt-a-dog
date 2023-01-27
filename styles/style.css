@@ -1,7 +1,7 @@
 
 *{
     font-family: Arial, sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
 
   }
   .skip-link {
@@ -49,11 +49,14 @@
     width: 200px;
     text-align: center;
   }
+  .checkout :hover {
+    color: black;
+  }
+
   .checkout a {
     color: #fff;
     text-decoration: none;
   }
-
   .adopt-btn {
     padding: .5rem 1rem;
     border-radius: .5rem;
@@ -65,7 +68,6 @@
   }
   .adopt-btn a {
     color: #fff;
-    text-decoration: none;
   }
 
   .top-container {
@@ -73,9 +75,79 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .large-btn a:hover {
+    background-color: white;
+    color: Washington;
+    transition:2s;
+    font-size: bolder;
+}
+
+
+
+ .active {
+   font-size:25px;
+   color :white;
+   font-weight: bolder;
+   background-color: #03a3df;
+}
+.adopt a:hover {
+    color: whitesmoke;
+    background-color: black;
+    text-decoration:double;
+    color: #ecb722;
+}
+.jscript{
+    font-family:'Lucida Sans Regular', sans-serif;
+    font-size: 17px;
+    color: wheat;
+    font-weight: lighter;
+    text-transform: none;
+    text-align:justify;
+    text-indent: 4%;
+}
   .top-box {
     min-width: 200px;
     align-self: center;
+  }
+  #content1 :hover{
+    font-size: 110%;
+    transition-property: all;
+    transition-duration: 3s;
+  }
+  #content2 :hover{
+    font-size: 110%;
+    transition-property: all;
+    transition-duration: 3s;
+  }
+  #content3 :hover{
+    font-size: 110%;
+    transition-property: all;
+    transition-duration: 3s;
+  }
+  #content4 :hover{
+    font-size: 110%;
+    transition-property: all;
+    transition-duration: 3s;
+  }
+  #content5 :hover{
+    font-size: 110%;
+    transition-property: all;
+    transition-duration: 3s;
+  }
+  #content6 :hover{
+    font-size: 110%;
+    transition-property: all;
+    transition-duration: 3s;
+  }
+  #content7 :hover{
+    font-size: 110%;
+    transition-property: all;
+    transition-duration: 3s;
+  }
+  #content8 :hover{
+    font-size: 110%;
+    transition-property: all;
+    transition-duration: 3s;
   }
   nav {
     padding: .5rem 3rem .5rem;
@@ -170,6 +242,10 @@
     border-radius: .6rem;
     font-weight: bold;
   }
+  .adopt-btn:hover {
+  background-color: black;
+}
+
   .adopt a {
     color: #ffffff;
     text-decoration: none;
@@ -178,18 +254,19 @@
     text-align: center;
     width: 70%;
     margin: 2% 15% 0;
-    background-color: #f5eaea;
+    background-color: #81b741;
     color: #093c60;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: bolder;
     border-radius: .5rem;
     padding: .5rem .5rem .75rem .5rem;
   }
+
   .large-btn a {
     text-decoration: none;
     color: #093c60;
+    font-size: 35px;
   }
-
   .blog-btn {
     text-align: center;
     width: 70%;
@@ -197,7 +274,7 @@
     background-color: #f3eded;
     color: #093c60;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: bolder;
     border-radius: .5rem;
     padding: .5rem .5rem .75rem .5rem;
   }
