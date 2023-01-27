@@ -2,14 +2,30 @@
   font-family: Arial, sans-serif;
           box-sizing: border-box;
 }
-header {
+/* header {
     background-image: url("images/header-image.jpg");
+    background-color: linear-gradient(rgb(37, 99, 233), rgb(115, 113, 113));
     background-position: top left;
     background-size: cover;
-    min-height: 25rem;
+    min-height: 20rem;
+    max-width: 100%;
     padding: 2rem 5rem 2rem;
-    color: #fff;
+    background-color: linear-gradient(rgb(37, 99, 233), rgb(115, 113, 113));
+    color: rgb(232, 222, 222);
+} */
+header {
+  background-image: url("images/header-image.jpg");
+  min-height: 20rem;
+  max-width: 100%;
+  background-position: top left;
+  background-size: cover;
+  padding: 2rem 5rem 2rem;
+  /* background: linear-gradient(rgb(37, 99, 233), rgb(115, 113, 113)); */
+
 }
+/* .gradient {
+  background-color: linear-gradient(rgb(37, 99, 233), rgb(115, 113, 113));
+} */
 img {max-width:100%;}
 .header-logo {
   max-height: 130px;
@@ -297,7 +313,7 @@ option{
   margin-left: 3rem;
 }
 .blog-tile {
-  padding: 1rem 4rem 5rem 0;
+  padding: 1rem 4rem 5rem 2rem;
 }
 .blog-tile p{
   display: inline;
@@ -306,6 +322,7 @@ option{
 .blog-tile img{
   float: left;
   margin-right: 4rem;
+  max-height: 15rem;
 }
 .flex-container3{
   padding: 0 0 2rem 0rem;
