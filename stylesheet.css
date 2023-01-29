@@ -1,0 +1,483 @@
+* {
+  font-family: Arial, sans-serif;
+          box-sizing: border-box;
+}
+/* header {
+    background-image: url("images/header-image.jpg");
+    background-color: linear-gradient(rgb(37, 99, 233), rgb(115, 113, 113));
+    background-position: top left;
+    background-size: cover;
+    min-height: 20rem;
+    max-width: 100%;
+    padding: 2rem 5rem 2rem;
+    background-color: linear-gradient(rgb(37, 99, 233), rgb(115, 113, 113));
+    color: rgb(232, 222, 222);
+} */
+header {
+  background-image: url("images/header-image.jpg");
+  min-height: 20rem;
+  max-width: 100%;
+  background-position: top left;
+  background-size: cover;
+  padding: 2rem 5rem 2rem;
+  /* background: linear-gradient(rgb(37, 99, 233), rgb(115, 113, 113)); */
+
+}
+/* .gradient {
+  background-color: linear-gradient(rgb(37, 99, 233), rgb(115, 113, 113));
+} */
+img {max-width:100%;}
+.header-logo {
+  max-height: 130px;
+}
+.header-text {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  color: #81b741;
+  font-size: 1.2rem;
+}
+
+.checkout-button{
+  background-color: #81b741;
+  border: none;
+  color: white;
+  padding: .6rem 2.5rem;
+  font-family: 'Arial', serif;
+  font-style: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: .8rem;
+}
+nav {
+  padding: .5rem 9rem .5rem;
+  background-color: #ececec;
+  color: #093c60;
+  font-size: 1rem;
+  font-weight: bold;
+  word-spacing: .5rem;
+}
+nav a {
+  color: #093c60;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #81b741;
+}
+
+.skip-link:focus,.skip-link:active,.skip-link:hover{
+  left: 0;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+  text-align:right;
+}
+h1 {
+  color: #093c60;
+}
+h2 {
+  color: #093c60;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+article{
+  padding: 2rem 0 0 9rem;
+}
+.section-blog{
+  padding: 2rem 0 0 9rem;
+}
+/* .section-pic {
+  /* align-self: flex-start; */
+  /* margin : inherit; */
+  /* max-width: 19rem; */
+  /* height: auto;
+} */
+.section-text {
+  font-size: 1.2rem;
+  color: #808080;
+  /* padding-left: 2.5rem; */
+}
+.flex-container-index-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* margin: 0 30rem 0 0; */
+  width: 100%;
+  height: 100%;
+}
+.sub-container1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 140rem;
+  height: 100%;
+}
+.sub-container2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 60rem;
+  width: 20rem;
+  height: 100%;
+}
+aside div {
+  padding: 1rem 1rem 1rem 1rem;
+  width: auto;
+}
+aside div p{
+  display: inline;
+  color: #808080;
+}
+aside div img{
+  width: 10rem;
+  margin-top: 2rem;
+}
+.skip-link{
+  position: relative;
+  left: -9999px;
+  top: auto;
+}
+.flex-container-3-tile {
+  /* padding: 2rem 9rem 2rem 0rem; */
+  display: flex;
+  /* flex-wrap: nowrap; */
+  flex: 33%;
+  justify-content: space-between;
+  /* justify-content: space-around; */
+  flex-flow: row wrap;
+  /* position: relative; */
+}
+.dog-tile {
+  /* margin: 1rem 0rem 1rem; */
+  /* box-sizing: border-box; */
+  width: 35rem;
+  height: auto;
+  border: 0.125rem solid #D3D3D3;
+  margin-bottom: 1rem;
+}
+.dog-tile img {
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+.dog-tile h2 {
+  padding-left: .5rem;
+}
+.dog-tile p {
+  padding-left: .5rem;
+} */
+.dog-tile-effect {
+  opacity: 0.7;
+}
+.dog-tile-border {
+  border: 3px solid #81b741;
+  box-shadow: 3px 3px 6px #999;
+}
+.dog-tile button {
+  padding: .5rem .5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #81b741;
+  width: 90%;
+  margin: 0rem .5rem 1rem .5rem;
+  display:block;
+  text-align:center;
+  border-color: #fff;
+  border-style: solid;
+}
+.adopt-button:hover {
+  background-color: #093c60;
+}
+.center-button{
+  background-color: #ececec;
+  color: #093c60;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .5rem 2rem .5rem 2rem;
+  display:block;
+  margin: auto;
+  text-align: center;
+  border-color: #fff;
+  border-style: solid;
+}
+footer {
+  background-color: #3d3d3d;
+  padding: 3rem;
+  margin-top: 5rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: .8rem
+}
+footer a {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+footer img {
+  width: 25%;
+  margin: 0 15% 0;
+}
+form{
+  margin: 3rem 0 3rem 0;
+
+}
+label{
+  font-size: 1.25rem;
+  color: #093c60;
+  padding-bottom: 2rem;
+}
+input {
+  width: 60%;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+select{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    height: 3rem;
+    background: white;
+}
+.city {
+  width: 25%;
+}
+.container2{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.container2 label{
+  padding-bottom: 1rem;
+}
+.zip {
+  width: 10%;
+}
+.radio {
+  width: 1rem;
+  flex-direction: column;
+}
+option{
+  font-size: 1rem;
+}
+.flex-container2{
+  padding: 2rem 0 2rem 0rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.blog-link {
+  color: rgb(133, 163, 227);
+  font-size: smaller;
+}
+
+.adopted-tile{
+  width: 100%;
+  margin: 1rem 0rem 1rem;
+  width: 25rem;
+}
+.adopted-tile img {
+  width: 8rem;
+  margin: 0 1rem 1rem 0;
+  float: left;
+  position: relative;
+}
+.adopted-tile h4 {
+  font-size: 1.25rem;
+  color: #093c60;
+  margin-top: 0;
+}
+.adopted-tile p {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+.submit {
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #81b741;
+  width: 25%;
+  display:block;
+  text-align:center;
+  border-color: #fff;
+  border-style: solid;
+}
+.blog {
+  margin-left: 3rem;
+}
+.blog-tile {
+  padding: 1rem 4rem 5rem 2rem;
+}
+.blog-tile p{
+  display: inline;
+  color: #808080;
+}
+.blog-tile img{
+  float: left;
+  margin-right: 4rem;
+  max-height: 15rem;
+}
+.flex-container3{
+  padding: 0 0 2rem 0rem;
+}
+.location{
+  width: 12rem;
+}
+.radio-container {
+  display: inline;
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+  background-color: #808080;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-container:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+  top: 7px;
+  left: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+  margin-bottom: 2rem;
+}
+.flex-container {
+  padding: 2rem 9rem 2rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  * {
+    font-size: 1.5rem;
+  }
+  .flex-container-index-main {
+    margin: 1rem 3rem 0 0;
+  }
+  .dog-tile {
+    width: 100%;
+    margin-left: 2rem;
+  }
+  aside {
+    visibility: hidden;
+  }
+}  
+@media screen and (min-width: 992px) {
+  * {
+    font-size: 1rem;
+  }
+  /* .flex-container-index-main {
+    margin: 1rem 30rem 0 0;
+  } */
+  .dog-container-3-tile {
+    clear: none;
+    /* justify-content: space-between; */
+  }
+  .dog-tile {
+    width: 45%;
+    margin: 2rem 5% 0rem 0rem;
+  }
+  .dog-tile img {
+    margin: 0 0 1rem 0;
+  }
+  .dog-tile h2 {
+    padding: 0rem 1rem 0rem;
+  }
+  .dog-tile p {
+    padding: 0rem 1rem 0rem;
+  }
+    /* .container > img {
+      visibility:hidden;
+    }
+    .container > div {
+      position: absolute;
+    } */
+}
+
+
+@media screen and (min-width: 1200px) {
+  * {
+    font-size: 1rem;
+  }
+  /* .flex-container-index-main {
+    margin: 1rem 30rem 0 0;
+  } */
+  .dog-container-3-tile {
+    /* width: 100%; */
+    flex-flow: row wrap;
+    clear: none;
+    flex: 33%;
+  }
+  .dog-tile {
+      width: 30%;
+      margin: 2rem 1% 0rem 1%;
+  }
+  .dog-tile img {
+    margin: 0 0 1rem 0;
+  }
+  .dog-tile h2 {
+    padding: 0rem 1rem 0rem;
+  }
+  .dog-tile p {
+    padding: 0rem 1rem 0rem;
+  }
+}
+@media print {
+p {
+color: black;
+}
+}
