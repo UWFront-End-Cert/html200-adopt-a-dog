@@ -58,7 +58,7 @@ top: auto;
   }
 
   .checkout a {
-    color: (255, 255, 255);
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
   .checkout :hover {
@@ -78,7 +78,7 @@ top: auto;
     margin: 1rem 10% 1.5rem;
   }
   .adopt-btn a {
-    color: rgb(255, 255, 255)f;
+    color: rgb(255, 255, 255);
   }
   .adopt-btn:hover {
     background-color: #093c60;
