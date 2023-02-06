@@ -21,8 +21,8 @@ header {
   background-size: cover;
   padding: 2rem 5rem 2rem;
   /* background: linear-gradient(rgb(37, 99, 233), rgb(115, 113, 113)); */
-
 }
+
 /* .gradient {
   background-color: linear-gradient(rgb(37, 99, 233), rgb(115, 113, 113));
 } */
@@ -36,7 +36,6 @@ img {max-width:100%;}
   color: #81b741;
   font-size: 1.2rem;
 }
-
 .checkout-button{
   background-color: #81b741;
   border: none;
@@ -480,4 +479,14 @@ option{
 p {
 color: black;
 }
+}
+.dog-tile-opacity {
+  opacity: 0.85;
+}
+.dog-tile-border {
+  border: 3px solid #81b741;
+  box-shadow: 3px 3px 6px #999;
+}
+.white {
+  color: white;
 }
