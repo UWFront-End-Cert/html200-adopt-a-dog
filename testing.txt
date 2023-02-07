@@ -1,0 +1,17 @@
+The site was tested as follows:
+
+Desktop:
+- Chrome (Mac)
+- Safari (Mac)
+- Firefox (Mac)
+
+Mobile:
+- Google Chrome for Pixel 5, iPhone SE, iPhone XR, iPad Mini, iPad Air, Galaxy Fold, with rotated screens
+- Firefox mobile device simulation for various sizes and viewport rotations
+
+Based on testing results, these changes were implemented:
+
+Aligned the button crowding in the index file in different browsers when browser window was minimized to 50% of the screen.
+Updated font color for the checkout information section, so that the cart total is more visible on mobile screens.
+Removed right hand side margins, padding and element size restrictions for mobile views @480px max width, for all pages.
+Graceful degradation approach was used.
