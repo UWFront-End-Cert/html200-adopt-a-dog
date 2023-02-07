@@ -10,9 +10,11 @@ devices, including cell phones and tablets.
 
 
 _User personas_
+
 See the Dog Adoption Site Persona PDF file for detail
 [https://github.com/nataliagourova/html200-adopt-a-dog/blob/master/readme.md]
 
 _Testing_
+
 See testing.txt file for detail
 [https://github.com/nataliagourova/html200-adopt-a-dog/blob/master/testing.txt]
