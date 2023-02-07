@@ -1,0 +1,10 @@
+The site was tested as follows:
+
+Desktop:
+- Chrome (Mac)
+- Safari (Mac)
+- Firefox (Mac)
+
+Mobile:
+- Safari iOS on iPhone 6S, iPhone XR, and iPad 7
+- Google Chrome for Android on Galaxy S7 Edge
