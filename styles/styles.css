@@ -250,6 +250,10 @@ a:hover #see-more {
   font-family: sans-serif;
 }
 
+.card-button.adopted {
+  background-color: gray;
+}
+
 #see-more {
   margin: 0 auto;
   display: block;
@@ -297,10 +301,6 @@ footer {
   font-weight: bold;
   padding-right: 1rem;
   padding-left: 1rem;
-}
-
-.checkout-form {
-  max-width:%;
 }
 
 form {
