@@ -6,6 +6,7 @@ Desktop:
 - Firefox (Mac)
 
 Mobile:
+
 - Google Chrome for Pixel 5, iPhone SE, iPhone XR, iPad Mini, iPad Air, Galaxy Fold, with rotated screens
 - Firefox mobile device simulation for various sizes and viewport rotations
 
