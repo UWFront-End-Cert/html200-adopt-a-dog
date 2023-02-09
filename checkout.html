@@ -25,7 +25,7 @@
     </nav>
     <article id="info-intake">
       <h1>Checkout</h1>
-      <form>
+      <form method="get" id="submitForm">
         <label for="name">Name</label><br>
         <input type="text" id="name" name="name"><br>
         <p> </p>
@@ -49,11 +49,11 @@
         <p> </p>
         <div class="container2">
           <label>First Time Adopter?</label><br><p> </p>
-          <label class="radio-container">Yes
+          <label class="radio-container" id="firstTime">Yes
             <input type="checkbox" checked="checked">
             <span class="checkmark"></span>
           </label>
-          <label class="radio-container">No
+          <label class="radio-container" id="notFirstTime">No
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
@@ -68,25 +68,26 @@
             <option value="Everett">Everett</option>
           </select>
         </div>
+      
+        <label>Dogs Adopted</label>
+        <div class="flex-container2">
+          <div class="adopted-tile">
+            <img src="images/lucas-card.jpg" alt="doggo 5">
+            <h4>Lucas</h4>
+            <p>Cost to Adopt: $123.45</p>
+          </div>
+
+          <div  class="adopted-tile">
+            <img src="images/duffy-card.jpg" alt="doggo 4">
+            <h4>Duffy</h4>
+            <p>Cost to Adopt: $123.45</p>
+          </div>
+        </div>
+        <label>Total Adoption Cost</label>
+        <p>$1234.56</p>
+        <!-- <button class="submit" type="button" name="button">Submit</button> -->
+        <input class="submit" type="submit" value="Submit" id="submitCheckout">
       </form>
-      <label>Dogs Adopted</label>
-      <div class="flex-container2">
-        <div class="adopted-tile">
-          <img src="images/lucas-card.jpg" alt="doggo 5">
-          <h4>Lucas</h4>
-          <p>Cost to Adopt: $123.45</p>
-        </div>
-
-        <div  class="adopted-tile">
-          <img src="images/duffy-card.jpg" alt="doggo 4">
-          <h4>Duffy</h4>
-          <p>Cost to Adopt: $123.45</p>
-        </div>
-
-      </div>
-      <label>Total Adoption Cost</label>
-      <p>$1234.56</p>
-      <button class="submit" type="button" name="button">Submit</button>
     </article>
     <footer>
       <img src="images/adoptadog-logo.svg" alt="Adopt a dog logo">
@@ -98,6 +99,7 @@
       <br />
       <p>&copy; 2022 Adoptadog, LLC | Seattle, WA</p>
     </footer>
-    <script src="./click.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./click.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./checkout.js" charset="utf-8"></script>
   </body>
 </html>
