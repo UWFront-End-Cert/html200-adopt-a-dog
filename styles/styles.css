@@ -2,9 +2,68 @@ body {
   margin: 0;
 }
 
-.container {
-  max-width: 80%;
+.outer-wrapper {
+  display: flex;
+  max-width: 1200px;
+  justify-content: center;
   margin: 0 auto;
+}
+  
+.dog-cards-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+@media (max-width: 1024px) {
+  .dog-cards-section {
+    grid-template-columns: 1fr 1fr;              
+  }
+  aside{
+    display: none;
+  }
+}
+
+@media (max-width: 648px) {
+  .dog-cards-section {
+    grid-template-columns: 1fr;        
+  }
+  aside{
+    display: none;
+  }
+}
+aside {
+  width: 25%;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.side-blog img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  max-height: 10rem;
+  width: 100%;
+}
+
+.side-blog h3 {
+  color: #173354;
+}
+
+.side-blog h2 {
+  color: #173354;
+}
+
+.side-blog p {
+  font-size: smaller;
+  font-family: sans-serif;
+  max-width: 20rem;
+  margin: 0 0 3rem 0;
+}
+
+.side-blog a {
+  color: #173354;
 }
 
 header {
@@ -12,7 +71,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  max-height: 26rem;
+  max-height: auto;
 }
 
 .header-container {
@@ -99,15 +158,13 @@ p {
   font-family: sans-serif;
 }
 
-
-
 nav {
   background-color: rgb(234, 218, 218);
   padding: 2em 0em 2em 10em;
   font-family: sans-serif;
   font-weight: bold;
   color: #173354;
-
+  width: auto;
 }
 
 nav a {
@@ -162,8 +219,10 @@ a:hover #see-more {
 }
 
 .intro img {
-  max-width: 22rem;
-  padding-right: 3rem;
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .intro h2 {
@@ -173,11 +232,6 @@ a:hover #see-more {
 .dogs-intro {
   color: #173354;
   margin: 2rem 0 0 0;
-}
-
-.blog img {
-  max-width: 14.5rem;
-  padding-right: 2.5rem;
 }
 
 .blog h3 {
@@ -193,22 +247,28 @@ a:hover #see-more {
 .blog p {
   font-size: smaller;
   margin-bottom: 0;
+  margin-bottom: 3rem;
   font-family: sans-serif;
+}
+
+.blog img {
+  max-width: 14.5rem;
+  padding-right: 2.5rem;
 }
 
 .blog .row {
   margin-bottom: 5rem;
 }
 
-.dog-cards-section {
+.dog-cards-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 3rem;
   width: 100%;
   height: auto;
   margin: 2rem 0 2rem 0;
 }
+
 
 .card {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);

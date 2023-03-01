@@ -8,38 +8,40 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,300&display=swap');
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-        <header>
-            <div class="header-container">
-                <div class="header-logo">
-                    <img src="images/adoptadog-logo.svg" alt="adopt a dog logo">
-                    <h1>Seattle's premier dog adoption agency</h1>
-                </div>
-                <div class="checkout">
-                    <div class="cart-cash">
-                        <div class="cart-price">
-                            <img src="images/cart-icon.svg" alt="shopping cart">
-                            <p>$0.00</p>
-                        </div>
-                        <button onclick="location.href='checkout.html'">Checkout</button>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+                <h1>Seattle's premier dog adoption agency</h1>
+            </div>
+            <div class="checkout">
+                <div class="cart-cash">
+                    <div class="cart-price">
+                        <img src="images/cart-icon.svg" alt="shopping cart">
+                        <p>$0.00</p>
                     </div>
+                    <button onclick="location.href='checkout.html'">Checkout</button>
                 </div>
             </div>
-        </header>
-        <nav>
-            <a href="index.html">Home</a> &nbsp;/&nbsp;
-            <a href="dogs.html">Dogs</a> &nbsp;/&nbsp;
-            <a href="blog.html">Blog</a>
-        </nav>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a> &nbsp;/&nbsp;
+        <a href="dogs.html">Dogs</a> &nbsp;/&nbsp;
+        <a href="blog.html">Blog</a>
+    </nav>
+    <div class="outer-wrapper">
         <article class="main-content">
             <div class="intro">
                 <div class="wrapper">
                     <div class="column">
-                        <img src="images/home-intro.jpg" alt="man hugs a dog">
-                    </div>
-                    <div class="column">
+                        <div class="row">
+                            <img src="images/home-intro.jpg" alt="man hugs a dog">
+                        </div>
                         <h2>Adopt a Dawg</h2>
                         <p>Every day is taco ipsum tuesday. Um, Tabasco? No thanks, do you have any Cholula? CARNE
                             ASADA!!
@@ -120,42 +122,56 @@
                         <button class="card-button">Adopt</button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="images/angus-card.jpg" alt="Angus the dawg" style="width:100%">
-                    <div class="card-container">
-                        <h4 class="dog-name"><b>Angus</b></h4>
-                        <p class="dog-breed"><b>Breed:</b> Slobbering Mongrel</p>
-                        <p class="dog-price"><b>Cost to Adopt:</b> $223.45</p>
-                        <p>A dog by any other name would smell as sweet. This dog smells awful, but it is a good dog.
-                        </p>
-                        <button class="card-button">Adopt</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/violet-card.jpg" alt="Violet the dawg" style="width:100%">
-                    <div class="card-container">
-                        <h4 class="dog-name"><b>Violet</b></h4>
-                        <p class="dog-breed"><b>Breed:</b> Flatulent Chewmonster</p>
-                        <p class="dog-price"><b>Cost to Adopt:</b> $212.45</p>
-                        <p>A dog by any other name would smell as sweet. This dog smells awful, but it is a good dog.
-                        </p>
-                        <button class="card-button">Adopt</button>
-                    </div>
-                </div>
             </div>
             <button onclick="location.href='dogs.html'" id="see-more" type="button">See More Dogs</button>
         </article>
-        <footer><img id="footer-logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
-            <p class="footer-text"> Say taco one more time. Give me tacos, or give me death. Can you put some peppers
-                and onions on that? Say taco one more time. </p>
-            <div class="footer-nav">
-                <a href="index.html">Home</a> /
-                <a href="dogs.html">Dogs</a> /
-                <a href="blog.html">Blog</a>
-                <p class="footer-text">2022 Adoptadog, LLC &nbsp; | &nbsp; Seattle, WA </p>
+        <aside class="side-blog">
+
+            <h2>From Our Blog</h2>
+
+                <img src="images/blog-1.jpg" alt="woman sits with a dog">
+                <h3>Eating Your Dog's Food</h3>
+                <p> ASADA!!
+                    Tacos al pastor made with adobada meat. I think I’ve overdosed on tacos. Fish tacos with
+                    cabbage <br/>
+                    <br/>
+                    <a href="blog.html">Read more - >></a>
+                </p>
+           
+                <img src="images/blog-2.jpg" alt="woman sits with a dog">
+            
+                <h3>Eating Your Dog's Food</h3>
+                <p> ASADA!!
+                    Tacos al pastor made with adobada meat. I think I’ve overdosed on tacos. Fish tacos with
+                    cabbage <br/>
+                    <br/>
+                    <a href="blog.html">Read more - >></a>
+                </p>
+         
+                <img src="images/blog-3.jpg" alt="dog yawning">
+                <h3>Eating Your Dog's Food</h3>
+                <p> ASADA!!
+                    Tacos al pastor made with adobada meat. I think I’ve overdosed on tacos. Fish tacos with
+                    cabbage <br/>
+                    <br/>
+                    <a href="blog.html">Read more - >></a>
+                </p>
+                
+
             </div>
-        </footer>
     </div>
+    </aside>
+    </div>
+    <footer><img id="footer-logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <p class="footer-text"> Say taco one more time. Give me tacos, or give me death. Can you put some peppers
+            and onions on that? Say taco one more time. </p>
+        <div class="footer-nav">
+            <a href="index.html">Home</a> /
+            <a href="dogs.html">Dogs</a> /
+            <a href="blog.html">Blog</a>
+            <p class="footer-text">2022 Adoptadog, LLC &nbsp; | &nbsp; Seattle, WA </p>
+        </div>
+    </footer>
     <script src="code.js"></script>
 </body>
 
