@@ -1,35 +1,34 @@
-const cards = document.querySelectorAll('.card');
+const cards = $(".card");
 
-cards.forEach(card => {
-  const dogName = card.querySelector('.dog-name').textContent;
-  const dogBreed = card.querySelector('.dog-breed').textContent;
-  const dogPrice = card.querySelector('.dog-price').textContent;
+cards.each(function() {
+  const dogName = $(this).find(".dog-name").text();
+  const dogBreed = $(this).find(".dog-breed").text();
+  const dogPrice = $(this).find(".dog-price").text();
 
-  card.querySelector('img').addEventListener('click', () => {
+  $(this).find("img").click(() => {
     alert(`Dog Name: ${dogName}\n${dogBreed}\n${dogPrice}`);
   });
 });
 
-const buttons = document.querySelectorAll(".card-button");
+const buttons = $(".card-button");
 let total = 0;
 
-buttons.forEach((button) => {
-  button.addEventListener("click", function () {
-    const cardContainer = this.parentNode.parentNode;
-    const price = parseFloat(cardContainer.querySelector(".dog-price").textContent.split("$")[1]);
-    const dogName = cardContainer.querySelector(".dog-name").textContent.trim();
+buttons.each(function() {
+  $(this).click(function() {
+    const cardContainer = $(this).parent().parent();
+    const price = parseFloat(cardContainer.find(".dog-price").text().split("$")[1]);
+    const dogName = cardContainer.find(".dog-name").text().trim();
 
-    if (this.textContent === "Adopt") {
+    if ($(this).text() === "Adopt") {
       total += price;
-      this.textContent = "Remove";
-      this.classList.add("adopted");
-      alert(`You've added ${dogName} to you cart. \n\nYour total is now $${total.toFixed(2)}`);
+      $(this).text("Remove");
+      $(this).addClass("adopted");
+      alert(`You've added ${dogName} to your cart. \n\nYour total is now $${total.toFixed(2)}`);
     } else {
       total -= price;
-      this.textContent = "Adopt";
-      this.classList.remove("adopted");
+      $(this).text("Adopt");
+      $(this).removeClass("adopted");
     }
-    document.querySelector(".cart-price p").textContent = "$" + total.toFixed(2);
+    $(".cart-price p").text("$" + total.toFixed(2));
   });
 });
-
