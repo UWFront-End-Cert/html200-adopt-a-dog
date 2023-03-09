@@ -8,147 +8,46 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,300&display=swap');
     </style>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-        <header>
-            <div class="header-container">
-                <div class="header-logo">
-                    <img src="images/adoptadog-logo.svg" alt="adopt a dog logo">
-                    <h1>Seattle's premier dog adoption agency</h1>
-                </div>
-                <div class="checkout">
-                    <div class="cart-cash">
-                        <div class="cart-price">
-                            <img src="images/cart-icon.svg" alt="shopping cart">
-                            <p>$0.00</p>
-                        </div>
-                        <button onclick="location.href='checkout.html'">Checkout</button>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+                <h1>Seattle's premier dog adoption agency</h1>
+            </div>
+            <div class="checkout">
+                <div class="cart-cash">
+                    <div class="cart-price">
+                        <img src="images/cart-icon.svg" alt="shopping cart">
+                        <p>$0.00</p>
                     </div>
+                    <button onclick="location.href='checkout.html'">Checkout</button>
                 </div>
             </div>
-        </header>
-        <nav>
-            <a href="index.html">Home</a> &nbsp;/&nbsp;
-            <a href="dogs.html">Dogs</a> &nbsp;/&nbsp;
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a> &nbsp;/&nbsp;
+        <a href="dogs.html">Dogs</a> &nbsp;/&nbsp;
+        <a href="blog.html">Blog</a>
+    </nav>
+    <article class="main-content">
+        <div id="blog-posts" class="blog-posts-container"></div>
+    </article>
+    <footer><img id="footer-logo" src="images/adoptadog-logo.svg" alt="woman teases dog with ball">
+        <p class="footer-text"> Say taco one more time. Give me tacos, or give me death. Can you put some peppers
+            and onions on that? Say taco one more time. </p>
+        <div class="footer-nav">
+            <a href="index.html">Home</a> /
+            <a href="dogs.html">Dogs</a> /
             <a href="blog.html">Blog</a>
-        </nav>
-        <article class="main-content">
-            <div class="blog">
-                <h2>Bob Loblog's Adoptadog Blog</h2>
-                <div class="wrapper">
-                    <div class="row">
-                        <div class="column">
-                            <img src="images/blog-1.jpg" alt="woman sits with a dog">
-                        </div>
-                        <div class="column">
-                            <h3>Eating Your Dog's Food</h3>
-                            <p> ASADA!!
-                                Tacos al pastor made with adobada meat. I think I’ve overdosed on tacos. Fish tacos with
-                                cabbage
-                                slaw and a side of chips and guac. Josh’s taco shack is the best taco shack. Give me
-                                tacos,
-                                or
-                                give me death. Can you put some peppers and onions on that? Say taco one more time.
-                                CARNE
-                                ASADA!! Carne asada on corn tortillas. Tacos, again? This will be 5 times this week and
-                                it’s
-                                only Tuesday. CARNITAS!!</p>
-                            <p> Every day is taco ipsum tuesday. Um, Tabasco? No thanks, do you have any
-                                Cholula? CARNE
-                                ASADA!!
-                                Tacos al pastor made with adobada meat. I think I’ve overdosed on tacos. Fish tacos with
-                                cabbage
-                                slaw and a side of chips and guac. Josh’s taco shack is the best taco shack. Give me
-                                tacos,
-                                or
-                                give me death. Can you put some peppers and onions on that? Say taco one more time.
-                                CARNE
-                                ASADA!! Carne asada on corn tortillas. Tacos, again? This will be 5 times this week and
-                                it’s
-                                only Tuesday. CARNITAS!!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <img src="images/blog-2.jpg" alt="woman sits with a dog">
-                    </div>
-                    <div class="column">
-                        <h3>Eating Your Dog's Food</h3>
-                        <p> ASADA!!
-                            Tacos al pastor made with adobada meat. I think I’ve overdosed on tacos. Fish tacos with
-                            cabbage
-                            slaw and a side of chips and guac. Josh’s taco shack is the best taco shack. Give me
-                            tacos,
-                            or
-                            give me death. Can you put some peppers and onions on that? Say taco one more time.
-                            CARNE
-                            ASADA!! Carne asada on corn tortillas. Tacos, again? This will be 5 times this week and
-                            it’s
-                            only Tuesday. CARNITAS!!</p>
-                        <p> Every day is taco ipsum tuesday. Um, Tabasco? No thanks, do you have any
-                            Cholula? CARNE
-                            ASADA!!
-                            Tacos al pastor made with adobada meat. I think I’ve overdosed on tacos. Fish tacos with
-                            cabbage
-                            slaw and a side of chips and guac. Josh’s taco shack is the best taco shack. Give me
-                            tacos,
-                            or
-                            give me death. Can you put some peppers and onions on that? Say taco one more time.
-                            CARNE
-                            ASADA!! Carne asada on corn tortillas. Tacos, again? This will be 5 times this week and
-                            it’s
-                            only Tuesday. CARNITAS!!</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <img src="images/blog-3.jpg" alt="dog yawning">
-                    </div>
-                    <div class="column">
-                        <h3>Eating Your Dog's Food</h3>
-                        <p> ASADA!!
-                            Tacos al pastor made with adobada meat. I think I’ve overdosed on tacos. Fish tacos with
-                            cabbage
-                            slaw and a side of chips and guac. Josh’s taco shack is the best taco shack. Give me
-                            tacos,
-                            or
-                            give me death. Can you put some peppers and onions on that? Say taco one more time.
-                            CARNE
-                            ASADA!! Carne asada on corn tortillas. Tacos, again? This will be 5 times this week and
-                            it’s
-                            only Tuesday. CARNITAS!!</p>
-                        <p> Every day is taco ipsum tuesday. Um, Tabasco? No thanks, do you have any
-                            Cholula? CARNE
-                            ASADA!!
-                            Tacos al pastor made with adobada meat. I think I’ve overdosed on tacos. Fish tacos with
-                            cabbage
-                            slaw and a side of chips and guac. Josh’s taco shack is the best taco shack. Give me
-                            tacos,
-                            or
-                            give me death. Can you put some peppers and onions on that? Say taco one more time.
-                            CARNE
-                            ASADA!! Carne asada on corn tortillas. Tacos, again? This will be 5 times this week and
-                            it’s
-                            only Tuesday. CARNITAS!!</p>
-                    </div>
-                </div>
-            </div>
-
-        </article>
-        <footer><img id="footer-logo" src="images/adoptadog-logo.svg" alt="woman teases dog with ball">
-            <p class="footer-text"> Say taco one more time. Give me tacos, or give me death. Can you put some peppers
-                and onions on that? Say taco one more time. </p>
-            <div class="footer-nav">
-                <a href="index.html">Home</a> /
-                <a href="dogs.html">Dogs</a> /
-                <a href="blog.html">Blog</a>
-                <p class="footer-text">2022 Adoptadog, LLC &nbsp; | &nbsp; Seattle, WA </p>
-            </div>
-        </footer>
+            <p class="footer-text">2022 Adoptadog, LLC &nbsp; | &nbsp; Seattle, WA </p>
+        </div>
+    </footer>
     </div>
     <script src="code.js"></script>
 </body>

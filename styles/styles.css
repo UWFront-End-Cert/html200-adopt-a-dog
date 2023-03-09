@@ -222,32 +222,59 @@ a:hover #see-more {
   margin: 2rem 0 0 0;
 }
 
-.blog h3 {
+#blog-posts h3 {
   margin: 0 0 .5rem 0;
   color: #173354;
 }
 
-.blog h2 {
+#blog-posts h2 {
   color: #173354;
   margin-top: 3rem;
 }
 
-.blog p {
+#blog-posts p {
   font-size: smaller;
-  margin-bottom: 0;
   margin-bottom: 3rem;
   font-family: sans-serif;
 }
 
-.blog img {
+#blog-posts img {
   max-width: 14.5rem;
   padding-right: 2.5rem;
 }
 
-.blog .row {
-  margin-bottom: 5rem;
-}
 
+
+@media (max-width: 767px) {
+  .blog-posts-container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #blog-posts h3 {
+    margin: 1rem 0 .5rem 0;
+  }
+  #blog-posts p {
+    font-size: smaller;
+    margin-bottom: 1rem;
+  }
+  .blog-posts-container .column {
+    width: 100%;
+  }
+  
+  .blog-posts-container .column:first-child {
+    order: 1;
+  }
+  
+  .blog-posts-container .column:nth-child(2) {
+    order: 3;
+  }
+  
+  .blog-posts-container .column:last-child {
+    order: 2;
+  }
+
+}
 .dog-cards-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
