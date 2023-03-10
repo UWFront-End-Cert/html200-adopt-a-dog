@@ -1,0 +1,26 @@
+Testing Plan:
+
+First, I tested the site on different browsers, including Chrome, Safari, Firefox, Edge, and Opera. I navigated through the website to ensure that all the features and functionalities worked correctly on each browser.
+
+Next, I tested the site on a PC and a Mac to ensure that it works well on different operating systems.
+
+I also tested the site on a tablet and/or phone to ensure that it is responsive, and all the features and functionalities work correctly on mobile devices.
+
+Finally, I tested the site for accessibility using tools such as screen readers and color contrast analyzers to check for accessibility issues. 
+
+
+User Persona
+
+Name: Sarah
+
+Age: 30
+
+Preferred Devices: Mobile and Desktop
+
+Background: Busy professional living in the city who loves dogs and wants to adopt one that matches her lifestyle and personality. Tech-savvy and wants a website that is easy to use and provides accurate information about available dogs for adoption in her area.
+
+Goal: To find the perfect furry companion and adopt with confidence.
+
+Challenge: Finding a dog that matches her lifestyle and schedule and adopting from a reputable organization.
+
+How Adopt-a-Dog helps: Provides a user-friendly website that allows Sarah to search for available dogs based on her preferences and includes detailed information about each dog. Adopt-a-Dog's blog section also provides valuable insights and tips about dog ownership and allows her to connect with other dog owners.
