@@ -287,3 +287,46 @@
   margin-right:1000px;
 }
 
+
+@media only screen and (min-width: 1200px) {
+  .blog {
+    display: block;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .intro {
+    flex-direction: column;
+    align-items: flex-start;
+  
+  }
+
+  .intro .intro img {
+    width: 100%;
+    margin-right: 40px;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .card, .card-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 50%;
+    padding: 2rem;
+  }
+  .dogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .dogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
