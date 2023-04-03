@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <style>
+        body {
+        background-color: gray;
+      }
+        footer {
+          background-color: #4863a0;
+        }
+      </style>
+      <title>Checkout</title>
+    </head>
+
+    <body>
+      <header>
+        <img src="images/header-image.jpg" alt="Close up and profile view of a brown dogs face">
+        <img src="images/cart-icon.svg" width="30" height="30" alt="White illustration of a shopping cart">
+        <p>&#36;1234.56<p>
+        <button>Checkout</button>
+        <br>
+        <img src="images/adoptadog-logo.svg" width="450" height="250" alt="Adopt A Dog logo in white with an image of a dog">
+        <h1>Seattle's premiere dog adoption agency</h1>
+      </header>
+
+      <nav>
+        <ul>
+        <li><a href="index.html">Home </a>
+        <li><a href="dogs.html">Dogs </a>
+        <li><a href="blog.html">Blog</a>
+        </ul>
+      </nav>
+
+      <h1>Checkout</h1>
+        <form method="get">
+          <label>Name
+            <br>
+            <input type="text" name="name">
+          </label>
+            <br>
+          <label>Email Address
+            <br>
+            <input type="email" name="email">
+          </label>
+            <br>
+          <label>Street Address
+            <br>
+            <input type="text" name="address">
+          </label>
+            <br>
+          <label>City
+            <br>
+            <input type="text" name="city">
+          </label>
+          <label for="state">State</label>
+            <select name="state" id="state">
+              <option value="al">AL</option>
+              <option value="ak">AK</option>
+              <option value="az">AZ</option>
+              <option value="ar">AR</option>
+              <option value="ca">CA</option>
+              <option value="co">CO</option>
+              <option value="ct">CT</option>
+              <option value="de">DE</option>
+              <option value="fl">FL</option>
+              <option value="ga">GA</option>
+              <option value="hi">HI</option>
+              <option value="id">ID</option>
+              <option value="il">IL</option>
+              <option value="in">IN</option>
+              <option value="ia">IA</option>
+              <option value="ks">KS</option>
+              <option value="ky">KY</option>
+              <option value="la">LA</option>
+              <option value="me">ME</option>
+              <option value="md">MD</option>
+              <option value="ma">MA</option>
+              <option value="mi">MI</option>
+              <option value="mn">MN</option>
+              <option value="ms">MS</option>
+              <option value="mo">MO</option>
+              <option value="mt">MT</option>
+              <option value="ne">NE</option>
+              <option value="nv">NV</option>
+              <option value="nh">NH</option>
+              <option value="nj">Nj</option>
+              <option value="nm">NM</option>
+              <option value="ny">NY</option>
+              <option value="nc">NC</option>
+              <option value="nd">ND</option>
+              <option value="oh">OH</option>
+              <option value="ok">OK</option>
+              <option value="or">OR</option>
+              <option value="pa">PA</option>
+              <option value="ri">RI</option>
+              <option value="sc">SC</option>
+              <option value="sd">SD</option>
+              <option value="tn">TN</option>
+              <option value="tx">TX</option>
+              <option value="ut">UT</option>
+              <option value="vt">VT</option>
+              <option value="va">VA</option>
+              <option value="wa">WA</option>
+              <option value="wv">WV</option>
+              <option value="wi">WI</option>
+              <option value="wy">WY</option>
+            </select>
+            <label>Zip Code
+              <input type="text" name="zipcode"></label>
+                <br>
+            <p>First Time Adopter?</p>
+              <input type="radio" name="adopter" value="yes"> Yes
+              <input type="radio" name="adopter" value="no"> No
+              <br>
+              <br>
+            <label for="pickup">Pickup Location</label>
+              <br>
+                <select name="pickup" id="pickup">
+                  <option value="seattle">Seattle</option>
+                  <option value="bellevue">Bellevue</option>
+                  <option value="seattle">Everett</option>
+                  <option value="renton">Renton</option>
+                  <option value="seattle">Tacoma</option>
+                </select>
+        </form>
+
+        <h2>Dogs Adopted</h2>
+          <div>
+            <img src="images/lucas-card.jpg" width="120" height="80" alt="Black dog with brown eyes and pointy ears">
+              <h4>Lucas</h4>
+                <p><b>Cost To Adopt:</b>&#36;123.45</p>
+            <img src="images/duffy-card.jpg" width="120" height="80" alt="Pitbull mixed puppy with a white face and brown ears">
+                <h4>Duffy</h4>
+                  <p><b>Cost To Adopt:</b>&#36;123.45</p>
+          </div>
+
+          <h3>Total Adoption Cost</h3>
+            <p>&#36;1234.56</p>
+                <button type="button">Submit</button>
+      <footer>
+        <img src="images/adoptadog-logo.svg" width="400" height="200" alt="Adopt A Dog logo in white with an image of a dog">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <nav>
+              <ul>
+              <li><a href="index.html">Home </a>
+              <li><a href="dogs.html">Dogs </a>
+              <li><a href="blog.html">Blog </a>
+              </ul>
+            </nav>
+          <p>&#169;2023 Adoptadog, LLC | Seatte, WA</p>
+      </footer>
+    </body>
+    </html>
