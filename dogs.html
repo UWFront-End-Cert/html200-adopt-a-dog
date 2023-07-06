@@ -6,6 +6,7 @@
             Adopt A Dog: Seattle's premiere dog adoption agency
         </title>
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <script src="./javascript/scripts.js"></script>
     </head>
 
     <body>
@@ -13,7 +14,7 @@
             <div class="cart">
                 <img src="images/cart-icon.svg" alt="shopping cart image">
                 <p>$1234.56</p>
-                <a class="shopping" href="checkout.html">Checkout</a>
+                <button class="shopping" href="checkout.html">Checkout</a>
             </div>
 
             <img id="primary" src="images/adoptadog-logo.svg" alt="Adopt a Dog logo in white">
@@ -35,99 +36,99 @@
 
         <section class="container-dog-profiles">
             <div class="doggo">
-                <img src="images/murphy-card.jpg" alt="close up picture of Murphy looking to his right">
+                <img src="images/murphy-card.jpg" alt="close up picture of Murphy looking to his right" onclick="displayDogInfo('Murphy', 'Akita', 1)">
                 <h2>Murphy</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(1)">Adopt</a>
             </div>
 
             <div class="doggo">
-                <img src="images/poppy-card.jpg" alt="picture of Poppy running toward the photographer on a gravel trail">
+                <img src="images/poppy-card.jpg" alt="picture of Poppy running toward the photographer on a gravel trail" onclick="displayDogInfo('Poppy', 'Beagle', 2)">
                 <h2>Poppy</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(2)">Adopt</a>
             </div>
 
             <div class="doggo">
-                <img src="images/jack-card.jpg" alt="picture of Jack sitting on asphalt with tail down and staring to the left">
+                <img src="images/jack-card.jpg" alt="picture of Jack sitting on asphalt with tail down and staring to the left" onclick="displayDogInfo('Jack', 'Cavachon', 3)">
                 <h2>Jack</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(3)">Adopt</a>
             </div>
 
             <div class="doggo">
-                <img src="images/duffy-card.jpg" alt="picture of Duffy with a calm look while sitting in a grass field">
+                <img src="images/duffy-card.jpg" alt="picture of Duffy with a calm look while sitting in a grass field" onclick="displayDogInfo('Duffy', 'Dalmatian', 4)">
                 <h2>Duffy</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(4)">Adopt</a>
             </div>
 
             <div class="doggo">
-                <img src="images/lucas-card.jpg" alt="picture of Lucas on a leash and smiling at the photographer">
+                <img src="images/lucas-card.jpg" alt="picture of Lucas on a leash and smiling at the photographer" onclick="displayDogInfo('Lucas', 'Eurasier', 5)">
                 <h2>Lucas</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(5)">Adopt</a>
             </div>
 
             <div class="doggo">
-                <img src="images/jake-card.jpg" alt="picture of Jake, a yellow lab staring into the distance at a beach">
+                <img src="images/jake-card.jpg" alt="picture of Jake, a yellow lab staring into the distance at a beach" onclick="displayDogInfo('Jake', 'Frenchie', 6)">
                 <h2>Jake</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(6)">Adopt</a>
             </div>
 
             <div class="doggo">
-                <img src="images/angus-card.jpg" alt="picture of Angus the boxer smiling with tongue out in a grassy field">
+                <img src="images/angus-card.jpg" alt="picture of Angus the boxer smiling with tongue out in a grassy field" onclick="displayDogInfo('Angus', 'Greyhound', 7)">
                 <h2>Angus</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(7)">Adopt</a>
             </div>
 
             <div class="doggo">
-                <img src="images/violet-card.jpg" alt="close up picture of Violet, a brown dog looking up at the camera">
+                <img src="images/violet-card.jpg" alt="close up picture of Violet, a brown dog looking up at the camera" onclick="displayDogInfo('Violet', 'Harrier', 8)">
                 <h2>Violet</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(8)">Adopt</a>
             </div>
 
             <div class="doggo">
-                <img src="images/piper-card.jpg" alt="Piper, a small brown dog, standing in a dirt patch between bushes with his tongue out">
+                <img src="images/piper-card.jpg" alt="Piper, a small brown dog, standing in a dirt patch between bushes with his tongue out" onclick="displayDogInfo('Piper', 'Labrador', 9)">
                 <h2>Piper</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(9)">Adopt</a>
             </div>
 
             <div class="doggo">
-                <img src="images/maximus-card.jpg" alt="Maximus, a black and white terrier looking sternly at the camera, while standing on terra cotta bricks">
+                <img src="images/maximus-card.jpg" alt="Maximus, a black and white terrier looking sternly at the camera, while standing on terra cotta bricks" onclick="displayDogInfo('Maximus', 'Maltese', 10)">
                 <h2>Maximus</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(10)">Adopt</a>
             </div>
 
             <div class="doggo">
-                <img src="images/luna-card.jpg" alt="yellow lab Luna smiling over a fence railing at the camera">
+                <img src="images/luna-card.jpg" alt="yellow lab Luna smiling over a fence railing at the camera" onclick="displayDogInfo('Luna', 'Newfoundland', 11)">
                 <h2>Luna</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(11)">Adopt</a>
             </div>
 
             <div class="doggo">
-                <img src="images/stella-card.jpg" alt="chihuahua Stella lying on a couch looking tiredly at the camera while curled up">
+                <img src="images/stella-card.jpg" alt="chihuahua Stella lying on a couch looking tiredly at the camera while curled up" onclick="displayDogInfo('Stella', 'Otterhound', 12)">
                 <h2>Stella</h2>
                 <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
                 <p class="information">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a class="adopt" href="#">Adopt</a>
+                <button class="adopt" href="#" onclick="updateCartBalance(12)">Adopt</a>
             </div>
         </section>
     

@@ -129,13 +129,14 @@ p#intro {
     margin: 3% 5% 3% 5%;
 }
 
-.doggo a {
+.doggo button {
     display: block;
+    color: #EBEBEB;
     text-align: center;
     font-size:large;
     background-color: #81B741;
-    padding: 3% 0% 3% 0%;
-    margin: 3% 5% 3% 5%;
+    padding: 3% 25% 3% 25%;
+    margin: 0 auto;
     border-radius: 5%;
 }
 
@@ -215,8 +216,9 @@ footer nav p {
     align-content:center;
 }
 
-.cart a {
+.cart button {
     float:right;
+    color:#EBEBEB;
     background-color: #81B741;
     padding: 3% 25% 3% 25%;
     margin: 0% 20% 0% 30%;
