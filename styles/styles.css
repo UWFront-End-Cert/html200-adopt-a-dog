@@ -112,10 +112,10 @@ p#intro {
 }
 
 .doggo {
-    height: 420px;
+    height: 24rem;
     width: 21.5%;
     margin: 1.4%;
-    border: 2px solid #EBEBEB;
+    border: 0.15rem solid #EBEBEB;
 }
 .doggo img {
     width: 100%;
@@ -286,7 +286,7 @@ fieldset {
 
 .doggoCart {
     width: 40%;
-    border: 0px;
+    border: 0rem;
 }
 .doggoCart img {
     clear: both;
