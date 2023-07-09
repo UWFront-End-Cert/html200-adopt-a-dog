@@ -67,3 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     checkoutInfo.textContent = 'No dog information available.';
   }
 });
+// Show Dogs Name on Click of Photo
+function showDogName(dogName) {
+  alert(`Clicked on ${dogName}'s photo!`);
+}

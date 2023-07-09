@@ -196,5 +196,9 @@ p1 {
   padding-left: 10%;
   padding-right: 10%;
 }
+/*adopt button changes when adopt is selected*/
+.adopted {
+  background-color: green; 
+}
 
 
