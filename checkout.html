@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Adopt A Dog: Seattle's premiere dog adoption agency
+        </title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="cart">
+                <img src="images/cart-icon.svg" alt="shopping cart image">
+                <p>$1234.56</p>
+                <a class="shopping2" href="checkout.html">Checkout</a>
+            </div>
+
+            <img id="primary" src="images/adoptadog-logo.svg" alt="Adopt a Dog logo in white">
+            <p id="logo">Seattle's premiere dog adoption agency</p>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <p style="display:inline"> / </p>
+                <a href="dogs.html">Dogs</a>
+                <p style="display:inline"> / </p>
+                <a href="blog.html">Blog</a>
+            </nav>
+
+        </header>
+
+        <h1>
+            Checkout
+        </h1>
+        
+        <form method="GET">
+            <label>
+                Name
+                <input type="text" name="applicantName">
+            </label>
+    
+            <label>
+                Email Address
+                <input type="email" name="applicantEmail">
+            </label>
+    
+            <label for="streetNumber">
+                Street Address
+            </label>
+            <input id="streetNumber" type="text" name="applicantStreetNumber">
+    
+            <label for="city">
+                City
+                <input id="city" type="text" name="addressCity">
+            </label>
+            <label for="state">
+                State
+                <select name="state" id="state">
+                    <option value="">Please select a state.</option>
+                    <option value="stateA">State A</option>
+                    <option value="stateB">State B</option>
+                    <option value="stateC">State C</option>
+                </select>
+            </label>
+            <label for="zip">
+                Zip Code
+                <input id="zip" type="number" name="addressZip">
+            </label>
+
+            <fieldset class="experience">
+                <legend>First Time Adopter?</legend>
+                <label for="expYes">
+                    Yes
+                    <input id="expYes" type="radio" name="expY" value="yes">   
+                </label>
+                
+                <label for="expNo">
+                    No
+                    <input id="expNo" type="radio" name="expN" value="no">   
+                </label>
+            </fieldset>
+    
+            <label>Pickup Location
+                <select name="location">
+                    <option value="">Please select a location.</option>
+                    <option value="locOne"> Location 1</option>
+                    <option value="locTwo">Location 2</option>
+                    <option value="locThree">Location 3</option>
+                </select>
+            </label>
+
+            <h2>Dogs Adopted</h2>
+            <div class="review">
+                <div class="doggoCart">
+                        <img src="images/lucas-card.jpg" alt="picture of Lucas on a leash and smiling at the photographer">
+                        <h2>Lucas</h2>
+                        <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
+                </div>
+                <div class="doggoCart">
+                    <img src="images/duffy-card.jpg" alt="picture of Lucas on a leash and smiling at the photographer">
+                    <h2>Duffy</h2>
+                    <p class="cost"><strong>Cost to Adopt:</strong> $123.45</p>
+                </div>
+            </div>
+            <h2>Total Adoption Cost</h2>
+            <p>$1234.56</p>
+            <input id="final" type="submit" value="Submit">
+    
+        </form>
+    
+        <footer>
+            <img src="images/adoptadog-logo.svg" alt="Adopt A Dog logo in white">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <nav>
+                <a class="" href="index.html">Home</a>
+                <p class="spacer" style="display:inline"> / </p>
+                <a class="" href="dogs.html">Dogs</a>
+                <p class="spacer" style="display:inline"> / </p>
+                <a class="" href="blog.html">Blog</a>
+            </nav>
+            <p>&#169; 2018 Adoptadog, LLC | Seattle, WA</p>
+        </footer>
+    </body>
+</html>

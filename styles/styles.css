@@ -1,0 +1,342 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D3D3D;
+    /*
+    Header background: #093C60
+    Footer background: #3D3D3D
+    shopping button padding: #81B741
+    nav background + profiles button : ECECEC
+    */
+}
+
+/* header related css */
+
+header {
+    background-color: #093C60;
+}
+
+img#primary {
+    float: left;
+    width: 30%;
+    padding-top:2%;
+    margin: 1.5% 0% 0% 8%;
+}
+
+p#logo {
+    clear: both;
+    color: #81B741;
+    font-weight: bold;
+    font-style:italic;
+    font-size: 2rem;
+    margin: 0% 0% 4% 8%;
+}
+
+header nav {
+    clear: both;
+    background-color: #ECECEC;
+    padding: 1.5% 0% 1.5% 10%;
+    font-size:large;
+}
+
+header nav * {
+    color: #004F6B;
+}
+
+header nav a {
+    margin-right: 0.2rem;
+}
+
+/* body related css */
+
+body {
+    font-size:.9rem;
+    margin: auto;
+}
+
+h1, h2, h3, a {
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    color: #093C60;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-left: 10.5%;
+}
+
+h2 {
+    clear: both;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 0.9rem;
+}
+
+a {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    text-decoration:none;
+}
+
+/* home page intro related */
+
+h1#introHeader {
+    float: right;
+    width: 40%;
+    margin: 2% 20% 0% 2%;
+}
+
+img#introImg {
+    float: left;
+    width: 25%;
+    padding: 0;
+    margin: 2% 0% 2% 10%;
+}
+
+p#intro {
+    float: right;
+    font-size: 1.5rem;
+    width: 40%;
+    margin: 0% 20% 0% 2%;
+}
+
+/* dog profile related css*/
+
+.container-dog-profiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.doggo {
+    height: 24rem;
+    width: 21.5%;
+    margin: 1.4%;
+    border: 0.15rem solid #EBEBEB;
+}
+.doggo img {
+    width: 100%;
+}
+
+.doggo h2 {
+    margin: 3% 5% 3% 5%;
+}
+
+.doggo p {
+    margin: 3% 5% 3% 5%;
+}
+
+.doggo a {
+    display: block;
+    text-align: center;
+    font-size:large;
+    background-color: #81B741;
+    padding: 3% 0% 3% 0%;
+    margin: 3% 5% 3% 5%;
+    border-radius: 5%;
+}
+
+a#more {
+    display:block;
+    text-align: center;
+    font-size:larger;
+    background-color: #ECECEC;
+    color: #093C60;
+    padding: 1% 0% 1% 0%;
+    margin: 1% 43.5% 1% 43.5%;
+    border-radius: 5%;
+}
+
+section {
+    clear: both;
+    width: 80%;
+    margin: 0% 10% 0% 10%; 
+}
+
+/* footer related css*/
+
+footer {
+    clear: both;
+    background-color: #3D3D3D;
+    padding: 2.5% 25% 3% 25%;
+}
+
+footer * {
+    text-align: center;
+    margin: auto;
+}
+
+footer nav  {
+    color: #FFFFFF;
+    width: 75%;
+    padding: 2% 0.25% 2% 0.25%;
+}
+
+footer img {
+    padding: 1% 30% 1% 30%;
+}
+
+footer p {
+    color:#FFFFFF;
+    padding: 1% 30% 1% 30%;
+}
+
+footer nav p {
+    color:#FFFFFF;
+    width: 75%;
+    padding: 1% 0.25% 1% 0.25%;
+}
+
+/* cart related css */
+.cart {
+    float: right;
+    width: 15%;
+    margin: 4.5% 10% 0% 0%;
+}
+
+.cart p {
+    color: #FFFFFF;
+    float: right;
+    text-align: right;
+    font-weight: bold;
+    font-size: 100%;
+    width: 30%;
+    padding-right:15%;
+    margin-right: 5%;
+}
+
+.cart img {
+    width: 16%;
+    float: left;
+    margin-left: 34%;
+    align-content:center;
+}
+
+.cart a {
+    float:right;
+    background-color: #81B741;
+    padding: 3% 25% 3% 25%;
+    margin: 0% 20% 0% 30%;
+    border-radius: 5%;
+}
+
+/* checkout related css */
+
+input, select, textarea, fieldset {
+    box-sizing: border-box;
+    margin: 0% 0% 3% 0%;
+    display: block;
+}
+
+label {
+    color: #093C60;
+    font-weight:700;
+    font-size:1.5rem;
+}
+
+label[for="city"] {
+    display:inline-block;
+    margin:1% 2% 0% 0%;
+}
+label[for="state"] {
+    display:inline-block;
+    margin: 1% 2% 0% 0%;
+}
+
+label[for="zip"] {
+    display:inline-block;
+    margin: 1% 0% 1% 5%;
+}
+
+form {
+    margin-left: 10%;
+    width:50%;
+}
+
+legend {
+    color: #093C60;
+    font-weight:700;
+    font-size: 1.5rem;
+}
+
+label[for^="exp"] {
+    font-size: large;
+    color:#3D3D3D;
+    display: inline-block;
+    padding: 0% 6% 0% 0%;
+}
+
+fieldset {
+    border-style:hidden;
+    margin-left: 0%;
+}
+
+
+.review {
+    display: flex;
+    flex-flow: row;
+    width:80%;
+    align-items:start;
+    justify-content:flex-start;
+    border-style:none;
+}
+
+.doggoCart {
+    width: 40%;
+    border: 0rem;
+}
+.doggoCart img {
+    clear: both;
+    float: left;
+    width: 30%;
+}
+
+.doggoCart h2 {
+    clear: right;
+    font-size:large;
+    float: right;
+    width: 40%;
+    padding: 0% 23% 0% 0%;
+    margin: 0% 3% 0% 2%;
+}
+
+.doggoCart p {
+    width:40%;
+    float: right;
+    clear: right;
+    padding: 0% 23% 0% 0%;
+    margin: 0% 3% 0% 2%;
+    color:#3D3D3D
+}
+
+
+/* blog related css */
+
+.post .postText {
+    float: right;
+    width: 60%;
+    margin-right: 15%;
+}
+
+.postText p {
+    font-size: large;
+}
+
+/* create styling for buttons, instead of using links */
+/*
+.button a[href^=""] {
+
+}
+
+.button {
+
+}
+*/
+/* create new button css styling for buttons
+.button a[href^="cart"] {
+
+}
+*/
