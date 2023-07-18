@@ -81,26 +81,34 @@ a {
     text-decoration:none;
 }
 
-/* home page intro related */
-
-h1#introHeader {
-    float: right;
-    width: 40%;
-    margin: 2% 20% 0% 2%;
+section {
+    clear: both;
+    float: left;
+    width: 80%;
+    margin: 0% 0% 0% 0%; 
 }
 
-img#introImg {
-    float: left;
-    width: 25%;
-    padding: 0;
+aside {
+    float:right;
+    width: 20%;
+}
+
+/* home page intro related */
+
+#introImg {
+    width: 80%;
     margin: 2% 0% 2% 10%;
 }
 
+h1#introHeader {
+    width: 80%;
+    margin: 2% 0% 0% 10%;
+}
+
 p#intro {
-    float: right;
-    font-size: 1.5rem;
-    width: 40%;
-    margin: 0% 20% 0% 2%;
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0% 0% 0% 10%;
 }
 
 /* dog profile related css*/
@@ -109,11 +117,12 @@ p#intro {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .doggo {
-    height: 24rem;
-    width: 21.5%;
+    height: 100%;
+    width: 28.5%;
     margin: 1.4%;
     border: 0.15rem solid #EBEBEB;
 }
@@ -140,21 +149,16 @@ p#intro {
     border-radius: 5%;
 }
 
-a#more {
-    display:block;
+#more {
+    clear: left;
     text-align: center;
+    display: block;
     font-size:larger;
     background-color: #ECECEC;
     color: #093C60;
-    padding: 1% 0% 1% 0%;
-    margin: 1% 43.5% 1% 43.5%;
+    padding: 1% 5% 1% 5%;
+    margin: 0% 47% 0% 27%;
     border-radius: 5%;
-}
-
-section {
-    clear: both;
-    width: 80%;
-    margin: 0% 10% 0% 10%; 
 }
 
 /* footer related css*/
@@ -162,7 +166,8 @@ section {
 footer {
     clear: both;
     background-color: #3D3D3D;
-    padding: 2.5% 25% 3% 25%;
+    padding: 4% 20% 4% 20%;
+    margin: 1% 0% 0% 0%;
 }
 
 footer * {
@@ -216,7 +221,7 @@ footer nav p {
     align-content:center;
 }
 
-.cart button {
+.cart a {
     float:right;
     color:#EBEBEB;
     background-color: #81B741;
@@ -326,6 +331,135 @@ fieldset {
 .postText p {
     font-size: large;
 }
+
+.preview .post-preview {
+    float: right;
+    width: 60%;
+    margin-right: 15%;
+}
+
+.preview-text p {
+    font-size: large;
+}
+
+/* css for phone layouts */
+@media screen and (max-width: 767px) {
+    .container-dog-profiles {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .doggo {
+        height: 100%;
+        width: 98.5%;
+        margin: 1.4%;
+        border: 0.15rem solid #EBEBEB;
+    }
+    .doggo img {
+        width: 100%;
+    }
+    
+    .doggo h2 {
+        margin: 3% 5% 3% 5%;
+    }
+    
+    .doggo p {
+        margin: 3% 5% 3% 5%;
+    }
+    
+    .doggo button {
+        display: block;
+        color: #EBEBEB;
+        text-align: center;
+        font-size:large;
+        background-color: #81B741;
+        padding: 3% 25% 3% 25%;
+        margin: 0 auto;
+        border-radius: 5%;
+    }
+
+    section {
+        clear: both;
+        float: left;
+        width: 96%;
+        margin: 0% 2% 0% 2%; 
+    }
+
+    aside {
+        display: none;
+    }
+
+    #more {
+        clear: left;
+        text-align: center;
+        display: block;
+        font-size:larger;
+        background-color: #ECECEC;
+        color: #093C60;
+        padding: 1% 5% 1% 5%;
+        margin: 0% 30% 0% 30%;
+        border-radius: 5%;
+    }
+}
+
+/* css for tablets */
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    aside a {
+        color: #007bff;
+        padding: 0.5rem;
+        text-decoration:none;
+    }
+
+    .preview .post-preview {
+        float: right;
+        width: 85%;
+        margin-right: 15%;
+    }
+    
+    .preview-text p {
+        font-size: medium;
+    }
+
+    .doggo {
+        height: 100%;
+        width: 42%;
+        margin: 1.4%;
+        border: 0.15rem solid #EBEBEB;
+    }
+    .doggo img {
+        width: 100%;
+    }
+    
+    .doggo h2 {
+        margin: 3% 5% 3% 5%;
+    }
+    
+    .doggo p {
+        margin: 3% 5% 3% 5%;
+    }
+    
+    .doggo button {
+        display: block;
+        color: #EBEBEB;
+        text-align: center;
+        font-size:large;
+        background-color: #81B741;
+        padding: 3% 25% 3% 25%;
+        margin: 0 auto;
+        border-radius: 5%;
+    }
+}
+
+@media print {
+    header, footer, aside, img, button { 
+        display: none;
+    }
+}
+
+
 
 /* create styling for buttons, instead of using links */
 /*
