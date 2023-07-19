@@ -12,7 +12,11 @@
 /* header related css */
 
 header {
-    background-color: #093C60;
+    background: linear-gradient(30deg, brown, black 80%);
+    background-image: url('../images/header-image.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 img#primary {
@@ -322,24 +326,52 @@ fieldset {
 
 /* blog related css */
 
+section.posts {
+    float: left;
+    width: 100%;
+    margin: 0% 0% 0% 0%; 
+}
+
 .post .postText {
     float: right;
-    width: 60%;
-    margin-right: 15%;
+    width: 55%;
+    margin-right: 10%;
+    margin-left: 5%;
 }
 
 .postText p {
     font-size: large;
 }
 
+.post img {
+    float: left;
+    margin-left: 10%;
+    width: 20%;
+}
+
+.post {
+    clear: both;
+    margin-bottom: 5%;
+}
+
 .preview .post-preview {
     float: right;
-    width: 60%;
-    margin-right: 15%;
+    margin-right: 20%;
+    margin-bottom: 7%;
+}
+
+.post-preview img {
+    width: 100%;
 }
 
 .preview-text p {
     font-size: large;
+}
+
+.preview-text a {
+    color: #007bff;
+    padding: 0.5rem;
+    text-decoration:none;
 }
 
 /* css for phone layouts */
@@ -402,16 +434,32 @@ fieldset {
         margin: 0% 30% 0% 30%;
         border-radius: 5%;
     }
+    
+    .post .postText {
+
+        width: 96%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    
+    .postText p {
+        font-size: large;
+    }
+    
+    .post img {
+        margin-right: 2%;
+        margin-left: 2%;
+        width: 96%;
+    }
+    
+    .post {
+        clear: both;
+        margin-bottom: 5%;
+    }
 }
 
 /* css for tablets */
 @media screen and (min-width:768px) and (max-width:1023px) {
-
-    aside a {
-        color: #007bff;
-        padding: 0.5rem;
-        text-decoration:none;
-    }
 
     .preview .post-preview {
         float: right;
@@ -450,6 +498,28 @@ fieldset {
         padding: 3% 25% 3% 25%;
         margin: 0 auto;
         border-radius: 5%;
+    }
+
+    .post .postText {
+        float: right;
+        width: 63%;
+        margin-right: 5%;
+        margin-left: 2%;
+    }
+    
+    .postText p {
+        font-size: large;
+    }
+    
+    .post img {
+        float: left;
+        margin-left: 5%;
+        width: 25%;
+    }
+    
+    .post {
+        clear: both;
+        margin-bottom: 3%;
     }
 }
 
