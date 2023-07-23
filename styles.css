@@ -20,28 +20,26 @@ h1 {
   max-height: 10%;
 }
  /* Header Cart */
-.checkout {
-box-sizing: content-box;
-max-width: 20%;
-position: absolute;
-top: 15%;
-right: 8%;
-background-color: green;
-color: white;
-padding-top: 0.5%;
-padding-bottom: 0.5%;
-padding-right: 1%;
-padding-left: 1%;
-font: bold;
-font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+ .checkout {
+  box-sizing: content-box;
+  max-width: 20%;
+  position: absolute;
+  top: 15%;
+  right: 8%;
+  background-color: green;
+  color: white;
+  padding: 0.5% 1%;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
- .cart {
+
+.cart {
   box-sizing: content-box;
   max-width: 2.5%;
   position: absolute;
   top: 10%;
   right: 10%;
- }
+}
 
 /* Navigation Bar */
 .two {
@@ -55,30 +53,111 @@ font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif
 }
 
 /* Adopt A Dog - About Us */
+
+.thumbnail {
+  max-width: 400px; 
+  max-height: 200px;
+  object-fit: scale-down;
+}
+.main-content{
+padding: 5%;
+display:grid;
+column-gap: 5%;
+grid-template-columns: 30% 30% 20%;
+grid-template-areas: 
+'article1 article1 aside'
+'article2 article2 aside'
+'section1 section1 aside'
+'seemore seemore aside'
+'five five five';
+}
+.article1{
+  grid-area: article1;
+  grid-column: 1 / span 2;
+  padding: 5%;
+}
+.aboutimg {
+  width: 95%;
+  height: 350px;
+  grid-column: 1 / span 2;
+
+}
+.article2 {
+  grid-area: article2;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.aside {
+  padding-top: 5%;
+  grid-area: aside;
+  grid-column: 3;
+  display: inline-block;
+}
+
 .three {
-columns: 2;
+columns: 1;
+display: flex;
 column-gap: 5%;
 padding-left: 10%;
-padding-right: 10%;
-padding-top: 5%; 
+padding-right: 33%;
+padding-top: 5%;
+}
+
+.aside a { 
+  color: lightskyblue;
+}
+
+.about {
+  padding-left: 50%;
+  padding-right: 33%;
 }
 
 /* Dogs for Adoption */
-.four {
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap: 3%;
+}
+.dogcard {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.section1 {
+  grid-area: section1;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
+  padding: 5%;
+  }
+
 .dog-container {
   border: 1.5px solid #ebebeb;
   background-color: #ffffff;
-  flex-basis: calc(5% - 2%); 
-  margin-bottom: 2%; 
+  flex-basis: calc(5% - 2%);
+  margin-bottom: 2%;
   text-align: center;
+}
+.seemore {
+  background-color: darkgrey;
+  border-radius: 2.5%;
+  grid-area: seemore;
+  text-align: center;
+  padding: 2.5%;
+}
+
+.seemore a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
 }
 
 .dogsname {
@@ -97,6 +176,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Footer */
+
 .five {
   background-color: #143C5B;
   color: white;
@@ -141,43 +221,48 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* unvisited link */
 a:link {
-  color: white;
+  color: rgb(7, 7, 82);
 }
 /* visited link */
 a:visited {
-  color: white;
+  color: navy;
 }
 /* mouse over link */
 a:hover {
-  color: white;
+  color: lightskyblue;
 }
 /* selected link */
 a:active {
-  color: white;
+  color: navy;
 }
 /* Checkout Form */
-p1 { 
+p1 {
   color: navy;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 24px;
 }
-#main-content {
+.aboutcontainer {
   color: navy;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 24px;
-}
+  width: 66%;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+ }
 .navbar {
   margin-bottom: 20px;
 }
+
 /*Trial to correct left and right formatting*/
 
-.container {
+#container {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5%;
+  width: 66%;
+  columns: 2;
+  align-self:auto;
+  flex-flow: column-reverse;
 }
 /* Responsive Additions */
 @media (max-width: 768px) {
@@ -186,7 +271,7 @@ p1 {
 @media (max-width: 480px) {
   /* adjust layout for smaller screens */
 }
-.img-responsive1 { 
+.img-responsive1 {
   width:100%;
   max-width:400px;
   height:auto;
@@ -196,5 +281,112 @@ p1 {
   padding-left: 10%;
   padding-right: 10%;
 }
+/* Responsive Additions */
+@media (max-width: 768px) {
+  /* For screens with a maximum width of 768px (tablets and smaller) */
+
+  .main-content {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    grid-template-areas:
+      "article1"
+      "section1"
+      "aside";
+  }
+
+  #aside {
+      float: right;
+      width: 25%;
+      height: auto;
+      margin: .7rem 1% 4%;
+      overflow: hidden;
+      width: 80%;
+      height: auto;
+      margin-right: 0;
+      }
+
+  .article1,
+  .section1 {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+/* Default styles for larger screens */
+.main-content {
+  grid-template-columns: 30% 30% 20%;
+  grid-template-areas:
+    "article1 article1 aside"
+    "article2 article2 aside"
+    "section1 section1 aside"
+    "seemore seemore aside"
+    "five five five";
+}
+
+/* Media query for tablet devices */
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "article1 article1"
+      "article2 article2"
+      "section1 section1"
+      "aside aside"
+      "seemore seemore"
+      "five five five";
+  }
+
+  .aside {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "article1"
+      "article2"
+      "section1"
+      "aside"
+      "seemore"
+      "five";
+  }
+
+  .aside {
+    grid-column: 1;
+  }
+}
+
+/* Hide blog article previews on mobile devices */
+@media (max-width: 768px) {
+  .aside {
+    display: none;
+  }
+}
 
 
+
+/* For screens with a maximum width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+  .checkout {
+    top: 5%;
+    right: 5%;
+  }
+
+  .cart {
+    top: 3%;
+    right: 8%;
+  }
+}
+
+/* For screens with a maximum width of 480px (mobile devices) */
+@media (max-width: 480px) {
+  .checkout {
+    top: 3%;
+    right: 5%;
+  }
+
+  .cart {
+    top: 2%;
+    right: 5%;
+  }
+}
