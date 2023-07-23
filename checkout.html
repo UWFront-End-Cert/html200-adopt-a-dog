@@ -6,7 +6,6 @@
             Adopt A Dog: Seattle's premiere dog adoption agency
         </title>
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
-        <script src="./javascript/scripts.js"></script>
     </head>
 
     <body>
@@ -35,28 +34,28 @@
         </h1>
         
         <form method="GET">
-            <label>
+            <label for="name">
                 Name
-                <input type="text" name="applicantName">
+                <input type="text" name="applicantName" required>
             </label>
     
-            <label>
+            <label for="email">
                 Email Address
-                <input type="email" name="applicantEmail">
+                <input type="email" name="applicantEmail" required>
             </label>
     
             <label for="streetNumber">
                 Street Address
             </label>
-            <input id="streetNumber" type="text" name="applicantStreetNumber">
+            <input id="streetNumber" type="text" name="applicantStreetNumber" required>
     
             <label for="city">
                 City
-                <input id="city" type="text" name="addressCity">
+                <input id="city" type="text" name="addressCity" required>
             </label>
             <label for="state">
                 State
-                <select name="state" id="state">
+                <select name="state" id="state" required>
                     <option value="">Please select a state.</option>
                     <option value="stateA">State A</option>
                     <option value="stateB">State B</option>
@@ -65,24 +64,24 @@
             </label>
             <label for="zip">
                 Zip Code
-                <input id="zip" type="number" name="addressZip">
+                <input id="zip" type="number" name="addressZip" required>
             </label>
 
             <fieldset class="experience">
                 <legend>First Time Adopter?</legend>
                 <label for="expYes">
                     Yes
-                    <input id="expYes" type="radio" name="expY" value="yes">   
+                    <input id="expYes" type="radio" name="exp" value="yes" required>   
                 </label>
                 
                 <label for="expNo">
                     No
-                    <input id="expNo" type="radio" name="expN" value="no">   
+                    <input id="expNo" type="radio" name="exp" value="no">   
                 </label>
             </fieldset>
     
             <label>Pickup Location
-                <select name="location">
+                <select name="location" required>
                     <option value="">Please select a location.</option>
                     <option value="locOne"> Location 1</option>
                     <option value="locTwo">Location 2</option>
@@ -105,8 +104,7 @@
             </div>
             <h2>Total Adoption Cost</h2>
             <p>$1234.56</p>
-            <input id="final" type="submit" value="Submit">
-    
+
         </form>
     
         <footer>
@@ -121,5 +119,6 @@
             </nav>
             <p>&#169; 2018 Adoptadog, LLC | Seattle, WA</p>
         </footer>
+        <script src="./javascript/scripts.js"></script>
     </body>
 </html>
