@@ -390,3 +390,30 @@ p1 {
     right: 5%;
   }
 }
+/* Revisions For the header */
+.header {
+  position: relative;
+}
+
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/header.jpg"); 
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add a gradient to the header */
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgb(50, 205, 50), rgb(0, 128, 0));
+  z-index: 1;
+}
