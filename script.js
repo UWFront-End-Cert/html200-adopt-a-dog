@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function showDogName(dogName) {
   alert(`Clicked on ${dogName}'s photo!`);
 }
+<<<<<<< HEAD
 // Java Blog Posts
 const blogPosts = [
   {
@@ -155,3 +156,5 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(formInfo);
       });
     });
+=======
+>>>>>>> c616670fbb059632dca651587f8cfc21b551e703
