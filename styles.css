@@ -395,18 +395,18 @@ p1 {
 .header {
   position: relative;
 }
-
-.header-background {
+/* Add a gradient to the header */
+.header::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("images/header.jpg"); 
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(rgb(50, 205, 50), rgb(0, 128, 0));
+  z-index: -1;
 }
-<<<<<<< HEAD
+
 /* Adding Containers for Blog Posts*/
 
 /* Containers for blog posts */
@@ -496,17 +496,3 @@ nav a:visited {
   width: 100%;
   height: auto;
 }
-=======
-
-/* Add a gradient to the header */
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(rgb(50, 205, 50), rgb(0, 128, 0));
-  z-index: 1;
-}
->>>>>>> c616670fbb059632dca651587f8cfc21b551e703
