@@ -71,3 +71,87 @@ document.addEventListener('DOMContentLoaded', () => {
 function showDogName(dogName) {
   alert(`Clicked on ${dogName}'s photo!`);
 }
+// Java Blog Posts
+const blogPosts = [
+  {
+    headline: "Traveling with your Dog",
+    imageSrc: "images/blog-1.jpg",
+    blogText: "Traveling with your dog can be splendid, unless you have a big dog that does not get along with others. A word of advice for traveling with your dog: pack water for your four-legged friend! Ensure you do not need to leave him/her in your car especially on a hot summer day. ",
+  },
+  {
+    headline: "Teach Your Dog Fetch",
+    imageSrc: "images/blog-2.jpg",
+    blogText: "Some dogs love to fetch and it comes as an instinct, while others need a bit of training. To train your pal use treats and positive reinforcement.",
+  },
+  {
+    headline: "How to Walk Multiple Dogs",
+    imageSrc: "images/blog-3.jpg",
+    blogText: "Walking mutltiple dogs can be a challenge. A harness for all dogs is recommended. To prevent the dogs from overlapping their leashes on a walk - good luck! It takes a special talent and patience to walk multiple dogs.",
+  },
+];
+
+document.addEventListener("DOMContentLoaded", function () {
+  const blogContainer = document.querySelector(".blog-container");
+
+   for (const blogPost of blogPosts) {
+    // A container div for each blog post and add Flexbox classes
+    const blogPostContainer = document.createElement("div");
+    blogPostContainer.classList.add("blog-post-container");
+
+    // A separate divs for image and text
+    const imageContainer = document.createElement("div");
+    imageContainer.classList.add("blog-post-image");
+    const imageElement = document.createElement("img");
+    imageElement.src = blogPost.imageSrc;
+    imageContainer.appendChild(imageElement);
+
+    const textContainer = document.createElement("div");
+    textContainer.classList.add("blog-post-text");
+    const headlineElement = document.createElement("p");
+    headlineElement.classList.add("blogtitles");
+    headlineElement.textContent = blogPost.headline;
+    const blogTextElement = document.createElement("p");
+    blogTextElement.textContent = blogPost.blogText;
+    textContainer.appendChild(headlineElement);
+    textContainer.appendChild(blogTextElement);
+
+    // Append image and text divs to the blog post container
+    blogPostContainer.appendChild(imageContainer);
+    blogPostContainer.appendChild(textContainer);
+
+    // Append the blog post container to the blog container
+    blogContainer.appendChild(blogPostContainer);
+  }
+});
+// Lesson 08 - Checkout
+    document.addEventListener("DOMContentLoaded", function() {
+      // Handle form submission
+      document.querySelector("form").addEventListener("submit", function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Get the form values
+        var name = document.querySelector("input[name='Name']").value;
+        var email = document.querySelector("input[name='E-mail']").value;
+        var address = document.querySelector("input[name='address']").value;
+        var city = document.querySelector("input[name='City']").value;
+        var state = document.querySelector("input[name='State']").value;
+
+        // Form information string
+        var formInfo = "Name: " + name + "\n" +
+                       "E-mail: " + email + "\n" +
+                       "Street Address: " + address + "\n" +
+                       "City: " + city + "\n" +
+                       "State: " + state;
+
+        // New DOM element for the message
+        var messageDiv = document.createElement("div");
+        messageDiv.classList.add("alert", "alert-success");
+        messageDiv.textContent = "Thank you. The form information has been received\n\n" + formInfo;
+
+        // Append message on form
+        document.querySelector(".form").appendChild(messageDiv);
+
+        console.log(formInfo);
+      });
+    });
