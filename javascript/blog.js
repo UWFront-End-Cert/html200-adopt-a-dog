@@ -1,3 +1,7 @@
+$(function(){
+    console.log("DOM ready, load remaining javascript")
+
+
 const blogs = [
     {
         headline: 'Traveling With Your Dog',
@@ -45,3 +49,4 @@ for(let i=0; i < blogs.length; i++) {
     container.appendChild(image);
     container.appendChild(textHolder);
 }
+})
