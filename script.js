@@ -178,18 +178,16 @@ document.addEventListener("DOMContentLoaded", function () {
     var total = 0;
     
     $('.adoptbutton').click(function() {
-        total += 150; // Assuming each adoption costs $150
+        total += 150;
         $('#checkout-total').text('$' + total);
     });
 });
-
   // Form Submission
   $(document).ready(function() {
     $('#form').submit(function(event) {
-        event.preventDefault(); // Prevent the form from submitting normally
+        event.preventDefault();
         
         var formData = $(this).serialize();
         console.log(formData);
     });
 });
-//Checkout Total

@@ -20,32 +20,74 @@ h1 {
   max-height: 10%;
 }
  /* Header Cart */
- .checkout {
-  box-sizing: content-box;
-  max-width: 20%;
-  position: absolute;
-  top: 15%;
-  right: 8%;
-  background-color: green;
-  color: white;
-  padding: 0.5% 1%;
-  font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.cart {
-  box-sizing: content-box;
-  max-width: 2.5%;
+ 
+ .checkoutbox {
   position: absolute;
   top: 10%;
   right: 10%;
+  color: white;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.checkout a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #66CC00;
+  color: white;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.checkout a:hover {
+  background-color: #4CAF50;
+}
+
+.cart {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.5rem; 
+}
+
 .checkout-total {
-  box-sizing: content-box;
-  max-width: 2.5%;
-  position: absolute;
-  top: 11%;
-  right: 10%;
+  margin-top: 0.5rem; 
+  padding: 2%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:white;
+}
+
+@media (max-width: 768px) {
+  .checkoutbox {
+    position: relative;
+    top: auto;
+    right: auto;
+    text-align: center; 
+    margin: 2% auto; 
+  }
+}
+@media (max-width: 768px) {
+  .checkout a {
+    display: block; 
+    margin-top: 1rem; 
+  }
+
+  .cart {
+    margin-left: 0; 
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .checkoutbox {
+    position: absolute;
+    top: 2%; 
+    right: 2%; 
+    text-align: right; 
+  }
 }
 
 /* Navigation Bar */
@@ -135,7 +177,6 @@ padding-top: 5%;
   max-width: 200px;
   max-height: 200px;
 }
-
 .section1 {
   grid-area: section1;
   display: flex;
@@ -476,6 +517,7 @@ p1 {
   }
  
 /* CSS Corrections for Optimization*/
+
   .blogtitles,
 nav a {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -502,4 +544,15 @@ nav a:visited {
 .img-responsive {
   width: 100%;
   height: auto;
+}
+/*Checkout Form*/
+
+.grid-item-form {
+  padding: 5%;
+}
+.checkoutpage {
+  padding: 5%
+}
+#checkout-info {
+  padding: 5%;
 }

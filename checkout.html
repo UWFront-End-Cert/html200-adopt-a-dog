@@ -10,16 +10,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Adopt a Dog</title>
 <link rel="stylesheet" type="text/css" href="styles.css">
-</head>git 
+</head>
 <body>
     <header>
     <div class="one">   
     <img class="logo" src="images/header.jpg" alt="dog image header">
     </div>
     <div class="checkoutbox">
-        <div class="checkout"><a href="checkout.html">Checkout</a></div>
-        <img class="cart" src="images/cart-icon.svg" alt="cart icon">
-      </div>
+      <div id="checkout-total">$0</div>
+      <img class="cart" src="images/cart-icon.svg" alt="cart icon">
+      <div class="checkout"><a href="checkout.html">Checkout</a></div>
+      </div>    
 </header>
 <div class="two">  
 <nav>
@@ -33,7 +34,6 @@
     </h2>
     </nav>
   </div>
-  <h1>Checkout</h1>
   <div id="checkout-info">
     <p>Total: $<span id="total"></span></p>
   </div>
@@ -44,7 +44,7 @@
          <form	action="/action.php"	method="GET">
          <div class="input-container">
            <div class="leftcontainer">
-             <p1> Name </p>
+             <p> Name </p>
              </div>
              <div class="rightcontainer">
               <input class="input-field" type="text" name="Name">
@@ -52,7 +52,7 @@
               </div>
          <div class="input-container">
            <div class="leftcontainer">
-             <p1> E-mail </p>
+             <p> E-mail </p>
              </div>
              <div class="rightcontainer">
               <input class="input-field" type="email" name="E-mail">
@@ -60,15 +60,15 @@
               </div>
          <div class="input-container">
            <div class="leftcontainer">
-            <p1>Street Address</p>
+            <p>Street Address</p>
             </div>
             <div class="rightcontainer">
-             <input class="input-field" type="address" name="address">
+             <input class="input-field" type="text" name="address">
              </div>
              </div>
          <div class="input-container">
            <div class="leftcontainer">
-            <p1>City</p>
+            <p>City</p>
             </div>
             <div class="rightcontainer">
              <input class="input-field" type="text" name="City">
@@ -76,15 +76,15 @@
              </div>
          <div class="input-container">
            <div class="leftcontainer">
-            <p1>State</p>
+            <p>State</p>
             </div>
             <div class="rightcontainer">
-             <input class="input-field" type="state" name="State">
+             <input class="input-field" type="text" name="State">
              </div>
              </div>
           <div class="input-container">
           <div class="leftcontainer">
-           <p1>Register</p>
+           <p>Register</p>
            </div>
            <div class="rightcontainer">
             <button class="btn" type="submit">SUBMIT</button>
