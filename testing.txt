@@ -1,0 +1,12 @@
+- User Persona -
+Name: Kevin
+Age:25
+Description: Kevin is a single male, who works remotely as a project manager at Microsoft. He moved to Seattle after graduating from college. During the pandemic, he got quite lonely, not having any companions. After doing some research and investigation, Kevin decided that he wanted to Adopt a dog, since he was at home all the time with his job and felt he would be able to take care of a dog. He also wanted to help relieve the burden of additional pets in the system by adopting, rather than finding a new puppy. He keeps up with the latest in technology and always has the latest Android phone. However, he typically does most of his web browsing on desktop, since he’s at home most of the time. 
+
+- Testing - 
+Website was first developed from design mockups to incorporate the necessary html elements, then CSS to style the elements to match the design mockups were included, and finally, Javascript and other interactive elements were introduced. 
+
+The website was initially developed with the expectation of desktop resolution access from Chrome. Over time, graceful degradation was introduced via common device/resolution breakpoints to accommodate different users.
+
+The website HTML, CSS, and Javascript files were tested with w3c markup validation after each iteration/commit/release on Github Pages to verify that it met the design specifications required and had no errors. This was done in Chrome on a ChromeOS/Linux device. Chrome Developer Tools were used to view the website in different resolutions and breakpoints. The final iteration of the website was tested on Chrome on an Pixel 3a, as well as Firefox Focus and Internet Explorer on a Lenovo P15 running Windows.
+Additionally, the website was tested using the SiteImprove Accessibility Checker Chrome Extension [https://www.siteimprove.com/] for issues to correct for screen reader issues, as well as color contrast improvements (which were left unaddressed to keep consistent with the design mockups).
