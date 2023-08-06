@@ -155,3 +155,41 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(formInfo);
       });
     });
+
+    // Dog Container 
+    $(document).ready(function() {
+      $('.dog-container').hover(
+          function() {
+              $(this).css({
+                  'transform': 'scale(1.1)',
+                  'box-shadow': '0 4px 6px rgba(0, 0, 0, 0.1)'
+              });
+          },
+          function() {
+              $(this).css({
+                  'transform': 'scale(1)',
+                  'box-shadow': 'none'
+              });
+          }
+      );
+  });
+  //Adopt Button
+  $(document).ready(function() {
+    var total = 0;
+    
+    $('.adoptbutton').click(function() {
+        total += 150; // Assuming each adoption costs $150
+        $('#checkout-total').text('$' + total);
+    });
+});
+
+  // Form Submission
+  $(document).ready(function() {
+    $('#form').submit(function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+        
+        var formData = $(this).serialize();
+        console.log(formData);
+    });
+});
+//Checkout Total

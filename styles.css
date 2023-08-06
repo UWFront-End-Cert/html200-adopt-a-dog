@@ -40,6 +40,13 @@ h1 {
   top: 10%;
   right: 10%;
 }
+.checkout-total {
+  box-sizing: content-box;
+  max-width: 2.5%;
+  position: absolute;
+  top: 11%;
+  right: 10%;
+}
 
 /* Navigation Bar */
 .two {
