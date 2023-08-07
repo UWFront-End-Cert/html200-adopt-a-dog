@@ -2,7 +2,7 @@ $(function(){
     console.log("DOM ready, load remaining javascript")
 
     /* build a form */
-    if($('h1').outerText = 'Checkout')
+    if($('h1').text() == '\n            Checkout\n        ')
     {
         console.log("it's the checkout page, build, build, build");
 
