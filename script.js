@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     blogContainer.appendChild(blogPostContainer);
   }
 });
-// Lesson 08 - Checkout
+// Checkout Form
     document.addEventListener("DOMContentLoaded", function() {
       // Handle form submission
       document.querySelector("form").addEventListener("submit", function(event) {
@@ -156,7 +156,8 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-    // Dog Container 
+    // Dog Container
+    document.addEventListener("DOMContentLoaded", function() {
     $(document).ready(function() {
       $('.dog-container').hover(
           function() {
@@ -173,7 +174,9 @@ document.addEventListener("DOMContentLoaded", function () {
           }
       );
   });
+});
   //Adopt Button
+document.addEventListener("DOMContentLoaded", function() {
   $(document).ready(function() {
     var total = 0;
     
@@ -182,7 +185,10 @@ document.addEventListener("DOMContentLoaded", function () {
         $('#checkout-total').text('$' + total);
     });
 });
+});
   // Form Submission
+  
+  document.addEventListener("DOMContentLoaded", function() {
   $(document).ready(function() {
     $('#form').submit(function(event) {
         event.preventDefault();
@@ -190,4 +196,19 @@ document.addEventListener("DOMContentLoaded", function () {
         var formData = $(this).serialize();
         console.log(formData);
     });
+});
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+$(document).ready(function() {
+   var total = 0;
+  $(".adoptbutton").click(function() {
+         var price = parseInt($(this).data("price"));
+         total += price;
+
+      // Update the checkout total display
+      $(".checkout-total").text("Total: $" + total.toFixed(2)); 
+      $(".cart-total").text(total);
+  });
+});
 });
