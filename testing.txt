@@ -1,4 +1,5 @@
 Lesson 10 Part 2- Testing
+
 Testing and Cross-Browser Compatibility
 
 Overview: Ensuring that the website functions seamlessly across different browsers and platforms is essential to provide a consistent and user-friendly experience for all visitors in search of their four-legged friend. I conducted thorough testing to identify and address any compatibility issues, some minor adjustments are needed and noted, to ensure optimal performance across a wide range of environments.
@@ -49,7 +50,7 @@ Background Insight:
 **User Persona 2: Lori, the Tech-Embracing Grandma**
 
 Background:
-Meet Lori, a vivacious 66-year-old grandmother whose life took a modern twist. Formerly a homemaker, she now balances babysitting her grandchildren with her technological exploration.
+Meet Lori, a vivacious 66-year-old grandmother whose life took a modern twist. Formerly a homemaker, she now balances babysitting her grandchildren with her technological exploration.She is in search of a furry companion for her and the grandkids. 
 
 Tech-Cautious Habits:
 - Lori's smartphone serves as her lifeline, facilitating connections with loved ones.
@@ -64,26 +65,4 @@ Preferred Devices:
 
 Background Insight:
 - Lori's associate's degree serves as her foundation, while her online pastimes involve Pinterest for home inspiration.
-- With a penchant for ease, Lori immerses herself in digital shopping, communication, crafting ideas, and entertainment.
-
-**User Persona 3: Emily, the Eco-Conscious Crusader**
-
-Background:
-Meet Emily, a 35-year-old environmental champion, unwavering in her dedication to sustainability and conservation. Her fervor fuels her role in a non-profit organization focused on ecological advocacy.
-
-Eco-Tech Practices:
-- Emily's smartphone becomes her megaphone, connecting her with fellow advocates and amplifying her cause across social media platforms.
-- Her digital pursuits lead her to apps tracking her carbon footprint, identifying local eco-friendly establishments, and uncovering green living strategies.
-- Crafting articles, presentations, and overseeing the organization's online presence drive Emily's laptop engagement.
-
-Preferred Devices:
-- Smartphone: Fairphone, an ethical modular marvel
-- Laptop: Dell XPS championing open-source Linux OS
-- Tablet: iPad Pro complemented by an Apple Pencil for artistic expression
-- Wrist Ally: Garmin Venu, supporting her health and fitness commitment
-- Eco-Home: A minimalist haven, featuring energy-efficient lighting and a Nest Thermostat for conscientious temperature control
-
-Background Insight:
-- Emily's environmental science degree forms her bedrock, underpinning her involvement in global and local ecological campaigns.
-- Nature beckons her outdoors, enhancing hikes and cycling through the integration of tech, like GPS apps for trail exploration.
-- Emily's devices amplify her role as an educator, researcher, and unifying force in the realm of sustainable advocacy, even extending to thought-provoking digital artworks.
+- Lori immerses herself in digital shopping, communication, crafting ideas, and entertainment.
