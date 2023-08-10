@@ -8,7 +8,7 @@ The website utilizes the following:
 -Responsive Design
 -jQuery
 -JavaScript
-This site provides a seamless user experience. It ensures a fluid and captivating encounter, catering to individuals of diverse ages and technical proficiencies and engages users of all ages and technical levels.
+This site provides a seamless user experience. It caters to individuals of diverse ages and technical proficiencies and engages users of all ages and technical levels.
 
 Items The Site Provides:
 
@@ -24,4 +24,4 @@ Responsive Design for Accessibility: The website's responsive design ensures a s
 
 Navigation: Navigation to internal web page links are easily accesible via both the header and footer. 
 
-Through its seamless integration of HTML, CSS, Responsive Design, jQuery, and JavaScript, the website ensures an engaging experience for potential adopters. Whether users are tech-savvy or new to online platforms, "Adopt A Dog" is designed to make the adoption process straightforward, and deeply rewarding for all involved. 
+Through its seamless integration of HTML, CSS, Responsive Design, jQuery, and JavaScript, the website ensures an engaging experience for potential adopters. Whether users are tech-savvy or new to online platforms, "Adopt A Dog" is designed to make the adoption process straightforward, and deeply rewarding for all involved including the dogs.  
