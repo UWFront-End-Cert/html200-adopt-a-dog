@@ -16,33 +16,51 @@
         height: 40em;
     }
 
-    .header-container {
-        display: flex;
-        flex-flow: column wrap;
+    .col {
+        float: left;
     }
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+      
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 
-    .header-img {
-        border: 2pt solid red;
-        width: 45%;
-        height: 100%;
-        padding-top: 5%;
-        padding-left: 10%;
+    .logo-img {        
+        padding-top: 10%;
+        padding-left: 20%;
+        line-height: 0%;
     }
 
     .sub-header {
-        border: 2pt solid red;
-        width: 45%;
-        text-align: end;
         color: #81b741;
         font-family: serif;
         font-style: italic;
         font-size: 2.5rem;
+        line-height: 0%;
+        text-align: end;
     }
 
     .cart-p {
-        border: 2pt solid red;
         color: white;
         font-weight: bold;
+        text-align: center;
+        padding-top: 10%;
+        padding-left: 25em;
+        margin-bottom: 1rem;
     }
 
     .checkout-button {
@@ -128,6 +146,7 @@
         margin-right: 10%;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        min-width: auto;
     }
 
     .profile-button {
@@ -145,7 +164,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        min-width: fit-content;
+        min-width: auto;
         margin-left: 10%;
         margin-right: 10%;
         padding-top: 2rem;
@@ -174,7 +193,7 @@
     .see-more {
         display: grid;
         justify-content: center;
-        min-width: 30%;
+        min-width: auto;
     }
 
     .see-more button {
