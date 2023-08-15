@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Adopt A Dog</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="header1">
+      <img src="images/header-image2.jpg" alt="Banner Image">
+        <button onclick="window.location.href='checkout.html';">Checkout</button>
+    </div>
+  <div class="menu-nav">
+    <nav>
+      <ul>
+         <li><a class="navigation" href="index.html">Home</a></li>
+         <li><a class="navigation" href="dogs.html">Dogs</a></li>
+         <li><a class="navigation" href="blog.html">Blog</a></li>
+       </ul>
+     </nav>
+   </div>
+
+   <form method="GET">
+     <h1>Checkout</h1>
+     <label for="fname">Name:</label>
+     <input type="text" id="fname" name="fname"><br>
+
+     <label>Email address:
+       <input type="email" name="aplicantEmail">
+     </label><br>
+
+     <label for="address">Street address:</label>
+     <input type="text" id="address" name="address"><br>
+
+     <label for="city">City:</label>
+     <input type="text" id="city" name="city"><br>
+
+     <label for="state">State:</label>
+     <input type="text" id="state" name="state"><br>
+
+     <label for="zipcode">Zip code:</label>
+     <input type="text" id="zipcode" name="zipcode"><br>
+
+     <fieldset class="checkbox">
+       <legend>First time adopter?</legend>
+       <label>
+         <input type="checkbox" name="type" value="truf">Yes
+         <span class="checkmark"></span>
+       </label>
+       <label>
+         <input type="checkbox" name="type" value="clus">No
+         <span class="checkmark"></span>
+       </label>
+     </fieldset>
+
+     <label for="pickuplocation">Pick up location:</label>
+     <input type="text" id="pickuplocation" name="pickuplocation"><br>
+
+
+
+
+     <input type="submit" value="Submit">
+
+     </form>
+
+      <footer class="container">
+          <div class="text-footer">
+            <img src="images/adoptadog-logo.svg" alt="Website logo">
+               <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
+esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+             <nav><ul>
+               <li><a class="navigation" href="index.html">Home</a></li>
+               <li><a class="navigation" href="dogs.html">Dogs</a></li>
+               <li><a class="navigation" href="blog.html">Blog</a></li>
+             </ul>
+             </nav>
+              <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+            </div>
+        </footer>
+  </body>
+</html>

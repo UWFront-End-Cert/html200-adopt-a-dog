@@ -1,0 +1,40 @@
+.header1 img{
+  width: 100%;
+}
+footer{
+  background-color: #1a2a5a;
+  height: 30%;
+}
+.navigation {
+  /*  color #000000;*/
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 250px;
+  margin: 5px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.flex-container > div > img {
+  width: 250px;
+  height: 200px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
