@@ -1,12 +1,97 @@
-.header1 img{
-  width: 100%;
-}
-footer{
+header {
   background-color: #1a2a5a;
   height: 30%;
 }
+header img {
+  margin-left: 100px;
+  width: 35%;
+}
+header p {
+  color: green;
+  margin-left: 100px;
+  font-size: 150%;
+}
+.icon {
+  /*margin-bottom: 150px;*/
+  margin-left: 1200px;
+  width: 2%;
+}
+.checkout {
+    margin-left: 1200px;
+}
+footer{
+  background-color: #3f3f3f;
+  height: 30%;
+}
+li{
+  display: inline;
+}
 .navigation {
-  /*  color #000000;*/
+  display: inline;
+  /*font-family:Comic Sans MS;*/
+  padding: 20px;
+  background-color: rgb(240, 240, 240);
+  /*margin-left: 30px;*/
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu-nav{
+  /*margin-left: 130px;*/
+  /*width: 1628px;*/
+  height: 60px;
+  background-color: rgb(240, 240, 240);
+  padding-top: 4px;
+  padding-bottom: 3px;
+}
+/*
+.menu-nav a:hover {
+  color: blue;
+  background-color: lightblue;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+*/
+.navigation:hover {
+  color: gray;
+  background-color: #dddddd;
+}
+.adopt-dog {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 200px; /*margini levo na tekstot*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*width: 100%;*/
+}
+.grid-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-img {
+  width: 15%;
+  float: left;
+  padding: 15px;
+}
+.grid-text {
+  width: 65%;
+  float: left;
+  padding: 15px;
+}
+.button-more-dogs {
+  background-color: #f1f1f1;
+  border: none;
+  color: black;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  /*display: inline-block;*/
+  font-size: 16px;
+  margin: 3px 1px;
+  /*cursor: pointer;*/
 }
 .flex-container {
   display: flex;
@@ -14,7 +99,10 @@ footer{
   background-color: white;
 }
 .flex-container > div {
-  background-color: #f1f1f1;
+  /*background-color: #f1f1f1;*/
+  background-color: white;
+  border-style: solid;
+  border-color: #f1f1f1;;
   width: 250px;
   margin: 5px;
   text-align: center;
@@ -24,17 +112,23 @@ footer{
   padding-right: 5px;
 }
 .flex-container > div > img {
-  width: 250px;
+  /*width: 250px;*/
   height: 200px;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
-  width: 80%;
+.container {
+  /*position: absolute;*/
   text-align: center;
+  color: white;
 }
-.grid-item {
-  padding: 20px;
-  text-align: center;
+.foot {
+  display: inline;
+  text-decoration: none;
+  font-family: "Times New Roman", serif;
+  color: white;
+}
+.footer-img {
+/*  padding 20px 20px;*/
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 30%;
 }

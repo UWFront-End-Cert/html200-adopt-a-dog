@@ -7,10 +7,15 @@
 </head>
 
 <body>
-  <div class="header1">
-      <img src="images/header-image2.jpg" alt="Banner Image">
-        <button onclick="window.location.href='checkout.html';">Checkout</button>
-    </div>
+
+  <div>
+    <header>
+      <img src="images/adoptadog-logo.svg" alt="Website logo">
+      <p><b>Seattle's premiere dog adoption agency</b></p>
+      <img class="icon" src="images/cart-icon.svg" alt="Cart icon logo">
+      <button class="checkout" onclick="window.location.href='checkout.html';">Checkout</button>
+    </header>
+  </div>
   <div class="menu-nav">
     <nav>
       <ul>
@@ -21,6 +26,7 @@
      </nav>
    </div>
 
+   <div class="adopt-dog">
    <form method="GET">
      <h1>Checkout</h1>
      <label for="fname">Name:</label>
@@ -57,26 +63,23 @@
      <label for="pickuplocation">Pick up location:</label>
      <input type="text" id="pickuplocation" name="pickuplocation"><br>
 
-
-
-
      <input type="submit" value="Submit">
 
      </form>
-
-      <footer class="container">
-          <div class="text-footer">
-            <img src="images/adoptadog-logo.svg" alt="Website logo">
-               <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
+  </div>
+  <footer class="container">
+      <div class="text-footer">
+        <img class="footer-img" src="images/adoptadog-logo.svg" alt="Website logo">
+           <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
 esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-             <nav><ul>
-               <li><a class="navigation" href="index.html">Home</a></li>
-               <li><a class="navigation" href="dogs.html">Dogs</a></li>
-               <li><a class="navigation" href="blog.html">Blog</a></li>
-             </ul>
-             </nav>
-              <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
-            </div>
-        </footer>
+         <nav><ul>
+           <li><a class="foot" href="index.html">Home /</a></li>
+           <li><a class="foot" href="dogs.html">Dogs /</a></li>
+           <li><a class="foot" href="blog.html">Blog</a></li>
+         </ul>
+         </nav>
+          <p>© 2018 Adoptadog, LLC | Seattle, WA</p><br><br>
+        </div>
+    </footer>
   </body>
 </html>
