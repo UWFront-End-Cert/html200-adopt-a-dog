@@ -8,10 +8,18 @@
     box-sizing: border-box;
 }
 
+header {
+    background: #093c60;
+}
+
+img {
+    max-width: 100%;
+}
+
 .grid-container {
     display: grid;
     gap: .25rem;
-    grid-template-columns: repeat(3, 40%);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
     "a b c"
     "d e e";
@@ -20,16 +28,10 @@
 .row::after {
     content: "";
     clear: both;
+    display: table;
 }
 
     /* HEADER SECTION */
-header {
-    background-image: url('/images/header-small.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
-    background: #093c60;
-}
 
 .logo-img {
     grid-area: a;
@@ -40,7 +42,7 @@ header {
 .sub-header {
     grid-area: d;
     color: #81b741;
-    font-size: 2rem;
+    font-size: 1.65vw;
     text-align: end;
 }
 
@@ -50,7 +52,7 @@ header {
 
 .cart-icon {
     grid-area: b;
-    width: 5%;
+    width: 2vw;
     justify-self: end;
     align-self: flex-end;
 }
@@ -58,13 +60,17 @@ header {
 .cart-price {
     grid-area: c;
     color: white;
+    font-size: .75vw;
     font-weight: bold;
+    justify-self: start;
     align-self: flex-end;
+    line-height: 0%;
 }
 
 .checkout-button {
     grid-area: e;
     justify-self: center;
+    align-self: flex-start;
     margin-bottom: 10%;
 }
 
@@ -89,7 +95,7 @@ header {
 .nav-header a {
     text-decoration: none;
     color: #093c60;
-    font-size: 2rem;
+    font-size: 2vw;
     font-family: 'PT Serif', serif;
     padding-left: 2rem;
 }
@@ -129,7 +135,7 @@ footer span {
 footer {
     display: grid;
     justify-content: center;
-    background: #093c60;
+    background: #3d3d3d;
     color: white;
     text-align: center;
     padding-top: 2rem;
@@ -138,33 +144,30 @@ footer {
 
     /* Index */
 
-.main-container {
-    display: grid;
-    gap: 5rem;
-    grid-template-columns: repeat(2);
-    grid-template-areas: "a b";
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 2rem;
+section {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 2vw;
 }
 
 .main-img {
-    grid-area: a;
     padding-left: 7.25%;
 }
 
-.main-content {
-    grid-area: b;
-    width: 95%;
+article {
+    width: 60%;
+    padding-left: 3vw;
 }
 
-.main-content h2 {
+article h2 {
     color: #093c60;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
 }
 
-.main-content p {
-    font-size: 1.75rem;
+article p {
+    font-size: 1.5vw;
     line-height: 1.25;
 }
 
@@ -233,6 +236,104 @@ footer {
 
     /* Dogs */
 
+.title-align {
+    margin-left: 11.5%;
+    color: #093c60;
+    font-size: 36pt;
+    font-weight: bold;
+}
+
     /* Blog */
 
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.blog-cont {
+    margin-left: 11.5vw;
+}
+
+.blog-row::after {
+    content: "";
+    clear: both;
+    display: table;
+    padding-bottom: 5vw;
+}
+
+.blog-header {
+    color: #093c60;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.blog-cont img {
+    width: 100%;
+    height: 20vw;
+}
+
+.blog-cont-title {
+    color: #093c60;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-left: 3vw;
+}
+
+.blog-cont p {
+    font-size: 1.15vw;
+    margin-left: 3vw;
+    margin-right: 6vw;
+    line-height: 1.5;
+}
+
     /* Checkout */
+
+.form-align {
+    margin-left: 11.5vw;
+}
+
+.form label {
+    padding-bottom: 1vw;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.label-pad {
+    padding-bottom: .25vw;
+    width: 50%;
+}
+
+form div {
+    margin-bottom: 20px;
+    margin-right: 3vw;
+}
+
+.form-span {
+    width: 40%;
+}
+
+input, select, label {
+    margin-top: .25vw;
+    margin-bottom: 1vw;
+}
+
+legend {
+    margin-bottom: 2vw;
+}
