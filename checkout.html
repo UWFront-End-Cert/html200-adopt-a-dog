@@ -39,8 +39,10 @@
         </header>
 
         <nav class="nav-header">
-            <a href="index.html">Home<span class="nav-header-span">/</span></a>
-            <a href="dogs.html">Dogs<span class="nav-header-span">/</span></a>
+            <a href="index.html">Home</a>
+            <a>/</a>
+            <a href="dogs.html">Dogs</a>
+            <a>/</a>
             <a href="blog.html">Blog</a>
         </nav>
 
@@ -48,23 +50,23 @@
             <form method="get">
                 <h1>Checkout</h1>
 
-                <div>
+                <div class="text label-style">
                     <label class="label-pad" for="name">Name</label><br>
-                    <span><input type="text" id="name" name="name" required></span>
+                    <input type="text" id="name" name="name" required>
                 </div>
 
-                <div>
+                <div class="text label-style">
                     <label for="email">Email Address</label><br>
-                    <span class="form-span"><input type="email" id="email" name="email"></span>
+                    <input type="email" id="email" name="email">
                 </div>
 
-                <div>
+                <div class="text label-style">
                     <label for="address">Street Address</label><br>
                     <span><input type="text" id="address" name="address" required></span>
                 </div>
 
-                <div class="form-inline">
-                    <div>
+                <div class="form-inline label-style">
+                    <div class="text">
                         <label for="city">City</label><br>
                         <input type="text" id="city" name="city" required>
                     </div>
@@ -125,17 +127,20 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="text">
                         <label for="zip">Zip Code</label><br>
                         <input type="number" id="zip" name="zip" required>
                     </div>
                 </div>
 
-                <label>First Time Adopter?</label><br>
-                <input type="radio" id="yes" name="yes" value="yes">
-                <label for="yes">Yes</label>
-                <input type="radio" id="no" name="no" value="no">
-                <label for="no">No</label>
+                
+                <div>
+                    <p class="adopt-radio">First Time Adopter?</p><br>
+                    <input type="radio" id="yes" name="yes" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="no" value="no">
+                    <label for="no">No</label>
+                </div>
 
                 <div>
                     <label for="pu-location">Pickup Location</label><br>
@@ -172,8 +177,10 @@
             </p>
 
             <nav class="nav-footer">
-                <a href="index.html">Home<span class="nav-footer-span">/</span></a>
-                <a href="dogs.html">Dogs<span class="nav-footer-span">/</span></a>
+                <a href="index.html">Home</a>
+                <a><span>/</span></a>
+                <a href="dogs.html">Dogs</a>
+                <a><span>/</span></a>
                 <a href="checkout.html">Contact</a>
             </nav>
 
