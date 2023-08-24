@@ -46,34 +46,34 @@
             <a href="blog.html">Blog</a>
         </nav>
 
-        <div class="form-align">
-            <form method="get">
-                <h1>Checkout</h1>
+        <form method="get">            
+            <div class="container">
+                <h1 class="co-title">Checkout</h1>
 
-                <div class="text label-style">
-                    <label class="label-pad" for="name">Name</label><br>
-                    <input type="text" id="name" name="name" required>
+                <div class="row container-label marg-control">
+                    <label class="col-12 label-pad" for="name">Name</label><br>
+                    <input class="col-6" type="text" id="name" name="name" required>
                 </div>
 
-                <div class="text label-style">
-                    <label for="email">Email Address</label><br>
-                    <input type="email" id="email" name="email">
+                <div class="row container-label marg-control">
+                    <label class="col-12 label-pad" type="email">Email Address</label><br>
+                    <input class="col-6" type="email" id="email" name="email">
                 </div>
 
-                <div class="text label-style">
-                    <label for="address">Street Address</label><br>
-                    <span><input type="text" id="address" name="address" required></span>
+                <div class="row container-label marg-control">
+                    <label class="col-12 label-pad" for="address">Street Address</label><br>
+                    <input class="col-6" type="text" id="address" name="address" required>
                 </div>
 
-                <div class="form-inline label-style">
-                    <div class="text">
+                <div class="row-control">
+                    <div class="container-label">
                         <label for="city">City</label><br>
-                        <input type="text" id="city" name="city" required>
+                        <input class="city" type="text" id="city" name="city" required>
                     </div>
 
-                    <div>
+                    <div class="container-label">
                         <label for="state">State</label><br>
-                        <select id="state" name="state" required>
+                        <select class="state" id="state" name="state" required>
                             <option value="none"></option>
                             <option value="AL">AL</option>
                             <option value="AK">AK</option>
@@ -127,46 +127,64 @@
                         </select>
                     </div>
 
-                    <div class="text">
+                    <div class="container-label">
                         <label for="zip">Zip Code</label><br>
-                        <input type="number" id="zip" name="zip" required>
+                        <input class="zip" type="number" id="zip" name="zip" required>
                     </div>
                 </div>
+            </div>
 
-                
-                <div>
-                    <p class="adopt-radio">First Time Adopter?</p><br>
-                    <input type="radio" id="yes" name="yes" value="yes">
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="no" name="no" value="no">
-                    <label for="no">No</label>
-                </div>
+            <div class="radio-cont">
+                <p class="container-label radio-pad">First Time Adopter?</p>
 
-                <div>
+                <label class="radio-control">Yes
+                    <input type="radio" checked="unchecked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="radio-control">No
+                    <input type="radio" checked="unchecked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="container">
+                <div class="container-label col-12">
                     <label for="pu-location">Pickup Location</label><br>
-                    <select id="pu-location" name="pu-location" required>
+                    <select class="pu-loc" id="pu-location" name="pu-location" required>
                         <option value="none"></option>
                         <option value="store">Store</option>
                     </select>
                 </div>
 
-                    <p>Dogs Adopted</p>
-                    <img src="images/lucas-checkout.jpg" alt="Lucas profile picture">
-                    <p>Lucas</p>
-                    <p>Cost to Adopt: $123.45</p>
+                <div class="row">
+                    <p class="container-label col-12">Dogs Adopted</p>
 
-                    <p>Dogs Adopted</p>
-                    <img src="images/duffy-checkout.jpg" alt="Duffy profile picture">
-                    <p>Lucas</p>
-                    <p>Cost to Adopt: $123.45</p>
+                    <div class="col-1">
+                        <img src="images/lucas-checkout.jpg" alt="Lucas profile picture">
+                    </div>
 
-                    <p>Total Adoption Cost</p>
-                    <p>$1234.56</p>
-                    
-                    <input type="submit" value="Submit">
+                    <div class="col-2">
+                        <p class="selected-dog selected-name">Lucas</p>
+                        <p class="selected-dog"><span class="span-style">Cost to Adopt: </span>$123.45</p>
+                    </div>
+
+                    <div class="col-1">
+                        <img src="images/duffy-checkout.jpg" alt="Duffy profile picture">
+                    </div>
+
+                    <div class="col-2">
+                        <p class="selected-dog selected-name">Duffy</p>
+                        <p class="selected-dog"><span class="span-style">Cost to Adopt: </span>$123.45</p>
+                    </div>
                 </div>
-            </form>
-        </div>
+
+                <p class="container-label">Total Adoption Cost</p>
+                <p style="font-size: 1.5vw; line-height: 0;">$1234.56</p>
+                
+                <button class="form-submit" type="submit">Submit</button>          
+            </div>
+        </form>
 
         <footer>
             <img src="images/adoptadog-logo.svg" alt="Silhouette of a dog sitting up with the caption of ADOPTADOG to the right of it">

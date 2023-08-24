@@ -4,7 +4,7 @@
 
     /* Global */
 
-* {
+*, ::before, ::after {
     box-sizing: border-box;
 }
 
@@ -52,7 +52,7 @@ img {
 
 .cart-icon {
     grid-area: b;
-    width: 2vw;
+    width: calc(25px + .5vw);
     justify-self: end;
     align-self: flex-end;
 }
@@ -60,7 +60,7 @@ img {
 .cart-price {
     grid-area: c;
     color: white;
-    font-size: .75vw;
+    font-size: calc(.75rem + .25vw);
     font-weight: bold;
     justify-self: start;
     align-self: flex-end;
@@ -132,12 +132,11 @@ footer span {
 
 footer {
     display: grid;
-    justify-content: center;
+    justify-content: space-around;
     background: #3d3d3d;
     color: white;
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2vw;
 }
 
     /* Index */
@@ -300,44 +299,149 @@ article p {
 
     /* Checkout */
 
-.form-align {
-    margin-left: 11.5vw;
+.container {
+    margin: 2vw 11.5vw;
 }
 
-.form-inline {
-    display: flex;
-    flex-flow: row wrap;
+.container-label {
+    color: #093c60;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.marg-control {
+    margin-bottom: 2vw;
+}
+
+.container input, select {
+    height: 3vw;
+    background: none;
+    border:.01vw solid #cccccc;
 }
 
 .label-pad {
     padding-bottom: .25vw;
+}
+
+.co-title {
+    color: #093c60;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.city {
+    margin-top: .25vw;
+    padding-left: 7vw;
+}
+
+.zip {
+    margin-top: .25vw;
+    padding-left: 5vw;
+}
+
+.state {
+    margin-top: .25vw;
+    padding-left: 4vw;
+}
+
+.radio-pad {
+    padding-bottom: .75vw;
+}
+
+.row-control {
+    display: flex;
+    flex-wrap: column wrap;
+    justify-content: space-between;
     width: 50%;
 }
 
-.text input {
-    margin-top: .25vw;
-    margin-bottom: 1vw;
-    height: 3vw;
-    border: .025vw solid #cccccc;
-}
-
-.form-inline select {
-    background: none;
-    margin-top: .25vw;
-    height: 3vw;
-    border: .025vw solid #cccccc;
-}
-
-.label-style {
-    margin-bottom: 1vw;
-    color: #093c60;
-    font-size: 1.5vw;
-    font-weight: bold;
-}
-
-.adopt-radio {
-    color: #093c60;
-    font-size: 1.5vw;
-    font-weight: bold;
+.radio-cont {
+    margin-left: 11.5vw;
     line-height: 0;
+}
+
+.radio-control {
+    display: inline;
+    position: relative;
+    padding-left: 2vw;
+    margin-bottom: 3vw;
+    margin-right: 3vw;
+    cursor: pointer;
+    font-size: 1.25vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.radio-control input:checked ~ .checkmark {
+    background: #093c60;
+  }
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border:.01vw solid #cccccc;
+    border-radius: 50%;
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-control input:checked ~ .checkmark:after {
+    display: inline-block;
+}
+
+.radio-control .checkmark:after {
+    top: .25vw;
+    left: .25vw;
+    width: .7vw;
+    height: .7vw;
+    border-radius: 50%;
+    background: white;
+}
+
+.pu-loc {
+    padding-left: 12vw;
+}
+
+.selected-dog {
+    padding-left: 1vw;
+}
+
+.selected-name {
+    color: #093c60;
+    font-size: 1.25vw;
+    font-weight: bold;
+}
+
+.span-style {
+    font-size: .85vw;
+    font-weight: bold;
+}
+
+.form-submit {
+    color: white;
+    font-size: 1.25vw;
+    font-weight: bold;
+    background-color: #81b741;
+    padding: 1vw 6.5vw;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+    border: none;
+    border-radius: 2px;
 }
