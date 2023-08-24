@@ -218,7 +218,6 @@ article p {
 }
 
 .see-more button {
-    color: #093c60;
     background-color: #ececec;
     font-size: 1.2vw;
     font-weight: bolder;
@@ -229,6 +228,16 @@ article p {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.see-more a {
+    color: #093c60;
+    text-decoration: none;
+}
+
+.see-more a:visited {
+    color: #093c60;
+    text-decoration: none;
 }
 
     /* Dogs */
