@@ -219,7 +219,6 @@ article p {
 
 .see-more button {
     background-color: #ececec;
-    font-size: 1.2vw;
     font-weight: bolder;
     text-align: center;
     margin-top: 1vw;
@@ -233,11 +232,13 @@ article p {
 .see-more a {
     color: #093c60;
     text-decoration: none;
+    font-size: calc(1rem + 1.2vw);
 }
 
 .see-more a:visited {
     color: #093c60;
     text-decoration: none;
+    font-size: calc(1rem + 1.2vw);
 }
 
     /* Dogs */
