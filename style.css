@@ -9,7 +9,7 @@ header img {
 header p {
   color: green;
   margin-left: 100px;
-  font-size: 150%;
+  font-size: 2vw;
 }
 .icon {
   /*margin-bottom: 150px;*/
@@ -17,7 +17,7 @@ header p {
   width: 2%;
 }
 .checkout {
-    margin-left: 1200px;
+  margin-left: 1200px;
 }
 footer{
   background-color: #3f3f3f;
@@ -34,6 +34,7 @@ li{
   /*margin-left: 30px;*/
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.3vw;
 }
 .menu-nav{
   /*margin-left: 130px;*/
@@ -64,6 +65,7 @@ li{
   margin-left: 200px; /*margini levo na tekstot*/
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 1vw;
   /*width: 100%;*/
 }
 .grid-container {
@@ -80,6 +82,7 @@ li{
   width: 65%;
   float: left;
   padding: 15px;
+  font-size: 1vw;
 }
 .button-more-dogs {
   background-color: #f1f1f1;
@@ -89,7 +92,7 @@ li{
   text-align: center;
   text-decoration: none;
   /*display: inline-block;*/
-  font-size: 16px;
+  font-size: 1vw;
   margin: 3px 1px;
   /*cursor: pointer;*/
 }
@@ -102,33 +105,40 @@ li{
   /*background-color: #f1f1f1;*/
   background-color: white;
   border-style: solid;
-  border-color: #f1f1f1;;
+  border-color: #f1f1f1;
   width: 250px;
   margin: 5px;
   text-align: center;
   line-height: 25px;
-  font-size: 15px;
+  font-size: 1vw;
   padding-left: 5px;
   padding-right: 5px;
 }
 .flex-container > div > img {
-  /*width: 250px;*/
-  height: 200px;
+  width: 100%;
+  /*height: 200px;*/
 }
 .container {
   /*position: absolute;*/
   text-align: center;
   color: white;
 }
+.container p {
+  font-size: 1vw;
+}
 .foot {
   display: inline;
   text-decoration: none;
   font-family: "Times New Roman", serif;
+  font-size: 1.5vw;
   color: white;
 }
 .footer-img {
-/*  padding 20px 20px;*/
+/*  padding 20px 20px;*/s
   margin-top: 50px;
   margin-bottom: 10px;
   width: 30%;
 }
+img { /* image responsive*/
+    width: 600%;
+  }
