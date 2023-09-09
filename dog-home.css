@@ -32,5 +32,10 @@ header{
     padding:10px;
     float:right;
 }
-
+#menu-bar{
+    color:rgb(32, 64, 96);
+    background-color:lightgrey;
+    width:100%;
+    padding:50px;
+}
   
