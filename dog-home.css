@@ -1,3 +1,36 @@
 h1 {
     color:lime;
   }
+h2 {
+    color:rgb(32, 64, 96);
+
+}
+h3 {
+    color:rgb(32, 64, 96);
+
+}
+#whitedogoutline{
+    width:35%;
+    background-color:rgb(32, 64, 96);
+}
+#whitecart{
+    width:2%;
+    background-color:rgb(32, 64, 96);
+    float:right;
+}
+header{
+    background-color:rgb(32, 64, 96) ;
+}
+#cart-total{
+    color:white;
+    float:right;
+    padding:25px;
+}
+#top-corner-checkout{
+    color:white;
+    background-color:limegreen;
+    padding:10px;
+    float:right;
+}
+
+  
