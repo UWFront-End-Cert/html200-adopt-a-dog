@@ -51,8 +51,7 @@ header{
 
 .grid-container div {
         border: 1px solid black;
-        }
-        
+        }        
 .grid-item-1 {
             grid-column: 2 / span 2;
             grid-row: 1 / span 1;
@@ -66,5 +65,31 @@ header{
 div {
         display: block;
         }
-        
+
+.green-button-adopt{
+    color:white;
+    background-color:limegreen;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container {
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+}
+    
+.dog-box
+ {
+height: 600px;
+width: 400px;
+border: 5px solid slategray;
+background: white;
+}
+
 
