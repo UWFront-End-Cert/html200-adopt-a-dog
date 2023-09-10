@@ -60,7 +60,6 @@ header{
     grid-column: 2 / span 2;
     grid-row: 1 / span 1;
 }
-    
         
 div {
         display: block;
@@ -91,5 +90,12 @@ width: 400px;
 border: 5px solid slategray;
 background: white;
 }
-
+#more-dogs{
+    color:rgb(32, 64, 96);
+    background-color:lightgrey;
+    padding-left: 50px;
+    padding-right:50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
