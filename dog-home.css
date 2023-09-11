@@ -98,4 +98,21 @@ background: white;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+footer{
+    background-color: rgb(32, 64, 96);
+    margin-top: 100px;
+}
+
+#footer-dog-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 50px;
+}
+.white {
+    height: 100px;
+    color: white;
+    background-color: rgb(32, 64, 96);
+}
 
