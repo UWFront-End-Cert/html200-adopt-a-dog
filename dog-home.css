@@ -36,7 +36,7 @@ header{
     color:rgb(32, 64, 96);
     background-color:lightgrey;
     width:100%;
-    padding:50px;
+    padding:30px;
 }
 .grid-container {
     grid-template-columns: 20px 30px 30px 40px;
@@ -93,6 +93,7 @@ background: white;
 #more-dogs{
     color:rgb(32, 64, 96);
     background-color:lightgrey;
+    margin: auto;
     padding-left: 50px;
     padding-right:50px;
     padding-top: 10px;
