@@ -176,15 +176,70 @@
     .index-container {
         display: flex;
         flex-wrap: column wrap;
-        justify-content: space-around;
         margin: 3vw 12vw;
         column-gap: 3vw;
+    }
+
+    .index-main {
+        padding: .75em;
+    }
+
+    .index-main h2 {
+        color: #093c60;
+        font-size: 36pt;
+    }
+
+    .index-main p {
+        color: #3d3d3d;
+        font-size: calc(8pt + .75vw);
+        line-height: 1.25;
     }
 
     @media (max-width:1325px) {
         .index-side {
             display: none;
         }
+    }
+
+    .blog-preview {
+        padding-bottom: 3em;
+    }
+
+    .blog-side a {
+        color: #239ab9;
+        text-decoration: none;
+        font-size: 16pt;
+        font-weight: bold;
+    }
+
+    .blog-side a:visited {
+        color: #239ab9;
+    }
+
+    .blog-side img {
+        width: 80%;
+        height: 12rem;
+    }
+
+    .blog-side p {
+        width: 80%;
+        color: #3d3d3d;
+        font-size: 16pt;
+        line-height: 1.25;
+        letter-spacing: .1rem;
+    }
+
+    .blog-side h2, h3 {
+        color: #093c60;
+    }
+
+    .blog-side h2 {
+        font-size: 32pt;
+        font-weight: bold;
+    }
+
+    .blog-side h3 {
+        font-size: 20pt;
     }
 
     .profile-container {
@@ -195,7 +250,7 @@
     }
     
     .dog-profile {
-        width: 20em;
+        width: 17.5em;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
@@ -214,7 +269,8 @@
     }
     
     .main-img {
-        height: 20em;
+        height: 32em;
+        padding-bottom: 2rem;
     }
     
     .profile-button {
