@@ -181,11 +181,17 @@
         margin: 3vw 12vw;
         column-gap: 3vw;
     }
-    
+
+    @media (max-width:1350px) {
+        .index-side {
+            display: none;
+        }
+    }
+
     .profile-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         row-gap: 2vw;
     }
     
