@@ -26,8 +26,8 @@
     }
     
     header {
+        background-image: url("../images/header-large.jpg");        
         background-color: #093c60;
-        background-attachment: url(".../images/jake-card.jpg");
         background-size: cover;
     }
 
@@ -269,7 +269,7 @@
     }
     
     .dog-profile {
-        width: 17.5em;
+        width: 12em;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
