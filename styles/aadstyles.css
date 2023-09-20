@@ -356,6 +356,7 @@ article p {
     color: #093c60;
     font-size: 1.5vw;
     font-weight: bold;
+    padding-top: 2rem;
 }
     
 .marg-control {
@@ -377,31 +378,30 @@ article p {
     font-size: 2vw;
     font-weight: bold;
 }
+
+.row-control {
+    display: inline-flex;
+    flex-wrap: column wrap;
+    justify-content: space-between;
+}
     
 .city {
     margin-top: .25vw;
-    padding-left: 7vw;
+    width: 13vw;
+}
+
+.state {
+    margin-top: .25vw;
+    width: 8vw;
 }
     
 .zip {
     margin-top: .25vw;
-    padding-left: 5vw;
-}
-    
-.state {
-    margin-top: .25vw;
-    padding-left: 4vw;
+    width: 13vw;
 }
     
 .radio-pad {
     padding-bottom: .75vw;
-}
-    
-.row-control {
-    display: flex;
-    flex-wrap: column wrap;
-    justify-content: space-between;
-    width: 50%;
 }
     
 .radio-cont {
@@ -439,8 +439,8 @@ article p {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 1.35vw;
+    width: 1.35vw;
     border:.01vw solid #cccccc;
     border-radius: 50%;
 }
@@ -453,15 +453,6 @@ article p {
     
 .radio-control input:checked ~ .checkmark:after {
     display: inline-block;
-}
-    
-.radio-control .checkmark:after {
-    top: .25vw;
-    left: .25vw;
-    width: .7vw;
-    height: .7vw;
-    border-radius: 50%;
-    background: white;
 }
     
 .pu-loc {
@@ -481,6 +472,10 @@ article p {
 .span-style {
     font-size: .85vw;
     font-weight: bold;
+}
+
+.price-style {
+    font-size: .85vw;
 }
     
 .form-submit {
