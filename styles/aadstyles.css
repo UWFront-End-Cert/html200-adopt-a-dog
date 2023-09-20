@@ -522,3 +522,15 @@ article p {
         padding: 8vw 20vw;
     }
 }
+
+@media print {
+    header, footer, nav, form {
+        display: none;
+    }
+
+    div {
+        width: 100%!important;
+        padding: 0!important;
+        margin: 0!important;
+    }
+}
