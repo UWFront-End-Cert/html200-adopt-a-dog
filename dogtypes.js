@@ -31,3 +31,8 @@ function MaximusDog() {
 function LunaDog() {
   alert("Dog's name: Luna\nBreed: Maltipoo\nAdoption fees: $680.00" );
 }
+let result = 0;
+function addDog() {
+    result = result + 1;
+    alert(result);
+}
