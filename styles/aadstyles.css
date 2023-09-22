@@ -26,9 +26,10 @@
 }
     
 header {
-    background-image: url("../images/header-medium.jpg");        
-    background-color: #093c60;
-    background-size: cover;
+    background: linear-gradient(90deg, #3d3d3d 23%, #81b741 55%, #093c60 100%);    background-size: cover;
+    background-image: url("../images/header-medium.jpg");
+    background-position: top center;
+    background-image: cover;
     height: 30vw;
  }
 
