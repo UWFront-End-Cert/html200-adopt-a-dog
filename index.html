@@ -3,49 +3,98 @@
     <head>
   <meta charset ="utf-8">
   <title>Dog Adoption Website</title>
+  <link rel="stylesheet" type="text/css" href="dog-home.css">
     </head>
     <body>
         <header>
             <img src="images/header-image.jpg" alt="zoomed in close up image of a brown dog showing the side of the head as the dog faces left and looks into the distance. The background behind the dog is in shadow and some shadow casts across the face of the dog">
-            <img src="images/adoptadog-logo.svg" alt="white silhouette image of a dog sitting down on its hind legs with front legs upright">
-              <h1> Seattle's premiere dog adoption agency</h1>
-        <a href="dog-checkout.html">Checkout</a>
-        <img src="images/cart-icon.svg" alt="white solid silhouette of shopping cart">
-        
+            <div id="whitecart">
+              <img src="images/cart-icon.svg" alt="white solid silhouette of shopping cart">
+            </div>
+            <div id="cart-total">
+              <small>$1234.56</small>
+            </div>
 
+            <div>
+              <a id="top-corner-checkout" href="dog-checkout.html">Checkout</a>
+            </div>
+           
+
+            <div id="whitedogoutline">
+            <img src="images/adoptadog-logo.svg" alt="white silhouette image of a dog sitting down on its hind legs with front legs upright">
+            </div>  
+            <h1> Seattle's premiere dog adoption agency</h1>
+            
         </header>
-          <section>
-            <a href="index.html">Home</a>
-            <a href="dogs.html">Dogs</a>
-            <a href="dog-blog.html">Blog</a>
+        
+          <section> 
+            <h3 id="menu-bar">
+            <a href="index.html"> Home /</a>
+            <a href="dogs.html"> Dogs /</a>
+            <a href="dog-blog.html"> Blog </a>
+            </h3>
           </section>
-          <section>
-           <img src="images/home-intro.jpg" alt="text here">
-           </section>
-           <section>
-            <h2>Adopt A Dog</h2>
+
+           <div class="grid-container">
+            <div>
+              <img src="images/home-intro.jpg" alt="text here">
+            </div>
+            <div class ="grid-item-1">
+              <h2>Adopt A Dog</h2>
+            </div>
+          </div>
+          <div class="grid-container">
+          <div class ="grid-item-2">
             <p>
-                Iduciendisite quo magnatem iuntum quid quaest ea am, 
-tenderumet adis dolenem quidustrum fuga. Faceaquae estioria 
-derum recuptatur, cum volore, undipsa doloreium hillupta aut 
-es ut alitatuscit ommossum haritatur arum qui officae videbiti 
-corporeium faccull oribus es quidignis ipietus explam sus 
-am aut amet ant fugiatum, utem non reptat ad magnienecto 
-volorent fugia nonsedi gendand itatquos as magnimpor aut 
-molor autatia ad est officimus accae et omnia cus, od qui ate
+              Iduciendisite quo magnatem iuntum quid quaest ea am, 
             </p>
-           </section>
-            <section>
-            <img src="images/murphy-card.jpg" alt="text here">
-            <h3>Murphy</h3>
-            </section>
+            <p>
+              tenderumet adis dolenem quidustrum fuga. Faceaquae estioria 
+            </p>
+            <p>
+              derum recuptatur, cum volore, undipsa doloreium hillupta aut 
+            </p>
+            <p>
+              es ut alitatuscit ommossum haritatur arum qui officae videbiti 
+            </p>
+            <p>
+              corporeium faccull oribus es quidignis ipietus explam sus
+            </p>
+            <p>
+              am aut amet ant fugiatum, utem non reptat ad magnienecto 
+            </p>
+            <p>
+              volorent fugia nonsedi gendand itatquos as magnimpor aut 
+            </p>
+            <p>
+              molor autatia ad est officimus accae et omnia cus, od qui ate
+            </p>
+          </div>
+          </div>
+            
+           <div class="container">
+            <div class="dog-box">
+              <img src="images/murphy-card.jpg" alt="text here">
+              <h3>Murphy</h3>
             <h4>Cost to Adopt: $123.45</h4>
             <h4>Corrum volorit iandae 
                 nimaxim cum restia volor 
                 reicid ut et etur sunt arum 
                 rendae pla endis re ea erum, 
                 qui doluptae</h4>
-            <a href="dog-checkout.html">Checkout </a>
+                  <a class="green-button-adopt" href="dog-checkout.html"> Adopt </a>
+          </div>
+            <div class="dog-box">
+            <p>TEXT HERE 2</p>
+          </div>
+              <div class="dog-box">
+            <p>TEXT HERE 3</p>
+          </div>
+          </div>
+          <div class="dog-box">
+            <p>TEXT HERE 4</p>
+          </div>
+            
             <section>
             <img src="images/poppy-card.jpg" alt="text here">
             <h3>Poppy</h3>
@@ -56,7 +105,7 @@ molor autatia ad est officimus accae et omnia cus, od qui ate
                 reicid ut et etur sunt arum 
                 rendae pla endis re ea erum, 
                 qui doluptae</h4>
-            <a href="dog-checkout.html">Checkout </a>
+            <a class="green-button-adopt" href="dog-checkout.html"> Adopt </a>
             <section>
             <img src="images/jack-card.jpg" alt="text here">
             <h3>Jack</h3>
@@ -67,18 +116,19 @@ molor autatia ad est officimus accae et omnia cus, od qui ate
                 reicid ut et etur sunt arum 
                 rendae pla endis re ea erum, 
                 qui doluptae</h4>
-            <a href="dog-checkout.html">Checkout </a>
+            <a class="green-button-adopt" href="dog-checkout.html"> Adopt </a>
             <section>
             <img src="images/duffy-card.jpg" alt="text here">
             <h3>Duffy</h3>
             </section>
+            <section>
             <h4>Cost to Adopt: $123.45</h4>
             <h4>Corrum volorit iandae 
                 nimaxim cum restia volor 
                 reicid ut et etur sunt arum 
                 rendae pla endis re ea erum, 
                 qui doluptae</h4>
-            <a href="dog-checkout.html">Checkout </a>
+            <a class="green-button-adopt" href="dog-checkout.html"> Adopt</a>
            </section>
            <section>
             <img src="images/lucas-card.jpg" alt="text here">
@@ -90,7 +140,7 @@ molor autatia ad est officimus accae et omnia cus, od qui ate
                 reicid ut et etur sunt arum 
                 rendae pla endis re ea erum, 
                 qui doluptae</h4>
-            <a href="dog-checkout.html">Checkout </a>
+            <a class="green-button-adopt" href="dog-checkout.html"> Adopt </a>
             <section>
             <img src="images/jake-card.jpg" alt="text here">
             <h3>Jake</h3>
@@ -101,7 +151,7 @@ molor autatia ad est officimus accae et omnia cus, od qui ate
                 reicid ut et etur sunt arum 
                 rendae pla endis re ea erum, 
                 qui doluptae</h4>
-            <a href="dog-checkout.html">Checkout </a>
+            <a class="green-button-adopt" href="dog-checkout.html"> Adopt </a>
             <section>  
             <img src="images/angus-card.jpg" alt="text here">
             <h3>Angus</h3>
@@ -112,41 +162,49 @@ molor autatia ad est officimus accae et omnia cus, od qui ate
                 reicid ut et etur sunt arum 
                 rendae pla endis re ea erum, 
                 qui doluptae</h4>
-            <a href="dog-checkout.html">Checkout </a>
+            <a class="green-button-adopt" href="dog-checkout.html"> Adopt </a>
             <section>
             <img src="images/violet-card.jpg" alt="text here"> 
             <h3>Violet</h3>
             </section>
+            <section>
             <h4>Cost to Adopt: $123.45</h4>
             <h4>Corrum volorit iandae 
                 nimaxim cum restia volor 
                 reicid ut et etur sunt arum 
                 rendae pla endis re ea erum, 
                 qui doluptae</h4>
-            <a href="dog-checkout.html">Checkout </a>  
+            <a class="green-button-adopt" href="dog-checkout.html"> Adopt </a>  
           </section>
           <section>
-            <a href="#dummylink">See More Dogs</a>
-          </section>
-          <section>
-            <img src="images/adoptadog-logo.svg" alt="text here">
-          </section>
-          <section>
-               <footer>
-              
-                 <small> Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequun
-                 </small><br>
-         </section>
-          <section>
-         <a href="index.html">Home</a>
-         <a href="dogs.html">Dogs</a>
-         <a href="#dummy link">Contact</a>
-         <br>
-         </section>
-         <section>
-         <small> © 2018 Adoptadog, LLC | Seattle, WA </small>
-          </section>
-               </footer>
+            <h3>
+              <a id="more-dogs" href="#dummylink">See More Dogs</a>
+            </h3>
+          </section>  
+
+          <footer>
+            <div>
+              <img id="footer-dog-logo" src="images/adoptadog-logo.svg" alt="text here">
+            </div>
+            <div>
+              <small class="white"> Aborpos nisto inci tet aut que volupti beruptiberro to ex </small>
+            </div>
+           
+             <div>
+              <small class="white"> esseque invenienihil imaximu scideru ptistiusam consequun </small>  
+             </div>
+                   
+            <section>
+              <h5>
+                <a class="white" href="index.html"> Home /</a>
+                <a class="white" href="dogs.html"> Dogs /</a>
+                <a class="white" href="#dummy link"> Contact </a>
+              </h5>
+            </section>
+            <h5>
+              <small class="white"> © 2018 Adoptadog, LLC   |   Seattle, WA </small> 
+            </h5>
+        
+          </footer>
              </body>
          </html>
-         

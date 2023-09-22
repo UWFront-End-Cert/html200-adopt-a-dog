@@ -1,0 +1,119 @@
+h1 {
+    color:lime;
+  }
+h2 {
+    color:rgb(32, 64, 96);
+
+}
+h3 {
+    color:rgb(32, 64, 96);
+
+}
+#whitedogoutline{
+    width:35%;
+    background-color:rgb(32, 64, 96);
+}
+#whitecart{
+    width:2%;
+    background-color:rgb(32, 64, 96);
+    float:right;
+}
+header{
+    background-color:rgb(32, 64, 96) ;
+}
+#cart-total{
+    color:white;
+    float:right;
+    padding:25px;
+}
+#top-corner-checkout{
+    color:white;
+    background-color:limegreen;
+    padding:10px;
+    float:right;
+}
+#menu-bar{
+    color:rgb(32, 64, 96);
+    background-color:lightgrey;
+    width:100%;
+    padding:30px;
+}
+.grid-container {
+    grid-template-columns: 20px 30px 30px 40px;
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-evenly;
+    }
+    
+.grid-container {
+    display: grid;
+    grid-gap: 20px 30px;
+    }
+
+.grid-container div {
+        border: 1px solid black;
+        }        
+.grid-item-1 {
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 1;
+}
+.grid-item-2 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+}
+        
+div {
+        display: block;
+        }
+
+.green-button-adopt{
+    color:white;
+    background-color:limegreen;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container {
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+}
+    
+.dog-box
+ {
+height: 600px;
+width: 400px;
+border: 5px solid slategray;
+background: white;
+}
+#more-dogs{
+    color:rgb(32, 64, 96);
+    background-color:lightgrey;
+    margin: auto;
+    padding-left: 50px;
+    padding-right:50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer{
+    background-color: rgb(32, 64, 96);
+    margin-top: 100px;
+}
+
+#footer-dog-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 50px;
+}
+.white {
+    height: 100px;
+    color: white;
+    background-color: rgb(32, 64, 96);
+}
+
