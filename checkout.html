@@ -30,7 +30,7 @@
             <a href="blog.html">Blog</a>
         </nav>
 
-        <form method="get">            
+        <form id="contact" method="get">            
             <div class="container">
                 <h1 class="co-title">Checkout</h1>
 
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="row container-label marg-control">
-                    <label class="col-12 label-pad" type="email">Email Address</label><br>
+                    <label class="col-12 label-pad">Email Address</label><br>
                     <input class="col-7" type="email" id="email" name="email">
                 </div>
 
@@ -58,7 +58,7 @@
                     <div class="container-label">
                         <label for="state">State</label><br>
                         <select class="state" id="state" name="state" required>
-                            <option value="none"></option>
+                            <option disabled selected value>--</option>
                             <option value="AL">AL</option>
                             <option value="AK">AK</option>
                             <option value="AZ">AZ</option>
@@ -122,12 +122,12 @@
                 <p class="container-label radio-pad">First Time Adopter?</p>
 
                 <label class="radio-control">Yes
-                    <input type="radio" checked="unchecked" name="radio">
+                    <input type="radio" name="radio" id="yes">
                     <span class="checkmark"></span>
                 </label>
 
                 <label class="radio-control">No
-                    <input type="radio" checked="unchecked" name="radio">
+                    <input type="radio" name="radio" id="no">
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -136,7 +136,7 @@
                 <div class="container-label col-12">
                     <label for="pu-location">Pickup Location</label><br>
                     <select class="pu-loc" id="pu-location" name="pu-location" required>
-                        <option value="none"></option>
+                        <option disabled selected value>--</option>
                         <option value="store">Store</option>
                     </select>
                 </div>
@@ -166,9 +166,11 @@
                 <p class="container-label">Total Adoption Cost</p>
                 <p style="font-size: 1.5vw; line-height: 0;">$1234.56</p>
                 
-                <button class="form-submit" type="submit">Submit</button>          
+                <button onclick="submitAlert(), getVal();" class="form-submit" type="submit">Submit</button>          
             </div>
         </form>
+
+        <script src="aad-javascript/aad-form.js"></script>
 
         <footer>
             <img src="images/adoptadog-logo.svg" alt="Silhouette of a dog sitting up with the caption of ADOPTADOG to the right of it">
@@ -188,7 +190,5 @@
 
             <p>© 2018 Adoptadog, LLC <span>|</span> Seattle, WA</p>
         </footer>   
-
-        <script src="aad-javascript/aad.js" charset="UTF-8"></script>
     </body>
 </html>
