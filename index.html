@@ -10,6 +10,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/aadstyles.css">
         <title>Adopt a Dog</title>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <script src="aad-javascript/aad.js"></script>
     </head>
 
     <body>
@@ -45,7 +49,7 @@
             
                 <div class="profile-container col-12">
                     <div class="dog-profile">
-                        <img onclick="alert(dogProfile(d1Name, breed, fee))" src="images/murphy-card.jpg" alt="Murphy's profile picture">
+                        <img class="card-img" onclick="alert(dogProfile(d1Name, breed, fee))" src="images/murphy-card.jpg" alt="Murphy's profile picture">
                         <h3>Murphy</h3>
                         <p><span>Cost to Adopt: </span>$123.45</p>
                         <p>
@@ -55,11 +59,11 @@
                             rendae pla endis re ea erum,
                             qui doluptae
                         </p>
-                        <button onclick="alert(adoptionPrice(fee))" class="profile-button">Adopt</button>
+                        <button onclick="alert(adoptionPrice(fee))" class="profile-button cardBtn">Adopt</button>
                     </div>
 
                     <div class="dog-profile">
-                        <img onclick="alert(dogProfile(d2Name, breed, fee))" src="images/poppy-card.jpg" alt="Poppy's profile picture">
+                        <img class="card-img" onclick="alert(dogProfile(d2Name, breed, fee))" src="images/poppy-card.jpg" alt="Poppy's profile picture">
                         <h3>Poppy</h3>
                         <p><span>Cost to Adopt: </span>$123.45</p>
                         <p>
@@ -69,11 +73,11 @@
                             rendae pla endis re ea erum,
                             qui doluptae
                         </p>
-                        <button onclick="alert(adoptionPrice(fee))" class="profile-button">Adopt</button>
+                        <button onclick="alert(adoptionPrice(fee))" class="profile-button cardBtn">Adopt</button>
                     </div>
 
                     <div class="dog-profile">
-                        <img onclick="alert(dogProfile(d3Name, breed, fee))" src="images/jack-card.jpg" alt="Jack's profile picture">
+                        <img class="card-img" onclick="alert(dogProfile(d3Name, breed, fee))" src="images/jack-card.jpg" alt="Jack's profile picture">
                         <h3>Jack</h3>
                         <p><span>Cost to Adopt: </span>$123.45</p>
                         <p>
@@ -83,11 +87,11 @@
                             rendae pla endis re ea erum,
                             qui doluptae
                         </p>
-                        <button onclick="alert(adoptionPrice(fee))" class="profile-button">Adopt</button>
+                        <button onclick="alert(adoptionPrice(fee))" class="profile-button cardBtn">Adopt</button>
                     </div>
 
                     <div class="dog-profile">
-                        <img onclick="alert(dogProfile(d4Name, breed, fee))" src="images/duffy-card.jpg" alt="Duffy's profile picture">
+                        <img class="card-img" onclick="alert(dogProfile(d4Name, breed, fee))" src="images/duffy-card.jpg" alt="Duffy's profile picture">
                         <h3>Duffy</h3>
                         <p><span>Cost to Adopt: </span>$123.45</p>
                         <p>
@@ -97,11 +101,11 @@
                             rendae pla endis re ea erum,
                             qui doluptae
                         </p>
-                        <button onclick="alert(adoptionPrice(fee))" class="profile-button">Adopt</button>
+                        <button onclick="alert(adoptionPrice(fee))" class="profile-button cardBtn">Adopt</button>
                     </div>
 
                     <div class="dog-profile">
-                        <img onclick="alert(dogProfile(d5Name, breed, fee))" src="images/lucas-card.jpg" alt="Lucas's profile picture">
+                        <img class="card-img" onclick="alert(dogProfile(d5Name, breed, fee))" src="images/lucas-card.jpg" alt="Lucas's profile picture">
                         <h3>Lucas</h3>
                         <p><span>Cost to Adopt: </span>$123.45</p>
                         <p>
@@ -111,12 +115,12 @@
                             rendae pla endis re ea erum,
                             qui doluptae
                         </p>
-                        <button onclick="alert(adoptionPrice(fee))" class="profile-button">Adopt</button>
+                        <button onclick="alert(adoptionPrice(fee))" class="profile-button cardBtn">Adopt</button>
                     </div>
 
                     <div class="dog-profile">
-                        <img onclick="alert(dogProfile(d6Name, breed, fee))" src="images/jake-card.jpg" alt="Jake's profile picture">
-                        <h3>Jake</h3>
+                        <img class="card-img" onclick="alert(dogProfile(d6Name, breed, fee))" src="images/jake-card.jpg" alt="Jake's profile picture">
+                        <h3 class="fade">Jake</h3>
                         <p><span>Cost to Adopt: </span>$123.45</p>
                         <p>
                             Corrum volorit iandae
@@ -125,7 +129,7 @@
                             rendae pla endis re ea erum,
                             qui doluptae
                         </p>
-                        <button onclick="alert(adoptionPrice(fee))" class="profile-button">Adopt</button>
+                        <button onclick="alert(adoptionPrice(fee))" class="profile-button cardBtn">Adopt</button>
                     </div>
 
                     <div class="see-more col-12">
@@ -194,6 +198,6 @@
             <p>© 2018 Adoptadog, LLC <span>|</span> Seattle, WA</p>
         </footer>
         
-        <script src="aad-javascript/aad.js" charset="utf-8"></script>
+        
     </body>
 </html>

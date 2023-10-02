@@ -1,3 +1,5 @@
+// Index & Blog Page
+
 const d1Name = "Murphy";
 const d2Name = "Poppy";
 const d3Name = "Jack";
@@ -21,3 +23,17 @@ function dogProfile(a, b, c) {
 function adoptionPrice(c) {
     return 'Adoption Fee:\n\n$' + c;
 }
+
+$(function() {
+    $('.card-img').mouseenter(function() {
+        $(this).fadeTo('slow', .75)
+    }).mouseleave(function () {
+        $(this).fadeTo('fast', 1)
+    });
+
+    $('.cardBtn').mouseenter(function() {
+        $(this).css('box-shadow', '10px 10px 5px #888');
+    }).mouseleave(function() {
+        $(this).css('box-shadow', '0px 0px 0px #000000');
+    })
+});
