@@ -1,0 +1,65 @@
+Tester 1:
+
+Female, 30yrs, Asian , Some College, Not a pet owner.
+User preformed testing with:
+* iPhone 13 Pro Max/iOS 17.0.2/Safari
+* iPad Pro 12.9 (2021)/iOS 17.0.2/Safari
+
+Tester 2:
+
+Male, 40yrs, Caucasian, Some College, Not a pet owner.
+User preformed testing with:
+* Samsung Galaxy Tab A8/Android Version 10
+* HP ProBook 450 G9/Windows 11 Home/Chrome, Firefox, Opera
+
+Milestones:
+
+- Testing showed responive behavior in all major broswers.
+- Javascript working
+- JQuery working
+- CSS working 
+- HTML working
+
+
+Browsers tested on: 
+
+* Chrome
+* Firefox
+* Safari
+* Opera
+
+Operating Systems tested on:
+
+* iOS 17.0.2
+* Android V.10
+* Windows 11 Home
+
+
+						    Landscape | Portrait
+--------------------------------------------------------------------------
+- 1. Responsive						X	   X	 -
+--------------------------------------------------------------------------
+- 2. Scaled properly by viewport width:			X	   X 	 -
+--------------------------------------------------------------------------
+- 3. Buttons/links 'clickable':				X	   X	 -
+--------------------------------------------------------------------------	
+-	3a. Nav Home:					X	   X	 -
+--------------------------------------------------------------------------	
+-	3b. Nav Dogs:					X	   X	 -
+--------------------------------------------------------------------------	
+-	3c. Nav Blog:					X	   X 	 -
+--------------------------------------------------------------------------	
+-	3d. 'Adopt' button:				X	   X	 -
+--------------------------------------------------------------------------	
+-	3e. "See more dogs":				X	   X	 -	
+--------------------------------------------------------------------------
+-	3f. Footer Home:				X	   X	 -
+--------------------------------------------------------------------------	
+-	3g. Footer Dogs:				X	   X	 -
+--------------------------------------------------------------------------	
+-	3h. Footer Contact:				X	   X	 -
+--------------------------------------------------------------------------	
+-	3i. Checkout button:	(Not required for any assignment)	 -
+--------------------------------------------------------------------------
+
+
