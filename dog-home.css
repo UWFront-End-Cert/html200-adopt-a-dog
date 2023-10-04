@@ -9,35 +9,81 @@ h3 {
     color:rgb(32, 64, 96);
 
 }
+
+#top-image{
+    width:100%;
+    height:350px;
+    z-index: 1;
+
+}
+
 #whitedogoutline{
     width:35%;
     background-color:rgb(32, 64, 96);
+    z-index: 4;
+}
+
+#neon-top-text{
+    color:lime;
+    z-index: 6;
+
 }
 #whitecart{
     width:2%;
     background-color:rgb(32, 64, 96);
     float:right;
+    z-index: 8;
 }
-header{
-    background-color:rgb(32, 64, 96) ;
-}
+
 #cart-total{
     color:white;
     float:right;
     padding:25px;
+    z-index: 8;
 }
 #top-corner-checkout{
     color:white;
     background-color:limegreen;
     padding:10px;
     float:right;
+    z-index: 10;
 }
+
+.header-container{
+    height: 350px;
+    width:100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    margin:auto;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+.header-box{
+    height: 350px;
+    width: 100%;
+    border: 1px solid blue;
+    background: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
 #menu-bar{
     color:rgb(32, 64, 96);
     background-color:lightgrey;
     width:100%;
     padding:30px;
 }
+
+
+
 
 .dog-hug-container{
     height: 500px;
