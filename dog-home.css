@@ -27,7 +27,6 @@ h3 {
 .header-box1{
     height: 350px;
     width: 100%;
-    border: 1px solid blue;
     background: white;
     margin-left: 20px;
     margin-bottom: 10px;
@@ -74,10 +73,10 @@ h3 {
     z-index:9;
 }
 .header-box6{
-    height:200px;
+    height:100px;
     width:700px;
     position:absolute;
-    bottom:500px;
+    bottom:700px;
     left:90px;
     right:100px;
     z-index:12;
@@ -135,11 +134,13 @@ h3 {
     padding:30px;
 }
 
-
+body {
+    font-family: "Times New Roman", Times, serif;
+  }
 
 
 .dog-hug-container{
-    height: 500px;
+    height: 350px;
     width:100%;
     background-color: white;
     display: flex;
@@ -147,8 +148,8 @@ h3 {
     flex-wrap: wrap;
     justify-content:left;
     align-items: center;
-    margin:auto;
-    margin-left: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
     margin-bottom: 50px;
 
 }
@@ -156,7 +157,6 @@ h3 {
 .dog-hug-box1{
 height: 350px;
 width: 350;
-border: 1px solid green;
 background: white;
 margin-left: 20px;
 margin-top:0;
@@ -170,13 +170,13 @@ margin-bottom: 100px;
 }
 
 .dog-hug-box2{
-    height: 350px;
-    width: 60%;
-    border: 1px solid blue;
+    height: 300px;
+    width: 70%;
     background: white;
-    margin-left: 20px;
-    margin-top: 0px;
-    margin-bottom: 100px;
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 150px;
     
     }
 
@@ -194,7 +194,7 @@ div {
     padding-bottom: 10px;
 }
 .container {
-    height: 400px;
+    height: 900px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -203,16 +203,97 @@ div {
     align-items: center;
 }
     
-.dog-box{
-height: 300px;
-width: 300px;
+.dog-box1{
+height: 400px;
+width: 250px;
 border: 1px solid slategray;
 background: white;
-margin-left: auto;
-margin-right: auto;
-margin-top: auto;
-margin-bottom: 100px;
+margin-left: 300px;
+margin-right: 20px;
+margin-top: 10px;
+margin-bottom: 20px;
 }
+
+.dog-box2{
+    height: 400px;
+    width: 250px;
+    border: 1px solid slategray;
+    background: white;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+
+.dog-box3{
+height: 400px;
+width: 250px;
+border: 1px solid slategray;
+background: white;
+margin-left: 20px;
+margin-right: 10px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+.dog-box4{
+    height: 400px;
+    width: 250px;
+    border: 1px solid slategray;
+    background: white;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+
+.dog-box5{
+    height: 400px;
+    width: 250px;
+    border: 1px solid slategray;
+    background: white;
+    margin-left: 450px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+
+
+.dog-box6{
+    height: 400px;
+    width: 250px;
+    border: 1px solid slategray;
+    background: white;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+
+
+
+.dog-box7{
+    height: 400px;
+    width: 250px;
+    border: 1px solid slategray;
+    background: white;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    } 
+
+.dog-box8{
+    height: 400px;
+    width: 250px;
+    border: 1px solid slategray;
+    background: white;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+
 
 .dog-headshot {
     width: 100%;
@@ -234,9 +315,9 @@ margin-bottom: 100px;
 .more-dog-box{
 height: 50px;
 width: 100%;
-border: 1px solid red;
 background: white;
-margin:auto;
+margin-top:20px;
+margin-left:800px;
 }
 
 
