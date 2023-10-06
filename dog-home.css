@@ -251,7 +251,20 @@ margin:auto;
 }
 footer{
     background-color: rgb(32, 64, 96);
-    margin-top: 100px;
+    margin-top: 10px;
+}
+
+.footer-container{
+    height:300px;
+    width:100%;
+    
+}
+.footer-box1{
+    height:150px;
+}
+.footer-box2{
+   height:150px;
+   margin-left:800px;
 }
 
 #footer-dog-logo{
@@ -267,11 +280,5 @@ footer{
     background-color: rgb(32, 64, 96);
 }
 
-.footer-container{
-    
-}
-.footer-box1{
-}
-.footer-box2{
-}
+
 
