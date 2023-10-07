@@ -9,7 +9,13 @@ h3 {
     color:rgb(32, 64, 96);
 
 }
-
+h4{
+    font-family: system-ui, sans-serif;
+    font-size:81.25%;
+}
+h5{
+    font-family: "Times New Roman", Times, serif;
+}
 .header-container{
     height: 350px;
     width:100%;
@@ -138,6 +144,20 @@ body {
     font-family: "Times New Roman", Times, serif;
   }
 
+  p {
+    display:block;
+    Margin-block-start: 1em;
+    Margin-block-end: 1em;
+    Margin-inline-start: 0px;
+    Margin-inline-end: 0px;
+    font-size:100%;
+    width: 700px;
+    
+    }
+    
+
+    
+
 
 .dog-hug-container{
     height: 350px;
@@ -156,9 +176,9 @@ body {
 
 .dog-hug-box1{
 height: 350px;
-width: 350;
+width: 20%;
 background: white;
-margin-left: 20px;
+margin-left: 290px;
 margin-top:0;
 margin-bottom: 100px;
 
@@ -170,11 +190,11 @@ margin-bottom: 100px;
 }
 
 .dog-hug-box2{
-    height: 300px;
-    width: 70%;
+    height: 80%;
+    width: 700px;
     background: white;
     margin-left: 30px;
-    margin-right: 50px;
+    margin-right: 5px;
     margin-top: 10px;
     margin-bottom: 150px;
     
@@ -220,7 +240,7 @@ margin-bottom: 20px;
     border: 1px solid slategray;
     background: white;
     margin-left: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
     }
@@ -231,7 +251,7 @@ width: 250px;
 border: 1px solid slategray;
 background: white;
 margin-left: 20px;
-margin-right: 10px;
+margin-right: 20px;
 margin-top: 10px;
 margin-bottom: 20px;
 }
@@ -242,7 +262,7 @@ margin-bottom: 20px;
     border: 1px solid slategray;
     background: white;
     margin-left: 20px;
-    margin-right: 10px;
+    margin-right: 200px;
     margin-top: 10px;
     margin-bottom: 20px;
     }
@@ -252,8 +272,8 @@ margin-bottom: 20px;
     width: 250px;
     border: 1px solid slategray;
     background: white;
-    margin-left: 450px;
-    margin-right: 10px;
+    margin-left: 300px;
+    margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
     }
@@ -264,7 +284,7 @@ margin-bottom: 20px;
     width: 250px;
     border: 1px solid slategray;
     background: white;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -277,7 +297,7 @@ margin-bottom: 20px;
     width: 250px;
     border: 1px solid slategray;
     background: white;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -288,7 +308,7 @@ margin-bottom: 20px;
     width: 250px;
     border: 1px solid slategray;
     background: white;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
