@@ -1,7 +1,13 @@
 header {
-  /*background-color: #1a2a5a;*/
-  background-image:url("images/header-image2.jpg");
+  background-color: #1a2a5a;
+  background-image: url("images/header-image2.jpg");
+  background-size: cover;
+  background-position: center center;
   height: 30%;
+}
+/*this linear gradient works only when header background-color and background-image is disabled*/
+.linear-gradient-1 {
+  background: linear-gradient(to left, blue, yellow);
 }
 header img {
   margin-left: 100px;
@@ -97,6 +103,19 @@ aside a {
   margin-bottom: 20px;
   font-size: 1vw;
   /*width: 100%;*/
+}
+.font-aside img {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+@media (max-width: 600px) {
+  .font-aside img {
+    width: 300px;
+  }
+  .grid-img img {
+    width: 300px;
+  }
 }
 .grid-container {
   width: 90%;
