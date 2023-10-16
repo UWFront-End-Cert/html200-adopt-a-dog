@@ -1,0 +1,196 @@
+<!-- Adopt-a-Dog Website (Checkout Page)-->
+<!-- Created by Christopher Pierce-->
+<!-- Date created 08/15/2023-->
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/aadstyles.css">
+        <title>Checkout</title>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>                                  
+            <img class="logo-img" src="images/adoptadog-logo.svg" alt="Silhouette of a dog sitting up with the caption of ADOPTADOG to the right of it">
+            <img class="cart-icon" src="images/cart-icon.svg" alt="picture of a shopping cart">
+            <p class="cart-price">$1234.56</p>       
+            <p class="sub-header">Seattle’s premiere dog adoption agency</p>
+            <button class="cb-style checkout-button">Checkout</button>
+        </header>
+
+        <nav class="nav-header">
+            <a href="index.html">Home</a>
+            <a>/</a>
+            <a href="dogs.html">Dogs</a>
+            <a>/</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+
+        <form id="contact" method="get">            
+            <div class="container">
+                <h1 class="co-title">Checkout</h1>
+
+                <div class="row container-label marg-control">
+                    <label class="col-12 label-pad" for="name">Name</label><br>
+                    <input class="col-7" type="text" id="name" name="name" required>
+                </div>
+
+                <div class="row container-label marg-control">
+                    <label class="col-12 label-pad">Email Address</label><br>
+                    <input class="col-7" type="email" id="email" name="email" required>
+                </div>
+
+                <div class="row container-label marg-control">
+                    <label class="col-12 label-pad" for="address">Street Address</label><br>
+                    <input class="col-7" type="text" id="address" name="address" required>
+                </div>
+
+                <div class="row-control col-7">
+                    <div class="container-label">
+                        <label for="city">City</label><br>
+                        <input class="city" type="text" id="city" name="city" required>
+                    </div>
+
+                    <div class="container-label">
+                        <label for="state">State</label><br>
+                        <select class="state" id="state" name="state" required>
+                            <option disabled selected value>--</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                    </div>
+
+                    <div class="container-label">
+                        <label for="zip">Zip Code</label><br>
+                        <input class="zip" type="number" id="zip" name="zip" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="radio-cont col-7">
+                <p class="container-label radio-pad">First Time Adopter?</p>
+
+                <label class="radio-control">Yes
+                    <input type="radio" name="radio" value="yes" id="yes">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="radio-control">No
+                    <input type="radio" name="radio" value="no" id="no">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="container">
+                <div class="container-label col-12">
+                    <label for="pu-location">Pickup Location</label><br>
+                    <select class="pu-loc" id="pu-location" name="pu-location" required>
+                        <option disabled selected value>--</option>
+                        <option value="store">Store</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <p class="container-label col-12">Dogs Adopted</p>
+
+                    <div class="col-1">
+                        <img src="images/lucas-checkout.jpg" alt="Lucas profile picture">
+                    </div>
+
+                    <div class="col-2">
+                        <p class="selected-dog selected-name">Lucas</p>
+                        <p class="selected-dog price-style"><span class="span-style">Cost to Adopt: </span>$123.45</p>
+                    </div>
+
+                    <div class="col-1">
+                        <img src="images/duffy-checkout.jpg" alt="Duffy profile picture">
+                    </div>
+
+                    <div class="col-2">
+                        <p class="selected-dog selected-name">Duffy</p>
+                        <p class="selected-dog price-style"><span class="span-style">Cost to Adopt: </span>$123.45</p>
+                    </div>
+                </div>
+
+                <p class="container-label">Total Adoption Cost</p>
+                <p style="font-size: 1.5vw; line-height: 0;">$1234.56</p>
+                
+                <button onclick="submitAlert(), getVal();" class="form-submit" type="submit">Submit</button>          
+            </div>
+        </form>
+
+        <script src="aad-javascript/aad-form.js"></script>
+
+        <footer>
+            <img src="images/adoptadog-logo.svg" alt="Silhouette of a dog sitting up with the caption of ADOPTADOG to the right of it">
+
+            <p> 
+                Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
+                esseque invenienihil imaximu scideru ptistiusam consequunt
+            </p>
+
+            <nav class="nav-footer">
+                <a href="index.html">Home</a>
+                <a><span>/</span></a>
+                <a href="dogs.html">Dogs</a>
+                <a><span>/</span></a>
+                <a href="checkout.html">Contact</a>
+            </nav>
+
+            <p>© 2018 Adoptadog, LLC <span>|</span> Seattle, WA</p>
+        </footer>   
+    </body>
+</html>
