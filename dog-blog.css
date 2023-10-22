@@ -1,0 +1,260 @@
+h1 {
+    color:lime;
+  }
+h2 {
+    color:rgb(32, 64, 96);
+
+}
+h3 {
+    color:rgb(32, 64, 96);
+
+}
+h4{
+    font-family: system-ui, sans-serif;
+    font-size:81.25%;
+}
+h5{
+    font-family: "Times New Roman", Times, serif;
+}
+.header-container{
+    height: 350px;
+    width:100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    margin:0;
+    padding: 0;
+
+}
+
+.header-box1{
+    height: 350px;
+    width: 100%;
+    background: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    z-index:1;
+}
+
+.header-box2{
+    
+    height:40px;
+    width:40px;
+    position:relative;
+    bottom:300px;
+    left:1350px;
+    right:100px;
+    z-index:9;
+    
+}
+.header-box3{
+    height:50px;
+    width:50px;
+    position:relative;
+    bottom:310px;
+    left:1400px;
+    right:100px;
+    z-index:10;
+}
+
+.header-box4{
+    height:50px;
+    width:100px;
+    position:relative;
+    bottom:200px;
+    left:1300px;
+    right:200px;
+    z-index:7;
+}
+
+.header-box5{
+    height:200px;
+    width:500px;
+    position:relative;
+    bottom:300px;
+    left:5px;
+    z-index:9;
+}
+.header-box6{
+    height:100px;
+    width:700px;
+    position:absolute;
+    bottom:700px;
+    left:90px;
+    right:100px;
+    z-index:12;
+    color:lime;
+    margin-left:1%;
+}
+
+#top-image{
+    width:100%;
+    height:350px;
+    z-index: 1;
+
+}
+
+#whitedogoutline{
+    width:100%;
+   
+    
+}
+
+#neon-top-text{
+    color:lime;
+    z-index: 6;
+
+}
+#whitecart{
+    width:100%;
+    height:100%;
+   
+    float:right;
+   
+}
+
+#cart-total{
+    color:white;
+    float:right;
+    padding:25px;
+    
+}
+#top-corner-checkout{
+    color:white;
+    background-color:limegreen;
+    padding:10px;
+    width:100%;
+    float:right;
+    
+}
+
+
+
+#menu-bar{
+    color:rgb(32, 64, 96);
+    background-color:lightgrey;
+    width:100%;
+    padding:30px;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  p {
+    display:block;
+    Margin-block-start: 1em;
+    Margin-block-end: 1em;
+    Margin-inline-start: 0px;
+    Margin-inline-end: 0px;
+    font-size:100%;
+    width: 700px;
+    
+    }
+    
+#big-text-adopt{
+    color:rgb(32, 64, 96);
+    margin-left: 5em;
+
+}
+
+div {
+    display: block;
+}
+
+.dog-blog-container{
+    height: 1500px;
+    width:100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+
+}
+
+.dog-blog-box1{
+    height: 350px;
+    width: 20%;
+    background: white;
+    margin-left: 5em;
+    margin-top:1em;
+    margin-bottom: 10px;
+    
+}
+    
+#dog-hug-canyon{
+        width:88%;
+        height:88%;
+}
+
+.dog-blog-box2{
+    height: 350px;
+    width: 1200px;
+    background: white;
+    margin-left: 1em;
+    margin-right: 10em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+    }
+
+        
+
+.dog-blog-box3{
+    height: 350px;
+    width: 20%;
+    background: white;
+    margin-left: 5em;
+    margin-top:1em;
+    margin-bottom: 10px;
+    
+}
+    
+#dogs-park-brick{
+        width:100%;
+        height:100%;
+}
+
+.dog-blog-box4{
+    height: 350px;
+    width: 1200px;
+    background: white;
+    margin-left: 1em;
+    margin-right: 10em;
+    margin-top: 0;
+    margin-bottom: 2em;
+    
+    }
+.dog-blog-box5{
+    height: 350px;
+    width: 20%;
+    background: white;
+    margin-left: 5em;
+    margin-top:1em;
+    margin-bottom: 2em;
+    
+}
+    
+#dogs-fetch-sunset{
+        width:100%;
+        height:100%;
+}
+
+.dog-blog-box6{
+    height: 350px;
+    width: 1200px;
+    background: white;
+    margin-left: 1em;
+    margin-right: 10em;
+    margin-top: 0;
+    margin-bottom: 2em;
+    
+    }
