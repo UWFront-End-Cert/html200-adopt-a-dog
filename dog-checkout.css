@@ -1,0 +1,180 @@
+h1 {
+    color:lime;
+  }
+h2 {
+    color:rgb(32, 64, 96);
+
+}
+h3 {
+    color:rgb(32, 64, 96);
+
+}
+h4{
+    font-family: system-ui, sans-serif;
+    font-size:81.25%;
+}
+h5{
+    font-family: "Times New Roman", Times, serif;
+}
+.header-container{
+    height: 350px;
+    width:100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    margin:0;
+    padding: 0;
+
+}
+
+.header-box1{
+    height: 350px;
+    width: 100%;
+    background: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    z-index:1;
+}
+
+.header-box2{
+    
+    height:40px;
+    width:40px;
+    position:relative;
+    bottom:300px;
+    left:1350px;
+    right:100px;
+    z-index:9;
+    
+}
+.header-box3{
+    height:50px;
+    width:50px;
+    position:relative;
+    bottom:310px;
+    left:1400px;
+    right:100px;
+    z-index:10;
+}
+
+.header-box4{
+    height:50px;
+    width:100px;
+    position:relative;
+    bottom:200px;
+    left:1300px;
+    right:200px;
+    z-index:7;
+}
+
+.header-box5{
+    height:200px;
+    width:500px;
+    position:relative;
+    bottom:300px;
+    left:5px;
+    z-index:9;
+}
+.header-box6{
+    height:100px;
+    width:700px;
+    position:absolute;
+    bottom:700px;
+    left:90px;
+    right:100px;
+    z-index:12;
+    color:lime;
+    margin-left:1%;
+}
+
+#top-image{
+    width:100%;
+    height:350px;
+    z-index: 1;
+
+}
+
+#whitedogoutline{
+    width:100%;
+   
+    
+}
+
+#neon-top-text{
+    color:lime;
+    z-index: 6;
+
+}
+#whitecart{
+    width:100%;
+    height:100%;
+   
+    float:right;
+   
+}
+
+#cart-total{
+    color:white;
+    float:right;
+    padding:25px;
+    
+}
+#top-corner-checkout{
+    color:white;
+    background-color:limegreen;
+    padding:10px;
+    width:100%;
+    float:right;
+    
+}
+
+#menu-bar{
+    color:rgb(32, 64, 96);
+    background-color:lightgrey;
+    width:100%;
+    padding:30px;
+}
+
+#big-text-checkout{
+    color:rgb(32, 64, 96);
+    margin-left: 5em;
+}
+
+
+
+
+
+footer{
+    background-color: rgb(32, 64, 96);
+    margin-top: 10px;
+}
+
+.footer-container{
+    height:300px;
+    width:100%;
+    
+}
+.footer-box1{
+    height:150px;
+}
+.footer-box2{
+   height:150px;
+   margin-left:800px;
+}
+
+#footer-dog-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 50px;
+}
+.white {
+    height: 100px;
+    color: white;
+    background-color: rgb(32, 64, 96);
+}
+
