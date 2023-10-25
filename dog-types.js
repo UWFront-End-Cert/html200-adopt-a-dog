@@ -17,6 +17,7 @@ function AdoptionFee(){
 
 function TotalCost(){
 // count the number of AdoptionFee clicks and for each click which occurs then add 123.45 to a running total 
+
 }
 
 
