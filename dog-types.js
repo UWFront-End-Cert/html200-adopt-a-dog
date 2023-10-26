@@ -7,12 +7,29 @@ function JakeDog() {alert("Name: Jake\nBreed: Golden Labrador Retriever  \nAdopt
 function AngusDog() {alert("Name: Angus\nBreed: Boxer  \nAdoption Fees: $123.45");}
 function VioletDog() {alert("Name: Violet \nBreed: Chocolate Labrador Retriever  \nAdoption Fees: $123.45");}
 
+
+
 function AdoptionFee(){
- let FeeAmount = 123.45;
- let result = 0;
- result = FeeAmount 
- alert(result);
+    let FeeAmount = 123.45;
+    let result = 0;
+    result = FeeAmount 
+    alert(result);
+    
+   
+   
+   var total = 0;
+    function AddFee() {
+     total += 123.45;
+     console.log(total);
+   }
+   
+   AddFee()
+   
+   alert (total)
+   
+   
 }
+   
 
 
 function TotalCost(){
