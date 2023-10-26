@@ -260,3 +260,18 @@ img { /* image responsive*/
   color: black;
   }
 }
+#myDIV h1{
+  margin-left: 100px;
+  width: 30%;
+}
+#myDIV img{
+  width: 15%;
+  float: left;
+  padding: 5px;
+}
+#myDIV p{
+  width: 80%;
+  float: left;
+  padding: 5px;
+  font-size: 1vw;
+}
