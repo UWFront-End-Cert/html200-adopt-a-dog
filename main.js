@@ -33,7 +33,7 @@ const fields = [
   }
 ];
 
-const form = document.createElement('id-form');
+const form = document.createElement('form');
 document.body.appendChild(form);
 
 for (let i = 0; i < fields.length; i += 1){
@@ -49,20 +49,29 @@ for (let i = 0; i < fields.length; i += 1){
   form.appendChild(label);
   form.appendChild(input);
 }
-  console.log(form); //console log does not work yet
+
 
 const submitButton = document.createElement('button');
 submitButton.setAttribute('type', 'submit');
 submitButton.textContent = 'Submit';
 
 form.appendChild(submitButton);
-
+//identifying form with a query selector and giving a variable
+const checkoutForm = document.querySelector("form");
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
+    // console log for each element
+    console.log(document.getElementById("full-name").value);
+    console.log(document.getElementById("email").value);
+    console.log(document.getElementById("address").value);
+    console.log(document.getElementById("city").value);
+    console.log(document.getElementById("state").value);
+    console.log(document.getElementById("zip-code").value);
+    console.log(document.getElementById("first-time-adopter").value);
+    console.log(document.getElementById("location").value);
     alert('Thank you. The form information has been received.');
-
-})
+});
 
 
 
