@@ -215,7 +215,8 @@ div {
     padding-bottom: 10px;
 }
 .container {
-    height: 900px;
+    height: 55em;
+    width:75em;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -225,96 +226,71 @@ div {
 }
     
 .dog-box1{
-height: 400px;
-width: 250px;
-border: 1px solid slategray;
-background: white;
-margin-left: 300px;
-margin-right: 20px;
-margin-top: 10px;
-margin-bottom: 20px;
+  height: 25em;
+  width: 15.5em;
+  border: 0.05em solid slategray;
+  background: white;
+  margin-left: 18em;
+  margin-right: 1.25em;
+  margin-top: 0.6em;
+  margin-bottom: 1.25em;
 }
 
 .dog-box2{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.5em;
+    border: 0.05em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.6em;
+    margin-bottom: 1.25em;
     }
 
 .dog-box3{
-height: 400px;
-width: 250px;
-border: 1px solid slategray;
-background: white;
-margin-left: 20px;
-margin-right: 20px;
-margin-top: 10px;
-margin-bottom: 20px;
+    height: 25em;
+    width: 15.5em;
+    border: 0.05em solid slategray;
+    background: white;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.6em;
+    margin-bottom: 1.25em;
 }
 
 .dog-box4{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.5em;
+    border: 0.05em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 200px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-left: 18em;
+    margin-right: 1.25em;
+    margin-top: 0.6em;
+    margin-bottom: 1.25em;
     }
 
 .dog-box5{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.5em;
+    border: 0.05em solid slategray;
     background: white;
-    margin-left: 300px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.6em;
+    margin-bottom: 1.25em;
     }
 
 
 .dog-box6{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.5em;
+    border: 0.05em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.6em;
+    margin-bottom: 1.25em;
     }
-
-
-
-.dog-box7{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
-    background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    } 
-
-.dog-box8{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
-    background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    }
-
 
 .dog-headshot {
     width: 100%;
