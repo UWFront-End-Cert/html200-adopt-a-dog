@@ -160,7 +160,7 @@ body {
 
 
 .dog-hug-container{
-    height: 350px;
+    height: 35em;
     width:100%;
     background-color: white;
     display: flex;
@@ -168,19 +168,20 @@ body {
     flex-wrap: wrap;
     justify-content:left;
     align-items: center;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-bottom: 50px;
+    margin-top: 2em;
+    margin-left: 0.6em;
+    margin-bottom: 3em;
 
 }
 
 .dog-hug-box1{
-height: 350px;
-width: 20%;
+height: 21em;
+width: 40%;
 background: white;
-margin-left: 290px;
+margin-left: 18em;
+margin-right: 18em;
 margin-top:0;
-margin-bottom: 100px;
+margin-bottom: 2em;
 
 }
 
@@ -191,12 +192,12 @@ margin-bottom: 100px;
 
 .dog-hug-box2{
     height: 80%;
-    width: 700px;
+    width: 40%;
     background: white;
-    margin-left: 30px;
-    margin-right: 5px;
-    margin-top: 10px;
-    margin-bottom: 150px;
+    margin-left: 18em;
+    margin-right: 18em;
+    margin-top: .5em;
+    margin-bottom: 2em;
     
     }
 
