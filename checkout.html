@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>Adopt A Dog</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./main.js"></script>
 </head>
 
 <body>
@@ -28,14 +30,14 @@
 
    <div class="adopt-dog">
      <h1>Form page</h1>
-     <form method="GET" id="form">
-       <script src="main.js"></script>
-<!--
+
+     <form method="GET" id="myForm">
+
      <label for="fname">Name:</label>
      <input type="text" id="fname" name="fname"><br>
 
      <label>Email address:
-       <input type="email" name="aplicantEmail">
+       <input type="email" id="email" name="aplicantEmail">
      </label><br>
 
      <label for="address">Street address:</label>
@@ -53,7 +55,7 @@
      <fieldset class="checkbox">
        <legend>First time adopter?</legend>
        <label>
-         <input type="checkbox" name="type" value="truf">Yes
+         <input type="checkbox" name="type" value="truf" id="checkbox">Yes
          <span class="checkmark"></span>
        </label>
        <label>
@@ -64,9 +66,9 @@
 
      <label for="pickuplocation">Pick up location:</label>
      <input type="text" id="pickuplocation" name="pickuplocation"><br>
+     <button type="button" id="submitBtn">Submit</button>
+    <!--- <input type="submit" value="Submit">  -->
 
-     <input type="submit" value="Submit">
--->
      </form>
   </div>
   <footer class="container">

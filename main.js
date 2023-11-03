@@ -1,3 +1,19 @@
+// contact form using jQuery
+$(document).ready(function(){
+    $("#submitBtn").click(function(){
+        $("#myForm").submit(); // Submit the form
+        console.log($("#fname").val());
+        console.log($("#email").val());
+        console.log($("#address").val());
+        console.log($("#city").val());
+        console.log($("#state").val());
+        console.log($("#zipcode").val());
+        console.log($("#checkbox").val());
+        console.log($("#pickuplocation").val());
+    });
+});
+
+/* contact form using JavaScript
 const fields = [
   {
     name: 'full-name',
@@ -73,20 +89,4 @@ form.addEventListener('submit', function(event) {
     alert('Thank you. The form information has been received.');
 });
 
-
-
-
-/*
-const title = document.createElement('h1');
-title.textContent = 'New Blog';
-document.body.appendChild(title);
-const container = document.getElementById('id-blog');
-document.insertBefore(title, container);
-
-const paragraph = document.createElement('p');
-const node = document.createTextNode('Read all about our various undergraduate degree programs.');
-paragraph.appendChild(node);
-
-const element = document.getElementById('id-blog');
-element.appendChild(paragraph);
-*/
+*****/

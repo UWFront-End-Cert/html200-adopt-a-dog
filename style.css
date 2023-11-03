@@ -18,6 +18,48 @@ header p {
   margin-left: 100px;
   font-size: 2vw;
 }
+button {
+  height: 2rem;
+  width: 9rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  background:lightgray;
+  /*background:#ff3300;
+  color:#fff;
+  font-size: 1.5rem;
+  */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 5px #000;
+  transition: .1s;
+}
+button: active {
+  box-shadow: 0 2px 5px #000;
+}
+button span {
+  height:1px;
+  width: 1px;
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 0;
+  animation:ripple .5s;
+  background: #fff;
+  border-radius: 50%;
+}
+@keyframes ripple {
+  0%{
+    transform: scale(0);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(100);
+    opacity: 0;
+  }
+}
 .icon {
   /*margin-bottom: 150px;*/
   /*margin-left: 1200px;*/
@@ -134,15 +176,15 @@ aside a {
   font-size: 1vw;
 }
 .button-more-dogs {
-  background-color: #f1f1f1;
+  background-color: medgray;
   border: none;
   color: black;
-  padding: 12px 32px;
+  padding: 0.5px 0.5px;
   text-align: center;
   text-decoration: none;
   /*display: inline-block;*/
-  font-size: 1vw;
-  margin: 3px 1px;
+  font-size: 0.8vw;
+  margin: 1px 1px;
   /*cursor: pointer;*/
 }
 .flex-container {
@@ -274,4 +316,10 @@ img { /* image responsive*/
   float: left;
   padding: 5px;
   font-size: 1vw;
+}
+/*Shadow effect*/
+.classWithShadow{
+   -moz-box-shadow: 3px 3px 4px #000;
+   -webkit-box-shadow: 3px 3px 4px #000;
+   box-shadow: 3px 3px 4px #000;
 }
