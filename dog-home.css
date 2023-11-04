@@ -16,9 +16,14 @@ h4{
 h5{
     font-family: "Times New Roman", Times, serif;
 }
+
+header{
+    width:170em;
+}
+
 .header-container{
-    height: 350px;
-    width:100%;
+    height: 21em;
+    width:150em;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -31,68 +36,68 @@ h5{
 }
 
 .header-box1{
-    height: 350px;
-    width: 100%;
+    height: 21em;
+    width: 170em;
     background: white;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    margin-left: 1.25em;
+    margin-bottom: .6em;
     z-index:1;
 }
 
 .header-box2{
     
-    height:40px;
-    width:40px;
+    height:2.5em;
+    width:2.5em;
     position:relative;
-    bottom:300px;
-    left:1350px;
-    right:100px;
+    bottom:18.75em;
+    left:84em;
+    right:6.25em;
     z-index:9;
     
 }
 .header-box3{
-    height:50px;
-    width:50px;
+    height:3.1em;
+    width:3.1em;
     position:relative;
-    bottom:310px;
-    left:1400px;
-    right:100px;
+    bottom:19.3em;
+    left:87.5em;
+    right:6.25em;
     z-index:10;
 }
 
 .header-box4{
-    height:50px;
-    width:100px;
+    height:3.1em;
+    width:6.25em;
     position:relative;
-    bottom:200px;
-    left:1300px;
-    right:200px;
+    bottom:12.5em;
+    left:81.2em;
+    right:12.5em;
     z-index:7;
 }
 
 .header-box5{
-    height:200px;
-    width:500px;
+    height:12.5em;
+    width:31em;
     position:relative;
-    bottom:300px;
-    left:5px;
+    bottom:18.75em;
+    left:0.3em;
     z-index:9;
 }
 .header-box6{
-    height:100px;
-    width:700px;
+    height:6.25em;
+    width:43.75em;
     position:absolute;
-    bottom:700px;
-    left:90px;
-    right:100px;
+    bottom:43.75em;
+    left:5.6em;
+    right:6.25em;
     z-index:12;
     color:lime;
-    margin-left:1%;
+    margin-left:0.5em;
 }
 
 #top-image{
     width:100%;
-    height:350px;
+    height:21.8em;
     z-index: 1;
 
 }
@@ -119,13 +124,13 @@ h5{
 #cart-total{
     color:white;
     float:right;
-    padding:25px;
+    padding:1.6em;
     
 }
 #top-corner-checkout{
     color:white;
     background-color:limegreen;
-    padding:10px;
+    padding:0.6em;
     width:100%;
     float:right;
     
@@ -137,7 +142,7 @@ h5{
     color:rgb(32, 64, 96);
     background-color:lightgrey;
     width:100%;
-    padding:30px;
+    padding:1.8em;
 }
 
 body {
@@ -148,10 +153,10 @@ body {
     display:block;
     Margin-block-start: 1em;
     Margin-block-end: 1em;
-    Margin-inline-start: 0px;
-    Margin-inline-end: 0px;
+    Margin-inline-start: 0em;
+    Margin-inline-end: 0em;
     font-size:100%;
-    width: 700px;
+    width: 43.75em;
     
     }
     
@@ -167,16 +172,12 @@ aside {
     width:25em;
 }
 
-@media screen and (max-width: 800px) {
-    aside {
-      display: none;
-    }
-  }
+
   
 
 .dog-hug-container{
     height: 35em;
-    width:100%;
+    width:70em;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -191,7 +192,7 @@ aside {
 
 .dog-hug-box1{
 height: 21em;
-width: 40%;
+width: 51em;
 background: white;
 margin-left: 18em;
 margin-right: 0.6em;
@@ -201,13 +202,13 @@ margin-bottom: 2em;
 }
 
 #dog-hug-photo{
-    width:100%;
-    height:100%;
+    width:50em;
+    height:20em;
 }
 
 .dog-hug-box2{
-    height: 80%;
-    width: 40%;
+    height: 12em;
+    width: 35em;
     background: white;
     margin-left: 18em;
     margin-right: 18em;
@@ -224,11 +225,14 @@ div {
 .green-button-adopt{
     color:white;
     background-color:limegreen;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 3.1em;
+    padding-right: 3.1em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
 }
+
+
+
 .container {
     height: 55em;
     width:60em;
@@ -253,6 +257,7 @@ div {
   margin-right: 1em;
   margin-top: 0.5em;
   margin-bottom: 1em;
+  
 }
 
 .dog-box2{
@@ -264,6 +269,7 @@ div {
   margin-right: 1em;
   margin-top: 0.5em;
   margin-bottom: 1em;
+  
     }
 
 .dog-box3{
@@ -275,6 +281,7 @@ div {
   margin-right: 1em;
   margin-top: 0.5em;
   margin-bottom: 1em;
+  
 }
 
 .dog-box4{
@@ -286,6 +293,7 @@ div {
   margin-right: 1em;
   margin-top: 0.5em;
   margin-bottom: 1em;
+  
     }
 
 .dog-box5{
@@ -297,6 +305,7 @@ div {
   margin-right: 1em;
   margin-top: 0.5em;
   margin-bottom: 1em;
+  
     }
 
 
@@ -309,12 +318,43 @@ div {
   margin-right: 1em;
   margin-top: 0.5em;
   margin-bottom: 1em;
+  
     }
 
 .dog-headshot {
     width: 100%;
     height:40%;
 }
+@media screen and (max-width: 767px) {
+    .container {
+      height:180em; 
+      width:80em; 
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-left:2em
+    }
+    aside {
+        display: none;
+      }
+  }
+
+  @media screen and (min-width: 768px) and (max-width:1023px) {
+    .container {
+        height:100em; 
+      width:50em; 
+      flex-direction:column;
+      flex-wrap: wrap;
+    }
+    aside{
+        float:right;
+        width:10em;
+    }
+    .dog-blog-container-aside{
+        margin-left:40em;
+        margin-right:12em;
+    }
+  }
+
 
 .more-dogs-container{
     height: 5em;
@@ -342,27 +382,27 @@ margin-left:19em;
     color:rgb(32, 64, 96);
     background-color:lightgrey;
     margin: auto;
-    padding-left: 50px;
-    padding-right:50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 3.1em;
+    padding-right:3.1em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
 }
 footer{
     background-color: rgb(32, 64, 96);
-    margin-top: 10px;
+    margin-top: 0.625em;
 }
 
 .footer-container{
-    height:300px;
+    height:18.75em;
     width:100%;
     
 }
 .footer-box1{
-    height:150px;
+    height:9.3em;
 }
 .footer-box2{
-   height:150px;
-   margin-left:800px;
+   height:9.3em;
+   margin-left:50em;
 }
 
 #footer-dog-logo{
@@ -370,7 +410,7 @@ footer{
     margin-left: auto;
     margin-right: auto;
     width: 15%;
-    padding: 50px;
+    padding: 3.1em;
 }
 .white {
     height: 100px;
