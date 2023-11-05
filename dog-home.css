@@ -85,14 +85,15 @@ header{
 }
 .header-box6{
     height:6.25em;
-    width:43.75em;
-    position:absolute;
-    bottom:43.75em;
-    left:5.6em;
-    right:6.25em;
+    width:83.75em;
+    position:relative;
+    bottom:22.75em;
+    left:2em;
+    right:1.25em;
     z-index:12;
     color:lime;
-    margin-left:0.5em;
+    margin-left:5em;
+    margin-right:20em;
 }
 
 #top-image{
