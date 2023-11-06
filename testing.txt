@@ -1,0 +1,51 @@
+User Personas
+
+Persona 1 for “Adopt a Dog” website
+-	Name: Mary Whitebird
+-	Age: 64
+-	Occupation: Retired medical worker
+-	Activities: Walking, hiking, volunteering
+-	Other details:
+o	Owns older model iPhone SE (more than 4 years old) and iPad Mini.
+o	Looking to adopt a dog, so can have company at home, to have someone to take care of, and to walk more outside during winter time.
+	
+Persona 2 for “Adopt a Dog” website
+-	Name: Sonya Richards
+-	Age: 40
+-	Occupation: 5th grade elementary teacher
+-	Activities: Reading books, running, hiking
+-	Family: 3 children, age range 5-10
+-	Other details:
+o	Ownes new 8 Pro Google Pixel Android phone and a 3-year-old windows laptop
+o	Looking to adopt a dog because the kids want to have a pet, so they will learn to take care of an animal. Also, to adopt a dog to have company while running, hiking etc.
+
+
+
+Testing steps
+
+Three options for testing course project:
+1.	Three different browsers: Chrome, Firefox, Microsoft Edge:
+
+o	Chrome
+First, I test responsiveness on my website on Chrome browser, with opening the developer panel by right-clicking and clicking inspect. I did couple tests for IPhone SE and iPad Mini, models that my User Persona 1 was using. It seems that I did a good job using the same text style, but I need to make changes to the font size, because the resizing was not working properly, so for User Persona 1 would be hard to read. The images are not resizing equally, that is another step that needs to be done.
+
+o	Firefox
+Desktop version of the website works great on Firefox browser. However, mobile version definitely needs some improvement, it is not resizing properly.
+
+o	Microsoft Edge
+Desktop version of the website works great on Microsoft Edge browser. For the mobile version, I would not make any changes to dogs.html, nor checkout.html page. However, I need to improve the size of aside on index.html, as well as on the resizing of blog.html images and text.
+
+2.	Windows Operating System (since I don’t have another)
+I tested the website on Windows desktop and laptop, and I really like how the design turns out. I like the size of the images, design, colors and cool features. However, there is always room for more improvements in the future.
+
+3.	Fire Amazon tablet and phone (Pixel Google 8 Pro Android phone)
+
+o	Fire Amazon tablet
+The website needs improvement on the index.html page. It is easily readable for users, but I just don’t like how the “aside” does not line with the main “grid container”. Would look better if the images and text is same size and are positioned in the center.
+
+o 	Pixel Google 8 Pro Android phone
+I tested the website on Pixel Google 8 Pro Android phone, and it is readable. I would not make any changes to dogs.html, nor checkout.html page. However, I need to improve the size of aside on index.html, as well as on the resizing of blog.html images and text.
+
+
+
+

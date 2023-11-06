@@ -1,6 +1,7 @@
 // contact form using jQuery
 $(document).ready(function(){
     $("#submitBtn").click(function(){
+        event.preventDefault();
         $("#myForm").submit(); // Submit the form
         console.log($("#fname").val());
         console.log($("#email").val());
@@ -10,6 +11,7 @@ $(document).ready(function(){
         console.log($("#zipcode").val());
         console.log($("#checkbox").val());
         console.log($("#pickuplocation").val());
+
     });
 });
 
