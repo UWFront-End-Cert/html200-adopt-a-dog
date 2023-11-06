@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Adopt A Dog</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+  <script src="./jquery.js"></script>
+</head>
+
+<body>
+   <!-- //javascript that prints alert when you click adopt button
+
+   <script src="./dogtypes.js" charset="utf-8"></script> -->
+
+    <div class="linear-gradient-1">
+      <header>
+        <img src="images/adoptadog-logo.svg" alt="Website logo">
+        <p><b>Seattle's premiere dog adoption agency</b></p>
+        <img class="icon" src="images/cart-icon.svg" alt="Cart icon logo">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <a class="shopping-cart" href="#"><i class="fa fa-shopping-cart"></i> <span class="cart-badge">0</span></a>
+
+        <button class="checkout" onclick="window.location.href='checkout.html';">Checkout</button>
+      </header>
+    </div>
+    <div class="menu-nav">
+      <nav>
+        <ul>
+           <li><a class="navigation" href="index.html">Home</a></li>
+           <li><a class="navigation" href="dogs.html">Dogs</a></li>
+           <li><a class="navigation" href="blog.html">Blog</a></li>
+         </ul>
+       </nav>
+     </div>
+     <div>
+         <aside class="font-aside">
+           <section>
+                <h3>From Our Blog</h3>
+                <img src="images/blog-1.jpg" alt="Home image">
+                <div class="grid-text"><h3>Traveling With Your Dog</h3></div>
+                <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quid</p>
+                <a href="blog.html">Find more about Traveling With Your Dog>></a>
+           </section>
+           <br>
+           <section>
+                <img src="images/blog-2.jpg" alt="Home image">
+                <div class="grid-text"><h3>How To Walk Multiple Dogs</h3></div>
+                <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quid</p>
+                <a href="blog.html">Find out about How To Walk Multiple Dogs >></a>
+           </section>
+           <section>
+                <img src="images/blog-3.jpg" alt="Home image">
+                <div class="grid-text"><h3>Teach Your Dog To Fetch!</h3></div>
+                <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quid</p>
+                <a href="blog.html">Find out about Teach Your Dog To Fetch >></a>
+           </section>
+         </aside>
+    </div>
+   <div class="home-page">
+         <div class="grid-container">
+            <div class="grid-img"><img src="images/home-intro.jpg" alt="Home image" ></div>
+            <div class="grid-text" id="id-hover">
+              <h2>Adopt A Dog</h2>
+              <p> Iduciendisite quo magnatem iuntum quid quaest ea am,
+              tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+              derum recuptatur, cum volore, undipsa doloreium hillupta aut
+              es ut alitatuscit ommossum haritatur arum qui officae videbiti
+              corporeium faccull oribus es quidignis ipietus explam sus
+              am aut amet ant fugiatum, utem non reptat ad magnienecto
+              volorent fugia nonsedi gendand itatquos as magnimpor aut
+              molor autatia ad est officimus accae et omnia cus, od qui ate.</p>
+            </div>
+          </div>
+
+        <div class="flex-container">
+          <div>
+            <img src="images/murphy-card.jpg" alt="Murphy is the dog name, Golden Retriever" onclick="MurphyDog()">
+            <p><b>Cost to Adopt:</b> $123.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
+               q i doluptae</p>
+            <button class="addcart btn btn-danger add-to-cart" type="button" onclick="addDog()">Adopt</button>
+          </div>
+          <div>
+            <img src="images/poppy-card.jpg" alt="Poppy is the dog name, Cairn Terrier" onclick="PoppyDog()" >
+            <p><b>Cost to Adopt:</b> $115.45</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
+               q i doluptae</p>
+            <button class="addcart btn btn-danger add-to-cart" type="button" onclick="addDog()">Adopt</button>
+          </div>
+          <div>
+            <img src="images/jack-card.jpg" alt="Jack is the dog name, Basset Hound" onclick="JackDog()" >
+            <p><b>Cost to Adopt:</b> $255.13</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
+               q i doluptae</p>
+            <button class="addcart btn btn-danger add-to-cart" type="button" onclick="addDog()">Adopt</button>
+          </div>
+          <div>
+            <img src="images/duffy-card.jpg" alt="Duffy is the dog name, Basset Hound" onclick="DuffyDog()" >
+            <p><b>Cost to Adopt:</b> $431.21</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
+               q i doluptae</p>
+            <button class="addcart btn btn-danger add-to-cart" type="button" onclick="addDog()">Adopt</button>
+          </div>
+          <div>
+            <img src="images/lucas-card.jpg" alt="Lucas is the dog name, Sarabi Dog" onclick="LucasDog()" >
+            <p><b>Cost to Adopt:</b> $333.53</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
+               q i doluptae</p>
+            <button class="addcart btn btn-danger add-to-cart" type="button" onclick="addDog()">Adopt</button>
+          </div>
+          <div>
+            <img src="images/jake-card.jpg" alt="Jake is the dog name, Labrador Retriever" onclick="JakeDog()" >
+            <p><b>Cost to Adopt:</b> $513.11</p>
+            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
+               q i doluptae</p>
+            <button class="addcart btn btn-danger add-to-cart" type="button" onclick="addDog()">Adopt</button>
+          </div>
+        </div>
+
+          <button class="button-more-dogs">See More Dogs</button>
+    </div>
+
+      <footer class="container">
+          <div class="text-footer">
+            <img class="footer-img" src="images/adoptadog-logo.svg" alt="Website logo">
+               <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+             <nav><ul>
+               <li><a class="foot" href="index.html">Home /</a></li>
+               <li><a class="foot" href="dogs.html">Dogs /</a></li>
+               <li><a class="foot" href="blog.html">Blog</a></li>
+             </ul>
+             </nav>
+              <p>© 2018 Adoptadog, LLC | Seattle, WA</p><br><br>
+            </div>
+        </footer>
+  </body>
+</html>
