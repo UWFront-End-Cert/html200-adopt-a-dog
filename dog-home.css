@@ -143,6 +143,17 @@ header{
 }
 
 
+.menu-container{
+    width:150em;
+    height: 5em;
+}
+
+.menu-box1{
+    width:100%;
+    height:auto;
+
+}
+
 
 #menu-bar{
     color:rgb(32, 64, 96);
