@@ -19,6 +19,7 @@ h5{
 
 header{
     width:170em;
+    height: 21em;
 }
 
 .header-container{
@@ -97,11 +98,15 @@ header{
 }
 
 #top-image{
-    width:100%;
+    width: 100%;
     height:21.8em;
-    z-index: 1;
-
+    background-color: purple;
+    background: linear-gradient(to left, purple, white);
+    background-image: url(./images/header-image.jpg);
+    background-size:cover;
+    background-position: center center;
 }
+
 
 #whitedogoutline{
     width:100%;
@@ -406,33 +411,57 @@ margin-left:19em;
     padding-top: 0.625em;
     padding-bottom: 0.625em;
 }
+
 footer{
+   
+    width: 170em;
+    height: 25em;
     background-color: rgb(32, 64, 96);
-    margin-top: 0.625em;
 }
 
 .footer-container{
-    height:18.75em;
     width:100%;
-    
+    height:auto; 
+    display: block;
 }
+
 .footer-box1{
     height:9.3em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
 }
+
 .footer-box2{
-   height:9.3em;
-   margin-left:50em;
+    height:2em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
+ }
+
+.footer-box3{
+   height:2em;
+   width: 100%;
+   margin:1em 1em 1em 50em;
 }
+.footer-box4{
+    height:2em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
+ }
+
+ .footer-box5{
+    height:2em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
+ }
 
 #footer-dog-logo{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    height:50%;
     width: 15%;
     padding: 3.1em;
 }
 .white {
-    height: 6.25em;
+    height: 2em;
     color: white;
     background-color: rgb(32, 64, 96);
 }
