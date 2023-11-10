@@ -168,8 +168,8 @@ header{
 #all-dogs-big-text{
     
     color:rgb(32, 64, 96);
-    margin-left: 240px;
-    padding-left: 100px;
+    margin-left: 15em;
+    padding-left:6.25em;
 }
 
 body {
@@ -183,11 +183,12 @@ body {
 .green-button-adopt{
 color:white;
 background-color:limegreen;
-padding-left: 50px;
-padding-right: 50px;
-padding-top: 10px;
-padding-bottom: 10px;
+padding-left: 3.1em;
+padding-right: 3.1em;
+padding-top: 0.625em;
+padding-bottom: 0.625em;
 }
+
 .container {
 height: auto;
 background-color: white;
@@ -203,172 +204,196 @@ margin-bottom:.5em;
 }
 
 .dog-box1{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
 }
 
 .dog-box2{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
 }
 
 .dog-box3{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
 }
 
 .dog-box4{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
 }
 
 .dog-box5{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
 }
 
 
 .dog-box6{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
 }
 
 
 
 .dog-box7{
-height: 400px;
-width: 250px;
-border: 1px solid slategray;
-background: white;
-margin-left: 20px;
-margin-right: 20px;
-margin-top: 10px;
-margin-bottom: 20px;
-} 
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
+    background: white;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+}
 
 .dog-box8{
-height: 400px;
-width: 250px;
-border: 1px solid slategray;
-background: white;
-margin-left: 20px;
-margin-right: 20px;
-margin-top: 10px;
-margin-bottom: 20px;
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
+    background: white;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
 }
 
 .dog-box9{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    }
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+}
 
 .dog-box10{
-height: 400px;
-width: 250px;
-border: 1px solid slategray;
-background: white;
-margin-left: 20px;
-margin-right: 20px;
-margin-top: 10px;
-margin-bottom: 20px;
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
+    background: white;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
 }
 
 .dog-box11{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    }
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+}
 
 .dog-box12{
-    height: 400px;
-    width: 250px;
-    border: 1px solid slategray;
+    height: 25em;
+    width: 15.6em;
+    border: 0.0625em solid slategray;
     background: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    }
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+}
 
 .dog-headshot {
 width: 100%;
 height:40%;
 }
 
+
 footer{
+   
+    width: 170em;
+    height: 25em;
     background-color: rgb(32, 64, 96);
-    margin-top: 10px;
 }
 
 .footer-container{
-    height:300px;
     width:100%;
-    
+    height:auto; 
+    display: block;
 }
+
 .footer-box1{
-    height:150px;
+    height:9.3em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
 }
+
 .footer-box2{
-   height:150px;
-   margin-left:800px;
+    height:2em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
+ }
+
+.footer-box3{
+   height:2em;
+   width: 100%;
+   margin:1em 1em 1em 50em;
 }
+.footer-box4{
+    height:2em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
+ }
+
+ .footer-box5{
+    height:2em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
+ }
 
 #footer-dog-logo{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    height:50%;
     width: 15%;
-    padding: 50px;
+    padding: 3.1em;
 }
 .white {
-    height: 100px;
+    height: 2em;
     color: white;
     background-color: rgb(32, 64, 96);
 }
