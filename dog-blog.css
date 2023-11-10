@@ -170,10 +170,10 @@ body {
     display:block;
     Margin-block-start: 1em;
     Margin-block-end: 1em;
-    Margin-inline-start: 0px;
-    Margin-inline-end: 0px;
+    Margin-inline-start: 0em;
+    Margin-inline-end: 0em;
     font-size:100%;
-    width: 700px;
+    width: 43.75em;
     
     }
     
@@ -203,12 +203,12 @@ div {
 }
 
 .dog-blog-box1{
-    height: 350px;
-    width: 20%;
+    height: 22em;
+    width: auto;
     background: white;
     margin-left: 5em;
     margin-top:1em;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
     
 }
     
@@ -218,25 +218,25 @@ div {
 }
 
 .dog-blog-box2{
-    height: 350px;
-    width: 1200px;
+    height: 22em;
+    width: 75em;
     background: white;
     margin-left: 1em;
     margin-right: 10em;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
     
     }
 
         
 
 .dog-blog-box3{
-    height: 350px;
-    width: 20%;
+    height: auto;
+    width: 22em;
     background: white;
     margin-left: 5em;
     margin-top:1em;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
     
 }
     
@@ -246,8 +246,8 @@ div {
 }
 
 .dog-blog-box4{
-    height: 350px;
-    width: 1200px;
+    height: 22em;
+    width: 75em;
     background: white;
     margin-left: 1em;
     margin-right: 10em;
@@ -256,8 +256,8 @@ div {
     
     }
 .dog-blog-box5{
-    height: 350px;
-    width: 20%;
+    height: auto;
+    width: 22em;
     background: white;
     margin-left: 5em;
     margin-top:1em;
@@ -271,8 +271,8 @@ div {
 }
 
 .dog-blog-box6{
-    height: 350px;
-    width: 1200px;
+    height: 22em;
+    width: 75em;
     background: white;
     margin-left: 1em;
     margin-right: 10em;
