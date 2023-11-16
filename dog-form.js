@@ -13,7 +13,14 @@ form.addEventListener('submit' , function(event) {
 });
 
 
+let infoAdoption = ['Name' ,'Email' ,'AddressHome','City', 'State' ,'ZipcodeHome' , 'FirstTimeNo', 'FirstTimeYes'] ;
+console.log(infoAdoption);
 
+let Name = document.getElementsByName('Name');
+console.log(Name);
+
+let adopterEmail = document.getElementById('Email');
+console.log(adopterEmail);
 
 
 

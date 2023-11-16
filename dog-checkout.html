@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="dog-checkout.css"> 
     </head>
     <body>
-      <script src="./dog-form.js"></script>
+     
       <header>
 
         <div class="header-container">
@@ -61,23 +61,23 @@
           
           <h2>Name</h2>
           <label>
-            <input type="text" name="Name">
+            <input id="Name" type="text" name="Name">
         </label>
         <h2>Email Address</h2>
         <label>
-            <input type="email" name="applicantEmail">
+            <input id="Email" type="email" name="applicantEmail">
         </label>
         <h2>Street Address</h2>
         <label>
-            <input type="text" name="Address">
+            <input id="AddressHome" type="text" name="Address">
         </label>
         <h2>City</h2>
         <label>
-            <input type="text" name="City">
+            <input id="City" type="text" name="City">
         </label>
         <h2>State</h2>
         <label>
-            <select name="state">
+            <select id="State" name="state">
                 <option value="">Please select</option>
                 <option value="Washington state">WA</option>
                 <option value="Oregon State">OR</option>
@@ -86,16 +86,16 @@
         </label>
         <h2>Zipcode</h2>
         <label>
-            <input type="text" name="Zipcode">
+            <input id="ZipcodeHome" type="text" name="Zipcode">
         </label>
           <h2>First Time Adopter?</h2>
           <fieldset>
             <label>
-              <input type="radio" name="special" value="yes">
+              <input id="FirstTimeNo" type="radio" name="special" value="yes">
               Yes
             </label>
             <label>
-              <input type="radio" name="special" value="no">
+              <input id="FirstTimeYes" type="radio" name="special" value="no">
               No
             </label>
           </fieldset>
@@ -140,8 +140,9 @@
         </div>
 
         <div class="checkout-container">
+          <script src="./dog-form.js"></script>
           <div class="checkout-box">
-            <a id="bottom-checkout" href="dog-checkout.html">Checkout</a>
+            <a id="bottom-checkout" href="dog-checkout.html">Submit</a>
             </div>
         </div>
 
