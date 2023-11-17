@@ -1,6 +1,6 @@
 
 const img = document.createElement('img');
-img.src = 'images./blog-1.jpg';
+img.src = 'images/blog-1.jpg';
 document.body.appendChild(img);
   
 const title1 = document.createElement('h2');
@@ -19,7 +19,7 @@ p2.textContent = 'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut l
 document.body.appendChild(p2);
 
 const img2 = document.createElement('img');
-img2.src = 'images./blog-2.jpg';
+img2.src = 'images/blog-2.jpg';
 document.body.appendChild(img2);
 
 const title2 = document.createElement('h2');
@@ -37,7 +37,7 @@ p4.textContent = 'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut l
 document.body.appendChild(p4);
 
 const img3 = document.createElement('img');
-img3.src = 'images./blog-3.jpg';
+img3.src = 'images/blog-3.jpg';
 document.body.appendChild(img3);
 
 const title3 = document.createElement('h2');
