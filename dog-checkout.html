@@ -61,37 +61,37 @@
           
           <h2>Name</h2>
           <label>
-            <input id="Name" type="text" name="Name">
+            <input id="Name" type="text" name="Name" value="Bob">
         </label>
         <h2>Email Address</h2>
         <label>
-            <input id="Email" type="email" name="applicantEmail">
+            <input id="Email" type="email" name="applicantEmail" value="bob@uw.edu">
         </label>
         <h2>Street Address</h2>
         <label>
-            <input id="AddressHome" type="text" name="Address">
+            <input id="AddressHome" type="text" name="Address" value="1234 St West">
         </label>
         <h2>City</h2>
         <label>
-            <input id="City" type="text" name="City">
+            <input id="City" type="text" name="City" value="Seattle">
         </label>
         <h2>State</h2>
         <label>
             <select id="State" name="state">
                 <option value="">Please select</option>
-                <option value="Washington state">WA</option>
+                <option value="Washington state" selected >WA</option>
                 <option value="Oregon State">OR</option>
                 <option value="California State">CA</option>
             </select>
         </label>
         <h2>Zipcode</h2>
         <label>
-            <input id="ZipcodeHome" type="text" name="Zipcode">
+            <input id="ZipcodeHome" type="text" name="Zipcode" value="98333">
         </label>
           <h2>First Time Adopter?</h2>
           <fieldset>
             <label>
-              <input id="FirstTimeNo" type="radio" name="special" value="yes">
+              <input id="FirstTimeNo" type="radio" name="special" value="yes" checked>
               Yes
             </label>
             <label>
@@ -102,9 +102,9 @@
         
           <h2>Pickup Location</h2>
           <label>
-            <select name="locations">
+            <select id="Pickup" name="locations">
               <option value="">Please select</option>
-              <option value="downtown">1234 Address</option>
+              <option value="downtown" selected >1234 Address</option>
               <option value="upper east side">22222 Address</option>
               <option value="south hill">10101 Address</option>
             </select>
