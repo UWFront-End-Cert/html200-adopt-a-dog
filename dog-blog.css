@@ -187,15 +187,15 @@ div {
     display: block;
 }
 
-.dog-blog-container{
+#blogs-container{
     height: auto;
     width:100%;
     background-color: white;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content:left;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 1em;
     margin-left: 5em;
     margin-bottom: 1em;
