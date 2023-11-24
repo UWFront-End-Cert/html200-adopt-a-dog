@@ -265,7 +265,7 @@ div {
   margin-bottom: 1.25em;
 }
     
-.dog-box1{
+.dog-box{
   height: 25em;
   width: 15.5em;
   border: 0.05em solid slategray;
@@ -277,66 +277,6 @@ div {
   
 }
 
-.dog-box2{
-    height: 25em;
-    width: 15.5em;
-    border: 0.05em solid slategray;
-    background: white;
-    margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  
-    }
-
-.dog-box3{
-    height: 25em;
-    width: 15.5em;
-    border: 0.05em solid slategray;
-    background: white;
-    margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  
-}
-
-.dog-box4{
-    height: 25em;
-    width: 15.5em;
-    border: 0.05em solid slategray;
-    background: white;
-    margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  
-    }
-
-.dog-box5{
-    height: 25em;
-    width: 15.5em;
-    border: 0.05em solid slategray;
-    background: white;
-    margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  
-    }
-
-
-.dog-box6{
-    height: 25em;
-    width: 15.5em;
-    border: 0.05em solid slategray;
-    background: white;
-    margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  
-    }
 
 .dog-headshot {
     width: 100%;
