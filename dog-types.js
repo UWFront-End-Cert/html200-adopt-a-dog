@@ -31,9 +31,14 @@ $(function() {
 
 $(function() {
   $('.green-button-adopt').click(function(){
-       $('.green-button-adopt').hide()
+       $('.green-button-adopt').hide().delay(500).show('slow')
        console.log("an adopt button was clicked!")
+       alert('Adoption Fee is $123.45')
      })
-  })
+  });
+  
+  
+
+  
   
 

@@ -54,6 +54,29 @@ console.log(pickupLocation);
 
 
 
+$(function() {   
+  
+    console.log($('#Name'))
+    console.log($('#Email') )
+    console.log($('#AddressHome'))
+    console.log($('#City'))
+    console.log($('#State'))
+    console.log($('#ZipcodeHome'))
+    console.log($('input[type=radio]'))
+    console.log($('#Pickup'))
+})
+  
+
+$( ":input" )
+
+
+
+
+
+
+
+
+
 
 
 
