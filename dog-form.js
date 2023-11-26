@@ -56,18 +56,18 @@ console.log(pickupLocation);
 
 $(function() {   
   
-    console.log($('#Name'))
-    console.log($('#Email') )
-    console.log($('#AddressHome'))
-    console.log($('#City'))
-    console.log($('#State'))
-    console.log($('#ZipcodeHome'))
-    console.log($('input[type=radio]'))
-    console.log($('#Pickup'))
+    console.log($('#Name').val())
+    console.log($('#Email').val())
+    console.log($('#AddressHome').val())
+    console.log($('#City').val())
+    console.log($('#State').val())
+    console.log($('#ZipcodeHome').val())
+    console.log($('input[type=radio]').is())
+    console.log($('#Pickup').is())
 })
   
 
-$( ":input" )
+
 
 
 
