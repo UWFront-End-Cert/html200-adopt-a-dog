@@ -30,22 +30,20 @@ $(function() {
 });
 
 
-let CartTotal=0;
+let CartTotal = 0;
 $(function() {
   $('.green-button-adopt').click(function(){
        $('.green-button-adopt').hide().delay(500).show('slow')
        console.log("an adopt button was clicked!")
       
         CartTotal = CartTotal + Number(123.45);
-        alert('Adoption Fee is $123.45')
+        alert('This is the adoption fee total owed $' + CartTotal )
+
 
        
 
+
      })
   });
-  
-  
 
-  
-  
-
+ 
