@@ -104,7 +104,7 @@ button {
 .grid-container {
     display:grid;
     max-width: 100%;
-    row-gap: 1re;
+    row-gap: 1rem;
     column-gap: 1rem;
 }
 
