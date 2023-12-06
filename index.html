@@ -2,18 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>ADOPTADOG</title>
+        <title>Home</title>
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
     </head>
     <body>
         <header>
             <div>
-            <img src="images/adoptadog-logo.svg" alt="White vectorized silhouette of a dog">
+            <img src="images/adoptadog-logo.svg" alt="White vectorized silhouette of a dog" id="company-logo">
             <h2>Seattle's premiere dog adoption agency</h2>
             </div>
             <div>
-                <img src="images/cart-icon.svg" alt="White icon of a shopping cart">
-                <p>$1234.56</p>
+                <div id = "in-cart">
+                <img src="images/cart-icon.svg" alt="White icon of a shopping cart" id="cart-icon">
+                <p id = "totalDisplay">Total: $0</p>
+            </div>
                 <a href="checkout.html">
                     <button type="button">Checkout</button>
                 </a>
@@ -28,14 +30,15 @@
                     <a href="dogs.html">Dogs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a>
                 </li>
                 <li>
-                    <a href="blog.html">Blog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a>
+                    <a href="blog.html">Blog</a>
                 </li>
             </ul>
         </nav>
-        <section>
+        <section class = "intro">
             <figure>
                 <img src="images/home-intro.jpg" alt="Man in a red T-shirt hugging a golden retriever">
             </figure>
+            <div class = "copy">
             <h2>
                 Adopt A Dog
             </h2>
@@ -49,22 +52,22 @@
                 volorent fugia nonsedi gendand itatquos as magnimpor aut
                 molor autatia ad est officimus accae et omnia cus, od qui ate
             </p>
+        </div>
         </section>
-        <section>
-            <div>
-                <img src="images/murphy-card.jpg" alt="Brown elderly dog">
+        <section class = "grid-container">
+            <div class = "item1">
+                <img src="images/murphy-card.jpg" alt="Brown elderly dog" onclick="showDogInfo('Brown elderly dog', 'Murphy', 123.45)">
                 <h3>Murphy</h3>
                 <p>
                     Cost to Adopt: $123.45
                 </p>
                 <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
                     sunt arum rendae pla endis re ea erum, qui doluptae
-
                 </p>
-                <button type="button">Adopt</button>
+                <button type="button" onclick= "addTotal()">Adopt</button>
             </div>
-            <div>
-                <img src="images/poppy-card.jpg" alt="Elderly maltese">
+            <div class = "item2">
+                <img src="images/poppy-card.jpg" alt="Elderly maltese" onclick="showDogInfo('Elderly maltese', 'Poppy', 123.45)">
                 <h3>Poppy</h3>
                 <p>
                     Cost to Adopt: $123.45
@@ -73,10 +76,10 @@
                     sunt arum rendae pla endis re ea erum, qui doluptae
 
                 </p>
-                <button type="button">Adopt</button>
+                <button type="button" onclick= "addTotal()">Adopt</button>
             </div>
-            <div>
-                <img src="images/jack-card.jpg" alt="Young beagle">
+            <div class = "item3">
+                <img src="images/jack-card.jpg" alt="Young beagle" onclick="showDogInfo('Young Beagle', 'Jack', 123.45)">
                 <h3>Jack</h3>
                 <p>
                     Cost to Adopt: $123.45
@@ -85,10 +88,10 @@
                     sunt arum rendae pla endis re ea erum, qui doluptae
 
                 </p>
-                <button type="button">Adopt</button>
+                <button type="button" onclick= "addTotal()">Adopt</button>
             </div>
-            <div>
-                <img src="images/duffy-card.jpg" alt="Sweet pitbull">
+            <div class = "item4">
+                <img src="images/duffy-card.jpg" alt="Sweet pitbull" onclick="showDogInfo('Sweet pitbull', 'Duffy', 123.45)">
                 <h3>Duffy</h3>
                 <p>
                     Cost to Adopt: $123.45
@@ -97,10 +100,10 @@
                     sunt arum rendae pla endis re ea erum, qui doluptae
 
                 </p>
-                <button type="button">Adopt</button>
+                <button type="button" onclick= "addTotal()">Adopt</button>
             </div>
-            <div>
-                <img src="images/lucas-card.jpg" alt="Black German shepherd">
+            <div class = "item5">
+                <img src="images/lucas-card.jpg" alt="Black German shepherd" onclick="showDogInfo('Black German shepherd', 'Lucas', 123.45)">
                 <h3>Lucas</h3>
                 <p>
                     Cost to Adopt: $123.45
@@ -109,10 +112,10 @@
                     sunt arum rendae pla endis re ea erum, qui doluptae
 
                 </p>
-                <button type="button">Adopt</button>
+                <button type="button" onclick= "addTotal()">Adopt</button>
             </div>
-            <div>
-                <img src="images/jake-card.jpg" alt="Yellow lab">
+            <div class = "item6">
+                <img src="images/jake-card.jpg" alt="Yellow lab" onclick="showDogInfo('Yellow lab', 'Jake', 123.45)">
                 <h3>Jake</h3>
                 <p>
                     Cost to Adopt: $123.45
@@ -121,10 +124,10 @@
                     sunt arum rendae pla endis re ea erum, qui doluptae
 
                 </p>
-                <button type="button">Adopt</button>
+                <button type="button" onclick= "addTotal()">Adopt</button>
             </div>
-            <div>
-                <img src="images/angus-card.jpg" alt="Cute boxer">
+            <div class = "item7">
+                <img src="images/angus-card.jpg" alt="Cute boxer" onclick="showDogInfo('Cute boxer', 'Angus', 123.45)">
                 <h3>Angus</h3>
                 <p>
                     Cost to Adopt: $123.45
@@ -133,10 +136,10 @@
                     sunt arum rendae pla endis re ea erum, qui doluptae
 
                 </p>
-                <button type="button">Adopt</button>
+                <button type="button" onclick= "addTotal()">Adopt</button>
             </div>
-            <div>
-                <img src="images/violet-card.jpg" alt="Chocolate lab puppy">
+            <div class = "item8">
+                <img src="images/violet-card.jpg" alt="Chocolate lab puppy" onclick="showDogInfo('Chocolate lab puppy', 'Violet', 123.45)">
                 <h3>Violet</h3>
                 <p>
                     Cost to Adopt: $123.45
@@ -145,14 +148,14 @@
                     sunt arum rendae pla endis re ea erum, qui doluptae
 
                 </p>
-                <button type="button">Adopt</button>
+                <button type="button" onclick= "addTotal()">Adopt</button>
             </div>
         </section>
         <section>
             <button type="button">See More Dogs</button>
         </section>
         <footer>
-            <img src="images/adoptadog-logo.svg" alt="White vectorized silhouette of a dog">
+            <img src="images/adoptadog-logo.svg" alt="White vectorized silhouette of a dog" id="company-logo">
             <p>
                 Aborpos nisto inci tet aut que volupti beruptiberro to ex
                 esseque invenienihil imaximu scideru ptistiusam consequunt
@@ -170,5 +173,6 @@
                 © 2018 Adoptadog, LLC | Seattle, WA
             </p>
         </footer>
+        <script src = "demo.js" charset="utf-8"></script>
     </body>
 </html>
