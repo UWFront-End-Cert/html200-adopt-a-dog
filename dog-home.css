@@ -91,7 +91,7 @@ header{
     bottom:22.75em;
     left:2em;
     right:1.25em;
-    z-index:12;
+    z-index:2;
     color:lime;
     margin-left:5em;
     margin-right:20em;
@@ -246,6 +246,8 @@ div {
     padding-right: 3.1em;
     padding-top: 0.625em;
     padding-bottom: 0.625em;
+    margin-left: 4.5em;
+    margin-right:4.5em;
 }
 
 
