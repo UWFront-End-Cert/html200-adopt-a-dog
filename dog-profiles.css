@@ -4,15 +4,19 @@ h1 {
 h2 {
     color:rgb(32, 64, 96);
    
-
 }
-
-
 
 h3 {
     color:rgb(32, 64, 96);
 
 }
+
+.DogName{
+    color:rgb(32, 64, 96);
+    margin: 0.5em 0.5em 0.5em 0.5em;
+
+}
+
 h4{
     font-family: system-ui, sans-serif;
     font-size:81.25%;
