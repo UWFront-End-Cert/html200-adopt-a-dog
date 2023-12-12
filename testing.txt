@@ -1,0 +1,78 @@
+- User Profile
+
+Name: Sarah Brockovich
+Age: 33
+Profession: Marine Biologist and Welder
+
+Technology Habits: Frequently uses a variety of software. Owner of a high end state of the art laptop but travels often and prefers using a mobile device whenever possible. 
+Technology savvy and favors simple mobile websites. 
+
+Device Preferences: Due to a busy work schedule and limited patience for all time wasting pop up advertising technology or tracking cookies. Sarah prefers to avoid using a computer outside of work hours. Leisure time is generally spent away from computers but Sarah is adept at locating digital information. Her laptop is a PC with multiple browsers and her mobile device, required for work, is an Iphone.
+
+Sarah prefers to use the Firefox browser but will occasionally use Google Chrome.
+
+
+Additional Background Information: Sarah loves dogs and wants to adopt a large breed dog with a friendly temperament. She owns a sizable home with a fenced backyard that is dog friendly but Sarah hopes to bring the dog along with her when traveling.
+
+
+- Browser Information
+
+Browser: Google Chrome
+Browser: Firefox
+Browser: Microsoft Edge
+
+All webpages display as intended on these browsers.
+Content is not cut off or distored.
+
+Device: Laptop PC
+
+
+The flexboxes in my header need some adjustments.
+My flexbox named header-box6 which holds my text saying Seattle’s premiere dog adoption agency currently has a z index value of 12
+
+I have changed the z index value to 2
+I do not want to have my flex-box6 layered in front of my flex-box4 because I want web users to easily be able to click on my flex-box4 since flex-box4 is designed to look like a checkout button.
+
+Users need to be able to click on the checkout button so flex-box6 must be layered behind flex-box4 so that flex-box6 is not in the way of users who need to click on the checkout button.
+
+
+The green checkout button in the top right corner is now going to allow me to hover over it and I can see a little hand icon instead of an arrow.
+The hand icon will let me click on the link. The arrow would not have allowed me to click on the link while the flex-box6 was in front and in the way of my ability to click on the checkout url link.
+
+
+I can change the margins on all items that are class=“green-button-adopt” and this will allow me to center the green dog adoption buttons
+Margin on left and on right should be about 4.5em 
+
+The margins for the dog-home.css styling will be slightly different than the margins I will use for the dog-profiles css styling 
+
+
+
+- Responsive Web Testing
+
+Images remain aligned properly, text is readable, padding and margins are appropriately sized to help avoid overlapping content.
+
+The use of media queries allows for use on multiple devices.
+Media queries create a few different breakpoints. 
+
+Images are not distorted and flexboxes align properly when screen size is adjusted to a smaller tablet or mobile size.
+
+When webpages are resized, the click area such as the buttons and url links remain properly usable and sized. Areas are large enough to easily click on.
+
+
+Blog webpage may need some improvement to place more text using jQuery.
+
+Alert does not appear on the checkout webpage when the submit button is clicked.
+
+-Mobile Device Website Testing
+
+Browser: Safari
+Device: Apple iPhone 6s Plus
+
+Website does need the user to pinch and zoom, then the webpage resizes to mobile. 
+The flexboxes align properly in 1 vertical column to display the dog tiles on the home index.html webpage.
+The flexboxes align properly in 1 vertical column to display the dog tiles on the dogs.html webpage which shows all the profile images of the dogs.
+
+Web users can click on all buttons. Each dog tile has an adopt button that displays an alert on the index.html webpage and the dogs.html webpage. Cart total is displayed and the running total is calculated as dog adoption buttons are clicked on by a website user.
+
+When scrolling to the far right the header and footer do not extend all the way to the right edge of the webpage.
+

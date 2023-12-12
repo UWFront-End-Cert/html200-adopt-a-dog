@@ -1,0 +1,429 @@
+h1 {
+    color:lime;
+  }
+h2 {
+    color:rgb(32, 64, 96);
+
+}
+h3 {
+    color:rgb(32, 64, 96);
+
+}
+
+.DogName{
+    color:rgb(32, 64, 96);
+    margin: 0.5em 0.5em 0.5em 0.5em;
+
+}
+
+h4{
+    font-family: system-ui, sans-serif;
+    font-size:81.25%;
+}
+h5{
+    font-family: "Times New Roman", Times, serif;
+}
+
+header{
+    width:170em;
+    height: 21em;
+}
+
+.header-container{
+    height: 21em;
+    width:150em;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    margin:0;
+    padding: 0;
+
+}
+
+.header-box1{
+    height: 21em;
+    width: 170em;
+    background: white;
+    margin-left: 1.25em;
+    margin-bottom: .6em;
+    z-index:1;
+}
+
+.header-box2{
+    
+    height:2.5em;
+    width:2.5em;
+    position:relative;
+    bottom:18.75em;
+    left:84em;
+    right:6.25em;
+    z-index:9;
+    
+}
+.header-box3{
+    height:3.1em;
+    width:3.1em;
+    position:relative;
+    bottom:19.3em;
+    left:87.5em;
+    right:6.25em;
+    z-index:10;
+}
+
+.header-box4{
+    height:3.1em;
+    width:6.25em;
+    position:relative;
+    bottom:12.5em;
+    left:81.2em;
+    right:12.5em;
+    z-index:7;
+}
+
+.header-box5{
+    height:12.5em;
+    width:31em;
+    position:relative;
+    bottom:18.75em;
+    left:0.3em;
+    z-index:9;
+}
+.header-box6{
+    height:6.25em;
+    width:83.75em;
+    position:relative;
+    bottom:22.75em;
+    left:2em;
+    right:1.25em;
+    z-index:2;
+    color:lime;
+    margin-left:5em;
+    margin-right:20em;
+}
+
+#top-image{
+    width: 100%;
+    height:21.8em;
+    background-color: purple;
+    background: linear-gradient(to left, purple, white);
+    background-image: url(./images/header-image.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+
+#whitedogoutline{
+    width:100%;
+   
+    
+}
+
+#neon-top-text{
+    color:lime;
+    z-index: 6;
+
+}
+#whitecart{
+    width:100%;
+    height:100%;
+   
+    float:right;
+   
+}
+
+#cart-total{
+    color:white;
+    float:right;
+    padding:1.6em;
+    
+}
+#top-corner-checkout{
+    color:white;
+    background-color:limegreen;
+    padding:0.6em;
+    width:100%;
+    float:right;
+    
+}
+
+
+.menu-container{
+    width:150em;
+    height: 5em;
+}
+
+.menu-box1{
+    width:100%;
+    height:auto;
+
+}
+
+
+#menu-bar{
+    color:rgb(32, 64, 96);
+    background-color:lightgrey;
+    width:100%;
+    padding:1.8em;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  p {
+    display:block;
+    Margin-block-start: 1em;
+    Margin-block-end: 1em;
+    Margin-inline-start: 0em;
+    Margin-inline-end: 0em;
+    font-size:100%;
+    width: 43.75em;
+    
+    }
+    
+
+aside {
+    float: right;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.dog-blog-container-aside {
+    height:6.5em;
+    width:25em;
+}
+
+
+  
+
+.dog-hug-container{
+    height: 35em;
+    width:70em;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-bottom: 3em;
+
+}
+
+.dog-hug-box1{
+height: 21em;
+width: 51em;
+background: white;
+margin-left: 18em;
+margin-right: 0.6em;
+margin-top:0;
+margin-bottom: 2em;
+
+}
+
+#dog-hug-photo{
+    width:50em;
+    height:20em;
+}
+
+.dog-hug-box2{
+    height: 12em;
+    width: 35em;
+    background: white;
+    margin-left: 18em;
+    margin-right: 18em;
+    margin-top: .5em;
+    margin-bottom: 2em;
+    
+    }
+
+        
+div {
+        display: block;
+        }
+
+.green-button-adopt{
+    color:white;
+    background-color:limegreen;
+    padding-left: 3.1em;
+    padding-right: 3.1em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    margin-left: 4.5em;
+    margin-right:4.5em;
+}
+
+
+
+.container {
+    height: 55em;
+    width:60em;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    margin-left: 18em;
+  margin-right: 1.25em;
+  margin-top: 0.6em;
+  margin-bottom: 1.25em;
+}
+    
+.dog-box{
+  height: 25em;
+  width: 15.5em;
+  border: 0.05em solid slategray;
+  background: white;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  
+}
+
+
+.dog-headshot {
+    width: 100%;
+    height:auto;
+}
+@media screen and (max-width: 767px) {
+    .container {
+      height:180em; 
+      width:80em; 
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-left:2em
+    }
+    aside {
+        display: none;
+      }
+    .dog-box1 {
+        width:20.5em;
+      }
+    .dog-box2 {
+        width:20.5em;
+      }
+    .dog-box3 {
+        width:20.5em;
+      }
+    .dog-box4 {
+        width:20.5em;
+      }
+    .dog-box5 {
+        width:20.5em;
+      }
+    .dog-box6 {
+        width:20.5em;
+      }
+  }
+
+  @media screen and (min-width: 768px) and (max-width:1023px) {
+    .container {
+        height:100em; 
+      width:50em; 
+      flex-direction:column;
+      flex-wrap: wrap;
+    }
+    aside{
+        float:right;
+        width:10em;
+    }
+    .dog-blog-container-aside{
+        margin-left:40em;
+        margin-right:12em;
+    }
+  }
+
+
+.more-dogs-container{
+    height: 5em;
+    width:52em;
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:right;
+    align-items: center;
+    margin-left: 18em;
+    margin-top: 1em;
+}
+
+.more-dog-box{
+height: 4em;
+width: 100%;
+background: white;
+margin-top:1em;
+margin-left:19em;
+}
+
+
+#more-dogs{
+    color:rgb(32, 64, 96);
+    background-color:lightgrey;
+    margin: auto;
+    padding-left: 3.1em;
+    padding-right:3.1em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+}
+
+footer{
+    width:170em;
+    height:25em;
+    background-color: rgb(32, 64, 96);
+}
+
+.footer-container{
+    width:100%;
+    height:auto; 
+    display: block;
+}
+
+.footer-box1{
+    height:9.3em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
+}
+
+.footer-box2{
+    height:2em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
+ }
+
+.footer-box3{
+   height:2em;
+   width: 100%;
+   margin:1em 1em 1em 50em;
+}
+.footer-box4{
+    height:2em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
+ }
+
+ .footer-box5{
+    height:2em;
+    width: 100%;
+    margin:1em 1em 1em 50em;
+ }
+
+#footer-dog-logo{
+    display: block;
+    height:50%;
+    width: 15%;
+    padding: 3.1em;
+}
+.white {
+    height: 2em;
+    color: white;
+    background-color: rgb(32, 64, 96);
+}
+
+
+
