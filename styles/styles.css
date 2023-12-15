@@ -25,11 +25,17 @@ h3 {
 }
 
 header {
-    background-color: #093C60;
+
+    background: linear-gradient(#093C60, #2f4514);
+    background-image:url(../images/header-image.jpg);
+    background-size: cover;
     display:flex;
     justify-content: space-between;
     padding: 5% 10% 5% 10%;
-    color: white;
+}
+
+header p {
+    color:white;
 }
 
 #in-cart {
@@ -114,7 +120,7 @@ button {
 }
 
 .grid-container img {
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
