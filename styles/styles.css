@@ -131,6 +131,8 @@ section {
 aside {
     padding-top: 5%;
     padding-right: 10%;
+    max-width: 20%;
+    min-width: 15%;
 }
 
 aside a {
@@ -139,6 +141,11 @@ aside a {
 
 aside div {
     padding-bottom: 4rem;
+}
+
+aside img {
+    height: auto;
+    width: 100%;
 }
 
 #see-more {
@@ -231,6 +238,7 @@ article {
 
 article img {
     object-fit: cover;
+    max-height: 300px;
 }
 
 article div {
