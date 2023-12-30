@@ -39,39 +39,43 @@
             <h2>
                 Checkout
             </h2>
-            <form method="GET">
+            <form id="dogForm">
                 <label>Name
-                    <input type="text" name="applicantName">
+                    <input type="text" name="applicantName" id="applicantName">
                 </label>
                 <label>Email Address
-                    <input type="email" name="emailAddress">
+                    <input type="email" name="emailAddress" id="emailAddress">
                 </label>
                 <label>Street Address
-                    <input type="text" name="streetAddress">
+                    <input type="text" name="streetAddress" id="streetAddress">
                 </label>
                 <label>City
-                    <input type="text" name="city">
+                    <input type="text" name="city" id="city">
                 </label>
                 <label>State
-                    <select name="State">
+                    <select name="State" id="state">
+                        <option value="Washington">Washington</option>
+                         <option value="Oregon">Oregon</option>
                       </select>
                 </label>
                 <label>Zipcode
-                    <input type="text" name="zipcode">
+                    <input type="text" name="zipcode" id="zipcode">
                 </label>
                 <h3>First time adopter?</h3>
-                    <input type="radio" id="adopt1" name="firstAdopter" value="yes">
+                    <input type="radio" id="adopt1" name="adopter" value="yes">
                     <label for="adopt1">
                         Yes
                     </label>
-                    <input type="radio" id="adopt2" name="firstAdopter" value="no">
+                    <input type="radio" id="adopt2" name="adopter" value="no">
                     <label for="adopt2">
                         No
                     </label>
                     <br>
                     <br>
                 <label>Pickup Location
-                    <select name="Area">
+                    <select name="Area" id="area">
+                        <option value="Campus">Campus</option>
+                        <option value="Drop-off">Drop-off</option>
                       </select>
                 </label>
                 <label> Dogs adopted </label>
@@ -91,7 +95,7 @@
                 </div>
                 </div>
                 </div>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" onclick = "formSubmitted()">
             </form>
         </section>
         <footer>
