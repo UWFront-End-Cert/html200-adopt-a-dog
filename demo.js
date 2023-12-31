@@ -5,53 +5,61 @@ function showDogInfo(breed, name, adoptionFee) {
 let count = 1;
 
 function addTotal(adoptionFee) {
-
     result = 123.45 * count++;
 
-    const totalDisplay = document.getElementById('totalDisplay');
-    totalDisplay.textContent = `Total: $${result}`;
+    // Use jQuery to select the element with id 'totalDisplay'
+    const totalDisplay = $('#totalDisplay');
 
-    alert('Total: $'+result);
+    // Use text() method to set the content of the selected element
+    totalDisplay.text(`Total: $${result}`);
+
+    // Use alert() with the result
+    alert(`Total: $${result}`);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
 
-    const form = document.getElementById("dogForm");
+var divsInSection = $('.grid-container').find('div');
+divsInSection.mouseenter(function(){
+    $(this).fadeTo('fast', .75)
 
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
+}).mouseleave(function(){
+    $(this).fadeTo('fast', 1)
 
-        const name = document.getElementById("applicantName").value;
-        const email = document.getElementById("emailAddress").value;
-        const address = document.getElementById("streetAddress").value;
-        const city = document.getElementById("city").value;
-        const state = document.getElementById("state").value;
-        const zipcode = document.getElementById("zipcode").value;
-        const area = document.getElementById("area").value;
-        
+})
+
+$(document).ready(function(){
+    $('#formSubmit').on("click", function(){
+        const name = $('#applicantName').val();
+        const email = $("#emailAddress").val();
+        const address = $('#streetAddress').val();
+        const city = $('#city').val();
+        const state = $('#state').val();
+        const zipcode = $('#zipcode').val();
+        const area = $('#area').val();
 
         console.log("Name:", name);
         console.log("Email:", email);
         console.log("Address:", address);
         console.log("City:", city);
         console.log("State:", state);
+        console.log("Zipcode:", zipcode);
         console.log("Pick up location:", area);
 
         // Get the selected value from the radio buttons
-        const adopterOptions = document.getElementsByName("adopter");
+        const adopterOptions = $('[name="adopter"]');
         let selectedAdopter;
         for (const option of adopterOptions) {
             if (option.checked) {
                 selectedAdopter = option.value;
             }
         }
-
         console.log("First Time Adopter:", selectedAdopter);
-
     });
 });
 
+
 function formSubmitted() {
+    event.preventDefault();
     alert(`Thank you. The form information has been received.`);
 }
 
