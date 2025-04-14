@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Adopt-a-Dog Checkout</title>
+  </head>
+  <body>
+    <header class="header-banner">
+      <div>
+        <img class="adoptadog-logo-header" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <h2>Seattle's premiere dog adoption agency</h2>
+      </div>
+      <aside>
+        <nav class="cart">
+          <img class="cart-icon" src="images/cart-icon.svg" alt="cart icon"> 
+          <form  action="checkout-page.html">
+            <input class="checkout-button" type="submit" value="Checkout">
+          </form>
+        </nav>
+      </aside>
+    </header>
+    <nav class="main-nav-container">
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>/
+        <li><a href="dog-page.html">Dogs</a></li>/
+        <li><a href="blog-page.html">Blog</a></li>/
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="contact-main-content">
+      <h2>Contact Us!</h2>
+      <form method="GET">
+        <label class="name-address">Name:
+          <input type="text" name="fullName" placeholder="Full Name" required>
+        </label>
+        <label class="name-address">Email Address:
+          <input type="email" name="emailAddress" placeholder="example@example.com" required>
+        </label>
+        <label class="name-address">City:
+          <input type="text" name="city" placeholder="Seattle">
+        </label>
+        <label class="name-address">State:
+          <input type="text" name="state" placeholder="WA">
+        </label>
+        <br>
+        <label for="aboutYourself" class="about-yourself">
+          Tell us about yourself:
+        </label>
+        <textarea name="aboutYourself" rows="6" cols="60" id="aboutYourself" placeholder="Start typing here"></textarea>
+        <br><br>
+        <fieldset class="first-time">
+          <legend>First time adopter?</legend>
+          <label>
+            <input type="radio" name="firstTime" value="yes" required>
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="firstTime" value="No" required>
+            No
+          </label> 
+        </fieldset>    
+        <br>    
+        <label for="pickupLocation" class="pickup-location">Pickup Location</label>
+          <select name="pickup-location" id="pickupLocation">
+            <option value="">(select one)</option>
+            <option value="seattle">Seattle</option>
+            <option value="bellevue">Bellevue</option>
+            <option value="everett">Everett</option>
+            <option value="tacoma">Tacoma</option>
+          </select> 
+          <br><br>
+        <div class="form-buttons">
+          <input class="submit-button" type="submit" value="Submit!"></input>
+          <input class="reset-button" type="reset" name="reset">
+        </div>
+      </form>
+    </main>
+    <footer>
+      <img class="adoptadog-logo-footer" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+      <p>
+        Random paragraph of meaningless information to be added below the name
+        and logo in footer.
+      </p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dog-page.html">Dogs</a></li>
+          <li><a href="blog-page.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <address>address info</address>
+    </footer>
+  </body>

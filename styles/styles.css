@@ -1,0 +1,155 @@
+.header-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  background-color: #003d64;
+  height: 10rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 70% 1rem 0;
+  padding: 1rem;
+}
+
+.main-nav-container {
+  background-color: #ececec;
+}
+
+footer {
+  background-color: #3d3d3e;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h2 {
+  color: #70ba22;
+}
+
+.checkout-button {
+  color: white;
+  background-color: #71ba22;
+}
+
+.adoptadog-logo-footer {
+  width: 15%;
+}
+
+.adoptadog-logo-header {
+  width: 50%;
+}
+
+.cart-icon {
+  width: 2rem;
+}
+
+.intro-photo {
+  width: 15rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.intro-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.dog-list-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.dog-box {
+  flex: 1 1 auto;
+  width: 10.5rem;
+  text-wrap: balance;
+  justify-content: center;
+  text-align: center;
+  border-style: solid;
+  border-radius: .2rem;
+  margin: .5rem;
+  padding-bottom: 1rem;
+  padding-left: 0;
+  max-width: 10.5rem;
+  /* box-sizing: content-box; 
+  may be causing issues?  */
+}
+
+.dog-profile-photo {
+  width: 10.5rem;
+  /* box-sizing: border-box; 
+  may be causing issues?  */
+}
+
+.blog-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 1rem 1rem 1rem 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.blog-photo {
+  flex: 1 1 auto;
+  flex-basis: 25%;
+  width: 100%;
+  height: 100%;
+  min-width: 150px;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.blog-text-box {
+  flex: 1 1 auto;
+  flex-basis: 75%;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.first-time {
+  border: none;
+}
+
+.name-address {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.pickup-location {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.about-yourself {
+  display: block;
+}
+
+.form-buttons {
+  display: block;
+  margin: 1rem 0 1rem 0;
+}
+
+.submit-button {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}
+
+.contact-main-content {
+  margin-left: 1rem;
+}
+
+.first-time {
+  margin-left: -1rem;
+}
