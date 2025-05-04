@@ -1,0 +1,45 @@
+USER PERSONA
+
+Name: Jasmine White  
+Age: 29  
+Occupation: Elementary School Teacher  
+Location: Seattle, WA  
+Family Status: Lives with her partner and their 3-year-old child in an apartment  
+Technology Use: Mobile apps for shopping and social media  
+
+Her Goals:
+- Adopt a small dog that is good with kids  
+- Find a local shelter with a legal and transparent adoption process  
+- Learn more about dog personalities, caring needs, and training tips  
+
+Frustrations:
+- Hard-to-navigate websites with outdated information  
+- Lack of photos, bios, and compatibility details  
+- Unclear adoption steps  
+
+What's Needed on the Adopt-a-Dog Website:
+- Filter options by dog size, age, and temperament  
+- Clear step-by-step adoption guide  
+- Honest and detailed bios with multiple photos  
+- Mobile-friendly design  
+
+---
+
+TESTING PROCESS
+
+Devices and Browsers Used:
+- Chrome on macOS (Desktop)
+- Firefox on macOS (Desktop)
+- Safari on iPhone (Mobile)
+- Microsoft Edge on Windows (Laptop)
+- Chrome on Android Tablet (Tablet)
+
+Issues Found:
+- On Safari mobile, some images were slightly stretched → Fixed image aspect ratio using CSS `object-fit: cover`
+- Firefox displayed font differently → Added fallback fonts in the CSS
+- Android tablet had a layout overlap on the homepage → Fixed with media queries for tablet screen widths
+
+What Was Changed:
+- Updated CSS for image responsiveness and layout
+- Added media queries to improve tablet and mobile views
+- Ensured all text is legible and buttons are sized for tapping on smaller screens
