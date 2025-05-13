@@ -1,0 +1,7 @@
+User and Device Research:
+-Tested on MacBook Air
+
+Testing Steps:
+- Verified all links wor5k correctly.
+-Ensured site is responsive on desktop and mobile.
+-Ran HTML validation
