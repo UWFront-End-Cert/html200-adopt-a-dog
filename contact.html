@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="images/adoptadog-logo.svg" alt="White adopt a dog logo">
+            <h1>Seattle's premiere dog adoption agency</h1>
+        </div>
+
+        <div>
+            <img class="shopping-cart" src="images/cart-icon.svg" alt="Shopping card"><span class="total-cost white-text">
+                $0.00</span>
+            <p><a href="checkout.html" class="btn">Checkout</a></p>
+        </div>
+    </header>
+
+    <nav class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="dogs.html">Dogs</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <section class="container">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+        <ul>
+            <li><i class="fas fa-map-marker-alt"></i><span class="text"> 123 Anywhere St. Seattle, WA 98040</span></li>
+            <li><i class="fas fa-envelope"></i><span class="text"> adoptadog@example.com</span></li>
+            <li><i class="fa fa-mobile-alt"></i><span class="text"> (123)-456-7890</span></li>
+        </ul>
+        </div>
+        <div class="form-info">
+            <h2>Send us a message</h2>
+            <form method="POST" id="contactForm">           
+                    <label>First Name
+                    <input type="text" id="name" name="firstname"></label>
+                
+                    <label>Last Name
+                    <input type="text" id="lastname" name="lastname"></label>
+                
+                    <label>Email
+                    <input type="email" id="email" name="email"></label>
+            
+                    <label>Phone
+                    <input type="text" id="phone" name="phone"></label>
+
+                <div class="full">
+                    <label>Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="full">    
+                    <button class="submit-sms" type="submit">Submit</button>
+                </div>    
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <img src="images/adoptadog-logo.svg" alt="White adopt a dog logo">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+            esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dogs.html">Dogs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p>&copy;2018 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
+    <script src="contact.js"></script>
+    <script src="java.js" charset="utf-8"></script>
+</body>
+</html>

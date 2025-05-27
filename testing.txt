@@ -1,0 +1,27 @@
+Qualified Candidates
+1. All applicants must be at least 21 years of age.
+2. Homeowner, If you do not own, we must have written permission from the property owner
+3. Must be employed. If so, how many hours do you work?
+4. Financial stable.
+5. How long will the dog be left alone? Will it be crated?
+
+Responsive for all devices:
+Desktop Browsers
+- Chrome
+- Firefox
+- Safari
+- Edge
+- Internet Explorer
+
+Moblie Browsers
+- iOS Safari
+- Chrome for Android
+- Firefox for Android
+
+User Persona
+Name: Matha Lee
+Age: 30
+Sex: Female
+Job: Software Engineer. Matha works 3 days at the office, 2 days at home and off for the weekend.
+Hobbies: Matha loves various forms of art (painting, drawing and sculpting)
+Matha has different types of devices due to her job. She has Iphone, Samsung Galaxy Tabs, Laptop and PC desktop.

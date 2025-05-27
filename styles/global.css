@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Tagesschrift');
+
+*{
+    margin: 0;
+}
+/* header */
+header {
+    width: auto;
+    height: 40vh;
+    padding: 5rem 10rem;
+    background-image: url(header-image.jpg);
+    background-size: cover;
+    background-color: rgb(21, 68, 96);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: end;
+}
+h1 {
+    color: limegreen;
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+}
+.shopping-cart {
+    width: 8%;   
+}
+.white-text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: rgb(140, 198, 52);
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+}
+.btn:hover {
+    background-color: green;
+    color: white;
+}
+
+/* footer */
+footer {
+    background-color: rgb(21, 68, 96);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 2rem 0;
+
+}
+footer img {
+    width: 28%;
+}
+footer nav {
+    margin: 2rem 0;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+footer a+a:before {
+    content: "/\00a0";
+    padding: 8px;
+}
+
+/* nav menu links */
+.menu-links {
+    background-color: lightgray;
+    padding: 1.5rem 0;
+    padding-left: 10rem;
+
+}
+.menu-links a {
+    color: rgb(21, 68, 96);
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.menu-links a+a:before {
+    content: "/\00a0";
+    padding: 10px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 10rem;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem 2rem;
+}
+
+.item h3 {
+    color: rgb(21, 68, 96);
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.item p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 1rem;
+}
+
+.item img {
+    width: 100%;
+}
+button {
+    background-color: rgb(140, 198, 52);
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 3px;
+    margin: 0 2rem 1rem;
+    padding: 0.5em 1em;
+}
+button:hover {
+    background-color: green;
+}
+
+/* Tablet device */
+@media (max-width: 1024px) {
+    header {
+        height: 25vh;
+        padding: 5rem;
+    }
+    
+    .menu-links{
+        padding-left: 5rem;
+    }
+    footer img {
+        width: 40%;
+    }
+    main {
+        margin: 2rem 5rem;
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 40vh;
+        padding: 2rem;
+    }
+    .menu-links{
+        padding-left: 3rem;
+    }
+    
+    .btn {
+        padding: 10px 30px;
+    }
+    main {
+        margin: 2rem 5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Mobile device or small screen */
+@media (max-width: 576px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        padding: 1rem;
+    }
+    .banner {
+        width: 60%;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    .shopping-cart {
+        width: 5%;
+    }
+    .white-text {
+        font-size: .9rem;
+    }
+    .btn {
+        padding: 5px 20px;
+    }
+    .menu-links {
+        padding: 1rem;
+    }
+    footer img {
+        width: 50%;
+    }
+    main {
+        margin: 2rem 5rem;
+    }
+    .grid-container {
+        grid-template-columns:  1fr;
+    }
+}
+

@@ -1,0 +1,22 @@
+h2 {
+    margin: 2rem 10rem;
+    color: rgb(21, 68, 96);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.item img {
+    cursor: pointer;
+}
+@media (max-width:1024px) {
+    h2 {
+        text-align: center;
+        margin: 2em;
+    }
+}
+@media (max-width: 576px) {
+    h2 {
+        text-align: center;
+        margin: 2em;
+        font-size: 1.5rem;
+    }
+}

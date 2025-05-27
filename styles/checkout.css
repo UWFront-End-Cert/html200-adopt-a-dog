@@ -1,0 +1,134 @@
+
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+h4 {
+    font-size: 1.2rem;
+}
+
+.flex-choice {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.choice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem;
+} 
+.choice p {
+    color: rgb(65, 63, 63);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+.checkout-form input[type="radio"] {
+    width: 1.5rem;
+}
+.checkout-form {
+    width: 42%;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    color: #003366;
+  }
+ label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #003366;
+    font-size: 1.3rem;
+  }
+input {
+  margin-bottom: 10px;
+  height: 2rem;
+  text-indent: .3em;
+  border: 1px solid #ccc;
+  width: 100%;
+} 
+.pickup {
+    width: 50%;
+}
+.row {
+    display: flex;
+    gap: 1rem;
+}
+.column {
+    flex: 0.6;
+}
+.column2 {
+    flex: 0.3;
+}
+.column3 {
+    flex: 0.4;
+}
+.half-box {
+    width: 45%;
+}
+.dogs-adopted {
+    display: flex;
+    gap: 2em;
+  }
+  
+  .dog-card {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .dog-card img {
+    width: 5.5em;
+  }
+  .dog-info {
+    width: 10em;
+  }
+.dog-info p {
+    color: black;
+}
+.total {
+    font-size: 1.2rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submit-btn {
+    background-color: #8BC34A;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 45%;
+    margin: 2rem 0 4rem 0;
+  }
+  
+  .submit-btn:hover {
+    background-color: green;
+  }
+
+  @media (max-width: 768px) {
+    .checkout-form {
+        margin-left: 2rem;
+        width: 80%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .checkout-form {
+        margin-left: 1rem;
+        width: 90%;
+    }
+    .dogs-adopted {
+        flex-direction: column;
+        gap: 0;
+    }
+    label {
+        font-size: 1.1em;
+    }
+   
+  }

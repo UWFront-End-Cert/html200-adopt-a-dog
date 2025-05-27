@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="images/adoptadog-logo.svg" alt="White adopt a dog logo">
+            <h1>Seattle's premiere dog adoption agency</h1>
+        </div>
+
+        <div>
+            <img class="shopping-cart" src="images/cart-icon.svg" alt="Shopping card"><span class="total-cost white-text">
+                $0.00</span>
+            <p><a href="checkout.html" class="btn">Checkout</a></p>
+        </div>
+    </header>
+
+    <nav class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="dogs.html">Dogs</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <main>
+        <section class="intro-flex">
+            <div class="intro-img">
+                <img src="images/home-intro.jpg" alt="a guy's hugginh a dog">
+            </div>
+            <div class="intro-text">
+                <h2>Adopt A Dog</h2>
+                <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
+                    tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+                    derum recuptatur, cum volore, undipsa dolereium hillupta aut
+                    es ut alitatuscit ommossum haritatur arum qui officae videbiti
+                    corporeium faccull oribus es quidignis ipietus explam sus
+                    am aut amet ant fugiatum, utem non reptat ad magnienecto
+                    volorent fugia nonsedi gendand itatquos as magnimpor aut
+                    molor autatis ad est officimus accae et omnia cus, od qui ate
+                </p>
+            </div>
+        </section>
+
+        <div class="grid-container">
+            <article class="item">
+                <img src="images/murphy-card.jpg" alt="Murphy has brown skin" onclick="showInfo('Murphy','Corrum','$123.45')">
+                <h3>Murphy</h3>
+                <p><b>Cost to Adopt:</b> <span class="fee">$123.45</span></p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur 
+                    sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <button onclick="clickAdopt(123.45)">Adopt</button>
+            </article>
+
+            <article class="item">
+                <img src="images/poppy-card.jpg" alt="Poppy has white fur" onclick="showInfo('Poppy','Corrum','$123.45')">
+                <h3>Poppy</h3>
+                <p><b>Cost to Adopt:</b> <span class="fee">$123.45</span></p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur 
+                    sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <button onclick="clickAdopt(123.45)">Adopt</button>
+            </article>
+
+            <article class="item">
+                <img src="images/jack-card.jpg" alt="Jack has white and brown skin colors" onclick="showInfo('Jack','Corrum','$123.45')">
+                <h3>Jack</h3>
+                <p><b>Cost to Adopt:</b> <span class="fee">$123.45</span></p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur 
+                    sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <button onclick="clickAdopt(123.45)">Adopt</button>
+            </article>
+
+            <article class="item">
+                <img src="images/duffy-card.jpg" alt="Duffy has light blue eyes" onclick="showInfo('Duffy','Corrum','$123.45')">
+                <h3>Duffy</h3>
+                <p><b>Cost to Adopt:</b> <span class="fee">$123.45</span></p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur 
+                    sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <button onclick="clickAdopt(123.45)">Adopt</button>
+            </article>
+
+            <article class="item">
+                <img src="images/lucas-card.jpg" alt="Lucas has black skin with copper eye colors" onclick="showInfo('Lucas','Corrum','$123.45')">
+                <h3>Lucas</h3>
+                <p><b>Cost to Adopt:</b> <span class="fee">$123.45</span></p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur 
+                    sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <button onclick="clickAdopt(123.45)">Adopt</button>
+            </article>
+
+            <article class="item">
+                <img src="images/jake-card.jpg" alt="Jake has white skin color" onclick="showInfo('Jake','Corrum','$123.45')">
+                <h3>Jake</h3>
+                <p><b>Cost to Adopt:</b> <span class="fee">$123.45</span></p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur 
+                    sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <button onclick="clickAdopt(123.45)">Adopt</button>
+            </article>
+
+            <article class="item">
+                <img src="images/angus-card.jpg" alt="Angus has brown skin" onclick="showInfo('Angas','Corrum','$123.45')">
+                <h3>Angus</h3>
+                <p><b>Cost to Adopt:</b> <span class="fee">$123.45</span></p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur 
+                    sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <button onclick="clickAdopt(123.45)">Adopt</button>
+            </article>
+
+            <article class="item">
+                <img src="images/violet-card.jpg" alt="Violet has chocolate skin" onclick="showInfo('Violet','Corrum','$123.45')">
+                <h3>Violet</h3>
+                <p><b>Cost to Adopt:</b> <span class="fee">$123.45</span></p>
+                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur 
+                    sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                <button onclick="clickAdopt(123.45)">Adopt</button>
+            </article>
+        </div>
+
+        <button class="see-more-dogs" onclick="window.location.href='dogs.html'">See More Dogs</button>
+
+    </main>
+
+
+    <footer>
+        <img src="images/adoptadog-logo.svg" alt="white adopt a dog logo">
+        <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+            esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dogs.html">Dogs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
+    <script src="java.js" charset="utf-8"></script>
+</body>
+
+</html>
