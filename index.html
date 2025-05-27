@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Dog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-image: url("C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/header-image.jpg");
+            background-size: cover; /* Ensures the image covers the entire header */
+            background-position: top; /* Aligns the image to the top */
+            background-repeat: no-repeat;
+            color: white;
+            height: 300px; /* Fixed height for the header */
+            display: flex;
+            justify-content: space-between; /* Align header-title and cart to the edges */
+            align-items: center;
+            padding: 0 20px; /* Add padding for spacing */
+        }
+        .header-title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align content to the left */
+            text-align: left; /* Align text to the left */
+        }
+        .header-title img {
+            width: 150px; /* Adjust the logo size */
+            height: auto;
+            margin-bottom: 10px; /* Add spacing between the logo and the tagline */
+        }
+        .header-title p {
+            font-size: 1.2rem;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .cart {
+            width: 40px;
+            height: 40px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            display: flex;
+            justify-content: center; /* Center the navigation links */
+            align-items: center;
+            padding: 10px 20px;
+            margin: 0 50px; /* Add barriers on either side */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .intro-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .intro-section img {
+            width: 50%;
+            border-radius: 8px;
+        }
+        .intro-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        .dog-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four columns */
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .dog-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .dog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .dog-card h3 {
+            margin: 10px 0;
+        }
+        .dog-card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .dog-card button {
+            background-color: #2a9dbe;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .dog-card button:hover {
+            background-color: #2389a8;
+        }
+        .see-more {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .see-more button {
+            background-color: #2a9dbe;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .see-more button:hover {
+            background-color: #2389a8;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
+            <p>Seattle’s premiere dog adoption agency</p>
+        </div>
+        <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/cart-icon.svg" alt="Cart" class="cart">
+    </header>
+    <nav>
+        <a href="index.html">Home</a> /
+        <a href="dogs.html">Dogs</a> /
+        <a href="blog.html">Blog</a> /
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <div class="intro-section">
+            <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/home-intro.jpg" alt="Adopt a Dog Intro">
+            <p>
+                Adopting a dog is one of the most rewarding decisions you can make. Not only do you provide a loving home to a furry friend in need, 
+                but you also gain a loyal companion who will bring joy, love, and endless tail wags to your life. 
+                Every dog deserves a second chance, and by adopting, you help reduce the number of animals in shelters and give them a brighter future.
+            </p>
+        </div>
+        <h2 style="text-align: center;">Featured Dogs</h2>
+        <div class="dog-grid" id="dog-grid">
+            <!-- Dog Cards -->
+            <div class="dog-card">
+                <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/murphy-card.jpg" alt="Murphy">
+                <h3>Murphy</h3>
+                <p>Corrum volorit iandae nimaxim cum restia volor...</p>
+                <p><strong>Cost to Adopt:</strong> $123.45</p>
+                <button>Adopt</button>
+            </div>
+            <div class="dog-card">
+                <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/poppy-card.jpg" alt="Poppy">
+                <h3>Poppy</h3>
+                <p>Corrum volorit iandae nimaxim cum restia volor...</p>
+                <p><strong>Cost to Adopt:</strong> $150.00</p>
+                <button>Adopt</button>
+            </div>
+            <div class="dog-card">
+                <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/jack-card.jpg" alt="Jack">
+                <h3>Jack</h3>
+                <p>Corrum volorit iandae nimaxim cum restia volor...</p>
+                <p><strong>Cost to Adopt:</strong> $200.00</p>
+                <button>Adopt</button>
+            </div>
+            <div class="dog-card">
+                <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/violet-card.jpg" alt="Violet">
+                <h3>Violet</h3>
+                <p>Corrum volorit iandae nimaxim cum restia volor...</p>
+                <p><strong>Cost to Adopt:</strong> $180.00</p>
+                <button>Adopt</button>
+            </div>
+            <div class="dog-card">
+                <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/lucas-card.jpg" alt="Lucas">
+                <h3>Lucas</h3>
+                <p>Corrum volorit iandae nimaxim cum restia volor...</p>
+                <p><strong>Cost to Adopt:</strong> $140.00</p>
+                <button>Adopt</button>
+            </div>
+            <div class="dog-card">
+                <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/jake-card.jpg" alt="Jake">
+                <h3>Jake</h3>
+                <p>Corrum volorit iandae nimaxim cum restia volor...</p>
+                <p><strong>Cost to Adopt:</strong> $160.00</p>
+                <button>Adopt</button>
+            </div>
+            <div class="dog-card">
+                <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/angus-card.jpg" alt="Angus">
+                <h3>Angus</h3>
+                <p>Corrum volorit iandae nimaxim cum restia volor...</p>
+                <p><strong>Cost to Adopt:</strong> $190.00</p>
+                <button>Adopt</button>
+            </div>
+            <div class="dog-card">
+                <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/duffy-card.jpg" alt="Duffy">
+                <h3>Duffy</h3>
+                <p>Corrum volorit iandae nimaxim cum restia volor...</p>
+                <p><strong>Cost to Adopt:</strong> $170.00</p>
+                <button>Adopt</button>
+            </div>
+        </div>
+        <div class="see-more">
+            <button id="see-more-button">See More Dogs</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
+    <script>
+        document.getElementById('see-more-button').addEventListener('click', function () {
+            const dogGrid = document.getElementById('dog-grid');
+            const newDogs = [
+                {
+                    img: "C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/piper-card.jpg",
+                    name: "Piper",
+                    description: "Corrum volorit iandae nimaxim cum restia volor...",
+                    cost: "$145.00"
+                },
+                {
+                    img: "C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/stella-card.jpg",
+                    name: "Stella",
+                    description: "Corrum volorit iandae nimaxim cum restia volor...",
+                    cost: "$125.00"
+                },
+                {
+                    img: "C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/luna-card.jpg",
+                    name: "Luna",
+                    description: "Corrum volorit iandae nimaxim cum restia volor...",
+                    cost: "$130.00"
+                },
+                {
+                    img: "C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/maximus-card.jpg",
+                    name: "Maximus",
+                    description: "Corrum volorit iandae nimaxim cum restia volor...",
+                    cost: "$135.00"
+                }
+            ];
+
+            newDogs.forEach(dog => {
+                const dogCard = document.createElement('div');
+                dogCard.classList.add('dog-card');
+                dogCard.innerHTML = `
+                    <img src="${dog.img}" alt="${dog.name}">
+                    <h3>${dog.name}</h3>
+                    <p>${dog.description}</p>
+                    <p><strong>Cost to Adopt:</strong> ${dog.cost}</p>
+                    <button>Adopt</button>
+                `;
+                dogGrid.appendChild(dogCard);
+            });
+
+            // Optionally hide the "See More Dogs" button after adding the new dogs
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
