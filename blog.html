@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The CSS file lives in a subdirectory called styles in the current directory -->
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt A Dog - All Dogs</title>
+
+</head>
+
+    <!--Cart and Checkout -->
+   <img src="cart icon" alt=""> <p>Price Goes Here</p>
+   <button>Checkout</button>
+   <!-- Navigation -->
+
+  <!-- Hero Image and Site Title -->
+
+<h1>Adopt A Dog </h1>
+<h1>Seattle’s premiere dog adoption agency</h1>
+  <!-- Hero Image and Site Title -->
+
+    <!-- Navigation - Needs Left to Right Logic -->
+     <nav>Home</nav>
+     <nav>Dogs</nav>
+     <nav>Blog</nav>
+    <!-- Navigation -->
+
+     <!-- Headline-->
+
+
+    <!-- Blog Articles Start Here (3 per page)-->
+
+    <!-- <img src="" alt="Blog Image"> -->
+   
+
+</head>
+
+<p> --- </p>
+
+<h1>Adopt A Dog Blog</h1>
+  
+<div id="blogpost">
+<h2>This is a blog about dogs</h2> 
+
+<p> --- </p>
+
+</div>
+
+<button onclick="startBlogpost('Write your blog post here');">Create blog post</button>
+<button onclick="postBlogpost('Thank you. The form information has been received');">Post Blog Post</button>
+
+<script>
+
+function postBlogpost(message) {
+alert (message);
+}
+
+function startBlogpost(message) {
+prompt (message);s
+}
+
+let blogContent = prompt ();
+
+const container = document.getElementById("blogpost");
+
+const title = document.createElement("h2");
+title.textContent = "My First Blog Post";
+
+const author = document.createElement("p");
+author.textContent = "By Ambar de Kok-Mercado";
+
+const content =document.createElement("p");
+content.textContent = blogContent;
+
+container.appendChild(title);
+container.appendChild(author);
+container.appendChild(content);
+</script>
+
+
+
+   <!--<script>
+    // Step 1: Create the blog post object
+    const blogPost = {
+      title: "My First Blog Post",
+      author: "Ambar de Kok-Mercado",
+      date: "June 1, 2025",
+      content: "This is a simple blog post created using a JavaScript object and rendered on the page!"
+    };
+
+    // Step 2: Select the container where the post will go
+    const container = document.getElementById("blogpost");
+    
+    // Step 3: Insert script into HTML
+    document.body.appendChild(container);
+
+
+  </script>  -->
+
+   
+   
+  
+
+    <!-- Blog posts will end here -->
+
+
+</body>
+</html>
+
+  
+    <!-- Blog Articles -->
+  <p> --- </p>
+
+
+    <Footer> 
+        <h1>Adopt A Dog [Footer Section]</h1>
+       <p> Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt
+       </p>
+        <!-- Navigation - Needs Left to Right Logic -->
+        <nav>Home</nav>
+        <nav>Dogs</nav>
+        <nav>Contact</nav>
+        <!-- Navigation  -->
+
+       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+    </Footer>
+
+<!-- This links to the Javascript file -->
+<!-- <script src="./blog.js"charset="UTF-8"> </script> -->
+
+</body>
