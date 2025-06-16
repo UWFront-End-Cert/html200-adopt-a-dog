@@ -1,0 +1,49 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: $spacing-unit;
+
+  &__image {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: $spacing-unit;
+
+    &__title {
+      color: $primary-color;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__text {
+      margin-bottom: 1rem;
+    }
+
+    &__button {
+      background-color: $primary-color;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+
+    &__image {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Adopt a Dog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-image: url("C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/header-image.jpg");
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            color: white;
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .header-title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .header-title img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .header-title p {
+            font-size: 1.2rem;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .cart {
+            width: 40px;
+            height: 40px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            margin: 0 50px;
+            border-radius: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea,
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form textarea {
+            resize: vertical;
+        }
+        form label[for="breed"] {
+            margin-top: 10px;
+        }
+        form label input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+            display: inline-block;
+        }
+        form button {
+            background-color: #2a9dbe;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        form button:hover {
+            background-color: #2389a8;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/adoptadog-logo.svg" alt="Adopt a Dog Logo">
+            <p>Seattle’s premiere dog adoption agency</p>
+        </div>
+        <img src="C:/Users/Owner/Desktop/html120/html200-adopt-a-dog/images/cart-icon.svg" alt="Cart" class="cart">
+    </header>
+    <nav>
+        <a href="index.html">Home</a> /
+        <a href="dogs.html">Dogs</a> /
+        <a href="blog.html">Blog</a> /
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to learn more about adopting a dog, feel free to reach out to us!</p>
+            <p>Email: <a href="mailto:info@adoptadog.com">info@adoptadog.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Dog Lane, Seattle, WA</p>
+        </section>
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+                <label for="breed">Preferred Dog Breed</label>
+                <select id="breed" name="breed" required>
+                    <option value="">--Select a breed--</option>
+                    <option value="labrador">Labrador</option>
+                    <option value="bulldog">Bulldog</option>
+                    <option value="poodle">Poodle</option>
+                    <option value="beagle">Beagle</option>
+                </select>
+
+                <label style="font-weight: normal;">
+                    <input type="checkbox" name="agree" required>
+                    I agree to the terms and conditions.
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2018 Adoptadog, LLC | Seattle, WA</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
