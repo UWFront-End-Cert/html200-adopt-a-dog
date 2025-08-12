@@ -1,0 +1,226 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    font-size:16px;
+}
+
+header {
+    background: url("images/header-image.jpg"),rgb(12,60,99);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    width: auto;
+    padding: 2rem 5rem 4rem 5rem;
+    display:flex;
+    justify-content:space-between;
+}
+
+.header-logo h2{
+    color: rgb(131, 180, 66);
+    font-style: italic;
+}
+
+.header-checkout {
+    color: white;
+    font-weight: 700;
+}
+
+.checkout-button {
+    display: inline-block;
+    background-color: rgb(131,180,66);
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 3px 30px;
+    border-radius: 3px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    background-color: rgba(211,211,211,.3);
+    padding: 1rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
+    font-weight: 700;
+    margin: 0px;
+    color: rgb(12,60,99);
+}
+
+.main-nav ul a {
+    text-decoration: none;
+    color: rgb(12,60,99);
+}
+
+.main-content {
+    padding: 1rem 10rem;
+}
+
+h2, h3 {
+    color: rgb(12,60,99);
+}
+
+.intro {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.intro article {
+    align-self: flex-start;
+}
+
+.dog-grid ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 4rem;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.dog-grid li {
+    max-width:200px;
+    border: 1px solid lightgrey;
+}
+
+.dog-grid img {
+    max-width: 200px;
+    height: auto;
+}
+
+.dog-grid h3, p, input {
+    margin: .5rem .5rem;
+}
+
+#see-more-dogs-button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 10%;
+    min-width: 200px;
+    background-color: lightgray;
+    color: rgb(12,60,99);
+    font-weight: 700;
+    font-size: medium;
+    text-decoration: none;
+}
+
+footer {
+    padding: 3rem 3rem;
+    background-color:rgb(12,60,99);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 2rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    font-weight: 700;
+}
+
+footer nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.inner-footer {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog-article {
+    display: flex;
+    gap: 30px;
+    padding: 10px 0px 50px 0px;
+}
+
+.blog-article img {
+    width: 100%;
+    min-width: 250px;
+    height: auto;
+    align-self: flex-start;
+}
+
+.checkout-form {
+    width: 30%;
+}
+
+input {
+    width: 100%;
+    display: block;
+    color: black;
+}
+
+.city-state-zip {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+input[type=submit] {
+    width: 90%;
+    background-color: rgb(131,180,66);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: medium;
+    min-width: 150px;
+}
+
+input[type=number] {
+    width: 100px;
+}
+
+#checkout {
+    width: 20%;
+}
+
+select {
+    display: block;
+    margin: 8px;
+}
+
+.checkout-form label, .check-form legend, .checkout-form p {
+    color: rgb(12,60,99);
+    font-weight: 700;
+    font-size: small;
+}
+
+fieldset {
+    border: none;
+    margin-left:0;
+    padding-left:0;
+}
+
+fieldset label {
+    color: black;
+    font-weight: 400;
+    display: inline;
+    margin-right: 30px;
+}
+
+fieldset input {
+    display: inline;
+    width: 20px;
+    margin-right: 0px;
+}

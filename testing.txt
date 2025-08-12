@@ -1,0 +1,14 @@
+The website has been tested with a variety of tools to check for validity and responsive design. 
+Tools used include:
+- HTML5 Validator (https://validator.w3.org) for ensuring valid HTML
+- Chrome Dev Tools for testing different viewport sizes
+- Mac Book, iPhone, and Dell laptop for ensuring browser and viewport compatability
+- PageSpeed Insights (https://pagespeed.web.dev) for recommendations on improving site performance and user experience.
+
+The website was tested on common broswers including:
+- Safari & iOS Safari
+- Chrome
+- Firefox
+
+After testing, the following change is suggested:
+CSS should be used to make images have responsive sizing, to include backgrounds for the header and footer to make them readable, and to display the dogs in a grid rather than a vertical list.

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://kit.fontawesome.com/fa8b81c433.js" crossorigin="anonymous"></script>
+        <title>Adopt a Dog</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-logo">
+                <img src="images/adoptadog-logo.svg" alt="Icon of sitting dog to the left of ADOPTADOG text.">
+                <h2>Seattle's premiere dog adoption agency</h2>
+            </div>
+            <div class="header-checkout">
+                <img src="images/cart-icon.svg" height="50" width="50" alt="Icon of a shopping cart.">
+                <span>$123.56</span>
+                <br>
+                <a href="checkout.html" class="checkout-button">Checkout</a>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>/</li>
+                <li><a href="dogs.html">Dogs</a></li>
+                <li>/</li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <div class="intro">
+                <img src="images/home-intro.jpg" alt="Person in red shirt hugging a happy dog that has it's mouth open.">
+                <article>
+                    <h2>Adopt A Dog</h2>
+                    <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
+                        tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
+                        derum recuptatur, cum volore, undipsa doloreium hillupta aut
+                        es ut alitatuscit ommossum haritatur arum qui officae videbiti
+                        corporeium faccull oribus es quidignis ipietus explam sus
+                        am aut amet ant fugiatum, utem non reptat ad magnienecto
+                        volorent fugia nonsedi gendand itatquos as magnimpor aut
+                        molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+                </article>
+            </div>
+
+            <div class="dog-grid">
+                <ul>
+                    <li> 
+                        <img src="images/murphy-card.jpg" height="284" width="476" alt="Image of dog looking in the distance." onclick="dogInfo('Murphy','BreedA','$123.45')">
+                        <h3>Murphy</h3>
+                        <p><strong>Cost to Adopt:</strong> $123.45</p>
+                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                        <input type="submit" value="Adopt" onclick="total(123.45)">
+                    </li>
+                    <li> 
+                        <img src="images/poppy-card.jpg" height="284" width="476" alt="Image of dog running down the street towards the camera." onclick="dogInfo('Poppy','BreedB','$123.45')">
+                        <h3>Poppy</h3>
+                        <p><strong>Cost to Adopt:</strong> $123.45</p>
+                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                        <input type="submit" value="Adopt" onclick="total(123.45)">
+                    </li>
+                    <li> 
+                        <img src="images/jack-card.jpg" height="284" width="476" alt="Image of dog sitting and looking up towards something not shown." onclick="dogInfo('Jack','BreedC','$123.45')">
+                        <h3>Jack</h3>
+                        <p><strong>Cost to Adopt:</strong> $123.45</p>
+                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                        <input type="submit" value="Adopt" onclick="total(123.45)">
+                    </li>
+                    <li> 
+                        <img src="images/duffy-card.jpg" height="284" width="476" alt="Image of dog sitting and looking at the camera." onclick="dogInfo('Duffy','BreedD','$123.45')">
+                        <h3>Duffy</h3>
+                        <p><strong>Cost to Adopt:</strong> $123.45</p>
+                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                        <input type="submit" value="Adopt" onclick="total(123.45)">
+                    </li>
+                    <li> 
+                        <img src="images/lucas-card.jpg" height="284" width="476" alt="Image of leashed black dog sitting and looking up at the camera." onclick="dogInfo('Lucas','BreedE','$123.45')">
+                        <h3>Lucas</h3>
+                        <p><strong>Cost to Adopt:</strong> $123.45</p>
+                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                        <input type="submit" value="Adopt" onclick="total(123.45)">
+                    </li>
+                    <li> 
+                        <img src="images/jake-card.jpg" height="284" width="476" alt="Image of dog looking in the distance" onclick="dogInfo('Jake','BreedF','$123.45')">
+                        <h3>Jake</h3>
+                        <p><strong>Cost to Adopt:</strong> $123.45</p>
+                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                        <input type="submit" value="Adopt" onclick="total(123.45)">
+                    </li>
+                    <li> 
+                        <img src="images/angus-card.jpg" height="284" width="476" alt="Image of dog with it's mouth wide open." onclick="dogInfo('Angus','BreedG','$123.45')">
+                        <h3>Angus</h3>
+                        <p><strong>Cost to Adopt:</strong> $123.45</p>
+                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                        <input type="submit" value="Adopt" onclick="total(123.45)">
+                    </li>
+                    <li> 
+                        <img src="images/violet-card.jpg" height="284" width="476" alt="Image of brown puppy." onclick="dogInfo('Violet','BreedH','$123.45')">
+                        <h3>Violet</h3>
+                        <p><strong>Cost to Adopt:</strong> $123.45</p>
+                        <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                        <input type="submit" value="Adopt" onclick="total(123.45)">
+                    </li>
+                </ul>
+            </div>
+
+            <a href="dogs.html" id="see-more-dogs-button">See More Dogs</a>
+
+        </div>
+
+        <footer>
+            <img src="images/adoptadog-logo.svg" alt="Icon of sitting dog to the left of ADOPTADOG text." width=300 height=91>
+            <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>/</li>
+                    <li><a href="dogs.html">Dogs</a></li>
+                    <li>/</li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            
+            <div class="inner-footer">
+                <i class="fa-regular fa-copyright"></i>
+                <p>Adoptadog, LLC | Seattle, WA</p>
+            </div>
+        </footer>
+
+        <script src="./dog_info_script.js"></script>
+    </body>

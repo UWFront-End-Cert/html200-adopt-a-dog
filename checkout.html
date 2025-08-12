@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://kit.fontawesome.com/fa8b81c433.js" crossorigin="anonymous"></script>
+        <title>Adopt a Dog</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-logo">
+                <img src="images/adoptadog-logo.svg" alt="Icon of sitting dog to the left of ADOPTADOG text.">
+                <h2>Seattle's premiere dog adoption agency</h2>
+            </div>
+            <div class="header-checkout">
+                <img src="images/cart-icon.svg" height="50" width="50" alt="Icon of a shopping cart.">
+                <span>$123.56</span>
+                <br>
+                <a href="checkout.html" class="checkout-button">Checkout</a>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>/</li>
+                <li><a href="dogs.html">Dogs</a></li>
+                <li>/</li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <section class="main-content checkout-form">
+            <h2>Checkout</h2>
+
+            <form method="GET">
+                <label>Name
+                    <input type="text" name="applicantName" id="applicantName">
+                </label>
+        
+                <label>Email Address
+                    <input type="email" name="applicantEmail">
+                </label>
+
+                <label>Street Address
+                    <input type="text" name="applicantAddress">
+                </label>
+
+                <div class="city-state-zip">
+                    <label>City
+                        <input type="text" name="applicantCity" class="city">
+                    </label>
+
+                    <label>State
+                        <select name="applicantState">
+                            <option value=""></option>
+                            <option value="Washington">Washington</option>
+                            <option value="Oregon">Oregon</option>
+                            <option value="Idaho">Idaho</option>
+                        </select>
+                    </label>
+
+                    <label>Zip Code
+                        <input type="text" name="applicantZipCpde">
+                    </label>
+                </div>
+
+                <fieldset>
+                    <legend>First Time Adopter?</legend>
+                    <label>
+                        <input type="radio" name="applicantFirstTimeAdopter" value="yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="applicantFirstTimeAdopter" value="no">
+                        No
+                    </label>
+                </fieldset>
+
+                <label>How many pets are in your home?
+                    <input type="number" name="applicantPetCount" min="0">
+                </label>
+
+                <label>Pickup Location
+                    <select name="applicantPickupLocation">
+                        <option value=""></option>
+                        <option value="West Seattle">West Seattle</option>
+                        <option value="Bellevue">Bellevue</option>
+                    </select>
+                </label>
+
+                <label>Dogs Adopted</label>
+                <br>
+
+                <p>Total Adoption Cost</p>
+                    <p>$123.56</p>
+
+                <input type="submit" value="Submit" id="checkout" name="submit">
+            </form>
+
+        </section>
+
+        <footer>
+            <img src="images/adoptadog-logo.svg" alt="Icon of sitting dog to the left of ADOPTADOG text." width=300 height=91>
+            <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>/</li>
+                    <li><a href="dogs.html">Dogs</a></li>
+                    <li>/</li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            
+            <div class="inner-footer">
+                <i class="fa-regular fa-copyright"></i>
+                <p>Adoptadog, LLC | Seattle, WA</p>
+            </div>
+        </footer>
+    
+        <script src="./checkout_script.js"></script>
+    </body>
