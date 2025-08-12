@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adopt a dog</title>
+    <script
+      src="https://kit.fontawesome.com/fab87b9ac1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <img class="logo" src="images/adoptadog-logo.svg" alt="" />
+        <h1>Seattle's premiere dog adoption agency</h1>
+      </div>
+      <div class="header-right">
+        <img class="cart" src="images/cart-icon.svg" alt="shopping cart icon" />
+        <a href="checkout.html">Checkout</a>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="check-container">
+      <h2>Checkout</h2>
+
+      <form name="checkout" action="#" method="GET">
+        <label>Your Name <input type="text" name="applicantName" /> </label>
+
+        <label
+          >Email Address
+          <input type="email" name="applicantEmail" />
+        </label>
+
+        <label
+          >Street Address
+          <input type="text" name="applicantAddress" />
+        </label>
+
+        <label
+          >City
+          <input type="text" name="applicantCity" />
+        </label>
+
+        <label
+          >State
+          <select name="applicantState">
+            <option value="washington">Washington</option>
+            <option value="oregon">Oregon</option>
+            <option value="california">California</option>
+          </select>
+        </label>
+
+        <label>Zip Code<input type="text" name="applicantZip" /></label>
+
+        <fieldset>
+          <legend>Are you a first-time adopter?</legend>
+          <label>
+            <input type="radio" name="firstTime" value="yes" />
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="firstTime" value="no" />
+            No
+          </label>
+        </fieldset>
+        <label
+          >Pickup Location
+          <select name="pickupLocation">
+            <option value="nothing">Select One</option>
+            <option value="petsrus">Pets R Us</option>
+            <option value="doggie-daycare">Doggie Daycare</option>
+            <option value="woof-park">Woof Park</option>
+          </select>
+        </label>
+        <h3>Dogs Adopted</h3>
+        <img src="images/lucas-checkout.jpg" alt="" />
+        <p>Lucas<br />Cost to Adopt: $123.45</p>
+        <img src="images/duffy-checkout.jpg" alt="" />
+        <p>Duffy<br />Cost to Adopt: $123.45</p>
+
+        <h3>Total Adoption Cost</h3>
+        <p>$1234.56</p>
+        <input type="submit" value="Checkout" />
+      </form>
+    </main>
+    <footer>
+      <img class="footer-img" src="images/adoptadog-logo.svg" alt="" />
+      <p>Seattle's premiere adoption agency in the North Puget Sound region</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <ul>
+        <li>2025 Adoptadog, LLC</li>
+        <li>Seattle, WA</li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adopt a dog</title>
+    <script
+      src="https://kit.fontawesome.com/fab87b9ac1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <img class="logo" src="images/adoptadog-logo.svg" alt="" />
+        <h1>Seattle's premiere dog adoption agency</h1>
+      </div>
+      <div class="header-right">
+        <img class="cart" src="images/cart-icon.svg" alt="shopping cart icon" />
+        <a href="checkout.html">Checkout</a>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <article class="contact">
+      <h2>Contact Adoptadog</h2>
+      <p>
+        Please fill out this contact card and we will get back to you as soon as
+        paw-sible!
+      </p>
+      <form name="contactForm" id="contactForm" action="#" method="GET">
+        <label
+          >Your Name
+          <input type="text" class="input" name="contactName" />
+        </label>
+        <label
+          >City
+          <input type="text" class="input" name="contactCity" />
+        </label>
+        <label
+          >Your Email
+          <input type="email" class="input" name="contactEmail" />
+        </label>
+        <label
+          >How many dogs currently live in your home?
+          <input type="number" class="input" name="currentDogs" />
+        </label>
+        <fieldset>
+          <legend>Have you adopted from us before?</legend>
+          <label>
+            <input type="radio" class="input" name="prevAdopter" value="yes" />
+            Yes
+          </label>
+          <label>
+            <input type="radio" class="input" name="prevAdopter" value="no" />
+            No
+          </label>
+        </fieldset>
+        <label
+          >How did you hear about us?
+          <select name="custSurvey" class="input">
+            <option value="nothing">Please Select</option>
+            <option value="search-engine">Search Engine</option>
+            <option value="facebook">Facebook</option>
+            <option value="instagram">Instagram</option>
+            <option value="friends">Friends</option>
+            <option value="ads">Ads</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label
+          >Subject
+          <input type="text" class="input" name="subject" />
+        </label>
+        <label
+          >Message<br />
+          <textarea name="message" class="input" rows="15" cols="65"></textarea>
+        </label>
+        <input id="sendButton" type="submit" value="Send Message" /><br />
+      </form>
+      <ul>
+        <li>
+          <a href="tel:+2061234567"> </a
+          ><i class="fa-solid fa-phone"></i>206-123-4567
+        </li>
+        <li>
+          <a href="mailto:adoptadog@example.com"
+            ><i class="fa-solid fa-envelope"></i>Email</a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </li>
+      </ul>
+    </article>
+    <footer>
+      <img class="footer-img" src="images/adoptadog-logo.svg" alt="" />
+      <p>Seattle's premiere adoption agency in the North Puget Sound region</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <ul>
+        <li>2025 Adoptadog, LLC</li>
+
+        <li>Seattle, WA</li>
+      </ul>
+    </footer>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>

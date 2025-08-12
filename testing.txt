@@ -1,0 +1,89 @@
+User Personas
+Name: Jim Smith
+Age: 65
+Occupation: Retired Real Estate Agent
+Activities: golfing, walks, gardening, visiting grandkids, woodworking
+Other details: looking for small dog companion that has already gone through puppy stage
+    -uses 3 year old iPhone, uses 1 year iPad, has a 5 year old laptop. 
+    -prefers iPad
+Primary browsers: iOS Safari on iPad and iPhone.
+    -Microsoft Edge on Dell laptop 
+
+---
+
+Name: Kelly Smith
+Age: 26
+Occupation: Elementary School Teacher
+Activities: camping with friends, going to concerts, hiking
+Other details: looking for a medium sized energetic dog for hiking, camping
+    -uses 1 year old iPhone, uses 5 year old laptop
+Primary browsers: iOS Safari on iPhone
+-Safari on Macbook Air 
+
+---
+
+Tested on Chrome using Devtools
+    For iPhone 375x667
+    -images too wide
+    -content too wide
+    -content displaying in correct order
+
+    For iPad Mini 768x1024, iPad Pro 1024x1366
+    -all content displays in viewport
+    -text too long (more than 8-10 words long per row)
+
+    Laptop 1920x1080
+    -content should be out in columns for better space usage
+    -text too long
+
+Tested on Safari Browser 
+    For 375x667
+    -images just a little too wide
+    -text displaying in viewport, too small
+    -links too small
+    -Checkout page, form boxes too small, drop down menu too 
+    -large block white space after footer
+
+    For 768x1024
+    -trouble getting Responsive diplay tool in Safari to show 100% to jidge text/link sizes
+    -content displaying in viewport
+    -text too long, needs to be contained
+
+    For 1920x1080
+     -content should be out in columns for better space usage
+
+
+Tested on Edge Browser
+    For iPhone SE 375x667
+    -images too wide
+    -content displaying in correct order
+    -need more space between form boxes in Checkout page
+
+    For iPad Mini 768x1024, 
+    -all content displays in viewport
+    -text too long 
+
+    For iPad Pro 1024x1366
+    -content should be in columns for better space usage
+
+    For 1920x1080
+    -content should be in columns for better space usage
+    -can't display at 100% so hard to judge link/text sizes
+
+Tested on my physical iPhone, using iOS Safari
+    -Home page-images display too wide
+    -Home page- Adopt links too small
+    -Checkout page form is too small and boxes close together
+
+
+
+
+
+    
+
+
+
+
+
+
+
