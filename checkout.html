@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8" >
+  <link href="./styles.css" rel="stylesheet" type="text/css" >
+  <title>Adopt-A-Dog</title>
+  <script src="./script.js" defer></script>
+  <script src="https://livejs.com/live.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="title-text">
+    <a href="./index.html" class="embeds-img">
+      <img
+        width="320"
+        class="site-logo"
+        src="./images/adoptadog-logo.svg"
+        alt="Logo for Adopt-A-Dog" >
+    </a>
+    <h1>Seattle's premiere dog adoption agency</h1>
+  </div>
+  <div class="checkout">
+    <div class="cart">
+      <img 
+         width="30"
+         src="./images/cart-icon.svg"
+         alt="Icon of shopping cart" >
+      <span id="amount" class="amount">
+        $1234.56
+      </span>
+    </div>
+    <button type="button">Checkout</button>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./dogs.html">Dogs</a></li>
+    <li><a href="./blogs.html">Blog</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="checkout">
+    <h2>Checkout</h2>
+    <form>
+      <div class="form-field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" >
+      </div>
+      <div class="form-field">
+        <label for="email-address">Email Address</label>
+        <input type="email" id="email-address" name="email-address" >
+      </div>
+      <div class="multifield">
+        <div class="form-field" id="street-address">
+          <label class="form-field">
+            Street Address
+            <input type="text" name="street-address" >
+          </label>
+        </div>
+        <div class="form-field input-in-label" id="city">
+          <label class="form-field">
+            City
+          <input type="text" name="city" >
+          </label>
+        </div>
+        <div class="form-field input-in-label" id="state">
+          <label class="form-field">
+            State
+            <select name="state">
+              <option value="" label=" --- "> </option>
+              <option value="Alabama">AL</option>
+              <option value="Alaska">AK</option>
+              <option value="Arizona">AZ</option>
+              <option value="Arkansas">AR</option>
+              <option value="California">CA</option>
+              <option value="Colorado">CO</option>
+              <option value="Connecticut">CT</option>
+              <option value="Delaware">DE</option>
+              <option value="Florida">FL</option>
+              <option value="Georgia">GA</option>
+              <option value="Hawaii">HI</option>
+              <option value="Idaho">ID</option>
+              <option value="Illinois">IL</option>
+              <option value="Indiana">IN</option>
+              <option value="Iowa">IA</option>
+              <option value="Kansas">KS</option>
+              <option value="Kentucky">KY</option>
+              <option value="Louisiana">LA</option>
+              <option value="Maine">ME</option>
+              <option value="Maryland">MD</option>
+              <option value="Massachusetts">MA</option>
+              <option value="Michigan">MI</option>
+              <option value="Minnesota">MN</option>
+              <option value="Mississippi">MS</option>
+              <option value="Missouri">MO</option>
+              <option value="Montana">MT</option>
+              <option value="Nebraska">NE</option>
+              <option value="Nevada">NV</option>
+              <option value="New Hampshire">NH</option>
+              <option value="New Jersey">NJ</option>
+              <option value="New Mexico">NM</option>
+              <option value="New York">NY</option>
+              <option value="North Carolina">NC</option>
+              <option value="North Dakota">ND</option>
+              <option value="Ohio">OH</option>
+              <option value="Oklahoma">OK</option>
+              <option value="Oregon">OR</option>
+              <option value="Pennsylvania">PA</option>
+              <option value="Rhode Island">RI</option>
+              <option value="South Carolina">SC</option>
+              <option value="South Dakota">SD</option>
+              <option value="Tennessee">TN</option>
+              <option value="Texas">TX</option>
+              <option value="Utah">UT</option>
+              <option value="Vermont">VT</option>
+              <option value="Virginia">VA</option>
+              <option value="Washington">WA</option>
+              <option value="West Virginia">WV</option>
+              <option value="Wisconsin">WI</option>
+              <option value="Wyoming">WY</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-field input-in-label" id="zip-code">
+          <label class="form-field">
+            Zip Code
+            <input type="tel" name="zip-code" >
+          </label>
+        </div>
+      </div>
+      <fieldset>
+        <legend>First Time Adopter?</legend>
+        <div class="form-field">
+          <label id="first-time-adopter-yes" for="first-time-adopter-yes">Yes</label>
+          <input type="radio" id="first-time-adopter-yes" name="first-time-adopter" >
+        </div>
+        <div class="form-field">
+          <label id="first-time-adopter-no" for="first-time-adopter-no">No</label>
+          <input type="radio" id="first-time-adopter-no" name="first-time-adopter" >
+        </div>
+      </fieldset>
+      <div id="pickup-location" class="form-field input-in-label">
+        <label>
+          Pickup Location
+          <select name="pickup-location">
+            <option value="" label="---"></option>
+            <option value="seattle">Seattle</option>
+            <option value="bothell">Bothell</option>
+            <option value="union-square">Union Square</option>
+            <option value="watergate-plaza">Watergate Plaza</option>
+          </select>
+        </label>
+      </div>
+      <section id="checkout">
+        <h3>Dogs Adopted</h3>
+        <ul>
+          <li>
+            <img alt="Lucas looking hopefully up" src="./images/lucas-checkout.jpg" >
+            <div class="checkout-info">
+              <h4>Lucas</h4>
+              <dl>
+                <dt>Cost to Adopt</dt>
+                <dd>$123.45</dd>
+              </dl>
+            </div>
+          </li>
+          <li>
+            <img alt="Duffy squinting at fourth wall" src="./images/duffy-checkout.jpg" >
+            <div class="checkout-info">
+              <h4>Duffy</h4>
+              <dl>
+                <dt>Cost to Adopt</dt>
+                <dd>$123.45</dd>
+              </dl>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="adoption-cost">
+        <h3>Total Adoption Cost</h3>
+        <span class="total">$1234.56</span>
+        <button class="submit" type="button">Submit</button>
+      </section>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <img
+    class="site-logo"
+    src="./images/adoptadog-logo.svg"
+    alt="Logo for Adopt-A-Dog" >
+  <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./dogs.html">Dogs</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+    </ul>
+  </nav>
+  <div class="company-info">
+    <span class="copyright">
+      2018 Adoptadog, LLC
+    </span>
+    <!-- | -->
+    <span class="location">
+      Seattle, WA
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+/* TODO:
+Show bg-image if the user is on a tablet or PC; hide otherwise
+Push article text to bottom of image if on a phone.
+Transform navi-lists into buttons if on mobile.
+Highlight adoption cards upon hover
+ */
+
+/* GLOBAL */
+
+:root {
+  --content-margin: 10rem;
+  --inner-content-margin: calc(var(--content-margin) + 4rem);
+}
+
+body {
+  margin: 0;
+}
+
+.embeds-img {
+  display: block;
+}
+
+/* HEADER */
+
+header {
+  background-color: #093c60;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem var(--content-margin);
+  color: white;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  color: #81b741;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.checkout {
+  /* width: 10rem; */
+}
+
+.cart {
+  display: flex;
+  justify-content: end;
+  height: 3rem;
+  padding-left: 2rem;
+}
+
+.cart > img {
+  margin-right: 0.5rem;
+}
+
+.amount {
+  display: flex;
+  /* justify-content: end; */
+  align-items: center;
+}
+
+.checkout > button {
+  margin-top: 0.5rem;
+  background-color: #81b741;
+  color: inherit;
+  width: 100%;
+  height: 2rem;
+}
+
+/* NAVIGATION */
+
+nav {
+  background-color: #ececec;
+  padding: 0 var(--inner-content-margin);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+nav > ul {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+nav > ul > li + li::before {
+  content: "/ ";
+}
+
+nav a {
+  text-decoration: none;
+  color: #093c60;
+}
+
+/* MAIN */
+
+main {
+  padding: 0 var(--inner-content-margin);
+  color: #3d3d3d;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+}
+
+.picture-and-text {
+  display: flex;
+  margin: 1.5rem 0;
+}
+
+.picture-and-text > article {
+  margin: 1rem;
+  margin-top: 0rem;
+  /* padding-right: 5rem; */
+  /* padding-right: var(--inner-content-margin); */
+  width: 800px;
+}
+
+main img {
+  align-self: start;
+}
+
+h2 {
+  color: #093c60;
+}
+
+.field-label {
+  font-weight: bold;
+}
+
+.field-label::after {
+  content: ": ";
+}
+
+#adoption-listings {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-basis: 25%; */
+}
+
+#adoption-listings > article > img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+#adoption-listings > article {
+  border: 1px solid #ededed;
+  /* width: 400px; */
+  width: 300px;
+  margin: 2rem;
+  /* padding: 1rem; */
+}
+
+/* #adoption-listings > article:first-child { border: 3px solid red; } */
+
+.adoption-card {
+  padding: 1rem;
+}
+
+#adoption-listings button {
+  background-color: #81b741;
+  color: white;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+#adoption-listings h2 {
+  margin: 0;
+}
+
+main > button {
+  background-color: #ececec;
+  color: #093c60;
+  width: 30rem;
+  /* width: 100%; */
+  height: 3rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #3d3d3d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 5rem;
+}
+
+footer nav {
+  background-color: inherit;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer p {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer img {
+  width: 25rem;
+}
+
+.copyright::after {
+  content: " | ";
+}
+
+/* MAIN::BLOGS */
+
+.blog > h2 {
+  margin: 3rem 0;
+}
+
+.blog > article {
+  display: flex;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+}
+
+.article-text > button {
+  background-color: #093c60;
+  color: white;
+  height: 2rem;
+  width: 10rem;
+}
+
+.article-text {
+  margin-left: 3rem;
+  /* padding-right: 100px; */
+  width: 700px;
+}
+
+.article-text > h3 {
+  margin: 0;
+  color: #093c60;
+}
+
+/* MAIN::CHECKOUT */
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+fieldset > legend, .form-field > label {
+  color: #093c60;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#first-time-adopter-yes, #first-time-adopter-no {
+  color: revert;
+  font-weight: revert;
+}
+
+textarea, .form-field > input, select {
+  border: 3px solid #ededed;
+  border-radius: 2px;
+  height: 3rem;
+  width: 40rem;
+  background-color: white;
+}
+
+textarea {
+  resize: none;
+  height: revert;
+  width: revert;
+}
+
+fieldset {
+  display: flex;
+  width: 20rem;
+  height: 5rem;
+  justify-content: space-around;
+  margin: 3rem 0;
+  border-width: 0;
+}
+
+fieldset .form-field {
+  /* margin-bottom: 0; */
+}
+
+fieldset .form-field input {
+  width: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.multifield {
+  display: grid;
+  grid-template-areas:
+    "street-address . ."
+    "city state zip-code";
+  grid-row-gap: 3rem;
+  --city-width: 18rem;
+  --state-width: 5rem;
+  --zip-code-width: 13rem;
+  column-gap: 2rem;
+  /* grid-template-rows: 6rem 6rem; */
+  /* grid-template-columns: 40rem; */
+  grid-template-columns: var(--city-width) var(--state-width) var(--zip-code-width);
+  /* grid-template-columns: 13rem 13rem 13rem; */
+}
+
+.multifield > * {
+  margin-bottom: 0;
+}
+
+.multifield .form-field > input, select {
+  margin-top: 1rem;
+}
+
+#street-address {
+  grid-area: street-address;
+}
+
+#city {
+  grid-area: city;
+  width: var(--city-width);
+}
+
+#state {
+  grid-area: state;
+  width: var(--state-width);
+}
+
+#zip-code {
+  grid-area: zip-code;
+  width: var(--zip-code-width);
+}
+
+.input-in-label input, select {
+  width: 100%;
+}
+
+#pickup-location {
+  width: 40rem;
+}
+
+#checkout h3, h4 {
+  color: #093c60;
+}
+
+#checkout > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+#checkout > ul > li {
+  margin: 0 2rem;
+  display: flex;
+}
+
+dt {
+  font-weight: bold;
+}
+
+#checkout > ul > li dd, dt {
+  display: inline;
+}
+
+.checkout-info {
+  margin-left: 1rem;
+}
+
+#adoption-cost {
+  color: #093c60;
+  width: 30rem;
+}
+
+#adoption-cost > h3 {
+  font-size: 2rem;
+}
+
+.total {
+  color: black;
+  font-size: 2rem;
+}
+
+.submit {
+  margin-top: 2rem;
+  background-color: #81b741;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .picture-and-text {
+    /* display: flex; */
+    /* margin: 1.5rem 0; */
+    flex-direction: column;
+  }
+  .picture-and-text > article {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .blog > article {
+    flex-direction: column;
+    /* display: flex; */
+    /* margin-bottom: 5rem; */
+    /* margin-left: 2rem; */
+  }
+  .article-text {
+    /* margin-left: 3rem; */
+    /* padding-right: 100px; */
+    /* width: 700px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 100%;
+  }
+}

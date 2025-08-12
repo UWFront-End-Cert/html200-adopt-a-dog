@@ -1,0 +1,111 @@
+
+PROMPT
+======
+Add a testing.txt file to your repository to include your research on users and devices, and testing steps you took to ensure site quality.
+Test your course project on:
+    At least 3 different browsers
+    On a different operating system if you can (PC if you have a Mac, and vice versa)
+    On a tablet and or phone.
+
+TODO
+====
+Test on Edge
+
+________________________________________________________________________________
+
+RESEARCH
+========
+[Dogs hate it when their owners use their phones](https://www.countryliving.com/uk/wildlife/pets/a30621859/pets-owners-phones/)
+> Possible feature: Every five minutes or so, the website could alert users to pay attention to their pet. This shows that we care about the dogs we leave in the care of our users. We could also link the user to this article in the alert, while telling them to read it afterwards.
+> Possible features:
+  - banner-tips on how to keep a dog
+  - recommended forums for dog-owners (subsumed by 'blogs' section)
+  - feedback for what other features to include in the site
+  - newsletter to alert dog-owners of new guests at the shelter.
+[PetFinder](https://www.petfinder.com/)
+> Features included:
+  - Search functionality
+  - Articles on dogs and the like.
+
+TESTING
+=======
+Testing visibility of all elements.
+Testing functionality of all buttons.
+
+Firefox
+-------
+### Testing visibility of all elements
+1. Toggle on `Responsive Design Mode`; navigate the following path.
+    1. `More tools`
+    2. `Responsive Design Mode`
+*Alternatively, use the keyboard shortcut `Ctrl-Shift-M`.*
+2. Open the web-dev console; navigate the following path..
+    1. `More tools`
+    2. `Web Developer Tools`
+*Alternatively, use the keyboard shortcut `Ctrl-Shift-I`.*
+3. Select a viewport size corresponding to that of a phone.
+4. Hover over the HTML source rendered in the web-dev console.
+5. For each element in the body you hover over, ensure that a part of the rendered page is highlighted. This ensures that every HTML element that is supposed to be visible is in fact visible.
+   - Enable `touch simulation` as necessary to scroll to the bottom of the page.
+   - Toggle the orientation of the virtual viewport and check for visibility there also.
+6. If any element is not rendered, amend the HTML as necessary.
+7. Repeat steps 3 -- 6 for all pages, and for at least three viewport sizes. Sizes corresponding to viewports from all of these categories must be included:
+   - phone
+   - tablet
+   - PC
+### Testing functionality of all buttons.
+1. Add following JS code to the bottom of all HTML pages.
+```javascript
+  for (const button of document.body.querySelectorAll("button")) {
+    button.addEventListener("click", (event) => {
+      alert(event.target.innerText);
+    });
+  };
+```
+2. Open each page and check that clicking on each button causes an alert pop-up to display the name of the button clicked.
+3. Repeat step 2 for all pages.
+
+Chrome
+------
+### Testing visibility of all elements
+1. Open the `Developer tools`; navigate the following path.
+    1. `More tools`
+    2. `Developer tools`
+*Alternatively, use the keyboard shortcut `Ctrl-Shift-I`.*
+2. Enter the view that allows you to toggle devices.
+    - In the upper-left corner of the `Developer tools`, there should be two icons; select the one second from the left.
+    - *Alternatively, use the keyboard shortcut `Ctrl-Shift-M`.*
+
+
+Samsung Galaxy A16 5G
+---------------------
+### Testing visibility of all elements 
+1. Open website in Chrome.
+2. Scroll through each page, cross-checking with the browser to ensure that no elements are missing.
+### Testing functionality of all buttons.
+1. Add following JS code to the bottom of all HTML pages.
+```javascript
+  for (const button of document.body.querySelectorAll("button")) {
+    button.addEventListener("click", (event) => {
+      alert(event.target.innerText);
+    });
+  };
+```
+2. Open each page and check that each button can be clicked on.
+3. Check that clicking on each button causes an alert pop-up to display the name of the button clicked.
+4. Repeat step 2 for all pages.
+
+Microsoft Edge
+--------------
+1. Open the `Developer tools`; navigate the following path.
+    1. `More tools`
+    2. `Developer tools`
+*Alternatively, access it using the keyboard shortcut `Ctrl-Shift-I`.*
+2. Open the GUI that allows you to toggle virtual devices.
+    - In the upper-left corner of the `Developer tools`, there should be two icons; select the one second from the left.
+*Alternatively, use the keyboard shortcut `Ctrl-Shift-M`.*
+3. In the virtual device previewer, test visibility of elements as before on different devices.
+    - Rotate virtual device as desired. 
+    - Enable touch gestures to scroll through virtual viewport.
+4. Toggle the `vision deficiency emulation` widget to various options as needed.
+    - Assess if any references to color should be made, and revise as necessary.
