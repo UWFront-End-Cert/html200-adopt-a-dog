@@ -1,0 +1,698 @@
+
+
+/*------------------GLOBAL RESET------------------------
+no unexpected browser spacing, padding stay
+inside the element, layouts consistently across device
+--------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  padding: 0.5rem; /*give a little space from the page edges*/
+}
+/*remove default margin that browsers added*/
+figure {
+  margin: 0;
+  padding: 0;
+}
+/*------------------------------------------------------------
+Header container
+--------------------------------------------------------------*/
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*padding: 3rem 3rem 10rem 3rem;*/
+  padding: clamp(2rem, 4vw, 3rem) 
+           clamp(1rem, 3vw, 3rem) 
+           clamp(4rem, 10vw, 10rem) 
+           clamp(1rem, 3vw, 3rem);
+  /*Header background image*/
+  background-image:url("images/header-image.jpg"); 
+  background-size: cover;
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/*-----------------------------------------------------------
+make images responsive to make sure all image shrink on mobile
+-------------------------------------------------------------*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/*-----------------------------------------------------------
+Logo container 
+make it a vertical flexbox so that the dog logo image sit on 
+top of the tagline
+------------------------------------------------------------*/
+.logo {
+  display: flex;
+  flex-direction: column; /* stack logo + tagline vertically */
+  align-items: flex-start; /* left-align text under the logo */
+  gap: 0.25rem; /* space between logo and tagline */
+  /*margin-left: 4rem; /*move right*/
+  margin-left: clamp(0rem, 4vw, 4rem);
+  /*margin-top: 1rem; /*move down*/
+  margin-top: clamp(0.5rem, 2vw, 1rem);
+}
+.logo-img {
+  width:100%;/*using % width and max-width instead of fixed width*/
+  max-width:32rem;
+  height: auto;
+}
+.logo p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color:rgb(127, 191, 63);
+  margin: 0; /* remove default paragraph spacing */
+}
+/*-----------------------------------------------------------
+Cart container
+-------------------------------------------------------------*/
+.cart {
+  display: flex;
+  flex-direction: column; /*stack items vertically*/
+  align-items: flex-end;/*Keep them aligned to the right*/
+  gap: 0.5rem; /* space between cart icon, price and botton*/
+  /*padding-right: 8rem;/*move left
+  margin-bottom: 5rem; move up*/
+  padding-right: clamp(1rem, 6vw, 8rem);/*not smaller than 1rem,
+  ideally 6vw, no larger than 8rem*/
+  margin-bottom: clamp(1rem, 5vw, 5rem);
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: white;
+}
+.cart-top {
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+}
+.cart-icon {
+  /*width: 2rem;*/
+  width: clamp(1.5rem, 2vw, 2rem);
+  height: auto;
+}
+.checkout-btn {
+  display: inline-block;
+  /*padding: 0.25rem 3rem;*/
+  padding: 0.25rem clamp(1rem, 5vw, 3rem);
+  background: rgb(127, 191, 63);
+  color: white;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+/*------------------------------------------------------------
+Navigation container
+--------------------------------------------------------------*/
+/*navigation style*/
+.header-nav {
+  display: flex;
+  background-color: lightgray;
+  padding:1rem;
+  gap: 1rem;
+  justify-content: flex-start;/*nav links to the left*/
+  /*padding-left: 17.25rem;/*adjust how far from the left*/
+  padding-left: clamp(1rem, 10vw, 17rem);
+  align-items: center; /*centers nav vertically*/
+}
+.header-nav-a {
+  color: rgb(1, 66, 89);
+  text-decoration: none;
+  font-weight: bold;
+}
+.header-nav-ul {
+  list-style: none;
+  padding:0;
+  margin: 1rem 1rem; /*reduce size of margin so links have space*/
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; /*allow wrapping at 200% zoom */
+  gap: 0.625rem; /*~10px - add space between link title*/
+  
+}
+/*add slash between list*/
+.header-nav-ul li::after {
+  content: " /";
+  padding: 0 0.625rem;
+  white-space: nowrap; /*keep each link and slash together*/
+}
+.header-nav-ul li:last-child::after{
+  content: "";
+}
+/*---------------------------------------------------------
+add page wrapper to centers the content section in the middle
+of the page
+------------------------------------------------------------*/
+.page-wrapper{
+  max-width: 1200px; /*control how wide the content can grow*/
+  margin: 0 auto; /*centers the whole section*/
+  padding: 0 2rem;
+}
+/*---------------------------------------------------------
+Main container
+-----------------------------------------------------------*/
+.main-content {
+  /*margin: 2rem 0 0;*/
+  margin-top: clamp(1rem, 3vw, 2rem);
+}
+.main-content h1 {
+  color: rgb(1, 66, 89);
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+.main-container {
+  display: flex;/*put image and text side by side*/
+  gap: 2rem; /*space between image and text*/
+  align-items: flex-start;/*align tops*/
+  /*padding-left: 10rem;/*adjust how far from the left*/
+}
+/* make image column smaller*/
+.main-container figure {
+  flex: 1;
+}
+/*--------------------------------------------------
+Blog page main container styles
+---------------------------------------------------*/
+.blog-layout h1 {
+  margin-bottom: 2.5rem;
+}
+.blog-layout .blog-entry {
+  display: flex;
+  flex-direction: row;   /* figure left, aside right */
+  gap: 2rem;
+  margin-bottom: 2rem;
+  min-width: 0; /*allow shrinking*/
+}
+
+.blog-layout .blog-entry figure{
+  display: flex;
+  flex: 1; /*image + text alignment*/
+  min-width: 0;
+}
+.blog-layout .blog-entry figure img{
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+.blog-layout .blog-entry .aside-container {
+  flex: 2;     /* text column */
+  min-width: 0;
+  
+}
+.blog-layout .aside-container {
+  margin-top: 0;
+}
+.blog-layout .aside-container h2 {
+  margin-top: 0;
+}
+.blog-layout .aside-container p {
+  margin-bottom: 1rem;
+  font-size: 1rem; /*~16px*/
+}
+/*--------------------------------------------------------
+side section container style
+----------------------------------------------------------*/
+/* make text column wider than the figure column*/
+.aside-container {
+  flex: 1.5;
+}
+.aside-container h2 {
+  color: rgb(1, 66, 89);
+  line-height: 1.6rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem 0;/* top | right | bottom | left */
+}
+.aside-container p {
+  color: #3f3f3f;
+  line-height: 1.6rem;
+  font-size: 1rem;
+}
+
+/*---------------------------------------------------------
+Dog container
+-----------------------------------------------------------*/
+/* DOG GRID */
+.dog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;/*space above the grid*/
+  width: 100%;
+}
+.dog-card {
+  flex: 1 1 calc(25% - 2rem); /*4 cards per row*/
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: white;
+  min-width: 200px;/*prevents collapsing*/
+  font-size: 0.875rem;/*~14px*/
+}
+.dog-card h2 {
+  color: rgb(1, 66, 89);
+  font-weight: bold;
+  font-size: 1.25rem;/*~20px*/
+  margin: 0 0 0.5rem 0; /*small space under the name*/
+}
+.dog-card p {
+  margin: 0 0 0.75rem 0; /*small space under cost and descpription*/
+}
+.dog-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.dog-card .adopt-btn {
+  margin-top: 0.5rem; /*space above the button*/
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  /*padding: 0.5rem 3rem;*/
+  padding: 0.5rem clamp(1rem, 5vw, 3rem);
+  background: rgb(127, 191, 63);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+/*----------------------------------------------------------------
+See more dogs styles
+------------------------------------------------------------------*/
+.more-dogs-container {
+  text-align: center;
+  margin: 2rem 0; 
+}
+.more-dogs {
+  margin-top: 2rem;
+  display: inline-block;
+  text-align: center;
+  /*padding: 0.5rem 3rem;*/
+  padding: 0.5rem clamp(1rem, 5vw, 3rem);
+  background: #dfe1e2;
+  color: rgb(1, 66, 89);
+  text-decoration: none;
+  font-weight: bold;
+}
+.more-dogs:hover,
+.more-dogs:focus {
+  background: #1abac0;
+  outline: 3px solid #ecb722;
+  outline-offset: 3px;
+}
+/*--------------------------------------------------------------------
+Footer container
+---------------------------------------------------------------------*/
+/*footer section style*/
+.footer-container {
+  background-color: rgb(1, 66, 89);
+  color: white;
+  text-align: center;
+  padding: 2rem 1.25rem;
+  margin-top: 1.5rem;
+}
+.footer-container .logo-img {
+  display: block;
+  margin: 0 auto 1.5rem auto; /*centers the image and bottom spacing*/
+  height: auto;
+  width: 100%;
+  max-width: 18rem;
+}
+.footer-nav-ul {
+  list-style: none;
+  padding:0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.footer-nav-a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block; /*use block as <a> ignore top/bottom margin*/
+  margin: 1.5rem 0 1.5rem;
+}
+/*add slash between list*/
+.footer-nav-ul li::after {
+  content: " /";
+  padding: 0 5px;
+}
+.footer-nav-ul li:last-child::after{
+  content: "";
+}
+.footer-copyright {
+  font-size: 0.9rem;
+}
+
+/*-------------------------------------------------------------
+Checkout Form
+---------------------------------------------------------------*/
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space between rows */
+  max-width: 700px;
+  align-items: flex-start;
+  width: 100%;
+}
+.form-row {
+  display: flex;
+  flex-direction: column; /*makes label + input vertical */
+  gap: 0.5rem;
+  width: 100%;
+}
+.checkout-form label {
+  font-weight: bold;
+  color: rgb(1, 66, 89);
+}
+.main-content h1 {
+  margin-bottom: 1.5rem; 
+}
+.checkout-form input,
+.checkout-form select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 4px;
+  width: 100%;
+}
+.address-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;/* space between City, State, Zip */
+  width: 100%;
+}
+.address-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 150px;
+}
+.address-row .address-item select,
+.address-row .address-item input {
+  width: 100%; /* keep City/State/Zip full inside their column */
+}
+#pickup {
+  width: auto; /* override the global 100% rule */
+  max-width: 200px; /* match City width */
+}
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem; /* space between Yes and No */
+  align-items: center;
+  margin-top: 0.25rem;
+}
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;  /* space between radio circle and text */
+  font-size: 0.9rem; 
+  color: #333;
+  width: auto; /*prevents stretching on Edge*/ 
+}
+
+/*-------------------------------------------------------
+Dogs section
+--------------------------------------------------------*/
+.dogs-row {
+  display: flex;
+  flex-direction: row; 
+  /*gap: 5rem; /*more space between dog items*/
+  gap: clamp(1.5rem, 6vw, 5rem);
+  margin-bottom: 1rem;
+}
+.dogs-adopted h2 {
+  font-weight: bold;
+  color: rgb(1, 66, 89);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.dog-item {
+  display: flex;
+  flex-direction: row; /* image + text side-by-side */
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.dog-item img {
+  width: 80px; 
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.dog-info {
+  display: flex;
+  flex-direction: column; /* name above cost */
+  gap: 0.25rem;
+ 
+}
+/*Dog name*/
+.dog-info h3 {
+  font-weight: bold;
+  color: rgb(1, 66, 89);
+  font-size: 1rem;
+  margin: 0;
+}
+/* Cost to Adopt text smaller */
+.dog-info p {
+  font-size: 0.875rem;
+  margin: 0;
+}
+.total-cost {
+  font-weight: bold;
+  color: rgb(1, 66, 89);
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.total-price {
+  display: block; /* forces it onto the next line */
+  color: #555;             
+  font-weight: normal;
+  margin-top: 0.25rem;
+}
+.submit-btn {
+  align-self: flex-start !important;
+  margin: 0 !important;
+  display: inline-block;
+  /*padding: 0.75rem 3rem;*/
+  padding: 0.75rem clamp(1rem, 5vw, 3rem);
+  border: none;
+  background: rgb(127, 191, 63);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/*-------------------------------------------------------------
+Responsive Breakpoints
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Adjust the main content and header for mobile max-width: 767px
+----------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .site-header {
+    display: flex;/*flex container*/
+    flex-direction: column;/*stack logo, textline, cart*/
+    align-items: center;/*center horizontally*/
+    text-align: center;/*center the textline*/
+    padding: 1.5rem 1rem;
+    background-position: center top;
+  }
+  .logo {
+    align-items: center;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  /*make the logo image is centered*/
+  .logo-img {
+    width: 12rem;
+    height: auto;
+    margin: 0 auto;
+  }
+  .site-header p {
+    margin: 0.5rem 0 1rem;
+    text-align: center;
+  }
+   .cart {
+    align-items: center;
+    padding-right: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .cart-top {
+    justify-content: center;
+  }
+  .checkout-btn {
+    text-align: center;
+    margin-top: 0.75rem;
+  }
+/* make main content full width on mobile*/
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .main-container figure {
+    width: 100%;
+  }
+  .aside-container {
+    width: 100%;
+  }
+  .header-nav {
+    justify-content: center;/* center nav links */
+    padding-left: 0; /* remove desktop left push */
+    padding: 1rem 0; /* cleaner mobile spacing */
+  }
+  .header-nav-ul {
+    justify-content: center; /* center the list */
+    flex-wrap: wrap; /* allow wrapping */
+    gap: 0.75rem; /* tighter spacing for mobile */
+    margin: 1rem 0;
+  }
+  .header-nav-a {
+    display: inline-block;
+    padding: 0.75rem 1rem;/*larger tap area*/
+    font-size: 1rem;
+  }
+  .blog-layout .blog-entry {
+    flex-direction: column;
+  }
+  .dog-card {
+    flex: 1 1 calc(50% - 1rem); /*50% width 2 cards per row*/
+  }
+  .address-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .address-item {
+    width: 100%;
+    min-width: unset;
+  }
+  .radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .radio-group input[type="radio"] {
+  margin: 0; /*remove Safari's hidden indent */
+  padding: 0;
+  transform: translateX(-2px);/*Safari-only visual correction*/
+  }
+  .radio-group label {
+  width: auto; /* prevents text from jumping to right edge */
+  display: inline-flex;/*fixes Safari baseline bug*/
+  justify-content: flex-start;/* keeps radio + text together*/
+  }
+  .checkout-form {
+    max-width: 100%;
+  }
+  .dogs-row {
+    flex-direction: column;
+    gap: 2rem; /* smaller gap for mobile */
+  }
+  .dog-item {
+    flex-direction: column; /* image above text */
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .dog-item img {
+    width: 100px;/* make imgage bigger on mobile*/  
+    height: 100px;
+  }
+}
+/*--------------------------------------------------------------------------
+Adjust for iPad breakpoint at 767 px and above
+----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  .site-header {
+    display: flex;
+    flex-direction: row; /*horizontal again*/
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 2rem 3rem;
+    flex-wrap: nowrap; /*prevent cart from dropping to a new line*/
+  }
+  .logo {
+    margin: 0;
+    align-items: flex-start;
+  }
+  .cart {
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: flex-end; /*push to the right*/
+    margin-bottom: 0;
+    padding-right: 0;
+    width: auto;
+  }
+  .cart-top {
+    display: flex;
+    justify-content: flex-end;/*keep icon + price right*/
+    width: 100%;
+  }
+  .checkout-btn {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+  .header-nav {
+    padding-left: 2rem;
+  }
+  /* Blog layout: side-by-side */
+  .blog-layout .blog-entry {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem; /*closer spacing */
+    margin-bottom: 2.5rem;
+  }
+
+  /* make image smaller, text bigger */
+  .blog-layout .blog-entry figure {
+    flex: 0.8; /*smaller image column */
+  }
+
+  .blog-layout .blog-entry .aside-container {
+    flex: 2; /*bigger text column */
+  }
+  .address-row {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .address-item {
+    flex: 1 1 calc(50% - 1.25rem); /* 2 columns on tablet */
+    min-width: 200px;
+  }
+
+  /* Pickup Location matches City width */
+  #pickup {
+    width: 100%;
+  }
+}
+/*-----------------------------------------------
+Accessibility features
+-----------------------------------------------*/
+figure {
+  outline: none;
+}
+figure:focus {
+  outline: none;
+}
+/*add style so the current page looks different*/
+.header-nav-a[aria-current="page"] {
+  color: #52B2BF;
+  padding-bottom: 2px;
+  border-bottom: 3px solid #52B2BF
+}
+
+
+
