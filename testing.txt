@@ -1,0 +1,177 @@
+User Persona:
+
+1. The Intentional Adopter
+
+Name: Casey Miller
+
+Age: 29 (Millennials/Gen Z make up 57% of pet owners).
+
+Occupation: Remote Content Coordinator (flexible work-from-home schedules are a top driver for 2025/2026 adoptions).
+
+Hobbies: Hiking, pet photography for social media, and visiting dog-friendly cafes.
+
+Personality: Ethical, research-oriented, and tech-savvy. Casey views a dog as a "best friend" and a lifestyle companion.
+
+Primary Browser: Google Chrome (Chrome currently holds a 64.26% global market share).
+
+Device Usage: Mobile-First 
+(~96% of internet users in Casey's age bracket access the web primarily via smartphone)
+(~65–70% of shelter/adoption website traffic typically comes from mobile devices)
+
+Behavioral Insight: Casey uses Chrome for Android/iOS to browse listings during breaks, but switches to a desktop version of Chrome for the high-intent 
+
+task of filling out the adoption application.
+
+2. The Casual Researcher
+
+Name: Jordan Smith
+
+Age: 24 (Gen Z)
+
+Occupation: Junior Marketing Assistant (Office)
+
+Hobbies: Exploring local cafes, listening to podcasts, and online "window shopping"
+
+Personality: Cautious and visual. Jordan loves dogs but is currently "testing the waters" to see if a pet fits his current apartment lifestyle.
+
+Primary Browser: Safari (Safari holds ~24% of the mobile browser market)
+
+Device Usage: iPhone
+
+Behavioral Insight: Because the site lacks a "Save to Favorites" feature, Jordan keeps multiple tabs open or takes screenshot of the dogs so he doesn't 
+
+lose the dogs he likes.
+
+Resources:
+
+Pet Ownership Statistics in 2026 | The Zebra
+
+Browser Market Share Worldwide | Statcounter Global Stats
+
+2025 Annual Data Report - Shelter Animals Count
+
+Tip of the Week: 2025 State of Shelter Adoption Report - The Association for Animal Welfare Advancement
+
+Digital 2024: Global Overview Report — DataReportal – Global Digital Insights
+
+
+
+Testing:
+
+I'm using a PC and an iPhone for testing. I don't have a Mac laptop, so I tested Safari on my iPhone and used Chrome DevTools to emulate additional devices and tablet sizes.
+
+Main Testing Steps:
+
+1.Validated HTML using the W3C Validator
+
+2.Checked CSS for syntax errors
+
+3.Checked navigation links on every page and verified there were no broken links
+
+4.Tested responsive layout using browser DevTools at multiple breakpoints
+
+5.Verified that all images load correctly and include appropriate alt text
+
+6.Zoomed to 200% to confirm WCAG accessibility behavior
+
+7.Tested all form fields on the Checkout page
+
+8.Tested on real devices (iPhone)
+
+
+Devices and Browsers Tested
+
+1. Desktop (Google Chrome)
+
+Detail Testing Steps after validating the HTML and CSS:
+
+1. Navigation Links
+   Result: All links work properly except the Contact link, which is expected because the Contact page has not been created yet.
+
+2. Responsive Layout (DevTools)  
+   Tested using multiple device presets: desktop, iPhone SE, iPhone 14 Pro Max, iPad mini, iPad Air, iPad Pro, and Nest Hub Max.
+   Result: All pages adjust as intended. Smaller screens display a single‑column layout, and the layout expands appropriately on larger devices.
+	   
+3. Images 
+   Result: All images load correctly, are aligned properly, and maintain equal spacing across different screen sizes.
+
+4. Text Readability
+   Result: All text is clear and easy to read. Font sizes remain consistent across breakpoints, and no text overlaps or becomes too small or smaller   
+
+   screens.
+
+5. 200% Zoom (Accessibility) 
+   Result: No overflow or layout issues. Content remains readable and properly structured at 200% zoom.
+
+6. Checkout Form Fields  
+   Result: All fields can be filled out successfully, and the form behaves as expected.
+
+   Note: The "Adopt" buttons on the dog listing page are non-functional, which is expected for Assignment 1. The assignment only requires static HTML       
+
+	 pages that match the provided mockups. The Checkout page includes two sample dogs to reflect the PDF example, not dynamic selections from the   	 	
+	 Adopt buttons.
+	
+Changes after Testing (Chrome)
+
+No changes were needed after testing on Chrome. All pages behaved as expected, and no layout, accessibility, or functional issues were found.
+
+2. Desktop (Microsoft Edge)
+
+Detailed Testing Steps
+
+1. Navigation Links
+   Result: Same behavior as Chrome. All links work properly except the Contact link, which is expected because the Contact page has not been created yet.
+
+2. Responsive Layout (DevTools)
+   Tested using the same device presets: desktop, iPhone SE, iPhone 14 Pro Max, iPad mini, iPad Air, iPad Pro, and Nest Hub Max.
+   Result: It behaves the same as Chrome. I don't see any layout shifts or spacing differences.
+
+3. Images  
+   Result: All images load correctly, are aligned properly, and maintain equal spacing across different screen sizes.
+
+4. Text Readability  
+   Result: Text appears clear and readable on all tested device sizes. No issues with font scaling, overlapping, or readability.
+
+5. 200% Zoom (Accessibility)  
+   Result: The layout stay readable with no overflow or text overlap.
+
+6. Checkout Form Fields  
+   Result: All fields can be filled out successfully, and the form behaves as expected.
+
+   Note: The "Adopt" buttons on the dog listing page are non-functional, which is expected for Assignment 1. The assignment only requires static HTML       
+
+	 pages that match the provided mockups. The Checkout page includes two sample dogs to reflect the PDF example.
+
+Changes After Testing (Edge)
+
+No changes were needed after testing on Edge. It behaves the same as Chrome.
+
+3. Mobile (Safari - iPhone 11 Pro Max, iOS)
+
+Detailed Testing Steps
+
+1. Navigation Links  
+   Result: Same behavior as Chrome and Edge. All navigation links work properly except the Contact link, which is expected because the Contact page has 
+   not been created yet.
+
+2. Responsive Layout (Real Device)  
+   Tested on iPhone using Safari.
+   Result: The layout matches what I saw in DevTools. The site displays a single‑column layout on mobile, and I did not see any layout or spacing 
+   differences.
+
+3. Images  
+   Result: All images load correctly and maintain proper alignment and spacing.
+
+4. Touch Behavior  
+   Result: Buttons respond correctly, the menu behaves properly, and there are no tap delays.
+
+5. 200% Zoom / Pinch Zoom  
+   Result: The layout stays readable with no overflow or horizontal scrolling.
+
+6. Checkout Form Fields  
+   Result: I can type in all fields, and the keyboard does not cover the input I am entering. However, I found one issue:
+   In the “First Time Adopter?” section, the second radio button partially overlaps the word “Yes,” causing the screen to show only “Y” instead of “Yes.”
+
+Changes After Testing (Safari on iPhone)
+
+After the initial test, I updated the radio button section in the mobile layout to a single-column format and adjusted the HTML/CSS to fix the overlap issue. After making these changes, the overlap was resolved, but I noticed a new behavior on Safari (iPhone 11 Pro Max): the “Yes” label shows a slight left  indent. This indent does not appear in Chrome DevTools, Edge DevTools, or desktop browsers. I attempted several HTML and CSS adjustments, but the indent seems to come from iOS Safari’s native radio button rendering. Since the form is still readable and functional, I did not make further changes. Please advise if there is a recommended way to fully remove the slight indent on Safari.
