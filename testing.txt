@@ -1,0 +1,3 @@
+The main userbase for this website is people looking to adopt dogs.
+
+I tested the website on Opera GX, Chrome and IOS Safari.  Everything on the page stays confined within the browser window.  Everything currently functions properly on all 3 browsers.

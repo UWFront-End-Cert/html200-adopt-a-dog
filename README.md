@@ -1,0 +1,1 @@
+This website is made for those who are looking to adopt dogs.  It currently includes pages for main information, information on all of the dogs available, a blog and checkout.
