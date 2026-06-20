@@ -1,0 +1,621 @@
+:root {
+  --bg: #f7f4ef;
+  --surface: #ffffff;
+  --surface-soft: #f2ede5;
+  --text: #1f2a30;
+  --muted: #5f6f78;
+  --brand: #1f7a8c;
+  --brand-dark: #165563;
+  --line: #dde4e7;
+  --radius: 14px;
+  --shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 0.65rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.9rem, 2.2vw + 1rem, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.45rem, 1.1vw + 1rem, 2.1rem);
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul,
+ol {
+  margin: 0 0 1rem 1.2rem;
+  padding: 0;
+}
+
+/* Header */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+
+.logo img {
+  width: 170px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.25rem;
+  margin: 0;
+}
+
+.main-nav a {
+  display: inline-block;
+  color: var(--text);
+  font-weight: 600;
+  padding: 0.55rem 0.8rem;
+  border-radius: 999px;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  text-decoration: none;
+  background: #edf5f7;
+}
+
+.main-nav .nav-btn {
+  color: #fff;
+  background: var(--brand);
+}
+
+.main-nav .nav-btn:hover,
+.main-nav .nav-btn:focus-visible {
+  background: var(--brand-dark);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 700;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.72rem 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--brand-dark);
+  text-decoration: none;
+}
+
+.btn-sm {
+  padding: 0.5rem 0.9rem;
+  font-size: 0.95rem;
+}
+
+.btn-light {
+  background: #fff;
+  color: var(--brand-dark);
+}
+
+.btn-light:hover,
+.btn-light:focus-visible {
+  background: #f2f7f8;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--brand);
+  border: 2px solid var(--brand);
+}
+
+.btn-outline:hover,
+.btn-outline:focus-visible {
+  color: #fff;
+  background: var(--brand);
+}
+
+/* Home Hero */
+.hero {
+  position: relative;
+  min-height: min(78vh, 620px);
+}
+
+.hero-image {
+  width: 100%;
+  height: min(78vh, 620px);
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: clamp(1.2rem, 3vw, 3rem);
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.1) 60%);
+}
+
+.hero-overlay p {
+  font-size: clamp(1rem, 0.35vw + 0.9rem, 1.2rem);
+  max-width: 48ch;
+}
+
+/* Shared Sections */
+.intro,
+.featured-dogs,
+.cta-banner,
+.all-dogs,
+.blog-section,
+.dog-profile,
+.adoption-form-section,
+.more-dogs {
+  padding: clamp(2rem, 2.5vw, 4rem) 0;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1rem, 2vw, 2.4rem);
+  align-items: center;
+}
+
+.intro-image img {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.section-sub {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.section-cta {
+  margin-top: 1.3rem;
+}
+
+.page-hero {
+  background: linear-gradient(135deg, #e5f2f5, #eef6f8);
+  border-bottom: 1px solid var(--line);
+  padding: 2.2rem 0;
+}
+
+.page-hero p {
+  max-width: 60ch;
+  color: var(--muted);
+}
+
+/* Cards */
+.dog-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.dog-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.dog-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.dog-card-body {
+  padding: 1rem;
+}
+
+.breed {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.dog-desc {
+  font-size: 0.96rem;
+}
+
+/* Filter Bar */
+.filter-bar {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.filter-form {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(3, minmax(140px, 1fr)) auto;
+  padding: 1rem 0;
+  align-items: end;
+}
+
+.filter-form label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.filter-form select {
+  width: 100%;
+}
+
+/* Blog */
+.blog-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+}
+
+.blog-post {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.blog-post--featured {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1.2fr 1fr;
+  margin-bottom: 1rem;
+}
+
+.blog-post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-post-content {
+  padding: 1rem 1.1rem;
+}
+
+.blog-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--brand-dark);
+  background: #dceef2;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  margin-bottom: 0.55rem;
+}
+
+.blog-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.blog-post-content h2 {
+  font-size: 1.25rem;
+}
+
+/* Profile and Form */
+.dog-profile {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) 1.2fr;
+  gap: 1.3rem;
+  align-items: start;
+}
+
+.dog-profile-image img {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.dog-stats {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.4rem 1rem;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dog-stats dt {
+  font-weight: 700;
+}
+
+.dog-stats dd {
+  margin: 0;
+}
+
+.temperament-list {
+  columns: 2;
+}
+
+.adoption-form-section {
+  background: #edf3f5;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.adoption-form {
+  display: grid;
+  gap: 1rem;
+}
+
+fieldset {
+  border: 1px solid #cfdadd;
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: 700;
+  padding: 0 0.4rem;
+}
+
+.form-group {
+  margin-bottom: 0.85rem;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.65rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #b9c8ce;
+  background: #fff;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid rgba(31, 122, 140, 0.3);
+  outline-offset: 1px;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+/* Contact Page */
+.contact-section {
+  padding: clamp(2rem, 2.5vw, 4rem) 0;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.9fr) 1.3fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.contact-details {
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.contact-list {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.55rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.field-label {
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+}
+
+.inline-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.inline-options label,
+.checkbox-group label {
+  display: inline-flex;
+  gap: 0.45rem;
+  align-items: center;
+  font-weight: 500;
+}
+
+.inline-options input,
+.checkbox-group input {
+  width: auto;
+}
+
+/* Footer */
+.site-footer {
+  background: #142128;
+  color: #d9e5ea;
+  margin-top: 2rem;
+}
+
+.footer-inner {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  padding: 2rem 0;
+}
+
+.footer-brand img {
+  width: 180px;
+  margin-bottom: 0.6rem;
+}
+
+.site-footer a {
+  color: #d9e5ea;
+}
+
+.footer-nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 0.35rem;
+}
+
+.footer-contact address {
+  font-style: normal;
+}
+
+.footer-copy {
+  margin: 0;
+  text-align: center;
+  padding: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.9rem;
+}
+
+/* Responsive Foundations */
+@media (max-width: 1000px) {
+  .header-inner {
+    flex-wrap: wrap;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .blog-post--featured {
+    grid-template-columns: 1fr;
+  }
+
+  .dog-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-form {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .temperament-list {
+    columns: 1;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav ul {
+    justify-content: flex-start;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}

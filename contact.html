@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us &ndash; Adopt a Dog</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ===================== HEADER / NAV ===================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <img src="images/adoptadog-logo.svg" alt="Adopt a Dog logo" />
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="checkout.html" class="nav-btn">Adopt Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Contact Adopt a Dog</h1>
+          <p>
+            Send us a message and our team will get back to you within one
+            business day.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="container contact-layout">
+          <article class="contact-details">
+            <h2>Reach Us</h2>
+            <p>
+              We are happy to answer adoption questions, schedule meet-and-greets,
+              and share guidance for first-time dog adopters.
+            </p>
+            <ul class="contact-list">
+              <li><strong>Phone:</strong> <a href="tel:+15031234567">(503) 123-4567</a></li>
+              <li><strong>Email:</strong> <a href="mailto:hello@adoptadog.org">hello@adoptadog.org</a></li>
+              <li><strong>Address:</strong> 123 Paw Street, Portland, OR 97201</li>
+            </ul>
+          </article>
+
+          <form class="contact-form" action="#" method="post">
+            <fieldset>
+              <legend>Your Information</legend>
+
+              <div class="form-group">
+                <label for="full-name">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="full-name" name="full_name" autocomplete="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-date">Preferred Contact Date</label>
+                <input type="date" id="contact-date" name="contact_date" />
+              </div>
+
+              <div class="form-group">
+                <label for="dog-interest">Dog You Are Interested In</label>
+                <select id="dog-interest" name="dog_interest">
+                  <option value="">No preference yet</option>
+                  <option value="angus">Angus</option>
+                  <option value="duffy">Duffy</option>
+                  <option value="lucas">Lucas</option>
+                  <option value="luna">Luna</option>
+                  <option value="other">Another dog</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="household-size">Household Size</label>
+                <input type="number" id="household-size" name="household_size" min="1" max="12" />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Preferences</legend>
+
+              <p class="field-label">Preferred contact method</p>
+              <div class="inline-options">
+                <label><input type="radio" name="contact_method" value="email" checked /> Email</label>
+                <label><input type="radio" name="contact_method" value="phone" /> Phone</label>
+                <label><input type="radio" name="contact_method" value="text" /> Text Message</label>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label>
+                  <input type="checkbox" name="newsletter" value="yes" />
+                  Subscribe me to adoption updates and success stories.
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Send Message</button>
+              <button type="reset" class="btn btn-outline">Clear Form</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="images/adoptadog-logo.svg" alt="Adopt a Dog logo" />
+          <p>Connecting dogs with loving homes since 2015.</p>
+        </div>
+        <nav class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="checkout.html">Adopt Now</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <address>
+            <p>123 Paw Street, Portland, OR 97201</p>
+            <p><a href="tel:+15031234567">(503) 123-4567</a></p>
+            <p><a href="mailto:hello@adoptadog.org">hello@adoptadog.org</a></p>
+          </address>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Adopt a Dog. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

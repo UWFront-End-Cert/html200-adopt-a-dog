@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adopt Lucas &ndash; Adopt a Dog</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- ===================== HEADER / NAV ===================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <img src="images/adoptadog-logo.svg" alt="Adopt a Dog logo" />
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="checkout.html" class="nav-btn">Adopt Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ===================== DOG PROFILE ===================== -->
+      <section class="dog-profile container">
+
+        <div class="dog-profile-image">
+          <img src="images/lucas-checkout.jpg" alt="Lucas, a Border Collie mix available for adoption" />
+        </div>
+
+        <div class="dog-profile-details">
+          <h1>Meet Lucas</h1>
+
+          <dl class="dog-stats">
+            <dt>Breed</dt>
+            <dd>Border Collie Mix</dd>
+
+            <dt>Age</dt>
+            <dd>4 Years Old</dd>
+
+            <dt>Gender</dt>
+            <dd>Male</dd>
+
+            <dt>Size</dt>
+            <dd>Medium (45 lbs)</dd>
+
+            <dt>Color</dt>
+            <dd>Black &amp; White</dd>
+
+            <dt>Status</dt>
+            <dd><strong>Available for Adoption</strong></dd>
+          </dl>
+
+          <h2>About Lucas</h2>
+          <p>
+            Lucas is a brilliant, high-energy Border Collie mix who arrived at our
+            shelter after being found as a stray. Despite his rough start, he is
+            one of the sweetest, most eager-to-please dogs we've ever had.
+          </p>
+          <p>
+            He knows basic commands like sit, stay, and shake — and he picks up
+            new skills in minutes. Lucas thrives with an active family that can
+            give him the exercise and mental stimulation he craves. He does best
+            as the only pet in the home, but loves all people, including children.
+          </p>
+
+          <h2>Temperament</h2>
+          <ul class="temperament-list">
+            <li>Energetic &amp; playful</li>
+            <li>Highly intelligent</li>
+            <li>Loyal &amp; affectionate</li>
+            <li>Good with children</li>
+            <li>Leash-trained</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- ===================== ADOPTION FORM ===================== -->
+      <section class="adoption-form-section">
+        <div class="container">
+          <h2>Start Your Adoption Application</h2>
+          <p>Fill out the form below and our team will be in touch within 24 hours.</p>
+
+          <form class="adoption-form" action="#" method="post">
+
+            <fieldset>
+              <legend>Your Information</legend>
+
+              <div class="form-group">
+                <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="first-name" name="first_name" required autocomplete="given-name" />
+              </div>
+
+              <div class="form-group">
+                <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="last-name" name="last_name" required autocomplete="family-name" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" />
+              </div>
+
+              <div class="form-group">
+                <label for="address">Home Address <span aria-hidden="true">*</span></label>
+                <input type="text" id="address" name="address" required autocomplete="street-address" />
+              </div>
+
+              <div class="form-group">
+                <label for="city">City <span aria-hidden="true">*</span></label>
+                <input type="text" id="city" name="city" required autocomplete="address-level2" />
+              </div>
+
+              <div class="form-group">
+                <label for="state">State <span aria-hidden="true">*</span></label>
+                <input type="text" id="state" name="state" required autocomplete="address-level1" />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>About Your Home</legend>
+
+              <div class="form-group">
+                <label for="home-type">Type of Home <span aria-hidden="true">*</span></label>
+                <select id="home-type" name="home_type" required>
+                  <option value="">Please select…</option>
+                  <option value="house">House with yard</option>
+                  <option value="house-no-yard">House without yard</option>
+                  <option value="apartment">Apartment</option>
+                  <option value="condo">Condo / Townhouse</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="other-pets">Do you have other pets?</label>
+                <select id="other-pets" name="other_pets">
+                  <option value="no">No</option>
+                  <option value="dogs">Yes — dog(s)</option>
+                  <option value="cats">Yes — cat(s)</option>
+                  <option value="both">Yes — dogs &amp; cats</option>
+                  <option value="other">Yes — other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="children">Do you have children at home?</label>
+                <select id="children" name="children">
+                  <option value="no">No</option>
+                  <option value="under5">Yes — under 5</option>
+                  <option value="5to12">Yes — 5 to 12</option>
+                  <option value="teens">Yes — teenagers</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="experience">Prior dog ownership experience</label>
+                <select id="experience" name="experience">
+                  <option value="none">None — first dog</option>
+                  <option value="some">Some — had dogs growing up</option>
+                  <option value="experienced">Experienced owner</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>A Little More</legend>
+
+              <div class="form-group">
+                <label for="why-lucas">Why do you want to adopt Lucas?</label>
+                <textarea id="why-lucas" name="why_lucas" rows="5" placeholder="Tell us a bit about yourself and why Lucas would be a great fit…"></textarea>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Submit Application</button>
+              <a href="dogs.html" class="btn btn-outline">Browse Other Dogs</a>
+            </div>
+
+          </form>
+        </div>
+      </section>
+
+      <!-- ===================== MORE DOGS ===================== -->
+      <section class="more-dogs">
+        <div class="container">
+          <h2>You Might Also Like</h2>
+          <div class="dog-grid">
+
+            <article class="dog-card">
+              <img src="images/duffy-card.jpg" alt="Duffy" />
+              <div class="dog-card-body">
+                <h3>Duffy</h3>
+                <p class="breed">Pit Bull Mix &bull; 2 yrs &bull; Male</p>
+                <a href="checkout.html" class="btn btn-sm">Adopt Duffy</a>
+              </div>
+            </article>
+
+            <article class="dog-card">
+              <img src="images/piper-card.jpg" alt="Piper" />
+              <div class="dog-card-body">
+                <h3>Piper</h3>
+                <p class="breed">Australian Shepherd &bull; 2 yrs &bull; Female</p>
+                <a href="checkout.html" class="btn btn-sm">Adopt Piper</a>
+              </div>
+            </article>
+
+            <article class="dog-card">
+              <img src="images/violet-card.jpg" alt="Violet" />
+              <div class="dog-card-body">
+                <h3>Violet</h3>
+                <p class="breed">Husky Mix &bull; 3 yrs &bull; Female</p>
+                <a href="checkout.html" class="btn btn-sm">Adopt Violet</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="images/adoptadog-logo.svg" alt="Adopt a Dog logo" />
+          <p>Connecting dogs with loving homes since 2015.</p>
+        </div>
+        <nav class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="checkout.html">Adopt Now</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <address>
+            <p>123 Paw Street, Portland, OR 97201</p>
+            <p><a href="tel:+15031234567">(503) 123-4567</a></p>
+            <p><a href="mailto:hello@adoptadog.org">hello@adoptadog.org</a></p>
+          </address>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Adopt a Dog. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Available Dogs &ndash; Adopt a Dog</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- ===================== HEADER / NAV ===================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <img src="images/adoptadog-logo.svg" alt="Adopt a Dog logo" />
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="checkout.html" class="nav-btn">Adopt Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ===================== PAGE HERO ===================== -->
+      <section class="page-hero">
+        <div class="container">
+          <h1>Available Dogs</h1>
+          <p>All of these loving dogs are waiting for their forever home.</p>
+        </div>
+      </section>
+
+      <!-- ===================== FILTER BAR ===================== -->
+      <section class="filter-bar">
+        <div class="container">
+          <form class="filter-form" action="#" method="get">
+            <label for="filter-breed">Breed</label>
+            <select id="filter-breed" name="breed">
+              <option value="">All Breeds</option>
+              <option value="boxer">Boxer</option>
+              <option value="lab">Labrador</option>
+              <option value="pitbull">Pit Bull</option>
+              <option value="collie">Border Collie</option>
+              <option value="shepherd">Shepherd</option>
+            </select>
+
+            <label for="filter-age">Age</label>
+            <select id="filter-age" name="age">
+              <option value="">Any Age</option>
+              <option value="puppy">Puppy (under 1 yr)</option>
+              <option value="young">Young (1–3 yrs)</option>
+              <option value="adult">Adult (4–7 yrs)</option>
+              <option value="senior">Senior (8+ yrs)</option>
+            </select>
+
+            <label for="filter-gender">Gender</label>
+            <select id="filter-gender" name="gender">
+              <option value="">Any</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+
+            <button type="submit" class="btn btn-sm">Filter</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ===================== DOG GRID ===================== -->
+      <section class="all-dogs container">
+        <div class="dog-grid" id="dogs-page-grid"></div>
+      </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="images/adoptadog-logo.svg" alt="Adopt a Dog logo" />
+          <p>Connecting dogs with loving homes since 2015.</p>
+        </div>
+        <nav class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="checkout.html">Adopt Now</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <address>
+            <p>123 Paw Street, Portland, OR 97201</p>
+            <p><a href="tel:+15031234567">(503) 123-4567</a></p>
+            <p><a href="mailto:hello@adoptadog.org">hello@adoptadog.org</a></p>
+          </address>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Adopt a Dog. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

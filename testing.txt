@@ -1,0 +1,92 @@
+Adopt a Dog - User Experience Testing
+Date: 2026-06-15
+Project: HTML200 Adopt a Dog
+
+User Personas
+- Persona 1: Busy Parent (Age 35-50)
+  - Goal: Find a family-friendly dog quickly and understand adoption steps.
+  - Behavior: Scans pages for key info, prefers clear navigation and short content blocks.
+  - Likely devices: iPhone/Android phone during the day, laptop at home.
+
+- Persona 2: College Student (Age 18-24)
+  - Goal: Compare available dogs and read practical care tips before adopting.
+  - Behavior: Browses many cards and images, uses social apps and web links heavily.
+  - Likely devices: Android phone and tablet.
+
+- Persona 3: Retired Adult (Age 60+)
+  - Goal: Adopt a companion dog and complete inquiry form confidently.
+  - Behavior: Reads carefully, values larger text and obvious form labels.
+  - Likely devices: Desktop browser (Windows/Mac), occasionally iPad.
+
+Primary Device Assumptions
+- Mobile-first behavior for discovery (quick browsing of dogs and blog posts).
+- Desktop/laptop behavior for longer reading and form completion.
+- Mixed network quality, so pages should load with simple, clean HTML structure.
+
+Pages Tested
+- index.html (Home)
+- dogs.html (All Dogs)
+- blog.html (Blog)
+- checkout.html (Dog profile + adoption form)
+
+Test Plan and Results
+1. Browser compatibility test (minimum 3 browsers)
+- Browser: Chrome (macOS)
+  - Status: Completed
+  - Checks:
+    - Navigation links work across all pages.
+    - Images render correctly.
+    - Headings and sections are in logical order.
+    - Form fields and required attributes appear correctly.
+  - Result: Pass
+
+- Browser: Safari (macOS)
+  - Status: Completed
+  - Checks:
+    - Layout structure remains readable and usable.
+    - Lists, form controls, and buttons render as expected.
+    - Internal page links and footer links work.
+  - Result: Pass
+
+- Browser: Firefox (macOS)
+  - Status: Pending (run on your machine if available)
+  - Planned checks:
+    - Confirm consistent semantic structure and link behavior.
+    - Confirm form fields are keyboard reachable in logical order.
+
+2. Operating system variation
+- Secondary OS test (Windows or Linux)
+  - Status: Pending
+  - Planned checks:
+    - Validate rendering and spacing consistency.
+    - Validate links, form behavior, and image display.
+
+3. Mobile and tablet testing
+- Phone (iOS/Android)
+  - Status: Pending
+  - Planned checks:
+    - Verify readability without horizontal scrolling.
+    - Verify touch target accessibility for nav links and buttons.
+
+- Tablet (iPad/Android tablet)
+  - Status: Pending
+  - Planned checks:
+    - Verify section flow and content readability.
+    - Verify form usability and tap interactions.
+
+Quality Checklist Used
+- Semantic HTML structure used on all pages (header, nav, main, section, article, footer).
+- Every image includes an alt attribute.
+- Forms include labels linked to inputs.
+- Pages include viewport meta tag for responsive behavior.
+- Navigation remains consistent across all pages.
+
+Issues Found and Follow-up
+- No blocking HTML issues found in completed browser checks on macOS.
+- Next step: complete Firefox + cross-OS + phone/tablet checks and record any differences.
+
+Iteration Notes
+- If rendering differences are found in pending tests:
+  - Prioritize navigation and form usability first.
+  - Then adjust spacing/typography for readability.
+  - Re-test all four pages after each fix.
